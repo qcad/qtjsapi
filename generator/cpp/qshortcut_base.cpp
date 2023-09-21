@@ -57,7 +57,7 @@
         QJSValueList args;
         
 
-  args << cpp2js_QEvent(
+  args << RJSHelper::cpp2js_QEvent(
     handler, 
     // non-copyable: true
 e
@@ -84,7 +84,7 @@ e
 
         
             // convert return value js2cpp and return:
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
       else {

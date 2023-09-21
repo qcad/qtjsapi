@@ -29,7 +29,7 @@
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -41,7 +41,7 @@
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -58,7 +58,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -92,7 +92,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -104,7 +104,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -121,7 +121,7 @@ QString a1_cpp;
           
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -167,7 +167,7 @@ QString a1_cpp;
           
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -203,10 +203,10 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -218,13 +218,13 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp:  (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -270,10 +270,10 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QStringList(handler, a2
+   && RJSHelper::is_QStringList(handler, a2
   )
 
   
@@ -285,13 +285,13 @@ QString a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp:  (QStringList)
   
 QStringList a2_cpp;
 
-      a2_cpp = js2cpp_QStringList(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QStringList(handler, a2);
         
 
     // call function:
@@ -335,7 +335,7 @@ QStringList a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -347,7 +347,7 @@ QStringList a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -635,20 +635,20 @@ QFont_Wrapper::QFont_Wrapper
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
     , true
   
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
 
-   && is_bool(handler, a4
+   && RJSHelper::is_bool(handler, a4
     , true
   
   )
@@ -662,7 +662,7 @@ QFont_Wrapper::QFont_Wrapper
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: pointSize (int)
   
@@ -673,7 +673,7 @@ int a2_cpp;
             a2_cpp = -1;
           }
           else {
-            a2_cpp = js2cpp_int(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
           }
         
   // convert js parameter to cpp: weight (int)
@@ -685,7 +685,7 @@ int a3_cpp;
             a3_cpp = -1;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
   // convert js parameter to cpp: italic (bool)
@@ -697,7 +697,7 @@ bool a4_cpp;
             a4_cpp = false;
           }
           else {
-            a4_cpp = js2cpp_bool(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
           }
         
 
@@ -727,20 +727,20 @@ bool a4_cpp;
 
       // check parameter types:
       if (
-        is_QStringList(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
     , true
   
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
 
-   && is_bool(handler, a4
+   && RJSHelper::is_bool(handler, a4
     , true
   
   )
@@ -754,7 +754,7 @@ bool a4_cpp;
   
 QStringList a1_cpp;
 
-      a1_cpp = js2cpp_QStringList(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
   // convert js parameter to cpp: pointSize (int)
   
@@ -765,7 +765,7 @@ int a2_cpp;
             a2_cpp = -1;
           }
           else {
-            a2_cpp = js2cpp_int(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
           }
         
   // convert js parameter to cpp: weight (int)
@@ -777,7 +777,7 @@ int a3_cpp;
             a3_cpp = -1;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
   // convert js parameter to cpp: italic (bool)
@@ -789,7 +789,7 @@ bool a4_cpp;
             a4_cpp = false;
           }
           else {
-            a4_cpp = js2cpp_bool(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
           }
         
 
@@ -819,10 +819,10 @@ bool a4_cpp;
 
       // check parameter types:
       if (
-        is_QFont(handler, a1
+        RJSHelper::is_QFont(handler, a1
   )
 
-   && is_QPaintDevice_ptr(handler, a2
+   && RJSHelper::is_QPaintDevice_ptr(handler, a2
     , true
   
   )
@@ -836,7 +836,7 @@ bool a4_cpp;
   
 QFont a1_cpp;
 
-      a1_cpp = js2cpp_QFont(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont(handler, a1);
         
   // convert js parameter to cpp: pd (QPaintDevice)
   
@@ -845,7 +845,7 @@ QFont a1_cpp;
           QPaintDevice*
          a2_cpp;
 
-      a2_cpp = js2cpp_QPaintDevice_ptr(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPaintDevice_ptr(handler, a2);
         
 
     // call function:
@@ -872,7 +872,7 @@ QFont a1_cpp;
 
       // check parameter types:
       if (
-        is_QFont(handler, a1
+        RJSHelper::is_QFont(handler, a1
   )
 
   
@@ -884,7 +884,7 @@ QFont a1_cpp;
   
 QFont a1_cpp;
 
-      a1_cpp = js2cpp_QFont(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont(handler, a1);
         
 
     // call function:
@@ -975,7 +975,7 @@ QFont a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont(handler, a1
+        RJSHelper::is_QFont(handler, a1
   )
 
   
@@ -987,7 +987,7 @@ QFont a1_cpp;
   
 QFont a1_cpp;
 
-      a1_cpp = js2cpp_QFont(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont(handler, a1);
         
 
     // call function:
@@ -1062,7 +1062,7 @@ QFont a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1096,7 +1096,7 @@ QFont a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1108,7 +1108,7 @@ QFont a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1183,7 +1183,7 @@ QString a1_cpp;
               
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -1217,7 +1217,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QStringList(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
   
@@ -1229,7 +1229,7 @@ QString a1_cpp;
   
 QStringList a1_cpp;
 
-      a1_cpp = js2cpp_QStringList(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
 
     // call function:
@@ -1304,7 +1304,7 @@ QStringList a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1338,7 +1338,7 @@ QStringList a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1350,7 +1350,7 @@ QStringList a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1425,7 +1425,7 @@ QString a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1459,7 +1459,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1471,7 +1471,7 @@ QString a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1546,7 +1546,7 @@ int a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1580,7 +1580,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -1592,7 +1592,7 @@ int a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -1667,7 +1667,7 @@ qreal a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1701,7 +1701,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1713,7 +1713,7 @@ qreal a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1788,7 +1788,7 @@ int a1_cpp;
               
             // return type: QFont::Weight
 
-            return cpp2js_QFont_Weight(
+            return RJSHelper::cpp2js_QFont_Weight(
               handler, 
               // non-copyable: false
                   res
@@ -1822,7 +1822,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont_Weight(handler, a1
+        RJSHelper::is_QFont_Weight(handler, a1
   )
 
   
@@ -1834,7 +1834,7 @@ int a1_cpp;
   
 QFont::Weight a1_cpp;
 
-      a1_cpp = js2cpp_QFont_Weight(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont_Weight(handler, a1);
         
 
     // call function:
@@ -1909,7 +1909,7 @@ QFont::Weight a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1943,7 +1943,7 @@ QFont::Weight a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -1955,7 +1955,7 @@ QFont::Weight a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2007,7 +2007,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont_Style(handler, a1
+        RJSHelper::is_QFont_Style(handler, a1
   )
 
   
@@ -2019,7 +2019,7 @@ bool a1_cpp;
   
 QFont::Style a1_cpp;
 
-      a1_cpp = js2cpp_QFont_Style(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont_Style(handler, a1);
         
 
     // call function:
@@ -2094,7 +2094,7 @@ QFont::Style a1_cpp;
               
             // return type: QFont::Style
 
-            return cpp2js_QFont_Style(
+            return RJSHelper::cpp2js_QFont_Style(
               handler, 
               // non-copyable: false
                   res
@@ -2151,7 +2151,7 @@ QFont::Style a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2185,7 +2185,7 @@ QFont::Style a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -2197,7 +2197,7 @@ QFont::Style a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2272,7 +2272,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2306,7 +2306,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -2318,7 +2318,7 @@ bool a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2393,7 +2393,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2427,7 +2427,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -2439,7 +2439,7 @@ bool a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2514,7 +2514,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2548,7 +2548,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -2560,7 +2560,7 @@ bool a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2635,7 +2635,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2669,7 +2669,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -2681,7 +2681,7 @@ bool a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2756,7 +2756,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2790,7 +2790,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -2802,7 +2802,7 @@ bool a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2877,7 +2877,7 @@ bool a1_cpp;
               
             // return type: QFont::StyleHint
 
-            return cpp2js_QFont_StyleHint(
+            return RJSHelper::cpp2js_QFont_StyleHint(
               handler, 
               // non-copyable: false
                   res
@@ -2934,7 +2934,7 @@ bool a1_cpp;
               
             // return type: QFont::StyleStrategy
 
-            return cpp2js_QFont_StyleStrategy(
+            return RJSHelper::cpp2js_QFont_StyleStrategy(
               handler, 
               // non-copyable: false
                   res
@@ -2970,10 +2970,10 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont_StyleHint(handler, a1
+        RJSHelper::is_QFont_StyleHint(handler, a1
   )
 
-   && is_QFont_StyleStrategy(handler, a2
+   && RJSHelper::is_QFont_StyleStrategy(handler, a2
     , true
   
   )
@@ -2987,7 +2987,7 @@ bool a1_cpp;
   
 QFont::StyleHint a1_cpp;
 
-      a1_cpp = js2cpp_QFont_StyleHint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont_StyleHint(handler, a1);
         
   // convert js parameter to cpp:  (QFont::StyleStrategy)
   
@@ -2998,7 +2998,7 @@ QFont::StyleStrategy a2_cpp;
             a2_cpp = QFont::PreferDefault;
           }
           else {
-            a2_cpp = js2cpp_QFont_StyleStrategy(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QFont_StyleStrategy(handler, a2);
           }
         
 
@@ -3052,7 +3052,7 @@ QFont::StyleStrategy a2_cpp;
                 
       // check parameter types:
       if (
-        is_QFont_StyleStrategy(handler, a1
+        RJSHelper::is_QFont_StyleStrategy(handler, a1
   )
 
   
@@ -3064,7 +3064,7 @@ QFont::StyleStrategy a2_cpp;
   
 QFont::StyleStrategy a1_cpp;
 
-      a1_cpp = js2cpp_QFont_StyleStrategy(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont_StyleStrategy(handler, a1);
         
 
     // call function:
@@ -3139,7 +3139,7 @@ QFont::StyleStrategy a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3173,7 +3173,7 @@ QFont::StyleStrategy a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -3185,7 +3185,7 @@ QFont::StyleStrategy a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -3260,7 +3260,7 @@ int a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -3317,7 +3317,7 @@ int a1_cpp;
               
             // return type: QFont::SpacingType
 
-            return cpp2js_QFont_SpacingType(
+            return RJSHelper::cpp2js_QFont_SpacingType(
               handler, 
               // non-copyable: false
                   res
@@ -3353,10 +3353,10 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont_SpacingType(handler, a1
+        RJSHelper::is_QFont_SpacingType(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -3368,13 +3368,13 @@ int a1_cpp;
   
 QFont::SpacingType a1_cpp;
 
-      a1_cpp = js2cpp_QFont_SpacingType(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont_SpacingType(handler, a1);
         
   // convert js parameter to cpp: spacing (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -3450,7 +3450,7 @@ qreal a2_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -3484,7 +3484,7 @@ qreal a2_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -3496,7 +3496,7 @@ qreal a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -3548,7 +3548,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont_Capitalization(handler, a1
+        RJSHelper::is_QFont_Capitalization(handler, a1
   )
 
   
@@ -3560,7 +3560,7 @@ qreal a1_cpp;
   
 QFont::Capitalization a1_cpp;
 
-      a1_cpp = js2cpp_QFont_Capitalization(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont_Capitalization(handler, a1);
         
 
     // call function:
@@ -3635,7 +3635,7 @@ QFont::Capitalization a1_cpp;
               
             // return type: QFont::Capitalization
 
-            return cpp2js_QFont_Capitalization(
+            return RJSHelper::cpp2js_QFont_Capitalization(
               handler, 
               // non-copyable: false
                   res
@@ -3669,7 +3669,7 @@ QFont::Capitalization a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont_HintingPreference(handler, a1
+        RJSHelper::is_QFont_HintingPreference(handler, a1
   )
 
   
@@ -3681,7 +3681,7 @@ QFont::Capitalization a1_cpp;
   
 QFont::HintingPreference a1_cpp;
 
-      a1_cpp = js2cpp_QFont_HintingPreference(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont_HintingPreference(handler, a1);
         
 
     // call function:
@@ -3756,7 +3756,7 @@ QFont::HintingPreference a1_cpp;
               
             // return type: QFont::HintingPreference
 
-            return cpp2js_QFont_HintingPreference(
+            return RJSHelper::cpp2js_QFont_HintingPreference(
               handler, 
               // non-copyable: false
                   res
@@ -3813,7 +3813,7 @@ QFont::HintingPreference a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3849,7 +3849,7 @@ QFont::HintingPreference a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont(handler, a1
+        RJSHelper::is_QFont(handler, a1
   )
 
   
@@ -3861,7 +3861,7 @@ QFont::HintingPreference a1_cpp;
   
 QFont a1_cpp;
 
-      a1_cpp = js2cpp_QFont(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont(handler, a1);
         
 
     // call function:
@@ -3887,7 +3887,7 @@ QFont a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3944,7 +3944,7 @@ QFont a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4001,7 +4001,7 @@ QFont a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4035,7 +4035,7 @@ QFont a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -4047,7 +4047,7 @@ QFont a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -4073,7 +4073,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -4130,7 +4130,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4166,7 +4166,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont(handler, a1
+        RJSHelper::is_QFont(handler, a1
   )
 
   
@@ -4178,7 +4178,7 @@ QString a1_cpp;
   
 QFont a1_cpp;
 
-      a1_cpp = js2cpp_QFont(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont(handler, a1);
         
 
     // call function:
@@ -4204,7 +4204,7 @@ QFont a1_cpp;
               
             // return type: QFont
 
-            return cpp2js_QFont(
+            return RJSHelper::cpp2js_QFont(
               handler, 
               // non-copyable: false
                   res
@@ -4261,7 +4261,7 @@ QFont a1_cpp;
               
             // return type: uint
 
-            return cpp2js_uint(
+            return RJSHelper::cpp2js_uint(
               handler, 
               // non-copyable: false
                   res
@@ -4295,7 +4295,7 @@ QFont a1_cpp;
                 
       // check parameter types:
       if (
-        is_uint(handler, a1
+        RJSHelper::is_uint(handler, a1
   )
 
   
@@ -4307,7 +4307,7 @@ QFont a1_cpp;
   
 uint a1_cpp;
 
-      a1_cpp = js2cpp_uint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_uint(handler, a1);
         
 
     // call function:

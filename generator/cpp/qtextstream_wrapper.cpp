@@ -146,10 +146,10 @@ QTextStream_Wrapper::QTextStream_Wrapper
                 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
-   && is_QFile_OpenMode(handler, a2
+   && RJSHelper::is_QFile_OpenMode(handler, a2
     , true
   
   )
@@ -163,7 +163,7 @@ QTextStream_Wrapper::QTextStream_Wrapper
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
   // convert js parameter to cpp: openMode (QFile::OpenMode)
   
@@ -174,7 +174,7 @@ QFile::OpenMode a2_cpp;
             a2_cpp = QTextStream::ReadOnly;
           }
           else {
-            a2_cpp = js2cpp_QFile_OpenMode(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QFile_OpenMode(handler, a2);
           }
         
 
@@ -202,7 +202,7 @@ QFile::OpenMode a2_cpp;
 
       // check parameter types:
       if (
-        is_QIODevice_ptr(handler, a1
+        RJSHelper::is_QIODevice_ptr(handler, a1
     , true
   
   )
@@ -219,7 +219,7 @@ QFile::OpenMode a2_cpp;
           QIODevice*
          a1_cpp;
 
-      a1_cpp = js2cpp_QIODevice_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QIODevice_ptr(handler, a1);
         
 
     // call function:
@@ -308,7 +308,7 @@ QFile::OpenMode a2_cpp;
                 
       // check parameter types:
       if (
-        is_QStringConverter_Encoding(handler, a1
+        RJSHelper::is_QStringConverter_Encoding(handler, a1
   )
 
   
@@ -320,7 +320,7 @@ QFile::OpenMode a2_cpp;
   
 QStringConverter::Encoding a1_cpp;
 
-      a1_cpp = js2cpp_QStringConverter_Encoding(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringConverter_Encoding(handler, a1);
         
 
     // call function:
@@ -395,7 +395,7 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: QStringConverter::Encoding
 
-            return cpp2js_QStringConverter_Encoding(
+            return RJSHelper::cpp2js_QStringConverter_Encoding(
               handler, 
               // non-copyable: false
                   res
@@ -429,7 +429,7 @@ QStringConverter::Encoding a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -441,7 +441,7 @@ QStringConverter::Encoding a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -516,7 +516,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -550,7 +550,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -562,7 +562,7 @@ bool a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -637,7 +637,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -671,7 +671,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale(handler, a1
+        RJSHelper::is_QLocale(handler, a1
   )
 
   
@@ -683,7 +683,7 @@ bool a1_cpp;
   
 QLocale a1_cpp;
 
-      a1_cpp = js2cpp_QLocale(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale(handler, a1);
         
 
     // call function:
@@ -758,7 +758,7 @@ QLocale a1_cpp;
               
             // return type: QLocale
 
-            return cpp2js_QLocale(
+            return RJSHelper::cpp2js_QLocale(
               handler, 
               // non-copyable: false
                   res
@@ -792,7 +792,7 @@ QLocale a1_cpp;
                 
       // check parameter types:
       if (
-        is_QIODevice_ptr(handler, a1
+        RJSHelper::is_QIODevice_ptr(handler, a1
     , true
   
   )
@@ -809,7 +809,7 @@ QLocale a1_cpp;
           QIODevice*
          a1_cpp;
 
-      a1_cpp = js2cpp_QIODevice_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QIODevice_ptr(handler, a1);
         
 
     // call function:
@@ -884,7 +884,7 @@ QLocale a1_cpp;
               
             // return type: QIODevice*
 
-            return cpp2js_QIODevice(
+            return RJSHelper::cpp2js_QIODevice(
               handler, 
               // non-copyable: true
                   res
@@ -941,7 +941,7 @@ QLocale a1_cpp;
               
             // return type: QTextStream::Status
 
-            return cpp2js_QTextStream_Status(
+            return RJSHelper::cpp2js_QTextStream_Status(
               handler, 
               // non-copyable: false
                   res
@@ -975,7 +975,7 @@ QLocale a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextStream_Status(handler, a1
+        RJSHelper::is_QTextStream_Status(handler, a1
   )
 
   
@@ -987,7 +987,7 @@ QLocale a1_cpp;
   
 QTextStream::Status a1_cpp;
 
-      a1_cpp = js2cpp_QTextStream_Status(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextStream_Status(handler, a1);
         
 
     // call function:
@@ -1109,7 +1109,7 @@ QTextStream::Status a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1237,7 +1237,7 @@ QTextStream::Status a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -1249,7 +1249,7 @@ QTextStream::Status a1_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -1275,7 +1275,7 @@ qint64 a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1332,7 +1332,7 @@ qint64 a1_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -1413,7 +1413,7 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
     , true
   
   )
@@ -1432,7 +1432,7 @@ qint64 a1_cpp;
             a1_cpp = 0;
           }
           else {
-            a1_cpp = js2cpp_qint64(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
           }
         
 
@@ -1459,7 +1459,7 @@ qint64 a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1514,7 +1514,7 @@ qint64 a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1548,7 +1548,7 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -1560,7 +1560,7 @@ qint64 a1_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -1586,7 +1586,7 @@ qint64 a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1620,7 +1620,7 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextStream_FieldAlignment(handler, a1
+        RJSHelper::is_QTextStream_FieldAlignment(handler, a1
   )
 
   
@@ -1632,7 +1632,7 @@ qint64 a1_cpp;
   
 QTextStream::FieldAlignment a1_cpp;
 
-      a1_cpp = js2cpp_QTextStream_FieldAlignment(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextStream_FieldAlignment(handler, a1);
         
 
     // call function:
@@ -1707,7 +1707,7 @@ QTextStream::FieldAlignment a1_cpp;
               
             // return type: QTextStream::FieldAlignment
 
-            return cpp2js_QTextStream_FieldAlignment(
+            return RJSHelper::cpp2js_QTextStream_FieldAlignment(
               handler, 
               // non-copyable: false
                   res
@@ -1741,7 +1741,7 @@ QTextStream::FieldAlignment a1_cpp;
                 
       // check parameter types:
       if (
-        is_QChar(handler, a1
+        RJSHelper::is_QChar(handler, a1
   )
 
   
@@ -1753,7 +1753,7 @@ QTextStream::FieldAlignment a1_cpp;
   
 QChar a1_cpp;
 
-      a1_cpp = js2cpp_QChar(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QChar(handler, a1);
         
 
     // call function:
@@ -1828,7 +1828,7 @@ QChar a1_cpp;
               
             // return type: QChar
 
-            return cpp2js_QChar(
+            return RJSHelper::cpp2js_QChar(
               handler, 
               // non-copyable: false
                   res
@@ -1862,7 +1862,7 @@ QChar a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1874,7 +1874,7 @@ QChar a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1949,7 +1949,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1983,7 +1983,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextStream_NumberFlags(handler, a1
+        RJSHelper::is_QTextStream_NumberFlags(handler, a1
   )
 
   
@@ -1995,7 +1995,7 @@ int a1_cpp;
   
 QTextStream::NumberFlags a1_cpp;
 
-      a1_cpp = js2cpp_QTextStream_NumberFlags(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextStream_NumberFlags(handler, a1);
         
 
     // call function:
@@ -2070,7 +2070,7 @@ QTextStream::NumberFlags a1_cpp;
               
             // return type: QTextStream::NumberFlags
 
-            return cpp2js_QTextStream_NumberFlags(
+            return RJSHelper::cpp2js_QTextStream_NumberFlags(
               handler, 
               // non-copyable: false
                   res
@@ -2104,7 +2104,7 @@ QTextStream::NumberFlags a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2116,7 +2116,7 @@ QTextStream::NumberFlags a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2191,7 +2191,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2225,7 +2225,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextStream_RealNumberNotation(handler, a1
+        RJSHelper::is_QTextStream_RealNumberNotation(handler, a1
   )
 
   
@@ -2237,7 +2237,7 @@ int a1_cpp;
   
 QTextStream::RealNumberNotation a1_cpp;
 
-      a1_cpp = js2cpp_QTextStream_RealNumberNotation(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextStream_RealNumberNotation(handler, a1);
         
 
     // call function:
@@ -2312,7 +2312,7 @@ QTextStream::RealNumberNotation a1_cpp;
               
             // return type: QTextStream::RealNumberNotation
 
-            return cpp2js_QTextStream_RealNumberNotation(
+            return RJSHelper::cpp2js_QTextStream_RealNumberNotation(
               handler, 
               // non-copyable: false
                   res
@@ -2346,7 +2346,7 @@ QTextStream::RealNumberNotation a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2358,7 +2358,7 @@ QTextStream::RealNumberNotation a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2433,7 +2433,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2467,7 +2467,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2479,7 +2479,7 @@ int a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2508,7 +2508,7 @@ QString a1_cpp;
               
             // return type: QTextStream&
 
-            return cpp2js_QTextStream(
+            return RJSHelper::cpp2js_QTextStream(
               handler, 
               // non-copyable: true
                   // return type is reference, type is not copyable:

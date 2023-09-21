@@ -910,7 +910,7 @@
   </xsl:variable>
 
   <!--
-  args &lt;&lt; cpp2js_<xsl:value-of select="@type" />(engine, <xsl:value-of select="$name" />);
+  args &lt;&lt; RJSHelper::cpp2js_<xsl:value-of select="@type" />(engine, <xsl:value-of select="$name" />);
   -->
 
   args &lt;&lt; <xsl:value-of select="qc:type-to-function-cpp2js(@type)" />(
@@ -1119,7 +1119,7 @@
 
 <!--
   Converts the list of parameters from QSValue to native types for use in calling the base constructor:
-  js2cpp_xy(engine, a1), ...
+  RJSHelper::js2cpp_xy(engine, a1), ...
 -->
 <!--
 <xsl:template match="qsrc:parameter" mode="tocppcontr">
@@ -1127,7 +1127,7 @@
     <xsl:value-of select="concat('a', position())" />
   </xsl:variable>
 
-  js2cpp_<xsl:value-of select="qc:type-to-function-postfix(@type)" />(engine, <xsl:value-of select="$name" />)
+  RJSHelper::js2cpp_<xsl:value-of select="qc:type-to-function-postfix(@type)" />(engine, <xsl:value-of select="$name" />)
   <xsl:if test="position() &lt; last()">, </xsl:if>
 </xsl:template>
 -->

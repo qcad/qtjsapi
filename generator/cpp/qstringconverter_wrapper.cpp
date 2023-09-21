@@ -33,7 +33,7 @@
                 
       // check parameter types:
       if (
-        is_QStringConverter_Encoding(handler, a1
+        RJSHelper::is_QStringConverter_Encoding(handler, a1
   )
 
   
@@ -45,7 +45,7 @@
   
 QStringConverter::Encoding a1_cpp;
 
-      a1_cpp = js2cpp_QStringConverter_Encoding(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringConverter_Encoding(handler, a1);
         
 
     // call function:
@@ -62,11 +62,11 @@ QStringConverter::Encoding a1_cpp;
           
             // return type: const char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -249,7 +249,7 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -353,7 +353,7 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -410,11 +410,11 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: const char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -458,7 +458,7 @@ QStringConverter::Encoding a1_cpp;
                 
       // check parameter types:
       if (
-        is_QStringConverter_Encoding(handler, a1
+        RJSHelper::is_QStringConverter_Encoding(handler, a1
   )
 
   
@@ -470,7 +470,7 @@ QStringConverter::Encoding a1_cpp;
   
 QStringConverter::Encoding a1_cpp;
 
-      a1_cpp = js2cpp_QStringConverter_Encoding(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringConverter_Encoding(handler, a1);
         
 
     // call function:
@@ -487,11 +487,11 @@ QStringConverter::Encoding a1_cpp;
           
             // return type: const char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -648,7 +648,7 @@ QStringEncoder_Wrapper::QStringEncoder_Wrapper
                 
       // check parameter types:
       if (
-        is_QStringConverter_Encoding(handler, a1
+        RJSHelper::is_QStringConverter_Encoding(handler, a1
   )
 
   
@@ -660,7 +660,7 @@ QStringEncoder_Wrapper::QStringEncoder_Wrapper
   
 QStringConverter::Encoding a1_cpp;
 
-      a1_cpp = js2cpp_QStringConverter_Encoding(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringConverter_Encoding(handler, a1);
         
 
     // call function:
@@ -686,7 +686,7 @@ QStringConverter::Encoding a1_cpp;
 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
@@ -700,7 +700,7 @@ QStringConverter::Encoding a1_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
 
@@ -812,7 +812,7 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -916,7 +916,7 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -973,11 +973,11 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: const char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -1009,7 +1009,7 @@ QStringConverter::Encoding a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1021,7 +1021,7 @@ QStringConverter::Encoding a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1047,7 +1047,7 @@ QString a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -1083,7 +1083,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -1095,7 +1095,7 @@ QString a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -1121,7 +1121,7 @@ qsizetype a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -1167,7 +1167,7 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_QStringConverter_Encoding(handler, a1
+        RJSHelper::is_QStringConverter_Encoding(handler, a1
   )
 
   
@@ -1179,7 +1179,7 @@ qsizetype a1_cpp;
   
 QStringConverter::Encoding a1_cpp;
 
-      a1_cpp = js2cpp_QStringConverter_Encoding(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringConverter_Encoding(handler, a1);
         
 
     // call function:
@@ -1196,11 +1196,11 @@ QStringConverter::Encoding a1_cpp;
           
             // return type: const char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -1357,7 +1357,7 @@ QStringDecoder_Wrapper::QStringDecoder_Wrapper
                 
       // check parameter types:
       if (
-        is_QStringConverter_Encoding(handler, a1
+        RJSHelper::is_QStringConverter_Encoding(handler, a1
   )
 
   
@@ -1369,7 +1369,7 @@ QStringDecoder_Wrapper::QStringDecoder_Wrapper
   
 QStringConverter::Encoding a1_cpp;
 
-      a1_cpp = js2cpp_QStringConverter_Encoding(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringConverter_Encoding(handler, a1);
         
 
     // call function:
@@ -1395,7 +1395,7 @@ QStringConverter::Encoding a1_cpp;
 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
@@ -1409,7 +1409,7 @@ QStringConverter::Encoding a1_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
 
@@ -1521,7 +1521,7 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1625,7 +1625,7 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1682,11 +1682,11 @@ QStringConverter::Encoding a1_cpp;
               
             // return type: const char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -1718,7 +1718,7 @@ QStringConverter::Encoding a1_cpp;
                 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -1730,7 +1730,7 @@ QStringConverter::Encoding a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -1756,7 +1756,7 @@ QByteArray a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1792,7 +1792,7 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -1804,7 +1804,7 @@ QByteArray a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -1830,7 +1830,7 @@ qsizetype a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res

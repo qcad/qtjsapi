@@ -184,7 +184,7 @@
         QJSValueList args;
         
 
-  args << cpp2js_QMouseEvent(
+  args << RJSHelper::cpp2js_QMouseEvent(
     handler, 
     // non-copyable: true
 event
@@ -237,7 +237,7 @@ event
         QJSValueList args;
         
 
-  args << cpp2js_QMouseEvent(
+  args << RJSHelper::cpp2js_QMouseEvent(
     handler, 
     // non-copyable: true
 event
@@ -290,7 +290,7 @@ event
         QJSValueList args;
         
 
-  args << cpp2js_QMouseEvent(
+  args << RJSHelper::cpp2js_QMouseEvent(
     handler, 
     // non-copyable: true
 event
@@ -343,7 +343,7 @@ event
         QJSValueList args;
         
 
-  args << cpp2js_QPaintEvent(
+  args << RJSHelper::cpp2js_QPaintEvent(
     handler, 
     // non-copyable: true
 event
@@ -396,7 +396,7 @@ event
         QJSValueList args;
         
 
-  args << cpp2js_QResizeEvent(
+  args << RJSHelper::cpp2js_QResizeEvent(
     handler, 
     // non-copyable: true
 event
@@ -449,7 +449,7 @@ event
         QJSValueList args;
         
 
-  args << cpp2js_QActionEvent(
+  args << RJSHelper::cpp2js_QActionEvent(
     handler, 
     // non-copyable: true
 event

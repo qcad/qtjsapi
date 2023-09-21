@@ -29,7 +29,7 @@
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
     , true
   
   )
@@ -48,7 +48,7 @@ int a1_cpp;
             a1_cpp = -1;
           }
           else {
-            a1_cpp = js2cpp_int(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
           }
         
 
@@ -66,7 +66,7 @@ int a1_cpp;
           
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -224,7 +224,7 @@ QEvent_Wrapper::QEvent_Wrapper
                 
       // check parameter types:
       if (
-        is_QEvent_Type(handler, a1
+        RJSHelper::is_QEvent_Type(handler, a1
   )
 
   
@@ -236,7 +236,7 @@ QEvent_Wrapper::QEvent_Wrapper
   
 QEvent::Type a1_cpp;
 
-      a1_cpp = js2cpp_QEvent_Type(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QEvent_Type(handler, a1);
         
 
     // call function:
@@ -324,7 +324,7 @@ QEvent::Type a1_cpp;
               
             // return type: QEvent::Type
 
-            return cpp2js_QEvent_Type(
+            return RJSHelper::cpp2js_QEvent_Type(
               handler, 
               // non-copyable: false
                   res
@@ -381,7 +381,7 @@ QEvent::Type a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -415,7 +415,7 @@ QEvent::Type a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -427,7 +427,7 @@ QEvent::Type a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -502,7 +502,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -653,7 +653,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -710,7 +710,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -767,7 +767,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -824,7 +824,7 @@ bool a1_cpp;
               
             // return type: QEvent*
 
-            return cpp2js_QEvent(
+            return RJSHelper::cpp2js_QEvent(
               handler, 
               // non-copyable: true
                   res

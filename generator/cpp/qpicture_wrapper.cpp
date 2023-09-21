@@ -41,7 +41,7 @@
           
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -200,7 +200,7 @@ QPicture_Wrapper::QPicture_Wrapper
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
     , true
   
   )
@@ -219,7 +219,7 @@ int a1_cpp;
             a1_cpp = -1;
           }
           else {
-            a1_cpp = js2cpp_int(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
           }
         
 
@@ -246,7 +246,7 @@ int a1_cpp;
 
       // check parameter types:
       if (
-        is_QPicture(handler, a1
+        RJSHelper::is_QPicture(handler, a1
   )
 
   
@@ -258,7 +258,7 @@ int a1_cpp;
   
 QPicture a1_cpp;
 
-      a1_cpp = js2cpp_QPicture(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPicture(handler, a1);
         
 
     // call function:
@@ -346,7 +346,7 @@ QPicture a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -403,7 +403,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -460,7 +460,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -517,7 +517,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -574,7 +574,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -631,7 +631,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -688,7 +688,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -745,7 +745,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -802,7 +802,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -859,7 +859,7 @@ QPicture a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -916,7 +916,7 @@ QPicture a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -973,7 +973,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1030,7 +1030,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1087,7 +1087,7 @@ QPicture a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1144,7 +1144,7 @@ QPicture a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1201,7 +1201,7 @@ QPicture a1_cpp;
               
             // return type: uint
 
-            return cpp2js_uint(
+            return RJSHelper::cpp2js_uint(
               handler, 
               // non-copyable: false
                   res
@@ -1258,11 +1258,11 @@ QPicture a1_cpp;
               
             // return type: const char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -1294,7 +1294,7 @@ QPicture a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPainter_ptr(handler, a1
+        RJSHelper::is_QPainter_ptr(handler, a1
     , true
   
   )
@@ -1311,7 +1311,7 @@ QPicture a1_cpp;
           QPainter*
          a1_cpp;
 
-      a1_cpp = js2cpp_QPainter_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
         
 
     // call function:
@@ -1337,7 +1337,7 @@ QPicture a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1371,7 +1371,7 @@ QPicture a1_cpp;
                 
       // check parameter types:
       if (
-        is_QIODevice_ptr(handler, a1
+        RJSHelper::is_QIODevice_ptr(handler, a1
     , true
   
   )
@@ -1388,7 +1388,7 @@ QPicture a1_cpp;
           QIODevice*
          a1_cpp;
 
-      a1_cpp = js2cpp_QIODevice_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QIODevice_ptr(handler, a1);
         
 
     // call function:
@@ -1414,7 +1414,7 @@ QPicture a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1425,7 +1425,7 @@ QPicture a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1437,7 +1437,7 @@ QPicture a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1463,7 +1463,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1497,7 +1497,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QIODevice_ptr(handler, a1
+        RJSHelper::is_QIODevice_ptr(handler, a1
     , true
   
   )
@@ -1514,7 +1514,7 @@ QString a1_cpp;
           QIODevice*
          a1_cpp;
 
-      a1_cpp = js2cpp_QIODevice_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QIODevice_ptr(handler, a1);
         
 
     // call function:
@@ -1540,7 +1540,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1551,7 +1551,7 @@ QString a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1563,7 +1563,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1589,7 +1589,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1646,7 +1646,7 @@ QString a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -1680,7 +1680,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -1692,7 +1692,7 @@ QString a1_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -1744,7 +1744,7 @@ QRect a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPicture(handler, a1
+        RJSHelper::is_QPicture(handler, a1
   )
 
   
@@ -1756,7 +1756,7 @@ QRect a1_cpp;
   
 QPicture a1_cpp;
 
-      a1_cpp = js2cpp_QPicture(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPicture(handler, a1);
         
 
     // call function:
@@ -1878,7 +1878,7 @@ QPicture a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1935,7 +1935,7 @@ QPicture a1_cpp;
               
             // return type: QPaintEngine*
 
-            return cpp2js_QPaintEngine(
+            return RJSHelper::cpp2js_QPaintEngine(
               handler, 
               // non-copyable: true
                   res

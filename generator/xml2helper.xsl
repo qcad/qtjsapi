@@ -15,7 +15,6 @@
 <xsl:output method="text" />
 
 <xsl:param name="mode" />
-<xsl:param name="pluginid" />
 <xsl:param name="typeidbase" />
 
 <xsl:template match="text()" />
@@ -42,1063 +41,967 @@
       #include &lt;QtSvg&gt;
       #include &lt;QtUiTools&gt;
 
-      <!--
-      #include &lt;QAbstractFileIconProvider&gt;
-      #include &lt;QActionGroup&gt;
-      #include &lt;QBoxLayout&gt;
-      #include &lt;QButtonGroup&gt;
-      #include &lt;QCheckBox&gt;
-      #include &lt;QCheckBox&gt;
-      #include &lt;QClipboard&gt;
-      #include &lt;QComboBox&gt;
-      #include &lt;QCompleter&gt;
-      #include &lt;QDesktopServices&gt;
-      #include &lt;QDialogButtonBox&gt;
-      #include &lt;QDockWidget&gt;
-      #include &lt;QEvent&gt;
-      #include &lt;QFileDialog&gt;
-      #include &lt;QFileIconProvider&gt;
-      #include &lt;QFileSystemModel&gt;
-      #include &lt;QFontComboBox&gt;
-      #include &lt;QFontDatabase&gt;
-      #include &lt;QFormLayout&gt;
-      #include &lt;QFrame&gt;
-      #include &lt;QGroupBox&gt;
-      #include &lt;QHeaderView&gt;
-      #include &lt;QImageIOHandler&gt;
-      #include &lt;QImageReader&gt;
-      #include &lt;QItemDelegate&gt;
-      #include &lt;QJSEngine&gt;
-      #include &lt;QJSValue&gt;
-      #include &lt;QLabel&gt;
-      #include &lt;QLayout&gt;
-      #include &lt;QLayoutItem&gt;
-      #include &lt;QLineEdit&gt;
-      #include &lt;QListWidget&gt;
-      #include &lt;QMessageBox&gt;
-      #include &lt;QMouseEvent&gt;
-      #include &lt;QPageSize&gt;
-      #include &lt;QPainter&gt;
-      #include &lt;QPlainTextEdit&gt;
-      #include &lt;QPolygon&gt;
-      #include &lt;QPolygonF&gt;
-      #include &lt;QProgressBar&gt;
-      #include &lt;QPushButton&gt;
-      #include &lt;QRadioButton&gt;
-      #include &lt;QScreen&gt;
-      #include &lt;QScrollArea&gt;
-      #include &lt;QScrollArea&gt;
-      #include &lt;QScrollBar&gt;
-      #include &lt;QShortcut&gt;
-      #include &lt;QSlider&gt;
-      #include &lt;QSpinBox&gt;
-      #include &lt;QSplashScreen&gt;
-      #include &lt;QSplitter&gt;
-      #include &lt;QSql&gt;
-      #include &lt;QSqlDatabase&gt;
-      #include &lt;QSqlQuery&gt;
-      #include &lt;QSqlResult&gt;
-      #include &lt;QStackedLayout&gt;
-      #include &lt;QStackedWidget&gt;
-      #include &lt;QStandardItemModel&gt;
-      #include &lt;QStringConverter&gt;
-      #include &lt;QStyle&gt;
-      #include &lt;QTabBar&gt;
-      #include &lt;QTableWidget&gt;
-      #include &lt;QTextBrowser&gt;
-      #include &lt;QTextCursor&gt;
-      #include &lt;QTextDocument&gt;
-      #include &lt;QTextLayout&gt;
-      #include &lt;QToolBar&gt;
-      #include &lt;QToolButton&gt;
-      #include &lt;QToolTip&gt;
-      #include &lt;QUiLoader&gt;
-      #include &lt;QValidator&gt;
-      #include &lt;QWidget&gt;
-      #include &lt;QWidgetAction&gt;
-      #include &lt;QWindow&gt;
-      #include &lt;QXmlContentHandler&gt;
-      #include &lt;QXmlDTDHandler&gt;
-      #include &lt;QXmlDeclHandler&gt;
-      #include &lt;QXmlDefaultHandler&gt;
-      #include &lt;QXmlEntityResolver&gt;
-      #include &lt;QXmlErrorHandler&gt;
-      #include &lt;QXmlLexicalHandler&gt;
-      #include &lt;QProgressDialog&gt;
-      #include &lt;QSvgRenderer&gt;
-      #include &lt;QQuickWidget&gt;
-      #include &lt;QSurfaceFormat&gt;
-      #include &lt;QGraphicsEffect&gt;
-      #include &lt;QGraphicsBlurEffect&gt;
-      #include &lt;QDomDocument&gt;
-      #include &lt;QAbstractPrintDialog&gt;
-      #include &lt;QPinchGesture&gt;
-      -->
-
-
-      <xsl:if test="not($pluginid='')">
-        // include additional headers for plugins:
-        #include "RJSHelper_include.h"
-      </xsl:if>
-
       #include "RJSWrapper.h"
 
-      <xsl:if test="$pluginid=''">
-        QVariant getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj);
-        void setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper);
+      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+        class RJSDowncaster_<xsl:value-of select="@name" /> {
+        public:
+          virtual QJSValue downcast(RJSApi&amp; handler, <xsl:value-of select="@name" />* o) = 0;
+        };
+      </xsl:for-each>
 
-        QJSValue getWrapperQJSValue(const QJSValue&amp; v);
-        QObject* getWrapperQObject(const QJSValue&amp; v);
-        RJSWrapper* getWrapperRJSWrapper(const QJSValue&amp; v);
 
-        /**
-         * \return Wrapper in given type T for the given QJSValue.
-         */
-        template&lt;typename T&gt;
-        T* getWrapper(const QJSValue&amp; v) {
-            return dynamic_cast&lt;T*&gt;(getWrapperQObject(v));
-        }
+      QVariant getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj);
+      void setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper);
+      
+      QJSValue getWrapperQJSValue(const QJSValue&amp; v);
+      QObject* getWrapperQObject(const QJSValue&amp; v);
+      RJSWrapper* getWrapperRJSWrapper(const QJSValue&amp; v);
 
+      /**
+       * \return Wrapper in given type T for the given QJSValue.
+       */
+      template&lt;typename T&gt;
+      T* getWrapper(const QJSValue&amp; v) {
+          return dynamic_cast&lt;T*&gt;(getWrapperQObject(v));
+      }
+
+
+      class RJSHelper {
+
+      public:
+
+       
+       
         //
         // custom types (manual implementation):
         //
-
-        QJSValue cpp2js_bool(RJSApi&amp; handler, bool v);
-        bool js2cpp_bool(RJSApi&amp; handler, const QJSValue&amp; v);
-        bool is_bool(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-
-        QString js2cpp_char_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
-        bool is_char_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-
-        QJSValue cpp2js_char(RJSApi&amp; handler, const char* v);
-
-        /*
-        QJSValue cpp2js_QMouseEvent(RJSApi&amp; handler, QMouseEvent* v);
-        QMouseEvent* js2cpp_QMouseEvent_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
-        bool is_QMouseEvent_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-        */
-
-        //QJSValue cpp2js_QKeyEvent(RJSApi&amp; handler, QKeyEvent* v);
-        //QKeyEvent* js2cpp_QKeyEvent_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
-        //bool is_QKeyEvent_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-
-        QJSValue cpp2js_QVariant(RJSApi&amp; handler, const QVariant&amp; v);
-        QVariant js2cpp_QVariant(RJSApi&amp; handler, const QJSValue&amp; v);
-        bool is_QVariant(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-
-        QJSValue cpp2js_QObjectList(RJSApi&amp; handler, const QList&lt;QObject*&gt;&amp; v);
-        QList&lt;QObject*&gt; js2cpp_QObjectList(RJSApi&amp; handler, const QJSValue&amp; v);
-
-        QJSValue cpp2js_QObject(RJSApi&amp; handler, QObject* v);
-        QObject* js2cpp_QObject_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
-        bool is_QObject_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-
-        QJSValue cpp2js_QWidget(RJSApi&amp; handler, QWidget* v);
-        QWidget* js2cpp_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
-        bool is_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-
-        /*
-        QJSValue cpp2js_QLayout(RJSApi&amp; handler, QLayout* v);
-        QLayout* js2cpp_QLayout_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
-        bool is_QLayout_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-        */
-
-        //QJSValue cpp2js_QColor(RJSApi&amp; handler, const QColor&amp; v);
-        //QColor js2cpp_QColor(RJSApi&amp; handler, const QJSValue&amp; v);
-        //bool is_QColor(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-
-        QJSValue cpp2js_QDomDocument_ParseResult(RJSApi&amp; handler, QDomDocument::ParseResult v);
-
-        QJSValue cpp2js_QList_QPair_QString_QString(RJSApi&amp; handler, const QList&lt;QPair&lt;QString,QString&gt; &gt;&amp; v);
-        QList&lt;QPair&lt;QString,QString&gt; &gt; js2cpp_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v);
-        bool is_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-
-        //QJSValue cpp2js_RSpatialIndexPro(RJSApi&amp; handler, RSpatialIndexPro* v);
-      </xsl:if>
-
-      <xsl:apply-templates />
-
-      <xsl:if test="$pluginid=''">
+       
+        static QJSValue cpp2js_bool(RJSApi&amp; handler, bool v);
+        static bool js2cpp_bool(RJSApi&amp; handler, const QJSValue&amp; v);
+        static bool is_bool(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+       
+        static QString js2cpp_char_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
+        static bool is_char_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+       
+        static QJSValue cpp2js_char(RJSApi&amp; handler, const char* v);
+       
+        static QJSValue cpp2js_QVariant(RJSApi&amp; handler, const QVariant&amp; v);
+        static QVariant js2cpp_QVariant(RJSApi&amp; handler, const QJSValue&amp; v);
+        static bool is_QVariant(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+       
+        static QJSValue cpp2js_QObjectList(RJSApi&amp; handler, const QList&lt;QObject*&gt;&amp; v);
+        static QList&lt;QObject*&gt; js2cpp_QObjectList(RJSApi&amp; handler, const QJSValue&amp; v);
+       
+        static QJSValue cpp2js_QObject(RJSApi&amp; handler, QObject* v);
+        static QObject* js2cpp_QObject_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
+        static bool is_QObject_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+       
+        static QJSValue cpp2js_QWidget(RJSApi&amp; handler, QWidget* v);
+        static QWidget* js2cpp_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
+        static bool is_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+       
+        static QJSValue cpp2js_QDomDocument_ParseResult(RJSApi&amp; handler, QDomDocument::ParseResult v);
+       
+        static QJSValue cpp2js_QList_QPair_QString_QString(RJSApi&amp; handler, const QList&lt;QPair&lt;QString,QString&gt; &gt;&amp; v);
+        static QList&lt;QPair&lt;QString,QString&gt; &gt; js2cpp_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v);
+        static bool is_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+       
+        <xsl:apply-templates />
+       
         // more dummy implementations
-        QJSValue cpp2js_QList_QAction(RJSApi&amp; handler, const QList&lt;QAction*&gt;&amp; v);
+        static QJSValue cpp2js_QList_QAction(RJSApi&amp; handler, const QList&lt;QAction*&gt;&amp; v);
+       
+        static QList&lt;QAction*&gt; js2cpp_QList_QAction(RJSApi&amp; handler, const QJSValue&amp; v);
 
-        QList&lt;QAction*&gt; js2cpp_QList_QAction(RJSApi&amp; handler, const QJSValue&amp; v);
-      </xsl:if>
+      
+        <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+          // allow downcasting for type <xsl:value-of select="@name" />:
+          private:
+            static QList&lt;RJSDowncaster_<xsl:value-of select="@name"/>*&gt; downcasters_<xsl:value-of select="@name"/>;
+
+          public:
+            static void registerDowncaster_<xsl:value-of select="@name"/>(RJSDowncaster_<xsl:value-of select="@name"/>* dc) {
+              downcasters_<xsl:value-of select="@name"/>.append(dc);
+            }
+        </xsl:for-each>
+      };
 
       #endif
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
       #include "RJSHelper.h"
-      <xsl:if test="not($pluginid='')">
-        // include additional headers for plugins:
-        #include "RJSHelper_<xsl:value-of select="$pluginid" />.h"
-      </xsl:if>
-      //#include "RJSGetWrapped.h"
 
       #include "header_cpp.h"
 
-      <xsl:if test="$pluginid=''">
-        /**
-         * \return existing wrapper object for the given object in the context of the given engine.
-         */
-        QVariant getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj) {
-            QJSEngine* engine = handler.getEngine();
-            return obj.property((const char*)QString("%1__wrapper__").arg(engine-&gt;objectName()).toUtf8());
-        }
-
-        /**
-         * Attaches the script wrapper to the original QObject as a property in the context of the given engine.
-         */
-        void setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper) {
-            QJSEngine* engine = handler.getEngine();
-            obj.setProperty((const char*)QString("%1__wrapper__").arg(engine-&gt;objectName()).toUtf8(), wrapper);
-        }
-
-        QJSValue getWrapperQJSValue(const QJSValue&amp; v) {
-            if (v.prototype().hasOwnProperty("__WRAPPER__")) {
-                return v.prototype();
-            }
-            else {
-                return v;
-            }
-        }
-
-        QObject* getWrapperQObject(const QJSValue&amp; v) {
-            QJSValue w = getWrapperQJSValue(v);
-            if (!w.isQObject()) {
-                return nullptr;
-            }
-            return w.toQObject();
-        }
-
-        RJSWrapper* getWrapperRJSWrapper(const QJSValue&amp; v) {
-            return dynamic_cast&lt;RJSWrapper*&gt;(getWrapperQObject(v));
-        }
-
-        //
-        // custom types (manual implementation):
-        //
-
-        QJSValue cpp2js_bool(RJSApi&amp; handler, bool v) {
-            return QJSValue(v);
-        }
-
-        bool js2cpp_bool(RJSApi&amp; handler, const QJSValue&amp; v) {
-            if (!v.isBool() &amp;&amp; !v.isNumber()) {
-                return false;
-            }
-            return v.toBool();
-        }
-
-        bool is_bool(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
-            if (v.isUndefined() || v.isNull()) {
-                return acceptUndefined;
-            }
-
-            // 20221122: don't allow numbers in test to distinguish between bool / int in function overrides (e.g. RAddObjectsOperation::addObject):
-            // || v.isNumber();
-
-            return v.isBool();
-        }
-
-        QString js2cpp_char_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
-            if (v.isNumber() &amp;&amp; v.toInt()==0) {
-                // JS can pass 0 for null string:
-                return QString();
-            }
-
-            return v.toString();
-        }
-
-        bool is_char_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
-            if (v.isUndefined() || v.isNull()) {
-                return acceptUndefined;
-            }
-            // accept 0 for char pointer (null string):
-            return v.isString() || (v.isNumber() &amp;&amp; v.toInt()==0);
-        }
-
-        QJSValue cpp2js_char(RJSApi&amp; handler, const char* v) {
-            return QJSValue(*v);
-        }
-
-        QJSValue cpp2js_QVariant(RJSApi&amp; handler, const QVariant&amp; v) {
-            if (v.isNull()) {
-                return QJSValue();
-            }
-
-            if (v.userType()==QMetaType::QVariantList) {
-                // convert QVariant list to QJSValue array:
-                QList&lt;QVariant&gt; vList = v.toList();
-                QJSEngine* engine = handler.getEngine();
-                QJSValue ret = engine-&gt;newArray();
-                for (int i=0; i&lt;vList.length(); i++) {
-                    QVariant vItem = vList[i];
-                    ret.setProperty(i, cpp2js_QVariant(handler, vItem));
-                }
-                return ret;
-            }
-
-            //QVariant_Wrapper* ret = new QVariant_Wrapper(handler, new QVariant(v), true);
-            //QVariant* v = ret-&gt;getWrapped();
-            //if (v!=nullptr) {
-                switch (v.userType()) {
-                case QMetaType::Bool:
-                    return QJSValue(v.toBool());
-                case QMetaType::Int:
-                    return QJSValue(v.toInt());
-        //        case QMetaType::LongLong:
-        //            return QJSValue(v.toLongLong());
-                case QMetaType::UInt:
-                    return QJSValue(v.toUInt());
-        //        case QMetaType::ULongLong:
-        //            return QJSValue(v.toULongLong());
-                case QMetaType::Double:
-                    return QJSValue(v.toDouble());
-                case QMetaType::QString:
-                    return QJSValue(v.toString());
-
-                case QMetaType::QByteArray:
-                    return cpp2js_QByteArray(handler, v.toByteArray());
-                case QMetaType::QChar:
-                    return cpp2js_QChar(handler, v.toChar());
-                case QMetaType::QDate:
-                    return cpp2js_QDate(handler, v.toDate());
-                case QMetaType::QDateTime:
-                    return cpp2js_QDateTime(handler, v.toDateTime());
-                case QMetaType::QEasingCurve:
-                    return cpp2js_QEasingCurve(handler, v.toEasingCurve());
-        //        case QMetaType::QJsonArray:
-        //            return cpp2js_QJsonArray(handler, v.toJsonArray());
-        //        case QMetaType::QJsonDocument:
-        //            return cpp2js_QJsonDocument(handler, v.toJsonDocument());
-        //        case QMetaType::QJsonObject:
-        //            return cpp2js_QJsonObject(handler, v.toJsonObject());
-        //        case QMetaType::QJsonValue:
-        //            return cpp2js_QJsonValue(handler, v.toJsonValue());
-                case QMetaType::QLine:
-                    return cpp2js_QLine(handler, v.toLine());
-                case QMetaType::QLineF:
-                    return cpp2js_QLineF(handler, v.toLineF());
-        //        case QMetaType::QVariantList:
-        //            return cpp2js_QVariantList(handler, v.toList());
-                case QMetaType::QLocale:
-                    return cpp2js_QLocale(handler, v.toLocale());
-                case QMetaType::QModelIndex:
-                    return cpp2js_QModelIndex(handler, v.toModelIndex());
-        //        case QMetaType::QPersistentModelIndex:
-        //            return cpp2js_QPersistentModelIndex(handler, v.toPersistentModelIndex());
-                case QMetaType::QPoint:
-                    return cpp2js_QPoint(handler, v.toPoint());
-                case QMetaType::QPointF:
-                    return cpp2js_QPointF(handler, v.toPointF());
-                case QMetaType::QRect:
-                    return cpp2js_QRect(handler, v.toRect());
-                case QMetaType::QRectF:
-                    return cpp2js_QRectF(handler, v.toRectF());
-                case QMetaType::QRegularExpression:
-                    return cpp2js_QRegularExpression(handler, v.toRegularExpression());
-                case QMetaType::QSize:
-                    return cpp2js_QSize(handler, v.toSize());
-                case QMetaType::QSizeF:
-                    return cpp2js_QSizeF(handler, v.toSizeF());
-                case QMetaType::QTime:
-                    return cpp2js_QTime(handler, v.toTime());
-                case QMetaType::QUrl:
-                    return cpp2js_QUrl(handler, v.toUrl());
-                case QMetaType::QColor:
-                    return cpp2js_QColor(handler, v.value&lt;QColor&gt;());
-                case QMetaType::QPalette:
-                    return cpp2js_QPalette(handler, v.value&lt;QPalette&gt;());
-        //        case QMetaType::QUuid:
-        //            return cpp2js_QUuid(handler, v.toUuid());
-
-                // TODO: add more conversions:
-                default:
-                    break;
-                }
-            //}
-
-            if (v.canConvert&lt;QFont&gt;()) {
-                return cpp2js_QFont(handler, v.value&lt;QFont&gt;());
-            }
-
-            if (v.canConvert&lt;QPushButton*&gt;()) {
-                return cpp2js_QPushButton(handler, v.value&lt;QPushButton*&gt;());
-            }
-
-            if (v.canConvert&lt;QList&lt;double&gt; &gt;()) {
-                return cpp2js_QList_double(handler, v.value&lt;QList&lt;double&gt; &gt;());
-            }
-            if (v.canConvert&lt;QStringList&gt;()) {
-                return cpp2js_QStringList(handler, v.value&lt;QStringList&gt;());
-            }
-            if (v.canConvert&lt;QKeySequence&gt;()) {
-                return cpp2js_QKeySequence(handler, v.value&lt;QKeySequence&gt;());
-            }
-
-            qWarning() &lt;&lt; "cpp2js_QVariant: unhandled variant type: " &lt;&lt; v.userType() &lt;&lt; " / " &lt;&lt; v.metaType().name();
-
-            QJSEngine* engine = handler.getEngine();
-            // wrapper takes ownership of QVariant object:
-            QVariant_Wrapper* ret = new QVariant_Wrapper(handler, new QVariant(v), true);
-            //return engine-&gt;newQObject(ret);
-
-            // JS: new QVariant('__GOT_WRAPPER__', wrapper)
-            QJSValue cl = engine-&gt;globalObject().property("QVariant");
-            QJSValueList args;
-            args.append(QJSValue("__GOT_WRAPPER__"));
-            args.append(QJSValue(false));
-            args.append(engine-&gt;newQObject(ret));
-            QJSValue r = cl.callAsConstructor(args);
-
-            //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
-            //QJSValue r = engine-&gt;evaluate("new QVariant('__GOT_WRAPPER__', wrapper);");
-
-            if (r.isError()) {
-                qWarning()
-                        &lt;&lt; "Uncaught exception in new QVariant(wrapper)"
-                        &lt;&lt; ":" &lt;&lt; r.toString();
-            }
-            return r;
-        }
-
-        bool is_QVariant(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
-            if (v.isUndefined() || v.isNull()) {
-                // make sure a missing parameter is not counted as a valid variant:
-                // e.g. QComboBox::addItem(icon, text, userData) != QComboBox::addItem(text, userData)
-                return acceptUndefined;
-            }
-
-            return true;
-        }
-
-        QVariant js2cpp_QVariant(RJSApi&amp; handler, const QJSValue&amp; v) {
-            if (v.isNumber()) {
-                // value is number:
-                return QVariant(v.toNumber());
-            }
-            if (v.isBool()) {
-                // value is bool:
-                return QVariant(v.toBool());
-            }
-            if (v.isString()) {
-                // value is string:
-                return QVariant(v.toString());
-            }
-            if (v.isArray()) {
-                // value is an array:
-                QList&lt;QVariant&gt; variantList;
-                const int length = v.property("length").toInt();
-                for (int i = 0; i &lt; length; ++i) {
-                    variantList.append(js2cpp_QVariant(handler, v.property(i)));
-                }
-                return QVariant(variantList);
-            }
-
-            RJSWrapper* wrapper = getWrapperRJSWrapper(v);
-            if (wrapper==nullptr) {
-                qWarning() &lt;&lt; "js2cpp_QVariant: no wrapper";
-                return QVariant();
-            }
-
-            // value is QSize, QUrl, ...:
-
-            switch (wrapper-&gt;getWrappedType()) {
-        //    case RJSType::QPersistentModelIndex_Type:
-        //        return QVariant(js2cpp_QPersistentModelIndex(handler, v));
-            case RJSType::QModelIndex_Type:
-                return QVariant(js2cpp_QModelIndex(handler, v));
-        //    case RJSType::QJsonDocument_Type:
-        //        return QVariant(js2cpp_QJsonDocument(handler, v));
-        //    case RJSType::QJsonArray_Type:
-        //        return QVariant(js2cpp_QJsonArray(handler, v));
-        //    case RJSType::QJsonObject_Type:
-        //        return QVariant(js2cpp_QJsonObject(handler, v));
-        //    case RJSType::QJsonValue_Type:
-        //        return QVariant(js2cpp_QJsonValue(handler, v));
-            case RJSType::QUrl_Type:
-                return QVariant(js2cpp_QUrl(handler, v));
-        //    case RJSType::QUuid_Type:
-        //        return QVariant(js2cpp_QUuid(handler, v));
-        //    case RJSType::QEasingCurve_Type:
-        //        return QVariant(js2cpp_QEasingCurve(handler, v));
-            case RJSType::QRegularExpression_Type:
-                return QVariant(js2cpp_QRegularExpression(handler, v));
-            case RJSType::QLocale_Type:
-                return QVariant(js2cpp_QLocale(handler, v));
-            case RJSType::QRectF_Type:
-                return QVariant(js2cpp_QRectF(handler, v));
-            case RJSType::QRect_Type:
-                return QVariant(js2cpp_QRect(handler, v));
-            case RJSType::QLineF_Type:
-                return QVariant(js2cpp_QLineF(handler, v));
-            case RJSType::QLine_Type:
-                return QVariant(js2cpp_QLine(handler, v));
-            case RJSType::QPointF_Type:
-                return QVariant(js2cpp_QPointF(handler, v));
-            case RJSType::QPoint_Type:
-                return QVariant(js2cpp_QPoint(handler, v));
-            case RJSType::QSizeF_Type:
-                return QVariant(js2cpp_QSizeF(handler, v));
-            case RJSType::QSize_Type:
-                return QVariant(js2cpp_QSize(handler, v));
-        //    case RJSType::QHash&lt;QString, QVariant&gt;_Type:
-        //        return QVariant(js2cpp_QHash&lt;QString, QVariant&gt;(handler, v));
-        //    case RJSType::QMap&lt;QString, QVariant&gt;_Type:
-        //        return QVariant(js2cpp_QMap&lt;QString, QVariant&gt;(handler, v));
-        //    case RJSType::QList&lt;QVariant&gt;_Type:
-        //        return QVariant(js2cpp_QList&lt;QVariant&gt;(handler, v));
-            case RJSType::QDateTime_Type:
-                return QVariant(js2cpp_QDateTime(handler, v));
-            case RJSType::QTime_Type:
-                return QVariant(js2cpp_QTime(handler, v));
-            case RJSType::QDate_Type:
-                return QVariant(js2cpp_QDate(handler, v));
-        //    case RJSType::QChar_Type:
-        //        return QVariant(js2cpp_QChar(handler, v));
-        //    case RJSType::QStringList_Type:
-        //        return QVariant(js2cpp_QStringList(handler, v));
-        //    case RJSType::QLatin1String_Type:
-        //        return QVariant(js2cpp_QLatin1String(handler, v));
-        //    case RJSType::QString_Type:
-        //        return QVariant(js2cpp_QString(handler, v));
-        //    case RJSType::QBitArray_Type:
-        //        return QVariant(js2cpp_QBitArray(handler, v));
-            case RJSType::QByteArray_Type:
-                return QVariant(js2cpp_QByteArray(handler, v));
-
-            case RJSType::QWidget_Type:
-                return QVariant::fromValue(js2cpp_QWidget_ptr(handler, v));
-            case RJSType::QToolBar_Type:
-                return QVariant::fromValue(js2cpp_QToolBar_ptr(handler, v));
-            case RJSType::QPushButton_Type:
-                return QVariant::fromValue(js2cpp_QPushButton_ptr(handler, v));
-
-            case RJSType::QPalette_Type:
-                return QVariant::fromValue(js2cpp_QPalette(handler, v));
-
-            case RJSType::QKeySequence_Type:
-                return QVariant::fromValue(js2cpp_QKeySequence(handler, v));
-            case RJSType::QFont_Type:
-                return QVariant::fromValue(js2cpp_QFont(handler, v));
-
-            case RJSType::QVariant_Type:
-                {
-                    QVariant var = *(QVariant*)wrapper-&gt;getWrappedVoid();
-                    qDebug() &lt;&lt; "variant:" &lt;&lt; var;
-                    return var;
-                }
-
-            default:
-                {
-                    QVariant var = *(QVariant*)wrapper->getWrappedVoid();
-                    if (var.canConvert&lt;QList&lt;QKeySequence&gt; &gt;()) {
-                        return QVariant::fromValue(var.value&lt;QList&lt;QKeySequence&gt; &gt;());
-                    }
-                }
-
-                qWarning() &lt;&lt; "unhandled QVariant type:" &lt;&lt; wrapper-&gt;getWrappedType();
-                handler.trace();
-                return *(QVariant*)wrapper-&gt;getWrappedVoid();
-
-
-                // converting QVariant in QJSValue to QJSValue converts to QJSValue with type bool, int, etc.:
-                // recursion:
-        //        QJSValue v2 = cpp2js_QVariant(engine, v.toVariant());
-        //        if (v2.isVariant()) {
-        //            qWarning() &lt;&lt; "js2cpp_QVariant: cannot convert variant to appropriate type";
-        //            return QVariant();
-        //        }
-        //        else {
-        //            // convert this new QJSValue to a variant:
-        //            return js2cpp_QVariant(engine, v2);
-        //        }
-
-            }
-
-        }
-
-        QJSValue cpp2js_QObjectList(RJSApi&amp; handler, const QList&lt;QObject*&gt;&amp; v) {
-            return cpp2js_QList_QObject_ptr(handler, v);
-        }
-
-        QList&lt;QObject*&gt; js2cpp_QObjectList(RJSApi&amp; handler, const QJSValue&amp; v) {
-            return js2cpp_QList_QObject_ptr(handler, v);
-        }
-
-        QJSValue cpp2js_QObject(RJSApi&amp; handler, QObject* v) {
-            if (v==nullptr) {
-                return QJSValue(QJSValue::UndefinedValue);
-            }
-
-            if (v-&gt;isWidgetType()) {
-                QWidget* o = qobject_cast&lt;QWidget*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QWidget(handler, o);
-                }
-            }
-            {
-                QAction* o = qobject_cast&lt;QAction*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QAction(handler, o);
-                }
-            }
-            {
-                QFile* o = qobject_cast&lt;QFile*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QFile(handler, o);
-                }
-            }
-
-            {
-                QButtonGroup* o = qobject_cast&lt;QButtonGroup*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QButtonGroup(handler, o);
-                }
-            }
-            {
-                QLayout* o = qobject_cast&lt;QLayout*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QLayout(handler, o);
-                }
-            }
-
-            // don't return wrapper objects to prevent wrappers from being deleted in scripts (e.g. while destroying children):
-            {
-                RJSWrapperObj* o = qobject_cast&lt;RJSWrapperObj*&gt;(v);
-                if (o!=nullptr) {
-                    return QJSValue(QJSValue::UndefinedValue);
-                }
-            }
-            // TODO: add more QObject but not QWidget or QLayout types
-
-            if (v->metaObject()->className()!="QPropertyAnimation" &amp;&amp; v->metaObject()->className()!="QFormInternal::TranslationWatcher") {
-                qWarning() &lt;&lt; "cpp2js_QObject: not wrapping object:" &lt;&lt; v->objectName() &lt;&lt; " class: " &lt;&lt; v->metaObject()->className();
-            }
-
-            //QObject_Wrapper* ret = new QObject_Wrapper(handler, v, false);
-            //return handler-&gt;newQObject(ret);
-
-            /*
-            QObject_Wrapper* ret = new QObject_Wrapper(handler, v, false);
-            QJSEngine* engine = handler.getEngine();
-
-            // JS: new QObject('__GOT_WRAPPER__', wrapper)
-            QJSValue cl = engine-&gt;globalObject().property("QObject");
-            QJSValueList args;
-            args.append(QJSValue("__GOT_WRAPPER__"));
-            args.append(QJSValue(false));
-            args.append(engine-&gt;newQObject(ret));
-            QJSValue r = cl.callAsConstructor(args);
-
-            //engine-&gt;globalObject().setProperty("__wrapper__", engine-&gt;newQObject(ret));
-            //QJSValue r = engine-&gt;evaluate("new QObject('__GOT_WRAPPER__', __wrapper__);");
-
-            if (r.isError()) {
-                qWarning()
-                        &lt;&lt; "Uncaught exception in new QObject(wrapper)"
-                        &lt;&lt; ":" &lt;&lt; r.toString();
-            }
-            return r;
-            */
-
-            return QJSValue(QJSValue::UndefinedValue);
-        }
-
-        QObject* js2cpp_QObject_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
-            QJSValue jwrapper = getWrapperQJSValue(v);
-            if (jwrapper.isNumber() &amp;&amp; jwrapper.toInt()==0) {
-                // 0 is allowed for pointers (null ptr):
-                return nullptr;
-            }
-            if (!jwrapper.isQObject()) {
-                //qWarning() &lt;&lt; "js2cpp_QObject: not a QObject";
-                return nullptr;
-            }
-            QObject* obj = jwrapper.toQObject();
-            //QObject_Wrapper* wrapper = qobject_cast&lt;QObject_Wrapper*&gt;(obj);
-            RJSWrapper* wrapper = dynamic_cast&lt;RJSWrapper*&gt;(obj);
-            //QObject_Wrapper* wrapper = (QObject_Wrapper*)obj;
-            //QObject_Wrapper* wrapper = getWrapper&lt;QObject_Wrapper&gt;(v);
-            if (wrapper==nullptr) {
-                qWarning() &lt;&lt; "js2cpp_QObject: no wrapper";
-                return nullptr;
-            }
-            //return (QObject*)wrapper-&gt;getWrappedVoid();
-            return QObject_Wrapper::getWrappedBase(wrapper);
-
-            //return wrapper-&gt;getWrapped();
-        }
-
-        bool is_QObject_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
-            if (v.isUndefined() || v.isNull()) {
-                return acceptUndefined;
-            }
-            return v.isObject() || (v.isNumber() &amp;&amp; v.toInt()==0);
-        }
-
-        QJSValue cpp2js_QWidget(RJSApi&amp; handler, QWidget* v) {
-            {
-                QDockWidget* o = qobject_cast&lt;QDockWidget*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QDockWidget(handler, o);
-                }
-            }
-
-
-            // QComboBox:
-            {
-                QFontComboBox* o = qobject_cast&lt;QFontComboBox*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QFontComboBox(handler, o);
-                }
-            }
-            {
-                QComboBox* o = qobject_cast&lt;QComboBox*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QComboBox(handler, o);
-                }
-            }
-
-            // QLineEdit:
-            {
-                QLineEdit* o = qobject_cast&lt;QLineEdit*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QLineEdit(handler, o);
-                }
-            }
-
-
-            {
-                QSpinBox* o = qobject_cast&lt;QSpinBox*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QSpinBox(handler, o);
-                }
-            }
-
-            {
-                QMenu* o = qobject_cast&lt;QMenu*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QMenu(handler, o);
-                }
-            }
-
-            {
-                QLabel* o = qobject_cast&lt;QLabel*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QLabel(handler, o);
-                }
-            }
-            {
-                QToolButton* o = qobject_cast&lt;QToolButton*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QToolButton(handler, o);
-                }
-            }
-            {
-                QToolBar* o = qobject_cast&lt;QToolBar*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QToolBar(handler, o);
-                }
-            }
-            {
-                QPushButton* o = qobject_cast&lt;QPushButton*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QPushButton(handler, o);
-                }
-            }
-            {
-                QGroupBox* o = qobject_cast&lt;QGroupBox*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QGroupBox(handler, o);
-                }
-            }
-            {
-                QDialogButtonBox* o = qobject_cast&lt;QDialogButtonBox*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QDialogButtonBox(handler, o);
-                }
-            }
-            {
-                QSplitter* o = qobject_cast&lt;QSplitter*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QSplitter(handler, o);
-                }
-            }
-            {
-                QMdiSubWindow* o = qobject_cast&lt;QMdiSubWindow*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QMdiSubWindow(handler, o);
-                }
-            }
-            {
-                QMdiArea* o = qobject_cast&lt;QMdiArea*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QMdiArea(handler, o);
-                }
-            }
-            {
-                QScrollBar* o = qobject_cast&lt;QScrollBar*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QScrollBar(handler, o);
-                }
-            }
-            {
-                QPlainTextEdit* o = qobject_cast&lt;QPlainTextEdit*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QPlainTextEdit(handler, o);
-                }
-            }
-            {
-                QScrollArea* o = qobject_cast&lt;QScrollArea*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QScrollArea(handler, o);
-                }
-            }
-            {
-                QCheckBox* o = qobject_cast&lt;QCheckBox*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QCheckBox(handler, o);
-                }
-            }
-            {
-                QRadioButton* o = qobject_cast&lt;QRadioButton*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QRadioButton(handler, o);
-                }
-            }
-
-            // QTreeWidget:
-            {
-                QTreeWidget* o = qobject_cast&lt;QTreeWidget*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QTreeWidget(handler, o);
-                }
-            }
-
-            // QListWidget:
-            {
-                QListWidget* o = qobject_cast&lt;QListWidget*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QListWidget(handler, o);
-                }
-            }
-
-            // QTextEdit:
-            {
-                QTextBrowser* o = qobject_cast&lt;QTextBrowser*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QTextBrowser(handler, o);
-                }
-            }
-            {
-                QTextEdit* o = qobject_cast&lt;QTextEdit*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QTextEdit(handler, o);
-                }
-            }
-
-            {
-                QTabWidget* o = qobject_cast&lt;QTabWidget*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QTabWidget(handler, o);
-                }
-            }
-            {
-                QSlider* o = qobject_cast&lt;QSlider*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QSlider(handler, o);
-                }
-            }
-
-
-
-            {
-                QFrame* o = qobject_cast&lt;QFrame*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QFrame(handler, o);
-                }
-            }
-            {
-                QDialog* o = qobject_cast&lt;QDialog*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QDialog(handler, o);
-                }
-            }
-
-            {
-                QStatusBar* o = qobject_cast&lt;QStatusBar*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QStatusBar(handler, o);
-                }
-            }
-
-            {
-                QProgressBar* o = qobject_cast&lt;QProgressBar*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QProgressBar(handler, o);
-                }
-            }
-
-            {
-                QTabBar* o = qobject_cast&lt;QTabBar*&gt;(v);
-                if (o!=nullptr) {
-                    return cpp2js_QTabBar(handler, o);
-                }
-            }
-
-            // TODO: add more QWidget types
-
-            //QWidget_Wrapper* ret = new QWidget_Wrapper(handler, v, false);
-            //return handler-&gt;newQObject(ret);
-
-
-
-            QWidget_Wrapper* ret = nullptr;
-            if (v) {
-                // look up existing wrapper:
-                QVariant var = getWrapperProperty(handler, *v);
-                //qDebug() &lt;&lt; "existing wrapper QVariant:" &lt;&lt; var;
-                ret = var.value&lt;QWidget_Wrapper*&gt;();
-                if (ret==nullptr) {
-                    if (var.isValid()) {
-                        qWarning() &lt;&lt; "cpp2js_QWidget: invalid wrapper attached to QObject: " &lt;&lt; var.typeName();
-                        QObject_Wrapper* ow = var.value&lt;QObject_Wrapper*&gt;();
-                        delete ow;
-                    }
-                    // create new wrapper:
-                    //qDebug() &lt;&lt; "creating new wrapper for " &lt;&lt; (unsigned long long int)v;
-                    ret = new QWidget_Wrapper(handler, v, false);
-                    QVariant varNew = QVariant::fromValue(ret);
-                    setWrapperProperty(handler, *v, varNew);
-                }
-            }
-            else {
-                // wrapper for nullptr:
-                ret = new QWidget_Wrapper(handler, nullptr, false);
-            }
-
-
-
-            //QWidget_Wrapper* ret = new QWidget_Wrapper(handler, v);
-            QJSEngine* engine = handler.getEngine();
-
-            // JS: new QWidget('__GOT_WRAPPER__', wrapper)
-            QJSValue cl = engine-&gt;globalObject().property("QWidget");
-            QJSValueList args;
-            args.append(QJSValue("__GOT_WRAPPER__"));
-            args.append(QJSValue(false));
-            args.append(engine-&gt;newQObject(ret));
-            QJSValue r = cl.callAsConstructor(args);
-
-            //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
-            //QJSValue r = engine-&gt;evaluate("new QWidget('__GOT_WRAPPER__', wrapper);");
-            if (r.isError()) {
-                qWarning()
-                        &lt;&lt; "Uncaught exception in new QObject(wrapper)"
-                        &lt;&lt; ":" &lt;&lt; r.toString();
-            }
-            return r;
-        }
-
-        QWidget* js2cpp_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
-            QJSValue jwrapper = getWrapperQJSValue(v);
-            if (jwrapper.isNumber() &amp;&amp; jwrapper.toInt()==0) {
-                // 0 is allowed for pointers (null ptr):
-                return nullptr;
-            }
-            if (!jwrapper.isQObject()) {
-                //qWarning() &lt;&lt; "js2cpp_QWidget: not a QObject";
-                return nullptr;
-            }
-            QObject* obj = jwrapper.toQObject();
-            RJSWrapper* wrapper = dynamic_cast&lt;RJSWrapper*&gt;(obj);
-            //QWidget_Wrapper* wrapper = qobject_cast&lt;QWidget_Wrapper*&gt;(obj);
-            //QWidget_Wrapper* wrapper = (QWidget_Wrapper*)obj;
-            //QWidget_Wrapper* wrapper = getWrapper&lt;QWidget_Wrapper&gt;(v);
-            if (wrapper==nullptr) {
-                qWarning() &lt;&lt; "js2cpp_QWidget: no wrapper";
-                return nullptr;
-            }
-            //return (QWidget*)wrapper-&gt;getWrappedVoid();
-            //return wrapper-&gt;getWrapped();
-            return QWidget_Wrapper::getWrappedBase(wrapper);
-        }
-
-        bool is_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
-            if (v.isUndefined() || v.isNull()) {
-                return acceptUndefined;
-            }
-            if (v.isNumber()) {
-                return v.toInt()==0;
-            }
-            //return v.isObject() || (v.isNumber() &amp;&amp; v.toInt()==0);
-            //QJSValue fun = v.property("getObjectType");
-            QJSValue fun = v.property("isOfObjectType");
-            if (fun.isUndefined() || !fun.isCallable()) {
-                //qDebug() &lt;&lt; "cannot get type of JS object";
-                //engine-&gt;evaluate("console.trace()");
-                //return v.isObject();
-                return false;
-            }
-            return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::QWidget_Type)).toBool();
-            //return fun.call(RJSType::QWidget_Type);
-            //return fun.call().toInt()==RJSType::QWidget_Type;
-        }
-
-        QJSValue cpp2js_QDomDocument_ParseResult(RJSApi&amp; handler, QDomDocument::ParseResult v) {
-            QJSEngine* engine = handler.getEngine();
-            QJSValue ret = engine->newObject();
-            ret.setProperty("errorColumn", (int)v.errorColumn);
-            ret.setProperty("errorLine", (int)v.errorLine);
-            ret.setProperty("errorMessage", v.errorMessage);
-            ret.setProperty("result", (bool)v);
-            return ret;
-        }
-
-        QJSValue cpp2js_QList_QPair_QString_QString(RJSApi&amp; handler, const QList&lt;QPair&lt;QString,QString&gt;&gt;&amp; v) {
-            QJSEngine* engine = handler.getEngine();
-            QJSValue ret = engine->newArray((uint)v.length());
-            for (int i=0; i&lt;v.length(); i++) {
-                ret.setProperty((quint32)i, cpp2js_QPair_QString_QString(handler, v.at(i)));
-            }
-            return ret;
-        }
-
-        QList&lt;QPair&lt;QString,QString&gt;&gt; js2cpp_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v) {
-            QList&lt;QPair&lt;QString,QString&gt;&gt; ret;
-
-            if (!v.isArray()) {
-                qWarning() &lt;&lt; "js2cpp_QList_QPair_QString,QString: value is not an array";
-                return ret;
-            }
-
-            const int length = v.property("length").toInt();
-            for (int i=0; i&lt;length; ++i) {
-                ret.append(js2cpp_QPair_QString_QString(handler, v.property(i)));
-            }
-
-            return ret;
-        }
-
-        bool is_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
-            if (v.isUndefined() || v.isNull()) {
-                return acceptUndefined;
-            }
-            return v.isArray();
-        }
-      </xsl:if>
-
+      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+        QList&lt;RJSDowncaster_<xsl:value-of select="@name" />*&gt; RJSHelper::downcasters_<xsl:value-of select="@name" />;
+      </xsl:for-each>
+
+      /**
+       * \return existing wrapper object for the given object in the context of the given engine.
+       */
+      QVariant getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj) {
+          QJSEngine* engine = handler.getEngine();
+          return obj.property((const char*)QString("%1__wrapper__").arg(engine-&gt;objectName()).toUtf8());
+      }
+
+      /**
+       * Attaches the script wrapper to the original QObject as a property in the context of the given engine.
+       */
+      void setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper) {
+          QJSEngine* engine = handler.getEngine();
+          obj.setProperty((const char*)QString("%1__wrapper__").arg(engine-&gt;objectName()).toUtf8(), wrapper);
+      }
+
+      QJSValue getWrapperQJSValue(const QJSValue&amp; v) {
+          if (v.prototype().hasOwnProperty("__WRAPPER__")) {
+              return v.prototype();
+          }
+          else {
+              return v;
+          }
+      }
+
+      QObject* getWrapperQObject(const QJSValue&amp; v) {
+          QJSValue w = getWrapperQJSValue(v);
+          if (!w.isQObject()) {
+              return nullptr;
+          }
+          return w.toQObject();
+      }
+
+      RJSWrapper* getWrapperRJSWrapper(const QJSValue&amp; v) {
+          return dynamic_cast&lt;RJSWrapper*&gt;(getWrapperQObject(v));
+      }
+
+      //
+      // custom types (manual implementation):
+      //
+
+      QJSValue RJSHelper::cpp2js_bool(RJSApi&amp; handler, bool v) {
+          return QJSValue(v);
+      }
+
+      bool RJSHelper::js2cpp_bool(RJSApi&amp; handler, const QJSValue&amp; v) {
+          if (!v.isBool() &amp;&amp; !v.isNumber()) {
+              return false;
+          }
+          return v.toBool();
+      }
+
+      bool RJSHelper::is_bool(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+
+          // 20221122: don't allow numbers in test to distinguish between bool / int in function overrides (e.g. RAddObjectsOperation::addObject):
+          // || v.isNumber();
+
+          return v.isBool();
+      }
+
+      QString RJSHelper::js2cpp_char_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
+          if (v.isNumber() &amp;&amp; v.toInt()==0) {
+              // JS can pass 0 for null string:
+              return QString();
+          }
+
+          return v.toString();
+      }
+
+      bool RJSHelper::is_char_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          // accept 0 for char pointer (null string):
+          return v.isString() || (v.isNumber() &amp;&amp; v.toInt()==0);
+      }
+
+      QJSValue RJSHelper::cpp2js_char(RJSApi&amp; handler, const char* v) {
+          return QJSValue(*v);
+      }
+
+      QJSValue RJSHelper::cpp2js_QVariant(RJSApi&amp; handler, const QVariant&amp; v) {
+          if (v.isNull()) {
+              return QJSValue();
+          }
+
+          if (v.userType()==QMetaType::QVariantList) {
+              // convert QVariant list to QJSValue array:
+              QList&lt;QVariant&gt; vList = v.toList();
+              QJSEngine* engine = handler.getEngine();
+              QJSValue ret = engine-&gt;newArray();
+              for (int i=0; i&lt;vList.length(); i++) {
+                  QVariant vItem = vList[i];
+                  ret.setProperty(i, RJSHelper::cpp2js_QVariant(handler, vItem));
+              }
+              return ret;
+          }
+
+          //QVariant_Wrapper* ret = new QVariant_Wrapper(handler, new QVariant(v), true);
+          //QVariant* v = ret-&gt;getWrapped();
+          //if (v!=nullptr) {
+              switch (v.userType()) {
+              case QMetaType::Bool:
+                  return QJSValue(v.toBool());
+              case QMetaType::Int:
+                  return QJSValue(v.toInt());
+      //        case QMetaType::LongLong:
+      //            return QJSValue(v.toLongLong());
+              case QMetaType::UInt:
+                  return QJSValue(v.toUInt());
+      //        case QMetaType::ULongLong:
+      //            return QJSValue(v.toULongLong());
+              case QMetaType::Double:
+                  return QJSValue(v.toDouble());
+              case QMetaType::QString:
+                  return QJSValue(v.toString());
+
+              case QMetaType::QByteArray:
+                  return RJSHelper::cpp2js_QByteArray(handler, v.toByteArray());
+              case QMetaType::QChar:
+                  return RJSHelper::cpp2js_QChar(handler, v.toChar());
+              case QMetaType::QDate:
+                  return RJSHelper::cpp2js_QDate(handler, v.toDate());
+              case QMetaType::QDateTime:
+                  return RJSHelper::cpp2js_QDateTime(handler, v.toDateTime());
+              case QMetaType::QEasingCurve:
+                  return RJSHelper::cpp2js_QEasingCurve(handler, v.toEasingCurve());
+      //        case QMetaType::QJsonArray:
+      //            return RJSHelper::cpp2js_QJsonArray(handler, v.toJsonArray());
+      //        case QMetaType::QJsonDocument:
+      //            return RJSHelper::cpp2js_QJsonDocument(handler, v.toJsonDocument());
+      //        case QMetaType::QJsonObject:
+      //            return RJSHelper::cpp2js_QJsonObject(handler, v.toJsonObject());
+      //        case QMetaType::QJsonValue:
+      //            return RJSHelper::cpp2js_QJsonValue(handler, v.toJsonValue());
+              case QMetaType::QLine:
+                  return RJSHelper::cpp2js_QLine(handler, v.toLine());
+              case QMetaType::QLineF:
+                  return RJSHelper::cpp2js_QLineF(handler, v.toLineF());
+      //        case QMetaType::QVariantList:
+      //            return RJSHelper::cpp2js_QVariantList(handler, v.toList());
+              case QMetaType::QLocale:
+                  return RJSHelper::cpp2js_QLocale(handler, v.toLocale());
+              case QMetaType::QModelIndex:
+                  return RJSHelper::cpp2js_QModelIndex(handler, v.toModelIndex());
+      //        case QMetaType::QPersistentModelIndex:
+      //            return RJSHelper::cpp2js_QPersistentModelIndex(handler, v.toPersistentModelIndex());
+              case QMetaType::QPoint:
+                  return RJSHelper::cpp2js_QPoint(handler, v.toPoint());
+              case QMetaType::QPointF:
+                  return RJSHelper::cpp2js_QPointF(handler, v.toPointF());
+              case QMetaType::QRect:
+                  return RJSHelper::cpp2js_QRect(handler, v.toRect());
+              case QMetaType::QRectF:
+                  return RJSHelper::cpp2js_QRectF(handler, v.toRectF());
+              case QMetaType::QRegularExpression:
+                  return RJSHelper::cpp2js_QRegularExpression(handler, v.toRegularExpression());
+              case QMetaType::QSize:
+                  return RJSHelper::cpp2js_QSize(handler, v.toSize());
+              case QMetaType::QSizeF:
+                  return RJSHelper::cpp2js_QSizeF(handler, v.toSizeF());
+              case QMetaType::QTime:
+                  return RJSHelper::cpp2js_QTime(handler, v.toTime());
+              case QMetaType::QUrl:
+                  return RJSHelper::cpp2js_QUrl(handler, v.toUrl());
+              case QMetaType::QColor:
+                  return RJSHelper::cpp2js_QColor(handler, v.value&lt;QColor&gt;());
+              case QMetaType::QPalette:
+                  return RJSHelper::cpp2js_QPalette(handler, v.value&lt;QPalette&gt;());
+      //        case QMetaType::QUuid:
+      //            return RJSHelper::cpp2js_QUuid(handler, v.toUuid());
+
+              // TODO: add more conversions:
+              default:
+                  break;
+              }
+          //}
+
+          if (v.canConvert&lt;QFont&gt;()) {
+              return RJSHelper::cpp2js_QFont(handler, v.value&lt;QFont&gt;());
+          }
+
+          if (v.canConvert&lt;QPushButton*&gt;()) {
+              return RJSHelper::cpp2js_QPushButton(handler, v.value&lt;QPushButton*&gt;());
+          }
+
+          if (v.canConvert&lt;QList&lt;double&gt; &gt;()) {
+              return RJSHelper::cpp2js_QList_double(handler, v.value&lt;QList&lt;double&gt; &gt;());
+          }
+          if (v.canConvert&lt;QStringList&gt;()) {
+              return RJSHelper::cpp2js_QStringList(handler, v.value&lt;QStringList&gt;());
+          }
+          if (v.canConvert&lt;QKeySequence&gt;()) {
+              return RJSHelper::cpp2js_QKeySequence(handler, v.value&lt;QKeySequence&gt;());
+          }
+
+          qWarning() &lt;&lt; "RJSHelper::cpp2js_QVariant: unhandled variant type: " &lt;&lt; v.userType() &lt;&lt; " / " &lt;&lt; v.metaType().name();
+
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of QVariant object:
+          QVariant_Wrapper* ret = new QVariant_Wrapper(handler, new QVariant(v), true);
+          //return engine-&gt;newQObject(ret);
+
+          // JS: new QVariant('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine-&gt;globalObject().property("QVariant");
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine-&gt;newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
+          //QJSValue r = engine-&gt;evaluate("new QVariant('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      &lt;&lt; "Uncaught exception in new QVariant(wrapper)"
+                      &lt;&lt; ":" &lt;&lt; r.toString();
+          }
+          return r;
+      }
+
+      bool RJSHelper::is_QVariant(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              // make sure a missing parameter is not counted as a valid variant:
+              // e.g. QComboBox::addItem(icon, text, userData) != QComboBox::addItem(text, userData)
+              return acceptUndefined;
+          }
+
+          return true;
+      }
+
+      QVariant RJSHelper::js2cpp_QVariant(RJSApi&amp; handler, const QJSValue&amp; v) {
+          if (v.isNumber()) {
+              // value is number:
+              return QVariant(v.toNumber());
+          }
+          if (v.isBool()) {
+              // value is bool:
+              return QVariant(v.toBool());
+          }
+          if (v.isString()) {
+              // value is string:
+              return QVariant(v.toString());
+          }
+          if (v.isArray()) {
+              // value is an array:
+              QList&lt;QVariant&gt; variantList;
+              const int length = v.property("length").toInt();
+              for (int i = 0; i &lt; length; ++i) {
+                  variantList.append(RJSHelper::js2cpp_QVariant(handler, v.property(i)));
+              }
+              return QVariant(variantList);
+          }
+
+          RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+          if (wrapper==nullptr) {
+              qWarning() &lt;&lt; "RJSHelper::js2cpp_QVariant: no wrapper";
+              return QVariant();
+          }
+
+          // value is QSize, QUrl, ...:
+
+          switch (wrapper-&gt;getWrappedType()) {
+      //    case RJSType::QPersistentModelIndex_Type:
+      //        return QVariant(RJSHelper::js2cpp_QPersistentModelIndex(handler, v));
+          case RJSType::QModelIndex_Type:
+              return QVariant(RJSHelper::js2cpp_QModelIndex(handler, v));
+      //    case RJSType::QJsonDocument_Type:
+      //        return QVariant(RJSHelper::js2cpp_QJsonDocument(handler, v));
+      //    case RJSType::QJsonArray_Type:
+      //        return QVariant(RJSHelper::js2cpp_QJsonArray(handler, v));
+      //    case RJSType::QJsonObject_Type:
+      //        return QVariant(RJSHelper::js2cpp_QJsonObject(handler, v));
+      //    case RJSType::QJsonValue_Type:
+      //        return QVariant(RJSHelper::js2cpp_QJsonValue(handler, v));
+          case RJSType::QUrl_Type:
+              return QVariant(RJSHelper::js2cpp_QUrl(handler, v));
+      //    case RJSType::QUuid_Type:
+      //        return QVariant(RJSHelper::js2cpp_QUuid(handler, v));
+      //    case RJSType::QEasingCurve_Type:
+      //        return QVariant(RJSHelper::js2cpp_QEasingCurve(handler, v));
+          case RJSType::QRegularExpression_Type:
+              return QVariant(RJSHelper::js2cpp_QRegularExpression(handler, v));
+          case RJSType::QLocale_Type:
+              return QVariant(RJSHelper::js2cpp_QLocale(handler, v));
+          case RJSType::QRectF_Type:
+              return QVariant(RJSHelper::js2cpp_QRectF(handler, v));
+          case RJSType::QRect_Type:
+              return QVariant(RJSHelper::js2cpp_QRect(handler, v));
+          case RJSType::QLineF_Type:
+              return QVariant(RJSHelper::js2cpp_QLineF(handler, v));
+          case RJSType::QLine_Type:
+              return QVariant(RJSHelper::js2cpp_QLine(handler, v));
+          case RJSType::QPointF_Type:
+              return QVariant(RJSHelper::js2cpp_QPointF(handler, v));
+          case RJSType::QPoint_Type:
+              return QVariant(RJSHelper::js2cpp_QPoint(handler, v));
+          case RJSType::QSizeF_Type:
+              return QVariant(RJSHelper::js2cpp_QSizeF(handler, v));
+          case RJSType::QSize_Type:
+              return QVariant(RJSHelper::js2cpp_QSize(handler, v));
+      //    case RJSType::QHash&lt;QString, QVariant&gt;_Type:
+      //        return QVariant(RJSHelper::js2cpp_QHash&lt;QString, QVariant&gt;(handler, v));
+      //    case RJSType::QMap&lt;QString, QVariant&gt;_Type:
+      //        return QVariant(RJSHelper::js2cpp_QMap&lt;QString, QVariant&gt;(handler, v));
+      //    case RJSType::QList&lt;QVariant&gt;_Type:
+      //        return QVariant(RJSHelper::js2cpp_QList&lt;QVariant&gt;(handler, v));
+          case RJSType::QDateTime_Type:
+              return QVariant(RJSHelper::js2cpp_QDateTime(handler, v));
+          case RJSType::QTime_Type:
+              return QVariant(RJSHelper::js2cpp_QTime(handler, v));
+          case RJSType::QDate_Type:
+              return QVariant(RJSHelper::js2cpp_QDate(handler, v));
+      //    case RJSType::QChar_Type:
+      //        return QVariant(RJSHelper::js2cpp_QChar(handler, v));
+      //    case RJSType::QStringList_Type:
+      //        return QVariant(RJSHelper::js2cpp_QStringList(handler, v));
+      //    case RJSType::QLatin1String_Type:
+      //        return QVariant(RJSHelper::js2cpp_QLatin1String(handler, v));
+      //    case RJSType::QString_Type:
+      //        return QVariant(RJSHelper::js2cpp_QString(handler, v));
+      //    case RJSType::QBitArray_Type:
+      //        return QVariant(RJSHelper::js2cpp_QBitArray(handler, v));
+          case RJSType::QByteArray_Type:
+              return QVariant(RJSHelper::js2cpp_QByteArray(handler, v));
+
+          case RJSType::QWidget_Type:
+              return QVariant::fromValue(RJSHelper::js2cpp_QWidget_ptr(handler, v));
+          case RJSType::QToolBar_Type:
+              return QVariant::fromValue(RJSHelper::js2cpp_QToolBar_ptr(handler, v));
+          case RJSType::QPushButton_Type:
+              return QVariant::fromValue(RJSHelper::js2cpp_QPushButton_ptr(handler, v));
+
+          case RJSType::QPalette_Type:
+              return QVariant::fromValue(RJSHelper::js2cpp_QPalette(handler, v));
+
+          case RJSType::QKeySequence_Type:
+              return QVariant::fromValue(RJSHelper::js2cpp_QKeySequence(handler, v));
+          case RJSType::QFont_Type:
+              return QVariant::fromValue(RJSHelper::js2cpp_QFont(handler, v));
+
+          case RJSType::QVariant_Type:
+              {
+                  QVariant var = *(QVariant*)wrapper-&gt;getWrappedVoid();
+                  qDebug() &lt;&lt; "variant:" &lt;&lt; var;
+                  return var;
+              }
+
+          default:
+              {
+                  QVariant var = *(QVariant*)wrapper->getWrappedVoid();
+                  if (var.canConvert&lt;QList&lt;QKeySequence&gt; &gt;()) {
+                      return QVariant::fromValue(var.value&lt;QList&lt;QKeySequence&gt; &gt;());
+                  }
+              }
+
+              qWarning() &lt;&lt; "unhandled QVariant type:" &lt;&lt; wrapper-&gt;getWrappedType();
+              handler.trace();
+              return *(QVariant*)wrapper-&gt;getWrappedVoid();
+
+
+              // converting QVariant in QJSValue to QJSValue converts to QJSValue with type bool, int, etc.:
+              // recursion:
+      //        QJSValue v2 = RJSHelper::cpp2js_QVariant(engine, v.toVariant());
+      //        if (v2.isVariant()) {
+      //            qWarning() &lt;&lt; "RJSHelper::js2cpp_QVariant: cannot convert variant to appropriate type";
+      //            return QVariant();
+      //        }
+      //        else {
+      //            // convert this new QJSValue to a variant:
+      //            return RJSHelper::js2cpp_QVariant(engine, v2);
+      //        }
+
+          }
+
+      }
+
+      QJSValue RJSHelper::cpp2js_QObjectList(RJSApi&amp; handler, const QList&lt;QObject*&gt;&amp; v) {
+          return RJSHelper::cpp2js_QList_QObject_ptr(handler, v);
+      }
+
+      QList&lt;QObject*&gt; RJSHelper::js2cpp_QObjectList(RJSApi&amp; handler, const QJSValue&amp; v) {
+          return RJSHelper::js2cpp_QList_QObject_ptr(handler, v);
+      }
+
+      QJSValue RJSHelper::cpp2js_QObject(RJSApi&amp; handler, QObject* v) {
+          if (v==nullptr) {
+              return QJSValue(QJSValue::UndefinedValue);
+          }
+
+          if (v-&gt;isWidgetType()) {
+              QWidget* o = qobject_cast&lt;QWidget*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QWidget(handler, o);
+              }
+          }
+          {
+              QAction* o = qobject_cast&lt;QAction*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QAction(handler, o);
+              }
+          }
+          {
+              QFile* o = qobject_cast&lt;QFile*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QFile(handler, o);
+              }
+          }
+
+          {
+              QButtonGroup* o = qobject_cast&lt;QButtonGroup*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QButtonGroup(handler, o);
+              }
+          }
+          {
+              QLayout* o = qobject_cast&lt;QLayout*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QLayout(handler, o);
+              }
+          }
+
+          // don't return wrapper objects to prevent wrappers from being deleted in scripts (e.g. while destroying children):
+          {
+              RJSWrapperObj* o = qobject_cast&lt;RJSWrapperObj*&gt;(v);
+              if (o!=nullptr) {
+                  return QJSValue(QJSValue::UndefinedValue);
+              }
+          }
+          // TODO: add more QObject but not QWidget or QLayout types
+
+          if (v->metaObject()->className()!="QPropertyAnimation" &amp;&amp; v->metaObject()->className()!="QFormInternal::TranslationWatcher") {
+              qWarning() &lt;&lt; "RJSHelper::cpp2js_QObject: not wrapping object:" &lt;&lt; v->objectName() &lt;&lt; " class: " &lt;&lt; v->metaObject()->className();
+          }
+
+          //QObject_Wrapper* ret = new QObject_Wrapper(handler, v, false);
+          //return handler-&gt;newQObject(ret);
+
+          /*
+          QObject_Wrapper* ret = new QObject_Wrapper(handler, v, false);
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QObject('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine-&gt;globalObject().property("QObject");
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine-&gt;newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine-&gt;globalObject().setProperty("__wrapper__", engine-&gt;newQObject(ret));
+          //QJSValue r = engine-&gt;evaluate("new QObject('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      &lt;&lt; "Uncaught exception in new QObject(wrapper)"
+                      &lt;&lt; ":" &lt;&lt; r.toString();
+          }
+          return r;
+          */
+
+          return QJSValue(QJSValue::UndefinedValue);
+      }
+
+      QObject* RJSHelper::js2cpp_QObject_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() &amp;&amp; jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() &lt;&lt; "RJSHelper::js2cpp_QObject: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          //QObject_Wrapper* wrapper = qobject_cast&lt;QObject_Wrapper*&gt;(obj);
+          RJSWrapper* wrapper = dynamic_cast&lt;RJSWrapper*&gt;(obj);
+          //QObject_Wrapper* wrapper = (QObject_Wrapper*)obj;
+          //QObject_Wrapper* wrapper = getWrapper&lt;QObject_Wrapper&gt;(v);
+          if (wrapper==nullptr) {
+              qWarning() &lt;&lt; "RJSHelper::js2cpp_QObject: no wrapper";
+              return nullptr;
+          }
+          //return (QObject*)wrapper-&gt;getWrappedVoid();
+          return QObject_Wrapper::getWrappedBase(wrapper);
+
+          //return wrapper-&gt;getWrapped();
+      }
+
+      bool RJSHelper::is_QObject_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isObject() || (v.isNumber() &amp;&amp; v.toInt()==0);
+      }
+
+      QJSValue RJSHelper::cpp2js_QWidget(RJSApi&amp; handler, QWidget* v) {
+          {
+              QDockWidget* o = qobject_cast&lt;QDockWidget*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QDockWidget(handler, o);
+              }
+          }
+
+
+          // QComboBox:
+          {
+              QFontComboBox* o = qobject_cast&lt;QFontComboBox*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QFontComboBox(handler, o);
+              }
+          }
+          {
+              QComboBox* o = qobject_cast&lt;QComboBox*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QComboBox(handler, o);
+              }
+          }
+
+          // QLineEdit:
+          {
+              QLineEdit* o = qobject_cast&lt;QLineEdit*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QLineEdit(handler, o);
+              }
+          }
+
+
+          {
+              QSpinBox* o = qobject_cast&lt;QSpinBox*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QSpinBox(handler, o);
+              }
+          }
+
+          {
+              QMenu* o = qobject_cast&lt;QMenu*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QMenu(handler, o);
+              }
+          }
+
+          {
+              QLabel* o = qobject_cast&lt;QLabel*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QLabel(handler, o);
+              }
+          }
+          {
+              QToolButton* o = qobject_cast&lt;QToolButton*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QToolButton(handler, o);
+              }
+          }
+          {
+              QToolBar* o = qobject_cast&lt;QToolBar*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QToolBar(handler, o);
+              }
+          }
+          {
+              QPushButton* o = qobject_cast&lt;QPushButton*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QPushButton(handler, o);
+              }
+          }
+          {
+              QGroupBox* o = qobject_cast&lt;QGroupBox*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QGroupBox(handler, o);
+              }
+          }
+          {
+              QDialogButtonBox* o = qobject_cast&lt;QDialogButtonBox*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QDialogButtonBox(handler, o);
+              }
+          }
+          {
+              QSplitter* o = qobject_cast&lt;QSplitter*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QSplitter(handler, o);
+              }
+          }
+          {
+              QMdiSubWindow* o = qobject_cast&lt;QMdiSubWindow*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QMdiSubWindow(handler, o);
+              }
+          }
+          {
+              QMdiArea* o = qobject_cast&lt;QMdiArea*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QMdiArea(handler, o);
+              }
+          }
+          {
+              QScrollBar* o = qobject_cast&lt;QScrollBar*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QScrollBar(handler, o);
+              }
+          }
+          {
+              QPlainTextEdit* o = qobject_cast&lt;QPlainTextEdit*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QPlainTextEdit(handler, o);
+              }
+          }
+          {
+              QScrollArea* o = qobject_cast&lt;QScrollArea*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QScrollArea(handler, o);
+              }
+          }
+          {
+              QCheckBox* o = qobject_cast&lt;QCheckBox*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QCheckBox(handler, o);
+              }
+          }
+          {
+              QRadioButton* o = qobject_cast&lt;QRadioButton*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QRadioButton(handler, o);
+              }
+          }
+
+          // QTreeWidget:
+          {
+              QTreeWidget* o = qobject_cast&lt;QTreeWidget*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QTreeWidget(handler, o);
+              }
+          }
+
+          // QListWidget:
+          {
+              QListWidget* o = qobject_cast&lt;QListWidget*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QListWidget(handler, o);
+              }
+          }
+
+          // QTextEdit:
+          {
+              QTextBrowser* o = qobject_cast&lt;QTextBrowser*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QTextBrowser(handler, o);
+              }
+          }
+          {
+              QTextEdit* o = qobject_cast&lt;QTextEdit*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QTextEdit(handler, o);
+              }
+          }
+
+          {
+              QTabWidget* o = qobject_cast&lt;QTabWidget*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QTabWidget(handler, o);
+              }
+          }
+          {
+              QSlider* o = qobject_cast&lt;QSlider*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QSlider(handler, o);
+              }
+          }
+
+
+
+          {
+              QFrame* o = qobject_cast&lt;QFrame*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QFrame(handler, o);
+              }
+          }
+          {
+              QDialog* o = qobject_cast&lt;QDialog*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QDialog(handler, o);
+              }
+          }
+
+          {
+              QStatusBar* o = qobject_cast&lt;QStatusBar*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QStatusBar(handler, o);
+              }
+          }
+
+          {
+              QProgressBar* o = qobject_cast&lt;QProgressBar*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QProgressBar(handler, o);
+              }
+          }
+
+          {
+              QTabBar* o = qobject_cast&lt;QTabBar*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QTabBar(handler, o);
+              }
+          }
+
+          for (int i=0; i&lt;downcasters_QWidget.length(); i++) {
+              QJSValue dc = downcasters_QWidget[i]-&gt;downcast(handler, v);
+              if (!dc.isUndefined()) {
+                  return dc;
+              }
+          }
+
+          // TODO: add more QWidget types
+
+          //QWidget_Wrapper* ret = new QWidget_Wrapper(handler, v, false);
+          //return handler-&gt;newQObject(ret);
+
+
+
+          QWidget_Wrapper* ret = nullptr;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() &lt;&lt; "existing wrapper QVariant:" &lt;&lt; var;
+              ret = var.value&lt;QWidget_Wrapper*&gt;();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() &lt;&lt; "RJSHelper::cpp2js_QWidget: invalid wrapper attached to QObject: " &lt;&lt; var.typeName();
+                      QObject_Wrapper* ow = var.value&lt;QObject_Wrapper*&gt;();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() &lt;&lt; "creating new wrapper for " &lt;&lt; (unsigned long long int)v;
+                  ret = new QWidget_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QWidget_Wrapper(handler, nullptr, false);
+          }
+
+
+
+          //QWidget_Wrapper* ret = new QWidget_Wrapper(handler, v);
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QWidget('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine-&gt;globalObject().property("QWidget");
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine-&gt;newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
+          //QJSValue r = engine-&gt;evaluate("new QWidget('__GOT_WRAPPER__', wrapper);");
+          if (r.isError()) {
+              qWarning()
+                      &lt;&lt; "Uncaught exception in new QObject(wrapper)"
+                      &lt;&lt; ":" &lt;&lt; r.toString();
+          }
+          return r;
+      }
+
+      QWidget* RJSHelper::js2cpp_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() &amp;&amp; jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() &lt;&lt; "RJSHelper::js2cpp_QWidget: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast&lt;RJSWrapper*&gt;(obj);
+          //QWidget_Wrapper* wrapper = qobject_cast&lt;QWidget_Wrapper*&gt;(obj);
+          //QWidget_Wrapper* wrapper = (QWidget_Wrapper*)obj;
+          //QWidget_Wrapper* wrapper = getWrapper&lt;QWidget_Wrapper&gt;(v);
+          if (wrapper==nullptr) {
+              qWarning() &lt;&lt; "RJSHelper::js2cpp_QWidget: no wrapper";
+              return nullptr;
+          }
+          //return (QWidget*)wrapper-&gt;getWrappedVoid();
+          //return wrapper-&gt;getWrapped();
+          return QWidget_Wrapper::getWrappedBase(wrapper);
+      }
+
+      bool RJSHelper::is_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          //return v.isObject() || (v.isNumber() &amp;&amp; v.toInt()==0);
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() &lt;&lt; "cannot get type of JS object";
+              //engine-&gt;evaluate("console.trace()");
+              //return v.isObject();
+              return false;
+          }
+          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::QWidget_Type)).toBool();
+          //return fun.call(RJSType::QWidget_Type);
+          //return fun.call().toInt()==RJSType::QWidget_Type;
+      }
+
+      QJSValue RJSHelper::cpp2js_QDomDocument_ParseResult(RJSApi&amp; handler, QDomDocument::ParseResult v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newObject();
+          ret.setProperty("errorColumn", (int)v.errorColumn);
+          ret.setProperty("errorLine", (int)v.errorLine);
+          ret.setProperty("errorMessage", v.errorMessage);
+          ret.setProperty("result", (bool)v);
+          return ret;
+      }
+
+      QJSValue RJSHelper::cpp2js_QList_QPair_QString_QString(RJSApi&amp; handler, const QList&lt;QPair&lt;QString,QString&gt;&gt;&amp; v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i&lt;v.length(); i++) {
+              ret.setProperty((quint32)i, RJSHelper::cpp2js_QPair_QString_QString(handler, v.at(i)));
+          }
+          return ret;
+      }
+
+      QList&lt;QPair&lt;QString,QString&gt;&gt; RJSHelper::js2cpp_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v) {
+          QList&lt;QPair&lt;QString,QString&gt;&gt; ret;
+
+          if (!v.isArray()) {
+              qWarning() &lt;&lt; "RJSHelper::js2cpp_QList_QPair_QString,QString: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i&lt;length; ++i) {
+              ret.append(RJSHelper::js2cpp_QPair_QString_QString(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
 
       <xsl:apply-templates />
 
-      <xsl:if test="$pluginid=''">
-        QJSValue cpp2js_QList_QAction(RJSApi&amp; handler, const QList&lt;QAction*&gt;&amp; v) { return QJSValue(); }
+      QJSValue RJSHelper::cpp2js_QList_QAction(RJSApi&amp; handler, const QList&lt;QAction*&gt;&amp; v) { return QJSValue(); }
 
-        QList&lt;QAction*&gt; js2cpp_QList_QAction(RJSApi&amp; handler, const QJSValue&amp; v) { return QList&lt;QAction*&gt;(); }
-      </xsl:if>
+      QList&lt;QAction*&gt; RJSHelper::js2cpp_QList_QAction(RJSApi&amp; handler, const QJSValue&amp; v) { return QList&lt;QAction*&gt;(); }
     </xsl:when>
   </xsl:choose>
 </xsl:template>
@@ -1269,24 +1172,24 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$para" /> v);
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$para" /> v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func"/>(RJSApi&amp; handler, <xsl:value-of select="$para"/> v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func"/>(RJSApi&amp; handler, <xsl:value-of select="$para"/> v) {
         return QJSValue(<xsl:value-of select="$cast"/>v<xsl:value-of select="$conv"/>);
       }
 
-      <xsl:value-of select="$type"/> js2cpp_<xsl:value-of select="$func"/>(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type"/> RJSHelper::js2cpp_<xsl:value-of select="$func"/>(RJSApi&amp; handler, const QJSValue&amp; v) {
         if (!v.<xsl:value-of select="$test"/>) {
           return <xsl:value-of select="$def"/>;
         }
         return <xsl:value-of select="$castRet"/>v.<xsl:value-of select="$convRet"/>;
       }
 
-      bool is_<xsl:value-of select="$func"/>(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func"/>(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
@@ -1350,13 +1253,13 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v);
-      <xsl:value-of select="$sharedPointerType" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v);
+      static <xsl:value-of select="$sharedPointerType" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
@@ -1375,7 +1278,7 @@
           return cl.callAsConstructor(args);
       }
 
-      <xsl:value-of select="$sharedPointerType" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$sharedPointerType" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: no wrapper";
@@ -1405,7 +1308,7 @@
           }
       }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -1459,13 +1362,13 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v);
-      <xsl:value-of select="$sharedPointerType" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v);
+      static <xsl:value-of select="$sharedPointerType" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
@@ -1484,7 +1387,7 @@
           return cl.callAsConstructor(args);
       }
 
-      <xsl:value-of select="$sharedPointerType" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$sharedPointerType" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: no wrapper";
@@ -1518,7 +1421,7 @@
           }
       }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -1554,14 +1457,14 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />* v);
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />* v);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />* v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />* v) {
           QJSEngine* engine = handler.getEngine();
           <xsl:value-of select="$type" />_Wrapper* ret;
 
@@ -1595,7 +1498,7 @@
           return r;
       }
 
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           // wrapper takes ownership of the <xsl:value-of select="$type" /> object:
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, new <xsl:value-of select="$type" />(v), true);
@@ -1622,7 +1525,7 @@
           return r;
       }
 
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           /*
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
@@ -1658,28 +1561,21 @@
           return *ret;
       }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
           //QJSValue fun = v.property("getType");
           QJSValue fun = v.property("isOfObjectType");
           if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() &lt;&lt; "is_<xsl:value-of select="$func" />: cannot get type of JS object";
+              //qDebug() &lt;&lt; "RJSHelper::is_<xsl:value-of select="$func" />: cannot get type of JS object";
               //engine-&gt;evaluate("console.trace()");
               //return v.isObject();
               // type is for example string, number, etc.:
               return false;
           }
 
-          <xsl:choose>
-            <xsl:when test="not($pluginid='')">
-              return fun.call(QJSValueList() &lt;&lt; QJSValue(<xsl:value-of select="$typeidbase" />)).toBool();
-            </xsl:when>
-            <xsl:otherwise>
-              return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::<xsl:value-of select="$func" />_Type)).toBool();
-            </xsl:otherwise>
-          </xsl:choose>
+          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::<xsl:value-of select="$func" />_Type)).toBool();
       }
     </xsl:when>
   </xsl:choose>
@@ -1713,20 +1609,20 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v);
-      <xsl:value-of select="$type" />* js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v);
+      static <xsl:value-of select="$type" />* js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v) {
 
           <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and not(@nodowncast='true') and position()=last()]">
             // downcast to <xsl:value-of select="../../@name" />:
             {
                 <xsl:value-of select="../../@name" />* o = dynamic_cast&lt;<xsl:value-of select="../../@name" />*&gt;(v);
                 if (o!=nullptr) {
-                    return cpp2js_<xsl:value-of select="../../@name" />(handler, o);
+                    return RJSHelper::cpp2js_<xsl:value-of select="../../@name" />(handler, o);
                 }
             }
           </xsl:for-each>
@@ -1736,7 +1632,7 @@
             {
                 <xsl:value-of select="@name" />* o = dynamic_cast&lt;<xsl:value-of select="@name" />*&gt;(v);
                 if (o!=nullptr) {
-                    return cpp2js_<xsl:value-of select="@name" />(handler, o);
+                    return RJSHelper::cpp2js_<xsl:value-of select="@name" />(handler, o);
                 }
             }
           </xsl:for-each>
@@ -1768,7 +1664,7 @@
           //return engine-&gt;newQObject(ret);
       }
 
-      <xsl:value-of select="$type" />* js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" />* RJSHelper::js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
           QJSValue jwrapper = getWrapperQJSValue(v);
           if (jwrapper.isNumber() &amp;&amp; jwrapper.toInt()==0) {
               // 0 is allowed for pointers (null ptr):
@@ -1793,7 +1689,7 @@
           //return wrapper-&gt;getWrapped();
       }
 
-      bool is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -1802,19 +1698,12 @@
           }
           QJSValue fun = v.property("isOfObjectType");
           if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() &lt;&lt; "is_<xsl:value-of select="$func" />: cannot get type of JS object";
+              //qDebug() &lt;&lt; "RJSHelper::is_<xsl:value-of select="$func" />: cannot get type of JS object";
               //engine-&gt;evaluate("console.trace()");
               // type is for example string, number, etc.:
               return false;
           }
-          <xsl:choose>
-            <xsl:when test="not($pluginid='')">
-              return fun.call(QJSValueList() &lt;&lt; QJSValue(<xsl:value-of select="$typeidbase" />)).toBool();
-            </xsl:when>
-            <xsl:otherwise>
-              return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::<xsl:value-of select="$func" />_Type)).toBool();
-            </xsl:otherwise>
-          </xsl:choose>
+          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::<xsl:value-of select="$func" />_Type)).toBool();
       }
     </xsl:when>
   </xsl:choose>
@@ -1848,20 +1737,20 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v);
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />* v);
-      <xsl:value-of select="$type" />* js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />* v);
+      static <xsl:value-of select="$type" />* js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v) {
           <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and not(@nodowncast='true') and position()=last()]">
             // downcast to <xsl:value-of select="../../@name" />:
             {
                 <xsl:value-of select="../../@name" />* o = qobject_cast&lt;<xsl:value-of select="../../@name" />*&gt;(v);
                 if (o!=nullptr) {
-                    return cpp2js_<xsl:value-of select="../../@name" />(handler, o);
+                    return RJSHelper::cpp2js_<xsl:value-of select="../../@name" />(handler, o);
                 }
             }
           </xsl:for-each>
@@ -1886,7 +1775,7 @@
               ret = var.value&lt;<xsl:value-of select="$type" />_Wrapper*&gt;();
               if (ret==nullptr) {
                   if (var.isValid()) {
-                      qWarning() &lt;&lt; "cpp2js_<xsl:value-of select="$func" />: invalid wrapper attached to QObject: " &lt;&lt; var.typeName();
+                      qWarning() &lt;&lt; "RJSHelper::cpp2js_<xsl:value-of select="$func" />: invalid wrapper attached to QObject: " &lt;&lt; var.typeName();
                       QObject_Wrapper* ow = var.value&lt;QObject_Wrapper*&gt;();
                       delete ow;
                   }
@@ -1929,11 +1818,11 @@
           return r;
       }
 
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />* v) {
-          return cpp2js_<xsl:value-of select="$func" />(handler, const_cast&lt;<xsl:value-of select="$type" />*&gt;(v));
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />* v) {
+          return RJSHelper::cpp2js_<xsl:value-of select="$func" />(handler, const_cast&lt;<xsl:value-of select="$type" />*&gt;(v));
       }
 
-      <xsl:value-of select="$type" />* js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" />* RJSHelper::js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
           QJSValue jwrapper = getWrapperQJSValue(v);
           if (jwrapper.isNumber() &amp;&amp; jwrapper.toInt()==0) {
               // 0 is allowed for pointers (null ptr):
@@ -1959,14 +1848,14 @@
           //return wrapper-&gt;getWrapped();
       }
 
-      bool is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
           //QJSValue fun = v.property("getObjectType");
           QJSValue fun = v.property("isOfObjectType");
           if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() &lt;&lt; "is_<xsl:value-of select="$func" />: cannot get type of JS object";
+              //qDebug() &lt;&lt; "RJSHelper::is_<xsl:value-of select="$func" />: cannot get type of JS object";
               //engine-&gt;evaluate("console.trace()");
               //return v.isObject();
               // type is for example string, number, etc.:
@@ -1976,14 +1865,7 @@
           //return fun.call().toInt()==RJSType::<xsl:value-of select="$func" />_Type;
           //return v.isObject() || (v.isNumber() &amp;&amp; v.toInt()==0);
 
-          <xsl:choose>
-            <xsl:when test="not($pluginid='')">
-              return fun.call(QJSValueList() &lt;&lt; QJSValue(<xsl:value-of select="$typeidbase" />)).toBool();
-            </xsl:when>
-            <xsl:otherwise>
-              return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::<xsl:value-of select="$func" />_Type)).toBool();
-            </xsl:otherwise>
-          </xsl:choose>
+          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::<xsl:value-of select="$func" />_Type)).toBool();
       }
 
     </xsl:when>
@@ -2045,17 +1927,17 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine-&gt;newArray((uint)v.length());
           for (int i=0; i&lt;v.length(); i++) {
-              QJSValue jv = cpp2js_<xsl:value-of select="$itemtype" />(handler, v.at(i));
+              QJSValue jv = RJSHelper::cpp2js_<xsl:value-of select="$itemtype" />(handler, v.at(i));
               // prevent undefined values from C++ (e.g. QObjects that are not included in result):
               if (!jv.isUndefined()) {
                   ret.setProperty((quint32)i, jv);
@@ -2064,7 +1946,7 @@
           return ret;
       }
 
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           //return engine-&gt;fromScriptValue&lt;<xsl:value-of select="$type" />&gt;(v);
           <xsl:value-of select="$type" /> ret;
 
@@ -2081,7 +1963,7 @@
           return ret;
       }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -2153,16 +2035,16 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
           QJSValue ret = handler.getEngine()->newArray((uint)v.length());
           for (int i=0; i&lt;v.length(); i++) {
-              QJSValue jv = cpp2js_<xsl:value-of select="$itemtype" />(handler, v.at(i));
+              QJSValue jv = RJSHelper::cpp2js_<xsl:value-of select="$itemtype" />(handler, v.at(i));
               // prevent undefined values from C++ (e.g. QObjects that are not included in result):
               if (!jv.isUndefined()) {
                   ret.setProperty((quint32)i, jv);
@@ -2171,13 +2053,13 @@
           return ret;
       }
 
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
           // TODO:
           qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
           return handler.getEngine()->fromScriptValue&lt;<xsl:value-of select="$type" />>(v);
       }
 
-      bool is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -2242,35 +2124,35 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine-&gt;newArray((uint)v.length());
           for (int i=0; i&lt;v.length(); i++) {
               if (v.at(i).isNull()) {
-                ret.setProperty((quint32)i, cpp2js_<xsl:value-of select="$itemtype" />(handler, nullptr));
+                ret.setProperty((quint32)i, RJSHelper::cpp2js_<xsl:value-of select="$itemtype" />(handler, nullptr));
               }
               else {
-                //ret.setProperty((quint32)i, cpp2js_<xsl:value-of select="$itemtype" />(handler, v.at(i)-&gt;clone()));
-                ret.setProperty((quint32)i, cpp2js_QSharedPointer_<xsl:value-of select="$itemtype" />(handler, v.at(i)));
+                //ret.setProperty((quint32)i, RJSHelper::cpp2js_<xsl:value-of select="$itemtype" />(handler, v.at(i)-&gt;clone()));
+                ret.setProperty((quint32)i, RJSHelper::cpp2js_QSharedPointer_<xsl:value-of select="$itemtype" />(handler, v.at(i)));
               }
           }
           return ret;
       }
 
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           // TODO:
           qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
           return engine-&gt;fromScriptValue&lt;<xsl:value-of select="$type" />&gt;(v);
       }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -2329,24 +2211,24 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine-&gt;newArray((uint)v.size());
           <xsl:value-of select="$type" />::const_iterator it;
           int i=0;
           for (it=v.constBegin(); it!=v.constEnd(); i++, it++) {
-              ret.setProperty((quint32)i, cpp2js_<xsl:value-of select="$itemtype" />(handler, *it));
+              ret.setProperty((quint32)i, RJSHelper::cpp2js_<xsl:value-of select="$itemtype" />(handler, *it));
           }
           return ret;
       }
 
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           <xsl:value-of select="$type" /> ret;
           if (!v.isArray()) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: value is not an array";
@@ -2363,7 +2245,7 @@
           //return engine-&gt;fromScriptValue&lt;<xsl:value-of select="$type" />&gt;(v);
       }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -2424,31 +2306,31 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine-&gt;newObject();
           <xsl:value-of select="$type" />::const_iterator it;
           int i=0;
           for (it=v.constBegin(); it!=v.constEnd(); i++, it++) {
-              ret.setProperty(it.key(), cpp2js_<xsl:value-of select="$itemtype" />(handler, it.value()));
+              ret.setProperty(it.key(), RJSHelper::cpp2js_<xsl:value-of select="$itemtype" />(handler, it.value()));
           }
           return ret;
       }
 
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           // TODO:
           qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
           return engine-&gt;fromScriptValue&lt;<xsl:value-of select="$type" />&gt;(v);
       }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -2525,28 +2407,28 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine-&gt;newArray(2);
-          ret.setProperty(0, cpp2js_<xsl:value-of select="$itemtype1" />(handler, v.first));
-          ret.setProperty(1, cpp2js_<xsl:value-of select="$itemtype2" />(handler, v.second));
+          ret.setProperty(0, RJSHelper::cpp2js_<xsl:value-of select="$itemtype1" />(handler, v.first));
+          ret.setProperty(1, RJSHelper::cpp2js_<xsl:value-of select="$itemtype2" />(handler, v.second));
           return ret;
       }
 
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           // TODO:
           qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
           return engine-&gt;fromScriptValue&lt;<xsl:value-of select="$type" />&gt;(v);
       }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -2603,19 +2485,19 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      #include &lt;<xsl:value-of select="$type" />&gt;
+      //#include &lt;<xsl:value-of select="$type" />&gt;
 
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) { return QJSValue(); }
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) { return QJSValue(); }
 
-      <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) { <xsl:value-of select="$preconstr" />; return <xsl:value-of select="$type" />(<xsl:value-of select="$constr" />); }
+      <xsl:value-of select="$type" /> RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) { <xsl:value-of select="$preconstr" />; return <xsl:value-of select="$type" />(<xsl:value-of select="$constr" />); }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
@@ -2650,19 +2532,19 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      #include &lt;<xsl:value-of select="$type" />&gt;
+      //#include &lt;<xsl:value-of select="$type" />&gt;
 
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v);
-      <xsl:value-of select="$type" />* js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v);
+      static <xsl:value-of select="$type" />* js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v) { return QJSValue(); }
+      QJSValue RJSHelper::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v) { return QJSValue(); }
 
-      <xsl:value-of select="$type" />* js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) { return nullptr; }
+      <xsl:value-of select="$type" />* RJSHelper::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) { return nullptr; }
 
-      bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool RJSHelper::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }

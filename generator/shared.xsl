@@ -46,7 +46,7 @@
 
 <!--
   Return function to convert given type from cpp to js.
-  e.g. cpp2js_bool
+  e.g. RJSHelper::cpp2js_bool
 -->
 <func:function name="qc:type-to-function-cpp2js">
   <xsl:param name="type" />
@@ -59,7 +59,7 @@
   </xsl:variable>
 
   <func:result>
-    <xsl:text>cpp2js_</xsl:text>
+    <xsl:text>RJSHelper::cpp2js_</xsl:text>
     <xsl:value-of 
       select="qc:replace(
               qc:replace(
@@ -86,7 +86,7 @@
 
 <!--
   Return function to convert given type from js to cpp.
-  e.g. js2cpp_bool
+  e.g. RJSHelper::js2cpp_bool
 -->
 <func:function name="qc:type-to-function-js2cpp">
   <xsl:param name="type" />
@@ -101,7 +101,7 @@
   </xsl:variable>
 
   <func:result>
-    <xsl:text>js2cpp_</xsl:text>
+    <xsl:text>RJSHelper::js2cpp_</xsl:text>
     <xsl:value-of 
       select="qc:replace(
               qc:replace(

@@ -47,13 +47,13 @@
                 
       // check parameter types:
       if (
-        is_double(handler, a1
+        RJSHelper::is_double(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
   
@@ -65,19 +65,19 @@
   
 double a1_cpp;
 
-      a1_cpp = js2cpp_double(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
         
   // convert js parameter to cpp: format (char)
   
 char a2_cpp;
 
-      a2_cpp = js2cpp_char(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_char(handler, a2);
         
   // convert js parameter to cpp: precision (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
 
     // call function:
@@ -96,7 +96,7 @@ int a3_cpp;
           
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -107,10 +107,10 @@ int a3_cpp;
 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
     , true
   
   )
@@ -124,7 +124,7 @@ int a3_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: base (int)
   
@@ -135,7 +135,7 @@ int a2_cpp;
             a2_cpp = 10;
           }
           else {
-            a2_cpp = js2cpp_int(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
           }
         
 
@@ -154,7 +154,7 @@ int a2_cpp;
           
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -190,12 +190,12 @@ int a2_cpp;
                 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
   )
 
   
@@ -207,14 +207,14 @@ int a2_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
   // convert js parameter to cpp: size (qsizetype)
   
 qsizetype a2_cpp;
 
-      a2_cpp = js2cpp_qsizetype(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
         
 
     // call function:
@@ -232,7 +232,7 @@ qsizetype a2_cpp;
           
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -266,7 +266,7 @@ qsizetype a2_cpp;
                 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -278,7 +278,7 @@ qsizetype a2_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -295,7 +295,7 @@ QByteArray a1_cpp;
           
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -329,7 +329,7 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -341,7 +341,7 @@ QByteArray a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -358,7 +358,7 @@ QByteArray a1_cpp;
           
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -394,10 +394,10 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
     , true
   
   )
@@ -411,7 +411,7 @@ QByteArray a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
   // convert js parameter to cpp: percent (char)
   
@@ -422,7 +422,7 @@ char a2_cpp;
             a2_cpp = '%';
           }
           else {
-            a2_cpp = js2cpp_char(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_char(handler, a2);
           }
         
 
@@ -441,7 +441,7 @@ char a2_cpp;
           
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -604,7 +604,7 @@ QByteArray_Wrapper::QByteArray_Wrapper
                 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -616,7 +616,7 @@ QByteArray_Wrapper::QByteArray_Wrapper
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -722,7 +722,7 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -734,7 +734,7 @@ QByteArray a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -809,7 +809,7 @@ QByteArray a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -843,7 +843,7 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -855,7 +855,7 @@ QByteArray a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -909,10 +909,10 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
     , true
   
   )
@@ -926,7 +926,7 @@ qsizetype a1_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
   // convert js parameter to cpp: size (qsizetype)
   
@@ -937,7 +937,7 @@ qsizetype a2_cpp;
             a2_cpp = -1;
           }
           else {
-            a2_cpp = js2cpp_qsizetype(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
           }
         
 
@@ -968,7 +968,7 @@ qsizetype a2_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1027,7 +1027,7 @@ qsizetype a2_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -1061,7 +1061,7 @@ qsizetype a2_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -1073,7 +1073,7 @@ qsizetype a2_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -1197,11 +1197,11 @@ qsizetype a1_cpp;
               
             // return type: char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -1233,11 +1233,11 @@ qsizetype a1_cpp;
               
             // return type: const char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -1292,11 +1292,11 @@ qsizetype a1_cpp;
               
             // return type: const char*
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_char:
+                  // call pointer implementation of RJSHelper::cpp2js_char:
                   res
                 
               );
@@ -1398,7 +1398,7 @@ qsizetype a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1434,7 +1434,7 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -1446,7 +1446,7 @@ qsizetype a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -1472,7 +1472,7 @@ QByteArray a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1555,7 +1555,7 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -1567,7 +1567,7 @@ QByteArray a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -1593,7 +1593,7 @@ qsizetype a1_cpp;
               
             // return type: char
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   res
@@ -1650,7 +1650,7 @@ qsizetype a1_cpp;
               
             // return type: char
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   res
@@ -1687,7 +1687,7 @@ qsizetype a1_cpp;
               
             // return type: char&
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1746,7 +1746,7 @@ qsizetype a1_cpp;
               
             // return type: char
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   res
@@ -1783,7 +1783,7 @@ qsizetype a1_cpp;
               
             // return type: char&
 
-            return cpp2js_char(
+            return RJSHelper::cpp2js_char(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1823,10 +1823,10 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
     , true
   
   )
@@ -1840,7 +1840,7 @@ qsizetype a1_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
   // convert js parameter to cpp: from (qsizetype)
   
@@ -1851,7 +1851,7 @@ qsizetype a2_cpp;
             a2_cpp = 0;
           }
           else {
-            a2_cpp = js2cpp_qsizetype(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
           }
         
 
@@ -1879,7 +1879,7 @@ qsizetype a2_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -1917,10 +1917,10 @@ qsizetype a2_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
     , true
   
   )
@@ -1934,7 +1934,7 @@ qsizetype a2_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
   // convert js parameter to cpp: from (qsizetype)
   
@@ -1945,7 +1945,7 @@ qsizetype a2_cpp;
             a2_cpp = -1;
           }
           else {
-            a2_cpp = js2cpp_qsizetype(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
           }
         
 
@@ -1973,7 +1973,7 @@ qsizetype a2_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -2009,7 +2009,7 @@ qsizetype a2_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
   
@@ -2021,7 +2021,7 @@ qsizetype a2_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
 
     // call function:
@@ -2047,7 +2047,7 @@ char a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2083,7 +2083,7 @@ char a1_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
   
@@ -2095,7 +2095,7 @@ char a1_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
 
     // call function:
@@ -2121,7 +2121,7 @@ char a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -2155,7 +2155,7 @@ char a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -2191,7 +2191,7 @@ char a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -2203,7 +2203,7 @@ char a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -2229,7 +2229,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -2265,7 +2265,7 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -2277,7 +2277,7 @@ qsizetype a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -2303,7 +2303,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -2341,10 +2341,10 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
     , true
   
   )
@@ -2358,7 +2358,7 @@ qsizetype a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: len (qsizetype)
   
@@ -2369,7 +2369,7 @@ qsizetype a2_cpp;
             a2_cpp = -1;
           }
           else {
-            a2_cpp = js2cpp_qsizetype(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
           }
         
 
@@ -2397,7 +2397,7 @@ qsizetype a2_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -2433,7 +2433,7 @@ qsizetype a2_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -2445,7 +2445,7 @@ qsizetype a2_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -2471,7 +2471,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -2507,7 +2507,7 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -2519,7 +2519,7 @@ qsizetype a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -2545,7 +2545,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -2583,10 +2583,10 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
   )
 
   
@@ -2598,13 +2598,13 @@ qsizetype a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: n (qsizetype)
   
 qsizetype a2_cpp;
 
-      a2_cpp = js2cpp_qsizetype(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
         
 
     // call function:
@@ -2631,7 +2631,7 @@ qsizetype a2_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -2642,7 +2642,7 @@ qsizetype a2_cpp;
 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -2654,7 +2654,7 @@ qsizetype a2_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -2680,7 +2680,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -2716,7 +2716,7 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -2728,7 +2728,7 @@ qsizetype a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -2754,7 +2754,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -2790,7 +2790,7 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
   
@@ -2802,7 +2802,7 @@ qsizetype a1_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
 
     // call function:
@@ -2828,7 +2828,7 @@ char a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2864,7 +2864,7 @@ char a1_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
   
@@ -2876,7 +2876,7 @@ char a1_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
 
     // call function:
@@ -2902,7 +2902,7 @@ char a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2959,7 +2959,7 @@ char a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3016,7 +3016,7 @@ char a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3050,7 +3050,7 @@ char a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -3062,7 +3062,7 @@ char a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -3114,7 +3114,7 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -3126,7 +3126,7 @@ qsizetype a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -3203,7 +3203,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3237,7 +3237,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3271,7 +3271,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3328,7 +3328,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3362,7 +3362,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3396,7 +3396,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3453,7 +3453,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3487,7 +3487,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3521,7 +3521,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3578,7 +3578,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3612,7 +3612,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3646,7 +3646,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3690,15 +3690,15 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
     , true
   
   )
 
-   && is_bool(handler, a3
+   && RJSHelper::is_bool(handler, a3
     , true
   
   )
@@ -3712,7 +3712,7 @@ qsizetype a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: fill (char)
   
@@ -3723,7 +3723,7 @@ char a2_cpp;
             a2_cpp = ' ';
           }
           else {
-            a2_cpp = js2cpp_char(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_char(handler, a2);
           }
         
   // convert js parameter to cpp: truncate (bool)
@@ -3735,7 +3735,7 @@ bool a3_cpp;
             a3_cpp = false;
           }
           else {
-            a3_cpp = js2cpp_bool(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
           }
         
 
@@ -3764,7 +3764,7 @@ bool a3_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3804,15 +3804,15 @@ bool a3_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
     , true
   
   )
 
-   && is_bool(handler, a3
+   && RJSHelper::is_bool(handler, a3
     , true
   
   )
@@ -3826,7 +3826,7 @@ bool a3_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: fill (char)
   
@@ -3837,7 +3837,7 @@ char a2_cpp;
             a2_cpp = ' ';
           }
           else {
-            a2_cpp = js2cpp_char(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_char(handler, a2);
           }
         
   // convert js parameter to cpp: truncate (bool)
@@ -3849,7 +3849,7 @@ bool a3_cpp;
             a3_cpp = false;
           }
           else {
-            a3_cpp = js2cpp_bool(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
           }
         
 
@@ -3878,7 +3878,7 @@ bool a3_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -3914,10 +3914,10 @@ bool a3_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
   )
 
   
@@ -3929,13 +3929,13 @@ bool a3_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: c (char)
   
 char a2_cpp;
 
-      a2_cpp = js2cpp_char(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_char(handler, a2);
         
 
     // call function:
@@ -3965,7 +3965,7 @@ char a2_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -3978,12 +3978,12 @@ char a2_cpp;
 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
   )
 
   
@@ -3995,14 +3995,14 @@ char a2_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
   // convert js parameter to cpp: len (qsizetype)
   
 qsizetype a2_cpp;
 
-      a2_cpp = js2cpp_qsizetype(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
         
 
     // call function:
@@ -4032,7 +4032,7 @@ qsizetype a2_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4045,7 +4045,7 @@ qsizetype a2_cpp;
 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
   
@@ -4057,7 +4057,7 @@ qsizetype a2_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
 
     // call function:
@@ -4086,7 +4086,7 @@ char a1_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4099,7 +4099,7 @@ char a1_cpp;
 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
@@ -4113,7 +4113,7 @@ char a1_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
 
@@ -4143,7 +4143,7 @@ char a1_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4156,7 +4156,7 @@ char a1_cpp;
 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -4168,7 +4168,7 @@ char a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -4197,7 +4197,7 @@ QByteArray a1_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4233,7 +4233,7 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
   
@@ -4245,7 +4245,7 @@ QByteArray a1_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
 
     // call function:
@@ -4274,7 +4274,7 @@ char a1_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4287,7 +4287,7 @@ char a1_cpp;
 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -4299,7 +4299,7 @@ char a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -4328,7 +4328,7 @@ QByteArray a1_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4368,13 +4368,13 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
   )
 
-   && is_char(handler, a3
+   && RJSHelper::is_char(handler, a3
   )
 
   
@@ -4386,19 +4386,19 @@ QByteArray a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: count (qsizetype)
   
 qsizetype a2_cpp;
 
-      a2_cpp = js2cpp_qsizetype(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
         
   // convert js parameter to cpp: c (char)
   
 char a3_cpp;
 
-      a3_cpp = js2cpp_char(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_char(handler, a3);
         
 
     // call function:
@@ -4429,7 +4429,7 @@ char a3_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4442,15 +4442,15 @@ char a3_cpp;
 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_char_ptr(handler, a2
+   && RJSHelper::is_char_ptr(handler, a2
     , true
   
   )
 
-   && is_qsizetype(handler, a3
+   && RJSHelper::is_qsizetype(handler, a3
   )
 
   
@@ -4462,20 +4462,20 @@ char a3_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: s (char)
   
 
       // char pointer string:
-      QByteArray a2_ba = js2cpp_char_ptr(handler, a2).toLocal8Bit();
+      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
       const char* a2_cpp = a2_ba.constData();
     
   // convert js parameter to cpp: len (qsizetype)
   
 qsizetype a3_cpp;
 
-      a3_cpp = js2cpp_qsizetype(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qsizetype(handler, a3);
         
 
     // call function:
@@ -4506,7 +4506,7 @@ qsizetype a3_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4519,10 +4519,10 @@ qsizetype a3_cpp;
 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_char_ptr(handler, a2
+   && RJSHelper::is_char_ptr(handler, a2
     , true
   
   )
@@ -4536,13 +4536,13 @@ qsizetype a3_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: s (char)
   
 
       // char pointer string:
-      QByteArray a2_ba = js2cpp_char_ptr(handler, a2).toLocal8Bit();
+      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
       const char* a2_cpp = a2_ba.constData();
     
 
@@ -4573,7 +4573,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4586,10 +4586,10 @@ qsizetype a1_cpp;
 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_QByteArray(handler, a2
+   && RJSHelper::is_QByteArray(handler, a2
   )
 
   
@@ -4601,13 +4601,13 @@ qsizetype a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: data (QByteArray)
   
 QByteArray a2_cpp;
 
-      a2_cpp = js2cpp_QByteArray(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QByteArray(handler, a2);
         
 
     // call function:
@@ -4637,7 +4637,7 @@ QByteArray a2_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4650,10 +4650,10 @@ QByteArray a2_cpp;
 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
   )
 
   
@@ -4665,13 +4665,13 @@ QByteArray a2_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: c (char)
   
 char a2_cpp;
 
-      a2_cpp = js2cpp_char(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_char(handler, a2);
         
 
     // call function:
@@ -4701,7 +4701,7 @@ char a2_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4739,10 +4739,10 @@ char a2_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
   )
 
   
@@ -4754,13 +4754,13 @@ char a2_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: len (qsizetype)
   
 qsizetype a2_cpp;
 
-      a2_cpp = js2cpp_qsizetype(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
         
 
     // call function:
@@ -4790,7 +4790,7 @@ qsizetype a2_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4832,18 +4832,18 @@ qsizetype a2_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
   )
 
-   && is_char_ptr(handler, a3
+   && RJSHelper::is_char_ptr(handler, a3
     , true
   
   )
 
-   && is_qsizetype(handler, a4
+   && RJSHelper::is_qsizetype(handler, a4
   )
 
   
@@ -4855,26 +4855,26 @@ qsizetype a2_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
   // convert js parameter to cpp: len (qsizetype)
   
 qsizetype a2_cpp;
 
-      a2_cpp = js2cpp_qsizetype(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
         
   // convert js parameter to cpp: s (char)
   
 
       // char pointer string:
-      QByteArray a3_ba = js2cpp_char_ptr(handler, a3).toLocal8Bit();
+      QByteArray a3_ba = RJSHelper::js2cpp_char_ptr(handler, a3).toLocal8Bit();
       const char* a3_cpp = a3_ba.constData();
     
   // convert js parameter to cpp: alen (qsizetype)
   
 qsizetype a4_cpp;
 
-      a4_cpp = js2cpp_qsizetype(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qsizetype(handler, a4);
         
 
     // call function:
@@ -4906,7 +4906,7 @@ qsizetype a4_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -4919,20 +4919,20 @@ qsizetype a4_cpp;
 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
   )
 
-   && is_char_ptr(handler, a3
+   && RJSHelper::is_char_ptr(handler, a3
     , true
   
   )
 
-   && is_qsizetype(handler, a4
+   && RJSHelper::is_qsizetype(handler, a4
   )
 
   
@@ -4944,27 +4944,27 @@ qsizetype a4_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
   // convert js parameter to cpp: bsize (qsizetype)
   
 qsizetype a2_cpp;
 
-      a2_cpp = js2cpp_qsizetype(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
         
   // convert js parameter to cpp: after (char)
   
 
       // char pointer string:
-      QByteArray a3_ba = js2cpp_char_ptr(handler, a3).toLocal8Bit();
+      QByteArray a3_ba = RJSHelper::js2cpp_char_ptr(handler, a3).toLocal8Bit();
       const char* a3_cpp = a3_ba.constData();
     
   // convert js parameter to cpp: asize (qsizetype)
   
 qsizetype a4_cpp;
 
-      a4_cpp = js2cpp_qsizetype(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qsizetype(handler, a4);
         
 
     // call function:
@@ -4996,7 +4996,7 @@ qsizetype a4_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -5009,10 +5009,10 @@ qsizetype a4_cpp;
 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
   )
 
   
@@ -5024,13 +5024,13 @@ qsizetype a4_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
   // convert js parameter to cpp: after (char)
   
 char a2_cpp;
 
-      a2_cpp = js2cpp_char(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_char(handler, a2);
         
 
     // call function:
@@ -5060,7 +5060,7 @@ char a2_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -5098,7 +5098,7 @@ char a2_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
   
@@ -5110,7 +5110,7 @@ char a2_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
 
     // call function:
@@ -5136,7 +5136,7 @@ char a1_cpp;
               
             // return type: QList<QByteArray>
 
-            return cpp2js_QList_QByteArray(
+            return RJSHelper::cpp2js_QList_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -5172,7 +5172,7 @@ char a1_cpp;
                 
       // check parameter types:
       if (
-        is_qsizetype(handler, a1
+        RJSHelper::is_qsizetype(handler, a1
   )
 
   
@@ -5184,7 +5184,7 @@ char a1_cpp;
   
 qsizetype a1_cpp;
 
-      a1_cpp = js2cpp_qsizetype(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qsizetype(handler, a1);
         
 
     // call function:
@@ -5210,7 +5210,7 @@ qsizetype a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -5271,7 +5271,7 @@ qsizetype a1_cpp;
               
             // return type: short
 
-            return cpp2js_short(
+            return RJSHelper::cpp2js_short(
               handler, 
               // non-copyable: false
                   res
@@ -5328,7 +5328,7 @@ qsizetype a1_cpp;
               
             // return type: ushort
 
-            return cpp2js_ushort(
+            return RJSHelper::cpp2js_ushort(
               handler, 
               // non-copyable: false
                   res
@@ -5385,7 +5385,7 @@ qsizetype a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -5442,7 +5442,7 @@ qsizetype a1_cpp;
               
             // return type: uint
 
-            return cpp2js_uint(
+            return RJSHelper::cpp2js_uint(
               handler, 
               // non-copyable: false
                   res
@@ -5499,7 +5499,7 @@ qsizetype a1_cpp;
               
             // return type: long
 
-            return cpp2js_long(
+            return RJSHelper::cpp2js_long(
               handler, 
               // non-copyable: false
                   res
@@ -5556,7 +5556,7 @@ qsizetype a1_cpp;
               
             // return type: ulong
 
-            return cpp2js_ulong(
+            return RJSHelper::cpp2js_ulong(
               handler, 
               // non-copyable: false
                   res
@@ -5613,7 +5613,7 @@ qsizetype a1_cpp;
               
             // return type: qlonglong
 
-            return cpp2js_qlonglong(
+            return RJSHelper::cpp2js_qlonglong(
               handler, 
               // non-copyable: false
                   res
@@ -5670,7 +5670,7 @@ qsizetype a1_cpp;
               
             // return type: qulonglong
 
-            return cpp2js_qulonglong(
+            return RJSHelper::cpp2js_qulonglong(
               handler, 
               // non-copyable: false
                   res
@@ -5727,7 +5727,7 @@ qsizetype a1_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -5784,7 +5784,7 @@ qsizetype a1_cpp;
               
             // return type: double
 
-            return cpp2js_double(
+            return RJSHelper::cpp2js_double(
               handler, 
               // non-copyable: false
                   res
@@ -5820,7 +5820,7 @@ qsizetype a1_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
     , true
   
   )
@@ -5839,7 +5839,7 @@ char a1_cpp;
             a1_cpp = '\0';
           }
           else {
-            a1_cpp = js2cpp_char(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_char(handler, a1);
           }
         
 
@@ -5866,7 +5866,7 @@ char a1_cpp;
               
             // return type: QByteArray
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -5904,13 +5904,13 @@ char a1_cpp;
                 
       // check parameter types:
       if (
-        is_double(handler, a1
+        RJSHelper::is_double(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
   
@@ -5922,19 +5922,19 @@ char a1_cpp;
   
 double a1_cpp;
 
-      a1_cpp = js2cpp_double(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
         
   // convert js parameter to cpp: format (char)
   
 char a2_cpp;
 
-      a2_cpp = js2cpp_char(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_char(handler, a2);
         
   // convert js parameter to cpp: precision (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
 
     // call function:
@@ -5965,7 +5965,7 @@ int a3_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -5978,10 +5978,10 @@ int a3_cpp;
 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
     , true
   
   )
@@ -5995,7 +5995,7 @@ int a3_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: base (int)
   
@@ -6006,7 +6006,7 @@ int a2_cpp;
             a2_cpp = 10;
           }
           else {
-            a2_cpp = js2cpp_int(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
           }
         
 
@@ -6037,7 +6037,7 @@ int a2_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -6075,12 +6075,12 @@ int a2_cpp;
                 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
   )
 
   
@@ -6092,14 +6092,14 @@ int a2_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
   // convert js parameter to cpp: n (qsizetype)
   
 qsizetype a2_cpp;
 
-      a2_cpp = js2cpp_qsizetype(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
         
 
     // call function:
@@ -6129,7 +6129,7 @@ qsizetype a2_cpp;
               
             // return type: QByteArray&
 
-            return cpp2js_QByteArray(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -6169,7 +6169,7 @@ qsizetype a2_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
   
@@ -6181,7 +6181,7 @@ qsizetype a2_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
 
     // call function:
@@ -6210,7 +6210,7 @@ char a1_cpp;
 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
@@ -6224,7 +6224,7 @@ char a1_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
 
@@ -6254,7 +6254,7 @@ char a1_cpp;
 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -6266,7 +6266,7 @@ char a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -6318,7 +6318,7 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_char(handler, a1
+        RJSHelper::is_char(handler, a1
   )
 
   
@@ -6330,7 +6330,7 @@ QByteArray a1_cpp;
   
 char a1_cpp;
 
-      a1_cpp = js2cpp_char(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
         
 
     // call function:
@@ -6359,7 +6359,7 @@ char a1_cpp;
 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
@@ -6373,7 +6373,7 @@ char a1_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
 
@@ -6403,7 +6403,7 @@ char a1_cpp;
 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -6415,7 +6415,7 @@ char a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -6537,7 +6537,7 @@ QByteArray a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -6594,7 +6594,7 @@ QByteArray a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -6651,7 +6651,7 @@ QByteArray a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res

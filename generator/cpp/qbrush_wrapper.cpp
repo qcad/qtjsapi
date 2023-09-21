@@ -147,10 +147,10 @@ QBrush_Wrapper::QBrush_Wrapper
                 
       // check parameter types:
       if (
-        is_QColor(handler, a1
+        RJSHelper::is_QColor(handler, a1
   )
 
-   && is_Qt_BrushStyle(handler, a2
+   && RJSHelper::is_Qt_BrushStyle(handler, a2
     , true
   
   )
@@ -164,7 +164,7 @@ QBrush_Wrapper::QBrush_Wrapper
   
 QColor a1_cpp;
 
-      a1_cpp = js2cpp_QColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QColor(handler, a1);
         
   // convert js parameter to cpp: bs (Qt::BrushStyle)
   
@@ -175,7 +175,7 @@ Qt::BrushStyle a2_cpp;
             a2_cpp = Qt::SolidPattern;
           }
           else {
-            a2_cpp = js2cpp_Qt_BrushStyle(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_Qt_BrushStyle(handler, a2);
           }
         
 
@@ -203,10 +203,10 @@ Qt::BrushStyle a2_cpp;
 
       // check parameter types:
       if (
-        is_Qt_GlobalColor(handler, a1
+        RJSHelper::is_Qt_GlobalColor(handler, a1
   )
 
-   && is_Qt_BrushStyle(handler, a2
+   && RJSHelper::is_Qt_BrushStyle(handler, a2
   )
 
   
@@ -218,13 +218,13 @@ Qt::BrushStyle a2_cpp;
   
 Qt::GlobalColor a1_cpp;
 
-      a1_cpp = js2cpp_Qt_GlobalColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_GlobalColor(handler, a1);
         
   // convert js parameter to cpp: bs (Qt::BrushStyle)
   
 Qt::BrushStyle a2_cpp;
 
-      a2_cpp = js2cpp_Qt_BrushStyle(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_Qt_BrushStyle(handler, a2);
         
 
     // call function:
@@ -251,10 +251,10 @@ Qt::BrushStyle a2_cpp;
 
       // check parameter types:
       if (
-        is_QColor(handler, a1
+        RJSHelper::is_QColor(handler, a1
   )
 
-   && is_QPixmap(handler, a2
+   && RJSHelper::is_QPixmap(handler, a2
   )
 
   
@@ -266,13 +266,13 @@ Qt::BrushStyle a2_cpp;
   
 QColor a1_cpp;
 
-      a1_cpp = js2cpp_QColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QColor(handler, a1);
         
   // convert js parameter to cpp: pixmap (QPixmap)
   
 QPixmap a2_cpp;
 
-      a2_cpp = js2cpp_QPixmap(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPixmap(handler, a2);
         
 
     // call function:
@@ -299,10 +299,10 @@ QPixmap a2_cpp;
 
       // check parameter types:
       if (
-        is_Qt_GlobalColor(handler, a1
+        RJSHelper::is_Qt_GlobalColor(handler, a1
   )
 
-   && is_QPixmap(handler, a2
+   && RJSHelper::is_QPixmap(handler, a2
   )
 
   
@@ -314,13 +314,13 @@ QPixmap a2_cpp;
   
 Qt::GlobalColor a1_cpp;
 
-      a1_cpp = js2cpp_Qt_GlobalColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_GlobalColor(handler, a1);
         
   // convert js parameter to cpp: pixmap (QPixmap)
   
 QPixmap a2_cpp;
 
-      a2_cpp = js2cpp_QPixmap(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPixmap(handler, a2);
         
 
     // call function:
@@ -347,7 +347,7 @@ QPixmap a2_cpp;
 
       // check parameter types:
       if (
-        is_Qt_BrushStyle(handler, a1
+        RJSHelper::is_Qt_BrushStyle(handler, a1
   )
 
   
@@ -359,7 +359,7 @@ QPixmap a2_cpp;
   
 Qt::BrushStyle a1_cpp;
 
-      a1_cpp = js2cpp_Qt_BrushStyle(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_BrushStyle(handler, a1);
         
 
     // call function:
@@ -385,7 +385,7 @@ Qt::BrushStyle a1_cpp;
 
       // check parameter types:
       if (
-        is_QPixmap(handler, a1
+        RJSHelper::is_QPixmap(handler, a1
   )
 
   
@@ -397,7 +397,7 @@ Qt::BrushStyle a1_cpp;
   
 QPixmap a1_cpp;
 
-      a1_cpp = js2cpp_QPixmap(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPixmap(handler, a1);
         
 
     // call function:
@@ -423,7 +423,7 @@ QPixmap a1_cpp;
 
       // check parameter types:
       if (
-        is_QImage(handler, a1
+        RJSHelper::is_QImage(handler, a1
   )
 
   
@@ -435,7 +435,7 @@ QPixmap a1_cpp;
   
 QImage a1_cpp;
 
-      a1_cpp = js2cpp_QImage(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QImage(handler, a1);
         
 
     // call function:
@@ -461,7 +461,7 @@ QImage a1_cpp;
 
       // check parameter types:
       if (
-        is_QBrush(handler, a1
+        RJSHelper::is_QBrush(handler, a1
   )
 
   
@@ -473,7 +473,7 @@ QImage a1_cpp;
   
 QBrush a1_cpp;
 
-      a1_cpp = js2cpp_QBrush(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QBrush(handler, a1);
         
 
     // call function:
@@ -499,7 +499,7 @@ QBrush a1_cpp;
 
       // check parameter types:
       if (
-        is_QGradient(handler, a1
+        RJSHelper::is_QGradient(handler, a1
   )
 
   
@@ -511,7 +511,7 @@ QBrush a1_cpp;
   
 QGradient a1_cpp;
 
-      a1_cpp = js2cpp_QGradient(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient(handler, a1);
         
 
     // call function:
@@ -600,7 +600,7 @@ QGradient a1_cpp;
                 
       // check parameter types:
       if (
-        is_QBrush(handler, a1
+        RJSHelper::is_QBrush(handler, a1
   )
 
   
@@ -612,7 +612,7 @@ QGradient a1_cpp;
   
 QBrush a1_cpp;
 
-      a1_cpp = js2cpp_QBrush(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QBrush(handler, a1);
         
 
     // call function:
@@ -687,7 +687,7 @@ QBrush a1_cpp;
               
             // return type: Qt::BrushStyle
 
-            return cpp2js_Qt_BrushStyle(
+            return RJSHelper::cpp2js_Qt_BrushStyle(
               handler, 
               // non-copyable: false
                   res
@@ -721,7 +721,7 @@ QBrush a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_BrushStyle(handler, a1
+        RJSHelper::is_Qt_BrushStyle(handler, a1
   )
 
   
@@ -733,7 +733,7 @@ QBrush a1_cpp;
   
 Qt::BrushStyle a1_cpp;
 
-      a1_cpp = js2cpp_Qt_BrushStyle(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_BrushStyle(handler, a1);
         
 
     // call function:
@@ -808,7 +808,7 @@ Qt::BrushStyle a1_cpp;
               
             // return type: QTransform
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   res
@@ -842,7 +842,7 @@ Qt::BrushStyle a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTransform(handler, a1
+        RJSHelper::is_QTransform(handler, a1
   )
 
   
@@ -854,7 +854,7 @@ Qt::BrushStyle a1_cpp;
   
 QTransform a1_cpp;
 
-      a1_cpp = js2cpp_QTransform(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTransform(handler, a1);
         
 
     // call function:
@@ -929,7 +929,7 @@ QTransform a1_cpp;
               
             // return type: QPixmap
 
-            return cpp2js_QPixmap(
+            return RJSHelper::cpp2js_QPixmap(
               handler, 
               // non-copyable: false
                   res
@@ -963,7 +963,7 @@ QTransform a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPixmap(handler, a1
+        RJSHelper::is_QPixmap(handler, a1
   )
 
   
@@ -975,7 +975,7 @@ QTransform a1_cpp;
   
 QPixmap a1_cpp;
 
-      a1_cpp = js2cpp_QPixmap(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPixmap(handler, a1);
         
 
     // call function:
@@ -1050,7 +1050,7 @@ QPixmap a1_cpp;
               
             // return type: QImage
 
-            return cpp2js_QImage(
+            return RJSHelper::cpp2js_QImage(
               handler, 
               // non-copyable: false
                   res
@@ -1084,7 +1084,7 @@ QPixmap a1_cpp;
                 
       // check parameter types:
       if (
-        is_QImage(handler, a1
+        RJSHelper::is_QImage(handler, a1
   )
 
   
@@ -1096,7 +1096,7 @@ QPixmap a1_cpp;
   
 QImage a1_cpp;
 
-      a1_cpp = js2cpp_QImage(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QImage(handler, a1);
         
 
     // call function:
@@ -1174,7 +1174,7 @@ QImage a1_cpp;
               
             // return type: const QColor&
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1210,7 +1210,7 @@ QImage a1_cpp;
                 
       // check parameter types:
       if (
-        is_QColor(handler, a1
+        RJSHelper::is_QColor(handler, a1
   )
 
   
@@ -1222,7 +1222,7 @@ QImage a1_cpp;
   
 QColor a1_cpp;
 
-      a1_cpp = js2cpp_QColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QColor(handler, a1);
         
 
     // call function:
@@ -1251,7 +1251,7 @@ QColor a1_cpp;
 
       // check parameter types:
       if (
-        is_Qt_GlobalColor(handler, a1
+        RJSHelper::is_Qt_GlobalColor(handler, a1
   )
 
   
@@ -1263,7 +1263,7 @@ QColor a1_cpp;
   
 Qt::GlobalColor a1_cpp;
 
-      a1_cpp = js2cpp_Qt_GlobalColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_GlobalColor(handler, a1);
         
 
     // call function:
@@ -1338,11 +1338,11 @@ Qt::GlobalColor a1_cpp;
               
             // return type: const QGradient*
 
-            return cpp2js_QGradient(
+            return RJSHelper::cpp2js_QGradient(
               handler, 
               // non-copyable: false
                   // return type is pointer, type is copyable:
-                  // call pointer implementation of cpp2js_QGradient:
+                  // call pointer implementation of RJSHelper::cpp2js_QGradient:
                   res
                 
               );
@@ -1397,7 +1397,7 @@ Qt::GlobalColor a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1454,7 +1454,7 @@ Qt::GlobalColor a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1616,7 +1616,7 @@ QGradient_Wrapper::QGradient_Wrapper
                 
       // check parameter types:
       if (
-        is_QGradient_Preset(handler, a1
+        RJSHelper::is_QGradient_Preset(handler, a1
   )
 
   
@@ -1628,7 +1628,7 @@ QGradient_Wrapper::QGradient_Wrapper
   
 QGradient::Preset a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_Preset(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_Preset(handler, a1);
         
 
     // call function:
@@ -1739,7 +1739,7 @@ QGradient::Preset a1_cpp;
               
             // return type: QGradient::Type
 
-            return cpp2js_QGradient_Type(
+            return RJSHelper::cpp2js_QGradient_Type(
               handler, 
               // non-copyable: false
                   res
@@ -1773,7 +1773,7 @@ QGradient::Preset a1_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_Spread(handler, a1
+        RJSHelper::is_QGradient_Spread(handler, a1
   )
 
   
@@ -1785,7 +1785,7 @@ QGradient::Preset a1_cpp;
   
 QGradient::Spread a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_Spread(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_Spread(handler, a1);
         
 
     // call function:
@@ -1860,7 +1860,7 @@ QGradient::Spread a1_cpp;
               
             // return type: QGradient::Spread
 
-            return cpp2js_QGradient_Spread(
+            return RJSHelper::cpp2js_QGradient_Spread(
               handler, 
               // non-copyable: false
                   res
@@ -1896,10 +1896,10 @@ QGradient::Spread a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_QColor(handler, a2
+   && RJSHelper::is_QColor(handler, a2
   )
 
   
@@ -1911,13 +1911,13 @@ QGradient::Spread a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: color (QColor)
   
 QColor a2_cpp;
 
-      a2_cpp = js2cpp_QColor(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QColor(handler, a2);
         
 
     // call function:
@@ -1993,7 +1993,7 @@ QColor a2_cpp;
               
             // return type: QGradient::CoordinateMode
 
-            return cpp2js_QGradient_CoordinateMode(
+            return RJSHelper::cpp2js_QGradient_CoordinateMode(
               handler, 
               // non-copyable: false
                   res
@@ -2027,7 +2027,7 @@ QColor a2_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_CoordinateMode(handler, a1
+        RJSHelper::is_QGradient_CoordinateMode(handler, a1
   )
 
   
@@ -2039,7 +2039,7 @@ QColor a2_cpp;
   
 QGradient::CoordinateMode a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_CoordinateMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_CoordinateMode(handler, a1);
         
 
     // call function:
@@ -2114,7 +2114,7 @@ QGradient::CoordinateMode a1_cpp;
               
             // return type: QGradient::InterpolationMode
 
-            return cpp2js_QGradient_InterpolationMode(
+            return RJSHelper::cpp2js_QGradient_InterpolationMode(
               handler, 
               // non-copyable: false
                   res
@@ -2148,7 +2148,7 @@ QGradient::CoordinateMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_InterpolationMode(handler, a1
+        RJSHelper::is_QGradient_InterpolationMode(handler, a1
   )
 
   
@@ -2160,7 +2160,7 @@ QGradient::CoordinateMode a1_cpp;
   
 QGradient::InterpolationMode a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_InterpolationMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_InterpolationMode(handler, a1);
         
 
     // call function:
@@ -2346,16 +2346,16 @@ QLinearGradient_Wrapper::QLinearGradient_Wrapper
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_qreal(handler, a3
+   && RJSHelper::is_qreal(handler, a3
   )
 
-   && is_qreal(handler, a4
+   && RJSHelper::is_qreal(handler, a4
   )
 
   
@@ -2367,25 +2367,25 @@ QLinearGradient_Wrapper::QLinearGradient_Wrapper
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: yStart (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: xFinalStop (qreal)
   
 qreal a3_cpp;
 
-      a3_cpp = js2cpp_qreal(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
         
   // convert js parameter to cpp: yFinalStop (qreal)
   
 qreal a4_cpp;
 
-      a4_cpp = js2cpp_qreal(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
         
 
     // call function:
@@ -2414,10 +2414,10 @@ qreal a4_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
-   && is_QPointF(handler, a2
+   && RJSHelper::is_QPointF(handler, a2
   )
 
   
@@ -2429,13 +2429,13 @@ qreal a4_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
   // convert js parameter to cpp: finalStop (QPointF)
   
 QPointF a2_cpp;
 
-      a2_cpp = js2cpp_QPointF(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPointF(handler, a2);
         
 
     // call function:
@@ -2550,7 +2550,7 @@ QPointF a2_cpp;
               
             // return type: QGradient::Type
 
-            return cpp2js_QGradient_Type(
+            return RJSHelper::cpp2js_QGradient_Type(
               handler, 
               // non-copyable: false
                   res
@@ -2584,7 +2584,7 @@ QPointF a2_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_Spread(handler, a1
+        RJSHelper::is_QGradient_Spread(handler, a1
   )
 
   
@@ -2596,7 +2596,7 @@ QPointF a2_cpp;
   
 QGradient::Spread a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_Spread(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_Spread(handler, a1);
         
 
     // call function:
@@ -2671,7 +2671,7 @@ QGradient::Spread a1_cpp;
               
             // return type: QGradient::Spread
 
-            return cpp2js_QGradient_Spread(
+            return RJSHelper::cpp2js_QGradient_Spread(
               handler, 
               // non-copyable: false
                   res
@@ -2707,10 +2707,10 @@ QGradient::Spread a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_QColor(handler, a2
+   && RJSHelper::is_QColor(handler, a2
   )
 
   
@@ -2722,13 +2722,13 @@ QGradient::Spread a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: color (QColor)
   
 QColor a2_cpp;
 
-      a2_cpp = js2cpp_QColor(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QColor(handler, a2);
         
 
     // call function:
@@ -2804,7 +2804,7 @@ QColor a2_cpp;
               
             // return type: QGradient::CoordinateMode
 
-            return cpp2js_QGradient_CoordinateMode(
+            return RJSHelper::cpp2js_QGradient_CoordinateMode(
               handler, 
               // non-copyable: false
                   res
@@ -2838,7 +2838,7 @@ QColor a2_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_CoordinateMode(handler, a1
+        RJSHelper::is_QGradient_CoordinateMode(handler, a1
   )
 
   
@@ -2850,7 +2850,7 @@ QColor a2_cpp;
   
 QGradient::CoordinateMode a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_CoordinateMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_CoordinateMode(handler, a1);
         
 
     // call function:
@@ -2925,7 +2925,7 @@ QGradient::CoordinateMode a1_cpp;
               
             // return type: QGradient::InterpolationMode
 
-            return cpp2js_QGradient_InterpolationMode(
+            return RJSHelper::cpp2js_QGradient_InterpolationMode(
               handler, 
               // non-copyable: false
                   res
@@ -2959,7 +2959,7 @@ QGradient::CoordinateMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_InterpolationMode(handler, a1
+        RJSHelper::is_QGradient_InterpolationMode(handler, a1
   )
 
   
@@ -2971,7 +2971,7 @@ QGradient::CoordinateMode a1_cpp;
   
 QGradient::InterpolationMode a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_InterpolationMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_InterpolationMode(handler, a1);
         
 
     // call function:
@@ -3046,7 +3046,7 @@ QGradient::InterpolationMode a1_cpp;
               
             // return type: QPointF
 
-            return cpp2js_QPointF(
+            return RJSHelper::cpp2js_QPointF(
               handler, 
               // non-copyable: false
                   res
@@ -3082,10 +3082,10 @@ QGradient::InterpolationMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -3097,13 +3097,13 @@ QGradient::InterpolationMode a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: y (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -3133,7 +3133,7 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
   
@@ -3145,7 +3145,7 @@ qreal a2_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
 
     // call function:
@@ -3220,7 +3220,7 @@ QPointF a1_cpp;
               
             // return type: QPointF
 
-            return cpp2js_QPointF(
+            return RJSHelper::cpp2js_QPointF(
               handler, 
               // non-copyable: false
                   res
@@ -3256,10 +3256,10 @@ QPointF a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -3271,13 +3271,13 @@ QPointF a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: y (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -3307,7 +3307,7 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
   
@@ -3319,7 +3319,7 @@ qreal a2_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
 
     // call function:
@@ -3509,22 +3509,22 @@ QRadialGradient_Wrapper::QRadialGradient_Wrapper
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_qreal(handler, a3
+   && RJSHelper::is_qreal(handler, a3
   )
 
-   && is_qreal(handler, a4
+   && RJSHelper::is_qreal(handler, a4
   )
 
-   && is_qreal(handler, a5
+   && RJSHelper::is_qreal(handler, a5
   )
 
-   && is_qreal(handler, a6
+   && RJSHelper::is_qreal(handler, a6
   )
 
   
@@ -3536,37 +3536,37 @@ QRadialGradient_Wrapper::QRadialGradient_Wrapper
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: cy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: centerRadius (qreal)
   
 qreal a3_cpp;
 
-      a3_cpp = js2cpp_qreal(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
         
   // convert js parameter to cpp: fx (qreal)
   
 qreal a4_cpp;
 
-      a4_cpp = js2cpp_qreal(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
         
   // convert js parameter to cpp: fy (qreal)
   
 qreal a5_cpp;
 
-      a5_cpp = js2cpp_qreal(handler, a5);
+      a5_cpp = RJSHelper::js2cpp_qreal(handler, a5);
         
   // convert js parameter to cpp: focalRadius (qreal)
   
 qreal a6_cpp;
 
-      a6_cpp = js2cpp_qreal(handler, a6);
+      a6_cpp = RJSHelper::js2cpp_qreal(handler, a6);
         
 
     // call function:
@@ -3597,19 +3597,19 @@ qreal a6_cpp;
 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_qreal(handler, a3
+   && RJSHelper::is_qreal(handler, a3
   )
 
-   && is_qreal(handler, a4
+   && RJSHelper::is_qreal(handler, a4
   )
 
-   && is_qreal(handler, a5
+   && RJSHelper::is_qreal(handler, a5
   )
 
   
@@ -3621,31 +3621,31 @@ qreal a6_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: cy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: radius (qreal)
   
 qreal a3_cpp;
 
-      a3_cpp = js2cpp_qreal(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
         
   // convert js parameter to cpp: fx (qreal)
   
 qreal a4_cpp;
 
-      a4_cpp = js2cpp_qreal(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
         
   // convert js parameter to cpp: fy (qreal)
   
 qreal a5_cpp;
 
-      a5_cpp = js2cpp_qreal(handler, a5);
+      a5_cpp = RJSHelper::js2cpp_qreal(handler, a5);
         
 
     // call function:
@@ -3675,16 +3675,16 @@ qreal a5_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_QPointF(handler, a3
+   && RJSHelper::is_QPointF(handler, a3
   )
 
-   && is_qreal(handler, a4
+   && RJSHelper::is_qreal(handler, a4
   )
 
   
@@ -3696,25 +3696,25 @@ qreal a5_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
   // convert js parameter to cpp: centerRadius (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: focalPoint (QPointF)
   
 QPointF a3_cpp;
 
-      a3_cpp = js2cpp_QPointF(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QPointF(handler, a3);
         
   // convert js parameter to cpp: focalRadius (qreal)
   
 qreal a4_cpp;
 
-      a4_cpp = js2cpp_qreal(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
         
 
     // call function:
@@ -3743,13 +3743,13 @@ qreal a4_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_QPointF(handler, a3
+   && RJSHelper::is_QPointF(handler, a3
   )
 
   
@@ -3761,19 +3761,19 @@ qreal a4_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
   // convert js parameter to cpp: radius (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: focalPoint (QPointF)
   
 QPointF a3_cpp;
 
-      a3_cpp = js2cpp_QPointF(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QPointF(handler, a3);
         
 
     // call function:
@@ -3801,13 +3801,13 @@ QPointF a3_cpp;
 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_qreal(handler, a3
+   && RJSHelper::is_qreal(handler, a3
   )
 
   
@@ -3819,19 +3819,19 @@ QPointF a3_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: cy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: radius (qreal)
   
 qreal a3_cpp;
 
-      a3_cpp = js2cpp_qreal(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
         
 
     // call function:
@@ -3859,10 +3859,10 @@ qreal a3_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -3874,13 +3874,13 @@ qreal a3_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
   // convert js parameter to cpp: radius (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -3997,7 +3997,7 @@ qreal a2_cpp;
               
             // return type: QGradient::Type
 
-            return cpp2js_QGradient_Type(
+            return RJSHelper::cpp2js_QGradient_Type(
               handler, 
               // non-copyable: false
                   res
@@ -4031,7 +4031,7 @@ qreal a2_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_Spread(handler, a1
+        RJSHelper::is_QGradient_Spread(handler, a1
   )
 
   
@@ -4043,7 +4043,7 @@ qreal a2_cpp;
   
 QGradient::Spread a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_Spread(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_Spread(handler, a1);
         
 
     // call function:
@@ -4118,7 +4118,7 @@ QGradient::Spread a1_cpp;
               
             // return type: QGradient::Spread
 
-            return cpp2js_QGradient_Spread(
+            return RJSHelper::cpp2js_QGradient_Spread(
               handler, 
               // non-copyable: false
                   res
@@ -4154,10 +4154,10 @@ QGradient::Spread a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_QColor(handler, a2
+   && RJSHelper::is_QColor(handler, a2
   )
 
   
@@ -4169,13 +4169,13 @@ QGradient::Spread a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: color (QColor)
   
 QColor a2_cpp;
 
-      a2_cpp = js2cpp_QColor(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QColor(handler, a2);
         
 
     // call function:
@@ -4251,7 +4251,7 @@ QColor a2_cpp;
               
             // return type: QGradient::CoordinateMode
 
-            return cpp2js_QGradient_CoordinateMode(
+            return RJSHelper::cpp2js_QGradient_CoordinateMode(
               handler, 
               // non-copyable: false
                   res
@@ -4285,7 +4285,7 @@ QColor a2_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_CoordinateMode(handler, a1
+        RJSHelper::is_QGradient_CoordinateMode(handler, a1
   )
 
   
@@ -4297,7 +4297,7 @@ QColor a2_cpp;
   
 QGradient::CoordinateMode a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_CoordinateMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_CoordinateMode(handler, a1);
         
 
     // call function:
@@ -4372,7 +4372,7 @@ QGradient::CoordinateMode a1_cpp;
               
             // return type: QGradient::InterpolationMode
 
-            return cpp2js_QGradient_InterpolationMode(
+            return RJSHelper::cpp2js_QGradient_InterpolationMode(
               handler, 
               // non-copyable: false
                   res
@@ -4406,7 +4406,7 @@ QGradient::CoordinateMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_InterpolationMode(handler, a1
+        RJSHelper::is_QGradient_InterpolationMode(handler, a1
   )
 
   
@@ -4418,7 +4418,7 @@ QGradient::CoordinateMode a1_cpp;
   
 QGradient::InterpolationMode a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_InterpolationMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_InterpolationMode(handler, a1);
         
 
     // call function:
@@ -4493,7 +4493,7 @@ QGradient::InterpolationMode a1_cpp;
               
             // return type: QPointF
 
-            return cpp2js_QPointF(
+            return RJSHelper::cpp2js_QPointF(
               handler, 
               // non-copyable: false
                   res
@@ -4529,10 +4529,10 @@ QGradient::InterpolationMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -4544,13 +4544,13 @@ QGradient::InterpolationMode a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: y (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -4580,7 +4580,7 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
   
@@ -4592,7 +4592,7 @@ qreal a2_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
 
     // call function:
@@ -4667,7 +4667,7 @@ QPointF a1_cpp;
               
             // return type: QPointF
 
-            return cpp2js_QPointF(
+            return RJSHelper::cpp2js_QPointF(
               handler, 
               // non-copyable: false
                   res
@@ -4703,10 +4703,10 @@ QPointF a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -4718,13 +4718,13 @@ QPointF a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: y (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -4754,7 +4754,7 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
   
@@ -4766,7 +4766,7 @@ qreal a2_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
 
     // call function:
@@ -4841,7 +4841,7 @@ QPointF a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -4875,7 +4875,7 @@ QPointF a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -4887,7 +4887,7 @@ QPointF a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -4962,7 +4962,7 @@ qreal a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -4996,7 +4996,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -5008,7 +5008,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -5083,7 +5083,7 @@ qreal a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -5117,7 +5117,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -5129,7 +5129,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -5313,13 +5313,13 @@ QConicalGradient_Wrapper::QConicalGradient_Wrapper
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_qreal(handler, a3
+   && RJSHelper::is_qreal(handler, a3
   )
 
   
@@ -5331,19 +5331,19 @@ QConicalGradient_Wrapper::QConicalGradient_Wrapper
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: cy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: startAngle (qreal)
   
 qreal a3_cpp;
 
-      a3_cpp = js2cpp_qreal(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
         
 
     // call function:
@@ -5371,10 +5371,10 @@ qreal a3_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -5386,13 +5386,13 @@ qreal a3_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
   // convert js parameter to cpp: startAngle (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -5506,7 +5506,7 @@ qreal a2_cpp;
               
             // return type: QGradient::Type
 
-            return cpp2js_QGradient_Type(
+            return RJSHelper::cpp2js_QGradient_Type(
               handler, 
               // non-copyable: false
                   res
@@ -5540,7 +5540,7 @@ qreal a2_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_Spread(handler, a1
+        RJSHelper::is_QGradient_Spread(handler, a1
   )
 
   
@@ -5552,7 +5552,7 @@ qreal a2_cpp;
   
 QGradient::Spread a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_Spread(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_Spread(handler, a1);
         
 
     // call function:
@@ -5627,7 +5627,7 @@ QGradient::Spread a1_cpp;
               
             // return type: QGradient::Spread
 
-            return cpp2js_QGradient_Spread(
+            return RJSHelper::cpp2js_QGradient_Spread(
               handler, 
               // non-copyable: false
                   res
@@ -5663,10 +5663,10 @@ QGradient::Spread a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_QColor(handler, a2
+   && RJSHelper::is_QColor(handler, a2
   )
 
   
@@ -5678,13 +5678,13 @@ QGradient::Spread a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: color (QColor)
   
 QColor a2_cpp;
 
-      a2_cpp = js2cpp_QColor(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QColor(handler, a2);
         
 
     // call function:
@@ -5760,7 +5760,7 @@ QColor a2_cpp;
               
             // return type: QGradient::CoordinateMode
 
-            return cpp2js_QGradient_CoordinateMode(
+            return RJSHelper::cpp2js_QGradient_CoordinateMode(
               handler, 
               // non-copyable: false
                   res
@@ -5794,7 +5794,7 @@ QColor a2_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_CoordinateMode(handler, a1
+        RJSHelper::is_QGradient_CoordinateMode(handler, a1
   )
 
   
@@ -5806,7 +5806,7 @@ QColor a2_cpp;
   
 QGradient::CoordinateMode a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_CoordinateMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_CoordinateMode(handler, a1);
         
 
     // call function:
@@ -5881,7 +5881,7 @@ QGradient::CoordinateMode a1_cpp;
               
             // return type: QGradient::InterpolationMode
 
-            return cpp2js_QGradient_InterpolationMode(
+            return RJSHelper::cpp2js_QGradient_InterpolationMode(
               handler, 
               // non-copyable: false
                   res
@@ -5915,7 +5915,7 @@ QGradient::CoordinateMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_QGradient_InterpolationMode(handler, a1
+        RJSHelper::is_QGradient_InterpolationMode(handler, a1
   )
 
   
@@ -5927,7 +5927,7 @@ QGradient::CoordinateMode a1_cpp;
   
 QGradient::InterpolationMode a1_cpp;
 
-      a1_cpp = js2cpp_QGradient_InterpolationMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QGradient_InterpolationMode(handler, a1);
         
 
     // call function:
@@ -6002,7 +6002,7 @@ QGradient::InterpolationMode a1_cpp;
               
             // return type: QPointF
 
-            return cpp2js_QPointF(
+            return RJSHelper::cpp2js_QPointF(
               handler, 
               // non-copyable: false
                   res
@@ -6038,10 +6038,10 @@ QGradient::InterpolationMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -6053,13 +6053,13 @@ QGradient::InterpolationMode a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: y (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -6089,7 +6089,7 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
   
@@ -6101,7 +6101,7 @@ qreal a2_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
 
     // call function:
@@ -6176,7 +6176,7 @@ QPointF a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -6210,7 +6210,7 @@ QPointF a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -6222,7 +6222,7 @@ QPointF a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:

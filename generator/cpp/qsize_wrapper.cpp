@@ -147,10 +147,10 @@ QSize_Wrapper::QSize_Wrapper
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -162,13 +162,13 @@ QSize_Wrapper::QSize_Wrapper
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: h (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -195,10 +195,10 @@ int a2_cpp;
 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -210,13 +210,13 @@ int a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: h (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -243,10 +243,10 @@ int a2_cpp;
 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -258,13 +258,13 @@ int a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: h (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -291,7 +291,7 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
   
@@ -303,7 +303,7 @@ qreal a2_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
 
     // call function:
@@ -461,7 +461,7 @@ QSize a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -518,7 +518,7 @@ QSize a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -575,7 +575,7 @@ QSize a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -632,7 +632,7 @@ QSize a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -689,7 +689,7 @@ QSize a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -723,7 +723,7 @@ QSize a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -735,7 +735,7 @@ QSize a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -787,7 +787,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -799,7 +799,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -921,7 +921,7 @@ int a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -959,13 +959,13 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_Qt_AspectRatioMode(handler, a3
+   && RJSHelper::is_Qt_AspectRatioMode(handler, a3
   )
 
   
@@ -977,19 +977,19 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: h (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: mode (Qt::AspectRatioMode)
   
 Qt::AspectRatioMode a3_cpp;
 
-      a3_cpp = js2cpp_Qt_AspectRatioMode(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_Qt_AspectRatioMode(handler, a3);
         
 
     // call function:
@@ -1020,10 +1020,10 @@ Qt::AspectRatioMode a3_cpp;
 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
-   && is_Qt_AspectRatioMode(handler, a2
+   && RJSHelper::is_Qt_AspectRatioMode(handler, a2
   )
 
   
@@ -1035,13 +1035,13 @@ Qt::AspectRatioMode a3_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
   // convert js parameter to cpp: mode (Qt::AspectRatioMode)
   
 Qt::AspectRatioMode a2_cpp;
 
-      a2_cpp = js2cpp_Qt_AspectRatioMode(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_Qt_AspectRatioMode(handler, a2);
         
 
     // call function:
@@ -1100,13 +1100,13 @@ Qt::AspectRatioMode a2_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_Qt_AspectRatioMode(handler, a3
+   && RJSHelper::is_Qt_AspectRatioMode(handler, a3
   )
 
   
@@ -1118,19 +1118,19 @@ Qt::AspectRatioMode a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: h (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: mode (Qt::AspectRatioMode)
   
 Qt::AspectRatioMode a3_cpp;
 
-      a3_cpp = js2cpp_Qt_AspectRatioMode(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_Qt_AspectRatioMode(handler, a3);
         
 
     // call function:
@@ -1158,7 +1158,7 @@ Qt::AspectRatioMode a3_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1169,10 +1169,10 @@ Qt::AspectRatioMode a3_cpp;
 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
-   && is_Qt_AspectRatioMode(handler, a2
+   && RJSHelper::is_Qt_AspectRatioMode(handler, a2
   )
 
   
@@ -1184,13 +1184,13 @@ Qt::AspectRatioMode a3_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
   // convert js parameter to cpp: mode (Qt::AspectRatioMode)
   
 Qt::AspectRatioMode a2_cpp;
 
-      a2_cpp = js2cpp_Qt_AspectRatioMode(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_Qt_AspectRatioMode(handler, a2);
         
 
     // call function:
@@ -1217,7 +1217,7 @@ Qt::AspectRatioMode a2_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1253,7 +1253,7 @@ Qt::AspectRatioMode a2_cpp;
                 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
   
@@ -1265,7 +1265,7 @@ Qt::AspectRatioMode a2_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
 
     // call function:
@@ -1291,7 +1291,7 @@ QSize a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1327,7 +1327,7 @@ QSize a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
   
@@ -1339,7 +1339,7 @@ QSize a1_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
 
     // call function:
@@ -1365,7 +1365,7 @@ QSize a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1401,7 +1401,7 @@ QSize a1_cpp;
                 
       // check parameter types:
       if (
-        is_QMargins(handler, a1
+        RJSHelper::is_QMargins(handler, a1
   )
 
   
@@ -1413,7 +1413,7 @@ QSize a1_cpp;
   
 QMargins a1_cpp;
 
-      a1_cpp = js2cpp_QMargins(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QMargins(handler, a1);
         
 
     // call function:
@@ -1439,7 +1439,7 @@ QMargins a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1475,7 +1475,7 @@ QMargins a1_cpp;
                 
       // check parameter types:
       if (
-        is_QMargins(handler, a1
+        RJSHelper::is_QMargins(handler, a1
   )
 
   
@@ -1487,7 +1487,7 @@ QMargins a1_cpp;
   
 QMargins a1_cpp;
 
-      a1_cpp = js2cpp_QMargins(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QMargins(handler, a1);
         
 
     // call function:
@@ -1513,7 +1513,7 @@ QMargins a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1571,7 +1571,7 @@ QMargins a1_cpp;
               
             // return type: int&
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1631,7 +1631,7 @@ QMargins a1_cpp;
               
             // return type: int&
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1797,10 +1797,10 @@ QSizeF_Wrapper::QSizeF_Wrapper
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -1812,13 +1812,13 @@ QSizeF_Wrapper::QSizeF_Wrapper
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: h (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -1845,10 +1845,10 @@ int a2_cpp;
 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -1860,13 +1860,13 @@ int a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: h (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -1893,10 +1893,10 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -1908,13 +1908,13 @@ qreal a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: h (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -1941,7 +1941,7 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
   
@@ -1953,7 +1953,7 @@ qreal a2_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
 
     // call function:
@@ -1979,7 +1979,7 @@ QSize a1_cpp;
 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
   
@@ -1991,7 +1991,7 @@ QSize a1_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
 
     // call function:
@@ -2149,7 +2149,7 @@ QSize a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2206,7 +2206,7 @@ QSize a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2263,7 +2263,7 @@ QSize a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2320,7 +2320,7 @@ QSize a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -2377,7 +2377,7 @@ QSize a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -2411,7 +2411,7 @@ QSize a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -2423,7 +2423,7 @@ QSize a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -2475,7 +2475,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -2487,7 +2487,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -2609,7 +2609,7 @@ qreal a1_cpp;
               
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -2647,13 +2647,13 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_Qt_AspectRatioMode(handler, a3
+   && RJSHelper::is_Qt_AspectRatioMode(handler, a3
   )
 
   
@@ -2665,19 +2665,19 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: h (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: mode (Qt::AspectRatioMode)
   
 Qt::AspectRatioMode a3_cpp;
 
-      a3_cpp = js2cpp_Qt_AspectRatioMode(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_Qt_AspectRatioMode(handler, a3);
         
 
     // call function:
@@ -2708,10 +2708,10 @@ Qt::AspectRatioMode a3_cpp;
 
       // check parameter types:
       if (
-        is_QSizeF(handler, a1
+        RJSHelper::is_QSizeF(handler, a1
   )
 
-   && is_Qt_AspectRatioMode(handler, a2
+   && RJSHelper::is_Qt_AspectRatioMode(handler, a2
   )
 
   
@@ -2723,13 +2723,13 @@ Qt::AspectRatioMode a3_cpp;
   
 QSizeF a1_cpp;
 
-      a1_cpp = js2cpp_QSizeF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizeF(handler, a1);
         
   // convert js parameter to cpp: mode (Qt::AspectRatioMode)
   
 Qt::AspectRatioMode a2_cpp;
 
-      a2_cpp = js2cpp_Qt_AspectRatioMode(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_Qt_AspectRatioMode(handler, a2);
         
 
     // call function:
@@ -2788,13 +2788,13 @@ Qt::AspectRatioMode a2_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_Qt_AspectRatioMode(handler, a3
+   && RJSHelper::is_Qt_AspectRatioMode(handler, a3
   )
 
   
@@ -2806,19 +2806,19 @@ Qt::AspectRatioMode a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: h (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: mode (Qt::AspectRatioMode)
   
 Qt::AspectRatioMode a3_cpp;
 
-      a3_cpp = js2cpp_Qt_AspectRatioMode(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_Qt_AspectRatioMode(handler, a3);
         
 
     // call function:
@@ -2846,7 +2846,7 @@ Qt::AspectRatioMode a3_cpp;
               
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -2857,10 +2857,10 @@ Qt::AspectRatioMode a3_cpp;
 
       // check parameter types:
       if (
-        is_QSizeF(handler, a1
+        RJSHelper::is_QSizeF(handler, a1
   )
 
-   && is_Qt_AspectRatioMode(handler, a2
+   && RJSHelper::is_Qt_AspectRatioMode(handler, a2
   )
 
   
@@ -2872,13 +2872,13 @@ Qt::AspectRatioMode a3_cpp;
   
 QSizeF a1_cpp;
 
-      a1_cpp = js2cpp_QSizeF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizeF(handler, a1);
         
   // convert js parameter to cpp: mode (Qt::AspectRatioMode)
   
 Qt::AspectRatioMode a2_cpp;
 
-      a2_cpp = js2cpp_Qt_AspectRatioMode(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_Qt_AspectRatioMode(handler, a2);
         
 
     // call function:
@@ -2905,7 +2905,7 @@ Qt::AspectRatioMode a2_cpp;
               
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -2941,7 +2941,7 @@ Qt::AspectRatioMode a2_cpp;
                 
       // check parameter types:
       if (
-        is_QSizeF(handler, a1
+        RJSHelper::is_QSizeF(handler, a1
   )
 
   
@@ -2953,7 +2953,7 @@ Qt::AspectRatioMode a2_cpp;
   
 QSizeF a1_cpp;
 
-      a1_cpp = js2cpp_QSizeF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizeF(handler, a1);
         
 
     // call function:
@@ -2979,7 +2979,7 @@ QSizeF a1_cpp;
               
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -3015,7 +3015,7 @@ QSizeF a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSizeF(handler, a1
+        RJSHelper::is_QSizeF(handler, a1
   )
 
   
@@ -3027,7 +3027,7 @@ QSizeF a1_cpp;
   
 QSizeF a1_cpp;
 
-      a1_cpp = js2cpp_QSizeF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizeF(handler, a1);
         
 
     // call function:
@@ -3053,7 +3053,7 @@ QSizeF a1_cpp;
               
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -3089,7 +3089,7 @@ QSizeF a1_cpp;
                 
       // check parameter types:
       if (
-        is_QMarginsF(handler, a1
+        RJSHelper::is_QMarginsF(handler, a1
   )
 
   
@@ -3101,7 +3101,7 @@ QSizeF a1_cpp;
   
 QMarginsF a1_cpp;
 
-      a1_cpp = js2cpp_QMarginsF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QMarginsF(handler, a1);
         
 
     // call function:
@@ -3127,7 +3127,7 @@ QMarginsF a1_cpp;
               
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -3163,7 +3163,7 @@ QMarginsF a1_cpp;
                 
       // check parameter types:
       if (
-        is_QMarginsF(handler, a1
+        RJSHelper::is_QMarginsF(handler, a1
   )
 
   
@@ -3175,7 +3175,7 @@ QMarginsF a1_cpp;
   
 QMarginsF a1_cpp;
 
-      a1_cpp = js2cpp_QMarginsF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QMarginsF(handler, a1);
         
 
     // call function:
@@ -3201,7 +3201,7 @@ QMarginsF a1_cpp;
               
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -3259,7 +3259,7 @@ QMarginsF a1_cpp;
               
             // return type: qreal&
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -3319,7 +3319,7 @@ QMarginsF a1_cpp;
               
             // return type: qreal&
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -3378,7 +3378,7 @@ QMarginsF a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res

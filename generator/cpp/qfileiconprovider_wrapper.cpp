@@ -202,7 +202,7 @@ QFileIconProvider_Wrapper::QFileIconProvider_Wrapper
                 
       // check parameter types:
       if (
-        is_QFileInfo(handler, a1
+        RJSHelper::is_QFileInfo(handler, a1
   )
 
   
@@ -214,7 +214,7 @@ QFileIconProvider_Wrapper::QFileIconProvider_Wrapper
   
 QFileInfo a1_cpp;
 
-      a1_cpp = js2cpp_QFileInfo(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFileInfo(handler, a1);
         
 
     // call function:
@@ -244,7 +244,7 @@ QFileInfo a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -278,7 +278,7 @@ QFileInfo a1_cpp;
                 
       // check parameter types:
       if (
-        is_QAbstractFileIconProvider_Options(handler, a1
+        RJSHelper::is_QAbstractFileIconProvider_Options(handler, a1
   )
 
   
@@ -290,7 +290,7 @@ QFileInfo a1_cpp;
   
 QAbstractFileIconProvider::Options a1_cpp;
 
-      a1_cpp = js2cpp_QAbstractFileIconProvider_Options(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QAbstractFileIconProvider_Options(handler, a1);
         
 
     // call function:
@@ -373,7 +373,7 @@ QAbstractFileIconProvider::Options a1_cpp;
               
             // return type: QAbstractFileIconProvider::Options
 
-            return cpp2js_QAbstractFileIconProvider_Options(
+            return RJSHelper::cpp2js_QAbstractFileIconProvider_Options(
               handler, 
               // non-copyable: false
                   res
@@ -409,7 +409,7 @@ QAbstractFileIconProvider::Options a1_cpp;
                 
       // check parameter types:
       if (
-        is_QAbstractFileIconProvider_IconType(handler, a1
+        RJSHelper::is_QAbstractFileIconProvider_IconType(handler, a1
   )
 
   
@@ -421,7 +421,7 @@ QAbstractFileIconProvider::Options a1_cpp;
   
 QAbstractFileIconProvider::IconType a1_cpp;
 
-      a1_cpp = js2cpp_QAbstractFileIconProvider_IconType(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QAbstractFileIconProvider_IconType(handler, a1);
         
 
     // call function:
@@ -451,7 +451,7 @@ QAbstractFileIconProvider::IconType a1_cpp;
               
             // return type: QIcon
 
-            return cpp2js_QIcon(
+            return RJSHelper::cpp2js_QIcon(
               handler, 
               // non-copyable: false
                   res
@@ -462,7 +462,7 @@ QAbstractFileIconProvider::IconType a1_cpp;
 
       // check parameter types:
       if (
-        is_QFileInfo(handler, a1
+        RJSHelper::is_QFileInfo(handler, a1
   )
 
   
@@ -474,7 +474,7 @@ QAbstractFileIconProvider::IconType a1_cpp;
   
 QFileInfo a1_cpp;
 
-      a1_cpp = js2cpp_QFileInfo(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFileInfo(handler, a1);
         
 
     // call function:
@@ -504,7 +504,7 @@ QFileInfo a1_cpp;
               
             // return type: QIcon
 
-            return cpp2js_QIcon(
+            return RJSHelper::cpp2js_QIcon(
               handler, 
               // non-copyable: false
                   res

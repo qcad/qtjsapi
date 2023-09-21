@@ -176,19 +176,19 @@ QRegion_Wrapper::QRegion_Wrapper
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
   )
 
-   && is_QRegion_RegionType(handler, a5
+   && RJSHelper::is_QRegion_RegionType(handler, a5
     , true
   
   )
@@ -202,25 +202,25 @@ QRegion_Wrapper::QRegion_Wrapper
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: y (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: w (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: h (int)
   
 int a4_cpp;
 
-      a4_cpp = js2cpp_int(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_int(handler, a4);
         
   // convert js parameter to cpp: t (QRegion::RegionType)
   
@@ -231,7 +231,7 @@ QRegion::RegionType a5_cpp;
             a5_cpp = QRegion::Rectangle;
           }
           else {
-            a5_cpp = js2cpp_QRegion_RegionType(handler, a5);
+            a5_cpp = RJSHelper::js2cpp_QRegion_RegionType(handler, a5);
           }
         
 
@@ -262,10 +262,10 @@ QRegion::RegionType a5_cpp;
 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
-   && is_QRegion_RegionType(handler, a2
+   && RJSHelper::is_QRegion_RegionType(handler, a2
     , true
   
   )
@@ -279,7 +279,7 @@ QRegion::RegionType a5_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
   // convert js parameter to cpp: t (QRegion::RegionType)
   
@@ -290,7 +290,7 @@ QRegion::RegionType a2_cpp;
             a2_cpp = QRegion::Rectangle;
           }
           else {
-            a2_cpp = js2cpp_QRegion_RegionType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QRegion_RegionType(handler, a2);
           }
         
 
@@ -318,10 +318,10 @@ QRegion::RegionType a2_cpp;
 
       // check parameter types:
       if (
-        is_QPolygon(handler, a1
+        RJSHelper::is_QPolygon(handler, a1
   )
 
-   && is_Qt_FillRule(handler, a2
+   && RJSHelper::is_Qt_FillRule(handler, a2
     , true
   
   )
@@ -335,7 +335,7 @@ QRegion::RegionType a2_cpp;
   
 QPolygon a1_cpp;
 
-      a1_cpp = js2cpp_QPolygon(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygon(handler, a1);
         
   // convert js parameter to cpp: fillRule (Qt::FillRule)
   
@@ -346,7 +346,7 @@ Qt::FillRule a2_cpp;
             a2_cpp = Qt::OddEvenFill;
           }
           else {
-            a2_cpp = js2cpp_Qt_FillRule(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_Qt_FillRule(handler, a2);
           }
         
 
@@ -374,7 +374,7 @@ Qt::FillRule a2_cpp;
 
       // check parameter types:
       if (
-        is_QRegion(handler, a1
+        RJSHelper::is_QRegion(handler, a1
   )
 
   
@@ -386,7 +386,7 @@ Qt::FillRule a2_cpp;
   
 QRegion a1_cpp;
 
-      a1_cpp = js2cpp_QRegion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
         
 
     // call function:
@@ -412,7 +412,7 @@ QRegion a1_cpp;
 
       // check parameter types:
       if (
-        is_QRegion(handler, a1
+        RJSHelper::is_QRegion(handler, a1
   )
 
   
@@ -424,7 +424,7 @@ QRegion a1_cpp;
   
 QRegion a1_cpp;
 
-      a1_cpp = js2cpp_QRegion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
         
 
     // call function:
@@ -450,7 +450,7 @@ QRegion a1_cpp;
 
       // check parameter types:
       if (
-        is_QBitmap(handler, a1
+        RJSHelper::is_QBitmap(handler, a1
   )
 
   
@@ -462,7 +462,7 @@ QRegion a1_cpp;
   
 QBitmap a1_cpp;
 
-      a1_cpp = js2cpp_QBitmap(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QBitmap(handler, a1);
         
 
     // call function:
@@ -568,7 +568,7 @@ QBitmap a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRegion(handler, a1
+        RJSHelper::is_QRegion(handler, a1
   )
 
   
@@ -580,7 +580,7 @@ QBitmap a1_cpp;
   
 QRegion a1_cpp;
 
-      a1_cpp = js2cpp_QRegion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
         
 
     // call function:
@@ -655,7 +655,7 @@ QRegion a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -712,7 +712,7 @@ QRegion a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -748,7 +748,7 @@ QRegion a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPoint(handler, a1
+        RJSHelper::is_QPoint(handler, a1
   )
 
   
@@ -760,7 +760,7 @@ QRegion a1_cpp;
   
 QPoint a1_cpp;
 
-      a1_cpp = js2cpp_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
         
 
     // call function:
@@ -786,7 +786,7 @@ QPoint a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -797,7 +797,7 @@ QPoint a1_cpp;
 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -809,7 +809,7 @@ QPoint a1_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -835,7 +835,7 @@ QRect a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -871,10 +871,10 @@ QRect a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -886,13 +886,13 @@ QRect a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: dy (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -922,7 +922,7 @@ int a2_cpp;
 
       // check parameter types:
       if (
-        is_QPoint(handler, a1
+        RJSHelper::is_QPoint(handler, a1
   )
 
   
@@ -934,7 +934,7 @@ int a2_cpp;
   
 QPoint a1_cpp;
 
-      a1_cpp = js2cpp_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
         
 
     // call function:
@@ -990,10 +990,10 @@ QPoint a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -1005,13 +1005,13 @@ QPoint a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: dy (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -1038,7 +1038,7 @@ int a2_cpp;
               
             // return type: QRegion
 
-            return cpp2js_QRegion(
+            return RJSHelper::cpp2js_QRegion(
               handler, 
               // non-copyable: false
                   res
@@ -1049,7 +1049,7 @@ int a2_cpp;
 
       // check parameter types:
       if (
-        is_QPoint(handler, a1
+        RJSHelper::is_QPoint(handler, a1
   )
 
   
@@ -1061,7 +1061,7 @@ int a2_cpp;
   
 QPoint a1_cpp;
 
-      a1_cpp = js2cpp_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
         
 
     // call function:
@@ -1087,7 +1087,7 @@ QPoint a1_cpp;
               
             // return type: QRegion
 
-            return cpp2js_QRegion(
+            return RJSHelper::cpp2js_QRegion(
               handler, 
               // non-copyable: false
                   res
@@ -1123,7 +1123,7 @@ QPoint a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRegion(handler, a1
+        RJSHelper::is_QRegion(handler, a1
   )
 
   
@@ -1135,7 +1135,7 @@ QPoint a1_cpp;
   
 QRegion a1_cpp;
 
-      a1_cpp = js2cpp_QRegion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
         
 
     // call function:
@@ -1161,7 +1161,7 @@ QRegion a1_cpp;
               
             // return type: QRegion
 
-            return cpp2js_QRegion(
+            return RJSHelper::cpp2js_QRegion(
               handler, 
               // non-copyable: false
                   res
@@ -1172,7 +1172,7 @@ QRegion a1_cpp;
 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -1184,7 +1184,7 @@ QRegion a1_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -1210,7 +1210,7 @@ QRect a1_cpp;
               
             // return type: QRegion
 
-            return cpp2js_QRegion(
+            return RJSHelper::cpp2js_QRegion(
               handler, 
               // non-copyable: false
                   res
@@ -1246,7 +1246,7 @@ QRect a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRegion(handler, a1
+        RJSHelper::is_QRegion(handler, a1
   )
 
   
@@ -1258,7 +1258,7 @@ QRect a1_cpp;
   
 QRegion a1_cpp;
 
-      a1_cpp = js2cpp_QRegion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
         
 
     // call function:
@@ -1284,7 +1284,7 @@ QRegion a1_cpp;
               
             // return type: QRegion
 
-            return cpp2js_QRegion(
+            return RJSHelper::cpp2js_QRegion(
               handler, 
               // non-copyable: false
                   res
@@ -1295,7 +1295,7 @@ QRegion a1_cpp;
 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -1307,7 +1307,7 @@ QRegion a1_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -1333,7 +1333,7 @@ QRect a1_cpp;
               
             // return type: QRegion
 
-            return cpp2js_QRegion(
+            return RJSHelper::cpp2js_QRegion(
               handler, 
               // non-copyable: false
                   res
@@ -1369,7 +1369,7 @@ QRect a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRegion(handler, a1
+        RJSHelper::is_QRegion(handler, a1
   )
 
   
@@ -1381,7 +1381,7 @@ QRect a1_cpp;
   
 QRegion a1_cpp;
 
-      a1_cpp = js2cpp_QRegion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
         
 
     // call function:
@@ -1407,7 +1407,7 @@ QRegion a1_cpp;
               
             // return type: QRegion
 
-            return cpp2js_QRegion(
+            return RJSHelper::cpp2js_QRegion(
               handler, 
               // non-copyable: false
                   res
@@ -1443,7 +1443,7 @@ QRegion a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRegion(handler, a1
+        RJSHelper::is_QRegion(handler, a1
   )
 
   
@@ -1455,7 +1455,7 @@ QRegion a1_cpp;
   
 QRegion a1_cpp;
 
-      a1_cpp = js2cpp_QRegion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
         
 
     // call function:
@@ -1481,7 +1481,7 @@ QRegion a1_cpp;
               
             // return type: QRegion
 
-            return cpp2js_QRegion(
+            return RJSHelper::cpp2js_QRegion(
               handler, 
               // non-copyable: false
                   res
@@ -1517,7 +1517,7 @@ QRegion a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRegion(handler, a1
+        RJSHelper::is_QRegion(handler, a1
   )
 
   
@@ -1529,7 +1529,7 @@ QRegion a1_cpp;
   
 QRegion a1_cpp;
 
-      a1_cpp = js2cpp_QRegion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
         
 
     // call function:
@@ -1555,7 +1555,7 @@ QRegion a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1566,7 +1566,7 @@ QRegion a1_cpp;
 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -1578,7 +1578,7 @@ QRegion a1_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -1604,7 +1604,7 @@ QRect a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1661,7 +1661,7 @@ QRect a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -1718,7 +1718,7 @@ QRect a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res

@@ -33,17 +33,17 @@
                 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
 
-   && is_char_ptr(handler, a2
+   && RJSHelper::is_char_ptr(handler, a2
     , true
   
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
@@ -57,14 +57,14 @@
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
   // convert js parameter to cpp:  (char)
   
 
       // char pointer string:
-      QByteArray a2_ba = js2cpp_char_ptr(handler, a2).toLocal8Bit();
+      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
       const char* a2_cpp = a2_ba.constData();
     
   // convert js parameter to cpp:  (int)
@@ -76,7 +76,7 @@ int a3_cpp;
             a3_cpp = -1;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
 
@@ -96,7 +96,7 @@ int a3_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -281,10 +281,10 @@ QSvgRenderer_Wrapper::QSvgRenderer_Wrapper
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QObject_ptr(handler, a2
+   && RJSHelper::is_QObject_ptr(handler, a2
     , true
   
   )
@@ -298,7 +298,7 @@ QSvgRenderer_Wrapper::QSvgRenderer_Wrapper
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: parent (QObject)
   
@@ -312,7 +312,7 @@ QString a1_cpp;
             a2_cpp = nullptr;
           }
           else {
-            a2_cpp = js2cpp_QObject_ptr(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a2);
           }
         
 
@@ -340,10 +340,10 @@ QString a1_cpp;
 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
-   && is_QObject_ptr(handler, a2
+   && RJSHelper::is_QObject_ptr(handler, a2
     , true
   
   )
@@ -357,7 +357,7 @@ QString a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
   // convert js parameter to cpp: parent (QObject)
   
@@ -371,7 +371,7 @@ QByteArray a1_cpp;
             a2_cpp = nullptr;
           }
           else {
-            a2_cpp = js2cpp_QObject_ptr(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a2);
           }
         
 
@@ -399,12 +399,12 @@ QByteArray a1_cpp;
 
       // check parameter types:
       if (
-        is_QXmlStreamReader_ptr(handler, a1
+        RJSHelper::is_QXmlStreamReader_ptr(handler, a1
     , true
   
   )
 
-   && is_QObject_ptr(handler, a2
+   && RJSHelper::is_QObject_ptr(handler, a2
     , true
   
   )
@@ -421,7 +421,7 @@ QByteArray a1_cpp;
           QXmlStreamReader*
          a1_cpp;
 
-      a1_cpp = js2cpp_QXmlStreamReader_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QXmlStreamReader_ptr(handler, a1);
         
   // convert js parameter to cpp: parent (QObject)
   
@@ -435,7 +435,7 @@ QByteArray a1_cpp;
             a2_cpp = nullptr;
           }
           else {
-            a2_cpp = js2cpp_QObject_ptr(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a2);
           }
         
 
@@ -463,7 +463,7 @@ QByteArray a1_cpp;
 
       // check parameter types:
       if (
-        is_QObject_ptr(handler, a1
+        RJSHelper::is_QObject_ptr(handler, a1
     , true
   
   )
@@ -485,7 +485,7 @@ QByteArray a1_cpp;
             a1_cpp = nullptr;
           }
           else {
-            a1_cpp = js2cpp_QObject_ptr(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
           }
         
 
@@ -575,7 +575,7 @@ QByteArray a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -609,7 +609,7 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -621,7 +621,7 @@ QByteArray a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -696,7 +696,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -753,7 +753,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -810,7 +810,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -844,7 +844,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -856,7 +856,7 @@ QString a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -882,7 +882,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -920,12 +920,12 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
     , true
   
   )
 
-   && is_Qt_FindChildOptions(handler, a2
+   && RJSHelper::is_Qt_FindChildOptions(handler, a2
     , true
   
   )
@@ -944,7 +944,7 @@ QString a1_cpp;
             a1_cpp = QString();
           }
           else {
-            a1_cpp = js2cpp_QString(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
           }
         
   // convert js parameter to cpp: options (Qt::FindChildOptions)
@@ -956,7 +956,7 @@ Qt::FindChildOptions a2_cpp;
             a2_cpp = Qt::FindChildrenRecursively;
           }
           else {
-            a2_cpp = js2cpp_Qt_FindChildOptions(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_Qt_FindChildOptions(handler, a2);
           }
         
 
@@ -984,7 +984,7 @@ Qt::FindChildOptions a2_cpp;
               
             // return type: QObject*
 
-            return cpp2js_QObject(
+            return RJSHelper::cpp2js_QObject(
               handler, 
               // non-copyable: true
                   res
@@ -1044,7 +1044,7 @@ Qt::FindChildOptions a2_cpp;
               
             // return type: const QObjectList&
 
-            return cpp2js_QObjectList(
+            return RJSHelper::cpp2js_QObjectList(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1080,7 +1080,7 @@ Qt::FindChildOptions a2_cpp;
                 
       // check parameter types:
       if (
-        is_QObject_ptr(handler, a1
+        RJSHelper::is_QObject_ptr(handler, a1
     , true
   
   )
@@ -1097,7 +1097,7 @@ Qt::FindChildOptions a2_cpp;
           QObject*
          a1_cpp;
 
-      a1_cpp = js2cpp_QObject_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
         
 
     // call function:
@@ -1149,7 +1149,7 @@ Qt::FindChildOptions a2_cpp;
                 
       // check parameter types:
       if (
-        is_QObject_ptr(handler, a1
+        RJSHelper::is_QObject_ptr(handler, a1
     , true
   
   )
@@ -1166,7 +1166,7 @@ Qt::FindChildOptions a2_cpp;
           QObject*
          a1_cpp;
 
-      a1_cpp = js2cpp_QObject_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
         
 
     // call function:
@@ -1218,7 +1218,7 @@ Qt::FindChildOptions a2_cpp;
                 
       // check parameter types:
       if (
-        is_QObject_ptr(handler, a1
+        RJSHelper::is_QObject_ptr(handler, a1
     , true
   
   )
@@ -1235,7 +1235,7 @@ Qt::FindChildOptions a2_cpp;
           QObject*
          a1_cpp;
 
-      a1_cpp = js2cpp_QObject_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
         
 
     // call function:
@@ -1435,12 +1435,12 @@ Qt::FindChildOptions a2_cpp;
                 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
 
-   && is_QVariant(handler, a2
+   && RJSHelper::is_QVariant(handler, a2
   )
 
   
@@ -1452,14 +1452,14 @@ Qt::FindChildOptions a2_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
   // convert js parameter to cpp: value (QVariant)
   
 QVariant a2_cpp;
 
-      a2_cpp = js2cpp_QVariant(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QVariant(handler, a2);
         
 
     // call function:
@@ -1486,7 +1486,7 @@ QVariant a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1522,7 +1522,7 @@ QVariant a2_cpp;
                 
       // check parameter types:
       if (
-        is_char_ptr(handler, a1
+        RJSHelper::is_char_ptr(handler, a1
     , true
   
   )
@@ -1536,7 +1536,7 @@ QVariant a2_cpp;
   
 
       // char pointer string:
-      QByteArray a1_ba = js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
       const char* a1_cpp = a1_ba.constData();
     
 
@@ -1563,7 +1563,7 @@ QVariant a2_cpp;
               
             // return type: QVariant
 
-            return cpp2js_QVariant(
+            return RJSHelper::cpp2js_QVariant(
               handler, 
               // non-copyable: false
                   res
@@ -1620,7 +1620,7 @@ QVariant a2_cpp;
               
             // return type: QList<QByteArray>
 
-            return cpp2js_QList_QByteArray(
+            return RJSHelper::cpp2js_QList_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -1677,7 +1677,7 @@ QVariant a2_cpp;
               
             // return type: QObject*
 
-            return cpp2js_QObject(
+            return RJSHelper::cpp2js_QObject(
               handler, 
               // non-copyable: true
                   res
@@ -1781,7 +1781,7 @@ QVariant a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1838,7 +1838,7 @@ QVariant a2_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1895,7 +1895,7 @@ QVariant a2_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -1952,7 +1952,7 @@ QVariant a2_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -1986,7 +1986,7 @@ QVariant a2_cpp;
                 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -1998,7 +1998,7 @@ QVariant a2_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -2027,7 +2027,7 @@ QRect a1_cpp;
 
       // check parameter types:
       if (
-        is_QRectF(handler, a1
+        RJSHelper::is_QRectF(handler, a1
   )
 
   
@@ -2039,7 +2039,7 @@ QRect a1_cpp;
   
 QRectF a1_cpp;
 
-      a1_cpp = js2cpp_QRectF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
         
 
     // call function:
@@ -2114,7 +2114,7 @@ QRectF a1_cpp;
               
             // return type: Qt::AspectRatioMode
 
-            return cpp2js_Qt_AspectRatioMode(
+            return RJSHelper::cpp2js_Qt_AspectRatioMode(
               handler, 
               // non-copyable: false
                   res
@@ -2148,7 +2148,7 @@ QRectF a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_AspectRatioMode(handler, a1
+        RJSHelper::is_Qt_AspectRatioMode(handler, a1
   )
 
   
@@ -2160,7 +2160,7 @@ QRectF a1_cpp;
   
 Qt::AspectRatioMode a1_cpp;
 
-      a1_cpp = js2cpp_Qt_AspectRatioMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_AspectRatioMode(handler, a1);
         
 
     // call function:
@@ -2235,7 +2235,7 @@ Qt::AspectRatioMode a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2292,7 +2292,7 @@ Qt::AspectRatioMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2326,7 +2326,7 @@ Qt::AspectRatioMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2338,7 +2338,7 @@ Qt::AspectRatioMode a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2413,7 +2413,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2447,7 +2447,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2459,7 +2459,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2534,7 +2534,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2570,7 +2570,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2582,7 +2582,7 @@ int a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2608,7 +2608,7 @@ QString a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -2644,7 +2644,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2656,7 +2656,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2682,7 +2682,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2718,7 +2718,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2730,7 +2730,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2756,7 +2756,7 @@ QString a1_cpp;
               
             // return type: QTransform
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   res
@@ -2790,7 +2790,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2802,7 +2802,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2828,7 +2828,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2839,7 +2839,7 @@ QString a1_cpp;
 
       // check parameter types:
       if (
-        is_QByteArray(handler, a1
+        RJSHelper::is_QByteArray(handler, a1
   )
 
   
@@ -2851,7 +2851,7 @@ QString a1_cpp;
   
 QByteArray a1_cpp;
 
-      a1_cpp = js2cpp_QByteArray(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
         
 
     // call function:
@@ -2877,7 +2877,7 @@ QByteArray a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2888,7 +2888,7 @@ QByteArray a1_cpp;
 
       // check parameter types:
       if (
-        is_QXmlStreamReader_ptr(handler, a1
+        RJSHelper::is_QXmlStreamReader_ptr(handler, a1
     , true
   
   )
@@ -2905,7 +2905,7 @@ QByteArray a1_cpp;
           QXmlStreamReader*
          a1_cpp;
 
-      a1_cpp = js2cpp_QXmlStreamReader_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QXmlStreamReader_ptr(handler, a1);
         
 
     // call function:
@@ -2931,7 +2931,7 @@ QByteArray a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2969,15 +2969,15 @@ QByteArray a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPainter_ptr(handler, a1
+        RJSHelper::is_QPainter_ptr(handler, a1
     , true
   
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
-   && is_QRectF(handler, a3
+   && RJSHelper::is_QRectF(handler, a3
     , true
   
   )
@@ -2994,13 +2994,13 @@ QByteArray a1_cpp;
           QPainter*
          a1_cpp;
 
-      a1_cpp = js2cpp_QPainter_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
         
   // convert js parameter to cpp: elementId (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
   // convert js parameter to cpp: bounds (QRectF)
   
@@ -3011,7 +3011,7 @@ QRectF a3_cpp;
             a3_cpp = QRectF();
           }
           else {
-            a3_cpp = js2cpp_QRectF(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QRectF(handler, a3);
           }
         
 
@@ -3043,12 +3043,12 @@ QRectF a3_cpp;
 
       // check parameter types:
       if (
-        is_QPainter_ptr(handler, a1
+        RJSHelper::is_QPainter_ptr(handler, a1
     , true
   
   )
 
-   && is_QRectF(handler, a2
+   && RJSHelper::is_QRectF(handler, a2
   )
 
   
@@ -3063,13 +3063,13 @@ QRectF a3_cpp;
           QPainter*
          a1_cpp;
 
-      a1_cpp = js2cpp_QPainter_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
         
   // convert js parameter to cpp: bounds (QRectF)
   
 QRectF a2_cpp;
 
-      a2_cpp = js2cpp_QRectF(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QRectF(handler, a2);
         
 
     // call function:
@@ -3099,7 +3099,7 @@ QRectF a2_cpp;
 
       // check parameter types:
       if (
-        is_QPainter_ptr(handler, a1
+        RJSHelper::is_QPainter_ptr(handler, a1
     , true
   
   )
@@ -3116,7 +3116,7 @@ QRectF a2_cpp;
           QPainter*
          a1_cpp;
 
-      a1_cpp = js2cpp_QPainter_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
         
 
     // call function:

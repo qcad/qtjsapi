@@ -31,10 +31,10 @@
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QKeySequence_SequenceFormat(handler, a2
+   && RJSHelper::is_QKeySequence_SequenceFormat(handler, a2
     , true
   
   )
@@ -48,7 +48,7 @@
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QKeySequence::SequenceFormat)
   
@@ -59,7 +59,7 @@ QKeySequence::SequenceFormat a2_cpp;
             a2_cpp = QKeySequence::PortableText;
           }
           else {
-            a2_cpp = js2cpp_QKeySequence_SequenceFormat(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QKeySequence_SequenceFormat(handler, a2);
           }
         
 
@@ -78,7 +78,7 @@ QKeySequence::SequenceFormat a2_cpp;
           
             // return type: QKeySequence
 
-            return cpp2js_QKeySequence(
+            return RJSHelper::cpp2js_QKeySequence(
               handler, 
               // non-copyable: false
                   res
@@ -114,10 +114,10 @@ QKeySequence::SequenceFormat a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QKeySequence_SequenceFormat(handler, a2
+   && RJSHelper::is_QKeySequence_SequenceFormat(handler, a2
     , true
   
   )
@@ -131,7 +131,7 @@ QKeySequence::SequenceFormat a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QKeySequence::SequenceFormat)
   
@@ -142,7 +142,7 @@ QKeySequence::SequenceFormat a2_cpp;
             a2_cpp = QKeySequence::PortableText;
           }
           else {
-            a2_cpp = js2cpp_QKeySequence_SequenceFormat(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QKeySequence_SequenceFormat(handler, a2);
           }
         
 
@@ -161,7 +161,7 @@ QKeySequence::SequenceFormat a2_cpp;
           
             // return type: QList<QKeySequence>
 
-            return cpp2js_QList_QKeySequence(
+            return RJSHelper::cpp2js_QList_QKeySequence(
               handler, 
               // non-copyable: false
                   res
@@ -197,10 +197,10 @@ QKeySequence::SequenceFormat a2_cpp;
                 
       // check parameter types:
       if (
-        is_QList_QKeySequence(handler, a1
+        RJSHelper::is_QList_QKeySequence(handler, a1
   )
 
-   && is_QKeySequence_SequenceFormat(handler, a2
+   && RJSHelper::is_QKeySequence_SequenceFormat(handler, a2
     , true
   
   )
@@ -214,7 +214,7 @@ QKeySequence::SequenceFormat a2_cpp;
   
 QList<QKeySequence> a1_cpp;
 
-      a1_cpp = js2cpp_QList_QKeySequence(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QList_QKeySequence(handler, a1);
         
   // convert js parameter to cpp: format (QKeySequence::SequenceFormat)
   
@@ -225,7 +225,7 @@ QKeySequence::SequenceFormat a2_cpp;
             a2_cpp = QKeySequence::PortableText;
           }
           else {
-            a2_cpp = js2cpp_QKeySequence_SequenceFormat(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QKeySequence_SequenceFormat(handler, a2);
           }
         
 
@@ -244,7 +244,7 @@ QKeySequence::SequenceFormat a2_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -278,7 +278,7 @@ QKeySequence::SequenceFormat a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -290,7 +290,7 @@ QKeySequence::SequenceFormat a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -307,7 +307,7 @@ QString a1_cpp;
           
             // return type: QKeySequence
 
-            return cpp2js_QKeySequence(
+            return RJSHelper::cpp2js_QKeySequence(
               handler, 
               // non-copyable: false
                   res
@@ -341,7 +341,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QKeySequence_StandardKey(handler, a1
+        RJSHelper::is_QKeySequence_StandardKey(handler, a1
   )
 
   
@@ -353,7 +353,7 @@ QString a1_cpp;
   
 QKeySequence::StandardKey a1_cpp;
 
-      a1_cpp = js2cpp_QKeySequence_StandardKey(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QKeySequence_StandardKey(handler, a1);
         
 
     // call function:
@@ -370,7 +370,7 @@ QKeySequence::StandardKey a1_cpp;
           
             // return type: QList<QKeySequence>
 
-            return cpp2js_QList_QKeySequence(
+            return RJSHelper::cpp2js_QList_QKeySequence(
               handler, 
               // non-copyable: false
                   res
@@ -535,20 +535,20 @@ QKeySequence_Wrapper::QKeySequence_Wrapper
                 
       // check parameter types:
       if (
-        is_QKeyCombination(handler, a1
+        RJSHelper::is_QKeyCombination(handler, a1
   )
 
-   && is_QKeyCombination(handler, a2
+   && RJSHelper::is_QKeyCombination(handler, a2
     , true
   
   )
 
-   && is_QKeyCombination(handler, a3
+   && RJSHelper::is_QKeyCombination(handler, a3
     , true
   
   )
 
-   && is_QKeyCombination(handler, a4
+   && RJSHelper::is_QKeyCombination(handler, a4
     , true
   
   )
@@ -562,7 +562,7 @@ QKeySequence_Wrapper::QKeySequence_Wrapper
   
 QKeyCombination a1_cpp;
 
-      a1_cpp = js2cpp_QKeyCombination(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QKeyCombination(handler, a1);
         
   // convert js parameter to cpp: k2 (QKeyCombination)
   
@@ -573,7 +573,7 @@ QKeyCombination a2_cpp;
             a2_cpp = QKeyCombination::fromCombined(0);
           }
           else {
-            a2_cpp = js2cpp_QKeyCombination(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QKeyCombination(handler, a2);
           }
         
   // convert js parameter to cpp: k3 (QKeyCombination)
@@ -585,7 +585,7 @@ QKeyCombination a3_cpp;
             a3_cpp = QKeyCombination::fromCombined(0);
           }
           else {
-            a3_cpp = js2cpp_QKeyCombination(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QKeyCombination(handler, a3);
           }
         
   // convert js parameter to cpp: k4 (QKeyCombination)
@@ -597,7 +597,7 @@ QKeyCombination a4_cpp;
             a4_cpp = QKeyCombination::fromCombined(0);
           }
           else {
-            a4_cpp = js2cpp_QKeyCombination(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QKeyCombination(handler, a4);
           }
         
 
@@ -627,10 +627,10 @@ QKeyCombination a4_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QKeySequence_SequenceFormat(handler, a2
+   && RJSHelper::is_QKeySequence_SequenceFormat(handler, a2
     , true
   
   )
@@ -644,7 +644,7 @@ QKeyCombination a4_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QKeySequence::SequenceFormat)
   
@@ -655,7 +655,7 @@ QKeySequence::SequenceFormat a2_cpp;
             a2_cpp = QKeySequence::NativeText;
           }
           else {
-            a2_cpp = js2cpp_QKeySequence_SequenceFormat(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QKeySequence_SequenceFormat(handler, a2);
           }
         
 
@@ -683,7 +683,7 @@ QKeySequence::SequenceFormat a2_cpp;
 
       // check parameter types:
       if (
-        is_QKeySequence(handler, a1
+        RJSHelper::is_QKeySequence(handler, a1
   )
 
   
@@ -695,7 +695,7 @@ QKeySequence::SequenceFormat a2_cpp;
   
 QKeySequence a1_cpp;
 
-      a1_cpp = js2cpp_QKeySequence(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QKeySequence(handler, a1);
         
 
     // call function:
@@ -721,7 +721,7 @@ QKeySequence a1_cpp;
 
       // check parameter types:
       if (
-        is_QKeySequence_StandardKey(handler, a1
+        RJSHelper::is_QKeySequence_StandardKey(handler, a1
   )
 
   
@@ -733,7 +733,7 @@ QKeySequence a1_cpp;
   
 QKeySequence::StandardKey a1_cpp;
 
-      a1_cpp = js2cpp_QKeySequence_StandardKey(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QKeySequence_StandardKey(handler, a1);
         
 
     // call function:
@@ -847,7 +847,7 @@ QKeySequence::StandardKey a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -904,7 +904,7 @@ QKeySequence::StandardKey a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -942,7 +942,7 @@ QKeySequence::StandardKey a1_cpp;
                 
       // check parameter types:
       if (
-        is_QKeySequence_SequenceFormat(handler, a1
+        RJSHelper::is_QKeySequence_SequenceFormat(handler, a1
     , true
   
   )
@@ -961,7 +961,7 @@ QKeySequence::SequenceFormat a1_cpp;
             a1_cpp = QKeySequence::PortableText;
           }
           else {
-            a1_cpp = js2cpp_QKeySequence_SequenceFormat(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QKeySequence_SequenceFormat(handler, a1);
           }
         
 
@@ -988,7 +988,7 @@ QKeySequence::SequenceFormat a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1024,7 +1024,7 @@ QKeySequence::SequenceFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QKeySequence(handler, a1
+        RJSHelper::is_QKeySequence(handler, a1
   )
 
   
@@ -1036,7 +1036,7 @@ QKeySequence::SequenceFormat a1_cpp;
   
 QKeySequence a1_cpp;
 
-      a1_cpp = js2cpp_QKeySequence(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QKeySequence(handler, a1);
         
 
     // call function:
@@ -1062,7 +1062,7 @@ QKeySequence a1_cpp;
               
             // return type: QKeySequence::SequenceMatch
 
-            return cpp2js_QKeySequence_SequenceMatch(
+            return RJSHelper::cpp2js_QKeySequence_SequenceMatch(
               handler, 
               // non-copyable: false
                   res
@@ -1096,7 +1096,7 @@ QKeySequence a1_cpp;
                 
       // check parameter types:
       if (
-        is_QKeySequence(handler, a1
+        RJSHelper::is_QKeySequence(handler, a1
   )
 
   
@@ -1108,7 +1108,7 @@ QKeySequence a1_cpp;
   
 QKeySequence a1_cpp;
 
-      a1_cpp = js2cpp_QKeySequence(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QKeySequence(handler, a1);
         
 
     // call function:
@@ -1183,7 +1183,7 @@ QKeySequence a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res

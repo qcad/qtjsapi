@@ -29,7 +29,7 @@
                 
       // check parameter types:
       if (
-        is_QUrl(handler, a1
+        RJSHelper::is_QUrl(handler, a1
   )
 
   
@@ -41,7 +41,7 @@
   
 QUrl a1_cpp;
 
-      a1_cpp = js2cpp_QUrl(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QUrl(handler, a1);
         
 
     // call function:
@@ -58,7 +58,7 @@ QUrl a1_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -96,15 +96,15 @@ QUrl a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QObject_ptr(handler, a2
+   && RJSHelper::is_QObject_ptr(handler, a2
     , true
   
   )
 
-   && is_char_ptr(handler, a3
+   && RJSHelper::is_char_ptr(handler, a3
     , true
   
   )
@@ -118,7 +118,7 @@ QUrl a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: receiver (QObject)
   
@@ -127,13 +127,13 @@ QString a1_cpp;
           QObject*
          a2_cpp;
 
-      a2_cpp = js2cpp_QObject_ptr(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a2);
         
   // convert js parameter to cpp: method (char)
   
 
       // char pointer string:
-      QByteArray a3_ba = js2cpp_char_ptr(handler, a3).toLocal8Bit();
+      QByteArray a3_ba = RJSHelper::js2cpp_char_ptr(handler, a3).toLocal8Bit();
       const char* a3_cpp = a3_ba.constData();
     
 
@@ -179,7 +179,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -191,7 +191,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:

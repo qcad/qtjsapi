@@ -27,7 +27,7 @@ qt_add_library(rjsapi SHARED
     generator/RJSHelper.cpp generator/RJSHelper.h
     generator/RJSType.h
     RJSWrapperObj.h
-    RJSApi.h RJSAPi.cpp
+    RJSApi.h RJSApi.cpp
     ${SOURCES}
 )
 

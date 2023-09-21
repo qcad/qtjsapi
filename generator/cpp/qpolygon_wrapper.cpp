@@ -145,7 +145,7 @@ QPolygon_Wrapper::QPolygon_Wrapper
                 
       // check parameter types:
       if (
-        is_QList_QPoint(handler, a1
+        RJSHelper::is_QList_QPoint(handler, a1
   )
 
   
@@ -157,7 +157,7 @@ QPolygon_Wrapper::QPolygon_Wrapper
   
 QList<QPoint> a1_cpp;
 
-      a1_cpp = js2cpp_QList_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QList_QPoint(handler, a1);
         
 
     // call function:
@@ -183,7 +183,7 @@ QList<QPoint> a1_cpp;
 
       // check parameter types:
       if (
-        is_QList_QPoint(handler, a1
+        RJSHelper::is_QList_QPoint(handler, a1
   )
 
   
@@ -195,7 +195,7 @@ QList<QPoint> a1_cpp;
   
 QList<QPoint> a1_cpp;
 
-      a1_cpp = js2cpp_QList_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QList_QPoint(handler, a1);
         
 
     // call function:
@@ -283,7 +283,7 @@ QList<QPoint> a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygon(handler, a1
+        RJSHelper::is_QPolygon(handler, a1
   )
 
   
@@ -295,7 +295,7 @@ QList<QPoint> a1_cpp;
   
 QPolygon a1_cpp;
 
-      a1_cpp = js2cpp_QPolygon(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygon(handler, a1);
         
 
     // call function:
@@ -349,10 +349,10 @@ QPolygon a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -364,13 +364,13 @@ QPolygon a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: dy (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -400,7 +400,7 @@ int a2_cpp;
 
       // check parameter types:
       if (
-        is_QPoint(handler, a1
+        RJSHelper::is_QPoint(handler, a1
   )
 
   
@@ -412,7 +412,7 @@ int a2_cpp;
   
 QPoint a1_cpp;
 
-      a1_cpp = js2cpp_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
         
 
     // call function:
@@ -468,10 +468,10 @@ QPoint a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -483,13 +483,13 @@ QPoint a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: dy (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -516,7 +516,7 @@ int a2_cpp;
               
             // return type: QPolygon
 
-            return cpp2js_QPolygon(
+            return RJSHelper::cpp2js_QPolygon(
               handler, 
               // non-copyable: false
                   res
@@ -527,7 +527,7 @@ int a2_cpp;
 
       // check parameter types:
       if (
-        is_QPoint(handler, a1
+        RJSHelper::is_QPoint(handler, a1
   )
 
   
@@ -539,7 +539,7 @@ int a2_cpp;
   
 QPoint a1_cpp;
 
-      a1_cpp = js2cpp_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
         
 
     // call function:
@@ -565,7 +565,7 @@ QPoint a1_cpp;
               
             // return type: QPolygon
 
-            return cpp2js_QPolygon(
+            return RJSHelper::cpp2js_QPolygon(
               handler, 
               // non-copyable: false
                   res
@@ -622,7 +622,7 @@ QPoint a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -658,7 +658,7 @@ QPoint a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -670,7 +670,7 @@ QPoint a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -696,7 +696,7 @@ int a1_cpp;
               
             // return type: QPoint
 
-            return cpp2js_QPoint(
+            return RJSHelper::cpp2js_QPoint(
               handler, 
               // non-copyable: false
                   res
@@ -734,13 +734,13 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
   
@@ -752,19 +752,19 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: x (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: y (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
 
     // call function:
@@ -795,10 +795,10 @@ int a3_cpp;
 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_QPoint(handler, a2
+   && RJSHelper::is_QPoint(handler, a2
   )
 
   
@@ -810,13 +810,13 @@ int a3_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: p (QPoint)
   
 QPoint a2_cpp;
 
-      a2_cpp = js2cpp_QPoint(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPoint(handler, a2);
         
 
     // call function:
@@ -873,10 +873,10 @@ QPoint a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPoint(handler, a1
+        RJSHelper::is_QPoint(handler, a1
   )
 
-   && is_Qt_FillRule(handler, a2
+   && RJSHelper::is_Qt_FillRule(handler, a2
   )
 
   
@@ -888,13 +888,13 @@ QPoint a2_cpp;
   
 QPoint a1_cpp;
 
-      a1_cpp = js2cpp_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
         
   // convert js parameter to cpp: fillRule (Qt::FillRule)
   
 Qt::FillRule a2_cpp;
 
-      a2_cpp = js2cpp_Qt_FillRule(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_Qt_FillRule(handler, a2);
         
 
     // call function:
@@ -921,7 +921,7 @@ Qt::FillRule a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -957,7 +957,7 @@ Qt::FillRule a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygon(handler, a1
+        RJSHelper::is_QPolygon(handler, a1
   )
 
   
@@ -969,7 +969,7 @@ Qt::FillRule a2_cpp;
   
 QPolygon a1_cpp;
 
-      a1_cpp = js2cpp_QPolygon(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygon(handler, a1);
         
 
     // call function:
@@ -995,7 +995,7 @@ QPolygon a1_cpp;
               
             // return type: QPolygon
 
-            return cpp2js_QPolygon(
+            return RJSHelper::cpp2js_QPolygon(
               handler, 
               // non-copyable: false
                   res
@@ -1031,7 +1031,7 @@ QPolygon a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygon(handler, a1
+        RJSHelper::is_QPolygon(handler, a1
   )
 
   
@@ -1043,7 +1043,7 @@ QPolygon a1_cpp;
   
 QPolygon a1_cpp;
 
-      a1_cpp = js2cpp_QPolygon(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygon(handler, a1);
         
 
     // call function:
@@ -1069,7 +1069,7 @@ QPolygon a1_cpp;
               
             // return type: QPolygon
 
-            return cpp2js_QPolygon(
+            return RJSHelper::cpp2js_QPolygon(
               handler, 
               // non-copyable: false
                   res
@@ -1105,7 +1105,7 @@ QPolygon a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygon(handler, a1
+        RJSHelper::is_QPolygon(handler, a1
   )
 
   
@@ -1117,7 +1117,7 @@ QPolygon a1_cpp;
   
 QPolygon a1_cpp;
 
-      a1_cpp = js2cpp_QPolygon(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygon(handler, a1);
         
 
     // call function:
@@ -1143,7 +1143,7 @@ QPolygon a1_cpp;
               
             // return type: QPolygon
 
-            return cpp2js_QPolygon(
+            return RJSHelper::cpp2js_QPolygon(
               handler, 
               // non-copyable: false
                   res
@@ -1177,7 +1177,7 @@ QPolygon a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygon(handler, a1
+        RJSHelper::is_QPolygon(handler, a1
   )
 
   
@@ -1189,7 +1189,7 @@ QPolygon a1_cpp;
   
 QPolygon a1_cpp;
 
-      a1_cpp = js2cpp_QPolygon(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygon(handler, a1);
         
 
     // call function:
@@ -1215,7 +1215,7 @@ QPolygon a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1377,7 +1377,7 @@ QPolygonF_Wrapper::QPolygonF_Wrapper
                 
       // check parameter types:
       if (
-        is_QList_QPointF(handler, a1
+        RJSHelper::is_QList_QPointF(handler, a1
   )
 
   
@@ -1389,7 +1389,7 @@ QPolygonF_Wrapper::QPolygonF_Wrapper
   
 QList<QPointF> a1_cpp;
 
-      a1_cpp = js2cpp_QList_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QList_QPointF(handler, a1);
         
 
     // call function:
@@ -1415,7 +1415,7 @@ QList<QPointF> a1_cpp;
 
       // check parameter types:
       if (
-        is_QList_QPointF(handler, a1
+        RJSHelper::is_QList_QPointF(handler, a1
   )
 
   
@@ -1427,7 +1427,7 @@ QList<QPointF> a1_cpp;
   
 QList<QPointF> a1_cpp;
 
-      a1_cpp = js2cpp_QList_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QList_QPointF(handler, a1);
         
 
     // call function:
@@ -1515,7 +1515,7 @@ QList<QPointF> a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygonF(handler, a1
+        RJSHelper::is_QPolygonF(handler, a1
   )
 
   
@@ -1527,7 +1527,7 @@ QList<QPointF> a1_cpp;
   
 QPolygonF a1_cpp;
 
-      a1_cpp = js2cpp_QPolygonF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
         
 
     // call function:
@@ -1581,10 +1581,10 @@ QPolygonF a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -1596,13 +1596,13 @@ QPolygonF a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: dy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -1632,7 +1632,7 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
   
@@ -1644,7 +1644,7 @@ qreal a2_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
 
     // call function:
@@ -1700,10 +1700,10 @@ QPointF a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -1715,13 +1715,13 @@ QPointF a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: dy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -1748,7 +1748,7 @@ qreal a2_cpp;
               
             // return type: QPolygonF
 
-            return cpp2js_QPolygonF(
+            return RJSHelper::cpp2js_QPolygonF(
               handler, 
               // non-copyable: false
                   res
@@ -1759,7 +1759,7 @@ qreal a2_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
   
@@ -1771,7 +1771,7 @@ qreal a2_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
 
     // call function:
@@ -1797,7 +1797,7 @@ QPointF a1_cpp;
               
             // return type: QPolygonF
 
-            return cpp2js_QPolygonF(
+            return RJSHelper::cpp2js_QPolygonF(
               handler, 
               // non-copyable: false
                   res
@@ -1854,7 +1854,7 @@ QPointF a1_cpp;
               
             // return type: QPolygon
 
-            return cpp2js_QPolygon(
+            return RJSHelper::cpp2js_QPolygon(
               handler, 
               // non-copyable: false
                   res
@@ -1911,7 +1911,7 @@ QPointF a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1968,7 +1968,7 @@ QPointF a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -2006,10 +2006,10 @@ QPointF a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
-   && is_Qt_FillRule(handler, a2
+   && RJSHelper::is_Qt_FillRule(handler, a2
   )
 
   
@@ -2021,13 +2021,13 @@ QPointF a1_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
   // convert js parameter to cpp: fillRule (Qt::FillRule)
   
 Qt::FillRule a2_cpp;
 
-      a2_cpp = js2cpp_Qt_FillRule(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_Qt_FillRule(handler, a2);
         
 
     // call function:
@@ -2054,7 +2054,7 @@ Qt::FillRule a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2090,7 +2090,7 @@ Qt::FillRule a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygonF(handler, a1
+        RJSHelper::is_QPolygonF(handler, a1
   )
 
   
@@ -2102,7 +2102,7 @@ Qt::FillRule a2_cpp;
   
 QPolygonF a1_cpp;
 
-      a1_cpp = js2cpp_QPolygonF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
         
 
     // call function:
@@ -2128,7 +2128,7 @@ QPolygonF a1_cpp;
               
             // return type: QPolygonF
 
-            return cpp2js_QPolygonF(
+            return RJSHelper::cpp2js_QPolygonF(
               handler, 
               // non-copyable: false
                   res
@@ -2164,7 +2164,7 @@ QPolygonF a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygonF(handler, a1
+        RJSHelper::is_QPolygonF(handler, a1
   )
 
   
@@ -2176,7 +2176,7 @@ QPolygonF a1_cpp;
   
 QPolygonF a1_cpp;
 
-      a1_cpp = js2cpp_QPolygonF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
         
 
     // call function:
@@ -2202,7 +2202,7 @@ QPolygonF a1_cpp;
               
             // return type: QPolygonF
 
-            return cpp2js_QPolygonF(
+            return RJSHelper::cpp2js_QPolygonF(
               handler, 
               // non-copyable: false
                   res
@@ -2238,7 +2238,7 @@ QPolygonF a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygonF(handler, a1
+        RJSHelper::is_QPolygonF(handler, a1
   )
 
   
@@ -2250,7 +2250,7 @@ QPolygonF a1_cpp;
   
 QPolygonF a1_cpp;
 
-      a1_cpp = js2cpp_QPolygonF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
         
 
     // call function:
@@ -2276,7 +2276,7 @@ QPolygonF a1_cpp;
               
             // return type: QPolygonF
 
-            return cpp2js_QPolygonF(
+            return RJSHelper::cpp2js_QPolygonF(
               handler, 
               // non-copyable: false
                   res
@@ -2310,7 +2310,7 @@ QPolygonF a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygonF(handler, a1
+        RJSHelper::is_QPolygonF(handler, a1
   )
 
   
@@ -2322,7 +2322,7 @@ QPolygonF a1_cpp;
   
 QPolygonF a1_cpp;
 
-      a1_cpp = js2cpp_QPolygonF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
         
 
     // call function:
@@ -2348,7 +2348,7 @@ QPolygonF a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res

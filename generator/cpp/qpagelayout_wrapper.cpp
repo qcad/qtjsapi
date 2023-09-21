@@ -153,21 +153,21 @@ QPageLayout_Wrapper::QPageLayout_Wrapper
                 
       // check parameter types:
       if (
-        is_QPageSize(handler, a1
+        RJSHelper::is_QPageSize(handler, a1
   )
 
-   && is_QPageLayout_Orientation(handler, a2
+   && RJSHelper::is_QPageLayout_Orientation(handler, a2
   )
 
-   && is_QMarginsF(handler, a3
+   && RJSHelper::is_QMarginsF(handler, a3
   )
 
-   && is_QPageLayout_Unit(handler, a4
+   && RJSHelper::is_QPageLayout_Unit(handler, a4
     , true
   
   )
 
-   && is_QMarginsF(handler, a5
+   && RJSHelper::is_QMarginsF(handler, a5
     , true
   
   )
@@ -181,19 +181,19 @@ QPageLayout_Wrapper::QPageLayout_Wrapper
   
 QPageSize a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize(handler, a1);
         
   // convert js parameter to cpp: orientation (QPageLayout::Orientation)
   
 QPageLayout::Orientation a2_cpp;
 
-      a2_cpp = js2cpp_QPageLayout_Orientation(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPageLayout_Orientation(handler, a2);
         
   // convert js parameter to cpp: margins (QMarginsF)
   
 QMarginsF a3_cpp;
 
-      a3_cpp = js2cpp_QMarginsF(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QMarginsF(handler, a3);
         
   // convert js parameter to cpp: units (QPageLayout::Unit)
   
@@ -204,7 +204,7 @@ QPageLayout::Unit a4_cpp;
             a4_cpp = QPageLayout::Point;
           }
           else {
-            a4_cpp = js2cpp_QPageLayout_Unit(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QPageLayout_Unit(handler, a4);
           }
         
   // convert js parameter to cpp: minMargins (QMarginsF)
@@ -216,7 +216,7 @@ QMarginsF a5_cpp;
             a5_cpp = QMarginsF(0,0,0,0);
           }
           else {
-            a5_cpp = js2cpp_QMarginsF(handler, a5);
+            a5_cpp = RJSHelper::js2cpp_QMarginsF(handler, a5);
           }
         
 
@@ -247,7 +247,7 @@ QMarginsF a5_cpp;
 
       // check parameter types:
       if (
-        is_QPageLayout(handler, a1
+        RJSHelper::is_QPageLayout(handler, a1
   )
 
   
@@ -259,7 +259,7 @@ QMarginsF a5_cpp;
   
 QPageLayout a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout(handler, a1);
         
 
     // call function:
@@ -351,7 +351,7 @@ QPageLayout a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout(handler, a1
+        RJSHelper::is_QPageLayout(handler, a1
   )
 
   
@@ -363,7 +363,7 @@ QPageLayout a1_cpp;
   
 QPageLayout a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout(handler, a1);
         
 
     // call function:
@@ -417,7 +417,7 @@ QPageLayout a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout(handler, a1
+        RJSHelper::is_QPageLayout(handler, a1
   )
 
   
@@ -429,7 +429,7 @@ QPageLayout a1_cpp;
   
 QPageLayout a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout(handler, a1);
         
 
     // call function:
@@ -455,7 +455,7 @@ QPageLayout a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -512,7 +512,7 @@ QPageLayout a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -546,7 +546,7 @@ QPageLayout a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout_Mode(handler, a1
+        RJSHelper::is_QPageLayout_Mode(handler, a1
   )
 
   
@@ -558,7 +558,7 @@ QPageLayout a1_cpp;
   
 QPageLayout::Mode a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout_Mode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout_Mode(handler, a1);
         
 
     // call function:
@@ -633,7 +633,7 @@ QPageLayout::Mode a1_cpp;
               
             // return type: QPageLayout::Mode
 
-            return cpp2js_QPageLayout_Mode(
+            return RJSHelper::cpp2js_QPageLayout_Mode(
               handler, 
               // non-copyable: false
                   res
@@ -669,10 +669,10 @@ QPageLayout::Mode a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize(handler, a1
+        RJSHelper::is_QPageSize(handler, a1
   )
 
-   && is_QMarginsF(handler, a2
+   && RJSHelper::is_QMarginsF(handler, a2
     , true
   
   )
@@ -686,7 +686,7 @@ QPageLayout::Mode a1_cpp;
   
 QPageSize a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize(handler, a1);
         
   // convert js parameter to cpp: minMargins (QMarginsF)
   
@@ -697,7 +697,7 @@ QMarginsF a2_cpp;
             a2_cpp = QMarginsF(0,0,0,0);
           }
           else {
-            a2_cpp = js2cpp_QMarginsF(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QMarginsF(handler, a2);
           }
         
 
@@ -774,7 +774,7 @@ QMarginsF a2_cpp;
               
             // return type: QPageSize
 
-            return cpp2js_QPageSize(
+            return RJSHelper::cpp2js_QPageSize(
               handler, 
               // non-copyable: false
                   res
@@ -808,7 +808,7 @@ QMarginsF a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout_Orientation(handler, a1
+        RJSHelper::is_QPageLayout_Orientation(handler, a1
   )
 
   
@@ -820,7 +820,7 @@ QMarginsF a2_cpp;
   
 QPageLayout::Orientation a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout_Orientation(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout_Orientation(handler, a1);
         
 
     // call function:
@@ -895,7 +895,7 @@ QPageLayout::Orientation a1_cpp;
               
             // return type: QPageLayout::Orientation
 
-            return cpp2js_QPageLayout_Orientation(
+            return RJSHelper::cpp2js_QPageLayout_Orientation(
               handler, 
               // non-copyable: false
                   res
@@ -929,7 +929,7 @@ QPageLayout::Orientation a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout_Unit(handler, a1
+        RJSHelper::is_QPageLayout_Unit(handler, a1
   )
 
   
@@ -941,7 +941,7 @@ QPageLayout::Orientation a1_cpp;
   
 QPageLayout::Unit a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout_Unit(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout_Unit(handler, a1);
         
 
     // call function:
@@ -1016,7 +1016,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QPageLayout::Unit
 
-            return cpp2js_QPageLayout_Unit(
+            return RJSHelper::cpp2js_QPageLayout_Unit(
               handler, 
               // non-copyable: false
                   res
@@ -1050,7 +1050,7 @@ QPageLayout::Unit a1_cpp;
                 
       // check parameter types:
       if (
-        is_QMarginsF(handler, a1
+        RJSHelper::is_QMarginsF(handler, a1
   )
 
   
@@ -1062,7 +1062,7 @@ QPageLayout::Unit a1_cpp;
   
 QMarginsF a1_cpp;
 
-      a1_cpp = js2cpp_QMarginsF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QMarginsF(handler, a1);
         
 
     // call function:
@@ -1088,7 +1088,7 @@ QMarginsF a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1122,7 +1122,7 @@ QMarginsF a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -1134,7 +1134,7 @@ QMarginsF a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -1160,7 +1160,7 @@ qreal a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1194,7 +1194,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -1206,7 +1206,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -1232,7 +1232,7 @@ qreal a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1266,7 +1266,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -1278,7 +1278,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -1304,7 +1304,7 @@ qreal a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1338,7 +1338,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -1350,7 +1350,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -1376,7 +1376,7 @@ qreal a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1412,7 +1412,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout_Unit(handler, a1
+        RJSHelper::is_QPageLayout_Unit(handler, a1
   )
 
   
@@ -1424,7 +1424,7 @@ qreal a1_cpp;
   
 QPageLayout::Unit a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout_Unit(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout_Unit(handler, a1);
         
 
     // call function:
@@ -1450,7 +1450,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QMarginsF
 
-            return cpp2js_QMarginsF(
+            return RJSHelper::cpp2js_QMarginsF(
               handler, 
               // non-copyable: false
                   res
@@ -1484,7 +1484,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QMarginsF
 
-            return cpp2js_QMarginsF(
+            return RJSHelper::cpp2js_QMarginsF(
               handler, 
               // non-copyable: false
                   res
@@ -1541,7 +1541,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QMargins
 
-            return cpp2js_QMargins(
+            return RJSHelper::cpp2js_QMargins(
               handler, 
               // non-copyable: false
                   res
@@ -1577,7 +1577,7 @@ QPageLayout::Unit a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1589,7 +1589,7 @@ QPageLayout::Unit a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1615,7 +1615,7 @@ int a1_cpp;
               
             // return type: QMargins
 
-            return cpp2js_QMargins(
+            return RJSHelper::cpp2js_QMargins(
               handler, 
               // non-copyable: false
                   res
@@ -1649,7 +1649,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QMarginsF(handler, a1
+        RJSHelper::is_QMarginsF(handler, a1
   )
 
   
@@ -1661,7 +1661,7 @@ int a1_cpp;
   
 QMarginsF a1_cpp;
 
-      a1_cpp = js2cpp_QMarginsF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QMarginsF(handler, a1);
         
 
     // call function:
@@ -1736,7 +1736,7 @@ QMarginsF a1_cpp;
               
             // return type: QMarginsF
 
-            return cpp2js_QMarginsF(
+            return RJSHelper::cpp2js_QMarginsF(
               handler, 
               // non-copyable: false
                   res
@@ -1793,7 +1793,7 @@ QMarginsF a1_cpp;
               
             // return type: QMarginsF
 
-            return cpp2js_QMarginsF(
+            return RJSHelper::cpp2js_QMarginsF(
               handler, 
               // non-copyable: false
                   res
@@ -1829,7 +1829,7 @@ QMarginsF a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout_Unit(handler, a1
+        RJSHelper::is_QPageLayout_Unit(handler, a1
   )
 
   
@@ -1841,7 +1841,7 @@ QMarginsF a1_cpp;
   
 QPageLayout::Unit a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout_Unit(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout_Unit(handler, a1);
         
 
     // call function:
@@ -1867,7 +1867,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -1901,7 +1901,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -1958,7 +1958,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -1994,7 +1994,7 @@ QPageLayout::Unit a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2006,7 +2006,7 @@ QPageLayout::Unit a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2032,7 +2032,7 @@ int a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -2068,7 +2068,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout_Unit(handler, a1
+        RJSHelper::is_QPageLayout_Unit(handler, a1
   )
 
   
@@ -2080,7 +2080,7 @@ int a1_cpp;
   
 QPageLayout::Unit a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout_Unit(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout_Unit(handler, a1);
         
 
     // call function:
@@ -2106,7 +2106,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -2140,7 +2140,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -2197,7 +2197,7 @@ QPageLayout::Unit a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -2233,7 +2233,7 @@ QPageLayout::Unit a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2245,7 +2245,7 @@ QPageLayout::Unit a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2271,7 +2271,7 @@ int a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res

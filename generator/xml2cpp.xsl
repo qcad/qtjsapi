@@ -836,7 +836,7 @@
         <xsl:if test="ancestor-or-self::qsrc:class/@equalsfunction">
           Q_INVOKABLE
           bool equals(const QJSValue&amp; other) const {
-            <xsl:value-of select="@name" /> otherObj = js2cpp_<xsl:value-of select="@name" />(handler, other);
+            <xsl:value-of select="@name" /> otherObj = RJSHelper::js2cpp_<xsl:value-of select="@name" />(handler, other);
             <xsl:value-of select="@name" />* thisObj = getWrapped();
 
             if (thisObj==nullptr) {
@@ -2440,7 +2440,7 @@
 
 <!--
   Converts the list of parameters from QSValue to native types for use in calling the base constructor:
-  js2cpp_xy(engine, a1), ...
+  RJSHelper::js2cpp_xy(engine, a1), ...
 -->
 <!--
 <xsl:template match="qsrc:parameter" mode="tocppcontr">
@@ -2604,7 +2604,7 @@
 
 <!--
   Return function to check for given type.
-  e.g. is_bool
+  e.g. RJSHelper::is_bool
 -->
 <func:function name="qc:type-to-function-is">
   <xsl:param name="type" />
@@ -2618,7 +2618,7 @@
   </xsl:variable>
 
   <func:result>
-    <xsl:text>is_</xsl:text>
+    <xsl:text>RJSHelper::is_</xsl:text>
     <xsl:value-of 
       select="qc:replace(
               qc:replace(

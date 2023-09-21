@@ -41,7 +41,7 @@
         QJSValueList args;
         
 
-  args << cpp2js_QXmlLocator(
+  args << RJSHelper::cpp2js_QXmlLocator(
     handler, 
     // non-copyable: false
 locator
@@ -137,7 +137,7 @@ locator
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -199,7 +199,7 @@ locator
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -235,14 +235,14 @@ locator
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 prefix
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 uri
@@ -275,7 +275,7 @@ uri
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -311,7 +311,7 @@ uri
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 prefix
@@ -344,7 +344,7 @@ prefix
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -380,28 +380,28 @@ prefix
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 namespaceURI
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 localName
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 qName
   );
 
 
-  args << cpp2js_QXmlAttributes(
+  args << RJSHelper::cpp2js_QXmlAttributes(
     handler, 
     // non-copyable: false
 atts
@@ -434,7 +434,7 @@ atts
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -470,21 +470,21 @@ atts
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 namespaceURI
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 localName
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 qName
@@ -517,7 +517,7 @@ qName
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -553,7 +553,7 @@ qName
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 ch
@@ -586,7 +586,7 @@ ch
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -622,7 +622,7 @@ ch
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 ch
@@ -655,7 +655,7 @@ ch
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -691,14 +691,14 @@ ch
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 target
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 data
@@ -731,7 +731,7 @@ data
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -767,7 +767,7 @@ data
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 name
@@ -800,7 +800,7 @@ name
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -836,21 +836,21 @@ name
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 name
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 publicId
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 systemId
@@ -883,7 +883,7 @@ systemId
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -919,28 +919,28 @@ systemId
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 name
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 publicId
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 systemId
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 notationName
@@ -973,7 +973,7 @@ notationName
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1009,21 +1009,21 @@ notationName
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 name
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 publicId
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 systemId
@@ -1056,7 +1056,7 @@ systemId
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1118,7 +1118,7 @@ systemId
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1154,7 +1154,7 @@ systemId
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 name
@@ -1187,7 +1187,7 @@ name
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1223,7 +1223,7 @@ name
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 name
@@ -1256,7 +1256,7 @@ name
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1318,7 +1318,7 @@ name
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1380,7 +1380,7 @@ name
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1416,7 +1416,7 @@ name
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 ch
@@ -1449,7 +1449,7 @@ ch
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1485,35 +1485,35 @@ ch
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 eName
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 aName
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 type
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 valueDefault
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 value
@@ -1546,7 +1546,7 @@ value
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1582,14 +1582,14 @@ value
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 name
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 value
@@ -1622,7 +1622,7 @@ value
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1658,21 +1658,21 @@ value
         QJSValueList args;
         
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 name
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 publicId
   );
 
 
-  args << cpp2js_QString(
+  args << RJSHelper::cpp2js_QString(
     handler, 
     // non-copyable: false
 systemId
@@ -1705,7 +1705,7 @@ systemId
         //}
 
         
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
 
@@ -1769,7 +1769,7 @@ systemId
         //}
 
         
-            return js2cpp_QString(handler, res);
+            return RJSHelper::js2cpp_QString(handler, res);
           
       }
 

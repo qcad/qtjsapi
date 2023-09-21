@@ -31,10 +31,10 @@
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QStringList(handler, a2
+   && RJSHelper::is_QStringList(handler, a2
   )
 
   
@@ -46,13 +46,13 @@
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: searchPaths (QStringList)
   
 QStringList a2_cpp;
 
-      a2_cpp = js2cpp_QStringList(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QStringList(handler, a2);
         
 
     // call function:
@@ -98,10 +98,10 @@ QStringList a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -113,13 +113,13 @@ QStringList a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: path (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -163,7 +163,7 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -175,7 +175,7 @@ QString a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -192,7 +192,7 @@ QString a1_cpp;
           
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -226,7 +226,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -238,7 +238,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -255,7 +255,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -289,7 +289,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -301,7 +301,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -318,7 +318,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -352,7 +352,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -364,7 +364,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -381,7 +381,7 @@ QString a1_cpp;
           
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -415,7 +415,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -427,7 +427,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -444,7 +444,7 @@ QString a1_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -478,7 +478,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -490,7 +490,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -507,7 +507,7 @@ QString a1_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -553,7 +553,7 @@ QString a1_cpp;
           
             // return type: QFileInfoList
 
-            return cpp2js_QFileInfoList(
+            return RJSHelper::cpp2js_QFileInfoList(
               handler, 
               // non-copyable: false
                   res
@@ -599,7 +599,7 @@ QString a1_cpp;
           
             // return type: QChar
 
-            return cpp2js_QChar(
+            return RJSHelper::cpp2js_QChar(
               handler, 
               // non-copyable: false
                   res
@@ -645,7 +645,7 @@ QString a1_cpp;
           
             // return type: QChar
 
-            return cpp2js_QChar(
+            return RJSHelper::cpp2js_QChar(
               handler, 
               // non-copyable: false
                   res
@@ -679,7 +679,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -691,7 +691,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -708,7 +708,7 @@ QString a1_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -754,7 +754,7 @@ QString a1_cpp;
           
             // return type: QDir
 
-            return cpp2js_QDir(
+            return RJSHelper::cpp2js_QDir(
               handler, 
               // non-copyable: false
                   res
@@ -800,7 +800,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -846,7 +846,7 @@ QString a1_cpp;
           
             // return type: QDir
 
-            return cpp2js_QDir(
+            return RJSHelper::cpp2js_QDir(
               handler, 
               // non-copyable: false
                   res
@@ -892,7 +892,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -938,7 +938,7 @@ QString a1_cpp;
           
             // return type: QDir
 
-            return cpp2js_QDir(
+            return RJSHelper::cpp2js_QDir(
               handler, 
               // non-copyable: false
                   res
@@ -984,7 +984,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1030,7 +1030,7 @@ QString a1_cpp;
           
             // return type: QDir
 
-            return cpp2js_QDir(
+            return RJSHelper::cpp2js_QDir(
               handler, 
               // non-copyable: false
                   res
@@ -1076,7 +1076,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1114,10 +1114,10 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QStringList(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -1129,13 +1129,13 @@ QString a1_cpp;
   
 QStringList a1_cpp;
 
-      a1_cpp = js2cpp_QStringList(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
   // convert js parameter to cpp: fileName (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -1153,7 +1153,7 @@ QString a2_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1164,10 +1164,10 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -1179,13 +1179,13 @@ QString a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: fileName (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -1203,7 +1203,7 @@ QString a2_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1239,7 +1239,7 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1251,7 +1251,7 @@ QString a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1268,7 +1268,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1433,18 +1433,18 @@ QDir_Wrapper::QDir_Wrapper
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
-   && is_QDir_SortFlags(handler, a3
+   && RJSHelper::is_QDir_SortFlags(handler, a3
     , true
   
   )
 
-   && is_QDir_Filters(handler, a4
+   && RJSHelper::is_QDir_Filters(handler, a4
     , true
   
   )
@@ -1458,13 +1458,13 @@ QDir_Wrapper::QDir_Wrapper
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: nameFilter (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
   // convert js parameter to cpp: sort (QDir::SortFlags)
   
@@ -1475,7 +1475,7 @@ QDir::SortFlags a3_cpp;
             a3_cpp = QDir::SortFlags(QDir::Name|QDir::IgnoreCase);
           }
           else {
-            a3_cpp = js2cpp_QDir_SortFlags(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QDir_SortFlags(handler, a3);
           }
         
   // convert js parameter to cpp: filter (QDir::Filters)
@@ -1487,7 +1487,7 @@ QDir::Filters a4_cpp;
             a4_cpp = QDir::AllEntries;
           }
           else {
-            a4_cpp = js2cpp_QDir_Filters(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a4);
           }
         
 
@@ -1517,7 +1517,7 @@ QDir::Filters a4_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
     , true
   
   )
@@ -1536,7 +1536,7 @@ QString a1_cpp;
             a1_cpp = QString();
           }
           else {
-            a1_cpp = js2cpp_QString(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
           }
         
 
@@ -1609,7 +1609,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDir(handler, a1
+        RJSHelper::is_QDir(handler, a1
   )
 
   
@@ -1621,7 +1621,7 @@ QString a1_cpp;
   
 QDir a1_cpp;
 
-      a1_cpp = js2cpp_QDir(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDir(handler, a1);
         
 
     // call function:
@@ -1673,7 +1673,7 @@ QDir a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1685,7 +1685,7 @@ QDir a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1760,7 +1760,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1817,7 +1817,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1874,7 +1874,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1931,7 +1931,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1967,7 +1967,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1979,7 +1979,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2005,7 +2005,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2041,7 +2041,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2053,7 +2053,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2079,7 +2079,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2115,7 +2115,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2127,7 +2127,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2153,7 +2153,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2187,7 +2187,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2199,7 +2199,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2225,7 +2225,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2280,7 +2280,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2337,7 +2337,7 @@ QString a1_cpp;
               
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -2371,7 +2371,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QStringList(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
   
@@ -2383,7 +2383,7 @@ QString a1_cpp;
   
 QStringList a1_cpp;
 
-      a1_cpp = js2cpp_QStringList(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
 
     // call function:
@@ -2458,7 +2458,7 @@ QStringList a1_cpp;
               
             // return type: QDir::Filters
 
-            return cpp2js_QDir_Filters(
+            return RJSHelper::cpp2js_QDir_Filters(
               handler, 
               // non-copyable: false
                   res
@@ -2492,7 +2492,7 @@ QStringList a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDir_Filters(handler, a1
+        RJSHelper::is_QDir_Filters(handler, a1
   )
 
   
@@ -2504,7 +2504,7 @@ QStringList a1_cpp;
   
 QDir::Filters a1_cpp;
 
-      a1_cpp = js2cpp_QDir_Filters(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a1);
         
 
     // call function:
@@ -2579,7 +2579,7 @@ QDir::Filters a1_cpp;
               
             // return type: QDir::SortFlags
 
-            return cpp2js_QDir_SortFlags(
+            return RJSHelper::cpp2js_QDir_SortFlags(
               handler, 
               // non-copyable: false
                   res
@@ -2613,7 +2613,7 @@ QDir::Filters a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDir_SortFlags(handler, a1
+        RJSHelper::is_QDir_SortFlags(handler, a1
   )
 
   
@@ -2625,7 +2625,7 @@ QDir::Filters a1_cpp;
   
 QDir::SortFlags a1_cpp;
 
-      a1_cpp = js2cpp_QDir_SortFlags(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDir_SortFlags(handler, a1);
         
 
     // call function:
@@ -2700,7 +2700,7 @@ QDir::SortFlags a1_cpp;
               
             // return type: uint
 
-            return cpp2js_uint(
+            return RJSHelper::cpp2js_uint(
               handler, 
               // non-copyable: false
                   res
@@ -2736,7 +2736,7 @@ QDir::SortFlags a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDir_Filters(handler, a1
+        RJSHelper::is_QDir_Filters(handler, a1
     , true
   
   )
@@ -2755,7 +2755,7 @@ QDir::Filters a1_cpp;
             a1_cpp = QDir::Filters(QDir::AllEntries|QDir::NoDotAndDotDot);
           }
           else {
-            a1_cpp = js2cpp_QDir_Filters(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a1);
           }
         
 
@@ -2782,7 +2782,7 @@ QDir::Filters a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2822,15 +2822,15 @@ QDir::Filters a1_cpp;
                 
       // check parameter types:
       if (
-        is_QStringList(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
-   && is_QDir_Filters(handler, a2
+   && RJSHelper::is_QDir_Filters(handler, a2
     , true
   
   )
 
-   && is_QDir_SortFlags(handler, a3
+   && RJSHelper::is_QDir_SortFlags(handler, a3
     , true
   
   )
@@ -2844,7 +2844,7 @@ QDir::Filters a1_cpp;
   
 QStringList a1_cpp;
 
-      a1_cpp = js2cpp_QStringList(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
   // convert js parameter to cpp: filters (QDir::Filters)
   
@@ -2855,7 +2855,7 @@ QDir::Filters a2_cpp;
             a2_cpp = QDir::NoFilter;
           }
           else {
-            a2_cpp = js2cpp_QDir_Filters(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a2);
           }
         
   // convert js parameter to cpp: sort (QDir::SortFlags)
@@ -2867,7 +2867,7 @@ QDir::SortFlags a3_cpp;
             a3_cpp = QDir::NoSort;
           }
           else {
-            a3_cpp = js2cpp_QDir_SortFlags(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QDir_SortFlags(handler, a3);
           }
         
 
@@ -2896,7 +2896,7 @@ QDir::SortFlags a3_cpp;
               
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -2907,12 +2907,12 @@ QDir::SortFlags a3_cpp;
 
       // check parameter types:
       if (
-        is_QDir_Filters(handler, a1
+        RJSHelper::is_QDir_Filters(handler, a1
     , true
   
   )
 
-   && is_QDir_SortFlags(handler, a2
+   && RJSHelper::is_QDir_SortFlags(handler, a2
     , true
   
   )
@@ -2931,7 +2931,7 @@ QDir::Filters a1_cpp;
             a1_cpp = QDir::NoFilter;
           }
           else {
-            a1_cpp = js2cpp_QDir_Filters(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a1);
           }
         
   // convert js parameter to cpp: sort (QDir::SortFlags)
@@ -2943,7 +2943,7 @@ QDir::SortFlags a2_cpp;
             a2_cpp = QDir::NoSort;
           }
           else {
-            a2_cpp = js2cpp_QDir_SortFlags(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QDir_SortFlags(handler, a2);
           }
         
 
@@ -2971,7 +2971,7 @@ QDir::SortFlags a2_cpp;
               
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -3011,15 +3011,15 @@ QDir::SortFlags a2_cpp;
                 
       // check parameter types:
       if (
-        is_QStringList(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
-   && is_QDir_Filters(handler, a2
+   && RJSHelper::is_QDir_Filters(handler, a2
     , true
   
   )
 
-   && is_QDir_SortFlags(handler, a3
+   && RJSHelper::is_QDir_SortFlags(handler, a3
     , true
   
   )
@@ -3033,7 +3033,7 @@ QDir::SortFlags a2_cpp;
   
 QStringList a1_cpp;
 
-      a1_cpp = js2cpp_QStringList(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
   // convert js parameter to cpp: filters (QDir::Filters)
   
@@ -3044,7 +3044,7 @@ QDir::Filters a2_cpp;
             a2_cpp = QDir::NoFilter;
           }
           else {
-            a2_cpp = js2cpp_QDir_Filters(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a2);
           }
         
   // convert js parameter to cpp: sort (QDir::SortFlags)
@@ -3056,7 +3056,7 @@ QDir::SortFlags a3_cpp;
             a3_cpp = QDir::NoSort;
           }
           else {
-            a3_cpp = js2cpp_QDir_SortFlags(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QDir_SortFlags(handler, a3);
           }
         
 
@@ -3085,7 +3085,7 @@ QDir::SortFlags a3_cpp;
               
             // return type: QFileInfoList
 
-            return cpp2js_QFileInfoList(
+            return RJSHelper::cpp2js_QFileInfoList(
               handler, 
               // non-copyable: false
                   res
@@ -3096,12 +3096,12 @@ QDir::SortFlags a3_cpp;
 
       // check parameter types:
       if (
-        is_QDir_Filters(handler, a1
+        RJSHelper::is_QDir_Filters(handler, a1
     , true
   
   )
 
-   && is_QDir_SortFlags(handler, a2
+   && RJSHelper::is_QDir_SortFlags(handler, a2
     , true
   
   )
@@ -3120,7 +3120,7 @@ QDir::Filters a1_cpp;
             a1_cpp = QDir::NoFilter;
           }
           else {
-            a1_cpp = js2cpp_QDir_Filters(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a1);
           }
         
   // convert js parameter to cpp: sort (QDir::SortFlags)
@@ -3132,7 +3132,7 @@ QDir::SortFlags a2_cpp;
             a2_cpp = QDir::NoSort;
           }
           else {
-            a2_cpp = js2cpp_QDir_SortFlags(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QDir_SortFlags(handler, a2);
           }
         
 
@@ -3160,7 +3160,7 @@ QDir::SortFlags a2_cpp;
               
             // return type: QFileInfoList
 
-            return cpp2js_QFileInfoList(
+            return RJSHelper::cpp2js_QFileInfoList(
               handler, 
               // non-copyable: false
                   res
@@ -3196,7 +3196,7 @@ QDir::SortFlags a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -3208,7 +3208,7 @@ QDir::SortFlags a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -3234,7 +3234,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3270,7 +3270,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -3282,7 +3282,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -3308,7 +3308,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3344,7 +3344,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -3356,7 +3356,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -3382,7 +3382,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3418,7 +3418,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -3430,7 +3430,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -3456,7 +3456,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3511,7 +3511,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3568,7 +3568,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3604,7 +3604,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -3616,7 +3616,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -3642,7 +3642,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3676,7 +3676,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3733,7 +3733,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3790,7 +3790,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3847,7 +3847,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3902,7 +3902,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3936,7 +3936,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -3948,7 +3948,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -3974,7 +3974,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -4010,10 +4010,10 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -4025,13 +4025,13 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: newName (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -4058,7 +4058,7 @@ QString a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res

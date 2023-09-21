@@ -151,18 +151,18 @@ QDirIterator_Wrapper::QDirIterator_Wrapper
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QStringList(handler, a2
+   && RJSHelper::is_QStringList(handler, a2
   )
 
-   && is_QDir_Filters(handler, a3
+   && RJSHelper::is_QDir_Filters(handler, a3
     , true
   
   )
 
-   && is_QDirIterator_IteratorFlags(handler, a4
+   && RJSHelper::is_QDirIterator_IteratorFlags(handler, a4
     , true
   
   )
@@ -176,13 +176,13 @@ QDirIterator_Wrapper::QDirIterator_Wrapper
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: nameFilters (QStringList)
   
 QStringList a2_cpp;
 
-      a2_cpp = js2cpp_QStringList(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QStringList(handler, a2);
         
   // convert js parameter to cpp: filters (QDir::Filters)
   
@@ -193,7 +193,7 @@ QDir::Filters a3_cpp;
             a3_cpp = QDir::NoFilter;
           }
           else {
-            a3_cpp = js2cpp_QDir_Filters(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a3);
           }
         
   // convert js parameter to cpp: flags (QDirIterator::IteratorFlags)
@@ -205,7 +205,7 @@ QDirIterator::IteratorFlags a4_cpp;
             a4_cpp = QDirIterator::NoIteratorFlags;
           }
           else {
-            a4_cpp = js2cpp_QDirIterator_IteratorFlags(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QDirIterator_IteratorFlags(handler, a4);
           }
         
 
@@ -235,13 +235,13 @@ QDirIterator::IteratorFlags a4_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QDir_Filters(handler, a2
+   && RJSHelper::is_QDir_Filters(handler, a2
   )
 
-   && is_QDirIterator_IteratorFlags(handler, a3
+   && RJSHelper::is_QDirIterator_IteratorFlags(handler, a3
     , true
   
   )
@@ -255,13 +255,13 @@ QDirIterator::IteratorFlags a4_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: filter (QDir::Filters)
   
 QDir::Filters a2_cpp;
 
-      a2_cpp = js2cpp_QDir_Filters(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a2);
         
   // convert js parameter to cpp: flags (QDirIterator::IteratorFlags)
   
@@ -272,7 +272,7 @@ QDirIterator::IteratorFlags a3_cpp;
             a3_cpp = QDirIterator::NoIteratorFlags;
           }
           else {
-            a3_cpp = js2cpp_QDirIterator_IteratorFlags(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QDirIterator_IteratorFlags(handler, a3);
           }
         
 
@@ -301,10 +301,10 @@ QDirIterator::IteratorFlags a3_cpp;
 
       // check parameter types:
       if (
-        is_QDir(handler, a1
+        RJSHelper::is_QDir(handler, a1
   )
 
-   && is_QDirIterator_IteratorFlags(handler, a2
+   && RJSHelper::is_QDirIterator_IteratorFlags(handler, a2
     , true
   
   )
@@ -318,7 +318,7 @@ QDirIterator::IteratorFlags a3_cpp;
   
 QDir a1_cpp;
 
-      a1_cpp = js2cpp_QDir(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDir(handler, a1);
         
   // convert js parameter to cpp: flags (QDirIterator::IteratorFlags)
   
@@ -329,7 +329,7 @@ QDirIterator::IteratorFlags a2_cpp;
             a2_cpp = QDirIterator::NoIteratorFlags;
           }
           else {
-            a2_cpp = js2cpp_QDirIterator_IteratorFlags(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QDirIterator_IteratorFlags(handler, a2);
           }
         
 
@@ -420,7 +420,7 @@ QDirIterator::IteratorFlags a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -475,7 +475,7 @@ QDirIterator::IteratorFlags a2_cpp;
               
             // return type: QFileInfo
 
-            return cpp2js_QFileInfo(
+            return RJSHelper::cpp2js_QFileInfo(
               handler, 
               // non-copyable: false
                   res
@@ -532,7 +532,7 @@ QDirIterator::IteratorFlags a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -589,7 +589,7 @@ QDirIterator::IteratorFlags a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -646,7 +646,7 @@ QDirIterator::IteratorFlags a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -703,7 +703,7 @@ QDirIterator::IteratorFlags a2_cpp;
               
             // return type: QFileInfo
 
-            return cpp2js_QFileInfo(
+            return RJSHelper::cpp2js_QFileInfo(
               handler, 
               // non-copyable: false
                   res
@@ -760,7 +760,7 @@ QDirIterator::IteratorFlags a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res

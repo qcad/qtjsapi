@@ -49,7 +49,7 @@
                 
       // check parameter types:
       if (
-        is_QLocale_Language(handler, a1
+        RJSHelper::is_QLocale_Language(handler, a1
   )
 
   
@@ -61,7 +61,7 @@
   
 QLocale::Language a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Language(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Language(handler, a1);
         
 
     // call function:
@@ -78,7 +78,7 @@ QLocale::Language a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -112,7 +112,7 @@ QLocale::Language a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_Territory(handler, a1
+        RJSHelper::is_QLocale_Territory(handler, a1
   )
 
   
@@ -124,7 +124,7 @@ QLocale::Language a1_cpp;
   
 QLocale::Territory a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Territory(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Territory(handler, a1);
         
 
     // call function:
@@ -141,7 +141,7 @@ QLocale::Territory a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -177,7 +177,7 @@ QLocale::Territory a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_Country(handler, a1
+        RJSHelper::is_QLocale_Country(handler, a1
   )
 
   
@@ -189,7 +189,7 @@ QLocale::Territory a1_cpp;
   
 QLocale::Country a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Country(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Country(handler, a1);
         
 
     // call function:
@@ -206,7 +206,7 @@ QLocale::Country a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -242,7 +242,7 @@ QLocale::Country a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_Script(handler, a1
+        RJSHelper::is_QLocale_Script(handler, a1
   )
 
   
@@ -254,7 +254,7 @@ QLocale::Country a1_cpp;
   
 QLocale::Script a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Script(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Script(handler, a1);
         
 
     // call function:
@@ -271,7 +271,7 @@ QLocale::Script a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -305,7 +305,7 @@ QLocale::Script a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_Language(handler, a1
+        RJSHelper::is_QLocale_Language(handler, a1
   )
 
   
@@ -317,7 +317,7 @@ QLocale::Script a1_cpp;
   
 QLocale::Language a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Language(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Language(handler, a1);
         
 
     // call function:
@@ -334,7 +334,7 @@ QLocale::Language a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -368,7 +368,7 @@ QLocale::Language a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_Territory(handler, a1
+        RJSHelper::is_QLocale_Territory(handler, a1
   )
 
   
@@ -380,7 +380,7 @@ QLocale::Language a1_cpp;
   
 QLocale::Territory a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Territory(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Territory(handler, a1);
         
 
     // call function:
@@ -397,7 +397,7 @@ QLocale::Territory a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -433,7 +433,7 @@ QLocale::Territory a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_Country(handler, a1
+        RJSHelper::is_QLocale_Country(handler, a1
   )
 
   
@@ -445,7 +445,7 @@ QLocale::Territory a1_cpp;
   
 QLocale::Country a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Country(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Country(handler, a1);
         
 
     // call function:
@@ -462,7 +462,7 @@ QLocale::Country a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -498,7 +498,7 @@ QLocale::Country a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_Script(handler, a1
+        RJSHelper::is_QLocale_Script(handler, a1
   )
 
   
@@ -510,7 +510,7 @@ QLocale::Country a1_cpp;
   
 QLocale::Script a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Script(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Script(handler, a1);
         
 
     // call function:
@@ -527,7 +527,7 @@ QLocale::Script a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -561,7 +561,7 @@ QLocale::Script a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale(handler, a1
+        RJSHelper::is_QLocale(handler, a1
   )
 
   
@@ -573,7 +573,7 @@ QLocale::Script a1_cpp;
   
 QLocale a1_cpp;
 
-      a1_cpp = js2cpp_QLocale(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale(handler, a1);
         
 
     // call function:
@@ -628,7 +628,7 @@ QLocale a1_cpp;
           
             // return type: QLocale
 
-            return cpp2js_QLocale(
+            return RJSHelper::cpp2js_QLocale(
               handler, 
               // non-copyable: false
                   res
@@ -674,7 +674,7 @@ QLocale a1_cpp;
           
             // return type: QLocale
 
-            return cpp2js_QLocale(
+            return RJSHelper::cpp2js_QLocale(
               handler, 
               // non-copyable: false
                   res
@@ -712,13 +712,13 @@ QLocale a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_Language(handler, a1
+        RJSHelper::is_QLocale_Language(handler, a1
   )
 
-   && is_QLocale_Script(handler, a2
+   && RJSHelper::is_QLocale_Script(handler, a2
   )
 
-   && is_QLocale_Territory(handler, a3
+   && RJSHelper::is_QLocale_Territory(handler, a3
   )
 
   
@@ -730,19 +730,19 @@ QLocale a1_cpp;
   
 QLocale::Language a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Language(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Language(handler, a1);
         
   // convert js parameter to cpp: script (QLocale::Script)
   
 QLocale::Script a2_cpp;
 
-      a2_cpp = js2cpp_QLocale_Script(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QLocale_Script(handler, a2);
         
   // convert js parameter to cpp: territory (QLocale::Territory)
   
 QLocale::Territory a3_cpp;
 
-      a3_cpp = js2cpp_QLocale_Territory(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QLocale_Territory(handler, a3);
         
 
     // call function:
@@ -761,7 +761,7 @@ QLocale::Territory a3_cpp;
           
             // return type: QList<QLocale>
 
-            return cpp2js_QList_QLocale(
+            return RJSHelper::cpp2js_QList_QLocale(
               handler, 
               // non-copyable: false
                   res
@@ -797,7 +797,7 @@ QLocale::Territory a3_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_Language(handler, a1
+        RJSHelper::is_QLocale_Language(handler, a1
   )
 
   
@@ -809,7 +809,7 @@ QLocale::Territory a3_cpp;
   
 QLocale::Language a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_Language(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_Language(handler, a1);
         
 
     // call function:
@@ -826,7 +826,7 @@ QLocale::Language a1_cpp;
           
             // return type: QList<QLocale::Country>
 
-            return cpp2js_QList_QLocale_Country(
+            return RJSHelper::cpp2js_QList_QLocale_Country(
               handler, 
               // non-copyable: false
                   res
@@ -987,7 +987,7 @@ QLocale_Wrapper::QLocale_Wrapper
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -999,7 +999,7 @@ QLocale_Wrapper::QLocale_Wrapper
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1119,7 +1119,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale(handler, a1
+        RJSHelper::is_QLocale(handler, a1
   )
 
   
@@ -1131,7 +1131,7 @@ QString a1_cpp;
   
 QLocale a1_cpp;
 
-      a1_cpp = js2cpp_QLocale(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale(handler, a1);
         
 
     // call function:
@@ -1206,7 +1206,7 @@ QLocale a1_cpp;
               
             // return type: QLocale::Language
 
-            return cpp2js_QLocale_Language(
+            return RJSHelper::cpp2js_QLocale_Language(
               handler, 
               // non-copyable: false
                   res
@@ -1263,7 +1263,7 @@ QLocale a1_cpp;
               
             // return type: QLocale::Script
 
-            return cpp2js_QLocale_Script(
+            return RJSHelper::cpp2js_QLocale_Script(
               handler, 
               // non-copyable: false
                   res
@@ -1320,7 +1320,7 @@ QLocale a1_cpp;
               
             // return type: QLocale::Territory
 
-            return cpp2js_QLocale_Territory(
+            return RJSHelper::cpp2js_QLocale_Territory(
               handler, 
               // non-copyable: false
                   res
@@ -1379,7 +1379,7 @@ QLocale a1_cpp;
               
             // return type: QLocale::Country
 
-            return cpp2js_QLocale_Country(
+            return RJSHelper::cpp2js_QLocale_Country(
               handler, 
               // non-copyable: false
                   res
@@ -1438,7 +1438,7 @@ QLocale a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1495,7 +1495,7 @@ QLocale a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1552,7 +1552,7 @@ QLocale a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1609,7 +1609,7 @@ QLocale a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1668,7 +1668,7 @@ QLocale a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1708,7 +1708,7 @@ QLocale a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1720,7 +1720,7 @@ QLocale a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1746,7 +1746,7 @@ QString a1_cpp;
               
             // return type: short
 
-            return cpp2js_short(
+            return RJSHelper::cpp2js_short(
               handler, 
               // non-copyable: false
                   res
@@ -1782,7 +1782,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1794,7 +1794,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1820,7 +1820,7 @@ QString a1_cpp;
               
             // return type: ushort
 
-            return cpp2js_ushort(
+            return RJSHelper::cpp2js_ushort(
               handler, 
               // non-copyable: false
                   res
@@ -1856,7 +1856,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1868,7 +1868,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1894,7 +1894,7 @@ QString a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1930,7 +1930,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1942,7 +1942,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1968,7 +1968,7 @@ QString a1_cpp;
               
             // return type: uint
 
-            return cpp2js_uint(
+            return RJSHelper::cpp2js_uint(
               handler, 
               // non-copyable: false
                   res
@@ -2004,7 +2004,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2016,7 +2016,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2042,7 +2042,7 @@ QString a1_cpp;
               
             // return type: long
 
-            return cpp2js_long(
+            return RJSHelper::cpp2js_long(
               handler, 
               // non-copyable: false
                   res
@@ -2078,7 +2078,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2090,7 +2090,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2116,7 +2116,7 @@ QString a1_cpp;
               
             // return type: ulong
 
-            return cpp2js_ulong(
+            return RJSHelper::cpp2js_ulong(
               handler, 
               // non-copyable: false
                   res
@@ -2152,7 +2152,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2164,7 +2164,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2190,7 +2190,7 @@ QString a1_cpp;
               
             // return type: qlonglong
 
-            return cpp2js_qlonglong(
+            return RJSHelper::cpp2js_qlonglong(
               handler, 
               // non-copyable: false
                   res
@@ -2226,7 +2226,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2238,7 +2238,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2264,7 +2264,7 @@ QString a1_cpp;
               
             // return type: qulonglong
 
-            return cpp2js_qulonglong(
+            return RJSHelper::cpp2js_qulonglong(
               handler, 
               // non-copyable: false
                   res
@@ -2300,7 +2300,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2312,7 +2312,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2338,7 +2338,7 @@ QString a1_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -2374,7 +2374,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2386,7 +2386,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2412,7 +2412,7 @@ QString a1_cpp;
               
             // return type: double
 
-            return cpp2js_double(
+            return RJSHelper::cpp2js_double(
               handler, 
               // non-copyable: false
                   res
@@ -2454,15 +2454,15 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_double(handler, a1
+        RJSHelper::is_double(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
     , true
   
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
@@ -2476,7 +2476,7 @@ QString a1_cpp;
   
 double a1_cpp;
 
-      a1_cpp = js2cpp_double(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
         
   // convert js parameter to cpp: format (char)
   
@@ -2487,7 +2487,7 @@ char a2_cpp;
             a2_cpp = 'g';
           }
           else {
-            a2_cpp = js2cpp_char(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_char(handler, a2);
           }
         
   // convert js parameter to cpp: precision (int)
@@ -2499,7 +2499,7 @@ int a3_cpp;
             a3_cpp = 6;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
 
@@ -2528,7 +2528,7 @@ int a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2539,15 +2539,15 @@ int a3_cpp;
 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_char(handler, a2
+   && RJSHelper::is_char(handler, a2
     , true
   
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
@@ -2561,7 +2561,7 @@ int a3_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: format (char)
   
@@ -2572,7 +2572,7 @@ char a2_cpp;
             a2_cpp = 'g';
           }
           else {
-            a2_cpp = js2cpp_char(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_char(handler, a2);
           }
         
   // convert js parameter to cpp: precision (int)
@@ -2584,7 +2584,7 @@ int a3_cpp;
             a3_cpp = 6;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
 
@@ -2613,7 +2613,7 @@ int a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2624,13 +2624,13 @@ int a3_cpp;
 
       // check parameter types:
       if (
-        is_QDate(handler, a1
+        RJSHelper::is_QDate(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
   )
 
-   && is_QCalendar(handler, a3
+   && RJSHelper::is_QCalendar(handler, a3
   )
 
   
@@ -2642,19 +2642,19 @@ int a3_cpp;
   
 QDate a1_cpp;
 
-      a1_cpp = js2cpp_QDate(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDate(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
 QLocale::FormatType a2_cpp;
 
-      a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
         
   // convert js parameter to cpp: cal (QCalendar)
   
 QCalendar a3_cpp;
 
-      a3_cpp = js2cpp_QCalendar(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QCalendar(handler, a3);
         
 
     // call function:
@@ -2682,7 +2682,7 @@ QCalendar a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2693,13 +2693,13 @@ QCalendar a3_cpp;
 
       // check parameter types:
       if (
-        is_QDateTime(handler, a1
+        RJSHelper::is_QDateTime(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
   )
 
-   && is_QCalendar(handler, a3
+   && RJSHelper::is_QCalendar(handler, a3
   )
 
   
@@ -2711,19 +2711,19 @@ QCalendar a3_cpp;
   
 QDateTime a1_cpp;
 
-      a1_cpp = js2cpp_QDateTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
 QLocale::FormatType a2_cpp;
 
-      a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
         
   // convert js parameter to cpp: cal (QCalendar)
   
 QCalendar a3_cpp;
 
-      a3_cpp = js2cpp_QCalendar(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QCalendar(handler, a3);
         
 
     // call function:
@@ -2751,7 +2751,7 @@ QCalendar a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2762,10 +2762,10 @@ QCalendar a3_cpp;
 
       // check parameter types:
       if (
-        is_QDate(handler, a1
+        RJSHelper::is_QDate(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -2777,13 +2777,13 @@ QCalendar a3_cpp;
   
 QDate a1_cpp;
 
-      a1_cpp = js2cpp_QDate(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDate(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -2810,7 +2810,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2821,10 +2821,10 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_QTime(handler, a1
+        RJSHelper::is_QTime(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -2836,13 +2836,13 @@ QString a2_cpp;
   
 QTime a1_cpp;
 
-      a1_cpp = js2cpp_QTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTime(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -2869,7 +2869,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2880,10 +2880,10 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_QDateTime(handler, a1
+        RJSHelper::is_QDateTime(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -2895,13 +2895,13 @@ QString a2_cpp;
   
 QDateTime a1_cpp;
 
-      a1_cpp = js2cpp_QDateTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -2928,7 +2928,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2939,10 +2939,10 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_QDate(handler, a1
+        RJSHelper::is_QDate(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -2956,7 +2956,7 @@ QString a2_cpp;
   
 QDate a1_cpp;
 
-      a1_cpp = js2cpp_QDate(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDate(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -2967,7 +2967,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -2995,7 +2995,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3006,10 +3006,10 @@ QLocale::FormatType a2_cpp;
 
       // check parameter types:
       if (
-        is_QTime(handler, a1
+        RJSHelper::is_QTime(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -3023,7 +3023,7 @@ QLocale::FormatType a2_cpp;
   
 QTime a1_cpp;
 
-      a1_cpp = js2cpp_QTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTime(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -3034,7 +3034,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -3062,7 +3062,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3073,10 +3073,10 @@ QLocale::FormatType a2_cpp;
 
       // check parameter types:
       if (
-        is_QDateTime(handler, a1
+        RJSHelper::is_QDateTime(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -3090,7 +3090,7 @@ QLocale::FormatType a2_cpp;
   
 QDateTime a1_cpp;
 
-      a1_cpp = js2cpp_QDateTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -3101,7 +3101,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -3129,7 +3129,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3140,7 +3140,7 @@ QLocale::FormatType a2_cpp;
 
       // check parameter types:
       if (
-        is_qlonglong(handler, a1
+        RJSHelper::is_qlonglong(handler, a1
   )
 
   
@@ -3152,7 +3152,7 @@ QLocale::FormatType a2_cpp;
   
 qlonglong a1_cpp;
 
-      a1_cpp = js2cpp_qlonglong(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qlonglong(handler, a1);
         
 
     // call function:
@@ -3178,7 +3178,7 @@ qlonglong a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3189,7 +3189,7 @@ qlonglong a1_cpp;
 
       // check parameter types:
       if (
-        is_qulonglong(handler, a1
+        RJSHelper::is_qulonglong(handler, a1
   )
 
   
@@ -3201,7 +3201,7 @@ qlonglong a1_cpp;
   
 qulonglong a1_cpp;
 
-      a1_cpp = js2cpp_qulonglong(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qulonglong(handler, a1);
         
 
     // call function:
@@ -3227,7 +3227,7 @@ qulonglong a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3238,7 +3238,7 @@ qulonglong a1_cpp;
 
       // check parameter types:
       if (
-        is_long(handler, a1
+        RJSHelper::is_long(handler, a1
   )
 
   
@@ -3250,7 +3250,7 @@ qulonglong a1_cpp;
   
 long a1_cpp;
 
-      a1_cpp = js2cpp_long(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_long(handler, a1);
         
 
     // call function:
@@ -3276,7 +3276,7 @@ long a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3287,7 +3287,7 @@ long a1_cpp;
 
       // check parameter types:
       if (
-        is_ulong(handler, a1
+        RJSHelper::is_ulong(handler, a1
   )
 
   
@@ -3299,7 +3299,7 @@ long a1_cpp;
   
 ulong a1_cpp;
 
-      a1_cpp = js2cpp_ulong(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_ulong(handler, a1);
         
 
     // call function:
@@ -3325,7 +3325,7 @@ ulong a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3336,7 +3336,7 @@ ulong a1_cpp;
 
       // check parameter types:
       if (
-        is_short(handler, a1
+        RJSHelper::is_short(handler, a1
   )
 
   
@@ -3348,7 +3348,7 @@ ulong a1_cpp;
   
 short a1_cpp;
 
-      a1_cpp = js2cpp_short(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_short(handler, a1);
         
 
     // call function:
@@ -3374,7 +3374,7 @@ short a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3385,7 +3385,7 @@ short a1_cpp;
 
       // check parameter types:
       if (
-        is_ushort(handler, a1
+        RJSHelper::is_ushort(handler, a1
   )
 
   
@@ -3397,7 +3397,7 @@ short a1_cpp;
   
 ushort a1_cpp;
 
-      a1_cpp = js2cpp_ushort(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_ushort(handler, a1);
         
 
     // call function:
@@ -3423,7 +3423,7 @@ ushort a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3434,7 +3434,7 @@ ushort a1_cpp;
 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -3446,7 +3446,7 @@ ushort a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -3472,7 +3472,7 @@ int a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3483,7 +3483,7 @@ int a1_cpp;
 
       // check parameter types:
       if (
-        is_uint(handler, a1
+        RJSHelper::is_uint(handler, a1
   )
 
   
@@ -3495,7 +3495,7 @@ int a1_cpp;
   
 uint a1_cpp;
 
-      a1_cpp = js2cpp_uint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_uint(handler, a1);
         
 
     // call function:
@@ -3521,7 +3521,7 @@ uint a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3561,7 +3561,7 @@ uint a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_FormatType(handler, a1
+        RJSHelper::is_QLocale_FormatType(handler, a1
     , true
   
   )
@@ -3580,7 +3580,7 @@ QLocale::FormatType a1_cpp;
             a1_cpp = QLocale::LongFormat;
           }
           else {
-            a1_cpp = js2cpp_QLocale_FormatType(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a1);
           }
         
 
@@ -3607,7 +3607,7 @@ QLocale::FormatType a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3643,7 +3643,7 @@ QLocale::FormatType a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_FormatType(handler, a1
+        RJSHelper::is_QLocale_FormatType(handler, a1
     , true
   
   )
@@ -3662,7 +3662,7 @@ QLocale::FormatType a1_cpp;
             a1_cpp = QLocale::LongFormat;
           }
           else {
-            a1_cpp = js2cpp_QLocale_FormatType(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a1);
           }
         
 
@@ -3689,7 +3689,7 @@ QLocale::FormatType a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3725,7 +3725,7 @@ QLocale::FormatType a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_FormatType(handler, a1
+        RJSHelper::is_QLocale_FormatType(handler, a1
     , true
   
   )
@@ -3744,7 +3744,7 @@ QLocale::FormatType a1_cpp;
             a1_cpp = QLocale::LongFormat;
           }
           else {
-            a1_cpp = js2cpp_QLocale_FormatType(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a1);
           }
         
 
@@ -3771,7 +3771,7 @@ QLocale::FormatType a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3813,13 +3813,13 @@ QLocale::FormatType a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
   )
 
-   && is_QCalendar(handler, a3
+   && RJSHelper::is_QCalendar(handler, a3
   )
 
   
@@ -3831,19 +3831,19 @@ QLocale::FormatType a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
 QLocale::FormatType a2_cpp;
 
-      a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
         
   // convert js parameter to cpp: cal (QCalendar)
   
 QCalendar a3_cpp;
 
-      a3_cpp = js2cpp_QCalendar(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QCalendar(handler, a3);
         
 
     // call function:
@@ -3871,7 +3871,7 @@ QCalendar a3_cpp;
               
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -3882,13 +3882,13 @@ QCalendar a3_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
-   && is_QCalendar(handler, a3
+   && RJSHelper::is_QCalendar(handler, a3
   )
 
   
@@ -3900,19 +3900,19 @@ QCalendar a3_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
   // convert js parameter to cpp: cal (QCalendar)
   
 QCalendar a3_cpp;
 
-      a3_cpp = js2cpp_QCalendar(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QCalendar(handler, a3);
         
 
     // call function:
@@ -3940,7 +3940,7 @@ QCalendar a3_cpp;
               
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -3951,10 +3951,10 @@ QCalendar a3_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -3968,7 +3968,7 @@ QCalendar a3_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp:  (QLocale::FormatType)
   
@@ -3979,7 +3979,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -4007,7 +4007,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -4018,10 +4018,10 @@ QLocale::FormatType a2_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -4033,13 +4033,13 @@ QLocale::FormatType a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -4066,7 +4066,7 @@ QString a2_cpp;
               
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -4104,10 +4104,10 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -4121,7 +4121,7 @@ QString a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp:  (QLocale::FormatType)
   
@@ -4132,7 +4132,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -4160,7 +4160,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QTime
 
-            return cpp2js_QTime(
+            return RJSHelper::cpp2js_QTime(
               handler, 
               // non-copyable: false
                   res
@@ -4171,10 +4171,10 @@ QLocale::FormatType a2_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -4186,13 +4186,13 @@ QLocale::FormatType a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -4219,7 +4219,7 @@ QString a2_cpp;
               
             // return type: QTime
 
-            return cpp2js_QTime(
+            return RJSHelper::cpp2js_QTime(
               handler, 
               // non-copyable: false
                   res
@@ -4259,13 +4259,13 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
   )
 
-   && is_QCalendar(handler, a3
+   && RJSHelper::is_QCalendar(handler, a3
   )
 
   
@@ -4277,19 +4277,19 @@ QString a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
 QLocale::FormatType a2_cpp;
 
-      a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
         
   // convert js parameter to cpp: cal (QCalendar)
   
 QCalendar a3_cpp;
 
-      a3_cpp = js2cpp_QCalendar(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QCalendar(handler, a3);
         
 
     // call function:
@@ -4317,7 +4317,7 @@ QCalendar a3_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4328,13 +4328,13 @@ QCalendar a3_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
-   && is_QCalendar(handler, a3
+   && RJSHelper::is_QCalendar(handler, a3
   )
 
   
@@ -4346,19 +4346,19 @@ QCalendar a3_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
   // convert js parameter to cpp: cal (QCalendar)
   
 QCalendar a3_cpp;
 
-      a3_cpp = js2cpp_QCalendar(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QCalendar(handler, a3);
         
 
     // call function:
@@ -4386,7 +4386,7 @@ QCalendar a3_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4397,10 +4397,10 @@ QCalendar a3_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -4414,7 +4414,7 @@ QCalendar a3_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -4425,7 +4425,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -4453,7 +4453,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4464,10 +4464,10 @@ QLocale::FormatType a2_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -4479,13 +4479,13 @@ QLocale::FormatType a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -4512,7 +4512,7 @@ QString a2_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4571,7 +4571,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4628,7 +4628,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4685,7 +4685,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4742,7 +4742,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4799,7 +4799,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4856,7 +4856,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4913,7 +4913,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4951,10 +4951,10 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -4968,7 +4968,7 @@ QString a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -4979,7 +4979,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -5007,7 +5007,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5045,10 +5045,10 @@ QLocale::FormatType a2_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -5062,7 +5062,7 @@ QLocale::FormatType a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -5073,7 +5073,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -5101,7 +5101,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5139,10 +5139,10 @@ QLocale::FormatType a2_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -5156,7 +5156,7 @@ QLocale::FormatType a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -5167,7 +5167,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -5195,7 +5195,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5233,10 +5233,10 @@ QLocale::FormatType a2_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_QLocale_FormatType(handler, a2
+   && RJSHelper::is_QLocale_FormatType(handler, a2
     , true
   
   )
@@ -5250,7 +5250,7 @@ QLocale::FormatType a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -5261,7 +5261,7 @@ QLocale::FormatType a2_cpp;
             a2_cpp = QLocale::LongFormat;
           }
           else {
-            a2_cpp = js2cpp_QLocale_FormatType(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a2);
           }
         
 
@@ -5289,7 +5289,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5346,7 +5346,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: Qt::DayOfWeek
 
-            return cpp2js_Qt_DayOfWeek(
+            return RJSHelper::cpp2js_Qt_DayOfWeek(
               handler, 
               // non-copyable: false
                   res
@@ -5403,7 +5403,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QList<Qt::DayOfWeek>
 
-            return cpp2js_QList_Qt_DayOfWeek(
+            return RJSHelper::cpp2js_QList_Qt_DayOfWeek(
               handler, 
               // non-copyable: false
                   res
@@ -5460,7 +5460,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5517,7 +5517,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5574,7 +5574,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QLocale::MeasurementSystem
 
-            return cpp2js_QLocale_MeasurementSystem(
+            return RJSHelper::cpp2js_QLocale_MeasurementSystem(
               handler, 
               // non-copyable: false
                   res
@@ -5631,7 +5631,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: QLocale
 
-            return cpp2js_QLocale(
+            return RJSHelper::cpp2js_QLocale(
               handler, 
               // non-copyable: false
                   res
@@ -5688,7 +5688,7 @@ QLocale::FormatType a2_cpp;
               
             // return type: Qt::LayoutDirection
 
-            return cpp2js_Qt_LayoutDirection(
+            return RJSHelper::cpp2js_Qt_LayoutDirection(
               handler, 
               // non-copyable: false
                   res
@@ -5724,7 +5724,7 @@ QLocale::FormatType a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -5736,7 +5736,7 @@ QLocale::FormatType a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -5762,7 +5762,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5798,7 +5798,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -5810,7 +5810,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -5836,7 +5836,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5872,7 +5872,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_CurrencySymbolFormat(handler, a1
+        RJSHelper::is_QLocale_CurrencySymbolFormat(handler, a1
     , true
   
   )
@@ -5891,7 +5891,7 @@ QLocale::CurrencySymbolFormat a1_cpp;
             a1_cpp = QLocale::CurrencySymbol;
           }
           else {
-            a1_cpp = js2cpp_QLocale_CurrencySymbolFormat(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QLocale_CurrencySymbolFormat(handler, a1);
           }
         
 
@@ -5918,7 +5918,7 @@ QLocale::CurrencySymbolFormat a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5958,15 +5958,15 @@ QLocale::CurrencySymbolFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_double(handler, a1
+        RJSHelper::is_double(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
@@ -5980,7 +5980,7 @@ QLocale::CurrencySymbolFormat a1_cpp;
   
 double a1_cpp;
 
-      a1_cpp = js2cpp_double(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
         
   // convert js parameter to cpp: symbol (QString)
   
@@ -5991,7 +5991,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
   // convert js parameter to cpp: precision (int)
@@ -6003,7 +6003,7 @@ int a3_cpp;
             a3_cpp = -1;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
 
@@ -6032,7 +6032,7 @@ int a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6043,15 +6043,15 @@ int a3_cpp;
 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
@@ -6065,7 +6065,7 @@ int a3_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: symbol (QString)
   
@@ -6076,7 +6076,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
   // convert js parameter to cpp: precision (int)
@@ -6088,7 +6088,7 @@ int a3_cpp;
             a3_cpp = -1;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
 
@@ -6117,7 +6117,7 @@ int a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6128,10 +6128,10 @@ int a3_cpp;
 
       // check parameter types:
       if (
-        is_qlonglong(handler, a1
+        RJSHelper::is_qlonglong(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
@@ -6145,7 +6145,7 @@ int a3_cpp;
   
 qlonglong a1_cpp;
 
-      a1_cpp = js2cpp_qlonglong(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qlonglong(handler, a1);
         
   // convert js parameter to cpp: symbol (QString)
   
@@ -6156,7 +6156,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
 
@@ -6184,7 +6184,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6195,10 +6195,10 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_qulonglong(handler, a1
+        RJSHelper::is_qulonglong(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
@@ -6212,7 +6212,7 @@ QString a2_cpp;
   
 qulonglong a1_cpp;
 
-      a1_cpp = js2cpp_qulonglong(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qulonglong(handler, a1);
         
   // convert js parameter to cpp: symbol (QString)
   
@@ -6223,7 +6223,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
 
@@ -6251,7 +6251,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6262,10 +6262,10 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_short(handler, a1
+        RJSHelper::is_short(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
@@ -6279,7 +6279,7 @@ QString a2_cpp;
   
 short a1_cpp;
 
-      a1_cpp = js2cpp_short(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_short(handler, a1);
         
   // convert js parameter to cpp: symbol (QString)
   
@@ -6290,7 +6290,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
 
@@ -6318,7 +6318,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6329,10 +6329,10 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_ushort(handler, a1
+        RJSHelper::is_ushort(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
@@ -6346,7 +6346,7 @@ QString a2_cpp;
   
 ushort a1_cpp;
 
-      a1_cpp = js2cpp_ushort(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_ushort(handler, a1);
         
   // convert js parameter to cpp: symbol (QString)
   
@@ -6357,7 +6357,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
 
@@ -6385,7 +6385,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6396,10 +6396,10 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
@@ -6413,7 +6413,7 @@ QString a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: symbol (QString)
   
@@ -6424,7 +6424,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
 
@@ -6452,7 +6452,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6463,10 +6463,10 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_uint(handler, a1
+        RJSHelper::is_uint(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
@@ -6480,7 +6480,7 @@ QString a2_cpp;
   
 uint a1_cpp;
 
-      a1_cpp = js2cpp_uint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_uint(handler, a1);
         
   // convert js parameter to cpp: symbol (QString)
   
@@ -6491,7 +6491,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
 
@@ -6519,7 +6519,7 @@ QString a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6559,15 +6559,15 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
     , true
   
   )
 
-   && is_QLocale_DataSizeFormats(handler, a3
+   && RJSHelper::is_QLocale_DataSizeFormats(handler, a3
     , true
   
   )
@@ -6581,7 +6581,7 @@ QString a2_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
   // convert js parameter to cpp: precision (int)
   
@@ -6592,7 +6592,7 @@ int a2_cpp;
             a2_cpp = 2;
           }
           else {
-            a2_cpp = js2cpp_int(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
           }
         
   // convert js parameter to cpp: format (QLocale::DataSizeFormats)
@@ -6604,7 +6604,7 @@ QLocale::DataSizeFormats a3_cpp;
             a3_cpp = QLocale::DataSizeIecFormat;
           }
           else {
-            a3_cpp = js2cpp_QLocale_DataSizeFormats(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QLocale_DataSizeFormats(handler, a3);
           }
         
 
@@ -6633,7 +6633,7 @@ QLocale::DataSizeFormats a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6690,7 +6690,7 @@ QLocale::DataSizeFormats a3_cpp;
               
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -6736,7 +6736,7 @@ QLocale::DataSizeFormats a3_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale_NumberOptions(handler, a1
+        RJSHelper::is_QLocale_NumberOptions(handler, a1
   )
 
   
@@ -6748,7 +6748,7 @@ QLocale::DataSizeFormats a3_cpp;
   
 QLocale::NumberOptions a1_cpp;
 
-      a1_cpp = js2cpp_QLocale_NumberOptions(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale_NumberOptions(handler, a1);
         
 
     // call function:
@@ -6823,7 +6823,7 @@ QLocale::NumberOptions a1_cpp;
               
             // return type: QLocale::NumberOptions
 
-            return cpp2js_QLocale_NumberOptions(
+            return RJSHelper::cpp2js_QLocale_NumberOptions(
               handler, 
               // non-copyable: false
                   res
@@ -6861,10 +6861,10 @@ QLocale::NumberOptions a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QLocale_QuotationStyle(handler, a2
+   && RJSHelper::is_QLocale_QuotationStyle(handler, a2
     , true
   
   )
@@ -6878,7 +6878,7 @@ QLocale::NumberOptions a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: style (QLocale::QuotationStyle)
   
@@ -6889,7 +6889,7 @@ QLocale::QuotationStyle a2_cpp;
             a2_cpp = QLocale::StandardQuotation;
           }
           else {
-            a2_cpp = js2cpp_QLocale_QuotationStyle(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QLocale_QuotationStyle(handler, a2);
           }
         
 
@@ -6917,7 +6917,7 @@ QLocale::QuotationStyle a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6953,7 +6953,7 @@ QLocale::QuotationStyle a2_cpp;
                 
       // check parameter types:
       if (
-        is_QStringList(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
   
@@ -6965,7 +6965,7 @@ QLocale::QuotationStyle a2_cpp;
   
 QStringList a1_cpp;
 
-      a1_cpp = js2cpp_QStringList(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
 
     // call function:
@@ -6991,7 +6991,7 @@ QStringList a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res

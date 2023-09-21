@@ -65,7 +65,7 @@
         QJSValueList args;
         
 
-  args << cpp2js_QActionEvent(
+  args << RJSHelper::cpp2js_QActionEvent(
     handler, 
     // non-copyable: true
 event
@@ -118,28 +118,28 @@ event
         QJSValueList args;
         
 
-  args << cpp2js_int(
+  args << RJSHelper::cpp2js_int(
     handler, 
     // non-copyable: false
 left
   );
 
 
-  args << cpp2js_int(
+  args << RJSHelper::cpp2js_int(
     handler, 
     // non-copyable: false
 top
   );
 
 
-  args << cpp2js_int(
+  args << RJSHelper::cpp2js_int(
     handler, 
     // non-copyable: false
 right
   );
 
 
-  args << cpp2js_int(
+  args << RJSHelper::cpp2js_int(
     handler, 
     // non-copyable: false
 bottom
@@ -192,7 +192,7 @@ bottom
         QJSValueList args;
         
 
-  args << cpp2js_QMargins(
+  args << RJSHelper::cpp2js_QMargins(
     handler, 
     // non-copyable: false
 margins
@@ -265,7 +265,7 @@ margins
 
         
             // convert return value js2cpp and return:
-            return js2cpp_QMargins(handler, res);
+            return RJSHelper::js2cpp_QMargins(handler, res);
           
       }
       else {
@@ -294,14 +294,14 @@ margins
         QJSValueList args;
         
 
-  args << cpp2js_QObject(
+  args << RJSHelper::cpp2js_QObject(
     handler, 
     // non-copyable: true
 a1
   );
 
 
-  args << cpp2js_QEvent(
+  args << RJSHelper::cpp2js_QEvent(
     handler, 
     // non-copyable: true
 a2
@@ -328,7 +328,7 @@ a2
 
         
             // convert return value js2cpp and return:
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
       else {
@@ -357,7 +357,7 @@ a2
         QJSValueList args;
         
 
-  args << cpp2js_QEvent(
+  args << RJSHelper::cpp2js_QEvent(
     handler, 
     // non-copyable: true
 a1
@@ -384,7 +384,7 @@ a1
 
         
             // convert return value js2cpp and return:
-            return js2cpp_bool(handler, res);
+            return RJSHelper::js2cpp_bool(handler, res);
           
       }
       else {
@@ -433,7 +433,7 @@ a1
 
         
             // convert return value js2cpp and return:
-            return js2cpp_QSize(handler, res);
+            return RJSHelper::js2cpp_QSize(handler, res);
           
       }
       else {
@@ -462,7 +462,7 @@ a1
         QJSValueList args;
         
 
-  args << cpp2js_QResizeEvent(
+  args << RJSHelper::cpp2js_QResizeEvent(
     handler, 
     // non-copyable: true
 e
@@ -515,7 +515,7 @@ e
         QJSValueList args;
         
 
-  args << cpp2js_QPaintEvent(
+  args << RJSHelper::cpp2js_QPaintEvent(
     handler, 
     // non-copyable: true
 e
@@ -568,7 +568,7 @@ e
         QJSValueList args;
         
 
-  args << cpp2js_QMouseEvent(
+  args << RJSHelper::cpp2js_QMouseEvent(
     handler, 
     // non-copyable: true
 e

@@ -161,31 +161,31 @@ QPalette_Wrapper::QPalette_Wrapper
                 
       // check parameter types:
       if (
-        is_QBrush(handler, a1
+        RJSHelper::is_QBrush(handler, a1
   )
 
-   && is_QBrush(handler, a2
+   && RJSHelper::is_QBrush(handler, a2
   )
 
-   && is_QBrush(handler, a3
+   && RJSHelper::is_QBrush(handler, a3
   )
 
-   && is_QBrush(handler, a4
+   && RJSHelper::is_QBrush(handler, a4
   )
 
-   && is_QBrush(handler, a5
+   && RJSHelper::is_QBrush(handler, a5
   )
 
-   && is_QBrush(handler, a6
+   && RJSHelper::is_QBrush(handler, a6
   )
 
-   && is_QBrush(handler, a7
+   && RJSHelper::is_QBrush(handler, a7
   )
 
-   && is_QBrush(handler, a8
+   && RJSHelper::is_QBrush(handler, a8
   )
 
-   && is_QBrush(handler, a9
+   && RJSHelper::is_QBrush(handler, a9
   )
 
   
@@ -197,55 +197,55 @@ QPalette_Wrapper::QPalette_Wrapper
   
 QBrush a1_cpp;
 
-      a1_cpp = js2cpp_QBrush(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QBrush(handler, a1);
         
   // convert js parameter to cpp: button (QBrush)
   
 QBrush a2_cpp;
 
-      a2_cpp = js2cpp_QBrush(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QBrush(handler, a2);
         
   // convert js parameter to cpp: light (QBrush)
   
 QBrush a3_cpp;
 
-      a3_cpp = js2cpp_QBrush(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QBrush(handler, a3);
         
   // convert js parameter to cpp: dark (QBrush)
   
 QBrush a4_cpp;
 
-      a4_cpp = js2cpp_QBrush(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_QBrush(handler, a4);
         
   // convert js parameter to cpp: mid (QBrush)
   
 QBrush a5_cpp;
 
-      a5_cpp = js2cpp_QBrush(handler, a5);
+      a5_cpp = RJSHelper::js2cpp_QBrush(handler, a5);
         
   // convert js parameter to cpp: text (QBrush)
   
 QBrush a6_cpp;
 
-      a6_cpp = js2cpp_QBrush(handler, a6);
+      a6_cpp = RJSHelper::js2cpp_QBrush(handler, a6);
         
   // convert js parameter to cpp: bright_text (QBrush)
   
 QBrush a7_cpp;
 
-      a7_cpp = js2cpp_QBrush(handler, a7);
+      a7_cpp = RJSHelper::js2cpp_QBrush(handler, a7);
         
   // convert js parameter to cpp: base (QBrush)
   
 QBrush a8_cpp;
 
-      a8_cpp = js2cpp_QBrush(handler, a8);
+      a8_cpp = RJSHelper::js2cpp_QBrush(handler, a8);
         
   // convert js parameter to cpp: window (QBrush)
   
 QBrush a9_cpp;
 
-      a9_cpp = js2cpp_QBrush(handler, a9);
+      a9_cpp = RJSHelper::js2cpp_QBrush(handler, a9);
         
 
     // call function:
@@ -279,25 +279,25 @@ QBrush a9_cpp;
 
       // check parameter types:
       if (
-        is_QColor(handler, a1
+        RJSHelper::is_QColor(handler, a1
   )
 
-   && is_QColor(handler, a2
+   && RJSHelper::is_QColor(handler, a2
   )
 
-   && is_QColor(handler, a3
+   && RJSHelper::is_QColor(handler, a3
   )
 
-   && is_QColor(handler, a4
+   && RJSHelper::is_QColor(handler, a4
   )
 
-   && is_QColor(handler, a5
+   && RJSHelper::is_QColor(handler, a5
   )
 
-   && is_QColor(handler, a6
+   && RJSHelper::is_QColor(handler, a6
   )
 
-   && is_QColor(handler, a7
+   && RJSHelper::is_QColor(handler, a7
   )
 
   
@@ -309,43 +309,43 @@ QBrush a9_cpp;
   
 QColor a1_cpp;
 
-      a1_cpp = js2cpp_QColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QColor(handler, a1);
         
   // convert js parameter to cpp: window (QColor)
   
 QColor a2_cpp;
 
-      a2_cpp = js2cpp_QColor(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QColor(handler, a2);
         
   // convert js parameter to cpp: light (QColor)
   
 QColor a3_cpp;
 
-      a3_cpp = js2cpp_QColor(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QColor(handler, a3);
         
   // convert js parameter to cpp: dark (QColor)
   
 QColor a4_cpp;
 
-      a4_cpp = js2cpp_QColor(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_QColor(handler, a4);
         
   // convert js parameter to cpp: mid (QColor)
   
 QColor a5_cpp;
 
-      a5_cpp = js2cpp_QColor(handler, a5);
+      a5_cpp = RJSHelper::js2cpp_QColor(handler, a5);
         
   // convert js parameter to cpp: text (QColor)
   
 QColor a6_cpp;
 
-      a6_cpp = js2cpp_QColor(handler, a6);
+      a6_cpp = RJSHelper::js2cpp_QColor(handler, a6);
         
   // convert js parameter to cpp: base (QColor)
   
 QColor a7_cpp;
 
-      a7_cpp = js2cpp_QColor(handler, a7);
+      a7_cpp = RJSHelper::js2cpp_QColor(handler, a7);
         
 
     // call function:
@@ -377,10 +377,10 @@ QColor a7_cpp;
 
       // check parameter types:
       if (
-        is_QColor(handler, a1
+        RJSHelper::is_QColor(handler, a1
   )
 
-   && is_QColor(handler, a2
+   && RJSHelper::is_QColor(handler, a2
   )
 
   
@@ -392,13 +392,13 @@ QColor a7_cpp;
   
 QColor a1_cpp;
 
-      a1_cpp = js2cpp_QColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QColor(handler, a1);
         
   // convert js parameter to cpp: window (QColor)
   
 QColor a2_cpp;
 
-      a2_cpp = js2cpp_QColor(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QColor(handler, a2);
         
 
     // call function:
@@ -425,7 +425,7 @@ QColor a2_cpp;
 
       // check parameter types:
       if (
-        is_QColor(handler, a1
+        RJSHelper::is_QColor(handler, a1
   )
 
   
@@ -437,7 +437,7 @@ QColor a2_cpp;
   
 QColor a1_cpp;
 
-      a1_cpp = js2cpp_QColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QColor(handler, a1);
         
 
     // call function:
@@ -463,7 +463,7 @@ QColor a1_cpp;
 
       // check parameter types:
       if (
-        is_Qt_GlobalColor(handler, a1
+        RJSHelper::is_Qt_GlobalColor(handler, a1
   )
 
   
@@ -475,7 +475,7 @@ QColor a1_cpp;
   
 Qt::GlobalColor a1_cpp;
 
-      a1_cpp = js2cpp_Qt_GlobalColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_GlobalColor(handler, a1);
         
 
     // call function:
@@ -501,7 +501,7 @@ Qt::GlobalColor a1_cpp;
 
       // check parameter types:
       if (
-        is_QPalette(handler, a1
+        RJSHelper::is_QPalette(handler, a1
   )
 
   
@@ -513,7 +513,7 @@ Qt::GlobalColor a1_cpp;
   
 QPalette a1_cpp;
 
-      a1_cpp = js2cpp_QPalette(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette(handler, a1);
         
 
     // call function:
@@ -539,7 +539,7 @@ QPalette a1_cpp;
 
       // check parameter types:
       if (
-        is_QPalette(handler, a1
+        RJSHelper::is_QPalette(handler, a1
   )
 
   
@@ -551,7 +551,7 @@ QPalette a1_cpp;
   
 QPalette a1_cpp;
 
-      a1_cpp = js2cpp_QPalette(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette(handler, a1);
         
 
     // call function:
@@ -647,7 +647,7 @@ QPalette a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette(handler, a1
+        RJSHelper::is_QPalette(handler, a1
   )
 
   
@@ -659,7 +659,7 @@ QPalette a1_cpp;
   
 QPalette a1_cpp;
 
-      a1_cpp = js2cpp_QPalette(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette(handler, a1);
         
 
     // call function:
@@ -734,7 +734,7 @@ QPalette a1_cpp;
               
             // return type: QPalette::ColorGroup
 
-            return cpp2js_QPalette_ColorGroup(
+            return RJSHelper::cpp2js_QPalette_ColorGroup(
               handler, 
               // non-copyable: false
                   res
@@ -768,7 +768,7 @@ QPalette a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette_ColorGroup(handler, a1
+        RJSHelper::is_QPalette_ColorGroup(handler, a1
   )
 
   
@@ -780,7 +780,7 @@ QPalette a1_cpp;
   
 QPalette::ColorGroup a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorGroup(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorGroup(handler, a1);
         
 
     // call function:
@@ -836,10 +836,10 @@ QPalette::ColorGroup a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette_ColorGroup(handler, a1
+        RJSHelper::is_QPalette_ColorGroup(handler, a1
   )
 
-   && is_QPalette_ColorRole(handler, a2
+   && RJSHelper::is_QPalette_ColorRole(handler, a2
   )
 
   
@@ -851,13 +851,13 @@ QPalette::ColorGroup a1_cpp;
   
 QPalette::ColorGroup a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorGroup(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorGroup(handler, a1);
         
   // convert js parameter to cpp: cr (QPalette::ColorRole)
   
 QPalette::ColorRole a2_cpp;
 
-      a2_cpp = js2cpp_QPalette_ColorRole(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPalette_ColorRole(handler, a2);
         
 
     // call function:
@@ -887,7 +887,7 @@ QPalette::ColorRole a2_cpp;
               
             // return type: const QColor&
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -900,7 +900,7 @@ QPalette::ColorRole a2_cpp;
 
       // check parameter types:
       if (
-        is_QPalette_ColorRole(handler, a1
+        RJSHelper::is_QPalette_ColorRole(handler, a1
   )
 
   
@@ -912,7 +912,7 @@ QPalette::ColorRole a2_cpp;
   
 QPalette::ColorRole a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorRole(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorRole(handler, a1);
         
 
     // call function:
@@ -941,7 +941,7 @@ QPalette::ColorRole a1_cpp;
               
             // return type: const QColor&
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -981,10 +981,10 @@ QPalette::ColorRole a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette_ColorGroup(handler, a1
+        RJSHelper::is_QPalette_ColorGroup(handler, a1
   )
 
-   && is_QPalette_ColorRole(handler, a2
+   && RJSHelper::is_QPalette_ColorRole(handler, a2
   )
 
   
@@ -996,13 +996,13 @@ QPalette::ColorRole a1_cpp;
   
 QPalette::ColorGroup a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorGroup(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorGroup(handler, a1);
         
   // convert js parameter to cpp: cr (QPalette::ColorRole)
   
 QPalette::ColorRole a2_cpp;
 
-      a2_cpp = js2cpp_QPalette_ColorRole(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPalette_ColorRole(handler, a2);
         
 
     // call function:
@@ -1032,7 +1032,7 @@ QPalette::ColorRole a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1045,7 +1045,7 @@ QPalette::ColorRole a2_cpp;
 
       // check parameter types:
       if (
-        is_QPalette_ColorRole(handler, a1
+        RJSHelper::is_QPalette_ColorRole(handler, a1
   )
 
   
@@ -1057,7 +1057,7 @@ QPalette::ColorRole a2_cpp;
   
 QPalette::ColorRole a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorRole(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorRole(handler, a1);
         
 
     // call function:
@@ -1086,7 +1086,7 @@ QPalette::ColorRole a1_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1126,13 +1126,13 @@ QPalette::ColorRole a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette_ColorGroup(handler, a1
+        RJSHelper::is_QPalette_ColorGroup(handler, a1
   )
 
-   && is_QPalette_ColorRole(handler, a2
+   && RJSHelper::is_QPalette_ColorRole(handler, a2
   )
 
-   && is_QColor(handler, a3
+   && RJSHelper::is_QColor(handler, a3
   )
 
   
@@ -1144,19 +1144,19 @@ QPalette::ColorRole a1_cpp;
   
 QPalette::ColorGroup a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorGroup(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorGroup(handler, a1);
         
   // convert js parameter to cpp: cr (QPalette::ColorRole)
   
 QPalette::ColorRole a2_cpp;
 
-      a2_cpp = js2cpp_QPalette_ColorRole(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPalette_ColorRole(handler, a2);
         
   // convert js parameter to cpp: color (QColor)
   
 QColor a3_cpp;
 
-      a3_cpp = js2cpp_QColor(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QColor(handler, a3);
         
 
     // call function:
@@ -1187,10 +1187,10 @@ QColor a3_cpp;
 
       // check parameter types:
       if (
-        is_QPalette_ColorRole(handler, a1
+        RJSHelper::is_QPalette_ColorRole(handler, a1
   )
 
-   && is_QColor(handler, a2
+   && RJSHelper::is_QColor(handler, a2
   )
 
   
@@ -1202,13 +1202,13 @@ QColor a3_cpp;
   
 QPalette::ColorRole a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorRole(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorRole(handler, a1);
         
   // convert js parameter to cpp: color (QColor)
   
 QColor a2_cpp;
 
-      a2_cpp = js2cpp_QColor(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QColor(handler, a2);
         
 
     // call function:
@@ -1265,13 +1265,13 @@ QColor a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette_ColorGroup(handler, a1
+        RJSHelper::is_QPalette_ColorGroup(handler, a1
   )
 
-   && is_QPalette_ColorRole(handler, a2
+   && RJSHelper::is_QPalette_ColorRole(handler, a2
   )
 
-   && is_QBrush(handler, a3
+   && RJSHelper::is_QBrush(handler, a3
   )
 
   
@@ -1283,19 +1283,19 @@ QColor a2_cpp;
   
 QPalette::ColorGroup a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorGroup(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorGroup(handler, a1);
         
   // convert js parameter to cpp: cr (QPalette::ColorRole)
   
 QPalette::ColorRole a2_cpp;
 
-      a2_cpp = js2cpp_QPalette_ColorRole(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPalette_ColorRole(handler, a2);
         
   // convert js parameter to cpp: brush (QBrush)
   
 QBrush a3_cpp;
 
-      a3_cpp = js2cpp_QBrush(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QBrush(handler, a3);
         
 
     // call function:
@@ -1326,10 +1326,10 @@ QBrush a3_cpp;
 
       // check parameter types:
       if (
-        is_QPalette_ColorRole(handler, a1
+        RJSHelper::is_QPalette_ColorRole(handler, a1
   )
 
-   && is_QBrush(handler, a2
+   && RJSHelper::is_QBrush(handler, a2
   )
 
   
@@ -1341,13 +1341,13 @@ QBrush a3_cpp;
   
 QPalette::ColorRole a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorRole(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorRole(handler, a1);
         
   // convert js parameter to cpp: brush (QBrush)
   
 QBrush a2_cpp;
 
-      a2_cpp = js2cpp_QBrush(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QBrush(handler, a2);
         
 
     // call function:
@@ -1404,10 +1404,10 @@ QBrush a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette_ColorGroup(handler, a1
+        RJSHelper::is_QPalette_ColorGroup(handler, a1
   )
 
-   && is_QPalette_ColorRole(handler, a2
+   && RJSHelper::is_QPalette_ColorRole(handler, a2
   )
 
   
@@ -1419,13 +1419,13 @@ QBrush a2_cpp;
   
 QPalette::ColorGroup a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorGroup(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorGroup(handler, a1);
         
   // convert js parameter to cpp: cr (QPalette::ColorRole)
   
 QPalette::ColorRole a2_cpp;
 
-      a2_cpp = js2cpp_QPalette_ColorRole(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPalette_ColorRole(handler, a2);
         
 
     // call function:
@@ -1452,7 +1452,7 @@ QPalette::ColorRole a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1504,34 +1504,34 @@ QPalette::ColorRole a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette_ColorGroup(handler, a1
+        RJSHelper::is_QPalette_ColorGroup(handler, a1
   )
 
-   && is_QBrush(handler, a2
+   && RJSHelper::is_QBrush(handler, a2
   )
 
-   && is_QBrush(handler, a3
+   && RJSHelper::is_QBrush(handler, a3
   )
 
-   && is_QBrush(handler, a4
+   && RJSHelper::is_QBrush(handler, a4
   )
 
-   && is_QBrush(handler, a5
+   && RJSHelper::is_QBrush(handler, a5
   )
 
-   && is_QBrush(handler, a6
+   && RJSHelper::is_QBrush(handler, a6
   )
 
-   && is_QBrush(handler, a7
+   && RJSHelper::is_QBrush(handler, a7
   )
 
-   && is_QBrush(handler, a8
+   && RJSHelper::is_QBrush(handler, a8
   )
 
-   && is_QBrush(handler, a9
+   && RJSHelper::is_QBrush(handler, a9
   )
 
-   && is_QBrush(handler, a10
+   && RJSHelper::is_QBrush(handler, a10
   )
 
   
@@ -1543,61 +1543,61 @@ QPalette::ColorRole a2_cpp;
   
 QPalette::ColorGroup a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorGroup(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorGroup(handler, a1);
         
   // convert js parameter to cpp: windowText (QBrush)
   
 QBrush a2_cpp;
 
-      a2_cpp = js2cpp_QBrush(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QBrush(handler, a2);
         
   // convert js parameter to cpp: button (QBrush)
   
 QBrush a3_cpp;
 
-      a3_cpp = js2cpp_QBrush(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QBrush(handler, a3);
         
   // convert js parameter to cpp: light (QBrush)
   
 QBrush a4_cpp;
 
-      a4_cpp = js2cpp_QBrush(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_QBrush(handler, a4);
         
   // convert js parameter to cpp: dark (QBrush)
   
 QBrush a5_cpp;
 
-      a5_cpp = js2cpp_QBrush(handler, a5);
+      a5_cpp = RJSHelper::js2cpp_QBrush(handler, a5);
         
   // convert js parameter to cpp: mid (QBrush)
   
 QBrush a6_cpp;
 
-      a6_cpp = js2cpp_QBrush(handler, a6);
+      a6_cpp = RJSHelper::js2cpp_QBrush(handler, a6);
         
   // convert js parameter to cpp: text (QBrush)
   
 QBrush a7_cpp;
 
-      a7_cpp = js2cpp_QBrush(handler, a7);
+      a7_cpp = RJSHelper::js2cpp_QBrush(handler, a7);
         
   // convert js parameter to cpp: bright_text (QBrush)
   
 QBrush a8_cpp;
 
-      a8_cpp = js2cpp_QBrush(handler, a8);
+      a8_cpp = RJSHelper::js2cpp_QBrush(handler, a8);
         
   // convert js parameter to cpp: base (QBrush)
   
 QBrush a9_cpp;
 
-      a9_cpp = js2cpp_QBrush(handler, a9);
+      a9_cpp = RJSHelper::js2cpp_QBrush(handler, a9);
         
   // convert js parameter to cpp: window (QBrush)
   
 QBrush a10_cpp;
 
-      a10_cpp = js2cpp_QBrush(handler, a10);
+      a10_cpp = RJSHelper::js2cpp_QBrush(handler, a10);
         
 
     // call function:
@@ -1662,10 +1662,10 @@ QBrush a10_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette_ColorGroup(handler, a1
+        RJSHelper::is_QPalette_ColorGroup(handler, a1
   )
 
-   && is_QPalette_ColorGroup(handler, a2
+   && RJSHelper::is_QPalette_ColorGroup(handler, a2
   )
 
   
@@ -1677,13 +1677,13 @@ QBrush a10_cpp;
   
 QPalette::ColorGroup a1_cpp;
 
-      a1_cpp = js2cpp_QPalette_ColorGroup(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette_ColorGroup(handler, a1);
         
   // convert js parameter to cpp: cr2 (QPalette::ColorGroup)
   
 QPalette::ColorGroup a2_cpp;
 
-      a2_cpp = js2cpp_QPalette_ColorGroup(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPalette_ColorGroup(handler, a2);
         
 
     // call function:
@@ -1710,7 +1710,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1770,7 +1770,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1832,7 +1832,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1894,7 +1894,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -1956,7 +1956,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2018,7 +2018,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2080,7 +2080,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2142,7 +2142,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2204,7 +2204,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2266,7 +2266,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2328,7 +2328,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2390,7 +2390,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2452,7 +2452,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2514,7 +2514,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2576,7 +2576,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2638,7 +2638,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2700,7 +2700,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2762,7 +2762,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2824,7 +2824,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2886,7 +2886,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2948,7 +2948,7 @@ QPalette::ColorGroup a2_cpp;
               
             // return type: const QBrush&
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2986,7 +2986,7 @@ QPalette::ColorGroup a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette(handler, a1
+        RJSHelper::is_QPalette(handler, a1
   )
 
   
@@ -2998,7 +2998,7 @@ QPalette::ColorGroup a2_cpp;
   
 QPalette a1_cpp;
 
-      a1_cpp = js2cpp_QPalette(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette(handler, a1);
         
 
     // call function:
@@ -3024,7 +3024,7 @@ QPalette a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3081,7 +3081,7 @@ QPalette a1_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -3117,7 +3117,7 @@ QPalette a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette(handler, a1
+        RJSHelper::is_QPalette(handler, a1
   )
 
   
@@ -3129,7 +3129,7 @@ QPalette a1_cpp;
   
 QPalette a1_cpp;
 
-      a1_cpp = js2cpp_QPalette(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette(handler, a1);
         
 
     // call function:
@@ -3155,7 +3155,7 @@ QPalette a1_cpp;
               
             // return type: QPalette
 
-            return cpp2js_QPalette(
+            return RJSHelper::cpp2js_QPalette(
               handler, 
               // non-copyable: false
                   res

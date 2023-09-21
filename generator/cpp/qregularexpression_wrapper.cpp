@@ -31,7 +31,7 @@
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -43,7 +43,7 @@
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -60,7 +60,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -96,10 +96,10 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QRegularExpression_WildcardConversionOptions(handler, a2
+   && RJSHelper::is_QRegularExpression_WildcardConversionOptions(handler, a2
     , true
   
   )
@@ -113,7 +113,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: options (QRegularExpression::WildcardConversionOptions)
   
@@ -124,7 +124,7 @@ QRegularExpression::WildcardConversionOptions a2_cpp;
             a2_cpp = QRegularExpression::DefaultWildcardConversion;
           }
           else {
-            a2_cpp = js2cpp_QRegularExpression_WildcardConversionOptions(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QRegularExpression_WildcardConversionOptions(handler, a2);
           }
         
 
@@ -143,7 +143,7 @@ QRegularExpression::WildcardConversionOptions a2_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -177,7 +177,7 @@ QRegularExpression::WildcardConversionOptions a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -189,7 +189,7 @@ QRegularExpression::WildcardConversionOptions a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -206,7 +206,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -369,10 +369,10 @@ QRegularExpression_Wrapper::QRegularExpression_Wrapper
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QRegularExpression_PatternOptions(handler, a2
+   && RJSHelper::is_QRegularExpression_PatternOptions(handler, a2
     , true
   
   )
@@ -386,7 +386,7 @@ QRegularExpression_Wrapper::QRegularExpression_Wrapper
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: options (QRegularExpression::PatternOptions)
   
@@ -397,7 +397,7 @@ QRegularExpression::PatternOptions a2_cpp;
             a2_cpp = QRegularExpression::NoPatternOption;
           }
           else {
-            a2_cpp = js2cpp_QRegularExpression_PatternOptions(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QRegularExpression_PatternOptions(handler, a2);
           }
         
 
@@ -425,7 +425,7 @@ QRegularExpression::PatternOptions a2_cpp;
 
       // check parameter types:
       if (
-        is_QRegularExpression(handler, a1
+        RJSHelper::is_QRegularExpression(handler, a1
   )
 
   
@@ -437,7 +437,7 @@ QRegularExpression::PatternOptions a2_cpp;
   
 QRegularExpression a1_cpp;
 
-      a1_cpp = js2cpp_QRegularExpression(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegularExpression(handler, a1);
         
 
     // call function:
@@ -463,7 +463,7 @@ QRegularExpression a1_cpp;
 
       // check parameter types:
       if (
-        is_QRegularExpression(handler, a1
+        RJSHelper::is_QRegularExpression(handler, a1
   )
 
   
@@ -475,7 +475,7 @@ QRegularExpression a1_cpp;
   
 QRegularExpression a1_cpp;
 
-      a1_cpp = js2cpp_QRegularExpression(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegularExpression(handler, a1);
         
 
     // call function:
@@ -591,7 +591,7 @@ QRegularExpression a1_cpp;
               
             // return type: QRegularExpression::PatternOptions
 
-            return cpp2js_QRegularExpression_PatternOptions(
+            return RJSHelper::cpp2js_QRegularExpression_PatternOptions(
               handler, 
               // non-copyable: false
                   res
@@ -625,7 +625,7 @@ QRegularExpression a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRegularExpression_PatternOptions(handler, a1
+        RJSHelper::is_QRegularExpression_PatternOptions(handler, a1
   )
 
   
@@ -637,7 +637,7 @@ QRegularExpression a1_cpp;
   
 QRegularExpression::PatternOptions a1_cpp;
 
-      a1_cpp = js2cpp_QRegularExpression_PatternOptions(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegularExpression_PatternOptions(handler, a1);
         
 
     // call function:
@@ -689,7 +689,7 @@ QRegularExpression::PatternOptions a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRegularExpression(handler, a1
+        RJSHelper::is_QRegularExpression(handler, a1
   )
 
   
@@ -701,7 +701,7 @@ QRegularExpression::PatternOptions a1_cpp;
   
 QRegularExpression a1_cpp;
 
-      a1_cpp = js2cpp_QRegularExpression(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegularExpression(handler, a1);
         
 
     // call function:
@@ -776,7 +776,7 @@ QRegularExpression a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -810,7 +810,7 @@ QRegularExpression a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -822,7 +822,7 @@ QRegularExpression a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -897,7 +897,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -954,7 +954,7 @@ QString a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -1011,7 +1011,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1068,7 +1068,7 @@ QString a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1125,7 +1125,7 @@ QString a1_cpp;
               
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -1167,20 +1167,20 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_qsizetype(handler, a2
+   && RJSHelper::is_qsizetype(handler, a2
     , true
   
   )
 
-   && is_QRegularExpression_MatchType(handler, a3
+   && RJSHelper::is_QRegularExpression_MatchType(handler, a3
     , true
   
   )
 
-   && is_QRegularExpression_MatchOptions(handler, a4
+   && RJSHelper::is_QRegularExpression_MatchOptions(handler, a4
     , true
   
   )
@@ -1194,7 +1194,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: offset (qsizetype)
   
@@ -1205,7 +1205,7 @@ qsizetype a2_cpp;
             a2_cpp = 0;
           }
           else {
-            a2_cpp = js2cpp_qsizetype(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_qsizetype(handler, a2);
           }
         
   // convert js parameter to cpp: matchType (QRegularExpression::MatchType)
@@ -1217,7 +1217,7 @@ QRegularExpression::MatchType a3_cpp;
             a3_cpp = QRegularExpression::NormalMatch;
           }
           else {
-            a3_cpp = js2cpp_QRegularExpression_MatchType(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QRegularExpression_MatchType(handler, a3);
           }
         
   // convert js parameter to cpp: matchOptions (QRegularExpression::MatchOptions)
@@ -1229,7 +1229,7 @@ QRegularExpression::MatchOptions a4_cpp;
             a4_cpp = QRegularExpression::NoMatchOption;
           }
           else {
-            a4_cpp = js2cpp_QRegularExpression_MatchOptions(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QRegularExpression_MatchOptions(handler, a4);
           }
         
 
@@ -1259,7 +1259,7 @@ QRegularExpression::MatchOptions a4_cpp;
               
             // return type: QRegularExpressionMatch
 
-            return cpp2js_QRegularExpressionMatch(
+            return RJSHelper::cpp2js_QRegularExpressionMatch(
               handler, 
               // non-copyable: false
                   res
@@ -1482,7 +1482,7 @@ QRegularExpressionMatch_Wrapper::QRegularExpressionMatch_Wrapper
                 
       // check parameter types:
       if (
-        is_QRegularExpressionMatch(handler, a1
+        RJSHelper::is_QRegularExpressionMatch(handler, a1
   )
 
   
@@ -1494,7 +1494,7 @@ QRegularExpressionMatch_Wrapper::QRegularExpressionMatch_Wrapper
   
 QRegularExpressionMatch a1_cpp;
 
-      a1_cpp = js2cpp_QRegularExpressionMatch(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegularExpressionMatch(handler, a1);
         
 
     // call function:
@@ -1520,7 +1520,7 @@ QRegularExpressionMatch a1_cpp;
 
       // check parameter types:
       if (
-        is_QRegularExpressionMatch(handler, a1
+        RJSHelper::is_QRegularExpressionMatch(handler, a1
   )
 
   
@@ -1532,7 +1532,7 @@ QRegularExpressionMatch a1_cpp;
   
 QRegularExpressionMatch a1_cpp;
 
-      a1_cpp = js2cpp_QRegularExpressionMatch(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegularExpressionMatch(handler, a1);
         
 
     // call function:
@@ -1628,7 +1628,7 @@ QRegularExpressionMatch a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRegularExpressionMatch(handler, a1
+        RJSHelper::is_QRegularExpressionMatch(handler, a1
   )
 
   
@@ -1640,7 +1640,7 @@ QRegularExpressionMatch a1_cpp;
   
 QRegularExpressionMatch a1_cpp;
 
-      a1_cpp = js2cpp_QRegularExpressionMatch(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegularExpressionMatch(handler, a1);
         
 
     // call function:
@@ -1715,7 +1715,7 @@ QRegularExpressionMatch a1_cpp;
               
             // return type: QRegularExpression
 
-            return cpp2js_QRegularExpression(
+            return RJSHelper::cpp2js_QRegularExpression(
               handler, 
               // non-copyable: false
                   res
@@ -1772,7 +1772,7 @@ QRegularExpressionMatch a1_cpp;
               
             // return type: QRegularExpression::MatchType
 
-            return cpp2js_QRegularExpression_MatchType(
+            return RJSHelper::cpp2js_QRegularExpression_MatchType(
               handler, 
               // non-copyable: false
                   res
@@ -1829,7 +1829,7 @@ QRegularExpressionMatch a1_cpp;
               
             // return type: QRegularExpression::MatchOptions
 
-            return cpp2js_QRegularExpression_MatchOptions(
+            return RJSHelper::cpp2js_QRegularExpression_MatchOptions(
               handler, 
               // non-copyable: false
                   res
@@ -1886,7 +1886,7 @@ QRegularExpressionMatch a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1943,7 +1943,7 @@ QRegularExpressionMatch a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2000,7 +2000,7 @@ QRegularExpressionMatch a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2057,7 +2057,7 @@ QRegularExpressionMatch a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2093,7 +2093,7 @@ QRegularExpressionMatch a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
     , true
   
   )
@@ -2112,7 +2112,7 @@ int a1_cpp;
             a1_cpp = 0;
           }
           else {
-            a1_cpp = js2cpp_int(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
           }
         
 
@@ -2139,7 +2139,7 @@ int a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2150,7 +2150,7 @@ int a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2162,7 +2162,7 @@ int a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2188,7 +2188,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2249,7 +2249,7 @@ QString a1_cpp;
               
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -2285,7 +2285,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
     , true
   
   )
@@ -2304,7 +2304,7 @@ int a1_cpp;
             a1_cpp = 0;
           }
           else {
-            a1_cpp = js2cpp_int(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
           }
         
 
@@ -2331,7 +2331,7 @@ int a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -2342,7 +2342,7 @@ int a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2354,7 +2354,7 @@ int a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2380,7 +2380,7 @@ QString a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -2416,7 +2416,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
     , true
   
   )
@@ -2435,7 +2435,7 @@ int a1_cpp;
             a1_cpp = 0;
           }
           else {
-            a1_cpp = js2cpp_int(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
           }
         
 
@@ -2462,7 +2462,7 @@ int a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -2473,7 +2473,7 @@ int a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2485,7 +2485,7 @@ int a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2511,7 +2511,7 @@ QString a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -2547,7 +2547,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
     , true
   
   )
@@ -2566,7 +2566,7 @@ int a1_cpp;
             a1_cpp = 0;
           }
           else {
-            a1_cpp = js2cpp_int(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
           }
         
 
@@ -2593,7 +2593,7 @@ int a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res
@@ -2604,7 +2604,7 @@ int a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2616,7 +2616,7 @@ int a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2642,7 +2642,7 @@ QString a1_cpp;
               
             // return type: qsizetype
 
-            return cpp2js_qsizetype(
+            return RJSHelper::cpp2js_qsizetype(
               handler, 
               // non-copyable: false
                   res

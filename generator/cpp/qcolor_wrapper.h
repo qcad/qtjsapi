@@ -2039,7 +2039,7 @@
         
           Q_INVOKABLE
           bool equals(const QJSValue& other) const {
-            QColor otherObj = js2cpp_QColor(handler, other);
+            QColor otherObj = RJSHelper::js2cpp_QColor(handler, other);
             QColor* thisObj = getWrapped();
 
             if (thisObj==nullptr) {

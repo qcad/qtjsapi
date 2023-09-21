@@ -49,7 +49,7 @@
           
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -87,10 +87,10 @@
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_Qt_DateFormat(handler, a2
+   && RJSHelper::is_Qt_DateFormat(handler, a2
     , true
   
   )
@@ -104,7 +104,7 @@
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: f (Qt::DateFormat)
   
@@ -115,7 +115,7 @@ Qt::DateFormat a2_cpp;
             a2_cpp = Qt::TextDate;
           }
           else {
-            a2_cpp = js2cpp_Qt_DateFormat(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_Qt_DateFormat(handler, a2);
           }
         
 
@@ -134,7 +134,7 @@ Qt::DateFormat a2_cpp;
           
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -145,10 +145,10 @@ Qt::DateFormat a2_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -160,13 +160,13 @@ Qt::DateFormat a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -184,7 +184,7 @@ QString a2_cpp;
           
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -220,7 +220,7 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -232,7 +232,7 @@ QString a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -249,7 +249,7 @@ int a1_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -283,7 +283,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -295,7 +295,7 @@ int a1_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -312,7 +312,7 @@ qint64 a1_cpp;
           
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -479,13 +479,13 @@ QDate_Wrapper::QDate_Wrapper
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
   
@@ -497,19 +497,19 @@ QDate_Wrapper::QDate_Wrapper
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: m (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: d (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
 
     // call function:
@@ -640,7 +640,7 @@ int a3_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -678,13 +678,13 @@ int a3_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
   
@@ -696,19 +696,19 @@ int a3_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: m (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: d (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
 
     // call function:
@@ -736,7 +736,7 @@ int a3_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -770,7 +770,7 @@ int a3_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -827,7 +827,7 @@ int a3_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -884,7 +884,7 @@ int a3_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -941,7 +941,7 @@ int a3_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -998,7 +998,7 @@ int a3_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1055,7 +1055,7 @@ int a3_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1112,7 +1112,7 @@ int a3_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1169,7 +1169,7 @@ int a3_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1207,12 +1207,12 @@ int a3_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_TimeSpec(handler, a1
+        RJSHelper::is_Qt_TimeSpec(handler, a1
     , true
   
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
     , true
   
   )
@@ -1231,7 +1231,7 @@ Qt::TimeSpec a1_cpp;
             a1_cpp = Qt::LocalTime;
           }
           else {
-            a1_cpp = js2cpp_Qt_TimeSpec(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a1);
           }
         
   // convert js parameter to cpp: offsetSeconds (int)
@@ -1243,7 +1243,7 @@ int a2_cpp;
             a2_cpp = 0;
           }
           else {
-            a2_cpp = js2cpp_int(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
           }
         
 
@@ -1271,7 +1271,7 @@ int a2_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -1282,7 +1282,7 @@ int a2_cpp;
 
       // check parameter types:
       if (
-        is_QTimeZone(handler, a1
+        RJSHelper::is_QTimeZone(handler, a1
   )
 
   
@@ -1294,7 +1294,7 @@ int a2_cpp;
   
 QTimeZone a1_cpp;
 
-      a1_cpp = js2cpp_QTimeZone(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTimeZone(handler, a1);
         
 
     // call function:
@@ -1320,7 +1320,7 @@ QTimeZone a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -1358,12 +1358,12 @@ QTimeZone a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_TimeSpec(handler, a1
+        RJSHelper::is_Qt_TimeSpec(handler, a1
     , true
   
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
     , true
   
   )
@@ -1382,7 +1382,7 @@ Qt::TimeSpec a1_cpp;
             a1_cpp = Qt::LocalTime;
           }
           else {
-            a1_cpp = js2cpp_Qt_TimeSpec(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a1);
           }
         
   // convert js parameter to cpp: offsetSeconds (int)
@@ -1394,7 +1394,7 @@ int a2_cpp;
             a2_cpp = 0;
           }
           else {
-            a2_cpp = js2cpp_int(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
           }
         
 
@@ -1422,7 +1422,7 @@ int a2_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -1433,7 +1433,7 @@ int a2_cpp;
 
       // check parameter types:
       if (
-        is_QTimeZone(handler, a1
+        RJSHelper::is_QTimeZone(handler, a1
   )
 
   
@@ -1445,7 +1445,7 @@ int a2_cpp;
   
 QTimeZone a1_cpp;
 
-      a1_cpp = js2cpp_QTimeZone(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTimeZone(handler, a1);
         
 
     // call function:
@@ -1471,7 +1471,7 @@ QTimeZone a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -1509,7 +1509,7 @@ QTimeZone a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_DateFormat(handler, a1
+        RJSHelper::is_Qt_DateFormat(handler, a1
     , true
   
   )
@@ -1528,7 +1528,7 @@ Qt::DateFormat a1_cpp;
             a1_cpp = Qt::TextDate;
           }
           else {
-            a1_cpp = js2cpp_Qt_DateFormat(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_Qt_DateFormat(handler, a1);
           }
         
 
@@ -1555,7 +1555,7 @@ Qt::DateFormat a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1566,7 +1566,7 @@ Qt::DateFormat a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1578,7 +1578,7 @@ Qt::DateFormat a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1604,7 +1604,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1644,13 +1644,13 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
   
@@ -1662,19 +1662,19 @@ QString a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: month (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: day (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
 
     // call function:
@@ -1702,7 +1702,7 @@ int a3_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1742,7 +1742,7 @@ int a3_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -1754,7 +1754,7 @@ int a3_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -1780,7 +1780,7 @@ qint64 a1_cpp;
               
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -1816,7 +1816,7 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1828,7 +1828,7 @@ qint64 a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1854,7 +1854,7 @@ int a1_cpp;
               
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -1890,7 +1890,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1902,7 +1902,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1928,7 +1928,7 @@ int a1_cpp;
               
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -1964,7 +1964,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDate(handler, a1
+        RJSHelper::is_QDate(handler, a1
   )
 
   
@@ -1976,7 +1976,7 @@ int a1_cpp;
   
 QDate a1_cpp;
 
-      a1_cpp = js2cpp_QDate(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDate(handler, a1);
         
 
     // call function:
@@ -2002,7 +2002,7 @@ QDate a1_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -2063,7 +2063,7 @@ QDate a1_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -2121,7 +2121,7 @@ QDate a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2133,7 +2133,7 @@ QDate a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2150,7 +2150,7 @@ int a1_cpp;
           
             // return type: QTime
 
-            return cpp2js_QTime(
+            return RJSHelper::cpp2js_QTime(
               handler, 
               // non-copyable: false
                   res
@@ -2196,7 +2196,7 @@ int a1_cpp;
           
             // return type: QTime
 
-            return cpp2js_QTime(
+            return RJSHelper::cpp2js_QTime(
               handler, 
               // non-copyable: false
                   res
@@ -2234,10 +2234,10 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_Qt_DateFormat(handler, a2
+   && RJSHelper::is_Qt_DateFormat(handler, a2
     , true
   
   )
@@ -2251,7 +2251,7 @@ int a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: f (Qt::DateFormat)
   
@@ -2262,7 +2262,7 @@ Qt::DateFormat a2_cpp;
             a2_cpp = Qt::TextDate;
           }
           else {
-            a2_cpp = js2cpp_Qt_DateFormat(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_Qt_DateFormat(handler, a2);
           }
         
 
@@ -2281,7 +2281,7 @@ Qt::DateFormat a2_cpp;
           
             // return type: QTime
 
-            return cpp2js_QTime(
+            return RJSHelper::cpp2js_QTime(
               handler, 
               // non-copyable: false
                   res
@@ -2292,10 +2292,10 @@ Qt::DateFormat a2_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -2307,13 +2307,13 @@ Qt::DateFormat a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -2331,7 +2331,7 @@ QString a2_cpp;
           
             // return type: QTime
 
-            return cpp2js_QTime(
+            return RJSHelper::cpp2js_QTime(
               handler, 
               // non-copyable: false
                   res
@@ -2369,10 +2369,10 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_QTime(handler, a1
+        RJSHelper::is_QTime(handler, a1
   )
 
-   && is_QTime(handler, a2
+   && RJSHelper::is_QTime(handler, a2
   )
 
   
@@ -2384,13 +2384,13 @@ QString a2_cpp;
   
 QTime a1_cpp;
 
-      a1_cpp = js2cpp_QTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTime(handler, a1);
         
   // convert js parameter to cpp: rhs (QTime)
   
 QTime a2_cpp;
 
-      a2_cpp = js2cpp_QTime(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QTime(handler, a2);
         
 
     // call function:
@@ -2408,7 +2408,7 @@ QTime a2_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2573,18 +2573,18 @@ QTime_Wrapper::QTime_Wrapper
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -2598,13 +2598,13 @@ QTime_Wrapper::QTime_Wrapper
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: m (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: s (int)
   
@@ -2615,7 +2615,7 @@ int a3_cpp;
             a3_cpp = 0;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
   // convert js parameter to cpp: ms (int)
@@ -2627,7 +2627,7 @@ int a4_cpp;
             a4_cpp = 0;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -2757,7 +2757,7 @@ int a4_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2797,16 +2797,16 @@ int a4_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -2820,19 +2820,19 @@ int a4_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: m (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: s (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: ms (int)
   
@@ -2843,7 +2843,7 @@ int a4_cpp;
             a4_cpp = 0;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -2873,7 +2873,7 @@ int a4_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2907,7 +2907,7 @@ int a4_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2964,7 +2964,7 @@ int a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3021,7 +3021,7 @@ int a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3078,7 +3078,7 @@ int a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3135,7 +3135,7 @@ int a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3173,7 +3173,7 @@ int a4_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_DateFormat(handler, a1
+        RJSHelper::is_Qt_DateFormat(handler, a1
     , true
   
   )
@@ -3192,7 +3192,7 @@ Qt::DateFormat a1_cpp;
             a1_cpp = Qt::TextDate;
           }
           else {
-            a1_cpp = js2cpp_Qt_DateFormat(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_Qt_DateFormat(handler, a1);
           }
         
 
@@ -3219,7 +3219,7 @@ Qt::DateFormat a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3230,7 +3230,7 @@ Qt::DateFormat a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -3242,7 +3242,7 @@ Qt::DateFormat a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -3268,7 +3268,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -3314,16 +3314,16 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -3337,19 +3337,19 @@ QString a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: m (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: s (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: ms (int)
   
@@ -3360,7 +3360,7 @@ int a4_cpp;
             a4_cpp = 0;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -3390,7 +3390,7 @@ int a4_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3426,7 +3426,7 @@ int a4_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -3438,7 +3438,7 @@ int a4_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -3464,7 +3464,7 @@ int a1_cpp;
               
             // return type: QTime
 
-            return cpp2js_QTime(
+            return RJSHelper::cpp2js_QTime(
               handler, 
               // non-copyable: false
                   res
@@ -3500,7 +3500,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTime(handler, a1
+        RJSHelper::is_QTime(handler, a1
   )
 
   
@@ -3512,7 +3512,7 @@ int a1_cpp;
   
 QTime a1_cpp;
 
-      a1_cpp = js2cpp_QTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTime(handler, a1);
         
 
     // call function:
@@ -3538,7 +3538,7 @@ QTime a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3574,7 +3574,7 @@ QTime a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -3586,7 +3586,7 @@ QTime a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -3612,7 +3612,7 @@ int a1_cpp;
               
             // return type: QTime
 
-            return cpp2js_QTime(
+            return RJSHelper::cpp2js_QTime(
               handler, 
               // non-copyable: false
                   res
@@ -3648,7 +3648,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTime(handler, a1
+        RJSHelper::is_QTime(handler, a1
   )
 
   
@@ -3660,7 +3660,7 @@ int a1_cpp;
   
 QTime a1_cpp;
 
-      a1_cpp = js2cpp_QTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTime(handler, a1);
         
 
     // call function:
@@ -3686,7 +3686,7 @@ QTime a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3743,7 +3743,7 @@ QTime a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3837,7 +3837,7 @@ QTime a1_cpp;
           
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -3883,7 +3883,7 @@ QTime a1_cpp;
           
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -3921,10 +3921,10 @@ QTime a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_Qt_DateFormat(handler, a2
+   && RJSHelper::is_Qt_DateFormat(handler, a2
     , true
   
   )
@@ -3938,7 +3938,7 @@ QTime a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: f (Qt::DateFormat)
   
@@ -3949,7 +3949,7 @@ Qt::DateFormat a2_cpp;
             a2_cpp = Qt::TextDate;
           }
           else {
-            a2_cpp = js2cpp_Qt_DateFormat(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_Qt_DateFormat(handler, a2);
           }
         
 
@@ -3968,7 +3968,7 @@ Qt::DateFormat a2_cpp;
           
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -3979,10 +3979,10 @@ Qt::DateFormat a2_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -3994,13 +3994,13 @@ Qt::DateFormat a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: format (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -4018,7 +4018,7 @@ QString a2_cpp;
           
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4058,13 +4058,13 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
-   && is_Qt_TimeSpec(handler, a2
+   && RJSHelper::is_Qt_TimeSpec(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
@@ -4078,13 +4078,13 @@ QString a2_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
   // convert js parameter to cpp: spec (Qt::TimeSpec)
   
 Qt::TimeSpec a2_cpp;
 
-      a2_cpp = js2cpp_Qt_TimeSpec(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a2);
         
   // convert js parameter to cpp: offsetFromUtc (int)
   
@@ -4095,7 +4095,7 @@ int a3_cpp;
             a3_cpp = 0;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
 
@@ -4115,7 +4115,7 @@ int a3_cpp;
           
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4126,10 +4126,10 @@ int a3_cpp;
 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
-   && is_QTimeZone(handler, a2
+   && RJSHelper::is_QTimeZone(handler, a2
   )
 
   
@@ -4141,13 +4141,13 @@ int a3_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
   // convert js parameter to cpp: timeZone (QTimeZone)
   
 QTimeZone a2_cpp;
 
-      a2_cpp = js2cpp_QTimeZone(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QTimeZone(handler, a2);
         
 
     // call function:
@@ -4165,7 +4165,7 @@ QTimeZone a2_cpp;
           
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4176,7 +4176,7 @@ QTimeZone a2_cpp;
 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -4188,7 +4188,7 @@ QTimeZone a2_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -4205,7 +4205,7 @@ qint64 a1_cpp;
           
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4243,15 +4243,15 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
-   && is_Qt_TimeSpec(handler, a2
+   && RJSHelper::is_Qt_TimeSpec(handler, a2
     , true
   
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
@@ -4265,7 +4265,7 @@ qint64 a1_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
   // convert js parameter to cpp: spe (Qt::TimeSpec)
   
@@ -4276,7 +4276,7 @@ Qt::TimeSpec a2_cpp;
             a2_cpp = Qt::LocalTime;
           }
           else {
-            a2_cpp = js2cpp_Qt_TimeSpec(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a2);
           }
         
   // convert js parameter to cpp: offsetFromUtc (int)
@@ -4288,7 +4288,7 @@ int a3_cpp;
             a3_cpp = 0;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
 
@@ -4308,7 +4308,7 @@ int a3_cpp;
           
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4319,10 +4319,10 @@ int a3_cpp;
 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
-   && is_QTimeZone(handler, a2
+   && RJSHelper::is_QTimeZone(handler, a2
   )
 
   
@@ -4334,13 +4334,13 @@ int a3_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
   // convert js parameter to cpp: timeZone (QTimeZone)
   
 QTimeZone a2_cpp;
 
-      a2_cpp = js2cpp_QTimeZone(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QTimeZone(handler, a2);
         
 
     // call function:
@@ -4358,7 +4358,7 @@ QTimeZone a2_cpp;
           
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -4408,7 +4408,7 @@ QTimeZone a2_cpp;
           
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -4454,7 +4454,7 @@ QTimeZone a2_cpp;
           
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -4490,10 +4490,10 @@ QTimeZone a2_cpp;
                 
       // check parameter types:
       if (
-        is_QDateTime(handler, a1
+        RJSHelper::is_QDateTime(handler, a1
   )
 
-   && is_QDateTime(handler, a2
+   && RJSHelper::is_QDateTime(handler, a2
   )
 
   
@@ -4505,13 +4505,13 @@ QTimeZone a2_cpp;
   
 QDateTime a1_cpp;
 
-      a1_cpp = js2cpp_QDateTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
         
   // convert js parameter to cpp: rhs (QDateTime)
   
 QDateTime a2_cpp;
 
-      a2_cpp = js2cpp_QDateTime(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QDateTime(handler, a2);
         
 
     // call function:
@@ -4529,7 +4529,7 @@ QDateTime a2_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -4813,7 +4813,7 @@ QDateTime_Wrapper::QDateTime_Wrapper
                 
       // check parameter types:
       if (
-        is_QDateTime(handler, a1
+        RJSHelper::is_QDateTime(handler, a1
   )
 
   
@@ -4825,7 +4825,7 @@ QDateTime_Wrapper::QDateTime_Wrapper
   
 QDateTime a1_cpp;
 
-      a1_cpp = js2cpp_QDateTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
         
 
     // call function:
@@ -4900,7 +4900,7 @@ QDateTime a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -4957,7 +4957,7 @@ QDateTime a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -5014,7 +5014,7 @@ QDateTime a1_cpp;
               
             // return type: QDate
 
-            return cpp2js_QDate(
+            return RJSHelper::cpp2js_QDate(
               handler, 
               // non-copyable: false
                   res
@@ -5071,7 +5071,7 @@ QDateTime a1_cpp;
               
             // return type: QTime
 
-            return cpp2js_QTime(
+            return RJSHelper::cpp2js_QTime(
               handler, 
               // non-copyable: false
                   res
@@ -5128,7 +5128,7 @@ QDateTime a1_cpp;
               
             // return type: Qt::TimeSpec
 
-            return cpp2js_Qt_TimeSpec(
+            return RJSHelper::cpp2js_Qt_TimeSpec(
               handler, 
               // non-copyable: false
                   res
@@ -5185,7 +5185,7 @@ QDateTime a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -5244,7 +5244,7 @@ QDateTime a1_cpp;
               
             // return type: QTimeZone
 
-            return cpp2js_QTimeZone(
+            return RJSHelper::cpp2js_QTimeZone(
               handler, 
               // non-copyable: false
                   res
@@ -5303,7 +5303,7 @@ QDateTime a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -5360,7 +5360,7 @@ QDateTime a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -5417,7 +5417,7 @@ QDateTime a1_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -5474,7 +5474,7 @@ QDateTime a1_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -5508,7 +5508,7 @@ QDateTime a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDate(handler, a1
+        RJSHelper::is_QDate(handler, a1
   )
 
   
@@ -5520,7 +5520,7 @@ QDateTime a1_cpp;
   
 QDate a1_cpp;
 
-      a1_cpp = js2cpp_QDate(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDate(handler, a1);
         
 
     // call function:
@@ -5572,7 +5572,7 @@ QDate a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTime(handler, a1
+        RJSHelper::is_QTime(handler, a1
   )
 
   
@@ -5584,7 +5584,7 @@ QDate a1_cpp;
   
 QTime a1_cpp;
 
-      a1_cpp = js2cpp_QTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTime(handler, a1);
         
 
     // call function:
@@ -5636,7 +5636,7 @@ QTime a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_TimeSpec(handler, a1
+        RJSHelper::is_Qt_TimeSpec(handler, a1
   )
 
   
@@ -5648,7 +5648,7 @@ QTime a1_cpp;
   
 Qt::TimeSpec a1_cpp;
 
-      a1_cpp = js2cpp_Qt_TimeSpec(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a1);
         
 
     // call function:
@@ -5700,7 +5700,7 @@ Qt::TimeSpec a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -5712,7 +5712,7 @@ Qt::TimeSpec a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -5766,7 +5766,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTimeZone(handler, a1
+        RJSHelper::is_QTimeZone(handler, a1
   )
 
   
@@ -5778,7 +5778,7 @@ int a1_cpp;
   
 QTimeZone a1_cpp;
 
-      a1_cpp = js2cpp_QTimeZone(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTimeZone(handler, a1);
         
 
     // call function:
@@ -5832,7 +5832,7 @@ QTimeZone a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -5844,7 +5844,7 @@ QTimeZone a1_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -5896,7 +5896,7 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -5908,7 +5908,7 @@ qint64 a1_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -5964,7 +5964,7 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_DateFormat(handler, a1
+        RJSHelper::is_Qt_DateFormat(handler, a1
     , true
   
   )
@@ -5983,7 +5983,7 @@ Qt::DateFormat a1_cpp;
             a1_cpp = Qt::TextDate;
           }
           else {
-            a1_cpp = js2cpp_Qt_DateFormat(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_Qt_DateFormat(handler, a1);
           }
         
 
@@ -6010,7 +6010,7 @@ Qt::DateFormat a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6021,7 +6021,7 @@ Qt::DateFormat a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -6033,7 +6033,7 @@ Qt::DateFormat a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -6059,7 +6059,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -6101,7 +6101,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -6113,7 +6113,7 @@ QString a1_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -6139,7 +6139,7 @@ qint64 a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6175,7 +6175,7 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -6187,7 +6187,7 @@ qint64 a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -6213,7 +6213,7 @@ int a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6249,7 +6249,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -6261,7 +6261,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -6287,7 +6287,7 @@ int a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6323,7 +6323,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -6335,7 +6335,7 @@ int a1_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -6361,7 +6361,7 @@ qint64 a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6397,7 +6397,7 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_qint64(handler, a1
+        RJSHelper::is_qint64(handler, a1
   )
 
   
@@ -6409,7 +6409,7 @@ qint64 a1_cpp;
   
 qint64 a1_cpp;
 
-      a1_cpp = js2cpp_qint64(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
         
 
     // call function:
@@ -6435,7 +6435,7 @@ qint64 a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6471,7 +6471,7 @@ qint64 a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_TimeSpec(handler, a1
+        RJSHelper::is_Qt_TimeSpec(handler, a1
   )
 
   
@@ -6483,7 +6483,7 @@ qint64 a1_cpp;
   
 Qt::TimeSpec a1_cpp;
 
-      a1_cpp = js2cpp_Qt_TimeSpec(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a1);
         
 
     // call function:
@@ -6509,7 +6509,7 @@ Qt::TimeSpec a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6566,7 +6566,7 @@ Qt::TimeSpec a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6623,7 +6623,7 @@ Qt::TimeSpec a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6659,7 +6659,7 @@ Qt::TimeSpec a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -6671,7 +6671,7 @@ Qt::TimeSpec a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -6697,7 +6697,7 @@ int a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6735,7 +6735,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTimeZone(handler, a1
+        RJSHelper::is_QTimeZone(handler, a1
   )
 
   
@@ -6747,7 +6747,7 @@ int a1_cpp;
   
 QTimeZone a1_cpp;
 
-      a1_cpp = js2cpp_QTimeZone(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTimeZone(handler, a1);
         
 
     // call function:
@@ -6773,7 +6773,7 @@ QTimeZone a1_cpp;
               
             // return type: QDateTime
 
-            return cpp2js_QDateTime(
+            return RJSHelper::cpp2js_QDateTime(
               handler, 
               // non-copyable: false
                   res
@@ -6811,7 +6811,7 @@ QTimeZone a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDateTime(handler, a1
+        RJSHelper::is_QDateTime(handler, a1
   )
 
   
@@ -6823,7 +6823,7 @@ QTimeZone a1_cpp;
   
 QDateTime a1_cpp;
 
-      a1_cpp = js2cpp_QDateTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
         
 
     // call function:
@@ -6849,7 +6849,7 @@ QDateTime a1_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -6885,7 +6885,7 @@ QDateTime a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDateTime(handler, a1
+        RJSHelper::is_QDateTime(handler, a1
   )
 
   
@@ -6897,7 +6897,7 @@ QDateTime a1_cpp;
   
 QDateTime a1_cpp;
 
-      a1_cpp = js2cpp_QDateTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
         
 
     // call function:
@@ -6923,7 +6923,7 @@ QDateTime a1_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -6959,7 +6959,7 @@ QDateTime a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDateTime(handler, a1
+        RJSHelper::is_QDateTime(handler, a1
   )
 
   
@@ -6971,7 +6971,7 @@ QDateTime a1_cpp;
   
 QDateTime a1_cpp;
 
-      a1_cpp = js2cpp_QDateTime(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
         
 
     // call function:
@@ -6997,7 +6997,7 @@ QDateTime a1_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res

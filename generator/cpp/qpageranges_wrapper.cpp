@@ -29,7 +29,7 @@
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -41,7 +41,7 @@
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -58,7 +58,7 @@ QString a1_cpp;
           
             // return type: QPageRanges
 
-            return cpp2js_QPageRanges(
+            return RJSHelper::cpp2js_QPageRanges(
               handler, 
               // non-copyable: false
                   res
@@ -217,7 +217,7 @@ QPageRanges_Wrapper::QPageRanges_Wrapper
                 
       // check parameter types:
       if (
-        is_QPageRanges(handler, a1
+        RJSHelper::is_QPageRanges(handler, a1
   )
 
   
@@ -229,7 +229,7 @@ QPageRanges_Wrapper::QPageRanges_Wrapper
   
 QPageRanges a1_cpp;
 
-      a1_cpp = js2cpp_QPageRanges(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageRanges(handler, a1);
         
 
     // call function:
@@ -255,7 +255,7 @@ QPageRanges a1_cpp;
 
       // check parameter types:
       if (
-        is_QPageRanges(handler, a1
+        RJSHelper::is_QPageRanges(handler, a1
   )
 
   
@@ -267,7 +267,7 @@ QPageRanges a1_cpp;
   
 QPageRanges a1_cpp;
 
-      a1_cpp = js2cpp_QPageRanges(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageRanges(handler, a1);
         
 
     // call function:
@@ -355,7 +355,7 @@ QPageRanges a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageRanges(handler, a1
+        RJSHelper::is_QPageRanges(handler, a1
   )
 
   
@@ -367,7 +367,7 @@ QPageRanges a1_cpp;
   
 QPageRanges a1_cpp;
 
-      a1_cpp = js2cpp_QPageRanges(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageRanges(handler, a1);
         
 
     // call function:
@@ -419,7 +419,7 @@ QPageRanges a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -431,7 +431,7 @@ QPageRanges a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -485,10 +485,10 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -500,13 +500,13 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: to (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -629,7 +629,7 @@ int a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -665,7 +665,7 @@ int a2_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -677,7 +677,7 @@ int a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -703,7 +703,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -760,7 +760,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -817,7 +817,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -874,7 +874,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res

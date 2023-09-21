@@ -53,7 +53,7 @@
           
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -296,7 +296,7 @@ QCalendar_Wrapper::QCalendar_Wrapper
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -346,10 +346,10 @@ QCalendar_Wrapper::QCalendar_Wrapper
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
     , true
   
   )
@@ -363,7 +363,7 @@ QCalendar_Wrapper::QCalendar_Wrapper
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: year (int)
   
@@ -374,7 +374,7 @@ int a2_cpp;
             a2_cpp = QCalendar::Unspecified;
           }
           else {
-            a2_cpp = js2cpp_int(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
           }
         
 
@@ -402,7 +402,7 @@ int a2_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -438,7 +438,7 @@ int a2_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -450,7 +450,7 @@ int a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -476,7 +476,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -512,7 +512,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -524,7 +524,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -550,7 +550,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -590,13 +590,13 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
   
@@ -608,19 +608,19 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: month (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: day (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
 
     // call function:
@@ -648,7 +648,7 @@ int a3_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -684,7 +684,7 @@ int a3_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -696,7 +696,7 @@ int a3_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -722,7 +722,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -779,7 +779,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -836,7 +836,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -893,7 +893,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -950,7 +950,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1007,7 +1007,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1064,7 +1064,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1121,7 +1121,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1178,7 +1178,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1235,7 +1235,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1292,7 +1292,7 @@ int a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1328,7 +1328,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QDate(handler, a1
+        RJSHelper::is_QDate(handler, a1
   )
 
   
@@ -1340,7 +1340,7 @@ int a1_cpp;
   
 QDate a1_cpp;
 
-      a1_cpp = js2cpp_QDate(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QDate(handler, a1);
         
 
     // call function:
@@ -1366,7 +1366,7 @@ QDate a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1408,18 +1408,18 @@ QDate a1_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale(handler, a1
+        RJSHelper::is_QLocale(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
 
-   && is_QLocale_FormatType(handler, a4
+   && RJSHelper::is_QLocale_FormatType(handler, a4
     , true
   
   )
@@ -1433,13 +1433,13 @@ QDate a1_cpp;
   
 QLocale a1_cpp;
 
-      a1_cpp = js2cpp_QLocale(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale(handler, a1);
         
   // convert js parameter to cpp: month (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: year (int)
   
@@ -1450,7 +1450,7 @@ int a3_cpp;
             a3_cpp = QCalendar::Unspecified;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
   // convert js parameter to cpp: format (QLocale::FormatType)
@@ -1462,7 +1462,7 @@ QLocale::FormatType a4_cpp;
             a4_cpp = QLocale::LongFormat;
           }
           else {
-            a4_cpp = js2cpp_QLocale_FormatType(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a4);
           }
         
 
@@ -1492,7 +1492,7 @@ QLocale::FormatType a4_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1534,18 +1534,18 @@ QLocale::FormatType a4_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale(handler, a1
+        RJSHelper::is_QLocale(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
 
-   && is_QLocale_FormatType(handler, a4
+   && RJSHelper::is_QLocale_FormatType(handler, a4
     , true
   
   )
@@ -1559,13 +1559,13 @@ QLocale::FormatType a4_cpp;
   
 QLocale a1_cpp;
 
-      a1_cpp = js2cpp_QLocale(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale(handler, a1);
         
   // convert js parameter to cpp: month (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: year (int)
   
@@ -1576,7 +1576,7 @@ int a3_cpp;
             a3_cpp = QCalendar::Unspecified;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
   // convert js parameter to cpp: format (QLocale::FormatType)
@@ -1588,7 +1588,7 @@ QLocale::FormatType a4_cpp;
             a4_cpp = QLocale::LongFormat;
           }
           else {
-            a4_cpp = js2cpp_QLocale_FormatType(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a4);
           }
         
 
@@ -1618,7 +1618,7 @@ QLocale::FormatType a4_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1658,13 +1658,13 @@ QLocale::FormatType a4_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale(handler, a1
+        RJSHelper::is_QLocale(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_QLocale_FormatType(handler, a3
+   && RJSHelper::is_QLocale_FormatType(handler, a3
     , true
   
   )
@@ -1678,13 +1678,13 @@ QLocale::FormatType a4_cpp;
   
 QLocale a1_cpp;
 
-      a1_cpp = js2cpp_QLocale(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale(handler, a1);
         
   // convert js parameter to cpp: day (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -1695,7 +1695,7 @@ QLocale::FormatType a3_cpp;
             a3_cpp = QLocale::LongFormat;
           }
           else {
-            a3_cpp = js2cpp_QLocale_FormatType(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a3);
           }
         
 
@@ -1724,7 +1724,7 @@ QLocale::FormatType a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1764,13 +1764,13 @@ QLocale::FormatType a3_cpp;
                 
       // check parameter types:
       if (
-        is_QLocale(handler, a1
+        RJSHelper::is_QLocale(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_QLocale_FormatType(handler, a3
+   && RJSHelper::is_QLocale_FormatType(handler, a3
     , true
   
   )
@@ -1784,13 +1784,13 @@ QLocale::FormatType a3_cpp;
   
 QLocale a1_cpp;
 
-      a1_cpp = js2cpp_QLocale(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLocale(handler, a1);
         
   // convert js parameter to cpp: day (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: format (QLocale::FormatType)
   
@@ -1801,7 +1801,7 @@ QLocale::FormatType a3_cpp;
             a3_cpp = QLocale::LongFormat;
           }
           else {
-            a3_cpp = js2cpp_QLocale_FormatType(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QLocale_FormatType(handler, a3);
           }
         
 
@@ -1830,7 +1830,7 @@ QLocale::FormatType a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res

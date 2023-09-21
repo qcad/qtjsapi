@@ -29,7 +29,7 @@
                 
       // check parameter types:
       if (
-        is_QPageSize_PageSizeId(handler, a1
+        RJSHelper::is_QPageSize_PageSizeId(handler, a1
   )
 
   
@@ -41,7 +41,7 @@
   
 QPageSize::PageSizeId a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_PageSizeId(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_PageSizeId(handler, a1);
         
 
     // call function:
@@ -58,7 +58,7 @@ QPageSize::PageSizeId a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -92,7 +92,7 @@ QPageSize::PageSizeId a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize_PageSizeId(handler, a1
+        RJSHelper::is_QPageSize_PageSizeId(handler, a1
   )
 
   
@@ -104,7 +104,7 @@ QPageSize::PageSizeId a1_cpp;
   
 QPageSize::PageSizeId a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_PageSizeId(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_PageSizeId(handler, a1);
         
 
     // call function:
@@ -121,7 +121,7 @@ QPageSize::PageSizeId a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -159,13 +159,13 @@ QPageSize::PageSizeId a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSizeF(handler, a1
+        RJSHelper::is_QSizeF(handler, a1
   )
 
-   && is_QPageSize_Unit(handler, a2
+   && RJSHelper::is_QPageSize_Unit(handler, a2
   )
 
-   && is_QPageSize_SizeMatchPolicy(handler, a3
+   && RJSHelper::is_QPageSize_SizeMatchPolicy(handler, a3
     , true
   
   )
@@ -179,13 +179,13 @@ QPageSize::PageSizeId a1_cpp;
   
 QSizeF a1_cpp;
 
-      a1_cpp = js2cpp_QSizeF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizeF(handler, a1);
         
   // convert js parameter to cpp: units (QPageSize::Unit)
   
 QPageSize::Unit a2_cpp;
 
-      a2_cpp = js2cpp_QPageSize_Unit(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPageSize_Unit(handler, a2);
         
   // convert js parameter to cpp: matchPolicy (QPageSize::SizeMatchPolicy)
   
@@ -196,7 +196,7 @@ QPageSize::SizeMatchPolicy a3_cpp;
             a3_cpp = QPageSize::FuzzyMatch;
           }
           else {
-            a3_cpp = js2cpp_QPageSize_SizeMatchPolicy(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QPageSize_SizeMatchPolicy(handler, a3);
           }
         
 
@@ -216,7 +216,7 @@ QPageSize::SizeMatchPolicy a3_cpp;
           
             // return type: QPageSize::PageSizeId
 
-            return cpp2js_QPageSize_PageSizeId(
+            return RJSHelper::cpp2js_QPageSize_PageSizeId(
               handler, 
               // non-copyable: false
                   res
@@ -227,10 +227,10 @@ QPageSize::SizeMatchPolicy a3_cpp;
 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
-   && is_QPageSize_SizeMatchPolicy(handler, a2
+   && RJSHelper::is_QPageSize_SizeMatchPolicy(handler, a2
     , true
   
   )
@@ -247,7 +247,7 @@ QPageSize::SizeMatchPolicy a3_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
   // convert js parameter to cpp: matchPolicy (QPageSize::SizeMatchPolicy)
   
@@ -258,7 +258,7 @@ QPageSize::SizeMatchPolicy a2_cpp;
             a2_cpp = QPageSize::FuzzyMatch;
           }
           else {
-            a2_cpp = js2cpp_QPageSize_SizeMatchPolicy(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QPageSize_SizeMatchPolicy(handler, a2);
           }
         
 
@@ -277,7 +277,7 @@ QPageSize::SizeMatchPolicy a2_cpp;
           
             // return type: QPageSize::PageSizeId
 
-            return cpp2js_QPageSize_PageSizeId(
+            return RJSHelper::cpp2js_QPageSize_PageSizeId(
               handler, 
               // non-copyable: false
                   res
@@ -288,7 +288,7 @@ QPageSize::SizeMatchPolicy a2_cpp;
 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   &&
@@ -306,7 +306,7 @@ QPageSize::SizeMatchPolicy a2_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -323,7 +323,7 @@ int a1_cpp;
           
             // return type: QPageSize::PageSizeId
 
-            return cpp2js_QPageSize_PageSizeId(
+            return RJSHelper::cpp2js_QPageSize_PageSizeId(
               handler, 
               // non-copyable: false
                   res
@@ -357,7 +357,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize_PageSizeId(handler, a1
+        RJSHelper::is_QPageSize_PageSizeId(handler, a1
   )
 
   
@@ -369,7 +369,7 @@ int a1_cpp;
   
 QPageSize::PageSizeId a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_PageSizeId(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_PageSizeId(handler, a1);
         
 
     // call function:
@@ -386,7 +386,7 @@ QPageSize::PageSizeId a1_cpp;
           
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -420,7 +420,7 @@ QPageSize::PageSizeId a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize_PageSizeId(handler, a1
+        RJSHelper::is_QPageSize_PageSizeId(handler, a1
   )
 
   
@@ -432,7 +432,7 @@ QPageSize::PageSizeId a1_cpp;
   
 QPageSize::PageSizeId a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_PageSizeId(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_PageSizeId(handler, a1);
         
 
     // call function:
@@ -449,7 +449,7 @@ QPageSize::PageSizeId a1_cpp;
           
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -483,7 +483,7 @@ QPageSize::PageSizeId a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize_PageSizeId(handler, a1
+        RJSHelper::is_QPageSize_PageSizeId(handler, a1
   )
 
   
@@ -495,7 +495,7 @@ QPageSize::PageSizeId a1_cpp;
   
 QPageSize::PageSizeId a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_PageSizeId(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_PageSizeId(handler, a1);
         
 
     // call function:
@@ -512,7 +512,7 @@ QPageSize::PageSizeId a1_cpp;
           
             // return type: QPageSize::Unit
 
-            return cpp2js_QPageSize_Unit(
+            return RJSHelper::cpp2js_QPageSize_Unit(
               handler, 
               // non-copyable: false
                   res
@@ -548,10 +548,10 @@ QPageSize::PageSizeId a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize_PageSizeId(handler, a1
+        RJSHelper::is_QPageSize_PageSizeId(handler, a1
   )
 
-   && is_QPageSize_Unit(handler, a2
+   && RJSHelper::is_QPageSize_Unit(handler, a2
   )
 
   
@@ -563,13 +563,13 @@ QPageSize::PageSizeId a1_cpp;
   
 QPageSize::PageSizeId a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_PageSizeId(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_PageSizeId(handler, a1);
         
   // convert js parameter to cpp: units (QPageSize::Unit)
   
 QPageSize::Unit a2_cpp;
 
-      a2_cpp = js2cpp_QPageSize_Unit(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPageSize_Unit(handler, a2);
         
 
     // call function:
@@ -587,7 +587,7 @@ QPageSize::Unit a2_cpp;
           
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -621,7 +621,7 @@ QPageSize::Unit a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize_PageSizeId(handler, a1
+        RJSHelper::is_QPageSize_PageSizeId(handler, a1
   )
 
   
@@ -633,7 +633,7 @@ QPageSize::Unit a2_cpp;
   
 QPageSize::PageSizeId a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_PageSizeId(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_PageSizeId(handler, a1);
         
 
     // call function:
@@ -650,7 +650,7 @@ QPageSize::PageSizeId a1_cpp;
           
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -686,10 +686,10 @@ QPageSize::PageSizeId a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize_PageSizeId(handler, a1
+        RJSHelper::is_QPageSize_PageSizeId(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -701,13 +701,13 @@ QPageSize::PageSizeId a1_cpp;
   
 QPageSize::PageSizeId a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_PageSizeId(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_PageSizeId(handler, a1);
         
   // convert js parameter to cpp: resolution (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -725,7 +725,7 @@ int a2_cpp;
           
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -890,18 +890,18 @@ QPageSize_Wrapper::QPageSize_Wrapper
                 
       // check parameter types:
       if (
-        is_QSizeF(handler, a1
+        RJSHelper::is_QSizeF(handler, a1
   )
 
-   && is_QPageSize_Unit(handler, a2
+   && RJSHelper::is_QPageSize_Unit(handler, a2
   )
 
-   && is_QString(handler, a3
+   && RJSHelper::is_QString(handler, a3
     , true
   
   )
 
-   && is_QPageSize_SizeMatchPolicy(handler, a4
+   && RJSHelper::is_QPageSize_SizeMatchPolicy(handler, a4
     , true
   
   )
@@ -915,13 +915,13 @@ QPageSize_Wrapper::QPageSize_Wrapper
   
 QSizeF a1_cpp;
 
-      a1_cpp = js2cpp_QSizeF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizeF(handler, a1);
         
   // convert js parameter to cpp: units (QPageSize::Unit)
   
 QPageSize::Unit a2_cpp;
 
-      a2_cpp = js2cpp_QPageSize_Unit(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPageSize_Unit(handler, a2);
         
   // convert js parameter to cpp: name (QString)
   
@@ -932,7 +932,7 @@ QString a3_cpp;
             a3_cpp = QString();
           }
           else {
-            a3_cpp = js2cpp_QString(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
           }
         
   // convert js parameter to cpp: matchPolicy (QPageSize::SizeMatchPolicy)
@@ -944,7 +944,7 @@ QPageSize::SizeMatchPolicy a4_cpp;
             a4_cpp = QPageSize::FuzzyMatch;
           }
           else {
-            a4_cpp = js2cpp_QPageSize_SizeMatchPolicy(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QPageSize_SizeMatchPolicy(handler, a4);
           }
         
 
@@ -974,15 +974,15 @@ QPageSize::SizeMatchPolicy a4_cpp;
 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
 
-   && is_QPageSize_SizeMatchPolicy(handler, a3
+   && RJSHelper::is_QPageSize_SizeMatchPolicy(handler, a3
     , true
   
   )
@@ -996,7 +996,7 @@ QPageSize::SizeMatchPolicy a4_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
   // convert js parameter to cpp: name (QString)
   
@@ -1007,7 +1007,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
   // convert js parameter to cpp: matchPolicy (QPageSize::SizeMatchPolicy)
@@ -1019,7 +1019,7 @@ QPageSize::SizeMatchPolicy a3_cpp;
             a3_cpp = QPageSize::FuzzyMatch;
           }
           else {
-            a3_cpp = js2cpp_QPageSize_SizeMatchPolicy(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QPageSize_SizeMatchPolicy(handler, a3);
           }
         
 
@@ -1048,7 +1048,7 @@ QPageSize::SizeMatchPolicy a3_cpp;
 
       // check parameter types:
       if (
-        is_QPageSize(handler, a1
+        RJSHelper::is_QPageSize(handler, a1
   )
 
   
@@ -1060,7 +1060,7 @@ QPageSize::SizeMatchPolicy a3_cpp;
   
 QPageSize a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize(handler, a1);
         
 
     // call function:
@@ -1086,7 +1086,7 @@ QPageSize a1_cpp;
 
       // check parameter types:
       if (
-        is_QPageSize_PageSizeId(handler, a1
+        RJSHelper::is_QPageSize_PageSizeId(handler, a1
   )
 
   
@@ -1098,7 +1098,7 @@ QPageSize a1_cpp;
   
 QPageSize::PageSizeId a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_PageSizeId(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_PageSizeId(handler, a1);
         
 
     // call function:
@@ -1189,7 +1189,7 @@ QPageSize::PageSizeId a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize(handler, a1
+        RJSHelper::is_QPageSize(handler, a1
   )
 
   
@@ -1201,7 +1201,7 @@ QPageSize::PageSizeId a1_cpp;
   
 QPageSize a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize(handler, a1);
         
 
     // call function:
@@ -1255,7 +1255,7 @@ QPageSize a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize(handler, a1
+        RJSHelper::is_QPageSize(handler, a1
   )
 
   
@@ -1267,7 +1267,7 @@ QPageSize a1_cpp;
   
 QPageSize a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize(handler, a1);
         
 
     // call function:
@@ -1293,7 +1293,7 @@ QPageSize a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1350,7 +1350,7 @@ QPageSize a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1407,7 +1407,7 @@ QPageSize a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1464,7 +1464,7 @@ QPageSize a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1521,7 +1521,7 @@ QPageSize a1_cpp;
               
             // return type: QPageSize::PageSizeId
 
-            return cpp2js_QPageSize_PageSizeId(
+            return RJSHelper::cpp2js_QPageSize_PageSizeId(
               handler, 
               // non-copyable: false
                   res
@@ -1578,7 +1578,7 @@ QPageSize a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1635,7 +1635,7 @@ QPageSize a1_cpp;
               
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -1692,7 +1692,7 @@ QPageSize a1_cpp;
               
             // return type: QPageSize::Unit
 
-            return cpp2js_QPageSize_Unit(
+            return RJSHelper::cpp2js_QPageSize_Unit(
               handler, 
               // non-copyable: false
                   res
@@ -1728,7 +1728,7 @@ QPageSize a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize_Unit(handler, a1
+        RJSHelper::is_QPageSize_Unit(handler, a1
   )
 
   
@@ -1740,7 +1740,7 @@ QPageSize a1_cpp;
   
 QPageSize::Unit a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_Unit(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_Unit(handler, a1);
         
 
     // call function:
@@ -1766,7 +1766,7 @@ QPageSize::Unit a1_cpp;
               
             // return type: QSizeF
 
-            return cpp2js_QSizeF(
+            return RJSHelper::cpp2js_QSizeF(
               handler, 
               // non-copyable: false
                   res
@@ -1823,7 +1823,7 @@ QPageSize::Unit a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1859,7 +1859,7 @@ QPageSize::Unit a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1871,7 +1871,7 @@ QPageSize::Unit a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1897,7 +1897,7 @@ int a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1933,7 +1933,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize_Unit(handler, a1
+        RJSHelper::is_QPageSize_Unit(handler, a1
   )
 
   
@@ -1945,7 +1945,7 @@ int a1_cpp;
   
 QPageSize::Unit a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize_Unit(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize_Unit(handler, a1);
         
 
     // call function:
@@ -1971,7 +1971,7 @@ QPageSize::Unit a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -2028,7 +2028,7 @@ QPageSize::Unit a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -2064,7 +2064,7 @@ QPageSize::Unit a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2076,7 +2076,7 @@ QPageSize::Unit a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2102,7 +2102,7 @@ int a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res

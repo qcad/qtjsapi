@@ -333,7 +333,7 @@ void RJSTools::warning(const QJSValue& args) {
 }
 
 QString RJSTools::jsQNodeSave(const QJSValue& jsNode, int indent) {
-    QDomNode node = js2cpp_QDomNode(handler, jsNode);
+    QDomNode node = RJSHelper::js2cpp_QDomNode(handler, jsNode);
     QString str;
     QTextStream stream(&str);
     node.save(stream, 4);
@@ -345,7 +345,7 @@ bool RJSTools::jsQThreadPoolWaitForDone(int msecs) {
 }
 
 bool RJSTools::jsQImageSave(const QJSValue& jsImage, const QString& filePath, const QString& format, int quality) {
-    QImage image = js2cpp_QImage(handler, jsImage);
+    QImage image = RJSHelper::js2cpp_QImage(handler, jsImage);
     //return image.save(filePath, (const char*)format.toUtf8(), quality);
     //QFuture<bool> future = QtConcurrent::run(&QImage::save, &image, filePath, (const char*)format.toUtf8(), quality);
     //QFuture<bool> future = QtConcurrent::run(&QImage::save, &image, filePath);

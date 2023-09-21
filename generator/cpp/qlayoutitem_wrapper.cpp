@@ -167,7 +167,7 @@
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -228,7 +228,7 @@
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -289,7 +289,7 @@
               
             // return type: Qt::Orientations
 
-            return cpp2js_Qt_Orientations(
+            return RJSHelper::cpp2js_Qt_Orientations(
               handler, 
               // non-copyable: false
                   res
@@ -323,7 +323,7 @@
                 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -335,7 +335,7 @@
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -418,7 +418,7 @@ QRect a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -479,7 +479,7 @@ QRect a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -540,7 +540,7 @@ QRect a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -576,7 +576,7 @@ QRect a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -588,7 +588,7 @@ QRect a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -618,7 +618,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -654,7 +654,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -666,7 +666,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -696,7 +696,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -808,7 +808,7 @@ int a1_cpp;
               
             // return type: QWidget*
 
-            return cpp2js_QWidget(
+            return RJSHelper::cpp2js_QWidget(
               handler, 
               // non-copyable: true
                   res
@@ -867,7 +867,7 @@ int a1_cpp;
               
             // return type: QLayout*
 
-            return cpp2js_QLayout(
+            return RJSHelper::cpp2js_QLayout(
               handler, 
               // non-copyable: true
                   res
@@ -926,7 +926,7 @@ int a1_cpp;
               
             // return type: QSpacerItem*
 
-            return cpp2js_QSpacerItem(
+            return RJSHelper::cpp2js_QSpacerItem(
               handler, 
               // non-copyable: true
                   res
@@ -987,7 +987,7 @@ int a1_cpp;
               
             // return type: Qt::Alignment
 
-            return cpp2js_Qt_Alignment(
+            return RJSHelper::cpp2js_Qt_Alignment(
               handler, 
               // non-copyable: false
                   res
@@ -1021,7 +1021,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_Alignment(handler, a1
+        RJSHelper::is_Qt_Alignment(handler, a1
   )
 
   
@@ -1033,7 +1033,7 @@ int a1_cpp;
   
 Qt::Alignment a1_cpp;
 
-      a1_cpp = js2cpp_Qt_Alignment(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_Alignment(handler, a1);
         
 
     // call function:
@@ -1116,7 +1116,7 @@ Qt::Alignment a1_cpp;
               
             // return type: QSizePolicy::ControlTypes
 
-            return cpp2js_QSizePolicy_ControlTypes(
+            return RJSHelper::cpp2js_QSizePolicy_ControlTypes(
               handler, 
               // non-copyable: false
                   res
@@ -1283,18 +1283,18 @@ QSpacerItem_Wrapper::QSpacerItem_Wrapper
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_QSizePolicy_Policy(handler, a3
+   && RJSHelper::is_QSizePolicy_Policy(handler, a3
     , true
   
   )
 
-   && is_QSizePolicy_Policy(handler, a4
+   && RJSHelper::is_QSizePolicy_Policy(handler, a4
     , true
   
   )
@@ -1308,13 +1308,13 @@ QSpacerItem_Wrapper::QSpacerItem_Wrapper
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: h (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: hData (QSizePolicy::Policy)
   
@@ -1325,7 +1325,7 @@ QSizePolicy::Policy a3_cpp;
             a3_cpp = QSizePolicy::Minimum;
           }
           else {
-            a3_cpp = js2cpp_QSizePolicy_Policy(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QSizePolicy_Policy(handler, a3);
           }
         
   // convert js parameter to cpp: vData (QSizePolicy::Policy)
@@ -1337,7 +1337,7 @@ QSizePolicy::Policy a4_cpp;
             a4_cpp = QSizePolicy::Minimum;
           }
           else {
-            a4_cpp = js2cpp_QSizePolicy_Policy(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QSizePolicy_Policy(handler, a4);
           }
         
 
@@ -1432,7 +1432,7 @@ QSizePolicy::Policy a4_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1468,7 +1468,7 @@ QSizePolicy::Policy a4_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1480,7 +1480,7 @@ QSizePolicy::Policy a4_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1506,7 +1506,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1542,7 +1542,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1554,7 +1554,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1580,7 +1580,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1684,7 +1684,7 @@ int a1_cpp;
               
             // return type: QWidget*
 
-            return cpp2js_QWidget(
+            return RJSHelper::cpp2js_QWidget(
               handler, 
               // non-copyable: true
                   res
@@ -1739,7 +1739,7 @@ int a1_cpp;
               
             // return type: QLayout*
 
-            return cpp2js_QLayout(
+            return RJSHelper::cpp2js_QLayout(
               handler, 
               // non-copyable: true
                   res
@@ -1796,7 +1796,7 @@ int a1_cpp;
               
             // return type: Qt::Alignment
 
-            return cpp2js_Qt_Alignment(
+            return RJSHelper::cpp2js_Qt_Alignment(
               handler, 
               // non-copyable: false
                   res
@@ -1830,7 +1830,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_Alignment(handler, a1
+        RJSHelper::is_Qt_Alignment(handler, a1
   )
 
   
@@ -1842,7 +1842,7 @@ int a1_cpp;
   
 Qt::Alignment a1_cpp;
 
-      a1_cpp = js2cpp_Qt_Alignment(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_Alignment(handler, a1);
         
 
     // call function:
@@ -1917,7 +1917,7 @@ Qt::Alignment a1_cpp;
               
             // return type: QSizePolicy::ControlTypes
 
-            return cpp2js_QSizePolicy_ControlTypes(
+            return RJSHelper::cpp2js_QSizePolicy_ControlTypes(
               handler, 
               // non-copyable: false
                   res
@@ -1957,18 +1957,18 @@ Qt::Alignment a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_QSizePolicy_Policy(handler, a3
+   && RJSHelper::is_QSizePolicy_Policy(handler, a3
     , true
   
   )
 
-   && is_QSizePolicy_Policy(handler, a4
+   && RJSHelper::is_QSizePolicy_Policy(handler, a4
     , true
   
   )
@@ -1982,13 +1982,13 @@ Qt::Alignment a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: h (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: hData (QSizePolicy::Policy)
   
@@ -1999,7 +1999,7 @@ QSizePolicy::Policy a3_cpp;
             a3_cpp = QSizePolicy::Minimum;
           }
           else {
-            a3_cpp = js2cpp_QSizePolicy_Policy(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QSizePolicy_Policy(handler, a3);
           }
         
   // convert js parameter to cpp: vData (QSizePolicy::Policy)
@@ -2011,7 +2011,7 @@ QSizePolicy::Policy a4_cpp;
             a4_cpp = QSizePolicy::Minimum;
           }
           else {
-            a4_cpp = js2cpp_QSizePolicy_Policy(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QSizePolicy_Policy(handler, a4);
           }
         
 
@@ -2090,7 +2090,7 @@ QSizePolicy::Policy a4_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -2147,7 +2147,7 @@ QSizePolicy::Policy a4_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -2204,7 +2204,7 @@ QSizePolicy::Policy a4_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -2261,7 +2261,7 @@ QSizePolicy::Policy a4_cpp;
               
             // return type: Qt::Orientations
 
-            return cpp2js_Qt_Orientations(
+            return RJSHelper::cpp2js_Qt_Orientations(
               handler, 
               // non-copyable: false
                   res
@@ -2318,7 +2318,7 @@ QSizePolicy::Policy a4_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2352,7 +2352,7 @@ QSizePolicy::Policy a4_cpp;
                 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -2364,7 +2364,7 @@ QSizePolicy::Policy a4_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -2439,7 +2439,7 @@ QRect a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -2494,7 +2494,7 @@ QRect a1_cpp;
               
             // return type: QSpacerItem*
 
-            return cpp2js_QSpacerItem(
+            return RJSHelper::cpp2js_QSpacerItem(
               handler, 
               // non-copyable: true
                   res
@@ -2551,7 +2551,7 @@ QRect a1_cpp;
               
             // return type: QSizePolicy
 
-            return cpp2js_QSizePolicy(
+            return RJSHelper::cpp2js_QSizePolicy(
               handler, 
               // non-copyable: false
                   res
@@ -2713,7 +2713,7 @@ QWidgetItem_Wrapper::QWidgetItem_Wrapper
                 
       // check parameter types:
       if (
-        is_QWidget_ptr(handler, a1
+        RJSHelper::is_QWidget_ptr(handler, a1
     , true
   
   )
@@ -2730,7 +2730,7 @@ QWidgetItem_Wrapper::QWidgetItem_Wrapper
           QWidget*
          a1_cpp;
 
-      a1_cpp = js2cpp_QWidget_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
         
 
     // call function:
@@ -2863,7 +2863,7 @@ QWidgetItem_Wrapper::QWidgetItem_Wrapper
               
             // return type: QLayout*
 
-            return cpp2js_QLayout(
+            return RJSHelper::cpp2js_QLayout(
               handler, 
               // non-copyable: true
                   res
@@ -2918,7 +2918,7 @@ QWidgetItem_Wrapper::QWidgetItem_Wrapper
               
             // return type: QSpacerItem*
 
-            return cpp2js_QSpacerItem(
+            return RJSHelper::cpp2js_QSpacerItem(
               handler, 
               // non-copyable: true
                   res
@@ -2975,7 +2975,7 @@ QWidgetItem_Wrapper::QWidgetItem_Wrapper
               
             // return type: Qt::Alignment
 
-            return cpp2js_Qt_Alignment(
+            return RJSHelper::cpp2js_Qt_Alignment(
               handler, 
               // non-copyable: false
                   res
@@ -3009,7 +3009,7 @@ QWidgetItem_Wrapper::QWidgetItem_Wrapper
                 
       // check parameter types:
       if (
-        is_Qt_Alignment(handler, a1
+        RJSHelper::is_Qt_Alignment(handler, a1
   )
 
   
@@ -3021,7 +3021,7 @@ QWidgetItem_Wrapper::QWidgetItem_Wrapper
   
 Qt::Alignment a1_cpp;
 
-      a1_cpp = js2cpp_Qt_Alignment(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_Alignment(handler, a1);
         
 
     // call function:
@@ -3096,7 +3096,7 @@ Qt::Alignment a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -3153,7 +3153,7 @@ Qt::Alignment a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -3210,7 +3210,7 @@ Qt::Alignment a1_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -3267,7 +3267,7 @@ Qt::Alignment a1_cpp;
               
             // return type: Qt::Orientations
 
-            return cpp2js_Qt_Orientations(
+            return RJSHelper::cpp2js_Qt_Orientations(
               handler, 
               // non-copyable: false
                   res
@@ -3324,7 +3324,7 @@ Qt::Alignment a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3358,7 +3358,7 @@ Qt::Alignment a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -3370,7 +3370,7 @@ Qt::Alignment a1_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -3445,7 +3445,7 @@ QRect a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -3502,7 +3502,7 @@ QRect a1_cpp;
               
             // return type: QWidget*
 
-            return cpp2js_QWidget(
+            return RJSHelper::cpp2js_QWidget(
               handler, 
               // non-copyable: true
                   res
@@ -3559,7 +3559,7 @@ QRect a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3595,7 +3595,7 @@ QRect a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -3607,7 +3607,7 @@ QRect a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -3633,7 +3633,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3669,7 +3669,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -3681,7 +3681,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -3707,7 +3707,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3764,7 +3764,7 @@ int a1_cpp;
               
             // return type: QSizePolicy::ControlTypes
 
-            return cpp2js_QSizePolicy_ControlTypes(
+            return RJSHelper::cpp2js_QSizePolicy_ControlTypes(
               handler, 
               // non-copyable: false
                   res

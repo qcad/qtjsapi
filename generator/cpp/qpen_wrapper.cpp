@@ -153,23 +153,23 @@ QPen_Wrapper::QPen_Wrapper
                 
       // check parameter types:
       if (
-        is_QBrush(handler, a1
+        RJSHelper::is_QBrush(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_Qt_PenStyle(handler, a3
+   && RJSHelper::is_Qt_PenStyle(handler, a3
     , true
   
   )
 
-   && is_Qt_PenCapStyle(handler, a4
+   && RJSHelper::is_Qt_PenCapStyle(handler, a4
     , true
   
   )
 
-   && is_Qt_PenJoinStyle(handler, a5
+   && RJSHelper::is_Qt_PenJoinStyle(handler, a5
     , true
   
   )
@@ -183,13 +183,13 @@ QPen_Wrapper::QPen_Wrapper
   
 QBrush a1_cpp;
 
-      a1_cpp = js2cpp_QBrush(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QBrush(handler, a1);
         
   // convert js parameter to cpp: width (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: s (Qt::PenStyle)
   
@@ -200,7 +200,7 @@ Qt::PenStyle a3_cpp;
             a3_cpp = Qt::SolidLine;
           }
           else {
-            a3_cpp = js2cpp_Qt_PenStyle(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_Qt_PenStyle(handler, a3);
           }
         
   // convert js parameter to cpp: c (Qt::PenCapStyle)
@@ -212,7 +212,7 @@ Qt::PenCapStyle a4_cpp;
             a4_cpp = Qt::SquareCap;
           }
           else {
-            a4_cpp = js2cpp_Qt_PenCapStyle(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_Qt_PenCapStyle(handler, a4);
           }
         
   // convert js parameter to cpp: j (Qt::PenJoinStyle)
@@ -224,7 +224,7 @@ Qt::PenJoinStyle a5_cpp;
             a5_cpp = Qt::BevelJoin;
           }
           else {
-            a5_cpp = js2cpp_Qt_PenJoinStyle(handler, a5);
+            a5_cpp = RJSHelper::js2cpp_Qt_PenJoinStyle(handler, a5);
           }
         
 
@@ -255,7 +255,7 @@ Qt::PenJoinStyle a5_cpp;
 
       // check parameter types:
       if (
-        is_Qt_PenStyle(handler, a1
+        RJSHelper::is_Qt_PenStyle(handler, a1
   )
 
   
@@ -267,7 +267,7 @@ Qt::PenJoinStyle a5_cpp;
   
 Qt::PenStyle a1_cpp;
 
-      a1_cpp = js2cpp_Qt_PenStyle(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_PenStyle(handler, a1);
         
 
     // call function:
@@ -293,7 +293,7 @@ Qt::PenStyle a1_cpp;
 
       // check parameter types:
       if (
-        is_QColor(handler, a1
+        RJSHelper::is_QColor(handler, a1
   )
 
   
@@ -305,7 +305,7 @@ Qt::PenStyle a1_cpp;
   
 QColor a1_cpp;
 
-      a1_cpp = js2cpp_QColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QColor(handler, a1);
         
 
     // call function:
@@ -331,7 +331,7 @@ QColor a1_cpp;
 
       // check parameter types:
       if (
-        is_QPen(handler, a1
+        RJSHelper::is_QPen(handler, a1
   )
 
   
@@ -343,7 +343,7 @@ QColor a1_cpp;
   
 QPen a1_cpp;
 
-      a1_cpp = js2cpp_QPen(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPen(handler, a1);
         
 
     // call function:
@@ -369,7 +369,7 @@ QPen a1_cpp;
 
       // check parameter types:
       if (
-        is_QPen(handler, a1
+        RJSHelper::is_QPen(handler, a1
   )
 
   
@@ -381,7 +381,7 @@ QPen a1_cpp;
   
 QPen a1_cpp;
 
-      a1_cpp = js2cpp_QPen(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPen(handler, a1);
         
 
     // call function:
@@ -473,7 +473,7 @@ QPen a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPen(handler, a1
+        RJSHelper::is_QPen(handler, a1
   )
 
   
@@ -485,7 +485,7 @@ QPen a1_cpp;
   
 QPen a1_cpp;
 
-      a1_cpp = js2cpp_QPen(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPen(handler, a1);
         
 
     // call function:
@@ -560,7 +560,7 @@ QPen a1_cpp;
               
             // return type: Qt::PenStyle
 
-            return cpp2js_Qt_PenStyle(
+            return RJSHelper::cpp2js_Qt_PenStyle(
               handler, 
               // non-copyable: false
                   res
@@ -594,7 +594,7 @@ QPen a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_PenStyle(handler, a1
+        RJSHelper::is_Qt_PenStyle(handler, a1
   )
 
   
@@ -606,7 +606,7 @@ QPen a1_cpp;
   
 Qt::PenStyle a1_cpp;
 
-      a1_cpp = js2cpp_Qt_PenStyle(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_PenStyle(handler, a1);
         
 
     // call function:
@@ -681,7 +681,7 @@ Qt::PenStyle a1_cpp;
               
             // return type: QList<qreal>
 
-            return cpp2js_QList_qreal(
+            return RJSHelper::cpp2js_QList_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -715,7 +715,7 @@ Qt::PenStyle a1_cpp;
                 
       // check parameter types:
       if (
-        is_QList_qreal(handler, a1
+        RJSHelper::is_QList_qreal(handler, a1
   )
 
   
@@ -727,7 +727,7 @@ Qt::PenStyle a1_cpp;
   
 QList<qreal> a1_cpp;
 
-      a1_cpp = js2cpp_QList_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QList_qreal(handler, a1);
         
 
     // call function:
@@ -802,7 +802,7 @@ QList<qreal> a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -836,7 +836,7 @@ QList<qreal> a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -848,7 +848,7 @@ QList<qreal> a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -923,7 +923,7 @@ qreal a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -957,7 +957,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -969,7 +969,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -1044,7 +1044,7 @@ qreal a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1078,7 +1078,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -1090,7 +1090,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -1165,7 +1165,7 @@ qreal a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1199,7 +1199,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1211,7 +1211,7 @@ qreal a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1286,7 +1286,7 @@ int a1_cpp;
               
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -1320,7 +1320,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QColor(handler, a1
+        RJSHelper::is_QColor(handler, a1
   )
 
   
@@ -1332,7 +1332,7 @@ int a1_cpp;
   
 QColor a1_cpp;
 
-      a1_cpp = js2cpp_QColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QColor(handler, a1);
         
 
     // call function:
@@ -1407,7 +1407,7 @@ QColor a1_cpp;
               
             // return type: QBrush
 
-            return cpp2js_QBrush(
+            return RJSHelper::cpp2js_QBrush(
               handler, 
               // non-copyable: false
                   res
@@ -1441,7 +1441,7 @@ QColor a1_cpp;
                 
       // check parameter types:
       if (
-        is_QBrush(handler, a1
+        RJSHelper::is_QBrush(handler, a1
   )
 
   
@@ -1453,7 +1453,7 @@ QColor a1_cpp;
   
 QBrush a1_cpp;
 
-      a1_cpp = js2cpp_QBrush(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QBrush(handler, a1);
         
 
     // call function:
@@ -1528,7 +1528,7 @@ QBrush a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1585,7 +1585,7 @@ QBrush a1_cpp;
               
             // return type: Qt::PenCapStyle
 
-            return cpp2js_Qt_PenCapStyle(
+            return RJSHelper::cpp2js_Qt_PenCapStyle(
               handler, 
               // non-copyable: false
                   res
@@ -1619,7 +1619,7 @@ QBrush a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_PenCapStyle(handler, a1
+        RJSHelper::is_Qt_PenCapStyle(handler, a1
   )
 
   
@@ -1631,7 +1631,7 @@ QBrush a1_cpp;
   
 Qt::PenCapStyle a1_cpp;
 
-      a1_cpp = js2cpp_Qt_PenCapStyle(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_PenCapStyle(handler, a1);
         
 
     // call function:
@@ -1706,7 +1706,7 @@ Qt::PenCapStyle a1_cpp;
               
             // return type: Qt::PenJoinStyle
 
-            return cpp2js_Qt_PenJoinStyle(
+            return RJSHelper::cpp2js_Qt_PenJoinStyle(
               handler, 
               // non-copyable: false
                   res
@@ -1740,7 +1740,7 @@ Qt::PenCapStyle a1_cpp;
                 
       // check parameter types:
       if (
-        is_Qt_PenJoinStyle(handler, a1
+        RJSHelper::is_Qt_PenJoinStyle(handler, a1
   )
 
   
@@ -1752,7 +1752,7 @@ Qt::PenCapStyle a1_cpp;
   
 Qt::PenJoinStyle a1_cpp;
 
-      a1_cpp = js2cpp_Qt_PenJoinStyle(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_PenJoinStyle(handler, a1);
         
 
     // call function:
@@ -1827,7 +1827,7 @@ Qt::PenJoinStyle a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1861,7 +1861,7 @@ Qt::PenJoinStyle a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -1873,7 +1873,7 @@ Qt::PenJoinStyle a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -1946,7 +1946,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res

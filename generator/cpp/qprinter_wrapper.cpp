@@ -41,7 +41,7 @@
           
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -205,10 +205,10 @@ QPrinter_Wrapper::QPrinter_Wrapper
                 
       // check parameter types:
       if (
-        is_QPrinterInfo(handler, a1
+        RJSHelper::is_QPrinterInfo(handler, a1
   )
 
-   && is_QPrinter_PrinterMode(handler, a2
+   && RJSHelper::is_QPrinter_PrinterMode(handler, a2
     , true
   
   )
@@ -222,7 +222,7 @@ QPrinter_Wrapper::QPrinter_Wrapper
   
 QPrinterInfo a1_cpp;
 
-      a1_cpp = js2cpp_QPrinterInfo(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPrinterInfo(handler, a1);
         
   // convert js parameter to cpp: mode (QPrinter::PrinterMode)
   
@@ -233,7 +233,7 @@ QPrinter::PrinterMode a2_cpp;
             a2_cpp = QPrinter::ScreenResolution;
           }
           else {
-            a2_cpp = js2cpp_QPrinter_PrinterMode(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QPrinter_PrinterMode(handler, a2);
           }
         
 
@@ -261,7 +261,7 @@ QPrinter::PrinterMode a2_cpp;
 
       // check parameter types:
       if (
-        is_QPrinter_PrinterMode(handler, a1
+        RJSHelper::is_QPrinter_PrinterMode(handler, a1
     , true
   
   )
@@ -280,7 +280,7 @@ QPrinter::PrinterMode a1_cpp;
             a1_cpp = QPrinter::ScreenResolution;
           }
           else {
-            a1_cpp = js2cpp_QPrinter_PrinterMode(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QPrinter_PrinterMode(handler, a1);
           }
         
 
@@ -374,7 +374,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -431,7 +431,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -488,7 +488,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -545,7 +545,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -602,7 +602,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -659,7 +659,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -716,7 +716,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -773,7 +773,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -830,7 +830,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -887,7 +887,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -944,7 +944,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1001,7 +1001,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1058,7 +1058,7 @@ QPrinter::PrinterMode a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1092,7 +1092,7 @@ QPrinter::PrinterMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout(handler, a1
+        RJSHelper::is_QPageLayout(handler, a1
   )
 
   
@@ -1104,7 +1104,7 @@ QPrinter::PrinterMode a1_cpp;
   
 QPageLayout a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout(handler, a1);
         
 
     // call function:
@@ -1130,7 +1130,7 @@ QPageLayout a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1164,7 +1164,7 @@ QPageLayout a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageSize(handler, a1
+        RJSHelper::is_QPageSize(handler, a1
   )
 
   
@@ -1176,7 +1176,7 @@ QPageLayout a1_cpp;
   
 QPageSize a1_cpp;
 
-      a1_cpp = js2cpp_QPageSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageSize(handler, a1);
         
 
     // call function:
@@ -1202,7 +1202,7 @@ QPageSize a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1236,7 +1236,7 @@ QPageSize a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPageLayout_Orientation(handler, a1
+        RJSHelper::is_QPageLayout_Orientation(handler, a1
   )
 
   
@@ -1248,7 +1248,7 @@ QPageSize a1_cpp;
   
 QPageLayout::Orientation a1_cpp;
 
-      a1_cpp = js2cpp_QPageLayout_Orientation(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageLayout_Orientation(handler, a1);
         
 
     // call function:
@@ -1274,7 +1274,7 @@ QPageLayout::Orientation a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1310,10 +1310,10 @@ QPageLayout::Orientation a1_cpp;
                 
       // check parameter types:
       if (
-        is_QMarginsF(handler, a1
+        RJSHelper::is_QMarginsF(handler, a1
   )
 
-   && is_QPageLayout_Unit(handler, a2
+   && RJSHelper::is_QPageLayout_Unit(handler, a2
     , true
   
   )
@@ -1327,7 +1327,7 @@ QPageLayout::Orientation a1_cpp;
   
 QMarginsF a1_cpp;
 
-      a1_cpp = js2cpp_QMarginsF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QMarginsF(handler, a1);
         
   // convert js parameter to cpp: units (QPageLayout::Unit)
   
@@ -1338,7 +1338,7 @@ QPageLayout::Unit a2_cpp;
             a2_cpp = QPageLayout::Millimeter;
           }
           else {
-            a2_cpp = js2cpp_QPageLayout_Unit(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QPageLayout_Unit(handler, a2);
           }
         
 
@@ -1366,7 +1366,7 @@ QPageLayout::Unit a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1423,7 +1423,7 @@ QPageLayout::Unit a2_cpp;
               
             // return type: QPageLayout
 
-            return cpp2js_QPageLayout(
+            return RJSHelper::cpp2js_QPageLayout(
               handler, 
               // non-copyable: false
                   res
@@ -1457,7 +1457,7 @@ QPageLayout::Unit a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPageRanges(handler, a1
+        RJSHelper::is_QPageRanges(handler, a1
   )
 
   
@@ -1469,7 +1469,7 @@ QPageLayout::Unit a2_cpp;
   
 QPageRanges a1_cpp;
 
-      a1_cpp = js2cpp_QPageRanges(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPageRanges(handler, a1);
         
 
     // call function:
@@ -1544,7 +1544,7 @@ QPageRanges a1_cpp;
               
             // return type: QPageRanges
 
-            return cpp2js_QPageRanges(
+            return RJSHelper::cpp2js_QPageRanges(
               handler, 
               // non-copyable: false
                   res
@@ -1601,7 +1601,7 @@ QPageRanges a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1635,7 +1635,7 @@ QPageRanges a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPrinter_OutputFormat(handler, a1
+        RJSHelper::is_QPrinter_OutputFormat(handler, a1
   )
 
   
@@ -1647,7 +1647,7 @@ QPageRanges a1_cpp;
   
 QPrinter::OutputFormat a1_cpp;
 
-      a1_cpp = js2cpp_QPrinter_OutputFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPrinter_OutputFormat(handler, a1);
         
 
     // call function:
@@ -1722,7 +1722,7 @@ QPrinter::OutputFormat a1_cpp;
               
             // return type: QPrinter::OutputFormat
 
-            return cpp2js_QPrinter_OutputFormat(
+            return RJSHelper::cpp2js_QPrinter_OutputFormat(
               handler, 
               // non-copyable: false
                   res
@@ -1756,7 +1756,7 @@ QPrinter::OutputFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPagedPaintDevice_PdfVersion(handler, a1
+        RJSHelper::is_QPagedPaintDevice_PdfVersion(handler, a1
   )
 
   
@@ -1768,7 +1768,7 @@ QPrinter::OutputFormat a1_cpp;
   
 QPagedPaintDevice::PdfVersion a1_cpp;
 
-      a1_cpp = js2cpp_QPagedPaintDevice_PdfVersion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPagedPaintDevice_PdfVersion(handler, a1);
         
 
     // call function:
@@ -1843,7 +1843,7 @@ QPagedPaintDevice::PdfVersion a1_cpp;
               
             // return type: QPagedPaintDevice::PdfVersion
 
-            return cpp2js_QPagedPaintDevice_PdfVersion(
+            return RJSHelper::cpp2js_QPagedPaintDevice_PdfVersion(
               handler, 
               // non-copyable: false
                   res
@@ -1877,7 +1877,7 @@ QPagedPaintDevice::PdfVersion a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1889,7 +1889,7 @@ QPagedPaintDevice::PdfVersion a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1964,7 +1964,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2021,7 +2021,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2055,7 +2055,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2067,7 +2067,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2142,7 +2142,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2176,7 +2176,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2188,7 +2188,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2263,7 +2263,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2297,7 +2297,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2309,7 +2309,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2384,7 +2384,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2418,7 +2418,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2430,7 +2430,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2505,7 +2505,7 @@ QString a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -2539,7 +2539,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPrinter_PageOrder(handler, a1
+        RJSHelper::is_QPrinter_PageOrder(handler, a1
   )
 
   
@@ -2551,7 +2551,7 @@ QString a1_cpp;
   
 QPrinter::PageOrder a1_cpp;
 
-      a1_cpp = js2cpp_QPrinter_PageOrder(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPrinter_PageOrder(handler, a1);
         
 
     // call function:
@@ -2626,7 +2626,7 @@ QPrinter::PageOrder a1_cpp;
               
             // return type: QPrinter::PageOrder
 
-            return cpp2js_QPrinter_PageOrder(
+            return RJSHelper::cpp2js_QPrinter_PageOrder(
               handler, 
               // non-copyable: false
                   res
@@ -2660,7 +2660,7 @@ QPrinter::PageOrder a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2672,7 +2672,7 @@ QPrinter::PageOrder a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2747,7 +2747,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2781,7 +2781,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPrinter_ColorMode(handler, a1
+        RJSHelper::is_QPrinter_ColorMode(handler, a1
   )
 
   
@@ -2793,7 +2793,7 @@ int a1_cpp;
   
 QPrinter::ColorMode a1_cpp;
 
-      a1_cpp = js2cpp_QPrinter_ColorMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPrinter_ColorMode(handler, a1);
         
 
     // call function:
@@ -2868,7 +2868,7 @@ QPrinter::ColorMode a1_cpp;
               
             // return type: QPrinter::ColorMode
 
-            return cpp2js_QPrinter_ColorMode(
+            return RJSHelper::cpp2js_QPrinter_ColorMode(
               handler, 
               // non-copyable: false
                   res
@@ -2902,7 +2902,7 @@ QPrinter::ColorMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -2914,7 +2914,7 @@ QPrinter::ColorMode a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2989,7 +2989,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3023,7 +3023,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -3035,7 +3035,7 @@ bool a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -3110,7 +3110,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3144,7 +3144,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -3156,7 +3156,7 @@ bool a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -3231,7 +3231,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3288,7 +3288,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3322,7 +3322,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPrinter_PaperSource(handler, a1
+        RJSHelper::is_QPrinter_PaperSource(handler, a1
   )
 
   
@@ -3334,7 +3334,7 @@ int a1_cpp;
   
 QPrinter::PaperSource a1_cpp;
 
-      a1_cpp = js2cpp_QPrinter_PaperSource(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPrinter_PaperSource(handler, a1);
         
 
     // call function:
@@ -3409,7 +3409,7 @@ QPrinter::PaperSource a1_cpp;
               
             // return type: QPrinter::PaperSource
 
-            return cpp2js_QPrinter_PaperSource(
+            return RJSHelper::cpp2js_QPrinter_PaperSource(
               handler, 
               // non-copyable: false
                   res
@@ -3443,7 +3443,7 @@ QPrinter::PaperSource a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPrinter_DuplexMode(handler, a1
+        RJSHelper::is_QPrinter_DuplexMode(handler, a1
   )
 
   
@@ -3455,7 +3455,7 @@ QPrinter::PaperSource a1_cpp;
   
 QPrinter::DuplexMode a1_cpp;
 
-      a1_cpp = js2cpp_QPrinter_DuplexMode(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPrinter_DuplexMode(handler, a1);
         
 
     // call function:
@@ -3530,7 +3530,7 @@ QPrinter::DuplexMode a1_cpp;
               
             // return type: QPrinter::DuplexMode
 
-            return cpp2js_QPrinter_DuplexMode(
+            return RJSHelper::cpp2js_QPrinter_DuplexMode(
               handler, 
               // non-copyable: false
                   res
@@ -3587,7 +3587,7 @@ QPrinter::DuplexMode a1_cpp;
               
             // return type: QList<int>
 
-            return cpp2js_QList_int(
+            return RJSHelper::cpp2js_QList_int(
               handler, 
               // non-copyable: false
                   res
@@ -3646,7 +3646,7 @@ QPrinter::DuplexMode a1_cpp;
               
             // return type: QList<QPrinter::PaperSource>
 
-            return cpp2js_QList_QPrinter_PaperSource(
+            return RJSHelper::cpp2js_QList_QPrinter_PaperSource(
               handler, 
               // non-copyable: false
                   res
@@ -3682,7 +3682,7 @@ QPrinter::DuplexMode a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -3694,7 +3694,7 @@ QPrinter::DuplexMode a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -3769,7 +3769,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3805,7 +3805,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPrinter_Unit(handler, a1
+        RJSHelper::is_QPrinter_Unit(handler, a1
   )
 
   
@@ -3817,7 +3817,7 @@ bool a1_cpp;
   
 QPrinter::Unit a1_cpp;
 
-      a1_cpp = js2cpp_QPrinter_Unit(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPrinter_Unit(handler, a1);
         
 
     // call function:
@@ -3843,7 +3843,7 @@ QPrinter::Unit a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -3879,7 +3879,7 @@ QPrinter::Unit a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPrinter_Unit(handler, a1
+        RJSHelper::is_QPrinter_Unit(handler, a1
   )
 
   
@@ -3891,7 +3891,7 @@ QPrinter::Unit a1_cpp;
   
 QPrinter::Unit a1_cpp;
 
-      a1_cpp = js2cpp_QPrinter_Unit(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPrinter_Unit(handler, a1);
         
 
     // call function:
@@ -3917,7 +3917,7 @@ QPrinter::Unit a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -3974,7 +3974,7 @@ QPrinter::Unit a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -4008,7 +4008,7 @@ QPrinter::Unit a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -4020,7 +4020,7 @@ QPrinter::Unit a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -4093,7 +4093,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -4148,7 +4148,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -4205,7 +4205,7 @@ QString a1_cpp;
               
             // return type: QPrinter::PrinterState
 
-            return cpp2js_QPrinter_PrinterState(
+            return RJSHelper::cpp2js_QPrinter_PrinterState(
               handler, 
               // non-copyable: false
                   res
@@ -4262,7 +4262,7 @@ QString a1_cpp;
               
             // return type: QPaintEngine*
 
-            return cpp2js_QPaintEngine(
+            return RJSHelper::cpp2js_QPaintEngine(
               handler, 
               // non-copyable: true
                   res
@@ -4298,10 +4298,10 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -4313,13 +4313,13 @@ QString a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: toPage (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -4395,7 +4395,7 @@ int a2_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -4452,7 +4452,7 @@ int a2_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -4486,7 +4486,7 @@ int a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPrinter_PrintRange(handler, a1
+        RJSHelper::is_QPrinter_PrintRange(handler, a1
   )
 
   
@@ -4498,7 +4498,7 @@ int a2_cpp;
   
 QPrinter::PrintRange a1_cpp;
 
-      a1_cpp = js2cpp_QPrinter_PrintRange(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPrinter_PrintRange(handler, a1);
         
 
     // call function:
@@ -4573,7 +4573,7 @@ QPrinter::PrintRange a1_cpp;
               
             // return type: QPrinter::PrintRange
 
-            return cpp2js_QPrinter_PrintRange(
+            return RJSHelper::cpp2js_QPrinter_PrintRange(
               handler, 
               // non-copyable: false
                   res

@@ -153,7 +153,7 @@ QEasingCurve_Wrapper::QEasingCurve_Wrapper
                 
       // check parameter types:
       if (
-        is_QEasingCurve_Type(handler, a1
+        RJSHelper::is_QEasingCurve_Type(handler, a1
     , true
   
   )
@@ -172,7 +172,7 @@ QEasingCurve::Type a1_cpp;
             a1_cpp = QEasingCurve::Linear;
           }
           else {
-            a1_cpp = js2cpp_QEasingCurve_Type(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QEasingCurve_Type(handler, a1);
           }
         
 
@@ -199,7 +199,7 @@ QEasingCurve::Type a1_cpp;
 
       // check parameter types:
       if (
-        is_QEasingCurve(handler, a1
+        RJSHelper::is_QEasingCurve(handler, a1
   )
 
   
@@ -211,7 +211,7 @@ QEasingCurve::Type a1_cpp;
   
 QEasingCurve a1_cpp;
 
-      a1_cpp = js2cpp_QEasingCurve(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QEasingCurve(handler, a1);
         
 
     // call function:
@@ -237,7 +237,7 @@ QEasingCurve a1_cpp;
 
       // check parameter types:
       if (
-        is_QEasingCurve(handler, a1
+        RJSHelper::is_QEasingCurve(handler, a1
   )
 
   
@@ -249,7 +249,7 @@ QEasingCurve a1_cpp;
   
 QEasingCurve a1_cpp;
 
-      a1_cpp = js2cpp_QEasingCurve(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QEasingCurve(handler, a1);
         
 
     // call function:
@@ -322,7 +322,7 @@ QEasingCurve a1_cpp;
                 
       // check parameter types:
       if (
-        is_QEasingCurve(handler, a1
+        RJSHelper::is_QEasingCurve(handler, a1
   )
 
   
@@ -334,7 +334,7 @@ QEasingCurve a1_cpp;
   
 QEasingCurve a1_cpp;
 
-      a1_cpp = js2cpp_QEasingCurve(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QEasingCurve(handler, a1);
         
 
     // call function:
@@ -363,7 +363,7 @@ QEasingCurve a1_cpp;
               
             // return type: QEasingCurve&
 
-            return cpp2js_QEasingCurve(
+            return RJSHelper::cpp2js_QEasingCurve(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -399,7 +399,7 @@ QEasingCurve a1_cpp;
                 
       // check parameter types:
       if (
-        is_QEasingCurve(handler, a1
+        RJSHelper::is_QEasingCurve(handler, a1
   )
 
   
@@ -411,7 +411,7 @@ QEasingCurve a1_cpp;
   
 QEasingCurve a1_cpp;
 
-      a1_cpp = js2cpp_QEasingCurve(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QEasingCurve(handler, a1);
         
 
     // call function:
@@ -465,7 +465,7 @@ QEasingCurve a1_cpp;
                 
       // check parameter types:
       if (
-        is_QEasingCurve(handler, a1
+        RJSHelper::is_QEasingCurve(handler, a1
   )
 
   
@@ -477,7 +477,7 @@ QEasingCurve a1_cpp;
   
 QEasingCurve a1_cpp;
 
-      a1_cpp = js2cpp_QEasingCurve(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QEasingCurve(handler, a1);
         
 
     // call function:
@@ -503,7 +503,7 @@ QEasingCurve a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -539,7 +539,7 @@ QEasingCurve a1_cpp;
                 
       // check parameter types:
       if (
-        is_QEasingCurve(handler, a1
+        RJSHelper::is_QEasingCurve(handler, a1
   )
 
   
@@ -551,7 +551,7 @@ QEasingCurve a1_cpp;
   
 QEasingCurve a1_cpp;
 
-      a1_cpp = js2cpp_QEasingCurve(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QEasingCurve(handler, a1);
         
 
     // call function:
@@ -577,7 +577,7 @@ QEasingCurve a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -634,7 +634,7 @@ QEasingCurve a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -668,7 +668,7 @@ QEasingCurve a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -680,7 +680,7 @@ QEasingCurve a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -755,7 +755,7 @@ qreal a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -789,7 +789,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -801,7 +801,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -876,7 +876,7 @@ qreal a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -910,7 +910,7 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -922,7 +922,7 @@ qreal a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -978,13 +978,13 @@ qreal a1_cpp;
                 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
-   && is_QPointF(handler, a2
+   && RJSHelper::is_QPointF(handler, a2
   )
 
-   && is_QPointF(handler, a3
+   && RJSHelper::is_QPointF(handler, a3
   )
 
   
@@ -996,19 +996,19 @@ qreal a1_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
   // convert js parameter to cpp: c2 (QPointF)
   
 QPointF a2_cpp;
 
-      a2_cpp = js2cpp_QPointF(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPointF(handler, a2);
         
   // convert js parameter to cpp: endPoint (QPointF)
   
 QPointF a3_cpp;
 
-      a3_cpp = js2cpp_QPointF(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QPointF(handler, a3);
         
 
     // call function:
@@ -1068,16 +1068,16 @@ QPointF a3_cpp;
                 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_qreal(handler, a3
+   && RJSHelper::is_qreal(handler, a3
   )
 
-   && is_qreal(handler, a4
+   && RJSHelper::is_qreal(handler, a4
   )
 
   
@@ -1089,25 +1089,25 @@ QPointF a3_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
   // convert js parameter to cpp: t (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: c (qreal)
   
 qreal a3_cpp;
 
-      a3_cpp = js2cpp_qreal(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
         
   // convert js parameter to cpp: b (qreal)
   
 qreal a4_cpp;
 
-      a4_cpp = js2cpp_qreal(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
         
 
     // call function:
@@ -1185,7 +1185,7 @@ qreal a4_cpp;
               
             // return type: QList<QPointF>
 
-            return cpp2js_QList_QPointF(
+            return RJSHelper::cpp2js_QList_QPointF(
               handler, 
               // non-copyable: false
                   res
@@ -1242,7 +1242,7 @@ qreal a4_cpp;
               
             // return type: QEasingCurve::Type
 
-            return cpp2js_QEasingCurve_Type(
+            return RJSHelper::cpp2js_QEasingCurve_Type(
               handler, 
               // non-copyable: false
                   res
@@ -1276,7 +1276,7 @@ qreal a4_cpp;
                 
       // check parameter types:
       if (
-        is_QEasingCurve_Type(handler, a1
+        RJSHelper::is_QEasingCurve_Type(handler, a1
   )
 
   
@@ -1288,7 +1288,7 @@ qreal a4_cpp;
   
 QEasingCurve::Type a1_cpp;
 
-      a1_cpp = js2cpp_QEasingCurve_Type(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QEasingCurve_Type(handler, a1);
         
 
     // call function:
@@ -1342,7 +1342,7 @@ QEasingCurve::Type a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
   
@@ -1354,7 +1354,7 @@ QEasingCurve::Type a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
 
     // call function:
@@ -1380,7 +1380,7 @@ qreal a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res

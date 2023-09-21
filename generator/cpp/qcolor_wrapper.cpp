@@ -49,7 +49,7 @@
           
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -89,16 +89,16 @@
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -112,19 +112,19 @@
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: g (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: b (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: a (int)
   
@@ -135,7 +135,7 @@ int a4_cpp;
             a4_cpp = 255;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -156,7 +156,7 @@ int a4_cpp;
           
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -196,16 +196,16 @@ int a4_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_float(handler, a2
+   && RJSHelper::is_float(handler, a2
   )
 
-   && is_float(handler, a3
+   && RJSHelper::is_float(handler, a3
   )
 
-   && is_float(handler, a4
+   && RJSHelper::is_float(handler, a4
     , true
   
   )
@@ -219,19 +219,19 @@ int a4_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: g (float)
   
 float a2_cpp;
 
-      a2_cpp = js2cpp_float(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_float(handler, a2);
         
   // convert js parameter to cpp: b (float)
   
 float a3_cpp;
 
-      a3_cpp = js2cpp_float(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_float(handler, a3);
         
   // convert js parameter to cpp: a (float)
   
@@ -242,7 +242,7 @@ float a4_cpp;
             a4_cpp = 1.0;
           }
           else {
-            a4_cpp = js2cpp_float(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_float(handler, a4);
           }
         
 
@@ -263,7 +263,7 @@ float a4_cpp;
           
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -303,16 +303,16 @@ float a4_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -326,19 +326,19 @@ float a4_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: s (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: v (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: a (int)
   
@@ -349,7 +349,7 @@ int a4_cpp;
             a4_cpp = 255;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -370,7 +370,7 @@ int a4_cpp;
           
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -410,16 +410,16 @@ int a4_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_float(handler, a2
+   && RJSHelper::is_float(handler, a2
   )
 
-   && is_float(handler, a3
+   && RJSHelper::is_float(handler, a3
   )
 
-   && is_float(handler, a4
+   && RJSHelper::is_float(handler, a4
     , true
   
   )
@@ -433,19 +433,19 @@ int a4_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: s (float)
   
 float a2_cpp;
 
-      a2_cpp = js2cpp_float(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_float(handler, a2);
         
   // convert js parameter to cpp: v (float)
   
 float a3_cpp;
 
-      a3_cpp = js2cpp_float(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_float(handler, a3);
         
   // convert js parameter to cpp: a (float)
   
@@ -456,7 +456,7 @@ float a4_cpp;
             a4_cpp = 1.0;
           }
           else {
-            a4_cpp = js2cpp_float(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_float(handler, a4);
           }
         
 
@@ -477,7 +477,7 @@ float a4_cpp;
           
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -519,19 +519,19 @@ float a4_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
   )
 
-   && is_int(handler, a5
+   && RJSHelper::is_int(handler, a5
     , true
   
   )
@@ -545,25 +545,25 @@ float a4_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: m (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: y (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: k (int)
   
 int a4_cpp;
 
-      a4_cpp = js2cpp_int(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_int(handler, a4);
         
   // convert js parameter to cpp: a (int)
   
@@ -574,7 +574,7 @@ int a5_cpp;
             a5_cpp = 255;
           }
           else {
-            a5_cpp = js2cpp_int(handler, a5);
+            a5_cpp = RJSHelper::js2cpp_int(handler, a5);
           }
         
 
@@ -596,7 +596,7 @@ int a5_cpp;
           
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -638,19 +638,19 @@ int a5_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_float(handler, a2
+   && RJSHelper::is_float(handler, a2
   )
 
-   && is_float(handler, a3
+   && RJSHelper::is_float(handler, a3
   )
 
-   && is_float(handler, a4
+   && RJSHelper::is_float(handler, a4
   )
 
-   && is_float(handler, a5
+   && RJSHelper::is_float(handler, a5
     , true
   
   )
@@ -664,25 +664,25 @@ int a5_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: m (float)
   
 float a2_cpp;
 
-      a2_cpp = js2cpp_float(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_float(handler, a2);
         
   // convert js parameter to cpp: y (float)
   
 float a3_cpp;
 
-      a3_cpp = js2cpp_float(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_float(handler, a3);
         
   // convert js parameter to cpp: k (float)
   
 float a4_cpp;
 
-      a4_cpp = js2cpp_float(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_float(handler, a4);
         
   // convert js parameter to cpp: a (float)
   
@@ -693,7 +693,7 @@ float a5_cpp;
             a5_cpp = 1.0;
           }
           else {
-            a5_cpp = js2cpp_float(handler, a5);
+            a5_cpp = RJSHelper::js2cpp_float(handler, a5);
           }
         
 
@@ -715,7 +715,7 @@ float a5_cpp;
           
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -755,16 +755,16 @@ float a5_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -778,19 +778,19 @@ float a5_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: s (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: l (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: a (int)
   
@@ -801,7 +801,7 @@ int a4_cpp;
             a4_cpp = 255;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -822,7 +822,7 @@ int a4_cpp;
           
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -862,16 +862,16 @@ int a4_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_float(handler, a2
+   && RJSHelper::is_float(handler, a2
   )
 
-   && is_float(handler, a3
+   && RJSHelper::is_float(handler, a3
   )
 
-   && is_float(handler, a4
+   && RJSHelper::is_float(handler, a4
     , true
   
   )
@@ -885,19 +885,19 @@ int a4_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: s (float)
   
 float a2_cpp;
 
-      a2_cpp = js2cpp_float(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_float(handler, a2);
         
   // convert js parameter to cpp: l (float)
   
 float a3_cpp;
 
-      a3_cpp = js2cpp_float(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_float(handler, a3);
         
   // convert js parameter to cpp: a (float)
   
@@ -908,7 +908,7 @@ float a4_cpp;
             a4_cpp = 1.0;
           }
           else {
-            a4_cpp = js2cpp_float(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_float(handler, a4);
           }
         
 
@@ -929,7 +929,7 @@ float a4_cpp;
           
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -965,7 +965,7 @@ float a4_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -977,7 +977,7 @@ float a4_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -994,7 +994,7 @@ QString a1_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1161,16 +1161,16 @@ QColor_Wrapper::QColor_Wrapper
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -1184,19 +1184,19 @@ QColor_Wrapper::QColor_Wrapper
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: g (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: b (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: a (int)
   
@@ -1207,7 +1207,7 @@ int a4_cpp;
             a4_cpp = 255;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -1237,7 +1237,7 @@ int a4_cpp;
 
       // check parameter types:
       if (
-        is_Qt_GlobalColor(handler, a1
+        RJSHelper::is_Qt_GlobalColor(handler, a1
   )
 
   
@@ -1249,7 +1249,7 @@ int a4_cpp;
   
 Qt::GlobalColor a1_cpp;
 
-      a1_cpp = js2cpp_Qt_GlobalColor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_GlobalColor(handler, a1);
         
 
     // call function:
@@ -1275,7 +1275,7 @@ Qt::GlobalColor a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1287,7 +1287,7 @@ Qt::GlobalColor a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1417,7 +1417,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1453,7 +1453,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QColor_NameFormat(handler, a1
+        RJSHelper::is_QColor_NameFormat(handler, a1
     , true
   
   )
@@ -1472,7 +1472,7 @@ QColor::NameFormat a1_cpp;
             a1_cpp = QColor::HexRgb;
           }
           else {
-            a1_cpp = js2cpp_QColor_NameFormat(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QColor_NameFormat(handler, a1);
           }
         
 
@@ -1499,7 +1499,7 @@ QColor::NameFormat a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1535,7 +1535,7 @@ QColor::NameFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1547,7 +1547,7 @@ QColor::NameFormat a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1624,7 +1624,7 @@ QString a1_cpp;
               
             // return type: QColor::Spec
 
-            return cpp2js_QColor_Spec(
+            return RJSHelper::cpp2js_QColor_Spec(
               handler, 
               // non-copyable: false
                   res
@@ -1681,7 +1681,7 @@ QString a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1715,7 +1715,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1727,7 +1727,7 @@ QString a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1802,7 +1802,7 @@ int a1_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -1836,7 +1836,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
   
@@ -1848,7 +1848,7 @@ int a1_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
 
     // call function:
@@ -1923,7 +1923,7 @@ float a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1980,7 +1980,7 @@ float a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2037,7 +2037,7 @@ float a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2071,7 +2071,7 @@ float a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2083,7 +2083,7 @@ float a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2135,7 +2135,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2147,7 +2147,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2199,7 +2199,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2211,7 +2211,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -2286,7 +2286,7 @@ int a1_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -2343,7 +2343,7 @@ int a1_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -2400,7 +2400,7 @@ int a1_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -2434,7 +2434,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
   
@@ -2446,7 +2446,7 @@ int a1_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
 
     // call function:
@@ -2498,7 +2498,7 @@ float a1_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
   
@@ -2510,7 +2510,7 @@ float a1_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
 
     // call function:
@@ -2562,7 +2562,7 @@ float a1_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
   
@@ -2574,7 +2574,7 @@ float a1_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
 
     // call function:
@@ -2632,16 +2632,16 @@ float a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -2655,19 +2655,19 @@ float a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: g (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: b (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: a (int)
   
@@ -2678,7 +2678,7 @@ int a4_cpp;
             a4_cpp = 255;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -2740,16 +2740,16 @@ int a4_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_float(handler, a2
+   && RJSHelper::is_float(handler, a2
   )
 
-   && is_float(handler, a3
+   && RJSHelper::is_float(handler, a3
   )
 
-   && is_float(handler, a4
+   && RJSHelper::is_float(handler, a4
     , true
   
   )
@@ -2763,19 +2763,19 @@ int a4_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: g (float)
   
 float a2_cpp;
 
-      a2_cpp = js2cpp_float(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_float(handler, a2);
         
   // convert js parameter to cpp: b (float)
   
 float a3_cpp;
 
-      a3_cpp = js2cpp_float(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_float(handler, a3);
         
   // convert js parameter to cpp: a (float)
   
@@ -2786,7 +2786,7 @@ float a4_cpp;
             a4_cpp = 1.0;
           }
           else {
-            a4_cpp = js2cpp_float(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_float(handler, a4);
           }
         
 
@@ -2865,7 +2865,7 @@ float a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2922,7 +2922,7 @@ float a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2979,7 +2979,7 @@ float a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3036,7 +3036,7 @@ float a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3093,7 +3093,7 @@ float a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3150,7 +3150,7 @@ float a4_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -3207,7 +3207,7 @@ float a4_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -3264,7 +3264,7 @@ float a4_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -3321,7 +3321,7 @@ float a4_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -3378,7 +3378,7 @@ float a4_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -3418,16 +3418,16 @@ float a4_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -3441,19 +3441,19 @@ float a4_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: s (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: v (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: a (int)
   
@@ -3464,7 +3464,7 @@ int a4_cpp;
             a4_cpp = 255;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -3526,16 +3526,16 @@ int a4_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_float(handler, a2
+   && RJSHelper::is_float(handler, a2
   )
 
-   && is_float(handler, a3
+   && RJSHelper::is_float(handler, a3
   )
 
-   && is_float(handler, a4
+   && RJSHelper::is_float(handler, a4
     , true
   
   )
@@ -3549,19 +3549,19 @@ int a4_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: s (float)
   
 float a2_cpp;
 
-      a2_cpp = js2cpp_float(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_float(handler, a2);
         
   // convert js parameter to cpp: v (float)
   
 float a3_cpp;
 
-      a3_cpp = js2cpp_float(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_float(handler, a3);
         
   // convert js parameter to cpp: a (float)
   
@@ -3572,7 +3572,7 @@ float a4_cpp;
             a4_cpp = 1.0;
           }
           else {
-            a4_cpp = js2cpp_float(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_float(handler, a4);
           }
         
 
@@ -3651,7 +3651,7 @@ float a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3708,7 +3708,7 @@ float a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3765,7 +3765,7 @@ float a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3822,7 +3822,7 @@ float a4_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3879,7 +3879,7 @@ float a4_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -3936,7 +3936,7 @@ float a4_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -3993,7 +3993,7 @@ float a4_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -4050,7 +4050,7 @@ float a4_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -4092,19 +4092,19 @@ float a4_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
   )
 
-   && is_int(handler, a5
+   && RJSHelper::is_int(handler, a5
     , true
   
   )
@@ -4118,25 +4118,25 @@ float a4_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: m (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: y (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: k (int)
   
 int a4_cpp;
 
-      a4_cpp = js2cpp_int(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_int(handler, a4);
         
   // convert js parameter to cpp: a (int)
   
@@ -4147,7 +4147,7 @@ int a5_cpp;
             a5_cpp = 255;
           }
           else {
-            a5_cpp = js2cpp_int(handler, a5);
+            a5_cpp = RJSHelper::js2cpp_int(handler, a5);
           }
         
 
@@ -4212,19 +4212,19 @@ int a5_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_float(handler, a2
+   && RJSHelper::is_float(handler, a2
   )
 
-   && is_float(handler, a3
+   && RJSHelper::is_float(handler, a3
   )
 
-   && is_float(handler, a4
+   && RJSHelper::is_float(handler, a4
   )
 
-   && is_float(handler, a5
+   && RJSHelper::is_float(handler, a5
     , true
   
   )
@@ -4238,25 +4238,25 @@ int a5_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: m (float)
   
 float a2_cpp;
 
-      a2_cpp = js2cpp_float(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_float(handler, a2);
         
   // convert js parameter to cpp: y (float)
   
 float a3_cpp;
 
-      a3_cpp = js2cpp_float(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_float(handler, a3);
         
   // convert js parameter to cpp: k (float)
   
 float a4_cpp;
 
-      a4_cpp = js2cpp_float(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_float(handler, a4);
         
   // convert js parameter to cpp: a (float)
   
@@ -4267,7 +4267,7 @@ float a5_cpp;
             a5_cpp = 1.0;
           }
           else {
-            a5_cpp = js2cpp_float(handler, a5);
+            a5_cpp = RJSHelper::js2cpp_float(handler, a5);
           }
         
 
@@ -4347,7 +4347,7 @@ float a5_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -4404,7 +4404,7 @@ float a5_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -4461,7 +4461,7 @@ float a5_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -4518,7 +4518,7 @@ float a5_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -4575,7 +4575,7 @@ float a5_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -4632,7 +4632,7 @@ float a5_cpp;
               
             // return type: float
 
-            return cpp2js_float(
+            return RJSHelper::cpp2js_float(
               handler, 
               // non-copyable: false
                   res
@@ -4672,16 +4672,16 @@ float a5_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
     , true
   
   )
@@ -4695,19 +4695,19 @@ float a5_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: s (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: l (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: a (int)
   
@@ -4718,7 +4718,7 @@ int a4_cpp;
             a4_cpp = 255;
           }
           else {
-            a4_cpp = js2cpp_int(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
           }
         
 
@@ -4780,16 +4780,16 @@ int a4_cpp;
                 
       // check parameter types:
       if (
-        is_float(handler, a1
+        RJSHelper::is_float(handler, a1
   )
 
-   && is_float(handler, a2
+   && RJSHelper::is_float(handler, a2
   )
 
-   && is_float(handler, a3
+   && RJSHelper::is_float(handler, a3
   )
 
-   && is_float(handler, a4
+   && RJSHelper::is_float(handler, a4
     , true
   
   )
@@ -4803,19 +4803,19 @@ int a4_cpp;
   
 float a1_cpp;
 
-      a1_cpp = js2cpp_float(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
         
   // convert js parameter to cpp: s (float)
   
 float a2_cpp;
 
-      a2_cpp = js2cpp_float(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_float(handler, a2);
         
   // convert js parameter to cpp: l (float)
   
 float a3_cpp;
 
-      a3_cpp = js2cpp_float(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_float(handler, a3);
         
   // convert js parameter to cpp: a (float)
   
@@ -4826,7 +4826,7 @@ float a4_cpp;
             a4_cpp = 1.0;
           }
           else {
-            a4_cpp = js2cpp_float(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_float(handler, a4);
           }
         
 
@@ -4905,7 +4905,7 @@ float a4_cpp;
               
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -4962,7 +4962,7 @@ float a4_cpp;
               
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -5019,7 +5019,7 @@ float a4_cpp;
               
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -5076,7 +5076,7 @@ float a4_cpp;
               
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -5133,7 +5133,7 @@ float a4_cpp;
               
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -5169,7 +5169,7 @@ float a4_cpp;
                 
       // check parameter types:
       if (
-        is_QColor_Spec(handler, a1
+        RJSHelper::is_QColor_Spec(handler, a1
   )
 
   
@@ -5181,7 +5181,7 @@ float a4_cpp;
   
 QColor::Spec a1_cpp;
 
-      a1_cpp = js2cpp_QColor_Spec(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QColor_Spec(handler, a1);
         
 
     // call function:
@@ -5207,7 +5207,7 @@ QColor::Spec a1_cpp;
               
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -5243,7 +5243,7 @@ QColor::Spec a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
     , true
   
   )
@@ -5262,7 +5262,7 @@ int a1_cpp;
             a1_cpp = 150;
           }
           else {
-            a1_cpp = js2cpp_int(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
           }
         
 
@@ -5289,7 +5289,7 @@ int a1_cpp;
               
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res
@@ -5325,7 +5325,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
     , true
   
   )
@@ -5344,7 +5344,7 @@ int a1_cpp;
             a1_cpp = 200;
           }
           else {
-            a1_cpp = js2cpp_int(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
           }
         
 
@@ -5371,7 +5371,7 @@ int a1_cpp;
               
             // return type: QColor
 
-            return cpp2js_QColor(
+            return RJSHelper::cpp2js_QColor(
               handler, 
               // non-copyable: false
                   res

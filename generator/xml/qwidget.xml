@@ -32,7 +32,7 @@
   <class_decl name="QGraphicsEffect" />
   <class_decl name="QPixmap" />
   <class_decl name="QDebug" />
-  <class name="QWidget">
+  <class name="QWidget" ownership="cpp" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QPaintDevice" />

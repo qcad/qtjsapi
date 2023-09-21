@@ -31,10 +31,10 @@
                 
       // check parameter types:
       if (
-        is_QPolygonF(handler, a1
+        RJSHelper::is_QPolygonF(handler, a1
   )
 
-   && is_QTransform(handler, a2
+   && RJSHelper::is_QTransform(handler, a2
   )
 
   
@@ -46,13 +46,13 @@
   
 QPolygonF a1_cpp;
 
-      a1_cpp = js2cpp_QPolygonF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
         
   // convert js parameter to cpp: result (QTransform)
   
 QTransform a2_cpp;
 
-      a2_cpp = js2cpp_QTransform(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QTransform(handler, a2);
         
 
     // call function:
@@ -70,7 +70,7 @@ QTransform a2_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -106,10 +106,10 @@ QTransform a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygonF(handler, a1
+        RJSHelper::is_QPolygonF(handler, a1
   )
 
-   && is_QTransform(handler, a2
+   && RJSHelper::is_QTransform(handler, a2
   )
 
   
@@ -121,13 +121,13 @@ QTransform a2_cpp;
   
 QPolygonF a1_cpp;
 
-      a1_cpp = js2cpp_QPolygonF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
         
   // convert js parameter to cpp: result (QTransform)
   
 QTransform a2_cpp;
 
-      a2_cpp = js2cpp_QTransform(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QTransform(handler, a2);
         
 
     // call function:
@@ -145,7 +145,7 @@ QTransform a2_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -183,13 +183,13 @@ QTransform a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPolygonF(handler, a1
+        RJSHelper::is_QPolygonF(handler, a1
   )
 
-   && is_QPolygonF(handler, a2
+   && RJSHelper::is_QPolygonF(handler, a2
   )
 
-   && is_QTransform(handler, a3
+   && RJSHelper::is_QTransform(handler, a3
   )
 
   
@@ -201,19 +201,19 @@ QTransform a2_cpp;
   
 QPolygonF a1_cpp;
 
-      a1_cpp = js2cpp_QPolygonF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
         
   // convert js parameter to cpp: two (QPolygonF)
   
 QPolygonF a2_cpp;
 
-      a2_cpp = js2cpp_QPolygonF(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QPolygonF(handler, a2);
         
   // convert js parameter to cpp: result (QTransform)
   
 QTransform a3_cpp;
 
-      a3_cpp = js2cpp_QTransform(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_QTransform(handler, a3);
         
 
     // call function:
@@ -232,7 +232,7 @@ QTransform a3_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -268,10 +268,10 @@ QTransform a3_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -283,13 +283,13 @@ QTransform a3_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: dy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -307,7 +307,7 @@ qreal a2_cpp;
           
             // return type: QTransform
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   res
@@ -343,10 +343,10 @@ qreal a2_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -358,13 +358,13 @@ qreal a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: dy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -382,7 +382,7 @@ qreal a2_cpp;
           
             // return type: QTransform
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   res
@@ -557,31 +557,31 @@ QTransform_Wrapper::QTransform_Wrapper
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_qreal(handler, a3
+   && RJSHelper::is_qreal(handler, a3
   )
 
-   && is_qreal(handler, a4
+   && RJSHelper::is_qreal(handler, a4
   )
 
-   && is_qreal(handler, a5
+   && RJSHelper::is_qreal(handler, a5
   )
 
-   && is_qreal(handler, a6
+   && RJSHelper::is_qreal(handler, a6
   )
 
-   && is_qreal(handler, a7
+   && RJSHelper::is_qreal(handler, a7
   )
 
-   && is_qreal(handler, a8
+   && RJSHelper::is_qreal(handler, a8
   )
 
-   && is_qreal(handler, a9
+   && RJSHelper::is_qreal(handler, a9
   )
 
   
@@ -593,55 +593,55 @@ QTransform_Wrapper::QTransform_Wrapper
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: h12 (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: h13 (qreal)
   
 qreal a3_cpp;
 
-      a3_cpp = js2cpp_qreal(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
         
   // convert js parameter to cpp: h21 (qreal)
   
 qreal a4_cpp;
 
-      a4_cpp = js2cpp_qreal(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
         
   // convert js parameter to cpp: h22 (qreal)
   
 qreal a5_cpp;
 
-      a5_cpp = js2cpp_qreal(handler, a5);
+      a5_cpp = RJSHelper::js2cpp_qreal(handler, a5);
         
   // convert js parameter to cpp: h23 (qreal)
   
 qreal a6_cpp;
 
-      a6_cpp = js2cpp_qreal(handler, a6);
+      a6_cpp = RJSHelper::js2cpp_qreal(handler, a6);
         
   // convert js parameter to cpp: h31 (qreal)
   
 qreal a7_cpp;
 
-      a7_cpp = js2cpp_qreal(handler, a7);
+      a7_cpp = RJSHelper::js2cpp_qreal(handler, a7);
         
   // convert js parameter to cpp: h32 (qreal)
   
 qreal a8_cpp;
 
-      a8_cpp = js2cpp_qreal(handler, a8);
+      a8_cpp = RJSHelper::js2cpp_qreal(handler, a8);
         
   // convert js parameter to cpp: h33 (qreal)
   
 qreal a9_cpp;
 
-      a9_cpp = js2cpp_qreal(handler, a9);
+      a9_cpp = RJSHelper::js2cpp_qreal(handler, a9);
         
 
     // call function:
@@ -675,22 +675,22 @@ qreal a9_cpp;
 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_qreal(handler, a3
+   && RJSHelper::is_qreal(handler, a3
   )
 
-   && is_qreal(handler, a4
+   && RJSHelper::is_qreal(handler, a4
   )
 
-   && is_qreal(handler, a5
+   && RJSHelper::is_qreal(handler, a5
   )
 
-   && is_qreal(handler, a6
+   && RJSHelper::is_qreal(handler, a6
   )
 
   
@@ -702,37 +702,37 @@ qreal a9_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: h12 (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: h21 (qreal)
   
 qreal a3_cpp;
 
-      a3_cpp = js2cpp_qreal(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
         
   // convert js parameter to cpp: h22 (qreal)
   
 qreal a4_cpp;
 
-      a4_cpp = js2cpp_qreal(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
         
   // convert js parameter to cpp: dx (qreal)
   
 qreal a5_cpp;
 
-      a5_cpp = js2cpp_qreal(handler, a5);
+      a5_cpp = RJSHelper::js2cpp_qreal(handler, a5);
         
   // convert js parameter to cpp: dy (qreal)
   
 qreal a6_cpp;
 
-      a6_cpp = js2cpp_qreal(handler, a6);
+      a6_cpp = RJSHelper::js2cpp_qreal(handler, a6);
         
 
     // call function:
@@ -763,7 +763,7 @@ qreal a6_cpp;
 
       // check parameter types:
       if (
-        is_QTransform(handler, a1
+        RJSHelper::is_QTransform(handler, a1
   )
 
   
@@ -775,7 +775,7 @@ qreal a6_cpp;
   
 QTransform a1_cpp;
 
-      a1_cpp = js2cpp_QTransform(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTransform(handler, a1);
         
 
     // call function:
@@ -801,7 +801,7 @@ QTransform a1_cpp;
 
       // check parameter types:
       if (
-        is_QTransform(handler, a1
+        RJSHelper::is_QTransform(handler, a1
   )
 
   
@@ -813,7 +813,7 @@ QTransform a1_cpp;
   
 QTransform a1_cpp;
 
-      a1_cpp = js2cpp_QTransform(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTransform(handler, a1);
         
 
     // call function:
@@ -932,7 +932,7 @@ QTransform a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -989,7 +989,7 @@ QTransform a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1046,7 +1046,7 @@ QTransform a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1103,7 +1103,7 @@ QTransform a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1160,7 +1160,7 @@ QTransform a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1217,7 +1217,7 @@ QTransform a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1274,7 +1274,7 @@ QTransform a1_cpp;
               
             // return type: QTransform::TransformationType
 
-            return cpp2js_QTransform_TransformationType(
+            return RJSHelper::cpp2js_QTransform_TransformationType(
               handler, 
               // non-copyable: false
                   res
@@ -1331,7 +1331,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1388,7 +1388,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1445,7 +1445,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1502,7 +1502,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1559,7 +1559,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1616,7 +1616,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1673,7 +1673,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1730,7 +1730,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1787,7 +1787,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1844,7 +1844,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1901,7 +1901,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -1958,7 +1958,7 @@ QTransform a1_cpp;
               
             // return type: qreal
 
-            return cpp2js_qreal(
+            return RJSHelper::cpp2js_qreal(
               handler, 
               // non-copyable: false
                   res
@@ -2008,31 +2008,31 @@ QTransform a1_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_qreal(handler, a3
+   && RJSHelper::is_qreal(handler, a3
   )
 
-   && is_qreal(handler, a4
+   && RJSHelper::is_qreal(handler, a4
   )
 
-   && is_qreal(handler, a5
+   && RJSHelper::is_qreal(handler, a5
   )
 
-   && is_qreal(handler, a6
+   && RJSHelper::is_qreal(handler, a6
   )
 
-   && is_qreal(handler, a7
+   && RJSHelper::is_qreal(handler, a7
   )
 
-   && is_qreal(handler, a8
+   && RJSHelper::is_qreal(handler, a8
   )
 
-   && is_qreal(handler, a9
+   && RJSHelper::is_qreal(handler, a9
   )
 
   
@@ -2044,55 +2044,55 @@ QTransform a1_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: m12 (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: m13 (qreal)
   
 qreal a3_cpp;
 
-      a3_cpp = js2cpp_qreal(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
         
   // convert js parameter to cpp: m21 (qreal)
   
 qreal a4_cpp;
 
-      a4_cpp = js2cpp_qreal(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
         
   // convert js parameter to cpp: m22 (qreal)
   
 qreal a5_cpp;
 
-      a5_cpp = js2cpp_qreal(handler, a5);
+      a5_cpp = RJSHelper::js2cpp_qreal(handler, a5);
         
   // convert js parameter to cpp: m23 (qreal)
   
 qreal a6_cpp;
 
-      a6_cpp = js2cpp_qreal(handler, a6);
+      a6_cpp = RJSHelper::js2cpp_qreal(handler, a6);
         
   // convert js parameter to cpp: m31 (qreal)
   
 qreal a7_cpp;
 
-      a7_cpp = js2cpp_qreal(handler, a7);
+      a7_cpp = RJSHelper::js2cpp_qreal(handler, a7);
         
   // convert js parameter to cpp: m32 (qreal)
   
 qreal a8_cpp;
 
-      a8_cpp = js2cpp_qreal(handler, a8);
+      a8_cpp = RJSHelper::js2cpp_qreal(handler, a8);
         
   // convert js parameter to cpp: m33 (qreal)
   
 qreal a9_cpp;
 
-      a9_cpp = js2cpp_qreal(handler, a9);
+      a9_cpp = RJSHelper::js2cpp_qreal(handler, a9);
         
 
     // call function:
@@ -2175,7 +2175,7 @@ qreal a9_cpp;
               
             // return type: QTransform
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   res
@@ -2232,7 +2232,7 @@ qreal a9_cpp;
               
             // return type: QTransform
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   res
@@ -2289,7 +2289,7 @@ qreal a9_cpp;
               
             // return type: QTransform
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   res
@@ -2325,10 +2325,10 @@ qreal a9_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -2340,13 +2340,13 @@ qreal a9_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: dy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -2376,7 +2376,7 @@ qreal a2_cpp;
               
             // return type: QTransform&
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2414,10 +2414,10 @@ qreal a2_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -2429,13 +2429,13 @@ qreal a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: sy (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -2465,7 +2465,7 @@ qreal a2_cpp;
               
             // return type: QTransform&
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2503,10 +2503,10 @@ qreal a2_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
   
@@ -2518,13 +2518,13 @@ qreal a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: sv (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
 
     // call function:
@@ -2554,7 +2554,7 @@ qreal a2_cpp;
               
             // return type: QTransform&
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2592,10 +2592,10 @@ qreal a2_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_Qt_Axis(handler, a2
+   && RJSHelper::is_Qt_Axis(handler, a2
     , true
   
   )
@@ -2609,7 +2609,7 @@ qreal a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: axis (Qt::Axis)
   
@@ -2620,7 +2620,7 @@ Qt::Axis a2_cpp;
             a2_cpp = Qt::ZAxis;
           }
           else {
-            a2_cpp = js2cpp_Qt_Axis(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_Qt_Axis(handler, a2);
           }
         
 
@@ -2651,7 +2651,7 @@ Qt::Axis a2_cpp;
               
             // return type: QTransform&
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2689,10 +2689,10 @@ Qt::Axis a2_cpp;
                 
       // check parameter types:
       if (
-        is_qreal(handler, a1
+        RJSHelper::is_qreal(handler, a1
   )
 
-   && is_Qt_Axis(handler, a2
+   && RJSHelper::is_Qt_Axis(handler, a2
     , true
   
   )
@@ -2706,7 +2706,7 @@ Qt::Axis a2_cpp;
   
 qreal a1_cpp;
 
-      a1_cpp = js2cpp_qreal(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
         
   // convert js parameter to cpp: axis (Qt::Axis)
   
@@ -2717,7 +2717,7 @@ Qt::Axis a2_cpp;
             a2_cpp = Qt::ZAxis;
           }
           else {
-            a2_cpp = js2cpp_Qt_Axis(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_Qt_Axis(handler, a2);
           }
         
 
@@ -2748,7 +2748,7 @@ Qt::Axis a2_cpp;
               
             // return type: QTransform&
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -2833,7 +2833,7 @@ Qt::Axis a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPoint(handler, a1
+        RJSHelper::is_QPoint(handler, a1
   )
 
   
@@ -2845,7 +2845,7 @@ Qt::Axis a2_cpp;
   
 QPoint a1_cpp;
 
-      a1_cpp = js2cpp_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
         
 
     // call function:
@@ -2871,7 +2871,7 @@ QPoint a1_cpp;
               
             // return type: QPoint
 
-            return cpp2js_QPoint(
+            return RJSHelper::cpp2js_QPoint(
               handler, 
               // non-copyable: false
                   res
@@ -2882,7 +2882,7 @@ QPoint a1_cpp;
 
       // check parameter types:
       if (
-        is_QPointF(handler, a1
+        RJSHelper::is_QPointF(handler, a1
   )
 
   
@@ -2894,7 +2894,7 @@ QPoint a1_cpp;
   
 QPointF a1_cpp;
 
-      a1_cpp = js2cpp_QPointF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
         
 
     // call function:
@@ -2920,7 +2920,7 @@ QPointF a1_cpp;
               
             // return type: QPointF
 
-            return cpp2js_QPointF(
+            return RJSHelper::cpp2js_QPointF(
               handler, 
               // non-copyable: false
                   res
@@ -2931,7 +2931,7 @@ QPointF a1_cpp;
 
       // check parameter types:
       if (
-        is_QLine(handler, a1
+        RJSHelper::is_QLine(handler, a1
   )
 
   
@@ -2943,7 +2943,7 @@ QPointF a1_cpp;
   
 QLine a1_cpp;
 
-      a1_cpp = js2cpp_QLine(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLine(handler, a1);
         
 
     // call function:
@@ -2969,7 +2969,7 @@ QLine a1_cpp;
               
             // return type: QLine
 
-            return cpp2js_QLine(
+            return RJSHelper::cpp2js_QLine(
               handler, 
               // non-copyable: false
                   res
@@ -2980,7 +2980,7 @@ QLine a1_cpp;
 
       // check parameter types:
       if (
-        is_QLineF(handler, a1
+        RJSHelper::is_QLineF(handler, a1
   )
 
   
@@ -2992,7 +2992,7 @@ QLine a1_cpp;
   
 QLineF a1_cpp;
 
-      a1_cpp = js2cpp_QLineF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QLineF(handler, a1);
         
 
     // call function:
@@ -3018,7 +3018,7 @@ QLineF a1_cpp;
               
             // return type: QLineF
 
-            return cpp2js_QLineF(
+            return RJSHelper::cpp2js_QLineF(
               handler, 
               // non-copyable: false
                   res
@@ -3029,7 +3029,7 @@ QLineF a1_cpp;
 
       // check parameter types:
       if (
-        is_QPolygonF(handler, a1
+        RJSHelper::is_QPolygonF(handler, a1
   )
 
   
@@ -3041,7 +3041,7 @@ QLineF a1_cpp;
   
 QPolygonF a1_cpp;
 
-      a1_cpp = js2cpp_QPolygonF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
         
 
     // call function:
@@ -3067,7 +3067,7 @@ QPolygonF a1_cpp;
               
             // return type: QPolygonF
 
-            return cpp2js_QPolygonF(
+            return RJSHelper::cpp2js_QPolygonF(
               handler, 
               // non-copyable: false
                   res
@@ -3078,7 +3078,7 @@ QPolygonF a1_cpp;
 
       // check parameter types:
       if (
-        is_QPolygon(handler, a1
+        RJSHelper::is_QPolygon(handler, a1
   )
 
   
@@ -3090,7 +3090,7 @@ QPolygonF a1_cpp;
   
 QPolygon a1_cpp;
 
-      a1_cpp = js2cpp_QPolygon(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPolygon(handler, a1);
         
 
     // call function:
@@ -3116,7 +3116,7 @@ QPolygon a1_cpp;
               
             // return type: QPolygon
 
-            return cpp2js_QPolygon(
+            return RJSHelper::cpp2js_QPolygon(
               handler, 
               // non-copyable: false
                   res
@@ -3127,7 +3127,7 @@ QPolygon a1_cpp;
 
       // check parameter types:
       if (
-        is_QRegion(handler, a1
+        RJSHelper::is_QRegion(handler, a1
   )
 
   
@@ -3139,7 +3139,7 @@ QPolygon a1_cpp;
   
 QRegion a1_cpp;
 
-      a1_cpp = js2cpp_QRegion(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
         
 
     // call function:
@@ -3165,7 +3165,7 @@ QRegion a1_cpp;
               
             // return type: QRegion
 
-            return cpp2js_QRegion(
+            return RJSHelper::cpp2js_QRegion(
               handler, 
               // non-copyable: false
                   res
@@ -3176,7 +3176,7 @@ QRegion a1_cpp;
 
       // check parameter types:
       if (
-        is_QPainterPath(handler, a1
+        RJSHelper::is_QPainterPath(handler, a1
   )
 
   
@@ -3188,7 +3188,7 @@ QRegion a1_cpp;
   
 QPainterPath a1_cpp;
 
-      a1_cpp = js2cpp_QPainterPath(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPainterPath(handler, a1);
         
 
     // call function:
@@ -3214,7 +3214,7 @@ QPainterPath a1_cpp;
               
             // return type: QPainterPath
 
-            return cpp2js_QPainterPath(
+            return RJSHelper::cpp2js_QPainterPath(
               handler, 
               // non-copyable: false
                   res
@@ -3250,7 +3250,7 @@ QPainterPath a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -3262,7 +3262,7 @@ QPainterPath a1_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -3288,7 +3288,7 @@ QRect a1_cpp;
               
             // return type: QPolygon
 
-            return cpp2js_QPolygon(
+            return RJSHelper::cpp2js_QPolygon(
               handler, 
               // non-copyable: false
                   res
@@ -3324,7 +3324,7 @@ QRect a1_cpp;
                 
       // check parameter types:
       if (
-        is_QRect(handler, a1
+        RJSHelper::is_QRect(handler, a1
   )
 
   
@@ -3336,7 +3336,7 @@ QRect a1_cpp;
   
 QRect a1_cpp;
 
-      a1_cpp = js2cpp_QRect(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
         
 
     // call function:
@@ -3362,7 +3362,7 @@ QRect a1_cpp;
               
             // return type: QRect
 
-            return cpp2js_QRect(
+            return RJSHelper::cpp2js_QRect(
               handler, 
               // non-copyable: false
                   res
@@ -3373,7 +3373,7 @@ QRect a1_cpp;
 
       // check parameter types:
       if (
-        is_QRectF(handler, a1
+        RJSHelper::is_QRectF(handler, a1
   )
 
   
@@ -3385,7 +3385,7 @@ QRect a1_cpp;
   
 QRectF a1_cpp;
 
-      a1_cpp = js2cpp_QRectF(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
         
 
     // call function:
@@ -3411,7 +3411,7 @@ QRectF a1_cpp;
               
             // return type: QRectF
 
-            return cpp2js_QRectF(
+            return RJSHelper::cpp2js_QRectF(
               handler, 
               // non-copyable: false
                   res
@@ -3445,7 +3445,7 @@ QRectF a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTransform(handler, a1
+        RJSHelper::is_QTransform(handler, a1
   )
 
   
@@ -3457,7 +3457,7 @@ QRectF a1_cpp;
   
 QTransform a1_cpp;
 
-      a1_cpp = js2cpp_QTransform(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTransform(handler, a1);
         
 
     // call function:
@@ -3486,7 +3486,7 @@ QTransform a1_cpp;
               
             // return type: QTransform&
 
-            return cpp2js_QTransform(
+            return RJSHelper::cpp2js_QTransform(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:

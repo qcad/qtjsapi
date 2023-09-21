@@ -39,10 +39,10 @@
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QIcon(handler, a2
+   && RJSHelper::is_QIcon(handler, a2
   )
 
   
@@ -54,13 +54,13 @@
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: fallback (QIcon)
   
 QIcon a2_cpp;
 
-      a2_cpp = js2cpp_QIcon(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QIcon(handler, a2);
         
 
     // call function:
@@ -78,7 +78,7 @@ QIcon a2_cpp;
           
             // return type: QIcon
 
-            return cpp2js_QIcon(
+            return RJSHelper::cpp2js_QIcon(
               handler, 
               // non-copyable: false
                   res
@@ -89,7 +89,7 @@ QIcon a2_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   &&
@@ -104,7 +104,7 @@ QIcon a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -121,7 +121,7 @@ QString a1_cpp;
           
             // return type: QIcon
 
-            return cpp2js_QIcon(
+            return RJSHelper::cpp2js_QIcon(
               handler, 
               // non-copyable: false
                   res
@@ -155,7 +155,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -167,7 +167,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -184,7 +184,7 @@ QString a1_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -230,7 +230,7 @@ QString a1_cpp;
           
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -264,7 +264,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QStringList(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
   
@@ -276,7 +276,7 @@ QString a1_cpp;
   
 QStringList a1_cpp;
 
-      a1_cpp = js2cpp_QStringList(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
 
     // call function:
@@ -331,7 +331,7 @@ QStringList a1_cpp;
           
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -365,7 +365,7 @@ QStringList a1_cpp;
                 
       // check parameter types:
       if (
-        is_QStringList(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
   
@@ -377,7 +377,7 @@ QStringList a1_cpp;
   
 QStringList a1_cpp;
 
-      a1_cpp = js2cpp_QStringList(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
 
     // call function:
@@ -432,7 +432,7 @@ QStringList a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -466,7 +466,7 @@ QStringList a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -478,7 +478,7 @@ QStringList a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -533,7 +533,7 @@ QString a1_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -567,7 +567,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -579,7 +579,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -747,7 +747,7 @@ QIcon_Wrapper::QIcon_Wrapper
                 
       // check parameter types:
       if (
-        is_QPixmap(handler, a1
+        RJSHelper::is_QPixmap(handler, a1
   )
 
   
@@ -759,7 +759,7 @@ QIcon_Wrapper::QIcon_Wrapper
   
 QPixmap a1_cpp;
 
-      a1_cpp = js2cpp_QPixmap(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPixmap(handler, a1);
         
 
     // call function:
@@ -785,7 +785,7 @@ QPixmap a1_cpp;
 
       // check parameter types:
       if (
-        is_QIcon(handler, a1
+        RJSHelper::is_QIcon(handler, a1
   )
 
   
@@ -797,7 +797,7 @@ QPixmap a1_cpp;
   
 QIcon a1_cpp;
 
-      a1_cpp = js2cpp_QIcon(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QIcon(handler, a1);
         
 
     // call function:
@@ -823,7 +823,7 @@ QIcon a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -835,7 +835,7 @@ QIcon a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -931,7 +931,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QIcon(handler, a1
+        RJSHelper::is_QIcon(handler, a1
   )
 
   
@@ -943,7 +943,7 @@ QString a1_cpp;
   
 QIcon a1_cpp;
 
-      a1_cpp = js2cpp_QIcon(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QIcon(handler, a1);
         
 
     // call function:
@@ -1003,18 +1003,18 @@ QIcon a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_QIcon_Mode(handler, a3
+   && RJSHelper::is_QIcon_Mode(handler, a3
     , true
   
   )
 
-   && is_QIcon_State(handler, a4
+   && RJSHelper::is_QIcon_State(handler, a4
     , true
   
   )
@@ -1028,13 +1028,13 @@ QIcon a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: h (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: mode (QIcon::Mode)
   
@@ -1045,7 +1045,7 @@ QIcon::Mode a3_cpp;
             a3_cpp = QIcon::Normal;
           }
           else {
-            a3_cpp = js2cpp_QIcon_Mode(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a3);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -1057,7 +1057,7 @@ QIcon::State a4_cpp;
             a4_cpp = QIcon::Off;
           }
           else {
-            a4_cpp = js2cpp_QIcon_State(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QIcon_State(handler, a4);
           }
         
 
@@ -1087,7 +1087,7 @@ QIcon::State a4_cpp;
               
             // return type: QPixmap
 
-            return cpp2js_QPixmap(
+            return RJSHelper::cpp2js_QPixmap(
               handler, 
               // non-copyable: false
                   res
@@ -1098,18 +1098,18 @@ QIcon::State a4_cpp;
 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
-   && is_qreal(handler, a2
+   && RJSHelper::is_qreal(handler, a2
   )
 
-   && is_QIcon_Mode(handler, a3
+   && RJSHelper::is_QIcon_Mode(handler, a3
     , true
   
   )
 
-   && is_QIcon_State(handler, a4
+   && RJSHelper::is_QIcon_State(handler, a4
     , true
   
   )
@@ -1123,13 +1123,13 @@ QIcon::State a4_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
   // convert js parameter to cpp: devicePixelRatio (qreal)
   
 qreal a2_cpp;
 
-      a2_cpp = js2cpp_qreal(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
         
   // convert js parameter to cpp: mode (QIcon::Mode)
   
@@ -1140,7 +1140,7 @@ QIcon::Mode a3_cpp;
             a3_cpp = QIcon::Normal;
           }
           else {
-            a3_cpp = js2cpp_QIcon_Mode(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a3);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -1152,7 +1152,7 @@ QIcon::State a4_cpp;
             a4_cpp = QIcon::Off;
           }
           else {
-            a4_cpp = js2cpp_QIcon_State(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QIcon_State(handler, a4);
           }
         
 
@@ -1182,7 +1182,7 @@ QIcon::State a4_cpp;
               
             // return type: QPixmap
 
-            return cpp2js_QPixmap(
+            return RJSHelper::cpp2js_QPixmap(
               handler, 
               // non-copyable: false
                   res
@@ -1193,15 +1193,15 @@ QIcon::State a4_cpp;
 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
-   && is_QIcon_Mode(handler, a2
+   && RJSHelper::is_QIcon_Mode(handler, a2
     , true
   
   )
 
-   && is_QIcon_State(handler, a3
+   && RJSHelper::is_QIcon_State(handler, a3
     , true
   
   )
@@ -1215,7 +1215,7 @@ QIcon::State a4_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
   // convert js parameter to cpp: mode (QIcon::Mode)
   
@@ -1226,7 +1226,7 @@ QIcon::Mode a2_cpp;
             a2_cpp = QIcon::Normal;
           }
           else {
-            a2_cpp = js2cpp_QIcon_Mode(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a2);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -1238,7 +1238,7 @@ QIcon::State a3_cpp;
             a3_cpp = QIcon::Off;
           }
           else {
-            a3_cpp = js2cpp_QIcon_State(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QIcon_State(handler, a3);
           }
         
 
@@ -1267,7 +1267,7 @@ QIcon::State a3_cpp;
               
             // return type: QPixmap
 
-            return cpp2js_QPixmap(
+            return RJSHelper::cpp2js_QPixmap(
               handler, 
               // non-copyable: false
                   res
@@ -1278,15 +1278,15 @@ QIcon::State a3_cpp;
 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_QIcon_Mode(handler, a2
+   && RJSHelper::is_QIcon_Mode(handler, a2
     , true
   
   )
 
-   && is_QIcon_State(handler, a3
+   && RJSHelper::is_QIcon_State(handler, a3
     , true
   
   )
@@ -1300,7 +1300,7 @@ QIcon::State a3_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: mode (QIcon::Mode)
   
@@ -1311,7 +1311,7 @@ QIcon::Mode a2_cpp;
             a2_cpp = QIcon::Normal;
           }
           else {
-            a2_cpp = js2cpp_QIcon_Mode(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a2);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -1323,7 +1323,7 @@ QIcon::State a3_cpp;
             a3_cpp = QIcon::Off;
           }
           else {
-            a3_cpp = js2cpp_QIcon_State(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QIcon_State(handler, a3);
           }
         
 
@@ -1352,7 +1352,7 @@ QIcon::State a3_cpp;
               
             // return type: QPixmap
 
-            return cpp2js_QPixmap(
+            return RJSHelper::cpp2js_QPixmap(
               handler, 
               // non-copyable: false
                   res
@@ -1396,15 +1396,15 @@ QIcon::State a3_cpp;
                 
       // check parameter types:
       if (
-        is_QSize(handler, a1
+        RJSHelper::is_QSize(handler, a1
   )
 
-   && is_QIcon_Mode(handler, a2
+   && RJSHelper::is_QIcon_Mode(handler, a2
     , true
   
   )
 
-   && is_QIcon_State(handler, a3
+   && RJSHelper::is_QIcon_State(handler, a3
     , true
   
   )
@@ -1418,7 +1418,7 @@ QIcon::State a3_cpp;
   
 QSize a1_cpp;
 
-      a1_cpp = js2cpp_QSize(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
         
   // convert js parameter to cpp: mode (QIcon::Mode)
   
@@ -1429,7 +1429,7 @@ QIcon::Mode a2_cpp;
             a2_cpp = QIcon::Normal;
           }
           else {
-            a2_cpp = js2cpp_QIcon_Mode(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a2);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -1441,7 +1441,7 @@ QIcon::State a3_cpp;
             a3_cpp = QIcon::Off;
           }
           else {
-            a3_cpp = js2cpp_QIcon_State(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QIcon_State(handler, a3);
           }
         
 
@@ -1470,7 +1470,7 @@ QIcon::State a3_cpp;
               
             // return type: QSize
 
-            return cpp2js_QSize(
+            return RJSHelper::cpp2js_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -1531,7 +1531,7 @@ QIcon::State a3_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1581,34 +1581,34 @@ QIcon::State a3_cpp;
                 
       // check parameter types:
       if (
-        is_QPainter_ptr(handler, a1
+        RJSHelper::is_QPainter_ptr(handler, a1
     , true
   
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
   )
 
-   && is_int(handler, a4
+   && RJSHelper::is_int(handler, a4
   )
 
-   && is_int(handler, a5
+   && RJSHelper::is_int(handler, a5
   )
 
-   && is_Qt_Alignment(handler, a6
+   && RJSHelper::is_Qt_Alignment(handler, a6
     , true
   
   )
 
-   && is_QIcon_Mode(handler, a7
+   && RJSHelper::is_QIcon_Mode(handler, a7
     , true
   
   )
 
-   && is_QIcon_State(handler, a8
+   && RJSHelper::is_QIcon_State(handler, a8
     , true
   
   )
@@ -1625,31 +1625,31 @@ QIcon::State a3_cpp;
           QPainter*
          a1_cpp;
 
-      a1_cpp = js2cpp_QPainter_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
         
   // convert js parameter to cpp: x (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
   // convert js parameter to cpp: y (int)
   
 int a3_cpp;
 
-      a3_cpp = js2cpp_int(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
         
   // convert js parameter to cpp: w (int)
   
 int a4_cpp;
 
-      a4_cpp = js2cpp_int(handler, a4);
+      a4_cpp = RJSHelper::js2cpp_int(handler, a4);
         
   // convert js parameter to cpp: h (int)
   
 int a5_cpp;
 
-      a5_cpp = js2cpp_int(handler, a5);
+      a5_cpp = RJSHelper::js2cpp_int(handler, a5);
         
   // convert js parameter to cpp: alignment (Qt::Alignment)
   
@@ -1660,7 +1660,7 @@ Qt::Alignment a6_cpp;
             a6_cpp = Qt::AlignCenter;
           }
           else {
-            a6_cpp = js2cpp_Qt_Alignment(handler, a6);
+            a6_cpp = RJSHelper::js2cpp_Qt_Alignment(handler, a6);
           }
         
   // convert js parameter to cpp: mode (QIcon::Mode)
@@ -1672,7 +1672,7 @@ QIcon::Mode a7_cpp;
             a7_cpp = QIcon::Normal;
           }
           else {
-            a7_cpp = js2cpp_QIcon_Mode(handler, a7);
+            a7_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a7);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -1684,7 +1684,7 @@ QIcon::State a8_cpp;
             a8_cpp = QIcon::Off;
           }
           else {
-            a8_cpp = js2cpp_QIcon_State(handler, a8);
+            a8_cpp = RJSHelper::js2cpp_QIcon_State(handler, a8);
           }
         
 
@@ -1721,25 +1721,25 @@ QIcon::State a8_cpp;
 
       // check parameter types:
       if (
-        is_QPainter_ptr(handler, a1
+        RJSHelper::is_QPainter_ptr(handler, a1
     , true
   
   )
 
-   && is_QRect(handler, a2
+   && RJSHelper::is_QRect(handler, a2
   )
 
-   && is_Qt_Alignment(handler, a3
+   && RJSHelper::is_Qt_Alignment(handler, a3
     , true
   
   )
 
-   && is_QIcon_Mode(handler, a4
+   && RJSHelper::is_QIcon_Mode(handler, a4
     , true
   
   )
 
-   && is_QIcon_State(handler, a5
+   && RJSHelper::is_QIcon_State(handler, a5
     , true
   
   )
@@ -1756,13 +1756,13 @@ QIcon::State a8_cpp;
           QPainter*
          a1_cpp;
 
-      a1_cpp = js2cpp_QPainter_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
         
   // convert js parameter to cpp: rect (QRect)
   
 QRect a2_cpp;
 
-      a2_cpp = js2cpp_QRect(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QRect(handler, a2);
         
   // convert js parameter to cpp: alignment (Qt::Alignment)
   
@@ -1773,7 +1773,7 @@ Qt::Alignment a3_cpp;
             a3_cpp = Qt::AlignCenter;
           }
           else {
-            a3_cpp = js2cpp_Qt_Alignment(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_Qt_Alignment(handler, a3);
           }
         
   // convert js parameter to cpp: mode (QIcon::Mode)
@@ -1785,7 +1785,7 @@ QIcon::Mode a4_cpp;
             a4_cpp = QIcon::Normal;
           }
           else {
-            a4_cpp = js2cpp_QIcon_Mode(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a4);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -1797,7 +1797,7 @@ QIcon::State a5_cpp;
             a5_cpp = QIcon::Off;
           }
           else {
-            a5_cpp = js2cpp_QIcon_State(handler, a5);
+            a5_cpp = RJSHelper::js2cpp_QIcon_State(handler, a5);
           }
         
 
@@ -1877,7 +1877,7 @@ QIcon::State a5_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1934,7 +1934,7 @@ QIcon::State a5_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2038,7 +2038,7 @@ QIcon::State a5_cpp;
               
             // return type: qint64
 
-            return cpp2js_qint64(
+            return RJSHelper::cpp2js_qint64(
               handler, 
               // non-copyable: false
                   res
@@ -2076,15 +2076,15 @@ QIcon::State a5_cpp;
                 
       // check parameter types:
       if (
-        is_QPixmap(handler, a1
+        RJSHelper::is_QPixmap(handler, a1
   )
 
-   && is_QIcon_Mode(handler, a2
+   && RJSHelper::is_QIcon_Mode(handler, a2
     , true
   
   )
 
-   && is_QIcon_State(handler, a3
+   && RJSHelper::is_QIcon_State(handler, a3
     , true
   
   )
@@ -2098,7 +2098,7 @@ QIcon::State a5_cpp;
   
 QPixmap a1_cpp;
 
-      a1_cpp = js2cpp_QPixmap(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPixmap(handler, a1);
         
   // convert js parameter to cpp: mode (QIcon::Mode)
   
@@ -2109,7 +2109,7 @@ QIcon::Mode a2_cpp;
             a2_cpp = QIcon::Normal;
           }
           else {
-            a2_cpp = js2cpp_QIcon_Mode(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a2);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -2121,7 +2121,7 @@ QIcon::State a3_cpp;
             a3_cpp = QIcon::Off;
           }
           else {
-            a3_cpp = js2cpp_QIcon_State(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QIcon_State(handler, a3);
           }
         
 
@@ -2182,20 +2182,20 @@ QIcon::State a3_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QSize(handler, a2
+   && RJSHelper::is_QSize(handler, a2
     , true
   
   )
 
-   && is_QIcon_Mode(handler, a3
+   && RJSHelper::is_QIcon_Mode(handler, a3
     , true
   
   )
 
-   && is_QIcon_State(handler, a4
+   && RJSHelper::is_QIcon_State(handler, a4
     , true
   
   )
@@ -2209,7 +2209,7 @@ QIcon::State a3_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: size (QSize)
   
@@ -2220,7 +2220,7 @@ QSize a2_cpp;
             a2_cpp = QSize();
           }
           else {
-            a2_cpp = js2cpp_QSize(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QSize(handler, a2);
           }
         
   // convert js parameter to cpp: mode (QIcon::Mode)
@@ -2232,7 +2232,7 @@ QIcon::Mode a3_cpp;
             a3_cpp = QIcon::Normal;
           }
           else {
-            a3_cpp = js2cpp_QIcon_Mode(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a3);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -2244,7 +2244,7 @@ QIcon::State a4_cpp;
             a4_cpp = QIcon::Off;
           }
           else {
-            a4_cpp = js2cpp_QIcon_State(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QIcon_State(handler, a4);
           }
         
 
@@ -2304,12 +2304,12 @@ QIcon::State a4_cpp;
                 
       // check parameter types:
       if (
-        is_QIcon_Mode(handler, a1
+        RJSHelper::is_QIcon_Mode(handler, a1
     , true
   
   )
 
-   && is_QIcon_State(handler, a2
+   && RJSHelper::is_QIcon_State(handler, a2
     , true
   
   )
@@ -2328,7 +2328,7 @@ QIcon::Mode a1_cpp;
             a1_cpp = QIcon::Normal;
           }
           else {
-            a1_cpp = js2cpp_QIcon_Mode(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QIcon_Mode(handler, a1);
           }
         
   // convert js parameter to cpp: state (QIcon::State)
@@ -2340,7 +2340,7 @@ QIcon::State a2_cpp;
             a2_cpp = QIcon::Off;
           }
           else {
-            a2_cpp = js2cpp_QIcon_State(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QIcon_State(handler, a2);
           }
         
 
@@ -2368,7 +2368,7 @@ QIcon::State a2_cpp;
               
             // return type: QList<QSize>
 
-            return cpp2js_QList_QSize(
+            return RJSHelper::cpp2js_QList_QSize(
               handler, 
               // non-copyable: false
                   res
@@ -2402,7 +2402,7 @@ QIcon::State a2_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -2414,7 +2414,7 @@ QIcon::State a2_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2489,7 +2489,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res

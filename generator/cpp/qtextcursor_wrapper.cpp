@@ -149,7 +149,7 @@ QTextCursor_Wrapper::QTextCursor_Wrapper
                 
       // check parameter types:
       if (
-        is_QTextDocument_ptr(handler, a1
+        RJSHelper::is_QTextDocument_ptr(handler, a1
     , true
   
   )
@@ -166,7 +166,7 @@ QTextCursor_Wrapper::QTextCursor_Wrapper
           QTextDocument*
          a1_cpp;
 
-      a1_cpp = js2cpp_QTextDocument_ptr(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextDocument_ptr(handler, a1);
         
 
     // call function:
@@ -192,7 +192,7 @@ QTextCursor_Wrapper::QTextCursor_Wrapper
 
       // check parameter types:
       if (
-        is_QTextCursor(handler, a1
+        RJSHelper::is_QTextCursor(handler, a1
   )
 
   
@@ -204,7 +204,7 @@ QTextCursor_Wrapper::QTextCursor_Wrapper
   
 QTextCursor a1_cpp;
 
-      a1_cpp = js2cpp_QTextCursor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextCursor(handler, a1);
         
 
     // call function:
@@ -296,7 +296,7 @@ QTextCursor a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextCursor(handler, a1
+        RJSHelper::is_QTextCursor(handler, a1
   )
 
   
@@ -308,7 +308,7 @@ QTextCursor a1_cpp;
   
 QTextCursor a1_cpp;
 
-      a1_cpp = js2cpp_QTextCursor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextCursor(handler, a1);
         
 
     // call function:
@@ -383,7 +383,7 @@ QTextCursor a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -419,10 +419,10 @@ QTextCursor a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_QTextCursor_MoveMode(handler, a2
+   && RJSHelper::is_QTextCursor_MoveMode(handler, a2
     , true
   
   )
@@ -436,7 +436,7 @@ QTextCursor a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: mode (QTextCursor::MoveMode)
   
@@ -447,7 +447,7 @@ QTextCursor::MoveMode a2_cpp;
             a2_cpp = QTextCursor::MoveAnchor;
           }
           else {
-            a2_cpp = js2cpp_QTextCursor_MoveMode(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QTextCursor_MoveMode(handler, a2);
           }
         
 
@@ -524,7 +524,7 @@ QTextCursor::MoveMode a2_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -581,7 +581,7 @@ QTextCursor::MoveMode a2_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -638,7 +638,7 @@ QTextCursor::MoveMode a2_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -672,7 +672,7 @@ QTextCursor::MoveMode a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -684,7 +684,7 @@ QTextCursor::MoveMode a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -740,15 +740,15 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextCursor_MoveOperation(handler, a1
+        RJSHelper::is_QTextCursor_MoveOperation(handler, a1
   )
 
-   && is_QTextCursor_MoveMode(handler, a2
+   && RJSHelper::is_QTextCursor_MoveMode(handler, a2
     , true
   
   )
 
-   && is_int(handler, a3
+   && RJSHelper::is_int(handler, a3
     , true
   
   )
@@ -762,7 +762,7 @@ QString a1_cpp;
   
 QTextCursor::MoveOperation a1_cpp;
 
-      a1_cpp = js2cpp_QTextCursor_MoveOperation(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextCursor_MoveOperation(handler, a1);
         
   // convert js parameter to cpp:  (QTextCursor::MoveMode)
   
@@ -773,7 +773,7 @@ QTextCursor::MoveMode a2_cpp;
             a2_cpp = QTextCursor::MoveAnchor;
           }
           else {
-            a2_cpp = js2cpp_QTextCursor_MoveMode(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QTextCursor_MoveMode(handler, a2);
           }
         
   // convert js parameter to cpp: n (int)
@@ -785,7 +785,7 @@ int a3_cpp;
             a3_cpp = 1;
           }
           else {
-            a3_cpp = js2cpp_int(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
           }
         
 
@@ -814,7 +814,7 @@ int a3_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -871,7 +871,7 @@ int a3_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -905,7 +905,7 @@ int a3_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -917,7 +917,7 @@ int a3_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -969,7 +969,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -981,7 +981,7 @@ bool a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1056,7 +1056,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1090,7 +1090,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -1102,7 +1102,7 @@ int a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -1177,7 +1177,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1305,7 +1305,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextCursor_SelectionType(handler, a1
+        RJSHelper::is_QTextCursor_SelectionType(handler, a1
   )
 
   
@@ -1317,7 +1317,7 @@ bool a1_cpp;
   
 QTextCursor::SelectionType a1_cpp;
 
-      a1_cpp = js2cpp_QTextCursor_SelectionType(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextCursor_SelectionType(handler, a1);
         
 
     // call function:
@@ -1392,7 +1392,7 @@ QTextCursor::SelectionType a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1449,7 +1449,7 @@ QTextCursor::SelectionType a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1600,7 +1600,7 @@ QTextCursor::SelectionType a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1657,7 +1657,7 @@ QTextCursor::SelectionType a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1714,7 +1714,7 @@ QTextCursor::SelectionType a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1771,7 +1771,7 @@ QTextCursor::SelectionType a1_cpp;
               
             // return type: QTextCharFormat
 
-            return cpp2js_QTextCharFormat(
+            return RJSHelper::cpp2js_QTextCharFormat(
               handler, 
               // non-copyable: false
                   res
@@ -1805,7 +1805,7 @@ QTextCursor::SelectionType a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextCharFormat(handler, a1
+        RJSHelper::is_QTextCharFormat(handler, a1
   )
 
   
@@ -1817,7 +1817,7 @@ QTextCursor::SelectionType a1_cpp;
   
 QTextCharFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextCharFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextCharFormat(handler, a1);
         
 
     // call function:
@@ -1869,7 +1869,7 @@ QTextCharFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextCharFormat(handler, a1
+        RJSHelper::is_QTextCharFormat(handler, a1
   )
 
   
@@ -1881,7 +1881,7 @@ QTextCharFormat a1_cpp;
   
 QTextCharFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextCharFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextCharFormat(handler, a1);
         
 
     // call function:
@@ -1956,7 +1956,7 @@ QTextCharFormat a1_cpp;
               
             // return type: QTextBlockFormat
 
-            return cpp2js_QTextBlockFormat(
+            return RJSHelper::cpp2js_QTextBlockFormat(
               handler, 
               // non-copyable: false
                   res
@@ -1990,7 +1990,7 @@ QTextCharFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextBlockFormat(handler, a1
+        RJSHelper::is_QTextBlockFormat(handler, a1
   )
 
   
@@ -2002,7 +2002,7 @@ QTextCharFormat a1_cpp;
   
 QTextBlockFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextBlockFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextBlockFormat(handler, a1);
         
 
     // call function:
@@ -2054,7 +2054,7 @@ QTextBlockFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextBlockFormat(handler, a1
+        RJSHelper::is_QTextBlockFormat(handler, a1
   )
 
   
@@ -2066,7 +2066,7 @@ QTextBlockFormat a1_cpp;
   
 QTextBlockFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextBlockFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextBlockFormat(handler, a1);
         
 
     // call function:
@@ -2141,7 +2141,7 @@ QTextBlockFormat a1_cpp;
               
             // return type: QTextCharFormat
 
-            return cpp2js_QTextCharFormat(
+            return RJSHelper::cpp2js_QTextCharFormat(
               handler, 
               // non-copyable: false
                   res
@@ -2175,7 +2175,7 @@ QTextBlockFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextCharFormat(handler, a1
+        RJSHelper::is_QTextCharFormat(handler, a1
   )
 
   
@@ -2187,7 +2187,7 @@ QTextBlockFormat a1_cpp;
   
 QTextCharFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextCharFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextCharFormat(handler, a1);
         
 
     // call function:
@@ -2239,7 +2239,7 @@ QTextCharFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextCharFormat(handler, a1
+        RJSHelper::is_QTextCharFormat(handler, a1
   )
 
   
@@ -2251,7 +2251,7 @@ QTextCharFormat a1_cpp;
   
 QTextCharFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextCharFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextCharFormat(handler, a1);
         
 
     // call function:
@@ -2326,7 +2326,7 @@ QTextCharFormat a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2383,7 +2383,7 @@ QTextCharFormat a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2440,7 +2440,7 @@ QTextCharFormat a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2497,7 +2497,7 @@ QTextCharFormat a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2533,10 +2533,10 @@ QTextCharFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextBlockFormat(handler, a1
+        RJSHelper::is_QTextBlockFormat(handler, a1
   )
 
-   && is_QTextCharFormat(handler, a2
+   && RJSHelper::is_QTextCharFormat(handler, a2
   )
 
   
@@ -2548,13 +2548,13 @@ QTextCharFormat a1_cpp;
   
 QTextBlockFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextBlockFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextBlockFormat(handler, a1);
         
   // convert js parameter to cpp: charFormat (QTextCharFormat)
   
 QTextCharFormat a2_cpp;
 
-      a2_cpp = js2cpp_QTextCharFormat(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QTextCharFormat(handler, a2);
         
 
     // call function:
@@ -2584,7 +2584,7 @@ QTextCharFormat a2_cpp;
 
       // check parameter types:
       if (
-        is_QTextBlockFormat(handler, a1
+        RJSHelper::is_QTextBlockFormat(handler, a1
   )
 
   
@@ -2596,7 +2596,7 @@ QTextCharFormat a2_cpp;
   
 QTextBlockFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextBlockFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextBlockFormat(handler, a1);
         
 
     // call function:
@@ -2676,7 +2676,7 @@ QTextBlockFormat a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2688,7 +2688,7 @@ QTextBlockFormat a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2744,10 +2744,10 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextImageFormat(handler, a1
+        RJSHelper::is_QTextImageFormat(handler, a1
   )
 
-   && is_QTextFrameFormat_Position(handler, a2
+   && RJSHelper::is_QTextFrameFormat_Position(handler, a2
   )
 
   
@@ -2759,13 +2759,13 @@ QString a1_cpp;
   
 QTextImageFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextImageFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextImageFormat(handler, a1);
         
   // convert js parameter to cpp: alignment (QTextFrameFormat::Position)
   
 QTextFrameFormat::Position a2_cpp;
 
-      a2_cpp = js2cpp_QTextFrameFormat_Position(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QTextFrameFormat_Position(handler, a2);
         
 
     // call function:
@@ -2795,10 +2795,10 @@ QTextFrameFormat::Position a2_cpp;
 
       // check parameter types:
       if (
-        is_QImage(handler, a1
+        RJSHelper::is_QImage(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
     , true
   
   )
@@ -2812,7 +2812,7 @@ QTextFrameFormat::Position a2_cpp;
   
 QImage a1_cpp;
 
-      a1_cpp = js2cpp_QImage(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QImage(handler, a1);
         
   // convert js parameter to cpp: name (QString)
   
@@ -2823,7 +2823,7 @@ QString a2_cpp;
             a2_cpp = QString();
           }
           else {
-            a2_cpp = js2cpp_QString(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
           }
         
 
@@ -2854,7 +2854,7 @@ QString a2_cpp;
 
       // check parameter types:
       if (
-        is_QTextImageFormat(handler, a1
+        RJSHelper::is_QTextImageFormat(handler, a1
   )
 
   
@@ -2866,7 +2866,7 @@ QString a2_cpp;
   
 QTextImageFormat a1_cpp;
 
-      a1_cpp = js2cpp_QTextImageFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextImageFormat(handler, a1);
         
 
     // call function:
@@ -2895,7 +2895,7 @@ QTextImageFormat a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2907,7 +2907,7 @@ QTextImageFormat a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -3102,7 +3102,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QTextCursor(handler, a1
+        RJSHelper::is_QTextCursor(handler, a1
   )
 
   
@@ -3114,7 +3114,7 @@ QString a1_cpp;
   
 QTextCursor a1_cpp;
 
-      a1_cpp = js2cpp_QTextCursor(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QTextCursor(handler, a1);
         
 
     // call function:
@@ -3140,7 +3140,7 @@ QTextCursor a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -3197,7 +3197,7 @@ QTextCursor a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3254,7 +3254,7 @@ QTextCursor a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -3311,7 +3311,7 @@ QTextCursor a1_cpp;
               
             // return type: QTextDocument*
 
-            return cpp2js_QTextDocument(
+            return RJSHelper::cpp2js_QTextDocument(
               handler, 
               // non-copyable: true
                   res

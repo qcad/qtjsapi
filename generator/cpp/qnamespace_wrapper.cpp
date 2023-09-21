@@ -29,7 +29,7 @@
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -41,7 +41,7 @@
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -58,7 +58,7 @@ int a1_cpp;
           
             // return type: QKeyCombination
 
-            return cpp2js_QKeyCombination(
+            return RJSHelper::cpp2js_QKeyCombination(
               handler, 
               // non-copyable: false
                   res
@@ -219,10 +219,10 @@ QKeyCombination_Wrapper::QKeyCombination_Wrapper
                 
       // check parameter types:
       if (
-        is_Qt_Modifiers(handler, a1
+        RJSHelper::is_Qt_Modifiers(handler, a1
   )
 
-   && is_Qt_Key(handler, a2
+   && RJSHelper::is_Qt_Key(handler, a2
   )
 
   
@@ -234,13 +234,13 @@ QKeyCombination_Wrapper::QKeyCombination_Wrapper
   
 Qt::Modifiers a1_cpp;
 
-      a1_cpp = js2cpp_Qt_Modifiers(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_Qt_Modifiers(handler, a1);
         
   // convert js parameter to cpp: key (Qt::Key)
   
 Qt::Key a2_cpp;
 
-      a2_cpp = js2cpp_Qt_Key(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_Qt_Key(handler, a2);
         
 
     // call function:
@@ -267,7 +267,7 @@ Qt::Key a2_cpp;
 
       // check parameter types:
       if (
-        is_Qt_Key(handler, a1
+        RJSHelper::is_Qt_Key(handler, a1
     , true
   
   )
@@ -286,7 +286,7 @@ Qt::Key a1_cpp;
             a1_cpp = Qt::Key_unknown;
           }
           else {
-            a1_cpp = js2cpp_Qt_Key(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_Qt_Key(handler, a1);
           }
         
 
@@ -376,7 +376,7 @@ Qt::Key a1_cpp;
               
             // return type: Qt::KeyboardModifiers
 
-            return cpp2js_Qt_KeyboardModifiers(
+            return RJSHelper::cpp2js_Qt_KeyboardModifiers(
               handler, 
               // non-copyable: false
                   res
@@ -433,7 +433,7 @@ Qt::Key a1_cpp;
               
             // return type: Qt::Key
 
-            return cpp2js_Qt_Key(
+            return RJSHelper::cpp2js_Qt_Key(
               handler, 
               // non-copyable: false
                   res
@@ -490,7 +490,7 @@ Qt::Key a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res

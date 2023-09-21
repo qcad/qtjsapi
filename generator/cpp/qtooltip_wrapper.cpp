@@ -33,13 +33,13 @@
                 
       // check parameter types:
       if (
-        is_QPoint(handler, a1
+        RJSHelper::is_QPoint(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
-   && is_QWidget_ptr(handler, a3
+   && RJSHelper::is_QWidget_ptr(handler, a3
     , true
   
   )
@@ -53,13 +53,13 @@
   
 QPoint a1_cpp;
 
-      a1_cpp = js2cpp_QPoint(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
         
   // convert js parameter to cpp: text (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
   // convert js parameter to cpp: w (QWidget)
   
@@ -73,7 +73,7 @@ QString a2_cpp;
             a3_cpp = nullptr;
           }
           else {
-            a3_cpp = js2cpp_QWidget_ptr(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a3);
           }
         
 
@@ -169,7 +169,7 @@ QString a2_cpp;
           
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -215,7 +215,7 @@ QString a2_cpp;
           
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -261,7 +261,7 @@ QString a2_cpp;
           
             // return type: QPalette
 
-            return cpp2js_QPalette(
+            return RJSHelper::cpp2js_QPalette(
               handler, 
               // non-copyable: false
                   res
@@ -295,7 +295,7 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_QPalette(handler, a1
+        RJSHelper::is_QPalette(handler, a1
   )
 
   
@@ -307,7 +307,7 @@ QString a2_cpp;
   
 QPalette a1_cpp;
 
-      a1_cpp = js2cpp_QPalette(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QPalette(handler, a1);
         
 
     // call function:
@@ -362,7 +362,7 @@ QPalette a1_cpp;
           
             // return type: QFont
 
-            return cpp2js_QFont(
+            return RJSHelper::cpp2js_QFont(
               handler, 
               // non-copyable: false
                   res
@@ -396,7 +396,7 @@ QPalette a1_cpp;
                 
       // check parameter types:
       if (
-        is_QFont(handler, a1
+        RJSHelper::is_QFont(handler, a1
   )
 
   
@@ -408,7 +408,7 @@ QPalette a1_cpp;
   
 QFont a1_cpp;
 
-      a1_cpp = js2cpp_QFont(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QFont(handler, a1);
         
 
     // call function:

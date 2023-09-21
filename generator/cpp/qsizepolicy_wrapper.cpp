@@ -149,13 +149,13 @@ QSizePolicy_Wrapper::QSizePolicy_Wrapper
                 
       // check parameter types:
       if (
-        is_QSizePolicy_Policy(handler, a1
+        RJSHelper::is_QSizePolicy_Policy(handler, a1
   )
 
-   && is_QSizePolicy_Policy(handler, a2
+   && RJSHelper::is_QSizePolicy_Policy(handler, a2
   )
 
-   && is_QSizePolicy_ControlType(handler, a3
+   && RJSHelper::is_QSizePolicy_ControlType(handler, a3
     , true
   
   )
@@ -169,13 +169,13 @@ QSizePolicy_Wrapper::QSizePolicy_Wrapper
   
 QSizePolicy::Policy a1_cpp;
 
-      a1_cpp = js2cpp_QSizePolicy_Policy(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizePolicy_Policy(handler, a1);
         
   // convert js parameter to cpp: vertical (QSizePolicy::Policy)
   
 QSizePolicy::Policy a2_cpp;
 
-      a2_cpp = js2cpp_QSizePolicy_Policy(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QSizePolicy_Policy(handler, a2);
         
   // convert js parameter to cpp: type (QSizePolicy::ControlType)
   
@@ -186,7 +186,7 @@ QSizePolicy::ControlType a3_cpp;
             a3_cpp = QSizePolicy::DefaultType;
           }
           else {
-            a3_cpp = js2cpp_QSizePolicy_ControlType(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QSizePolicy_ControlType(handler, a3);
           }
         
 
@@ -302,7 +302,7 @@ QSizePolicy::ControlType a3_cpp;
               
             // return type: QSizePolicy::Policy
 
-            return cpp2js_QSizePolicy_Policy(
+            return RJSHelper::cpp2js_QSizePolicy_Policy(
               handler, 
               // non-copyable: false
                   res
@@ -359,7 +359,7 @@ QSizePolicy::ControlType a3_cpp;
               
             // return type: QSizePolicy::Policy
 
-            return cpp2js_QSizePolicy_Policy(
+            return RJSHelper::cpp2js_QSizePolicy_Policy(
               handler, 
               // non-copyable: false
                   res
@@ -416,7 +416,7 @@ QSizePolicy::ControlType a3_cpp;
               
             // return type: QSizePolicy::ControlType
 
-            return cpp2js_QSizePolicy_ControlType(
+            return RJSHelper::cpp2js_QSizePolicy_ControlType(
               handler, 
               // non-copyable: false
                   res
@@ -450,7 +450,7 @@ QSizePolicy::ControlType a3_cpp;
                 
       // check parameter types:
       if (
-        is_QSizePolicy_Policy(handler, a1
+        RJSHelper::is_QSizePolicy_Policy(handler, a1
   )
 
   
@@ -462,7 +462,7 @@ QSizePolicy::ControlType a3_cpp;
   
 QSizePolicy::Policy a1_cpp;
 
-      a1_cpp = js2cpp_QSizePolicy_Policy(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizePolicy_Policy(handler, a1);
         
 
     // call function:
@@ -514,7 +514,7 @@ QSizePolicy::Policy a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSizePolicy_Policy(handler, a1
+        RJSHelper::is_QSizePolicy_Policy(handler, a1
   )
 
   
@@ -526,7 +526,7 @@ QSizePolicy::Policy a1_cpp;
   
 QSizePolicy::Policy a1_cpp;
 
-      a1_cpp = js2cpp_QSizePolicy_Policy(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizePolicy_Policy(handler, a1);
         
 
     // call function:
@@ -578,7 +578,7 @@ QSizePolicy::Policy a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSizePolicy_ControlType(handler, a1
+        RJSHelper::is_QSizePolicy_ControlType(handler, a1
   )
 
   
@@ -590,7 +590,7 @@ QSizePolicy::Policy a1_cpp;
   
 QSizePolicy::ControlType a1_cpp;
 
-      a1_cpp = js2cpp_QSizePolicy_ControlType(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSizePolicy_ControlType(handler, a1);
         
 
     // call function:
@@ -665,7 +665,7 @@ QSizePolicy::ControlType a1_cpp;
               
             // return type: Qt::Orientations
 
-            return cpp2js_Qt_Orientations(
+            return RJSHelper::cpp2js_Qt_Orientations(
               handler, 
               // non-copyable: false
                   res
@@ -699,7 +699,7 @@ QSizePolicy::ControlType a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -711,7 +711,7 @@ QSizePolicy::ControlType a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -786,7 +786,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -820,7 +820,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -832,7 +832,7 @@ bool a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -907,7 +907,7 @@ bool a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -964,7 +964,7 @@ bool a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1021,7 +1021,7 @@ bool a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1055,7 +1055,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1067,7 +1067,7 @@ bool a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1119,7 +1119,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1131,7 +1131,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1206,7 +1206,7 @@ int a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1240,7 +1240,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -1252,7 +1252,7 @@ int a1_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -1374,7 +1374,7 @@ bool a1_cpp;
               
             // return type: QSizePolicy
 
-            return cpp2js_QSizePolicy(
+            return RJSHelper::cpp2js_QSizePolicy(
               handler, 
               // non-copyable: false
                   res

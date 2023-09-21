@@ -69,7 +69,7 @@
         //}
 
         
-            return js2cpp_QSize(handler, res);
+            return RJSHelper::js2cpp_QSize(handler, res);
           
       }
 
@@ -106,7 +106,7 @@
         QJSValueList args;
         
 
-  args << cpp2js_QLayoutItem(
+  args << RJSHelper::cpp2js_QLayoutItem(
     handler, 
     // non-copyable: true
 a1
@@ -205,7 +205,7 @@ a1
         //}
 
         
-            return js2cpp_QSize(handler, res);
+            return RJSHelper::js2cpp_QSize(handler, res);
           
       }
 
@@ -241,7 +241,7 @@ a1
         QJSValueList args;
         
 
-  args << cpp2js_QRect(
+  args << RJSHelper::cpp2js_QRect(
     handler, 
     // non-copyable: false
 a1
@@ -313,7 +313,7 @@ a1
         QJSValueList args;
         
 
-  args << cpp2js_int(
+  args << RJSHelper::cpp2js_int(
     handler, 
     // non-copyable: false
 index
@@ -346,7 +346,7 @@ index
         //}
 
         
-            return js2cpp_QLayoutItem_ptr(handler, res);
+            return RJSHelper::js2cpp_QLayoutItem_ptr(handler, res);
           
       }
 
@@ -383,7 +383,7 @@ index
         QJSValueList args;
         
 
-  args << cpp2js_int(
+  args << RJSHelper::cpp2js_int(
     handler, 
     // non-copyable: false
 index
@@ -416,7 +416,7 @@ index
         //}
 
         
-            return js2cpp_QLayoutItem_ptr(handler, res);
+            return RJSHelper::js2cpp_QLayoutItem_ptr(handler, res);
           
       }
 
@@ -481,7 +481,7 @@ index
         //}
 
         
-            return js2cpp_int(handler, res);
+            return RJSHelper::js2cpp_int(handler, res);
           
       }
 

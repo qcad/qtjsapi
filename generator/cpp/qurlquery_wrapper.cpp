@@ -145,7 +145,7 @@ QUrlQuery_Wrapper::QUrlQuery_Wrapper
                 
       // check parameter types:
       if (
-        is_QUrl(handler, a1
+        RJSHelper::is_QUrl(handler, a1
   )
 
   
@@ -157,7 +157,7 @@ QUrlQuery_Wrapper::QUrlQuery_Wrapper
   
 QUrl a1_cpp;
 
-      a1_cpp = js2cpp_QUrl(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QUrl(handler, a1);
         
 
     // call function:
@@ -183,7 +183,7 @@ QUrl a1_cpp;
 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -195,7 +195,7 @@ QUrl a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -221,7 +221,7 @@ QString a1_cpp;
 
       // check parameter types:
       if (
-        is_QUrlQuery(handler, a1
+        RJSHelper::is_QUrlQuery(handler, a1
   )
 
   
@@ -233,7 +233,7 @@ QString a1_cpp;
   
 QUrlQuery a1_cpp;
 
-      a1_cpp = js2cpp_QUrlQuery(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QUrlQuery(handler, a1);
         
 
     // call function:
@@ -321,7 +321,7 @@ QUrlQuery a1_cpp;
                 
       // check parameter types:
       if (
-        is_QUrlQuery(handler, a1
+        RJSHelper::is_QUrlQuery(handler, a1
   )
 
   
@@ -333,7 +333,7 @@ QUrlQuery a1_cpp;
   
 QUrlQuery a1_cpp;
 
-      a1_cpp = js2cpp_QUrlQuery(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QUrlQuery(handler, a1);
         
 
     // call function:
@@ -362,7 +362,7 @@ QUrlQuery a1_cpp;
               
             // return type: QUrlQuery&
 
-            return cpp2js_QUrlQuery(
+            return RJSHelper::cpp2js_QUrlQuery(
               handler, 
               // non-copyable: false
                   // return type is reference, type is copyable:
@@ -400,7 +400,7 @@ QUrlQuery a1_cpp;
                 
       // check parameter types:
       if (
-        is_QUrlQuery(handler, a1
+        RJSHelper::is_QUrlQuery(handler, a1
   )
 
   
@@ -412,7 +412,7 @@ QUrlQuery a1_cpp;
   
 QUrlQuery a1_cpp;
 
-      a1_cpp = js2cpp_QUrlQuery(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QUrlQuery(handler, a1);
         
 
     // call function:
@@ -438,7 +438,7 @@ QUrlQuery a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -474,7 +474,7 @@ QUrlQuery a1_cpp;
                 
       // check parameter types:
       if (
-        is_QUrlQuery(handler, a1
+        RJSHelper::is_QUrlQuery(handler, a1
   )
 
   
@@ -486,7 +486,7 @@ QUrlQuery a1_cpp;
   
 QUrlQuery a1_cpp;
 
-      a1_cpp = js2cpp_QUrlQuery(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QUrlQuery(handler, a1);
         
 
     // call function:
@@ -512,7 +512,7 @@ QUrlQuery a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -546,7 +546,7 @@ QUrlQuery a1_cpp;
                 
       // check parameter types:
       if (
-        is_QUrlQuery(handler, a1
+        RJSHelper::is_QUrlQuery(handler, a1
   )
 
   
@@ -558,7 +558,7 @@ QUrlQuery a1_cpp;
   
 QUrlQuery a1_cpp;
 
-      a1_cpp = js2cpp_QUrlQuery(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QUrlQuery(handler, a1);
         
 
     // call function:
@@ -633,7 +633,7 @@ QUrlQuery a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -690,7 +690,7 @@ QUrlQuery a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -773,7 +773,7 @@ QUrlQuery a1_cpp;
                 
       // check parameter types:
       if (
-        is_QUrl_ComponentFormattingOptions(handler, a1
+        RJSHelper::is_QUrl_ComponentFormattingOptions(handler, a1
     , true
   
   )
@@ -792,7 +792,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
             a1_cpp = QUrl::PrettyDecoded;
           }
           else {
-            a1_cpp = js2cpp_QUrl_ComponentFormattingOptions(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QUrl_ComponentFormattingOptions(handler, a1);
           }
         
 
@@ -819,7 +819,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -853,7 +853,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -865,7 +865,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -919,7 +919,7 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QUrl_ComponentFormattingOptions(handler, a1
+        RJSHelper::is_QUrl_ComponentFormattingOptions(handler, a1
     , true
   
   )
@@ -938,7 +938,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
             a1_cpp = QUrl::PrettyDecoded;
           }
           else {
-            a1_cpp = js2cpp_QUrl_ComponentFormattingOptions(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QUrl_ComponentFormattingOptions(handler, a1);
           }
         
 
@@ -965,7 +965,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1001,10 +1001,10 @@ QUrl::ComponentFormattingOptions a1_cpp;
                 
       // check parameter types:
       if (
-        is_QChar(handler, a1
+        RJSHelper::is_QChar(handler, a1
   )
 
-   && is_QChar(handler, a2
+   && RJSHelper::is_QChar(handler, a2
   )
 
   
@@ -1016,13 +1016,13 @@ QUrl::ComponentFormattingOptions a1_cpp;
   
 QChar a1_cpp;
 
-      a1_cpp = js2cpp_QChar(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QChar(handler, a1);
         
   // convert js parameter to cpp: pairDelimiter (QChar)
   
 QChar a2_cpp;
 
-      a2_cpp = js2cpp_QChar(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QChar(handler, a2);
         
 
     // call function:
@@ -1098,7 +1098,7 @@ QChar a2_cpp;
               
             // return type: QChar
 
-            return cpp2js_QChar(
+            return RJSHelper::cpp2js_QChar(
               handler, 
               // non-copyable: false
                   res
@@ -1155,7 +1155,7 @@ QChar a2_cpp;
               
             // return type: QChar
 
-            return cpp2js_QChar(
+            return RJSHelper::cpp2js_QChar(
               handler, 
               // non-copyable: false
                   res
@@ -1189,7 +1189,7 @@ QChar a2_cpp;
                 
       // check parameter types:
       if (
-        is_QList_QPair_QString_QString(handler, a1
+        RJSHelper::is_QList_QPair_QString_QString(handler, a1
   )
 
   
@@ -1201,7 +1201,7 @@ QChar a2_cpp;
   
 QList<QPair<QString,QString>> a1_cpp;
 
-      a1_cpp = js2cpp_QList_QPair_QString_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QList_QPair_QString_QString(handler, a1);
         
 
     // call function:
@@ -1255,7 +1255,7 @@ QList<QPair<QString,QString>> a1_cpp;
                 
       // check parameter types:
       if (
-        is_QUrl_ComponentFormattingOptions(handler, a1
+        RJSHelper::is_QUrl_ComponentFormattingOptions(handler, a1
     , true
   
   )
@@ -1274,7 +1274,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
             a1_cpp = QUrl::PrettyDecoded;
           }
           else {
-            a1_cpp = js2cpp_QUrl_ComponentFormattingOptions(handler, a1);
+            a1_cpp = RJSHelper::js2cpp_QUrl_ComponentFormattingOptions(handler, a1);
           }
         
 
@@ -1301,7 +1301,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
               
             // return type: QList<QPair<QString,QString>>
 
-            return cpp2js_QList_QPair_QString_QString(
+            return RJSHelper::cpp2js_QList_QPair_QString_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1337,7 +1337,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1349,7 +1349,7 @@ QUrl::ComponentFormattingOptions a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1375,7 +1375,7 @@ QString a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1411,10 +1411,10 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QString(handler, a2
+   && RJSHelper::is_QString(handler, a2
   )
 
   
@@ -1426,13 +1426,13 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: value (QString)
   
 QString a2_cpp;
 
-      a2_cpp = js2cpp_QString(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
         
 
     // call function:
@@ -1485,7 +1485,7 @@ QString a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1497,7 +1497,7 @@ QString a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -1553,10 +1553,10 @@ QString a1_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QUrl_ComponentFormattingOptions(handler, a2
+   && RJSHelper::is_QUrl_ComponentFormattingOptions(handler, a2
     , true
   
   )
@@ -1570,7 +1570,7 @@ QString a1_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: encoding (QUrl::ComponentFormattingOptions)
   
@@ -1581,7 +1581,7 @@ QUrl::ComponentFormattingOptions a2_cpp;
             a2_cpp = QUrl::PrettyDecoded;
           }
           else {
-            a2_cpp = js2cpp_QUrl_ComponentFormattingOptions(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QUrl_ComponentFormattingOptions(handler, a2);
           }
         
 
@@ -1609,7 +1609,7 @@ QUrl::ComponentFormattingOptions a2_cpp;
               
             // return type: QString
 
-            return cpp2js_QString(
+            return RJSHelper::cpp2js_QString(
               handler, 
               // non-copyable: false
                   res
@@ -1647,10 +1647,10 @@ QUrl::ComponentFormattingOptions a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
-   && is_QUrl_ComponentFormattingOptions(handler, a2
+   && RJSHelper::is_QUrl_ComponentFormattingOptions(handler, a2
     , true
   
   )
@@ -1664,7 +1664,7 @@ QUrl::ComponentFormattingOptions a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
   // convert js parameter to cpp: encoding (QUrl::ComponentFormattingOptions)
   
@@ -1675,7 +1675,7 @@ QUrl::ComponentFormattingOptions a2_cpp;
             a2_cpp = QUrl::PrettyDecoded;
           }
           else {
-            a2_cpp = js2cpp_QUrl_ComponentFormattingOptions(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_QUrl_ComponentFormattingOptions(handler, a2);
           }
         
 
@@ -1703,7 +1703,7 @@ QUrl::ComponentFormattingOptions a2_cpp;
               
             // return type: QStringList
 
-            return cpp2js_QStringList(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -1737,7 +1737,7 @@ QUrl::ComponentFormattingOptions a2_cpp;
                 
       // check parameter types:
       if (
-        is_QString(handler, a1
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -1749,7 +1749,7 @@ QUrl::ComponentFormattingOptions a2_cpp;
   
 QString a1_cpp;
 
-      a1_cpp = js2cpp_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:

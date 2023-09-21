@@ -518,7 +518,7 @@ QJSValue QImageWriter_WrapperSingleton::supportedImageFormats() {
             res2.append(QString(res[i]));
         }
 
-        return cpp2js_QList_QString(handler, res2);
+        return RJSHelper::cpp2js_QList_QString(handler, res2);
     }
 
     qWarning() << "no matching function variant found for QImageWriter_WrapperSingleton::supportedImageFormats";
@@ -536,7 +536,7 @@ QJSValue QImageReader_WrapperSingleton::supportedImageFormats() {
             res2.append(QString(res[i]));
         }
 
-        return cpp2js_QList_QString(handler, res2);
+        return RJSHelper::cpp2js_QList_QString(handler, res2);
     }
 
     qWarning() << "no matching function variant found for QImageReader_WrapperSingleton::supportedImageFormats";

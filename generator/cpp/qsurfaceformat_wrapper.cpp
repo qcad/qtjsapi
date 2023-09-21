@@ -37,7 +37,7 @@
                 
       // check parameter types:
       if (
-        is_QSurfaceFormat(handler, a1
+        RJSHelper::is_QSurfaceFormat(handler, a1
   )
 
   
@@ -49,7 +49,7 @@
   
 QSurfaceFormat a1_cpp;
 
-      a1_cpp = js2cpp_QSurfaceFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSurfaceFormat(handler, a1);
         
 
     // call function:
@@ -104,7 +104,7 @@ QSurfaceFormat a1_cpp;
           
             // return type: QSurfaceFormat
 
-            return cpp2js_QSurfaceFormat(
+            return RJSHelper::cpp2js_QSurfaceFormat(
               handler, 
               // non-copyable: false
                   res
@@ -271,7 +271,7 @@ QSurfaceFormat_Wrapper::QSurfaceFormat_Wrapper
                 
       // check parameter types:
       if (
-        is_QSurfaceFormat(handler, a1
+        RJSHelper::is_QSurfaceFormat(handler, a1
   )
 
   
@@ -283,7 +283,7 @@ QSurfaceFormat_Wrapper::QSurfaceFormat_Wrapper
   
 QSurfaceFormat a1_cpp;
 
-      a1_cpp = js2cpp_QSurfaceFormat(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSurfaceFormat(handler, a1);
         
 
     // call function:
@@ -309,7 +309,7 @@ QSurfaceFormat a1_cpp;
 
       // check parameter types:
       if (
-        is_QSurfaceFormat_FormatOptions(handler, a1
+        RJSHelper::is_QSurfaceFormat_FormatOptions(handler, a1
   )
 
   
@@ -321,7 +321,7 @@ QSurfaceFormat a1_cpp;
   
 QSurfaceFormat::FormatOptions a1_cpp;
 
-      a1_cpp = js2cpp_QSurfaceFormat_FormatOptions(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSurfaceFormat_FormatOptions(handler, a1);
         
 
     // call function:
@@ -421,7 +421,7 @@ QSurfaceFormat::FormatOptions a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -433,7 +433,7 @@ QSurfaceFormat::FormatOptions a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -508,7 +508,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -542,7 +542,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -554,7 +554,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -629,7 +629,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -663,7 +663,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -675,7 +675,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -750,7 +750,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -784,7 +784,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -796,7 +796,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -871,7 +871,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -905,7 +905,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -917,7 +917,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -992,7 +992,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1026,7 +1026,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1038,7 +1038,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1113,7 +1113,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1147,7 +1147,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1159,7 +1159,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1234,7 +1234,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1268,7 +1268,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSurfaceFormat_SwapBehavior(handler, a1
+        RJSHelper::is_QSurfaceFormat_SwapBehavior(handler, a1
   )
 
   
@@ -1280,7 +1280,7 @@ int a1_cpp;
   
 QSurfaceFormat::SwapBehavior a1_cpp;
 
-      a1_cpp = js2cpp_QSurfaceFormat_SwapBehavior(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSurfaceFormat_SwapBehavior(handler, a1);
         
 
     // call function:
@@ -1355,7 +1355,7 @@ QSurfaceFormat::SwapBehavior a1_cpp;
               
             // return type: QSurfaceFormat::SwapBehavior
 
-            return cpp2js_QSurfaceFormat_SwapBehavior(
+            return RJSHelper::cpp2js_QSurfaceFormat_SwapBehavior(
               handler, 
               // non-copyable: false
                   res
@@ -1412,7 +1412,7 @@ QSurfaceFormat::SwapBehavior a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -1446,7 +1446,7 @@ QSurfaceFormat::SwapBehavior a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSurfaceFormat_OpenGLContextProfile(handler, a1
+        RJSHelper::is_QSurfaceFormat_OpenGLContextProfile(handler, a1
   )
 
   
@@ -1458,7 +1458,7 @@ QSurfaceFormat::SwapBehavior a1_cpp;
   
 QSurfaceFormat::OpenGLContextProfile a1_cpp;
 
-      a1_cpp = js2cpp_QSurfaceFormat_OpenGLContextProfile(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSurfaceFormat_OpenGLContextProfile(handler, a1);
         
 
     // call function:
@@ -1533,7 +1533,7 @@ QSurfaceFormat::OpenGLContextProfile a1_cpp;
               
             // return type: QSurfaceFormat::OpenGLContextProfile
 
-            return cpp2js_QSurfaceFormat_OpenGLContextProfile(
+            return RJSHelper::cpp2js_QSurfaceFormat_OpenGLContextProfile(
               handler, 
               // non-copyable: false
                   res
@@ -1567,7 +1567,7 @@ QSurfaceFormat::OpenGLContextProfile a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSurfaceFormat_RenderableType(handler, a1
+        RJSHelper::is_QSurfaceFormat_RenderableType(handler, a1
   )
 
   
@@ -1579,7 +1579,7 @@ QSurfaceFormat::OpenGLContextProfile a1_cpp;
   
 QSurfaceFormat::RenderableType a1_cpp;
 
-      a1_cpp = js2cpp_QSurfaceFormat_RenderableType(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSurfaceFormat_RenderableType(handler, a1);
         
 
     // call function:
@@ -1654,7 +1654,7 @@ QSurfaceFormat::RenderableType a1_cpp;
               
             // return type: QSurfaceFormat::RenderableType
 
-            return cpp2js_QSurfaceFormat_RenderableType(
+            return RJSHelper::cpp2js_QSurfaceFormat_RenderableType(
               handler, 
               // non-copyable: false
                   res
@@ -1688,7 +1688,7 @@ QSurfaceFormat::RenderableType a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1700,7 +1700,7 @@ QSurfaceFormat::RenderableType a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1775,7 +1775,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1809,7 +1809,7 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -1821,7 +1821,7 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
@@ -1896,7 +1896,7 @@ int a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -1932,10 +1932,10 @@ int a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
-   && is_int(handler, a2
+   && RJSHelper::is_int(handler, a2
   )
 
   
@@ -1947,13 +1947,13 @@ int a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
   // convert js parameter to cpp: minor (int)
   
 int a2_cpp;
 
-      a2_cpp = js2cpp_int(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
         
 
     // call function:
@@ -2029,7 +2029,7 @@ int a2_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2063,7 +2063,7 @@ int a2_cpp;
                 
       // check parameter types:
       if (
-        is_bool(handler, a1
+        RJSHelper::is_bool(handler, a1
   )
 
   
@@ -2075,7 +2075,7 @@ int a2_cpp;
   
 bool a1_cpp;
 
-      a1_cpp = js2cpp_bool(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
         
 
     // call function:
@@ -2127,7 +2127,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSurfaceFormat_FormatOptions(handler, a1
+        RJSHelper::is_QSurfaceFormat_FormatOptions(handler, a1
   )
 
   
@@ -2139,7 +2139,7 @@ bool a1_cpp;
   
 QSurfaceFormat::FormatOptions a1_cpp;
 
-      a1_cpp = js2cpp_QSurfaceFormat_FormatOptions(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSurfaceFormat_FormatOptions(handler, a1);
         
 
     // call function:
@@ -2193,10 +2193,10 @@ QSurfaceFormat::FormatOptions a1_cpp;
                 
       // check parameter types:
       if (
-        is_QSurfaceFormat_FormatOption(handler, a1
+        RJSHelper::is_QSurfaceFormat_FormatOption(handler, a1
   )
 
-   && is_bool(handler, a2
+   && RJSHelper::is_bool(handler, a2
     , true
   
   )
@@ -2210,7 +2210,7 @@ QSurfaceFormat::FormatOptions a1_cpp;
   
 QSurfaceFormat::FormatOption a1_cpp;
 
-      a1_cpp = js2cpp_QSurfaceFormat_FormatOption(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSurfaceFormat_FormatOption(handler, a1);
         
   // convert js parameter to cpp: on (bool)
   
@@ -2221,7 +2221,7 @@ bool a2_cpp;
             a2_cpp = true;
           }
           else {
-            a2_cpp = js2cpp_bool(handler, a2);
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
           }
         
 
@@ -2277,7 +2277,7 @@ bool a2_cpp;
                 
       // check parameter types:
       if (
-        is_QSurfaceFormat_FormatOption(handler, a1
+        RJSHelper::is_QSurfaceFormat_FormatOption(handler, a1
   )
 
   
@@ -2289,7 +2289,7 @@ bool a2_cpp;
   
 QSurfaceFormat::FormatOption a1_cpp;
 
-      a1_cpp = js2cpp_QSurfaceFormat_FormatOption(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QSurfaceFormat_FormatOption(handler, a1);
         
 
     // call function:
@@ -2315,7 +2315,7 @@ QSurfaceFormat::FormatOption a1_cpp;
               
             // return type: bool
 
-            return cpp2js_bool(
+            return RJSHelper::cpp2js_bool(
               handler, 
               // non-copyable: false
                   res
@@ -2372,7 +2372,7 @@ QSurfaceFormat::FormatOption a1_cpp;
               
             // return type: QSurfaceFormat::FormatOptions
 
-            return cpp2js_QSurfaceFormat_FormatOptions(
+            return RJSHelper::cpp2js_QSurfaceFormat_FormatOptions(
               handler, 
               // non-copyable: false
                   res
@@ -2429,7 +2429,7 @@ QSurfaceFormat::FormatOption a1_cpp;
               
             // return type: int
 
-            return cpp2js_int(
+            return RJSHelper::cpp2js_int(
               handler, 
               // non-copyable: false
                   res
@@ -2463,7 +2463,7 @@ QSurfaceFormat::FormatOption a1_cpp;
                 
       // check parameter types:
       if (
-        is_int(handler, a1
+        RJSHelper::is_int(handler, a1
   )
 
   
@@ -2475,7 +2475,7 @@ QSurfaceFormat::FormatOption a1_cpp;
   
 int a1_cpp;
 
-      a1_cpp = js2cpp_int(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
         
 
     // call function:
