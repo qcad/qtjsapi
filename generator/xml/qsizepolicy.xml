@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsizepolicy.h">
+  <class_decl name="QVariant" />
+  <class_decl name="QSizePolicy" />
+  <class name="QSizePolicy">
+    <enum name="PolicyFlag">
+      <key>GrowFlag</key>
+      <key>ExpandFlag</key>
+      <key>ShrinkFlag</key>
+      <key>IgnoreFlag</key>
+    </enum>
+    <enum name="Policy">
+      <key>Fixed</key>
+      <key>Minimum</key>
+      <key>Maximum</key>
+      <key>Preferred</key>
+      <key>MinimumExpanding</key>
+      <key>Expanding</key>
+      <key>Ignored</key>
+    </enum>
+    <enum name="ControlType">
+      <key>DefaultType</key>
+      <key>ButtonBox</key>
+      <key>CheckBox</key>
+      <key>ComboBox</key>
+      <key>Frame</key>
+      <key>GroupBox</key>
+      <key>Label</key>
+      <key>Line</key>
+      <key>LineEdit</key>
+      <key>PushButton</key>
+      <key>RadioButton</key>
+      <key>Slider</key>
+      <key>SpinBox</key>
+      <key>TabWidget</key>
+      <key>ToolButton</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSizePolicy::Policy" modifier="" name="horizontal" />
+          <parameter const="false" type="QSizePolicy::Policy" modifier="" name="vertical" />
+          <parameter const="false" type="QSizePolicy::ControlType" modifier="" name="type" default="QSizePolicy::DefaultType" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="horizontalPolicy">
+      <variant return-type="QSizePolicy::Policy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="verticalPolicy">
+      <variant return-type="QSizePolicy::Policy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="controlType">
+      <variant return-type="QSizePolicy::ControlType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHorizontalPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSizePolicy::Policy" modifier="" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVerticalPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSizePolicy::Policy" modifier="" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setControlType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSizePolicy::ControlType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expandingDirections">
+      <variant return-type="Qt::Orientations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeightForWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasHeightForWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidthForHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasWidthForHeight">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="horizontalStretch">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="verticalStretch">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHorizontalStretch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="stretchFactor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVerticalStretch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="stretchFactor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="retainSizeWhenHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRetainSizeWhenHidden">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="retainSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transpose">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transposed">
+      <variant return-type="QSizePolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="transposed">
+      <variant return-type="Bits" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

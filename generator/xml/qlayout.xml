@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qlayout.h">
+  <class_decl name="QLayout" />
+  <class_decl name="QSize" />
+  <class name="QLayout">
+    <super_list>
+      <super name="QObject" />
+      <super name="QLayoutItem" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="spacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setContentsMargins">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="left" />
+          <parameter const="false" type="int" modifier="" name="top" />
+          <parameter const="false" type="int" modifier="" name="right" />
+          <parameter const="false" type="int" modifier="" name="bottom" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QMargins" modifier="&amp;" name="margins" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getContentsMargins">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="*" name="left" />
+          <parameter const="false" type="int" modifier="*" name="top" />
+          <parameter const="false" type="int" modifier="*" name="right" />
+          <parameter const="false" type="int" modifier="*" name="bottom" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="contentsMargins">
+      <variant return-type="QMargins" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contentsRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlignment">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="l" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSizeConstraint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout::SizeConstraint" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeConstraint">
+      <variant return-type="QLayout::SizeConstraint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMenuBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="menuBar">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="parentWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="invalidate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="geometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="activate">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="update">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addItem">
+      <variant return-type="void" virtual="true" pure="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLayoutItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="removeItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayoutItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="expandingDirections">
+      <variant return-type="Qt::Orientations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemAt">
+      <variant return-type="QLayoutItem*" virtual="true" pure="true" overridable="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeAt">
+      <variant return-type="QLayoutItem*" virtual="true" pure="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexOf">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLayoutItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="count">
+      <variant return-type="int" virtual="true" pure="true" overridable="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="controlTypes">
+      <variant return-type="QSizePolicy::ControlTypes" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="replaceWidget">
+      <variant return-type="QLayoutItem*" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="from" />
+          <parameter const="false" type="QWidget" modifier="*" name="to" />
+          <parameter const="false" type="Qt::FindChildOptions" modifier="" name="options"
+          default="Qt::FindChildrenRecursively" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="totalHeightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="totalMinimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="totalMaximumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="totalSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="layout">
+      <variant return-type="QLayout*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="closestAcceptableSize" static="true">
+      <variant return-type="QSize" access="public">
+        <parameters>
+          <parameter const="true" type="QWidget" modifier="*" name="w" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="widgetEvent" />
+    <function name="childEvent" />
+    <function name="addChildLayout" />
+    <function name="addChildWidget" />
+    <function name="adoptLayout" />
+    <function name="alignmentRect" />
+    <function name="activateRecursiveHelper" static="true" />
+    <class_decl name="  QWidget" />
+  </class>
+</unit>

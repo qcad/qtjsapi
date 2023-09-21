@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfileiconprovider.h">
+  <class name="QFileIconProvider" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QAbstractFileIconProvider" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="icon">
+      <variant return-type="QIcon" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractFileIconProvider::IconType" modifier="" name="type" />
+        </parameters>
+      </variant>
+      <variant return-type="QIcon" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFileInfo" modifier="&amp;" name="info" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

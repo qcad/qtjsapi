@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qeventloop.h">
+  <class name="QEventLoop" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <enum name="ProcessEventsFlag">
+      <key>AllEvents</key>
+      <key>ExcludeUserInputEvents</key>
+      <key>ExcludeSocketNotifiers</key>
+      <key>WaitForMoreEvents</key>
+      <key>X11ExcludeTimers</key>
+      <key>EventLoopExec</key>
+      <key>DialogExec</key>
+      <key>ApplicationExec</key>
+    </enum>
+    <function name="processEvents">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QEventLoop::ProcessEventsFlags" modifier="" name="flags" default="QEventLoop::AllEvents" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QEventLoop::ProcessEventsFlags" modifier="" name="flags" />
+          <parameter const="false" type="int" modifier="" name="maximumTime" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exec">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="QEventLoop::ProcessEventsFlags" modifier="" name="flags" default="QEventLoop::AllEvents" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isRunning">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="wakeUp">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="event">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="returnCode" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quit">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <!--
+  <class name="QEventLoopLocker">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEventLoop" modifier="*" name="loop" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QThread" modifier="*" name="thread" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+  -->
+</unit>

@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpalette.h">
+  <class_decl name="QVariant" />
+  <class name="QPalette">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="button" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::GlobalColor" modifier="" name="button" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="button" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="window" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="windowText" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="button" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="light" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="dark" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="mid" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="text" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="bright_text" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="base" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="window" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="windowText" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="window" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="light" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="dark" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="mid" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="text" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="base" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPalette" modifier="&amp;" name="palette" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QPalette" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="ColorGroup">
+      <key>Active</key>
+      <key>Disabled</key>
+      <key>Inactive</key>
+      <key>NColorGroups</key>
+      <key>Current</key>
+      <key>All</key>
+      <key>Normal</key>
+    </enum>
+    <enum name="ColorRole">
+      <key>WindowText</key>
+      <key>Button</key>
+      <key>Light</key>
+      <key>Midlight</key>
+      <key>Dark</key>
+      <key>Mid</key>
+      <key>Text</key>
+      <key>BrightText</key>
+      <key>ButtonText</key>
+      <key>Base</key>
+      <key>Window</key>
+      <key>Shadow</key>
+      <key>Highlight</key>
+      <key>HighlightedText</key>
+      <key>Link</key>
+      <key>LinkVisited</key>
+      <key>AlternateBase</key>
+      <key>NoRole</key>
+      <key>ToolTipBase</key>
+      <key>ToolTipText</key>
+      <key>PlaceholderText</key>
+      <key>NColorRoles</key>
+    </enum>
+    <function name="currentColorGroup">
+      <variant return-type="QPalette::ColorGroup" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentColorGroup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorGroup" modifier="" name="cg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="color">
+      <variant return-type="const QColor&amp;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorGroup" modifier="" name="cg" />
+          <parameter const="false" type="QPalette::ColorRole" modifier="" name="cr" />
+        </parameters>
+      </variant>
+      <variant return-type="const QColor&amp;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorRole" modifier="" name="cr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="brush">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorGroup" modifier="" name="cg" />
+          <parameter const="false" type="QPalette::ColorRole" modifier="" name="cr" />
+        </parameters>
+      </variant>
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorRole" modifier="" name="cr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorGroup" modifier="" name="cg" />
+          <parameter const="false" type="QPalette::ColorRole" modifier="" name="cr" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorRole" modifier="" name="cr" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBrush">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorRole" modifier="" name="cr" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorGroup" modifier="" name="cg" />
+          <parameter const="false" type="QPalette::ColorRole" modifier="" name="cr" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isBrushSet">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorGroup" modifier="" name="cg" />
+          <parameter const="false" type="QPalette::ColorRole" modifier="" name="cr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColorGroup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorGroup" modifier="" name="cr" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="windowText" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="button" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="light" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="dark" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="mid" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="text" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="bright_text" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="base" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="window" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEqual">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPalette::ColorGroup" modifier="" name="cr1" />
+          <parameter const="false" type="QPalette::ColorGroup" modifier="" name="cr2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="windowText">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="button">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="light">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dark">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mid">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="base">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="alternateBase">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toolTipBase">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toolTipText">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="window">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="midlight">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="brightText">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="buttonText">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="shadow">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="highlight">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="highlightedText">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="link">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="linkVisited">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="placeholderText">
+      <variant return-type="const QBrush&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCopyOf">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPalette" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cacheKey">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resolve">
+      <variant return-type="QPalette" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPalette" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="resolveMask">
+      <variant return-type="QPalette::ResolveMask" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setResolveMask">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="ResolveMask" modifier="" name="mask" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setColorGroup" />
+    <function name="init" />
+    <function name="detach" />
+    -->
+  </class>
+</unit>

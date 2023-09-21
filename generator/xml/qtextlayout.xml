@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtextlayout.h">
+  <class_decl name="QFont" />
+  <class_decl name="QRawFont" />
+  <class_decl name="QRect" />
+  <class_decl name="QRegion" />
+  <class_decl name="QTextFormat" />
+  <class_decl name="QPalette" />
+  <class_decl name="QPainter" />
+  <class_decl name="QPaintDevice" />
+  <class_decl name="QTextFormat" />
+  <class_decl name="QTextLine" />
+  <class_decl name="QTextBlock" />
+  <class_decl name="QTextOption" />
+  <class name="QTextLayout" ownership="cpp" sharedpointer="true">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+          <parameter const="true" type="QPaintDevice" modifier="*" name="paintdevice" default="nullptr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QTextBlock" modifier="&amp;" name="b" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <function name="setFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="font">
+      <variant return-type="QFont" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_RAWFONT" />
+    <!--
+    <function name="setRawFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRawFont" modifier="&amp;" name="rawFont" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setTextOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextOption" modifier="&amp;" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textOption">
+      <variant return-type="const QTextOption&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setPreeditArea">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="position" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="preeditAreaPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="preeditAreaText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setFormats">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QTextLayout::FormatRange&gt;" modifier="&amp;" name="overrides" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="formats">
+      <variant return-type="QList&lt;QTextLayout::FormatRange&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="clearFormats">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCacheEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cacheEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCursorMoveStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::CursorMoveStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorMoveStyle">
+      <variant return-type="Qt::CursorMoveStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="beginLayout">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endLayout">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearLayout">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="createLine">
+      <variant return-type="QTextLine" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="lineCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="lineAt">
+      <variant return-type="QTextLine" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="lineForTextPosition">
+      <variant return-type="QTextLine" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="isValidCursorPosition">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nextCursorPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="oldPos" />
+          <parameter const="false" type="QTextLayout::CursorMode" modifier="" name="mode" default="QTextLayout::SkipCharacters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="previousCursorPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="oldPos" />
+          <parameter const="false" type="QTextLayout::CursorMode" modifier="" name="mode" default="QTextLayout::SkipCharacters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftCursorPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="oldPos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightCursorPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="oldPos" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="draw">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="p" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+          <parameter const="true" type="QList&lt;QTextLayout::FormatRange&gt;" modifier="&amp;" name="selections"
+          default="QList&lt;QTextLayout::FormatRange&gt;()" />
+          <parameter const="true" type="QRectF" modifier="&amp;" name="clip" default="QRectF()" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="drawCursor">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="p" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+          <parameter const="false" type="int" modifier="" name="cursorPosition" />
+        </parameters>
+      </variant>
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="p" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+          <parameter const="false" type="int" modifier="" name="cursorPosition" />
+          <parameter const="false" type="int" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if !defined(QT_NO_RAWFONT)" />
+    <!--
+    <function name="glyphRuns">
+      <variant return-type="QList&lt;QGlyphRun&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="from" default="-1" />
+          <parameter const="false" type="int" modifier="" name="length" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="setFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QPainter" />
+    <class_decl name="QGraphicsSimpleTextItem" />
+    <function name="qt_format_text" />
+  </class>
+  <!--
+  <class name="QTextLine">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="x">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ascent">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="descent">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="leading">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeadingIncluded">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="included" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leadingIncluded">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="naturalTextWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="horizontalAdvance">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="naturalTextRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cursorToX">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="*" name="cursorPos" />
+          <parameter const="false" type="Edge" modifier="" name="edge" default="Leading" />
+        </parameters>
+      </variant>
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="cursorPos" />
+          <parameter const="false" type="Edge" modifier="" name="edge" default="Leading" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="xToCursor">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="CursorPosition" modifier="" name="" default="CursorBetweenCharacters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLineWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNumColumns">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="columns" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="columns" />
+          <parameter const="false" type="qreal" modifier="" name="alignmentWidth" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="textStart">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="textLength">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lineNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="draw">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if !defined(QT_NO_RAWFONT)" />
+    <function name="glyphRuns">
+      <variant return-type="QList&lt;QGlyphRun&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="from" default="-1" />
+          <parameter const="false" type="int" modifier="" name="length" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="layout_helper" />
+    <function name="draw_internal" />
+    <class_decl name="QTextLayout" />
+    <class_decl name="QTextFragment" />
+  </class>
+  -->
+</unit>

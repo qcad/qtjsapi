@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qlayoutitem.h">
+  <class_decl name="QLayout" />
+  <class_decl name="QLayoutItem" />
+  <class_decl name="QSpacerItem" />
+  <class_decl name="QWidget" />
+  <class_decl name="QSize" />
+  <class name="QLayoutItem">
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" default="Qt::Alignment()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="aalignment" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <function name="sizeHint">
+      <variant return-type="QSize" virtual="true" pure="true" overridable="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumSize">
+      <variant return-type="QSize" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="expandingDirections">
+      <variant return-type="Qt::Orientations" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="geometry">
+      <variant return-type="QRect" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasHeightForWidth">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumHeightForWidth">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="invalidate">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="widget">
+      <variant return-type="QWidget*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="layout">
+      <variant return-type="QLayout*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="spacerItem">
+      <variant return-type="QSpacerItem*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="alignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="controlTypes">
+      <variant return-type="QSizePolicy::ControlTypes" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QSpacerItem">
+    <super_list>
+      <super name="QLayoutItem" />
+    </super_list>
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="aalignment" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="QSizePolicy::Policy" modifier="" name="hData"
+          default="QSizePolicy::Minimum" />
+          <parameter const="false" type="QSizePolicy::Policy" modifier="" name="vData"
+          default="QSizePolicy::Minimum" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="changeSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="QSizePolicy::Policy" modifier="" name="hData"
+          default="QSizePolicy::Minimum" />
+          <parameter const="false" type="QSizePolicy::Policy" modifier="" name="vData"
+          default="QSizePolicy::Minimum" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="expandingDirections">
+      <variant return-type="Qt::Orientations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="geometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="spacerItem">
+      <variant return-type="QSpacerItem*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizePolicy">
+      <variant return-type="QSizePolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QWidgetItem">
+    <super_list>
+      <super name="QLayoutItem" />
+    </super_list>
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="aalignment" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="expandingDirections">
+      <variant return-type="Qt::Orientations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="geometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="widget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasHeightForWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumHeightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="controlTypes">
+      <variant return-type="QSizePolicy::ControlTypes" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <!--
+  <class name="QWidgetItemV2">
+    <super_list>
+      <super name="QWidgetItem" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="aalignment" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="">
+      <key>Dirty</key>
+      <key>HfwCacheMaxSize</key>
+    </enum>
+    <function name="useSizeCache" />
+    <function name="updateCacheIfNecessary" />
+    <function name="invalidateSizeCache" />
+  </class>
+  -->
+</unit>

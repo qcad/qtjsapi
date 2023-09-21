@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qquickwidget.h">
+  <class_decl name="QQmlEngine" />
+  <class_decl name="QQmlContext" />
+  <class_decl name="QQmlError" />
+  <class_decl name="QQuickItem" />
+  <class_decl name="QQmlComponent" />
+  <class name="QQuickWidget" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <property type="QQuickWidget::Status" name="status" read="status" />
+    <property type="QUrl" name="source" read="source" write="setSource" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QQmlEngine" modifier="*" name="engine" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="source" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="source">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="engine">
+      <variant return-type="QQmlEngine*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rootContext">
+      <variant return-type="QQmlContext*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rootObject">
+      <variant return-type="QQuickItem*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <enum name="ResizeMode">
+      <key>SizeViewToRootObject</key>
+      <key>SizeRootObjectToView</key>
+    </enum>
+    <function name="resizeMode">
+      <variant return-type="QQuickWidget::ResizeMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setResizeMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QQuickWidget::ResizeMode" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="Status">
+      <key>Null</key>
+      <key>Ready</key>
+      <key>Loading</key>
+      <key>Error</key>
+    </enum>
+    <function name="status">
+      <variant return-type="QQuickWidget::Status" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="errors">
+      <variant return-type="QList&lt;QQmlError&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="initialSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="format">
+      <variant return-type="QSurfaceFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="grabFramebuffer">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setClearColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="quickWindow">
+      <variant return-type="QQuickWindow*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setSource">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setContent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+          <parameter const="false" type="QQmlComponent" modifier="*" name="component" />
+          <parameter const="false" type="QObject" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="statusChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QQuickWidget::Status" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="sceneGraphError">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QQuickWindow::SceneGraphError" modifier="" name="error" />
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="continueExecute" />
+    <function name="createFramebufferObject" />
+    <function name="destroyFramebufferObject" />
+    <function name="triggerUpdate" />
+    <function name="propagateFocusObjectChanged" />
+    <!--
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="timerEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QTimerEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyPressEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyReleaseEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseDoubleClickEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="showEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QShowEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hideEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QHideEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusInEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QFocusEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusOutEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QFocusEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <function name="wheelEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QWheelEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(quick_draganddrop)" />
+    <function name="dragEnterEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragEnterEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragMoveEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragLeaveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragLeaveEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dropEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QDropEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusNextPrevChild">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="next" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

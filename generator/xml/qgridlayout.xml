@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qgridlayout.h">
+  <class name="QGridLayout" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QLayoutItem" />
+      <super name="QLayout" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHorizontalSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="horizontalSpacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVerticalSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="verticalSpacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="spacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRowStretch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="stretch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColumnStretch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="stretch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowStretch">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnStretch">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRowMinimumHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="minSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColumnMinimumWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="minSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowMinimumHeight">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnMinimumWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rowCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cellRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasHeightForWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumHeightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expandingDirections">
+      <variant return-type="Qt::Orientations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="invalidate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="" default="Qt::Alignment()" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="rowSpan" />
+          <parameter const="false" type="int" modifier="" name="columnSpan" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="" default="Qt::Alignment()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addLayout">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="" default="Qt::Alignment()" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="rowSpan" />
+          <parameter const="false" type="int" modifier="" name="columnSpan" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="" default="Qt::Alignment()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOriginCorner">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Corner" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="originCorner">
+      <variant return-type="Qt::Corner" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="itemAt">
+      <variant return-type="QLayoutItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemAtPosition">
+      <variant return-type="QLayoutItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeAt">
+      <variant return-type="QLayoutItem*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayoutItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="rowSpan" default="1" />
+          <parameter const="false" type="int" modifier="" name="columnSpan" default="1" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="" default="Qt::Alignment()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDefaultPositioning">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="n" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orient" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getItemPosition">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="idx" />
+          <parameter const="false" type="int" modifier="*" name="row" />
+          <parameter const="false" type="int" modifier="*" name="column" />
+          <parameter const="false" type="int" modifier="*" name="rowSpan" />
+          <parameter const="false" type="int" modifier="*" name="columnSpan" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="addItem">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QLayoutItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

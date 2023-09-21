@@ -1,0 +1,752 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtextedit.h">
+  <class_decl name="QTextDocument" />
+  <class_decl name="QMenu" />
+  <class_decl name="QMimeData" />
+  <!--
+  <class_decl name="QPagedPaintDevice" />
+  -->
+  <class_decl name="QRegularExpression" />
+  <class name="QTextEdit">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+    </super_list>
+    <function name="Q_DECLARE_PRIVATE" />
+    <preproc plain="#if QT_CONFIG(textmarkdownreader)&amp;&amp;QT_CONFIG(textmarkdownwriter)" />
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_TEXTHTMLPARSER" />
+    <preproc plain="#endif" />
+    <enum name="LineWrapMode">
+      <key>NoWrap</key>
+      <key>WidgetWidth</key>
+      <key>FixedPixelWidth</key>
+      <key>FixedColumnWidth</key>
+    </enum>
+    <enum name="AutoFormattingFlag">
+      <key>AutoNone</key>
+      <key>AutoBulletList</key>
+      <key>AutoAll</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="QTextEdit::AutoFormatting" name="autoFormatting" read="autoFormatting" write="setAutoFormatting" />
+    <property type="bool" name="tabChangesFocus" read="tabChangesFocus" write="setTabChangesFocus" />
+    <property type="QString" name="documentTitle" read="documentTitle" write="setDocumentTitle" />
+    <property type="bool" name="undoRedoEnabled" read="isUndoRedoEnabled" write="setUndoRedoEnabled" />
+    <property type="QTextEdit::LineWrapMode" name="lineWrapMode" read="lineWrapMode" write="setLineWrapMode" />
+    <property type="int" name="lineWrapColumnOrWidth" read="lineWrapColumnOrWidth" write="setLineWrapColumnOrWidth" />
+    <property type="bool" name="readOnly" read="isReadOnly" write="setReadOnly" />
+    <preproc plain="#if QT_CONFIG(textmarkdownreader)&amp;&amp;QT_CONFIG(textmarkdownwriter)" />
+    <!--
+    <property type="QString" name="markdown" read="toMarkdown" write="setMarkdown" />
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_TEXTHTMLPARSER" />
+    <property type="QString" name="html" read="toHtml" write="setHtml" />
+    <preproc plain="#endif" />
+    <property type="QString" name="plainText" read="toPlainText" write="setPlainText" />
+    <property type="bool" name="overwriteMode" read="overwriteMode" write="setOverwriteMode" />
+    <property type="qreal" name="tabStopDistance" read="tabStopDistance" write="setTabStopDistance" />
+    <property type="bool" name="acceptRichText" read="acceptRichText" write="setAcceptRichText" />
+    <property type="int" name="cursorWidth" read="cursorWidth" write="setCursorWidth" />
+    <property type="Qt::TextInteractionFlags" name="textInteractionFlags" read="textInteractionFlags" write="setTextInteractionFlags" />
+    <property type="QTextDocument*" name="document" read="document" write="setDocument" />
+    <property type="QString" name="placeholderText" read="placeholderText" write="setPlaceholderText" />
+    <function name="setDocument">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="document">
+      <variant return-type="QTextDocument*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPlaceholderText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="placeholderText" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="placeholderText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextCursor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textCursor">
+      <variant return-type="QTextCursor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isReadOnly">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setReadOnly">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ro" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTextInteractionFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TextInteractionFlags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textInteractionFlags">
+      <variant return-type="Qt::TextInteractionFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fontPointSize">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fontFamily">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fontWeight">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fontUnderline">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fontItalic">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="textColor">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="textBackgroundColor">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentFont">
+      <variant return-type="QFont" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="alignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mergeCurrentCharFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="modifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentCharFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentCharFormat">
+      <variant return-type="QTextCharFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="autoFormatting">
+      <variant return-type="QTextEdit::AutoFormatting" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoFormatting">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextEdit::AutoFormatting" modifier="" name="features" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabChangesFocus">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabChangesFocus">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDocumentTitle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="documentTitle">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUndoRedoEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUndoRedoEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineWrapMode">
+      <variant return-type="QTextEdit::LineWrapMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineWrapMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextEdit::LineWrapMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineWrapColumnOrWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineWrapColumnOrWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="wordWrapMode">
+      <variant return-type="QTextOption::WrapMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWordWrapMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextOption::WrapMode" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="find">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="exp" />
+          <parameter const="false" type="QTextDocument::FindFlags" modifier="" name="options"
+          default="QTextDocument::FindFlags()" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="exp" />
+          <parameter const="false" type="QTextDocument::FindFlags" modifier="" name="options"
+          default="QTextDocument::FindFlags()" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#if QT_CONFIG(regularexpression)" />
+    <preproc plain="#endif" />
+    <function name="toPlainText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_TEXTHTMLPARSER" />
+    <function name="toHtml">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(textmarkdownwriter)" />
+    <!--
+    <function name="toMarkdown">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTextDocument::MarkdownFeatures" modifier="" name="features"
+          default="QTextDocument::MarkdownDialectGitHub" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="ensureCursorVisible">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="loadResource">
+      <variant return-type="QVariant" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="type" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CONTEXTMENU" />
+    <function name="createStandardContextMenu">
+      <variant return-type="QMenu*" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QMenu*" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="cursorForPosition">
+      <variant return-type="QTextCursor" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="cursorRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="anchorAt">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="overwriteMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOverwriteMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="overwrite" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabStopDistance">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabStopDistance">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="distance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCursorWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="acceptRichText">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAcceptRichText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="accept" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setExtraSelections">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;ExtraSelection&gt;" modifier="&amp;" name="selections" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="extraSelections">
+      <variant return-type="QList&lt;ExtraSelection&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="moveCursor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextCursor::MoveOperation" modifier="" name="operation" />
+          <parameter const="false" type="QTextCursor::MoveMode" modifier="" name="mode"
+          default="QTextCursor::MoveAnchor" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="canPaste">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="print">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPagedPaintDevice" modifier="*" name="printer" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="inputMethodQuery">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::InputMethodQuery" modifier="" name="property" />
+        </parameters>
+      </variant>
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::InputMethodQuery" modifier="" name="query" />
+          <parameter const="false" type="QVariant" modifier="" name="argument" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFontPointSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFontFamily">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fontFamily" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFontWeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFontUnderline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFontItalic">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTextColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTextBackgroundColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlainText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_TEXTHTMLPARSER" />
+    <function name="setHtml">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(textmarkdownreader)" />
+    <function name="setMarkdown">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="markdown" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CLIPBOARD" />
+    <function name="cut">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="copy">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paste">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="undo">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="redo">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectAll">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="insertPlainText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_TEXTHTMLPARSER" />
+    <function name="insertHtml">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="append">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scrollToAnchor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="zoomIn">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="range" default="1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="zoomOut">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="range" default="1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="undoAvailable">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="redoAvailable">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentCharFormatChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyAvailable">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cursorPositionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="timerEvent" />
+    <function name="keyPressEvent" />
+    <function name="keyReleaseEvent" />
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent" />
+    <function name="mouseDoubleClickEvent" />
+    <function name="focusNextPrevChild" />
+    <preproc plain="#ifndef QT_NO_CONTEXTMENU" />
+    <function name="contextMenuEvent" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(draganddrop)" />
+    <function name="dragEnterEvent" />
+    <function name="dragLeaveEvent" />
+    <function name="dragMoveEvent" />
+    <function name="dropEvent" />
+    <preproc plain="#endif" />
+    <function name="focusInEvent" />
+    <function name="focusOutEvent" />
+    <function name="showEvent" />
+    <function name="changeEvent" />
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <function name="wheelEvent" />
+    <preproc plain="#endif" />
+    <function name="createMimeDataFromSelection" />
+    <function name="canInsertFromMimeData" />
+    <function name="insertFromMimeData" />
+    <function name="inputMethodEvent" />
+    <function name="scrollContentsBy" />
+    <function name="doSetTextCursor" />
+    <function name="zoomInF" />
+    <preproc plain="#if QT_CONFIG(cursor)" />
+    <preproc plain="#endif" />
+    <class_decl name="QTextEditControl" />
+    <class_decl name="QTextDocument" />
+  </class>
+</unit>

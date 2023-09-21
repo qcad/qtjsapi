@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qregularexpression.h">
+  <class_decl name="QLatin1String" />
+  <class_decl name="QRegularExpressionMatch" />
+  <class_decl name="QRegularExpressionMatchIterator" />
+  <class_decl name="QRegularExpression" />
+  <class name="QRegularExpression">
+    <enum name="PatternOption">
+      <key>NoPatternOption</key>
+      <key>CaseInsensitiveOption</key>
+      <key>DotMatchesEverythingOption</key>
+      <key>MultilineOption</key>
+      <key>ExtendedPatternSyntaxOption</key>
+      <key>InvertedGreedinessOption</key>
+      <key>DontCaptureOption</key>
+      <key>UseUnicodePropertiesOption</key>
+    </enum>
+    <function name="patternOptions">
+      <variant return-type="QRegularExpression::PatternOptions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPatternOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QRegularExpression::PatternOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="pattern" />
+          <parameter const="false" type="QRegularExpression::PatternOptions" modifier="" name="options" default="QRegularExpression::NoPatternOption" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="re" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QRegularExpression" modifier="&amp;&amp;" name="re" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QRegularExpression" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pattern">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPattern">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="pattern" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="patternErrorOffset">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="captureCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="namedCaptureGroups">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="MatchType">
+      <key>NormalMatch</key>
+      <key>PartialPreferCompleteMatch</key>
+      <key>PartialPreferFirstMatch</key>
+      <key>NoMatch</key>
+    </enum>
+    <enum name="MatchOption">
+      <key>NoMatchOption</key>
+      <key>AnchorAtOffsetMatchOption</key>
+      <key>DontCheckSubjectStringMatchOption</key>
+    </enum>
+    <function name="match">
+      <variant return-type="QRegularExpressionMatch" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="subject" />
+          <parameter const="false" type="qsizetype" modifier="" name="offset" default="0" />
+          <parameter const="false" type="QRegularExpression::MatchType" modifier="" name="matchType" default="QRegularExpression::NormalMatch" />
+          <parameter const="false" type="QRegularExpression::MatchOptions" modifier="" name="matchOptions" default="QRegularExpression::NoMatchOption" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QRegularExpressionMatch" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="subjectView" />
+          <parameter const="false" type="qsizetype" modifier="" name="offset" default="0" />
+          <parameter const="false" type="QRegularExpression::MatchType" modifier="" name="matchType" default="QRegularExpression::NormalMatch" />
+          <parameter const="false" type="QRegularExpression::MatchOptions" modifier="" name="matchOptions" default="QRegularExpression::NoMatchOption" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="globalMatch">
+      <!--
+      <variant return-type="QRegularExpressionMatchIterator" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="subject" />
+          <parameter const="false" type="qsizetype" modifier="" name="offset" default="0" />
+          <parameter const="false" type="QRegularExpression::MatchType" modifier="" name="matchType" default="QRegularExpression::NormalMatch" />
+          <parameter const="false" type="QRegularExpression::MatchOptions" modifier="" name="matchOptions" default="QRegularExpression::NoMatchOption" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QRegularExpressionMatchIterator" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="subjectView" />
+          <parameter const="false" type="qsizetype" modifier="" name="offset" default="0" />
+          <parameter const="false" type="QRegularExpression::MatchType" modifier="" name="matchType" default="QRegularExpression::NormalMatch" />
+          <parameter const="false" type="QRegularExpression::MatchOptions" modifier="" name="matchOptions" default="QRegularExpression::NoMatchOption" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="optimize">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="WildcardConversionOption">
+      <key>DefaultWildcardConversion</key>
+      <key>UnanchoredWildcardConversion</key>
+    </enum>
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <function name="escape" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="str" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="wildcardToRegularExpression" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+          <parameter const="false" type="QRegularExpression::WildcardConversionOptions" modifier="" name="options"
+          default="QRegularExpression::DefaultWildcardConversion" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="str" />
+          <parameter const="false" type="WildcardConversionOptions" modifier="" name="options"
+          default="DefaultWildcardConversion" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="anchoredPattern" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="expression" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="expression" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="fromWildcard" static="true">
+      <variant return-type="QRegularExpression" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="pattern" />
+          <parameter const="false" type="Qt::CaseSensitivity" modifier="" name="cs" default="Qt::CaseInsensitive" />
+          <parameter const="false" type="QRegularExpression::WildcardConversionOptions" modifier="" name="options"
+          default="QRegularExpression::DefaultWildcardConversion" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <class_decl name="QRegularExpressionMatch" />
+    <class_decl name="QRegularExpressionMatchIterator" />
+  </class>
+  <class name="QRegularExpressionMatch">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRegularExpressionMatch" modifier="&amp;" name="match" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QRegularExpressionMatch" modifier="&amp;&amp;" name="match" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QRegularExpressionMatch" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="regularExpression">
+      <variant return-type="QRegularExpression" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="matchType">
+      <variant return-type="QRegularExpression::MatchType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="matchOptions">
+      <variant return-type="QRegularExpression::MatchOptions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasMatch">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasPartialMatch">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastCapturedIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="captured">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="nth" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="name" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <!--
+    <function name="capturedView">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="nth" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <preproc plain="#endif" />
+    <function name="capturedTexts">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="capturedStart">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="nth" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="name" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="capturedLength">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="nth" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="name" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="capturedEnd">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="nth" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="name" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <preproc plain="#endif" />
+    <class_decl name="QRegularExpression" />
+    <class_decl name="QRegularExpressionMatchIterator" />
+  </class>
+  <!--
+  <class name="QRegularExpressionMatchIterator">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRegularExpressionMatchIterator" modifier="&amp;" name="iterator" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QRegularExpressionMatchIterator" modifier="&amp;&amp;" name="iterator" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QRegularExpressionMatchIterator" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasNext">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="next">
+      <variant return-type="QRegularExpressionMatch" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="peekNext">
+      <variant return-type="QRegularExpressionMatch" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="regularExpression">
+      <variant return-type="QRegularExpression" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="matchType">
+      <variant return-type="QRegularExpression::MatchType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="matchOptions">
+      <variant return-type="QRegularExpression::MatchOptions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QRegularExpression" />
+    <function name="begin" />
+    <function name="end" />
+  </class>
+  -->
+</unit>

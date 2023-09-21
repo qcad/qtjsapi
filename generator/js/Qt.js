@@ -1,0 +1,1194 @@
+
+    // auto generated
+    //var self;
+
+    // class constructor:
+    function Qt() {
+    }
+
+    Qt.prototype = Object();
+
+    // enum values:
+    
+  // enum: GlobalColor
+Qt.color0 = Qt_Wrapper.color0;
+Qt.color1 = Qt_Wrapper.color1;
+Qt.black = Qt_Wrapper.black;
+Qt.white = Qt_Wrapper.white;
+Qt.darkGray = Qt_Wrapper.darkGray;
+Qt.gray = Qt_Wrapper.gray;
+Qt.lightGray = Qt_Wrapper.lightGray;
+Qt.red = Qt_Wrapper.red;
+Qt.green = Qt_Wrapper.green;
+Qt.blue = Qt_Wrapper.blue;
+Qt.cyan = Qt_Wrapper.cyan;
+Qt.magenta = Qt_Wrapper.magenta;
+Qt.yellow = Qt_Wrapper.yellow;
+Qt.darkRed = Qt_Wrapper.darkRed;
+Qt.darkGreen = Qt_Wrapper.darkGreen;
+Qt.darkBlue = Qt_Wrapper.darkBlue;
+Qt.darkCyan = Qt_Wrapper.darkCyan;
+Qt.darkMagenta = Qt_Wrapper.darkMagenta;
+Qt.darkYellow = Qt_Wrapper.darkYellow;
+Qt.transparent = Qt_Wrapper.transparent;
+
+  // enum: ApplicationState
+Qt.ApplicationSuspended = Qt_Wrapper.ApplicationSuspended;
+Qt.ApplicationHidden = Qt_Wrapper.ApplicationHidden;
+Qt.ApplicationInactive = Qt_Wrapper.ApplicationInactive;
+Qt.ApplicationActive = Qt_Wrapper.ApplicationActive;
+
+  // enum: MouseButton
+Qt.NoButton = Qt_Wrapper.NoButton;
+Qt.LeftButton = Qt_Wrapper.LeftButton;
+Qt.RightButton = Qt_Wrapper.RightButton;
+Qt.MiddleButton = Qt_Wrapper.MiddleButton;
+Qt.BackButton = Qt_Wrapper.BackButton;
+Qt.XButton1 = Qt_Wrapper.XButton1;
+Qt.ExtraButton1 = Qt_Wrapper.ExtraButton1;
+Qt.ForwardButton = Qt_Wrapper.ForwardButton;
+Qt.XButton2 = Qt_Wrapper.XButton2;
+Qt.ExtraButton2 = Qt_Wrapper.ExtraButton2;
+Qt.TaskButton = Qt_Wrapper.TaskButton;
+Qt.ExtraButton3 = Qt_Wrapper.ExtraButton3;
+Qt.ExtraButton4 = Qt_Wrapper.ExtraButton4;
+Qt.ExtraButton5 = Qt_Wrapper.ExtraButton5;
+Qt.ExtraButton6 = Qt_Wrapper.ExtraButton6;
+Qt.ExtraButton7 = Qt_Wrapper.ExtraButton7;
+Qt.ExtraButton8 = Qt_Wrapper.ExtraButton8;
+Qt.ExtraButton9 = Qt_Wrapper.ExtraButton9;
+Qt.ExtraButton10 = Qt_Wrapper.ExtraButton10;
+Qt.ExtraButton11 = Qt_Wrapper.ExtraButton11;
+Qt.ExtraButton12 = Qt_Wrapper.ExtraButton12;
+Qt.ExtraButton13 = Qt_Wrapper.ExtraButton13;
+Qt.ExtraButton14 = Qt_Wrapper.ExtraButton14;
+Qt.ExtraButton15 = Qt_Wrapper.ExtraButton15;
+Qt.ExtraButton16 = Qt_Wrapper.ExtraButton16;
+Qt.ExtraButton17 = Qt_Wrapper.ExtraButton17;
+Qt.ExtraButton18 = Qt_Wrapper.ExtraButton18;
+Qt.ExtraButton19 = Qt_Wrapper.ExtraButton19;
+Qt.ExtraButton20 = Qt_Wrapper.ExtraButton20;
+Qt.ExtraButton21 = Qt_Wrapper.ExtraButton21;
+Qt.ExtraButton22 = Qt_Wrapper.ExtraButton22;
+Qt.ExtraButton23 = Qt_Wrapper.ExtraButton23;
+Qt.ExtraButton24 = Qt_Wrapper.ExtraButton24;
+Qt.AllButtons = Qt_Wrapper.AllButtons;
+Qt.MaxMouseButton = Qt_Wrapper.MaxMouseButton;
+Qt.MouseButtonMask = Qt_Wrapper.MouseButtonMask;
+
+  // enum: TabFocusBehavior
+Qt.NoTabFocus = Qt_Wrapper.NoTabFocus;
+Qt.TabFocusTextControls = Qt_Wrapper.TabFocusTextControls;
+Qt.TabFocusListControls = Qt_Wrapper.TabFocusListControls;
+Qt.TabFocusAllControls = Qt_Wrapper.TabFocusAllControls;
+
+  // enum: SortOrder
+Qt.AscendingOrder = Qt_Wrapper.AscendingOrder;
+Qt.DescendingOrder = Qt_Wrapper.DescendingOrder;
+
+  // enum: SplitBehaviorFlags
+Qt.KeepEmptyParts = Qt_Wrapper.KeepEmptyParts;
+Qt.SkipEmptyParts = Qt_Wrapper.SkipEmptyParts;
+
+  // enum: AlignmentFlag
+Qt.AlignLeft = Qt_Wrapper.AlignLeft;
+Qt.AlignLeading = Qt_Wrapper.AlignLeading;
+Qt.AlignRight = Qt_Wrapper.AlignRight;
+Qt.AlignTrailing = Qt_Wrapper.AlignTrailing;
+Qt.AlignHCenter = Qt_Wrapper.AlignHCenter;
+Qt.AlignJustify = Qt_Wrapper.AlignJustify;
+Qt.AlignAbsolute = Qt_Wrapper.AlignAbsolute;
+Qt.AlignHorizontal_Mask = Qt_Wrapper.AlignHorizontal_Mask;
+Qt.AlignTop = Qt_Wrapper.AlignTop;
+Qt.AlignBottom = Qt_Wrapper.AlignBottom;
+Qt.AlignVCenter = Qt_Wrapper.AlignVCenter;
+Qt.AlignBaseline = Qt_Wrapper.AlignBaseline;
+Qt.AlignVertical_Mask = Qt_Wrapper.AlignVertical_Mask;
+Qt.AlignCenter = Qt_Wrapper.AlignCenter;
+
+  // enum: TextElideMode
+Qt.ElideLeft = Qt_Wrapper.ElideLeft;
+Qt.ElideRight = Qt_Wrapper.ElideRight;
+Qt.ElideMiddle = Qt_Wrapper.ElideMiddle;
+Qt.ElideNone = Qt_Wrapper.ElideNone;
+
+  // enum: WhiteSpaceMode
+Qt.WhiteSpaceNormal = Qt_Wrapper.WhiteSpaceNormal;
+Qt.WhiteSpacePre = Qt_Wrapper.WhiteSpacePre;
+Qt.WhiteSpaceNoWrap = Qt_Wrapper.WhiteSpaceNoWrap;
+Qt.WhiteSpaceModeUndefined = Qt_Wrapper.WhiteSpaceModeUndefined;
+
+  // enum: HitTestAccuracy
+Qt.ExactHit = Qt_Wrapper.ExactHit;
+Qt.FuzzyHit = Qt_Wrapper.FuzzyHit;
+
+  // enum: WindowType
+Qt.Widget = Qt_Wrapper.Widget;
+Qt.Window = Qt_Wrapper.Window;
+Qt.Dialog = Qt_Wrapper.Dialog;
+Qt.Sheet = Qt_Wrapper.Sheet;
+Qt.Drawer = Qt_Wrapper.Drawer;
+Qt.Popup = Qt_Wrapper.Popup;
+Qt.Tool = Qt_Wrapper.Tool;
+Qt.ToolTip = Qt_Wrapper.ToolTip;
+Qt.SplashScreen = Qt_Wrapper.SplashScreen;
+Qt.Desktop = Qt_Wrapper.Desktop;
+Qt.SubWindow = Qt_Wrapper.SubWindow;
+Qt.ForeignWindow = Qt_Wrapper.ForeignWindow;
+Qt.CoverWindow = Qt_Wrapper.CoverWindow;
+Qt.WindowType_Mask = Qt_Wrapper.WindowType_Mask;
+Qt.MSWindowsFixedSizeDialogHint = Qt_Wrapper.MSWindowsFixedSizeDialogHint;
+Qt.MSWindowsOwnDC = Qt_Wrapper.MSWindowsOwnDC;
+Qt.BypassWindowManagerHint = Qt_Wrapper.BypassWindowManagerHint;
+Qt.X11BypassWindowManagerHint = Qt_Wrapper.X11BypassWindowManagerHint;
+Qt.FramelessWindowHint = Qt_Wrapper.FramelessWindowHint;
+Qt.WindowTitleHint = Qt_Wrapper.WindowTitleHint;
+Qt.WindowSystemMenuHint = Qt_Wrapper.WindowSystemMenuHint;
+Qt.WindowMinimizeButtonHint = Qt_Wrapper.WindowMinimizeButtonHint;
+Qt.WindowMaximizeButtonHint = Qt_Wrapper.WindowMaximizeButtonHint;
+Qt.WindowMinMaxButtonsHint = Qt_Wrapper.WindowMinMaxButtonsHint;
+Qt.WindowContextHelpButtonHint = Qt_Wrapper.WindowContextHelpButtonHint;
+Qt.WindowShadeButtonHint = Qt_Wrapper.WindowShadeButtonHint;
+Qt.WindowStaysOnTopHint = Qt_Wrapper.WindowStaysOnTopHint;
+Qt.WindowTransparentForInput = Qt_Wrapper.WindowTransparentForInput;
+Qt.WindowOverridesSystemGestures = Qt_Wrapper.WindowOverridesSystemGestures;
+Qt.WindowDoesNotAcceptFocus = Qt_Wrapper.WindowDoesNotAcceptFocus;
+Qt.MaximizeUsingFullscreenGeometryHint = Qt_Wrapper.MaximizeUsingFullscreenGeometryHint;
+Qt.CustomizeWindowHint = Qt_Wrapper.CustomizeWindowHint;
+Qt.WindowStaysOnBottomHint = Qt_Wrapper.WindowStaysOnBottomHint;
+Qt.WindowCloseButtonHint = Qt_Wrapper.WindowCloseButtonHint;
+Qt.MacWindowToolBarButtonHint = Qt_Wrapper.MacWindowToolBarButtonHint;
+Qt.BypassGraphicsProxyWidget = Qt_Wrapper.BypassGraphicsProxyWidget;
+Qt.NoDropShadowWindowHint = Qt_Wrapper.NoDropShadowWindowHint;
+Qt.WindowFullscreenButtonHint = Qt_Wrapper.WindowFullscreenButtonHint;
+
+  // enum: ApplicationAttribute
+Qt.AA_DontShowIconsInMenus = Qt_Wrapper.AA_DontShowIconsInMenus;
+Qt.AA_NativeWindows = Qt_Wrapper.AA_NativeWindows;
+Qt.AA_DontCreateNativeWidgetSiblings = Qt_Wrapper.AA_DontCreateNativeWidgetSiblings;
+Qt.AA_PluginApplication = Qt_Wrapper.AA_PluginApplication;
+Qt.AA_DontUseNativeMenuBar = Qt_Wrapper.AA_DontUseNativeMenuBar;
+Qt.AA_MacDontSwapCtrlAndMeta = Qt_Wrapper.AA_MacDontSwapCtrlAndMeta;
+Qt.AA_Use96Dpi = Qt_Wrapper.AA_Use96Dpi;
+Qt.AA_DisableNativeVirtualKeyboard = Qt_Wrapper.AA_DisableNativeVirtualKeyboard;
+Qt.AA_SynthesizeTouchForUnhandledMouseEvents = Qt_Wrapper.AA_SynthesizeTouchForUnhandledMouseEvents;
+Qt.AA_SynthesizeMouseForUnhandledTouchEvents = Qt_Wrapper.AA_SynthesizeMouseForUnhandledTouchEvents;
+Qt.AA_ForceRasterWidgets = Qt_Wrapper.AA_ForceRasterWidgets;
+Qt.AA_UseDesktopOpenGL = Qt_Wrapper.AA_UseDesktopOpenGL;
+Qt.AA_UseOpenGLES = Qt_Wrapper.AA_UseOpenGLES;
+Qt.AA_UseSoftwareOpenGL = Qt_Wrapper.AA_UseSoftwareOpenGL;
+Qt.AA_ShareOpenGLContexts = Qt_Wrapper.AA_ShareOpenGLContexts;
+Qt.AA_SetPalette = Qt_Wrapper.AA_SetPalette;
+Qt.AA_UseStyleSheetPropagationInWidgetStyles = Qt_Wrapper.AA_UseStyleSheetPropagationInWidgetStyles;
+Qt.AA_DontUseNativeDialogs = Qt_Wrapper.AA_DontUseNativeDialogs;
+Qt.AA_SynthesizeMouseForUnhandledTabletEvents = Qt_Wrapper.AA_SynthesizeMouseForUnhandledTabletEvents;
+Qt.AA_CompressHighFrequencyEvents = Qt_Wrapper.AA_CompressHighFrequencyEvents;
+Qt.AA_DontCheckOpenGLContextThreadAffinity = Qt_Wrapper.AA_DontCheckOpenGLContextThreadAffinity;
+Qt.AA_DisableShaderDiskCache = Qt_Wrapper.AA_DisableShaderDiskCache;
+Qt.AA_DontShowShortcutsInContextMenus = Qt_Wrapper.AA_DontShowShortcutsInContextMenus;
+Qt.AA_CompressTabletEvents = Qt_Wrapper.AA_CompressTabletEvents;
+Qt.AA_DisableSessionManager = Qt_Wrapper.AA_DisableSessionManager;
+Qt.AA_AttributeCount = Qt_Wrapper.AA_AttributeCount;
+
+  // enum: ImageConversionFlag
+Qt.ColorMode_Mask = Qt_Wrapper.ColorMode_Mask;
+Qt.AutoColor = Qt_Wrapper.AutoColor;
+Qt.ColorOnly = Qt_Wrapper.ColorOnly;
+Qt.MonoOnly = Qt_Wrapper.MonoOnly;
+Qt.AlphaDither_Mask = Qt_Wrapper.AlphaDither_Mask;
+Qt.ThresholdAlphaDither = Qt_Wrapper.ThresholdAlphaDither;
+Qt.OrderedAlphaDither = Qt_Wrapper.OrderedAlphaDither;
+Qt.DiffuseAlphaDither = Qt_Wrapper.DiffuseAlphaDither;
+Qt.NoAlpha = Qt_Wrapper.NoAlpha;
+Qt.Dither_Mask = Qt_Wrapper.Dither_Mask;
+Qt.DiffuseDither = Qt_Wrapper.DiffuseDither;
+Qt.OrderedDither = Qt_Wrapper.OrderedDither;
+Qt.ThresholdDither = Qt_Wrapper.ThresholdDither;
+Qt.DitherMode_Mask = Qt_Wrapper.DitherMode_Mask;
+Qt.AutoDither = Qt_Wrapper.AutoDither;
+Qt.PreferDither = Qt_Wrapper.PreferDither;
+Qt.AvoidDither = Qt_Wrapper.AvoidDither;
+Qt.NoOpaqueDetection = Qt_Wrapper.NoOpaqueDetection;
+Qt.NoFormatConversion = Qt_Wrapper.NoFormatConversion;
+
+  // enum: Key
+Qt.Key_Space = Qt_Wrapper.Key_Space;
+Qt.Key_Any = Qt_Wrapper.Key_Any;
+Qt.Key_Exclam = Qt_Wrapper.Key_Exclam;
+Qt.Key_QuoteDbl = Qt_Wrapper.Key_QuoteDbl;
+Qt.Key_NumberSign = Qt_Wrapper.Key_NumberSign;
+Qt.Key_Dollar = Qt_Wrapper.Key_Dollar;
+Qt.Key_Percent = Qt_Wrapper.Key_Percent;
+Qt.Key_Ampersand = Qt_Wrapper.Key_Ampersand;
+Qt.Key_Apostrophe = Qt_Wrapper.Key_Apostrophe;
+Qt.Key_ParenLeft = Qt_Wrapper.Key_ParenLeft;
+Qt.Key_ParenRight = Qt_Wrapper.Key_ParenRight;
+Qt.Key_Asterisk = Qt_Wrapper.Key_Asterisk;
+Qt.Key_Plus = Qt_Wrapper.Key_Plus;
+Qt.Key_Comma = Qt_Wrapper.Key_Comma;
+Qt.Key_Minus = Qt_Wrapper.Key_Minus;
+Qt.Key_Period = Qt_Wrapper.Key_Period;
+Qt.Key_Slash = Qt_Wrapper.Key_Slash;
+Qt.Key_0 = Qt_Wrapper.Key_0;
+Qt.Key_1 = Qt_Wrapper.Key_1;
+Qt.Key_2 = Qt_Wrapper.Key_2;
+Qt.Key_3 = Qt_Wrapper.Key_3;
+Qt.Key_4 = Qt_Wrapper.Key_4;
+Qt.Key_5 = Qt_Wrapper.Key_5;
+Qt.Key_6 = Qt_Wrapper.Key_6;
+Qt.Key_7 = Qt_Wrapper.Key_7;
+Qt.Key_8 = Qt_Wrapper.Key_8;
+Qt.Key_9 = Qt_Wrapper.Key_9;
+Qt.Key_Colon = Qt_Wrapper.Key_Colon;
+Qt.Key_Semicolon = Qt_Wrapper.Key_Semicolon;
+Qt.Key_Less = Qt_Wrapper.Key_Less;
+Qt.Key_Equal = Qt_Wrapper.Key_Equal;
+Qt.Key_Greater = Qt_Wrapper.Key_Greater;
+Qt.Key_Question = Qt_Wrapper.Key_Question;
+Qt.Key_At = Qt_Wrapper.Key_At;
+Qt.Key_A = Qt_Wrapper.Key_A;
+Qt.Key_B = Qt_Wrapper.Key_B;
+Qt.Key_C = Qt_Wrapper.Key_C;
+Qt.Key_D = Qt_Wrapper.Key_D;
+Qt.Key_E = Qt_Wrapper.Key_E;
+Qt.Key_F = Qt_Wrapper.Key_F;
+Qt.Key_G = Qt_Wrapper.Key_G;
+Qt.Key_H = Qt_Wrapper.Key_H;
+Qt.Key_I = Qt_Wrapper.Key_I;
+Qt.Key_J = Qt_Wrapper.Key_J;
+Qt.Key_K = Qt_Wrapper.Key_K;
+Qt.Key_L = Qt_Wrapper.Key_L;
+Qt.Key_M = Qt_Wrapper.Key_M;
+Qt.Key_N = Qt_Wrapper.Key_N;
+Qt.Key_O = Qt_Wrapper.Key_O;
+Qt.Key_P = Qt_Wrapper.Key_P;
+Qt.Key_Q = Qt_Wrapper.Key_Q;
+Qt.Key_R = Qt_Wrapper.Key_R;
+Qt.Key_S = Qt_Wrapper.Key_S;
+Qt.Key_T = Qt_Wrapper.Key_T;
+Qt.Key_U = Qt_Wrapper.Key_U;
+Qt.Key_V = Qt_Wrapper.Key_V;
+Qt.Key_W = Qt_Wrapper.Key_W;
+Qt.Key_X = Qt_Wrapper.Key_X;
+Qt.Key_Y = Qt_Wrapper.Key_Y;
+Qt.Key_Z = Qt_Wrapper.Key_Z;
+Qt.Key_BracketLeft = Qt_Wrapper.Key_BracketLeft;
+Qt.Key_Backslash = Qt_Wrapper.Key_Backslash;
+Qt.Key_BracketRight = Qt_Wrapper.Key_BracketRight;
+Qt.Key_AsciiCircum = Qt_Wrapper.Key_AsciiCircum;
+Qt.Key_Underscore = Qt_Wrapper.Key_Underscore;
+Qt.Key_QuoteLeft = Qt_Wrapper.Key_QuoteLeft;
+Qt.Key_BraceLeft = Qt_Wrapper.Key_BraceLeft;
+Qt.Key_Bar = Qt_Wrapper.Key_Bar;
+Qt.Key_BraceRight = Qt_Wrapper.Key_BraceRight;
+Qt.Key_AsciiTilde = Qt_Wrapper.Key_AsciiTilde;
+Qt.Key_nobreakspace = Qt_Wrapper.Key_nobreakspace;
+Qt.Key_exclamdown = Qt_Wrapper.Key_exclamdown;
+Qt.Key_cent = Qt_Wrapper.Key_cent;
+Qt.Key_sterling = Qt_Wrapper.Key_sterling;
+Qt.Key_currency = Qt_Wrapper.Key_currency;
+Qt.Key_yen = Qt_Wrapper.Key_yen;
+Qt.Key_brokenbar = Qt_Wrapper.Key_brokenbar;
+Qt.Key_section = Qt_Wrapper.Key_section;
+Qt.Key_diaeresis = Qt_Wrapper.Key_diaeresis;
+Qt.Key_copyright = Qt_Wrapper.Key_copyright;
+Qt.Key_ordfeminine = Qt_Wrapper.Key_ordfeminine;
+Qt.Key_guillemotleft = Qt_Wrapper.Key_guillemotleft;
+Qt.Key_notsign = Qt_Wrapper.Key_notsign;
+Qt.Key_hyphen = Qt_Wrapper.Key_hyphen;
+Qt.Key_registered = Qt_Wrapper.Key_registered;
+Qt.Key_macron = Qt_Wrapper.Key_macron;
+Qt.Key_degree = Qt_Wrapper.Key_degree;
+Qt.Key_plusminus = Qt_Wrapper.Key_plusminus;
+Qt.Key_twosuperior = Qt_Wrapper.Key_twosuperior;
+Qt.Key_threesuperior = Qt_Wrapper.Key_threesuperior;
+Qt.Key_acute = Qt_Wrapper.Key_acute;
+Qt.Key_mu = Qt_Wrapper.Key_mu;
+Qt.Key_paragraph = Qt_Wrapper.Key_paragraph;
+Qt.Key_periodcentered = Qt_Wrapper.Key_periodcentered;
+Qt.Key_cedilla = Qt_Wrapper.Key_cedilla;
+Qt.Key_onesuperior = Qt_Wrapper.Key_onesuperior;
+Qt.Key_masculine = Qt_Wrapper.Key_masculine;
+Qt.Key_guillemotright = Qt_Wrapper.Key_guillemotright;
+Qt.Key_onequarter = Qt_Wrapper.Key_onequarter;
+Qt.Key_onehalf = Qt_Wrapper.Key_onehalf;
+Qt.Key_threequarters = Qt_Wrapper.Key_threequarters;
+Qt.Key_questiondown = Qt_Wrapper.Key_questiondown;
+Qt.Key_Agrave = Qt_Wrapper.Key_Agrave;
+Qt.Key_Aacute = Qt_Wrapper.Key_Aacute;
+Qt.Key_Acircumflex = Qt_Wrapper.Key_Acircumflex;
+Qt.Key_Atilde = Qt_Wrapper.Key_Atilde;
+Qt.Key_Adiaeresis = Qt_Wrapper.Key_Adiaeresis;
+Qt.Key_Aring = Qt_Wrapper.Key_Aring;
+Qt.Key_AE = Qt_Wrapper.Key_AE;
+Qt.Key_Ccedilla = Qt_Wrapper.Key_Ccedilla;
+Qt.Key_Egrave = Qt_Wrapper.Key_Egrave;
+Qt.Key_Eacute = Qt_Wrapper.Key_Eacute;
+Qt.Key_Ecircumflex = Qt_Wrapper.Key_Ecircumflex;
+Qt.Key_Ediaeresis = Qt_Wrapper.Key_Ediaeresis;
+Qt.Key_Igrave = Qt_Wrapper.Key_Igrave;
+Qt.Key_Iacute = Qt_Wrapper.Key_Iacute;
+Qt.Key_Icircumflex = Qt_Wrapper.Key_Icircumflex;
+Qt.Key_Idiaeresis = Qt_Wrapper.Key_Idiaeresis;
+Qt.Key_ETH = Qt_Wrapper.Key_ETH;
+Qt.Key_Ntilde = Qt_Wrapper.Key_Ntilde;
+Qt.Key_Ograve = Qt_Wrapper.Key_Ograve;
+Qt.Key_Oacute = Qt_Wrapper.Key_Oacute;
+Qt.Key_Ocircumflex = Qt_Wrapper.Key_Ocircumflex;
+Qt.Key_Otilde = Qt_Wrapper.Key_Otilde;
+Qt.Key_Odiaeresis = Qt_Wrapper.Key_Odiaeresis;
+Qt.Key_multiply = Qt_Wrapper.Key_multiply;
+Qt.Key_Ooblique = Qt_Wrapper.Key_Ooblique;
+Qt.Key_Ugrave = Qt_Wrapper.Key_Ugrave;
+Qt.Key_Uacute = Qt_Wrapper.Key_Uacute;
+Qt.Key_Ucircumflex = Qt_Wrapper.Key_Ucircumflex;
+Qt.Key_Udiaeresis = Qt_Wrapper.Key_Udiaeresis;
+Qt.Key_Yacute = Qt_Wrapper.Key_Yacute;
+Qt.Key_THORN = Qt_Wrapper.Key_THORN;
+Qt.Key_ssharp = Qt_Wrapper.Key_ssharp;
+Qt.Key_division = Qt_Wrapper.Key_division;
+Qt.Key_ydiaeresis = Qt_Wrapper.Key_ydiaeresis;
+Qt.Key_Escape = Qt_Wrapper.Key_Escape;
+Qt.Key_Tab = Qt_Wrapper.Key_Tab;
+Qt.Key_Backtab = Qt_Wrapper.Key_Backtab;
+Qt.Key_Backspace = Qt_Wrapper.Key_Backspace;
+Qt.Key_Return = Qt_Wrapper.Key_Return;
+Qt.Key_Enter = Qt_Wrapper.Key_Enter;
+Qt.Key_Insert = Qt_Wrapper.Key_Insert;
+Qt.Key_Delete = Qt_Wrapper.Key_Delete;
+Qt.Key_Pause = Qt_Wrapper.Key_Pause;
+Qt.Key_Print = Qt_Wrapper.Key_Print;
+Qt.Key_SysReq = Qt_Wrapper.Key_SysReq;
+Qt.Key_Clear = Qt_Wrapper.Key_Clear;
+Qt.Key_Home = Qt_Wrapper.Key_Home;
+Qt.Key_End = Qt_Wrapper.Key_End;
+Qt.Key_Left = Qt_Wrapper.Key_Left;
+Qt.Key_Up = Qt_Wrapper.Key_Up;
+Qt.Key_Right = Qt_Wrapper.Key_Right;
+Qt.Key_Down = Qt_Wrapper.Key_Down;
+Qt.Key_PageUp = Qt_Wrapper.Key_PageUp;
+Qt.Key_PageDown = Qt_Wrapper.Key_PageDown;
+Qt.Key_Shift = Qt_Wrapper.Key_Shift;
+Qt.Key_Control = Qt_Wrapper.Key_Control;
+Qt.Key_Meta = Qt_Wrapper.Key_Meta;
+Qt.Key_Alt = Qt_Wrapper.Key_Alt;
+Qt.Key_CapsLock = Qt_Wrapper.Key_CapsLock;
+Qt.Key_NumLock = Qt_Wrapper.Key_NumLock;
+Qt.Key_ScrollLock = Qt_Wrapper.Key_ScrollLock;
+Qt.Key_F1 = Qt_Wrapper.Key_F1;
+Qt.Key_F2 = Qt_Wrapper.Key_F2;
+Qt.Key_F3 = Qt_Wrapper.Key_F3;
+Qt.Key_F4 = Qt_Wrapper.Key_F4;
+Qt.Key_F5 = Qt_Wrapper.Key_F5;
+Qt.Key_F6 = Qt_Wrapper.Key_F6;
+Qt.Key_F7 = Qt_Wrapper.Key_F7;
+Qt.Key_F8 = Qt_Wrapper.Key_F8;
+Qt.Key_F9 = Qt_Wrapper.Key_F9;
+Qt.Key_F10 = Qt_Wrapper.Key_F10;
+Qt.Key_F11 = Qt_Wrapper.Key_F11;
+Qt.Key_F12 = Qt_Wrapper.Key_F12;
+Qt.Key_F13 = Qt_Wrapper.Key_F13;
+Qt.Key_F14 = Qt_Wrapper.Key_F14;
+Qt.Key_F15 = Qt_Wrapper.Key_F15;
+Qt.Key_F16 = Qt_Wrapper.Key_F16;
+Qt.Key_F17 = Qt_Wrapper.Key_F17;
+Qt.Key_F18 = Qt_Wrapper.Key_F18;
+Qt.Key_F19 = Qt_Wrapper.Key_F19;
+Qt.Key_F20 = Qt_Wrapper.Key_F20;
+Qt.Key_F21 = Qt_Wrapper.Key_F21;
+Qt.Key_F22 = Qt_Wrapper.Key_F22;
+Qt.Key_F23 = Qt_Wrapper.Key_F23;
+Qt.Key_F24 = Qt_Wrapper.Key_F24;
+Qt.Key_F25 = Qt_Wrapper.Key_F25;
+Qt.Key_F26 = Qt_Wrapper.Key_F26;
+Qt.Key_F27 = Qt_Wrapper.Key_F27;
+Qt.Key_F28 = Qt_Wrapper.Key_F28;
+Qt.Key_F29 = Qt_Wrapper.Key_F29;
+Qt.Key_F30 = Qt_Wrapper.Key_F30;
+Qt.Key_F31 = Qt_Wrapper.Key_F31;
+Qt.Key_F32 = Qt_Wrapper.Key_F32;
+Qt.Key_F33 = Qt_Wrapper.Key_F33;
+Qt.Key_F34 = Qt_Wrapper.Key_F34;
+Qt.Key_F35 = Qt_Wrapper.Key_F35;
+Qt.Key_Super_L = Qt_Wrapper.Key_Super_L;
+Qt.Key_Super_R = Qt_Wrapper.Key_Super_R;
+Qt.Key_Menu = Qt_Wrapper.Key_Menu;
+Qt.Key_Hyper_L = Qt_Wrapper.Key_Hyper_L;
+Qt.Key_Hyper_R = Qt_Wrapper.Key_Hyper_R;
+Qt.Key_Help = Qt_Wrapper.Key_Help;
+Qt.Key_Direction_L = Qt_Wrapper.Key_Direction_L;
+Qt.Key_Direction_R = Qt_Wrapper.Key_Direction_R;
+Qt.Key_AltGr = Qt_Wrapper.Key_AltGr;
+Qt.Key_Multi_key = Qt_Wrapper.Key_Multi_key;
+Qt.Key_Codeinput = Qt_Wrapper.Key_Codeinput;
+Qt.Key_SingleCandidate = Qt_Wrapper.Key_SingleCandidate;
+Qt.Key_MultipleCandidate = Qt_Wrapper.Key_MultipleCandidate;
+Qt.Key_PreviousCandidate = Qt_Wrapper.Key_PreviousCandidate;
+Qt.Key_Mode_switch = Qt_Wrapper.Key_Mode_switch;
+Qt.Key_Kanji = Qt_Wrapper.Key_Kanji;
+Qt.Key_Muhenkan = Qt_Wrapper.Key_Muhenkan;
+Qt.Key_Henkan = Qt_Wrapper.Key_Henkan;
+Qt.Key_Romaji = Qt_Wrapper.Key_Romaji;
+Qt.Key_Hiragana = Qt_Wrapper.Key_Hiragana;
+Qt.Key_Katakana = Qt_Wrapper.Key_Katakana;
+Qt.Key_Hiragana_Katakana = Qt_Wrapper.Key_Hiragana_Katakana;
+Qt.Key_Zenkaku = Qt_Wrapper.Key_Zenkaku;
+Qt.Key_Hankaku = Qt_Wrapper.Key_Hankaku;
+Qt.Key_Zenkaku_Hankaku = Qt_Wrapper.Key_Zenkaku_Hankaku;
+Qt.Key_Touroku = Qt_Wrapper.Key_Touroku;
+Qt.Key_Massyo = Qt_Wrapper.Key_Massyo;
+Qt.Key_Kana_Lock = Qt_Wrapper.Key_Kana_Lock;
+Qt.Key_Kana_Shift = Qt_Wrapper.Key_Kana_Shift;
+Qt.Key_Eisu_Shift = Qt_Wrapper.Key_Eisu_Shift;
+Qt.Key_Eisu_toggle = Qt_Wrapper.Key_Eisu_toggle;
+Qt.Key_Hangul = Qt_Wrapper.Key_Hangul;
+Qt.Key_Hangul_Start = Qt_Wrapper.Key_Hangul_Start;
+Qt.Key_Hangul_End = Qt_Wrapper.Key_Hangul_End;
+Qt.Key_Hangul_Hanja = Qt_Wrapper.Key_Hangul_Hanja;
+Qt.Key_Hangul_Jamo = Qt_Wrapper.Key_Hangul_Jamo;
+Qt.Key_Hangul_Romaja = Qt_Wrapper.Key_Hangul_Romaja;
+Qt.Key_Hangul_Jeonja = Qt_Wrapper.Key_Hangul_Jeonja;
+Qt.Key_Hangul_Banja = Qt_Wrapper.Key_Hangul_Banja;
+Qt.Key_Hangul_PreHanja = Qt_Wrapper.Key_Hangul_PreHanja;
+Qt.Key_Hangul_PostHanja = Qt_Wrapper.Key_Hangul_PostHanja;
+Qt.Key_Hangul_Special = Qt_Wrapper.Key_Hangul_Special;
+Qt.Key_Dead_Grave = Qt_Wrapper.Key_Dead_Grave;
+Qt.Key_Dead_Acute = Qt_Wrapper.Key_Dead_Acute;
+Qt.Key_Dead_Circumflex = Qt_Wrapper.Key_Dead_Circumflex;
+Qt.Key_Dead_Tilde = Qt_Wrapper.Key_Dead_Tilde;
+Qt.Key_Dead_Macron = Qt_Wrapper.Key_Dead_Macron;
+Qt.Key_Dead_Breve = Qt_Wrapper.Key_Dead_Breve;
+Qt.Key_Dead_Abovedot = Qt_Wrapper.Key_Dead_Abovedot;
+Qt.Key_Dead_Diaeresis = Qt_Wrapper.Key_Dead_Diaeresis;
+Qt.Key_Dead_Abovering = Qt_Wrapper.Key_Dead_Abovering;
+Qt.Key_Dead_Doubleacute = Qt_Wrapper.Key_Dead_Doubleacute;
+Qt.Key_Dead_Caron = Qt_Wrapper.Key_Dead_Caron;
+Qt.Key_Dead_Cedilla = Qt_Wrapper.Key_Dead_Cedilla;
+Qt.Key_Dead_Ogonek = Qt_Wrapper.Key_Dead_Ogonek;
+Qt.Key_Dead_Iota = Qt_Wrapper.Key_Dead_Iota;
+Qt.Key_Dead_Voiced_Sound = Qt_Wrapper.Key_Dead_Voiced_Sound;
+Qt.Key_Dead_Semivoiced_Sound = Qt_Wrapper.Key_Dead_Semivoiced_Sound;
+Qt.Key_Dead_Belowdot = Qt_Wrapper.Key_Dead_Belowdot;
+Qt.Key_Dead_Hook = Qt_Wrapper.Key_Dead_Hook;
+Qt.Key_Dead_Horn = Qt_Wrapper.Key_Dead_Horn;
+Qt.Key_Dead_Stroke = Qt_Wrapper.Key_Dead_Stroke;
+Qt.Key_Dead_Abovecomma = Qt_Wrapper.Key_Dead_Abovecomma;
+Qt.Key_Dead_Abovereversedcomma = Qt_Wrapper.Key_Dead_Abovereversedcomma;
+Qt.Key_Dead_Doublegrave = Qt_Wrapper.Key_Dead_Doublegrave;
+Qt.Key_Dead_Belowring = Qt_Wrapper.Key_Dead_Belowring;
+Qt.Key_Dead_Belowmacron = Qt_Wrapper.Key_Dead_Belowmacron;
+Qt.Key_Dead_Belowcircumflex = Qt_Wrapper.Key_Dead_Belowcircumflex;
+Qt.Key_Dead_Belowtilde = Qt_Wrapper.Key_Dead_Belowtilde;
+Qt.Key_Dead_Belowbreve = Qt_Wrapper.Key_Dead_Belowbreve;
+Qt.Key_Dead_Belowdiaeresis = Qt_Wrapper.Key_Dead_Belowdiaeresis;
+Qt.Key_Dead_Invertedbreve = Qt_Wrapper.Key_Dead_Invertedbreve;
+Qt.Key_Dead_Belowcomma = Qt_Wrapper.Key_Dead_Belowcomma;
+Qt.Key_Dead_Currency = Qt_Wrapper.Key_Dead_Currency;
+Qt.Key_Dead_a = Qt_Wrapper.Key_Dead_a;
+Qt.Key_Dead_A = Qt_Wrapper.Key_Dead_A;
+Qt.Key_Dead_e = Qt_Wrapper.Key_Dead_e;
+Qt.Key_Dead_E = Qt_Wrapper.Key_Dead_E;
+Qt.Key_Dead_i = Qt_Wrapper.Key_Dead_i;
+Qt.Key_Dead_I = Qt_Wrapper.Key_Dead_I;
+Qt.Key_Dead_o = Qt_Wrapper.Key_Dead_o;
+Qt.Key_Dead_O = Qt_Wrapper.Key_Dead_O;
+Qt.Key_Dead_u = Qt_Wrapper.Key_Dead_u;
+Qt.Key_Dead_U = Qt_Wrapper.Key_Dead_U;
+Qt.Key_Dead_Small_Schwa = Qt_Wrapper.Key_Dead_Small_Schwa;
+Qt.Key_Dead_Capital_Schwa = Qt_Wrapper.Key_Dead_Capital_Schwa;
+Qt.Key_Dead_Greek = Qt_Wrapper.Key_Dead_Greek;
+Qt.Key_Dead_Lowline = Qt_Wrapper.Key_Dead_Lowline;
+Qt.Key_Dead_Aboveverticalline = Qt_Wrapper.Key_Dead_Aboveverticalline;
+Qt.Key_Dead_Belowverticalline = Qt_Wrapper.Key_Dead_Belowverticalline;
+Qt.Key_Dead_Longsolidusoverlay = Qt_Wrapper.Key_Dead_Longsolidusoverlay;
+Qt.Key_Back = Qt_Wrapper.Key_Back;
+Qt.Key_Forward = Qt_Wrapper.Key_Forward;
+Qt.Key_Stop = Qt_Wrapper.Key_Stop;
+Qt.Key_Refresh = Qt_Wrapper.Key_Refresh;
+Qt.Key_VolumeDown = Qt_Wrapper.Key_VolumeDown;
+Qt.Key_VolumeMute = Qt_Wrapper.Key_VolumeMute;
+Qt.Key_VolumeUp = Qt_Wrapper.Key_VolumeUp;
+Qt.Key_BassBoost = Qt_Wrapper.Key_BassBoost;
+Qt.Key_BassUp = Qt_Wrapper.Key_BassUp;
+Qt.Key_BassDown = Qt_Wrapper.Key_BassDown;
+Qt.Key_TrebleUp = Qt_Wrapper.Key_TrebleUp;
+Qt.Key_TrebleDown = Qt_Wrapper.Key_TrebleDown;
+Qt.Key_MediaPlay = Qt_Wrapper.Key_MediaPlay;
+Qt.Key_MediaStop = Qt_Wrapper.Key_MediaStop;
+Qt.Key_MediaPrevious = Qt_Wrapper.Key_MediaPrevious;
+Qt.Key_MediaNext = Qt_Wrapper.Key_MediaNext;
+Qt.Key_MediaRecord = Qt_Wrapper.Key_MediaRecord;
+Qt.Key_MediaPause = Qt_Wrapper.Key_MediaPause;
+Qt.Key_MediaTogglePlayPause = Qt_Wrapper.Key_MediaTogglePlayPause;
+Qt.Key_HomePage = Qt_Wrapper.Key_HomePage;
+Qt.Key_Favorites = Qt_Wrapper.Key_Favorites;
+Qt.Key_Search = Qt_Wrapper.Key_Search;
+Qt.Key_Standby = Qt_Wrapper.Key_Standby;
+Qt.Key_OpenUrl = Qt_Wrapper.Key_OpenUrl;
+Qt.Key_LaunchMail = Qt_Wrapper.Key_LaunchMail;
+Qt.Key_LaunchMedia = Qt_Wrapper.Key_LaunchMedia;
+Qt.Key_Launch0 = Qt_Wrapper.Key_Launch0;
+Qt.Key_Launch1 = Qt_Wrapper.Key_Launch1;
+Qt.Key_Launch2 = Qt_Wrapper.Key_Launch2;
+Qt.Key_Launch3 = Qt_Wrapper.Key_Launch3;
+Qt.Key_Launch4 = Qt_Wrapper.Key_Launch4;
+Qt.Key_Launch5 = Qt_Wrapper.Key_Launch5;
+Qt.Key_Launch6 = Qt_Wrapper.Key_Launch6;
+Qt.Key_Launch7 = Qt_Wrapper.Key_Launch7;
+Qt.Key_Launch8 = Qt_Wrapper.Key_Launch8;
+Qt.Key_Launch9 = Qt_Wrapper.Key_Launch9;
+Qt.Key_LaunchA = Qt_Wrapper.Key_LaunchA;
+Qt.Key_LaunchB = Qt_Wrapper.Key_LaunchB;
+Qt.Key_LaunchC = Qt_Wrapper.Key_LaunchC;
+Qt.Key_LaunchD = Qt_Wrapper.Key_LaunchD;
+Qt.Key_LaunchE = Qt_Wrapper.Key_LaunchE;
+Qt.Key_LaunchF = Qt_Wrapper.Key_LaunchF;
+Qt.Key_MonBrightnessUp = Qt_Wrapper.Key_MonBrightnessUp;
+Qt.Key_MonBrightnessDown = Qt_Wrapper.Key_MonBrightnessDown;
+Qt.Key_KeyboardLightOnOff = Qt_Wrapper.Key_KeyboardLightOnOff;
+Qt.Key_KeyboardBrightnessUp = Qt_Wrapper.Key_KeyboardBrightnessUp;
+Qt.Key_KeyboardBrightnessDown = Qt_Wrapper.Key_KeyboardBrightnessDown;
+Qt.Key_PowerOff = Qt_Wrapper.Key_PowerOff;
+Qt.Key_WakeUp = Qt_Wrapper.Key_WakeUp;
+Qt.Key_Eject = Qt_Wrapper.Key_Eject;
+Qt.Key_ScreenSaver = Qt_Wrapper.Key_ScreenSaver;
+Qt.Key_WWW = Qt_Wrapper.Key_WWW;
+Qt.Key_Memo = Qt_Wrapper.Key_Memo;
+Qt.Key_LightBulb = Qt_Wrapper.Key_LightBulb;
+Qt.Key_Shop = Qt_Wrapper.Key_Shop;
+Qt.Key_History = Qt_Wrapper.Key_History;
+Qt.Key_AddFavorite = Qt_Wrapper.Key_AddFavorite;
+Qt.Key_HotLinks = Qt_Wrapper.Key_HotLinks;
+Qt.Key_BrightnessAdjust = Qt_Wrapper.Key_BrightnessAdjust;
+Qt.Key_Finance = Qt_Wrapper.Key_Finance;
+Qt.Key_Community = Qt_Wrapper.Key_Community;
+Qt.Key_AudioRewind = Qt_Wrapper.Key_AudioRewind;
+Qt.Key_BackForward = Qt_Wrapper.Key_BackForward;
+Qt.Key_ApplicationLeft = Qt_Wrapper.Key_ApplicationLeft;
+Qt.Key_ApplicationRight = Qt_Wrapper.Key_ApplicationRight;
+Qt.Key_Book = Qt_Wrapper.Key_Book;
+Qt.Key_CD = Qt_Wrapper.Key_CD;
+Qt.Key_Calculator = Qt_Wrapper.Key_Calculator;
+Qt.Key_ToDoList = Qt_Wrapper.Key_ToDoList;
+Qt.Key_ClearGrab = Qt_Wrapper.Key_ClearGrab;
+Qt.Key_Close = Qt_Wrapper.Key_Close;
+Qt.Key_Copy = Qt_Wrapper.Key_Copy;
+Qt.Key_Cut = Qt_Wrapper.Key_Cut;
+Qt.Key_Display = Qt_Wrapper.Key_Display;
+Qt.Key_DOS = Qt_Wrapper.Key_DOS;
+Qt.Key_Documents = Qt_Wrapper.Key_Documents;
+Qt.Key_Excel = Qt_Wrapper.Key_Excel;
+Qt.Key_Explorer = Qt_Wrapper.Key_Explorer;
+Qt.Key_Game = Qt_Wrapper.Key_Game;
+Qt.Key_Go = Qt_Wrapper.Key_Go;
+Qt.Key_iTouch = Qt_Wrapper.Key_iTouch;
+Qt.Key_LogOff = Qt_Wrapper.Key_LogOff;
+Qt.Key_Market = Qt_Wrapper.Key_Market;
+Qt.Key_Meeting = Qt_Wrapper.Key_Meeting;
+Qt.Key_MenuKB = Qt_Wrapper.Key_MenuKB;
+Qt.Key_MenuPB = Qt_Wrapper.Key_MenuPB;
+Qt.Key_MySites = Qt_Wrapper.Key_MySites;
+Qt.Key_News = Qt_Wrapper.Key_News;
+Qt.Key_OfficeHome = Qt_Wrapper.Key_OfficeHome;
+Qt.Key_Option = Qt_Wrapper.Key_Option;
+Qt.Key_Paste = Qt_Wrapper.Key_Paste;
+Qt.Key_Phone = Qt_Wrapper.Key_Phone;
+Qt.Key_Calendar = Qt_Wrapper.Key_Calendar;
+Qt.Key_Reply = Qt_Wrapper.Key_Reply;
+Qt.Key_Reload = Qt_Wrapper.Key_Reload;
+Qt.Key_RotateWindows = Qt_Wrapper.Key_RotateWindows;
+Qt.Key_RotationPB = Qt_Wrapper.Key_RotationPB;
+Qt.Key_RotationKB = Qt_Wrapper.Key_RotationKB;
+Qt.Key_Save = Qt_Wrapper.Key_Save;
+Qt.Key_Send = Qt_Wrapper.Key_Send;
+Qt.Key_Spell = Qt_Wrapper.Key_Spell;
+Qt.Key_SplitScreen = Qt_Wrapper.Key_SplitScreen;
+Qt.Key_Support = Qt_Wrapper.Key_Support;
+Qt.Key_TaskPane = Qt_Wrapper.Key_TaskPane;
+Qt.Key_Terminal = Qt_Wrapper.Key_Terminal;
+Qt.Key_Tools = Qt_Wrapper.Key_Tools;
+Qt.Key_Travel = Qt_Wrapper.Key_Travel;
+Qt.Key_Video = Qt_Wrapper.Key_Video;
+Qt.Key_Word = Qt_Wrapper.Key_Word;
+Qt.Key_Xfer = Qt_Wrapper.Key_Xfer;
+Qt.Key_ZoomIn = Qt_Wrapper.Key_ZoomIn;
+Qt.Key_ZoomOut = Qt_Wrapper.Key_ZoomOut;
+Qt.Key_Away = Qt_Wrapper.Key_Away;
+Qt.Key_Messenger = Qt_Wrapper.Key_Messenger;
+Qt.Key_WebCam = Qt_Wrapper.Key_WebCam;
+Qt.Key_MailForward = Qt_Wrapper.Key_MailForward;
+Qt.Key_Pictures = Qt_Wrapper.Key_Pictures;
+Qt.Key_Music = Qt_Wrapper.Key_Music;
+Qt.Key_Battery = Qt_Wrapper.Key_Battery;
+Qt.Key_Bluetooth = Qt_Wrapper.Key_Bluetooth;
+Qt.Key_WLAN = Qt_Wrapper.Key_WLAN;
+Qt.Key_UWB = Qt_Wrapper.Key_UWB;
+Qt.Key_AudioForward = Qt_Wrapper.Key_AudioForward;
+Qt.Key_AudioRepeat = Qt_Wrapper.Key_AudioRepeat;
+Qt.Key_AudioRandomPlay = Qt_Wrapper.Key_AudioRandomPlay;
+Qt.Key_Subtitle = Qt_Wrapper.Key_Subtitle;
+Qt.Key_AudioCycleTrack = Qt_Wrapper.Key_AudioCycleTrack;
+Qt.Key_Time = Qt_Wrapper.Key_Time;
+Qt.Key_Hibernate = Qt_Wrapper.Key_Hibernate;
+Qt.Key_View = Qt_Wrapper.Key_View;
+Qt.Key_TopMenu = Qt_Wrapper.Key_TopMenu;
+Qt.Key_PowerDown = Qt_Wrapper.Key_PowerDown;
+Qt.Key_Suspend = Qt_Wrapper.Key_Suspend;
+Qt.Key_ContrastAdjust = Qt_Wrapper.Key_ContrastAdjust;
+Qt.Key_LaunchG = Qt_Wrapper.Key_LaunchG;
+Qt.Key_LaunchH = Qt_Wrapper.Key_LaunchH;
+Qt.Key_TouchpadToggle = Qt_Wrapper.Key_TouchpadToggle;
+Qt.Key_TouchpadOn = Qt_Wrapper.Key_TouchpadOn;
+Qt.Key_TouchpadOff = Qt_Wrapper.Key_TouchpadOff;
+Qt.Key_MicMute = Qt_Wrapper.Key_MicMute;
+Qt.Key_Red = Qt_Wrapper.Key_Red;
+Qt.Key_Green = Qt_Wrapper.Key_Green;
+Qt.Key_Yellow = Qt_Wrapper.Key_Yellow;
+Qt.Key_Blue = Qt_Wrapper.Key_Blue;
+Qt.Key_ChannelUp = Qt_Wrapper.Key_ChannelUp;
+Qt.Key_ChannelDown = Qt_Wrapper.Key_ChannelDown;
+Qt.Key_Guide = Qt_Wrapper.Key_Guide;
+Qt.Key_Info = Qt_Wrapper.Key_Info;
+Qt.Key_Settings = Qt_Wrapper.Key_Settings;
+Qt.Key_MicVolumeUp = Qt_Wrapper.Key_MicVolumeUp;
+Qt.Key_MicVolumeDown = Qt_Wrapper.Key_MicVolumeDown;
+Qt.Key_New = Qt_Wrapper.Key_New;
+Qt.Key_Open = Qt_Wrapper.Key_Open;
+Qt.Key_Find = Qt_Wrapper.Key_Find;
+Qt.Key_Undo = Qt_Wrapper.Key_Undo;
+Qt.Key_Redo = Qt_Wrapper.Key_Redo;
+Qt.Key_MediaLast = Qt_Wrapper.Key_MediaLast;
+Qt.Key_Select = Qt_Wrapper.Key_Select;
+Qt.Key_Yes = Qt_Wrapper.Key_Yes;
+Qt.Key_No = Qt_Wrapper.Key_No;
+Qt.Key_Cancel = Qt_Wrapper.Key_Cancel;
+Qt.Key_Printer = Qt_Wrapper.Key_Printer;
+Qt.Key_Execute = Qt_Wrapper.Key_Execute;
+Qt.Key_Sleep = Qt_Wrapper.Key_Sleep;
+Qt.Key_Play = Qt_Wrapper.Key_Play;
+Qt.Key_Zoom = Qt_Wrapper.Key_Zoom;
+Qt.Key_Exit = Qt_Wrapper.Key_Exit;
+Qt.Key_Context1 = Qt_Wrapper.Key_Context1;
+Qt.Key_Context2 = Qt_Wrapper.Key_Context2;
+Qt.Key_Context3 = Qt_Wrapper.Key_Context3;
+Qt.Key_Context4 = Qt_Wrapper.Key_Context4;
+Qt.Key_Call = Qt_Wrapper.Key_Call;
+Qt.Key_Hangup = Qt_Wrapper.Key_Hangup;
+Qt.Key_Flip = Qt_Wrapper.Key_Flip;
+Qt.Key_ToggleCallHangup = Qt_Wrapper.Key_ToggleCallHangup;
+Qt.Key_VoiceDial = Qt_Wrapper.Key_VoiceDial;
+Qt.Key_LastNumberRedial = Qt_Wrapper.Key_LastNumberRedial;
+Qt.Key_Camera = Qt_Wrapper.Key_Camera;
+Qt.Key_CameraFocus = Qt_Wrapper.Key_CameraFocus;
+Qt.Key_unknown = Qt_Wrapper.Key_unknown;
+
+  // enum: KeyboardModifier
+Qt.NoModifier = Qt_Wrapper.NoModifier;
+Qt.ShiftModifier = Qt_Wrapper.ShiftModifier;
+Qt.ControlModifier = Qt_Wrapper.ControlModifier;
+Qt.AltModifier = Qt_Wrapper.AltModifier;
+Qt.MetaModifier = Qt_Wrapper.MetaModifier;
+Qt.KeypadModifier = Qt_Wrapper.KeypadModifier;
+Qt.GroupSwitchModifier = Qt_Wrapper.GroupSwitchModifier;
+Qt.KeyboardModifierMask = Qt_Wrapper.KeyboardModifierMask;
+
+  // enum: PenStyle
+Qt.NoPen = Qt_Wrapper.NoPen;
+Qt.SolidLine = Qt_Wrapper.SolidLine;
+Qt.DashLine = Qt_Wrapper.DashLine;
+Qt.DotLine = Qt_Wrapper.DotLine;
+Qt.DashDotLine = Qt_Wrapper.DashDotLine;
+Qt.DashDotDotLine = Qt_Wrapper.DashDotDotLine;
+Qt.CustomDashLine = Qt_Wrapper.CustomDashLine;
+Qt.MPenStyle = Qt_Wrapper.MPenStyle;
+
+  // enum: PenCapStyle
+Qt.FlatCap = Qt_Wrapper.FlatCap;
+Qt.SquareCap = Qt_Wrapper.SquareCap;
+Qt.RoundCap = Qt_Wrapper.RoundCap;
+Qt.MPenCapStyle = Qt_Wrapper.MPenCapStyle;
+
+  // enum: PenJoinStyle
+Qt.MiterJoin = Qt_Wrapper.MiterJoin;
+Qt.BevelJoin = Qt_Wrapper.BevelJoin;
+Qt.RoundJoin = Qt_Wrapper.RoundJoin;
+Qt.SvgMiterJoin = Qt_Wrapper.SvgMiterJoin;
+Qt.MPenJoinStyle = Qt_Wrapper.MPenJoinStyle;
+
+  // enum: BrushStyle
+Qt.NoBrush = Qt_Wrapper.NoBrush;
+Qt.SolidPattern = Qt_Wrapper.SolidPattern;
+Qt.Dense1Pattern = Qt_Wrapper.Dense1Pattern;
+Qt.Dense2Pattern = Qt_Wrapper.Dense2Pattern;
+Qt.Dense3Pattern = Qt_Wrapper.Dense3Pattern;
+Qt.Dense4Pattern = Qt_Wrapper.Dense4Pattern;
+Qt.Dense5Pattern = Qt_Wrapper.Dense5Pattern;
+Qt.Dense6Pattern = Qt_Wrapper.Dense6Pattern;
+Qt.Dense7Pattern = Qt_Wrapper.Dense7Pattern;
+Qt.HorPattern = Qt_Wrapper.HorPattern;
+Qt.VerPattern = Qt_Wrapper.VerPattern;
+Qt.CrossPattern = Qt_Wrapper.CrossPattern;
+Qt.BDiagPattern = Qt_Wrapper.BDiagPattern;
+Qt.FDiagPattern = Qt_Wrapper.FDiagPattern;
+Qt.DiagCrossPattern = Qt_Wrapper.DiagCrossPattern;
+Qt.LinearGradientPattern = Qt_Wrapper.LinearGradientPattern;
+Qt.RadialGradientPattern = Qt_Wrapper.RadialGradientPattern;
+Qt.ConicalGradientPattern = Qt_Wrapper.ConicalGradientPattern;
+Qt.TexturePattern = Qt_Wrapper.TexturePattern;
+
+  // enum: SizeMode
+Qt.AbsoluteSize = Qt_Wrapper.AbsoluteSize;
+Qt.RelativeSize = Qt_Wrapper.RelativeSize;
+
+  // enum: UIEffect
+Qt.UI_General = Qt_Wrapper.UI_General;
+Qt.UI_AnimateMenu = Qt_Wrapper.UI_AnimateMenu;
+Qt.UI_FadeMenu = Qt_Wrapper.UI_FadeMenu;
+Qt.UI_AnimateCombo = Qt_Wrapper.UI_AnimateCombo;
+Qt.UI_AnimateTooltip = Qt_Wrapper.UI_AnimateTooltip;
+Qt.UI_FadeTooltip = Qt_Wrapper.UI_FadeTooltip;
+Qt.UI_AnimateToolBox = Qt_Wrapper.UI_AnimateToolBox;
+
+  // enum: CursorShape
+Qt.ArrowCursor = Qt_Wrapper.ArrowCursor;
+Qt.UpArrowCursor = Qt_Wrapper.UpArrowCursor;
+Qt.CrossCursor = Qt_Wrapper.CrossCursor;
+Qt.WaitCursor = Qt_Wrapper.WaitCursor;
+Qt.IBeamCursor = Qt_Wrapper.IBeamCursor;
+Qt.SizeVerCursor = Qt_Wrapper.SizeVerCursor;
+Qt.SizeHorCursor = Qt_Wrapper.SizeHorCursor;
+Qt.SizeBDiagCursor = Qt_Wrapper.SizeBDiagCursor;
+Qt.SizeFDiagCursor = Qt_Wrapper.SizeFDiagCursor;
+Qt.SizeAllCursor = Qt_Wrapper.SizeAllCursor;
+Qt.BlankCursor = Qt_Wrapper.BlankCursor;
+Qt.SplitVCursor = Qt_Wrapper.SplitVCursor;
+Qt.SplitHCursor = Qt_Wrapper.SplitHCursor;
+Qt.PointingHandCursor = Qt_Wrapper.PointingHandCursor;
+Qt.ForbiddenCursor = Qt_Wrapper.ForbiddenCursor;
+Qt.WhatsThisCursor = Qt_Wrapper.WhatsThisCursor;
+Qt.BusyCursor = Qt_Wrapper.BusyCursor;
+Qt.OpenHandCursor = Qt_Wrapper.OpenHandCursor;
+Qt.ClosedHandCursor = Qt_Wrapper.ClosedHandCursor;
+Qt.DragCopyCursor = Qt_Wrapper.DragCopyCursor;
+Qt.DragMoveCursor = Qt_Wrapper.DragMoveCursor;
+Qt.DragLinkCursor = Qt_Wrapper.DragLinkCursor;
+Qt.LastCursor = Qt_Wrapper.LastCursor;
+Qt.BitmapCursor = Qt_Wrapper.BitmapCursor;
+Qt.CustomCursor = Qt_Wrapper.CustomCursor;
+
+  // enum: TextFormat
+Qt.PlainText = Qt_Wrapper.PlainText;
+Qt.RichText = Qt_Wrapper.RichText;
+Qt.AutoText = Qt_Wrapper.AutoText;
+Qt.MarkdownText = Qt_Wrapper.MarkdownText;
+
+  // enum: AspectRatioMode
+Qt.IgnoreAspectRatio = Qt_Wrapper.IgnoreAspectRatio;
+Qt.KeepAspectRatio = Qt_Wrapper.KeepAspectRatio;
+Qt.KeepAspectRatioByExpanding = Qt_Wrapper.KeepAspectRatioByExpanding;
+
+  // enum: DockWidgetArea
+Qt.LeftDockWidgetArea = Qt_Wrapper.LeftDockWidgetArea;
+Qt.RightDockWidgetArea = Qt_Wrapper.RightDockWidgetArea;
+Qt.TopDockWidgetArea = Qt_Wrapper.TopDockWidgetArea;
+Qt.BottomDockWidgetArea = Qt_Wrapper.BottomDockWidgetArea;
+Qt.DockWidgetArea_Mask = Qt_Wrapper.DockWidgetArea_Mask;
+Qt.AllDockWidgetAreas = Qt_Wrapper.AllDockWidgetAreas;
+Qt.NoDockWidgetArea = Qt_Wrapper.NoDockWidgetArea;
+
+  // enum: DockWidgetAreaSizes
+Qt.NDockWidgetAreas = Qt_Wrapper.NDockWidgetAreas;
+
+  // enum: ToolBarAreaSizes
+Qt.NToolBarAreas = Qt_Wrapper.NToolBarAreas;
+
+  // enum: TimeSpec
+Qt.LocalTime = Qt_Wrapper.LocalTime;
+Qt.UTC = Qt_Wrapper.UTC;
+Qt.OffsetFromUTC = Qt_Wrapper.OffsetFromUTC;
+Qt.TimeZone = Qt_Wrapper.TimeZone;
+
+  // enum: DayOfWeek
+Qt.Monday = Qt_Wrapper.Monday;
+Qt.Tuesday = Qt_Wrapper.Tuesday;
+Qt.Wednesday = Qt_Wrapper.Wednesday;
+Qt.Thursday = Qt_Wrapper.Thursday;
+Qt.Friday = Qt_Wrapper.Friday;
+Qt.Saturday = Qt_Wrapper.Saturday;
+Qt.Sunday = Qt_Wrapper.Sunday;
+
+  // enum: ScrollBarPolicy
+Qt.ScrollBarAsNeeded = Qt_Wrapper.ScrollBarAsNeeded;
+Qt.ScrollBarAlwaysOff = Qt_Wrapper.ScrollBarAlwaysOff;
+Qt.ScrollBarAlwaysOn = Qt_Wrapper.ScrollBarAlwaysOn;
+
+  // enum: CaseSensitivity
+Qt.CaseInsensitive = Qt_Wrapper.CaseInsensitive;
+Qt.CaseSensitive = Qt_Wrapper.CaseSensitive;
+
+  // enum: Corner
+Qt.TopLeftCorner = Qt_Wrapper.TopLeftCorner;
+Qt.TopRightCorner = Qt_Wrapper.TopRightCorner;
+Qt.BottomLeftCorner = Qt_Wrapper.BottomLeftCorner;
+Qt.BottomRightCorner = Qt_Wrapper.BottomRightCorner;
+
+  // enum: Edge
+Qt.TopEdge = Qt_Wrapper.TopEdge;
+Qt.LeftEdge = Qt_Wrapper.LeftEdge;
+Qt.RightEdge = Qt_Wrapper.RightEdge;
+Qt.BottomEdge = Qt_Wrapper.BottomEdge;
+
+  // enum: ShortcutContext
+Qt.WidgetShortcut = Qt_Wrapper.WidgetShortcut;
+Qt.WindowShortcut = Qt_Wrapper.WindowShortcut;
+Qt.ApplicationShortcut = Qt_Wrapper.ApplicationShortcut;
+Qt.WidgetWithChildrenShortcut = Qt_Wrapper.WidgetWithChildrenShortcut;
+
+  // enum: FillRule
+Qt.OddEvenFill = Qt_Wrapper.OddEvenFill;
+Qt.WindingFill = Qt_Wrapper.WindingFill;
+
+  // enum: MaskMode
+Qt.MaskInColor = Qt_Wrapper.MaskInColor;
+Qt.MaskOutColor = Qt_Wrapper.MaskOutColor;
+
+  // enum: ClipOperation
+Qt.NoClip = Qt_Wrapper.NoClip;
+Qt.ReplaceClip = Qt_Wrapper.ReplaceClip;
+Qt.IntersectClip = Qt_Wrapper.IntersectClip;
+
+  // enum: ItemSelectionMode
+Qt.ContainsItemShape = Qt_Wrapper.ContainsItemShape;
+Qt.IntersectsItemShape = Qt_Wrapper.IntersectsItemShape;
+Qt.ContainsItemBoundingRect = Qt_Wrapper.ContainsItemBoundingRect;
+Qt.IntersectsItemBoundingRect = Qt_Wrapper.IntersectsItemBoundingRect;
+
+  // enum: ItemSelectionOperation
+Qt.ReplaceSelection = Qt_Wrapper.ReplaceSelection;
+Qt.AddToSelection = Qt_Wrapper.AddToSelection;
+
+  // enum: TransformationMode
+Qt.FastTransformation = Qt_Wrapper.FastTransformation;
+Qt.SmoothTransformation = Qt_Wrapper.SmoothTransformation;
+
+  // enum: Axis
+Qt.XAxis = Qt_Wrapper.XAxis;
+Qt.YAxis = Qt_Wrapper.YAxis;
+Qt.ZAxis = Qt_Wrapper.ZAxis;
+
+  // enum: FocusReason
+Qt.MouseFocusReason = Qt_Wrapper.MouseFocusReason;
+Qt.TabFocusReason = Qt_Wrapper.TabFocusReason;
+Qt.BacktabFocusReason = Qt_Wrapper.BacktabFocusReason;
+Qt.ActiveWindowFocusReason = Qt_Wrapper.ActiveWindowFocusReason;
+Qt.PopupFocusReason = Qt_Wrapper.PopupFocusReason;
+Qt.ShortcutFocusReason = Qt_Wrapper.ShortcutFocusReason;
+Qt.MenuBarFocusReason = Qt_Wrapper.MenuBarFocusReason;
+Qt.OtherFocusReason = Qt_Wrapper.OtherFocusReason;
+Qt.NoFocusReason = Qt_Wrapper.NoFocusReason;
+
+  // enum: ContextMenuPolicy
+Qt.NoContextMenu = Qt_Wrapper.NoContextMenu;
+Qt.DefaultContextMenu = Qt_Wrapper.DefaultContextMenu;
+Qt.ActionsContextMenu = Qt_Wrapper.ActionsContextMenu;
+Qt.CustomContextMenu = Qt_Wrapper.CustomContextMenu;
+Qt.PreventContextMenu = Qt_Wrapper.PreventContextMenu;
+
+  // enum: InputMethodQuery
+Qt.ImEnabled = Qt_Wrapper.ImEnabled;
+Qt.ImCursorRectangle = Qt_Wrapper.ImCursorRectangle;
+Qt.ImFont = Qt_Wrapper.ImFont;
+Qt.ImCursorPosition = Qt_Wrapper.ImCursorPosition;
+Qt.ImSurroundingText = Qt_Wrapper.ImSurroundingText;
+Qt.ImCurrentSelection = Qt_Wrapper.ImCurrentSelection;
+Qt.ImMaximumTextLength = Qt_Wrapper.ImMaximumTextLength;
+Qt.ImAnchorPosition = Qt_Wrapper.ImAnchorPosition;
+Qt.ImHints = Qt_Wrapper.ImHints;
+Qt.ImPreferredLanguage = Qt_Wrapper.ImPreferredLanguage;
+Qt.ImAbsolutePosition = Qt_Wrapper.ImAbsolutePosition;
+Qt.ImTextBeforeCursor = Qt_Wrapper.ImTextBeforeCursor;
+Qt.ImTextAfterCursor = Qt_Wrapper.ImTextAfterCursor;
+Qt.ImEnterKeyType = Qt_Wrapper.ImEnterKeyType;
+Qt.ImAnchorRectangle = Qt_Wrapper.ImAnchorRectangle;
+Qt.ImInputItemClipRectangle = Qt_Wrapper.ImInputItemClipRectangle;
+Qt.ImReadOnly = Qt_Wrapper.ImReadOnly;
+Qt.ImPlatformData = Qt_Wrapper.ImPlatformData;
+Qt.ImQueryInput = Qt_Wrapper.ImQueryInput;
+Qt.ImQueryAll = Qt_Wrapper.ImQueryAll;
+
+  // enum: ToolBarArea
+Qt.LeftToolBarArea = Qt_Wrapper.LeftToolBarArea;
+Qt.RightToolBarArea = Qt_Wrapper.RightToolBarArea;
+Qt.TopToolBarArea = Qt_Wrapper.TopToolBarArea;
+Qt.BottomToolBarArea = Qt_Wrapper.BottomToolBarArea;
+Qt.AllToolBarAreas = Qt_Wrapper.AllToolBarAreas;
+Qt.NoToolBarArea = Qt_Wrapper.NoToolBarArea;
+
+  // enum: ToolButtonStyle
+Qt.ToolButtonIconOnly = Qt_Wrapper.ToolButtonIconOnly;
+Qt.ToolButtonTextOnly = Qt_Wrapper.ToolButtonTextOnly;
+Qt.ToolButtonTextBesideIcon = Qt_Wrapper.ToolButtonTextBesideIcon;
+Qt.ToolButtonTextUnderIcon = Qt_Wrapper.ToolButtonTextUnderIcon;
+Qt.ToolButtonFollowStyle = Qt_Wrapper.ToolButtonFollowStyle;
+
+  // enum: LayoutDirection
+Qt.LeftToRight = Qt_Wrapper.LeftToRight;
+Qt.RightToLeft = Qt_Wrapper.RightToLeft;
+Qt.LayoutDirectionAuto = Qt_Wrapper.LayoutDirectionAuto;
+
+  // enum: AnchorPoint
+Qt.AnchorLeft = Qt_Wrapper.AnchorLeft;
+Qt.AnchorHorizontalCenter = Qt_Wrapper.AnchorHorizontalCenter;
+Qt.AnchorRight = Qt_Wrapper.AnchorRight;
+Qt.AnchorTop = Qt_Wrapper.AnchorTop;
+Qt.AnchorVerticalCenter = Qt_Wrapper.AnchorVerticalCenter;
+Qt.AnchorBottom = Qt_Wrapper.AnchorBottom;
+
+  // enum: FindChildOption
+Qt.FindDirectChildrenOnly = Qt_Wrapper.FindDirectChildrenOnly;
+Qt.FindChildrenRecursively = Qt_Wrapper.FindChildrenRecursively;
+
+  // enum: FocusPolicy
+Qt.TabFocus = Qt_Wrapper.TabFocus;
+Qt.ClickFocus = Qt_Wrapper.ClickFocus;
+Qt.StrongFocus = Qt_Wrapper.StrongFocus;
+Qt.WheelFocus = Qt_Wrapper.WheelFocus;
+Qt.NoFocus = Qt_Wrapper.NoFocus;
+
+  // enum: CheckState
+Qt.Unchecked = Qt_Wrapper.Unchecked;
+Qt.PartiallyChecked = Qt_Wrapper.PartiallyChecked;
+Qt.Checked = Qt_Wrapper.Checked;
+
+  // enum: ItemDataRole
+Qt.DisplayRole = Qt_Wrapper.DisplayRole;
+Qt.DecorationRole = Qt_Wrapper.DecorationRole;
+Qt.EditRole = Qt_Wrapper.EditRole;
+Qt.ToolTipRole = Qt_Wrapper.ToolTipRole;
+Qt.StatusTipRole = Qt_Wrapper.StatusTipRole;
+Qt.WhatsThisRole = Qt_Wrapper.WhatsThisRole;
+Qt.FontRole = Qt_Wrapper.FontRole;
+Qt.TextAlignmentRole = Qt_Wrapper.TextAlignmentRole;
+Qt.BackgroundRole = Qt_Wrapper.BackgroundRole;
+Qt.ForegroundRole = Qt_Wrapper.ForegroundRole;
+Qt.CheckStateRole = Qt_Wrapper.CheckStateRole;
+Qt.AccessibleTextRole = Qt_Wrapper.AccessibleTextRole;
+Qt.AccessibleDescriptionRole = Qt_Wrapper.AccessibleDescriptionRole;
+Qt.SizeHintRole = Qt_Wrapper.SizeHintRole;
+Qt.InitialSortOrderRole = Qt_Wrapper.InitialSortOrderRole;
+Qt.DisplayPropertyRole = Qt_Wrapper.DisplayPropertyRole;
+Qt.DecorationPropertyRole = Qt_Wrapper.DecorationPropertyRole;
+Qt.ToolTipPropertyRole = Qt_Wrapper.ToolTipPropertyRole;
+Qt.StatusTipPropertyRole = Qt_Wrapper.StatusTipPropertyRole;
+Qt.WhatsThisPropertyRole = Qt_Wrapper.WhatsThisPropertyRole;
+Qt.UserRole = Qt_Wrapper.UserRole;
+
+  // enum: ItemFlag
+Qt.NoItemFlags = Qt_Wrapper.NoItemFlags;
+Qt.ItemIsSelectable = Qt_Wrapper.ItemIsSelectable;
+Qt.ItemIsEditable = Qt_Wrapper.ItemIsEditable;
+Qt.ItemIsDragEnabled = Qt_Wrapper.ItemIsDragEnabled;
+Qt.ItemIsDropEnabled = Qt_Wrapper.ItemIsDropEnabled;
+Qt.ItemIsUserCheckable = Qt_Wrapper.ItemIsUserCheckable;
+Qt.ItemIsEnabled = Qt_Wrapper.ItemIsEnabled;
+Qt.ItemIsAutoTristate = Qt_Wrapper.ItemIsAutoTristate;
+Qt.ItemNeverHasChildren = Qt_Wrapper.ItemNeverHasChildren;
+Qt.ItemIsUserTristate = Qt_Wrapper.ItemIsUserTristate;
+
+  // enum: MatchFlag
+Qt.MatchExactly = Qt_Wrapper.MatchExactly;
+Qt.MatchContains = Qt_Wrapper.MatchContains;
+Qt.MatchStartsWith = Qt_Wrapper.MatchStartsWith;
+Qt.MatchEndsWith = Qt_Wrapper.MatchEndsWith;
+Qt.MatchRegularExpression = Qt_Wrapper.MatchRegularExpression;
+Qt.MatchWildcard = Qt_Wrapper.MatchWildcard;
+Qt.MatchFixedString = Qt_Wrapper.MatchFixedString;
+Qt.MatchTypeMask = Qt_Wrapper.MatchTypeMask;
+Qt.MatchCaseSensitive = Qt_Wrapper.MatchCaseSensitive;
+Qt.MatchWrap = Qt_Wrapper.MatchWrap;
+Qt.MatchRecursive = Qt_Wrapper.MatchRecursive;
+
+  // enum: WindowModality
+Qt.NonModal = Qt_Wrapper.NonModal;
+Qt.WindowModal = Qt_Wrapper.WindowModal;
+Qt.ApplicationModal = Qt_Wrapper.ApplicationModal;
+
+  // enum: TextInteractionFlag
+Qt.NoTextInteraction = Qt_Wrapper.NoTextInteraction;
+Qt.TextSelectableByMouse = Qt_Wrapper.TextSelectableByMouse;
+Qt.TextSelectableByKeyboard = Qt_Wrapper.TextSelectableByKeyboard;
+Qt.LinksAccessibleByMouse = Qt_Wrapper.LinksAccessibleByMouse;
+Qt.LinksAccessibleByKeyboard = Qt_Wrapper.LinksAccessibleByKeyboard;
+Qt.TextEditable = Qt_Wrapper.TextEditable;
+Qt.TextEditorInteraction = Qt_Wrapper.TextEditorInteraction;
+Qt.TextBrowserInteraction = Qt_Wrapper.TextBrowserInteraction;
+
+  // enum: SizeHint
+Qt.MinimumSize = Qt_Wrapper.MinimumSize;
+Qt.PreferredSize = Qt_Wrapper.PreferredSize;
+Qt.MaximumSize = Qt_Wrapper.MaximumSize;
+Qt.MinimumDescent = Qt_Wrapper.MinimumDescent;
+Qt.NSizeHints = Qt_Wrapper.NSizeHints;
+
+  // enum: WidgetAttribute
+Qt.WA_AcceptDrops = Qt_Wrapper.WA_AcceptDrops;
+Qt.WA_AlwaysShowToolTips = Qt_Wrapper.WA_AlwaysShowToolTips;
+Qt.WA_CustomWhatsThis = Qt_Wrapper.WA_CustomWhatsThis;
+Qt.WA_DeleteOnClose = Qt_Wrapper.WA_DeleteOnClose;
+Qt.WA_Disabled = Qt_Wrapper.WA_Disabled;
+Qt.WA_DontShowOnScreen = Qt_Wrapper.WA_DontShowOnScreen;
+Qt.WA_ForceDisabled = Qt_Wrapper.WA_ForceDisabled;
+Qt.WA_ForceUpdatesDisabled = Qt_Wrapper.WA_ForceUpdatesDisabled;
+Qt.WA_Hover = Qt_Wrapper.WA_Hover;
+Qt.WA_InputMethodEnabled = Qt_Wrapper.WA_InputMethodEnabled;
+Qt.WA_KeyboardFocusChange = Qt_Wrapper.WA_KeyboardFocusChange;
+Qt.WA_KeyCompression = Qt_Wrapper.WA_KeyCompression;
+Qt.WA_LayoutOnEntireRect = Qt_Wrapper.WA_LayoutOnEntireRect;
+Qt.WA_LayoutUsesWidgetRect = Qt_Wrapper.WA_LayoutUsesWidgetRect;
+Qt.WA_MacOpaqueSizeGrip = Qt_Wrapper.WA_MacOpaqueSizeGrip;
+Qt.WA_MacShowFocusRect = Qt_Wrapper.WA_MacShowFocusRect;
+Qt.WA_MacNormalSize = Qt_Wrapper.WA_MacNormalSize;
+Qt.WA_MacSmallSize = Qt_Wrapper.WA_MacSmallSize;
+Qt.WA_MacMiniSize = Qt_Wrapper.WA_MacMiniSize;
+Qt.WA_Mapped = Qt_Wrapper.WA_Mapped;
+Qt.WA_MouseNoMask = Qt_Wrapper.WA_MouseNoMask;
+Qt.WA_MouseTracking = Qt_Wrapper.WA_MouseTracking;
+Qt.WA_Moved = Qt_Wrapper.WA_Moved;
+Qt.WA_NoChildEventsForParent = Qt_Wrapper.WA_NoChildEventsForParent;
+Qt.WA_NoChildEventsFromChildren = Qt_Wrapper.WA_NoChildEventsFromChildren;
+Qt.WA_NoMouseReplay = Qt_Wrapper.WA_NoMouseReplay;
+Qt.WA_NoMousePropagation = Qt_Wrapper.WA_NoMousePropagation;
+Qt.WA_TransparentForMouseEvents = Qt_Wrapper.WA_TransparentForMouseEvents;
+Qt.WA_NoSystemBackground = Qt_Wrapper.WA_NoSystemBackground;
+Qt.WA_OpaquePaintEvent = Qt_Wrapper.WA_OpaquePaintEvent;
+Qt.WA_OutsideWSRange = Qt_Wrapper.WA_OutsideWSRange;
+Qt.WA_PaintOnScreen = Qt_Wrapper.WA_PaintOnScreen;
+Qt.WA_PaintUnclipped = Qt_Wrapper.WA_PaintUnclipped;
+Qt.WA_PendingMoveEvent = Qt_Wrapper.WA_PendingMoveEvent;
+Qt.WA_PendingResizeEvent = Qt_Wrapper.WA_PendingResizeEvent;
+Qt.WA_QuitOnClose = Qt_Wrapper.WA_QuitOnClose;
+Qt.WA_Resized = Qt_Wrapper.WA_Resized;
+Qt.WA_RightToLeft = Qt_Wrapper.WA_RightToLeft;
+Qt.WA_SetCursor = Qt_Wrapper.WA_SetCursor;
+Qt.WA_SetFont = Qt_Wrapper.WA_SetFont;
+Qt.WA_SetPalette = Qt_Wrapper.WA_SetPalette;
+Qt.WA_SetStyle = Qt_Wrapper.WA_SetStyle;
+Qt.WA_ShowModal = Qt_Wrapper.WA_ShowModal;
+Qt.WA_StaticContents = Qt_Wrapper.WA_StaticContents;
+Qt.WA_StyleSheet = Qt_Wrapper.WA_StyleSheet;
+Qt.WA_StyleSheetTarget = Qt_Wrapper.WA_StyleSheetTarget;
+Qt.WA_TabletTracking = Qt_Wrapper.WA_TabletTracking;
+Qt.WA_TranslucentBackground = Qt_Wrapper.WA_TranslucentBackground;
+Qt.WA_UnderMouse = Qt_Wrapper.WA_UnderMouse;
+Qt.WA_UpdatesDisabled = Qt_Wrapper.WA_UpdatesDisabled;
+Qt.WA_WindowModified = Qt_Wrapper.WA_WindowModified;
+Qt.WA_WindowPropagation = Qt_Wrapper.WA_WindowPropagation;
+Qt.WA_MacAlwaysShowToolWindow = Qt_Wrapper.WA_MacAlwaysShowToolWindow;
+Qt.WA_SetLocale = Qt_Wrapper.WA_SetLocale;
+Qt.WA_StyledBackground = Qt_Wrapper.WA_StyledBackground;
+Qt.WA_ShowWithoutActivating = Qt_Wrapper.WA_ShowWithoutActivating;
+Qt.WA_NativeWindow = Qt_Wrapper.WA_NativeWindow;
+Qt.WA_DontCreateNativeAncestors = Qt_Wrapper.WA_DontCreateNativeAncestors;
+Qt.WA_X11NetWmWindowTypeDesktop = Qt_Wrapper.WA_X11NetWmWindowTypeDesktop;
+Qt.WA_X11NetWmWindowTypeDock = Qt_Wrapper.WA_X11NetWmWindowTypeDock;
+Qt.WA_X11NetWmWindowTypeToolBar = Qt_Wrapper.WA_X11NetWmWindowTypeToolBar;
+Qt.WA_X11NetWmWindowTypeMenu = Qt_Wrapper.WA_X11NetWmWindowTypeMenu;
+Qt.WA_X11NetWmWindowTypeUtility = Qt_Wrapper.WA_X11NetWmWindowTypeUtility;
+Qt.WA_X11NetWmWindowTypeSplash = Qt_Wrapper.WA_X11NetWmWindowTypeSplash;
+Qt.WA_X11NetWmWindowTypeDialog = Qt_Wrapper.WA_X11NetWmWindowTypeDialog;
+Qt.WA_X11NetWmWindowTypeDropDownMenu = Qt_Wrapper.WA_X11NetWmWindowTypeDropDownMenu;
+Qt.WA_X11NetWmWindowTypePopupMenu = Qt_Wrapper.WA_X11NetWmWindowTypePopupMenu;
+Qt.WA_X11NetWmWindowTypeToolTip = Qt_Wrapper.WA_X11NetWmWindowTypeToolTip;
+Qt.WA_X11NetWmWindowTypeNotification = Qt_Wrapper.WA_X11NetWmWindowTypeNotification;
+Qt.WA_X11NetWmWindowTypeCombo = Qt_Wrapper.WA_X11NetWmWindowTypeCombo;
+Qt.WA_X11NetWmWindowTypeDND = Qt_Wrapper.WA_X11NetWmWindowTypeDND;
+Qt.WA_AcceptTouchEvents = Qt_Wrapper.WA_AcceptTouchEvents;
+Qt.WA_TouchPadAcceptSingleTouchEvents = Qt_Wrapper.WA_TouchPadAcceptSingleTouchEvents;
+Qt.WA_X11DoNotAcceptFocus = Qt_Wrapper.WA_X11DoNotAcceptFocus;
+Qt.WA_AlwaysStackOnTop = Qt_Wrapper.WA_AlwaysStackOnTop;
+Qt.WA_ContentsMarginsRespectsSafeArea = Qt_Wrapper.WA_ContentsMarginsRespectsSafeArea;
+
+  // enum: WindowFrameSection
+Qt.NoSection = Qt_Wrapper.NoSection;
+Qt.LeftSection = Qt_Wrapper.LeftSection;
+Qt.TopLeftSection = Qt_Wrapper.TopLeftSection;
+Qt.TopSection = Qt_Wrapper.TopSection;
+Qt.TopRightSection = Qt_Wrapper.TopRightSection;
+Qt.RightSection = Qt_Wrapper.RightSection;
+Qt.BottomRightSection = Qt_Wrapper.BottomRightSection;
+Qt.BottomSection = Qt_Wrapper.BottomSection;
+Qt.BottomLeftSection = Qt_Wrapper.BottomLeftSection;
+Qt.TitleBarArea = Qt_Wrapper.TitleBarArea;
+
+  // enum: CoordinateSystem
+Qt.DeviceCoordinates = Qt_Wrapper.DeviceCoordinates;
+Qt.LogicalCoordinates = Qt_Wrapper.LogicalCoordinates;
+
+  // enum: TouchPointState
+Qt.TouchPointUnknownState = Qt_Wrapper.TouchPointUnknownState;
+Qt.TouchPointPressed = Qt_Wrapper.TouchPointPressed;
+Qt.TouchPointMoved = Qt_Wrapper.TouchPointMoved;
+Qt.TouchPointStationary = Qt_Wrapper.TouchPointStationary;
+Qt.TouchPointReleased = Qt_Wrapper.TouchPointReleased;
+
+  // enum: GestureState
+Qt.NoGesture = Qt_Wrapper.NoGesture;
+Qt.GestureStarted = Qt_Wrapper.GestureStarted;
+Qt.GestureUpdated = Qt_Wrapper.GestureUpdated;
+Qt.GestureFinished = Qt_Wrapper.GestureFinished;
+Qt.GestureCanceled = Qt_Wrapper.GestureCanceled;
+
+  // enum: GestureType
+Qt.TapGesture = Qt_Wrapper.TapGesture;
+Qt.TapAndHoldGesture = Qt_Wrapper.TapAndHoldGesture;
+Qt.PanGesture = Qt_Wrapper.PanGesture;
+Qt.PinchGesture = Qt_Wrapper.PinchGesture;
+Qt.SwipeGesture = Qt_Wrapper.SwipeGesture;
+Qt.CustomGesture = Qt_Wrapper.CustomGesture;
+Qt.LastGestureType = Qt_Wrapper.LastGestureType;
+
+  // enum: GestureFlag
+Qt.DontStartGestureOnChildren = Qt_Wrapper.DontStartGestureOnChildren;
+Qt.ReceivePartialGestures = Qt_Wrapper.ReceivePartialGestures;
+Qt.IgnoredGesturesPropagateToParent = Qt_Wrapper.IgnoredGesturesPropagateToParent;
+
+  // enum: NavigationMode
+Qt.NavigationModeNone = Qt_Wrapper.NavigationModeNone;
+Qt.NavigationModeKeypadTabOrder = Qt_Wrapper.NavigationModeKeypadTabOrder;
+Qt.NavigationModeKeypadDirectional = Qt_Wrapper.NavigationModeKeypadDirectional;
+Qt.NavigationModeCursorAuto = Qt_Wrapper.NavigationModeCursorAuto;
+Qt.NavigationModeCursorForceVisible = Qt_Wrapper.NavigationModeCursorForceVisible;
+
+  // enum: Orientation
+Qt.Horizontal = Qt_Wrapper.Horizontal;
+Qt.Vertical = Qt_Wrapper.Vertical;
+
+  // enum: CursorMoveStyle
+Qt.LogicalMoveStyle = Qt_Wrapper.LogicalMoveStyle;
+Qt.VisualMoveStyle = Qt_Wrapper.VisualMoveStyle;
+
+  // enum: TimerType
+Qt.PreciseTimer = Qt_Wrapper.PreciseTimer;
+Qt.CoarseTimer = Qt_Wrapper.CoarseTimer;
+Qt.VeryCoarseTimer = Qt_Wrapper.VeryCoarseTimer;
+
+  // enum: ScrollPhase
+Qt.NoScrollPhase = Qt_Wrapper.NoScrollPhase;
+Qt.ScrollBegin = Qt_Wrapper.ScrollBegin;
+Qt.ScrollUpdate = Qt_Wrapper.ScrollUpdate;
+Qt.ScrollEnd = Qt_Wrapper.ScrollEnd;
+Qt.ScrollMomentum = Qt_Wrapper.ScrollMomentum;
+
+  // enum: MouseEventSource
+Qt.MouseEventNotSynthesized = Qt_Wrapper.MouseEventNotSynthesized;
+Qt.MouseEventSynthesizedBySystem = Qt_Wrapper.MouseEventSynthesizedBySystem;
+Qt.MouseEventSynthesizedByQt = Qt_Wrapper.MouseEventSynthesizedByQt;
+Qt.MouseEventSynthesizedByApplication = Qt_Wrapper.MouseEventSynthesizedByApplication;
+
+  // enum: MouseEventFlag
+Qt.NoMouseEventFlag = Qt_Wrapper.NoMouseEventFlag;
+Qt.MouseEventCreatedDoubleClick = Qt_Wrapper.MouseEventCreatedDoubleClick;
+Qt.MouseEventFlagMask = Qt_Wrapper.MouseEventFlagMask;
+
+  // enum: ReturnByValueConstant
+Qt.ReturnByValue = Qt_Wrapper.ReturnByValue;

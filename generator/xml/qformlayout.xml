@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qformlayout.h">
+  <class name="QFormLayout" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QLayout" />
+    </super_list>
+    <function name="Q_DECLARE_PRIVATE" />
+    <enum name="FieldGrowthPolicy">
+      <key>FieldsStayAtSizeHint</key>
+      <key>ExpandingFieldsGrow</key>
+      <key>AllNonFixedFieldsGrow</key>
+    </enum>
+    <enum name="RowWrapPolicy">
+      <key>DontWrapRows</key>
+      <key>WrapLongRows</key>
+      <key>WrapAllRows</key>
+    </enum>
+    <enum name="ItemRole">
+      <key>LabelRole</key>
+      <key>FieldRole</key>
+      <key>SpanningRole</key>
+    </enum>
+    <function name="setFieldGrowthPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFormLayout::FieldGrowthPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fieldGrowthPolicy">
+      <variant return-type="QFormLayout::FieldGrowthPolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRowWrapPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFormLayout::RowWrapPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowWrapPolicy">
+      <variant return-type="QFormLayout::RowWrapPolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLabelAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="labelAlignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFormAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formAlignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHorizontalSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="horizontalSpacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVerticalSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="verticalSpacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="spacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addRow">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="label" />
+          <parameter const="false" type="QWidget" modifier="*" name="field" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="label" />
+          <parameter const="false" type="QLayout" modifier="*" name="field" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="labelText" />
+          <parameter const="false" type="QWidget" modifier="*" name="field" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="labelText" />
+          <parameter const="false" type="QLayout" modifier="*" name="field" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="layout" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertRow">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="QWidget" modifier="*" name="label" />
+          <parameter const="false" type="QWidget" modifier="*" name="field" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="QWidget" modifier="*" name="label" />
+          <parameter const="false" type="QLayout" modifier="*" name="field" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QString" modifier="&amp;" name="labelText" />
+          <parameter const="false" type="QWidget" modifier="*" name="field" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QString" modifier="&amp;" name="labelText" />
+          <parameter const="false" type="QLayout" modifier="*" name="field" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="QLayout" modifier="*" name="layout" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeRow">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="layout" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="takeRow">
+      <variant return-type="TakeRowResult" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+        </parameters>
+      </variant>
+      <variant return-type="TakeRowResult" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+      <variant return-type="TakeRowResult" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="layout" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="QFormLayout::ItemRole" modifier="" name="role" />
+          <parameter const="false" type="QLayoutItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="QFormLayout::ItemRole" modifier="" name="role" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLayout">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="QFormLayout::ItemRole" modifier="" name="role" />
+          <parameter const="false" type="QLayout" modifier="*" name="layout" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemAt">
+      <variant return-type="QLayoutItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="QFormLayout::ItemRole" modifier="" name="role" />
+        </parameters>
+      </variant>
+      <variant return-type="QLayoutItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getItemPosition">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="*" name="rowPtr" />
+          <parameter const="false" type="QFormLayout::ItemRole" modifier="*" name="rolePtr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="getWidgetPosition">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="false" type="int" modifier="*" name="rowPtr" />
+          <parameter const="false" type="QFormLayout::ItemRole" modifier="*" name="rolePtr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="getLayoutPosition">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="layout" />
+          <parameter const="false" type="int" modifier="*" name="rowPtr" />
+          <parameter const="false" type="QFormLayout::ItemRole" modifier="*" name="rolePtr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="labelForField">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="field" />
+        </parameters>
+      </variant>
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="field" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayoutItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeAt">
+      <variant return-type="QLayoutItem*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="invalidate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasHeightForWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expandingDirections">
+      <variant return-type="Qt::Orientations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rowCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if 0" />
+    <preproc plain="#endif" />
+    <function name="resetFieldGrowthPolicy" />
+    <function name="resetRowWrapPolicy" />
+    <function name="resetLabelAlignment" />
+    <function name="resetFormAlignment" />
+  </class>
+</unit>

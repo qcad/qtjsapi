@@ -1,0 +1,896 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qimage.h">
+  <class_decl name="QColorSpace" />
+  <class_decl name="QColorTransform" />
+  <class_decl name="QIODevice" />
+  <class_decl name="QTransform" />
+  <class_decl name="QVariant" />
+  <class name="QImage">
+    <super_list>
+      <super name="QPaintDevice" />
+    </super_list>
+    <preproc plain="#ifndef Q_QDOC" />
+    <preproc plain="#endif" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+          <parameter const="false" type="QImage::Format" modifier="" name="format" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="height" />
+          <parameter const="false" type="QImage::Format" modifier="" name="format" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="uchar" modifier="*" name="data" />
+          <parameter const="false" type="int" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="height" />
+          <parameter const="false" type="QImage::Format" modifier="" name="format" />
+          <parameter const="false" type="QImageCleanupFunction" modifier="" name="cleanupFunction" default="nullptr" />
+          <parameter const="false" type="void" modifier="*" name="cleanupInfo" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="uchar" modifier="*" name="data" />
+          <parameter const="false" type="int" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="height" />
+          <parameter const="false" type="QImage::Format" modifier="" name="format" />
+          <parameter const="false" type="QImageCleanupFunction" modifier="" name="cleanupFunction" default="nullptr" />
+          <parameter const="false" type="void" modifier="*" name="cleanupInfo" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="uchar" modifier="*" name="data" />
+          <parameter const="false" type="int" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="height" />
+          <parameter const="false" type="qsizetype" modifier="" name="bytesPerLine" />
+          <parameter const="false" type="QImage::Format" modifier="" name="format" />
+          <parameter const="false" type="QImageCleanupFunction" modifier="" name="cleanupFunction" default="nullptr" />
+          <parameter const="false" type="void" modifier="*" name="cleanupInfo" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="uchar" modifier="*" name="data" />
+          <parameter const="false" type="int" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="height" />
+          <parameter const="false" type="qsizetype" modifier="" name="bytesPerLine" />
+          <parameter const="false" type="QImage::Format" modifier="" name="format" />
+          <parameter const="false" type="QImageCleanupFunction" modifier="" name="cleanupFunction" default="nullptr" />
+          <parameter const="false" type="void" modifier="*" name="cleanupInfo" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QImage" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QImage" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <enum name="InvertMode">
+      <key>InvertRgb</key>
+      <key>InvertRgba</key>
+    </enum>
+    <enum name="Format">
+      <key>Format_Invalid</key>
+      <key>Format_Mono</key>
+      <key>Format_MonoLSB</key>
+      <key>Format_Indexed8</key>
+      <key>Format_RGB32</key>
+      <key>Format_ARGB32</key>
+      <key>Format_ARGB32_Premultiplied</key>
+      <key>Format_RGB16</key>
+      <key>Format_ARGB8565_Premultiplied</key>
+      <key>Format_RGB666</key>
+      <key>Format_ARGB6666_Premultiplied</key>
+      <key>Format_RGB555</key>
+      <key>Format_ARGB8555_Premultiplied</key>
+      <key>Format_RGB888</key>
+      <key>Format_RGB444</key>
+      <key>Format_ARGB4444_Premultiplied</key>
+      <key>Format_RGBX8888</key>
+      <key>Format_RGBA8888</key>
+      <key>Format_RGBA8888_Premultiplied</key>
+      <key>Format_BGR30</key>
+      <key>Format_A2BGR30_Premultiplied</key>
+      <key>Format_RGB30</key>
+      <key>Format_A2RGB30_Premultiplied</key>
+      <key>Format_Alpha8</key>
+      <key>Format_Grayscale8</key>
+      <key>Format_RGBX64</key>
+      <key>Format_RGBA64</key>
+      <key>Format_RGBA64_Premultiplied</key>
+      <key>Format_Grayscale16</key>
+      <key>Format_BGR888</key>
+      <key>Format_RGBX16FPx4</key>
+      <key>Format_RGBA16FPx4</key>
+      <key>Format_RGBA16FPx4_Premultiplied</key>
+      <key>Format_RGBX32FPx4</key>
+      <key>Format_RGBA32FPx4</key>
+      <key>Format_RGBA32FPx4_Premultiplied</key>
+      <key>NImageFormats</key>
+    </enum>
+    <preproc plain="#ifndef QT_NO_IMAGEFORMAT_XPM" />
+    <preproc plain="#endif" />
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QImage" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="devType">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="detach">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDetached">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="copy">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" default="QRect()" />
+        </parameters>
+      </variant>
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="format">
+      <variant return-type="QImage::Format" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="convertToFormat">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QImage::Format" modifier="" name="f" />
+          <parameter const="false" type="Qt::ImageConversionFlags" modifier="" name="flags" default="Qt::AutoColor" />
+        </parameters>
+      </variant>
+      <variant return-type="QImage" access="public">
+        <parameters>
+          <parameter const="false" type="QImage::Format" modifier="" name="f" />
+          <parameter const="false" type="Qt::ImageConversionFlags" modifier="" name="flags" default="Qt::AutoColor" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QImage::Format" modifier="" name="f" />
+          <parameter const="true" type="QList&lt;QRgb&gt;" modifier="&amp;" name="colorTable" />
+          <parameter const="false" type="Qt::ImageConversionFlags" modifier="" name="flags" default="Qt::AutoColor" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="reinterpretAsFormat">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QImage::Format" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="convertedTo">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QImage::Format" modifier="" name="f" />
+          <parameter const="false" type="Qt::ImageConversionFlags" modifier="" name="flags" default="Qt::AutoColor" />
+        </parameters>
+      </variant>
+      <variant return-type="QImage" access="public">
+        <parameters>
+          <parameter const="false" type="QImage::Format" modifier="" name="f" />
+          <parameter const="false" type="Qt::ImageConversionFlags" modifier="" name="flags" default="Qt::AutoColor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="convertTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QImage::Format" modifier="" name="f" />
+          <parameter const="false" type="Qt::ImageConversionFlags" modifier="" name="flags" default="Qt::AutoColor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="depth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="colorCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bitPlaneCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="color">
+      <variant return-type="QRgb" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="false" type="QRgb" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setColorCount">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="allGray">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isGrayscale">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="bits">
+      <variant return-type="uchar*" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="const uchar*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="constBits">
+      <variant return-type="const uchar*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="sizeInBytes">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="scanLine">
+      <variant return-type="uchar*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="const uchar*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="constScanLine">
+      <variant return-type="const uchar*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="bytesPerLine">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="valid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pt" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pixelIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pt" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="pixel">
+      <variant return-type="QRgb" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="QRgb" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pt" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setPixel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="uint" modifier="" name="index_or_rgb" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pt" />
+          <parameter const="false" type="uint" modifier="" name="index_or_rgb" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pixelColor">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="QColor" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pt" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPixelColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pt" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="colorTable">
+      <variant return-type="QList&lt;QRgb&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setColorTable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QRgb&gt;" modifier="&amp;" name="colors" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="devicePixelRatio">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDevicePixelRatio">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="scaleFactor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="deviceIndependentSize">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fill">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="pixel" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::GlobalColor" modifier="" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasAlphaChannel">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlphaChannel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QImage" modifier="&amp;" name="alphaChannel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createAlphaMask">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ImageConversionFlags" modifier="" name="flags" default="Qt::AutoColor" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_IMAGE_HEURISTIC_MASK" />
+    <function name="createHeuristicMask">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="clipTight" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="createMaskFromColor">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QRgb" modifier="" name="color" />
+          <parameter const="false" type="Qt::MaskMode" modifier="" name="mode" default="Qt::MaskInColor" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="scaled">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="aspectMode"
+          default="Qt::IgnoreAspectRatio" />
+          <parameter const="false" type="Qt::TransformationMode" modifier="" name="mode"
+          default="Qt::FastTransformation" />
+        </parameters>
+      </variant>
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="s" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="aspectMode"
+          default="Qt::IgnoreAspectRatio" />
+          <parameter const="false" type="Qt::TransformationMode" modifier="" name="mode"
+          default="Qt::FastTransformation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaledToWidth">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="Qt::TransformationMode" modifier="" name="mode"
+          default="Qt::FastTransformation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaledToHeight">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="Qt::TransformationMode" modifier="" name="mode"
+          default="Qt::FastTransformation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transformed">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="matrix" />
+          <parameter const="false" type="Qt::TransformationMode" modifier="" name="mode"
+          default="Qt::FastTransformation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trueMatrix" static="true">
+      <variant return-type="QTransform" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="" />
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirrored">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="horizontally" default="false" />
+          <parameter const="false" type="bool" modifier="" name="vertically" default="true" />
+        </parameters>
+      </variant>
+      <variant return-type="QImage" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="horizontally" default="false" />
+          <parameter const="false" type="bool" modifier="" name="vertically" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rgbSwapped">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QImage" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mirror">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="horizontally" default="false" />
+          <parameter const="false" type="bool" modifier="" name="vertically" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rgbSwap">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="invertPixels">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QImage::InvertMode" modifier="" name="" default="QImage::InvertRgb" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="colorSpace">
+      <variant return-type="QColorSpace" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="convertedToColorSpace">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QColorSpace" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="convertToColorSpace">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColorSpace" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColorSpace">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColorSpace" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="applyColorTransform">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColorTransform" modifier="&amp;" name="transform" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="load">
+      <!--
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="true" type="char" modifier="*" name="format" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="loadFromData">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="data" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="uchar" modifier="*" name="buf" />
+          <parameter const="false" type="int" modifier="" name="len" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="save">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="quality" default="-1" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="quality" default="-1" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <!--
+    <function name="fromData" static="true">
+      <variant return-type="QImage" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="data" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant return-type="QImage" access="public">
+        <parameters>
+          <parameter const="true" type="uchar" modifier="*" name="data" />
+          <parameter const="false" type="int" modifier="" name="size" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant return-type="QImage" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="cacheKey">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintEngine">
+      <variant return-type="QPaintEngine*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dotsPerMeterX">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dotsPerMeterY">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDotsPerMeterX">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDotsPerMeterY">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="offset">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textKeys">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="pixelFormat">
+      <variant return-type="QPixelFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toPixelFormat" static="true">
+      <variant return-type="QPixelFormat" access="public">
+        <parameters>
+          <parameter const="false" type="QImage::Format" modifier="" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toImageFormat" static="true">
+      <variant return-type="QImage::Format" access="public">
+        <parameters>
+          <parameter const="false" type="QPixelFormat" modifier="" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#if defined(Q_OS_DARWIN)||defined(Q_QDOC)" />
+    <!--
+    <function name="toCGImage">
+      <variant return-type="CGImageRef" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#if defined(Q_OS_WIN)||defined(Q_QDOC)" />
+    <!--
+    <function name="toHBITMAP">
+      <variant return-type="HBITMAP" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="fromHBITMAP" static="true">
+      <variant return-type="QImage" access="public">
+        <parameters>
+          <parameter const="false" type="HBITMAP" modifier="" name="hbitmap" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="fromHICON" static="true">
+      <variant return-type="QImage" access="public">
+        <parameters>
+          <parameter const="false" type="HICON" modifier="" name="icon" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="metric" />
+    <function name="mirrored_helper" />
+    <function name="rgbSwapped_helper" />
+    <function name="mirrored_inplace" />
+    <function name="rgbSwapped_inplace" />
+    <function name="convertToFormat_helper" />
+    <function name="convertToFormat_inplace" />
+    <function name="smoothScaled" />
+    <class_decl name="QPixmapCacheEntry" />
+    <!--
+    <function name="data_ptr">
+      <variant return-type="DataPtr&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

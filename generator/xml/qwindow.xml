@@ -1,0 +1,941 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qwindow.h">
+  <class_decl name="QExposeEvent" />
+  <class_decl name="QPaintEvent" />
+  <class_decl name="QFocusEvent" />
+  <class_decl name="QMoveEvent" />
+  <class_decl name="QResizeEvent" />
+  <class_decl name="QShowEvent" />
+  <class_decl name="QHideEvent" />
+  <class_decl name="QCloseEvent" />
+  <class_decl name="QKeyEvent" />
+  <class_decl name="QMouseEvent" />
+  <class_decl name="QWheelEvent" />
+  <class_decl name="QTouchEvent" />
+  <class_decl name="QTabletEvent" />
+  <!--
+  <class_decl name="QPlatformSurface" />
+  -->
+  <class_decl name="QBackingStore" />
+  <class_decl name="QScreen" />
+  <class_decl name="QAccessibleInterface" />
+  <!--
+  <class_decl name="QWindowContainer" />
+  -->
+  <class_decl name="QDebug" />
+  <!--
+  <class_decl name="QVulkanInstance" />
+  -->
+  <class name="QWindow">
+    <super_list>
+      <super name="QObject" />
+      <super name="QSurface" />
+    </super_list>
+    <property type="QString" name="title" read="title" write="setTitle" />
+    <property type="Qt::WindowModality" name="modality" read="modality" write="setModality" />
+    <property type="Qt::WindowFlags" name="flags" read="flags" write="setFlags" />
+    <property type="int" name="x" read="x" write="setX" />
+    <property type="int" name="y" read="y" write="setY" />
+    <property type="int" name="width" read="width" write="setWidth" />
+    <property type="int" name="height" read="height" write="setHeight" />
+    <property type="int" name="minimumWidth" read="minimumWidth" write="setMinimumWidth" />
+    <property type="int" name="minimumHeight" read="minimumHeight" write="setMinimumHeight" />
+    <property type="int" name="maximumWidth" read="maximumWidth" write="setMaximumWidth" />
+    <property type="int" name="maximumHeight" read="maximumHeight" write="setMaximumHeight" />
+    <property type="bool" name="visible" read="isVisible" write="setVisible" />
+    <property type="bool" name="active" read="isActive" />
+    <property type="QWindow::Visibility" name="visibility" read="visibility" write="setVisibility" />
+    <property type="Qt::ScreenOrientation" name="contentOrientation" read="contentOrientation"
+    write="reportContentOrientationChange" />
+    <property type="qreal" name="opacity" read="opacity" write="setOpacity" />
+    <preproc plain="#ifdef Q_QDOC" />
+    <property type="QWindow*" name="transientParent" read="transientParent" write="setTransientParent" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <enum name="Visibility">
+      <key>Hidden</key>
+      <key>AutomaticVisibility</key>
+      <key>Windowed</key>
+      <key>Minimized</key>
+      <key>Maximized</key>
+      <key>FullScreen</key>
+    </enum>
+    <enum name="AncestorMode">
+      <key>ExcludeTransients</key>
+      <key>IncludeTransients</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" default="nullptr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWindow" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <!--
+    <function name="setSurfaceType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="SurfaceType" modifier="" name="surfaceType" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="surfaceType">
+      <variant return-type="SurfaceType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="isVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="visibility">
+      <variant return-type="QWindow::Visibility" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVisibility">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWindow::Visibility" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="create">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="winId">
+      <variant return-type="WId" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="parent">
+      <variant return-type="QWindow*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWindow::AncestorMode" modifier="" name="mode" default="QWindow::ExcludeTransients" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setParent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWindow" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTopLevel">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isModal">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="modality">
+      <variant return-type="Qt::WindowModality" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setModality">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::WindowModality" modifier="" name="modality" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="format">
+      <variant return-type="QSurfaceFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="requestedFormat">
+      <variant return-type="QSurfaceFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="flags">
+      <variant return-type="Qt::WindowFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFlag">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::WindowType" modifier="" name="" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="Qt::WindowType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="title">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOpacity">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="level" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="opacity">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMask">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="region" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mask">
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isActive">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reportContentOrientationChange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contentOrientation">
+      <variant return-type="Qt::ScreenOrientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="devicePixelRatio">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="windowState">
+      <variant return-type="Qt::WindowState" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="windowStates">
+      <variant return-type="Qt::WindowStates" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWindowState">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::WindowState" modifier="" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setWindowStates">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::WindowStates" modifier="" name="states" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTransientParent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWindow" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transientParent">
+      <variant return-type="QWindow*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAncestorOf">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QWindow" modifier="*" name="child" />
+          <parameter const="false" type="QWindow::AncestorMode" modifier="" name="mode" default="QWindow::IncludeTransients" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isExposed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumHeight">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumHeight">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="baseSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeIncrement">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMinimumSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMaximumSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBaseSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSizeIncrement">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="geometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="frameMargins">
+      <variant return-type="QMargins" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="frameGeometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="framePosition">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFramePosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="x">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pt" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="posx" />
+          <parameter const="false" type="int" modifier="" name="posy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="newSize" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFilePath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filePath" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIcon">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="icon">
+      <variant return-type="QIcon" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="destroy">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="handle">
+      <variant return-type="QPlatformWindow*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setKeyboardGrabEnabled">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="grab" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMouseGrabEnabled">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="grab" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="screen">
+      <variant return-type="QScreen*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScreen">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="accessibleRoot">
+      <variant return-type="QAccessibleInterface*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="focusObject">
+      <variant return-type="QObject*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mapToGlobal">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapFromGlobal">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CURSOR" />
+    <function name="cursor">
+      <variant return-type="QCursor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCursor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QCursor" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unsetCursor">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="fromWinId" static="true">
+      <variant return-type="QWindow*" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="WId" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <preproc plain="#if QT_CONFIG(vulkan)||defined(Q_CLANG_QDOC)" />
+    <function name="setVulkanInstance">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QVulkanInstance" modifier="*" name="instance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="vulkanInstance">
+      <variant return-type="QVulkanInstance*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="requestActivate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="show">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hide">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showMinimized">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showMaximized">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showFullScreen">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showNormal">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="close">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="raise">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lower">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startSystemResize">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Edges" modifier="" name="edges" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startSystemMove">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTitle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setX">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setY">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="posx" />
+          <parameter const="false" type="int" modifier="" name="posy" />
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMinimumWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMinimumHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMaximumWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMaximumHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alert">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="requestUpdate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="screenChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="modalityChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::WindowModality" modifier="" name="modality" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="windowStateChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::WindowState" modifier="" name="windowState" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="windowTitleChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="xChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="yChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="widthChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="heightChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumWidthChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumHeightChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maximumWidthChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maximumHeightChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="visibleChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="visibilityChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QWindow::Visibility" modifier="" name="visibility" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activeChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contentOrientationChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusObjectChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="object" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="opacityChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="opacity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transientParentChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QWindow" modifier="*" name="transientParent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exposeEvent" />
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveEvent" />
+    <function name="focusInEvent" />
+    <function name="focusOutEvent" />
+    <function name="showEvent" />
+    <function name="hideEvent" />
+    <function name="closeEvent" />
+    <function name="event" />
+    <function name="keyPressEvent" />
+    <function name="keyReleaseEvent" />
+    <function name="mousePressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="mouseDoubleClickEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <function name="wheelEvent" />
+    <preproc plain="#endif" />
+    <function name="touchEvent" />
+    <preproc plain="#if QT_CONFIG(tabletevent)" />
+    <function name="tabletEvent" />
+    <preproc plain="#endif" />
+    <function name="nativeEvent" />
+    <function name="surfaceHandle" />
+    <class_decl name="QGuiApplication" />
+    <!--
+    <class_decl name="QWindowContainer" />
+    -->
+  </class>
+</unit>

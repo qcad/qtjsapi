@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qwidgetaction.h">
+  <class name="QWidgetAction">
+    <super_list>
+      <super name="QObject" />
+      <super name="QAction" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setDefaultWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="requestWidget">
+      <variant return-type="QWidget*" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="releaseWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="eventFilter" />
+    <function name="createWidget" />
+    <function name="deleteWidget" />
+    <function name="createdWidgets" />
+    <class_decl name="QToolBar" />
+  </class>
+</unit>

@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qimagewriter.h">
+  <class_decl name="QIODevice" />
+  <class_decl name="QImage" />
+  <class name="QImageWriter">
+    <enum name="ImageWriterError">
+      <key>UnknownError</key>
+      <key>DeviceError</key>
+      <key>UnsupportedFormatError</key>
+      <key>InvalidImageError</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="format" default="QByteArray()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="format">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDevice">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="device">
+      <variant return-type="QIODevice*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFileName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setQuality">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="quality" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quality">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCompression">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="compression" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="compression">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSubType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="subType">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportedSubTypes">
+      <variant return-type="QList&lt;QByteArray&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOptimizedWrite">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="optimize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="optimizedWrite">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProgressiveScanWrite">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="progressive" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="progressiveScanWrite">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transformation">
+      <variant return-type="QImageIOHandler::Transformations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTransformation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QImageIOHandler::Transformations" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="canWrite">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="write">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QImage" modifier="&amp;" name="image" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="QImageWriter::ImageWriterError" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportsOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QImageIOHandler::ImageOption" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="supportedImageFormats" static="true">
+      <variant return-type="QList&lt;QByteArray&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="supportedImageFormats" static="true" declare-only="true">
+      <variant return-type="QList&lt;QString&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportedMimeTypes" static="true">
+      <variant return-type="QList&lt;QByteArray&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="imageFormatsForMimeType" static="true">
+      <variant return-type="QList&lt;QByteArray&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="mimeType" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

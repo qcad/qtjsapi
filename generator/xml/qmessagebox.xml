@@ -1,0 +1,588 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="qmessagebox.h">
+  <class_decl name="QLabel" />
+  <class_decl name="QAbstractButton" />
+  <class_decl name="QCheckBox" />
+  <class name="QMessageBox">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QDialog" />
+    </super_list>
+    <property type="QMessageBox::Icon" name="icon" read="icon" write="setIcon" />
+    <property type="QPixmap" name="iconPixmap" read="iconPixmap" write="setIconPixmap" />
+    <property type="Qt::TextFormat" name="textFormat" read="textFormat" write="setTextFormat" />
+    <property type="QMessageBox::StandardButtons" name="standardButtons" read="standardButtons" write="setStandardButtons" />
+    <preproc plain="#if QT_CONFIG(textedit)" />
+    <property type="QString" name="detailedText" read="detailedText" write="setDetailedText" />
+    <preproc plain="#endif" />
+    <property type="QString" name="informativeText" read="informativeText" write="setInformativeText" />
+    <property type="QString" name="text" read="text" write="setText" />
+    <property type="Qt::TextInteractionFlags" name="textInteractionFlags" read="textInteractionFlags" write="setTextInteractionFlags" />
+    <enum name="Icon">
+      <key>NoIcon</key>
+      <key>Information</key>
+      <key>Warning</key>
+      <key>Critical</key>
+      <key>Question</key>
+    </enum>
+    <enum name="ButtonRole">
+      <key>InvalidRole</key>
+      <key>AcceptRole</key>
+      <key>RejectRole</key>
+      <key>DestructiveRole</key>
+      <key>ActionRole</key>
+      <key>HelpRole</key>
+      <key>YesRole</key>
+      <key>NoRole</key>
+      <key>ResetRole</key>
+      <key>ApplyRole</key>
+      <key>NRoles</key>
+    </enum>
+    <enum name="StandardButton">
+      <key>NoButton</key>
+      <key>Ok</key>
+      <key>Save</key>
+      <key>SaveAll</key>
+      <key>Open</key>
+      <key>Yes</key>
+      <key>YesToAll</key>
+      <key>No</key>
+      <key>NoToAll</key>
+      <key>Abort</key>
+      <key>Retry</key>
+      <key>Ignore</key>
+      <key>Close</key>
+      <key>Cancel</key>
+      <key>Discard</key>
+      <key>Help</key>
+      <key>Apply</key>
+      <key>Reset</key>
+      <key>RestoreDefaults</key>
+      <key>FirstButton</key>
+      <key>LastButton</key>
+      <key>YesAll</key>
+      <key>NoAll</key>
+      <key>Default</key>
+      <key>Escape</key>
+      <key>FlagMask</key>
+      <key>ButtonMask</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QMessageBox::Icon" modifier="" name="icon" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::StandardButtons" modifier="" name="buttons" default="QMessageBox::NoButton" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::Dialog|Qt::MSWindowsFixedSizeDialogHint" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::Icon" modifier="" name="icon" />
+          <parameter const="false" type="int" modifier="" name="button0" />
+          <parameter const="false" type="int" modifier="" name="button1" />
+          <parameter const="false" type="int" modifier="" name="button2" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="f"
+          default="Qt::Dialog|Qt::MSWindowsFixedSizeDialogHint" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <function name="addButton">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+          <parameter const="false" type="QMessageBox::ButtonRole" modifier="" name="role" />
+        </parameters>
+      </variant>
+      <variant return-type="QPushButton*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::ButtonRole" modifier="" name="role" />
+        </parameters>
+      </variant>
+      <variant return-type="QPushButton*" access="public">
+        <parameters>
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeButton">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="buttons">
+      <variant return-type="QList&lt;QAbstractButton*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="buttonRole">
+      <variant return-type="QMessageBox::ButtonRole" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStandardButtons">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMessageBox::StandardButtons" modifier="" name="buttons" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="standardButtons">
+      <variant return-type="QMessageBox::StandardButtons" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="standardButton">
+      <variant return-type="QMessageBox::StandardButton" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="button">
+      <variant return-type="QAbstractButton*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="which" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultButton">
+      <variant return-type="QPushButton*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultButton">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPushButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="escapeButton">
+      <variant return-type="QAbstractButton*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEscapeButton">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clickedButton">
+      <variant return-type="QAbstractButton*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="icon">
+      <variant return-type="QMessageBox::Icon" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIcon">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMessageBox::Icon" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="iconPixmap">
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIconPixmap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textFormat">
+      <variant return-type="Qt::TextFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TextFormat" modifier="" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTextInteractionFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TextInteractionFlags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textInteractionFlags">
+      <variant return-type="Qt::TextInteractionFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCheckBox">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QCheckBox" modifier="*" name="cb" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="checkBox">
+      <variant return-type="QCheckBox*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="information" static="true">
+      <variant return-type="QMessageBox::StandardButton" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::StandardButtons" modifier="" name="buttons" default="QMessageBox::Ok" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="defaultButton" default="QMessageBox::NoButton" />
+        </parameters>
+      </variant>
+      <variant return-type="QMessageBox::StandardButton" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button0" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button1" default="QMessageBox::NoButton" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="int" modifier="" name="button0" />
+          <parameter const="false" type="int" modifier="" name="button1" default="0" />
+          <parameter const="false" type="int" modifier="" name="button2" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button0Text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button1Text" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button2Text" default="QString()" />
+          <parameter const="false" type="int" modifier="" name="defaultButtonNumber" default="0" />
+          <parameter const="false" type="int" modifier="" name="escapeButtonNumber" default="-1" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_VERSION&lt;QT_VERSION_CHECK(7,0,0)" />
+    <preproc plain="#endif" />
+    <function name="question" static="true">
+      <variant return-type="QMessageBox::StandardButton" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::StandardButtons" modifier="" name="buttons"
+          default="QMessageBox::StandardButtons(QMessageBox::Yes|QMessageBox::No)" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="defaultButton" default="QMessageBox::NoButton" />
+        </parameters>
+      </variant>
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button0" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button1" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="int" modifier="" name="button0" />
+          <parameter const="false" type="int" modifier="" name="button1" default="0" />
+          <parameter const="false" type="int" modifier="" name="button2" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button0Text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button1Text" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button2Text" default="QString()" />
+          <parameter const="false" type="int" modifier="" name="defaultButtonNumber" default="0" />
+          <parameter const="false" type="int" modifier="" name="escapeButtonNumber" default="-1" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_VERSION&lt;QT_VERSION_CHECK(7,0,0)" />
+    <preproc plain="#endif" />
+    <function name="warning" static="true">
+      <variant return-type="QMessageBox::StandardButton" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::StandardButtons" modifier="" name="buttons" default="QMessageBox::Ok" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="defaultButton" default="QMessageBox::NoButton" />
+        </parameters>
+      </variant>
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button0" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button1" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="int" modifier="" name="button0" />
+          <parameter const="false" type="int" modifier="" name="button1" />
+          <parameter const="false" type="int" modifier="" name="button2" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button0Text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button1Text" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button2Text" default="QString()" />
+          <parameter const="false" type="int" modifier="" name="defaultButtonNumber" default="0" />
+          <parameter const="false" type="int" modifier="" name="escapeButtonNumber" default="-1" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_VERSION&lt;QT_VERSION_CHECK(7,0,0)" />
+    <preproc plain="#endif" />
+    <function name="critical" static="true">
+      <variant return-type="QMessageBox::StandardButton" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::StandardButtons" modifier="" name="buttons" default="QMessageBox::Ok" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="defaultButton" default="QMessageBox::NoButton" />
+        </parameters>
+      </variant>
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button0" />
+          <parameter const="false" type="QMessageBox::StandardButton" modifier="" name="button1" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="int" modifier="" name="button0" />
+          <parameter const="false" type="int" modifier="" name="button1" />
+          <parameter const="false" type="int" modifier="" name="button2" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button0Text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button1Text" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="button2Text" default="QString()" />
+          <parameter const="false" type="int" modifier="" name="defaultButtonNumber" default="0" />
+          <parameter const="false" type="int" modifier="" name="escapeButtonNumber" default="-1" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="about" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="aboutQt" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,2)" />
+    <function name="buttonText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setButtonText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="button" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="informativeText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInformativeText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(textedit)" />
+    <function name="detailedText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDetailedText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setWindowTitle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setWindowModality">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::WindowModality" modifier="" name="windowModality" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,2)" />
+    <function name="standardIcon" static="true">
+      <variant return-type="QPixmap" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMessageBox::Icon" modifier="" name="icon" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="buttonClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#ifdef Q_CLANG_QDOC" />
+    -->
+    <function name="exec">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#endif" />
+    -->
+    <function name="event" />
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="showEvent" />
+    <function name="closeEvent" />
+    <function name="keyPressEvent" />
+    <function name="changeEvent" />
+  </class>
+</unit>

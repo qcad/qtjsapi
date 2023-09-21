@@ -1,0 +1,57 @@
+<!--
+    List of classes that can be used as based classes for JS classes.
+    These classes are instantiated as Class_Base when created from JS.
+ -->
+<inheritable-class>
+  <class name="QAbstractButton" />
+  <class name="QAbstractItemView" />
+  <class name="QAbstractSlider" />
+  <class name="QAction" />
+  <class name="QBoxLayout" />
+  <class name="QButtonGroup" />
+  <class name="QCheckBox" />
+  <class name="QComboBox" />
+  <class name="QDialog" />
+  <class name="QDialogButtonBox" />
+  <class name="QDockWidget" />
+  <class name="QFileDialog" />
+  <class name="QFontComboBox" />
+  <class name="QFrame" />
+  <class name="QGroupBox" />
+  <class name="QHBoxLayout" />
+  <class name="QHeaderView" />
+  <class name="QLabel" />
+  <class name="QLayout" />
+  <class name="QLayoutItem" />
+  <class name="QLineEdit" />
+  <class name="QListWidget" />
+  <class name="QMainWindow" />
+  <class name="QMdiArea" />
+  <class name="QMdiSubWindow" />
+  <class name="QMenu" />
+  <class name="QMenuBar" />
+  <class name="QMessageBox" />
+  <class name="QPaintDevice" />
+  <class name="QPlainTextEdit" />
+  <class name="QPushButton" />
+  <class name="QRadioButton" />
+  <class name="QScreen" />
+  <class name="QScrollBar" />
+  <class name="QSlider" />
+  <class name="QSplashScreen" />
+  <class name="QSplitter" />
+  <class name="QSplitterHandle" />
+  <class name="QStatusBar" />
+  <class name="QTabBar" />
+  <class name="QTabWidget" />
+  <class name="QTextBrowser" />
+  <class name="QTextDocument" />
+  <class name="QTextEdit" />
+  <class name="QToolBar" />
+  <class name="QToolButton" />
+  <class name="QTreeView" />
+  <class name="QTreeWidget" />
+  <class name="QVBoxLayout" />
+  <class name="QWidget" />
+  <class name="QWindow" />
+</inheritable-class>

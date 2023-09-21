@@ -1,0 +1,478 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtextobject.h">
+  <class_decl name="QTextDocument" />
+  <class_decl name="QTextCursor" />
+  <class_decl name="QTextBlock" />
+  <class_decl name="QTextFragment" />
+  <class_decl name="QTextList" />
+  <!--
+  <class name="QTextObject">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <function name="setFormat" />
+    <function name="format">
+      <variant return-type="QTextFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="formatIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="document">
+      <variant return-type="QTextDocument*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="objectIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  -->
+  <!--
+  <class name="QTextBlockGroup">
+    <super_list>
+      <super name="QTextObject" />
+    </super_list>
+    <function name="blockInserted" />
+    <function name="blockRemoved" />
+    <function name="blockFormatChanged" />
+    <function name="blockList" />
+  </class>
+  -->
+  <!--
+  <class name="QTextFrameLayoutData" />
+  -->
+  <!--
+  <class name="QTextFrame">
+    <super_list>
+      <super name="QObject" />
+      <super name="QTextObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextDocument" modifier="*" name="doc" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setFrameFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextFrameFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="frameFormat">
+      <variant return-type="QTextFrameFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="firstCursorPosition">
+      <variant return-type="QTextCursor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastCursorPosition">
+      <variant return-type="QTextCursor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="firstPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="layoutData">
+      <variant return-type="QTextFrameLayoutData*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLayoutData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFrameLayoutData" modifier="*" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="childFrames">
+      <variant return-type="" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="parentFrame">
+      <variant return-type="QTextFrame*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class name="iterator">
+      <class_decl name="QTextFrame" />
+      <class_decl name="QTextTableCell" />
+      <function name="currentFrame">
+        <variant return-type="QTextFrame*" const="true" access="private">
+          <parameters />
+        </variant>
+      </function>
+      <function name="currentBlock">
+        <variant return-type="Q_GUI_EXPORTQTextBlock" const="true" access="private">
+          <parameters />
+        </variant>
+      </function>
+      <function name="atEnd">
+        <variant return-type="bool" const="true" access="private">
+          <parameters />
+        </variant>
+      </function>
+      <function name="operator">
+        <variant return-type="bool" const="true" access="private">
+          <parameters>
+            <parameter const="true" type="iterator" modifier="&amp;" name="o" />
+          </parameters>
+        </variant>
+        <variant return-type="bool" const="true" access="private">
+          <parameters>
+            <parameter const="true" type="iterator" modifier="&amp;" name="o" />
+          </parameters>
+        </variant>
+        <variant return-type="Q_GUI_EXPORTiterator&amp;" access="private">
+          <parameters />
+        </variant>
+        <variant return-type="iterator" access="private">
+          <parameters>
+            <parameter const="false" type="int" modifier="" name="" />
+          </parameters>
+        </variant>
+        <variant return-type="Q_GUI_EXPORTiterator&amp;" access="private">
+          <parameters />
+        </variant>
+        <variant return-type="iterator" access="private">
+          <parameters>
+            <parameter const="false" type="int" modifier="" name="" />
+          </parameters>
+        </variant>
+      </function>
+    </class>
+    <class_decl name="iterator" />
+    <function name="begin">
+      <variant return-type="iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="end">
+      <variant return-type="iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  -->
+  <!--
+  <class name="QTextBlockUserData" />
+  -->
+  <!--
+  <class name="QTextBlock">
+    <class_decl name="QSyntaxHighlighter" />
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="operator">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextBlock" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextBlock" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextBlock" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="layout">
+      <variant return-type="QTextLayout*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearLayout">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="blockFormat">
+      <variant return-type="QTextBlockFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="blockFormatIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="charFormat">
+      <variant return-type="QTextCharFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="charFormatIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="textDirection">
+      <variant return-type="" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="textFormats">
+      <variant return-type="" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="document">
+      <variant return-type="const QTextDocument*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="textList">
+      <variant return-type="QTextList*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="userData">
+      <variant return-type="QTextBlockUserData*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUserData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextBlockUserData" modifier="*" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="userState">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUserState">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="revision">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRevision">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="rev" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="blockNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="firstLineNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineCount">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="count" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class name="iterator">
+      <class_decl name="QTextBlock" />
+      <function name="fragment">
+        <variant return-type="Q_GUI_EXPORTQTextFragment" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+      <function name="atEnd">
+        <variant return-type="bool" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+    </class>
+    <function name="begin">
+      <variant return-type="iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="end">
+      <variant return-type="iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="next">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="previous">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fragmentIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QTextLayout" />
+  </class>
+  -->
+  <!--
+  <class name="QTextFragment">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QTextDocumentPrivate" modifier="*" name="priv" />
+          <parameter const="false" type="int" modifier="" name="f" />
+          <parameter const="false" type="int" modifier="" name="fe" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QTextFragment" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator">
+      <variant return-type="QTextFragment&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QTextFragment" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextFragment" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextFragment" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextFragment" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="charFormat">
+      <variant return-type="QTextCharFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="charFormatIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if !defined(QT_NO_RAWFONT)" />
+    <function name="glyphRuns">
+      <variant return-type="" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="from" default="-1" />
+          <parameter const="false" type="int" modifier="" name="length" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+  </class>
+  -->
+</unit>

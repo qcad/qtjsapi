@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdialog.h">
+  <class_decl name="QPushButton" />
+  <class name="QDialog">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <class_decl name="QPushButton" />
+    <enum name="DialogCode">
+      <key>Rejected</key>
+      <key>Accepted</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="f" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="result">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSizeGripEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSizeGripEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setModal">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="modal" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setResult">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="finished">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="result" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="accepted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rejected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exec">
+      <variant return-type="int" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="done">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="accept">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reject">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="keyPressEvent" />
+    <function name="closeEvent" />
+    <function name="showEvent" />
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CONTEXTMENU" />
+    <function name="contextMenuEvent" />
+    <preproc plain="#endif" />
+    <function name="eventFilter" />
+    <function name="adjustPosition" />
+  </class>
+</unit>

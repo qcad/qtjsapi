@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qstatusbar.h">
+  <class name="QStatusBar">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="addWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertWidget">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPermanentWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertPermanentWidget">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSizeGripEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSizeGripEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentMessage">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showMessage">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="int" modifier="" name="timeout" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearMessage">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="messageChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="showEvent" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="reformat" />
+    <function name="hideOrShow" />
+    <function name="event" />
+    -->
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

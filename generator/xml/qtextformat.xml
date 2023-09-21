@@ -1,0 +1,1890 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtextformat.h">
+  <class_decl name="QString" />
+  <class_decl name="QVariant" />
+  <class_decl name="QFont" />
+  <!--
+  <class_decl name="QTextFormatCollection" />
+  -->
+  <class_decl name="QTextBlockFormat" />
+  <class_decl name="QTextCharFormat" />
+  <class_decl name="QTextListFormat" />
+  <class_decl name="QTextTableFormat" />
+  <class_decl name="QTextFrameFormat" />
+  <class_decl name="QTextImageFormat" />
+  <class_decl name="QTextTableCellFormat" />
+  <class_decl name="QTextFormat" />
+  <class_decl name="QTextObject" />
+  <class_decl name="QTextCursor" />
+  <class_decl name="QTextDocument" />
+  <class_decl name="QTextLength" />
+  <class name="QTextLength">
+    <enum name="Type">
+      <key>VariableLength</key>
+      <key>FixedLength</key>
+      <key>PercentageLength</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="type" />
+          <parameter const="false" type="qreal" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="atype" />
+          <parameter const="false" type="qreal" modifier="" name="avalue" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <function name="type">
+      <variant return-type="QTextLength::Type" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="maximumLength" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rawValue">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="operator" />
+  </class>
+  <class name="QTextFormat">
+    <enum name="FormatType">
+      <key>InvalidFormat</key>
+      <key>BlockFormat</key>
+      <key>CharFormat</key>
+      <key>ListFormat</key>
+      <key>FrameFormat</key>
+      <key>UserFormat</key>
+    </enum>
+    <enum name="Property">
+      <key>ObjectIndex</key>
+      <key>CssFloat</key>
+      <key>LayoutDirection</key>
+      <key>OutlinePen</key>
+      <key>BackgroundBrush</key>
+      <key>ForegroundBrush</key>
+      <key>BackgroundImageUrl</key>
+      <key>BlockAlignment</key>
+      <key>BlockTopMargin</key>
+      <key>BlockBottomMargin</key>
+      <key>BlockLeftMargin</key>
+      <key>BlockRightMargin</key>
+      <key>TextIndent</key>
+      <key>TabPositions</key>
+      <key>BlockIndent</key>
+      <key>LineHeight</key>
+      <key>LineHeightType</key>
+      <key>BlockNonBreakableLines</key>
+      <key>BlockTrailingHorizontalRulerWidth</key>
+      <key>HeadingLevel</key>
+      <key>BlockQuoteLevel</key>
+      <key>BlockCodeLanguage</key>
+      <key>BlockCodeFence</key>
+      <key>BlockMarker</key>
+      <key>FirstFontProperty</key>
+      <key>FontCapitalization</key>
+      <key>FontLetterSpacing</key>
+      <key>FontWordSpacing</key>
+      <key>FontStyleHint</key>
+      <key>FontStyleStrategy</key>
+      <key>FontKerning</key>
+      <key>FontHintingPreference</key>
+      <key>FontFamilies</key>
+      <key>FontStyleName</key>
+      <key>FontLetterSpacingType</key>
+      <key>FontStretch</key>
+      <key>FontPointSize</key>
+      <key>FontSizeAdjustment</key>
+      <key>FontSizeIncrement</key>
+      <key>FontWeight</key>
+      <key>FontItalic</key>
+      <key>FontUnderline</key>
+      <key>FontOverline</key>
+      <key>FontStrikeOut</key>
+      <key>FontFixedPitch</key>
+      <key>FontPixelSize</key>
+      <key>LastFontProperty</key>
+      <key>TextUnderlineColor</key>
+      <key>TextVerticalAlignment</key>
+      <key>TextOutline</key>
+      <key>TextUnderlineStyle</key>
+      <key>TextToolTip</key>
+      <key>TextSuperScriptBaseline</key>
+      <key>TextSubScriptBaseline</key>
+      <key>TextBaselineOffset</key>
+      <key>IsAnchor</key>
+      <key>AnchorHref</key>
+      <key>AnchorName</key>
+      <key>OldFontLetterSpacingType</key>
+      <key>OldFontStretch</key>
+      <key>OldTextUnderlineColor</key>
+      <key>ObjectType</key>
+      <key>ListStyle</key>
+      <key>ListIndent</key>
+      <key>ListNumberPrefix</key>
+      <key>ListNumberSuffix</key>
+      <key>FrameBorder</key>
+      <key>FrameMargin</key>
+      <key>FramePadding</key>
+      <key>FrameWidth</key>
+      <key>FrameHeight</key>
+      <key>FrameTopMargin</key>
+      <key>FrameBottomMargin</key>
+      <key>FrameLeftMargin</key>
+      <key>FrameRightMargin</key>
+      <key>FrameBorderBrush</key>
+      <key>FrameBorderStyle</key>
+      <key>TableColumns</key>
+      <key>TableColumnWidthConstraints</key>
+      <key>TableCellSpacing</key>
+      <key>TableCellPadding</key>
+      <key>TableHeaderRowCount</key>
+      <key>TableBorderCollapse</key>
+      <key>TableCellRowSpan</key>
+      <key>TableCellColumnSpan</key>
+      <key>TableCellTopPadding</key>
+      <key>TableCellBottomPadding</key>
+      <key>TableCellLeftPadding</key>
+      <key>TableCellRightPadding</key>
+      <key>TableCellTopBorder</key>
+      <key>TableCellBottomBorder</key>
+      <key>TableCellLeftBorder</key>
+      <key>TableCellRightBorder</key>
+      <key>TableCellTopBorderStyle</key>
+      <key>TableCellBottomBorderStyle</key>
+      <key>TableCellLeftBorderStyle</key>
+      <key>TableCellRightBorderStyle</key>
+      <key>TableCellTopBorderBrush</key>
+      <key>TableCellBottomBorderBrush</key>
+      <key>TableCellLeftBorderBrush</key>
+      <key>TableCellRightBorderBrush</key>
+      <key>ImageName</key>
+      <key>ImageTitle</key>
+      <key>ImageAltText</key>
+      <key>ImageWidth</key>
+      <key>ImageHeight</key>
+      <key>ImageQuality</key>
+      <key>FullWidthSelection</key>
+      <key>PageBreakPolicy</key>
+      <key>UserProperty</key>
+    </enum>
+    <enum name="ObjectTypes">
+      <key>NoObject</key>
+      <key>ImageObject</key>
+      <key>TableObject</key>
+      <key>TableCellObject</key>
+      <key>UserObject</key>
+    </enum>
+    <enum name="PageBreakFlag">
+      <key>PageBreak_Auto</key>
+      <key>PageBreak_AlwaysBefore</key>
+      <key>PageBreak_AlwaysAfter</key>
+    </enum>
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="atype" />
+          <parameter const="false" type="qreal" modifier="" name="avalue" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="type" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QTextFormat" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFormat" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="merge">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextFormat" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="objectIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setObjectIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="object" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="property">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+          <parameter const="true" type="QList&lt;QTextLength&gt;" modifier="&amp;" name="lengths" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearProperty">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasProperty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boolProperty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intProperty">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleProperty">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stringProperty">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="colorProperty">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="penProperty">
+      <variant return-type="QPen" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="brushProperty">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lengthProperty">
+      <variant return-type="QTextLength" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lengthVectorProperty">
+      <variant return-type="QList&lt;QTextLength&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="propertyId" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="properties">
+      <variant return-type="QMap&lt;int, QVariant&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="propertyCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setObjectType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="objectType">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCharFormat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isBlockFormat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isListFormat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isFrameFormat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isImageFormat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isTableFormat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isTableCellFormat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toBlockFormat">
+      <variant return-type="QTextBlockFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toCharFormat">
+      <variant return-type="QTextCharFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toListFormat">
+      <variant return-type="QTextListFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toTableFormat">
+      <variant return-type="QTextTableFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toFrameFormat">
+      <variant return-type="QTextFrameFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toImageFormat">
+      <variant return-type="QTextImageFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toTableCellFormat">
+      <variant return-type="QTextTableCellFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLayoutDirection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::LayoutDirection" modifier="" name="direction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="layoutDirection">
+      <variant return-type="Qt::LayoutDirection" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBackground">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="background">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearBackground">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setForeground">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="foreground">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearForeground">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <class_decl name="QTextFormatCollection" />
+    -->
+    <class_decl name="QTextCharFormat" />
+  </class>
+  <class name="QTextCharFormat">
+    <super_list>
+      <super name="QTextFormat" />
+    </super_list>
+    <enum name="VerticalAlignment">
+      <key>AlignNormal</key>
+      <key>AlignSuperScript</key>
+      <key>AlignSubScript</key>
+      <key>AlignMiddle</key>
+      <key>AlignTop</key>
+      <key>AlignBottom</key>
+      <key>AlignBaseline</key>
+    </enum>
+    <enum name="UnderlineStyle">
+      <key>NoUnderline</key>
+      <key>SingleUnderline</key>
+      <key>DashUnderline</key>
+      <key>DotLine</key>
+      <key>DashDotLine</key>
+      <key>DashDotDotLine</key>
+      <key>WaveUnderline</key>
+      <key>SpellCheckUnderline</key>
+    </enum>
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="atype" />
+          <parameter const="false" type="qreal" modifier="" name="avalue" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="FontPropertiesInheritanceBehavior">
+      <key>FontPropertiesSpecifiedOnly</key>
+      <key>FontPropertiesAll</key>
+    </enum>
+    <function name="setFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+          <parameter const="false" type="QTextCharFormat::FontPropertiesInheritanceBehavior" modifier="" name="behavior"
+          default="QTextCharFormat::FontPropertiesAll" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="font">
+      <variant return-type="QFont" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,1)" />
+    <function name="setFontFamily">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontFamily">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="setFontFamilies">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="families" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontFamilies">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontStyleName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="styleName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontStyleName">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontPointSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontPointSize">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontWeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="weight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontWeight">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontItalic">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="italic" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontItalic">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontCapitalization">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::Capitalization" modifier="" name="capitalization" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontCapitalization">
+      <variant return-type="QFont::Capitalization" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontLetterSpacingType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::SpacingType" modifier="" name="letterSpacingType" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontLetterSpacingType">
+      <variant return-type="QFont::SpacingType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontLetterSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontLetterSpacing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontWordSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontWordSpacing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontUnderline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="underline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontUnderline">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontOverline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="overline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontOverline">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontStrikeOut">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="strikeOut" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontStrikeOut">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUnderlineColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="underlineColor">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontFixedPitch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="fixedPitch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontFixedPitch">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontStretch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="factor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontStretch">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontStyleHint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::StyleHint" modifier="" name="hint" />
+          <parameter const="false" type="QFont::StyleStrategy" modifier="" name="strategy"
+          default="QFont::PreferDefault" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFontStyleStrategy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::StyleStrategy" modifier="" name="strategy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontStyleHint">
+      <variant return-type="QFont::StyleHint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fontStyleStrategy">
+      <variant return-type="QFont::StyleStrategy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontHintingPreference">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::HintingPreference" modifier="" name="hintingPreference" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontHintingPreference">
+      <variant return-type="QFont::HintingPreference" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontKerning">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontKerning">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUnderlineStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextCharFormat::UnderlineStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="underlineStyle">
+      <variant return-type="QTextCharFormat::UnderlineStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVerticalAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextCharFormat::VerticalAlignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="verticalAlignment">
+      <variant return-type="QTextCharFormat::VerticalAlignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextOutline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPen" modifier="&amp;" name="pen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textOutline">
+      <variant return-type="QPen" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setToolTip">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tip" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toolTip">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSuperScriptBaseline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="baseline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="superScriptBaseline">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSubScriptBaseline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="baseline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="subScriptBaseline">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBaselineOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="baseline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="baselineOffset">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAnchor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="anchor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isAnchor">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAnchorHref">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="anchorHref">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAnchorNames">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="names" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="anchorNames">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTableCellRowSpan">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="tableCellRowSpan" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tableCellRowSpan">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTableCellColumnSpan">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="tableCellColumnSpan" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tableCellColumnSpan">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QTextFormat" />
+  </class>
+  <class name="QTextBlockFormat">
+    <super_list>
+      <super name="QTextFormat" />
+    </super_list>
+    <enum name="LineHeightTypes">
+      <key>SingleHeight</key>
+      <key>ProportionalHeight</key>
+      <key>FixedHeight</key>
+      <key>MinimumHeight</key>
+      <key>LineDistanceHeight</key>
+    </enum>
+    <!--
+    <enum name="MarkerType">
+      <key>NoMarker</key>
+      <key>Unchecked</key>
+      <key>Checked</key>
+    </enum>
+    -->
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="atype" />
+          <parameter const="false" type="qreal" modifier="" name="avalue" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTopMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topMargin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBottomMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottomMargin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeftMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftMargin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRightMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightMargin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextIndent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="aindent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textIndent">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIndent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="indent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indent">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeadingLevel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="alevel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="headingLevel">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="height" />
+          <parameter const="false" type="int" modifier="" name="heightType" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineHeight">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="scriptLineHeight" />
+          <parameter const="false" type="qreal" modifier="" name="scaling" />
+        </parameters>
+      </variant>
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lineHeightType">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNonBreakableLines">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nonBreakableLines">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPageBreakPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFormat::PageBreakFlags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pageBreakPolicy">
+      <variant return-type="QTextFormat::PageBreakFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setTabPositions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QTextOption::Tab&gt;" modifier="&amp;" name="tabs" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="tabPositions">
+      <variant return-type="QList&lt;QTextOption::Tab&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setMarker">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="MarkerType" modifier="" name="marker" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="marker">
+      <variant return-type="MarkerType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <class_decl name="QTextFormat" />
+  </class>
+  <class name="QTextListFormat">
+    <super_list>
+      <super name="QTextFormat" />
+    </super_list>
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="atype" />
+          <parameter const="false" type="qreal" modifier="" name="avalue" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="Style">
+      <key>ListDisc</key>
+      <key>ListCircle</key>
+      <key>ListSquare</key>
+      <key>ListDecimal</key>
+      <key>ListLowerAlpha</key>
+      <key>ListUpperAlpha</key>
+      <key>ListLowerRoman</key>
+      <key>ListUpperRoman</key>
+      <key>ListStyleUndefined</key>
+    </enum>
+    <function name="setStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextListFormat::Style" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="style">
+      <variant return-type="QTextListFormat::Style" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIndent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="indent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indent">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNumberPrefix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="numberPrefix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="numberPrefix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNumberSuffix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="numberSuffix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="numberSuffix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QTextFormat" />
+  </class>
+  <class name="QTextImageFormat">
+    <super_list>
+      <super name="QTextCharFormat" />
+    </super_list>
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="atype" />
+          <parameter const="false" type="qreal" modifier="" name="avalue" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="height" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setQuality">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="quality" default="100" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quality">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QTextFormat" />
+  </class>
+  <class name="QTextFrameFormat">
+    <super_list>
+      <super name="QTextFormat" />
+    </super_list>
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="atype" />
+          <parameter const="false" type="qreal" modifier="" name="avalue" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="Position">
+      <key>InFlow</key>
+      <key>FloatLeft</key>
+      <key>FloatRight</key>
+    </enum>
+    <enum name="BorderStyle">
+      <key>BorderStyle_None</key>
+      <key>BorderStyle_Dotted</key>
+      <key>BorderStyle_Dashed</key>
+      <key>BorderStyle_Solid</key>
+      <key>BorderStyle_Double</key>
+      <key>BorderStyle_DotDash</key>
+      <key>BorderStyle_DotDotDash</key>
+      <key>BorderStyle_Groove</key>
+      <key>BorderStyle_Ridge</key>
+      <key>BorderStyle_Inset</key>
+      <key>BorderStyle_Outset</key>
+    </enum>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFrameFormat::Position" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="QTextFrameFormat::Position" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBorder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="border" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="border">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBorderBrush">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="borderBrush">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBorderStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFrameFormat::BorderStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="borderStyle">
+      <variant return-type="QTextFrameFormat::BorderStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="margin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTopMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topMargin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBottomMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottomMargin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeftMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftMargin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRightMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightMargin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPadding">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="padding" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="padding">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextLength" modifier="&amp;" name="length" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="QTextLength" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="height" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextLength" modifier="&amp;" name="height" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="QTextLength" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPageBreakPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFormat::PageBreakFlags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pageBreakPolicy">
+      <variant return-type="QTextFormat::PageBreakFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QTextFormat" />
+  </class>
+  <class name="QTextTableFormat">
+    <super_list>
+      <super name="QTextFrameFormat" />
+    </super_list>
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="atype" />
+          <parameter const="false" type="qreal" modifier="" name="avalue" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="columns">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColumns">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="columns" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColumnWidthConstraints">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QTextLength&gt;" modifier="&amp;" name="constraints" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnWidthConstraints">
+      <variant return-type="QList&lt;QTextLength&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearColumnWidthConstraints">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cellSpacing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCellSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cellPadding">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCellPadding">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="padding" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeaderRowCount">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="count" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="headerRowCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBorderCollapse">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="borderCollapse" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="borderCollapse">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QTextFormat" />
+  </class>
+  <class name="QTextTableCellFormat">
+    <super_list>
+      <super name="QTextCharFormat" />
+    </super_list>
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextLength::Type" modifier="" name="atype" />
+          <parameter const="false" type="qreal" modifier="" name="avalue" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTopPadding">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="padding" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topPadding">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBottomPadding">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="padding" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottomPadding">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeftPadding">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="padding" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftPadding">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRightPadding">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="padding" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightPadding">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPadding">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="padding" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTopBorder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topBorder">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBottomBorder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottomBorder">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeftBorder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftBorder">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRightBorder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightBorder">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBorder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTopBorderStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFrameFormat::BorderStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topBorderStyle">
+      <variant return-type="QTextFrameFormat::BorderStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBottomBorderStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFrameFormat::BorderStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottomBorderStyle">
+      <variant return-type="QTextFrameFormat::BorderStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeftBorderStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFrameFormat::BorderStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftBorderStyle">
+      <variant return-type="QTextFrameFormat::BorderStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRightBorderStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFrameFormat::BorderStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightBorderStyle">
+      <variant return-type="QTextFrameFormat::BorderStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBorderStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextFrameFormat::BorderStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTopBorderBrush">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topBorderBrush">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBottomBorderBrush">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottomBorderBrush">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeftBorderBrush">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftBorderBrush">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRightBorderBrush">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightBorderBrush">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBorderBrush">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QTextFormat" />
+  </class>
+</unit>

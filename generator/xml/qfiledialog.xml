@@ -1,0 +1,589 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfiledialog.h">
+  <class_decl name="QModelIndex" />
+  <class_decl name="QItemSelection" />
+  <class_decl name="QAbstractFileIconProvider" />
+  <class_decl name="QAbstractItemDelegate" />
+  <class_decl name="QAbstractProxyModel" />
+  <class name="QFileDialog" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QDialog" />
+    </super_list>
+    <property type="QFileDialog::FileMode" name="fileMode" read="fileMode" write="setFileMode" />
+    <property type="QFileDialog::AcceptMode" name="acceptMode" read="acceptMode" write="setAcceptMode" />
+    <property type="QString" name="defaultSuffix" read="defaultSuffix" write="setDefaultSuffix" />
+    <property type="QFileDialog::Options" name="options" read="options" write="setOptions" />
+    <property type="QStringList" name="supportedSchemes" read="supportedSchemes" write="setSupportedSchemes" />
+    <enum name="ViewMode">
+      <key>Detail</key>
+      <key>List</key>
+    </enum>
+    <enum name="FileMode">
+      <key>AnyFile</key>
+      <key>ExistingFile</key>
+      <key>Directory</key>
+      <key>ExistingFiles</key>
+    </enum>
+    <enum name="AcceptMode">
+      <key>AcceptOpen</key>
+      <key>AcceptSave</key>
+    </enum>
+    <enum name="DialogLabel">
+      <key>LookIn</key>
+      <key>FileName</key>
+      <key>FileType</key>
+      <key>Accept</key>
+      <key>Reject</key>
+    </enum>
+    <enum name="Option">
+      <key>ShowDirsOnly</key>
+      <key>DontResolveSymlinks</key>
+      <key>DontConfirmOverwrite</key>
+      <key>DontUseNativeDialog</key>
+      <key>ReadOnly</key>
+      <key>HideNameFilterDetails</key>
+      <key>DontUseCustomDirectoryIcons</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="f" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="caption" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="directory" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" default="QString()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setDirectory">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="directory" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QDir" modifier="&amp;" name="directory" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="directory">
+      <variant return-type="QDir" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDirectoryUrl">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="directory" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="directoryUrl">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectFile">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filename" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectedFiles">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectUrl">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectedUrls">
+      <variant return-type="QList&lt;QUrl&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNameFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNameFilters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="filters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nameFilters">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectNameFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectedMimeTypeFilter">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectedNameFilter">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(mimetype)" />
+    <function name="setMimeTypeFilters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="filters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mimeTypeFilters">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectMimeTypeFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="filter">
+      <variant return-type="QDir::Filters" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDir::Filters" modifier="" name="filters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setViewMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileDialog::ViewMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="viewMode">
+      <variant return-type="QFileDialog::ViewMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFileMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileDialog::FileMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fileMode">
+      <variant return-type="QFileDialog::FileMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAcceptMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileDialog::AcceptMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="acceptMode">
+      <variant return-type="QFileDialog::AcceptMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSidebarUrls">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QUrl&gt;" modifier="&amp;" name="urls" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sidebarUrls">
+      <variant return-type="QList&lt;QUrl&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="saveState">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="restoreState">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDefaultSuffix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="suffix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultSuffix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHistory">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="paths" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="history">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setItemDelegate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractItemDelegate" modifier="*" name="delegate" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="itemDelegate">
+      <variant return-type="QAbstractItemDelegate*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setIconProvider">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractFileIconProvider" modifier="*" name="provider" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="iconProvider">
+      <variant return-type="QAbstractFileIconProvider*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setLabelText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileDialog::DialogLabel" modifier="" name="label" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="labelText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFileDialog::DialogLabel" modifier="" name="label" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSupportedSchemes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="schemes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="supportedSchemes">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(proxymodel)" />
+    <!--
+    <function name="setProxyModel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractProxyModel" modifier="*" name="model" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="proxyModel">
+      <variant return-type="QAbstractProxyModel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="setOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileDialog::Option" modifier="" name="option" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFileDialog::Option" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileDialog::Options" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="options">
+      <variant return-type="QFileDialog::Options" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fileSelected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filesSelected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="files" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="directoryEntered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="directory" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="urlSelected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="urlsSelected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QList&lt;QUrl&gt;" modifier="&amp;" name="urls" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentUrlChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="directoryUrlEntered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="directory" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filterSelected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOpenFileName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="caption" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="dir" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" default="QString()" />
+          <!--
+          <parameter const="false" type="QString" modifier="*" name="selectedFilter" default="nullptr" />
+          <parameter const="false" type="QFileDialog::Options" modifier="" name="options" default="QFileDialog::Options()" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOpenFileUrl" static="true">
+      <variant return-type="QUrl" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="caption" default="QString()" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="dir" default="QUrl()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" default="QString()" />
+          <!--
+          <parameter const="false" type="QString" modifier="*" name="selectedFilter" default="nullptr" />
+          <parameter const="false" type="QFileDialog::Options" modifier="" name="options" default="QFileDialog::Options()" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="supportedSchemes"
+          default="QStringList()" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSaveFileName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="caption" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="dir" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" default="QString()" />
+          <!--
+          <parameter const="false" type="QString" modifier="*" name="selectedFilter" default="nullptr" />
+          <parameter const="false" type="QFileDialog::Options" modifier="" name="options" default="QFileDialog::Options()" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSaveFileUrl" static="true">
+      <variant return-type="QUrl" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="caption" default="QString()" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="dir" default="QUrl()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" default="QString()" />
+          <!--
+          <parameter const="false" type="QString" modifier="*" name="selectedFilter" default="nullptr" />
+          <parameter const="false" type="QFileDialog::Options" modifier="" name="options" default="QFileDialog::Options()" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="supportedSchemes"
+          default="QStringList()" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExistingDirectory" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="caption" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="dir" default="QString()" />
+          <parameter const="false" type="QFileDialog::Options" modifier="" name="options" default="QFileDialog::ShowDirsOnly" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExistingDirectoryUrl" static="true">
+      <variant return-type="QUrl" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="caption" default="QString()" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="dir" default="QUrl()" />
+          <parameter const="false" type="QFileDialog::Options" modifier="" name="options" default="QFileDialog::ShowDirsOnly" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="supportedSchemes"
+          default="QStringList()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOpenFileNames" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="caption" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="dir" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" default="QString()" />
+          <!--
+          <parameter const="false" type="QString" modifier="*" name="selectedFilter" default="nullptr" />
+          <parameter const="false" type="QFileDialog::Options" modifier="" name="options" default="QFileDialog::Options()" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOpenFileUrls" static="true">
+      <variant return-type="QList&lt;QUrl&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="caption" default="QString()" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="dir" default="QUrl()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" default="QString()" />
+          <!--
+          <parameter const="false" type="QString" modifier="*" name="selectedFilter" default="nullptr" />
+          <parameter const="false" type="QFileDialog::Options" modifier="" name="options" default="QFileDialog::Options()" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="supportedSchemes"
+          default="QStringList()" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getOpenFileContent" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nameFilter" />
+          <parameter const="true" type="std::function&lt;void(constQString&amp;,constQByteArray&amp;)&gt;"
+          modifier="&amp;" name="fileContentsReady" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="saveFileContent" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="fileContent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fileNameHint" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="done" />
+    <function name="accept" />
+    <function name="changeEvent" />
+    <class_decl name="QPlatformDialogHelper" />
+  </class>
+</unit>

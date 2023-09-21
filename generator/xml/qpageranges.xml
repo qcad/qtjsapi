@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpageranges.h">
+  <class_decl name="QDebug" />
+  <class name="QPageRanges">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPageRanges" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QPageRanges" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPageRanges" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pageNumber" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pageNumber" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPage">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pageNumber" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="from" />
+          <parameter const="false" type="int" modifier="" name="to" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="toRangeList">
+      <variant return-type="QList&lt;QPageRanges::Range&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fromString" static="true">
+      <variant return-type="QPageRanges" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ranges" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pageNumber" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="firstPage">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastPage">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="detach">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEqual" />
+  </class>
+</unit>

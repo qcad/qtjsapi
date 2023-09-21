@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfontdatabase.h">
+  <class name="QFontDatabase">
+    <enum name="WritingSystem">
+      <key>Any</key>
+      <key>Latin</key>
+      <key>Greek</key>
+      <key>Cyrillic</key>
+      <key>Armenian</key>
+      <key>Hebrew</key>
+      <key>Arabic</key>
+      <key>Syriac</key>
+      <key>Thaana</key>
+      <key>Devanagari</key>
+      <key>Bengali</key>
+      <key>Gurmukhi</key>
+      <key>Gujarati</key>
+      <key>Oriya</key>
+      <key>Tamil</key>
+      <key>Telugu</key>
+      <key>Kannada</key>
+      <key>Malayalam</key>
+      <key>Sinhala</key>
+      <key>Thai</key>
+      <key>Lao</key>
+      <key>Tibetan</key>
+      <key>Myanmar</key>
+      <key>Georgian</key>
+      <key>Khmer</key>
+      <key>SimplifiedChinese</key>
+      <key>TraditionalChinese</key>
+      <key>Japanese</key>
+      <key>Korean</key>
+      <key>Vietnamese</key>
+      <key>Symbol</key>
+      <key>Other</key>
+      <key>Ogham</key>
+      <key>Runic</key>
+      <key>Nko</key>
+      <key>WritingSystemsCount</key>
+    </enum>
+    <enum name="SystemFont">
+      <key>GeneralFont</key>
+      <key>FixedFont</key>
+      <key>TitleFont</key>
+      <key>SmallestReadableFont</key>
+    </enum>
+    <function name="standardSizes" static="true">
+      <variant return-type="QList&lt;int&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)&amp;&amp;!defined(QT_BUILD_GUI_LIB)" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <function name="writingSystems" static="true">
+      <variant return-type="QList&lt;QFontDatabase::WritingSystem&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QList&lt;QFontDatabase::WritingSystem&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="families" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFontDatabase::WritingSystem" modifier="" name="writingSystem" default="QFontDatabase::Any" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="styles" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pointSizes" static="true">
+      <variant return-type="QList&lt;int&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="smoothSizes" static="true">
+      <variant return-type="QList&lt;int&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="styleString" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFontInfo" modifier="&amp;" name="fontInfo" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="font" static="true">
+      <variant return-type="QFont" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" />
+          <parameter const="false" type="int" modifier="" name="pointSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isBitmapScalable" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSmoothlyScalable" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isScalable" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFixedPitch" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="italic" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bold" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="weight" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="true" type="QString" modifier="&amp;" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasFamily" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isPrivateFamily" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writingSystemName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFontDatabase::WritingSystem" modifier="" name="writingSystem" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writingSystemSample" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFontDatabase::WritingSystem" modifier="" name="writingSystem" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addApplicationFont" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addApplicationFontFromData" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="fontData" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="applicationFontFamilies" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeApplicationFont" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeAllApplicationFonts" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="systemFont" static="true">
+      <variant return-type="QFont" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFontDatabase::SystemFont" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

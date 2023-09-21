@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qiodevice.h">
+  <class_decl name="QByteArray" />
+  <class_decl name="QDebug" />
+  <class name="QIODevice">
+    <super_list>
+      <super name="QObject" />
+      <super name="QIODeviceBase" nodowncast="true" />
+    </super_list>
+    <!--
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <function name="openMode">
+      <variant return-type="QIODeviceBase::OpenMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextModeEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTextModeEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isOpen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isReadable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isWritable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSequential">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="readChannelCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="writeChannelCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentReadChannel">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentReadChannel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="channel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentWriteChannel">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentWriteChannel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="channel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QIODeviceBase::OpenMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="close">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pos">
+      <variant return-type="qint64" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="qint64" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="seek">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="atEnd">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bytesAvailable">
+      <variant return-type="qint64" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bytesToWrite">
+      <variant return-type="qint64" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="read">
+      <variant return-type="qint64" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qint64" modifier="" name="maxlen" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="maxlen" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="readAll">
+      <variant return-type="QByteArray" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="readLine">
+      <variant return-type="qint64" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qint64" modifier="" name="maxlen" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="maxlen" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="canReadLine">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startTransaction">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="commitTransaction">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rollbackTransaction">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isTransactionStarted">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="write">
+      <variant return-type="qint64" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qint64" modifier="" name="len" />
+        </parameters>
+      </variant>
+      <variant return-type="qint64" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="data" />
+        </parameters>
+      </variant>
+      <variant return-type="qint64" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="peek">
+      <variant return-type="qint64" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qint64" modifier="" name="maxlen" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="maxlen" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="skip">
+      <variant return-type="qint64" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="maxSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="waitForReadyRead">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="waitForBytesWritten">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ungetChar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="putChar">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getChar">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="*" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <function name="readyRead">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="channelReadyRead">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="channel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bytesWritten">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="bytes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="channelBytesWritten">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="channel" />
+          <parameter const="false" type="qint64" modifier="" name="bytes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="aboutToClose">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="readChannelFinished">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <preproc plain="#ifdef QT_NO_QOBJECT" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <function name="readData" />
+    <function name="readLineData" />
+    <function name="skipData" />
+    <function name="writeData" />
+    <function name="setOpenMode" />
+    <function name="setErrorString" />
+    <preproc plain="#ifdef QT_NO_QOBJECT" />
+    <preproc plain="#endif" />
+    -->
+  </class>
+</unit>

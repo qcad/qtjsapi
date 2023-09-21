@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qabstractprintdialog.h">
+  <class_decl name="QPrinter" />
+  <class name="QAbstractPrintDialog" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QDialog" />
+    </super_list>
+    <enum name="PrintRange">
+      <key>AllPages</key>
+      <key>Selection</key>
+      <key>PageRange</key>
+      <key>CurrentPage</key>
+    </enum>
+    <enum name="PrintDialogOption">
+      <key>PrintToFile</key>
+      <key>PrintSelection</key>
+      <key>PrintPageRange</key>
+      <key>PrintShowPageSize</key>
+      <key>PrintCollateCopies</key>
+      <key>PrintCurrentPage</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QPrinter" modifier="*" name="printer" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setOptionTabs">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QWidget*&gt;" modifier="&amp;" name="tabs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPrintRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractPrintDialog::PrintRange" modifier="" name="range" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="printRange">
+      <variant return-type="QAbstractPrintDialog::PrintRange" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMinMax">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="min" />
+          <parameter const="false" type="int" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minPage">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maxPage">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFromTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="fromPage" />
+          <parameter const="false" type="int" modifier="" name="toPage" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromPage">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toPage">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="printer">
+      <variant return-type="QPrinter*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

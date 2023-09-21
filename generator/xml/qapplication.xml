@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qapplication.h">
+  <class_decl name="QStyle" />
+  <class_decl name="QEventLoop" />
+  <class_decl name="QIcon" />
+  <class_decl name="QLocale" />
+  <class_decl name="QApplication" />
+  <class name="QApplication" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QCoreApplication" />
+      <super name="QGuiApplication" />
+    </super_list>
+    <property type="int" name="doubleClickInterval" read="doubleClickInterval" write="setDoubleClickInterval" static="true" />
+    <property type="int" name="keyboardInputInterval" read="keyboardInputInterval" write="setKeyboardInputInterval" static="true" />
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <property type="int" name="wheelScrollLines" read="wheelScrollLines" write="setWheelScrollLines" static="true" />
+    <preproc plain="#endif" />
+    <property type="int" name="startDragTime" read="startDragTime" write="setStartDragTime" static="true" />
+    <property type="int" name="startDragDistance" read="startDragDistance" write="setStartDragDistance" static="true" />
+    <preproc plain="#ifndef QT_NO_STYLE_STYLESHEET" />
+    <property type="QString" name="styleSheet" read="styleSheet" write="setStyleSheet" />
+    <preproc plain="#endif" />
+    <property type="bool" name="autoSipEnabled" read="autoSipEnabled" write="setAutoSipEnabled" />
+    <preproc plain="#ifdef Q_QDOC" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="&amp;" name="argc" />
+          <parameter const="false" type="char" modifier="**" name="argv" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="&amp;" name="argc" />
+          <parameter const="false" type="char" modifier="**" name="argv" />
+          <parameter const="false" type="int" modifier="" name="" default="ApplicationFlags" />
+        </parameters>
+      </variant>
+    </constructor>
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <!--
+    <function name="style" static="true">
+      <variant return-type="QStyle*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStyle" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStyle" modifier="*" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QStyle*" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="palette" static="true">
+      <variant return-type="QPalette" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QWidget" modifier="*" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QPalette" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="className" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPalette" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPalette" modifier="&amp;" name="" />
+          <parameter const="true" type="char" modifier="*" name="className" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="font" static="true">
+      <variant return-type="QFont" static="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QFont" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QWidget" modifier="*" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QFont" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="className" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFont" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+          <parameter const="true" type="char" modifier="*" name="className" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <function name="fontMetrics" static="true">
+      <variant return-type="QFontMetrics" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <!--
+    <function name="allWidgets" static="true">
+      <variant return-type="QWidgetList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="topLevelWidgets" static="true">
+      <variant return-type="QWidgetList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="activePopupWidget" static="true">
+      <variant return-type="QWidget*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="activeModalWidget" static="true">
+      <variant return-type="QWidget*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="focusWidget" static="true">
+      <variant return-type="QWidget*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="activeWindow" static="true">
+      <variant return-type="QWidget*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setActiveWindow" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="act" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="widgetAt" static="true">
+      <variant return-type="QWidget*" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="QWidget*" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topLevelAt" static="true">
+      <variant return-type="QWidget*" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="QWidget*" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="beep" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="alert" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="false" type="int" modifier="" name="duration" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCursorFlashTime" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorFlashTime" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDoubleClickInterval" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleClickInterval" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setKeyboardInputInterval" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyboardInputInterval" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <function name="setWheelScrollLines" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="wheelScrollLines" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setStartDragTime" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="ms" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startDragTime" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStartDragDistance" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="l" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startDragDistance" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="isEffectEnabled" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::UIEffect" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEffectEnabled" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::UIEffect" modifier="" name="" />
+          <parameter const="false" type="bool" modifier="" name="enable" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="exec" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="notify">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="" />
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#ifdef QT_KEYPAD_NAVIGATION" />
+    <function name="setNavigationMode" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::NavigationMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="navigationMode" static="true">
+      <variant return-type="Qt::NavigationMode" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="focusChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="old" />
+          <parameter const="false" type="QWidget" modifier="*" name="now" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="styleSheet">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_STYLE_STYLESHEET" />
+    <function name="setStyleSheet">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="sheet" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setAutoSipEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoSipEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="closeAllWindows" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="aboutQt" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="compressEvent">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="QPostEventList" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <class_decl name="QGraphicsWidget" />
+    <class_decl name="QGraphicsItem" />
+    <class_decl name="QGraphicsScene" />
+    <class_decl name="QWidget" />
+    <class_decl name="QWidgetWindow" />
+    <class_decl name="QTranslator" />
+    <class_decl name="QWidgetAnimator" />
+    <preproc plain="#ifndef QT_NO_SHORTCUT" />
+    <class_decl name="QShortcut" />
+    <class_decl name="QLineEdit" />
+    <class_decl name="QWidgetTextControl" />
+    <preproc plain="#endif" />
+    <class_decl name="QAction" />
+    <preproc plain="#ifndef QT_NO_GESTURES" />
+    <class_decl name="QGestureManager" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qobject.h">
+  <class_decl name="QEvent" />
+  <class_decl name="QTimerEvent" />
+  <class_decl name="QChildEvent" />
+  <class_decl name="QVariant" />
+  <class_decl name="QObject" />
+  <class_decl name="QThread" />
+  <class_decl name="QWidget" />
+  <class_decl name="QAccessibleWidget" />
+  <class_decl name="QRegularExpression" />
+  <class name="QObject">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+
+    <property type="QString" name="objectName" read="objectName" write="setObjectName" />
+
+    <!--
+    <function name="event">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="eventFilter">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="watched" />
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#if defined(QT_NO_TRANSLATION)||defined(Q_CLANG_QDOC)" />
+    <function name="tr" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="sourceText" />
+          <parameter const="true" type="char" modifier="*" name="" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="objectName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setObjectName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isWidgetType">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isWindowType">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="signalsBlocked">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="blockSignals">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="thread">
+      <variant return-type="QThread*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="moveToThread">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QThread" modifier="*" name="thread" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startTimer">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="interval" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" default="Qt::CoarseTimer" />
+        </parameters>
+      </variant>
+      <variant return-type="Q_ALWAYS_INLINEint" access="public">
+        <parameters>
+          <parameter const="false" type="std::chrono::milliseconds" modifier="" name="time" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" default="Qt::CoarseTimer" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if __has_include(&lt;chrono&gt;)" />
+    <preproc plain="#endif" />
+    <function name="killTimer">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="findChild" call="findChild&lt;QObject*&gt;">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="aName" default="QString()" />
+          <parameter const="false" type="Qt::FindChildOptions" modifier="" name="options" default="Qt::FindChildrenRecursively" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="children">
+      <variant return-type="const QObjectList&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setParent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="installEventFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="filterObj" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeEventFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="obj" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="connect" static="true">
+      <variant return-type="QMetaObject::Connection" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="sender" />
+          <parameter const="true" type="char" modifier="*" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="" default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="QMetaObject::Connection" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="sender" />
+          <parameter const="true" type="QMetaMethod" modifier="&amp;" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="QMetaMethod" modifier="&amp;" name="method" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="type" default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="QMetaObject::Connection" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="sender" />
+          <parameter const="true" type="char" modifier="*" name="signal" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="type" default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="QMetaObject::Connection" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="sender" />
+          <parameter const="false" type="PointerToMemberFunction" modifier="" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="PointerToMemberFunction" modifier="" name="method" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="type" default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="QMetaObject::Connection" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="sender" />
+          <parameter const="false" type="PointerToMemberFunction" modifier="" name="signal" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+        </parameters>
+      </variant>
+      <variant return-type="QMetaObject::Connection" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="sender" />
+          <parameter const="false" type="PointerToMemberFunction" modifier="" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="type" default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="QMetaObject::Connection" access="public">
+        <parameters>
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func1&gt;::Object" modifier="*"
+          name="sender" />
+          <parameter const="false" type="Func1" modifier="" name="signal" />
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func2&gt;::Object" modifier="*"
+          name="receiver" />
+          <parameter const="false" type="Func2" modifier="" name="slot" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="type" default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="typenamestd::enable_if&lt;int(QtPrivate::FunctionPointer&lt;Func2&gt;::ArgumentCount)&gt;=0,QMetaObject::Connection&gt;::type"
+      access="public">
+        <parameters>
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func1&gt;::Object" modifier="*"
+          name="sender" />
+          <parameter const="false" type="Func1" modifier="" name="signal" />
+          <parameter const="false" type="Func2" modifier="" name="slot" />
+        </parameters>
+      </variant>
+      <variant return-type="typenamestd::enable_if&lt;int(QtPrivate::FunctionPointer&lt;Func2&gt;::ArgumentCount)&gt;=0&amp;&amp;!QtPrivate::FunctionPointer&lt;Func2&gt;::IsPointerToMemberFunction,QMetaObject::Connection&gt;::type"
+      access="public">
+        <parameters>
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func1&gt;::Object" modifier="*"
+          name="sender" />
+          <parameter const="false" type="Func1" modifier="" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Func2" modifier="" name="slot" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="type" default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="typenamestd::enable_if&lt;QtPrivate::FunctionPointer&lt;Func2&gt;::ArgumentCount==-1,QMetaObject::Connection&gt;::type"
+      access="public">
+        <parameters>
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func1&gt;::Object" modifier="*"
+          name="sender" />
+          <parameter const="false" type="Func1" modifier="" name="signal" />
+          <parameter const="false" type="Func2" modifier="" name="slot" />
+        </parameters>
+      </variant>
+      <variant return-type="typenamestd::enable_if&lt;QtPrivate::FunctionPointer&lt;Func2&gt;::ArgumentCount==-1,QMetaObject::Connection&gt;::type"
+      access="public">
+        <parameters>
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func1&gt;::Object" modifier="*"
+          name="sender" />
+          <parameter const="false" type="Func1" modifier="" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Func2" modifier="" name="slot" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="type" default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#ifdef Q_CLANG_QDOC" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <!--
+    <function name="disconnect" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="sender" />
+          <parameter const="true" type="char" modifier="*" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="sender" />
+          <parameter const="true" type="QMetaMethod" modifier="&amp;" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="QMetaMethod" modifier="&amp;" name="member" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="signal" default="nullptr" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" default="nullptr" />
+          <parameter const="true" type="char" modifier="*" name="member" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QMetaObject::Connection" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="sender" />
+          <parameter const="false" type="PointerToMemberFunction" modifier="" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="PointerToMemberFunction" modifier="" name="method" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func1&gt;::Object" modifier="*"
+          name="sender" />
+          <parameter const="false" type="Func1" modifier="" name="signal" />
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func2&gt;::Object" modifier="*"
+          name="receiver" />
+          <parameter const="false" type="Func2" modifier="" name="slot" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func1&gt;::Object" modifier="*"
+          name="sender" />
+          <parameter const="false" type="Func1" modifier="" name="signal" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="void" modifier="**" name="zero" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#ifdef Q_CLANG_QDOC" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_VERSION&lt;QT_VERSION_CHECK(6,0,0)" />
+    <function name="dumpObjectTree">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dumpObjectInfo">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_PROPERTIES" />
+    <function name="setProperty">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="name" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="property">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dynamicPropertyNames">
+      <variant return-type="QList&lt;QByteArray&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="destroyed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="objectNameChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="objectName" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="parent">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="inherits">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="classname" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="deleteLater">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QMetaCallEvent" />
+    <class_decl name="QApplication" />
+    <class_decl name="QCoreApplication" />
+    <class_decl name="QWidget" />
+    <class_decl name="QAccessibleWidget" />
+    <class_decl name="QThreadData" />
+  </class>
+</unit>

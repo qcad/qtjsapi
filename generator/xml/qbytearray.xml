@@ -1,0 +1,1194 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qbytearray.h">
+  <class_decl name="QString" />
+  <class_decl name="QDataStream" />
+  <class name="QByteArray">
+    <!--
+    <enum name="Base64Option">
+      <key>Base64Encoding</key>
+      <key>Base64UrlEncoding</key>
+      <key>KeepTrailingEquals</key>
+      <key>OmitTrailingEquals</key>
+      <key>IgnoreBase64DecodingErrors</key>
+      <key>AbortOnBase64DecodingErrors</key>
+    </enum>
+    -->
+    <!--
+    <enum name="Base64DecodingStatus">
+      <key>Ok</key>
+      <key>IllegalInputLength</key>
+      <key>IllegalCharacter</key>
+      <key>IllegalPadding</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="" />
+          <parameter const="false" type="qsizetype" modifier="" name="size" default="-1" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="size" />
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="size" />
+          <parameter const="false" type="Qt::Initialization" modifier="" name="" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QByteArray" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="a" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArray" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fill">
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+          <parameter const="false" type="qsizetype" modifier="" name="size" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="capacity">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reserve">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="squeeze">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CAST_FROM_BYTEARRAY" />
+    <preproc plain="#endif" />
+    <function name="data">
+      <variant return-type="char*" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="const char*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="constData">
+      <variant return-type="const char*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="detach">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDetached">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSharedWith">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="at">
+      <variant return-type="char" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="front">
+      <variant return-type="char" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="char&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="back">
+      <variant return-type="char" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="char&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indexOf">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+          <parameter const="false" type="qsizetype" modifier="" name="from" default="0" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="bv" />
+          <parameter const="false" type="qsizetype" modifier="" name="from" default="0" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="lastIndexOf">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+          <parameter const="false" type="qsizetype" modifier="" name="from" default="-1" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="bv" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="bv" />
+          <parameter const="false" type="qsizetype" modifier="" name="from" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="bv" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="count">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="bv" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="compare">
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="a" />
+          <parameter const="false" type="Qt::CaseSensitivity" modifier="" name="cs" default="Qt::CaseSensitive" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="left">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="right">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mid">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+          <parameter const="false" type="qsizetype" modifier="" name="len" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="first">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="last">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sliced">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="pos" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="pos" />
+          <parameter const="false" type="qsizetype" modifier="" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="chopped">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startsWith">
+      <!--
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="bv" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endsWith">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="bv" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="isUpper">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isLower">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="truncate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="chop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if !defined(Q_CLANG_QDOC)" />
+    <function name="toLower">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toUpper">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="trimmed">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="simplified">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <function name="leftJustified">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="width" />
+          <parameter const="false" type="char" modifier="" name="fill" default="' '" />
+          <parameter const="false" type="bool" modifier="" name="truncate" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightJustified">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="width" />
+          <parameter const="false" type="char" modifier="" name="fill" default="' '" />
+          <parameter const="false" type="bool" modifier="" name="truncate" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="prepend">
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="count" />
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="s" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="s" />
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="a" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="a" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="append">
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="count" />
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="s" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="s" />
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="a" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="a" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="insert">
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="i" />
+          <parameter const="false" type="QByteArrayView" modifier="" name="data" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="i" />
+          <parameter const="true" type="char" modifier="*" name="s" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="i" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="i" />
+          <parameter const="false" type="qsizetype" modifier="" name="count" />
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="i" />
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="i" />
+          <parameter const="true" type="char" modifier="*" name="s" />
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="remove">
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="removeIf">
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="Predicate" modifier="" name="pred" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="replace">
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+          <parameter const="true" type="char" modifier="*" name="s" />
+          <parameter const="false" type="qsizetype" modifier="" name="alen" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+          <parameter const="false" type="QByteArrayView" modifier="" name="s" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="before" />
+          <parameter const="false" type="QByteArrayView" modifier="" name="after" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="before" />
+          <parameter const="false" type="qsizetype" modifier="" name="bsize" />
+          <parameter const="true" type="char" modifier="*" name="after" />
+          <parameter const="false" type="qsizetype" modifier="" name="asize" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="before" />
+          <parameter const="false" type="QByteArrayView" modifier="" name="after" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="before" />
+          <parameter const="false" type="char" modifier="" name="after" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="split">
+      <variant return-type="QList&lt;QByteArray&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="sep" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="repeated">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="times" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if !defined(QT_NO_CAST_FROM_ASCII)&amp;&amp;!defined(QT_RESTRICTED_CAST_FROM_ASCII)" />
+    <preproc plain="#endif" />
+    <function name="toShort">
+      <variant return-type="short" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="toUShort">
+      <variant return-type="ushort" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="toInt">
+      <variant return-type="int" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="toUInt">
+      <variant return-type="uint" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="toLong">
+      <variant return-type="long" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="toULong">
+      <variant return-type="ulong" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="toLongLong">
+      <variant return-type="qlonglong" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="toULongLong">
+      <variant return-type="qulonglong" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="toFloat">
+      <variant return-type="float" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="toDouble">
+      <variant return-type="double" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <!--
+    <function name="toBase64">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Base64Options" modifier="" name="options" default="Base64Encoding" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="toHex">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="separator" default="'\0'" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="toPercentEncoding">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="exclude" default="QByteArray()" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="include" default="QByteArray()" />
+          <parameter const="false" type="char" modifier="" name="percent" default="'%'" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setNum">
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="short" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="ushort" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="long" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="ulong" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qlonglong" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qulonglong" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="" />
+          <parameter const="false" type="char" modifier="" name="format" default="'g'" />
+          <parameter const="false" type="int" modifier="" name="precision" default="6" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+          <parameter const="false" type="char" modifier="" name="format" />
+          <parameter const="false" type="int" modifier="" name="precision" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRawData">
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="a" />
+          <parameter const="false" type="qsizetype" modifier="" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="number" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="long" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="ulong" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="qlonglong" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="qulonglong" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="base" default="10" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+          <parameter const="false" type="char" modifier="" name="format" />
+          <parameter const="false" type="int" modifier="" name="precision" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromRawData" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qsizetype" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <class_decl name="FromBase64Result" />
+    -->
+    <!--
+    <function name="fromBase64Encoding" static="true">
+      <variant return-type="FromBase64Result" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArray" modifier="&amp;&amp;" name="base64" />
+          <parameter const="false" type="Base64Options" modifier="" name="options" default="Base64Encoding" />
+        </parameters>
+      </variant>
+      <variant return-type="FromBase64Result" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="base64" />
+          <parameter const="false" type="Base64Options" modifier="" name="options" default="Base64Encoding" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="fromBase64" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="base64" />
+          <!--
+          <parameter const="false" type="Base64Options" modifier="" name="options" default="Base64Encoding" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromHex" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="hexEncoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromPercentEncoding" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="pctEncoded" />
+          <parameter const="false" type="char" modifier="" name="percent" default="'%'" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_DARWIN)||defined(Q_QDOC)" />
+    <!--
+    <function name="fromCFData" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="CFDataRef" modifier="" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="fromRawCFData" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="CFDataRef" modifier="" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toCFData">
+      <variant return-type="CFDataRef" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toRawCFData">
+      <variant return-type="CFDataRef" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="fromNSData" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="NSData" modifier="*" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="fromRawNSData" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="NSData" modifier="*" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toNSData">
+      <variant return-type="NSData*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toRawNSData">
+      <variant return-type="NSData*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <!--
+    <function name="begin">
+      <variant return-type="iterator" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="const_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="cbegin">
+      <variant return-type="const_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="constBegin">
+      <variant return-type="const_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="end">
+      <variant return-type="iterator" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="const_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="cend">
+      <variant return-type="const_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="constEnd">
+      <variant return-type="const_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rbegin">
+      <variant return-type="reverse_iterator" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="const_reverse_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rend">
+      <variant return-type="reverse_iterator" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="const_reverse_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="crbegin">
+      <variant return-type="const_reverse_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="crend">
+      <variant return-type="const_reverse_iterator" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="push_back">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="s" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="a" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="a" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="push_front">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="c" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="a" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="a" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="shrink_to_fit">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="erase">
+      <variant return-type="iterator" access="public">
+        <parameters>
+          <parameter const="false" type="const_iterator" modifier="" name="first" />
+          <parameter const="false" type="const_iterator" modifier="" name="last" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="fromStdString" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="std::string" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toStdString">
+      <variant return-type="std::string" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="size">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="data_ptr">
+      <variant return-type="DataPointer&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <class_decl name="QString" />
+  </class>
+</unit>

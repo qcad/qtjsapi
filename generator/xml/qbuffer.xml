@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qbuffer.h">
+  <class_decl name="QObject" />
+  <class name="QBuffer">
+    <super_list>
+      <super name="QObject" />
+      <super name="QIODeviceBase" />
+      <super name="QIODevice" />
+    </super_list>
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QByteArray" modifier="*" name="buf" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QByteArray" modifier="*" name="buf" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <function name="buffer">
+      <variant return-type="QByteArray&amp;" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="const QByteArray&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setBuffer">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArray" modifier="*" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="data" />
+          <parameter const="false" type="int" modifier="" name="len" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="const QByteArray&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="openMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="close">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pos">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="seek">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="off" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="atEnd">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="canReadLine">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <function name="connectNotify" />
+    <function name="disconnectNotify" />
+    <preproc plain="#endif" />
+    <function name="readData" />
+    <function name="writeData" />
+  </class>
+</unit>

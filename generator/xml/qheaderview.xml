@@ -1,0 +1,608 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qheaderview.h">
+  <class_decl name="QStyleOptionHeader" />
+  <class name="QHeaderView">
+    <super_list>
+      <super name="QObject" />
+      <super name="QPaintDevice" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+      <super name="QAbstractItemView" />
+    </super_list>
+
+    <enum name="ResizeMode">
+      <key>Interactive</key>
+      <key>Stretch</key>
+      <key>Fixed</key>
+      <key>ResizeToContents</key>
+      <key>Custom</key>
+    </enum>
+
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+
+    <property type="bool" name="showSortIndicator" read="isSortIndicatorShown" write="setSortIndicatorShown" />
+    <property type="bool" name="highlightSections" read="highlightSections" write="setHighlightSections" />
+    <property type="bool" name="stretchLastSection" read="stretchLastSection" write="setStretchLastSection" />
+    <property type="bool" name="cascadingSectionResizes" read="cascadingSectionResizes" write="setCascadingSectionResizes" />
+    <property type="int" name="defaultSectionSize" read="defaultSectionSize" write="setDefaultSectionSize" />
+    <property type="int" name="minimumSectionSize" read="minimumSectionSize" write="setMinimumSectionSize" />
+    <property type="int" name="maximumSectionSize" read="maximumSectionSize" write="setMaximumSectionSize" />
+    <property type="Qt::Alignment" name="defaultAlignment" read="defaultAlignment" write="setDefaultAlignment" />
+    <property type="bool" name="sortIndicatorClearable" read="isSortIndicatorClearable" write="setSortIndicatorClearable" />
+
+    <!--
+    <function name="setModel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="orientation">
+      <variant return-type="Qt::Orientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="offset">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionSizeHint">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="visualIndexAt">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="logicalIndexAt">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="position" />
+        </parameters>
+      </variant>
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionViewportPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveSection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="from" />
+          <parameter const="false" type="int" modifier="" name="to" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swapSections">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="second" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeSection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeSections">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QHeaderView::ResizeMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSectionHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSectionHidden">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+          <parameter const="false" type="bool" modifier="" name="hide" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hiddenSectionCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hideSection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="showSection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="visualIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="logicalIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="visualIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSectionsMovable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="movable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionsMovable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFirstSectionMovable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="movable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFirstSectionMovable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSectionsClickable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="clickable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionsClickable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHighlightSections">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="highlight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="highlightSections">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sectionResizeMode">
+      <variant return-type="QHeaderView::ResizeMode" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSectionResizeMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QHeaderView::ResizeMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+          <parameter const="false" type="QHeaderView::ResizeMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setResizeContentsPrecision">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="precision" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeContentsPrecision">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="stretchSectionCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSortIndicatorShown">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="show" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSortIndicatorShown">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSortIndicator">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+          <parameter const="false" type="Qt::SortOrder" modifier="" name="order" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sortIndicatorSection">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sortIndicatorOrder">
+      <variant return-type="Qt::SortOrder" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSortIndicatorClearable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="clearable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSortIndicatorClearable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="stretchLastSection">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStretchLastSection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="stretch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cascadingSectionResizes">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCascadingSectionResizes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultSectionSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultSectionSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resetDefaultSectionSize">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSectionSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMinimumSectionSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maximumSectionSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaximumSectionSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultAlignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doItemsLayout">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sectionsMoved">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sectionsHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_DATASTREAM" />
+    <function name="saveState">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="restoreState">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOffsetToSectionPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="visualIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOffsetToLastSection">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="headerDataChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="false" type="int" modifier="" name="logicalFirst" />
+          <parameter const="false" type="int" modifier="" name="logicalLast" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionMoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+          <parameter const="false" type="int" modifier="" name="oldVisualIndex" />
+          <parameter const="false" type="int" modifier="" name="newVisualIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionResized">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+          <parameter const="false" type="int" modifier="" name="oldSize" />
+          <parameter const="false" type="int" modifier="" name="newSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionPressed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionEntered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionDoubleClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionCountChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="oldCount" />
+          <parameter const="false" type="int" modifier="" name="newCount" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sectionHandleDoubleClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="geometriesChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sortIndicatorChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+          <parameter const="false" type="Qt::SortOrder" modifier="" name="order" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sortIndicatorClearableChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="clearable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateSection" />
+    <function name="resizeSections" />
+    <function name="sectionsInserted" />
+    <function name="sectionsAboutToBeRemoved" />
+    <function name="initialize" />
+    <function name="initializeSections" />
+    <function name="currentChanged" />
+    <function name="event" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent" />
+    <function name="mouseDoubleClickEvent" />
+    <function name="viewportEvent" />
+    <function name="paintSection" />
+    <function name="sectionSizeFromContents" />
+    <function name="horizontalOffset" />
+    <function name="verticalOffset" />
+    <function name="updateGeometries" />
+    <function name="scrollContentsBy" />
+    <function name="dataChanged" />
+    <function name="rowsInserted" />
+    <function name="visualRect" access="private" />
+    <function name="scrollTo" access="private" />
+    <function name="indexAt" access="private" />
+    <function name="isIndexHidden" />
+    <function name="moveCursor" />
+    <function name="setSelection" />
+    <function name="visualRegionForSelection" />
+    <function name="initStyleOptionForIndex" />
+    <function name="initStyleOption" />
+    <class_decl name="QTableView" />
+    <class_decl name="QTreeView" />
+    <function name="initStyleOption" />
+  </class>
+</unit>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qradiobutton.h">
+  <class_decl name="QStyleOptionButton" />
+  <class name="QRadioButton">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QAbstractButton" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="hitButton" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initStyleOption" />
+    <class_decl name="QAccessibleButton" />
+  </class>
+</unit>

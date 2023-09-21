@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qitemdelegate.h">
+  <class_decl name="QItemEditorFactory" />
+  <class name="QItemDelegate" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QAbstractItemDelegate" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="hasClipping">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setClipping">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="clip" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="paint">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="createEditor">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setEditorData">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="editor" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setModelData">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="editor" />
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="updateEditorGeometry">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="editor" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="itemEditorFactory">
+      <variant return-type="QItemEditorFactory*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setItemEditorFactory">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QItemEditorFactory" modifier="*" name="factory" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="drawDisplay">
+      <variant return-type="void" virtual="true" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="drawDecoration">
+      <variant return-type="void" virtual="true" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="drawFocus">
+      <variant return-type="void" virtual="true" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="drawCheck">
+      <variant return-type="void" virtual="true" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+          <parameter const="false" type="Qt::CheckState" modifier="" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="drawBackground">
+      <variant return-type="void" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="doLayout">
+      <variant return-type="void" const="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="false" type="QRect" modifier="*" name="checkRect" />
+          <parameter const="false" type="QRect" modifier="*" name="iconRect" />
+          <parameter const="false" type="QRect" modifier="*" name="textRect" />
+          <parameter const="false" type="bool" modifier="" name="hint" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rect">
+      <variant return-type="QRect" const="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="int" modifier="" name="role" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="eventFilter">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="object" />
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="editorEvent">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setOptions">
+      <variant return-type="QStyleOptionViewItem" const="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="decoration">
+      <variant return-type="QPixmap" const="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="variant" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="selectedPixmap" static="true">
+      <variant return-type="QPixmap" static="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+          <parameter const="true" type="QPalette" modifier="&amp;" name="palette" />
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="doCheck">
+      <variant return-type="QRect" const="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QRect" modifier="&amp;" name="bounding" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="variant" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="textRectangle">
+      <variant return-type="QRect" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

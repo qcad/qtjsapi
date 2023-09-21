@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qmdiarea.h">
+  <class_decl name="QMdiSubWindow" />
+  <class name="QMdiArea">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="WindowOrder" name="activationOrder" read="activationOrder" write="setActivationOrder" />
+    <property type="ViewMode" name="viewMode" read="viewMode" write="setViewMode" />
+    <preproc plain="#if QT_CONFIG(tabbar)" />
+    <property type="bool" name="documentMode" read="documentMode" write="setDocumentMode" />
+    <property type="bool" name="tabsClosable" read="tabsClosable" write="setTabsClosable" />
+    <property type="bool" name="tabsMovable" read="tabsMovable" write="setTabsMovable" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(tabwidget)" />
+    <property type="QTabWidget::TabShape" name="tabShape" read="tabShape" write="setTabShape" />
+    <property type="QTabWidget::TabPosition" name="tabPosition" read="tabPosition" write="setTabPosition" />
+    <preproc plain="#endif" />
+    <enum name="AreaOption">
+      <key>DontMaximizeSubWindowOnActivation</key>
+    </enum>
+    <enum name="WindowOrder">
+      <key>CreationOrder</key>
+      <key>StackingOrder</key>
+      <key>ActivationHistoryOrder</key>
+    </enum>
+    <enum name="ViewMode">
+      <key>SubWindowView</key>
+      <key>TabbedView</key>
+    </enum>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentSubWindow">
+      <variant return-type="QMdiSubWindow*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="activeSubWindow">
+      <variant return-type="QMdiSubWindow*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="subWindowList">
+      <variant return-type="QList&lt;QMdiSubWindow*&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiArea::WindowOrder" modifier="" name="order" default="QMdiArea::CreationOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addSubWindow">
+      <variant return-type="QMdiSubWindow*" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeSubWindow">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="background">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBackground">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="background" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activationOrder">
+      <variant return-type="QMdiArea::WindowOrder" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setActivationOrder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiArea::WindowOrder" modifier="" name="order" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiArea::AreaOption" modifier="" name="option" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiArea::AreaOption" modifier="" name="opton" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setViewMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiArea::ViewMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="viewMode">
+      <variant return-type="QMdiArea::ViewMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(tabbar)" />
+    <function name="documentMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDocumentMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTabsClosable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="closable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabsClosable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabsMovable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="movable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabsMovable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(tabwidget)" />
+    <function name="setTabShape">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTabWidget::TabShape" modifier="" name="shape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabShape">
+      <variant return-type="QTabWidget::TabShape" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTabWidget::TabPosition" modifier="" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabPosition">
+      <variant return-type="QTabWidget::TabPosition" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="subWindowActivated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QMdiSubWindow" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setActiveSubWindow">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiSubWindow" modifier="*" name="window" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tileSubWindows">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cascadeSubWindows">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="closeActiveSubWindow">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="closeAllSubWindows">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="activateNextSubWindow">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="activatePreviousSubWindow">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setupViewport" />
+    <function name="scrollContentsBy" />
+  </class>
+</unit>

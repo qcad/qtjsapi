@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qmimedata.h">
+  <class_decl name="QUrl" />
+  <class name="QMimeData" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="urls">
+      <variant return-type="QList&lt;QUrl&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUrls">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QUrl&gt;" modifier="&amp;" name="urls" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasUrls">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasText">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="html">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHtml">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="html" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasHtml">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="imageData">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setImageData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="image" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasImage">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="colorData">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColorData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasColor">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="mimetype" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="mimetype" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="mimetype" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasFormat">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="mimetype" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formats">
+      <variant return-type="QStringList" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="retrieveData" />
+  </class>
+</unit>

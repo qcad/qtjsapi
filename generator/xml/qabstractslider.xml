@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qabstractslider.h">
+  <class name="QAbstractSlider">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <property type="int" name="maximum" read="maximum" write="setMaximum" />
+    <property type="int" name="singleStep" read="singleStep" write="setSingleStep" />
+    <property type="int" name="pageStep" read="pageStep" write="setPageStep" />
+    <property type="int" name="value" read="value" write="setValue" />
+    <property type="int" name="sliderPosition" read="sliderPosition" write="setSliderPosition" />
+    <property type="bool" name="tracking" read="hasTracking" write="setTracking" />
+    <property type="Qt::Orientation" name="orientation" read="orientation" write="setOrientation" />
+    <property type="bool" name="invertedAppearance" read="invertedAppearance" write="setInvertedAppearance" />
+    <property type="bool" name="invertedControls" read="invertedControls" write="setInvertedControls" />
+    <property type="bool" name="sliderDown" read="isSliderDown" write="setSliderDown" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="orientation">
+      <variant return-type="Qt::Orientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMinimum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaximum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maximum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSingleStep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="singleStep">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPageStep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pageStep">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTracking">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasTracking">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSliderDown">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSliderDown">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSliderPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sliderPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInvertedAppearance">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="invertedAppearance">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInvertedControls">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="invertedControls">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="SliderAction">
+      <key>SliderNoAction</key>
+      <key>SliderSingleStepAdd</key>
+      <key>SliderSingleStepSub</key>
+      <key>SliderPageStepAdd</key>
+      <key>SliderPageStepSub</key>
+      <key>SliderToMinimum</key>
+      <key>SliderToMaximum</key>
+      <key>SliderMove</key>
+    </enum>
+    <function name="value">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="triggerAction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractSlider::SliderAction" modifier="" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOrientation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="min" />
+          <parameter const="false" type="int" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="valueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sliderPressed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sliderMoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sliderReleased">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rangeChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="min" />
+          <parameter const="false" type="int" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="actionTriggered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="setRepeatAction" />
+    <function name="repeatAction" />
+    <!--
+    <enum name="SliderChange">
+      <key>SliderRangeChange</key>
+      <key>SliderOrientationChange</key>
+      <key>SliderStepsChange</key>
+      <key>SliderValueChange</key>
+    </enum>
+    -->
+    <function name="sliderChange" />
+    <function name="keyPressEvent" />
+    <function name="timerEvent" />
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <function name="wheelEvent" />
+    <preproc plain="#endif" />
+    <function name="changeEvent" />
+  </class>
+</unit>

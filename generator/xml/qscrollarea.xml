@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qscrollarea.h">
+  <class name="QScrollArea" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+    </super_list>
+    <property type="Qt::Alignment" name="alignment" read="alignment" write="setAlignment" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="widget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeWidget">
+      <variant return-type="QWidget*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="widgetResizable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidgetResizable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="resizable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="focusNextPrevChild">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="next" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ensureVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="xmargin" default="50" />
+          <parameter const="false" type="int" modifier="" name="ymargin" default="50" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ensureWidgetVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="childWidget" />
+          <parameter const="false" type="int" modifier="" name="xmargin" default="50" />
+          <parameter const="false" type="int" modifier="" name="ymargin" default="50" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="eventFilter">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="" />
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scrollContentsBy">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="dx" />
+          <parameter const="false" type="int" modifier="" name="dy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="viewportSizeHint">
+      <variant return-type="QSize" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

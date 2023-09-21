@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qprinter.h">
+  <class_decl name="QPaintEngine" />
+  <class_decl name="QPrintEngine" />
+  <class_decl name="QPrinterInfo" />
+  <class_decl name="QPageSize" />
+  <class name="QPrinter">
+    <super_list>
+      <super name="QPaintDevice" />
+      <super name="QPagedPaintDevice" />
+    </super_list>
+    <enum name="PrinterMode">
+      <key>ScreenResolution</key>
+      <key>PrinterResolution</key>
+      <key>HighResolution</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QPrinter::PrinterMode" modifier="" name="mode" default="QPrinter::ScreenResolution" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPrinterInfo" modifier="&amp;" name="printer" />
+          <parameter const="false" type="QPrinter::PrinterMode" modifier="" name="mode" default="QPrinter::ScreenResolution" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="devType">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="PageOrder">
+      <key>FirstPageFirst</key>
+      <key>LastPageFirst</key>
+    </enum>
+    <enum name="ColorMode">
+      <key>GrayScale</key>
+      <key>Color</key>
+    </enum>
+    <enum name="PaperSource">
+      <key>OnlyOne</key>
+      <key>Lower</key>
+      <key>Middle</key>
+      <key>Manual</key>
+      <key>Envelope</key>
+      <key>EnvelopeManual</key>
+      <key>Auto</key>
+      <key>Tractor</key>
+      <key>SmallFormat</key>
+      <key>LargeFormat</key>
+      <key>LargeCapacity</key>
+      <key>Cassette</key>
+      <key>FormSource</key>
+      <key>MaxPageSource</key>
+      <key>CustomSource</key>
+      <key>LastPaperSource</key>
+      <key>Upper</key>
+    </enum>
+    <enum name="PrinterState">
+      <key>Idle</key>
+      <key>Active</key>
+      <key>Aborted</key>
+      <key>Error</key>
+    </enum>
+    <enum name="OutputFormat">
+      <key>NativeFormat</key>
+      <key>PdfFormat</key>
+    </enum>
+    <enum name="PrintRange">
+      <key>AllPages</key>
+      <key>Selection</key>
+      <key>PageRange</key>
+      <key>CurrentPage</key>
+    </enum>
+    <enum name="Unit">
+      <key>Millimeter</key>
+      <key>Point</key>
+      <key>Inch</key>
+      <key>Pica</key>
+      <key>Didot</key>
+      <key>Cicero</key>
+      <key>DevicePixel</key>
+    </enum>
+    <enum name="DuplexMode">
+      <key>DuplexNone</key>
+      <key>DuplexAuto</key>
+      <key>DuplexLongSide</key>
+      <key>DuplexShortSide</key>
+    </enum>
+    <function name="setOutputFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPrinter::OutputFormat" modifier="" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="outputFormat">
+      <variant return-type="QPrinter::OutputFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPdfVersion">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPagedPaintDevice::PdfVersion" modifier="" name="version" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pdfVersion">
+      <variant return-type="QPagedPaintDevice::PdfVersion" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrinterName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="printerName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOutputFileName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="outputFileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrintProgram">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="printProgram">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDocName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="docName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCreator">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="creator">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPageOrder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPrinter::PageOrder" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pageOrder">
+      <variant return-type="QPrinter::PageOrder" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setResolution">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resolution">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColorMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPrinter::ColorMode" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="colorMode">
+      <variant return-type="QPrinter::ColorMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCollateCopies">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="collate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="collateCopies">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFullPage">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fullPage">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCopyCount">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportsMultipleCopies">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPaperSource">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPrinter::PaperSource" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paperSource">
+      <variant return-type="QPrinter::PaperSource" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDuplex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPrinter::DuplexMode" modifier="" name="duplex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="duplex">
+      <variant return-type="QPrinter::DuplexMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportedResolutions">
+      <variant return-type="QList&lt;int&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_WIN)||defined(Q_CLANG_QDOC)" />
+    <function name="supportedPaperSources">
+      <variant return-type="QList&lt;QPrinter::PaperSource&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setFontEmbeddingEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontEmbeddingEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paperRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPrinter::Unit" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pageRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPrinter::Unit" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="printerSelectionOption">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrinterSelectionOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="newPage">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="abort">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="printerState">
+      <variant return-type="QPrinter::PrinterState" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintEngine">
+      <variant return-type="QPaintEngine*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="printEngine">
+      <variant return-type="QPrintEngine*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setFromTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="fromPage" />
+          <parameter const="false" type="int" modifier="" name="toPage" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromPage">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toPage">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrintRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPrinter::PrintRange" modifier="" name="range" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="printRange">
+      <variant return-type="QPrinter::PrintRange" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="metric" />
+    <function name="setEngines" />
+    <class_decl name="QAbstractPrintDialog" />
+    <class_decl name="QTextDocument" />
+    <class_decl name="  QPageSetupWidget" />
+  </class>
+</unit>

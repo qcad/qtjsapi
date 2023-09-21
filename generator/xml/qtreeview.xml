@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtreeview.h">
+  <class_decl name="QHeaderView" />
+  <class name="QTreeView">
+    <super_list>
+      <super name="QObject" />
+      <super name="QPaintDevice" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+      <super name="QAbstractItemView" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+
+    <property type="int" name="indentation" read="indentation" write="setIndentation" />
+    <property type="bool" name="rootIsDecorated" read="rootIsDecorated" write="setRootIsDecorated" />
+    <property type="bool" name="uniformRowHeights" read="uniformRowHeights" write="setUniformRowHeights" />
+    <property type="bool" name="itemsExpandable" read="itemsExpandable" write="setItemsExpandable" />
+    <property type="bool" name="sortingEnabled" read="isSortingEnabled" write="setSortingEnabled" />
+    <property type="bool" name="animated" read="isAnimated" write="setAnimated" />
+    <property type="bool" name="allColumnsShowFocus" read="allColumnsShowFocus" write="setAllColumnsShowFocus" />
+    <property type="bool" name="wordWrap" read="wordWrap" write="setWordWrap" />
+    <property type="bool" name="headerHidden" read="isHeaderHidden" write="setHeaderHidden" />
+    <property type="bool" name="expandsOnDoubleClick" read="expandsOnDoubleClick" write="setExpandsOnDoubleClick" />
+
+    <!--
+    <function name="setModel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setRootIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setSelectionModel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QItemSelectionModel" modifier="*" name="selectionModel" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="header">
+      <variant return-type="QHeaderView*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeader">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QHeaderView" modifier="*" name="header" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoExpandDelay">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoExpandDelay">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="delay" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indentation">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIndentation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resetIndentation">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rootIsDecorated">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRootIsDecorated">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="show" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="uniformRowHeights">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUniformRowHeights">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="uniform" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemsExpandable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setItemsExpandable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expandsOnDoubleClick">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setExpandsOnDoubleClick">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnViewportPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColumnWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnAt">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isColumnHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColumnHidden">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="bool" modifier="" name="hide" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isHeaderHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeaderHidden">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="hide" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isRowHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRowHidden">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="bool" modifier="" name="hide" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFirstColumnSpanned">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFirstColumnSpanned">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="bool" modifier="" name="span" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isExpanded">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setExpanded">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="bool" modifier="" name="expand" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSortingEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSortingEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAnimated">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isAnimated">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAllColumnsShowFocus">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="allColumnsShowFocus">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWordWrap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="wordWrap">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTreePosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="logicalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="treePosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="keyboardSearch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="search" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="visualRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scrollTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="QAbstractItemView::ScrollHint" modifier="" name="hint" default="QAbstractItemView::EnsureVisible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexAt">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexAbove">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexBelow">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doItemsLayout">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dataChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="topLeft" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="bottomRight" />
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="roles" default="QList&lt;int&gt;()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectAll">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="expanded">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="collapsed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hideColumn">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="showColumn">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expand">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="collapse">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeColumnToContents">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sortByColumn">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="Qt::SortOrder" modifier="" name="order" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expandAll">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="expandRecursively">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="int" modifier="" name="depth" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="collapseAll">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="expandToDepth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="depth" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnResized" />
+    <function name="columnCountChanged" />
+    <function name="columnMoved" />
+    <function name="reexpand" />
+    <function name="rowsRemoved" />
+    <function name="verticalScrollbarValueChanged" />
+    <function name="scrollContentsBy" />
+    <function name="rowsInserted" />
+    <function name="rowsAboutToBeRemoved" />
+    <function name="moveCursor" />
+    <function name="horizontalOffset" />
+    <function name="verticalOffset" />
+    <function name="setSelection" />
+    <function name="visualRegionForSelection" />
+    <function name="selectedIndexes" />
+    <function name="changeEvent" />
+    <function name="timerEvent" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawTree" />
+    <function name="drawRow" />
+    <function name="drawBranches" />
+    <function name="mousePressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="mouseDoubleClickEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyPressEvent" />
+    <preproc plain="#if QT_CONFIG(draganddrop)" />
+    <function name="dragMoveEvent" />
+    <preproc plain="#endif" />
+    <function name="viewportEvent" />
+    <function name="updateGeometries" />
+    <function name="viewportSizeHint" />
+    <function name="indexRowSizeHint" />
+    <function name="rowHeight" />
+    <function name="horizontalScrollbarAction" />
+    <function name="isIndexHidden" />
+    <function name="selectionChanged" />
+    <function name="currentChanged" />
+    <class_decl name="" />
+    <class_decl name="QAccessibleTable" />
+    <class_decl name="QAccessibleTree" />
+    <class_decl name="QAccessibleTableCell" />
+    <function name="visualIndex" />
+    <preproc plain="#if QT_CONFIG(animation)" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

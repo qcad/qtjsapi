@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfontcombobox.h">
+  <class name="QFontComboBox" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QComboBox" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="QFont" name="currentFont" read="currentFont" write="setCurrentFont" />
+    <function name="setWritingSystem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFontDatabase::WritingSystem" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writingSystem">
+      <variant return-type="QFontDatabase::WritingSystem" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="FontFilter">
+      <key>AllFonts</key>
+      <key>ScalableFonts</key>
+      <key>NonScalableFonts</key>
+      <key>MonospacedFonts</key>
+      <key>ProportionalFonts</key>
+    </enum>
+    <function name="setFontFilters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFontComboBox::FontFilters" modifier="" name="filters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontFilters">
+      <variant return-type="QFontComboBox::FontFilters" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentFont">
+      <variant return-type="QFont" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentFontChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="f" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcompleter.h">
+  <!--
+  <class_decl name="QAbstractItemView" />
+  <class_decl name="QAbstractProxyModel" />
+  -->
+  <class_decl name="QWidget" />
+  <class name="QCompleter">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <enum name="CompletionMode">
+      <key>PopupCompletion</key>
+      <key>UnfilteredPopupCompletion</key>
+      <key>InlineCompletion</key>
+    </enum>
+    <enum name="ModelSorting">
+      <key>UnsortedModel</key>
+      <key>CaseSensitivelySortedModel</key>
+      <key>CaseInsensitivelySortedModel</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="completions" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <preproc plain="#if QT_CONFIG(stringlistmodel)" />
+    <preproc plain="#endif" />
+    <function name="setWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="widget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setModel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="model">
+      <variant return-type="QAbstractItemModel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setCompletionMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QCompleter::CompletionMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="completionMode">
+      <variant return-type="QCompleter::CompletionMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFilterMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::MatchFlags" modifier="" name="filterMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filterMode">
+      <variant return-type="Qt::MatchFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="popup">
+      <variant return-type="QAbstractItemView*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setPopup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractItemView" modifier="*" name="popup" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setCaseSensitivity">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::CaseSensitivity" modifier="" name="caseSensitivity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="caseSensitivity">
+      <variant return-type="Qt::CaseSensitivity" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setModelSorting">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QCompleter::ModelSorting" modifier="" name="sorting" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="modelSorting">
+      <variant return-type="QCompleter::ModelSorting" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCompletionColumn">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="completionColumn">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCompletionRole">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="role" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="completionRole">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="wrapAround">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maxVisibleItems">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaxVisibleItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="maxItems" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="completionCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentRow">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentRow">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="currentIndex">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="currentCompletion">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="completionModel">
+      <variant return-type="QAbstractItemModel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="completionPrefix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCompletionPrefix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="complete">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" default="QRect()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setWrapAround">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="wrap" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="pathFromIndex">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="splitPath">
+      <variant return-type="QStringList" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="eventFilter" />
+    <function name="event" />
+    <function name="activated" />
+    <function name="highlighted" />
+  </class>
+</unit>

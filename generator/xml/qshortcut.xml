@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qshortcut.h">
+  <class_decl name="QWindow" />
+  <class name="QShortcut" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <property type="QKeySequence" name="key" read="key" write="setKey" />
+    <property type="bool" name="enabled" read="isEnabled" write="setEnabled" />
+    <property type="bool" name="autoRepeat" read="autoRepeat" write="setAutoRepeat" />
+    <property type="Qt::ShortcutContext" name="context" read="context" write="setContext" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="char" modifier="*" name="member" default="nullptr" />
+          <parameter const="true" type="char" modifier="*" name="ambiguousMember" default="nullptr" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="char" modifier="*" name="member" default="nullptr" />
+          <parameter const="true" type="char" modifier="*" name="ambiguousMember" default="nullptr" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="shortcutContext" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="shortcutContext" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="QObject" modifier="*" name="context1" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+          <parameter const="false" type="FunctorAmbiguous" modifier="" name="functorAmbiguous" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="shortcutContext" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="QObject" modifier="*" name="context1" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+          <parameter const="true" type="QObject" modifier="*" name="context2" />
+          <parameter const="false" type="FunctorAmbiguous" modifier="" name="functorAmbiguous" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="shortcutContext" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="shortcutContext" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="shortcutContext" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="QObject" modifier="*" name="context1" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+          <parameter const="false" type="FunctorAmbiguous" modifier="" name="functorAmbiguous" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="shortcutContext" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="QObject" modifier="*" name="context1" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+          <parameter const="true" type="QObject" modifier="*" name="context2" />
+          <parameter const="false" type="FunctorAmbiguous" modifier="" name="functorAmbiguous" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="shortcutContext" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="false" type="Func1" modifier="" name="slot1" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="Obj1" modifier="*" name="object1" />
+          <parameter const="false" type="Func1" modifier="" name="slot1" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+          <parameter const="false" type="typenamestd::enable_if&lt;QtPrivate::IsPointerToTypeDerivedFromQObject&lt;Obj1*&gt;::Value&gt;::type"
+          modifier="*" name="" default="0" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="Obj1" modifier="*" name="object1" />
+          <parameter const="false" type="Func1" modifier="" name="slot1" />
+          <parameter const="false" type="Func2" modifier="" name="slot2" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+          <parameter const="false" type="typenamestd::enable_if&lt;QtPrivate::IsPointerToTypeDerivedFromQObject&lt;Obj1*&gt;::Value&gt;::type"
+          modifier="*" name="" default="0" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="Obj1" modifier="*" name="object1" />
+          <parameter const="false" type="Func1" modifier="" name="slot1" />
+          <parameter const="true" type="Obj2" modifier="*" name="object2" />
+          <parameter const="false" type="Func2" modifier="" name="slot2" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+          <parameter const="false" type="typenamestd::enable_if&lt;QtPrivate::IsPointerToTypeDerivedFromQObject&lt;Obj1*&gt;::Value&gt;::type"
+          modifier="*" name="" default="0" />
+          <parameter const="false" type="typenamestd::enable_if&lt;QtPrivate::IsPointerToTypeDerivedFromQObject&lt;Obj2*&gt;::Value&gt;::type"
+          modifier="*" name="" default="0" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="false" type="Func1" modifier="" name="slot1" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="Obj1" modifier="*" name="object1" />
+          <parameter const="false" type="Func1" modifier="" name="slot1" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+          <parameter const="false" type="typenamestd::enable_if&lt;QtPrivate::IsPointerToTypeDerivedFromQObject&lt;Obj1*&gt;::Value&gt;::type"
+          modifier="*" name="" default="0" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="Obj1" modifier="*" name="object1" />
+          <parameter const="false" type="Func1" modifier="" name="slot1" />
+          <parameter const="false" type="Func2" modifier="" name="slot2" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+          <parameter const="false" type="typenamestd::enable_if&lt;QtPrivate::IsPointerToTypeDerivedFromQObject&lt;Obj1*&gt;::Value&gt;::type"
+          modifier="*" name="" default="0" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+          <parameter const="true" type="Obj1" modifier="*" name="object1" />
+          <parameter const="false" type="Func1" modifier="" name="slot1" />
+          <parameter const="true" type="Obj2" modifier="*" name="object2" />
+          <parameter const="false" type="Func2" modifier="" name="slot2" />
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" default="Qt::WindowShortcut" />
+          <parameter const="false" type="typenamestd::enable_if&lt;QtPrivate::IsPointerToTypeDerivedFromQObject&lt;Obj1*&gt;::Value&gt;::type"
+          modifier="*" name="" default="0" />
+          <parameter const="false" type="typenamestd::enable_if&lt;QtPrivate::IsPointerToTypeDerivedFromQObject&lt;Obj2*&gt;::Value&gt;::type"
+          modifier="*" name="" default="0" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <preproc plain="#ifdef Q_CLANG_QDOC" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <function name="setKey">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="key">
+      <variant return-type="QKeySequence" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setKeys">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QKeySequence&gt;" modifier="&amp;" name="keys" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keys">
+      <variant return-type="QList&lt;QKeySequence&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setContext">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="context">
+      <variant return-type="Qt::ShortcutContext" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoRepeat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoRepeat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <function name="id">
+      <variant return-type="Q_DECL_DEPRECATEDint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="setWhatsThis">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="whatsThis">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <preproc plain="#ifdef Q_CLANG_QDOC" />
+    <function name="parentWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="T" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <preproc plain="#endif" />
+    <function name="activated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="activatedAmbiguously">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

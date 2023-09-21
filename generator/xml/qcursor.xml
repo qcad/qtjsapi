@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcursor.h">
+  <class_decl name="QVariant" />
+  <class_decl name="QScreen" />
+  <class_decl name="QBitmap" />
+  <class_decl name="QPixmap" />
+  <!--
+  <class name="QCursor">
+    <function name="pos" static="true">
+      <variant return-type="QPoint" static="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QPoint" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QScreen" modifier="*" name="screen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPos" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" />
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="QCursor">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::CursorShape" modifier="" name="shape" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QBitmap" modifier="&amp;" name="bitmap" />
+          <parameter const="true" type="QBitmap" modifier="&amp;" name="mask" />
+          <parameter const="false" type="int" modifier="" name="hotX" default="-1" />
+          <parameter const="false" type="int" modifier="" name="hotY" default="-1" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+          <parameter const="false" type="int" modifier="" name="hotX" default="-1" />
+          <parameter const="false" type="int" modifier="" name="hotY" default="-1" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QCursor" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QCursor" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QCursor" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="shape">
+      <variant return-type="Qt::CursorShape" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShape">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::CursorShape" modifier="" name="newShape" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <function name="bitmap">
+      <variant return-type="QBitmap" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ReturnByValueConstant" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QBitmap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mask">
+      <variant return-type="QBitmap" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ReturnByValueConstant" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QBitmap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="pixmap">
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hotSpot">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pos" static="true">
+      <variant return-type="QPoint" static="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QPoint" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QScreen" modifier="*" name="screen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPos" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" />
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" />
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdesktopservices.h">
+  <class_decl name="QUrl" />
+  <class_decl name="QObject" />
+  <class name="QDesktopServices">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="openUrl" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setUrlHandler" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="scheme" />
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="method" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unsetUrlHandler" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="scheme" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

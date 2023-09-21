@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpolygon.h">
+  <class_decl name="QTransform" />
+  <class_decl name="QRect" />
+  <class_decl name="QVariant" />
+  <class_decl name="QRectF" />
+  <class name="QPolygon">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QList&lt;QPoint&gt;" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QList&lt;QPoint&gt;" modifier="&amp;&amp;" name="v" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPolygon" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="dx" />
+          <parameter const="false" type="int" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translated">
+      <variant return-type="QPolygon" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="dx" />
+          <parameter const="false" type="int" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="QPolygon" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="point">
+      <!--
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="false" type="int" modifier="*" name="x" />
+          <parameter const="false" type="int" modifier="*" name="y" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setPoints">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="nPoints" />
+          <parameter const="true" type="int" modifier="*" name="points" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="nPoints" />
+          <parameter const="false" type="int" modifier="" name="firstx" />
+          <parameter const="false" type="int" modifier="" name="firsty" />
+          <parameter const="false" type="" modifier="..." name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="putPoints">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="" name="nPoints" />
+          <parameter const="true" type="int" modifier="*" name="points" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="" name="nPoints" />
+          <parameter const="false" type="int" modifier="" name="firstx" />
+          <parameter const="false" type="int" modifier="" name="firsty" />
+          <parameter const="false" type="" modifier="..." name="" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="" name="nPoints" />
+          <parameter const="true" type="QPolygon" modifier="&amp;" name="from" />
+          <parameter const="false" type="int" modifier="" name="fromIndex" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="containsPoint">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pt" />
+          <parameter const="false" type="Qt::FillRule" modifier="" name="fillRule" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="united">
+      <variant return-type="QPolygon" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygon" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersected">
+      <variant return-type="QPolygon" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygon" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="subtracted">
+      <variant return-type="QPolygon" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygon" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersects">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygon" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QPolygonF">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QList&lt;QPointF&gt;" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QList&lt;QPointF&gt;" modifier="&amp;&amp;" name="v" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPolygonF" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translated">
+      <variant return-type="QPolygonF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="QPolygonF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toPolygon">
+      <variant return-type="QPolygon" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isClosed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="boundingRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="containsPoint">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pt" />
+          <parameter const="false" type="Qt::FillRule" modifier="" name="fillRule" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="united">
+      <variant return-type="QPolygonF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersected">
+      <variant return-type="QPolygonF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="subtracted">
+      <variant return-type="QPolygonF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersects">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

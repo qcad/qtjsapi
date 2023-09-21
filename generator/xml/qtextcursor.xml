@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtextcursor.h">
+  <class_decl name="QTextDocument" />
+  <class_decl name="QTextDocumentFragment" />
+  <class_decl name="QTextCharFormat" />
+  <class_decl name="QTextBlockFormat" />
+  <class_decl name="QTextListFormat" />
+  <class_decl name="QTextTableFormat" />
+  <class_decl name="QTextFrameFormat" />
+  <class_decl name="QTextImageFormat" />
+  <class_decl name="QTextList" />
+  <class_decl name="QTextTable" />
+  <class_decl name="QTextFrame" />
+  <class_decl name="QTextBlock" />
+  <class name="QTextCursor">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextDocumentPrivate" modifier="*" name="p" />
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextCursorPrivate" modifier="*" name="d" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTextFrame" modifier="*" name="frame" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QTextBlock" modifier="&amp;" name="block" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="operator">
+      <variant return-type="QTextCursor&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextCursor" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="MoveMode">
+      <key>MoveAnchor</key>
+      <key>KeepAnchor</key>
+    </enum>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+          <parameter const="false" type="QTextCursor::MoveMode" modifier="" name="mode" default="QTextCursor::MoveAnchor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="positionInBlock">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="anchor">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="insertText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <enum name="MoveOperation">
+      <key>NoMove</key>
+      <key>Start</key>
+      <key>Up</key>
+      <key>StartOfLine</key>
+      <key>StartOfBlock</key>
+      <key>StartOfWord</key>
+      <key>PreviousBlock</key>
+      <key>PreviousCharacter</key>
+      <key>PreviousWord</key>
+      <key>Left</key>
+      <key>WordLeft</key>
+      <key>End</key>
+      <key>Down</key>
+      <key>EndOfLine</key>
+      <key>EndOfWord</key>
+      <key>EndOfBlock</key>
+      <key>NextBlock</key>
+      <key>NextCharacter</key>
+      <key>NextWord</key>
+      <key>Right</key>
+      <key>WordRight</key>
+      <key>NextCell</key>
+      <key>PreviousCell</key>
+      <key>NextRow</key>
+      <key>PreviousRow</key>
+    </enum>
+    <function name="movePosition">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QTextCursor::MoveOperation" modifier="" name="op" />
+          <parameter const="false" type="QTextCursor::MoveMode" modifier="" name="" default="QTextCursor::MoveAnchor" />
+          <parameter const="false" type="int" modifier="" name="n" default="1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="visualNavigation">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVisualNavigation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVerticalMovementX">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="verticalMovementX">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setKeepPositionOnInsert">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keepPositionOnInsert">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="deleteChar">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="deletePreviousChar">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="SelectionType">
+      <key>WordUnderCursor</key>
+      <key>LineUnderCursor</key>
+      <key>BlockUnderCursor</key>
+      <key>Document</key>
+    </enum>
+    <function name="select">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextCursor::SelectionType" modifier="" name="selection" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasSelection">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasComplexSelection">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="removeSelectedText">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearSelection">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectionStart">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectionEnd">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectedText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="selection">
+      <variant return-type="QTextDocumentFragment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="selectedTableCells">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="*" name="firstRow" />
+          <parameter const="false" type="int" modifier="*" name="numRows" />
+          <parameter const="false" type="int" modifier="*" name="firstColumn" />
+          <parameter const="false" type="int" modifier="*" name="numColumns" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="block">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="charFormat">
+      <variant return-type="QTextCharFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCharFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mergeCharFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="modifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="blockFormat">
+      <variant return-type="QTextBlockFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBlockFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextBlockFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mergeBlockFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextBlockFormat" modifier="&amp;" name="modifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="blockCharFormat">
+      <variant return-type="QTextCharFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBlockCharFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mergeBlockCharFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="modifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="atBlockStart">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="atBlockEnd">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="atStart">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="atEnd">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="insertBlock">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextBlockFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextBlockFormat" modifier="&amp;" name="format" />
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="charFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="insertList">
+      <variant return-type="QTextList*" access="public">
+        <parameters>
+          <parameter const="true" type="QTextListFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="QTextList*" access="public">
+        <parameters>
+          <parameter const="false" type="QTextListFormat::Style" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="createList">
+      <variant return-type="QTextList*" access="public">
+        <parameters>
+          <parameter const="true" type="QTextListFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="QTextList*" access="public">
+        <parameters>
+          <parameter const="false" type="QTextListFormat::Style" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="currentList">
+      <variant return-type="QTextList*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="insertTable">
+      <variant return-type="QTextTable*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="rows" />
+          <parameter const="false" type="int" modifier="" name="cols" />
+          <parameter const="true" type="QTextTableFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="QTextTable*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="rows" />
+          <parameter const="false" type="int" modifier="" name="cols" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="currentTable">
+      <variant return-type="QTextTable*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="insertFrame">
+      <variant return-type="QTextFrame*" access="public">
+        <parameters>
+          <parameter const="true" type="QTextFrameFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="currentFrame">
+      <variant return-type="QTextFrame*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="insertFragment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextDocumentFragment" modifier="&amp;" name="fragment" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#ifndef QT_NO_TEXTHTMLPARSER" />
+    <function name="insertHtml">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="html" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="insertImage">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextImageFormat" modifier="&amp;" name="format" />
+          <parameter const="false" type="QTextFrameFormat::Position" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextImageFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QImage" modifier="&amp;" name="image" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="beginEditBlock">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="joinPreviousEditBlock">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endEditBlock">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCopyOf">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="blockNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="columnNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="document">
+      <variant return-type="QTextDocument*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QTextCopyHelper" />
+  </class>
+</unit>

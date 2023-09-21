@@ -1,0 +1,931 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qxmlstream.h">
+  <class_decl name="QXmlStreamAttributes" />
+  <!--
+  <namespace name="QtPrivate">
+    <class name="QXmlString">
+      <constructor>
+        <variant>
+          <parameters>
+            <parameter const="false" type="QStringPrivate" modifier="&amp;&amp;" name="d" />
+          </parameters>
+        </variant>
+        <variant>
+          <parameters>
+            <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          </parameters>
+        </variant>
+        <variant>
+          <parameters />
+        </variant>
+      </constructor>
+      <function name="operator_assign" call="operator=">
+        <variant return-type="QXmlString&amp;" access="public">
+          <parameters>
+            <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          </parameters>
+        </variant>
+      </function>
+      <function name="operator_assign" call="operator=">
+        <variant return-type="QXmlString&amp;" access="public">
+          <parameters>
+            <parameter const="false" type="QString" modifier="&amp;&amp;" name="s" />
+          </parameters>
+        </variant>
+      </function>
+      <function name="swap">
+        <variant return-type="void" access="public">
+          <parameters>
+            <parameter const="false" type="QXmlString" modifier="&amp;" name="other" />
+          </parameters>
+        </variant>
+      </function>
+      <function name="operatorQStringView" call="operatorQStringView">
+        <variant return-type="" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+      <function name="size">
+        <variant return-type="qsizetype" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+    </class>
+  </namespace>
+  -->
+  <class name="QXmlStreamAttribute" ownership="cpp">
+    <class_decl name="QXmlStreamAttributes" />
+    <!--
+    <function name="namespaceUri">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="name">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="qualifiedName">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="prefix">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="value">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="isDefault">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamAttribute" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamAttribute" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlStreamAttributes">
+    <super_list>
+      <super name="" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <!--
+    <function name="value">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+          <parameter const="false" type="QLatin1StringView" modifier="" name="name" />
+        </parameters>
+      </variant>
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLatin1StringView" modifier="" name="namespaceUri" />
+          <parameter const="false" type="QLatin1StringView" modifier="" name="name" />
+        </parameters>
+      </variant>
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qualifiedName" />
+        </parameters>
+      </variant>
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLatin1StringView" modifier="" name="qualifiedName" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="append">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qualifiedName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasAttribute">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qualifiedName" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLatin1StringView" modifier="" name="qualifiedName" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <!--
+  <class name="QXmlStreamNamespaceDeclaration">
+    <function name="prefix">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="namespaceUri">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamNamespaceDeclaration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamNamespaceDeclaration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  -->
+  <!--
+  <class name="QXmlStreamNotationDeclaration">
+    <function name="name">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="systemId">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="publicId">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamNotationDeclaration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamNotationDeclaration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  -->
+  <!--
+  <class name="QXmlStreamEntityDeclaration">
+    <function name="name">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="notationName">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="systemId">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="publicId">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamEntityDeclaration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamEntityDeclaration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  -->
+  <!--
+  <class name="QXmlStreamEntityResolver">
+    <function name="resolveEntity">
+      <variant return-type="QString" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resolveUndeclaredEntity">
+      <variant return-type="QString" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="QXmlStreamReader" ownership="cpp">
+    <enum name="TokenType">
+      <key>NoToken</key>
+      <key>Invalid</key>
+      <key>StartDocument</key>
+      <key>EndDocument</key>
+      <key>StartElement</key>
+      <key>EndElement</key>
+      <key>Characters</key>
+      <key>Comment</key>
+      <key>DTD</key>
+      <key>EntityReference</key>
+      <key>ProcessingInstruction</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="data" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setDevice">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="device">
+      <variant return-type="QIODevice*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addData">
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="atEnd">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="readNext">
+      <variant return-type="QXmlStreamReader::TokenType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="readNextStartElement">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="skipCurrentElement">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="tokenType">
+      <variant return-type="QXmlStreamReader::TokenType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="tokenString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNamespaceProcessing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="namespaceProcessing">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isStartDocument">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEndDocument">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isStartElement">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEndElement">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCharacters">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isWhitespace">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCDATA">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isComment">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDTD">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEntityReference">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isProcessingInstruction">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isStandaloneDocument">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="documentVersion">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="documentEncoding">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="lineNumber">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="columnNumber">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="characterOffset">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="attributes">
+      <variant return-type="QXmlStreamAttributes" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="ReadElementTextBehaviour">
+      <key>ErrorOnUnexpectedElement</key>
+      <key>IncludeChildElements</key>
+      <key>SkipChildElements</key>
+    </enum>
+    <function name="readElementText">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlStreamReader::ReadElementTextBehaviour" modifier="" name="behaviour" default="QXmlStreamReader::ErrorOnUnexpectedElement" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="name">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="namespaceUri">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="qualifiedName">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="prefix">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="processingInstructionTarget">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="processingInstructionData">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="text">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="namespaceDeclarations">
+      <variant return-type="QXmlStreamNamespaceDeclarations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="addExtraNamespaceDeclaration">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamNamespaceDeclaration" modifier="&amp;" name="extraNamespaceDeclaraction" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="addExtraNamespaceDeclarations">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamNamespaceDeclarations" modifier="&amp;" name="extraNamespaceDeclaractions" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="notationDeclarations">
+      <variant return-type="QXmlStreamNotationDeclarations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="entityDeclarations">
+      <variant return-type="QXmlStreamEntityDeclarations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="dtdName">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="dtdPublicId">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="dtdSystemId">
+      <variant return-type="QStringView" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="entityExpansionLimit">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEntityExpansionLimit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="limit" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="Error">
+      <key>NoError</key>
+      <key>UnexpectedElementError</key>
+      <key>CustomError</key>
+      <key>NotWellFormedError</key>
+      <key>PrematureEndOfDocumentError</key>
+    </enum>
+    <function name="raiseError">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="QXmlStreamReader::Error" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasError">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setEntityResolver">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlStreamEntityResolver" modifier="*" name="resolver" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="entityResolver">
+      <variant return-type="QXmlStreamEntityResolver*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+  <class name="QXmlStreamWriter" ownership="cpp">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QByteArray" modifier="*" name="array" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QString" modifier="*" name="string" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <function name="setDevice">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="device">
+      <variant return-type="QIODevice*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoFormatting">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoFormatting">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoFormattingIndent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="spacesOrTabs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoFormattingIndent">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="writeAttribute">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qualifiedName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamAttribute" modifier="&amp;" name="attribute" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeAttributes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamAttributes" modifier="&amp;" name="attributes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeCDATA">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeCharacters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeComment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeDTD">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dtd" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeEmptyElement">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qualifiedName" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeTextElement">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qualifiedName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeEndDocument">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="writeEndElement">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="writeEntityReference">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeNamespace">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeDefaultNamespace">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeProcessingInstruction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="target" />
+          <parameter const="true" type="QString" modifier="&amp;" name="data" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeStartDocument">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="version" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="version" />
+          <parameter const="false" type="bool" modifier="" name="standalone" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeStartElement">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qualifiedName" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceUri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_XMLSTREAMREADER" />
+    <function name="writeCurrentToken">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlStreamReader" modifier="&amp;" name="reader" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="hasError">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

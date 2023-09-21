@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpainterpath.h">
+  <class_decl name="QFont" />
+  <class_decl name="QPen" />
+  <class_decl name="QPolygonF" />
+  <class_decl name="QRegion" />
+  <class_decl name="QTransform" />
+  <class name="QPainterPath">
+    <enum name="ElementType">
+      <key>MoveToElement</key>
+      <key>LineToElement</key>
+      <key>CurveToElement</key>
+      <key>CurveToDataElement</key>
+    </enum>
+    <!--
+    <class name="Element">
+      <function name="isMoveTo">
+        <variant return-type="bool" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+      <function name="isLineTo">
+        <variant return-type="bool" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+      <function name="isCurveTo">
+        <variant return-type="bool" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+    </class>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPainterPath" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reserve">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="capacity">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="closeSubpath">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="moveTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="arcMoveTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+          <parameter const="false" type="qreal" modifier="" name="angle" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+          <parameter const="false" type="qreal" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="arcTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+          <parameter const="false" type="qreal" modifier="" name="startAngle" />
+          <parameter const="false" type="qreal" modifier="" name="arcLength" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+          <parameter const="false" type="qreal" modifier="" name="startAngle" />
+          <parameter const="false" type="qreal" modifier="" name="arcLength" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cubicTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="ctrlPt1" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="ctrlPt2" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="endPt" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="ctrlPt1x" />
+          <parameter const="false" type="qreal" modifier="" name="ctrlPt1y" />
+          <parameter const="false" type="qreal" modifier="" name="ctrlPt2x" />
+          <parameter const="false" type="qreal" modifier="" name="ctrlPt2y" />
+          <parameter const="false" type="qreal" modifier="" name="endPtx" />
+          <parameter const="false" type="qreal" modifier="" name="endPty" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quadTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="ctrlPt" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="endPt" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="ctrlPtx" />
+          <parameter const="false" type="qreal" modifier="" name="ctrlPty" />
+          <parameter const="false" type="qreal" modifier="" name="endPtx" />
+          <parameter const="false" type="qreal" modifier="" name="endPty" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addRect">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addEllipse">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="center" />
+          <parameter const="false" type="qreal" modifier="" name="rx" />
+          <parameter const="false" type="qreal" modifier="" name="ry" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPolygon">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="polygon" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="point" />
+          <parameter const="true" type="QFont" modifier="&amp;" name="f" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="true" type="QFont" modifier="&amp;" name="f" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addRegion">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="region" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addRoundedRect">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+          <parameter const="false" type="qreal" modifier="" name="xRadius" />
+          <parameter const="false" type="qreal" modifier="" name="yRadius" />
+          <parameter const="false" type="Qt::SizeMode" modifier="" name="mode" default="Qt::AbsoluteSize" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+          <parameter const="false" type="qreal" modifier="" name="xRadius" />
+          <parameter const="false" type="qreal" modifier="" name="yRadius" />
+          <parameter const="false" type="Qt::SizeMode" modifier="" name="mode" default="Qt::AbsoluteSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="connectPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pt" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersects">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translated">
+      <variant return-type="QPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="QPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="controlPointRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fillRule">
+      <variant return-type="Qt::FillRule" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFillRule">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::FillRule" modifier="" name="fillRule" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toReversed">
+      <variant return-type="QPainterPath" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toSubpathPolygons">
+      <variant return-type="QList&lt;QPolygonF&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="matrix" default="QTransform()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toFillPolygons">
+      <variant return-type="QList&lt;QPolygonF&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="matrix" default="QTransform()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toFillPolygon">
+      <variant return-type="QPolygonF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="matrix" default="QTransform()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="elementCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="elementAt">
+      <variant return-type="QPainterPath::Element" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setElementPositionAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="percentAtLength">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pointAtPercent">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="angleAtPercent">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="slopeAtPercent">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="united">
+      <variant return-type="QPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersected">
+      <variant return-type="QPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="subtracted">
+      <variant return-type="QPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="simplified">
+      <variant return-type="QPainterPath" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ensureData" />
+    <function name="ensureData_helper" />
+    <function name="detach" />
+    <function name="setDirty" />
+    <function name="computeBoundingRect" />
+    <function name="computeControlPointRect" />
+    <function name="d_func" />
+    <class_decl name="QPainterPathStroker" />
+    <class_decl name="QTransform" />
+  </class>
+  <class name="QPainterPathStroker">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPen" modifier="&amp;" name="pen" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCapStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::PenCapStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="capStyle">
+      <variant return-type="Qt::PenCapStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setJoinStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::PenJoinStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="joinStyle">
+      <variant return-type="Qt::PenJoinStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMiterLimit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="length" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="miterLimit">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurveThreshold">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="threshold" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="curveThreshold">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDashPattern">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::PenStyle" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;qreal&gt;" modifier="&amp;" name="dashPattern" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dashPattern">
+      <variant return-type="QList&lt;qreal&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDashOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dashOffset">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="createStroke">
+      <variant return-type="QPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QX11PaintEngine" />
+  </class>
+</unit>

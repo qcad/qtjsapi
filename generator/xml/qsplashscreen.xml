@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsplashscreen.h">
+  <class name="QSplashScreen">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="f" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" />
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="f" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setPixmap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pixmap">
+      <variant return-type="const QPixmap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="finish">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="repaint">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="message">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showMessage">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="int" modifier="" name="alignment" default="Qt::AlignLeft" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" default="Qt::black" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearMessage">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="messageChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="drawContents" />
+    <function name="mousePressEvent" />
+  </class>
+</unit>

@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcoreapplication.h">
+  <!--
+  <class_decl name="QTextCodec" />
+  -->
+  <class_decl name="QTranslator" />
+  <class_decl name="QStringList" />
+  <class_decl name="QAbstractEventDispatcher" />
+  <class_decl name="QAbstractNativeEventFilter" />
+  <class name="QCoreApplication" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+
+    <property type="QString" name="applicationName" read="applicationName" write="setApplicationName" />
+    <property type="QString" name="applicationVersion" read="applicationVersion" write="setApplicationVersion" />
+    <property type="QString" name="organizationDomain" read="organizationDomain" write="setOrganizationDomain" />
+    <property type="QString" name="organizationName" read="organizationName" write="setOrganizationName" />
+    <property type="bool" name="quitLockEnabled" read="isQuitLockEnabled" write="setQuitLockEnabled" />
+
+    <function name="arguments" static="true" nojs="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAttribute" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ApplicationAttribute" modifier="" name="attribute" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testAttribute" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ApplicationAttribute" modifier="" name="attribute" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOrganizationDomain">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="orgDomain" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="organizationDomain">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOrganizationName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="orgName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="organizationName">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setApplicationName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="application" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="applicationName">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setApplicationVersion">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="version" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="applicationVersion">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSetuidAllowed" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="allow" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSetuidAllowed" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="instance" static="true">
+      <variant return-type="QCoreApplication*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <function name="exec" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="processEvents" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QEventLoop::ProcessEventsFlags" modifier="" name="flags"
+          default="QEventLoop::AllEvents" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QEventLoop::ProcessEventsFlags" modifier="" name="flags" />
+          <parameter const="false" type="int" modifier="" name="maxtime" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exit" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="retcode" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sendEvent" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postEvent" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+          <parameter const="false" type="int" modifier="" name="priority" default="Qt::NormalEventPriority" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sendPostedEvents" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="event_type" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removePostedEvents" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="int" modifier="" name="eventType" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="eventDispatcher" static="true">
+      <variant return-type="QAbstractEventDispatcher*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEventDispatcher" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractEventDispatcher" modifier="*" name="eventDispatcher" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="notify">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="" />
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startingUp" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="closingDown" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="applicationDirPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="applicationFilePath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="applicationPid" static="true">
+      <variant return-type="qint64" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(library)" />
+    <function name="setLibraryPaths" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="libraryPaths" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addLibraryPath" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeLibraryPath" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_TRANSLATION" />
+    <function name="installTranslator" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QTranslator" modifier="*" name="messageFile" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeTranslator" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QTranslator" modifier="*" name="messageFile" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="translate" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="context" />
+          <parameter const="true" type="char" modifier="*" name="key" />
+          <parameter const="true" type="char" modifier="*" name="disambiguation" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="n" default="-1" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="context" />
+          <parameter const="true" type="char" modifier="*" name="key" />
+          <parameter const="true" type="char" modifier="*" name="disambiguation" />
+          <parameter const="false" type="Encoding" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="n" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <!--
+    <function name="installNativeEventFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractNativeEventFilter" modifier="*" name="filterObj" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeNativeEventFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractNativeEventFilter" modifier="*" name="filterObj" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="isQuitLockEnabled">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setQuitLockEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quit" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="organizationNameChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="organizationDomainChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="applicationNameChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="applicationVersionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="compressEvent" />
+    <preproc plain="#endif" />
+    <preproc plain="#ifdef QT_NO_QOBJECT" />
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <function name="sendSpontaneousEvent" static="true" />
+    <function name="notifyInternal2" static="true" />
+    <function name="forwardEvent" static="true" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(library)" />
+    <function name="libraryPathsLocked" static="true" />
+    <preproc plain="#endif" />
+    <class_decl name="QApplication" />
+    <class_decl name="QApplicationPrivate" />
+    <class_decl name="QGuiApplication" />
+    <class_decl name="QGuiApplicationPrivate" />
+    <class_decl name="QWidget" />
+    <class_decl name="QWidgetWindow" />
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <class_decl name="QEventDispatcherUNIXPrivate" />
+    <class_decl name="QCocoaEventDispatcherPrivate" />
+    <function name="qt_sendSpontaneousEvent" />
+    <preproc plain="#endif" />
+    <function name="qAppName" />
+    <class_decl name="QClassFactory" />
+    <class_decl name="QCommandLineParserPrivate" />
+  </class>
+</unit>

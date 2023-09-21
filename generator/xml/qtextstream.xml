@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtextstream.h">
+  <class_decl name="QIODevice" />
+  <class_decl name="QLocale" />
+  <class name="QTextStream" ownership="cpp">
+    <super_list>
+      <super name="QIODeviceBase" nodowncast="true" />
+    </super_list>
+    <enum name="RealNumberNotation">
+      <key>SmartNotation</key>
+      <key>FixedNotation</key>
+      <key>ScientificNotation</key>
+    </enum>
+    <enum name="FieldAlignment">
+      <key>AlignLeft</key>
+      <key>AlignRight</key>
+      <key>AlignCenter</key>
+      <key>AlignAccountingStyle</key>
+    </enum>
+    <enum name="Status">
+      <key>Ok</key>
+      <key>ReadPastEnd</key>
+      <key>ReadCorruptData</key>
+      <key>WriteFailed</key>
+    </enum>
+    <enum name="NumberFlag">
+      <key>ShowBase</key>
+      <key>ForcePoint</key>
+      <key>ForceSign</key>
+      <key>UppercaseBase</key>
+      <key>UppercaseDigits</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="FILE" modifier="*" name="fileHandle" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="openMode" default="ReadWrite" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QString" modifier="*" name="string" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="openMode" default="ReadWrite" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QByteArray" modifier="*" name="array" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="openMode" default="ReadWrite" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="array" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="openMode" default="QTextStream::ReadOnly" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setEncoding">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QStringConverter::Encoding" modifier="" name="encoding" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="encoding">
+      <variant return-type="QStringConverter::Encoding" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoDetectUnicode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoDetectUnicode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGenerateByteOrderMark">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="generate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="generateByteOrderMark">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLocale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="locale">
+      <variant return-type="QLocale" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDevice">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="device">
+      <variant return-type="QIODevice*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setString">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="*" name="string" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="openMode" default="ReadWrite" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="string">
+      <variant return-type="QString*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="status">
+      <variant return-type="QTextStream::Status" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStatus">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextStream::Status" modifier="" name="status" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resetStatus">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="atEnd">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flush">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="seek">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pos">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="skipWhiteSpace">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="readLine">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="maxlen" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="readLineInto">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="*" name="line" />
+          <parameter const="false" type="qint64" modifier="" name="maxlen" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="readAll">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="read">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="maxlen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFieldAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextStream::FieldAlignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fieldAlignment">
+      <variant return-type="QTextStream::FieldAlignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPadChar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="ch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="padChar">
+      <variant return-type="QChar" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFieldWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fieldWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNumberFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextStream::NumberFlags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="numberFlags">
+      <variant return-type="QTextStream::NumberFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIntegerBase">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="base" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="integerBase">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRealNumberNotation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextStream::RealNumberNotation" modifier="" name="notation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="realNumberNotation">
+      <variant return-type="QTextStream::RealNumberNotation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRealNumberPrecision">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="precision" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="realNumberPrecision">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="writeString" call="operator&lt;&lt;">
+      <variant return-type="QTextStream&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QDebug" />
+  </class>
+  <!--
+  <class name="QTextStreamManipulator">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTSMFI" modifier="" name="m" />
+          <parameter const="false" type="int" modifier="" name="a" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTSMFC" modifier="" name="m" />
+          <parameter const="false" type="QChar" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="exec">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextStream" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  -->
+</unit>

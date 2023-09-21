@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qurlquery.h">
+  <class name="QUrlQuery">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="queryString" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="std::initializer_list&lt;QPair&lt;QString,QString&gt;&gt;" modifier="" name="list" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QUrlQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QUrlQuery&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QUrlQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrlQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrlQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QUrlQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDetached">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="query">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="encoding" default="QUrl::PrettyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setQuery">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="queryString" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="encoding" default="QUrl::PrettyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setQueryDelimiters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="valueDelimiter" />
+          <parameter const="false" type="QChar" modifier="" name="pairDelimiter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryValueDelimiter">
+      <variant return-type="QChar" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryPairDelimiter">
+      <variant return-type="QChar" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setQueryItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QPair&lt;QString,QString&gt;&gt;" modifier="&amp;" name="query" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryItems">
+      <variant return-type="QList&lt;QPair&lt;QString,QString&gt;&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="encoding" default="QUrl::PrettyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasQueryItem">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addQueryItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeQueryItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryItemValue">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="encoding" default="QUrl::PrettyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="allQueryItemValues">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="encoding" default="QUrl::PrettyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeAllQueryItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="defaultQueryValueDelimiter" static="true">
+      <variant return-type="char16_t" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="defaultQueryPairDelimiter" static="true">
+      <variant return-type="char16_t" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <class_decl name="QUrl" />
+    <!--
+    <function name="data_ptr">
+      <variant return-type="DataPtr&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

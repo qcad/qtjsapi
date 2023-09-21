@@ -1,0 +1,1104 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qxml.h">
+  <!--
+  <class_decl name="QXmlNamespaceSupport" />
+  -->
+  <class_decl name="QXmlAttributes" />
+  <class_decl name="QXmlContentHandler" />
+  <class_decl name="QXmlDefaultHandler" />
+  <class_decl name="QXmlDTDHandler" />
+  <class_decl name="QXmlEntityResolver" />
+  <class_decl name="QXmlErrorHandler" />
+  <class_decl name="QXmlLexicalHandler" />
+  <class_decl name="QXmlDeclHandler" />
+  <class_decl name="QXmlInputSource" />
+  <class_decl name="QXmlLocator" />
+  <class_decl name="QXmlParseException" />
+  <class_decl name="QXmlReader" />
+  <class_decl name="QXmlSimpleReader" />
+  <!--
+  <class name="QXmlNamespaceSupport">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="setPrefix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="prefix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="uri">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="splitName">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="processName">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="bool" modifier="" name="" />
+          <parameter const="false" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="prefixes">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pushContext">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="popContext">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="QXmlAttributes">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QXmlAttributes" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QXmlAttributes" modifier="&amp;&amp;" name="" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlAttributes" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="index">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLatin1String" modifier="" name="qName" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="uri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localPart" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="localName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="qName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="uri">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="uri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLatin1String" modifier="" name="qName" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="uri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="append">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="uri" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localPart" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="" />
+  </class>
+  <class name="QXmlInputSource">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="dev" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setData">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dat" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="dat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fetchData">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="next">
+      <variant return-type="QChar" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fromRawData" />
+    <function name="init" />
+  </class>
+  <class name="QXmlParseException">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" default="QString()" />
+          <parameter const="false" type="int" modifier="" name="c" default="-1" />
+          <parameter const="false" type="int" modifier="" name="l" default="-1" />
+          <parameter const="true" type="QString" modifier="&amp;" name="p" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="s" default="QString()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QXmlParseException" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="columnNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lineNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="publicId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="systemId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="message">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlReader">
+    <function name="feature">
+      <variant return-type="bool" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFeature">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="bool" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasFeature">
+      <variant return-type="bool" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="property">
+      <variant return-type="void*" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setProperty">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="void" modifier="*" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="hasProperty">
+      <variant return-type="bool" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEntityResolver">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlEntityResolver" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="entityResolver">
+      <variant return-type="QXmlEntityResolver*" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDTDHandler">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlDTDHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="DTDHandler">
+      <variant return-type="QXmlDTDHandler*" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setContentHandler">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlContentHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contentHandler">
+      <variant return-type="QXmlContentHandler*" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setErrorHandler">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlErrorHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorHandler">
+      <variant return-type="QXmlErrorHandler*" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLexicalHandler">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlLexicalHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lexicalHandler">
+      <variant return-type="QXmlLexicalHandler*" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDeclHandler">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlDeclHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="declHandler">
+      <variant return-type="QXmlDeclHandler*" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="parse">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlInputSource" modifier="&amp;" name="input" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlInputSource" modifier="*" name="input" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlSimpleReader">
+    <super_list>
+      <super name="QXmlReader" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="feature">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFeature">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="bool" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasFeature">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="property">
+      <variant return-type="void*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setProperty">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="void" modifier="*" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="hasProperty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEntityResolver">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlEntityResolver" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="entityResolver">
+      <variant return-type="QXmlEntityResolver*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDTDHandler">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlDTDHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="DTDHandler">
+      <variant return-type="QXmlDTDHandler*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setContentHandler">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlContentHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contentHandler">
+      <variant return-type="QXmlContentHandler*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setErrorHandler">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlErrorHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorHandler">
+      <variant return-type="QXmlErrorHandler*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLexicalHandler">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlLexicalHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lexicalHandler">
+      <variant return-type="QXmlLexicalHandler*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDeclHandler">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlDeclHandler" modifier="*" name="handler" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="declHandler">
+      <variant return-type="QXmlDeclHandler*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="parse">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlInputSource" modifier="&amp;" name="input" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlInputSource" modifier="*" name="input" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlInputSource" modifier="*" name="input" />
+          <parameter const="false" type="bool" modifier="" name="incremental" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="parseContinue">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QXmlSimpleReaderLocator" />
+  </class>
+  <class name="QXmlLocator">
+    <!--
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    -->
+    <function name="columnNumber">
+      <variant return-type="int" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lineNumber">
+      <variant return-type="int" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlContentHandler">
+    <function name="setDocumentLocator">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlLocator" modifier="*" name="locator" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startDocument">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endDocument">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startPrefixMapping">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+          <parameter const="true" type="QString" modifier="&amp;" name="uri" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endPrefixMapping">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startElement">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="true" type="QXmlAttributes" modifier="&amp;" name="atts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endElement">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="characters">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ignorableWhitespace">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="processingInstruction">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="target" />
+          <parameter const="true" type="QString" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="skippedEntity">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlErrorHandler">
+    <function name="warning">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlParseException" modifier="&amp;" name="exception" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlParseException" modifier="&amp;" name="exception" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fatalError">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlParseException" modifier="&amp;" name="exception" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlDTDHandler">
+    <function name="notationDecl">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unparsedEntityDecl">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="notationName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlEntityResolver">
+    <!--
+    <function name="resolveEntity">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+          <parameter const="false" type="QXmlInputSource" modifier="*&amp;" name="ret" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="errorString">
+      <variant return-type="QString" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlLexicalHandler">
+    <function name="startDTD">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endDTD">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startEntity">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endEntity">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startCDATA">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endCDATA">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="comment">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlDeclHandler">
+    <function name="attributeDecl">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="eName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="aName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="valueDefault" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="internalEntityDecl">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="externalEntityDecl">
+      <variant return-type="bool" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QXmlDefaultHandler" inheritable="true">
+    <super_list>
+      <super name="QXmlContentHandler" />
+      <super name="QXmlErrorHandler" />
+      <super name="QXmlDTDHandler" />
+      <super name="QXmlEntityResolver" />
+      <super name="QXmlLexicalHandler" />
+      <super name="QXmlDeclHandler" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="setDocumentLocator">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlLocator" modifier="*" name="locator" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startDocument">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endDocument">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startPrefixMapping">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+          <parameter const="true" type="QString" modifier="&amp;" name="uri" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endPrefixMapping">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startElement">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="true" type="QXmlAttributes" modifier="&amp;" name="atts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endElement">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="characters">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ignorableWhitespace">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="processingInstruction">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="target" />
+          <parameter const="true" type="QString" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="skippedEntity">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="warning">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlParseException" modifier="&amp;" name="exception" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlParseException" modifier="&amp;" name="exception" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fatalError">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QXmlParseException" modifier="&amp;" name="exception" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="notationDecl">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unparsedEntityDecl">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="notationName" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="resolveEntity">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+          <parameter const="false" type="QXmlInputSource" modifier="*&amp;" name="ret" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="startDTD">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endDTD">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startEntity">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endEntity">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startCDATA">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endCDATA">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="comment">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="attributeDecl">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="eName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="aName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="valueDefault" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="internalEntityDecl">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="externalEntityDecl">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

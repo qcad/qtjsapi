@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qmdisubwindow.h">
+  <class_decl name="QMenu" />
+  <class_decl name="QMdiArea" />
+  <class name="QMdiSubWindow">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="widget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximizedButtonsWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximizedSystemMenuIconWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isShaded">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiSubWindow::SubWindowOption" modifier="" name="option" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiSubWindow::SubWindowOption" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setKeyboardSingleStep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="step" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyboardSingleStep">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setKeyboardPageStep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="step" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyboardPageStep">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(menu)" />
+    <function name="setSystemMenu">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMenu" modifier="*" name="systemMenu" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="systemMenu">
+      <variant return-type="QMenu*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="mdiArea">
+      <variant return-type="QMdiArea*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="windowStateChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::WindowStates" modifier="" name="oldState" />
+          <parameter const="false" type="Qt::WindowStates" modifier="" name="newState" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="aboutToActivate">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(menu)" />
+    <function name="showSystemMenu">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="showShaded">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

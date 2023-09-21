@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qprogressdialog.h">
+  <class_decl name="QPushButton" />
+  <class_decl name="QLabel" />
+  <class_decl name="QProgressBar" />
+  <class_decl name="QTimer" />
+  <class name="QProgressDialog" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QDialog" />
+    </super_list>
+    <property type="bool" name="wasCanceled" read="wasCanceled" />
+    <property type="int" name="minimum" read="minimum" write="setMinimum" />
+    <property type="int" name="maximum" read="maximum" write="setMaximum" />
+    <property type="int" name="value" read="value" write="setValue" />
+    <property type="bool" name="autoReset" read="autoReset" write="setAutoReset" />
+    <property type="bool" name="autoClose" read="autoClose" write="setAutoClose" />
+    <property type="int" name="minimumDuration" read="minimumDuration" write="setMinimumDuration" />
+    <property type="QString" name="labelText" read="labelText" write="setLabelText" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="labelText" />
+          <parameter const="true" type="QString" modifier="&amp;" name="cancelButtonText" />
+          <parameter const="false" type="int" modifier="" name="minimum" />
+          <parameter const="false" type="int" modifier="" name="maximum" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setLabel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLabel" modifier="*" name="label" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCancelButton">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPushButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QProgressBar" modifier="*" name="bar" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="wasCanceled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="labelText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumDuration">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoReset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="reset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoReset">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoClose">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="close" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoClose">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cancel">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaximum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="maximum" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMinimum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="minimum" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="minimum" />
+          <parameter const="false" type="int" modifier="" name="maximum" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="progress" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLabelText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCancelButtonText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMinimumDuration">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="ms" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="canceled">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="closeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QCloseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="changeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="showEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QShowEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="forceShow">
+      <variant return-type="void" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

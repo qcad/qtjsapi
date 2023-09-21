@@ -1,0 +1,592 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcombobox.h">
+  <!--
+  <class_decl name="QAbstractItemView" />
+  -->
+  <class_decl name="QLineEdit" />
+  <class_decl name="QCompleter" />
+  <class name="QComboBox">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+
+    <property type="int" name="count" read="count" />
+    <property type="QVariant" name="currentData" read="currentData" />
+    <property type="int" name="currentIndex" read="currentIndex" write="setCurrentIndex" />
+    <property type="QString" name="currentText" read="currentText" write="setCurrentText" />
+    <property type="bool" name="duplicatesEnabled" read="duplicatesEnabled" write="setDuplicatesEnabled" />
+    <property type="bool" name="editable" read="isEditable" write="setEditable" />
+    <property type="bool" name="frame" read="hasFrame" write="setFrame" />
+    <property type="QSize" name="iconSize" read="iconSize" write="setIconSize" />
+    <property type="QComboBox::InsertPolicy" name="insertPolicy" read="insertPolicy" write="setInsertPolicy" />
+    <property type="int" name="maxCount" read="maxCount" write="setMaxCount" />
+    <property type="int" name="maxVisibleItems" read="maxVisibleItems" write="setMaxVisibleItems" />
+    <property type="int" name="minimumContentsLength" read="minimumContentsLength" write="setMinimumContentsLength" />
+    <property type="int" name="modelColumn" read="modelColumn" write="setModelColumn" />
+    <property type="QString" name="placeholderText" read="placeholderText" write="setPlaceholderText" />
+    <property type="QComboBox::SizeAdjustPolicy" name="sizeAdjustPolicy" read="sizeAdjustPolicy" write="setSizeAdjustPolicy" />
+
+    <function name="maxVisibleItems">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaxVisibleItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="maxItems" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaxCount">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maxCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="duplicatesEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDuplicatesEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFrame">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasFrame">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="findText">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="Qt::MatchFlags" modifier="" name="flags"
+          default="static_cast&lt;Qt::MatchFlags&gt;(Qt::MatchExactly|Qt::MatchCaseSensitive)" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="findData">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="data" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::UserRole" />
+          <parameter const="false" type="Qt::MatchFlags" modifier="" name="flags"
+          default="static_cast&lt;Qt::MatchFlags&gt;(Qt::MatchExactly|Qt::MatchCaseSensitive)" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="InsertPolicy">
+      <key>NoInsert</key>
+      <key>InsertAtTop</key>
+      <key>InsertAtCurrent</key>
+      <key>InsertAtBottom</key>
+      <key>InsertAfterCurrent</key>
+      <key>InsertBeforeCurrent</key>
+      <key>InsertAlphabetically</key>
+    </enum>
+    <function name="insertPolicy">
+      <variant return-type="QComboBox::InsertPolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInsertPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QComboBox::InsertPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="SizeAdjustPolicy">
+      <key>AdjustToContents</key>
+      <key>AdjustToContentsOnFirstShow</key>
+      <key>AdjustToMinimumContentsLengthWithIcon</key>
+    </enum>
+    <function name="sizeAdjustPolicy">
+      <variant return-type="QComboBox::SizeAdjustPolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSizeAdjustPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QComboBox::SizeAdjustPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumContentsLength">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMinimumContentsLength">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="characters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="iconSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIconSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlaceholderText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="placeholderText" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="placeholderText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEditable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEditable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="editable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLineEdit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLineEdit" modifier="*" name="edit" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineEdit">
+      <variant return-type="QLineEdit*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_VALIDATOR" />
+    <function name="setValidator">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QValidator" modifier="*" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="validator">
+      <variant return-type="QValidator*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(completer)" />
+    <function name="setCompleter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QCompleter" modifier="*" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="completer">
+      <variant return-type="QCompleter*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="itemDelegate">
+      <variant return-type="QAbstractItemDelegate*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setItemDelegate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractItemDelegate" modifier="*" name="delegate" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="model">
+      <variant return-type="QAbstractItemModel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setModel">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rootModelIndex">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setRootModelIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="modelColumn">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setModelColumn">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="visibleColumn" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentData">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::UserRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemIcon">
+      <variant return-type="QIcon" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemData">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::UserRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="userData" default="QVariant()" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="userData" default="QVariant()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="texts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="userData" default="QVariant()" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="userData" default="QVariant()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="texts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertSeparator">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setItemText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setItemIcon">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setItemData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::UserRole" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="view">
+      <variant return-type="QAbstractItemView*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setView">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractItemView" modifier="*" name="itemView" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showPopup">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hidePopup">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="event">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="inputMethodQuery">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::InputMethodQuery" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::InputMethodQuery" modifier="" name="query" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="argument" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearEditText">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEditText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="editTextChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textActivated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="highlighted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textHighlighted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentIndexChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentTextChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusInEvent" />
+    <function name="focusOutEvent" />
+    <function name="changeEvent" />
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="showEvent" />
+    <function name="hideEvent" />
+    <function name="mousePressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="keyPressEvent" />
+    <function name="keyReleaseEvent" />
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <function name="wheelEvent" />
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_CONTEXTMENU" />
+    <function name="contextMenuEvent" />
+    <preproc plain="#endif" />
+    <function name="inputMethodEvent" />
+    <function name="initStyleOption" />
+    <preproc plain="#if QT_CONFIG(completer)" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

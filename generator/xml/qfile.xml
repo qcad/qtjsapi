@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfile.h">
+  <class_decl name="QTemporaryFile" />
+  <class name="QFile" ownership="cpp">
+    <super_list>
+      <super name="QFileDevice" />
+      <super name="QIODevice" />
+    </super_list>
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <preproc plain="#endif" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <preproc plain="#endif" />
+    <function name="fileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFileName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_DARWIN)" />
+    <!--
+    <function name="encodeName" static="true">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="decodeName" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="localFileName" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="localFileName" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="localFileName" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="localFileName" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <function name="exists">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="bool" access="public" static="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="symLinkTarget">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="remove">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="bool" access="public" static="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="moveToTrash">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="false" type="QString" modifier="*" name="pathInTrash" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="rename">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="newName" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public" static="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="oldName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="newName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="link">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="newName" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="oldname" />
+          <parameter const="true" type="QString" modifier="&amp;" name="newName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copy">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="newName" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="newName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="flags" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="FILE" modifier="*" name="f" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="ioFlags" />
+          <parameter const="false" type="FileHandleFlags" modifier="" name="handleFlags" default="DontCloseHandle" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="fd" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="ioFlags" />
+          <!--
+          <parameter const="false" type="FileHandleFlags" modifier="" name="handleFlags" default="DontCloseHandle" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resize">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="sz" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filename" />
+          <parameter const="false" type="qint64" modifier="" name="sz" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="permissions">
+      <variant return-type="QFile::Permissions" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QFile::Permissions" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filename" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPermissions">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QFile::Permissions" modifier="" name="permissionSpec" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filename" />
+          <parameter const="false" type="QFile::Permissions" modifier="" name="permissionSpec" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifdef QT_NO_QOBJECT" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <class_decl name="QTemporaryFile" />
+  </class>
+</unit>

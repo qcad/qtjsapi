@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qguiapplication.h">
+  <!--
+  <class_decl name="QSessionManager" />
+  <class_decl name="QPlatformNativeInterface" />
+  <class_decl name="QPlatformIntegration" />
+  -->
+  <class_decl name="QPalette" />
+  <class_decl name="QScreen" />
+  <class_decl name="QStyleHints" />
+  <class name="QGuiApplication" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QCoreApplication" />
+    </super_list>
+    <!--
+    properties don't work for static access functions:
+    <property type="QString" name="applicationDisplayName" read="applicationDisplayName" write="setApplicationDisplayName" />
+    <property type="QString" name="desktopFileName" read="desktopFileName" write="setDesktopFileName" />
+    <property type="Qt::LayoutDirection" name="layoutDirection" read="layoutDirection" write="setLayoutDirection" />
+    <property type="QString" name="platformName" read="platformName" />
+    <property type="bool" name="quitOnLastWindowClosed" read="quitOnLastWindowClosed" write="setQuitOnLastWindowClosed" />
+    <property type="QScreen" name="*primaryScreen" read="primaryScreen" />
+    -->
+    <!--
+    <preproc plain="#ifdef Q_QDOC" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="&amp;" name="argc" />
+          <parameter const="false" type="char" modifier="**" name="argv" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="&amp;" name="argc" />
+          <parameter const="false" type="char" modifier="**" name="argv" />
+          <parameter const="false" type="int" modifier="" name="" default="ApplicationFlags" />
+        </parameters>
+      </variant>
+    </constructor>
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    -->
+    <function name="setApplicationDisplayName" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="applicationDisplayName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDesktopFileName" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="desktopFileName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="allWindows" static="true">
+      <variant return-type="QWindowList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="topLevelWindows" static="true">
+      <variant return-type="QWindowList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="topLevelAt" static="true">
+      <variant return-type="QWindow*" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setWindowIcon" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="windowIcon" static="true">
+      <variant return-type="QIcon" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="platformName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="modalWindow" static="true">
+      <variant return-type="QWindow*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="focusWindow" static="true">
+      <variant return-type="QWindow*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="focusObject" static="true">
+      <variant return-type="QObject*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="primaryScreen" static="true">
+      <variant return-type="QScreen*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="screens" static="true">
+      <variant return-type="QList&lt;QScreen*&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="screenAt" static="true">
+      <variant return-type="QScreen*" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="devicePixelRatio">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CURSOR" />
+    <function name="overrideCursor" static="true">
+      <variant return-type="QCursor*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOverrideCursor" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QCursor" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="changeOverrideCursor" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QCursor" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="restoreOverrideCursor" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="font" static="true">
+      <variant return-type="QFont" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFont" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CLIPBOARD" />
+    <function name="clipboard" static="true">
+      <variant return-type="QClipboard*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="palette" static="true">
+      <variant return-type="QPalette" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPalette" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPalette" modifier="&amp;" name="pal" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyboardModifiers" static="true">
+      <variant return-type="Qt::KeyboardModifiers" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryKeyboardModifiers" static="true">
+      <variant return-type="Qt::KeyboardModifiers" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mouseButtons" static="true">
+      <variant return-type="Qt::MouseButtons" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLayoutDirection" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::LayoutDirection" modifier="" name="direction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="layoutDirection" static="true">
+      <variant return-type="Qt::LayoutDirection" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRightToLeft" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isLeftToRight" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="styleHints" static="true">
+      <variant return-type="QStyleHints*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setDesktopSettingsAware" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="desktopSettingsAware" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="inputMethod" static="true">
+      <variant return-type="QInputMethod*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="platformNativeInterface" static="true">
+      <variant return-type="QPlatformNativeInterface*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="platformFunction" static="true">
+      <variant return-type="QFunctionPointer" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="function" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setQuitOnLastWindowClosed" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="quit" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quitOnLastWindowClosed" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="applicationState" static="true">
+      <variant return-type="Qt::ApplicationState" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setHighDpiScaleFactorRoundingPolicy" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::HighDpiScaleFactorRoundingPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="highDpiScaleFactorRoundingPolicy" static="true">
+      <variant return-type="Qt::HighDpiScaleFactorRoundingPolicy" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="exec" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="notify">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="" />
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_SESSIONMANAGER" />
+    <function name="isSessionRestored">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sessionId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sessionKey">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSavingSession">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="sync" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fontDatabaseChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="screenAdded">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="screenRemoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="primaryScreenChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QScreen" modifier="*" name="screen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lastWindowClosed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="focusObjectChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="focusObject" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="focusWindowChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QWindow" modifier="*" name="focusWindow" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="applicationStateChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::ApplicationState" modifier="" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="layoutDirectionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::LayoutDirection" modifier="" name="direction" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#ifndef QT_NO_SESSIONMANAGER" />
+    <function name="commitDataRequest">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSessionManager" modifier="&amp;" name="sessionManager" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="saveStateRequest">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSessionManager" modifier="&amp;" name="sessionManager" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="applicationDisplayNameChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <function name="paletteChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QPalette" modifier="&amp;" name="pal" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fontChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="event" />
+    <function name="compressEvent" />
+    <preproc plain="#ifndef QT_NO_GESTURES" />
+    <class_decl name="QGestureManager" />
+    <preproc plain="#endif" />
+    <!--
+    <class_decl name="QPlatformIntegration" />
+    <preproc plain="#ifndef QT_NO_SESSIONMANAGER" />
+    <class_decl name="QPlatformSessionManager" />
+    <preproc plain="#endif" />
+    -->
+  </class>
+</unit>

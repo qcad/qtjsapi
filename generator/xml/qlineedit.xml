@@ -1,0 +1,577 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qlineedit.h">
+  <class_decl name="QValidator" />
+  <class_decl name="QMenu" />
+  <class_decl name="QCompleter" />
+  <class_decl name="QStyleOptionFrame" />
+  <class_decl name="QAbstractSpinBox" />
+  <class_decl name="QDateTimeEdit" />
+  <class_decl name="QIcon" />
+  <class_decl name="QToolButton" />
+  <class name="QLineEdit">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <property type="QString" name="text" read="text" write="setText" />
+    <property type="int" name="maxLength" read="maxLength" write="setMaxLength" />
+    <property type="bool" name="frame" read="hasFrame" write="setFrame" />
+    <property type="EchoMode" name="echoMode" read="echoMode" write="setEchoMode" />
+    <property type="QString" name="displayText" read="displayText" />
+    <property type="int" name="cursorPosition" read="cursorPosition" write="setCursorPosition" />
+    <property type="Qt::Alignment" name="alignment" read="alignment" write="setAlignment" />
+    <property type="bool" name="modified" read="isModified" write="setModified" />
+    <property type="bool" name="hasSelectedText" read="hasSelectedText" />
+    <property type="QString" name="selectedText" read="selectedText" />
+    <property type="bool" name="dragEnabled" read="dragEnabled" write="setDragEnabled" />
+    <property type="bool" name="readOnly" read="isReadOnly" write="setReadOnly" />
+    <property type="bool" name="undoAvailable" read="isUndoAvailable" />
+    <property type="bool" name="redoAvailable" read="isRedoAvailable" />
+    <property type="bool" name="acceptableInput" read="hasAcceptableInput" />
+    <property type="QString" name="placeholderText" read="placeholderText" write="setPlaceholderText" />
+    <property type="Qt::CursorMoveStyle" name="cursorMoveStyle" read="cursorMoveStyle" write="setCursorMoveStyle" />
+    <property type="bool" name="clearButtonEnabled" read="isClearButtonEnabled" write="setClearButtonEnabled" />
+    <enum name="ActionPosition">
+      <key>LeadingPosition</key>
+      <key>TrailingPosition</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="displayText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="placeholderText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPlaceholderText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maxLength">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaxLength">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFrame">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasFrame">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setClearButtonEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isClearButtonEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="EchoMode">
+      <key>Normal</key>
+      <key>NoEcho</key>
+      <key>Password</key>
+      <key>PasswordEchoOnEdit</key>
+    </enum>
+    <function name="echoMode">
+      <variant return-type="QLineEdit::EchoMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEchoMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLineEdit::EchoMode" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isReadOnly">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setReadOnly">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_VALIDATOR" />
+    <function name="setValidator">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QValidator" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="validator">
+      <variant return-type="const QValidator*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(completer)" />
+    <function name="setCompleter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QCompleter" modifier="*" name="completer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="completer">
+      <variant return-type="QCompleter*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cursorPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCursorPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorPositionAt">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="flag" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cursorForward">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="mark" />
+          <parameter const="false" type="int" modifier="" name="steps" default="1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorBackward">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="mark" />
+          <parameter const="false" type="int" modifier="" name="steps" default="1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorWordForward">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="mark" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorWordBackward">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="mark" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="backspace">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="del">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="home">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="mark" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="end">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="mark" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isModified">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setModified">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSelection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasSelectedText">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectedText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectionStart">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectionEnd">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectionLength">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUndoAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRedoAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDragEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCursorMoveStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::CursorMoveStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorMoveStyle">
+      <variant return-type="Qt::CursorMoveStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="inputMask">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInputMask">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="inputMask" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasAcceptableInput">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextMargins">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="left" />
+          <parameter const="false" type="int" modifier="" name="top" />
+          <parameter const="false" type="int" modifier="" name="right" />
+          <parameter const="false" type="int" modifier="" name="bottom" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QMargins" modifier="&amp;" name="margins" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textMargins">
+      <variant return-type="QMargins" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(action)" />
+    <function name="addAction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+          <parameter const="false" type="QLineEdit::ActionPosition" modifier="" name="position" />
+        </parameters>
+      </variant>
+      <variant return-type="QAction*" access="public">
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+          <parameter const="false" type="QLineEdit::ActionPosition" modifier="" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectAll">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="undo">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="redo">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CLIPBOARD" />
+    <function name="cut">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="copy">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paste">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="deselect">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="insert">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CONTEXTMENU" />
+    <function name="createStandardContextMenu">
+      <variant return-type="QMenu*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="textChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textEdited">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorPositionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="returnPressed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="editingFinished">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="inputRejected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mousePressEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent" />
+    <function name="mouseDoubleClickEvent" />
+    <function name="keyPressEvent" />
+    <function name="keyReleaseEvent" />
+    <function name="focusInEvent" />
+    <function name="focusOutEvent" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(draganddrop)" />
+    <function name="dragEnterEvent" />
+    <function name="dragMoveEvent" />
+    <function name="dragLeaveEvent" />
+    <function name="dropEvent" />
+    <preproc plain="#endif" />
+    <function name="changeEvent" />
+    <preproc plain="#ifndef QT_NO_CONTEXTMENU" />
+    <function name="contextMenuEvent" />
+    <preproc plain="#endif" />
+    <function name="inputMethodEvent" />
+    <function name="initStyleOption" />
+    <function name="inputMethodQuery">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::InputMethodQuery" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::InputMethodQuery" modifier="" name="property" />
+          <parameter const="false" type="QVariant" modifier="" name="argument" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="timerEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTimerEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="event">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="cursorRect" />
+    <class_decl name="QAbstractSpinBox" />
+    <class_decl name="QAccessibleLineEdit" />
+    <class_decl name="QComboBox" />
+    <preproc plain="#ifdef QT_KEYPAD_NAVIGATION" />
+    <class_decl name="QDateTimeEdit" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(completer)" />
+    <preproc plain="#endif" />
+    <preproc plain="#ifdef QT_KEYPAD_NAVIGATION" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

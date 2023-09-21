@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qkeysequence.h">
+  <class_decl name="QKeySequence" />
+  <class_decl name="QVariant" />
+  <class name="QKeySequence">
+    <enum name="StandardKey">
+      <key>UnknownKey</key>
+      <key>HelpContents</key>
+      <key>WhatsThis</key>
+      <key>Open</key>
+      <key>Close</key>
+      <key>Save</key>
+      <key>New</key>
+      <key>Delete</key>
+      <key>Cut</key>
+      <key>Copy</key>
+      <key>Paste</key>
+      <key>Undo</key>
+      <key>Redo</key>
+      <key>Back</key>
+      <key>Forward</key>
+      <key>Refresh</key>
+      <key>ZoomIn</key>
+      <key>ZoomOut</key>
+      <key>Print</key>
+      <key>AddTab</key>
+      <key>NextChild</key>
+      <key>PreviousChild</key>
+      <key>Find</key>
+      <key>FindNext</key>
+      <key>FindPrevious</key>
+      <key>Replace</key>
+      <key>SelectAll</key>
+      <key>Bold</key>
+      <key>Italic</key>
+      <key>Underline</key>
+      <key>MoveToNextChar</key>
+      <key>MoveToPreviousChar</key>
+      <key>MoveToNextWord</key>
+      <key>MoveToPreviousWord</key>
+      <key>MoveToNextLine</key>
+      <key>MoveToPreviousLine</key>
+      <key>MoveToNextPage</key>
+      <key>MoveToPreviousPage</key>
+      <key>MoveToStartOfLine</key>
+      <key>MoveToEndOfLine</key>
+      <key>MoveToStartOfBlock</key>
+      <key>MoveToEndOfBlock</key>
+      <key>MoveToStartOfDocument</key>
+      <key>MoveToEndOfDocument</key>
+      <key>SelectNextChar</key>
+      <key>SelectPreviousChar</key>
+      <key>SelectNextWord</key>
+      <key>SelectPreviousWord</key>
+      <key>SelectNextLine</key>
+      <key>SelectPreviousLine</key>
+      <key>SelectNextPage</key>
+      <key>SelectPreviousPage</key>
+      <key>SelectStartOfLine</key>
+      <key>SelectEndOfLine</key>
+      <key>SelectStartOfBlock</key>
+      <key>SelectEndOfBlock</key>
+      <key>SelectStartOfDocument</key>
+      <key>SelectEndOfDocument</key>
+      <key>DeleteStartOfWord</key>
+      <key>DeleteEndOfWord</key>
+      <key>DeleteEndOfLine</key>
+      <key>InsertParagraphSeparator</key>
+      <key>InsertLineSeparator</key>
+      <key>SaveAs</key>
+      <key>Preferences</key>
+      <key>Quit</key>
+      <key>FullScreen</key>
+      <key>Deselect</key>
+      <key>DeleteCompleteLine</key>
+      <key>Backspace</key>
+      <key>Cancel</key>
+    </enum>
+    <enum name="SequenceFormat">
+      <key>NativeText</key>
+      <key>PortableText</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="false" type="QKeySequence::SequenceFormat" modifier="" name="format" default="QKeySequence::NativeText" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="k1" />
+          <parameter const="false" type="int" modifier="" name="k2" default="0" />
+          <parameter const="false" type="int" modifier="" name="k3" default="0" />
+          <parameter const="false" type="int" modifier="" name="k4" default="0" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeyCombination" modifier="" name="k1" />
+          <parameter const="false" type="QKeyCombination" modifier="" name="k2" default="QKeyCombination::fromCombined(0)" />
+          <parameter const="false" type="QKeyCombination" modifier="" name="k3" default="QKeyCombination::fromCombined(0)" />
+          <parameter const="false" type="QKeyCombination" modifier="" name="k4" default="QKeyCombination::fromCombined(0)" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="ks" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="SequenceMatch">
+      <key>NoMatch</key>
+      <key>PartialMatch</key>
+      <key>ExactMatch</key>
+    </enum>
+    <function name="toString" cppname="toStr">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QKeySequence::SequenceFormat" modifier="" name="format" default="QKeySequence::PortableText" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromString" static="true">
+      <variant return-type="QKeySequence" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+          <parameter const="false" type="QKeySequence::SequenceFormat" modifier="" name="format" default="QKeySequence::PortableText" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="listFromString" static="true">
+      <variant return-type="QList&lt;QKeySequence&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+          <parameter const="false" type="QKeySequence::SequenceFormat" modifier="" name="format" default="QKeySequence::PortableText" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="listToString" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QKeySequence&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="QKeySequence::SequenceFormat" modifier="" name="format" default="QKeySequence::PortableText" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="matches">
+      <variant return-type="QKeySequence::SequenceMatch" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="seq" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mnemonic" static="true">
+      <variant return-type="QKeySequence" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyBindings" static="true">
+      <variant return-type="QList&lt;QKeySequence&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QKeySequence" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDetached">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="decodeString" static="true" />
+    <function name="encodeString" static="true" />
+    <function name="assign" />
+    <function name="setKey" />
+    <function name="operator" />
+    <class_decl name="QShortcutMap" />
+    <class_decl name="QShortcut" />
+  </class>
+</unit>

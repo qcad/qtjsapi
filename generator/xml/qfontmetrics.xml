@@ -1,0 +1,507 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfontmetrics.h">
+  <class_decl name="QRect" />
+  <class_decl name="QTextOption" />
+  <class name="QFontMetrics">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+          <parameter const="true" type="QPaintDevice" modifier="*" name="pd" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFontMetrics" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="operator">
+      <variant return-type="QFontMetrics&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QFontMetrics" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFontMetrics" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFontMetrics" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="ascent">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="capHeight">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="descent">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="leading">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lineSpacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minLeftBearing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minRightBearing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maxWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="xHeight">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="averageCharWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="inFont">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="inFontUcs4">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="ucs4" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftBearing">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightBearing">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="horizontalAdvance">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="int" modifier="" name="len" default="-1" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="true" type="QTextOption" modifier="&amp;" name="textOption" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QTextOption" modifier="&amp;" name="textOption" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+          <parameter const="false" type="int" modifier="" name="flags" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="int" modifier="" name="tabstops" default="0" />
+          <!--
+          <parameter const="false" type="int" modifier="*" name="tabarray" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="int" modifier="" name="flags" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="int" modifier="" name="tabstops" default="0" />
+          <!--
+          <parameter const="false" type="int" modifier="*" name="tabarray" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="flags" />
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+          <parameter const="false" type="int" modifier="" name="tabstops" default="0" />
+          <!--
+          <parameter const="false" type="int" modifier="*" name="tabarray" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="tightBoundingRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QTextOption" modifier="&amp;" name="textOption" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="elidedText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="Qt::TextElideMode" modifier="" name="mode" />
+          <parameter const="false" type="int" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="flags" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="underlinePos">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="overlinePos">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="strikeOutPos">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lineWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fontDpi">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QFontMetricsF" />
+    <class_decl name="QStackTextEngine" />
+  </class>
+  <class name="QFontMetricsF">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+          <parameter const="true" type="QPaintDevice" modifier="*" name="pd" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFontMetrics" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFontMetricsF" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="operator">
+      <variant return-type="QFontMetricsF&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QFontMetricsF" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QFontMetricsF&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QFontMetrics" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFontMetricsF" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFontMetricsF" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ascent">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="capHeight">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="descent">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="leading">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lineSpacing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minLeftBearing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minRightBearing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maxWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="xHeight">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="averageCharWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="inFont">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="inFontUcs4">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="ucs4" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftBearing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightBearing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="horizontalAdvance">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="false" type="int" modifier="" name="length" default="-1" />
+        </parameters>
+      </variant>
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="true" type="QTextOption" modifier="&amp;" name="textOption" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="boundingRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QTextOption" modifier="&amp;" name="textOption" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="r" />
+          <parameter const="false" type="int" modifier="" name="flags" />
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="false" type="int" modifier="" name="tabstops" default="0" />
+          <!--
+          <parameter const="false" type="int" modifier="*" name="tabarray" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="flags" />
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+          <parameter const="false" type="int" modifier="" name="tabstops" default="0" />
+          <!--
+          <parameter const="false" type="int" modifier="*" name="tabarray" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="tightBoundingRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QTextOption" modifier="&amp;" name="textOption" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="elidedText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="Qt::TextElideMode" modifier="" name="mode" />
+          <parameter const="false" type="qreal" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="flags" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="underlinePos">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="overlinePos">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="strikeOutPos">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lineWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fontDpi">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

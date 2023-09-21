@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpicture.h">
+  <class name="QPicture">
+    <super_list>
+      <super name="QPaintDevice" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="formatVersion" default="-1" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPicture" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="devType">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="uint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="const char*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setData">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="data" />
+          <parameter const="false" type="uint" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="play">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="load">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="dev" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="save">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="dev" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBoundingRect">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPicture" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="detach">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDetached">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintEngine">
+      <variant return-type="QPaintEngine*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="metric" />
+    <function name="exec" />
+    <class_decl name="QPicturePaintEngine" />
+    <class_decl name="QAlphaPaintEngine" />
+    <class_decl name="QPreviewPaintEngine" />
+  </class>
+</unit>

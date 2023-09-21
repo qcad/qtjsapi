@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qabstractfileiconprovider.h">
+  <class name="QAbstractFileIconProvider" ownership="cpp">
+    <enum name="IconType">
+      <key>Computer</key>
+      <key>Desktop</key>
+      <key>Trashcan</key>
+      <key>Network</key>
+      <key>Drive</key>
+      <key>Folder</key>
+      <key>File</key>
+    </enum>
+    <enum name="Option">
+      <key>DontUseCustomDirectoryIcons</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="icon">
+      <variant return-type="QIcon" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractFileIconProvider::IconType" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QIcon" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFileInfo" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFileInfo" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOptions">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractFileIconProvider::Options" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="options">
+      <variant return-type="QAbstractFileIconProvider::Options" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

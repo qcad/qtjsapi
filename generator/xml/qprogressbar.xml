@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qprogressbar.h">
+  <class_decl name="QStyleOptionProgressBar" />
+  <class name="QProgressBar" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <property type="int" name="maximum" read="maximum" write="setMaximum" />
+    <property type="QString" name="text" read="text" />
+    <property type="int" name="value" read="value" write="setValue" />
+    <property type="Qt::Alignment" name="alignment" read="alignment" write="setAlignment" />
+    <property type="bool" name="textVisible" read="isTextVisible" write="setTextVisible" />
+    <property type="Qt::Orientation" name="orientation" read="orientation" write="setOrientation" />
+    <property type="bool" name="invertedAppearance" read="invertedAppearance" write="setInvertedAppearance" />
+    <property type="Direction" name="textDirection" read="textDirection" write="setTextDirection" />
+    <property type="QString" name="format" read="format" write="setFormat" />
+    <enum name="Direction">
+      <key>TopToBottom</key>
+      <key>BottomToTop</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="minimum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTextVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="alignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="orientation">
+      <variant return-type="Qt::Orientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInvertedAppearance">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="invert" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="invertedAppearance">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextDirection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QProgressBar::Direction" modifier="" name="textDirection" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textDirection">
+      <variant return-type="QProgressBar::Direction" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resetFormat">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="format">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="minimum" />
+          <parameter const="false" type="int" modifier="" name="maximum" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMinimum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="minimum" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMaximum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="maximum" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOrientation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="valueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="initStyleOption">
+      <variant return-type="void" virtual="true" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QStyleOptionProgressBar" modifier="*" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

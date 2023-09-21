@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpushbutton.h">
+  <class_decl name="QMenu" />
+  <class_decl name="QStyleOptionButton" />
+  <class name="QPushButton">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QAbstractButton" />
+    </super_list>
+    <property type="bool" name="autoDefault" read="autoDefault" write="setAutoDefault" />
+    <property type="bool" name="default" read="isDefault" write="setDefault" />
+    <property type="bool" name="flat" read="isFlat" write="setFlat" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="autoDefault">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoDefault">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDefault">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefault">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(menu)" />
+    <function name="setMenu">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMenu" modifier="*" name="menu" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="menu">
+      <variant return-type="QMenu*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setFlat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFlat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(menu)" />
+    <function name="showMenu">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="event" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyPressEvent" />
+    <function name="focusInEvent" />
+    <function name="focusOutEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initStyleOption" />
+    <function name="hitButton" />
+    <preproc plain="#if QT_CONFIG(menu)" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

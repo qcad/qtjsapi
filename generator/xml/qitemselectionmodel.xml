@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qitemselectionmodel.h">
+  <class_decl name="QItemSelection" />
+  <!--
+  <class name="QItemSelectionRange">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="topL" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="bottomR" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QItemSelectionRange" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="top">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="left">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottom">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="right">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="topLeft">
+      <variant return-type="const QPersistentModelIndex&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottomRight">
+      <variant return-type="const QPersistentModelIndex&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="parent">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="model">
+      <variant return-type="const QAbstractItemModel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parentIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersects">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QItemSelectionRange" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersected">
+      <variant return-type="QItemSelectionRange" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QItemSelectionRange" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QItemSelectionRange" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QItemSelectionRange" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indexes">
+      <variant return-type="QModelIndexList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="QItemSelectionModel">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <enum name="SelectionFlag">
+      <key>NoUpdate</key>
+      <key>Clear</key>
+      <key>Select</key>
+      <key>Deselect</key>
+      <key>Toggle</key>
+      <key>Current</key>
+      <key>Rows</key>
+      <key>Columns</key>
+      <key>SelectCurrent</key>
+      <key>ToggleCurrent</key>
+      <key>ClearAndSelect</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="QModelIndexList" name="selectedIndexes" read="selectedIndexes" />
+    <function name="currentIndex">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSelected">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isRowSelected">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isColumnSelected">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowIntersectsSelection">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnIntersectsSelection">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasSelection">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectedIndexes">
+      <variant return-type="QModelIndexList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectedRows">
+      <variant return-type="QModelIndexList" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectedColumns">
+      <variant return-type="QModelIndexList" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selection">
+      <variant return-type="const QItemSelection" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="model">
+      <variant return-type="const QAbstractItemModel*" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QAbstractItemModel*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="bindableModel">
+      <variant return-type="QBindable&lt;QAbstractItemModel*&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setModel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentIndex">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="QItemSelectionModel::SelectionFlags" modifier="" name="command" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="select">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="QItemSelectionModel::SelectionFlags" modifier="" name="command" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="selection" />
+          <parameter const="false" type="QItemSelectionModel::SelectionFlags" modifier="" name="command" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearSelection">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearCurrentIndex">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="selected" />
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="deselected" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="current" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="previous" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentRowChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="current" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="previous" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentColumnChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="current" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="previous" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="modelChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="emitSelectionChanged">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="newSelection" />
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="oldSelection" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+  <class name="QItemSelection">
+    <super_list>
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="topLeft" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="bottomRight" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="select">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="topLeft" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="bottomRight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexes">
+      <variant return-type="QModelIndexList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="merge">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="other" />
+          <parameter const="false" type="QItemSelectionModel::SelectionFlags" modifier="" name="command" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="split" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QItemSelectionRange" modifier="&amp;" name="range" />
+          <parameter const="true" type="QItemSelectionRange" modifier="&amp;" name="other" />
+          <parameter const="false" type="QItemSelection" modifier="*" name="result" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

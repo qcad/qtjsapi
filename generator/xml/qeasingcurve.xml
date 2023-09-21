@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qeasingcurve.h">
+  <class_decl name="QPointF" />
+  <class name="QEasingCurve">
+    <enum name="Type">
+      <key>Linear</key>
+      <key>InQuad</key>
+      <key>OutQuad</key>
+      <key>InOutQuad</key>
+      <key>OutInQuad</key>
+      <key>InCubic</key>
+      <key>OutCubic</key>
+      <key>InOutCubic</key>
+      <key>OutInCubic</key>
+      <key>InQuart</key>
+      <key>OutQuart</key>
+      <key>InOutQuart</key>
+      <key>OutInQuart</key>
+      <key>InQuint</key>
+      <key>OutQuint</key>
+      <key>InOutQuint</key>
+      <key>OutInQuint</key>
+      <key>InSine</key>
+      <key>OutSine</key>
+      <key>InOutSine</key>
+      <key>OutInSine</key>
+      <key>InExpo</key>
+      <key>OutExpo</key>
+      <key>InOutExpo</key>
+      <key>OutInExpo</key>
+      <key>InCirc</key>
+      <key>OutCirc</key>
+      <key>InOutCirc</key>
+      <key>OutInCirc</key>
+      <key>InElastic</key>
+      <key>OutElastic</key>
+      <key>InOutElastic</key>
+      <key>OutInElastic</key>
+      <key>InBack</key>
+      <key>OutBack</key>
+      <key>InOutBack</key>
+      <key>OutInBack</key>
+      <key>InBounce</key>
+      <key>OutBounce</key>
+      <key>InOutBounce</key>
+      <key>OutInBounce</key>
+      <key>InCurve</key>
+      <key>OutCurve</key>
+      <key>SineCurve</key>
+      <key>CosineCurve</key>
+      <key>BezierSpline</key>
+      <key>TCBSpline</key>
+      <key>Custom</key>
+      <key>NCurveTypes</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEasingCurve::Type" modifier="" name="type" default="QEasingCurve::Linear" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QEasingCurve" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEasingCurve" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QEasingCurve&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QEasingCurve" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QEasingCurve" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QEasingCurve" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QEasingCurve" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="amplitude">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAmplitude">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="amplitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="period">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPeriod">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="period" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="overshoot">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOvershoot">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="overshoot" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addCubicBezierSegment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="c1" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="c2" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="endPoint" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addTCBSegment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="nextPoint" />
+          <parameter const="false" type="qreal" modifier="" name="t" />
+          <parameter const="false" type="qreal" modifier="" name="c" />
+          <parameter const="false" type="qreal" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toCubicSpline">
+      <variant return-type="QList&lt;QPointF&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="QEasingCurve::Type" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QEasingCurve::Type" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="EasingFunction">
+      <variant return-type="qreal" access="unknown">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="progress" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setCustomType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="EasingFunction" modifier="" name="func" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="customType">
+      <variant return-type="EasingFunction" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="valueForProgress">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="progress" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_DEBUG_STREAM" />
+    <!--
+    <function name="operator_read" call="operator&lt;&lt;">
+      <variant return-type="QDebug" access="unknown">
+        <parameters>
+          <parameter const="false" type="QDebug" modifier="" name="debug" />
+          <parameter const="true" type="QEasingCurve" modifier="&amp;" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_DATASTREAM" />
+    <!--
+    <function name="operator_read" call="operator&lt;&lt;">
+      <variant return-type="QDataStream&amp;" access="unknown">
+        <parameters>
+          <parameter const="false" type="QDataStream" modifier="&amp;" name="" />
+          <parameter const="true" type="QEasingCurve" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="operator_write" call="operator&gt;&gt;">
+      <variant return-type="QDataStream&amp;" access="unknown">
+        <parameters>
+          <parameter const="false" type="QDataStream" modifier="&amp;" name="" />
+          <parameter const="false" type="QEasingCurve" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+  </class>
+</unit>

@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qgraphicseffect.h">
+  <class_decl name="QGraphicsItem" />
+  <class_decl name="QStyleOption" />
+  <class_decl name="QPainter" />
+  <class_decl name="QPixmap" />
+  <!--
+  <class_decl name="QGraphicsEffectSource" />
+  -->
+  <class name="QGraphicsEffect" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <enum name="ChangeFlag">
+      <key>SourceAttached</key>
+      <key>SourceDetached</key>
+      <key>SourceBoundingRectChanged</key>
+      <key>SourceInvalidated</key>
+    </enum>
+    <enum name="PixmapPadMode">
+      <key>NoPad</key>
+      <key>PadToTransparentBorder</key>
+      <key>PadToEffectiveBoundingRect</key>
+    </enum>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <function name="boundingRectFor">
+      <variant return-type="QRectF" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="sourceRect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="update">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="enabledChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="draw">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sourceChanged">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QGraphicsEffect::ChangeFlags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateBoundingRect">
+      <variant return-type="void" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sourceIsPixmap">
+      <variant return-type="bool" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sourceBoundingRect">
+      <variant return-type="QRectF" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="Qt::CoordinateSystem" modifier="" name="system" default="Qt::LogicalCoordinates" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawSource">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sourcePixmap">
+      <variant return-type="QPixmap" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="Qt::CoordinateSystem" modifier="" name="system" default="Qt::LogicalCoordinates" />
+          <parameter const="false" type="QPoint" modifier="*" name="offset" default="nullptr" />
+          <parameter const="false" type="QGraphicsEffect::PixmapPadMode" modifier="" name="mode" default="QGraphicsEffect::PadToEffectiveBoundingRect" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <class_decl name="QGraphicsItem" />
+    <class_decl name="QWidget" />
+    <!--
+    <function name="source">
+      <variant return-type="QGraphicsEffectSource*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+  <class name="QGraphicsColorizeEffect" ownership="cpp">
+    <super_list>
+      <super name="QGraphicsEffect" />
+    </super_list>
+    <property type="qreal" name="strength" read="strength" write="setStrength" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="color">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="strength">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStrength">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="strength" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="colorChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="strengthChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="strength" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="draw">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+  <class name="QGraphicsBlurEffect" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QGraphicsEffect" />
+    </super_list>
+    <property type="BlurHints" name="blurHints" read="blurHints" write="setBlurHints" />
+    <enum name="BlurHint">
+      <key>PerformanceHint</key>
+      <key>QualityHint</key>
+      <key>AnimationHint</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="boundingRectFor">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="blurRadius">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="blurHints">
+      <variant return-type="QGraphicsBlurEffect::BlurHints" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBlurRadius">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="blurRadius" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBlurHints">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QGraphicsBlurEffect::BlurHints" modifier="" name="hints" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="blurRadiusChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="blurRadius" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="blurHintsChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QGraphicsBlurEffect::BlurHints" modifier="" name="hints" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="draw">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+  <class name="QGraphicsDropShadowEffect" ownership="cpp">
+    <super_list>
+      <super name="QGraphicsEffect" />
+    </super_list>
+    <property type="qreal" name="xOffset" read="xOffset" write="setXOffset" />
+    <property type="qreal" name="yOffset" read="yOffset" write="setYOffset" />
+    <property type="qreal" name="blurRadius" read="blurRadius" write="setBlurRadius" />
+    <property type="QColor" name="color" read="color" write="setColor" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="boundingRectFor">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="offset">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="xOffset">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="yOffset">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="blurRadius">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="color">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="ofs" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setXOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setYOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBlurRadius">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="blurRadius" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="offsetChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="blurRadiusChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="blurRadius" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="colorChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="draw">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+  <class name="QGraphicsOpacityEffect" ownership="cpp">
+    <super_list>
+      <super name="QGraphicsEffect" />
+    </super_list>
+    <property type="QBrush" name="opacityMask" read="opacityMask" write="setOpacityMask" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="opacity">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="opacityMask">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOpacity">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="opacity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOpacityMask">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="mask" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="opacityChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="opacity" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="opacityMaskChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="mask" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="draw">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

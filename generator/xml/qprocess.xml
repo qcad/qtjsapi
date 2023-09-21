@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qprocess.h">
+  <class name="QProcessEnvironment">
+    <enum name="Initialization">
+      <key>InheritFromParent</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QProcessEnvironment::Initialization" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QProcessEnvironment" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="operator">
+      <variant return-type="QProcessEnvironment&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QProcessEnvironment" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QProcessEnvironment" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QProcessEnvironment" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QProcessEnvironment" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="inheritsFromParent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insert">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QProcessEnvironment" modifier="&amp;" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="remove">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="defaultValue" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toStringList">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="keys">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="systemEnvironment" static="true">
+      <variant return-type="QProcessEnvironment" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QProcess">
+    <super_list>
+      <super name="QObject" />
+      <super name="QIODevice" />
+    </super_list>
+    <enum name="ProcessError">
+      <key>FailedToStart</key>
+      <key>Crashed</key>
+      <key>Timedout</key>
+      <key>ReadError</key>
+      <key>WriteError</key>
+      <key>UnknownError</key>
+    </enum>
+    <enum name="ProcessState">
+      <key>NotRunning</key>
+      <key>Starting</key>
+      <key>Running</key>
+    </enum>
+    <enum name="ProcessChannel">
+      <key>StandardOutput</key>
+      <key>StandardError</key>
+    </enum>
+    <enum name="ProcessChannelMode">
+      <key>SeparateChannels</key>
+      <key>MergedChannels</key>
+      <key>ForwardedChannels</key>
+      <key>ForwardedOutputChannel</key>
+      <key>ForwardedErrorChannel</key>
+    </enum>
+    <enum name="InputChannelMode">
+      <key>ManagedInputChannel</key>
+      <key>ForwardedInputChannel</key>
+    </enum>
+    <enum name="ExitStatus">
+      <key>NormalExit</key>
+      <key>CrashExit</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="start">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="program" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="arguments" default="{}" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="mode" default="QIODeviceBase::ReadWrite" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="mode" default="QIODeviceBase::ReadWrite" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startCommand">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="command" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="mode" default="QIODeviceBase::ReadWrite" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startDetached">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <!--
+          <parameter const="false" type="qint64" modifier="*" name="pid" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="mode" default="QIODeviceBase::ReadWrite" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="program">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProgram">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="program" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="arguments">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setArguments">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="arguments" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="processChannelMode">
+      <variant return-type="QProcess::ProcessChannelMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProcessChannelMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QProcess::ProcessChannelMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="inputChannelMode">
+      <variant return-type="QProcess::InputChannelMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInputChannelMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QProcess::InputChannelMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="readChannel">
+      <variant return-type="QProcess::ProcessChannel" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setReadChannel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QProcess::ProcessChannel" modifier="" name="channel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="closeReadChannel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QProcess::ProcessChannel" modifier="" name="channel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="closeWriteChannel">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStandardInputFile">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStandardOutputFile">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="mode" default="QIODeviceBase::Truncate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStandardErrorFile">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="false" type="QFile::OpenMode" modifier="" name="mode" default="QIODeviceBase::Truncate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStandardOutputProcess">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QProcess" modifier="*" name="destination" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_WIN)||defined(Q_CLANG_QDOC)" />
+    <function name="nativeArguments">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNativeArguments">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="arguments" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="createProcessArgumentsModifier">
+      <variant return-type="QProcess::CreateProcessArgumentModifier" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setCreateProcessArgumentsModifier">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QProcess::CreateProcessArgumentModifier" modifier="" name="modifier" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#if defined(Q_OS_UNIX)||defined(Q_CLANG_QDOC)" />
+    <!--
+    <function name="childProcessModifier">
+      <variant return-type="std::function&lt;void(void)&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setChildProcessModifier">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="std::function&lt;void(void)&gt;" modifier="&amp;" name="modifier" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="workingDirectory">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWorkingDirectory">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dir" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEnvironment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="environment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="environment">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProcessEnvironment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QProcessEnvironment" modifier="&amp;" name="environment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="processEnvironment">
+      <variant return-type="QProcessEnvironment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="QProcess::ProcessError" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="state">
+      <variant return-type="QProcess::ProcessState" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="processId">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="waitForStarted">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" default="30000" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="waitForReadyRead">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" default="30000" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="waitForBytesWritten">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" default="30000" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="waitForFinished">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" default="30000" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="readAllStandardOutput">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="readAllStandardError">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exitCode">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exitStatus">
+      <variant return-type="QProcess::ExitStatus" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bytesToWrite">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSequential">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="close">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="systemEnvironment" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nullDevice" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="splitCommand" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="command" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="terminate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="kill">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="started">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="finished">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="exitCode" />
+          <parameter const="false" type="QProcess::ExitStatus" modifier="" name="exitStatus" default="QProcess::NormalExit" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorOccurred">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QProcess::ProcessError" modifier="" name="error" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="stateChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QProcess::ProcessState" modifier="" name="state" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="readyReadStandardOutput">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <!--
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="readyReadStandardError">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <!--
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProcessState" />
+    <function name="readData" />
+    <function name="writeData" />
+    <preproc plain="#if QT_VERSION&lt;QT_VERSION_CHECK(7,0,0)" />
+    <function name="setupChildProcess" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

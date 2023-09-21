@@ -1,0 +1,1644 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdom.h">
+  <class_decl name="QIODevice" />
+  <class_decl name="QTextStream" />
+  <class_decl name="QDomNodeList" />
+  <class_decl name="QDomElement" />
+  <class_decl name="QDomText" />
+  <class_decl name="QDomComment" />
+  <class_decl name="QDomCDATASection" />
+  <class_decl name="QDomProcessingInstruction" />
+  <class_decl name="QDomAttr" />
+  <class_decl name="QDomEntityReference" />
+  <class_decl name="QDomDocument" />
+  <class_decl name="QDomNamedNodeMap" />
+  <class_decl name="QDomDocument" />
+  <class_decl name="QDomDocumentFragment" />
+  <class_decl name="QDomDocumentType" />
+  <class_decl name="QDomImplementation" />
+  <class_decl name="QDomNode" />
+  <class_decl name="QDomEntity" />
+  <class_decl name="QDomNotation" />
+  <class_decl name="QDomCharacterData" />
+  <class_decl name="QXmlStreamReader" />
+  <class name="QDomImplementation">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomImplementation" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomImplementation&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomImplementation" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDomImplementation" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDomImplementation" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasFeature">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="feature" />
+          <parameter const="true" type="QString" modifier="&amp;" name="version" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createDocumentType">
+      <variant return-type="QDomDocumentType" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="publicId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="systemId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createDocument">
+      <variant return-type="QDomDocument" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="true" type="QDomDocumentType" modifier="&amp;" name="doctype" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="InvalidDataPolicy">
+      <key>AcceptInvalidChars</key>
+      <key>DropInvalidChars</key>
+      <key>ReturnNullNode</key>
+    </enum>
+    <function name="invalidDataPolicy" static="true">
+      <variant return-type="QDomImplementation::InvalidDataPolicy" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInvalidDataPolicy" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDomImplementation::InvalidDataPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+  </class>
+  <class name="QDomNode">
+    <enum name="NodeType">
+      <key>ElementNode</key>
+      <key>AttributeNode</key>
+      <key>TextNode</key>
+      <key>CDATASectionNode</key>
+      <key>EntityReferenceNode</key>
+      <key>EntityNode</key>
+      <key>ProcessingInstructionNode</key>
+      <key>CommentNode</key>
+      <key>DocumentNode</key>
+      <key>DocumentTypeNode</key>
+      <key>DocumentFragmentNode</key>
+      <key>NotationNode</key>
+      <key>BaseNode</key>
+      <key>CharacterDataNode</key>
+    </enum>
+    <enum name="EncodingPolicy">
+      <key>EncodingFromDocument</key>
+      <key>EncodingFromTextStream</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomNode&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertBefore">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="newChild" />
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="refChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertAfter">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="newChild" />
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="refChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="replaceChild">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="newChild" />
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="oldChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeChild">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="oldChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="appendChild">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="newChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasChildNodes">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cloneNode">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="deep" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="normalize">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSupported">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="feature" />
+          <parameter const="true" type="QString" modifier="&amp;" name="version" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nodeName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="parentNode">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="childNodes">
+      <variant return-type="QDomNodeList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="firstChild">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastChild">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="previousSibling">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nextSibling">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="attributes">
+      <variant return-type="QDomNamedNodeMap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ownerDocument">
+      <variant return-type="QDomDocument" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="namespaceURI">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="localName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasAttributes">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nodeValue">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNodeValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="prefix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrefix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="pre" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isAttr">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCDATASection">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDocumentFragment">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDocument">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDocumentType">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isElement">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEntityReference">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isText">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEntity">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isNotation">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isProcessingInstruction">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCharacterData">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isComment">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="namedItem">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toAttr">
+      <variant return-type="QDomAttr" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toCDATASection">
+      <variant return-type="QDomCDATASection" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toDocumentFragment">
+      <variant return-type="QDomDocumentFragment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toDocument">
+      <variant return-type="QDomDocument" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toDocumentType">
+      <variant return-type="QDomDocumentType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toElement">
+      <variant return-type="QDomElement" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toEntityReference">
+      <variant return-type="QDomEntityReference" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toText">
+      <variant return-type="QDomText" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toEntity">
+      <variant return-type="QDomEntity" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toNotation">
+      <variant return-type="QDomNotation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toProcessingInstruction">
+      <variant return-type="QDomProcessingInstruction" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toCharacterData">
+      <variant return-type="QDomCharacterData" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toComment">
+      <variant return-type="QDomComment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="save">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTextStream" modifier="&amp;" name="" />
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="QDomNode::EncodingPolicy" modifier="" name="" default="QDomNode::EncodingFromDocument" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="firstChildElement">
+      <variant return-type="QDomElement" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tagName" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceURI" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lastChildElement">
+      <variant return-type="QDomElement" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tagName" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceURI" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="previousSiblingElement">
+      <variant return-type="QDomElement" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tagName" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceURI" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nextSiblingElement">
+      <variant return-type="QDomElement" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="taName" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceURI" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="columnNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomDocumentType" />
+    <class_decl name="QDomNodeList" />
+    <class_decl name="QDomNamedNodeMap" />
+  </class>
+  <class name="QDomNodeList">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomNodeList" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomNodeList&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNodeList" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNodeList" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNodeList" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="item">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="at">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomNode" />
+    <class_decl name="QDomElement" />
+    <class_decl name="QDomDocument" />
+  </class>
+  <class name="QDomDocumentType">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomDocumentType" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomDocumentType&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomDocumentType" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="entities">
+      <variant return-type="QDomNamedNodeMap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="notations">
+      <variant return-type="QDomNamedNodeMap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="publicId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="systemId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="internalSubset">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomImplementation" />
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomDocument">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomDocumentType" modifier="&amp;" name="doctype" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomDocument" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <enum name="ParseOption">
+      <key>ParseOption::Default</key>
+      <key>ParseOption::UseNamespaceProcessing</key>
+      <key>ParseOption::PreserveSpacingOnlyNodes</key>
+    </enum>
+    -->
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomDocument&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomDocument" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createElement">
+      <variant return-type="QDomElement" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tagName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createDocumentFragment">
+      <variant return-type="QDomDocumentFragment" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="createTextNode">
+      <variant return-type="QDomText" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createComment">
+      <variant return-type="QDomComment" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createCDATASection">
+      <variant return-type="QDomCDATASection" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createProcessingInstruction">
+      <variant return-type="QDomProcessingInstruction" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="target" />
+          <parameter const="true" type="QString" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createAttribute">
+      <variant return-type="QDomAttr" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createEntityReference">
+      <variant return-type="QDomEntityReference" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="elementsByTagName">
+      <variant return-type="QDomNodeList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tagname" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="importNode">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="importedNode" />
+          <parameter const="false" type="bool" modifier="" name="deep" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createElementNS">
+      <variant return-type="QDomElement" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createAttributeNS">
+      <variant return-type="QDomAttr" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="elementsByTagNameNS">
+      <variant return-type="QDomNodeList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="elementById">
+      <variant return-type="QDomElement" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="elementId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doctype">
+      <variant return-type="QDomDocumentType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="implementation">
+      <variant return-type="QDomImplementation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="documentElement">
+      <variant return-type="QDomElement" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setContent">
+      <variant return-type="QDomDocument::ParseResult" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="text" />
+          <!--
+          <parameter const="false" type="QDomDocument::ParseOptions" modifier="" name="options" default="ParseOption::Default"/>
+          -->
+        </parameters>
+      </variant>
+      <variant return-type="QDomDocument::ParseResult" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <!--
+          <parameter const="false" type="QDomDocument::ParseOptions" modifier="" name="options" default="ParseOption::Default"/>
+          -->
+        </parameters>
+      </variant>
+      <variant return-type="QDomDocument::ParseResult" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="dev" />
+          <!--
+          <parameter const="false" type="QDomDocument::ParseOptions" modifier="" name="options" default="ParseOption::Default"/>
+          -->
+        </parameters>
+      </variant>
+      <variant return-type="QDomDocument::ParseResult" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="text" />
+          <!--
+          <parameter const="false" type="QDomDocument::ParseOptions" modifier="" name="options" default="ParseOption::Default"/>
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlStreamReader" modifier="*" name="reader" />
+          <parameter const="false" type="bool" modifier="" name="namespaceProcessing" />
+          <parameter const="false" type="QString" modifier="*" name="errorMsg" default="nullptr" />
+          <parameter const="false" type="int" modifier="*" name="errorLine" default="nullptr" />
+          <parameter const="false" type="int" modifier="*" name="errorColumn" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toString" cppname="toStr"> 
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" default="1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toByteArray">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" default="1" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomNamedNodeMap">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomNamedNodeMap" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomNamedNodeMap&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNamedNodeMap" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNamedNodeMap" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNamedNodeMap" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="namedItem">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNamedItem">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="newNode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeNamedItem">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="item">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="namedItemNS">
+      <variant return-type="QDomNode" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNamedItemNS">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNode" modifier="&amp;" name="newNode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeNamedItemNS">
+      <variant return-type="QDomNode" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QDomNode" />
+    <class_decl name="QDomDocumentType" />
+    <class_decl name="QDomElement" />
+  </class>
+  <class name="QDomDocumentFragment">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomDocumentFragment" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomDocumentFragment&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomDocumentFragment" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomCharacterData">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomCharacterData" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomCharacterData&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomCharacterData" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="substringData">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="unsigned long" modifier="" name="offset" />
+          <parameter const="false" type="unsigned long" modifier="" name="count" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="appendData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="unsigned long" modifier="" name="offset" />
+          <parameter const="true" type="QString" modifier="&amp;" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="deleteData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="unsigned long" modifier="" name="offset" />
+          <parameter const="false" type="unsigned long" modifier="" name="count" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="replaceData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="unsigned long" modifier="" name="offset" />
+          <parameter const="false" type="unsigned long" modifier="" name="count" />
+          <parameter const="true" type="QString" modifier="&amp;" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomText" />
+    <class_decl name="QDomComment" />
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomAttr">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomAttr" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomAttr&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomAttr" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="specified">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ownerElement">
+      <variant return-type="QDomElement" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomElement" />
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomElement">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomElement" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomElement&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomElement" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="attribute">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="defValue" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAttribute">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="qlonglong" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="qulonglong" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="uint" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="float" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="double" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeAttribute">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="attributeNode">
+      <variant return-type="QDomAttr" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAttributeNode">
+      <variant return-type="QDomAttr" access="public">
+        <parameters>
+          <parameter const="true" type="QDomAttr" modifier="&amp;" name="newAttr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeAttributeNode">
+      <variant return-type="QDomAttr" access="public">
+        <parameters>
+          <parameter const="true" type="QDomAttr" modifier="&amp;" name="oldAttr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="elementsByTagName">
+      <variant return-type="QDomNodeList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tagname" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasAttribute">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="attributeNS">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="defValue" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAttributeNS">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="false" type="uint" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="false" type="qlonglong" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="false" type="qulonglong" modifier="" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="qName" />
+          <parameter const="false" type="double" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeAttributeNS">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="attributeNodeNS">
+      <variant return-type="QDomAttr" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAttributeNodeNS">
+      <variant return-type="QDomAttr" access="public">
+        <parameters>
+          <parameter const="true" type="QDomAttr" modifier="&amp;" name="newAttr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="elementsByTagNameNS">
+      <variant return-type="QDomNodeList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasAttributeNS">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nsURI" />
+          <parameter const="true" type="QString" modifier="&amp;" name="localName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tagName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTagName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="attributes">
+      <variant return-type="QDomNamedNodeMap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomNode" />
+    <class_decl name="QDomAttr" />
+  </class>
+  <class name="QDomText">
+    <super_list>
+      <super name="QDomNode" />
+      <super name="QDomCharacterData" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomText" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomText&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomText" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="splitText">
+      <variant return-type="QDomText" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomCDATASection" />
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomComment">
+    <super_list>
+      <super name="QDomCharacterData" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomComment" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomComment&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomComment" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomCDATASection">
+    <super_list>
+      <super name="QDomText" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomCDATASection" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomCDATASection&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomCDATASection" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomNotation">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomNotation" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomNotation&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomNotation" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="publicId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="systemId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomEntity">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomEntity" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomEntity&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomEntity" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="publicId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="systemId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="notationName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomEntityReference">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomEntityReference" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomEntityReference&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomEntityReference" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomNode" />
+  </class>
+  <class name="QDomProcessingInstruction">
+    <super_list>
+      <super name="QDomNode" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDomProcessingInstruction" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QDomProcessingInstruction&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QDomProcessingInstruction" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="target">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nodeType">
+      <variant return-type="QDomNode::NodeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDomDocument" />
+    <class_decl name="QDomNode" />
+  </class>
+</unit>

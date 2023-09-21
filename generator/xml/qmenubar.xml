@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qmenubar.h">
+  <class name="QMenuBar">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="addAction">
+      <variant return-type="QAction*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+      <variant return-type="QAction*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifdef Q_CLANG_QDOC" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <function name="addMenu">
+      <variant return-type="QAction*" access="public">
+        <parameters>
+          <parameter const="false" type="QMenu" modifier="*" name="menu" />
+        </parameters>
+      </variant>
+      <variant return-type="QMenu*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+      <variant return-type="QMenu*" access="public">
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addSeparator">
+      <variant return-type="QAction*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="insertSeparator">
+      <variant return-type="QAction*" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="before" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertMenu">
+      <variant return-type="QAction*" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="before" />
+          <parameter const="false" type="QMenu" modifier="*" name="menu" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="activeAction">
+      <variant return-type="QAction*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setActiveAction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDefaultUp">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDefaultUp">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="actionGeometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="actionAt">
+      <variant return-type="QAction*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCornerWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+          <parameter const="false" type="Qt::Corner" modifier="" name="corner" default="Qt::TopRightCorner" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cornerWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Corner" modifier="" name="corner" default="Qt::TopRightCorner" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNativeMenuBar">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNativeMenuBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="nativeMenuBar" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="triggered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hovered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="changeEvent" />
+    <function name="keyPressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="mousePressEvent" />
+    <function name="leaveEvent" />
+    <function name="actionEvent" />
+    <function name="focusOutEvent" />
+    <function name="focusInEvent" />
+    <function name="timerEvent" />
+    <function name="eventFilter" />
+    <function name="event" />
+    -->
+    <function name="initStyleOption" />
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QMenu" />
+  </class>
+</unit>

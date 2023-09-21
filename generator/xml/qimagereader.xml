@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qimagereader.h">
+  <class_decl name="QColor" />
+  <class_decl name="QIODevice" />
+  <class_decl name="QRect" />
+  <class_decl name="QSize" />
+  <class name="QImageReader">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="format" default="QByteArray()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="format" default="QByteArray()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="format">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoDetectImageFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoDetectImageFormat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDecideFormatFromContent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ignored" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="decideFormatFromContent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDevice">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="device">
+      <variant return-type="QIODevice*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFileName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="imageFormat">
+      <variant return-type="QImage::Format" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textKeys">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setClipRect">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clipRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScaledSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaledSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setQuality">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="quality" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quality">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScaledClipRect">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaledClipRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBackgroundColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="backgroundColor">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportsAnimation">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transformation">
+      <variant return-type="QImageIOHandler::Transformations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoTransform">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoTransform">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="subType">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportedSubTypes">
+      <variant return-type="QList&lt;QByteArray&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="canRead">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="read">
+      <variant return-type="QImage" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QImage" modifier="*" name="image" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="jumpToNextImage">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="jumpToImage">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="imageNumber" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="loopCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="imageCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nextImageDelay">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentImageNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentImageRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="QImageReader::ImageReaderError" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportsOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QImageIOHandler::ImageOption" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="supportedImageFormats" static="true">
+      <variant return-type="QList&lt;QByteArray&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="supportedImageFormats" static="true" declare-only="true">
+      <variant return-type="QList&lt;QString&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportedMimeTypes" static="true">
+      <variant return-type="QList&lt;QByteArray&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="imageFormatsForMimeType" static="true">
+      <variant return-type="QList&lt;QByteArray&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="mimeType" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="allocationLimit" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAllocationLimit" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="mbLimit" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

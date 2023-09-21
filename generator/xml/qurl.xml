@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qurl.h">
+  <class_decl name="QUrlQuery" />
+  <class_decl name="QUrl" />
+  <class name="QUrl">
+    <enum name="ParsingMode">
+      <key>TolerantMode</key>
+      <key>StrictMode</key>
+      <key>DecodedMode</key>
+    </enum>
+    <enum name="UrlFormattingOption">
+      <key>None</key>
+      <key>RemoveScheme</key>
+      <key>RemovePassword</key>
+      <key>RemoveUserInfo</key>
+      <key>RemovePort</key>
+      <key>RemoveAuthority</key>
+      <key>RemovePath</key>
+      <key>RemoveQuery</key>
+      <key>RemoveFragment</key>
+      <key>PreferLocalFile</key>
+      <key>StripTrailingSlash</key>
+      <key>RemoveFilename</key>
+      <key>NormalizePathSegments</key>
+    </enum>
+    <enum name="ComponentFormattingOption">
+      <key>PrettyDecoded</key>
+      <key>EncodeSpaces</key>
+      <key>EncodeUnicode</key>
+      <key>EncodeDelimiters</key>
+      <key>EncodeReserved</key>
+      <key>DecodeReserved</key>
+      <key>FullyEncoded</key>
+      <key>FullyDecoded</key>
+    </enum>
+    <super_list>
+    </super_list>
+    
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="url" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="parsingMode" default="QUrl::TolerantMode" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setUrl">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="url" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::TolerantMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="url">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::FormattingOptions" modifier="" name="options"
+          default="QUrl::FormattingOptions(QUrl::PrettyDecoded)" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::FormattingOptions" modifier="" name="options"
+          default="QUrl::FormattingOptions(QUrl::PrettyDecoded)" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toDisplayString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::FormattingOptions" modifier="" name="options"
+          default="QUrl::FormattingOptions(QUrl::PrettyDecoded)" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="adjusted">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::FormattingOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toEncoded">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::FormattingOptions" modifier="" name="options" default="QUrl::FullyEncoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromEncoded" static="true">
+      <variant return-type="QUrl" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="url" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::TolerantMode" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="UserInputResolutionOption">
+      <key>DefaultResolution</key>
+      <key>AssumeLocalFile</key>
+    </enum>
+    <function name="fromUserInput" static="true">
+      <variant return-type="QUrl" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="userInput" />
+          <parameter const="true" type="QString" modifier="&amp;" name="workingDirectory" default="QString()" />
+          <parameter const="false" type="QUrl::UserInputResolutionOptions" modifier="" name="options"
+          default="QUrl::DefaultResolution" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScheme">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="scheme" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scheme">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAuthority">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="authority" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::TolerantMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="authority">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="options"
+          default="QUrl::PrettyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setUserInfo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="userInfo" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::TolerantMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="userInfo">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="options"
+          default="QUrl::PrettyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setUserName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="userName" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::DecodedMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="userName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="options"
+          default="QUrl::FullyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPassword">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="password" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::DecodedMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="password">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="" default="QUrl::FullyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHost">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="host" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::DecodedMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="host">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="" default="QUrl::FullyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPort">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="port" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="port">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="defaultPort" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::DecodedMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="path">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="options"
+          default="QUrl::FullyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="options"
+          default="QUrl::FullyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasQuery">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setQuery">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="query" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::TolerantMode" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrlQuery" modifier="&amp;" name="query" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="query">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="" default="QUrl::PrettyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasFragment">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fragment">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QUrl::ComponentFormattingOptions" modifier="" name="options"
+          default="QUrl::PrettyDecoded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFragment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fragment" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::TolerantMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resolved">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="relative" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isRelative">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isParentOf">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLocalFile">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fromLocalFile" static="true">
+      <variant return-type="QUrl" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="localfile" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toLocalFile">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="detach">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDetached">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="matches">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+          <parameter const="false" type="QUrl::FormattingOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromPercentEncoding" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toPercentEncoding" static="true">
+      <variant return-type="QByteArray" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="exclude" default="QByteArray()" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="include" default="QByteArray()" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_DARWIN)||defined(Q_QDOC)" />
+    <!--
+    <function name="fromCFURL" static="true">
+      <variant return-type="QUrl" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="CFURLRef" modifier="" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toCFURL">
+      <variant return-type="CFURLRef" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="fromNSURL" static="true">
+      <variant return-type="QUrl" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="NSURL" modifier="*" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toNSURL">
+      <variant return-type="NSURL*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="fromAce" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toAce" static="true">
+      <variant return-type="QByteArray" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="idnWhitelist" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toStringList" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QUrl&gt;" modifier="&amp;" name="uris" />
+          <parameter const="false" type="QUrl::FormattingOptions" modifier="" name="options"
+          default="QUrl::FormattingOptions(QUrl::PrettyDecoded)" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromStringList" static="true">
+      <variant return-type="QList&lt;QUrl&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="uris" />
+          <parameter const="false" type="QUrl::ParsingMode" modifier="" name="mode" default="QUrl::TolerantMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setIdnWhitelist" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qeventpoint.h">
+  <!--
+  <class_decl name="QMutableEventPoint" />
+  -->
+  <class name="QEventPoint">
+    <!--
+    <property type="const" name="QPointingDevice" read="" />
+    -->
+    <property type="int" name="id" read="id" />
+    <!--
+    <property type="QPointingDeviceUniqueId" name="uniqueId" read="uniqueId" />
+    -->
+    <property type="QEventPoint::State" name="state" read="state" />
+    <property type="ulong" name="timestamp" read="timestamp" />
+    <property type="ulong" name="pressTimestamp" read="pressTimestamp" />
+    <property type="ulong" name="lastTimestamp" read="lastTimestamp" />
+    <property type="qreal" name="timeHeld" read="timeHeld" />
+    <property type="qreal" name="pressure" read="pressure" />
+    <property type="qreal" name="rotation" read="rotation" />
+    <property type="QSizeF" name="ellipseDiameters" read="ellipseDiameters" />
+    <!--
+    <property type="QVector2D" name="velocity" read="velocity" />
+    -->
+    <property type="QPointF" name="position" read="position" />
+    <property type="QPointF" name="pressPosition" read="pressPosition" />
+    <property type="QPointF" name="grabPosition" read="grabPosition" />
+    <property type="QPointF" name="lastPosition" read="lastPosition" />
+    <property type="QPointF" name="scenePosition" read="scenePosition" />
+    <property type="QPointF" name="scenePressPosition" read="scenePressPosition" />
+    <property type="QPointF" name="sceneGrabPosition" read="sceneGrabPosition" />
+    <property type="QPointF" name="sceneLastPosition" read="sceneLastPosition" />
+    <property type="QPointF" name="globalPosition" read="globalPosition" />
+    <property type="QPointF" name="globalPressPosition" read="globalPressPosition" />
+    <property type="QPointF" name="globalGrabPosition" read="globalGrabPosition" />
+    <property type="QPointF" name="globalLastPosition" read="globalLastPosition" />
+    <enum name="State">
+      <key>Unknown</key>
+      <key>Stationary</key>
+      <key>Pressed</key>
+      <key>Updated</key>
+      <key>Released</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" default="-1" />
+          <!--
+          <parameter const="true" type="QPointingDevice" modifier="*" name="device" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pointId" />
+          <parameter const="false" type="QEventPoint::State" modifier="" name="state" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="scenePosition" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="globalPosition" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEventPoint" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="operator">
+      <variant return-type="QEventPoint&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QEventPoint" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pressPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="grabPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scenePosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scenePressPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sceneGrabPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sceneLastPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalPressPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalGrabPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalLastPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="normalizedPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <function name="pos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startPos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scenePos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startScenePos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="screenPos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startScreenPos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startNormalizedPos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="normalizedPos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastPos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastScenePos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastScreenPos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastNormalizedPos">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <!--
+    <function name="velocity">
+      <variant return-type="QVector2D" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="state">
+      <variant return-type="QEventPoint::State" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="device">
+      <variant return-type="const QPointingDevice*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="id">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="uniqueId">
+      <variant return-type="QPointingDeviceUniqueId" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="timestamp">
+      <variant return-type="ulong" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastTimestamp">
+      <variant return-type="ulong" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pressTimestamp">
+      <variant return-type="ulong" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="timeHeld">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pressure">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rotation">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ellipseDiameters">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAccepted">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAccepted">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="accepted" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <class_decl name="QMutableEventPoint" />
+    -->
+    <class_decl name="QPointerEvent" />
+  </class>
+</unit>

@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qicon.h">
+  <class_decl name="QIconEngine" />
+  <class_decl name="QPainter" />
+  <class name="QIcon">
+    <enum name="Mode">
+      <key>Normal</key>
+      <key>Disabled</key>
+      <key>Active</key>
+      <key>Selected</key>
+    </enum>
+    <enum name="State">
+      <key>On</key>
+      <key>Off</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIcon" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIconEngine" modifier="*" name="engine" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QIcon" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pixmap">
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="extent" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+          <parameter const="false" type="qreal" modifier="" name="devicePixelRatio" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWindow" modifier="*" name="window" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <preproc plain="#endif" />
+    <function name="actualSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWindow" modifier="*" name="window" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <preproc plain="#endif" />
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paint">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" default="Qt::AlignCenter" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" default="Qt::AlignCenter" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDetached">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="detach">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cacheKey">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addPixmap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addFile">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" default="QSize()" />
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="availableSizes">
+      <variant return-type="QList&lt;QSize&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QIcon::Mode" modifier="" name="mode" default="QIcon::Normal" />
+          <parameter const="false" type="QIcon::State" modifier="" name="state" default="QIcon::Off" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setIsMask">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="isMask" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isMask">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fromTheme" static="true">
+      <variant return-type="QIcon" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <variant return-type="QIcon" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QIcon" modifier="&amp;" name="fallback" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasThemeIcon" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="themeSearchPaths" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setThemeSearchPaths" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="searchpath" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fallbackSearchPaths" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFallbackSearchPaths" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="paths" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="themeName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setThemeName" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fallbackThemeName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFallbackThemeName" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

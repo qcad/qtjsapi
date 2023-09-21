@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpen.h">
+  <class_decl name="QVariant" />
+  <class_decl name="QBrush" />
+  <class_decl name="QPen" />
+  <class name="QPen">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::PenStyle" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+          <parameter const="false" type="qreal" modifier="" name="width" />
+          <parameter const="false" type="Qt::PenStyle" modifier="" name="s" default="Qt::SolidLine" />
+          <parameter const="false" type="Qt::PenCapStyle" modifier="" name="c" default="Qt::SquareCap" />
+          <parameter const="false" type="Qt::PenJoinStyle" modifier="" name="j" default="Qt::BevelJoin" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPen" modifier="&amp;" name="pen" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QPen" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPen" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="style">
+      <variant return-type="Qt::PenStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::PenStyle" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dashPattern">
+      <variant return-type="QList&lt;qreal&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDashPattern">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;qreal&gt;" modifier="&amp;" name="pattern" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dashOffset">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDashOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="doffset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="miterLimit">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMiterLimit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="limit" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="widthF">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidthF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="color">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="brush">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBrush">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSolid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="capStyle">
+      <variant return-type="Qt::PenCapStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCapStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::PenCapStyle" modifier="" name="pcs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="joinStyle">
+      <variant return-type="Qt::PenJoinStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setJoinStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::PenJoinStyle" modifier="" name="pcs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isCosmetic">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCosmetic">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="cosmetic" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDetached">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="detach" />
+  </class>
+</unit>

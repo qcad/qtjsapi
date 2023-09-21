@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="quiloader.h">
+  <class_decl name="QWidget" />
+  <class_decl name="QLayout" />
+  <class_decl name="QAction" />
+  <class_decl name="QActionGroup" />
+  <class_decl name="QString" />
+  <class_decl name="QIODevice" />
+  <class_decl name="QDir" />
+  <class name="QUiLoader">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="pluginPaths">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearPluginPaths">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addPluginPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="load">
+      <variant return-type="QWidget*" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="false" type="QWidget" modifier="*" name="parentWidget" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="availableWidgets">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="availableLayouts">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="createWidget">
+      <variant return-type="QWidget*" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="className" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createLayout">
+      <variant return-type="QLayout*" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="className" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createActionGroup">
+      <variant return-type="QActionGroup*" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createAction">
+      <variant return-type="QAction*" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setWorkingDirectory">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QDir" modifier="&amp;" name="dir" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="workingDirectory">
+      <variant return-type="QDir" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLanguageChangeEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLanguageChangeEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTranslationEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTranslationEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

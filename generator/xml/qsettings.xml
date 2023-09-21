@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsettings.h">
+  <class name="QSettings">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <enum name="Status">
+      <key>NoError</key>
+      <key>AccessError</key>
+      <key>FormatError</key>
+    </enum>
+    <enum name="Format">
+      <key>NativeFormat</key>
+      <key>IniFormat</key>
+      <key>InvalidFormat</key>
+      <key>CustomFormat1</key>
+      <key>CustomFormat2</key>
+      <key>CustomFormat3</key>
+      <key>CustomFormat4</key>
+      <key>CustomFormat5</key>
+      <key>CustomFormat6</key>
+      <key>CustomFormat7</key>
+      <key>CustomFormat8</key>
+      <key>CustomFormat9</key>
+      <key>CustomFormat10</key>
+      <key>CustomFormat11</key>
+      <key>CustomFormat12</key>
+      <key>CustomFormat13</key>
+      <key>CustomFormat14</key>
+      <key>CustomFormat15</key>
+      <key>CustomFormat16</key>
+    </enum>
+    <enum name="Scope">
+      <key>UserScope</key>
+      <key>SystemScope</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="organization" />
+          <parameter const="true" type="QString" modifier="&amp;" name="application" default="QString()" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSettings::Scope" modifier="" name="scope" />
+          <parameter const="true" type="QString" modifier="&amp;" name="organization" />
+          <parameter const="true" type="QString" modifier="&amp;" name="application" default="QString()" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSettings::Format" modifier="" name="format" />
+          <parameter const="false" type="QSettings::Scope" modifier="" name="scope" />
+          <parameter const="true" type="QString" modifier="&amp;" name="organization" />
+          <parameter const="true" type="QString" modifier="&amp;" name="application" default="QString()" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="false" type="QSettings::Format" modifier="" name="format" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSettings::Scope" modifier="" name="scope" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sync">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="status">
+      <variant return-type="QSettings::Status" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAtomicSyncRequired">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAtomicSyncRequired">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="beginGroup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endGroup">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="group">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="beginReadArray">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="beginWriteArray">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+          <parameter const="false" type="int" modifier="" name="size" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endArray">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setArrayIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="allKeys">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="childKeys">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="childGroups">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isWritable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="defaultValue" default="QVariant()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="remove">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFallbacksEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fallbacksEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="format">
+      <variant return-type="QSettings::Format" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scope">
+      <variant return-type="QSettings::Scope" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="organizationName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="applicationName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultFormat" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSettings::Format" modifier="" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultFormat" static="true">
+      <variant return-type="QSettings::Format" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPath" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSettings::Format" modifier="" name="format" />
+          <parameter const="false" type="QSettings::Scope" modifier="" name="scope" />
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="ReadFunc">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="&amp;" name="device" />
+          <parameter const="false" type="SettingsMap" modifier="&amp;" name="map" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="WriteFunc">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="&amp;" name="device" />
+          <parameter const="true" type="SettingsMap" modifier="&amp;" name="map" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="registerFormat" static="true">
+      <variant return-type="QSettings::Format" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="extension" />
+          <parameter const="false" type="ReadFunc" modifier="" name="readFunc" />
+          <parameter const="false" type="WriteFunc" modifier="" name="writeFunc" />
+          <parameter const="false" type="Qt::CaseSensitivity" modifier="" name="caseSensitivity"
+          default="Qt::CaseSensitive" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#ifndef QT_NO_QOBJECT" />
+    <function name="event" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

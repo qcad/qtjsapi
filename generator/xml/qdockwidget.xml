@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdockwidget.h">
+  <class_decl name="QMainWindow" />
+  <class_decl name="QStyleOptionDockWidget" />
+  <class name="QDockWidget">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <enum name="DockWidgetFeature">
+      <key>DockWidgetClosable</key>
+      <key>DockWidgetMovable</key>
+      <key>DockWidgetFloatable</key>
+      <key>DockWidgetVerticalTitleBar</key>
+      <key>DockWidgetFeatureMask</key>
+      <key>NoDockWidgetFeatures</key>
+      <key>Reserved</key>
+    </enum>
+    <property type="DockWidgetFeatures" name="features" read="features" write="setFeatures" />
+    <property type="Qt::DockWidgetAreas" name="allowedAreas" read="allowedAreas" write="setAllowedAreas" />
+    <property type="QString" name="windowTitle" read="windowTitle" write="setWindowTitle" />
+    <function name="widget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFeatures">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDockWidget::DockWidgetFeatures" modifier="" name="features" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="features">
+      <variant return-type="QDockWidget::DockWidgetFeatures" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFloating">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="floating" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFloating">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAllowedAreas">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DockWidgetAreas" modifier="" name="areas" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="allowedAreas">
+      <variant return-type="Qt::DockWidgetAreas" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTitleBarWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="titleBarWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAreaAllowed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DockWidgetArea" modifier="" name="area" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_ACTION" />
+    <function name="toggleViewAction">
+      <variant return-type="QAction*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="featuresChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDockWidget::DockWidgetFeatures" modifier="" name="features" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topLevelChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="topLevel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="allowedAreasChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::DockWidgetAreas" modifier="" name="allowedAreas" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="visibilityChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dockLocationChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::DockWidgetArea" modifier="" name="area" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

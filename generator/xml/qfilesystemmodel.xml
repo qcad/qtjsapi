@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfilesystemmodel.h">
+  <class_decl name="QAbstractFileIconProvider" />
+  <class name="QFileSystemModel">
+    <super_list>
+      <super name="QObject" />
+      <super name="QAbstractItemModel" />
+    </super_list>
+    <property type="bool" name="readOnly" read="isReadOnly" write="setReadOnly" />
+    <property type="bool" name="nameFilterDisables" read="nameFilterDisables" write="setNameFilterDisables" />
+    <property type="QFileSystemModel::Options" name="options" read="options" write="setOptions" />
+    <function name="rootPathChanged" />
+    <function name="fileRenamed" />
+    <function name="directoryLoaded" />
+    <enum name="Roles">
+      <key>FileIconRole</key>
+      <key>FilePathRole</key>
+      <key>FileNameRole</key>
+      <key>FilePermissions</key>
+    </enum>
+    <enum name="Option">
+      <key>DontWatchForChanges</key>
+      <key>DontResolveSymlinks</key>
+      <key>DontUseCustomDirectoryIcons</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="index">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="parent">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="child" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sibling">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="idx" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasChildren">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="canFetchMore">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fetchMore">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="myComputer">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::DisplayRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::DisplayRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setData">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::EditRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="headerData">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="section" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::DisplayRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="flags">
+      <variant return-type="Qt::ItemFlags" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sort">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="Qt::SortOrder" modifier="" name="order" default="Qt::AscendingOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mimeTypes">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="mimeData">
+      <variant return-type="QMimeData*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndexList" modifier="&amp;" name="indexes" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="dropMimeData">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QMimeData" modifier="*" name="data" />
+          <parameter const="false" type="Qt::DropAction" modifier="" name="action" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="supportedDropActions">
+      <variant return-type="Qt::DropActions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="roleNames">
+      <variant return-type="QHash&lt;int,QByteArray&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setRootPath">
+      <variant return-type="QModelIndex" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rootPath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rootDirectory">
+      <variant return-type="QDir" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIconProvider">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractFileIconProvider" modifier="*" name="provider" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="iconProvider">
+      <variant return-type="QAbstractFileIconProvider*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDir::Filters" modifier="" name="filters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filter">
+      <variant return-type="QDir::Filters" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setResolveSymlinks">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resolveSymlinks">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setReadOnly">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isReadOnly">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNameFilterDisables">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nameFilterDisables">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNameFilters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="filters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nameFilters">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileSystemModel::Option" modifier="" name="option" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFileSystemModel::Option" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileSystemModel::Options" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="options">
+      <variant return-type="QFileSystemModel::Options" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="filePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDir">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lastModified">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mkdir">
+      <variant return-type="QModelIndex" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rmdir">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fileIcon">
+      <variant return-type="QIcon" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="permissions">
+      <variant return-type="QFile::Permissions" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fileInfo">
+      <variant return-type="QFileInfo" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="remove">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="timerEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QTimerEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

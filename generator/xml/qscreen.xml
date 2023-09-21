@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qscreen.h">
+  <class_decl name="QWindow" />
+  <class_decl name="QRect" />
+  <class_decl name="QPixmap" />
+  <class_decl name="QDebug" />
+  <class name="QScreen">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="manufacturer">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="model">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="serialNumber">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="depth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="geometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="physicalSize">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="physicalDotsPerInchX">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="physicalDotsPerInchY">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="physicalDotsPerInch">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="logicalDotsPerInchX">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="logicalDotsPerInchY">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="logicalDotsPerInch">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="devicePixelRatio">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="availableSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="availableGeometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="virtualSiblings">
+      <variant return-type="QList&lt;QScreen*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="virtualSiblingAt">
+      <variant return-type="QScreen*" access="public">
+        <parameters>
+          <parameter const="false" type="QPoint" modifier="" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="virtualSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="virtualGeometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="availableVirtualSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="availableVirtualGeometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="primaryOrientation">
+      <variant return-type="Qt::ScreenOrientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="orientation">
+      <variant return-type="Qt::ScreenOrientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nativeOrientation">
+      <variant return-type="Qt::ScreenOrientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="angleBetween">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="a" />
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transformBetween">
+      <variant return-type="QTransform" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="a" />
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="b" />
+          <parameter const="true" type="QRect" modifier="&amp;" name="target" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapBetween">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="a" />
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="b" />
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isPortrait">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLandscape">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="grabWindow">
+      <variant return-type="QPixmap" access="public">
+        <parameters>
+          <parameter const="false" type="WId" modifier="" name="window" default="0" />
+          <parameter const="false" type="int" modifier="" name="x" default="0" />
+          <parameter const="false" type="int" modifier="" name="y" default="0" />
+          <parameter const="false" type="int" modifier="" name="w" default="-1" />
+          <parameter const="false" type="int" modifier="" name="h" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="refreshRate">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="geometryChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="geometry" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="availableGeometryChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="geometry" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="physicalSizeChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="physicalDotsPerInchChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dpi" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="logicalDotsPerInchChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dpi" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="virtualGeometryChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="primaryOrientationChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="orientationChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::ScreenOrientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="refreshRateChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="refreshRate" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QHighDpiScaling" />
+    <class_decl name="QWindowSystemInterface" />
+  </class>
+</unit>

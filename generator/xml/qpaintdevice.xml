@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpaintdevice.h">
+  <class_decl name="QPaintEngine" />
+  <class name="QPaintDevice">
+    <function name="devType">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintingActive">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintEngine">
+      <variant return-type="QPaintEngine*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="widthMM">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightMM">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="logicalDpiX">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="logicalDpiY">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="physicalDpiX">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="physicalDpiY">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="devicePixelRatio">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="devicePixelRatioF">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="colorCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="depth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="devicePixelRatioFScale" static="true">
+      <variant return-type="qreal" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="metric" />
+    <function name="initPainter" />
+    <function name="redirected" />
+    <function name="sharedPainter" />
+    <class_decl name="QPainter" />
+    <class_decl name="QFontEngineMac" />
+    <class_decl name="QX11PaintEngine" />
+    <function name="qt_paint_device_metric" />
+  </class>
+</unit>

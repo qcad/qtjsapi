@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qspinbox.h">
+  <class name="QSpinBox" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QAbstractSpinBox" />
+    </super_list>
+    <property type="QString" name="prefix" read="prefix" write="setPrefix" />
+    <property type="QString" name="cleanText" read="cleanText" />
+    <property type="int" name="minimum" read="minimum" write="setMinimum" />
+    <property type="int" name="maximum" read="maximum" write="setMaximum" />
+    <property type="int" name="singleStep" read="singleStep" write="setSingleStep" />
+    <property type="StepType" name="stepType" read="stepType" write="setStepType" />
+    <property type="int" name="value" read="value" write="setValue" />
+    <property type="int" name="displayIntegerBase" read="displayIntegerBase" write="setDisplayIntegerBase" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="value">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="prefix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrefix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="suffix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSuffix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="suffix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cleanText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="singleStep">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSingleStep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMinimum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="min" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maximum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaximum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="min" />
+          <parameter const="false" type="int" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stepType">
+      <variant return-type="QAbstractSpinBox::StepType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStepType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractSpinBox::StepType" modifier="" name="stepType" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="displayIntegerBase">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDisplayIntegerBase">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="base" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="validate" />
+    <function name="valueFromText" />
+    <function name="textFromValue" />
+    <function name="fixup" />
+    <function name="setValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="valueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QDoubleSpinBox">
+    <super_list>
+      <super name="QAbstractSpinBox" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="value">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="prefix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrefix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="suffix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSuffix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="suffix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cleanText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="singleStep">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSingleStep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimum">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMinimum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="min" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maximum">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaximum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="min" />
+          <parameter const="false" type="double" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stepType">
+      <variant return-type="QAbstractSpinBox::StepType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStepType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractSpinBox::StepType" modifier="" name="stepType" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="decimals">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDecimals">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="prec" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="validate">
+      <variant return-type="QValidator::State" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="input" />
+          <parameter const="false" type="int" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="valueFromText">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textFromValue">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixup">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="valueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

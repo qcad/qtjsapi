@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qframe.h">
+  <class_decl name="QStyleOptionFrame" />
+  <class name="QFrame">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="f" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="frameStyle">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFrameStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="frameWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="frameShape">
+      <variant return-type="QFrame::Shape" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFrameShape">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFrame::Shape" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="frameShadow">
+      <variant return-type="QFrame::Shadow" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFrameShadow">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFrame::Shadow" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="midLineWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMidLineWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="frameRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFrameRect">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawFrame" />
+    <function name="initStyleOption" />
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

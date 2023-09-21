@@ -1,0 +1,9 @@
+<!--
+    C++ to JS substitution table for default values of function arguments.
+-->
+<dictionary>
+  <item cpp="Qt.WindowFlags()" js="0" />
+  <item cpp="nullptr" js="null" />
+  <item cpp="Qt.GestureFlags()" js="0" />
+  <item cpp="RDEFAULT_QVARIANT" js="undefined" />
+</dictionary>

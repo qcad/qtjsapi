@@ -1,0 +1,883 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtreewidget.h">
+  <class_decl name="QTreeWidget" />
+  <class name="QTreeWidgetItem">
+    <enum name="ItemType">
+      <key>Type</key>
+      <key>UserType</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="type" default="Type" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="strings" />
+          <parameter const="false" type="int" modifier="" name="type" default="Type" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTreeWidget" modifier="*" name="treeview" />
+          <parameter const="false" type="int" modifier="" name="type" default="Type" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTreeWidget" modifier="*" name="treeview" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="strings" />
+          <parameter const="false" type="int" modifier="" name="type" default="Type" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTreeWidget" modifier="*" name="treeview" />
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="after" />
+          <parameter const="false" type="int" modifier="" name="type" default="Type" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="parent" />
+          <parameter const="false" type="int" modifier="" name="type" default="Type" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="parent" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="strings" />
+          <parameter const="false" type="int" modifier="" name="type" default="Type" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="parent" />
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="after" />
+          <parameter const="false" type="int" modifier="" name="type" default="Type" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QTreeWidgetItem" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="clone">
+      <variant return-type="QTreeWidgetItem*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="treeWidget">
+      <variant return-type="QTreeWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSelected">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="select" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSelected">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHidden">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="hide" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setExpanded">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="expand" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isExpanded">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFirstColumnSpanned">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="span" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFirstColumnSpanned">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDisabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="disabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDisabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="ChildIndicatorPolicy">
+      <key>ShowIndicator</key>
+      <key>DontShowIndicator</key>
+      <key>DontShowIndicatorWhenChildless</key>
+    </enum>
+    <function name="setChildIndicatorPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem::ChildIndicatorPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="childIndicatorPolicy">
+      <variant return-type="QTreeWidgetItem::ChildIndicatorPolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flags">
+      <variant return-type="Qt::ItemFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ItemFlags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="icon">
+      <variant return-type="QIcon" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setIcon">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="statusTip">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStatusTip">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QString" modifier="&amp;" name="statusTip" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(tooltip)" />
+    <function name="toolTip">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setToolTip">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QString" modifier="&amp;" name="toolTip" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(whatsthis)" />
+    <function name="whatsThis">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setWhatsThis">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QString" modifier="&amp;" name="whatsThis" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="font">
+      <variant return-type="QFont" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textAlignment">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setTextAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="background">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBackground">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="foreground">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setForeground">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="checkState">
+      <variant return-type="Qt::CheckState" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setCheckState">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="Qt::CheckState" modifier="" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSizeHint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QVariant" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="role" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setData">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="role" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_DATASTREAM" />
+    <!--
+    <function name="read">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDataStream" modifier="&amp;" name="in" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="write">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDataStream" modifier="&amp;" name="out" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="parent">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="child">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="childCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="columnCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indexOfChild">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="child" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addChild">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="child" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertChild">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="child" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeChild">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="child" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeChild">
+      <variant return-type="QTreeWidgetItem*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addChildren">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QTreeWidgetItem*&gt;" modifier="&amp;" name="children" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertChildren">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QList&lt;QTreeWidgetItem*&gt;" modifier="&amp;" name="children" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeChildren">
+      <variant return-type="QList&lt;QTreeWidgetItem*&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sortChildren">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="Qt::SortOrder" modifier="" name="order" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="emitDataChanged" />
+    <function name="sortChildren" />
+    <function name="childrenCheckState" />
+    <function name="itemChanged" />
+    <function name="executePendingSort" />
+    <function name="treeModel" />
+  </class>
+  <class name="QTreeWidget">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+      <super name="QAbstractItemView" />
+      <super name="QTreeView" />
+    </super_list>
+
+    <property type="int" name="topLevelItemCount" read="topLevelItemCount" />
+    <property type="int" name="columnCount" read="columnCount" write="setColumnCount" />
+
+    <class_decl name="QTreeWidgetItem" />
+    <!-- hide in QTreeWidget: -->
+    <function name="setModel" access="private" />
+    <function name="columnCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColumnCount">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="columns" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="invisibleRootItem">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="topLevelItem">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topLevelItemCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="insertTopLevelItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addTopLevelItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeTopLevelItem">
+      <variant return-type="QTreeWidgetItem*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexOfTopLevelItem">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertTopLevelItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QList&lt;QTreeWidgetItem*&gt;" modifier="&amp;" name="items" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addTopLevelItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QTreeWidgetItem*&gt;" modifier="&amp;" name="items" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="headerItem">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeaderItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeaderLabels">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="labels" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeaderLabel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentItem">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentColumn">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="QItemSelectionModel::SelectionFlags" modifier="" name="command" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="itemAt">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="visualItemRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sortColumn">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sortItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="Qt::SortOrder" modifier="" name="order" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="editItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="openPersistentEditor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="closePersistentEditor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="isPersistentEditorOpen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setItemWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeItemWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectedItems">
+      <variant return-type="QList&lt;QTreeWidgetItem*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="findItems">
+      <variant return-type="QList&lt;QTreeWidgetItem*&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="Qt::MatchFlags" modifier="" name="flags" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemAbove">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemBelow">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexFromItem">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemFromIndex">
+      <variant return-type="QTreeWidgetItem*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setSelectionModel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QItemSelectionModel" modifier="*" name="selectionModel" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="scrollToItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="QAbstractItemView::ScrollHint" modifier="" name="hint"
+          default="QAbstractItemView::EnsureVisible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expandItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="collapseItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="itemPressed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemDoubleClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemActivated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemEntered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemExpanded">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemCollapsed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentItemChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="current" />
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="previous" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemSelectionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="mimeTypes" />
+    <function name="mimeData" />
+    <function name="dropMimeData" />
+    <function name="supportedDropActions" />
+    <preproc plain="#if QT_CONFIG(draganddrop)" />
+    <function name="dropEvent" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

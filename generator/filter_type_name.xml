@@ -1,0 +1,12 @@
+<!--
+    Type names not transferred from srcml to xml (typically preprocessor directives)
+-->
+<dictionary>
+  <item name="QT_DEPRECATED" />
+  <item name="QT_DEPRECATED_VERSION_6_0" />
+  <item name="Q_DECL_CONSTEXPR" />
+  <item name="Q_DECL_RELAXED_CONSTEXPR" />
+  <item name="Q_REQUIRED_RESULT" />
+  <item name="Q_INVOKABLE" />
+  <item name="Q_WEAK_OVERLOAD" />
+</dictionary>

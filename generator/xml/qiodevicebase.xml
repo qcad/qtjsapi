@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qiodevicebase.h">
+  <class name="QIODeviceBase" nodestructor="true">
+    <enum name="OpenModeFlag">
+      <key>NotOpen</key>
+      <key>ReadOnly</key>
+      <key>WriteOnly</key>
+      <key>ReadWrite</key>
+      <key>Append</key>
+      <key>Truncate</key>
+      <key>Text</key>
+      <key>Unbuffered</key>
+      <key>NewOnly</key>
+      <key>ExistingOnly</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+  </class>
+</unit>

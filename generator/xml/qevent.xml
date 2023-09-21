@@ -1,0 +1,964 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qevent.h">
+  <class_decl name="QAction" />
+  <class_decl name="QGesture" />
+  <class_decl name="QScreen" />
+  <class_decl name="QMimeData" />
+  <class name="QInputEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="true" type="QInputDevice" modifier="*" name="m_dev" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers"
+          default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <function name="clone">
+      <variant return-type="QInputEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="device">
+      <variant return-type="const QInputDevice*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="deviceType">
+      <variant return-type="QInputDevice::DeviceType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="modifiers">
+      <variant return-type="Qt::KeyboardModifiers" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setModifiers">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="timestamp">
+      <variant return-type="quint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTimestamp">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="quint64" modifier="" name="timestamp" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QPointerEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QInputEvent" />
+    </super_list>
+    <function name="clone">
+      <variant return-type="QPointerEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="pointingDevice">
+      <variant return-type="const QPointingDevice*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="pointerType">
+      <variant return-type="QPointingDevice::PointerType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setTimestamp">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="quint64" modifier="" name="timestamp" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pointCount">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="point">
+      <variant return-type="QEventPoint&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="points">
+      <variant return-type="const QList&lt;QEventPoint&gt;&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="pointById">
+      <variant return-type="QEventPoint*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="allPointsGrabbed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isBeginEvent">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUpdateEvent">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEndEvent">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="allPointsAccepted">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAccepted">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="accepted" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exclusiveGrabber">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setExclusiveGrabber">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="point" />
+          <parameter const="false" type="QObject" modifier="*" name="exclusiveGrabber" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="passiveGrabbers">
+      <variant return-type="QList&lt;QPointer&lt;QObject&gt;&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="clearPassiveGrabbers">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPassiveGrabber">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="point" />
+          <parameter const="false" type="QObject" modifier="*" name="grabber" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removePassiveGrabber">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QEventPoint" modifier="&amp;" name="point" />
+          <parameter const="false" type="QObject" modifier="*" name="grabber" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QSinglePointEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QPointerEvent" />
+    </super_list>
+    <function name="button">
+      <variant return-type="Qt::MouseButton" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="buttons">
+      <variant return-type="Qt::MouseButtons" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scenePosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalPosition">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isBeginEvent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUpdateEvent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEndEvent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exclusivePointGrabber">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setExclusivePointGrabber">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="exclusiveGrabber" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="QSinglePointEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QMouseEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QInputEvent" />
+      <super name="QPointerEvent" />
+      <super name="QSinglePointEvent" />
+    </super_list>
+    <constructor>
+      <!--
+      deprecated
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="localPos" />
+          <parameter const="false" type="Qt::MouseButton" modifier="" name="button" />
+          <parameter const="false" type="Qt::MouseButtons" modifier="" name="buttons" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="localPos" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="screenPos" />
+          <parameter const="false" type="Qt::MouseButton" modifier="" name="button" />
+          <parameter const="false" type="Qt::MouseButtons" modifier="" name="buttons" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="localPos" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="windowPos" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="screenPos" />
+          <parameter const="false" type="Qt::MouseButton" modifier="" name="button" />
+          <parameter const="false" type="Qt::MouseButtons" modifier="" name="buttons" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="localPos" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="windowPos" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="screenPos" />
+          <parameter const="false" type="Qt::MouseButton" modifier="" name="button" />
+          <parameter const="false" type="Qt::MouseButtons" modifier="" name="buttons" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+          <parameter const="false" type="Qt::MouseEventSource" modifier="" name="source" />
+        </parameters>
+      </variant>
+    </constructor>
+    <preproc plain="#ifndef QT_NO_INTEGER_EVENT_COORDINATES" />
+    <function name="pos">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="globalPos">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="x">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalX">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalY">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <!--
+    <function name="localPos">
+      <variant return-type="const QPointF&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="windowPos">
+      <variant return-type="const QPointF&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="screenPos">
+      <variant return-type="const QPointF&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="button">
+      <variant return-type="Qt::MouseButton" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="buttons">
+      <variant return-type="Qt::MouseButtons" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setLocalPos">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="localPosition" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="source">
+      <variant return-type="Qt::MouseEventSource" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flags">
+      <variant return-type="Qt::MouseEventFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QGuiApplicationPrivate" />
+  </class>
+  <class name="QWheelEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QInputEvent" />
+      <super name="QPointerEvent" />
+      <super name="QSinglePointEvent" />
+    </super_list>
+    <property type="QPoint" name="pixelDelta" read="pixelDelta" />
+    <property type="QPoint" name="angleDelta" read="angleDelta" />
+    <property type="Qt::ScrollPhase" name="phase" read="phase" />
+    <property type="bool" name="inverted" read="inverted" />
+    <!--
+    <enum name="">
+      <key>DefaultDeltasPerStep</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="globalPos" />
+          <parameter const="false" type="QPoint" modifier="" name="pixelDelta" />
+          <parameter const="false" type="QPoint" modifier="" name="angleDelta" />
+          <parameter const="false" type="Qt::MouseButtons" modifier="" name="buttons" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+          <parameter const="false" type="Qt::ScrollPhase" modifier="" name="phase" />
+          <parameter const="false" type="bool" modifier="" name="inverted" />
+          <parameter const="false" type="Qt::MouseEventSource" modifier="" name="source" default="Qt::MouseEventNotSynthesized" />
+          <!--
+          <parameter const="true" type="QPointingDevice" modifier="*" name="device" default="QPointingDevice::primaryPointingDevice()" />
+          -->
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="clone">
+      <variant return-type="QWheelEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pixelDelta">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="angleDelta">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="phase">
+      <variant return-type="Qt::ScrollPhase" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="inverted">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isInverted">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasPixelDelta">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isBeginEvent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUpdateEvent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEndEvent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="source">
+      <variant return-type="Qt::MouseEventSource" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QKeyEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QInputEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="false" type="int" modifier="" name="key" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="QString()" />
+          <parameter const="false" type="bool" modifier="" name="autorep" default="false" />
+          <parameter const="false" type="quint16" modifier="" name="count" default="1" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="false" type="int" modifier="" name="key" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+          <parameter const="false" type="quint32" modifier="" name="nativeScanCode" />
+          <parameter const="false" type="quint32" modifier="" name="nativeVirtualKey" />
+          <parameter const="false" type="quint32" modifier="" name="nativeModifiers" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="QString()" />
+          <parameter const="false" type="bool" modifier="" name="autorep" default="false" />
+          <parameter const="false" type="quint16" modifier="" name="count" default="1" />
+          <parameter const="true" type="QInputDevice" modifier="*" name="device"
+          default="QInputDevice::primaryKeyboard()" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <function name="clone">
+      <variant return-type="QKeyEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="key">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(shortcut)" />
+    <function name="matches">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="modifiers">
+      <variant return-type="Qt::KeyboardModifiers" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="keyCombination">
+      <variant return-type="QKeyCombination" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAutoRepeat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nativeScanCode">
+      <variant return-type="quint32" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nativeVirtualKey">
+      <variant return-type="quint32" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nativeModifiers">
+      <variant return-type="quint32" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QPaintEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="paintRegion" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="paintRect" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="rect">
+      <variant return-type="const QRect&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="region">
+      <variant return-type="const QRegion&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QResizeEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="oldSize" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="size">
+      <variant return-type="const QSize&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="oldSize">
+      <variant return-type="const QSize&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QApplication" />
+  </class>
+  <class name="QDragEnterEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QDropEvent" />
+      <super name="QDragMoveEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="point" />
+          <parameter type="Qt::DropActions" name="actions" />
+          <parameter const="true" type="QMimeData" modifier="*" name="data" />
+          <parameter type="Qt::MouseButtons" name="buttons" />
+          <parameter type="Qt::KeyboardModifiers" name="modifiers" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+  <class name="QDropEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+          <parameter type="Qt::DropActions" name="actions" />
+          <parameter const="true" type="QMimeData" modifier="*" name="data" />
+          <parameter type="Qt::MouseButtons" name="buttons" />
+          <parameter type="Qt::KeyboardModifiers" name="modifiers" />
+          <parameter type="QEvent::Type" name="type" default="QEvent::Drop" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="clone">
+      <variant return-type="QDropEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <function name="pos">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="posF">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mouseButtons">
+      <variant return-type="Qt::MouseButtons" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="keyboardModifiers">
+      <variant return-type="Qt::KeyboardModifiers" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="position">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="buttons">
+      <variant return-type="Qt::MouseButtons" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="modifiers">
+      <variant return-type="Qt::KeyboardModifiers" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="possibleActions">
+      <variant return-type="Qt::DropActions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="proposedAction">
+      <variant return-type="Qt::DropAction" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="acceptProposedAction">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="dropAction">
+      <variant return-type="Qt::DropAction" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setDropAction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DropAction" modifier="" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="source">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mimeData">
+      <variant return-type="const QMimeData*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QContextMenuEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QInputEvent" />
+    </super_list>
+    <enum name="Reason">
+      <key>Mouse</key>
+      <key>Keyboard</key>
+      <key>Other</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QContextMenuEvent::Reason" modifier="" name="reason" />
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+          <parameter const="true" type="QPoint" modifier="&amp;" name="globalPos" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QContextMenuEvent::Reason" modifier="" name="reason" />
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="clone">
+      <variant return-type="QContextMenuEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="x">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalX">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalY">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pos">
+      <variant return-type="const QPoint&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalPos">
+      <variant return-type="const QPoint&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reason">
+      <variant return-type="QContextMenuEvent::Reason" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QDragMoveEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QDropEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+          <parameter const="false" type="Qt::DropActions" modifier="" name="actions" />
+          <parameter const="true" type="QMimeData" modifier="*" name="data" />
+          <parameter const="false" type="Qt::MouseButtons" modifier="" name="buttons" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" default="QDragMoveEvent::DragMove" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="clone">
+      <variant return-type="QDragMoveEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="answerRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="accept">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ignore">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QDragLeaveEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+  </class>
+  <class name="QHelpEvent">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+          <parameter const="true" type="QPoint" modifier="&amp;" name="globalPos" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="clone">
+      <variant return-type="QHelpEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="x">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalX">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalY">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pos">
+      <variant return-type="const QPoint&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="globalPos">
+      <variant return-type="const QPoint&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QActionEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter type="int" modifier="" name="type" />
+          <parameter type="QAction" modifier="*" name="action" />
+          <parameter type="QAction" modifier="*" name="before" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="action">
+      <variant return-type="QAction*" const="" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="before">
+      <variant return-type="QAction*" const="" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

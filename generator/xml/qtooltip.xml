@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtooltip.h">
+  <class name="QToolTip">
+    <function name="showText" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter type="QWidget" modifier="*" name="w" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hideText" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isVisible" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="palette" static="true">
+      <variant return-type="QPalette" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPalette" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPalette" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="font" static="true">
+      <variant return-type="QFont" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFont" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

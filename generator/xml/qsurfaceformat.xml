@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsurfaceformat.h">
+  <class_decl name="QColorSpace" />
+  <class_decl name="QOpenGLContext" />
+  <class name="QSurfaceFormat">
+    <enum name="FormatOption">
+      <key>StereoBuffers</key>
+      <key>DebugContext</key>
+      <key>DeprecatedFunctions</key>
+      <key>ResetNotification</key>
+      <key>ProtectedContent</key>
+    </enum>
+    <enum name="SwapBehavior">
+      <key>DefaultSwapBehavior</key>
+      <key>SingleBuffer</key>
+      <key>DoubleBuffer</key>
+      <key>TripleBuffer</key>
+    </enum>
+    <enum name="RenderableType">
+      <key>DefaultRenderableType</key>
+      <key>OpenGL</key>
+      <key>OpenGLES</key>
+      <key>OpenVG</key>
+    </enum>
+    <enum name="OpenGLContextProfile">
+      <key>NoProfile</key>
+      <key>CoreProfile</key>
+      <key>CompatibilityProfile</key>
+    </enum>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <enum name="ColorSpace">
+      <key>DefaultColorSpace</key>
+      <key>sRGBColorSpace</key>
+    </enum>
+    <preproc plain="#endif" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSurfaceFormat::FormatOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSurfaceFormat&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setDepthBufferSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="depthBufferSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStencilBufferSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stencilBufferSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRedBufferSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="redBufferSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGreenBufferSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="greenBufferSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBlueBufferSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="blueBufferSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlphaBufferSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alphaBufferSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSamples">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="numSamples" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="samples">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSwapBehavior">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSurfaceFormat::SwapBehavior" modifier="" name="behavior" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swapBehavior">
+      <variant return-type="QSurfaceFormat::SwapBehavior" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasAlpha">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProfile">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSurfaceFormat::OpenGLContextProfile" modifier="" name="profile" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="profile">
+      <variant return-type="QSurfaceFormat::OpenGLContextProfile" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRenderableType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSurfaceFormat::RenderableType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="renderableType">
+      <variant return-type="QSurfaceFormat::RenderableType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMajorVersion">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="majorVersion" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="majorVersion">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMinorVersion">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="minorVersion" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minorVersion">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="version">
+      <variant return-type="QPair&lt;int,int&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setVersion">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="major" />
+          <parameter const="false" type="int" modifier="" name="minor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stereo">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStereo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSurfaceFormat::FormatOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSurfaceFormat::FormatOption" modifier="" name="option" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSurfaceFormat::FormatOption" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="options">
+      <variant return-type="QSurfaceFormat::FormatOptions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="swapInterval">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSwapInterval">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="interval" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="colorSpace">
+      <variant return-type="const QColorSpace&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setColorSpace">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColorSpace" modifier="&amp;" name="colorSpace" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSurfaceFormat::ColorSpace" modifier="" name="colorSpace" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <preproc plain="#endif" />
+    <function name="setDefaultFormat" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultFormat" static="true">
+      <variant return-type="QSurfaceFormat" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="equals" call="operator==">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="lhs" />
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="lhs" />
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#ifndef QT_NO_DEBUG_STREAM" />
+    <!--
+    <function name="operator_read" call="operator&lt;&lt;">
+      <variant return-type="Q_GUI_EXPORTQDebug" access="unknown">
+        <parameters>
+          <parameter const="false" type="QDebug" modifier="" name="" />
+          <parameter const="true" type="QSurfaceFormat" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+  </class>
+</unit>

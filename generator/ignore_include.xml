@@ -1,0 +1,14 @@
+<ignore_include>
+  <file name="QCalendarBackend" />
+  <file name="QDesktopScreenWidget" />
+  <file name="QPlatformMenu" />
+  <file name="QPlatformWindow" />
+  <file name="QPostEventList" />
+  <file name="QRasterWindowSurface" />
+  <file name="QUnifiedToolbarSurface" />
+  <file name="QWSRegionManager" />
+  <file name="QPlatformMenuBar" />
+  <file name="QWindowsStyle" />
+  <file name="QScriptEngine" />
+  <file name="QTextFormatCollection" />
+</ignore_include>

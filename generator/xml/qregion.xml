@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qregion.h">
+  <class_decl name="QVector" />
+  <class_decl name="QVariant" />
+  <class_decl name="QBitmap" />
+  <class name="QRegion">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="QRegion::RegionType" modifier="" name="t" default="QRegion::Rectangle" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+          <parameter const="false" type="QRegion::RegionType" modifier="" name="t" default="QRegion::Rectangle" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPolygon" modifier="&amp;" name="pa" />
+          <parameter const="false" type="Qt::FillRule" modifier="" name="fillRule" default="Qt::OddEvenFill" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="region" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QRegion" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QBitmap" modifier="&amp;" name="bitmap" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QRegion" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="dx" />
+          <parameter const="false" type="int" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translated">
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="dx" />
+          <parameter const="false" type="int" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="united">
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersected">
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="subtracted">
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="xored">
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersects">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setRects">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="*" name="rect" />
+          <parameter const="false" type="int" modifier="" name="num" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="rectCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifdef Q_COMPILER_MANGLES_RETURN_TYPE" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_DATASTREAM" />
+    <preproc plain="#endif" />
+    <function name="copy" />
+    <function name="detach" />
+    <function name="qt_region_strictContains" />
+    <preproc plain="#ifndef QT_NO_DATASTREAM" />
+    <function name="exec" />
+    <preproc plain="#endif" />
+    <function name="cleanUp" static="true" />
+  </class>
+</unit>

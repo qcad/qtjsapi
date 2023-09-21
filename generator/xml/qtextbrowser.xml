@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtextbrowser.h">
+  <class name="QTextBrowser">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QTextEdit" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="QTextDocument::ResourceType" name="sourceType" read="sourceType" />
+    <property type="QStringList" name="searchPaths" read="searchPaths" write="setSearchPaths" />
+    <property type="bool" name="openExternalLinks" read="openExternalLinks" write="setOpenExternalLinks" />
+    <property type="bool" name="openLinks" read="openLinks" write="setOpenLinks" />
+    <function name="source">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sourceType">
+      <variant return-type="QTextDocument::ResourceType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="searchPaths">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSearchPaths">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="paths" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="loadResource">
+      <variant return-type="QVariant" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="type" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isBackwardAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isForwardAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearHistory">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="historyTitle">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="historyUrl">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="backwardHistoryCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="forwardHistoryCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="openExternalLinks">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOpenExternalLinks">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="open" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="openLinks">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOpenLinks">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="open" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSource">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="name" />
+          <parameter const="false" type="QTextDocument::ResourceType" modifier="" name="type"
+          default="QTextDocument::UnknownResource" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="backward">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="forward">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="home">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reload">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="backwardAvailable">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="forwardAvailable">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="historyChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sourceChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="highlighted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="anchorClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="keyPressEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="ev" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="focusOutEvent" />
+    <function name="focusNextPrevChild" />
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doSetSource" />
+  </class>
+</unit>

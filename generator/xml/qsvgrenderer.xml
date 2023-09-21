@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsvgrenderer.h">
+  <class_decl name="QPainter" />
+  <class_decl name="QByteArray" />
+  <class_decl name="QTransform" />
+  <class name="QSvgRenderer" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <property type="int" name="framesPerSecond" read="framesPerSecond" write="setFramesPerSecond" />
+    <property type="int" name="currentFrame" read="currentFrame" write="setCurrentFrame" />
+    <property type="Qt::AspectRatioMode" name="aspectRatioMode" read="aspectRatioMode" write="setAspectRatioMode" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filename" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="contents" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QXmlStreamReader" modifier="*" name="contents" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="defaultSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="viewBox">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="viewBoxF">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setViewBox">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="viewbox" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="viewbox" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="aspectRatioMode">
+      <variant return-type="Qt::AspectRatioMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAspectRatioMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="animated">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="framesPerSecond">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFramesPerSecond">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="num" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentFrame">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentFrame">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="animationDuration">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="boundsOnElement">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="elementExists">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transformForElement">
+      <variant return-type="QTransform" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="load">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filename" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="contents" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QXmlStreamReader" modifier="*" name="contents" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="render">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="p" />
+          <parameter const="true" type="QRectF" modifier="&amp;" name="bounds" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="p" />
+          <parameter const="true" type="QString" modifier="&amp;" name="elementId" />
+          <parameter const="true" type="QRectF" modifier="&amp;" name="bounds" default="QRectF()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="repaintNeeded">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

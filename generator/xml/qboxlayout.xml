@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qboxlayout.h">
+  <class name="QBoxLayout" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QLayoutItem" />
+      <super name="QLayout" />
+    </super_list>
+    <function name="Q_DECLARE_PRIVATE" />
+    <enum name="Direction">
+      <key>LeftToRight</key>
+      <key>RightToLeft</key>
+      <key>TopToBottom</key>
+      <key>BottomToTop</key>
+      <key>Down</key>
+      <key>Up</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QBoxLayout::Direction" modifier="" name="" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="direction">
+      <variant return-type="QBoxLayout::Direction" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDirection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QBoxLayout::Direction" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addStretch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addSpacerItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSpacerItem" modifier="*" name="spacerItem" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="" />
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" default="Qt::Alignment()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addLayout">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="layout" />
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addStrut">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayoutItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertStretch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertSpacerItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QSpacerItem" modifier="*" name="spacerItem" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" default="Qt::Alignment()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertLayout">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QLayout" modifier="*" name="layout" />
+          <parameter const="false" type="int" modifier="" name="stretch" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QLayoutItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="spacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStretchFactor">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+          <parameter const="false" type="int" modifier="" name="stretch" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="l" />
+          <parameter const="false" type="int" modifier="" name="stretch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStretch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="" name="stretch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stretch">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasHeightForWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumHeightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expandingDirections">
+      <variant return-type="Qt::Orientations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="invalidate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="itemAt">
+      <variant return-type="QLayoutItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeAt">
+      <variant return-type="QLayoutItem*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QHBoxLayout" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QLayoutItem" />
+      <super name="QLayout" />
+      <super name="QBoxLayout" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+  <class name="QVBoxLayout" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QLayoutItem" />
+      <super name="QLayout" />
+      <super name="QBoxLayout" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+</unit>

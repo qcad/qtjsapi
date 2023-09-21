@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtransform.h">
+  <class_decl name="QVariant" />
+  <class_decl name="QPainterPath" />
+  <class name="QTransform">
+    <constructor>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Initialization" modifier="" name="" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="h11" />
+          <parameter const="false" type="qreal" modifier="" name="h12" />
+          <parameter const="false" type="qreal" modifier="" name="h13" />
+          <parameter const="false" type="qreal" modifier="" name="h21" />
+          <parameter const="false" type="qreal" modifier="" name="h22" />
+          <parameter const="false" type="qreal" modifier="" name="h23" />
+          <parameter const="false" type="qreal" modifier="" name="h31" />
+          <parameter const="false" type="qreal" modifier="" name="h32" />
+          <parameter const="false" type="qreal" modifier="" name="h33" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="h11" />
+          <parameter const="false" type="qreal" modifier="" name="h12" />
+          <parameter const="false" type="qreal" modifier="" name="h21" />
+          <parameter const="false" type="qreal" modifier="" name="h22" />
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTransform" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isAffine">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isIdentity">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isInvertible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isScaling">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRotating">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isTranslating">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="QTransform::TransformationType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="determinant">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="m11">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="m12">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="m13">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="m21">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="m22">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="m23">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="m31">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="m32">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="m33">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dx">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dy">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMatrix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="m11" />
+          <parameter const="false" type="qreal" modifier="" name="m12" />
+          <parameter const="false" type="qreal" modifier="" name="m13" />
+          <parameter const="false" type="qreal" modifier="" name="m21" />
+          <parameter const="false" type="qreal" modifier="" name="m22" />
+          <parameter const="false" type="qreal" modifier="" name="m23" />
+          <parameter const="false" type="qreal" modifier="" name="m31" />
+          <parameter const="false" type="qreal" modifier="" name="m32" />
+          <parameter const="false" type="qreal" modifier="" name="m33" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="inverted">
+      <variant return-type="QTransform" const="true" access="public">
+        <!--
+        <parameters>
+          <parameter const="false" type="bool" modifier="*" name="invertible" default="nullptr" />
+        </parameters>
+        -->
+      </variant>
+    </function>
+    <function name="adjoint">
+      <variant return-type="QTransform" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transposed">
+      <variant return-type="QTransform" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="QTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="QTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="sx" />
+          <parameter const="false" type="qreal" modifier="" name="sy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="shear">
+      <variant return-type="QTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="sh" />
+          <parameter const="false" type="qreal" modifier="" name="sv" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="QTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="a" />
+          <parameter const="false" type="Qt::Axis" modifier="" name="axis" default="Qt::ZAxis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotateRadians">
+      <variant return-type="QTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="a" />
+          <parameter const="false" type="Qt::Axis" modifier="" name="axis" default="Qt::ZAxis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="squareToQuad" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="square" />
+          <parameter const="false" type="QTransform" modifier="&amp;" name="result" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quadToSquare" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="quad" />
+          <parameter const="false" type="QTransform" modifier="&amp;" name="result" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quadToQuad" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="one" />
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="two" />
+          <parameter const="false" type="QTransform" modifier="&amp;" name="result" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="map">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="QLine" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QLine" modifier="&amp;" name="l" />
+        </parameters>
+      </variant>
+      <variant return-type="QLineF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QLineF" modifier="&amp;" name="l" />
+        </parameters>
+      </variant>
+      <variant return-type="QPolygonF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygonF" modifier="&amp;" name="a" />
+        </parameters>
+      </variant>
+      <variant return-type="QPolygon" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPolygon" modifier="&amp;" name="a" />
+        </parameters>
+      </variant>
+      <variant return-type="QRegion" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRegion" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+      <variant return-type="QPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="*" name="tx" />
+          <parameter const="false" type="int" modifier="*" name="ty" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="false" type="qreal" modifier="*" name="tx" />
+          <parameter const="false" type="qreal" modifier="*" name="ty" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="mapToPolygon">
+      <variant return-type="QPolygon" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromTranslate" static="true">
+      <variant return-type="QTransform" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromScale" static="true">
+      <variant return-type="QTransform" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="asAffineMatrix">
+      <variant return-type="auto" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="operator_multiply_assign" call="operator*=">
+      <variant return-type="QTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QTransform" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdir.h">
+  <class_decl name="QDirIterator" />
+  <class_decl name="QDebug" />
+  <class name="QDir">
+    <enum name="Filter">
+      <key>Dirs</key>
+      <key>Files</key>
+      <key>Drives</key>
+      <key>NoSymLinks</key>
+      <key>AllEntries</key>
+      <key>TypeMask</key>
+      <key>Readable</key>
+      <key>Writable</key>
+      <key>Executable</key>
+      <key>PermissionMask</key>
+      <key>Modified</key>
+      <key>Hidden</key>
+      <key>System</key>
+      <key>AccessMask</key>
+      <key>AllDirs</key>
+      <key>CaseSensitive</key>
+      <key>NoDot</key>
+      <key>NoDotDot</key>
+      <key>NoDotAndDotDot</key>
+      <key>NoFilter</key>
+    </enum>
+    <enum name="SortFlag">
+      <key>Name</key>
+      <key>Time</key>
+      <key>Size</key>
+      <key>Unsorted</key>
+      <key>SortByMask</key>
+      <key>DirsFirst</key>
+      <key>Reversed</key>
+      <key>IgnoreCase</key>
+      <key>DirsLast</key>
+      <key>LocaleAware</key>
+      <key>Type</key>
+      <key>NoSort</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" default="QString()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+          <parameter const="true" type="QString" modifier="&amp;" name="nameFilter" />
+          <parameter const="false" type="QDir::SortFlags" modifier="" name="sort"
+          default="QDir::SortFlags(QDir::Name|QDir::IgnoreCase)" />
+          <parameter const="false" type="QDir::Filters" modifier="" name="filter" default="QDir::AllEntries" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDir" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="path">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="absolutePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="canonicalPath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSearchPaths" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="searchPaths" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addSearchPath" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="searchPaths" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dirName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="filePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="absoluteFilePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="relativeFilePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toNativeSeparators" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="pathName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromNativeSeparators" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="pathName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cd">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dirName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cdUp">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nameFilters">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNameFilters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="nameFilters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filter">
+      <variant return-type="QDir::Filters" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDir::Filters" modifier="" name="filter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sorting">
+      <variant return-type="QDir::SortFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSorting">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDir::SortFlags" modifier="" name="sort" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="uint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDir::Filters" modifier="" name="filters"
+          default="QDir::Filters(QDir::AllEntries|QDir::NoDotAndDotDot)" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nameFiltersFromString" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="nameFilter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="entryList">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDir::Filters" modifier="" name="filters" default="QDir::NoFilter" />
+          <parameter const="false" type="QDir::SortFlags" modifier="" name="sort" default="QDir::NoSort" />
+        </parameters>
+      </variant>
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="nameFilters" />
+          <parameter const="false" type="QDir::Filters" modifier="" name="filters" default="QDir::NoFilter" />
+          <parameter const="false" type="QDir::SortFlags" modifier="" name="sort" default="QDir::NoSort" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="entryInfoList">
+      <variant return-type="QFileInfoList" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDir::Filters" modifier="" name="filters" default="QDir::NoFilter" />
+          <parameter const="false" type="QDir::SortFlags" modifier="" name="sort" default="QDir::NoSort" />
+        </parameters>
+      </variant>
+      <variant return-type="QFileInfoList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="nameFilters" />
+          <parameter const="false" type="QDir::Filters" modifier="" name="filters" default="QDir::NoFilter" />
+          <parameter const="false" type="QDir::SortFlags" modifier="" name="sort" default="QDir::NoSort" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mkdir">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dirName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rmdir">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dirName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mkpath">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dirPath" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rmpath">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dirPath" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeRecursively">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isReadable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exists">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isRoot">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRelativePath" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isAbsolutePath" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isRelative">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAbsolute">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="makeAbsolute">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="remove">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rename">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="oldName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="newName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drives" static="true">
+      <variant return-type="QFileInfoList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="listSeparator" static="true">
+      <variant return-type="QChar" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="separator" static="true" jsname="sep">
+      <variant return-type="QChar" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrent" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="current" static="true">
+      <variant return-type="QDir" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="home" static="true">
+      <variant return-type="QDir" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="homePath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="root" static="true">
+      <variant return-type="QDir" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rootPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="temp" static="true">
+      <variant return-type="QDir" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="tempPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(regularexpression)" />
+    <function name="match" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="filters" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="cleanPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="refresh">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDirIterator" />
+    <function name="d_func" />
+  </class>
+</unit>

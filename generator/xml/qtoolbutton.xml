@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtoolbutton.h">
+  <class_decl name="QMenu" />
+  <class_decl name="QStyleOptionToolButton" />
+  <class name="QToolButton">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QAbstractButton" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="Qt::ToolButtonStyle" name="toolButtonStyle" read="toolButtonStyle" write="setToolButtonStyle" />
+    <property type="bool" name="autoRaise" read="autoRaise" write="setAutoRaise" />
+    <property type="Qt::ArrowType" name="arrowType" read="arrowType" write="setArrowType" />
+    <property type="QToolButton::ToolButtonPopupMode" name="popupMode" read="popupMode" write="setPopupMode" />
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toolButtonStyle">
+      <variant return-type="Qt::ToolButtonStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="arrowType">
+      <variant return-type="Qt::ArrowType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setArrowType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ArrowType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(menu)" />
+    <function name="setMenu">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMenu" modifier="*" name="menu" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="menu">
+      <variant return-type="QMenu*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPopupMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QToolButton::ToolButtonPopupMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="popupMode">
+      <variant return-type="QToolButton::ToolButtonPopupMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="defaultAction">
+      <variant return-type="QAction*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoRaise">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoRaise">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(menu)" />
+    <function name="showMenu">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setToolButtonStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ToolButtonStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDefaultAction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="triggered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="event" />
+    <function name="mousePressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="actionEvent" />
+    <function name="enterEvent" />
+    <function name="leaveEvent" />
+    <function name="timerEvent" />
+    <function name="changeEvent" />
+    <function name="hitButton" />
+    <function name="checkStateSet" />
+    <function name="nextCheckState" />
+    <function name="initStyleOption" />
+    -->
+  </class>
+</unit>

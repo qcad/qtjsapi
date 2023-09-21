@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qstringconverter.h">
+  <!--
+  <class name="QStringConverterBase">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Flags" modifier="" name="f" default="Flag::Default" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="State" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator">
+      <variant return-type="State&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="State" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="QStringConverter" nodestructor="true">
+    <super_list>
+      <super name="QStringConverterBase" />
+    </super_list>
+    <enum name="Encoding">
+      <key>Utf8</key>
+      <key>Utf16</key>
+      <key>Utf16LE</key>
+      <key>Utf16BE</key>
+      <key>Utf32</key>
+      <key>Utf32LE</key>
+      <key>Utf32BE</key>
+      <key>Latin1</key>
+      <key>System</key>
+      <key>LastEncoding</key>
+    </enum>
+    <preproc plain="#ifdef Q_QDOC" />
+    <!--
+    <enum name="Flag">
+      <key>Default</key>
+      <key>Stateless</key>
+      <key>ConvertInvalidToNull</key>
+      <key>WriteBom</key>
+      <key>ConvertInitialBom</key>
+    </enum>
+    -->
+    <preproc plain="#endif" />
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resetState">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasError">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="name">
+      <variant return-type="const char*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="encodingForName" static="true">
+      <variant return-type="std::optional&lt;Encoding&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="nameForEncoding" static="true">
+      <variant return-type="const char*" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringConverter::Encoding" modifier="" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="encodingForData" static="true">
+      <variant return-type="std::optional&lt;Encoding&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="data" />
+          <parameter const="false" type="char16_t" modifier="" name="expectedFirstCharacter" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="encodingForHtml" static="true">
+      <variant return-type="std::optional&lt;Encoding&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+  <class name="QStringEncoder">
+    <super_list>
+      <super name="QStringConverter" nodowncast="true" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QStringConverter::Encoding" modifier="" name="encoding" />
+          <!--
+          <parameter const="false" type="QStringConverter::Flags" modifier="" name="flags" default="Flag::Default" />
+          -->
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="name" />
+          <!--
+          <parameter const="false" type="QStringConverter::Flags" modifier="" name="flags" default="Flag::Default" />
+          -->
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <preproc plain="#if defined(Q_QDOC)" />
+    -->
+    <!--
+    <function name="operator">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="in" />
+        </parameters>
+      </variant>
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="in" />
+        </parameters>
+      </variant>
+      <variant return-type="Q_WEAK_OVERLOADDecodedData&lt;constQString&amp;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+      <variant return-type="DecodedData&lt;QStringView&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="in" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="encode">
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="in" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QByteArray" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="in" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="Q_WEAK_OVERLOADDecodedData&lt;constQString&amp;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="DecodedData&lt;QStringView&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="in" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <!--
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    -->
+    <function name="requiredSpace">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="inputLength" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="appendToBuffer">
+      <variant return-type="char*" access="public">
+        <parameters>
+          <parameter const="false" type="char" modifier="*" name="out" />
+          <parameter const="false" type="QStringView" modifier="" name="in" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="encodeAsByteArray" />
+  </class>
+  <class name="QStringDecoder">
+    <super_list>
+      <super name="QStringConverter" nodowncast="true" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QStringConverter::Encoding" modifier="" name="encoding" />
+          <!--
+          <parameter const="false" type="QStringConverter::Flags" modifier="" name="flags" default="Flag::Default" />
+          -->
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="name" />
+          <!--
+          <parameter const="false" type="QStringConverter::Flags" modifier="" name="f" default="Flag::Default" />
+          -->
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <preproc plain="#if defined(Q_QDOC)" />
+    -->
+    <!--
+    <function name="operator">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="ba" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="ba" />
+        </parameters>
+      </variant>
+      <variant return-type="Q_WEAK_OVERLOADEncodedData&lt;constQByteArray&amp;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="ba" />
+        </parameters>
+      </variant>
+      <variant return-type="EncodedData&lt;QByteArrayView&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="ba" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="decode">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="ba" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="ba" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="Q_WEAK_OVERLOADEncodedData&lt;constQByteArray&amp;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="ba" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="EncodedData&lt;QByteArrayView&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="QByteArrayView" modifier="" name="ba" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <!--
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    -->
+    <function name="requiredSpace">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="inputLength" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="appendToBuffer">
+      <variant return-type="QChar*" access="public">
+        <parameters>
+          <parameter const="false" type="QChar" modifier="*" name="out" />
+          <parameter const="false" type="QByteArrayView" modifier="" name="ba" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="decodeAsString" />
+    -->
+  </class>
+</unit>

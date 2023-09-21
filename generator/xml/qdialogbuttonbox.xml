@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdialogbuttonbox.h">
+  <class_decl name="QAbstractButton" />
+  <class_decl name="QPushButton" />
+  <class name="QDialogButtonBox">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <enum name="ButtonRole">
+      <key>InvalidRole</key>
+      <key>AcceptRole</key>
+      <key>RejectRole</key>
+      <key>DestructiveRole</key>
+      <key>ActionRole</key>
+      <key>HelpRole</key>
+      <key>YesRole</key>
+      <key>NoRole</key>
+      <key>ResetRole</key>
+      <key>ApplyRole</key>
+      <key>NRoles</key>
+    </enum>
+    <enum name="StandardButton">
+      <key>NoButton</key>
+      <key>Ok</key>
+      <key>Save</key>
+      <key>SaveAll</key>
+      <key>Open</key>
+      <key>Yes</key>
+      <key>YesToAll</key>
+      <key>No</key>
+      <key>NoToAll</key>
+      <key>Abort</key>
+      <key>Retry</key>
+      <key>Ignore</key>
+      <key>Close</key>
+      <key>Cancel</key>
+      <key>Discard</key>
+      <key>Help</key>
+      <key>Apply</key>
+      <key>Reset</key>
+      <key>RestoreDefaults</key>
+      <key>FirstButton</key>
+      <key>LastButton</key>
+    </enum>
+    <enum name="ButtonLayout">
+      <key>WinLayout</key>
+      <key>MacLayout</key>
+      <key>KdeLayout</key>
+      <key>GnomeLayout</key>
+      <key>AndroidLayout</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="false" type="QDialogButtonBox::StandardButtons" modifier="" name="buttons" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QDialogButtonBox::StandardButtons" modifier="" name="buttons" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setOrientation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="orientation">
+      <variant return-type="Qt::Orientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addButton">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+          <parameter const="false" type="QDialogButtonBox::ButtonRole" modifier="" name="role" />
+        </parameters>
+      </variant>
+      <variant return-type="QPushButton*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QDialogButtonBox::ButtonRole" modifier="" name="role" />
+        </parameters>
+      </variant>
+      <variant return-type="QPushButton*" access="public">
+        <parameters>
+          <parameter const="false" type="QDialogButtonBox::StandardButton" modifier="" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeButton">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="buttons">
+      <variant return-type="QList&lt;QAbstractButton*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="buttonRole">
+      <variant return-type="QDialogButtonBox::ButtonRole" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStandardButtons">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDialogButtonBox::StandardButtons" modifier="" name="buttons" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="standardButtons">
+      <variant return-type="QDialogButtonBox::StandardButtons" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="standardButton">
+      <variant return-type="QDialogButtonBox::StandardButton" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="button">
+      <variant return-type="QPushButton*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDialogButtonBox::StandardButton" modifier="" name="which" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCenterButtons">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="centerButtons">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="accepted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="helpRequested">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rejected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="changeEvent" />
+    <function name="event" />
+  </class>
+</unit>

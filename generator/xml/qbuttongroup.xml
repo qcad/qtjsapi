@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qbuttongroup.h">
+  <class_decl name="QAbstractButton" />
+  <class name="QButtonGroup" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setExclusive">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exclusive">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addButton">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="" />
+          <parameter const="false" type="int" modifier="" name="id" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeButton">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="buttons">
+      <variant return-type="QList&lt;QAbstractButton*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="checkedButton">
+      <variant return-type="QAbstractButton*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="button">
+      <variant return-type="QAbstractButton*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setId">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+          <parameter const="false" type="int" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="id">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="button" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="checkedId">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="buttonClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="buttonPressed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="buttonReleased">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="buttonToggled">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractButton" modifier="*" name="" />
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="idClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="idPressed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="idReleased">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="idToggled">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QAbstractButton" />
+  </class>
+</unit>

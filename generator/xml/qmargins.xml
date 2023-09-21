@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qmargins.h">
+  <class name="QMargins">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="left" />
+          <parameter const="false" type="int" modifier="" name="top" />
+          <parameter const="false" type="int" modifier="" name="right" />
+          <parameter const="false" type="int" modifier="" name="bottom" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="left">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="top">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="right">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottom">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="left" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="top" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="right" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="bottom" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QMarginsF">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="left" />
+          <parameter const="false" type="qreal" modifier="" name="top" />
+          <parameter const="false" type="qreal" modifier="" name="right" />
+          <parameter const="false" type="qreal" modifier="" name="bottom" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QMargins" modifier="&amp;" name="margins" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="left">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="top">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="right">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottom">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="left" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="top" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="right" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="bottom" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toMargins">
+      <variant return-type="QMargins" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

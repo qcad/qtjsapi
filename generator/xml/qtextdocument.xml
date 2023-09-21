@@ -1,0 +1,774 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtextdocument.h">
+  <!--
+  <class_decl name="QTextFormatCollection" />
+  -->
+  <class_decl name="QTextListFormat" />
+  <class_decl name="QRect" />
+  <class_decl name="QPainter" />
+  <class_decl name="QPagedPaintDevice" />
+  <class_decl name="QAbstractTextDocumentLayout" />
+  <class_decl name="QPoint" />
+  <class_decl name="QTextObject" />
+  <class_decl name="QTextFormat" />
+  <class_decl name="QTextFrame" />
+  <class_decl name="QTextBlock" />
+  <class_decl name="QVariant" />
+  <class_decl name="QRectF" />
+  <class_decl name="QTextOption" />
+  <class_decl name="QTextCursor" />
+  <!--
+  <namespace name="Qt">
+    <function name="mightBeRichText" />
+    <function name="convertFromPlainText" />
+  </namespace>
+  -->
+  <!--
+  <class name="QAbstractUndoItem">
+    <function name="undo">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="redo">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="QTextDocument" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <property type="bool" name="modified" read="isModified" write="setModified" />
+    <property type="QSizeF" name="pageSize" read="pageSize" write="setPageSize" />
+    <property type="QFont" name="defaultFont" read="defaultFont" write="setDefaultFont" />
+    <property type="bool" name="useDesignMetrics" read="useDesignMetrics" write="setUseDesignMetrics" />
+    <property type="QSizeF" name="size" read="size" />
+    <property type="qreal" name="textWidth" read="textWidth" write="setTextWidth" />
+    <property type="int" name="blockCount" read="blockCount" />
+    <property type="qreal" name="indentWidth" read="indentWidth" write="setIndentWidth" />
+    <preproc plain="#ifndef QT_NO_CSSPARSER" />
+    <property type="QString" name="defaultStyleSheet" read="defaultStyleSheet" write="setDefaultStyleSheet" />
+    <preproc plain="#endif" />
+    <property type="int" name="maximumBlockCount" read="maximumBlockCount" write="setMaximumBlockCount" />
+    <property type="qreal" name="documentMargin" read="documentMargin" write="setDocumentMargin" />
+    <property type="QUrl" name="baseUrl" read="baseUrl" write="setBaseUrl" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="clone">
+      <variant return-type="QTextDocument*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUndoRedoEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isUndoRedoEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUndoAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRedoAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="availableUndoSteps">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="availableRedoSteps">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="revision">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setDocumentLayout">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractTextDocumentLayout" modifier="*" name="layout" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="documentLayout">
+      <variant return-type="QAbstractTextDocumentLayout*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <enum name="MetaInformation">
+      <key>DocumentTitle</key>
+      <key>DocumentUrl</key>
+    </enum>
+    <function name="setMetaInformation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextDocument::MetaInformation" modifier="" name="info" />
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="metaInformation">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTextDocument::MetaInformation" modifier="" name="info" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_TEXTHTMLPARSER" />
+    <function name="toHtml">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHtml">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="html" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(textmarkdownwriter)||QT_CONFIG(textmarkdownreader)" />
+    <enum name="MarkdownFeature">
+      <key>MarkdownNoHTML</key>
+      <key>MarkdownDialectCommonMark</key>
+      <key>MarkdownDialectGitHub</key>
+    </enum>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(textmarkdownwriter)" />
+    <function name="toMarkdown">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTextDocument::MarkdownFeatures" modifier="" name="features"
+          default="QTextDocument::MarkdownDialectGitHub" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(textmarkdownreader)" />
+    <function name="setMarkdown">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="markdown" />
+          <parameter const="false" type="QTextDocument::MarkdownFeatures" modifier="" name="features"
+          default="QTextDocument::MarkdownDialectGitHub" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="toRawText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toPlainText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPlainText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="characterAt">
+      <variant return-type="QChar" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="FindFlag">
+      <key>FindBackward</key>
+      <key>FindCaseSensitively</key>
+      <key>FindWholeWords</key>
+    </enum>
+    <function name="find">
+      <variant return-type="QTextCursor" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="subString" />
+          <parameter const="false" type="int" modifier="" name="from" default="0" />
+          <parameter const="false" type="QTextDocument::FindFlags" modifier="" name="options" default="QTextDocument::FindFlags()" />
+        </parameters>
+      </variant>
+      <variant return-type="QTextCursor" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="subString" />
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="cursor" />
+          <parameter const="false" type="QTextDocument::FindFlags" modifier="" name="options" default="QTextDocument::FindFlags()" />
+        </parameters>
+      </variant>
+      <variant return-type="QTextCursor" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="expr" />
+          <parameter const="false" type="int" modifier="" name="from" default="0" />
+          <parameter const="false" type="QTextDocument::FindFlags" modifier="" name="options" default="QTextDocument::FindFlags()" />
+        </parameters>
+      </variant>
+      <variant return-type="QTextCursor" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="expr" />
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="cursor" />
+          <parameter const="false" type="QTextDocument::FindFlags" modifier="" name="options" default="QTextDocument::FindFlags()" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(regularexpression)" />
+    <preproc plain="#endif" />
+    <!--
+    <function name="frameAt">
+      <variant return-type="QTextFrame*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rootFrame">
+      <variant return-type="QTextFrame*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="object">
+      <variant return-type="QTextObject*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="objectIndex" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="objectForFormat">
+      <variant return-type="QTextObject*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextFormat" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="findBlock">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="findBlockByNumber">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="blockNumber" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="findBlockByLineNumber">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="blockNumber" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="begin">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="end">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="firstBlock">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="lastBlock">
+      <variant return-type="QTextBlock" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setPageSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pageSize">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultFont">
+      <variant return-type="QFont" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSuperScriptBaseline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="baseline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="superScriptBaseline">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSubScriptBaseline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="baseline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="subScriptBaseline">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBaselineOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="baseline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="baselineOffset">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pageCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isModified">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_PRINTER" />
+    <function name="print">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPagedPaintDevice" modifier="*" name="printer" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <enum name="ResourceType">
+      <key>UnknownResource</key>
+      <key>HtmlResource</key>
+      <key>ImageResource</key>
+      <key>StyleSheetResource</key>
+      <key>MarkdownResource</key>
+      <key>UserResource</key>
+    </enum>
+    <function name="resource">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="type" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addResource">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="type" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="name" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="resource" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="resourceProvider">
+      <variant return-type="QTextDocument::ResourceProvider" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setResourceProvider">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="ResourceProvider" modifier="&amp;" name="provider" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="defaultResourceProvider" static="true">
+      <variant return-type="QTextDocument::ResourceProvider" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setDefaultResourceProvider" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="ResourceProvider" modifier="&amp;" name="provider" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="allFormats">
+      <variant return-type="QList&lt;QTextFormat&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="markContentsDirty">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="from" />
+          <parameter const="false" type="int" modifier="" name="length" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setUseDesignMetrics">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="useDesignMetrics">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="drawContents">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" default="QRectF()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTextWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="idealWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indentWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIndentWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="documentMargin">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDocumentMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="margin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="adjustSize">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="blockCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lineCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="characterCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_CSSPARSER" />
+    <function name="setDefaultStyleSheet">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="sheet" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultStyleSheet">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="undo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextCursor" modifier="*" name="cursor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="redo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextCursor" modifier="*" name="cursor" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="Stacks">
+      <key>UndoStack</key>
+      <key>RedoStack</key>
+      <key>UndoAndRedoStacks</key>
+    </enum>
+    <function name="clearUndoRedoStacks">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextDocument::Stacks" modifier="" name="historyToClear" default="QTextDocument::UndoAndRedoStacks" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maximumBlockCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaximumBlockCount">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="maximum" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="defaultTextOption">
+      <variant return-type="QTextOption" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setDefaultTextOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextOption" modifier="&amp;" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="baseUrl">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBaseUrl">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultCursorMoveStyle">
+      <variant return-type="Qt::CursorMoveStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultCursorMoveStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::CursorMoveStyle" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contentsChange">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="from" />
+          <parameter const="false" type="int" modifier="" name="charsRemoved" />
+          <parameter const="false" type="int" modifier="" name="charsAdded" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contentsChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="undoAvailable">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="redoAvailable">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="undoCommandAdded">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="modificationChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cursorPositionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QTextCursor" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="blockCountChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="newBlockCount" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="baseUrlChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="documentLayoutChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="undo">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="redo">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="appendUndoItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractUndoItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setModified">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="m" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createObject" />
+    <function name="loadResource" />
+  </class>
+</unit>

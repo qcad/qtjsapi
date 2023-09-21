@@ -1,0 +1,766 @@
+
+  // Auto generated
+  
+  #ifndef QPAGEDPAINTDEVICE_H_WRAPPER
+  #define QPAGEDPAINTDEVICE_H_WRAPPER
+
+  // include header:
+  //#include "header_h.h"
+  
+      #include "../RJSHelper.h"
+    
+
+  #include "RJSWrapperObj.h"
+  
+    #include <QQmlEngine>
+    #include "RJSType.h"
+
+    
+        #include <QPagedPaintDevice>
+      
+      // singleton class wrapper for static functions:
+      class QPagedPaintDevice_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      QPagedPaintDevice_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {
+      }
+
+      
+
+      // static functions:
+      
+    // Class: QPagedPaintDevice
+    // Function: devicePixelRatioFScale
+    // Source: QPaintDevice
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  devicePixelRatioFScale
+              (
+
+                
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static QPagedPaintDevice_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+
+    
+    // static functions implementation in singleton wrapper:
+    
+    // wrapper class for QPagedPaintDevice
+    class QPagedPaintDevice_Wrapper : public RJSWrapperObj {
+
+    
+      Q_OBJECT
+      QML_INTERFACE
+    
+
+    private:
+      // disable copy constructor:
+      QPagedPaintDevice_Wrapper(const QPagedPaintDevice_Wrapper&);
+
+    public:
+      // initialization of QPagedPaintDevice:
+      static void init(RJSApi& handler);
+
+      
+        static QPagedPaintDevice* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
+          switch (t) {
+          // check if pointer points to derrived type:
+          
+            case RJSType::QPrinter_Type:
+              return (QPagedPaintDevice*)(QPrinter*)vp;
+          
+
+          // pointer to desired type:
+          
+              case RJSType::QPagedPaintDevice_Type:
+                return (QPagedPaintDevice*)vp;
+            
+
+          default:
+            return nullptr;
+          }
+        }
+
+        static QPagedPaintDevice* getWrappedBase(RJSWrapper* wrapper) {
+          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          void* vp = wrapper->getWrappedVoid();
+          if (vp==nullptr) {
+              //qWarning() << "getWrapped_QPagedPaintDevice*: wrapper wraps NULL";
+          }
+
+          QPagedPaintDevice* ret = castToBase(vp, t);
+          if (ret==nullptr && vp!=nullptr) {
+              qWarning() << "QPagedPaintDevice*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+          }
+          return ret;
+        }
+      
+        // enums:
+        
+  enum PdfVersion {
+    PdfVersion_1_4 = QPagedPaintDevice::PdfVersion_1_4,
+PdfVersion_A1b = QPagedPaintDevice::PdfVersion_A1b,
+PdfVersion_1_6 = QPagedPaintDevice::PdfVersion_1_6,
+
+  };
+  Q_ENUM(PdfVersion)
+
+    /*
+    // special constructor used as prototype:
+    
+          Q_INVOKABLE 
+          QPagedPaintDevice_Wrapper(QJSEngine* e);
+        
+    */
+
+    
+      // special constructor to wrap existing object:
+      
+            //Q_INVOKABLE 
+            QPagedPaintDevice_Wrapper(RJSApi& h, QPagedPaintDevice* o, bool wrappedCreated);
+          
+
+      // destructor:
+      
+          virtual ~QPagedPaintDevice_Wrapper();
+        
+    // initialization of signal forwarding
+    
+        void initConnections();
+      
+
+  // constructors:
+  
+
+    // non-static functions:
+    
+    // Class: QPagedPaintDevice
+    // Function: devType
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  devType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: paintingActive
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintingActive
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: paintEngine
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintEngine
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: width
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  width
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: height
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  height
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: widthMM
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  widthMM
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: heightMM
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  heightMM
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: logicalDpiX
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  logicalDpiX
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: logicalDpiY
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  logicalDpiY
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: physicalDpiX
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  physicalDpiX
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: physicalDpiY
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  physicalDpiY
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: devicePixelRatio
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  devicePixelRatio
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: devicePixelRatioF
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  devicePixelRatioF
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: colorCount
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  colorCount
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: depth
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  depth
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: newPage
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  newPage
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: setPageLayout
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setPageLayout
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: setPageSize
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setPageSize
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: setPageOrientation
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setPageOrientation
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: setPageMargins
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setPageMargins
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: pageLayout
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  pageLayout
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: setPageRanges
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setPageRanges
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QPagedPaintDevice
+    // Function: pageRanges
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  pageRanges
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+
+        //public:
+        // set engine:
+        //Q_INVOKABLE void setHandler(RJSApi* h) {
+        //  RJSWrapperObj::setHandler(h);
+        //}
+      
+
+  // member functions for static properties, forward to static function
+  
+
+
+  // protected overwritten functions / events and their public invokable counterparts:
+  
+        public:
+
+        // get type of wrapped object:
+        Q_INVOKABLE
+        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+          
+              return RJSType::QPagedPaintDevice_Type;
+            
+        }
+
+        // return true if wrapped object is owned by C++ (not deleted):
+        Q_INVOKABLE
+        virtual bool isCppOwnership() const {
+          
+              return false;
+            
+        }
+
+        // get wrapped object:
+        QPagedPaintDevice* getWrapped() {
+          if (wrapped!=nullptr) {
+            return wrapped;
+          }
+          
+          return nullptr;
+        }
+
+        // get wrapped object (const):
+        QPagedPaintDevice* getWrapped() const {
+          if (wrapped!=nullptr) {
+            return wrapped;
+          }
+          
+          return nullptr;
+        }
+
+        // get wrapped object as void*:
+        virtual void* getWrappedVoid() {
+          if (wrapped!=nullptr) {
+            return wrapped;
+          }
+          
+          return nullptr;
+        }
+
+        
+
+        bool hasWrapped() const {
+          return wrapped!=nullptr 
+          
+          ;
+        }
+
+        Q_INVOKABLE
+        bool isNullWrapper() const {
+          return !hasWrapped();
+        }
+
+        Q_INVOKABLE
+        unsigned long long int getAddress() const {
+          if (wrapped!=nullptr) {
+            return (unsigned long long int)wrapped;
+          }
+          
+          return (unsigned long long int)0;
+        }
+
+        
+
+        //public slots:
+          //void slotDestroyed(QObject* obj) {
+          //  qDebug() << "destroying QObject:" << (long int)obj;
+          //}
+
+        
+
+        private:
+        // wrapped object:
+        QPagedPaintDevice* wrapped;
+
+        
+
+        bool wrappedCreated;
+      
+    };
+
+    Q_DECLARE_METATYPE(QPagedPaintDevice_Wrapper*)
+
+    Q_DECLARE_INTERFACE(QPagedPaintDevice_Wrapper, "org.qcad.QPagedPaintDevice_Wrapper")
+
+  
+  #endif
+  

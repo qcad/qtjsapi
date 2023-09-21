@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qactiongroup.h">
+  <class name="QActionGroup">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <function name="Q_DECLARE_PRIVATE" />
+    <!--
+    <enum name="ExclusionPolicy">
+      <key>ExclusionPolicy::None</key>
+      <key>ExclusionPolicy::Exclusive</key>
+      <key>ExclusionPolicy::ExclusiveOptional</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="addAction">
+      <variant return-type="QAction*" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+        </parameters>
+      </variant>
+      <variant return-type="QAction*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+      <variant return-type="QAction*" access="public">
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeAction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="actions">
+      <variant return-type="QList&lt;QAction*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="checkedAction">
+      <variant return-type="QAction*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isExclusive">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="exclusionPolicy">
+      <variant return-type="ExclusionPolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDisabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setExclusive">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setExclusionPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="ExclusionPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="triggered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hovered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="_q_actionTriggered" />
+    <function name="_q_actionHovered" />
+    <function name="_q_actionChanged" />
+  </class>
+</unit>

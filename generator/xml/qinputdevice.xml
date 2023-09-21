@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qinputdevice.h">
+  <class_decl name="QDebug" />
+  <class name="QInputDevice">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <property type="QString" name="name" read="name" />
+    <!--
+    <property type="DeviceType" name="type" read="type" />
+    <property type="Capabilities" name="capabilities" read="capabilities" />
+    -->
+    <property type="qint64" name="systemId" read="systemId" />
+    <property type="QString" name="seatName" read="seatName" />
+    <property type="QRect" name="availableVirtualGeometry" read="availableVirtualGeometry" />
+    <!--
+    <enum name="DeviceType">
+      <key>Unknown</key>
+      <key>Mouse</key>
+      <key>TouchScreen</key>
+      <key>TouchPad</key>
+      <key>Puck</key>
+      <key>Stylus</key>
+      <key>Airbrush</key>
+      <key>Keyboard</key>
+      <key>AllDevices</key>
+    </enum>
+    <enum name="Capability">
+      <key>None</key>
+      <key>Position</key>
+      <key>Area</key>
+      <key>Pressure</key>
+      <key>Velocity</key>
+      <key>NormalizedPosition</key>
+      <key>MouseEmulation</key>
+      <key>PixelScroll</key>
+      <key>Scroll</key>
+      <key>Hover</key>
+      <key>Rotation</key>
+      <key>XTilt</key>
+      <key>YTilt</key>
+      <key>TangentialPressure</key>
+      <key>ZPosition</key>
+      <key>All</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="qint64" modifier="" name="systemId" />
+          <parameter const="false" type="DeviceType" modifier="" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="seatName" default="QString()" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="type">
+      <variant return-type="DeviceType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="capabilities">
+      <variant return-type="Capabilities" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="hasCapability">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Capability" modifier="" name="cap" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="systemId">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="seatName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="availableVirtualGeometry">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="seatNames" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="devices" static="true">
+      <variant return-type="QList&lt;constQInputDevice*&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="primaryKeyboard" static="true">
+      <variant return-type="const QInputDevice*" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="seatName" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="availableVirtualGeometryChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QRect" modifier="" name="area" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

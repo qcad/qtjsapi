@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtranslator.h">
+  <class_decl name="QLocale" />
+  <class name="QTranslator">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="translate">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="context" />
+          <parameter const="true" type="char" modifier="*" name="sourceText" />
+          <parameter const="true" type="char" modifier="*" name="disambiguation" default="nullptr" />
+          <parameter const="false" type="int" modifier="" name="n" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="isEmpty">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="language">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="filePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="load">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filename" />
+          <parameter const="true" type="QString" modifier="&amp;" name="directory" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="search_delimiters" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="suffix" default="QString()" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filename" />
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="directory" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="suffix" default="QString()" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="uchar" modifier="*" name="data" />
+          <parameter const="false" type="int" modifier="" name="len" />
+          <parameter const="true" type="QString" modifier="&amp;" name="directory" default="QString()" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+  </class>
+</unit>

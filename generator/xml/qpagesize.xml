@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpagesize.h">
+  <class_decl name="QString" />
+  <class_decl name="QSize" />
+  <class_decl name="QSizeF" />
+  <class name="QPageSize">
+    <enum name="PageSizeId">
+      <key>Letter</key>
+      <key>Legal</key>
+      <key>Executive</key>
+      <key>A0</key>
+      <key>A1</key>
+      <key>A2</key>
+      <key>A3</key>
+      <key>A4</key>
+      <key>A5</key>
+      <key>A6</key>
+      <key>A7</key>
+      <key>A8</key>
+      <key>A9</key>
+      <key>A10</key>
+      <key>B0</key>
+      <key>B1</key>
+      <key>B2</key>
+      <key>B3</key>
+      <key>B4</key>
+      <key>B5</key>
+      <key>B6</key>
+      <key>B7</key>
+      <key>B8</key>
+      <key>B9</key>
+      <key>B10</key>
+      <key>C5E</key>
+      <key>Comm10E</key>
+      <key>DLE</key>
+      <key>Folio</key>
+      <key>Ledger</key>
+      <key>Tabloid</key>
+      <key>Custom</key>
+      <key>A3Extra</key>
+      <key>A4Extra</key>
+      <key>A4Plus</key>
+      <key>A4Small</key>
+      <key>A5Extra</key>
+      <key>B5Extra</key>
+      <key>JisB0</key>
+      <key>JisB1</key>
+      <key>JisB2</key>
+      <key>JisB3</key>
+      <key>JisB4</key>
+      <key>JisB5</key>
+      <key>JisB6</key>
+      <key>JisB7</key>
+      <key>JisB8</key>
+      <key>JisB9</key>
+      <key>JisB10</key>
+      <key>AnsiC</key>
+      <key>AnsiD</key>
+      <key>AnsiE</key>
+      <key>LegalExtra</key>
+      <key>LetterExtra</key>
+      <key>LetterPlus</key>
+      <key>LetterSmall</key>
+      <key>TabloidExtra</key>
+      <key>ArchA</key>
+      <key>ArchB</key>
+      <key>ArchC</key>
+      <key>ArchD</key>
+      <key>ArchE</key>
+      <key>Imperial7x9</key>
+      <key>Imperial8x10</key>
+      <key>Imperial9x11</key>
+      <key>Imperial9x12</key>
+      <key>Imperial10x11</key>
+      <key>Imperial10x13</key>
+      <key>Imperial10x14</key>
+      <key>Imperial12x11</key>
+      <key>Imperial15x11</key>
+      <key>ExecutiveStandard</key>
+      <key>Note</key>
+      <key>Quarto</key>
+      <key>Statement</key>
+      <key>SuperA</key>
+      <key>SuperB</key>
+      <key>Postcard</key>
+      <key>DoublePostcard</key>
+      <key>Prc16K</key>
+      <key>Prc32K</key>
+      <key>Prc32KBig</key>
+      <key>FanFoldUS</key>
+      <key>FanFoldGerman</key>
+      <key>FanFoldGermanLegal</key>
+      <key>EnvelopeB4</key>
+      <key>EnvelopeB5</key>
+      <key>EnvelopeB6</key>
+      <key>EnvelopeC0</key>
+      <key>EnvelopeC1</key>
+      <key>EnvelopeC2</key>
+      <key>EnvelopeC3</key>
+      <key>EnvelopeC4</key>
+      <key>EnvelopeC6</key>
+      <key>EnvelopeC65</key>
+      <key>EnvelopeC7</key>
+      <key>Envelope9</key>
+      <key>Envelope11</key>
+      <key>Envelope12</key>
+      <key>Envelope14</key>
+      <key>EnvelopeMonarch</key>
+      <key>EnvelopePersonal</key>
+      <key>EnvelopeChou3</key>
+      <key>EnvelopeChou4</key>
+      <key>EnvelopeInvite</key>
+      <key>EnvelopeItalian</key>
+      <key>EnvelopeKaku2</key>
+      <key>EnvelopeKaku3</key>
+      <key>EnvelopePrc1</key>
+      <key>EnvelopePrc2</key>
+      <key>EnvelopePrc3</key>
+      <key>EnvelopePrc4</key>
+      <key>EnvelopePrc5</key>
+      <key>EnvelopePrc6</key>
+      <key>EnvelopePrc7</key>
+      <key>EnvelopePrc8</key>
+      <key>EnvelopePrc9</key>
+      <key>EnvelopePrc10</key>
+      <key>EnvelopeYou4</key>
+      <key>LastPageSize</key>
+      <key>AnsiA</key>
+      <key>AnsiB</key>
+      <key>EnvelopeC5</key>
+      <key>EnvelopeDL</key>
+      <key>Envelope10</key>
+    </enum>
+    <enum name="Unit">
+      <key>Millimeter</key>
+      <key>Point</key>
+      <key>Inch</key>
+      <key>Pica</key>
+      <key>Didot</key>
+      <key>Cicero</key>
+    </enum>
+    <enum name="SizeMatchPolicy">
+      <key>FuzzyMatch</key>
+      <key>FuzzyOrientationMatch</key>
+      <key>ExactMatch</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="pointSize" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" default="QString()" />
+          <parameter const="false" type="QPageSize::SizeMatchPolicy" modifier="" name="matchPolicy" default="QPageSize::FuzzyMatch" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="size" />
+          <parameter const="false" type="QPageSize::Unit" modifier="" name="units" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" default="QString()" />
+          <parameter const="false" type="QPageSize::SizeMatchPolicy" modifier="" name="matchPolicy" default="QPageSize::FuzzyMatch" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPageSize" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QPageSize::PageSizeId" modifier="" name="pageSizeId" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEquivalentTo">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPageSize" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="key">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::PageSizeId" modifier="" name="pageSizeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::PageSizeId" modifier="" name="pageSizeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="id">
+      <variant return-type="QPageSize::PageSizeId" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QPageSize::PageSizeId" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="pointSize" />
+          <parameter const="false" type="QPageSize::SizeMatchPolicy" modifier="" name="matchPolicy" default="QPageSize::FuzzyMatch" />
+        </parameters>
+      </variant>
+      <variant return-type="QPageSize::PageSizeId" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="size" />
+          <parameter const="false" type="QPageSize::Unit" modifier="" name="units" />
+          <parameter const="false" type="QPageSize::SizeMatchPolicy" modifier="" name="matchPolicy" default="QPageSize::FuzzyMatch" />
+        </parameters>
+      </variant>
+      <variant return-type="QPageSize::PageSizeId" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="windowsId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="windowsId">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::PageSizeId" modifier="" name="pageSizeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="definitionSize">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QSizeF" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::PageSizeId" modifier="" name="pageSizeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="definitionUnits">
+      <variant return-type="QPageSize::Unit" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QPageSize::Unit" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::PageSizeId" modifier="" name="pageSizeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::Unit" modifier="" name="units" />
+        </parameters>
+      </variant>
+      <variant return-type="QSizeF" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::PageSizeId" modifier="" name="pageSizeId" />
+          <parameter const="false" type="QPageSize::Unit" modifier="" name="units" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizePoints">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QSize" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::PageSizeId" modifier="" name="pageSizeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizePixels">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="resolution" />
+        </parameters>
+      </variant>
+      <variant return-type="QSize" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::PageSizeId" modifier="" name="pageSizeId" />
+          <parameter const="false" type="int" modifier="" name="resolution" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageSize::Unit" modifier="" name="units" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rectPoints">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rectPixels">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="resolution" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QPlatformPrintDevice" />
+    <function name="equals" />
+  </class>
+</unit>

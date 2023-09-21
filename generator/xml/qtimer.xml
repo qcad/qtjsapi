@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtimer.h">
+  <class name="QTimer">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <property type="int" name="interval" read="interval" write="setInterval" />
+    <property type="int" name="remainingTime" read="remainingTime" />
+    <property type="Qt::TimerType" name="timerType" read="timerType" write="setTimerType" />
+    <property type="bool" name="active" read="isActive" />
+    <property type="bool" name="singleShot" read="isSingleShot" write="setSingleShot" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isActive">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="bindableActive">
+      <variant return-type="" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="timerId">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInterval">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="interval">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="bindableInterval">
+      <variant return-type="" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="remainingTime">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTimerType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TimerType" modifier="" name="atype" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="timerType">
+      <variant return-type="Qt::TimerType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="bindableTimerType">
+      <variant return-type="" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="setSingleShot">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="singleShot" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSingleShot">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="bindableSingleShot">
+      <variant return-type="" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="singleShot" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="PointerToMemberFunction" modifier="" name="method" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="PointerToMemberFunction" modifier="" name="method" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" />
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Functor" modifier="" name="functor" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Duration" modifier="" name="interval" />
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func1&gt;::Object" modifier="*"
+          name="receiver" />
+          <parameter const="false" type="Func1" modifier="" name="slot" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Duration" modifier="" name="interval" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" />
+          <parameter const="true" type="typenameQtPrivate::FunctionPointer&lt;Func1&gt;::Object" modifier="*"
+          name="receiver" />
+          <parameter const="false" type="Func1" modifier="" name="slot" />
+        </parameters>
+      </variant>
+      <variant return-type="typenamestd::enable_if&lt;!QtPrivate::FunctionPointer&lt;Func1&gt;::IsPointerToMemberFunction&amp;&amp;!std::is_same&lt;constchar*,Func1&gt;::value,void&gt;::type"
+      static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Duration" modifier="" name="interval" />
+          <parameter const="false" type="Func1" modifier="" name="slot" />
+        </parameters>
+      </variant>
+      <variant return-type="typenamestd::enable_if&lt;!QtPrivate::FunctionPointer&lt;Func1&gt;::IsPointerToMemberFunction&amp;&amp;!std::is_same&lt;constchar*,Func1&gt;::value,void&gt;::type"
+      static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Duration" modifier="" name="interval" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" />
+          <parameter const="false" type="Func1" modifier="" name="slot" />
+        </parameters>
+      </variant>
+      <variant return-type="typenamestd::enable_if&lt;!QtPrivate::FunctionPointer&lt;Func1&gt;::IsPointerToMemberFunction&amp;&amp;!std::is_same&lt;constchar*,Func1&gt;::value,void&gt;::type"
+      static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Duration" modifier="" name="interval" />
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Func1" modifier="" name="slot" />
+        </parameters>
+      </variant>
+      <variant return-type="typenamestd::enable_if&lt;!QtPrivate::FunctionPointer&lt;Func1&gt;::IsPointerToMemberFunction&amp;&amp;!std::is_same&lt;constchar*,Func1&gt;::value,void&gt;::type"
+      static="true" access="public">
+        <parameters>
+          <parameter const="false" type="Duration" modifier="" name="interval" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" />
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Func1" modifier="" name="slot" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#ifdef Q_CLANG_QDOC" />
+    <!--
+    <function name="callOnTimeout">
+      <variant return-type="" access="public">
+        <parameters>
+          <parameter const="false" type="Functor" modifier="" name="slot" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="connectionType"
+          default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="context" />
+          <parameter const="false" type="Functor" modifier="" name="slot" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="connectionType"
+          default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="false" type="MemberFunction" modifier="*" name="slot" />
+          <parameter const="false" type="Qt::ConnectionType" modifier="" name="connectionType"
+          default="Qt::AutoConnection" />
+        </parameters>
+      </variant>
+      <variant return-type="" access="public">
+        <parameters>
+          <parameter const="false" type="Args" modifier="&amp;&amp;..." name="args" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <function name="start">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="stop">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="timeout">
+      <variant return-type="void" access="public" signal="true">
+        <parameters/>
+      </variant>
+    </function>
+    <preproc plain="#if __has_include(&lt;chrono&gt;)||defined(Q_QDOC)" />
+    <!--
+    <function name="setInterval">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="std::chrono::milliseconds" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="intervalAsDuration">
+      <variant return-type="" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="remainingTimeAsDuration">
+      <variant return-type="" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="singleShot" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="std::chrono::milliseconds" modifier="" name="value" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="std::chrono::milliseconds" modifier="" name="value" />
+          <parameter const="false" type="Qt::TimerType" modifier="" name="timerType" />
+          <parameter const="true" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="start">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="std::chrono::milliseconds" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="timerEvent" />
+    <function name="startTimer" />
+    <function name="killTimer" />
+    <function name="defaultTypeFor" static="true" />
+    <function name="singleShotImpl" static="true" />
+    <preproc plain="#if __has_include(&lt;chrono&gt;)" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

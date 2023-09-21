@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtsqlglobal.h">
+  <namespace name="QSql">
+    <enum name="Location">
+      <key>BeforeFirstRow</key>
+      <key>AfterLastRow</key>
+    </enum>
+    <enum name="ParamTypeFlag">
+      <key>In</key>
+      <key>Out</key>
+      <key>InOut</key>
+      <key>Binary</key>
+    </enum>
+    <enum name="NumericalPrecisionPolicy">
+      <key>LowPrecisionInt32</key>
+      <key>LowPrecisionInt64</key>
+      <key>LowPrecisionDouble</key>
+      <key>HighPrecision</key>
+    </enum>
+  </namespace>
+</unit>

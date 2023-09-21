@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfont.h">
+  <class_decl name="QVariant" />
+  <class name="QFont">
+    <enum name="StyleHint">
+      <key>Helvetica</key>
+      <key>SansSerif</key>
+      <key>Times</key>
+      <key>Serif</key>
+      <key>Courier</key>
+      <key>TypeWriter</key>
+      <key>OldEnglish</key>
+      <key>Decorative</key>
+      <key>System</key>
+      <key>AnyStyle</key>
+      <key>Cursive</key>
+      <key>Monospace</key>
+      <key>Fantasy</key>
+    </enum>
+    <enum name="StyleStrategy">
+      <key>PreferDefault</key>
+      <key>PreferBitmap</key>
+      <key>PreferDevice</key>
+      <key>PreferOutline</key>
+      <key>ForceOutline</key>
+      <key>PreferMatch</key>
+      <key>PreferQuality</key>
+      <key>PreferAntialias</key>
+      <key>NoAntialias</key>
+      <key>NoSubpixelAntialias</key>
+      <key>PreferNoShaping</key>
+      <key>NoFontMerging</key>
+    </enum>
+    <enum name="HintingPreference">
+      <key>PreferDefaultHinting</key>
+      <key>PreferNoHinting</key>
+      <key>PreferVerticalHinting</key>
+      <key>PreferFullHinting</key>
+    </enum>
+    <enum name="Weight">
+      <key>Thin</key>
+      <key>ExtraLight</key>
+      <key>Light</key>
+      <key>Normal</key>
+      <key>Medium</key>
+      <key>DemiBold</key>
+      <key>Bold</key>
+      <key>ExtraBold</key>
+      <key>Black</key>
+    </enum>
+    <enum name="Style">
+      <key>StyleNormal</key>
+      <key>StyleItalic</key>
+      <key>StyleOblique</key>
+    </enum>
+    <enum name="Stretch">
+      <key>AnyStretch</key>
+      <key>UltraCondensed</key>
+      <key>ExtraCondensed</key>
+      <key>Condensed</key>
+      <key>SemiCondensed</key>
+      <key>Unstretched</key>
+      <key>SemiExpanded</key>
+      <key>Expanded</key>
+      <key>ExtraExpanded</key>
+      <key>UltraExpanded</key>
+    </enum>
+    <enum name="Capitalization">
+      <key>MixedCase</key>
+      <key>AllUppercase</key>
+      <key>AllLowercase</key>
+      <key>SmallCaps</key>
+      <key>Capitalize</key>
+    </enum>
+    <enum name="SpacingType">
+      <key>PercentageSpacing</key>
+      <key>AbsoluteSpacing</key>
+    </enum>
+    <enum name="ResolveProperties">
+      <key>NoPropertiesResolved</key>
+      <key>FamilyResolved</key>
+      <key>SizeResolved</key>
+      <key>StyleHintResolved</key>
+      <key>StyleStrategyResolved</key>
+      <key>WeightResolved</key>
+      <key>StyleResolved</key>
+      <key>UnderlineResolved</key>
+      <key>OverlineResolved</key>
+      <key>StrikeOutResolved</key>
+      <key>FixedPitchResolved</key>
+      <key>StretchResolved</key>
+      <key>KerningResolved</key>
+      <key>CapitalizationResolved</key>
+      <key>LetterSpacingResolved</key>
+      <key>WordSpacingResolved</key>
+      <key>HintingPreferenceResolved</key>
+      <key>StyleNameResolved</key>
+      <key>FamiliesResolved</key>
+      <key>AllPropertiesResolved</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="family" />
+          <parameter const="false" type="int" modifier="" name="pointSize" default="-1" />
+          <parameter const="false" type="int" modifier="" name="weight" default="-1" />
+          <parameter const="false" type="bool" modifier="" name="italic" default="false" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="families" />
+          <parameter const="false" type="int" modifier="" name="pointSize" default="-1" />
+          <parameter const="false" type="int" modifier="" name="weight" default="-1" />
+          <parameter const="false" type="bool" modifier="" name="italic" default="false" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+          <parameter const="true" type="QPaintDevice" modifier="*" name="pd" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="family">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFamily">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="families">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFamilies">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="styleName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStyleName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pointSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPointSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pointSizeF">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPointSizeF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pixelSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPixelSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="weight">
+      <variant return-type="QFont::Weight" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::Weight" modifier="" name="weight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bold">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBold">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::Style" modifier="" name="style" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="style">
+      <variant return-type="QFont::Style" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="italic">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setItalic">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="underline">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUnderline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="overline">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOverline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="strikeOut">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStrikeOut">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixedPitch">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFixedPitch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="kerning">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setKerning">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="styleHint">
+      <variant return-type="QFont::StyleHint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="styleStrategy">
+      <variant return-type="QFont::StyleStrategy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStyleHint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::StyleHint" modifier="" name="" />
+          <parameter const="false" type="QFont::StyleStrategy" modifier="" name="" default="QFont::PreferDefault" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStyleStrategy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::StyleStrategy" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stretch">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStretch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="letterSpacing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="letterSpacingType">
+      <variant return-type="QFont::SpacingType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLetterSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::SpacingType" modifier="" name="type" />
+          <parameter const="false" type="qreal" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="wordSpacing">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWordSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="spacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCapitalization">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::Capitalization" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="capitalization">
+      <variant return-type="QFont::Capitalization" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHintingPreference">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFont::HintingPreference" modifier="" name="hintingPreference" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hintingPreference">
+      <variant return-type="QFont::HintingPreference" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exactMatch">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="operator">
+      <variant return-type="QFont&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="isCopyOf">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="key">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fromString">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="substitute" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="substitutes" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="substitutions" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="insertSubstitution" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertSubstitutions" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeSubstitutions" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initialize" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cleanup" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cacheStatistics" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="defaultFamily">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resolve">
+      <variant return-type="QFont" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resolveMask">
+      <variant return-type="uint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setResolveMask">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="mask" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <function name="setLegacyWeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="legacyWeight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="legacyWeight">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="detach" />
+    <class_decl name="QFontMetrics" />
+    <class_decl name="QFontMetricsF" />
+    <class_decl name="QFontInfo" />
+    <class_decl name="QPainter" />
+    <class_decl name="QApplication" />
+    <class_decl name="QWidget" />
+    <class_decl name="QTextLayout" />
+    <class_decl name="QTextEngine" />
+    <class_decl name="QStackTextEngine" />
+    <class_decl name="QTextLine" />
+    <class_decl name="QOpenGLContext" />
+    <class_decl name="QWin32PaintEngine" />
+    <class_decl name="QAlphaPaintEngine" />
+    <class_decl name="QPainterPath" />
+    <class_decl name="QTextItemInt" />
+    <class_decl name="QPicturePaintEngine" />
+    <class_decl name="QPainterReplayer" />
+    <class_decl name="QPaintBufferEngine" />
+    <class_decl name="QFontEngine" />
+  </class>
+</unit>

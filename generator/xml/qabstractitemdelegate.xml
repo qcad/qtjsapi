@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qabstractitemdelegate.h">
+  <class_decl name="QPainter" />
+  <class_decl name="QModelIndex" />
+  <class_decl name="QAbstractItemModel" />
+  <class_decl name="QAbstractItemView" />
+  <class_decl name="QHelpEvent" />
+  <class name="QAbstractItemDelegate" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <enum name="EndEditHint">
+      <key>NoHint</key>
+      <key>EditNextItem</key>
+      <key>EditPreviousItem</key>
+      <key>SubmitModelCache</key>
+      <key>RevertModelCache</key>
+    </enum>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <!--
+    <function name="paint">
+      <variant return-type="void" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="sizeHint">
+      <variant return-type="QSize" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="createEditor">
+      <variant return-type="QWidget*" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="destroyEditor">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="editor" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEditorData">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="editor" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setModelData">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="editor" />
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="updateEditorGeometry">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="editor" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="editorEvent">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+          <parameter const="false" type="QAbstractItemModel" modifier="*" name="model" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="helpEvent">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QHelpEvent" modifier="*" name="event" />
+          <parameter const="false" type="QAbstractItemView" modifier="*" name="view" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="paintingRoles">
+      <variant return-type="QList&lt;int&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="commitData">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="editor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="closeEditor">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="editor" />
+          <parameter const="false" type="QAbstractItemDelegate::EndEditHint" modifier="" name="hint" default="QAbstractItemDelegate::NoHint" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHintChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

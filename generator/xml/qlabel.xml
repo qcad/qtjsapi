@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qlabel.h">
+  <class name="QLabel" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="f" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="f" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="QString" name="text" read="text" write="setText" />
+    <property type="Qt::TextFormat" name="textFormat" read="textFormat" write="setTextFormat" />
+    <property type="QPixmap" name="pixmap" read="pixmap" write="setPixmap" />
+    <property type="bool" name="scaledContents" read="hasScaledContents" write="setScaledContents" />
+    <property type="Qt::Alignment" name="alignment" read="alignment" write="setAlignment" />
+    <property type="bool" name="wordWrap" read="wordWrap" write="setWordWrap" />
+    <property type="int" name="margin" read="margin" write="setMargin" />
+    <property type="int" name="indent" read="indent" write="setIndent" />
+    <property type="bool" name="openExternalLinks" read="openExternalLinks" write="setOpenExternalLinks" />
+    <property type="Qt::TextInteractionFlags" name="textInteractionFlags" read="textInteractionFlags" write="setTextInteractionFlags" />
+    <property type="bool" name="hasSelectedText" read="hasSelectedText" />
+    <property type="QString" name="selectedText" read="selectedText" />
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,6)" />
+    <function name="pixmap">
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ReturnByValueConstant" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_PICTURE" />
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,6)" />
+    <function name="picture">
+      <variant return-type="QPicture" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ReturnByValueConstant" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QPicture" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(movie)" />
+    <!--
+    <function name="movie">
+      <variant return-type="QMovie*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="textFormat">
+      <variant return-type="Qt::TextFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TextFormat" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="resourceProvider">
+      <variant return-type="QTextDocument::ResourceProvider" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setResourceProvider">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTextDocument::ResourceProvider" modifier="&amp;" name="provider" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="alignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setWordWrap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="wordWrap">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indent">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIndent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="margin">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasScaledContents">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScaledContents">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_SHORTCUT" />
+    <function name="setBuddy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="buddy">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="openExternalLinks">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOpenExternalLinks">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="open" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTextInteractionFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TextInteractionFlags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textInteractionFlags">
+      <variant return-type="Qt::TextInteractionFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSelection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasSelectedText">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectedText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectionStart">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPixmap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_PICTURE" />
+    <function name="setPicture">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPicture" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(movie)" />
+    <!--
+    <function name="setMovie">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMovie" modifier="*" name="movie" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="setNum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="linkActivated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="link" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="linkHovered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="link" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="keyPressEvent" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="changeEvent" />
+    <function name="mousePressEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="ev" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent" />
+    <preproc plain="#ifndef QT_NO_CONTEXTMENU" />
+    <function name="contextMenuEvent" />
+    <preproc plain="#endif" />
+    <function name="focusInEvent" />
+    <function name="focusOutEvent" />
+    <function name="focusNextPrevChild" />
+    <preproc plain="#if QT_CONFIG(movie)" />
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_SHORTCUT" />
+    <preproc plain="#endif" />
+    <class_decl name="QTipLabel" />
+    <class_decl name="  QBalloonTip" />
+  </class>
+</unit>

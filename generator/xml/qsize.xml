@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsize.h">
+  <class name="QSize">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="sz" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transpose">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transposed">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="s" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaled">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="s" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expandedTo">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundedTo">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="grownBy">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMargins" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="shrunkBy">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMargins" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rwidth">
+      <variant return-type="int&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rheight">
+      <variant return-type="int&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QSizeF">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="sz" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="sz" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transpose">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transposed">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="s" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaled">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="s" />
+          <parameter const="false" type="Qt::AspectRatioMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="expandedTo">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundedTo">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="grownBy">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMarginsF" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="shrunkBy">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMarginsF" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rwidth">
+      <variant return-type="qreal&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rheight">
+      <variant return-type="qreal&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

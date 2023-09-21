@@ -1,0 +1,58 @@
+<ignore_class>
+  <class name="QObjectData" />
+  <class name="QObjectUserData" />
+  <class name="QCoreApplicationPrivate" />
+  <class name="QFileInfoPrivate" />
+  <class name="QDirIteratorPrivate" />
+  <class name="Attribute" />
+  <class name="QActionEvent" />
+  <class name="QChildEvent" />
+  <class name="QCloseEvent" />
+  <class name="QDynamicPropertyChangeEvent" />
+  <class name="QEnterEvent" />
+  <class name="QExposeEvent" />
+  <class name="QFileOpenEvent" />
+  <class name="QFocusEvent" />
+  <class name="QGestureEvent" />
+  <class name="QGraphicsSceneEvent" />
+  <class name="QHideEvent" />
+  <class name="QHoverEvent" />
+  <class name="QIconDragEvent" />
+  <!--
+  <class name="QInputEvent" />
+  -->
+  <class name="QInputMethodEvent" />
+  <class name="QInputMethodQueryEvent" />
+  <class name="QWindowsStyle" />
+  <class name="QPlatformMenuBar" />
+  <class name="QTextFormatCollection" />
+  <!--
+  <class name="QKeyEvent" />
+  <class name="QMouseEvent" />
+  -->
+  <class name="QMoveEvent" />
+  <class name="QNativeGestureEvent" />
+  <class name="QPlatformSurfaceEvent" />
+  <!--
+  <class name="QResizeEvent" />
+  -->
+  <class name="QScrollEvent" />
+  <class name="QScrollPrepareEvent" />
+  <class name="QShortcutEvent" />
+  <class name="QShowEvent" />
+  <class name="QStateMachine::SignalEvent" />
+  <class name="QStateMachine::WrappedEvent" />
+  <class name="QStatusTipEvent" />
+  <class name="QTabletEvent" />
+  <class name="QTimerEvent" />
+  <class name="QTouchEvent" />
+  <class name="QWhatsThisClickedEvent" />
+  <class name="QWindowStateChangeEvent" />
+  <class name="TouchPoint" />
+
+  <class name="QDragEnterEvent" />
+  <class name="QToolBarChangeEvent" />
+  <class name="QPointingDeviceUniqueId" />
+  <class name="QScreenOrientationChangeEvent" />
+  <class name="QApplicationStateChangeEvent" />
+</ignore_class>

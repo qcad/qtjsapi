@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qvariant.h">
+  <!--
+  <class_decl name="QDataStream" />
+  -->
+  <class_decl name="QDate" />
+  <class_decl name="QDateTime" />
+  <!--
+  <class_decl name="QEasingCurve" />
+  <class_decl name="QLine" />
+  <class_decl name="QLineF" />
+  -->
+  <class_decl name="QLocale" />
+  <class_decl name="QTransform" />
+  <class_decl name="QTime" />
+  <class_decl name="QPoint" />
+  <class_decl name="QPointF" />
+  <class_decl name="QSize" />
+  <class_decl name="QSizeF" />
+  <class_decl name="QRect" />
+  <class_decl name="QRectF" />
+  <!--
+  <class_decl name="QRegularExpression" />
+  <class_decl name="QTextFormat" />
+  <class_decl name="QTextLength" />
+  -->
+  <class_decl name="QUrl" />
+  <class_decl name="QVariant" />
+  <class name="QVariant">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QMetaType" modifier="" name="type" />
+          <parameter const="true" type="void" modifier="*" name="copy" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="ui" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="qlonglong" modifier="" name="ll" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qulonglong" modifier="" name="ull" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="d" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="f" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="bytearray" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QBitArray" modifier="&amp;" name="bitarray" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QLatin1String" modifier="" name="string" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="stringlist" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QChar" modifier="" name="qchar" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QDate" modifier="" name="date" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTime" modifier="" name="time" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="datetime" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QList&lt;QVariant&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QMap&lt;QString,QVariant&gt;" modifier="&amp;" name="map" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QHash&lt;QString,QVariant&gt;" modifier="&amp;" name="hash" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pt" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pt" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QLine" modifier="&amp;" name="line" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QLineF" modifier="&amp;" name="line" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="re" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QEasingCurve" modifier="&amp;" name="easing" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QUuid" modifier="&amp;" name="uuid" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QJsonValue" modifier="&amp;" name="jsonValue" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QJsonObject" modifier="&amp;" name="jsonObject" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QJsonArray" modifier="&amp;" name="jsonArray" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QJsonDocument" modifier="&amp;" name="jsonDocument" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="modelIndex" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPersistentModelIndex" modifier="&amp;" name="modelIndex" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QVariant" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QVariant" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="userType">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="typeId">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="metaType">
+      <variant return-type="QMetaType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="canConvert">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMetaType" modifier="" name="targetType" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="targetTypeId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="convert">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QMetaType" modifier="" name="type" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="targetTypeId" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="canView">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMetaType" modifier="" name="targetType" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="detach">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDetached">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toInt">
+      <variant return-type="int" const="true" access="public">
+      </variant>
+    </function>
+    <function name="toUInt">
+      <variant return-type="uint" const="true" access="public">
+      </variant>
+    </function>
+    <!--
+    <function name="toLongLong">
+      <variant return-type="qlonglong" const="true" access="public">
+      </variant>
+    </function>
+    <function name="toULongLong">
+      <variant return-type="qulonglong" const="true" access="public">
+      </variant>
+    </function>
+    -->
+    <function name="toBool">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toDouble">
+      <variant return-type="double" const="true" access="public">
+      </variant>
+    </function>
+    <function name="toFloat">
+      <variant return-type="float" const="true" access="public">
+      </variant>
+    </function>
+    <function name="toReal">
+      <variant return-type="qreal" const="true" access="public">
+      </variant>
+    </function>
+    <function name="toByteArray">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="toBitArray">
+      <variant return-type="QBitArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toStringList">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toChar">
+      <variant return-type="QChar" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toDate">
+      <variant return-type="QDate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toTime">
+      <variant return-type="QTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toDateTime">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toList">
+      <variant return-type="QList&lt;QVariant&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="toMap">
+      <variant return-type="QMap&lt;QString,QVariant&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toHash">
+      <variant return-type="QHash&lt;QString,QVariant&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#ifndef QT_NO_GEOM_VARIANT" />
+    <function name="toPoint">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toPointF">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toSizeF">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="toLine">
+      <variant return-type="QLine" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toLineF">
+      <variant return-type="QLineF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="toRectF">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="toLocale">
+      <variant return-type="QLocale" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(regularexpression)" />
+    <!--
+    <function name="toRegularExpression">
+      <variant return-type="QRegularExpression" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(easingcurve)" />
+    <!--
+    <function name="toEasingCurve">
+      <variant return-type="QEasingCurve" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <!--
+    <function name="toUuid">
+      <variant return-type="QUuid" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#ifndef QT_BOOTSTRAPPED" />
+    <function name="toUrl">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="toJsonValue">
+      <variant return-type="QJsonValue" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toJsonObject">
+      <variant return-type="QJsonObject" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toJsonArray">
+      <variant return-type="QJsonArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toJsonDocument">
+      <variant return-type="QJsonDocument" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(itemmodel)" />
+    <!--
+    <function name="toModelIndex">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toPersistentModelIndex">
+      <variant return-type="QPersistentModelIndex" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_DATASTREAM" />
+    <!--
+    <function name="load">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDataStream" modifier="&amp;" name="ds" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="save">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDataStream" modifier="&amp;" name="ds" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="setValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="avalue" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QVariant" modifier="&amp;&amp;" name="avalue" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="create" static="true">
+      <variant return-type="PrivateShared*" access="public">
+        <parameters>
+          <parameter const="true" type="QtPrivate::QMetaTypeInterface" modifier="*" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="free" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="PrivateShared" modifier="*" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="const void*" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="canUseInternalSpace" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QtPrivate::QMetaTypeInterface" modifier="*" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="compare" static="true">
+      <variant return-type="QPartialOrdering" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="lhs" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

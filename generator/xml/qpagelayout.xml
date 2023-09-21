@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpagelayout.h">
+  <class_decl name="QMarginsF" />
+  <class name="QPageLayout">
+    <enum name="Unit">
+      <key>Millimeter</key>
+      <key>Point</key>
+      <key>Inch</key>
+      <key>Pica</key>
+      <key>Didot</key>
+      <key>Cicero</key>
+    </enum>
+    <enum name="Orientation">
+      <key>Portrait</key>
+      <key>Landscape</key>
+    </enum>
+    <enum name="Mode">
+      <key>StandardMode</key>
+      <key>FullPageMode</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPageSize" modifier="&amp;" name="pageSize" />
+          <parameter const="false" type="QPageLayout::Orientation" modifier="" name="orientation" />
+          <parameter const="true" type="QMarginsF" modifier="&amp;" name="margins" />
+          <parameter const="false" type="QPageLayout::Unit" modifier="" name="units" default="QPageLayout::Point" />
+          <parameter const="true" type="QMarginsF" modifier="&amp;" name="minMargins" default="QMarginsF(0,0,0,0)" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPageLayout" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPageLayout" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEquivalentTo">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPageLayout" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPageLayout::Mode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mode">
+      <variant return-type="QPageLayout::Mode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPageSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPageSize" modifier="&amp;" name="pageSize" />
+          <parameter const="true" type="QMarginsF" modifier="&amp;" name="minMargins" default="QMarginsF(0,0,0,0)" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pageSize">
+      <variant return-type="QPageSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOrientation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPageLayout::Orientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="orientation">
+      <variant return-type="QPageLayout::Orientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUnits">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPageLayout::Unit" modifier="" name="units" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="units">
+      <variant return-type="QPageLayout::Unit" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMargins">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QMarginsF" modifier="&amp;" name="margins" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLeftMargin">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="leftMargin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRightMargin">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="rightMargin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTopMargin">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="topMargin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottomMargin">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="bottomMargin" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="margins">
+      <variant return-type="QMarginsF" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QMarginsF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageLayout::Unit" modifier="" name="units" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="marginsPoints">
+      <variant return-type="QMargins" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="marginsPixels">
+      <variant return-type="QMargins" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="resolution" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMinimumMargins">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QMarginsF" modifier="&amp;" name="minMargins" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumMargins">
+      <variant return-type="QMarginsF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumMargins">
+      <variant return-type="QMarginsF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fullRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageLayout::Unit" modifier="" name="units" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fullRectPoints">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fullRectPixels">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="resolution" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintRect">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageLayout::Unit" modifier="" name="units" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintRectPoints">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintRectPixels">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="resolution" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equals" />
+  </class>
+</unit>

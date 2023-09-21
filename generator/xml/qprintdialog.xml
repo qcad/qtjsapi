@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qprintdialog.h">
+  <class_decl name="QPushButton" />
+  <class_decl name="QPrinter" />
+  <class name="QPrintDialog" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QDialog" />
+      <super name="QAbstractPrintDialog" />
+    </super_list>
+    <property type="QAbstractPrintDialog::PrintDialogOptions" name="options" read="options" write="setOptions" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QPrinter" modifier="*" name="printer" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="exec">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_UNIX)&amp;&amp;!defined(Q_OS_MAC)" />
+    <function name="accept">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="done">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="result" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractPrintDialog::PrintDialogOption" modifier="" name="option" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractPrintDialog::PrintDialogOption" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractPrintDialog::PrintDialogOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="options">
+      <variant return-type="QAbstractPrintDialog::PrintDialogOptions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_UNIX)||defined(Q_OS_WIN)" />
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="open">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifdef Q_QDOC" />
+    <function name="printer">
+      <variant return-type="QPrinter*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="accepted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QPrinter" modifier="*" name="printer" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_UNIX)&amp;&amp;!defined(Q_OS_MAC)" />
+    <preproc plain="#if QT_CONFIG(messagebox)" />
+    <preproc plain="#endif" />
+    <class_decl name="QUnixPrintWidget" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

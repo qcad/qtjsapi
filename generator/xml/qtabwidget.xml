@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtabwidget.h">
+  <class_decl name="QTabBar" />
+  <class_decl name="QStyleOptionTabWidgetFrame" />
+  <class name="QTabWidget">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <property type="QTabWidget::TabShape" name="tabShape" read="tabShape" write="setTabShape" />
+    <property type="int" name="currentIndex" read="currentIndex" write="setCurrentIndex" />
+    <property type="int" name="count" read="count" />
+    <property type="QSize" name="iconSize" read="iconSize" write="setIconSize" />
+    <property type="Qt::TextElideMode" name="elideMode" read="elideMode" write="setElideMode" />
+    <property type="bool" name="usesScrollButtons" read="usesScrollButtons" write="setUsesScrollButtons" />
+    <property type="bool" name="documentMode" read="documentMode" write="setDocumentMode" />
+    <property type="bool" name="tabsClosable" read="tabsClosable" write="setTabsClosable" />
+    <property type="bool" name="movable" read="isMovable" write="setMovable" />
+    <property type="bool" name="tabBarAutoHide" read="tabBarAutoHide" write="setTabBarAutoHide" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="addTab">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertTab">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeTab">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTabEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTabEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTabVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTabVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTabText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabIcon">
+      <variant return-type="QIcon" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTabIcon">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(tooltip)" />
+    <function name="setTabToolTip">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QString" modifier="&amp;" name="tip" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabToolTip">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(whatsthis)" />
+    <function name="setTabWhatsThis">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabWhatsThis">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="currentIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="widget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexOf">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="TabPosition">
+      <key>North</key>
+      <key>South</key>
+      <key>West</key>
+      <key>East</key>
+    </enum>
+    <function name="tabPosition">
+      <variant return-type="QTabWidget::TabPosition" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTabWidget::TabPosition" modifier="" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabsClosable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabsClosable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="closeable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isMovable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMovable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="movable" />
+        </parameters>
+      </variant>
+    </function>
+    <enum name="TabShape">
+      <key>Rounded</key>
+      <key>Triangular</key>
+    </enum>
+    <function name="tabShape">
+      <variant return-type="QTabWidget::TabShape" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabShape">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTabWidget::TabShape" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasHeightForWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCornerWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+          <parameter const="false" type="Qt::Corner" modifier="" name="corner" default="Qt::TopRightCorner" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cornerWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Corner" modifier="" name="corner" default="Qt::TopRightCorner" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="elideMode">
+      <variant return-type="Qt::TextElideMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setElideMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TextElideMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="iconSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIconSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="usesScrollButtons">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUsesScrollButtons">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="useButtons" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="documentMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDocumentMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="set" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabBarAutoHide">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabBarAutoHide">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="tabBar">
+      <variant return-type="QTabBar*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabCloseRequested">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabBarClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabBarDoubleClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabInserted" />
+    <function name="tabRemoved" />
+    <function name="showEvent" />
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyPressEvent" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTabBar" />
+    <function name="changeEvent" />
+    <function name="event" />
+    <function name="initStyleOption" />
+    <function name="setUpLayout" />
+  </class>
+</unit>

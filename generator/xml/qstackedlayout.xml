@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qstackedlayout.h">
+  <class name="QStackedLayout" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QLayoutItem" />
+      <super name="QLayout" />
+    </super_list>
+    <enum name="StackingMode">
+      <key>StackOne</key>
+      <key>StackAll</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QLayout" modifier="*" name="parentLayout" />
+        </parameters>
+      </variant>
+    </constructor>
+
+    <!--
+    Qt 5 compatibility:
+    <property type="const int" name="count" read="count" />
+    -->
+    <property type="int" name="currentIndex" read="currentIndex" write="setCurrentIndex" />
+    <property type="QStackedLayout::StackingMode" name="stackingMode" read="stackingMode" write="setStackingMode" />
+
+    <function name="addWidget">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertWidget">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="widget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="stackingMode">
+      <variant return-type="QStackedLayout::StackingMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStackingMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QStackedLayout::StackingMode" modifier="" name="stackingMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayoutItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="itemAt">
+      <variant return-type="QLayoutItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeAt">
+      <variant return-type="QLayoutItem*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasHeightForWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="widgetRemoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

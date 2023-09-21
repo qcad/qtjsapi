@@ -1,0 +1,1021 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qabstractitemmodel.h">
+  <class_decl name="QAbstractItemModel" />
+  <!--
+  <class_decl name="QModelRoleDataSpan" />
+  <class_decl name="QPersistentModelIndex" />
+  -->
+  <class_decl name="QMimeData" />
+  <class_decl name="QMap" />
+  <!--
+  <class name="QModelRoleData">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="role" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="role">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QVariant&amp;" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="const QVariant&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="T" modifier="&amp;&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearData">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  -->
+  <!--
+  <class name="QModelRoleDataSpan">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QModelRoleData" modifier="&amp;" name="modelRoleData" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QModelRoleData" modifier="*" name="modelRoleData" />
+          <parameter const="false" type="qsizetype" modifier="" name="len" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Container" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="size">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QModelRoleData*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="begin">
+      <variant return-type="QModelRoleData*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="end">
+      <variant return-type="QModelRoleData*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dataForRole">
+      <variant return-type="QVariant*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="role" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="QModelIndex">
+    <class_decl name="QAbstractItemModel" />
+    <function name="row">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="column">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="internalId">
+      <variant return-type="quintptr" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="internalPointer">
+      <variant return-type="void*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="constInternalPointer">
+      <variant return-type="const void*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="parent">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sibling">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="siblingAtColumn">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="siblingAtRow">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::DisplayRole" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="multiData">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QModelRoleDataSpan" modifier="" name="roleDataSpan" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="flags">
+      <variant return-type="Qt::ItemFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="model">
+      <variant return-type="const QAbstractItemModel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <!--
+  <class name="QPersistentModelIndex">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPersistentModelIndex" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QPersistentModelIndex" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPersistentModelIndex" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="row">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="column">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="internalPointer">
+      <variant return-type="void*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="constInternalPointer">
+      <variant return-type="const void*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="internalId">
+      <variant return-type="quintptr" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="parent">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sibling">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::DisplayRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="multiData">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QModelRoleDataSpan" modifier="" name="roleDataSpan" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="flags">
+      <variant return-type="Qt::ItemFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="model">
+      <variant return-type="const QAbstractItemModel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="qHashEquals" />
+    <preproc plain="#ifndef QT_NO_DEBUG_STREAM" />
+    <preproc plain="#endif" />
+  </class>
+  -->
+  <class name="QAbstractItemModel" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <class_decl name="QAbstractProxyModel" />
+    <function name="hasIndex">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="index">
+      <variant return-type="QModelIndex" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="parent">
+      <variant return-type="QModelIndex" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="child" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="sibling">
+      <variant return-type="QModelIndex" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="idx" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowCount">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnCount">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasChildren">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QVariant" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::DisplayRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setData">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::EditRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="headerData">
+      <variant return-type="QVariant" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="section" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::DisplayRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeaderData">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="section" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::EditRole" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="itemData">
+      <variant return-type="QMap&lt;int,QVariant&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setItemData">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="true" type="QMap&lt;int,QVariant&gt;" modifier="&amp;" name="roles" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="clearItemData">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mimeTypes">
+      <variant return-type="QStringList" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="mimeData">
+      <variant return-type="QMimeData*" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndexList" modifier="&amp;" name="indexes" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="canDropMimeData">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QMimeData" modifier="*" name="data" />
+          <parameter const="false" type="Qt::DropAction" modifier="" name="action" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="dropMimeData">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QMimeData" modifier="*" name="data" />
+          <parameter const="false" type="Qt::DropAction" modifier="" name="action" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="supportedDropActions">
+      <variant return-type="Qt::DropActions" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="supportedDragActions">
+      <variant return-type="Qt::DropActions" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="insertRows">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="count" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertColumns">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="count" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeRows">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="count" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeColumns">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="int" modifier="" name="count" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveRows">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="sourceParent" />
+          <parameter const="false" type="int" modifier="" name="sourceRow" />
+          <parameter const="false" type="int" modifier="" name="count" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="destinationParent" />
+          <parameter const="false" type="int" modifier="" name="destinationChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveColumns">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="sourceParent" />
+          <parameter const="false" type="int" modifier="" name="sourceColumn" />
+          <parameter const="false" type="int" modifier="" name="count" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="destinationParent" />
+          <parameter const="false" type="int" modifier="" name="destinationChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertRow">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertColumn">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeRow">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeColumn">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveRow">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="sourceParent" />
+          <parameter const="false" type="int" modifier="" name="sourceRow" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="destinationParent" />
+          <parameter const="false" type="int" modifier="" name="destinationChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveColumn">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="sourceParent" />
+          <parameter const="false" type="int" modifier="" name="sourceColumn" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="destinationParent" />
+          <parameter const="false" type="int" modifier="" name="destinationChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fetchMore">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="canFetchMore">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="flags">
+      <variant return-type="Qt::ItemFlags" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sort">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="Qt::SortOrder" modifier="" name="order" default="Qt::AscendingOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="buddy">
+      <variant return-type="QModelIndex" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="match">
+      <variant return-type="QModelIndexList" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="start" />
+          <parameter const="false" type="int" modifier="" name="role" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="int" modifier="" name="hits" default="1" />
+          <parameter const="false" type="Qt::MatchFlags" modifier="" name="flags"
+          default="Qt::MatchFlags(Qt::MatchStartsWith|Qt::MatchWrap)" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="span">
+      <variant return-type="QSize" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="roleNames">
+      <variant return-type="QHash&lt;int,QByteArray&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <enum name="LayoutChangeHint">
+      <key>NoLayoutChangeHint</key>
+      <key>VerticalSortHint</key>
+      <key>HorizontalSortHint</key>
+    </enum>
+    <!--
+    <enum name="CheckIndexOption">
+      <key>NoOption</key>
+      <key>IndexIsValid</key>
+      <key>DoNotUseParent</key>
+      <key>ParentIsInvalid</key>
+    </enum>
+    -->
+    <!--
+    <function name="checkIndex">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="CheckIndexOptions" modifier="" name="options"
+          default="CheckIndexOption::NoOption" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="multiData">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="QModelRoleDataSpan" modifier="" name="roleDataSpan" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="dataChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="topLeft" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="bottomRight" />
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="roles" default="QList&lt;int&gt;()" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="headerDataChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="last" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="layoutChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QList&lt;QPersistentModelIndex&gt;" modifier="&amp;" name="parents"
+          default="QList&lt;QPersistentModelIndex&gt;()" />
+          <parameter const="false" type="QAbstractItemModel::LayoutChangeHint" modifier="" name="hint"
+          default="QAbstractItemModel::NoLayoutChangeHint" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="layoutAboutToBeChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QList&lt;QPersistentModelIndex&gt;" modifier="&amp;" name="parents"
+          default="QList&lt;QPersistentModelIndex&gt;()" />
+          <parameter const="false" type="QAbstractItemModel::LayoutChangeHint" modifier="" name="hint"
+          default="QAbstractItemModel::NoLayoutChangeHint" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rowsAboutToBeInserted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="last" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="rowsInserted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="last" />
+          <!--
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="rowsAboutToBeRemoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="last" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rowsRemoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="last" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="columnsAboutToBeInserted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="last" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="columnsInserted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="last" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="columnsAboutToBeRemoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="last" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnsRemoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="first" />
+          <parameter const="false" type="int" modifier="" name="last" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="modelAboutToBeReset">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="modelReset">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowsAboutToBeMoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="sourceParent" />
+          <parameter const="false" type="int" modifier="" name="sourceStart" />
+          <parameter const="false" type="int" modifier="" name="sourceEnd" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="destinationParent" />
+          <parameter const="false" type="int" modifier="" name="destinationRow" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowsMoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="start" />
+          <parameter const="false" type="int" modifier="" name="end" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="destination" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnsAboutToBeMoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="sourceParent" />
+          <parameter const="false" type="int" modifier="" name="sourceStart" />
+          <parameter const="false" type="int" modifier="" name="sourceEnd" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="destinationParent" />
+          <parameter const="false" type="int" modifier="" name="destinationColumn" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnsMoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="start" />
+          <parameter const="false" type="int" modifier="" name="end" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="destination" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="submit">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="revert">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resetInternalData" />
+    <function name="createIndex" />
+    <function name="encodeData" />
+    <function name="decodeData" />
+    <function name="beginInsertRows" />
+    <function name="endInsertRows" />
+    <function name="beginRemoveRows" />
+    <function name="endRemoveRows" />
+    <function name="beginMoveRows" />
+    <function name="endMoveRows" />
+    <function name="beginInsertColumns" />
+    <function name="endInsertColumns" />
+    <function name="beginRemoveColumns" />
+    <function name="endRemoveColumns" />
+    <function name="beginMoveColumns" />
+    <function name="endMoveColumns" />
+    <function name="beginResetModel" />
+    <function name="endResetModel" />
+    <function name="changePersistentIndex" />
+    <function name="changePersistentIndexList" />
+    <function name="persistentIndexList" />
+  </class>
+  <class name="QAbstractTableModel" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QAbstractItemModel" />
+    </super_list>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <function name="index">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sibling">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="idx" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="dropMimeData">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QMimeData" modifier="*" name="data" />
+          <parameter const="false" type="Qt::DropAction" modifier="" name="action" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="flags">
+      <variant return-type="Qt::ItemFlags" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasChildren" access="private"/>
+  </class>
+  <class name="QAbstractListModel">
+    <super_list>
+      <super name="QObject" />
+      <super name="QAbstractItemModel" />
+    </super_list>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <function name="index">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sibling">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="idx" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="dropMimeData">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QMimeData" modifier="*" name="data" />
+          <parameter const="false" type="Qt::DropAction" modifier="" name="action" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="flags">
+      <variant return-type="Qt::ItemFlags" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="columnCount" access="private"/>
+    <function name="hasChildren" access="private"/>
+  </class>
+</unit>

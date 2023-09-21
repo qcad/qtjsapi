@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qmainwindow.h">
+  <class_decl name="QDockWidget" />
+  <class_decl name="QMenuBar" />
+  <class_decl name="QStatusBar" />
+  <class_decl name="QToolBar" />
+  <class_decl name="QMenu" />
+  <class name="QMainWindow">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <property type="Qt::ToolButtonStyle" name="toolButtonStyle" read="toolButtonStyle" write="setToolButtonStyle" />
+    <preproc plain="#if QT_CONFIG(dockwidget)" />
+    <property type="bool" name="animated" read="isAnimated" write="setAnimated" />
+    <preproc plain="#if QT_CONFIG(tabbar)" />
+    <property type="bool" name="documentMode" read="documentMode" write="setDocumentMode" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(tabwidget)" />
+    <property type="QTabWidget::TabShape" name="tabShape" read="tabShape" write="setTabShape" />
+    <preproc plain="#endif" />
+    <property type="bool" name="dockNestingEnabled" read="isDockNestingEnabled" write="setDockNestingEnabled" />
+    <preproc plain="#endif" />
+    <property type="QMainWindow::DockOptions" name="dockOptions" read="dockOptions" write="setDockOptions" />
+    <preproc plain="#if QT_CONFIG(toolbar)" />
+    <property type="bool" name="unifiedTitleAndToolBarOnMac" read="unifiedTitleAndToolBarOnMac" write="setUnifiedTitleAndToolBarOnMac" />
+    <preproc plain="#endif" />
+    <enum name="DockOption">
+      <key>AnimatedDocks</key>
+      <key>AllowNestedDocks</key>
+      <key>AllowTabbedDocks</key>
+      <key>ForceTabbedDocks</key>
+      <key>VerticalTabs</key>
+      <key>GroupedDragging</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="iconSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIconSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="iconSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toolButtonStyle">
+      <variant return-type="Qt::ToolButtonStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setToolButtonStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ToolButtonStyle" modifier="" name="toolButtonStyle" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(dockwidget)" />
+    <function name="isAnimated">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDockNestingEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(tabbar)" />
+    <function name="documentMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDocumentMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(tabwidget)" />
+    <function name="tabShape">
+      <variant return-type="QTabWidget::TabShape" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabShape">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTabWidget::TabShape" modifier="" name="tabShape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabPosition">
+      <variant return-type="QTabWidget::TabPosition" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DockWidgetArea" modifier="" name="area" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTabPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DockWidgetAreas" modifier="" name="areas" />
+          <parameter const="false" type="QTabWidget::TabPosition" modifier="" name="tabPosition" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setDockOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMainWindow::DockOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dockOptions">
+      <variant return-type="QMainWindow::DockOptions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSeparator">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(menubar)" />
+    <function name="menuBar">
+      <variant return-type="QMenuBar*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMenuBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMenuBar" modifier="*" name="menubar" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="menuWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMenuWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="menubar" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(statusbar)" />
+    <function name="statusBar">
+      <variant return-type="QStatusBar*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStatusBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QStatusBar" modifier="*" name="statusbar" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="centralWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCentralWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="takeCentralWidget">
+      <variant return-type="QWidget*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(dockwidget)" />
+    <function name="setCorner">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Corner" modifier="" name="corner" />
+          <parameter const="false" type="Qt::DockWidgetArea" modifier="" name="area" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="corner">
+      <variant return-type="Qt::DockWidgetArea" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Corner" modifier="" name="corner" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(toolbar)" />
+    <function name="addToolBarBreak">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ToolBarArea" modifier="" name="area" default="Qt::TopToolBarArea" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertToolBarBreak">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QToolBar" modifier="*" name="before" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addToolBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ToolBarArea" modifier="" name="area" />
+          <parameter const="false" type="QToolBar" modifier="*" name="toolbar" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QToolBar" modifier="*" name="toolbar" />
+        </parameters>
+      </variant>
+      <variant return-type="QToolBar*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertToolBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QToolBar" modifier="*" name="before" />
+          <parameter const="false" type="QToolBar" modifier="*" name="toolbar" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeToolBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QToolBar" modifier="*" name="toolbar" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeToolBarBreak">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QToolBar" modifier="*" name="before" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unifiedTitleAndToolBarOnMac">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toolBarArea">
+      <variant return-type="Qt::ToolBarArea" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QToolBar" modifier="*" name="toolbar" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toolBarBreak">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QToolBar" modifier="*" name="toolbar" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(dockwidget)" />
+    <function name="addDockWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DockWidgetArea" modifier="" name="area" />
+          <parameter const="false" type="QDockWidget" modifier="*" name="dockwidget" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DockWidgetArea" modifier="" name="area" />
+          <parameter const="false" type="QDockWidget" modifier="*" name="dockwidget" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="splitDockWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDockWidget" modifier="*" name="after" />
+          <parameter const="false" type="QDockWidget" modifier="*" name="dockwidget" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(tabbar)" />
+    <function name="tabifyDockWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDockWidget" modifier="*" name="first" />
+          <parameter const="false" type="QDockWidget" modifier="*" name="second" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabifiedDockWidgets">
+      <variant return-type="QList&lt;QDockWidget*&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDockWidget" modifier="*" name="dockwidget" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="removeDockWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDockWidget" modifier="*" name="dockwidget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="restoreDockWidget">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QDockWidget" modifier="*" name="dockwidget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dockWidgetArea">
+      <variant return-type="Qt::DockWidgetArea" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDockWidget" modifier="*" name="dockwidget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeDocks">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QDockWidget*&gt;" modifier="&amp;" name="docks" />
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="sizes" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="saveState">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="version" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="restoreState">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="state" />
+          <parameter const="false" type="int" modifier="" name="version" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(menu)" />
+    <function name="createPopupMenu">
+      <variant return-type="QMenu*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(dockwidget)" />
+    <function name="setAnimated">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDockNestingEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(toolbar)" />
+    <function name="setUnifiedTitleAndToolBarOnMac">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="set" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="iconSizeChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="iconSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toolButtonStyleChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::ToolButtonStyle" modifier="" name="toolButtonStyle" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(dockwidget)" />
+    <function name="tabifiedDockWidgetActivated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDockWidget" modifier="*" name="dockWidget" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_CONTEXTMENU" />
+    <function name="contextMenuEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QContextMenuEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

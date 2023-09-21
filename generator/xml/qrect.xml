@@ -1,0 +1,875 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qrect.h">
+  <class name="QRect">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="topleft" />
+          <parameter const="true" type="QPoint" modifier="&amp;" name="bottomright" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="topleft" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="left" />
+          <parameter const="false" type="int" modifier="" name="top" />
+          <parameter const="false" type="int" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="height" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="aleft" />
+          <parameter const="false" type="int" modifier="" name="atop" />
+          <parameter const="false" type="int" modifier="" name="awidth" />
+          <parameter const="false" type="int" modifier="" name="aheight" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="aleft" />
+          <parameter const="false" type="qreal" modifier="" name="atop" />
+          <parameter const="false" type="qreal" modifier="" name="awidth" />
+          <parameter const="false" type="qreal" modifier="" name="aheight" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="left">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="top">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="right">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottom">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="normalized">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="x">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setX">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setY">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTopLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottomRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTopRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottomLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topLeft">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottomRight">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="topRight">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottomLeft">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="center">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="moveLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveTop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveBottom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveTopLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveBottomRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveTopRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveBottomLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="dx" />
+          <parameter const="false" type="int" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translated">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="dx" />
+          <parameter const="false" type="int" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transposed">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="moveTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="t" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRect">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCoords">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x1" />
+          <parameter const="false" type="int" modifier="" name="y1" />
+          <parameter const="false" type="int" modifier="" name="x2" />
+          <parameter const="false" type="int" modifier="" name="y2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="adjust">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x1" />
+          <parameter const="false" type="int" modifier="" name="y1" />
+          <parameter const="false" type="int" modifier="" name="x2" />
+          <parameter const="false" type="int" modifier="" name="y2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="adjusted">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x1" />
+          <parameter const="false" type="int" modifier="" name="y1" />
+          <parameter const="false" type="int" modifier="" name="x2" />
+          <parameter const="false" type="int" modifier="" name="y2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+          <parameter const="false" type="bool" modifier="" name="proper" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+          <parameter const="false" type="bool" modifier="" name="proper" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="bool" modifier="" name="proper" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="united">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersected">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersects">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="marginsAdded">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QMargins" modifier="&amp;" name="margins" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="marginsRemoved">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QMargins" modifier="&amp;" name="margins" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QRectF">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="aleft" />
+          <parameter const="false" type="int" modifier="" name="atop" />
+          <parameter const="false" type="int" modifier="" name="awidth" />
+          <parameter const="false" type="int" modifier="" name="aheight" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="topleft" />
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="topleft" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="bottomRight" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="left" />
+          <parameter const="false" type="qreal" modifier="" name="top" />
+          <parameter const="false" type="qreal" modifier="" name="width" />
+          <parameter const="false" type="qreal" modifier="" name="height" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="aleft" />
+          <parameter const="false" type="qreal" modifier="" name="atop" />
+          <parameter const="false" type="qreal" modifier="" name="awidth" />
+          <parameter const="false" type="qreal" modifier="" name="aheight" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="normalized">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="left">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="top">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="right">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottom">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="x">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setX">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setY">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topLeft">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottomRight">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="topRight">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottomLeft">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="center">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTopLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottomRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTopRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottomLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveTop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveBottom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveTopLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveBottomRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveTopRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveBottomLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translated">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transposed">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="moveTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRect">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="false" type="qreal" modifier="" name="w" />
+          <parameter const="false" type="qreal" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCoords">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x1" />
+          <parameter const="false" type="qreal" modifier="" name="y1" />
+          <parameter const="false" type="qreal" modifier="" name="x2" />
+          <parameter const="false" type="qreal" modifier="" name="y2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="adjust">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x1" />
+          <parameter const="false" type="qreal" modifier="" name="y1" />
+          <parameter const="false" type="qreal" modifier="" name="x2" />
+          <parameter const="false" type="qreal" modifier="" name="y2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="adjusted">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x1" />
+          <parameter const="false" type="qreal" modifier="" name="y1" />
+          <parameter const="false" type="qreal" modifier="" name="x2" />
+          <parameter const="false" type="qreal" modifier="" name="y2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="united">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersected">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersects">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="marginsAdded">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QMarginsF" modifier="&amp;" name="margins" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="marginsRemoved">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QMarginsF" modifier="&amp;" name="margins" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toAlignedRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

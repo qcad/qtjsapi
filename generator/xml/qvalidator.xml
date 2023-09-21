@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qvalidator.h">
+  <class name="QValidator">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <enum name="State">
+      <key>Invalid</key>
+      <key>Intermediate</key>
+      <key>Acceptable</key>
+    </enum>
+    <function name="setLocale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="locale">
+      <variant return-type="QLocale" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="validate">
+      <variant return-type="QValidator::State" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="int" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixup">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="changed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QIntValidator" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QValidator" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="bottom" />
+          <parameter const="false" type="int" modifier="" name="top" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="validate">
+      <variant return-type="QValidator::State" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="int" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixup">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="input" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="bottom" />
+          <parameter const="false" type="int" modifier="" name="top" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottom">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="top">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottomChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="bottom" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="top" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QDoubleValidator" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QValidator" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="bottom" />
+          <parameter const="false" type="double" modifier="" name="top" />
+          <parameter const="false" type="int" modifier="" name="decimals" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="double" name="top" read="top" write="setTop" />
+    <property type="int" name="decimals" read="decimals" write="setDecimals" />
+    <property type="QDoubleValidator::Notation" name="notation" read="notation" write="setNotation" />
+    <enum name="Notation">
+      <key>StandardNotation</key>
+      <key>ScientificNotation</key>
+    </enum>
+    <function name="validate">
+      <variant return-type="QValidator::State" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="int" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="bottom" />
+          <parameter const="false" type="double" modifier="" name="top" />
+          <parameter const="false" type="int" modifier="" name="decimals" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBottom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDecimals">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNotation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDoubleValidator::Notation" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottom">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="top">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="decimals">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="notation">
+      <variant return-type="QDoubleValidator::Notation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bottomChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="bottom" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="top" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="decimalsChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="decimals" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="notationChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDoubleValidator::Notation" modifier="" name="notation" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QRegularExpressionValidator" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QValidator" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="re" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="validate">
+      <variant return-type="QValidator::State" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="input" />
+          <parameter const="false" type="int" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="regularExpression">
+      <variant return-type="QRegularExpression" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRegularExpression">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="re" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="regularExpressionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="re" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

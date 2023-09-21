@@ -1,0 +1,24 @@
+<!--
+    Substitution for type names.
+-->
+<dictionary>
+  <!--
+  <item ori="Type" fixed="QEvent::Type" />
+  -->
+  <item ori="SortFlags" fixed="QDir::SortFlags" />
+  <item ori="Filters" fixed="QDir::Filters" />
+  <item ori="EncoderFn" fixed="QFile::EncoderFn" />
+  <item ori="DecoderFn" fixed="QFile::DecoderFn" />
+  <item ori="OpenMode" fixed="QFile::OpenMode" />
+  <item ori="Permissions" fixed="QFile::Permissions" />
+  <item ori="RegionType" fixed="QRegion::RegionType" />
+  <item ori="RenderFlags" fixed="QWidget::RenderFlags" />
+  <item ori="MonthNameType" fixed="QDate::MonthNameType" />
+  <item ori="ColorGroup" fixed="QPalette::ColorGroup" />
+  <item ori="ColorRole" fixed="QPalette::ColorRole" />
+  <item ori="Priority" fixed="QAction::Priority" />
+  <item ori="YearMonthDay" fixed="QCalendar::YearMonthDay" />
+  <item ori="SizeConstraint" fixed="QLayout::SizeConstraint" />
+  <item ori="MenuRole" fixed="QAction::MenuRole" />
+  <item ori="GestureCancelPolicy" fixed="QGesture::GestureCancelPolicy" />
+</dictionary>

@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qlistview.h">
+  <class name="QListView" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+      <super name="QAbstractItemView" />
+    </super_list>
+    <property type="QListView::Flow" name="flow" read="flow" write="setFlow" />
+    <property type="bool" name="isWrapping" read="isWrapping" write="setWrapping" />
+    <property type="QListView::ResizeMode" name="resizeMode" read="resizeMode" write="setResizeMode" />
+    <property type="QListView::LayoutMode" name="layoutMode" read="layoutMode" write="setLayoutMode" />
+    <property type="int" name="spacing" read="spacing" write="setSpacing" />
+    <property type="QSize" name="gridSize" read="gridSize" write="setGridSize" />
+    <property type="QListView::ViewMode" name="viewMode" read="viewMode" write="setViewMode" />
+    <property type="int" name="modelColumn" read="modelColumn" write="setModelColumn" />
+    <property type="bool" name="uniformItemSizes" read="uniformItemSizes" write="setUniformItemSizes" />
+    <property type="int" name="batchSize" read="batchSize" write="setBatchSize" />
+    <property type="bool" name="wordWrap" read="wordWrap" write="setWordWrap" />
+    <property type="bool" name="selectionRectVisible" read="isSelectionRectVisible" write="setSelectionRectVisible" />
+    <property type="Qt::Alignment" name="itemAlignment" read="itemAlignment" write="setItemAlignment" />
+    <property type="QListView::Movement" name="movement" read="movement" write="setMovement" />
+    <enum name="Movement">
+      <key>Static</key>
+      <key>Free</key>
+      <key>Snap</key>
+    </enum>
+    <enum name="Flow">
+      <key>LeftToRight</key>
+      <key>TopToBottom</key>
+    </enum>
+    <enum name="ResizeMode">
+      <key>Fixed</key>
+      <key>Adjust</key>
+    </enum>
+    <enum name="LayoutMode">
+      <key>SinglePass</key>
+      <key>Batched</key>
+    </enum>
+    <enum name="ViewMode">
+      <key>ListMode</key>
+      <key>IconMode</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setMovement">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QListView::Movement" modifier="" name="movement" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="movement">
+      <variant return-type="QListView::Movement" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFlow">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QListView::Flow" modifier="" name="flow" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="flow">
+      <variant return-type="QListView::Flow" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWrapping">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isWrapping">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setResizeMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QListView::ResizeMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeMode">
+      <variant return-type="QListView::ResizeMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLayoutMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QListView::LayoutMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="layoutMode">
+      <variant return-type="QListView::LayoutMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="space" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="spacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBatchSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="batchSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="batchSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGridSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="gridSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setViewMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QListView::ViewMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="viewMode">
+      <variant return-type="QListView::ViewMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearPropertyFlags">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRowHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRowHidden">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="bool" modifier="" name="hide" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setModelColumn">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="modelColumn">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUniformItemSizes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="uniformItemSizes">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWordWrap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="wordWrap">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSelectionRectVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="show" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSelectionRectVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setItemAlignment">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Alignment" modifier="" name="alignment" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemAlignment">
+      <variant return-type="Qt::Alignment" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="visualRect">
+      <variant return-type="QRect" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scrollTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="QAbstractItemView::ScrollHint" modifier="" name="hint" default="QAbstractItemView::EnsureVisible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexAt">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doItemsLayout">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRootIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="indexesMoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndexList" modifier="&amp;" name="indexes" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scrollContentsBy">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="dx" />
+          <parameter const="false" type="int" modifier="" name="dy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeContents">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="height" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contentsSize">
+      <variant return-type="QSize" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dataChanged">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="topLeft" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="bottomRight" />
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="roles" default="QList&lt;int&gt;()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowsInserted">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="start" />
+          <parameter const="false" type="int" modifier="" name="end" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowsAboutToBeRemoved">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+          <parameter const="false" type="int" modifier="" name="start" />
+          <parameter const="false" type="int" modifier="" name="end" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <function name="wheelEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QWheelEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="timerEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QTimerEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(draganddrop)" />
+    <!--
+    <function name="dragMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragMoveEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="dragLeaveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragLeaveEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="dropEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QDropEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startDrag">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="Qt::DropActions" modifier="" name="supportedActions" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="initViewItemOption">
+      <variant return-type="void" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QStyleOptionViewItem" modifier="*" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="horizontalOffset">
+      <variant return-type="int" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="verticalOffset">
+      <variant return-type="int" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="moveCursor">
+      <variant return-type="QModelIndex" access="protected">
+        <parameters>
+          <parameter const="false" type="CursorAction" modifier="" name="cursorAction" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="rectForIndex">
+      <variant return-type="QRect" const="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPositionForIndex">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="position" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setSelection">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+          <parameter const="false" type="QItemSelectionModel::SelectionFlags" modifier="" name="command" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="visualRegionForSelection">
+      <variant return-type="QRegion" const="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="selection" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="selectedIndexes">
+      <variant return-type="QModelIndexList" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="updateGeometries">
+      <variant return-type="void" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isIndexHidden">
+      <variant return-type="bool" const="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="selectionChanged">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="selected" />
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="deselected" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="currentChanged">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="current" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="previous" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="viewportSizeHint">
+      <variant return-type="QSize" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="visualIndex" />
+    <class_decl name="QCommonListViewBase" />
+  </class>
+</unit>

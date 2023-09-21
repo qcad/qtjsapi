@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcheckbox.h">
+  <class_decl name="QStyleOptionButton" />
+  <class name="QCheckBox">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QAbstractButton" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="bool" name="tristate" read="isTristate" write="setTristate" />
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTristate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="y" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTristate">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="checkState">
+      <variant return-type="Qt::CheckState" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCheckState">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::CheckState" modifier="" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stateChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="hitButton" />
+    <function name="checkStateSet" />
+    <function name="nextCheckState" />
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initStyleOption" />
+    <class_decl name="QAccessibleButton" />
+  </class>
+</unit>

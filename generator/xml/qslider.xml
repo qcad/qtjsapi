@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qslider.h">
+  <class_decl name="QStyleOptionSlider" />
+  <class name="QSlider">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QAbstractSlider" />
+    </super_list>
+    <property type="int" name="tickInterval" read="tickInterval" write="setTickInterval" />
+    <enum name="TickPosition">
+      <key>NoTicks</key>
+      <key>TicksAbove</key>
+      <key>TicksLeft</key>
+      <key>TicksBelow</key>
+      <key>TicksRight</key>
+      <key>TicksBothSides</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTickPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSlider::TickPosition" modifier="" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tickPosition">
+      <variant return-type="QSlider::TickPosition" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTickInterval">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="ti" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tickInterval">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="event">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="ev" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="ev" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initStyleOption" />
+    <function name="qt_qsliderStyleOption" />
+  </class>
+</unit>

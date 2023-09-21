@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qaction.h">
+  <class_decl name="QMenu" />
+  <class_decl name="QActionGroup" />
+  <class_decl name="QGraphicsWidget" />
+  <class name="QAction">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+
+    <property type="bool" name="checkable" read="isCheckable" write="setCheckable" />
+    <property type="bool" name="checked" read="isChecked" write="setChecked" />
+    <property type="bool" name="enabled" read="isEnabled" write="setEnabled" />
+    <property type="QIcon" name="icon" read="icon" write="setIcon" />
+    <property type="QString" name="text" read="text" write="setText" />
+    <property type="QString" name="iconText" read="iconText" write="setIconText" />
+    <property type="QString" name="toolTip" read="toolTip" write="setToolTip" />
+    <property type="QString" name="statusTip" read="statusTip" write="setStatusTip" />
+    <property type="QString" name="whatsThis" read="whatsThis" write="setWhatsThis" />
+    <property type="QFont" name="font" read="font" write="setFont" />
+    <preproc plain="#if QT_CONFIG(shortcut)" />
+    <property type="QKeySequence" name="shortcut" read="shortcut" write="setShortcut" />
+    <property type="Qt::ShortcutContext" name="shortcutContext" read="shortcutContext" write="setShortcutContext" />
+    <property type="bool" name="autoRepeat" read="autoRepeat" write="setAutoRepeat" />
+    <preproc plain="#endif" />
+    <property type="bool" name="visible" read="isVisible" write="setVisible" />
+    <property type="QAction::MenuRole" name="menuRole" read="menuRole" write="setMenuRole" />
+    <property type="bool" name="iconVisibleInMenu" read="isIconVisibleInMenu" write="setIconVisibleInMenu" />
+    <property type="bool" name="shortcutVisibleInContextMenu" read="isShortcutVisibleInContextMenu" write="setShortcutVisibleInContextMenu" />
+    <property type="QAction::Priority" name="priority" read="priority" write="setPriority" />
+
+    <enum name="MenuRole">
+      <key>NoRole</key>
+      <key>TextHeuristicRole</key>
+      <key>ApplicationSpecificRole</key>
+      <key>AboutQtRole</key>
+      <key>AboutRole</key>
+      <key>PreferencesRole</key>
+      <key>QuitRole</key>
+    </enum>
+    <enum name="Priority">
+      <key>LowPriority</key>
+      <key>NormalPriority</key>
+      <key>HighPriority</key>
+    </enum>
+
+    <!--
+    <function name="setActionGroup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QActionGroup" modifier="*" name="group" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="actionGroup">
+      <variant return-type="QActionGroup*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+
+    <function name="associatedObjects">
+      <variant return-type="QList&lt;QObject*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIcon">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="icon">
+      <variant return-type="QIcon" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIconText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="iconText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setToolTip">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tip" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toolTip">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStatusTip">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="statusTip" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="statusTip">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWhatsThis">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="what" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="whatsThis">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPriority">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction::Priority" modifier="" name="priority" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="priority">
+      <variant return-type="QAction::Priority" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(menu)" />
+    <function name="menu">
+      <variant return-type="QMenu*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMenu">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMenu" modifier="*" name="menu" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setSeparator">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSeparator">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(shortcut)" />
+    <function name="setShortcut">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="shortcut" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QKeySequence::StandardKey" modifier="" name="shortcut" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="shortcut">
+      <variant return-type="QKeySequence" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShortcuts">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QKeySequence&gt;" modifier="&amp;" name="shortcuts" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QKeySequence::StandardKey" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="shortcuts">
+      <variant return-type="QList&lt;QKeySequence&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShortcutContext">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::ShortcutContext" modifier="" name="context" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="shortcutContext">
+      <variant return-type="Qt::ShortcutContext" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoRepeat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoRepeat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="font">
+      <variant return-type="QFont" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCheckable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isCheckable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="var" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isChecked">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="activate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="ActionEvent" modifier="" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="showStatusText">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMenuRole">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction::MenuRole" modifier="" name="menuRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="menuRole">
+      <variant return-type="QAction::MenuRole" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIconVisibleInMenu">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isIconVisibleInMenu">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShortcutVisibleInContextMenu">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="show" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isShortcutVisibleInContextMenu">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="parentWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="associatedWidgets">
+      <variant return-type="QList&lt;QWidget*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <preproc plain="#if QT_CONFIG(graphicsview)" />
+    <function name="associatedGraphicsWidgets">
+      <variant return-type="QList&lt;QGraphicsWidget*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="event" />
+    <function name="trigger">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hover">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setChecked">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toggle">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDisabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="changed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="triggered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="checked" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hovered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toggled">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QGraphicsWidget" />
+    <class_decl name="QWidget" />
+    <class_decl name="QActionGroup" />
+    <class_decl name="QMenu" />
+    <class_decl name="QMenuBar" />
+    <class_decl name="QToolButton" />
+    <preproc plain="#ifdef Q_OS_MAC" />
+    <function name="qt_mac_clear_status_text" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

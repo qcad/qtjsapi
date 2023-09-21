@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdiriterator.h">
+  <class name="QDirIterator">
+    <enum name="IteratorFlag">
+      <key>NoIteratorFlags</key>
+      <key>FollowSymlinks</key>
+      <key>Subdirectories</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDir" modifier="&amp;" name="dir" />
+          <parameter const="false" type="QDirIterator::IteratorFlags" modifier="" name="flags" default="QDirIterator::NoIteratorFlags" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+          <parameter const="false" type="QDirIterator::IteratorFlags" modifier="" name="flags" default="QDirIterator::NoIteratorFlags" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+          <parameter const="false" type="QDir::Filters" modifier="" name="filter" />
+          <parameter const="false" type="QDirIterator::IteratorFlags" modifier="" name="flags" default="QDirIterator::NoIteratorFlags" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="nameFilters" />
+          <parameter const="false" type="QDir::Filters" modifier="" name="filters" default="QDir::NoFilter" />
+          <parameter const="false" type="QDirIterator::IteratorFlags" modifier="" name="flags" default="QDirIterator::NoIteratorFlags" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="next">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nextFileInfo">
+      <variant return-type="QFileInfo" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasNext">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="filePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fileInfo">
+      <variant return-type="QFileInfo" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="path">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QDir" />
+  </class>
+</unit>

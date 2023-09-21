@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcoreevent.h">
+  <class_decl name="QObject" />
+  <class name="QEvent" ownership="cpp">
+    <enum name="Type">
+      <key>None</key>
+      <key>Timer</key>
+      <key>MouseButtonPress</key>
+      <key>MouseButtonRelease</key>
+      <key>MouseButtonDblClick</key>
+      <key>MouseMove</key>
+      <key>KeyPress</key>
+      <key>KeyRelease</key>
+      <key>FocusIn</key>
+      <key>FocusOut</key>
+      <key>FocusAboutToChange</key>
+      <key>Enter</key>
+      <key>Leave</key>
+      <key>Paint</key>
+      <key>Move</key>
+      <key>Resize</key>
+      <key>Create</key>
+      <key>Destroy</key>
+      <key>Show</key>
+      <key>Hide</key>
+      <key>Close</key>
+      <key>Quit</key>
+      <key>ParentChange</key>
+      <key>ParentAboutToChange</key>
+      <key>ThreadChange</key>
+      <key>WindowActivate</key>
+      <key>WindowDeactivate</key>
+      <key>ShowToParent</key>
+      <key>HideToParent</key>
+      <key>Wheel</key>
+      <key>WindowTitleChange</key>
+      <key>WindowIconChange</key>
+      <key>ApplicationWindowIconChange</key>
+      <key>ApplicationFontChange</key>
+      <key>ApplicationLayoutDirectionChange</key>
+      <key>ApplicationPaletteChange</key>
+      <key>PaletteChange</key>
+      <key>Clipboard</key>
+      <key>Speech</key>
+      <key>MetaCall</key>
+      <key>SockAct</key>
+      <key>WinEventAct</key>
+      <key>DeferredDelete</key>
+      <key>DragEnter</key>
+      <key>DragMove</key>
+      <key>DragLeave</key>
+      <key>Drop</key>
+      <key>DragResponse</key>
+      <key>ChildAdded</key>
+      <key>ChildPolished</key>
+      <key>ChildRemoved</key>
+      <key>ShowWindowRequest</key>
+      <key>PolishRequest</key>
+      <key>Polish</key>
+      <key>LayoutRequest</key>
+      <key>UpdateRequest</key>
+      <key>UpdateLater</key>
+      <key>EmbeddingControl</key>
+      <key>ActivateControl</key>
+      <key>DeactivateControl</key>
+      <key>ContextMenu</key>
+      <key>InputMethod</key>
+      <key>TabletMove</key>
+      <key>LocaleChange</key>
+      <key>LanguageChange</key>
+      <key>LayoutDirectionChange</key>
+      <key>Style</key>
+      <key>TabletPress</key>
+      <key>TabletRelease</key>
+      <key>OkRequest</key>
+      <key>HelpRequest</key>
+      <key>IconDrag</key>
+      <key>FontChange</key>
+      <key>EnabledChange</key>
+      <key>ActivationChange</key>
+      <key>StyleChange</key>
+      <key>IconTextChange</key>
+      <key>ModifiedChange</key>
+      <key>MouseTrackingChange</key>
+      <key>WindowBlocked</key>
+      <key>WindowUnblocked</key>
+      <key>WindowStateChange</key>
+      <key>ReadOnlyChange</key>
+      <key>ToolTip</key>
+      <key>WhatsThis</key>
+      <key>StatusTip</key>
+      <key>ActionChanged</key>
+      <key>ActionAdded</key>
+      <key>ActionRemoved</key>
+      <key>FileOpen</key>
+      <key>Shortcut</key>
+      <key>ShortcutOverride</key>
+      <key>WhatsThisClicked</key>
+      <key>ToolBarChange</key>
+      <key>ApplicationActivate</key>
+      <key>ApplicationActivated</key>
+      <key>ApplicationDeactivate</key>
+      <key>ApplicationDeactivated</key>
+      <key>QueryWhatsThis</key>
+      <key>EnterWhatsThisMode</key>
+      <key>LeaveWhatsThisMode</key>
+      <key>ZOrderChange</key>
+      <key>HoverEnter</key>
+      <key>HoverLeave</key>
+      <key>HoverMove</key>
+      <!--
+      <key>EnterEditFocus</key>
+      <key>LeaveEditFocus</key>
+      -->
+      <key>AcceptDropsChange</key>
+      <key>ZeroTimerEvent</key>
+      <key>GraphicsSceneMouseMove</key>
+      <key>GraphicsSceneMousePress</key>
+      <key>GraphicsSceneMouseRelease</key>
+      <key>GraphicsSceneMouseDoubleClick</key>
+      <key>GraphicsSceneContextMenu</key>
+      <key>GraphicsSceneHoverEnter</key>
+      <key>GraphicsSceneHoverMove</key>
+      <key>GraphicsSceneHoverLeave</key>
+      <key>GraphicsSceneHelp</key>
+      <key>GraphicsSceneDragEnter</key>
+      <key>GraphicsSceneDragMove</key>
+      <key>GraphicsSceneDragLeave</key>
+      <key>GraphicsSceneDrop</key>
+      <key>GraphicsSceneWheel</key>
+      <key>GraphicsSceneLeave</key>
+      <key>KeyboardLayoutChange</key>
+      <key>DynamicPropertyChange</key>
+      <key>TabletEnterProximity</key>
+      <key>TabletLeaveProximity</key>
+      <key>NonClientAreaMouseMove</key>
+      <key>NonClientAreaMouseButtonPress</key>
+      <key>NonClientAreaMouseButtonRelease</key>
+      <key>NonClientAreaMouseButtonDblClick</key>
+      <key>MacSizeChange</key>
+      <key>ContentsRectChange</key>
+      <key>MacGLWindowChange</key>
+      <key>FutureCallOut</key>
+      <key>GraphicsSceneResize</key>
+      <key>GraphicsSceneMove</key>
+      <key>CursorChange</key>
+      <key>ToolTipChange</key>
+      <key>NetworkReplyUpdated</key>
+      <key>GrabMouse</key>
+      <key>UngrabMouse</key>
+      <key>GrabKeyboard</key>
+      <key>UngrabKeyboard</key>
+      <key>StateMachineSignal</key>
+      <key>StateMachineWrapped</key>
+      <key>TouchBegin</key>
+      <key>TouchUpdate</key>
+      <key>TouchEnd</key>
+      <key>NativeGesture</key>
+      <key>RequestSoftwareInputPanel</key>
+      <key>CloseSoftwareInputPanel</key>
+      <key>WinIdChange</key>
+      <key>Gesture</key>
+      <key>GestureOverride</key>
+      <key>ScrollPrepare</key>
+      <key>Scroll</key>
+      <key>Expose</key>
+      <key>InputMethodQuery</key>
+      <key>OrientationChange</key>
+      <key>TouchCancel</key>
+      <key>ThemeChange</key>
+      <key>SockClose</key>
+      <key>PlatformPanel</key>
+      <key>StyleAnimationUpdate</key>
+      <key>ApplicationStateChange</key>
+      <key>WindowChangeInternal</key>
+      <key>ScreenChangeInternal</key>
+      <key>PlatformSurface</key>
+      <key>Pointer</key>
+      <key>TabletTrackingChange</key>
+      <key>User</key>
+      <key>MaxUser</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="type">
+      <variant return-type="QEvent::Type" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="spontaneous">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAccepted">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="accepted" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isAccepted">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="accept">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ignore">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isInputEvent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPointerEvent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSinglePointEvent">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="registerEventType" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="hint" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="QEvent*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QCoreApplication" />
+    <class_decl name="QThreadData" />
+    <class_decl name="QApplication" />
+    <class_decl name="QSpontaneKeyEvent" />
+    <function name="setSpontaneous" />
+  </class>
+  <!--
+  <class name="QDeferredDeleteEvent">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="loopLevel">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="QDeferredDeleteEvent*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QCoreApplication" />
+  </class>
+  -->
+</unit>

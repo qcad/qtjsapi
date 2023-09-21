@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfiledevice.h">
+  <class_decl name="QDateTime" />
+  <class name="QFileDevice" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QIODeviceBase" />
+      <super name="QIODevice" />
+    </super_list>
+    <function name="error">
+      <variant return-type="QFileDevice::FileError" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="unsetError">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="close">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSequential">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="handle">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fileName">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pos">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="seek">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="atEnd">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flush">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resize">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="sz" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="permissions">
+      <variant return-type="QFile::Permissions" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPermissions">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFile::Permissions" modifier="" name="permissionSpec" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="map">
+      <variant return-type="uchar*" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="offset" />
+          <parameter const="false" type="qint64" modifier="" name="size" />
+          <parameter const="false" type="QFileDevice::MemoryMapFlags" modifier="" name="flags" default="NoOptions" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="unmap">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="uchar" modifier="*" name="address" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="fileTime">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFileDevice::FileTime" modifier="" name="time" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFileTime">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="newDate" />
+          <parameter const="false" type="QFileDevice::FileTime" modifier="" name="fileTime" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="readData" />
+    <function name="writeData" />
+    <function name="readLineData" />
+  </class>
+</unit>

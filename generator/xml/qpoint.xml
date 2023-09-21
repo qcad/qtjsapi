@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpoint.h">
+  <class name="QPoint">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="xpos" />
+          <parameter const="false" type="int" modifier="" name="ypos" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="x">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setX">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setY">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="manhattanLength">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transposed">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rx">
+      <variant return-type="int&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ry">
+      <variant return-type="int&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="operator_add_assign" call="operator+=">
+      <variant return-type="QPoint&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_subtract_assign" call="operator-=">
+      <variant return-type="QPoint&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_multiply_assign" call="operator*=">
+      <variant return-type="QPoint&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="factor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_multiply_assign" call="operator*=">
+      <variant return-type="QPoint&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="factor" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="operator_multiply_assign" call="operator*=">
+      <variant return-type="QPoint&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="factor" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="operator_divide_assign" call="operator/=">
+      <variant return-type="QPoint&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="divisor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dotProduct" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p1" />
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p2" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_DARWIN)||defined(Q_QDOC)" />
+    <preproc plain="#endif" />
+    <class_decl name="QTransform" />
+  </class>
+  <class name="QPointF">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="xpos" />
+          <parameter const="false" type="qreal" modifier="" name="ypos" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="manhattanLength">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="x">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setX">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setY">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transposed">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rx">
+      <variant return-type="qreal&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ry">
+      <variant return-type="qreal&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dotProduct" static="true">
+      <variant return-type="qreal" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p1" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toPoint">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_DARWIN)||defined(Q_QDOC)" />
+    <preproc plain="#endif" />
+    <class_decl name="QMatrix" />
+    <class_decl name="QTransform" />
+  </class>
+</unit>

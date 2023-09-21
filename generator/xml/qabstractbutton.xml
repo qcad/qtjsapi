@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qabstractbutton.h">
+  <class_decl name="QButtonGroup" />
+  <class name="QAbstractButton" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <property type="QIcon" name="icon" read="icon" write="setIcon" />
+    <property type="QSize" name="iconSize" read="iconSize" write="setIconSize" />
+    <preproc plain="#ifndef QT_NO_SHORTCUT" />
+    <property type="QKeySequence" name="shortcut" read="shortcut" write="setShortcut" />
+    <preproc plain="#endif" />
+    <property type="bool" name="checkable" read="isCheckable" write="setCheckable" />
+    <property type="bool" name="checked" read="isChecked" write="setChecked" />
+    <property type="bool" name="autoRepeat" read="autoRepeat" write="setAutoRepeat" />
+    <property type="bool" name="autoExclusive" read="autoExclusive" write="setAutoExclusive" />
+    <property type="int" name="autoRepeatDelay" read="autoRepeatDelay" write="setAutoRepeatDelay" />
+    <property type="int" name="autoRepeatInterval" read="autoRepeatInterval" write="setAutoRepeatInterval" />
+    <property type="bool" name="down" read="isDown" write="setDown" />
+    <property type="QString" name="text" read="text" write="setText" />
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIcon">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QIcon" modifier="&amp;" name="icon" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="icon">
+      <variant return-type="QIcon" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="iconSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_SHORTCUT" />
+    <function name="setShortcut">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="shortcut">
+      <variant return-type="QKeySequence" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setCheckable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isCheckable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isChecked">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDown">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDown">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoRepeat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoRepeat">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoRepeatDelay">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoRepeatDelay">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoRepeatInterval">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoRepeatInterval">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoExclusive">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoExclusive">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(buttongroup)" />
+    <function name="group">
+      <variant return-type="QButtonGroup*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setIconSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="animateClick">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="click">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toggle">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setChecked">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pressed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="released">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="checked" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toggled">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="checked" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hitButton" />
+    <function name="checkStateSet" />
+    <function name="nextCheckState" />
+    <function name="event" />
+    <function name="keyPressEvent" />
+    <function name="keyReleaseEvent" />
+    <function name="mousePressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusInEvent" />
+    <function name="focusOutEvent" />
+    <function name="changeEvent" />
+    <function name="timerEvent" />
+    -->
+    <class_decl name="QButtonGroup" />
+  </class>
+</unit>

@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qgesture.h">
+  <class_decl name="QGesture" />
+  <class name="QGesture">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <property type="Qt::GestureState" name="state" read="state" />
+    <property type="Qt::GestureType" name="gestureType" read="gestureType" />
+    <property type="QGesture::GestureCancelPolicy" name="gestureCancelPolicy" read="gestureCancelPolicy" write="setGestureCancelPolicy" />
+    <property type="QPointF" name="hotSpot" read="hotSpot" write="setHotSpot" />
+    <property type="bool" name="hasHotSpot" read="hasHotSpot" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="gestureType">
+      <variant return-type="Qt::GestureType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="state">
+      <variant return-type="Qt::GestureState" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hotSpot">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHotSpot">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasHotSpot">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="unsetHotSpot">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGestureCancelPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QGesture::GestureCancelPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="gestureCancelPolicy">
+      <variant return-type="QGesture::GestureCancelPolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QGestureEvent" />
+    <class_decl name="QGestureRecognizer" />
+    <class_decl name="QGestureManager" />
+  </class>
+  <class name="QPanGesture">
+    <super_list>
+      <super name="QGesture" />
+    </super_list>
+    <function name="Q_DECLARE_PRIVATE" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="QPointF" name="lastOffset" read="lastOffset" write="setLastOffset" />
+    <property type="QPointF" name="offset" read="offset" write="setOffset" />
+    <property type="QPointF" name="delta" read="delta" />
+    <property type="qreal" name="acceleration" read="acceleration" write="setAcceleration" />
+    <function name="lastOffset">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="offset">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="delta">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="acceleration">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLastOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAcceleration">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QPanGestureRecognizer" />
+    <class_decl name="QWinNativePanGestureRecognizer" />
+  </class>
+  <class name="QPinchGesture">
+    <super_list>
+      <super name="QObject" />
+      <super name="QGesture" />
+    </super_list>
+    <enum name="ChangeFlag">
+      <key>ScaleFactorChanged</key>
+      <key>RotationAngleChanged</key>
+      <key>CenterPointChanged</key>
+    </enum>
+    <property type="ChangeFlags" name="totalChangeFlags" read="totalChangeFlags" write="setTotalChangeFlags" />
+    <property type="ChangeFlags" name="changeFlags" read="changeFlags" write="setChangeFlags" />
+    <property type="qreal" name="totalScaleFactor" read="totalScaleFactor" write="setTotalScaleFactor" />
+    <property type="qreal" name="lastScaleFactor" read="lastScaleFactor" write="setLastScaleFactor" />
+    <property type="qreal" name="scaleFactor" read="scaleFactor" write="setScaleFactor" />
+    <property type="qreal" name="totalRotationAngle" read="totalRotationAngle" write="setTotalRotationAngle" />
+    <property type="qreal" name="lastRotationAngle" read="lastRotationAngle" write="setLastRotationAngle" />
+    <property type="qreal" name="rotationAngle" read="rotationAngle" write="setRotationAngle" />
+    <property type="QPointF" name="startCenterPoint" read="startCenterPoint" write="setStartCenterPoint" />
+    <property type="QPointF" name="lastCenterPoint" read="lastCenterPoint" write="setLastCenterPoint" />
+    <property type="QPointF" name="centerPoint" read="centerPoint" write="setCenterPoint" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="totalChangeFlags">
+      <variant return-type="QPinchGesture::ChangeFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTotalChangeFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPinchGesture::ChangeFlags" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="changeFlags">
+      <variant return-type="QPinchGesture::ChangeFlags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setChangeFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPinchGesture::ChangeFlags" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startCenterPoint">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastCenterPoint">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="centerPoint">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStartCenterPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLastCenterPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCenterPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="totalScaleFactor">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastScaleFactor">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scaleFactor">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTotalScaleFactor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLastScaleFactor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setScaleFactor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="totalRotationAngle">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastRotationAngle">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rotationAngle">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTotalRotationAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLastRotationAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRotationAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QPinchGestureRecognizer" />
+  </class>
+  <class name="QSwipeGesture">
+    <super_list>
+      <super name="QGesture" />
+    </super_list>
+    <function name="Q_DECLARE_PRIVATE" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="horizontalDirection">
+      <variant return-type="QSwipeGesture::SwipeDirection" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="verticalDirection">
+      <variant return-type="QSwipeGesture::SwipeDirection" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="swipeAngle">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSwipeAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QSwipeGestureRecognizer" />
+  </class>
+  <!--
+  <class name="QTapGesture">
+    <super_list>
+      <super name="QGesture" />
+    </super_list>
+    <function name="Q_DECLARE_PRIVATE" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="position">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QTapGestureRecognizer" />
+  </class>
+  -->
+  <!--
+  <class name="QTapAndHoldGesture">
+    <super_list>
+      <super name="QGesture" />
+    </super_list>
+    <function name="Q_DECLARE_PRIVATE" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="position">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTimeout" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="timeout" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QTapAndHoldGestureRecognizer" />
+  </class>
+  -->
+</unit>

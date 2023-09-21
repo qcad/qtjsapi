@@ -1,0 +1,6 @@
+<include_file>
+  <class name="QEventWrapper">qcoreeventwrapper.h</class>
+  <class name="QMouseEventWrapper">qeventwrapper.h</class>
+  <class name="QWheelEventWrapper">qeventwrapper.h</class>
+  <class name="QDoubleSpinBoxWrapper">qspinboxwrapper.h</class>
+</include_file>

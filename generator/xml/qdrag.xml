@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdrag.h">
+  <class_decl name="QMimeData" />
+  <class_decl name="QPixmap" />
+  <class_decl name="QPoint" />
+  <!--
+  <class_decl name="QDragManager" />
+  -->
+  <class name="QDrag" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="dragSource" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setMimeData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMimeData" modifier="*" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mimeData">
+      <variant return-type="QMimeData*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPixmap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pixmap">
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHotSpot">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="hotspot" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hotSpot">
+      <variant return-type="QPoint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="source">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="target">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exec">
+      <variant return-type="Qt::DropAction" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DropActions" modifier="" name="supportedActions" default="Qt::MoveAction" />
+        </parameters>
+      </variant>
+      <variant return-type="Qt::DropAction" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DropActions" modifier="" name="supportedActions" />
+          <parameter const="false" type="Qt::DropAction" modifier="" name="defaultAction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDragCursor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="cursor" />
+          <parameter const="false" type="Qt::DropAction" modifier="" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragCursor">
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DropAction" modifier="" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="supportedActions">
+      <variant return-type="Qt::DropActions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="defaultAction">
+      <variant return-type="Qt::DropAction" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cancel" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="actionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::DropAction" modifier="" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="targetChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="newTarget" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QDragManager" />
+  </class>
+</unit>

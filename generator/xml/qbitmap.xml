@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qbitmap.h">
+  <class_decl name="QVariant" />
+  <class name="QBitmap">
+    <super_list>
+      <super name="QPaintDevice" />
+      <super name="QPixmap" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="w" />
+          <parameter const="false" type="int" modifier="" name="h" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="char" modifier="*" name="format" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <preproc plain="#endif" />
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QBitmap" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fromImage" static="true">
+      <variant return-type="QBitmap" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QImage" modifier="&amp;" name="image" />
+          <parameter const="false" type="Qt::ImageConversionFlags" modifier="" name="flags" default="Qt::AutoColor" />
+        </parameters>
+      </variant>
+      <variant return-type="QBitmap" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QImage" modifier="&amp;&amp;" name="image" />
+          <parameter const="false" type="Qt::ImageConversionFlags" modifier="" name="flags" default="Qt::AutoColor" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="fromData" static="true">
+      <variant return-type="QBitmap" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" />
+          <parameter const="true" type="uchar" modifier="*" name="bits" />
+          <parameter const="false" type="QImage::Format" modifier="" name="monoFormat"
+          default="QImage::Format_MonoLSB" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="fromPixmap" static="true">
+      <variant return-type="QBitmap" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transformed">
+      <variant return-type="QBitmap" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="matrix" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

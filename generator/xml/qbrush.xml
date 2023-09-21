@@ -1,0 +1,672 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qbrush.h">
+  <class_decl name="QPixmap" />
+  <class_decl name="QGradient" />
+  <class_decl name="QVariant" />
+  <class name="QBrush">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::BrushStyle" modifier="" name="bs" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+          <parameter const="false" type="Qt::BrushStyle" modifier="" name="bs" default="Qt::SolidPattern" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::GlobalColor" modifier="" name="color" />
+          <parameter const="false" type="Qt::BrushStyle" modifier="" name="bs" />
+          <!--
+          <parameter const="false" type="Qt::BrushStyle" modifier="" name="bs" default="Qt::SolidPattern" />
+          -->
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::GlobalColor" modifier="" name="color" />
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QImage" modifier="&amp;" name="image" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGradient" modifier="&amp;" name="gradient" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QBrush" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="style">
+      <variant return-type="Qt::BrushStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::BrushStyle" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transform">
+      <variant return-type="QTransform" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTransform">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="texture">
+      <variant return-type="QPixmap" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTexture">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPixmap" modifier="&amp;" name="pixmap" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textureImage">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextureImage">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QImage" modifier="&amp;" name="image" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="color">
+      <variant return-type="const QColor&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::GlobalColor" modifier="" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="gradient">
+      <variant return-type="const QGradient*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isOpaque">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QRasterPaintEngine" />
+    <class_decl name="QPainter" />
+    <function name="qHasPixmapTexture" />
+    <function name="detach" />
+    <function name="init" />
+    <function name="isDetached">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  <class name="QGradient">
+    <enum name="Type">
+      <key>LinearGradient</key>
+      <key>RadialGradient</key>
+      <key>ConicalGradient</key>
+      <key>NoGradient</key>
+    </enum>
+    <enum name="Spread">
+      <key>PadSpread</key>
+      <key>ReflectSpread</key>
+      <key>RepeatSpread</key>
+    </enum>
+    <enum name="CoordinateMode">
+      <key>LogicalMode</key>
+      <key>StretchToDeviceMode</key>
+      <key>ObjectBoundingMode</key>
+      <key>ObjectMode</key>
+    </enum>
+    <enum name="InterpolationMode">
+      <key>ColorInterpolation</key>
+      <key>ComponentInterpolation</key>
+    </enum>
+    <enum name="Preset">
+      <key>WarmFlame</key>
+      <key>NightFade</key>
+      <key>SpringWarmth</key>
+      <key>JuicyPeach</key>
+      <key>YoungPassion</key>
+      <key>LadyLips</key>
+      <key>SunnyMorning</key>
+      <key>RainyAshville</key>
+      <key>FrozenDreams</key>
+      <key>WinterNeva</key>
+      <key>DustyGrass</key>
+      <key>TemptingAzure</key>
+      <key>HeavyRain</key>
+      <key>AmyCrisp</key>
+      <key>MeanFruit</key>
+      <key>DeepBlue</key>
+      <key>RipeMalinka</key>
+      <key>CloudyKnoxville</key>
+      <key>MalibuBeach</key>
+      <key>NewLife</key>
+      <key>TrueSunset</key>
+      <key>MorpheusDen</key>
+      <key>RareWind</key>
+      <key>NearMoon</key>
+      <key>WildApple</key>
+      <key>SaintPetersburg</key>
+      <key>PlumPlate</key>
+      <key>EverlastingSky</key>
+      <key>HappyFisher</key>
+      <key>Blessing</key>
+      <key>SharpeyeEagle</key>
+      <key>LadogaBottom</key>
+      <key>LemonGate</key>
+      <key>ItmeoBranding</key>
+      <key>ZeusMiracle</key>
+      <key>OldHat</key>
+      <key>StarWine</key>
+      <key>HappyAcid</key>
+      <key>AwesomePine</key>
+      <key>NewYork</key>
+      <key>ShyRainbow</key>
+      <key>MixedHopes</key>
+      <key>FlyHigh</key>
+      <key>StrongBliss</key>
+      <key>FreshMilk</key>
+      <key>SnowAgain</key>
+      <key>FebruaryInk</key>
+      <key>KindSteel</key>
+      <key>SoftGrass</key>
+      <key>GrownEarly</key>
+      <key>SharpBlues</key>
+      <key>ShadyWater</key>
+      <key>DirtyBeauty</key>
+      <key>GreatWhale</key>
+      <key>TeenNotebook</key>
+      <key>PoliteRumors</key>
+      <key>SweetPeriod</key>
+      <key>WideMatrix</key>
+      <key>SoftCherish</key>
+      <key>RedSalvation</key>
+      <key>BurningSpring</key>
+      <key>NightParty</key>
+      <key>SkyGlider</key>
+      <key>HeavenPeach</key>
+      <key>PurpleDivision</key>
+      <key>AquaSplash</key>
+      <key>SpikyNaga</key>
+      <key>LoveKiss</key>
+      <key>CleanMirror</key>
+      <key>PremiumDark</key>
+      <key>ColdEvening</key>
+      <key>CochitiLake</key>
+      <key>SummerGames</key>
+      <key>PassionateBed</key>
+      <key>MountainRock</key>
+      <key>DesertHump</key>
+      <key>JungleDay</key>
+      <key>PhoenixStart</key>
+      <key>OctoberSilence</key>
+      <key>FarawayRiver</key>
+      <key>AlchemistLab</key>
+      <key>OverSun</key>
+      <key>PremiumWhite</key>
+      <key>MarsParty</key>
+      <key>EternalConstance</key>
+      <key>JapanBlush</key>
+      <key>SmilingRain</key>
+      <key>CloudyApple</key>
+      <key>BigMango</key>
+      <key>HealthyWater</key>
+      <key>AmourAmour</key>
+      <key>RiskyConcrete</key>
+      <key>StrongStick</key>
+      <key>ViciousStance</key>
+      <key>PaloAlto</key>
+      <key>HappyMemories</key>
+      <key>MidnightBloom</key>
+      <key>Crystalline</key>
+      <key>PartyBliss</key>
+      <key>ConfidentCloud</key>
+      <key>LeCocktail</key>
+      <key>RiverCity</key>
+      <key>FrozenBerry</key>
+      <key>ChildCare</key>
+      <key>FlyingLemon</key>
+      <key>NewRetrowave</key>
+      <key>HiddenJaguar</key>
+      <key>AboveTheSky</key>
+      <key>Nega</key>
+      <key>DenseWater</key>
+      <key>Seashore</key>
+      <key>MarbleWall</key>
+      <key>CheerfulCaramel</key>
+      <key>NightSky</key>
+      <key>MagicLake</key>
+      <key>YoungGrass</key>
+      <key>ColorfulPeach</key>
+      <key>GentleCare</key>
+      <key>PlumBath</key>
+      <key>HappyUnicorn</key>
+      <key>AfricanField</key>
+      <key>SolidStone</key>
+      <key>OrangeJuice</key>
+      <key>GlassWater</key>
+      <key>NorthMiracle</key>
+      <key>FruitBlend</key>
+      <key>MillenniumPine</key>
+      <key>HighFlight</key>
+      <key>MoleHall</key>
+      <key>SpaceShift</key>
+      <key>ForestInei</key>
+      <key>RoyalGarden</key>
+      <key>RichMetal</key>
+      <key>JuicyCake</key>
+      <key>SmartIndigo</key>
+      <key>SandStrike</key>
+      <key>NorseBeauty</key>
+      <key>AquaGuidance</key>
+      <key>SunVeggie</key>
+      <key>SeaLord</key>
+      <key>BlackSea</key>
+      <key>GrassShampoo</key>
+      <key>LandingAircraft</key>
+      <key>WitchDance</key>
+      <key>SleeplessNight</key>
+      <key>AngelCare</key>
+      <key>CrystalRiver</key>
+      <key>SoftLipstick</key>
+      <key>SaltMountain</key>
+      <key>PerfectWhite</key>
+      <key>FreshOasis</key>
+      <key>StrictNovember</key>
+      <key>MorningSalad</key>
+      <key>DeepRelief</key>
+      <key>SeaStrike</key>
+      <key>NightCall</key>
+      <key>SupremeSky</key>
+      <key>LightBlue</key>
+      <key>MindCrawl</key>
+      <key>LilyMeadow</key>
+      <key>SugarLollipop</key>
+      <key>SweetDessert</key>
+      <key>MagicRay</key>
+      <key>TeenParty</key>
+      <key>FrozenHeat</key>
+      <key>GagarinView</key>
+      <key>FabledSunset</key>
+      <key>PerfectBlue</key>
+      <key>NumPresets</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QGradient::Preset" modifier="" name="" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="type">
+      <variant return-type="QGradient::Type" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSpread">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QGradient::Spread" modifier="" name="spread" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="spread">
+      <variant return-type="QGradient::Spread" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColorAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="pos" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setStops">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGradientStops" modifier="&amp;" name="stops" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="stops">
+      <variant return-type="QGradientStops" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="coordinateMode">
+      <variant return-type="QGradient::CoordinateMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCoordinateMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QGradient::CoordinateMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="interpolationMode">
+      <variant return-type="QGradient::InterpolationMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInterpolationMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QGradient::InterpolationMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QLinearGradient" />
+    <class_decl name="QRadialGradient" />
+    <class_decl name="QConicalGradient" />
+    <class_decl name="QBrush" />
+  </class>
+  <class name="QLinearGradient">
+    <super_list>
+      <super name="QGradient" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="start" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="finalStop" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="xStart" />
+          <parameter const="false" type="qreal" modifier="" name="yStart" />
+          <parameter const="false" type="qreal" modifier="" name="xFinalStop" />
+          <parameter const="false" type="qreal" modifier="" name="yFinalStop" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="start">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStart">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="start" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="finalStop">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFinalStop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="stop" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QRadialGradient">
+    <super_list>
+      <super name="QGradient" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="center" />
+          <parameter const="false" type="qreal" modifier="" name="radius" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="focalPoint" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="cx" />
+          <parameter const="false" type="qreal" modifier="" name="cy" />
+          <parameter const="false" type="qreal" modifier="" name="radius" />
+          <parameter const="false" type="qreal" modifier="" name="fx" />
+          <parameter const="false" type="qreal" modifier="" name="fy" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="center" />
+          <parameter const="false" type="qreal" modifier="" name="radius" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="cx" />
+          <parameter const="false" type="qreal" modifier="" name="cy" />
+          <parameter const="false" type="qreal" modifier="" name="radius" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="center" />
+          <parameter const="false" type="qreal" modifier="" name="centerRadius" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="focalPoint" />
+          <parameter const="false" type="qreal" modifier="" name="focalRadius" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="cx" />
+          <parameter const="false" type="qreal" modifier="" name="cy" />
+          <parameter const="false" type="qreal" modifier="" name="centerRadius" />
+          <parameter const="false" type="qreal" modifier="" name="fx" />
+          <parameter const="false" type="qreal" modifier="" name="fy" />
+          <parameter const="false" type="qreal" modifier="" name="focalRadius" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="center">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focalPoint">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFocalPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="focalPoint" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="radius">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRadius">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="radius" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="centerRadius">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCenterRadius">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="radius" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focalRadius">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFocalRadius">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="radius" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QConicalGradient">
+    <super_list>
+      <super name="QGradient" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="center" />
+          <parameter const="false" type="qreal" modifier="" name="startAngle" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="cx" />
+          <parameter const="false" type="qreal" modifier="" name="cy" />
+          <parameter const="false" type="qreal" modifier="" name="startAngle" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="center">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="angle">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

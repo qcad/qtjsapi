@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfileinfo.h">
+  <class_decl name="QDir" />
+  <class_decl name="QDateTime" />
+  <class name="QFileInfo">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QFile" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QDir" modifier="&amp;" name="dir" />
+        </parameters>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileInfo" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFile">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QFile" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QDir" modifier="&amp;" name="dir" />
+          <parameter const="true" type="QString" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exists">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="refresh">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="filePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="absoluteFilePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="canonicalFilePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="baseName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="completeBaseName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="suffix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bundleName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="completeSuffix">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="path">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="absolutePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="canonicalPath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dir">
+      <variant return-type="QDir" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="absoluteDir">
+      <variant return-type="QDir" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isReadable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isWritable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isExecutable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isNativePath">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRelative">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAbsolute">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="makeAbsolute">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isFile">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDir">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSymLink">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSymbolicLink">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isShortcut">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isJunction">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRoot">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isBundle">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="symLinkTarget">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="owner">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ownerId">
+      <variant return-type="uint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="group">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="groupId">
+      <variant return-type="uint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="permission">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFile::Permissions" modifier="" name="permissions" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="permissions">
+      <variant return-type="QFile::Permissions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="birthTime">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="metadataChangeTime">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastModified">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastRead">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fileTime">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QFile::FileTime" modifier="" name="time" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="caching">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCaching">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QFileInfoGatherer" />
+    <function name="stat" />
+    <function name="d_func" />
+  </class>
+</unit>

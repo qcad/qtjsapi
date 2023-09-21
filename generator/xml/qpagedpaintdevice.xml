@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpagedpaintdevice.h">
+  <class name="QPagedPaintDevice">
+    <super_list>
+      <super name="QPaintDevice" />
+    </super_list>
+    <function name="newPage">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="PdfVersion">
+      <key>PdfVersion_1_4</key>
+      <key>PdfVersion_A1b</key>
+      <key>PdfVersion_1_6</key>
+    </enum>
+    <function name="setPageLayout">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPageLayout" modifier="&amp;" name="pageLayout" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPageSize">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPageSize" modifier="&amp;" name="pageSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPageOrientation">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPageLayout::Orientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPageMargins">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QMarginsF" modifier="&amp;" name="margins" />
+          <parameter const="false" type="QPageLayout::Unit" modifier="" name="units"
+          default="QPageLayout::Millimeter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pageLayout">
+      <variant return-type="QPageLayout" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPageRanges">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPageRanges" modifier="&amp;" name="ranges" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pageRanges">
+      <variant return-type="QPageRanges" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dd" />
+  </class>
+</unit>

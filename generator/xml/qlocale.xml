@@ -1,0 +1,1690 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qlocale.h">
+  <class_decl name="QCalendar" />
+  <class_decl name="QDate" />
+  <class_decl name="QDateTime" />
+  <class_decl name="QLocale" />
+  <class_decl name="QTime" />
+  <class_decl name="QVariant" />
+  <class_decl name="QTextStream" />
+  <class name="QLocale">
+    <class_decl name="QString" />
+    <class_decl name="QByteArray" />
+    <class_decl name="QIntValidator" />
+    <class_decl name="QTextStream" />
+    <enum name="Language">
+      <key>AnyLanguage</key>
+      <key>C</key>
+      <key>Abkhazian</key>
+      <key>Afar</key>
+      <key>Afrikaans</key>
+      <key>Aghem</key>
+      <key>Akan</key>
+      <key>Akkadian</key>
+      <key>Akoose</key>
+      <key>Albanian</key>
+      <key>AmericanSignLanguage</key>
+      <key>Amharic</key>
+      <key>AncientEgyptian</key>
+      <key>AncientGreek</key>
+      <key>Arabic</key>
+      <key>Aragonese</key>
+      <key>Aramaic</key>
+      <key>Armenian</key>
+      <key>Assamese</key>
+      <key>Asturian</key>
+      <key>Asu</key>
+      <key>Atsam</key>
+      <key>Avaric</key>
+      <key>Avestan</key>
+      <key>Aymara</key>
+      <key>Azerbaijani</key>
+      <key>Bafia</key>
+      <key>Balinese</key>
+      <key>Bambara</key>
+      <key>Bamun</key>
+      <key>Bangla</key>
+      <key>Basaa</key>
+      <key>Bashkir</key>
+      <key>Basque</key>
+      <key>BatakToba</key>
+      <key>Belarusian</key>
+      <key>Bemba</key>
+      <key>Bena</key>
+      <key>Bhojpuri</key>
+      <key>Bislama</key>
+      <key>Blin</key>
+      <key>Bodo</key>
+      <key>Bosnian</key>
+      <key>Breton</key>
+      <key>Buginese</key>
+      <key>Bulgarian</key>
+      <key>Burmese</key>
+      <key>Cantonese</key>
+      <key>Catalan</key>
+      <key>Cebuano</key>
+      <key>CentralAtlasTamazight</key>
+      <key>CentralKurdish</key>
+      <key>Chakma</key>
+      <key>Chamorro</key>
+      <key>Chechen</key>
+      <key>Cherokee</key>
+      <key>Chickasaw</key>
+      <key>Chiga</key>
+      <key>Chinese</key>
+      <key>Church</key>
+      <key>Chuvash</key>
+      <key>Colognian</key>
+      <key>Coptic</key>
+      <key>Cornish</key>
+      <key>Corsican</key>
+      <key>Cree</key>
+      <key>Croatian</key>
+      <key>Czech</key>
+      <key>Danish</key>
+      <key>Divehi</key>
+      <key>Dogri</key>
+      <key>Duala</key>
+      <key>Dutch</key>
+      <key>Dzongkha</key>
+      <key>Embu</key>
+      <key>English</key>
+      <key>Erzya</key>
+      <key>Esperanto</key>
+      <key>Estonian</key>
+      <key>Ewe</key>
+      <key>Ewondo</key>
+      <key>Faroese</key>
+      <key>Fijian</key>
+      <key>Filipino</key>
+      <key>Finnish</key>
+      <key>French</key>
+      <key>Friulian</key>
+      <key>Fulah</key>
+      <key>Gaelic</key>
+      <key>Ga</key>
+      <key>Galician</key>
+      <key>Ganda</key>
+      <key>Geez</key>
+      <key>Georgian</key>
+      <key>German</key>
+      <key>Gothic</key>
+      <key>Greek</key>
+      <key>Guarani</key>
+      <key>Gujarati</key>
+      <key>Gusii</key>
+      <key>Haitian</key>
+      <key>Hausa</key>
+      <key>Hawaiian</key>
+      <key>Hebrew</key>
+      <key>Herero</key>
+      <key>Hindi</key>
+      <key>HiriMotu</key>
+      <key>Hungarian</key>
+      <key>Icelandic</key>
+      <key>Ido</key>
+      <key>Igbo</key>
+      <key>InariSami</key>
+      <key>Indonesian</key>
+      <key>Ingush</key>
+      <key>Interlingua</key>
+      <key>Interlingue</key>
+      <key>Inuktitut</key>
+      <key>Inupiaq</key>
+      <key>Irish</key>
+      <key>Italian</key>
+      <key>Japanese</key>
+      <key>Javanese</key>
+      <key>Jju</key>
+      <key>JolaFonyi</key>
+      <key>Kabuverdianu</key>
+      <key>Kabyle</key>
+      <key>Kako</key>
+      <key>Kalaallisut</key>
+      <key>Kalenjin</key>
+      <key>Kamba</key>
+      <key>Kannada</key>
+      <key>Kanuri</key>
+      <key>Kashmiri</key>
+      <key>Kazakh</key>
+      <key>Kenyang</key>
+      <key>Khmer</key>
+      <key>Kiche</key>
+      <key>Kikuyu</key>
+      <key>Kinyarwanda</key>
+      <key>Komi</key>
+      <key>Kongo</key>
+      <key>Konkani</key>
+      <key>Korean</key>
+      <key>Koro</key>
+      <key>KoyraboroSenni</key>
+      <key>KoyraChiini</key>
+      <key>Kpelle</key>
+      <key>Kuanyama</key>
+      <key>Kurdish</key>
+      <key>Kwasio</key>
+      <key>Kyrgyz</key>
+      <key>Lakota</key>
+      <key>Langi</key>
+      <key>Lao</key>
+      <key>Latin</key>
+      <key>Latvian</key>
+      <key>Lezghian</key>
+      <key>Limburgish</key>
+      <key>Lingala</key>
+      <key>LiteraryChinese</key>
+      <key>Lithuanian</key>
+      <key>Lojban</key>
+      <key>LowerSorbian</key>
+      <key>LowGerman</key>
+      <key>LubaKatanga</key>
+      <key>LuleSami</key>
+      <key>Luo</key>
+      <key>Luxembourgish</key>
+      <key>Luyia</key>
+      <key>Macedonian</key>
+      <key>Machame</key>
+      <key>Maithili</key>
+      <key>MakhuwaMeetto</key>
+      <key>Makonde</key>
+      <key>Malagasy</key>
+      <key>Malayalam</key>
+      <key>Malay</key>
+      <key>Maltese</key>
+      <key>Mandingo</key>
+      <key>Manipuri</key>
+      <key>Manx</key>
+      <key>Maori</key>
+      <key>Mapuche</key>
+      <key>Marathi</key>
+      <key>Marshallese</key>
+      <key>Masai</key>
+      <key>Mazanderani</key>
+      <key>Mende</key>
+      <key>Meru</key>
+      <key>Meta</key>
+      <key>Mohawk</key>
+      <key>Mongolian</key>
+      <key>Morisyen</key>
+      <key>Mundang</key>
+      <key>Muscogee</key>
+      <key>Nama</key>
+      <key>NauruLanguage</key>
+      <key>Navajo</key>
+      <key>Ndonga</key>
+      <key>Nepali</key>
+      <key>Newari</key>
+      <key>Ngiemboon</key>
+      <key>Ngomba</key>
+      <key>NigerianPidgin</key>
+      <key>Nko</key>
+      <key>NorthernLuri</key>
+      <key>NorthernSami</key>
+      <key>NorthernSotho</key>
+      <key>NorthNdebele</key>
+      <key>NorwegianBokmal</key>
+      <key>NorwegianNynorsk</key>
+      <key>Nuer</key>
+      <key>Nyanja</key>
+      <key>Nyankole</key>
+      <key>Occitan</key>
+      <key>Odia</key>
+      <key>Ojibwa</key>
+      <key>OldIrish</key>
+      <key>OldNorse</key>
+      <key>OldPersian</key>
+      <key>Oromo</key>
+      <key>Osage</key>
+      <key>Ossetic</key>
+      <key>Pahlavi</key>
+      <key>Palauan</key>
+      <key>Pali</key>
+      <key>Papiamento</key>
+      <key>Pashto</key>
+      <key>Persian</key>
+      <key>Phoenician</key>
+      <key>Polish</key>
+      <key>Portuguese</key>
+      <key>Prussian</key>
+      <key>Punjabi</key>
+      <key>Quechua</key>
+      <key>Romanian</key>
+      <key>Romansh</key>
+      <key>Rombo</key>
+      <key>Rundi</key>
+      <key>Russian</key>
+      <key>Rwa</key>
+      <key>Saho</key>
+      <key>Sakha</key>
+      <key>Samburu</key>
+      <key>Samoan</key>
+      <key>Sango</key>
+      <key>Sangu</key>
+      <key>Sanskrit</key>
+      <key>Santali</key>
+      <key>Sardinian</key>
+      <key>Saurashtra</key>
+      <key>Sena</key>
+      <key>Serbian</key>
+      <key>Shambala</key>
+      <key>Shona</key>
+      <key>SichuanYi</key>
+      <key>Sicilian</key>
+      <key>Sidamo</key>
+      <key>Silesian</key>
+      <key>Sindhi</key>
+      <key>Sinhala</key>
+      <key>SkoltSami</key>
+      <key>Slovak</key>
+      <key>Slovenian</key>
+      <key>Soga</key>
+      <key>Somali</key>
+      <key>SouthernKurdish</key>
+      <key>SouthernSami</key>
+      <key>SouthernSotho</key>
+      <key>SouthNdebele</key>
+      <key>Spanish</key>
+      <key>StandardMoroccanTamazight</key>
+      <key>Sundanese</key>
+      <key>Swahili</key>
+      <key>Swati</key>
+      <key>Swedish</key>
+      <key>SwissGerman</key>
+      <key>Syriac</key>
+      <key>Tachelhit</key>
+      <key>Tahitian</key>
+      <key>TaiDam</key>
+      <key>Taita</key>
+      <key>Tajik</key>
+      <key>Tamil</key>
+      <key>Taroko</key>
+      <key>Tasawaq</key>
+      <key>Tatar</key>
+      <key>Telugu</key>
+      <key>Teso</key>
+      <key>Thai</key>
+      <key>Tibetan</key>
+      <key>Tigre</key>
+      <key>Tigrinya</key>
+      <key>TokelauLanguage</key>
+      <key>TokPisin</key>
+      <key>Tongan</key>
+      <key>Tsonga</key>
+      <key>Tswana</key>
+      <key>Turkish</key>
+      <key>Turkmen</key>
+      <key>TuvaluLanguage</key>
+      <key>Tyap</key>
+      <key>Ugaritic</key>
+      <key>Ukrainian</key>
+      <key>UpperSorbian</key>
+      <key>Urdu</key>
+      <key>Uyghur</key>
+      <key>Uzbek</key>
+      <key>Vai</key>
+      <key>Venda</key>
+      <key>Vietnamese</key>
+      <key>Volapuk</key>
+      <key>Vunjo</key>
+      <key>Walloon</key>
+      <key>Walser</key>
+      <key>Warlpiri</key>
+      <key>Welsh</key>
+      <key>WesternBalochi</key>
+      <key>WesternFrisian</key>
+      <key>Wolaytta</key>
+      <key>Wolof</key>
+      <key>Xhosa</key>
+      <key>Yangben</key>
+      <key>Yiddish</key>
+      <key>Yoruba</key>
+      <key>Zarma</key>
+      <key>Zhuang</key>
+      <key>Zulu</key>
+      <key>Afan</key>
+      <key>Bengali</key>
+      <key>Bhutani</key>
+      <key>Byelorussian</key>
+      <key>Cambodian</key>
+      <key>CentralMoroccoTamazight</key>
+      <key>Chewa</key>
+      <key>Frisian</key>
+      <key>Greenlandic</key>
+      <key>Inupiak</key>
+      <key>Kirghiz</key>
+      <key>Kurundi</key>
+      <key>Kwanyama</key>
+      <key>Navaho</key>
+      <key>Oriya</key>
+      <key>RhaetoRomance</key>
+      <key>Uighur</key>
+      <key>Uigur</key>
+      <key>Walamo</key>
+      <key>LastLanguage</key>
+    </enum>
+    <enum name="Script">
+      <key>AnyScript</key>
+      <key>AdlamScript</key>
+      <key>AhomScript</key>
+      <key>AnatolianHieroglyphsScript</key>
+      <key>ArabicScript</key>
+      <key>ArmenianScript</key>
+      <key>AvestanScript</key>
+      <key>BalineseScript</key>
+      <key>BamumScript</key>
+      <key>BanglaScript</key>
+      <key>BassaVahScript</key>
+      <key>BatakScript</key>
+      <key>BhaiksukiScript</key>
+      <key>BopomofoScript</key>
+      <key>BrahmiScript</key>
+      <key>BrailleScript</key>
+      <key>BugineseScript</key>
+      <key>BuhidScript</key>
+      <key>CanadianAboriginalScript</key>
+      <key>CarianScript</key>
+      <key>CaucasianAlbanianScript</key>
+      <key>ChakmaScript</key>
+      <key>ChamScript</key>
+      <key>CherokeeScript</key>
+      <key>CopticScript</key>
+      <key>CuneiformScript</key>
+      <key>CypriotScript</key>
+      <key>CyrillicScript</key>
+      <key>DeseretScript</key>
+      <key>DevanagariScript</key>
+      <key>DuployanScript</key>
+      <key>EgyptianHieroglyphsScript</key>
+      <key>ElbasanScript</key>
+      <key>EthiopicScript</key>
+      <key>FraserScript</key>
+      <key>GeorgianScript</key>
+      <key>GlagoliticScript</key>
+      <key>GothicScript</key>
+      <key>GranthaScript</key>
+      <key>GreekScript</key>
+      <key>GujaratiScript</key>
+      <key>GurmukhiScript</key>
+      <key>HangulScript</key>
+      <key>HanScript</key>
+      <key>HanunooScript</key>
+      <key>HanWithBopomofoScript</key>
+      <key>HatranScript</key>
+      <key>HebrewScript</key>
+      <key>HiraganaScript</key>
+      <key>ImperialAramaicScript</key>
+      <key>InscriptionalPahlaviScript</key>
+      <key>InscriptionalParthianScript</key>
+      <key>JamoScript</key>
+      <key>JapaneseScript</key>
+      <key>JavaneseScript</key>
+      <key>KaithiScript</key>
+      <key>KannadaScript</key>
+      <key>KatakanaScript</key>
+      <key>KayahLiScript</key>
+      <key>KharoshthiScript</key>
+      <key>KhmerScript</key>
+      <key>KhojkiScript</key>
+      <key>KhudawadiScript</key>
+      <key>KoreanScript</key>
+      <key>LannaScript</key>
+      <key>LaoScript</key>
+      <key>LatinScript</key>
+      <key>LepchaScript</key>
+      <key>LimbuScript</key>
+      <key>LinearAScript</key>
+      <key>LinearBScript</key>
+      <key>LycianScript</key>
+      <key>LydianScript</key>
+      <key>MahajaniScript</key>
+      <key>MalayalamScript</key>
+      <key>MandaeanScript</key>
+      <key>ManichaeanScript</key>
+      <key>MarchenScript</key>
+      <key>MeiteiMayekScript</key>
+      <key>MendeScript</key>
+      <key>MeroiticCursiveScript</key>
+      <key>MeroiticScript</key>
+      <key>ModiScript</key>
+      <key>MongolianScript</key>
+      <key>MroScript</key>
+      <key>MultaniScript</key>
+      <key>MyanmarScript</key>
+      <key>NabataeanScript</key>
+      <key>NewaScript</key>
+      <key>NewTaiLueScript</key>
+      <key>NkoScript</key>
+      <key>OdiaScript</key>
+      <key>OghamScript</key>
+      <key>OlChikiScript</key>
+      <key>OldHungarianScript</key>
+      <key>OldItalicScript</key>
+      <key>OldNorthArabianScript</key>
+      <key>OldPermicScript</key>
+      <key>OldPersianScript</key>
+      <key>OldSouthArabianScript</key>
+      <key>OrkhonScript</key>
+      <key>OsageScript</key>
+      <key>OsmanyaScript</key>
+      <key>PahawhHmongScript</key>
+      <key>PalmyreneScript</key>
+      <key>PauCinHauScript</key>
+      <key>PhagsPaScript</key>
+      <key>PhoenicianScript</key>
+      <key>PollardPhoneticScript</key>
+      <key>PsalterPahlaviScript</key>
+      <key>RejangScript</key>
+      <key>RunicScript</key>
+      <key>SamaritanScript</key>
+      <key>SaurashtraScript</key>
+      <key>SharadaScript</key>
+      <key>ShavianScript</key>
+      <key>SiddhamScript</key>
+      <key>SignWritingScript</key>
+      <key>SimplifiedHanScript</key>
+      <key>SinhalaScript</key>
+      <key>SoraSompengScript</key>
+      <key>SundaneseScript</key>
+      <key>SylotiNagriScript</key>
+      <key>SyriacScript</key>
+      <key>TagalogScript</key>
+      <key>TagbanwaScript</key>
+      <key>TaiLeScript</key>
+      <key>TaiVietScript</key>
+      <key>TakriScript</key>
+      <key>TamilScript</key>
+      <key>TangutScript</key>
+      <key>TeluguScript</key>
+      <key>ThaanaScript</key>
+      <key>ThaiScript</key>
+      <key>TibetanScript</key>
+      <key>TifinaghScript</key>
+      <key>TirhutaScript</key>
+      <key>TraditionalHanScript</key>
+      <key>UgariticScript</key>
+      <key>VaiScript</key>
+      <key>VarangKshitiScript</key>
+      <key>YiScript</key>
+      <key>BengaliScript</key>
+      <key>MendeKikakuiScript</key>
+      <key>OriyaScript</key>
+      <key>SimplifiedChineseScript</key>
+      <key>TraditionalChineseScript</key>
+      <key>LastScript</key>
+    </enum>
+    <enum name="Country">
+      <key>AnyTerritory</key>
+      <key>Afghanistan</key>
+      <key>AlandIslands</key>
+      <key>Albania</key>
+      <key>Algeria</key>
+      <key>AmericanSamoa</key>
+      <key>Andorra</key>
+      <key>Angola</key>
+      <key>Anguilla</key>
+      <key>Antarctica</key>
+      <key>AntiguaAndBarbuda</key>
+      <key>Argentina</key>
+      <key>Armenia</key>
+      <key>Aruba</key>
+      <key>AscensionIsland</key>
+      <key>Australia</key>
+      <key>Austria</key>
+      <key>Azerbaijan</key>
+      <key>Bahamas</key>
+      <key>Bahrain</key>
+      <key>Bangladesh</key>
+      <key>Barbados</key>
+      <key>Belarus</key>
+      <key>Belgium</key>
+      <key>Belize</key>
+      <key>Benin</key>
+      <key>Bermuda</key>
+      <key>Bhutan</key>
+      <key>Bolivia</key>
+      <key>BosniaAndHerzegovina</key>
+      <key>Botswana</key>
+      <key>BouvetIsland</key>
+      <key>Brazil</key>
+      <key>BritishIndianOceanTerritory</key>
+      <key>BritishVirginIslands</key>
+      <key>Brunei</key>
+      <key>Bulgaria</key>
+      <key>BurkinaFaso</key>
+      <key>Burundi</key>
+      <key>Cambodia</key>
+      <key>Cameroon</key>
+      <key>Canada</key>
+      <key>CanaryIslands</key>
+      <key>CapeVerde</key>
+      <key>CaribbeanNetherlands</key>
+      <key>CaymanIslands</key>
+      <key>CentralAfricanRepublic</key>
+      <key>CeutaAndMelilla</key>
+      <key>Chad</key>
+      <key>Chile</key>
+      <key>China</key>
+      <key>ChristmasIsland</key>
+      <key>ClippertonIsland</key>
+      <key>CocosIslands</key>
+      <key>Colombia</key>
+      <key>Comoros</key>
+      <key>CongoBrazzaville</key>
+      <key>CongoKinshasa</key>
+      <key>CookIslands</key>
+      <key>CostaRica</key>
+      <key>Croatia</key>
+      <key>Cuba</key>
+      <key>Curacao</key>
+      <key>Cyprus</key>
+      <key>Czechia</key>
+      <key>Denmark</key>
+      <key>DiegoGarcia</key>
+      <key>Djibouti</key>
+      <key>Dominica</key>
+      <key>DominicanRepublic</key>
+      <key>Ecuador</key>
+      <key>Egypt</key>
+      <key>ElSalvador</key>
+      <key>EquatorialGuinea</key>
+      <key>Eritrea</key>
+      <key>Estonia</key>
+      <key>Eswatini</key>
+      <key>Ethiopia</key>
+      <key>Europe</key>
+      <key>EuropeanUnion</key>
+      <key>FalklandIslands</key>
+      <key>FaroeIslands</key>
+      <key>Fiji</key>
+      <key>Finland</key>
+      <key>France</key>
+      <key>FrenchGuiana</key>
+      <key>FrenchPolynesia</key>
+      <key>FrenchSouthernTerritories</key>
+      <key>Gabon</key>
+      <key>Gambia</key>
+      <key>Georgia</key>
+      <key>Germany</key>
+      <key>Ghana</key>
+      <key>Gibraltar</key>
+      <key>Greece</key>
+      <key>Greenland</key>
+      <key>Grenada</key>
+      <key>Guadeloupe</key>
+      <key>Guam</key>
+      <key>Guatemala</key>
+      <key>Guernsey</key>
+      <key>GuineaBissau</key>
+      <key>Guinea</key>
+      <key>Guyana</key>
+      <key>Haiti</key>
+      <key>HeardAndMcDonaldIslands</key>
+      <key>Honduras</key>
+      <key>HongKong</key>
+      <key>Hungary</key>
+      <key>Iceland</key>
+      <key>India</key>
+      <key>Indonesia</key>
+      <key>Iran</key>
+      <key>Iraq</key>
+      <key>Ireland</key>
+      <key>IsleOfMan</key>
+      <key>Israel</key>
+      <key>Italy</key>
+      <key>IvoryCoast</key>
+      <key>Jamaica</key>
+      <key>Japan</key>
+      <key>Jersey</key>
+      <key>Jordan</key>
+      <key>Kazakhstan</key>
+      <key>Kenya</key>
+      <key>Kiribati</key>
+      <key>Kosovo</key>
+      <key>Kuwait</key>
+      <key>Kyrgyzstan</key>
+      <key>Laos</key>
+      <key>LatinAmerica</key>
+      <key>Latvia</key>
+      <key>Lebanon</key>
+      <key>Lesotho</key>
+      <key>Liberia</key>
+      <key>Libya</key>
+      <key>Liechtenstein</key>
+      <key>Lithuania</key>
+      <key>Luxembourg</key>
+      <key>Macao</key>
+      <key>Macedonia</key>
+      <key>Madagascar</key>
+      <key>Malawi</key>
+      <key>Malaysia</key>
+      <key>Maldives</key>
+      <key>Mali</key>
+      <key>Malta</key>
+      <key>MarshallIslands</key>
+      <key>Martinique</key>
+      <key>Mauritania</key>
+      <key>Mauritius</key>
+      <key>Mayotte</key>
+      <key>Mexico</key>
+      <key>Micronesia</key>
+      <key>Moldova</key>
+      <key>Monaco</key>
+      <key>Mongolia</key>
+      <key>Montenegro</key>
+      <key>Montserrat</key>
+      <key>Morocco</key>
+      <key>Mozambique</key>
+      <key>Myanmar</key>
+      <key>Namibia</key>
+      <key>NauruTerritory</key>
+      <key>Nepal</key>
+      <key>Netherlands</key>
+      <key>NewCaledonia</key>
+      <key>NewZealand</key>
+      <key>Nicaragua</key>
+      <key>Nigeria</key>
+      <key>Niger</key>
+      <key>Niue</key>
+      <key>NorfolkIsland</key>
+      <key>NorthernMarianaIslands</key>
+      <key>NorthKorea</key>
+      <key>Norway</key>
+      <key>Oman</key>
+      <key>OutlyingOceania</key>
+      <key>Pakistan</key>
+      <key>Palau</key>
+      <key>PalestinianTerritories</key>
+      <key>Panama</key>
+      <key>PapuaNewGuinea</key>
+      <key>Paraguay</key>
+      <key>Peru</key>
+      <key>Philippines</key>
+      <key>Pitcairn</key>
+      <key>Poland</key>
+      <key>Portugal</key>
+      <key>PuertoRico</key>
+      <key>Qatar</key>
+      <key>Reunion</key>
+      <key>Romania</key>
+      <key>Russia</key>
+      <key>Rwanda</key>
+      <key>SaintBarthelemy</key>
+      <key>SaintHelena</key>
+      <key>SaintKittsAndNevis</key>
+      <key>SaintLucia</key>
+      <key>SaintMartin</key>
+      <key>SaintPierreAndMiquelon</key>
+      <key>SaintVincentAndGrenadines</key>
+      <key>Samoa</key>
+      <key>SanMarino</key>
+      <key>SaoTomeAndPrincipe</key>
+      <key>SaudiArabia</key>
+      <key>Senegal</key>
+      <key>Serbia</key>
+      <key>Seychelles</key>
+      <key>SierraLeone</key>
+      <key>Singapore</key>
+      <key>SintMaarten</key>
+      <key>Slovakia</key>
+      <key>Slovenia</key>
+      <key>SolomonIslands</key>
+      <key>Somalia</key>
+      <key>SouthAfrica</key>
+      <key>SouthGeorgiaAndSouthSandwichIslands</key>
+      <key>SouthKorea</key>
+      <key>SouthSudan</key>
+      <key>Spain</key>
+      <key>SriLanka</key>
+      <key>Sudan</key>
+      <key>Suriname</key>
+      <key>SvalbardAndJanMayen</key>
+      <key>Sweden</key>
+      <key>Switzerland</key>
+      <key>Syria</key>
+      <key>Taiwan</key>
+      <key>Tajikistan</key>
+      <key>Tanzania</key>
+      <key>Thailand</key>
+      <key>TimorLeste</key>
+      <key>Togo</key>
+      <key>TokelauTerritory</key>
+      <key>Tonga</key>
+      <key>TrinidadAndTobago</key>
+      <key>TristanDaCunha</key>
+      <key>Tunisia</key>
+      <key>Turkey</key>
+      <key>Turkmenistan</key>
+      <key>TurksAndCaicosIslands</key>
+      <key>TuvaluTerritory</key>
+      <key>Uganda</key>
+      <key>Ukraine</key>
+      <key>UnitedArabEmirates</key>
+      <key>UnitedKingdom</key>
+      <key>UnitedStatesOutlyingIslands</key>
+      <key>UnitedStates</key>
+      <key>UnitedStatesVirginIslands</key>
+      <key>Uruguay</key>
+      <key>Uzbekistan</key>
+      <key>Vanuatu</key>
+      <key>VaticanCity</key>
+      <key>Venezuela</key>
+      <key>Vietnam</key>
+      <key>WallisAndFutuna</key>
+      <key>WesternSahara</key>
+      <key>World</key>
+      <key>Yemen</key>
+      <key>Zambia</key>
+      <key>Zimbabwe</key>
+      <key>AnyCountry</key>
+      <key>Bonaire</key>
+      <key>BosniaAndHerzegowina</key>
+      <key>CuraSao</key>
+      <key>CzechRepublic</key>
+      <key>DemocraticRepublicOfCongo</key>
+      <key>DemocraticRepublicOfKorea</key>
+      <key>EastTimor</key>
+      <key>LatinAmericaAndTheCaribbean</key>
+      <key>Macau</key>
+      <key>NauruCountry</key>
+      <key>PeoplesRepublicOfCongo</key>
+      <key>RepublicOfKorea</key>
+      <key>RussianFederation</key>
+      <key>SaintVincentAndTheGrenadines</key>
+      <key>SouthGeorgiaAndTheSouthSandwichIslands</key>
+      <key>SvalbardAndJanMayenIslands</key>
+      <key>Swaziland</key>
+      <key>SyrianArabRepublic</key>
+      <key>TokelauCountry</key>
+      <key>TuvaluCountry</key>
+      <key>UnitedStatesMinorOutlyingIslands</key>
+      <key>VaticanCityState</key>
+      <key>WallisAndFutunaIslands</key>
+      <key>LastTerritory</key>
+      <key>LastCountry</key>
+    </enum>
+    <enum name="MeasurementSystem">
+      <key>MetricSystem</key>
+      <key>ImperialUSSystem</key>
+      <key>ImperialUKSystem</key>
+      <key>ImperialSystem</key>
+    </enum>
+    <enum name="FormatType">
+      <key>LongFormat</key>
+      <key>ShortFormat</key>
+      <key>NarrowFormat</key>
+    </enum>
+    <enum name="NumberOption">
+      <key>DefaultNumberOptions</key>
+      <key>OmitGroupSeparator</key>
+      <key>RejectGroupSeparator</key>
+      <key>OmitLeadingZeroInExponent</key>
+      <key>RejectLeadingZeroInExponent</key>
+      <key>IncludeTrailingZeroesAfterDot</key>
+      <key>RejectTrailingZeroesAfterDot</key>
+    </enum>
+    <enum name="FloatingPointPrecisionOption">
+      <key>FloatingPointShortest</key>
+    </enum>
+    <enum name="CurrencySymbolFormat">
+      <key>CurrencyIsoCode</key>
+      <key>CurrencySymbol</key>
+      <key>CurrencyDisplayName</key>
+    </enum>
+    <enum name="DataSizeFormat">
+      <key>DataSizeBase1000</key>
+      <key>DataSizeSIQuantifiers</key>
+      <key>DataSizeIecFormat</key>
+      <key>DataSizeTraditionalFormat</key>
+      <key>DataSizeSIFormat</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="language">
+      <variant return-type="QLocale::Language" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="script">
+      <variant return-type="QLocale::Script" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="territory">
+      <variant return-type="QLocale::Territory" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,6)" />
+    <function name="country">
+      <variant return-type="QLocale::Country" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bcp47Name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nativeLanguageName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nativeTerritoryName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,6)" />
+    <function name="nativeCountryName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <function name="toShort">
+      <variant return-type="short" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="short" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toUShort">
+      <variant return-type="ushort" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="ushort" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toInt">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toUInt">
+      <variant return-type="uint" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="uint" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toLong">
+      <variant return-type="long" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="long" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toULong">
+      <variant return-type="ulong" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="ulong" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toLongLong">
+      <variant return-type="qlonglong" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="qlonglong" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toULongLong">
+      <variant return-type="qulonglong" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="qulonglong" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toFloat">
+      <variant return-type="float" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="float" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="toDouble">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="s" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#endif" />
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qlonglong" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qulonglong" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="long" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="ulong" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="short" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="ushort" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+          <parameter const="false" type="char" modifier="" name="format" default="'g'" />
+          <parameter const="false" type="int" modifier="" name="precision" default="6" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="f" />
+          <parameter const="false" type="char" modifier="" name="format" default="'g'" />
+          <parameter const="false" type="int" modifier="" name="precision" default="6" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDate" modifier="" name="date" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTime" modifier="" name="time" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="dateTime" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDate" modifier="" name="date" />
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTime" modifier="" name="time" />
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="dateTime" />
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDate" modifier="" name="date" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QTime" modifier="" name="time" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="dateTime" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDate" modifier="" name="date" />
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDate" modifier="" name="date" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="dateTime" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="dateTime" />
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <preproc plain="#endif" />
+    <function name="dateFormat">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="timeFormat">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dateTimeFormat">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(datestring)" />
+    <function name="toDate">
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toTime">
+      <variant return-type="QTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+      <variant return-type="QTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toDateTime">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="decimalPoint">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="groupSeparator">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="percent">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="zeroDigit">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="negativeSign">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="positiveSign">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exponential">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="monthName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="standaloneMonthName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dayName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="standaloneDayName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format" default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="firstDayOfWeek">
+      <variant return-type="Qt::DayOfWeek" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="weekdays">
+      <variant return-type="QList&lt;Qt::DayOfWeek&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="amText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pmText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="measurementSystem">
+      <variant return-type="QLocale::MeasurementSystem" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="collation">
+      <variant return-type="QLocale" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="textDirection">
+      <variant return-type="Qt::LayoutDirection" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toUpper">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toLower">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currencySymbol">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::CurrencySymbolFormat" modifier="" name="" default="QLocale::CurrencySymbol" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toCurrencyString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qlonglong" modifier="" name="" />
+          <parameter const="true" type="QString" modifier="&amp;" name="symbol" default="QString()" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qulonglong" modifier="" name="" />
+          <parameter const="true" type="QString" modifier="&amp;" name="symbol" default="QString()" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="short" modifier="" name="i" />
+          <parameter const="true" type="QString" modifier="&amp;" name="symbol" default="QString()" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="ushort" modifier="" name="i" />
+          <parameter const="true" type="QString" modifier="&amp;" name="symbol" default="QString()" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="true" type="QString" modifier="&amp;" name="symbol" default="QString()" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="i" />
+          <parameter const="true" type="QString" modifier="&amp;" name="symbol" default="QString()" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+          <parameter const="true" type="QString" modifier="&amp;" name="symbol" default="QString()" />
+          <parameter const="false" type="int" modifier="" name="precision" default="-1" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="i" />
+          <parameter const="true" type="QString" modifier="&amp;" name="symbol" default="QString()" />
+          <parameter const="false" type="int" modifier="" name="precision" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formattedDataSize">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="bytes" />
+          <parameter const="false" type="int" modifier="" name="precision" default="2" />
+          <parameter const="false" type="QLocale::DataSizeFormats" modifier="" name="format" default="QLocale::DataSizeIecFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="uiLanguages">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="languageToCode" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Language" modifier="" name="language" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="codeToLanguage" static="true">
+      <variant return-type="QLocale::Language" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="languageCode" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="territoryToCode" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Territory" modifier="" name="territory" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="codeToTerritory" static="true">
+      <variant return-type="QLocale::Territory" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="territoryCode" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,6)" />
+    <function name="countryToCode" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Country" modifier="" name="country" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="codeToCountry" static="true">
+      <variant return-type="QLocale::Country" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="countryCode" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <function name="scriptToCode" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Script" modifier="" name="script" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="codeToScript" static="true">
+      <variant return-type="QLocale::Script" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="scriptCode" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="languageToString" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Language" modifier="" name="language" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="territoryToString" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Territory" modifier="" name="territory" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,6)" />
+    <function name="countryToString" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Country" modifier="" name="country" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="scriptToString" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Script" modifier="" name="script" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDefault" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="c" static="true">
+      <variant return-type="QLocale" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="system" static="true">
+      <variant return-type="QLocale" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="matchingLocales" static="true">
+      <variant return-type="QList&lt;QLocale&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Language" modifier="" name="language" />
+          <parameter const="false" type="QLocale::Script" modifier="" name="script" />
+          <parameter const="false" type="QLocale::Territory" modifier="" name="territory" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,6)" />
+    <function name="countriesForLanguage" static="true">
+      <variant return-type="QList&lt;QLocale::Country&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::Language" modifier="" name="lang" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setNumberOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLocale::NumberOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="numberOptions">
+      <variant return-type="QLocale::NumberOptions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="QuotationStyle">
+      <key>StandardQuotation</key>
+      <key>AlternateQuotation</key>
+    </enum>
+    <function name="quoteString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+          <parameter const="false" type="QLocale::QuotationStyle" modifier="" name="style" default="QLocale::StandardQuotation" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">: 
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="str" />
+          <parameter const="false" type="QLocale::QuotationStyle" modifier="" name="style" default="StandardQuotation" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="createSeparatedList">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="strl" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equals" />
+    <class_decl name="QSystemLocale" />
+    <class_decl name="QGregorianCalendar" />
+  </class>
+</unit>

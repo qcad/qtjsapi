@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcalendar.h">
+  <class_decl name="QDate" />
+  <class name="QCalendar">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_BOOTSTRAPPED" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(jalalicalendar)" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(islamiccivilcalendar)" />
+    <preproc plain="#endif" />
+    <function name="daysInMonth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="month" />
+          <parameter const="false" type="int" modifier="" name="year" default="QCalendar::Unspecified" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="daysInYear">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="year" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="monthsInYear">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="year" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDateValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="year" />
+          <parameter const="false" type="int" modifier="" name="month" />
+          <parameter const="false" type="int" modifier="" name="day" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLeapYear">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="year" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isGregorian">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isLunar">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isLuniSolar">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSolar">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isProleptic">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasYearZero">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumDaysInMonth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumDaysInMonth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumMonthsInYear">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="dateFromParts">
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="year" />
+          <parameter const="false" type="int" modifier="" name="month" />
+          <parameter const="false" type="int" modifier="" name="day" />
+        </parameters>
+      </variant>
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QCalendar::YearMonthDay" modifier="&amp;" name="parts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="partsFromDate">
+      <variant return-type="QCalendar::YearMonthDay" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDate" modifier="" name="date" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="dayOfWeek">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDate" modifier="" name="date" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="monthName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+          <parameter const="false" type="int" modifier="" name="month" />
+          <parameter const="false" type="int" modifier="" name="year" default="QCalendar::Unspecified" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format"
+          default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="standaloneMonthName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+          <parameter const="false" type="int" modifier="" name="month" />
+          <parameter const="false" type="int" modifier="" name="year" default="QCalendar::Unspecified" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format"
+          default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="weekDayName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+          <parameter const="false" type="int" modifier="" name="day" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format"
+          default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="standaloneWeekDayName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+          <parameter const="false" type="int" modifier="" name="day" />
+          <parameter const="false" type="QLocale::FormatType" modifier="" name="format"
+          default="QLocale::LongFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="dateTimeToString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="datetime" />
+          <parameter const="true" type="QDate" modifier="&amp;" name="dateOnly" />
+          <parameter const="true" type="QTime" modifier="&amp;" name="timeOnly" />
+          <parameter const="true" type="QLocale" modifier="&amp;" name="locale" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="availableCalendars" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

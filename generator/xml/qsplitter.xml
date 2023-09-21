@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsplitter.h">
+  <class_decl name="QTextStream" />
+  <class_decl name="QSplitterHandle" />
+  <class name="QSplitter">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+    </super_list>
+    <property type="bool" name="opaqueResize" read="opaqueResize" write="setOpaqueResize" />
+    <property type="int" name="handleWidth" read="handleWidth" write="setHandleWidth" />
+    <property type="bool" name="childrenCollapsible" read="childrenCollapsible" write="setChildrenCollapsible" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="addWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="replaceWidget">
+      <variant return-type="QWidget*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOrientation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="orientation">
+      <variant return-type="Qt::Orientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setChildrenCollapsible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="childrenCollapsible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCollapsible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isCollapsible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOpaqueResize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="opaque" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="opaqueResize">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="refresh">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizes">
+      <variant return-type="QList&lt;int&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSizes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="saveState">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="restoreState">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHandleWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexOf">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="widget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getRange">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="*" name="" />
+          <parameter const="false" type="int" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="handle">
+      <variant return-type="QSplitterHandle*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStretchFactor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="" name="stretch" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="splitterMoved">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createHandle" />
+    <function name="childEvent" />
+    <function name="event" />
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="changeEvent" />
+    <function name="moveSplitter" />
+    <function name="setRubberBand" />
+    <function name="closestLegalPosition" />
+    <class_decl name="QSplitterHandle" />
+  </class>
+  <class name="QSplitterHandle">
+    <super_list>
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="o" />
+          <parameter const="false" type="QSplitter" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setOrientation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="o" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="orientation">
+      <variant return-type="Qt::Orientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="opaqueResize">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="splitter">
+      <variant return-type="QSplitter*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event" />
+    <function name="moveSplitter" />
+    <function name="closestLegalPosition" />
+  </class>
+</unit>

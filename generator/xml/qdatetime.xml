@@ -1,0 +1,858 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdatetime.h">
+  <class_decl name="QTimeZone" />
+  <class_decl name="QDateTime" />
+  <class name="QDate">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="m" />
+          <parameter const="false" type="int" modifier="" name="d" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="m" />
+          <parameter const="false" type="int" modifier="" name="d" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="m" />
+          <parameter const="false" type="int" modifier="" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="year">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="month">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="day">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="dayOfWeek">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="dayOfYear">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="daysInMonth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="daysInYear">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="startOfDay">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TimeSpec" modifier="" name="spec" default="Qt::LocalTime" />
+          <parameter const="false" type="int" modifier="" name="offsetSeconds" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTimeZone" modifier="&amp;" name="zone" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endOfDay">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TimeSpec" modifier="" name="spec" default="Qt::LocalTime" />
+          <parameter const="false" type="int" modifier="" name="offsetSeconds" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTimeZone" modifier="&amp;" name="zone" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(datestring)" />
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DateFormat" modifier="" name="format" default="Qt::TextDate" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DateFormat" modifier="" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#endif" />
+    <function name="setDate">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="year" />
+          <parameter const="false" type="int" modifier="" name="month" />
+          <parameter const="false" type="int" modifier="" name="day" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="year" />
+          <parameter const="false" type="int" modifier="" name="month" />
+          <parameter const="false" type="int" modifier="" name="day" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_VERSION&lt;QT_VERSION_CHECK(6,0,0)" />
+    <preproc plain="#endif" />
+    <function name="addDays">
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="days" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addMonths">
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="months" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="months" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="addYears">
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="years" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QDate" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="years" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="daysTo">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDate" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentDate" static="true">
+      <variant return-type="QDate" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(datestring)" />
+    <function name="fromString" static="true">
+      <variant return-type="QDate" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <parameter const="false" type="Qt::DateFormat" modifier="" name="f" default="Qt::TextDate" />
+        </parameters>
+      </variant>
+      <variant return-type="QDate" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QDate" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#endif" />
+    <function name="isLeapYear" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="year" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromJulianDay" static="true">
+      <variant return-type="QDate" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="jd_" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toJulianDay">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nullJd" static="true" />
+    <function name="minJd" static="true" />
+    <function name="maxJd" static="true" />
+    <class_decl name="QDateTime" />
+    <preproc plain="#ifndef QT_NO_DATASTREAM" />
+    <preproc plain="#endif" />
+  </class>
+  <class name="QTime">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="int" modifier="" name="m" />
+          <parameter const="false" type="int" modifier="" name="s" default="0" />
+          <parameter const="false" type="int" modifier="" name="ms" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="int" modifier="" name="m" />
+          <parameter const="false" type="int" modifier="" name="s" />
+          <parameter const="false" type="int" modifier="" name="ms" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hour">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="minute">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="second">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="msec">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(datestring)" />
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DateFormat" modifier="" name="f" default="Qt::TextDate" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <preproc plain="#endif" />
+    <preproc plain="#endif" />
+    <function name="setHMS">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="int" modifier="" name="m" />
+          <parameter const="false" type="int" modifier="" name="s" />
+          <parameter const="false" type="int" modifier="" name="ms" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addSecs">
+      <variant return-type="QTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="secs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="secsTo">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTime" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addMSecs">
+      <variant return-type="QTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="ms" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="msecsTo">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTime" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromMSecsSinceStartOfDay" static="true">
+      <variant return-type="QTime" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="msecsSinceStartOfDay">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentTime" static="true">
+      <variant return-type="QTime" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(datestring)" />
+    <function name="fromString" static="true">
+      <variant return-type="QTime" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <parameter const="false" type="Qt::DateFormat" modifier="" name="f" default="Qt::TextDate" />
+        </parameters>
+      </variant>
+      <variant return-type="QTime" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="operator_lessthan" call="operator&lt;" static="true" non-member="true">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="false" type="QTime" modifier="" name="lhs" />
+          <parameter const="false" type="QTime" modifier="" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QDateTime" />
+  </class>
+  <class name="QDateTime">
+    <preproc plain="#if Q_BYTE_ORDER==Q_LITTLE_ENDIAN" />
+    <preproc plain="#endif" />
+    <preproc plain="#if Q_BYTE_ORDER==Q_BIG_ENDIAN" />
+    <preproc plain="#endif" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::TimeSpec" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="Data" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Data" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <!--
+    <function name="isShort">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="detach">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <preproc plain="#if QT_CONFIG(timezone)" />
+    <preproc plain="#endif" />
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDateTime" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="date">
+      <variant return-type="QDate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="time">
+      <variant return-type="QTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="timeSpec">
+      <variant return-type="Qt::TimeSpec" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="offsetFromUtc">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(timezone)" />
+    <function name="timeZone">
+      <variant return-type="QTimeZone" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="timeZoneAbbreviation">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDaylightTime">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toMSecsSinceEpoch">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toSecsSinceEpoch">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QDate" modifier="&amp;" name="date" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTime">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTime" modifier="&amp;" name="time" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTimeSpec">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TimeSpec" modifier="" name="spec" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOffsetFromUtc">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="offsetSeconds" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(timezone)" />
+    <function name="setTimeZone">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTimeZone" modifier="&amp;" name="toZone" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="setMSecsSinceEpoch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="msecs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSecsSinceEpoch">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="secs" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(datestring)" />
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::DateFormat" modifier="" name="format" default="Qt::TextDate" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <preproc plain="#endif" />
+    <preproc plain="#endif" />
+    <function name="addDays">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="days" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addMonths">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="months" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addYears">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="years" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addSecs">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="secs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addMSecs">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="msecs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toTimeSpec">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::TimeSpec" modifier="" name="spec" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toLocalTime">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toUTC">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toOffsetFromUtc">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="offsetSeconds" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(timezone)" />
+    <function name="toTimeZone">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTimeZone" modifier="&amp;" name="toZone" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="daysTo">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="secsTo">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="msecsTo">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentDateTime" static="true">
+      <variant return-type="QDateTime" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentDateTimeUtc" static="true">
+      <variant return-type="QDateTime" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(datestring)" />
+    <function name="fromString" static="true">
+      <variant return-type="QDateTime" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <parameter const="false" type="Qt::DateFormat" modifier="" name="f" default="Qt::TextDate" />
+        </parameters>
+      </variant>
+      <variant return-type="QDateTime" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="QDateTime" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+          <parameter const="true" type="QString" modifier="&amp;" name="format" />
+          <parameter const="false" type="QCalendar" modifier="" name="cal" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#endif" />
+    <function name="fromMSecsSinceEpoch" static="true">
+      <variant return-type="QDateTime" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="msecs" />
+        </parameters>
+      </variant>
+      <variant return-type="QDateTime" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="msecs" />
+          <parameter const="false" type="Qt::TimeSpec" modifier="" name="spec" />
+          <parameter const="false" type="int" modifier="" name="offsetFromUtc" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="QDateTime" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="msecs" />
+          <parameter const="true" type="QTimeZone" modifier="&amp;" name="timeZone" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromSecsSinceEpoch" static="true">
+      <variant return-type="QDateTime" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="secs" />
+          <parameter const="false" type="Qt::TimeSpec" modifier="" name="spe" default="Qt::LocalTime" />
+          <parameter const="false" type="int" modifier="" name="offsetFromUtc" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="QDateTime" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="secs" />
+          <parameter const="true" type="QTimeZone" modifier="&amp;" name="timeZone" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(timezone)" />
+    <preproc plain="#endif" />
+    <function name="currentMSecsSinceEpoch" static="true">
+      <variant return-type="qint64" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentSecsSinceEpoch" static="true">
+      <variant return-type="qint64" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="operator_lessthan" call="operator&lt;" static="true" non-member="true">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="lhs" />
+          <parameter const="true" type="QDateTime" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if defined(Q_OS_DARWIN)||defined(Q_QDOC)" />
+    <preproc plain="#endif" />
+    <preproc plain="#ifndef QT_NO_DATASTREAM" />
+    <preproc plain="#endif" />
+    <preproc plain="#if !defined(QT_NO_DEBUG_STREAM)&amp;&amp;QT_CONFIG(datestring)" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

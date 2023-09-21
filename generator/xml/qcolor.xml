@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcolor.h">
+  <class_decl name="QColor" />
+  <class_decl name="QColormap" />
+  <class_decl name="QVariant" />
+  <class name="QColor" equalsfunction="true">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::GlobalColor" modifier="" name="color" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="r" />
+          <parameter const="false" type="int" modifier="" name="g" />
+          <parameter const="false" type="int" modifier="" name="b" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QRgb" modifier="" name="rgb" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QRgba64" modifier="" name="rgba64" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="name" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="aname" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QLatin1String" modifier="" name="name" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="Spec" modifier="" name="spec" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QLatin1String" modifier="" name="aname" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="aname" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="aname" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <preproc plain="#endif" />
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="name">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QColor::NameFormat" modifier="" name="format" default="QColor::HexRgb" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <function name="setNamedColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="name" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLatin1String" modifier="" name="name" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#endif" />
+    <function name="colorNames" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="spec">
+      <variant return-type="QColor::Spec" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="alpha">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlpha">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="alpha" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alphaF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlphaF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="alpha" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="red">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="green">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="blue">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRed">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="red" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGreen">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="green" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBlue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="blue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="redF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="greenF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="blueF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRedF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="red" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGreenF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="green" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBlueF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="blue" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getRgb">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="*" name="r" />
+          <parameter const="false" type="int" modifier="*" name="g" />
+          <parameter const="false" type="int" modifier="*" name="b" />
+          <parameter const="false" type="int" modifier="*" name="a" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setRgb">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="r" />
+          <parameter const="false" type="int" modifier="" name="g" />
+          <parameter const="false" type="int" modifier="" name="b" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QRgb" modifier="" name="rgb" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <!--
+    <function name="getRgbF">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="*" name="r" />
+          <parameter const="false" type="float" modifier="*" name="g" />
+          <parameter const="false" type="float" modifier="*" name="b" />
+          <parameter const="false" type="float" modifier="*" name="a" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setRgbF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="r" />
+          <parameter const="false" type="float" modifier="" name="g" />
+          <parameter const="false" type="float" modifier="" name="b" />
+          <parameter const="false" type="float" modifier="" name="a" default="1.0" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="rgba64">
+      <variant return-type="QRgba64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setRgba64">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QRgba64" modifier="" name="rgba" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rgba">
+      <variant return-type="QRgb" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="setRgba">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QRgb" modifier="" name="rgba" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="rgb">
+      <variant return-type="QRgb" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="hue">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="saturation">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hsvHue">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hsvSaturation">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hueF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="saturationF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hsvHueF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hsvSaturationF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="valueF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getHsv">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="*" name="h" />
+          <parameter const="false" type="int" modifier="*" name="s" />
+          <parameter const="false" type="int" modifier="*" name="v" />
+          <parameter const="false" type="int" modifier="*" name="a" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setHsv">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="int" modifier="" name="s" />
+          <parameter const="false" type="int" modifier="" name="v" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getHsvF">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="*" name="h" />
+          <parameter const="false" type="float" modifier="*" name="s" />
+          <parameter const="false" type="float" modifier="*" name="v" />
+          <parameter const="false" type="float" modifier="*" name="a" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setHsvF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="h" />
+          <parameter const="false" type="float" modifier="" name="s" />
+          <parameter const="false" type="float" modifier="" name="v" />
+          <parameter const="false" type="float" modifier="" name="a" default="1.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cyan">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="magenta">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="yellow">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="black">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cyanF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="magentaF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="yellowF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="blackF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getCmyk">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="*" name="c" />
+          <parameter const="false" type="int" modifier="*" name="m" />
+          <parameter const="false" type="int" modifier="*" name="y" />
+          <parameter const="false" type="int" modifier="*" name="k" />
+          <parameter const="false" type="int" modifier="*" name="a" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setCmyk">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="c" />
+          <parameter const="false" type="int" modifier="" name="m" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="k" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getCmykF">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="*" name="c" />
+          <parameter const="false" type="float" modifier="*" name="m" />
+          <parameter const="false" type="float" modifier="*" name="y" />
+          <parameter const="false" type="float" modifier="*" name="k" />
+          <parameter const="false" type="float" modifier="*" name="a" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setCmykF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="c" />
+          <parameter const="false" type="float" modifier="" name="m" />
+          <parameter const="false" type="float" modifier="" name="y" />
+          <parameter const="false" type="float" modifier="" name="k" />
+          <parameter const="false" type="float" modifier="" name="a" default="1.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hslHue">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hslSaturation">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lightness">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hslHueF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hslSaturationF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lightnessF">
+      <variant return-type="float" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getHsl">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="*" name="h" />
+          <parameter const="false" type="int" modifier="*" name="s" />
+          <parameter const="false" type="int" modifier="*" name="l" />
+          <parameter const="false" type="int" modifier="*" name="a" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setHsl">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="int" modifier="" name="s" />
+          <parameter const="false" type="int" modifier="" name="l" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getHslF">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="*" name="h" />
+          <parameter const="false" type="float" modifier="*" name="s" />
+          <parameter const="false" type="float" modifier="*" name="l" />
+          <parameter const="false" type="float" modifier="*" name="a" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setHslF">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="h" />
+          <parameter const="false" type="float" modifier="" name="s" />
+          <parameter const="false" type="float" modifier="" name="l" />
+          <parameter const="false" type="float" modifier="" name="a" default="1.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toRgb">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toHsv">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toCmyk">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toHsl">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toExtendedRgb">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="convertTo">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QColor::Spec" modifier="" name="colorSpec" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromRgb" static="true">
+      <!--
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="QRgb" modifier="" name="rgb" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="r" />
+          <parameter const="false" type="int" modifier="" name="g" />
+          <parameter const="false" type="int" modifier="" name="b" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="fromRgba" static="true">
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="QRgb" modifier="" name="rgba" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="fromRgbF" static="true">
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="r" />
+          <parameter const="false" type="float" modifier="" name="g" />
+          <parameter const="false" type="float" modifier="" name="b" />
+          <parameter const="false" type="float" modifier="" name="a" default="1.0" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="fromRgba64" static="true">
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="ushort" modifier="" name="r" />
+          <parameter const="false" type="ushort" modifier="" name="g" />
+          <parameter const="false" type="ushort" modifier="" name="b" />
+          <parameter const="false" type="ushort" modifier="" name="a" default="USHRT_MAX" />
+        </parameters>
+      </variant>
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="QRgba64" modifier="" name="rgba" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="fromHsv" static="true">
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="int" modifier="" name="s" />
+          <parameter const="false" type="int" modifier="" name="v" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromHsvF" static="true">
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="h" />
+          <parameter const="false" type="float" modifier="" name="s" />
+          <parameter const="false" type="float" modifier="" name="v" />
+          <parameter const="false" type="float" modifier="" name="a" default="1.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromCmyk" static="true">
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="c" />
+          <parameter const="false" type="int" modifier="" name="m" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="false" type="int" modifier="" name="k" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromCmykF" static="true">
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="c" />
+          <parameter const="false" type="float" modifier="" name="m" />
+          <parameter const="false" type="float" modifier="" name="y" />
+          <parameter const="false" type="float" modifier="" name="k" />
+          <parameter const="false" type="float" modifier="" name="a" default="1.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromHsl" static="true">
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="h" />
+          <parameter const="false" type="int" modifier="" name="s" />
+          <parameter const="false" type="int" modifier="" name="l" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromHslF" static="true">
+      <variant return-type="QColor" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="h" />
+          <parameter const="false" type="float" modifier="" name="s" />
+          <parameter const="false" type="float" modifier="" name="l" />
+          <parameter const="false" type="float" modifier="" name="a" default="1.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lighter">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="f" default="150" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="darker">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="f" default="200" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <function name="isValidColor" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QStringView" modifier="" name="" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QLatin1String" modifier="" name="" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <preproc plain="#endif" />
+    <function name="invalidate" />
+    <function name="setColorFromString" />
+    <function name="isRgbaValid" static="true" />
+  </class>
+</unit>
