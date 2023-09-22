@@ -14,8 +14,6 @@
 
 <xsl:output method="text" />
 
-<xsl:param name="pluginid" />
-<xsl:param name="typeidbase" />
 <!--
 <xsl:param name="class-name">
   <xsl:value-of select="qsrc:unit/qsrc:class/@name" />
@@ -76,16 +74,7 @@
           if (arguments[2]!==undefined 
             &amp;&amp; (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" &amp;&amp; 
-            arguments[2].getWrappedType()===
-              <xsl:choose>
-                <xsl:when test="not($pluginid='')">
-                  <xsl:value-of select="$typeidbase" />
-                </xsl:when>
-                <xsl:otherwise>
-                  RJSType_<xsl:value-of select="@name" />.getIdStatic()
-                </xsl:otherwise>
-              </xsl:choose>
-            ))) {
+            arguments[2].getWrappedType()===RJSType_<xsl:value-of select="@name" />.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -158,40 +147,17 @@
       </xsl:for-each>
 
       <xsl:value-of select="@name" />.getObjectType = function() {
-        <xsl:choose>
-          <xsl:when test="not($pluginid='')">
-            return <xsl:value-of select="$typeidbase" />;
-          </xsl:when>
-          <xsl:otherwise>
-            return RJSType_<xsl:value-of select="@name" />.getIdStatic();
-          </xsl:otherwise>
-        </xsl:choose>
+        return RJSType_<xsl:value-of select="@name" />.getIdStatic();
       };
 
       <xsl:value-of select="@name" />.prototype.getObjectType = function() {
-        <xsl:choose>
-          <xsl:when test="not($pluginid='')">
-            return <xsl:value-of select="$typeidbase" />;
-          </xsl:when>
-          <xsl:otherwise>
-            return RJSType_<xsl:value-of select="@name" />.getIdStatic();
-          </xsl:otherwise>
-        </xsl:choose>
+        return RJSType_<xsl:value-of select="@name" />.getIdStatic();
       };
 
       <xsl:value-of select="@name" />.prototype.isOfObjectType = function(t) {
-        <xsl:choose>
-          <xsl:when test="not($pluginid='')">
-            if (t===<xsl:value-of select="$typeidbase" />) {
-              return true;
-            }
-          </xsl:when>
-          <xsl:otherwise>
-            if (t===RJSType_<xsl:value-of select="@name" />.getIdStatic()) {
-              return true;
-            }
-          </xsl:otherwise>
-        </xsl:choose>
+        if (t===RJSType_<xsl:value-of select="@name" />.getIdStatic()) {
+          return true;
+        }
 
         <xsl:for-each select="qsrc:super_list/qsrc:super">
           if (t===RJSType_<xsl:value-of select="@name" />.getIdStatic()) {

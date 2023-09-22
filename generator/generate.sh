@@ -2,18 +2,13 @@
 
 echo "Generating script bindings..."
 
-echo "Sorting sources..."
-
 DIR=`dirname $0`
 echo $DIR
 
-PLUGINID=$1
-TYPEIDBASE=$2
-
-sh $DIR/sort_sources.sh
+MODULE=$1
 
 echo "Generating helpers..."
-sh $DIR/xml2type.sh
+sh $DIR/xml2type.sh $MODULE
 
 echo "xml2sorted..."
 sh $DIR/xml2sorted.sh
@@ -24,7 +19,7 @@ sh $DIR/xml2all.sh
 if [ $? -ne 0 ]; then exit $?; fi
 
 echo "xml2helper (relies on xmlall)..."
-sh $DIR/xml2helper.sh $PLUGINID $TYPEIDBASE
+sh $DIR/xml2helper.sh $MODULE
 
 echo "xml2merged..."
 sh $DIR/xml2merged.sh
@@ -38,13 +33,13 @@ echo "xml2addcount..."
 sh $DIR/xml2addcount.sh
 if [ $? -ne 0 ]; then exit $?; fi
 
-sh $DIR/xml2cpp.sh $PLUGINID $TYPEIDBASE
+sh $DIR/xml2cpp.sh $MODULE
 if [ $? -ne 0 ]; then exit $?; fi
 
-sh $DIR/xml2cppbase.sh $PLUGINID $TYPEIDBASE
+sh $DIR/xml2cppbase.sh $MODULE
 if [ $? -ne 0 ]; then exit $?; fi
 
-sh $DIR/xml2js.sh $PLUGINID $TYPEIDBASE
+sh $DIR/xml2js.sh $MODULE
 if [ $? -ne 0 ]; then exit $?; fi
 
 find cpp -size 0 | xargs rm
@@ -64,15 +59,21 @@ do
 done
 cat templates/header_cpp_footer.h >> new_header_cpp.h
 
-diff new_header_cpp.h header_cpp.h
+OUTPUT="header_cpp.h"
+if [ ! -z $MODULE ]
+then
+    OUTPUT="header_${MODULE}_cpp.h"
+fi
+
+diff new_header_cpp.h $OUTPUT
 if [ $? -ne 0 ]
 then
-    mv new_header_cpp.h header_cpp.h
+    mv new_header_cpp.h $OUTPUT
 else
     rm new_header_cpp.h
 fi
 
-sh $DIR/generate_CMakeInclude.sh
+sh $DIR/generate_CMakeInclude.sh $MODULE
 
 wait
 cd ..

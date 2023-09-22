@@ -109,8 +109,16 @@
 <xsl:template match="types">
   // Automatically generated, do not edit
   <xsl:if test="$mode='h'">
-    #ifndef RJSTYPE_H
-    #define RJSTYPE_H
+    <xsl:choose>
+      <xsl:when test="$module=''">
+        #ifndef RJSTYPE_H
+        #define RJSTYPE_H
+      </xsl:when>
+      <xsl:otherwise>
+        #ifndef RJSTYPE_<xsl:value-of select="qc:uppercase($module)"/>_H
+        #define RJSTYPE_<xsl:value-of select="qc:uppercase($module)"/>_H
+      </xsl:otherwise>
+    </xsl:choose>
 
     #include &lt;QObject&gt;
     #include &lt;QQmlEngine&gt;
@@ -119,15 +127,24 @@
 
     <xsl:apply-templates mode="class" />
 
-    static QString getTypeName(int type) {
-      RJSTypeEnum* t = RJSTypeEnum::getById(type);
-      return t->getName();
-    }
+    <xsl:if test="$module=''">
+      static QString getTypeName(int type) {
+        RJSTypeEnum* t = RJSTypeEnum::getById(type);
+        return t->getName();
+      }
+    </xsl:if>
     #endif
   </xsl:if>
 
   <xsl:if test="$mode='cpp'">
-    #include "RJSType.h"
+    <xsl:choose>
+      <xsl:when test="$module=''">
+        #include "RJSType.h"
+      </xsl:when>
+      <xsl:otherwise>
+        #include "RJSType_<xsl:value-of select="$module"/>.h"
+      </xsl:otherwise>
+    </xsl:choose>
 
     <xsl:apply-templates mode="class" />
   </xsl:if>

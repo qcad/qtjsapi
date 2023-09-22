@@ -4,8 +4,13 @@ xmlfile="types.xml"
 
 echo "processing $xmlfile"
 DIR=`dirname $0`
-PLUGINID=$1
-TYPEIDBASE=$2
+
+MODULE="$1"
+OUTPUT="RJSHelper"
+if [ ! -z $MODULE ]
+then
+    OUTPUT="RJSHelper_$MODULE"
+fi
 
 noAStyle=0
 which astyle 1>/dev/null 2>&1
@@ -13,28 +18,28 @@ noAStyle=$?
 
 for mode in h cpp
 do
-    if [ ! -z $PLUGINID ]
+    if [ ! -z $MODULE ]
     then
-        xsltproc --stringparam mode $mode --stringparam pluginid $PLUGINID --stringparam typeidbase $TYPEIDBASE $DIR/xml2helper.xsl "types.xml" >"new_RJSHelper.$mode"
+        xsltproc --stringparam mode $mode --stringparam module $MODULE $DIR/xml2helper.xsl "types.xml" >"new_$OUTPUT.$mode"
     else
-        xsltproc --stringparam mode $mode $DIR/xml2helper.xsl "types.xml" >"new_RJSHelper.$mode"
+        xsltproc --stringparam mode $mode $DIR/xml2helper.xsl "types.xml" >"new_$OUTPUT.$mode"
     fi
 
     if [ $noAStyle -eq 0 ]
     then
-        astyle "new_RJSHelper.$mode"
+        astyle "new_$OUTPUT.$mode"
     fi
 
-    if [ ! -f "RJSHelper.$mode" ]
+    if [ ! -f "$OUTPUT.$mode" ]
     then
-        mv "new_RJSHelper.$mode" "RJSHelper.$mode"
+        mv "new_$OUTPUT.$mode" "$OUTPUT.$mode"
     else
-        diff "new_RJSHelper.$mode" "RJSHelper.$mode"
+        diff "new_$OUTPUT.$mode" "$OUTPUT.$mode"
         if [ $? -ne 0 ]
         then
-            mv "new_RJSHelper.$mode" "RJSHelper.$mode"
+            mv "new_$OUTPUT.$mode" "$OUTPUT.$mode"
         else
-            rm "new_RJSHelper.$mode"
+            rm "new_$OUTPUT.$mode"
         fi
     fi
 done

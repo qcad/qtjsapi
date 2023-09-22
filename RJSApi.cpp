@@ -208,10 +208,10 @@ RJSApi::~RJSApi() {
     qDebug() << "delete engine:" << (unsigned long long int)engine << " DONE";
 }
 
-void RJSApi::deleteWrapper(RJSWrapperObj* wrapper) {
-    qDebug() << "deleting wrapper: " << (unsigned long long int)wrapper;
-    delete wrapper;
-}
+//void RJSApi::deleteWrapper(RJSWrapperObj* wrapper) {
+//    qDebug() << "deleting wrapper: " << (unsigned long long int)wrapper;
+//    delete wrapper;
+//}
 
 void RJSApi::init() {
     static int counter = 0;

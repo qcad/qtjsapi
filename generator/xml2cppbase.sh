@@ -2,8 +2,8 @@
 
 #echo "xml to cpp base class..."
 DIR=`dirname $0`
-PLUGINID=$1
-TYPEIDBASE=$2
+
+MODULE=$1
 
 noAStyle=0
 which astyle 1>/dev/null 2>&1
@@ -25,9 +25,9 @@ do
             #if [ "$f" -nt "cpp/${ecmafile}" ]
             #then
                 #echo "processing $file ($mode)"
-                if [ ! -z $PLUGINID ]
+                if [ ! -z $MODULE ]
                 then
-                    xsltproc --stringparam mode $mode --stringparam pluginid $PLUGINID --stringparam typeidbase $TYPEIDBASE $DIR/xml2cppbase.xsl "$f" >"cpp/new_${ecmafile}"
+                    xsltproc --stringparam mode $mode --stringparam module $MODULE $DIR/xml2cppbase.xsl "$f" >"cpp/new_${ecmafile}"
                 else
                     xsltproc --stringparam mode $mode $DIR/xml2cppbase.xsl "$f" >"cpp/new_${ecmafile}"
                 fi

@@ -2,8 +2,8 @@
 
 #echo "xml to js..."
 DIR=`dirname $0`
-PLUGINID=$1
-TYPEIDBASE=$2
+
+MODULE=$1
 
 maxThreads=64
 
@@ -25,9 +25,9 @@ do
         #if [ "$f" -nt "cpp/${ecmafile}" ]
         #then
             #echo "processing $file"
-            if [ ! -z $PLUGINID ]
+            if [ ! -z $MODULE ]
             then
-                xsltproc --stringparam pluginid $PLUGINID --stringparam typeidbase $TYPEIDBASE $DIR/xml2js.xsl "$f" >/dev/null
+                xsltproc --stringparam module $MODULE $DIR/xml2js.xsl "$f" >/dev/null
             else
                 xsltproc $DIR/xml2js.xsl "$f" >/dev/null
             fi

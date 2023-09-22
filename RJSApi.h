@@ -26,7 +26,7 @@ public:
     RJSApi(QJSEngine* engine);
     virtual ~RJSApi();
 
-    static void deleteWrapper(RJSWrapperObj* wrapper);
+    //static void deleteWrapper(RJSWrapperObj* wrapper);
 
     virtual void init();
 

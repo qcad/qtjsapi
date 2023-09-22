@@ -15,8 +15,7 @@
 <xsl:output method="text" />
 
 <xsl:param name="mode" />
-<xsl:param name="pluginid" />
-<xsl:param name="typeidbase" />
+<xsl:param name="module" />
 
 <!--
 <xsl:param name="qobject">
@@ -65,14 +64,16 @@
 
   // include header:
   //#include "header_h.h"
-  <xsl:choose>
-    <xsl:when test="$pluginid=''">
-      #include "../RJSHelper.h"
-    </xsl:when>
-    <xsl:otherwise>
-      #include "RJSHelper.h"
-    </xsl:otherwise>
-  </xsl:choose>
+    <xsl:choose>
+      <xsl:when test="$module!=''">
+        #include "RJSHelper.h"
+        #include "../RJSHelper_<xsl:value-of select="$module"/>.h"
+      </xsl:when>
+      <xsl:otherwise>
+        #include "../RJSHelper.h"
+      </xsl:otherwise>
+    </xsl:choose>
+
   </xsl:if>
 
   <xsl:if test="$mode='cpp'">
@@ -1135,23 +1136,6 @@
 
 
 
-<func:function name="qc:lowercase">
-  <xsl:param name="str" />
-  <xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
-  <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
-  <func:result>
-      <xsl:value-of select="translate($str, $uppercase, $lowercase)" />
-  </func:result>
-</func:function>
-
-<func:function name="qc:uppercase">
-  <xsl:param name="str" />
-  <xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
-  <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
-  <func:result>
-      <xsl:value-of select="translate($str, $lowercase, $uppercase)" />
-  </func:result>
-</func:function>
 
 <func:function name="qc:include_guard">
   <xsl:param name="filename" />

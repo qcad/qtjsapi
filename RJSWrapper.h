@@ -6,7 +6,7 @@
 #include <QJSValue>
 #include <QQmlEngine>
 
-#include "RJSType.h"
+//#include "RJSType.h"
 #include "RJSApi.h"
 
 /**

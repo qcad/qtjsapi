@@ -59,7 +59,7 @@
   </xsl:variable>
 
   <func:result>
-    <xsl:text>RJSHelper::cpp2js_</xsl:text>
+    <xsl:text>RJSHelper</xsl:text><xsl:value-of select="qc:get-helper-postfix($type)"/><xsl:text>::cpp2js_</xsl:text>
     <xsl:value-of 
       select="qc:replace(
               qc:replace(
@@ -101,7 +101,7 @@
   </xsl:variable>
 
   <func:result>
-    <xsl:text>RJSHelper::js2cpp_</xsl:text>
+    <xsl:text>RJSHelper</xsl:text><xsl:value-of select="qc:get-helper-postfix($type)"/><xsl:text>::js2cpp_</xsl:text>
     <xsl:value-of 
       select="qc:replace(
               qc:replace(
@@ -123,6 +123,31 @@
     <xsl:if test="$modifier='*' or (qc:is-non-copyable($type)='true' and ($modifier='&amp;' or qc:ends-with($type, '&amp;'))) or $itemptr='true'">
       <xsl:text>_ptr</xsl:text>
     </xsl:if>
+  </func:result>
+</func:function>
+
+<func:function name="qc:get-helper-postfix">
+  <xsl:param name="type" />
+
+  <func:result>
+    <xsl:choose>
+      <!-- we're generating the qcad module -->
+      <xsl:when test="$module='qcad'">
+        <xsl:choose>
+          <!-- local types.xml is for qcad -->
+          <xsl:when test="document('types.xml')//type[text()=$type]">
+            <xsl:value-of select="'_qcad'" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="''" />
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+
+      <!-- TODO: add other modules -->
+      <xsl:otherwise>
+      </xsl:otherwise>
+    </xsl:choose>
   </func:result>
 </func:function>
 

@@ -35,6 +35,24 @@
   <func:result select="$find = substring($input, 1 + string-length($input) - string-length($find))" />
 </func:function>
 
+<func:function name="qc:lowercase">
+  <xsl:param name="str" />
+  <xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
+  <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
+  <func:result>
+      <xsl:value-of select="translate($str, $uppercase, $lowercase)" />
+  </func:result>
+</func:function>
+
+<func:function name="qc:uppercase">
+  <xsl:param name="str" />
+  <xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
+  <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
+  <func:result>
+      <xsl:value-of select="translate($str, $lowercase, $uppercase)" />
+  </func:result>
+</func:function>
+
 <func:function name="qc:replace">
   <xsl:param name="text"/>
   <xsl:param name="from"/>

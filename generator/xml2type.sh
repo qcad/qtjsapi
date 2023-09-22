@@ -6,29 +6,41 @@ echo "processing $xmlfile"
 
 DIR=`dirname $0`
 
+MODULE="$1"
+OUTPUT="RJSType"
+if [ ! -z $MODULE ]
+then
+    OUTPUT="RJSType_$MODULE"
+fi
+
 noAStyle=0
 which astyle 1>/dev/null 2>&1
 noAStyle=$?
 
 for mode in h cpp
 do
-    xsltproc --stringparam mode $mode $DIR/xml2type.xsl "types.xml" >"new_RJSType.$mode"
+    if [ ! -z $MODULE ]
+    then
+        xsltproc --stringparam mode $mode --stringparam module $MODULE $DIR/xml2type.xsl "types.xml" >"new_$OUTPUT.$mode"
+    else
+        xsltproc --stringparam mode $mode $DIR/xml2type.xsl "types.xml" >"new_$OUTPUT.$mode"
+    fi
 
     if [ $noAStyle -eq 0 ]
     then
-        astyle "new_RJSType.$mode"
+        astyle "new_$OUTPUT.$mode"
     fi
 
-    if [ ! -f "RJSType.$mode" ]
+    if [ ! -f "$OUTPUT.$mode" ]
     then
-        mv "new_RJSType.$mode" "RJSType.$mode"
+        mv "new_$OUTPUT.$mode" "$OUTPUT.$mode"
     else
-        diff "new_RJSType.$mode" "RJSType.$mode"
+        diff "new_$OUTPUT.$mode" "$OUTPUT.$mode"
         if [ $? -ne 0 ]
         then
-            mv "new_RJSType.$mode" "RJSType.$mode"
+            mv "new_$OUTPUT.$mode" "$OUTPUT.$mode"
         else
-            rm "new_RJSType.$mode"
+            rm "new_$OUTPUT.$mode"
         fi
     fi
 done

@@ -15,8 +15,7 @@
 <xsl:output method="text" />
 
 <xsl:param name="mode" />
-<xsl:param name="pluginid" />
-<xsl:param name="typeidbase" />
+<xsl:param name="module" />
 
 <!--
 <xsl:param name="qobject">
@@ -49,22 +48,22 @@
   -->
 
   <xsl:if test="$mode='h'">
-  #ifndef <xsl:value-of select="qc:include-guard(qsrc:unit/@filename)" />
-  #define <xsl:value-of select="qc:include-guard(qsrc:unit/@filename)" />
+    #ifndef <xsl:value-of select="qc:include-guard(qsrc:unit/@filename)" />
+    #define <xsl:value-of select="qc:include-guard(qsrc:unit/@filename)" />
 
-  // include header:
-  //#include "header_h.h"
-  <xsl:choose>
-    <xsl:when test="$pluginid=''">
-      #include "../RJSHelper.h"
-    </xsl:when>
-    <xsl:otherwise>
-      #include "RJSHelper.h"
-      #include "RJSHelper_<xsl:value-of select="$pluginid" />.h"
-    </xsl:otherwise>
-  </xsl:choose>
+    // include header:
+    //#include "header_h.h"
+    <xsl:choose>
+      <xsl:when test="$module!=''">
+        #include "RJSHelper.h"
+        #include "../RJSHelper_<xsl:value-of select="$module"/>.h"
+      </xsl:when>
+      <xsl:otherwise>
+        #include "../RJSHelper.h"
+      </xsl:otherwise>
+    </xsl:choose>
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   </xsl:if>
 
   <xsl:if test="$mode='cpp'">
@@ -120,7 +119,14 @@
 
   <xsl:if test="$mode='h'">
     #include &lt;QQmlEngine&gt;
-    #include "RJSType.h"
+    <xsl:choose>
+      <xsl:when test="$module=''">
+        #include "RJSType.h"
+      </xsl:when>
+      <xsl:otherwise>
+        #include "RJSType_<xsl:value-of select="$module"/>.h"
+      </xsl:otherwise>
+    </xsl:choose>
 
     <xsl:choose>
       <xsl:when test="starts-with(@name, 'R')">
@@ -300,26 +306,9 @@
           </xsl:for-each>
 
           // pointer to desired type:
-          <xsl:choose>
-            <xsl:when test="not($pluginid='')">
-              if (t==RJSType_<xsl:value-of select="@typeidbase" />::getIdStatic()) {
-                return (<xsl:value-of select="@name" />*)vp;
-              }
-              <!--
-              case <xsl:value-of select="$typeidbase" />:
-                return (<xsl:value-of select="@name" />*)vp;
-              -->
-            </xsl:when>
-            <xsl:otherwise>
-              if (t==RJSType_<xsl:value-of select="@name" />::getIdStatic()) {
-                return (<xsl:value-of select="@name" />*)vp;
-              }
-              <!--
-              case RJSType::<xsl:value-of select="@name" />_Type:
-                return (<xsl:value-of select="@name" />*)vp;
-              -->
-            </xsl:otherwise>
-          </xsl:choose>
+          if (t==RJSType_<xsl:value-of select="@name" />::getIdStatic()) {
+            return (<xsl:value-of select="@name" />*)vp;
+          }
 
           return nullptr;
           <!--
@@ -761,14 +750,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          <xsl:choose>
-            <xsl:when test="not($typeidbase='')">
-              return <xsl:value-of select="$typeidbase" />;
-            </xsl:when>
-            <xsl:otherwise>
-              return RJSType_<xsl:value-of select="@name" />::getIdStatic();
-            </xsl:otherwise>
-          </xsl:choose>
+          return RJSType_<xsl:value-of select="@name" />::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -883,7 +865,7 @@
         <xsl:if test="ancestor-or-self::qsrc:class/@equalsfunction">
           Q_INVOKABLE
           bool equals(const QJSValue&amp; other) const {
-            <xsl:value-of select="@name" /> otherObj = RJSHelper::js2cpp_<xsl:value-of select="@name" />(handler, other);
+            <xsl:value-of select="@name" /> otherObj = RJSHelper<xsl:value-of select="qc:get-helper-postfix(@name)"/>::js2cpp_<xsl:value-of select="@name" />(handler, other);
             <xsl:value-of select="@name" />* thisObj = getWrapped();
 
             if (thisObj==nullptr) {
@@ -2594,23 +2576,6 @@
 -->
 
 
-<func:function name="qc:lowercase">
-  <xsl:param name="str" />
-  <xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
-  <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
-  <func:result>
-      <xsl:value-of select="translate($str, $uppercase, $lowercase)" />
-  </func:result>
-</func:function>
-
-<func:function name="qc:uppercase">
-  <xsl:param name="str" />
-  <xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
-  <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
-  <func:result>
-      <xsl:value-of select="translate($str, $lowercase, $uppercase)" />
-  </func:result>
-</func:function>
 
 <func:function name="qc:include-guard">
   <xsl:param name="filename" />
@@ -2649,6 +2614,7 @@
 
 
 
+
 <!--
   Return function to check for given type.
   e.g. RJSHelper::is_bool
@@ -2665,7 +2631,7 @@
   </xsl:variable>
 
   <func:result>
-    <xsl:text>RJSHelper::is_</xsl:text>
+    <xsl:text>RJSHelper</xsl:text><xsl:value-of select="qc:get-helper-postfix($type)"/><xsl:text>::is_</xsl:text>
     <xsl:value-of 
       select="qc:replace(
               qc:replace(
