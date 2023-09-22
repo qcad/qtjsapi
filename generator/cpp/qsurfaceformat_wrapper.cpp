@@ -131,6 +131,17 @@ QSurfaceFormat a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSurfaceFormat* t = new RJSType_QSurfaceFormat();
+          global.setProperty("RJSType_QSurfaceFormat", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSurfaceFormat::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSurfaceFormat_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QSurfaceFormat_Wrapper", mo);

@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QProgressDialog* t = new RJSType_QProgressDialog();
+          global.setProperty("RJSType_QProgressDialog", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QProgressDialog::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QProgressDialog_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QProgressDialog_Wrapper", mo);

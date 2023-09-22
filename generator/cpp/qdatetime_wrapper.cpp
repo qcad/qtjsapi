@@ -339,6 +339,17 @@ qint64 a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDate* t = new RJSType_QDate();
+          global.setProperty("RJSType_QDate", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDate::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDate_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDate_Wrapper", mo);
@@ -2430,6 +2441,17 @@ QTime a2_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTime* t = new RJSType_QTime();
+          global.setProperty("RJSType_QTime", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTime::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTime_Wrapper::staticMetaObject);
@@ -4563,6 +4585,17 @@ QDateTime a2_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDateTime* t = new RJSType_QDateTime();
+          global.setProperty("RJSType_QDateTime", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDateTime::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDateTime_Wrapper::staticMetaObject);

@@ -1463,6 +1463,17 @@ QString a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QFileDialog* t = new RJSType_QFileDialog();
+          global.setProperty("RJSType_QFileDialog", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QFileDialog::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QFileDialog_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QFileDialog_Wrapper", mo);

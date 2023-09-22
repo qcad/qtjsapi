@@ -119,6 +119,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGraphicsEffect* t = new RJSType_QGraphicsEffect();
+          global.setProperty("RJSType_QGraphicsEffect", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGraphicsEffect::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGraphicsEffect_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QGraphicsEffect_Wrapper", mo);
@@ -1776,6 +1787,17 @@ bool a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGraphicsColorizeEffect* t = new RJSType_QGraphicsColorizeEffect();
+          global.setProperty("RJSType_QGraphicsColorizeEffect", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGraphicsColorizeEffect::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGraphicsColorizeEffect_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QGraphicsColorizeEffect_Wrapper", mo);
@@ -2632,6 +2654,17 @@ int a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGraphicsBlurEffect* t = new RJSType_QGraphicsBlurEffect();
+          global.setProperty("RJSType_QGraphicsBlurEffect", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGraphicsBlurEffect::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGraphicsBlurEffect_Wrapper::staticMetaObject);
@@ -4624,6 +4657,17 @@ QGraphicsBlurEffect::BlurHints a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGraphicsDropShadowEffect* t = new RJSType_QGraphicsDropShadowEffect();
+          global.setProperty("RJSType_QGraphicsDropShadowEffect", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGraphicsDropShadowEffect::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGraphicsDropShadowEffect_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QGraphicsDropShadowEffect_Wrapper", mo);
@@ -5836,6 +5880,17 @@ QColor a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGraphicsOpacityEffect* t = new RJSType_QGraphicsOpacityEffect();
+          global.setProperty("RJSType_QGraphicsOpacityEffect", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGraphicsOpacityEffect::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGraphicsOpacityEffect_Wrapper::staticMetaObject);

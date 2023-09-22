@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QTextTableCellFormat_Type
+                  RJSType_QTextTableCellFormat.getIdStatic()
                 
             ))) {
 
@@ -104,38 +104,31 @@
         };
       QTextTableCellFormat.getObjectType = function() {
         
-            return RJSType.QTextTableCellFormat_Type;
+            return RJSType_QTextTableCellFormat.getIdStatic();
           
       };
 
       QTextTableCellFormat.prototype.getObjectType = function() {
         
-            return RJSType.QTextTableCellFormat_Type;
+            return RJSType_QTextTableCellFormat.getIdStatic();
           
       };
 
       QTextTableCellFormat.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QTextTableCellFormat_Type:
+            if (t===RJSType_QTextTableCellFormat.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QTextCharFormat_Type:
-          return true;
+          if (t===RJSType_QTextCharFormat.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QTextTableCellFormat_Type, 
-          
-            RJSType.QTextCharFormat_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

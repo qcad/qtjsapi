@@ -626,24 +626,24 @@
       static void init(RJSApi& handler);
 
       
-        static QFontComboBox* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QFontComboBox* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QFontComboBox_Type:
+              if (t==RJSType_QFontComboBox::getIdStatic()) {
                 return (QFontComboBox*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QFontComboBox* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QFontComboBox*: wrapper wraps NULL";
@@ -7383,9 +7383,9 @@ ProportionalFonts = QFontComboBox::ProportionalFonts,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QFontComboBox_Type;
+              return RJSType_QFontComboBox::getIdStatic();
             
         }
 

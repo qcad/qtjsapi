@@ -37,24 +37,24 @@
       static void init(RJSApi& handler);
 
       
-        static QMargins* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QMargins* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QMargins_Type:
+              if (t==RJSType_QMargins::getIdStatic()) {
                 return (QMargins*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QMargins* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QMargins*: wrapper wraps NULL";
@@ -350,9 +350,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QMargins_Type;
+              return RJSType_QMargins::getIdStatic();
             
         }
 
@@ -462,24 +462,24 @@
       static void init(RJSApi& handler);
 
       
-        static QMarginsF* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QMarginsF* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QMarginsF_Type:
+              if (t==RJSType_QMarginsF::getIdStatic()) {
                 return (QMarginsF*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QMarginsF* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QMarginsF*: wrapper wraps NULL";
@@ -796,9 +796,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QMarginsF_Type;
+              return RJSType_QMarginsF::getIdStatic();
             
         }
 

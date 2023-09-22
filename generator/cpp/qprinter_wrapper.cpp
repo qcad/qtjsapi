@@ -68,6 +68,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPrinter* t = new RJSType_QPrinter();
+          global.setProperty("RJSType_QPrinter", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPrinter::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPrinter_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPrinter_Wrapper", mo);

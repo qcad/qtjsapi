@@ -405,6 +405,17 @@ qreal a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTransform* t = new RJSType_QTransform();
+          global.setProperty("RJSType_QTransform", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTransform::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTransform_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTransform_Wrapper", mo);

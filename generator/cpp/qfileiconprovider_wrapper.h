@@ -40,24 +40,24 @@
       static void init(RJSApi& handler);
 
       
-        static QFileIconProvider* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QFileIconProvider* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QFileIconProvider_Type:
+              if (t==RJSType_QFileIconProvider::getIdStatic()) {
                 return (QFileIconProvider*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QFileIconProvider* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QFileIconProvider*: wrapper wraps NULL";
@@ -263,9 +263,9 @@ File = QFileIconProvider::File,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QFileIconProvider_Type;
+              return RJSType_QFileIconProvider::getIdStatic();
             
         }
 

@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QPolygon_Type
+                  RJSType_QPolygon.getIdStatic()
                 
             ))) {
 
@@ -156,33 +156,27 @@
         };
       QPolygon.getObjectType = function() {
         
-            return RJSType.QPolygon_Type;
+            return RJSType_QPolygon.getIdStatic();
           
       };
 
       QPolygon.prototype.getObjectType = function() {
         
-            return RJSType.QPolygon_Type;
+            return RJSType_QPolygon.getIdStatic();
           
       };
 
       QPolygon.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QPolygon.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QPolygon_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QPolygon_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

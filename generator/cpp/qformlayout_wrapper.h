@@ -139,24 +139,24 @@
       static void init(RJSApi& handler);
 
       
-        static QFormLayout* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QFormLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QFormLayout_Type:
+              if (t==RJSType_QFormLayout::getIdStatic()) {
                 return (QFormLayout*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QFormLayout* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QFormLayout*: wrapper wraps NULL";
@@ -1993,9 +1993,9 @@ SpanningRole = QFormLayout::SpanningRole,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QFormLayout_Type;
+              return RJSType_QFormLayout::getIdStatic();
             
         }
 

@@ -546,60 +546,72 @@
       static void init(RJSApi& handler);
 
       
-        static QAbstractScrollArea* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QAbstractScrollArea* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QAbstractItemView_Type:
+            if (t==RJSType_QAbstractItemView::getIdStatic()) {
               return (QAbstractScrollArea*)(QAbstractItemView*)vp;
-          
-            case RJSType::QHeaderView_Type:
+            }
+            
+            if (t==RJSType_QHeaderView::getIdStatic()) {
               return (QAbstractScrollArea*)(QHeaderView*)vp;
-          
-            case RJSType::QListView_Type:
+            }
+            
+            if (t==RJSType_QListView::getIdStatic()) {
               return (QAbstractScrollArea*)(QListView*)vp;
-          
-            case RJSType::QListWidget_Type:
+            }
+            
+            if (t==RJSType_QListWidget::getIdStatic()) {
               return (QAbstractScrollArea*)(QListWidget*)vp;
-          
-            case RJSType::QMdiArea_Type:
+            }
+            
+            if (t==RJSType_QMdiArea::getIdStatic()) {
               return (QAbstractScrollArea*)(QMdiArea*)vp;
-          
-            case RJSType::QPlainTextEdit_Type:
+            }
+            
+            if (t==RJSType_QPlainTextEdit::getIdStatic()) {
               return (QAbstractScrollArea*)(QPlainTextEdit*)vp;
-          
-            case RJSType::QScrollArea_Type:
+            }
+            
+            if (t==RJSType_QScrollArea::getIdStatic()) {
               return (QAbstractScrollArea*)(QScrollArea*)vp;
-          
-            case RJSType::QTableView_Type:
+            }
+            
+            if (t==RJSType_QTableView::getIdStatic()) {
               return (QAbstractScrollArea*)(QTableView*)vp;
-          
-            case RJSType::QTableWidget_Type:
+            }
+            
+            if (t==RJSType_QTableWidget::getIdStatic()) {
               return (QAbstractScrollArea*)(QTableWidget*)vp;
-          
-            case RJSType::QTextEdit_Type:
+            }
+            
+            if (t==RJSType_QTextEdit::getIdStatic()) {
               return (QAbstractScrollArea*)(QTextEdit*)vp;
-          
-            case RJSType::QTreeView_Type:
+            }
+            
+            if (t==RJSType_QTreeView::getIdStatic()) {
               return (QAbstractScrollArea*)(QTreeView*)vp;
-          
-            case RJSType::QTreeWidget_Type:
+            }
+            
+            if (t==RJSType_QTreeWidget::getIdStatic()) {
               return (QAbstractScrollArea*)(QTreeWidget*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QAbstractScrollArea_Type:
+              if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
                 return (QAbstractScrollArea*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QAbstractScrollArea* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QAbstractScrollArea*: wrapper wraps NULL";
@@ -6818,9 +6830,9 @@ AdjustToContents = QAbstractScrollArea::AdjustToContents,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QAbstractScrollArea_Type;
+              return RJSType_QAbstractScrollArea::getIdStatic();
             
         }
 

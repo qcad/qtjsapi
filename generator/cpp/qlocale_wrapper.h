@@ -416,24 +416,24 @@
       static void init(RJSApi& handler);
 
       
-        static QLocale* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QLocale* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QLocale_Type:
+              if (t==RJSType_QLocale::getIdStatic()) {
                 return (QLocale*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QLocale* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QLocale*: wrapper wraps NULL";
@@ -2780,9 +2780,9 @@ AlternateQuotation = QLocale::AlternateQuotation,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QLocale_Type;
+              return RJSType_QLocale::getIdStatic();
             
         }
 

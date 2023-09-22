@@ -123,6 +123,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QCompleter* t = new RJSType_QCompleter();
+          global.setProperty("RJSType_QCompleter", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QCompleter::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QCompleter_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QCompleter_Wrapper", mo);

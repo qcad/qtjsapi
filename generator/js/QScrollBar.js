@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QScrollBar_Type
+                  RJSType_QScrollBar.getIdStatic()
                 
             ))) {
 
@@ -142,48 +142,39 @@
         };
       QScrollBar.getObjectType = function() {
         
-            return RJSType.QScrollBar_Type;
+            return RJSType_QScrollBar.getIdStatic();
           
       };
 
       QScrollBar.prototype.getObjectType = function() {
         
-            return RJSType.QScrollBar_Type;
+            return RJSType_QScrollBar.getIdStatic();
           
       };
 
       QScrollBar.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QScrollBar_Type:
+            if (t===RJSType_QScrollBar.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QAbstractSlider_Type:
-          return true;
+          if (t===RJSType_QAbstractSlider.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QScrollBar_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QWidget_Type
-            ,
-            RJSType.QAbstractSlider_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

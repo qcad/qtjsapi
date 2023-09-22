@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSpinBox* t = new RJSType_QSpinBox();
+          global.setProperty("RJSType_QSpinBox", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSpinBox::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSpinBox_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QSpinBox_Wrapper", mo);
@@ -18254,6 +18265,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDoubleSpinBox* t = new RJSType_QDoubleSpinBox();
+          global.setProperty("RJSType_QDoubleSpinBox", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDoubleSpinBox::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDoubleSpinBox_Wrapper::staticMetaObject);

@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QAbstractPrintDialog* t = new RJSType_QAbstractPrintDialog();
+          global.setProperty("RJSType_QAbstractPrintDialog", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QAbstractPrintDialog::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QAbstractPrintDialog_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QAbstractPrintDialog_Wrapper", mo);

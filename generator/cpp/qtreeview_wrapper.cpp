@@ -342,6 +342,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTreeView* t = new RJSType_QTreeView();
+          global.setProperty("RJSType_QTreeView", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTreeView::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTreeView_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTreeView_Wrapper", mo);

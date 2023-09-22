@@ -50,48 +50,56 @@
       static void init(RJSApi& handler);
 
       
-        static QLayoutItem* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QLayoutItem* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QBoxLayout_Type:
+            if (t==RJSType_QBoxLayout::getIdStatic()) {
               return (QLayoutItem*)(QBoxLayout*)vp;
-          
-            case RJSType::QHBoxLayout_Type:
+            }
+            
+            if (t==RJSType_QHBoxLayout::getIdStatic()) {
               return (QLayoutItem*)(QHBoxLayout*)vp;
-          
-            case RJSType::QVBoxLayout_Type:
+            }
+            
+            if (t==RJSType_QVBoxLayout::getIdStatic()) {
               return (QLayoutItem*)(QVBoxLayout*)vp;
-          
-            case RJSType::QGridLayout_Type:
+            }
+            
+            if (t==RJSType_QGridLayout::getIdStatic()) {
               return (QLayoutItem*)(QGridLayout*)vp;
-          
-            case RJSType::QLayout_Type:
+            }
+            
+            if (t==RJSType_QLayout::getIdStatic()) {
               return (QLayoutItem*)(QLayout*)vp;
-          
-            case RJSType::QSpacerItem_Type:
+            }
+            
+            if (t==RJSType_QSpacerItem::getIdStatic()) {
               return (QLayoutItem*)(QSpacerItem*)vp;
-          
-            case RJSType::QWidgetItem_Type:
+            }
+            
+            if (t==RJSType_QWidgetItem::getIdStatic()) {
               return (QLayoutItem*)(QWidgetItem*)vp;
-          
-            case RJSType::QStackedLayout_Type:
+            }
+            
+            if (t==RJSType_QStackedLayout::getIdStatic()) {
               return (QLayoutItem*)(QStackedLayout*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QLayoutItem_Type:
+              if (t==RJSType_QLayoutItem::getIdStatic()) {
                 return (QLayoutItem*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QLayoutItem* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QLayoutItem*: wrapper wraps NULL";
@@ -504,9 +512,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QLayoutItem_Type;
+              return RJSType_QLayoutItem::getIdStatic();
             
         }
 
@@ -634,24 +642,24 @@
       static void init(RJSApi& handler);
 
       
-        static QSpacerItem* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QSpacerItem* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QSpacerItem_Type:
+              if (t==RJSType_QSpacerItem::getIdStatic()) {
                 return (QSpacerItem*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QSpacerItem* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QSpacerItem*: wrapper wraps NULL";
@@ -1180,9 +1188,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QSpacerItem_Type;
+              return RJSType_QSpacerItem::getIdStatic();
             
         }
 
@@ -1292,24 +1300,24 @@
       static void init(RJSApi& handler);
 
       
-        static QWidgetItem* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QWidgetItem* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QWidgetItem_Type:
+              if (t==RJSType_QWidgetItem::getIdStatic()) {
                 return (QWidgetItem*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QWidgetItem* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QWidgetItem*: wrapper wraps NULL";
@@ -1759,9 +1767,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QWidgetItem_Type;
+              return RJSType_QWidgetItem::getIdStatic();
             
         }
 

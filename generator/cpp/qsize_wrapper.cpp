@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSize* t = new RJSType_QSize();
+          global.setProperty("RJSType_QSize", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSize::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSize_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QSize_Wrapper", mo);
@@ -1667,6 +1678,17 @@ QMargins a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSizeF* t = new RJSType_QSizeF();
+          global.setProperty("RJSType_QSizeF", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSizeF::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSizeF_Wrapper::staticMetaObject);

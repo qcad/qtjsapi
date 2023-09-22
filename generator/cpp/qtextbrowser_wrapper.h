@@ -650,24 +650,24 @@
       static void init(RJSApi& handler);
 
       
-        static QTextBrowser* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextBrowser* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTextBrowser_Type:
+              if (t==RJSType_QTextBrowser::getIdStatic()) {
                 return (QTextBrowser*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextBrowser* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextBrowser*: wrapper wraps NULL";
@@ -8524,9 +8524,9 @@ AutoAll = QTextBrowser::AutoAll,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextBrowser_Type;
+              return RJSType_QTextBrowser::getIdStatic();
             
         }
 

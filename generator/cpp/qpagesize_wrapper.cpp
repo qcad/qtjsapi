@@ -748,6 +748,17 @@ int a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPageSize* t = new RJSType_QPageSize();
+          global.setProperty("RJSType_QPageSize", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPageSize::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPageSize_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPageSize_Wrapper", mo);

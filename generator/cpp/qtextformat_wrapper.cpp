@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextLength* t = new RJSType_QTextLength();
+          global.setProperty("RJSType_QTextLength", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextLength::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextLength_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTextLength_Wrapper", mo);
@@ -446,6 +457,17 @@ qreal a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextFormat* t = new RJSType_QTextFormat();
+          global.setProperty("RJSType_QTextFormat", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextFormat::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextFormat_Wrapper::staticMetaObject);
@@ -3570,6 +3592,17 @@ QBrush a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextCharFormat* t = new RJSType_QTextCharFormat();
+          global.setProperty("RJSType_QTextCharFormat", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextCharFormat::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextCharFormat_Wrapper::staticMetaObject);
@@ -10518,6 +10551,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextBlockFormat* t = new RJSType_QTextBlockFormat();
+          global.setProperty("RJSType_QTextBlockFormat", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextBlockFormat::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextBlockFormat_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTextBlockFormat_Wrapper", mo);
@@ -15016,6 +15060,17 @@ QTextFormat::PageBreakFlags a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextListFormat* t = new RJSType_QTextListFormat();
+          global.setProperty("RJSType_QTextListFormat", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextListFormat::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextListFormat_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTextListFormat_Wrapper", mo);
@@ -18534,6 +18589,17 @@ QString a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextImageFormat* t = new RJSType_QTextImageFormat();
+          global.setProperty("RJSType_QTextImageFormat", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextImageFormat::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextImageFormat_Wrapper::staticMetaObject);
@@ -23172,6 +23238,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextFrameFormat* t = new RJSType_QTextFrameFormat();
+          global.setProperty("RJSType_QTextFrameFormat", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextFrameFormat::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextFrameFormat_Wrapper::staticMetaObject);
@@ -27863,6 +27940,17 @@ QTextFormat::PageBreakFlags a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextTableFormat* t = new RJSType_QTextTableFormat();
+          global.setProperty("RJSType_QTextTableFormat", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextTableFormat::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextTableFormat_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTextTableFormat_Wrapper", mo);
@@ -30645,6 +30733,17 @@ bool a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextTableCellFormat* t = new RJSType_QTextTableCellFormat();
+          global.setProperty("RJSType_QTextTableCellFormat", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextTableCellFormat::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextTableCellFormat_Wrapper::staticMetaObject);

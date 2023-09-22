@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QRadioButton* t = new RJSType_QRadioButton();
+          global.setProperty("RJSType_QRadioButton", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QRadioButton::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QRadioButton_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QRadioButton_Wrapper", mo);

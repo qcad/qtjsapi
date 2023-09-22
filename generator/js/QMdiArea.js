@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QMdiArea_Type
+                  RJSType_QMdiArea.getIdStatic()
                 
             ))) {
 
@@ -109,53 +109,43 @@
         };
       QMdiArea.getObjectType = function() {
         
-            return RJSType.QMdiArea_Type;
+            return RJSType_QMdiArea.getIdStatic();
           
       };
 
       QMdiArea.prototype.getObjectType = function() {
         
-            return RJSType.QMdiArea_Type;
+            return RJSType_QMdiArea.getIdStatic();
           
       };
 
       QMdiArea.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QMdiArea_Type:
+            if (t===RJSType_QMdiArea.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QFrame_Type:
-          return true;
+          if (t===RJSType_QFrame.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QAbstractScrollArea_Type:
-          return true;
+          if (t===RJSType_QAbstractScrollArea.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QMdiArea_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QWidget_Type
-            ,
-            RJSType.QFrame_Type
-            ,
-            RJSType.QAbstractScrollArea_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

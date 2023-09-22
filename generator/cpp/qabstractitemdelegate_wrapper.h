@@ -118,27 +118,28 @@
       static void init(RJSApi& handler);
 
       
-        static QAbstractItemDelegate* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QAbstractItemDelegate* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QItemDelegate_Type:
+            if (t==RJSType_QItemDelegate::getIdStatic()) {
               return (QAbstractItemDelegate*)(QItemDelegate*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QAbstractItemDelegate_Type:
+              if (t==RJSType_QAbstractItemDelegate::getIdStatic()) {
                 return (QAbstractItemDelegate*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QAbstractItemDelegate* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QAbstractItemDelegate*: wrapper wraps NULL";
@@ -798,9 +799,9 @@ RevertModelCache = QAbstractItemDelegate::RevertModelCache,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QAbstractItemDelegate_Type;
+              return RJSType_QAbstractItemDelegate::getIdStatic();
             
         }
 

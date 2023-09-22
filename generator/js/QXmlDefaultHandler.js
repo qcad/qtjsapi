@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QXmlDefaultHandler_Type
+                  RJSType_QXmlDefaultHandler.getIdStatic()
                 
             ))) {
 
@@ -104,63 +104,51 @@
         };
       QXmlDefaultHandler.getObjectType = function() {
         
-            return RJSType.QXmlDefaultHandler_Type;
+            return RJSType_QXmlDefaultHandler.getIdStatic();
           
       };
 
       QXmlDefaultHandler.prototype.getObjectType = function() {
         
-            return RJSType.QXmlDefaultHandler_Type;
+            return RJSType_QXmlDefaultHandler.getIdStatic();
           
       };
 
       QXmlDefaultHandler.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QXmlDefaultHandler_Type:
+            if (t===RJSType_QXmlDefaultHandler.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QXmlContentHandler_Type:
-          return true;
+          if (t===RJSType_QXmlContentHandler.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QXmlErrorHandler_Type:
-          return true;
+          if (t===RJSType_QXmlErrorHandler.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QXmlDTDHandler_Type:
-          return true;
+          if (t===RJSType_QXmlDTDHandler.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QXmlEntityResolver_Type:
-          return true;
+          if (t===RJSType_QXmlEntityResolver.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QXmlLexicalHandler_Type:
-          return true;
+          if (t===RJSType_QXmlLexicalHandler.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QXmlDeclHandler_Type:
-          return true;
+          if (t===RJSType_QXmlDeclHandler.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QXmlDefaultHandler_Type, 
-          
-            RJSType.QXmlContentHandler_Type
-            ,
-            RJSType.QXmlErrorHandler_Type
-            ,
-            RJSType.QXmlDTDHandler_Type
-            ,
-            RJSType.QXmlEntityResolver_Type
-            ,
-            RJSType.QXmlLexicalHandler_Type
-            ,
-            RJSType.QXmlDeclHandler_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

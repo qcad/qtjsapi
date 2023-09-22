@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QProcessEnvironment_Type
+                  RJSType_QProcessEnvironment.getIdStatic()
                 
             ))) {
 
@@ -156,33 +156,27 @@
         };
       QProcessEnvironment.getObjectType = function() {
         
-            return RJSType.QProcessEnvironment_Type;
+            return RJSType_QProcessEnvironment.getIdStatic();
           
       };
 
       QProcessEnvironment.prototype.getObjectType = function() {
         
-            return RJSType.QProcessEnvironment_Type;
+            return RJSType_QProcessEnvironment.getIdStatic();
           
       };
 
       QProcessEnvironment.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QProcessEnvironment.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QProcessEnvironment_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QProcessEnvironment_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

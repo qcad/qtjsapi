@@ -851,6 +851,17 @@ QLocale::Language a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QLocale* t = new RJSType_QLocale();
+          global.setProperty("RJSType_QLocale", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QLocale::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QLocale_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QLocale_Wrapper", mo);

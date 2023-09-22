@@ -274,38 +274,63 @@
       </xsl:variable>
 
       <xsl:if test="not(ancestor-or-self::qsrc:namespace)">
-        static <xsl:value-of select="@name" />* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
+        static <xsl:value-of select="@name" />* castToBase(void* vp, /*RJSType ID*/ int t) {
+          <!--
           switch (t) {
+          -->
           // check if pointer points to derrived type:
           <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$classname]">
+            if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
+              return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
+            }
+            <!--
             case RJSType::<xsl:value-of select="../../@name" />_Type:
               return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
+            -->
           </xsl:for-each>
 
           <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$classname]/qsrc:downcasts/qsrc:class">
+            if (t==RJSType_<xsl:value-of select="@type" />::getIdStatic()) {
+              return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="@name" />*)vp;
+            }
+            <!--
             case <xsl:value-of select="@type" />:
               return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="@name" />*)vp;
+            -->
           </xsl:for-each>
 
           // pointer to desired type:
           <xsl:choose>
             <xsl:when test="not($pluginid='')">
+              if (t==RJSType_<xsl:value-of select="@typeidbase" />::getIdStatic()) {
+                return (<xsl:value-of select="@name" />*)vp;
+              }
+              <!--
               case <xsl:value-of select="$typeidbase" />:
                 return (<xsl:value-of select="@name" />*)vp;
+              -->
             </xsl:when>
             <xsl:otherwise>
+              if (t==RJSType_<xsl:value-of select="@name" />::getIdStatic()) {
+                return (<xsl:value-of select="@name" />*)vp;
+              }
+              <!--
               case RJSType::<xsl:value-of select="@name" />_Type:
                 return (<xsl:value-of select="@name" />*)vp;
+              -->
             </xsl:otherwise>
           </xsl:choose>
 
+          return nullptr;
+          <!--
           default:
             return nullptr;
           }
+          -->
         }
 
         static <xsl:value-of select="@name" />* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() &lt;&lt; "getWrapped_<xsl:value-of select="@name" />*: wrapper wraps NULL";
@@ -337,6 +362,26 @@
       -->
 
       QJSEngine* engine = handler.getEngine();
+
+      <xsl:choose>
+        <xsl:when test="not(ancestor-or-self::qsrc:namespace)">
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_<xsl:value-of select="@name" />* t = new RJSType_<xsl:value-of select="@name" />();
+          global.setProperty("RJSType_<xsl:value-of select="@name" />", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_<xsl:value-of select="@name" />::getIdStatic();
+
+          <!--
+          QJSValue mot = engine->newQMetaObject(&amp;RJSType_<xsl:value-of select="@name" />::staticMetaObject);
+          engine->globalObject().setProperty("RJSType_<xsl:value-of select="@name" />", mot);
+          -->
+        </xsl:when>
+        <xsl:otherwise>
+          // type is namespace, no scriptable type (RJSType_<xsl:value-of select="@name" />)
+        </xsl:otherwise>
+      </xsl:choose>
 
       // wrapper:
       QJSValue mo = engine-&gt;newQMetaObject(&amp;<xsl:value-of select="@name" />_Wrapper::staticMetaObject);
@@ -715,13 +760,13 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           <xsl:choose>
             <xsl:when test="not($typeidbase='')">
               return <xsl:value-of select="$typeidbase" />;
             </xsl:when>
             <xsl:otherwise>
-              return RJSType::<xsl:value-of select="@name" />_Type;
+              return RJSType_<xsl:value-of select="@name" />::getIdStatic();
             </xsl:otherwise>
           </xsl:choose>
         }

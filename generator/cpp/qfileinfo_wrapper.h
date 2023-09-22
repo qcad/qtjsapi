@@ -41,24 +41,24 @@
       static void init(RJSApi& handler);
 
       
-        static QFileInfo* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QFileInfo* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QFileInfo_Type:
+              if (t==RJSType_QFileInfo::getIdStatic()) {
                 return (QFileInfo*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QFileInfo* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QFileInfo*: wrapper wraps NULL";
@@ -1194,9 +1194,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QFileInfo_Type;
+              return RJSType_QFileInfo::getIdStatic();
             
         }
 

@@ -97,6 +97,17 @@ QPoint a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPoint* t = new RJSType_QPoint();
+          global.setProperty("RJSType_QPoint", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPoint::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPoint_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPoint_Wrapper", mo);
@@ -1274,6 +1285,17 @@ QPointF a2_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPointF* t = new RJSType_QPointF();
+          global.setProperty("RJSType_QPointF", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPointF::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPointF_Wrapper::staticMetaObject);

@@ -114,24 +114,24 @@
       static void init(RJSApi& handler);
 
       
-        static QCompleter* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QCompleter* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QCompleter_Type:
+              if (t==RJSType_QCompleter::getIdStatic()) {
                 return (QCompleter*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QCompleter* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QCompleter*: wrapper wraps NULL";
@@ -1233,9 +1233,9 @@ CaseInsensitivelySortedModel = QCompleter::CaseInsensitivelySortedModel,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QCompleter_Type;
+              return RJSType_QCompleter::getIdStatic();
             
         }
 

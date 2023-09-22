@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSplitter* t = new RJSType_QSplitter();
+          global.setProperty("RJSType_QSplitter", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSplitter::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSplitter_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QSplitter_Wrapper", mo);
@@ -19759,6 +19770,17 @@ int a2_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSplitterHandle* t = new RJSType_QSplitterHandle();
+          global.setProperty("RJSType_QSplitterHandle", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSplitterHandle::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSplitterHandle_Wrapper::staticMetaObject);

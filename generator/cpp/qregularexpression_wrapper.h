@@ -156,24 +156,24 @@
       static void init(RJSApi& handler);
 
       
-        static QRegularExpression* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QRegularExpression* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QRegularExpression_Type:
+              if (t==RJSType_QRegularExpression::getIdStatic()) {
                 return (QRegularExpression*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QRegularExpression* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QRegularExpression*: wrapper wraps NULL";
@@ -585,9 +585,9 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QRegularExpression_Type;
+              return RJSType_QRegularExpression::getIdStatic();
             
         }
 
@@ -697,24 +697,24 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
       static void init(RJSApi& handler);
 
       
-        static QRegularExpressionMatch* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QRegularExpressionMatch* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QRegularExpressionMatch_Type:
+              if (t==RJSType_QRegularExpressionMatch::getIdStatic()) {
                 return (QRegularExpressionMatch*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QRegularExpressionMatch* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QRegularExpressionMatch*: wrapper wraps NULL";
@@ -1108,9 +1108,9 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QRegularExpressionMatch_Type;
+              return RJSType_QRegularExpressionMatch::getIdStatic();
             
         }
 

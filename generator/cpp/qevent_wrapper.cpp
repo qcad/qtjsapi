@@ -89,6 +89,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QInputEvent* t = new RJSType_QInputEvent();
+          global.setProperty("RJSType_QInputEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QInputEvent::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QInputEvent_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QInputEvent_Wrapper", mo);
@@ -1090,6 +1101,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPointerEvent* t = new RJSType_QPointerEvent();
+          global.setProperty("RJSType_QPointerEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPointerEvent::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPointerEvent_Wrapper::staticMetaObject);
@@ -2982,6 +3004,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSinglePointEvent* t = new RJSType_QSinglePointEvent();
+          global.setProperty("RJSType_QSinglePointEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSinglePointEvent::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSinglePointEvent_Wrapper::staticMetaObject);
@@ -5111,6 +5144,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QMouseEvent* t = new RJSType_QMouseEvent();
+          global.setProperty("RJSType_QMouseEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QMouseEvent::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QMouseEvent_Wrapper::staticMetaObject);
@@ -7951,6 +7995,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QWheelEvent* t = new RJSType_QWheelEvent();
+          global.setProperty("RJSType_QWheelEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QWheelEvent::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QWheelEvent_Wrapper::staticMetaObject);
@@ -10851,6 +10906,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QKeyEvent* t = new RJSType_QKeyEvent();
+          global.setProperty("RJSType_QKeyEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QKeyEvent::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QKeyEvent_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QKeyEvent_Wrapper", mo);
@@ -12504,6 +12570,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPaintEvent* t = new RJSType_QPaintEvent();
+          global.setProperty("RJSType_QPaintEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPaintEvent::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPaintEvent_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPaintEvent_Wrapper", mo);
@@ -13507,6 +13584,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QResizeEvent* t = new RJSType_QResizeEvent();
+          global.setProperty("RJSType_QResizeEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QResizeEvent::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QResizeEvent_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QResizeEvent_Wrapper", mo);
@@ -14484,6 +14572,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDragEnterEvent* t = new RJSType_QDragEnterEvent();
+          global.setProperty("RJSType_QDragEnterEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDragEnterEvent::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDragEnterEvent_Wrapper::staticMetaObject);
@@ -15922,6 +16021,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDropEvent* t = new RJSType_QDropEvent();
+          global.setProperty("RJSType_QDropEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDropEvent::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDropEvent_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDropEvent_Wrapper", mo);
@@ -17236,6 +17346,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QContextMenuEvent* t = new RJSType_QContextMenuEvent();
+          global.setProperty("RJSType_QContextMenuEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QContextMenuEvent::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QContextMenuEvent_Wrapper::staticMetaObject);
@@ -18824,6 +18945,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDragMoveEvent* t = new RJSType_QDragMoveEvent();
+          global.setProperty("RJSType_QDragMoveEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDragMoveEvent::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDragMoveEvent_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDragMoveEvent_Wrapper", mo);
@@ -20282,6 +20414,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDragLeaveEvent* t = new RJSType_QDragLeaveEvent();
+          global.setProperty("RJSType_QDragLeaveEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDragLeaveEvent::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDragLeaveEvent_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDragLeaveEvent_Wrapper", mo);
@@ -21094,6 +21237,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QHelpEvent* t = new RJSType_QHelpEvent();
+          global.setProperty("RJSType_QHelpEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QHelpEvent::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QHelpEvent_Wrapper::staticMetaObject);
@@ -22316,6 +22470,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QActionEvent* t = new RJSType_QActionEvent();
+          global.setProperty("RJSType_QActionEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QActionEvent::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QActionEvent_Wrapper::staticMetaObject);

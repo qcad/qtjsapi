@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QModelIndex* t = new RJSType_QModelIndex();
+          global.setProperty("RJSType_QModelIndex", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QModelIndex::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QModelIndex_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QModelIndex_Wrapper", mo);
@@ -843,6 +854,17 @@ int a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QAbstractItemModel* t = new RJSType_QAbstractItemModel();
+          global.setProperty("RJSType_QAbstractItemModel", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QAbstractItemModel::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QAbstractItemModel_Wrapper::staticMetaObject);
@@ -5416,6 +5438,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QAbstractTableModel* t = new RJSType_QAbstractTableModel();
+          global.setProperty("RJSType_QAbstractTableModel", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QAbstractTableModel::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QAbstractTableModel_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QAbstractTableModel_Wrapper", mo);
@@ -9905,6 +9938,17 @@ int a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QAbstractListModel* t = new RJSType_QAbstractListModel();
+          global.setProperty("RJSType_QAbstractListModel", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QAbstractListModel::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QAbstractListModel_Wrapper::staticMetaObject);

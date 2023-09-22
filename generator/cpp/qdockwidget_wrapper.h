@@ -550,24 +550,24 @@
       static void init(RJSApi& handler);
 
       
-        static QDockWidget* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDockWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDockWidget_Type:
+              if (t==RJSType_QDockWidget::getIdStatic()) {
                 return (QDockWidget*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDockWidget* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDockWidget*: wrapper wraps NULL";
@@ -6187,9 +6187,9 @@ Reserved = QDockWidget::Reserved,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDockWidget_Type;
+              return RJSType_QDockWidget::getIdStatic();
             
         }
 

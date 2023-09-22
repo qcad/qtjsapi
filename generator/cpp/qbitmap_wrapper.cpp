@@ -497,6 +497,17 @@ QPixmap a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QBitmap* t = new RJSType_QBitmap();
+          global.setProperty("RJSType_QBitmap", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QBitmap::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QBitmap_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QBitmap_Wrapper", mo);

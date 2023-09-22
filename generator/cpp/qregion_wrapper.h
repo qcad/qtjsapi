@@ -91,24 +91,24 @@
       static void init(RJSApi& handler);
 
       
-        static QRegion* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QRegion* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QRegion_Type:
+              if (t==RJSType_QRegion::getIdStatic()) {
                 return (QRegion*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QRegion* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QRegion*: wrapper wraps NULL";
@@ -552,9 +552,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QRegion_Type;
+              return RJSType_QRegion::getIdStatic();
             
         }
 

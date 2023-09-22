@@ -269,6 +269,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPrinterInfo* t = new RJSType_QPrinterInfo();
+          global.setProperty("RJSType_QPrinterInfo", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPrinterInfo::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPrinterInfo_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPrinterInfo_Wrapper", mo);

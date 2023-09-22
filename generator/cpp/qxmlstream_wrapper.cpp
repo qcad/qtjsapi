@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlStreamAttribute* t = new RJSType_QXmlStreamAttribute();
+          global.setProperty("RJSType_QXmlStreamAttribute", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlStreamAttribute::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlStreamAttribute_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QXmlStreamAttribute_Wrapper", mo);
@@ -351,6 +362,17 @@
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlStreamAttributes* t = new RJSType_QXmlStreamAttributes();
+          global.setProperty("RJSType_QXmlStreamAttributes", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlStreamAttributes::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlStreamAttributes_Wrapper::staticMetaObject);
@@ -802,6 +824,17 @@ QString a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlStreamReader* t = new RJSType_QXmlStreamReader();
+          global.setProperty("RJSType_QXmlStreamReader", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlStreamReader::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlStreamReader_Wrapper::staticMetaObject);
@@ -3260,6 +3293,17 @@ QString a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlStreamWriter* t = new RJSType_QXmlStreamWriter();
+          global.setProperty("RJSType_QXmlStreamWriter", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlStreamWriter::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlStreamWriter_Wrapper::staticMetaObject);

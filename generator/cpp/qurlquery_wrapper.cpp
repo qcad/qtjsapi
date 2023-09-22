@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QUrlQuery* t = new RJSType_QUrlQuery();
+          global.setProperty("RJSType_QUrlQuery", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QUrlQuery::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QUrlQuery_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QUrlQuery_Wrapper", mo);

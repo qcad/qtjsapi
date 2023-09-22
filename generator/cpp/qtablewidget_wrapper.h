@@ -39,24 +39,24 @@
       static void init(RJSApi& handler);
 
       
-        static QTableWidgetItem* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTableWidgetItem* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTableWidgetItem_Type:
+              if (t==RJSType_QTableWidgetItem::getIdStatic()) {
                 return (QTableWidgetItem*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTableWidgetItem* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTableWidgetItem*: wrapper wraps NULL";
@@ -946,9 +946,9 @@ UserType = QTableWidgetItem::UserType,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTableWidgetItem_Type;
+              return RJSType_QTableWidgetItem::getIdStatic();
             
         }
 
@@ -1678,24 +1678,24 @@ UserType = QTableWidgetItem::UserType,
       static void init(RJSApi& handler);
 
       
-        static QTableWidget* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTableWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTableWidget_Type:
+              if (t==RJSType_QTableWidget::getIdStatic()) {
                 return (QTableWidget*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTableWidget* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTableWidget*: wrapper wraps NULL";
@@ -11068,9 +11068,9 @@ InternalMove = QTableWidget::InternalMove,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTableWidget_Type;
+              return RJSType_QTableWidget::getIdStatic();
             
         }
 

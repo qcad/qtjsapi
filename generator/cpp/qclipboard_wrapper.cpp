@@ -119,6 +119,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QClipboard* t = new RJSType_QClipboard();
+          global.setProperty("RJSType_QClipboard", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QClipboard::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QClipboard_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QClipboard_Wrapper", mo);

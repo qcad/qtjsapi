@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QLine* t = new RJSType_QLine();
+          global.setProperty("RJSType_QLine", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QLine::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QLine_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QLine_Wrapper", mo);
@@ -1601,6 +1612,17 @@ qreal a2_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QLineF* t = new RJSType_QLineF();
+          global.setProperty("RJSType_QLineF", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QLineF::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QLineF_Wrapper::staticMetaObject);

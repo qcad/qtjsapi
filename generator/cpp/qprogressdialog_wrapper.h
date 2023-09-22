@@ -586,24 +586,24 @@
       static void init(RJSApi& handler);
 
       
-        static QProgressDialog* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QProgressDialog* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QProgressDialog_Type:
+              if (t==RJSType_QProgressDialog::getIdStatic()) {
                 return (QProgressDialog*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QProgressDialog* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QProgressDialog*: wrapper wraps NULL";
@@ -6633,9 +6633,9 @@ Accepted = QProgressDialog::Accepted,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QProgressDialog_Type;
+              return RJSType_QProgressDialog::getIdStatic();
             
         }
 

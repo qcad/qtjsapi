@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QCheckBox_Type
+                  RJSType_QCheckBox.getIdStatic()
                 
             ))) {
 
@@ -140,48 +140,39 @@
         };
       QCheckBox.getObjectType = function() {
         
-            return RJSType.QCheckBox_Type;
+            return RJSType_QCheckBox.getIdStatic();
           
       };
 
       QCheckBox.prototype.getObjectType = function() {
         
-            return RJSType.QCheckBox_Type;
+            return RJSType_QCheckBox.getIdStatic();
           
       };
 
       QCheckBox.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QCheckBox_Type:
+            if (t===RJSType_QCheckBox.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QAbstractButton_Type:
-          return true;
+          if (t===RJSType_QAbstractButton.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QCheckBox_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QWidget_Type
-            ,
-            RJSType.QAbstractButton_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

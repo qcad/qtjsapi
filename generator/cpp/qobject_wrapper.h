@@ -150,327 +150,428 @@
       static void init(RJSApi& handler);
 
       
-        static QObject* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QObject* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QAbstractButton_Type:
+            if (t==RJSType_QAbstractButton::getIdStatic()) {
               return (QObject*)(QAbstractButton*)vp;
-          
-            case RJSType::QAbstractItemDelegate_Type:
+            }
+            
+            if (t==RJSType_QAbstractItemDelegate::getIdStatic()) {
               return (QObject*)(QAbstractItemDelegate*)vp;
-          
-            case RJSType::QAbstractItemModel_Type:
+            }
+            
+            if (t==RJSType_QAbstractItemModel::getIdStatic()) {
               return (QObject*)(QAbstractItemModel*)vp;
-          
-            case RJSType::QAbstractTableModel_Type:
+            }
+            
+            if (t==RJSType_QAbstractTableModel::getIdStatic()) {
               return (QObject*)(QAbstractTableModel*)vp;
-          
-            case RJSType::QAbstractListModel_Type:
+            }
+            
+            if (t==RJSType_QAbstractListModel::getIdStatic()) {
               return (QObject*)(QAbstractListModel*)vp;
-          
-            case RJSType::QAbstractItemView_Type:
+            }
+            
+            if (t==RJSType_QAbstractItemView::getIdStatic()) {
               return (QObject*)(QAbstractItemView*)vp;
-          
-            case RJSType::QAbstractPrintDialog_Type:
+            }
+            
+            if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
               return (QObject*)(QAbstractPrintDialog*)vp;
-          
-            case RJSType::QAbstractScrollArea_Type:
+            }
+            
+            if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
               return (QObject*)(QAbstractScrollArea*)vp;
-          
-            case RJSType::QAbstractSlider_Type:
+            }
+            
+            if (t==RJSType_QAbstractSlider::getIdStatic()) {
               return (QObject*)(QAbstractSlider*)vp;
-          
-            case RJSType::QAction_Type:
+            }
+            
+            if (t==RJSType_QAction::getIdStatic()) {
               return (QObject*)(QAction*)vp;
-          
-            case RJSType::QActionGroup_Type:
+            }
+            
+            if (t==RJSType_QActionGroup::getIdStatic()) {
               return (QObject*)(QActionGroup*)vp;
-          
-            case RJSType::QApplication_Type:
+            }
+            
+            if (t==RJSType_QApplication::getIdStatic()) {
               return (QObject*)(QApplication*)vp;
-          
-            case RJSType::QBoxLayout_Type:
+            }
+            
+            if (t==RJSType_QBoxLayout::getIdStatic()) {
               return (QObject*)(QBoxLayout*)vp;
-          
-            case RJSType::QHBoxLayout_Type:
+            }
+            
+            if (t==RJSType_QHBoxLayout::getIdStatic()) {
               return (QObject*)(QHBoxLayout*)vp;
-          
-            case RJSType::QVBoxLayout_Type:
+            }
+            
+            if (t==RJSType_QVBoxLayout::getIdStatic()) {
               return (QObject*)(QVBoxLayout*)vp;
-          
-            case RJSType::QBuffer_Type:
+            }
+            
+            if (t==RJSType_QBuffer::getIdStatic()) {
               return (QObject*)(QBuffer*)vp;
-          
-            case RJSType::QButtonGroup_Type:
+            }
+            
+            if (t==RJSType_QButtonGroup::getIdStatic()) {
               return (QObject*)(QButtonGroup*)vp;
-          
-            case RJSType::QCheckBox_Type:
+            }
+            
+            if (t==RJSType_QCheckBox::getIdStatic()) {
               return (QObject*)(QCheckBox*)vp;
-          
-            case RJSType::QClipboard_Type:
+            }
+            
+            if (t==RJSType_QClipboard::getIdStatic()) {
               return (QObject*)(QClipboard*)vp;
-          
-            case RJSType::QComboBox_Type:
+            }
+            
+            if (t==RJSType_QComboBox::getIdStatic()) {
               return (QObject*)(QComboBox*)vp;
-          
-            case RJSType::QCompleter_Type:
+            }
+            
+            if (t==RJSType_QCompleter::getIdStatic()) {
               return (QObject*)(QCompleter*)vp;
-          
-            case RJSType::QCoreApplication_Type:
+            }
+            
+            if (t==RJSType_QCoreApplication::getIdStatic()) {
               return (QObject*)(QCoreApplication*)vp;
-          
-            case RJSType::QDialog_Type:
+            }
+            
+            if (t==RJSType_QDialog::getIdStatic()) {
               return (QObject*)(QDialog*)vp;
-          
-            case RJSType::QDialogButtonBox_Type:
+            }
+            
+            if (t==RJSType_QDialogButtonBox::getIdStatic()) {
               return (QObject*)(QDialogButtonBox*)vp;
-          
-            case RJSType::QDockWidget_Type:
+            }
+            
+            if (t==RJSType_QDockWidget::getIdStatic()) {
               return (QObject*)(QDockWidget*)vp;
-          
-            case RJSType::QDrag_Type:
+            }
+            
+            if (t==RJSType_QDrag::getIdStatic()) {
               return (QObject*)(QDrag*)vp;
-          
-            case RJSType::QEventLoop_Type:
+            }
+            
+            if (t==RJSType_QEventLoop::getIdStatic()) {
               return (QObject*)(QEventLoop*)vp;
-          
-            case RJSType::QFileDevice_Type:
+            }
+            
+            if (t==RJSType_QFileDevice::getIdStatic()) {
               return (QObject*)(QFileDevice*)vp;
-          
-            case RJSType::QFileDialog_Type:
+            }
+            
+            if (t==RJSType_QFileDialog::getIdStatic()) {
               return (QObject*)(QFileDialog*)vp;
-          
-            case RJSType::QFileSystemModel_Type:
+            }
+            
+            if (t==RJSType_QFileSystemModel::getIdStatic()) {
               return (QObject*)(QFileSystemModel*)vp;
-          
-            case RJSType::QFontComboBox_Type:
+            }
+            
+            if (t==RJSType_QFontComboBox::getIdStatic()) {
               return (QObject*)(QFontComboBox*)vp;
-          
-            case RJSType::QFormLayout_Type:
+            }
+            
+            if (t==RJSType_QFormLayout::getIdStatic()) {
               return (QObject*)(QFormLayout*)vp;
-          
-            case RJSType::QFrame_Type:
+            }
+            
+            if (t==RJSType_QFrame::getIdStatic()) {
               return (QObject*)(QFrame*)vp;
-          
-            case RJSType::QGesture_Type:
+            }
+            
+            if (t==RJSType_QGesture::getIdStatic()) {
               return (QObject*)(QGesture*)vp;
-          
-            case RJSType::QPinchGesture_Type:
+            }
+            
+            if (t==RJSType_QPinchGesture::getIdStatic()) {
               return (QObject*)(QPinchGesture*)vp;
-          
-            case RJSType::QGraphicsEffect_Type:
+            }
+            
+            if (t==RJSType_QGraphicsEffect::getIdStatic()) {
               return (QObject*)(QGraphicsEffect*)vp;
-          
-            case RJSType::QGraphicsBlurEffect_Type:
+            }
+            
+            if (t==RJSType_QGraphicsBlurEffect::getIdStatic()) {
               return (QObject*)(QGraphicsBlurEffect*)vp;
-          
-            case RJSType::QGridLayout_Type:
+            }
+            
+            if (t==RJSType_QGridLayout::getIdStatic()) {
               return (QObject*)(QGridLayout*)vp;
-          
-            case RJSType::QGroupBox_Type:
+            }
+            
+            if (t==RJSType_QGroupBox::getIdStatic()) {
               return (QObject*)(QGroupBox*)vp;
-          
-            case RJSType::QGuiApplication_Type:
+            }
+            
+            if (t==RJSType_QGuiApplication::getIdStatic()) {
               return (QObject*)(QGuiApplication*)vp;
-          
-            case RJSType::QHeaderView_Type:
+            }
+            
+            if (t==RJSType_QHeaderView::getIdStatic()) {
               return (QObject*)(QHeaderView*)vp;
-          
-            case RJSType::QInputDevice_Type:
+            }
+            
+            if (t==RJSType_QInputDevice::getIdStatic()) {
               return (QObject*)(QInputDevice*)vp;
-          
-            case RJSType::QIODevice_Type:
+            }
+            
+            if (t==RJSType_QIODevice::getIdStatic()) {
               return (QObject*)(QIODevice*)vp;
-          
-            case RJSType::QItemDelegate_Type:
+            }
+            
+            if (t==RJSType_QItemDelegate::getIdStatic()) {
               return (QObject*)(QItemDelegate*)vp;
-          
-            case RJSType::QItemSelectionModel_Type:
+            }
+            
+            if (t==RJSType_QItemSelectionModel::getIdStatic()) {
               return (QObject*)(QItemSelectionModel*)vp;
-          
-            case RJSType::QLabel_Type:
+            }
+            
+            if (t==RJSType_QLabel::getIdStatic()) {
               return (QObject*)(QLabel*)vp;
-          
-            case RJSType::QLayout_Type:
+            }
+            
+            if (t==RJSType_QLayout::getIdStatic()) {
               return (QObject*)(QLayout*)vp;
-          
-            case RJSType::QLineEdit_Type:
+            }
+            
+            if (t==RJSType_QLineEdit::getIdStatic()) {
               return (QObject*)(QLineEdit*)vp;
-          
-            case RJSType::QListView_Type:
+            }
+            
+            if (t==RJSType_QListView::getIdStatic()) {
               return (QObject*)(QListView*)vp;
-          
-            case RJSType::QListWidget_Type:
+            }
+            
+            if (t==RJSType_QListWidget::getIdStatic()) {
               return (QObject*)(QListWidget*)vp;
-          
-            case RJSType::QMainWindow_Type:
+            }
+            
+            if (t==RJSType_QMainWindow::getIdStatic()) {
               return (QObject*)(QMainWindow*)vp;
-          
-            case RJSType::QMdiArea_Type:
+            }
+            
+            if (t==RJSType_QMdiArea::getIdStatic()) {
               return (QObject*)(QMdiArea*)vp;
-          
-            case RJSType::QMdiSubWindow_Type:
+            }
+            
+            if (t==RJSType_QMdiSubWindow::getIdStatic()) {
               return (QObject*)(QMdiSubWindow*)vp;
-          
-            case RJSType::QMenu_Type:
+            }
+            
+            if (t==RJSType_QMenu::getIdStatic()) {
               return (QObject*)(QMenu*)vp;
-          
-            case RJSType::QMenuBar_Type:
+            }
+            
+            if (t==RJSType_QMenuBar::getIdStatic()) {
               return (QObject*)(QMenuBar*)vp;
-          
-            case RJSType::QMessageBox_Type:
+            }
+            
+            if (t==RJSType_QMessageBox::getIdStatic()) {
               return (QObject*)(QMessageBox*)vp;
-          
-            case RJSType::QMimeData_Type:
+            }
+            
+            if (t==RJSType_QMimeData::getIdStatic()) {
               return (QObject*)(QMimeData*)vp;
-          
-            case RJSType::QPlainTextEdit_Type:
+            }
+            
+            if (t==RJSType_QPlainTextEdit::getIdStatic()) {
               return (QObject*)(QPlainTextEdit*)vp;
-          
-            case RJSType::QPrintDialog_Type:
+            }
+            
+            if (t==RJSType_QPrintDialog::getIdStatic()) {
               return (QObject*)(QPrintDialog*)vp;
-          
-            case RJSType::QProcess_Type:
+            }
+            
+            if (t==RJSType_QProcess::getIdStatic()) {
               return (QObject*)(QProcess*)vp;
-          
-            case RJSType::QProgressBar_Type:
+            }
+            
+            if (t==RJSType_QProgressBar::getIdStatic()) {
               return (QObject*)(QProgressBar*)vp;
-          
-            case RJSType::QProgressDialog_Type:
+            }
+            
+            if (t==RJSType_QProgressDialog::getIdStatic()) {
               return (QObject*)(QProgressDialog*)vp;
-          
-            case RJSType::QPushButton_Type:
+            }
+            
+            if (t==RJSType_QPushButton::getIdStatic()) {
               return (QObject*)(QPushButton*)vp;
-          
-            case RJSType::QQuickWidget_Type:
+            }
+            
+            if (t==RJSType_QQuickWidget::getIdStatic()) {
               return (QObject*)(QQuickWidget*)vp;
-          
-            case RJSType::QRadioButton_Type:
+            }
+            
+            if (t==RJSType_QRadioButton::getIdStatic()) {
               return (QObject*)(QRadioButton*)vp;
-          
-            case RJSType::QScreen_Type:
+            }
+            
+            if (t==RJSType_QScreen::getIdStatic()) {
               return (QObject*)(QScreen*)vp;
-          
-            case RJSType::QScrollArea_Type:
+            }
+            
+            if (t==RJSType_QScrollArea::getIdStatic()) {
               return (QObject*)(QScrollArea*)vp;
-          
-            case RJSType::QScrollBar_Type:
+            }
+            
+            if (t==RJSType_QScrollBar::getIdStatic()) {
               return (QObject*)(QScrollBar*)vp;
-          
-            case RJSType::QSettings_Type:
+            }
+            
+            if (t==RJSType_QSettings::getIdStatic()) {
               return (QObject*)(QSettings*)vp;
-          
-            case RJSType::QShortcut_Type:
+            }
+            
+            if (t==RJSType_QShortcut::getIdStatic()) {
               return (QObject*)(QShortcut*)vp;
-          
-            case RJSType::QSlider_Type:
+            }
+            
+            if (t==RJSType_QSlider::getIdStatic()) {
               return (QObject*)(QSlider*)vp;
-          
-            case RJSType::QSortFilterProxyModel_Type:
+            }
+            
+            if (t==RJSType_QSortFilterProxyModel::getIdStatic()) {
               return (QObject*)(QSortFilterProxyModel*)vp;
-          
-            case RJSType::QSpinBox_Type:
+            }
+            
+            if (t==RJSType_QSpinBox::getIdStatic()) {
               return (QObject*)(QSpinBox*)vp;
-          
-            case RJSType::QSplashScreen_Type:
+            }
+            
+            if (t==RJSType_QSplashScreen::getIdStatic()) {
               return (QObject*)(QSplashScreen*)vp;
-          
-            case RJSType::QSplitter_Type:
+            }
+            
+            if (t==RJSType_QSplitter::getIdStatic()) {
               return (QObject*)(QSplitter*)vp;
-          
-            case RJSType::QStackedLayout_Type:
+            }
+            
+            if (t==RJSType_QStackedLayout::getIdStatic()) {
               return (QObject*)(QStackedLayout*)vp;
-          
-            case RJSType::QStackedWidget_Type:
+            }
+            
+            if (t==RJSType_QStackedWidget::getIdStatic()) {
               return (QObject*)(QStackedWidget*)vp;
-          
-            case RJSType::QStandardItemModel_Type:
+            }
+            
+            if (t==RJSType_QStandardItemModel::getIdStatic()) {
               return (QObject*)(QStandardItemModel*)vp;
-          
-            case RJSType::QStatusBar_Type:
+            }
+            
+            if (t==RJSType_QStatusBar::getIdStatic()) {
               return (QObject*)(QStatusBar*)vp;
-          
-            case RJSType::QSvgRenderer_Type:
+            }
+            
+            if (t==RJSType_QSvgRenderer::getIdStatic()) {
               return (QObject*)(QSvgRenderer*)vp;
-          
-            case RJSType::QTabBar_Type:
+            }
+            
+            if (t==RJSType_QTabBar::getIdStatic()) {
               return (QObject*)(QTabBar*)vp;
-          
-            case RJSType::QTableView_Type:
+            }
+            
+            if (t==RJSType_QTableView::getIdStatic()) {
               return (QObject*)(QTableView*)vp;
-          
-            case RJSType::QTableWidget_Type:
+            }
+            
+            if (t==RJSType_QTableWidget::getIdStatic()) {
               return (QObject*)(QTableWidget*)vp;
-          
-            case RJSType::QTabWidget_Type:
+            }
+            
+            if (t==RJSType_QTabWidget::getIdStatic()) {
               return (QObject*)(QTabWidget*)vp;
-          
-            case RJSType::QTextBrowser_Type:
+            }
+            
+            if (t==RJSType_QTextBrowser::getIdStatic()) {
               return (QObject*)(QTextBrowser*)vp;
-          
-            case RJSType::QTextDocument_Type:
+            }
+            
+            if (t==RJSType_QTextDocument::getIdStatic()) {
               return (QObject*)(QTextDocument*)vp;
-          
-            case RJSType::QTextEdit_Type:
+            }
+            
+            if (t==RJSType_QTextEdit::getIdStatic()) {
               return (QObject*)(QTextEdit*)vp;
-          
-            case RJSType::QTimer_Type:
+            }
+            
+            if (t==RJSType_QTimer::getIdStatic()) {
               return (QObject*)(QTimer*)vp;
-          
-            case RJSType::QToolBar_Type:
+            }
+            
+            if (t==RJSType_QToolBar::getIdStatic()) {
               return (QObject*)(QToolBar*)vp;
-          
-            case RJSType::QToolButton_Type:
+            }
+            
+            if (t==RJSType_QToolButton::getIdStatic()) {
               return (QObject*)(QToolButton*)vp;
-          
-            case RJSType::QTranslator_Type:
+            }
+            
+            if (t==RJSType_QTranslator::getIdStatic()) {
               return (QObject*)(QTranslator*)vp;
-          
-            case RJSType::QTreeView_Type:
+            }
+            
+            if (t==RJSType_QTreeView::getIdStatic()) {
               return (QObject*)(QTreeView*)vp;
-          
-            case RJSType::QTreeWidget_Type:
+            }
+            
+            if (t==RJSType_QTreeWidget::getIdStatic()) {
               return (QObject*)(QTreeWidget*)vp;
-          
-            case RJSType::QUiLoader_Type:
+            }
+            
+            if (t==RJSType_QUiLoader::getIdStatic()) {
               return (QObject*)(QUiLoader*)vp;
-          
-            case RJSType::QValidator_Type:
+            }
+            
+            if (t==RJSType_QValidator::getIdStatic()) {
               return (QObject*)(QValidator*)vp;
-          
-            case RJSType::QIntValidator_Type:
+            }
+            
+            if (t==RJSType_QIntValidator::getIdStatic()) {
               return (QObject*)(QIntValidator*)vp;
-          
-            case RJSType::QDoubleValidator_Type:
+            }
+            
+            if (t==RJSType_QDoubleValidator::getIdStatic()) {
               return (QObject*)(QDoubleValidator*)vp;
-          
-            case RJSType::QRegularExpressionValidator_Type:
+            }
+            
+            if (t==RJSType_QRegularExpressionValidator::getIdStatic()) {
               return (QObject*)(QRegularExpressionValidator*)vp;
-          
-            case RJSType::QWidget_Type:
+            }
+            
+            if (t==RJSType_QWidget::getIdStatic()) {
               return (QObject*)(QWidget*)vp;
-          
-            case RJSType::QWidgetAction_Type:
+            }
+            
+            if (t==RJSType_QWidgetAction::getIdStatic()) {
               return (QObject*)(QWidgetAction*)vp;
-          
-            case RJSType::QWindow_Type:
+            }
+            
+            if (t==RJSType_QWindow::getIdStatic()) {
               return (QObject*)(QWindow*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QObject_Type:
+              if (t==RJSType_QObject::getIdStatic()) {
                 return (QObject*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QObject* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QObject*: wrapper wraps NULL";
@@ -1016,9 +1117,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QObject_Type;
+              return RJSType_QObject::getIdStatic();
             
         }
 

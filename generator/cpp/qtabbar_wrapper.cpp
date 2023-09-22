@@ -300,6 +300,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTabBar* t = new RJSType_QTabBar();
+          global.setProperty("RJSType_QTabBar", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTabBar::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTabBar_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTabBar_Wrapper", mo);

@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QGradient_Type
+                  RJSType_QGradient.getIdStatic()
                 
             ))) {
 
@@ -130,33 +130,27 @@
         };
       QGradient.getObjectType = function() {
         
-            return RJSType.QGradient_Type;
+            return RJSType_QGradient.getIdStatic();
           
       };
 
       QGradient.prototype.getObjectType = function() {
         
-            return RJSType.QGradient_Type;
+            return RJSType_QGradient.getIdStatic();
           
       };
 
       QGradient.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QGradient.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QGradient_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QGradient_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

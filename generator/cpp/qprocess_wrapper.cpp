@@ -64,6 +64,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QProcessEnvironment* t = new RJSType_QProcessEnvironment();
+          global.setProperty("RJSType_QProcessEnvironment", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QProcessEnvironment::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QProcessEnvironment_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QProcessEnvironment_Wrapper", mo);
@@ -1231,6 +1242,17 @@ int a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QProcess* t = new RJSType_QProcess();
+          global.setProperty("RJSType_QProcess", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QProcess::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QProcess_Wrapper::staticMetaObject);

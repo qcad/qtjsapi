@@ -199,6 +199,17 @@ QSize a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QBoxLayout* t = new RJSType_QBoxLayout();
+          global.setProperty("RJSType_QBoxLayout", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QBoxLayout::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QBoxLayout_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QBoxLayout_Wrapper", mo);
@@ -6270,6 +6281,17 @@ QSize a2_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QHBoxLayout* t = new RJSType_QHBoxLayout();
+          global.setProperty("RJSType_QHBoxLayout", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QHBoxLayout::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QHBoxLayout_Wrapper::staticMetaObject);
@@ -12353,6 +12375,17 @@ QSize a2_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QVBoxLayout* t = new RJSType_QVBoxLayout();
+          global.setProperty("RJSType_QVBoxLayout", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QVBoxLayout::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QVBoxLayout_Wrapper::staticMetaObject);

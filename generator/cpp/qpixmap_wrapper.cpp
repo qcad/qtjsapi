@@ -438,6 +438,17 @@ Qt::ImageConversionFlags a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPixmap* t = new RJSType_QPixmap();
+          global.setProperty("RJSType_QPixmap", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPixmap::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPixmap_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPixmap_Wrapper", mo);

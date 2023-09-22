@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QPicture_Type
+                  RJSType_QPicture.getIdStatic()
                 
             ))) {
 
@@ -131,38 +131,31 @@
         };
       QPicture.getObjectType = function() {
         
-            return RJSType.QPicture_Type;
+            return RJSType_QPicture.getIdStatic();
           
       };
 
       QPicture.prototype.getObjectType = function() {
         
-            return RJSType.QPicture_Type;
+            return RJSType_QPicture.getIdStatic();
           
       };
 
       QPicture.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QPicture_Type:
+            if (t===RJSType_QPicture.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QPaintDevice_Type:
-          return true;
+          if (t===RJSType_QPaintDevice.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QPicture_Type, 
-          
-            RJSType.QPaintDevice_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

@@ -294,6 +294,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QToolBar* t = new RJSType_QToolBar();
+          global.setProperty("RJSType_QToolBar", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QToolBar::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QToolBar_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QToolBar_Wrapper", mo);

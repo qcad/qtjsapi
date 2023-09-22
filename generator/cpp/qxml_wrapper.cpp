@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlAttributes* t = new RJSType_QXmlAttributes();
+          global.setProperty("RJSType_QXmlAttributes", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlAttributes::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlAttributes_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QXmlAttributes_Wrapper", mo);
@@ -1334,6 +1345,17 @@ QString a4_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlInputSource* t = new RJSType_QXmlInputSource();
+          global.setProperty("RJSType_QXmlInputSource", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlInputSource::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlInputSource_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QXmlInputSource_Wrapper", mo);
@@ -1876,6 +1898,17 @@ QByteArray a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlParseException* t = new RJSType_QXmlParseException();
+          global.setProperty("RJSType_QXmlParseException", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlParseException::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlParseException_Wrapper::staticMetaObject);
@@ -2498,6 +2531,17 @@ QString a5_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlReader* t = new RJSType_QXmlReader();
+          global.setProperty("RJSType_QXmlReader", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlReader::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlReader_Wrapper::staticMetaObject);
@@ -3805,6 +3849,17 @@ QString a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlSimpleReader* t = new RJSType_QXmlSimpleReader();
+          global.setProperty("RJSType_QXmlSimpleReader", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlSimpleReader::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlSimpleReader_Wrapper::staticMetaObject);
@@ -5287,6 +5342,17 @@ bool a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlLocator* t = new RJSType_QXmlLocator();
+          global.setProperty("RJSType_QXmlLocator", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlLocator::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlLocator_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QXmlLocator_Wrapper", mo);
@@ -5524,6 +5590,17 @@ bool a2_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlContentHandler* t = new RJSType_QXmlContentHandler();
+          global.setProperty("RJSType_QXmlContentHandler", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlContentHandler::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlContentHandler_Wrapper::staticMetaObject);
@@ -6544,6 +6621,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlErrorHandler* t = new RJSType_QXmlErrorHandler();
+          global.setProperty("RJSType_QXmlErrorHandler", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlErrorHandler::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlErrorHandler_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QXmlErrorHandler_Wrapper", mo);
@@ -6949,6 +7037,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlDTDHandler* t = new RJSType_QXmlDTDHandler();
+          global.setProperty("RJSType_QXmlDTDHandler", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlDTDHandler::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlDTDHandler_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QXmlDTDHandler_Wrapper", mo);
@@ -7333,6 +7432,17 @@ QString a4_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlEntityResolver* t = new RJSType_QXmlEntityResolver();
+          global.setProperty("RJSType_QXmlEntityResolver", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlEntityResolver::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlEntityResolver_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QXmlEntityResolver_Wrapper", mo);
@@ -7512,6 +7622,17 @@ QString a4_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlLexicalHandler* t = new RJSType_QXmlLexicalHandler();
+          global.setProperty("RJSType_QXmlLexicalHandler", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlLexicalHandler::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlLexicalHandler_Wrapper::staticMetaObject);
@@ -8170,6 +8291,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlDeclHandler* t = new RJSType_QXmlDeclHandler();
+          global.setProperty("RJSType_QXmlDeclHandler", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlDeclHandler::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlDeclHandler_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QXmlDeclHandler_Wrapper", mo);
@@ -8649,6 +8781,17 @@ QString a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QXmlDefaultHandler* t = new RJSType_QXmlDefaultHandler();
+          global.setProperty("RJSType_QXmlDefaultHandler", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QXmlDefaultHandler::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QXmlDefaultHandler_Wrapper::staticMetaObject);

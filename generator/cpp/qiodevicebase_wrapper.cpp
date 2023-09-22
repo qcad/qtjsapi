@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QIODeviceBase* t = new RJSType_QIODeviceBase();
+          global.setProperty("RJSType_QIODeviceBase", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QIODeviceBase::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QIODeviceBase_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QIODeviceBase_Wrapper", mo);

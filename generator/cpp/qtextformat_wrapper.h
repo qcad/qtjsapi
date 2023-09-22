@@ -67,24 +67,24 @@
       static void init(RJSApi& handler);
 
       
-        static QTextLength* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextLength* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTextLength_Type:
+              if (t==RJSType_QTextLength::getIdStatic()) {
                 return (QTextLength*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextLength* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextLength*: wrapper wraps NULL";
@@ -252,9 +252,9 @@ PercentageLength = QTextLength::PercentageLength,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextLength_Type;
+              return RJSType_QTextLength::getIdStatic();
             
         }
 
@@ -364,36 +364,40 @@ PercentageLength = QTextLength::PercentageLength,
       static void init(RJSApi& handler);
 
       
-        static QTextFormat* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QTextCharFormat_Type:
+            if (t==RJSType_QTextCharFormat::getIdStatic()) {
               return (QTextFormat*)(QTextCharFormat*)vp;
-          
-            case RJSType::QTextBlockFormat_Type:
+            }
+            
+            if (t==RJSType_QTextBlockFormat::getIdStatic()) {
               return (QTextFormat*)(QTextBlockFormat*)vp;
-          
-            case RJSType::QTextListFormat_Type:
+            }
+            
+            if (t==RJSType_QTextListFormat::getIdStatic()) {
               return (QTextFormat*)(QTextListFormat*)vp;
-          
-            case RJSType::QTextFrameFormat_Type:
+            }
+            
+            if (t==RJSType_QTextFrameFormat::getIdStatic()) {
               return (QTextFormat*)(QTextFrameFormat*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QTextFormat_Type:
+              if (t==RJSType_QTextFormat::getIdStatic()) {
                 return (QTextFormat*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextFormat* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextFormat*: wrapper wraps NULL";
@@ -1633,9 +1637,9 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextFormat_Type;
+              return RJSType_QTextFormat::getIdStatic();
             
         }
 
@@ -1745,30 +1749,32 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
       static void init(RJSApi& handler);
 
       
-        static QTextCharFormat* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextCharFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QTextImageFormat_Type:
+            if (t==RJSType_QTextImageFormat::getIdStatic()) {
               return (QTextCharFormat*)(QTextImageFormat*)vp;
-          
-            case RJSType::QTextTableCellFormat_Type:
+            }
+            
+            if (t==RJSType_QTextTableCellFormat::getIdStatic()) {
               return (QTextCharFormat*)(QTextTableCellFormat*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QTextCharFormat_Type:
+              if (t==RJSType_QTextCharFormat::getIdStatic()) {
                 return (QTextCharFormat*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextCharFormat* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextCharFormat*: wrapper wraps NULL";
@@ -4450,9 +4456,9 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextCharFormat_Type;
+              return RJSType_QTextCharFormat::getIdStatic();
             
         }
 
@@ -4562,24 +4568,24 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
       static void init(RJSApi& handler);
 
       
-        static QTextBlockFormat* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextBlockFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTextBlockFormat_Type:
+              if (t==RJSType_QTextBlockFormat::getIdStatic()) {
                 return (QTextBlockFormat*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextBlockFormat* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextBlockFormat*: wrapper wraps NULL";
@@ -6340,9 +6346,9 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextBlockFormat_Type;
+              return RJSType_QTextBlockFormat::getIdStatic();
             
         }
 
@@ -6452,24 +6458,24 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
       static void init(RJSApi& handler);
 
       
-        static QTextListFormat* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextListFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTextListFormat_Type:
+              if (t==RJSType_QTextListFormat::getIdStatic()) {
                 return (QTextListFormat*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextListFormat* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextListFormat*: wrapper wraps NULL";
@@ -7893,9 +7899,9 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextListFormat_Type;
+              return RJSType_QTextListFormat::getIdStatic();
             
         }
 
@@ -8005,24 +8011,24 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
       static void init(RJSApi& handler);
 
       
-        static QTextImageFormat* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextImageFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTextImageFormat_Type:
+              if (t==RJSType_QTextImageFormat::getIdStatic()) {
                 return (QTextImageFormat*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextImageFormat* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextImageFormat*: wrapper wraps NULL";
@@ -9750,9 +9756,9 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextImageFormat_Type;
+              return RJSType_QTextImageFormat::getIdStatic();
             
         }
 
@@ -9862,27 +9868,28 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
       static void init(RJSApi& handler);
 
       
-        static QTextFrameFormat* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextFrameFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QTextTableFormat_Type:
+            if (t==RJSType_QTextTableFormat::getIdStatic()) {
               return (QTextFrameFormat*)(QTextTableFormat*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QTextFrameFormat_Type:
+              if (t==RJSType_QTextFrameFormat::getIdStatic()) {
                 return (QTextFrameFormat*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextFrameFormat* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextFrameFormat*: wrapper wraps NULL";
@@ -11712,9 +11719,9 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextFrameFormat_Type;
+              return RJSType_QTextFrameFormat::getIdStatic();
             
         }
 
@@ -11824,24 +11831,24 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
       static void init(RJSApi& handler);
 
       
-        static QTextTableFormat* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextTableFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTextTableFormat_Type:
+              if (t==RJSType_QTextTableFormat::getIdStatic()) {
                 return (QTextTableFormat*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextTableFormat* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextTableFormat*: wrapper wraps NULL";
@@ -12868,9 +12875,9 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextTableFormat_Type;
+              return RJSType_QTextTableFormat::getIdStatic();
             
         }
 
@@ -12980,24 +12987,24 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
       static void init(RJSApi& handler);
 
       
-        static QTextTableCellFormat* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTextTableCellFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTextTableCellFormat_Type:
+              if (t==RJSType_QTextTableCellFormat::getIdStatic()) {
                 return (QTextTableCellFormat*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTextTableCellFormat* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTextTableCellFormat*: wrapper wraps NULL";
@@ -15345,9 +15352,9 @@ FontPropertiesAll = QTextTableCellFormat::FontPropertiesAll,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTextTableCellFormat_Type;
+              return RJSType_QTextTableCellFormat::getIdStatic();
             
         }
 

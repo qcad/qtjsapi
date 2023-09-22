@@ -81,6 +81,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QKeyCombination* t = new RJSType_QKeyCombination();
+          global.setProperty("RJSType_QKeyCombination", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QKeyCombination::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QKeyCombination_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QKeyCombination_Wrapper", mo);
@@ -522,6 +533,10 @@ Qt::Key a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // type is namespace, no scriptable type (RJSType_Qt)
+        
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&Qt_Wrapper::staticMetaObject);

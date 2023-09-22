@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QImageWriter_Type
+                  RJSType_QImageWriter.getIdStatic()
                 
             ))) {
 
@@ -157,33 +157,27 @@
         };
       QImageWriter.getObjectType = function() {
         
-            return RJSType.QImageWriter_Type;
+            return RJSType_QImageWriter.getIdStatic();
           
       };
 
       QImageWriter.prototype.getObjectType = function() {
         
-            return RJSType.QImageWriter_Type;
+            return RJSType_QImageWriter.getIdStatic();
           
       };
 
       QImageWriter.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QImageWriter.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QImageWriter_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QImageWriter_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

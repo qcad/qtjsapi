@@ -17,8 +17,8 @@ public:
     RJSWrapper(RJSApi& h) : handler(h) {}
     virtual ~RJSWrapper() = default;
 
-    virtual /*RJSType::WrappedType*/ int getWrappedType() const {
-        return RJSType::Unknown_Type;
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return -1;
     }
 
     virtual bool isCppOwnership() const = 0;

@@ -610,36 +610,40 @@
       static void init(RJSApi& handler);
 
       
-        static QAbstractButton* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QAbstractButton* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QCheckBox_Type:
+            if (t==RJSType_QCheckBox::getIdStatic()) {
               return (QAbstractButton*)(QCheckBox*)vp;
-          
-            case RJSType::QPushButton_Type:
+            }
+            
+            if (t==RJSType_QPushButton::getIdStatic()) {
               return (QAbstractButton*)(QPushButton*)vp;
-          
-            case RJSType::QRadioButton_Type:
+            }
+            
+            if (t==RJSType_QRadioButton::getIdStatic()) {
               return (QAbstractButton*)(QRadioButton*)vp;
-          
-            case RJSType::QToolButton_Type:
+            }
+            
+            if (t==RJSType_QToolButton::getIdStatic()) {
               return (QAbstractButton*)(QToolButton*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QAbstractButton_Type:
+              if (t==RJSType_QAbstractButton::getIdStatic()) {
                 return (QAbstractButton*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QAbstractButton* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QAbstractButton*: wrapper wraps NULL";
@@ -6341,9 +6345,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QAbstractButton_Type;
+              return RJSType_QAbstractButton::getIdStatic();
             
         }
 

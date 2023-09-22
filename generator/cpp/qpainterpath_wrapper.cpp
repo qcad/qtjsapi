@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPainterPath* t = new RJSType_QPainterPath();
+          global.setProperty("RJSType_QPainterPath", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPainterPath::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPainterPath_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPainterPath_Wrapper", mo);
@@ -4350,6 +4361,17 @@ QPainterPath a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPainterPathStroker* t = new RJSType_QPainterPathStroker();
+          global.setProperty("RJSType_QPainterPathStroker", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPainterPathStroker::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPainterPathStroker_Wrapper::staticMetaObject);

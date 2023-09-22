@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDirIterator* t = new RJSType_QDirIterator();
+          global.setProperty("RJSType_QDirIterator", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDirIterator::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDirIterator_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDirIterator_Wrapper", mo);

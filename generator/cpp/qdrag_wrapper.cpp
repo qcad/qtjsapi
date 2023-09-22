@@ -157,6 +157,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDrag* t = new RJSType_QDrag();
+          global.setProperty("RJSType_QDrag", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDrag::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDrag_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDrag_Wrapper", mo);

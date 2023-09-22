@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QTableWidget_Type
+                  RJSType_QTableWidget.getIdStatic()
                 
             ))) {
 
@@ -117,63 +117,51 @@
         };
       QTableWidget.getObjectType = function() {
         
-            return RJSType.QTableWidget_Type;
+            return RJSType_QTableWidget.getIdStatic();
           
       };
 
       QTableWidget.prototype.getObjectType = function() {
         
-            return RJSType.QTableWidget_Type;
+            return RJSType_QTableWidget.getIdStatic();
           
       };
 
       QTableWidget.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QTableWidget_Type:
+            if (t===RJSType_QTableWidget.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QFrame_Type:
-          return true;
+          if (t===RJSType_QFrame.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QAbstractScrollArea_Type:
-          return true;
+          if (t===RJSType_QAbstractScrollArea.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QAbstractItemView_Type:
-          return true;
+          if (t===RJSType_QAbstractItemView.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QTableView_Type:
-          return true;
+          if (t===RJSType_QTableView.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QTableWidget_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QWidget_Type
-            ,
-            RJSType.QFrame_Type
-            ,
-            RJSType.QAbstractScrollArea_Type
-            ,
-            RJSType.QAbstractItemView_Type
-            ,
-            RJSType.QTableView_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

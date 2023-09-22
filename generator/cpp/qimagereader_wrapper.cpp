@@ -228,6 +228,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QImageReader* t = new RJSType_QImageReader();
+          global.setProperty("RJSType_QImageReader", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QImageReader::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QImageReader_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QImageReader_Wrapper", mo);

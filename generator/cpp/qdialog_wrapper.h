@@ -536,39 +536,44 @@
       static void init(RJSApi& handler);
 
       
-        static QDialog* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDialog* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QAbstractPrintDialog_Type:
+            if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
               return (QDialog*)(QAbstractPrintDialog*)vp;
-          
-            case RJSType::QFileDialog_Type:
+            }
+            
+            if (t==RJSType_QFileDialog::getIdStatic()) {
               return (QDialog*)(QFileDialog*)vp;
-          
-            case RJSType::QMessageBox_Type:
+            }
+            
+            if (t==RJSType_QMessageBox::getIdStatic()) {
               return (QDialog*)(QMessageBox*)vp;
-          
-            case RJSType::QPrintDialog_Type:
+            }
+            
+            if (t==RJSType_QPrintDialog::getIdStatic()) {
               return (QDialog*)(QPrintDialog*)vp;
-          
-            case RJSType::QProgressDialog_Type:
+            }
+            
+            if (t==RJSType_QProgressDialog::getIdStatic()) {
               return (QDialog*)(QProgressDialog*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QDialog_Type:
+              if (t==RJSType_QDialog::getIdStatic()) {
                 return (QDialog*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDialog* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDialog*: wrapper wraps NULL";
@@ -6077,9 +6082,9 @@ Accepted = QDialog::Accepted,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDialog_Type;
+              return RJSType_QDialog::getIdStatic();
             
         }
 

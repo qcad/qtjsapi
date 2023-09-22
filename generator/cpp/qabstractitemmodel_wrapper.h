@@ -43,24 +43,24 @@
       static void init(RJSApi& handler);
 
       
-        static QModelIndex* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QModelIndex* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QModelIndex_Type:
+              if (t==RJSType_QModelIndex::getIdStatic()) {
                 return (QModelIndex*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QModelIndex* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QModelIndex*: wrapper wraps NULL";
@@ -329,9 +329,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QModelIndex_Type;
+              return RJSType_QModelIndex::getIdStatic();
             
         }
 
@@ -512,39 +512,44 @@
       static void init(RJSApi& handler);
 
       
-        static QAbstractItemModel* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QAbstractItemModel* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QAbstractTableModel_Type:
+            if (t==RJSType_QAbstractTableModel::getIdStatic()) {
               return (QAbstractItemModel*)(QAbstractTableModel*)vp;
-          
-            case RJSType::QAbstractListModel_Type:
+            }
+            
+            if (t==RJSType_QAbstractListModel::getIdStatic()) {
               return (QAbstractItemModel*)(QAbstractListModel*)vp;
-          
-            case RJSType::QFileSystemModel_Type:
+            }
+            
+            if (t==RJSType_QFileSystemModel::getIdStatic()) {
               return (QAbstractItemModel*)(QFileSystemModel*)vp;
-          
-            case RJSType::QSortFilterProxyModel_Type:
+            }
+            
+            if (t==RJSType_QSortFilterProxyModel::getIdStatic()) {
               return (QAbstractItemModel*)(QSortFilterProxyModel*)vp;
-          
-            case RJSType::QStandardItemModel_Type:
+            }
+            
+            if (t==RJSType_QStandardItemModel::getIdStatic()) {
               return (QAbstractItemModel*)(QStandardItemModel*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QAbstractItemModel_Type:
+              if (t==RJSType_QAbstractItemModel::getIdStatic()) {
                 return (QAbstractItemModel*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QAbstractItemModel* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QAbstractItemModel*: wrapper wraps NULL";
@@ -2031,9 +2036,9 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QAbstractItemModel_Type;
+              return RJSType_QAbstractItemModel::getIdStatic();
             
         }
 
@@ -2214,24 +2219,24 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
       static void init(RJSApi& handler);
 
       
-        static QAbstractTableModel* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QAbstractTableModel* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QAbstractTableModel_Type:
+              if (t==RJSType_QAbstractTableModel::getIdStatic()) {
                 return (QAbstractTableModel*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QAbstractTableModel* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QAbstractTableModel*: wrapper wraps NULL";
@@ -3693,9 +3698,9 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QAbstractTableModel_Type;
+              return RJSType_QAbstractTableModel::getIdStatic();
             
         }
 
@@ -3876,24 +3881,24 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
       static void init(RJSApi& handler);
 
       
-        static QAbstractListModel* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QAbstractListModel* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QAbstractListModel_Type:
+              if (t==RJSType_QAbstractListModel::getIdStatic()) {
                 return (QAbstractListModel*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QAbstractListModel* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QAbstractListModel*: wrapper wraps NULL";
@@ -5330,9 +5335,9 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QAbstractListModel_Type;
+              return RJSType_QAbstractListModel::getIdStatic();
             
         }
 

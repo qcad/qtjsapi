@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QWheelEvent_Type
+                  RJSType_QWheelEvent.getIdStatic()
                 
             ))) {
 
@@ -105,53 +105,43 @@
         };
       QWheelEvent.getObjectType = function() {
         
-            return RJSType.QWheelEvent_Type;
+            return RJSType_QWheelEvent.getIdStatic();
           
       };
 
       QWheelEvent.prototype.getObjectType = function() {
         
-            return RJSType.QWheelEvent_Type;
+            return RJSType_QWheelEvent.getIdStatic();
           
       };
 
       QWheelEvent.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QWheelEvent_Type:
+            if (t===RJSType_QWheelEvent.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QEvent_Type:
-          return true;
+          if (t===RJSType_QEvent.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QInputEvent_Type:
-          return true;
+          if (t===RJSType_QInputEvent.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QPointerEvent_Type:
-          return true;
+          if (t===RJSType_QPointerEvent.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QSinglePointEvent_Type:
-          return true;
+          if (t===RJSType_QSinglePointEvent.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QWheelEvent_Type, 
-          
-            RJSType.QEvent_Type
-            ,
-            RJSType.QInputEvent_Type
-            ,
-            RJSType.QPointerEvent_Type
-            ,
-            RJSType.QSinglePointEvent_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

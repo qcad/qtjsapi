@@ -108,33 +108,36 @@
       static void init(RJSApi& handler);
 
       
-        static QValidator* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QValidator* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QIntValidator_Type:
+            if (t==RJSType_QIntValidator::getIdStatic()) {
               return (QValidator*)(QIntValidator*)vp;
-          
-            case RJSType::QDoubleValidator_Type:
+            }
+            
+            if (t==RJSType_QDoubleValidator::getIdStatic()) {
               return (QValidator*)(QDoubleValidator*)vp;
-          
-            case RJSType::QRegularExpressionValidator_Type:
+            }
+            
+            if (t==RJSType_QRegularExpressionValidator::getIdStatic()) {
               return (QValidator*)(QRegularExpressionValidator*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QValidator_Type:
+              if (t==RJSType_QValidator::getIdStatic()) {
                 return (QValidator*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QValidator* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QValidator*: wrapper wraps NULL";
@@ -732,9 +735,9 @@ Acceptable = QValidator::Acceptable,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QValidator_Type;
+              return RJSType_QValidator::getIdStatic();
             
         }
 
@@ -915,24 +918,24 @@ Acceptable = QValidator::Acceptable,
       static void init(RJSApi& handler);
 
       
-        static QIntValidator* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QIntValidator* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QIntValidator_Type:
+              if (t==RJSType_QIntValidator::getIdStatic()) {
                 return (QIntValidator*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QIntValidator* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QIntValidator*: wrapper wraps NULL";
@@ -1722,9 +1725,9 @@ Acceptable = QIntValidator::Acceptable,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QIntValidator_Type;
+              return RJSType_QIntValidator::getIdStatic();
             
         }
 
@@ -1923,24 +1926,24 @@ Acceptable = QIntValidator::Acceptable,
       static void init(RJSApi& handler);
 
       
-        static QDoubleValidator* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDoubleValidator* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDoubleValidator_Type:
+              if (t==RJSType_QDoubleValidator::getIdStatic()) {
                 return (QDoubleValidator*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDoubleValidator* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDoubleValidator*: wrapper wraps NULL";
@@ -2875,9 +2878,9 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDoubleValidator_Type;
+              return RJSType_QDoubleValidator::getIdStatic();
             
         }
 
@@ -3058,24 +3061,24 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
       static void init(RJSApi& handler);
 
       
-        static QRegularExpressionValidator* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QRegularExpressionValidator* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QRegularExpressionValidator_Type:
+              if (t==RJSType_QRegularExpressionValidator::getIdStatic()) {
                 return (QRegularExpressionValidator*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QRegularExpressionValidator* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QRegularExpressionValidator*: wrapper wraps NULL";
@@ -3769,9 +3772,9 @@ Acceptable = QRegularExpressionValidator::Acceptable,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QRegularExpressionValidator_Type;
+              return RJSType_QRegularExpressionValidator::getIdStatic();
             
         }
 

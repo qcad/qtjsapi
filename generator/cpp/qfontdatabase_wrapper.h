@@ -688,24 +688,24 @@
       static void init(RJSApi& handler);
 
       
-        static QFontDatabase* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QFontDatabase* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QFontDatabase_Type:
+              if (t==RJSType_QFontDatabase::getIdStatic()) {
                 return (QFontDatabase*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QFontDatabase* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QFontDatabase*: wrapper wraps NULL";
@@ -850,9 +850,9 @@ SmallestReadableFont = QFontDatabase::SmallestReadableFont,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QFontDatabase_Type;
+              return RJSType_QFontDatabase::getIdStatic();
             
         }
 

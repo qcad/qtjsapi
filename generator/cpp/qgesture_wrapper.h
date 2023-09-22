@@ -140,33 +140,36 @@
       static void init(RJSApi& handler);
 
       
-        static QGesture* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QPanGesture_Type:
+            if (t==RJSType_QPanGesture::getIdStatic()) {
               return (QGesture*)(QPanGesture*)vp;
-          
-            case RJSType::QPinchGesture_Type:
+            }
+            
+            if (t==RJSType_QPinchGesture::getIdStatic()) {
               return (QGesture*)(QPinchGesture*)vp;
-          
-            case RJSType::QSwipeGesture_Type:
+            }
+            
+            if (t==RJSType_QSwipeGesture::getIdStatic()) {
               return (QGesture*)(QSwipeGesture*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QGesture_Type:
+              if (t==RJSType_QGesture::getIdStatic()) {
                 return (QGesture*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QGesture* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QGesture*: wrapper wraps NULL";
@@ -834,9 +837,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QGesture_Type;
+              return RJSType_QGesture::getIdStatic();
             
         }
 
@@ -1000,24 +1003,24 @@
       static void init(RJSApi& handler);
 
       
-        static QPanGesture* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QPanGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QPanGesture_Type:
+              if (t==RJSType_QPanGesture::getIdStatic()) {
                 return (QPanGesture*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QPanGesture* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QPanGesture*: wrapper wraps NULL";
@@ -1438,9 +1441,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QPanGesture_Type;
+              return RJSType_QPanGesture::getIdStatic();
             
         }
 
@@ -1717,24 +1720,24 @@
       static void init(RJSApi& handler);
 
       
-        static QPinchGesture* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QPinchGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QPinchGesture_Type:
+              if (t==RJSType_QPinchGesture::getIdStatic()) {
                 return (QPinchGesture*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QPinchGesture* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QPinchGesture*: wrapper wraps NULL";
@@ -2896,9 +2899,9 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QPinchGesture_Type;
+              return RJSType_QPinchGesture::getIdStatic();
             
         }
 
@@ -3038,24 +3041,24 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
       static void init(RJSApi& handler);
 
       
-        static QSwipeGesture* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QSwipeGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QSwipeGesture_Type:
+              if (t==RJSType_QSwipeGesture::getIdStatic()) {
                 return (QSwipeGesture*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QSwipeGesture* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QSwipeGesture*: wrapper wraps NULL";
@@ -3409,9 +3412,9 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QSwipeGesture_Type;
+              return RJSType_QSwipeGesture::getIdStatic();
             
         }
 

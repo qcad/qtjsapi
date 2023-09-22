@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QRadioButton_Type
+                  RJSType_QRadioButton.getIdStatic()
                 
             ))) {
 
@@ -138,48 +138,39 @@
         };
       QRadioButton.getObjectType = function() {
         
-            return RJSType.QRadioButton_Type;
+            return RJSType_QRadioButton.getIdStatic();
           
       };
 
       QRadioButton.prototype.getObjectType = function() {
         
-            return RJSType.QRadioButton_Type;
+            return RJSType_QRadioButton.getIdStatic();
           
       };
 
       QRadioButton.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QRadioButton_Type:
+            if (t===RJSType_QRadioButton.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QAbstractButton_Type:
-          return true;
+          if (t===RJSType_QAbstractButton.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QRadioButton_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QWidget_Type
-            ,
-            RJSType.QAbstractButton_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

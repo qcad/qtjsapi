@@ -417,6 +417,17 @@ QPoint a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QMenu* t = new RJSType_QMenu();
+          global.setProperty("RJSType_QMenu", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QMenu::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QMenu_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QMenu_Wrapper", mo);

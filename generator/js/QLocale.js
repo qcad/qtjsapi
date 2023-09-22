@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QLocale_Type
+                  RJSType_QLocale.getIdStatic()
                 
             ))) {
 
@@ -126,33 +126,27 @@
 
       QLocale.getObjectType = function() {
         
-            return RJSType.QLocale_Type;
+            return RJSType_QLocale.getIdStatic();
           
       };
 
       QLocale.prototype.getObjectType = function() {
         
-            return RJSType.QLocale_Type;
+            return RJSType_QLocale.getIdStatic();
           
       };
 
       QLocale.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QLocale.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QLocale_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QLocale_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

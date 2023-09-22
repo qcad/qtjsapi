@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QXmlStreamWriter_Type
+                  RJSType_QXmlStreamWriter.getIdStatic()
                 
             ))) {
 
@@ -130,33 +130,27 @@
         };
       QXmlStreamWriter.getObjectType = function() {
         
-            return RJSType.QXmlStreamWriter_Type;
+            return RJSType_QXmlStreamWriter.getIdStatic();
           
       };
 
       QXmlStreamWriter.prototype.getObjectType = function() {
         
-            return RJSType.QXmlStreamWriter_Type;
+            return RJSType_QXmlStreamWriter.getIdStatic();
           
       };
 
       QXmlStreamWriter.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QXmlStreamWriter.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QXmlStreamWriter_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QXmlStreamWriter_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

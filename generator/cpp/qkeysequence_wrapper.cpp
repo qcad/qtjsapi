@@ -393,6 +393,17 @@ QKeySequence::StandardKey a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QKeySequence* t = new RJSType_QKeySequence();
+          global.setProperty("RJSType_QKeySequence", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QKeySequence::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QKeySequence_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QKeySequence_Wrapper", mo);

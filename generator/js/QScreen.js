@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QScreen_Type
+                  RJSType_QScreen.getIdStatic()
                 
             ))) {
 
@@ -93,38 +93,31 @@
         };
       QScreen.getObjectType = function() {
         
-            return RJSType.QScreen_Type;
+            return RJSType_QScreen.getIdStatic();
           
       };
 
       QScreen.prototype.getObjectType = function() {
         
-            return RJSType.QScreen_Type;
+            return RJSType_QScreen.getIdStatic();
           
       };
 
       QScreen.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QScreen_Type:
+            if (t===RJSType_QScreen.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QScreen_Type, 
-          
-            RJSType.QObject_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

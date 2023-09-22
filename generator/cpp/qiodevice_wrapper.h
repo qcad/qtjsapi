@@ -116,36 +116,40 @@
       static void init(RJSApi& handler);
 
       
-        static QIODevice* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QIODevice* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QBuffer_Type:
+            if (t==RJSType_QBuffer::getIdStatic()) {
               return (QIODevice*)(QBuffer*)vp;
-          
-            case RJSType::QFile_Type:
+            }
+            
+            if (t==RJSType_QFile::getIdStatic()) {
               return (QIODevice*)(QFile*)vp;
-          
-            case RJSType::QFileDevice_Type:
+            }
+            
+            if (t==RJSType_QFileDevice::getIdStatic()) {
               return (QIODevice*)(QFileDevice*)vp;
-          
-            case RJSType::QProcess_Type:
+            }
+            
+            if (t==RJSType_QProcess::getIdStatic()) {
               return (QIODevice*)(QProcess*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QIODevice_Type:
+              if (t==RJSType_QIODevice::getIdStatic()) {
                 return (QIODevice*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QIODevice* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QIODevice*: wrapper wraps NULL";
@@ -1512,9 +1516,9 @@ ExistingOnly = QIODevice::ExistingOnly,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QIODevice_Type;
+              return RJSType_QIODevice::getIdStatic();
             
         }
 

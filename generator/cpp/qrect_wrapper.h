@@ -37,24 +37,24 @@
       static void init(RJSApi& handler);
 
       
-        static QRect* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QRect* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QRect_Type:
+              if (t==RJSType_QRect::getIdStatic()) {
                 return (QRect*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QRect* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QRect*: wrapper wraps NULL";
@@ -1441,9 +1441,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QRect_Type;
+              return RJSType_QRect::getIdStatic();
             
         }
 
@@ -1553,24 +1553,24 @@
       static void init(RJSApi& handler);
 
       
-        static QRectF* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QRectF* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QRectF_Type:
+              if (t==RJSType_QRectF::getIdStatic()) {
                 return (QRectF*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QRectF* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QRectF*: wrapper wraps NULL";
@@ -2995,9 +2995,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QRectF_Type;
+              return RJSType_QRectF::getIdStatic();
             
         }
 

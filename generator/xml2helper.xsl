@@ -405,6 +405,91 @@
 
           // value is QSize, QUrl, ...:
 
+          int t = wrapper-&gt;getWrappedType();
+          if (t==RJSType_QModelIndex::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QModelIndex(handler, v));
+          }
+          if (t==RJSType_QUrl::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QUrl(handler, v));
+          }
+          if (t==RJSType_QRegularExpression::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QRegularExpression(handler, v));
+          }
+          if (t==RJSType_QLocale::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QLocale(handler, v));
+          }
+          if (t==RJSType_QRectF::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QRectF(handler, v));
+          }
+          if (t==RJSType_QRect::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QRect(handler, v));
+          }
+          if (t==RJSType_QLineF::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QLineF(handler, v));
+          }
+          if (t==RJSType_QLine::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QLine(handler, v));
+          }
+          if (t==RJSType_QPointF::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QPointF(handler, v));
+          }
+          if (t==RJSType_QPoint::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QPoint(handler, v));
+          }
+          if (t==RJSType_QSizeF::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QSizeF(handler, v));
+          }
+          if (t==RJSType_QSize::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QSize(handler, v));
+          }
+          if (t==RJSType_QDateTime::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QDateTime(handler, v));
+          }
+          if (t==RJSType_QTime::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QTime(handler, v));
+          }
+          if (t==RJSType_QDate::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QDate(handler, v));
+          }
+          if (t==RJSType_QByteArray::getIdStatic()) {
+            return QVariant(RJSHelper::js2cpp_QByteArray(handler, v));
+          }
+          if (t==RJSType_QWidget::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QWidget_ptr(handler, v));
+          }
+          if (t==RJSType_QToolBar::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QToolBar_ptr(handler, v));
+          }
+          if (t==RJSType_QPushButton::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QPushButton_ptr(handler, v));
+          }
+          if (t==RJSType_QPalette::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QPalette(handler, v));
+          }
+          if (t==RJSType_QKeySequence::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QKeySequence(handler, v));
+          }
+          if (t==RJSType_QFont::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QFont(handler, v));
+          }
+          if (t==RJSType_QVariant::getIdStatic()) {
+            QVariant var = *(QVariant*)wrapper-&gt;getWrappedVoid();
+            qDebug() &lt;&lt; "variant:" &lt;&lt; var;
+            return var;
+          }
+
+          {
+              QVariant var = *(QVariant*)wrapper->getWrappedVoid();
+              if (var.canConvert&lt;QList&lt;QKeySequence&gt; &gt;()) {
+                  return QVariant::fromValue(var.value&lt;QList&lt;QKeySequence&gt; &gt;());
+              }
+          }
+
+          qWarning() &lt;&lt; "unhandled QVariant type:" &lt;&lt; wrapper-&gt;getWrappedType();
+          handler.trace();
+          return *(QVariant*)wrapper-&gt;getWrappedVoid();
+
+          <!--
           switch (wrapper-&gt;getWrappedType()) {
       //    case RJSType::QPersistentModelIndex_Type:
       //        return QVariant(RJSHelper::js2cpp_QPersistentModelIndex(handler, v));
@@ -517,6 +602,7 @@
       //        }
 
           }
+          -->
 
       }
 
@@ -950,7 +1036,7 @@
               //return v.isObject();
               return false;
           }
-          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::QWidget_Type)).toBool();
+          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType_QWidget::getIdStatic())).toBool();
           //return fun.call(RJSType::QWidget_Type);
           //return fun.call().toInt()==RJSType::QWidget_Type;
       }
@@ -1575,7 +1661,7 @@
               return false;
           }
 
-          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::<xsl:value-of select="$func" />_Type)).toBool();
+          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType_<xsl:value-of select="$func" />::getIdStatic())).toBool();
       }
     </xsl:when>
   </xsl:choose>
@@ -1703,7 +1789,7 @@
               // type is for example string, number, etc.:
               return false;
           }
-          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::<xsl:value-of select="$func" />_Type)).toBool();
+          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType_<xsl:value-of select="$func" />::getIdStatic())).toBool();
       }
     </xsl:when>
   </xsl:choose>
@@ -1865,7 +1951,7 @@
           //return fun.call().toInt()==RJSType::<xsl:value-of select="$func" />_Type;
           //return v.isObject() || (v.isNumber() &amp;&amp; v.toInt()==0);
 
-          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType::<xsl:value-of select="$func" />_Type)).toBool();
+          return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType_<xsl:value-of select="$func" />::getIdStatic())).toBool();
       }
 
     </xsl:when>

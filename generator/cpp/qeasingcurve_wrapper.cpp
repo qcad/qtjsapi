@@ -26,6 +26,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QEasingCurve* t = new RJSType_QEasingCurve();
+          global.setProperty("RJSType_QEasingCurve", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QEasingCurve::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QEasingCurve_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QEasingCurve_Wrapper", mo);

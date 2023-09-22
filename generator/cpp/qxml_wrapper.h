@@ -63,24 +63,24 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlAttributes* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlAttributes* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlAttributes_Type:
+              if (t==RJSType_QXmlAttributes::getIdStatic()) {
                 return (QXmlAttributes*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlAttributes* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlAttributes*: wrapper wraps NULL";
@@ -448,9 +448,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlAttributes_Type;
+              return RJSType_QXmlAttributes::getIdStatic();
             
         }
 
@@ -560,24 +560,24 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlInputSource* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlInputSource* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlInputSource_Type:
+              if (t==RJSType_QXmlInputSource::getIdStatic()) {
                 return (QXmlInputSource*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlInputSource* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlInputSource*: wrapper wraps NULL";
@@ -776,9 +776,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlInputSource_Type;
+              return RJSType_QXmlInputSource::getIdStatic();
             
         }
 
@@ -888,24 +888,24 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlParseException* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlParseException* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlParseException_Type:
+              if (t==RJSType_QXmlParseException::getIdStatic()) {
                 return (QXmlParseException*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlParseException* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlParseException*: wrapper wraps NULL";
@@ -1124,9 +1124,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlParseException_Type;
+              return RJSType_QXmlParseException::getIdStatic();
             
         }
 
@@ -1236,27 +1236,28 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlReader* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlReader* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QXmlSimpleReader_Type:
+            if (t==RJSType_QXmlSimpleReader::getIdStatic()) {
               return (QXmlReader*)(QXmlSimpleReader*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QXmlReader_Type:
+              if (t==RJSType_QXmlReader::getIdStatic()) {
                 return (QXmlReader*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlReader* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlReader*: wrapper wraps NULL";
@@ -1705,9 +1706,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlReader_Type;
+              return RJSType_QXmlReader::getIdStatic();
             
         }
 
@@ -1817,24 +1818,24 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlSimpleReader* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlSimpleReader* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlSimpleReader_Type:
+              if (t==RJSType_QXmlSimpleReader::getIdStatic()) {
                 return (QXmlSimpleReader*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlSimpleReader* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlSimpleReader*: wrapper wraps NULL";
@@ -2327,9 +2328,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlSimpleReader_Type;
+              return RJSType_QXmlSimpleReader::getIdStatic();
             
         }
 
@@ -2439,24 +2440,24 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlLocator* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlLocator* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlLocator_Type:
+              if (t==RJSType_QXmlLocator::getIdStatic()) {
                 return (QXmlLocator*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlLocator* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlLocator*: wrapper wraps NULL";
@@ -2558,9 +2559,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlLocator_Type;
+              return RJSType_QXmlLocator::getIdStatic();
             
         }
 
@@ -2670,27 +2671,28 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlContentHandler* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlContentHandler* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QXmlDefaultHandler_Type:
+            if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
               return (QXmlContentHandler*)(QXmlDefaultHandler*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QXmlContentHandler_Type:
+              if (t==RJSType_QXmlContentHandler::getIdStatic()) {
                 return (QXmlContentHandler*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlContentHandler* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlContentHandler*: wrapper wraps NULL";
@@ -3055,9 +3057,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlContentHandler_Type;
+              return RJSType_QXmlContentHandler::getIdStatic();
             
         }
 
@@ -3167,27 +3169,28 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlErrorHandler* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlErrorHandler* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QXmlDefaultHandler_Type:
+            if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
               return (QXmlErrorHandler*)(QXmlDefaultHandler*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QXmlErrorHandler_Type:
+              if (t==RJSType_QXmlErrorHandler::getIdStatic()) {
                 return (QXmlErrorHandler*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlErrorHandler* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlErrorHandler*: wrapper wraps NULL";
@@ -3348,9 +3351,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlErrorHandler_Type;
+              return RJSType_QXmlErrorHandler::getIdStatic();
             
         }
 
@@ -3460,27 +3463,28 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlDTDHandler* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlDTDHandler* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QXmlDefaultHandler_Type:
+            if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
               return (QXmlDTDHandler*)(QXmlDefaultHandler*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QXmlDTDHandler_Type:
+              if (t==RJSType_QXmlDTDHandler::getIdStatic()) {
                 return (QXmlDTDHandler*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlDTDHandler* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlDTDHandler*: wrapper wraps NULL";
@@ -3638,9 +3642,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlDTDHandler_Type;
+              return RJSType_QXmlDTDHandler::getIdStatic();
             
         }
 
@@ -3750,27 +3754,28 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlEntityResolver* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlEntityResolver* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QXmlDefaultHandler_Type:
+            if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
               return (QXmlEntityResolver*)(QXmlDefaultHandler*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QXmlEntityResolver_Type:
+              if (t==RJSType_QXmlEntityResolver::getIdStatic()) {
                 return (QXmlEntityResolver*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlEntityResolver* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlEntityResolver*: wrapper wraps NULL";
@@ -3862,9 +3867,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlEntityResolver_Type;
+              return RJSType_QXmlEntityResolver::getIdStatic();
             
         }
 
@@ -3974,27 +3979,28 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlLexicalHandler* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlLexicalHandler* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QXmlDefaultHandler_Type:
+            if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
               return (QXmlLexicalHandler*)(QXmlDefaultHandler*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QXmlLexicalHandler_Type:
+              if (t==RJSType_QXmlLexicalHandler::getIdStatic()) {
                 return (QXmlLexicalHandler*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlLexicalHandler* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlLexicalHandler*: wrapper wraps NULL";
@@ -4243,9 +4249,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlLexicalHandler_Type;
+              return RJSType_QXmlLexicalHandler::getIdStatic();
             
         }
 
@@ -4355,27 +4361,28 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlDeclHandler* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlDeclHandler* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QXmlDefaultHandler_Type:
+            if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
               return (QXmlDeclHandler*)(QXmlDefaultHandler*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QXmlDeclHandler_Type:
+              if (t==RJSType_QXmlDeclHandler::getIdStatic()) {
                 return (QXmlDeclHandler*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlDeclHandler* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlDeclHandler*: wrapper wraps NULL";
@@ -4564,9 +4571,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlDeclHandler_Type;
+              return RJSType_QXmlDeclHandler::getIdStatic();
             
         }
 
@@ -4679,24 +4686,24 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlDefaultHandler* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlDefaultHandler* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlDefaultHandler_Type:
+              if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
                 return (QXmlDefaultHandler*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlDefaultHandler* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlDefaultHandler*: wrapper wraps NULL";
@@ -5532,9 +5539,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlDefaultHandler_Type;
+              return RJSType_QXmlDefaultHandler::getIdStatic();
             
         }
 

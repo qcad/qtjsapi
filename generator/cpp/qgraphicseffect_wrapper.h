@@ -116,36 +116,40 @@
       static void init(RJSApi& handler);
 
       
-        static QGraphicsEffect* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QGraphicsEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QGraphicsColorizeEffect_Type:
+            if (t==RJSType_QGraphicsColorizeEffect::getIdStatic()) {
               return (QGraphicsEffect*)(QGraphicsColorizeEffect*)vp;
-          
-            case RJSType::QGraphicsBlurEffect_Type:
+            }
+            
+            if (t==RJSType_QGraphicsBlurEffect::getIdStatic()) {
               return (QGraphicsEffect*)(QGraphicsBlurEffect*)vp;
-          
-            case RJSType::QGraphicsDropShadowEffect_Type:
+            }
+            
+            if (t==RJSType_QGraphicsDropShadowEffect::getIdStatic()) {
               return (QGraphicsEffect*)(QGraphicsDropShadowEffect*)vp;
-          
-            case RJSType::QGraphicsOpacityEffect_Type:
+            }
+            
+            if (t==RJSType_QGraphicsOpacityEffect::getIdStatic()) {
               return (QGraphicsEffect*)(QGraphicsOpacityEffect*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QGraphicsEffect_Type:
+              if (t==RJSType_QGraphicsEffect::getIdStatic()) {
                 return (QGraphicsEffect*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QGraphicsEffect* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QGraphicsEffect*: wrapper wraps NULL";
@@ -744,9 +748,9 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QGraphicsEffect_Type;
+              return RJSType_QGraphicsEffect::getIdStatic();
             
         }
 
@@ -862,24 +866,24 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
       static void init(RJSApi& handler);
 
       
-        static QGraphicsColorizeEffect* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QGraphicsColorizeEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QGraphicsColorizeEffect_Type:
+              if (t==RJSType_QGraphicsColorizeEffect::getIdStatic()) {
                 return (QGraphicsColorizeEffect*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QGraphicsColorizeEffect* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QGraphicsColorizeEffect*: wrapper wraps NULL";
@@ -1193,9 +1197,9 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QGraphicsColorizeEffect_Type;
+              return RJSType_QGraphicsColorizeEffect::getIdStatic();
             
         }
 
@@ -1382,24 +1386,24 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
       static void init(RJSApi& handler);
 
       
-        static QGraphicsBlurEffect* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QGraphicsBlurEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QGraphicsBlurEffect_Type:
+              if (t==RJSType_QGraphicsBlurEffect::getIdStatic()) {
                 return (QGraphicsBlurEffect*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QGraphicsBlurEffect* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QGraphicsBlurEffect*: wrapper wraps NULL";
@@ -2121,9 +2125,9 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QGraphicsBlurEffect_Type;
+              return RJSType_QGraphicsBlurEffect::getIdStatic();
             
         }
 
@@ -2257,24 +2261,24 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
       static void init(RJSApi& handler);
 
       
-        static QGraphicsDropShadowEffect* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QGraphicsDropShadowEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QGraphicsDropShadowEffect_Type:
+              if (t==RJSType_QGraphicsDropShadowEffect::getIdStatic()) {
                 return (QGraphicsDropShadowEffect*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QGraphicsDropShadowEffect* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QGraphicsDropShadowEffect*: wrapper wraps NULL";
@@ -2724,9 +2728,9 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QGraphicsDropShadowEffect_Type;
+              return RJSType_QGraphicsDropShadowEffect::getIdStatic();
             
         }
 
@@ -2842,24 +2846,24 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
       static void init(RJSApi& handler);
 
       
-        static QGraphicsOpacityEffect* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QGraphicsOpacityEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QGraphicsOpacityEffect_Type:
+              if (t==RJSType_QGraphicsOpacityEffect::getIdStatic()) {
                 return (QGraphicsOpacityEffect*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QGraphicsOpacityEffect* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QGraphicsOpacityEffect*: wrapper wraps NULL";
@@ -3173,9 +3177,9 @@ PadToEffectiveBoundingRect = QGraphicsOpacityEffect::PadToEffectiveBoundingRect,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QGraphicsOpacityEffect_Type;
+              return RJSType_QGraphicsOpacityEffect::getIdStatic();
             
         }
 

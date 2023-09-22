@@ -532,27 +532,28 @@
       static void init(RJSApi& handler);
 
       
-        static QAbstractPrintDialog* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QAbstractPrintDialog* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QPrintDialog_Type:
+            if (t==RJSType_QPrintDialog::getIdStatic()) {
               return (QAbstractPrintDialog*)(QPrintDialog*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QAbstractPrintDialog_Type:
+              if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
                 return (QAbstractPrintDialog*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QAbstractPrintDialog* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QAbstractPrintDialog*: wrapper wraps NULL";
@@ -6299,9 +6300,9 @@ PrintCurrentPage = QAbstractPrintDialog::PrintCurrentPage,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QAbstractPrintDialog_Type;
+              return RJSType_QAbstractPrintDialog::getIdStatic();
             
         }
 

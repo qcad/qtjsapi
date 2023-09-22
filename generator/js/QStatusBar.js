@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QStatusBar_Type
+                  RJSType_QStatusBar.getIdStatic()
                 
             ))) {
 
@@ -109,43 +109,35 @@
         };
       QStatusBar.getObjectType = function() {
         
-            return RJSType.QStatusBar_Type;
+            return RJSType_QStatusBar.getIdStatic();
           
       };
 
       QStatusBar.prototype.getObjectType = function() {
         
-            return RJSType.QStatusBar_Type;
+            return RJSType_QStatusBar.getIdStatic();
           
       };
 
       QStatusBar.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QStatusBar_Type:
+            if (t===RJSType_QStatusBar.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QStatusBar_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QWidget_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

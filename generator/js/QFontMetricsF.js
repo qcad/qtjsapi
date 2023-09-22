@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QFontMetricsF_Type
+                  RJSType_QFontMetricsF.getIdStatic()
                 
             ))) {
 
@@ -182,33 +182,27 @@
         };
       QFontMetricsF.getObjectType = function() {
         
-            return RJSType.QFontMetricsF_Type;
+            return RJSType_QFontMetricsF.getIdStatic();
           
       };
 
       QFontMetricsF.prototype.getObjectType = function() {
         
-            return RJSType.QFontMetricsF_Type;
+            return RJSType_QFontMetricsF.getIdStatic();
           
       };
 
       QFontMetricsF.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QFontMetricsF.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QFontMetricsF_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QFontMetricsF_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QLayoutItem* t = new RJSType_QLayoutItem();
+          global.setProperty("RJSType_QLayoutItem", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QLayoutItem::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QLayoutItem_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QLayoutItem_Wrapper", mo);
@@ -1150,6 +1161,17 @@ Qt::Alignment a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSpacerItem* t = new RJSType_QSpacerItem();
+          global.setProperty("RJSType_QSpacerItem", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSpacerItem::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSpacerItem_Wrapper::staticMetaObject);
@@ -2585,6 +2607,17 @@ QRect a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QWidgetItem* t = new RJSType_QWidgetItem();
+          global.setProperty("RJSType_QWidgetItem", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QWidgetItem::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QWidgetItem_Wrapper::staticMetaObject);

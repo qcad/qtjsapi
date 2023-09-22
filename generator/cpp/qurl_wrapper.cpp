@@ -830,6 +830,17 @@ QStringList a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QUrl* t = new RJSType_QUrl();
+          global.setProperty("RJSType_QUrl", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QUrl::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QUrl_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QUrl_Wrapper", mo);

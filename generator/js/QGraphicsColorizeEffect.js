@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QGraphicsColorizeEffect_Type
+                  RJSType_QGraphicsColorizeEffect.getIdStatic()
                 
             ))) {
 
@@ -105,38 +105,31 @@
         };
       QGraphicsColorizeEffect.getObjectType = function() {
         
-            return RJSType.QGraphicsColorizeEffect_Type;
+            return RJSType_QGraphicsColorizeEffect.getIdStatic();
           
       };
 
       QGraphicsColorizeEffect.prototype.getObjectType = function() {
         
-            return RJSType.QGraphicsColorizeEffect_Type;
+            return RJSType_QGraphicsColorizeEffect.getIdStatic();
           
       };
 
       QGraphicsColorizeEffect.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QGraphicsColorizeEffect_Type:
+            if (t===RJSType_QGraphicsColorizeEffect.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QGraphicsEffect_Type:
-          return true;
+          if (t===RJSType_QGraphicsEffect.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QGraphicsColorizeEffect_Type, 
-          
-            RJSType.QGraphicsEffect_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

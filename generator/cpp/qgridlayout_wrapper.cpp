@@ -199,6 +199,17 @@ QSize a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGridLayout* t = new RJSType_QGridLayout();
+          global.setProperty("RJSType_QGridLayout", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGridLayout::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGridLayout_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QGridLayout_Wrapper", mo);

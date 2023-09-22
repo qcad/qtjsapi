@@ -654,27 +654,28 @@
       static void init(RJSApi& handler);
 
       
-        static QTableView* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTableView* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QTableWidget_Type:
+            if (t==RJSType_QTableWidget::getIdStatic()) {
               return (QTableView*)(QTableWidget*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QTableView_Type:
+              if (t==RJSType_QTableView::getIdStatic()) {
                 return (QTableView*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTableView* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTableView*: wrapper wraps NULL";
@@ -9826,9 +9827,9 @@ InternalMove = QTableView::InternalMove,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTableView_Type;
+              return RJSType_QTableView::getIdStatic();
             
         }
 

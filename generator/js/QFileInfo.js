@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QFileInfo_Type
+                  RJSType_QFileInfo.getIdStatic()
                 
             ))) {
 
@@ -182,33 +182,27 @@
         };
       QFileInfo.getObjectType = function() {
         
-            return RJSType.QFileInfo_Type;
+            return RJSType_QFileInfo.getIdStatic();
           
       };
 
       QFileInfo.prototype.getObjectType = function() {
         
-            return RJSType.QFileInfo_Type;
+            return RJSType_QFileInfo.getIdStatic();
           
       };
 
       QFileInfo.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QFileInfo.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QFileInfo_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QFileInfo_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

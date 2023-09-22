@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QDropEvent_Type
+                  RJSType_QDropEvent.getIdStatic()
                 
             ))) {
 
@@ -105,38 +105,31 @@
         };
       QDropEvent.getObjectType = function() {
         
-            return RJSType.QDropEvent_Type;
+            return RJSType_QDropEvent.getIdStatic();
           
       };
 
       QDropEvent.prototype.getObjectType = function() {
         
-            return RJSType.QDropEvent_Type;
+            return RJSType_QDropEvent.getIdStatic();
           
       };
 
       QDropEvent.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QDropEvent_Type:
+            if (t===RJSType_QDropEvent.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QEvent_Type:
-          return true;
+          if (t===RJSType_QEvent.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QDropEvent_Type, 
-          
-            RJSType.QEvent_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

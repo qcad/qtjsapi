@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QPageRanges_Type
+                  RJSType_QPageRanges.getIdStatic()
                 
             ))) {
 
@@ -152,33 +152,27 @@
 
       QPageRanges.getObjectType = function() {
         
-            return RJSType.QPageRanges_Type;
+            return RJSType_QPageRanges.getIdStatic();
           
       };
 
       QPageRanges.prototype.getObjectType = function() {
         
-            return RJSType.QPageRanges_Type;
+            return RJSType_QPageRanges.getIdStatic();
           
       };
 
       QPageRanges.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QPageRanges.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QPageRanges_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QPageRanges_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

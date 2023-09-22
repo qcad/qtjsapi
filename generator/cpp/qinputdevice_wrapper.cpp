@@ -165,6 +165,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QInputDevice* t = new RJSType_QInputDevice();
+          global.setProperty("RJSType_QInputDevice", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QInputDevice::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QInputDevice_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QInputDevice_Wrapper", mo);

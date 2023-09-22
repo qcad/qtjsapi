@@ -40,6 +40,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTableWidgetItem* t = new RJSType_QTableWidgetItem();
+          global.setProperty("RJSType_QTableWidgetItem", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTableWidgetItem::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTableWidgetItem_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTableWidgetItem_Wrapper", mo);
@@ -2812,6 +2823,17 @@ int a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTableWidget* t = new RJSType_QTableWidget();
+          global.setProperty("RJSType_QTableWidget", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTableWidget::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTableWidget_Wrapper::staticMetaObject);

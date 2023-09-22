@@ -199,6 +199,17 @@ QSize a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QLayout* t = new RJSType_QLayout();
+          global.setProperty("RJSType_QLayout", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QLayout::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QLayout_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QLayout_Wrapper", mo);

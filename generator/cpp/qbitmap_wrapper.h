@@ -227,24 +227,24 @@
       static void init(RJSApi& handler);
 
       
-        static QBitmap* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QBitmap* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QBitmap_Type:
+              if (t==RJSType_QBitmap::getIdStatic()) {
                 return (QBitmap*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QBitmap* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QBitmap*: wrapper wraps NULL";
@@ -1403,9 +1403,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QBitmap_Type;
+              return RJSType_QBitmap::getIdStatic();
             
         }
 

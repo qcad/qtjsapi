@@ -14,16 +14,21 @@ class RJSTypeEnum : public QObject {
 public:
     virtual ~RJSTypeEnum() = default;
 
-    virtual int getV() const = 0;
+    virtual int getId() const = 0;
+    virtual QString getName() const = 0;
+    //virtual RJSTypeEnum* create() = 0;
 
     operator int() const {
-        return getV();
+        return getId();
     }
 
-    static int reserve();
+    static int reserve(RJSTypeEnum* obj);
+
+    static RJSTypeEnum* getById(int id);
 
 private:
-    static int vCounter;
+    static int idCounter;
+    static QMap<int, RJSTypeEnum*> allTypes;
 };
 
 #endif

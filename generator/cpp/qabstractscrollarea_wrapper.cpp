@@ -300,6 +300,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QAbstractScrollArea* t = new RJSType_QAbstractScrollArea();
+          global.setProperty("RJSType_QAbstractScrollArea", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QAbstractScrollArea::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QAbstractScrollArea_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QAbstractScrollArea_Wrapper", mo);

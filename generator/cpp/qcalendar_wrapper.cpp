@@ -76,6 +76,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QCalendar* t = new RJSType_QCalendar();
+          global.setProperty("RJSType_QCalendar", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QCalendar::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QCalendar_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QCalendar_Wrapper", mo);

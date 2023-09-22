@@ -39,24 +39,24 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlStreamAttribute* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlStreamAttribute* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlStreamAttribute_Type:
+              if (t==RJSType_QXmlStreamAttribute::getIdStatic()) {
                 return (QXmlStreamAttribute*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlStreamAttribute* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlStreamAttribute*: wrapper wraps NULL";
@@ -198,9 +198,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlStreamAttribute_Type;
+              return RJSType_QXmlStreamAttribute::getIdStatic();
             
         }
 
@@ -310,24 +310,24 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlStreamAttributes* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlStreamAttributes* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlStreamAttributes_Type:
+              if (t==RJSType_QXmlStreamAttributes::getIdStatic()) {
                 return (QXmlStreamAttributes*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlStreamAttributes* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlStreamAttributes*: wrapper wraps NULL";
@@ -468,9 +468,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlStreamAttributes_Type;
+              return RJSType_QXmlStreamAttributes::getIdStatic();
             
         }
 
@@ -580,24 +580,24 @@
       static void init(RJSApi& handler);
 
       
-        static QXmlStreamReader* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlStreamReader* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlStreamReader_Type:
+              if (t==RJSType_QXmlStreamReader::getIdStatic()) {
                 return (QXmlStreamReader*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlStreamReader* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlStreamReader*: wrapper wraps NULL";
@@ -1491,9 +1491,9 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlStreamReader_Type;
+              return RJSType_QXmlStreamReader::getIdStatic();
             
         }
 
@@ -1603,24 +1603,24 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
       static void init(RJSApi& handler);
 
       
-        static QXmlStreamWriter* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QXmlStreamWriter* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QXmlStreamWriter_Type:
+              if (t==RJSType_QXmlStreamWriter::getIdStatic()) {
                 return (QXmlStreamWriter*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QXmlStreamWriter* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QXmlStreamWriter*: wrapper wraps NULL";
@@ -2298,9 +2298,9 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QXmlStreamWriter_Type;
+              return RJSType_QXmlStreamWriter::getIdStatic();
             
         }
 

@@ -119,6 +119,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QItemSelectionModel* t = new RJSType_QItemSelectionModel();
+          global.setProperty("RJSType_QItemSelectionModel", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QItemSelectionModel::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QItemSelectionModel_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QItemSelectionModel_Wrapper", mo);
@@ -3238,6 +3249,17 @@ QItemSelectionModel::SelectionFlags a2_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QItemSelection* t = new RJSType_QItemSelection();
+          global.setProperty("RJSType_QItemSelection", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QItemSelection::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QItemSelection_Wrapper::staticMetaObject);

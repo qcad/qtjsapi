@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QCheckBox* t = new RJSType_QCheckBox();
+          global.setProperty("RJSType_QCheckBox", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QCheckBox::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QCheckBox_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QCheckBox_Wrapper", mo);

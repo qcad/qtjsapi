@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QFileDialog_Type
+                  RJSType_QFileDialog.getIdStatic()
                 
             ))) {
 
@@ -153,48 +153,39 @@
         };
       QFileDialog.getObjectType = function() {
         
-            return RJSType.QFileDialog_Type;
+            return RJSType_QFileDialog.getIdStatic();
           
       };
 
       QFileDialog.prototype.getObjectType = function() {
         
-            return RJSType.QFileDialog_Type;
+            return RJSType_QFileDialog.getIdStatic();
           
       };
 
       QFileDialog.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QFileDialog_Type:
+            if (t===RJSType_QFileDialog.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QDialog_Type:
-          return true;
+          if (t===RJSType_QDialog.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QFileDialog_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QWidget_Type
-            ,
-            RJSType.QDialog_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

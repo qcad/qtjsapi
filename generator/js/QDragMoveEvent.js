@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QDragMoveEvent_Type
+                  RJSType_QDragMoveEvent.getIdStatic()
                 
             ))) {
 
@@ -105,43 +105,35 @@
         };
       QDragMoveEvent.getObjectType = function() {
         
-            return RJSType.QDragMoveEvent_Type;
+            return RJSType_QDragMoveEvent.getIdStatic();
           
       };
 
       QDragMoveEvent.prototype.getObjectType = function() {
         
-            return RJSType.QDragMoveEvent_Type;
+            return RJSType_QDragMoveEvent.getIdStatic();
           
       };
 
       QDragMoveEvent.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QDragMoveEvent_Type:
+            if (t===RJSType_QDragMoveEvent.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QEvent_Type:
-          return true;
+          if (t===RJSType_QEvent.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QDropEvent_Type:
-          return true;
+          if (t===RJSType_QDropEvent.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QDragMoveEvent_Type, 
-          
-            RJSType.QEvent_Type
-            ,
-            RJSType.QDropEvent_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

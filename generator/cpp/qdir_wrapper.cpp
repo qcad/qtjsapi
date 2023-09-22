@@ -1291,6 +1291,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDir* t = new RJSType_QDir();
+          global.setProperty("RJSType_QDir", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDir::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDir_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDir_Wrapper", mo);

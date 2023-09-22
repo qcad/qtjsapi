@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QGridLayout_Type
+                  RJSType_QGridLayout.getIdStatic()
                 
             ))) {
 
@@ -105,48 +105,39 @@
         };
       QGridLayout.getObjectType = function() {
         
-            return RJSType.QGridLayout_Type;
+            return RJSType_QGridLayout.getIdStatic();
           
       };
 
       QGridLayout.prototype.getObjectType = function() {
         
-            return RJSType.QGridLayout_Type;
+            return RJSType_QGridLayout.getIdStatic();
           
       };
 
       QGridLayout.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QGridLayout_Type:
+            if (t===RJSType_QGridLayout.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QLayoutItem_Type:
-          return true;
+          if (t===RJSType_QLayoutItem.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QLayout_Type:
-          return true;
+          if (t===RJSType_QLayout.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QGridLayout_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QLayoutItem_Type
-            ,
-            RJSType.QLayout_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

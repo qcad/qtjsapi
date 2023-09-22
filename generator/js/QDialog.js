@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QDialog_Type
+                  RJSType_QDialog.getIdStatic()
                 
             ))) {
 
@@ -109,43 +109,35 @@
         };
       QDialog.getObjectType = function() {
         
-            return RJSType.QDialog_Type;
+            return RJSType_QDialog.getIdStatic();
           
       };
 
       QDialog.prototype.getObjectType = function() {
         
-            return RJSType.QDialog_Type;
+            return RJSType_QDialog.getIdStatic();
           
       };
 
       QDialog.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QDialog_Type:
+            if (t===RJSType_QDialog.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QDialog_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QWidget_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

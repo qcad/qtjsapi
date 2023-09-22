@@ -594,30 +594,32 @@
       static void init(RJSApi& handler);
 
       
-        static QAbstractSlider* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QAbstractSlider* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QScrollBar_Type:
+            if (t==RJSType_QScrollBar::getIdStatic()) {
               return (QAbstractSlider*)(QScrollBar*)vp;
-          
-            case RJSType::QSlider_Type:
+            }
+            
+            if (t==RJSType_QSlider::getIdStatic()) {
               return (QAbstractSlider*)(QSlider*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QAbstractSlider_Type:
+              if (t==RJSType_QAbstractSlider::getIdStatic()) {
                 return (QAbstractSlider*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QAbstractSlider* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QAbstractSlider*: wrapper wraps NULL";
@@ -6517,9 +6519,9 @@ SliderMove = QAbstractSlider::SliderMove,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QAbstractSlider_Type;
+              return RJSType_QAbstractSlider::getIdStatic();
             
         }
 

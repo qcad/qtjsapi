@@ -183,24 +183,24 @@
       static void init(RJSApi& handler);
 
       
-        static QDate* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDate* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDate_Type:
+              if (t==RJSType_QDate::getIdStatic()) {
                 return (QDate*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDate* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDate*: wrapper wraps NULL";
@@ -761,9 +761,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDate_Type;
+              return RJSType_QDate::getIdStatic();
             
         }
 
@@ -1015,24 +1015,24 @@
       static void init(RJSApi& handler);
 
       
-        static QTime* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTime* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QTime_Type:
+              if (t==RJSType_QTime::getIdStatic()) {
                 return (QTime*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTime* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTime*: wrapper wraps NULL";
@@ -1476,9 +1476,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTime_Type;
+              return RJSType_QTime::getIdStatic();
             
         }
 
@@ -1866,24 +1866,24 @@
       static void init(RJSApi& handler);
 
       
-        static QDateTime* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDateTime* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDateTime_Type:
+              if (t==RJSType_QDateTime::getIdStatic()) {
                 return (QDateTime*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDateTime* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDateTime*: wrapper wraps NULL";
@@ -2825,9 +2825,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDateTime_Type;
+              return RJSType_QDateTime::getIdStatic();
             
         }
 

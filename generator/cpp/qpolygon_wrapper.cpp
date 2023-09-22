@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPolygon* t = new RJSType_QPolygon();
+          global.setProperty("RJSType_QPolygon", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPolygon::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPolygon_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPolygon_Wrapper", mo);
@@ -1249,6 +1260,17 @@ QPolygon a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPolygonF* t = new RJSType_QPolygonF();
+          global.setProperty("RJSType_QPolygonF", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPolygonF::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPolygonF_Wrapper::staticMetaObject);

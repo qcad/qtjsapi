@@ -32,6 +32,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QRegion* t = new RJSType_QRegion();
+          global.setProperty("RJSType_QRegion", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QRegion::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QRegion_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QRegion_Wrapper", mo);

@@ -90,24 +90,24 @@
       static void init(RJSApi& handler);
 
       
-        static QProcessEnvironment* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QProcessEnvironment* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QProcessEnvironment_Type:
+              if (t==RJSType_QProcessEnvironment::getIdStatic()) {
                 return (QProcessEnvironment*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QProcessEnvironment* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QProcessEnvironment*: wrapper wraps NULL";
@@ -432,9 +432,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QProcessEnvironment_Type;
+              return RJSType_QProcessEnvironment::getIdStatic();
             
         }
 
@@ -665,24 +665,24 @@
       static void init(RJSApi& handler);
 
       
-        static QProcess* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QProcess* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QProcess_Type:
+              if (t==RJSType_QProcess::getIdStatic()) {
                 return (QProcess*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QProcess* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QProcess*: wrapper wraps NULL";
@@ -3051,9 +3051,9 @@ CrashExit = QProcess::CrashExit,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QProcess_Type;
+              return RJSType_QProcess::getIdStatic();
             
         }
 

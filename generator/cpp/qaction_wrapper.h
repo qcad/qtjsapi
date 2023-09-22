@@ -241,27 +241,28 @@
       static void init(RJSApi& handler);
 
       
-        static QAction* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QAction* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QWidgetAction_Type:
+            if (t==RJSType_QWidgetAction::getIdStatic()) {
               return (QAction*)(QWidgetAction*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QAction_Type:
+              if (t==RJSType_QAction::getIdStatic()) {
                 return (QAction*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QAction* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QAction*: wrapper wraps NULL";
@@ -1993,9 +1994,9 @@ HighPriority = QAction::HighPriority,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QAction_Type;
+              return RJSType_QAction::getIdStatic();
             
         }
 

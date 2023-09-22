@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QXmlErrorHandler_Type
+                  RJSType_QXmlErrorHandler.getIdStatic()
                 
             ))) {
 
@@ -75,33 +75,27 @@
         };
       QXmlErrorHandler.getObjectType = function() {
         
-            return RJSType.QXmlErrorHandler_Type;
+            return RJSType_QXmlErrorHandler.getIdStatic();
           
       };
 
       QXmlErrorHandler.prototype.getObjectType = function() {
         
-            return RJSType.QXmlErrorHandler_Type;
+            return RJSType_QXmlErrorHandler.getIdStatic();
           
       };
 
       QXmlErrorHandler.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QXmlErrorHandler.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QXmlErrorHandler_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QXmlErrorHandler_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

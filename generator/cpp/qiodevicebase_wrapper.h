@@ -37,36 +37,40 @@
       static void init(RJSApi& handler);
 
       
-        static QIODeviceBase* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QIODeviceBase* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QBuffer_Type:
+            if (t==RJSType_QBuffer::getIdStatic()) {
               return (QIODeviceBase*)(QBuffer*)vp;
-          
-            case RJSType::QFileDevice_Type:
+            }
+            
+            if (t==RJSType_QFileDevice::getIdStatic()) {
               return (QIODeviceBase*)(QFileDevice*)vp;
-          
-            case RJSType::QIODevice_Type:
+            }
+            
+            if (t==RJSType_QIODevice::getIdStatic()) {
               return (QIODeviceBase*)(QIODevice*)vp;
-          
-            case RJSType::QTextStream_Type:
+            }
+            
+            if (t==RJSType_QTextStream::getIdStatic()) {
               return (QIODeviceBase*)(QTextStream*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QIODeviceBase_Type:
+              if (t==RJSType_QIODeviceBase::getIdStatic()) {
                 return (QIODeviceBase*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QIODeviceBase* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QIODeviceBase*: wrapper wraps NULL";
@@ -164,9 +168,9 @@ ExistingOnly = QIODeviceBase::ExistingOnly,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QIODeviceBase_Type;
+              return RJSType_QIODeviceBase::getIdStatic();
             
         }
 

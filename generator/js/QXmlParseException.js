@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QXmlParseException_Type
+                  RJSType_QXmlParseException.getIdStatic()
                 
             ))) {
 
@@ -131,33 +131,27 @@
         };
       QXmlParseException.getObjectType = function() {
         
-            return RJSType.QXmlParseException_Type;
+            return RJSType_QXmlParseException.getIdStatic();
           
       };
 
       QXmlParseException.prototype.getObjectType = function() {
         
-            return RJSType.QXmlParseException_Type;
+            return RJSType_QXmlParseException.getIdStatic();
           
       };
 
       QXmlParseException.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QXmlParseException.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QXmlParseException_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QXmlParseException_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

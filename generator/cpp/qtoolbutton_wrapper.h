@@ -632,24 +632,24 @@
       static void init(RJSApi& handler);
 
       
-        static QToolButton* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QToolButton* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QToolButton_Type:
+              if (t==RJSType_QToolButton::getIdStatic()) {
                 return (QToolButton*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QToolButton* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QToolButton*: wrapper wraps NULL";
@@ -6830,9 +6830,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QToolButton_Type;
+              return RJSType_QToolButton::getIdStatic();
             
         }
 

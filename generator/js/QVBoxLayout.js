@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QVBoxLayout_Type
+                  RJSType_QVBoxLayout.getIdStatic()
                 
             ))) {
 
@@ -130,53 +130,43 @@
         };
       QVBoxLayout.getObjectType = function() {
         
-            return RJSType.QVBoxLayout_Type;
+            return RJSType_QVBoxLayout.getIdStatic();
           
       };
 
       QVBoxLayout.prototype.getObjectType = function() {
         
-            return RJSType.QVBoxLayout_Type;
+            return RJSType_QVBoxLayout.getIdStatic();
           
       };
 
       QVBoxLayout.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QVBoxLayout_Type:
+            if (t===RJSType_QVBoxLayout.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QLayoutItem_Type:
-          return true;
+          if (t===RJSType_QLayoutItem.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QLayout_Type:
-          return true;
+          if (t===RJSType_QLayout.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QBoxLayout_Type:
-          return true;
+          if (t===RJSType_QBoxLayout.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QVBoxLayout_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QLayoutItem_Type
-            ,
-            RJSType.QLayout_Type
-            ,
-            RJSType.QBoxLayout_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

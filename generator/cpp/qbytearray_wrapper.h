@@ -224,24 +224,24 @@
       static void init(RJSApi& handler);
 
       
-        static QByteArray* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QByteArray* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QByteArray_Type:
+              if (t==RJSType_QByteArray::getIdStatic()) {
                 return (QByteArray*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QByteArray* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QByteArray*: wrapper wraps NULL";
@@ -1905,9 +1905,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QByteArray_Type;
+              return RJSType_QByteArray::getIdStatic();
             
         }
 

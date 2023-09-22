@@ -1770,6 +1770,17 @@ QFontDatabase::SystemFont a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QFontDatabase* t = new RJSType_QFontDatabase();
+          global.setProperty("RJSType_QFontDatabase", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QFontDatabase::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QFontDatabase_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QFontDatabase_Wrapper", mo);

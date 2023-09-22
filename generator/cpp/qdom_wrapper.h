@@ -155,24 +155,24 @@
       static void init(RJSApi& handler);
 
       
-        static QDomImplementation* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomImplementation* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomImplementation_Type:
+              if (t==RJSType_QDomImplementation::getIdStatic()) {
                 return (QDomImplementation*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomImplementation* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomImplementation*: wrapper wraps NULL";
@@ -452,9 +452,9 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomImplementation_Type;
+              return RJSType_QDomImplementation::getIdStatic();
             
         }
 
@@ -564,57 +564,68 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
       static void init(RJSApi& handler);
 
       
-        static QDomNode* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomNode* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QDomDocumentType_Type:
+            if (t==RJSType_QDomDocumentType::getIdStatic()) {
               return (QDomNode*)(QDomDocumentType*)vp;
-          
-            case RJSType::QDomDocument_Type:
+            }
+            
+            if (t==RJSType_QDomDocument::getIdStatic()) {
               return (QDomNode*)(QDomDocument*)vp;
-          
-            case RJSType::QDomDocumentFragment_Type:
+            }
+            
+            if (t==RJSType_QDomDocumentFragment::getIdStatic()) {
               return (QDomNode*)(QDomDocumentFragment*)vp;
-          
-            case RJSType::QDomCharacterData_Type:
+            }
+            
+            if (t==RJSType_QDomCharacterData::getIdStatic()) {
               return (QDomNode*)(QDomCharacterData*)vp;
-          
-            case RJSType::QDomAttr_Type:
+            }
+            
+            if (t==RJSType_QDomAttr::getIdStatic()) {
               return (QDomNode*)(QDomAttr*)vp;
-          
-            case RJSType::QDomElement_Type:
+            }
+            
+            if (t==RJSType_QDomElement::getIdStatic()) {
               return (QDomNode*)(QDomElement*)vp;
-          
-            case RJSType::QDomText_Type:
+            }
+            
+            if (t==RJSType_QDomText::getIdStatic()) {
               return (QDomNode*)(QDomText*)vp;
-          
-            case RJSType::QDomNotation_Type:
+            }
+            
+            if (t==RJSType_QDomNotation::getIdStatic()) {
               return (QDomNode*)(QDomNotation*)vp;
-          
-            case RJSType::QDomEntity_Type:
+            }
+            
+            if (t==RJSType_QDomEntity::getIdStatic()) {
               return (QDomNode*)(QDomEntity*)vp;
-          
-            case RJSType::QDomEntityReference_Type:
+            }
+            
+            if (t==RJSType_QDomEntityReference::getIdStatic()) {
               return (QDomNode*)(QDomEntityReference*)vp;
-          
-            case RJSType::QDomProcessingInstruction_Type:
+            }
+            
+            if (t==RJSType_QDomProcessingInstruction::getIdStatic()) {
               return (QDomNode*)(QDomProcessingInstruction*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QDomNode_Type:
+              if (t==RJSType_QDomNode::getIdStatic()) {
                 return (QDomNode*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomNode* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomNode*: wrapper wraps NULL";
@@ -2153,9 +2164,9 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomNode_Type;
+              return RJSType_QDomNode::getIdStatic();
             
         }
 
@@ -2265,24 +2276,24 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomNodeList* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomNodeList* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomNodeList_Type:
+              if (t==RJSType_QDomNodeList::getIdStatic()) {
                 return (QDomNodeList*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomNodeList* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomNodeList*: wrapper wraps NULL";
@@ -2576,9 +2587,9 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomNodeList_Type;
+              return RJSType_QDomNodeList::getIdStatic();
             
         }
 
@@ -2688,24 +2699,24 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomDocumentType* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomDocumentType* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomDocumentType_Type:
+              if (t==RJSType_QDomDocumentType::getIdStatic()) {
                 return (QDomDocumentType*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomDocumentType* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomDocumentType*: wrapper wraps NULL";
@@ -4370,9 +4381,9 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomDocumentType_Type;
+              return RJSType_QDomDocumentType::getIdStatic();
             
         }
 
@@ -4482,24 +4493,24 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomDocument* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomDocument* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomDocument_Type:
+              if (t==RJSType_QDomDocument::getIdStatic()) {
                 return (QDomDocument*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomDocument* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomDocument*: wrapper wraps NULL";
@@ -6516,9 +6527,9 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomDocument_Type;
+              return RJSType_QDomDocument::getIdStatic();
             
         }
 
@@ -6628,24 +6639,24 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomNamedNodeMap* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomNamedNodeMap* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomNamedNodeMap_Type:
+              if (t==RJSType_QDomNamedNodeMap::getIdStatic()) {
                 return (QDomNamedNodeMap*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomNamedNodeMap* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomNamedNodeMap*: wrapper wraps NULL";
@@ -7089,9 +7100,9 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomNamedNodeMap_Type;
+              return RJSType_QDomNamedNodeMap::getIdStatic();
             
         }
 
@@ -7201,24 +7212,24 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomDocumentFragment* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomDocumentFragment* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomDocumentFragment_Type:
+              if (t==RJSType_QDomDocumentFragment::getIdStatic()) {
                 return (QDomDocumentFragment*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomDocumentFragment* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomDocumentFragment*: wrapper wraps NULL";
@@ -8757,9 +8768,9 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomDocumentFragment_Type;
+              return RJSType_QDomDocumentFragment::getIdStatic();
             
         }
 
@@ -8869,30 +8880,32 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomCharacterData* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomCharacterData* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QDomText_Type:
+            if (t==RJSType_QDomText::getIdStatic()) {
               return (QDomCharacterData*)(QDomText*)vp;
-          
-            case RJSType::QDomComment_Type:
+            }
+            
+            if (t==RJSType_QDomComment::getIdStatic()) {
               return (QDomCharacterData*)(QDomComment*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QDomCharacterData_Type:
+              if (t==RJSType_QDomCharacterData::getIdStatic()) {
                 return (QDomCharacterData*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomCharacterData* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomCharacterData*: wrapper wraps NULL";
@@ -10631,9 +10644,9 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomCharacterData_Type;
+              return RJSType_QDomCharacterData::getIdStatic();
             
         }
 
@@ -10743,24 +10756,24 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomAttr* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomAttr* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomAttr_Type:
+              if (t==RJSType_QDomAttr::getIdStatic()) {
                 return (QDomAttr*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomAttr* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomAttr*: wrapper wraps NULL";
@@ -12406,9 +12419,9 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomAttr_Type;
+              return RJSType_QDomAttr::getIdStatic();
             
         }
 
@@ -12518,24 +12531,24 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomElement* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomElement* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomElement_Type:
+              if (t==RJSType_QDomElement::getIdStatic()) {
                 return (QDomElement*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomElement* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomElement*: wrapper wraps NULL";
@@ -14536,9 +14549,9 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomElement_Type;
+              return RJSType_QDomElement::getIdStatic();
             
         }
 
@@ -14648,27 +14661,28 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomText* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomText* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QDomCDATASection_Type:
+            if (t==RJSType_QDomCDATASection::getIdStatic()) {
               return (QDomText*)(QDomCDATASection*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QDomText_Type:
+              if (t==RJSType_QDomText::getIdStatic()) {
                 return (QDomText*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomText* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomText*: wrapper wraps NULL";
@@ -16430,9 +16444,9 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomText_Type;
+              return RJSType_QDomText::getIdStatic();
             
         }
 
@@ -16542,24 +16556,24 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomComment* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomComment* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomComment_Type:
+              if (t==RJSType_QDomComment::getIdStatic()) {
                 return (QDomComment*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomComment* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomComment*: wrapper wraps NULL";
@@ -16890,9 +16904,9 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomComment_Type;
+              return RJSType_QDomComment::getIdStatic();
             
         }
 
@@ -17002,24 +17016,24 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomCDATASection* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomCDATASection* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomCDATASection_Type:
+              if (t==RJSType_QDomCDATASection::getIdStatic()) {
                 return (QDomCDATASection*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomCDATASection* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomCDATASection*: wrapper wraps NULL";
@@ -17173,9 +17187,9 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomCDATASection_Type;
+              return RJSType_QDomCDATASection::getIdStatic();
             
         }
 
@@ -17285,24 +17299,24 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomNotation* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomNotation* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomNotation_Type:
+              if (t==RJSType_QDomNotation::getIdStatic()) {
                 return (QDomNotation*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomNotation* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomNotation*: wrapper wraps NULL";
@@ -18883,9 +18897,9 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomNotation_Type;
+              return RJSType_QDomNotation::getIdStatic();
             
         }
 
@@ -18995,24 +19009,24 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomEntity* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomEntity_Type:
+              if (t==RJSType_QDomEntity::getIdStatic()) {
                 return (QDomEntity*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomEntity* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomEntity*: wrapper wraps NULL";
@@ -20614,9 +20628,9 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomEntity_Type;
+              return RJSType_QDomEntity::getIdStatic();
             
         }
 
@@ -20726,24 +20740,24 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomEntityReference* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomEntityReference* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomEntityReference_Type:
+              if (t==RJSType_QDomEntityReference::getIdStatic()) {
                 return (QDomEntityReference*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomEntityReference* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomEntityReference*: wrapper wraps NULL";
@@ -22282,9 +22296,9 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomEntityReference_Type;
+              return RJSType_QDomEntityReference::getIdStatic();
             
         }
 
@@ -22394,24 +22408,24 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
       static void init(RJSApi& handler);
 
       
-        static QDomProcessingInstruction* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDomProcessingInstruction* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDomProcessingInstruction_Type:
+              if (t==RJSType_QDomProcessingInstruction::getIdStatic()) {
                 return (QDomProcessingInstruction*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDomProcessingInstruction* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDomProcessingInstruction*: wrapper wraps NULL";
@@ -24015,9 +24029,9 @@ EncodingFromTextStream = QDomProcessingInstruction::EncodingFromTextStream,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDomProcessingInstruction_Type;
+              return RJSType_QDomProcessingInstruction::getIdStatic();
             
         }
 

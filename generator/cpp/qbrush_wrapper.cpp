@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QBrush* t = new RJSType_QBrush();
+          global.setProperty("RJSType_QBrush", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QBrush::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QBrush_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QBrush_Wrapper", mo);
@@ -1489,6 +1500,17 @@ Qt::GlobalColor a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGradient* t = new RJSType_QGradient();
+          global.setProperty("RJSType_QGradient", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGradient::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGradient_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QGradient_Wrapper", mo);
@@ -2212,6 +2234,17 @@ QGradient::InterpolationMode a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QLinearGradient* t = new RJSType_QLinearGradient();
+          global.setProperty("RJSType_QLinearGradient", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QLinearGradient::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QLinearGradient_Wrapper::staticMetaObject);
@@ -3371,6 +3404,17 @@ QPointF a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QRadialGradient* t = new RJSType_QRadialGradient();
+          global.setProperty("RJSType_QRadialGradient", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QRadialGradient::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QRadialGradient_Wrapper::staticMetaObject);
@@ -5181,6 +5225,17 @@ qreal a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QConicalGradient* t = new RJSType_QConicalGradient();
+          global.setProperty("RJSType_QConicalGradient", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QConicalGradient::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QConicalGradient_Wrapper::staticMetaObject);

@@ -303,6 +303,17 @@ QString a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSettings* t = new RJSType_QSettings();
+          global.setProperty("RJSType_QSettings", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSettings::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSettings_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QSettings_Wrapper", mo);

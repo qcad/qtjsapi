@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QPainterPathStroker_Type
+                  RJSType_QPainterPathStroker.getIdStatic()
                 
             ))) {
 
@@ -130,33 +130,27 @@
         };
       QPainterPathStroker.getObjectType = function() {
         
-            return RJSType.QPainterPathStroker_Type;
+            return RJSType_QPainterPathStroker.getIdStatic();
           
       };
 
       QPainterPathStroker.prototype.getObjectType = function() {
         
-            return RJSType.QPainterPathStroker_Type;
+            return RJSType_QPainterPathStroker.getIdStatic();
           
       };
 
       QPainterPathStroker.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QPainterPathStroker.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QPainterPathStroker_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QPainterPathStroker_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

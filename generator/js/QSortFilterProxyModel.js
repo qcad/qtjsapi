@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QSortFilterProxyModel_Type
+                  RJSType_QSortFilterProxyModel.getIdStatic()
                 
             ))) {
 
@@ -125,48 +125,39 @@
         };
       QSortFilterProxyModel.getObjectType = function() {
         
-            return RJSType.QSortFilterProxyModel_Type;
+            return RJSType_QSortFilterProxyModel.getIdStatic();
           
       };
 
       QSortFilterProxyModel.prototype.getObjectType = function() {
         
-            return RJSType.QSortFilterProxyModel_Type;
+            return RJSType_QSortFilterProxyModel.getIdStatic();
           
       };
 
       QSortFilterProxyModel.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QSortFilterProxyModel_Type:
+            if (t===RJSType_QSortFilterProxyModel.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QAbstractItemModel_Type:
-          return true;
+          if (t===RJSType_QAbstractItemModel.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QAbstractProxyModel_Type:
-          return true;
+          if (t===RJSType_QAbstractProxyModel.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QSortFilterProxyModel_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QAbstractItemModel_Type
-            ,
-            RJSType.QAbstractProxyModel_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

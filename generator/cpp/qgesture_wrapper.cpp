@@ -119,6 +119,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGesture* t = new RJSType_QGesture();
+          global.setProperty("RJSType_QGesture", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGesture::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGesture_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QGesture_Wrapper", mo);
@@ -2029,6 +2040,17 @@ QGesture::GestureCancelPolicy a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPanGesture* t = new RJSType_QPanGesture();
+          global.setProperty("RJSType_QPanGesture", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPanGesture::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPanGesture_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPanGesture_Wrapper", mo);
@@ -3224,6 +3246,17 @@ int a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPinchGesture* t = new RJSType_QPinchGesture();
+          global.setProperty("RJSType_QPinchGesture", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPinchGesture::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPinchGesture_Wrapper::staticMetaObject);
@@ -6465,6 +6498,17 @@ qreal a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSwipeGesture* t = new RJSType_QSwipeGesture();
+          global.setProperty("RJSType_QSwipeGesture", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSwipeGesture::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSwipeGesture_Wrapper::staticMetaObject);

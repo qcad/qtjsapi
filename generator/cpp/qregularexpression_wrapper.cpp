@@ -231,6 +231,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QRegularExpression* t = new RJSType_QRegularExpression();
+          global.setProperty("RJSType_QRegularExpression", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QRegularExpression::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QRegularExpression_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QRegularExpression_Wrapper", mo);
@@ -1354,6 +1365,17 @@ QRegularExpression::MatchOptions a4_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QRegularExpressionMatch* t = new RJSType_QRegularExpressionMatch();
+          global.setProperty("RJSType_QRegularExpressionMatch", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QRegularExpressionMatch::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QRegularExpressionMatch_Wrapper::staticMetaObject);

@@ -64,6 +64,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPicture* t = new RJSType_QPicture();
+          global.setProperty("RJSType_QPicture", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPicture::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPicture_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPicture_Wrapper", mo);

@@ -468,6 +468,17 @@ char a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QByteArray* t = new RJSType_QByteArray();
+          global.setProperty("RJSType_QByteArray", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QByteArray::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QByteArray_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QByteArray_Wrapper", mo);

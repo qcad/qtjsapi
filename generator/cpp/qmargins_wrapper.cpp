@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QMargins* t = new RJSType_QMargins();
+          global.setProperty("RJSType_QMargins", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QMargins::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QMargins_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QMargins_Wrapper", mo);
@@ -871,6 +882,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QMarginsF* t = new RJSType_QMarginsF();
+          global.setProperty("RJSType_QMarginsF", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QMarginsF::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QMarginsF_Wrapper::staticMetaObject);

@@ -22,6 +22,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextCursor* t = new RJSType_QTextCursor();
+          global.setProperty("RJSType_QTextCursor", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextCursor::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextCursor_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTextCursor_Wrapper", mo);

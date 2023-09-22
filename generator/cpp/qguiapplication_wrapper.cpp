@@ -3260,6 +3260,17 @@ bool a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGuiApplication* t = new RJSType_QGuiApplication();
+          global.setProperty("RJSType_QGuiApplication", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGuiApplication::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGuiApplication_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QGuiApplication_Wrapper", mo);

@@ -1348,6 +1348,17 @@ QString a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QMessageBox* t = new RJSType_QMessageBox();
+          global.setProperty("RJSType_QMessageBox", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QMessageBox::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QMessageBox_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QMessageBox_Wrapper", mo);

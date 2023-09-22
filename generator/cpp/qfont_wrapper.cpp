@@ -493,6 +493,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QFont* t = new RJSType_QFont();
+          global.setProperty("RJSType_QFont", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QFont::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QFont_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QFont_Wrapper", mo);

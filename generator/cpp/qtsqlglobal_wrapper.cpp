@@ -16,6 +16,10 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // type is namespace, no scriptable type (RJSType_QSql)
+        
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSql_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QSql_Wrapper", mo);

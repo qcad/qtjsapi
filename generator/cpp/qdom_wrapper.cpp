@@ -119,6 +119,17 @@ QDomImplementation::InvalidDataPolicy a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomImplementation* t = new RJSType_QDomImplementation();
+          global.setProperty("RJSType_QDomImplementation", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomImplementation::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomImplementation_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDomImplementation_Wrapper", mo);
@@ -913,6 +924,17 @@ QDomDocumentType a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomNode* t = new RJSType_QDomNode();
+          global.setProperty("RJSType_QDomNode", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomNode::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomNode_Wrapper::staticMetaObject);
@@ -5200,6 +5222,17 @@ QString a2_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomNodeList* t = new RJSType_QDomNodeList();
+          global.setProperty("RJSType_QDomNodeList", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomNodeList::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomNodeList_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDomNodeList_Wrapper", mo);
@@ -6028,6 +6061,17 @@ int a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomDocumentType* t = new RJSType_QDomDocumentType();
+          global.setProperty("RJSType_QDomDocumentType", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomDocumentType::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomDocumentType_Wrapper::staticMetaObject);
@@ -10656,6 +10700,17 @@ QDomDocumentType a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomDocument* t = new RJSType_QDomDocument();
+          global.setProperty("RJSType_QDomDocument", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomDocument::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomDocument_Wrapper::staticMetaObject);
@@ -16633,6 +16688,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomNamedNodeMap* t = new RJSType_QDomNamedNodeMap();
+          global.setProperty("RJSType_QDomNamedNodeMap", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomNamedNodeMap::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomNamedNodeMap_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDomNamedNodeMap_Wrapper", mo);
@@ -17921,6 +17987,17 @@ QString a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomDocumentFragment* t = new RJSType_QDomDocumentFragment();
+          global.setProperty("RJSType_QDomDocumentFragment", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomDocumentFragment::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomDocumentFragment_Wrapper::staticMetaObject);
@@ -22207,6 +22284,17 @@ QDomDocumentFragment a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomCharacterData* t = new RJSType_QDomCharacterData();
+          global.setProperty("RJSType_QDomCharacterData", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomCharacterData::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomCharacterData_Wrapper::staticMetaObject);
@@ -27060,6 +27148,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomAttr* t = new RJSType_QDomAttr();
+          global.setProperty("RJSType_QDomAttr", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomAttr::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomAttr_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDomAttr_Wrapper", mo);
@@ -31637,6 +31736,17 @@ QString a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomElement* t = new RJSType_QDomElement();
+          global.setProperty("RJSType_QDomElement", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomElement::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomElement_Wrapper::staticMetaObject);
@@ -37909,6 +38019,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomText* t = new RJSType_QDomText();
+          global.setProperty("RJSType_QDomText", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomText::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomText_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDomText_Wrapper", mo);
@@ -42833,6 +42954,17 @@ int a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomComment* t = new RJSType_QDomComment();
+          global.setProperty("RJSType_QDomComment", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomComment::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomComment_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDomComment_Wrapper", mo);
@@ -43761,6 +43893,17 @@ QDomComment a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomCDATASection* t = new RJSType_QDomCDATASection();
+          global.setProperty("RJSType_QDomCDATASection", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomCDATASection::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomCDATASection_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDomCDATASection_Wrapper", mo);
@@ -44194,6 +44337,17 @@ QDomCDATASection a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomNotation* t = new RJSType_QDomNotation();
+          global.setProperty("RJSType_QDomNotation", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomNotation::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomNotation_Wrapper::staticMetaObject);
@@ -48594,6 +48748,17 @@ QDomNotation a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomEntity* t = new RJSType_QDomEntity();
+          global.setProperty("RJSType_QDomEntity", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomEntity::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomEntity_Wrapper::staticMetaObject);
@@ -53052,6 +53217,17 @@ QDomEntity a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomEntityReference* t = new RJSType_QDomEntityReference();
+          global.setProperty("RJSType_QDomEntityReference", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomEntityReference::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomEntityReference_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDomEntityReference_Wrapper", mo);
@@ -57337,6 +57513,17 @@ QDomEntityReference a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDomProcessingInstruction* t = new RJSType_QDomProcessingInstruction();
+          global.setProperty("RJSType_QDomProcessingInstruction", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDomProcessingInstruction::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDomProcessingInstruction_Wrapper::staticMetaObject);

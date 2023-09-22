@@ -116,24 +116,24 @@
       static void init(RJSApi& handler);
 
       
-        static QItemSelectionModel* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QItemSelectionModel* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QItemSelectionModel_Type:
+              if (t==RJSType_QItemSelectionModel::getIdStatic()) {
                 return (QItemSelectionModel*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QItemSelectionModel* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QItemSelectionModel*: wrapper wraps NULL";
@@ -1215,9 +1215,9 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QItemSelectionModel_Type;
+              return RJSType_QItemSelectionModel::getIdStatic();
             
         }
 
@@ -1327,24 +1327,24 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
       static void init(RJSApi& handler);
 
       
-        static QItemSelection* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QItemSelection* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QItemSelection_Type:
+              if (t==RJSType_QItemSelection::getIdStatic()) {
                 return (QItemSelection*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QItemSelection* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QItemSelection*: wrapper wraps NULL";
@@ -1535,9 +1535,9 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QItemSelection_Type;
+              return RJSType_QItemSelection::getIdStatic();
             
         }
 

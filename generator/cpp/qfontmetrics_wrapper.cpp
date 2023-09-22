@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QFontMetrics* t = new RJSType_QFontMetrics();
+          global.setProperty("RJSType_QFontMetrics", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QFontMetrics::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QFontMetrics_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QFontMetrics_Wrapper", mo);
@@ -2306,6 +2317,17 @@ int a4_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QFontMetricsF* t = new RJSType_QFontMetricsF();
+          global.setProperty("RJSType_QFontMetricsF", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QFontMetricsF::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QFontMetricsF_Wrapper::staticMetaObject);

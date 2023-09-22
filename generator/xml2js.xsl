@@ -82,7 +82,7 @@
                   <xsl:value-of select="$typeidbase" />
                 </xsl:when>
                 <xsl:otherwise>
-                  RJSType.<xsl:value-of select="@name" />_Type
+                  RJSType_<xsl:value-of select="@name" />.getIdStatic()
                 </xsl:otherwise>
               </xsl:choose>
             ))) {
@@ -163,7 +163,7 @@
             return <xsl:value-of select="$typeidbase" />;
           </xsl:when>
           <xsl:otherwise>
-            return RJSType.<xsl:value-of select="@name" />_Type;
+            return RJSType_<xsl:value-of select="@name" />.getIdStatic();
           </xsl:otherwise>
         </xsl:choose>
       };
@@ -174,12 +174,35 @@
             return <xsl:value-of select="$typeidbase" />;
           </xsl:when>
           <xsl:otherwise>
-            return RJSType.<xsl:value-of select="@name" />_Type;
+            return RJSType_<xsl:value-of select="@name" />.getIdStatic();
           </xsl:otherwise>
         </xsl:choose>
       };
 
       <xsl:value-of select="@name" />.prototype.isOfObjectType = function(t) {
+        <xsl:choose>
+          <xsl:when test="not($pluginid='')">
+            if (t===<xsl:value-of select="$typeidbase" />) {
+              return true;
+            }
+          </xsl:when>
+          <xsl:otherwise>
+            if (t===RJSType_<xsl:value-of select="@name" />.getIdStatic()) {
+              return true;
+            }
+          </xsl:otherwise>
+        </xsl:choose>
+
+        <xsl:for-each select="qsrc:super_list/qsrc:super">
+          if (t===RJSType_<xsl:value-of select="@name" />.getIdStatic()) {
+            return true;
+          }
+        </xsl:for-each>
+
+        return false;
+
+
+        <!--
         switch(t) {
 
         <xsl:choose>
@@ -188,13 +211,13 @@
               return true;
           </xsl:when>
           <xsl:otherwise>
-            case RJSType.<xsl:value-of select="@name" />_Type:
+            case RJSType_<xsl:value-of select="@name" />.getIdStatic():
               return true;
           </xsl:otherwise>
         </xsl:choose>
 
         <xsl:for-each select="qsrc:super_list/qsrc:super">
-        case RJSType.<xsl:value-of select="@name" />_Type:
+        case RJSType.<xsl:value-of select="@name" />.getIdStatic():
           return true;
         </xsl:for-each>
         default:
@@ -210,6 +233,7 @@
           </xsl:for-each>
         ].includes(t);
         */
+        -->
       };
 
       // enum values:
@@ -224,6 +248,13 @@
       <xsl:apply-templates select="qsrc:function">
         <xsl:with-param name="static" select="true()"/>
       </xsl:apply-templates>
+
+      <!--
+      <xsl:value-of select="@name" />.getIdStatic = function() 
+      {
+        return <xsl:value-of select="@name" />_WrapperSingletonInstance.getIdStatic();
+      };
+      -->
 
       // constants:
       <xsl:apply-templates select="qsrc:constant" />

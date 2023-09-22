@@ -10,24 +10,27 @@ noAStyle=0
 which astyle 1>/dev/null 2>&1
 noAStyle=$?
 
-xsltproc $DIR/xml2type.xsl "types.xml" >"new_RJSType.h"
+for mode in h cpp
+do
+    xsltproc --stringparam mode $mode $DIR/xml2type.xsl "types.xml" >"new_RJSType.$mode"
 
-if [ $noAStyle -eq 0 ]
-then
-    astyle "new_RJSType.h"
-fi
-
-if [ ! -f "RJSType.h" ]
-then
-    mv "new_RJSType.h" "RJSType.h"
-else
-    diff "new_RJSType.h" "RJSType.h"
-    if [ $? -ne 0 ]
+    if [ $noAStyle -eq 0 ]
     then
-        mv "new_RJSType.h" "RJSType.h"
-    else
-        rm "new_RJSType.h"
+        astyle "new_RJSType.$mode"
     fi
-fi
+
+    if [ ! -f "RJSType.$mode" ]
+    then
+        mv "new_RJSType.$mode" "RJSType.$mode"
+    else
+        diff "new_RJSType.$mode" "RJSType.$mode"
+        if [ $? -ne 0 ]
+        then
+            mv "new_RJSType.$mode" "RJSType.$mode"
+        else
+            rm "new_RJSType.$mode"
+        fi
+    fi
+done
 
 rm -f *.orig

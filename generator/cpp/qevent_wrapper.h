@@ -102,39 +102,44 @@
       static void init(RJSApi& handler);
 
       
-        static QInputEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QInputEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QPointerEvent_Type:
+            if (t==RJSType_QPointerEvent::getIdStatic()) {
               return (QInputEvent*)(QPointerEvent*)vp;
-          
-            case RJSType::QMouseEvent_Type:
+            }
+            
+            if (t==RJSType_QMouseEvent::getIdStatic()) {
               return (QInputEvent*)(QMouseEvent*)vp;
-          
-            case RJSType::QWheelEvent_Type:
+            }
+            
+            if (t==RJSType_QWheelEvent::getIdStatic()) {
               return (QInputEvent*)(QWheelEvent*)vp;
-          
-            case RJSType::QKeyEvent_Type:
+            }
+            
+            if (t==RJSType_QKeyEvent::getIdStatic()) {
               return (QInputEvent*)(QKeyEvent*)vp;
-          
-            case RJSType::QContextMenuEvent_Type:
+            }
+            
+            if (t==RJSType_QContextMenuEvent::getIdStatic()) {
               return (QInputEvent*)(QContextMenuEvent*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QInputEvent_Type:
+              if (t==RJSType_QInputEvent::getIdStatic()) {
                 return (QInputEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QInputEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QInputEvent*: wrapper wraps NULL";
@@ -680,9 +685,9 @@ MaxUser = QInputEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QInputEvent_Type;
+              return RJSType_QInputEvent::getIdStatic();
             
         }
 
@@ -849,33 +854,36 @@ MaxUser = QInputEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QPointerEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QPointerEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QSinglePointEvent_Type:
+            if (t==RJSType_QSinglePointEvent::getIdStatic()) {
               return (QPointerEvent*)(QSinglePointEvent*)vp;
-          
-            case RJSType::QMouseEvent_Type:
+            }
+            
+            if (t==RJSType_QMouseEvent::getIdStatic()) {
               return (QPointerEvent*)(QMouseEvent*)vp;
-          
-            case RJSType::QWheelEvent_Type:
+            }
+            
+            if (t==RJSType_QWheelEvent::getIdStatic()) {
               return (QPointerEvent*)(QWheelEvent*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QPointerEvent_Type:
+              if (t==RJSType_QPointerEvent::getIdStatic()) {
                 return (QPointerEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QPointerEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QPointerEvent*: wrapper wraps NULL";
@@ -1722,9 +1730,9 @@ MaxUser = QPointerEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QPointerEvent_Type;
+              return RJSType_QPointerEvent::getIdStatic();
             
         }
 
@@ -1891,30 +1899,32 @@ MaxUser = QPointerEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QSinglePointEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QSinglePointEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QMouseEvent_Type:
+            if (t==RJSType_QMouseEvent::getIdStatic()) {
               return (QSinglePointEvent*)(QMouseEvent*)vp;
-          
-            case RJSType::QWheelEvent_Type:
+            }
+            
+            if (t==RJSType_QWheelEvent::getIdStatic()) {
               return (QSinglePointEvent*)(QWheelEvent*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QSinglePointEvent_Type:
+              if (t==RJSType_QSinglePointEvent::getIdStatic()) {
                 return (QSinglePointEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QSinglePointEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QSinglePointEvent*: wrapper wraps NULL";
@@ -2845,9 +2855,9 @@ MaxUser = QSinglePointEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QSinglePointEvent_Type;
+              return RJSType_QSinglePointEvent::getIdStatic();
             
         }
 
@@ -3018,24 +3028,24 @@ MaxUser = QSinglePointEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QMouseEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QMouseEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QMouseEvent_Type:
+              if (t==RJSType_QMouseEvent::getIdStatic()) {
                 return (QMouseEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QMouseEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QMouseEvent*: wrapper wraps NULL";
@@ -4157,9 +4167,9 @@ MaxUser = QMouseEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QMouseEvent_Type;
+              return RJSType_QMouseEvent::getIdStatic();
             
         }
 
@@ -4350,24 +4360,24 @@ MaxUser = QMouseEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QWheelEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QWheelEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QWheelEvent_Type:
+              if (t==RJSType_QWheelEvent::getIdStatic()) {
                 return (QWheelEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QWheelEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QWheelEvent*: wrapper wraps NULL";
@@ -5569,9 +5579,9 @@ MaxUser = QWheelEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QWheelEvent_Type;
+              return RJSType_QWheelEvent::getIdStatic();
             
         }
 
@@ -5742,24 +5752,24 @@ MaxUser = QWheelEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QKeyEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QKeyEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QKeyEvent_Type:
+              if (t==RJSType_QKeyEvent::getIdStatic()) {
                 return (QKeyEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QKeyEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QKeyEvent*: wrapper wraps NULL";
@@ -6532,9 +6542,9 @@ MaxUser = QKeyEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QKeyEvent_Type;
+              return RJSType_QKeyEvent::getIdStatic();
             
         }
 
@@ -6701,24 +6711,24 @@ MaxUser = QKeyEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QPaintEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QPaintEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QPaintEvent_Type:
+              if (t==RJSType_QPaintEvent::getIdStatic()) {
                 return (QPaintEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QPaintEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QPaintEvent*: wrapper wraps NULL";
@@ -7245,9 +7255,9 @@ MaxUser = QPaintEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QPaintEvent_Type;
+              return RJSType_QPaintEvent::getIdStatic();
             
         }
 
@@ -7414,24 +7424,24 @@ MaxUser = QPaintEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QResizeEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QResizeEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QResizeEvent_Type:
+              if (t==RJSType_QResizeEvent::getIdStatic()) {
                 return (QResizeEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QResizeEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QResizeEvent*: wrapper wraps NULL";
@@ -7962,9 +7972,9 @@ MaxUser = QResizeEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QResizeEvent_Type;
+              return RJSType_QResizeEvent::getIdStatic();
             
         }
 
@@ -8131,24 +8141,24 @@ MaxUser = QResizeEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QDragEnterEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDragEnterEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDragEnterEvent_Type:
+              if (t==RJSType_QDragEnterEvent::getIdStatic()) {
                 return (QDragEnterEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDragEnterEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDragEnterEvent*: wrapper wraps NULL";
@@ -8825,9 +8835,9 @@ MaxUser = QDragEnterEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDragEnterEvent_Type;
+              return RJSType_QDragEnterEvent::getIdStatic();
             
         }
 
@@ -8994,30 +9004,32 @@ MaxUser = QDragEnterEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QDropEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDropEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QDragEnterEvent_Type:
+            if (t==RJSType_QDragEnterEvent::getIdStatic()) {
               return (QDropEvent*)(QDragEnterEvent*)vp;
-          
-            case RJSType::QDragMoveEvent_Type:
+            }
+            
+            if (t==RJSType_QDragMoveEvent::getIdStatic()) {
               return (QDropEvent*)(QDragMoveEvent*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QDropEvent_Type:
+              if (t==RJSType_QDropEvent::getIdStatic()) {
                 return (QDropEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDropEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDropEvent*: wrapper wraps NULL";
@@ -9669,9 +9681,9 @@ MaxUser = QDropEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDropEvent_Type;
+              return RJSType_QDropEvent::getIdStatic();
             
         }
 
@@ -9838,24 +9850,24 @@ MaxUser = QDropEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QContextMenuEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QContextMenuEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QContextMenuEvent_Type:
+              if (t==RJSType_QContextMenuEvent::getIdStatic()) {
                 return (QContextMenuEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QContextMenuEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QContextMenuEvent*: wrapper wraps NULL";
@@ -10595,9 +10607,9 @@ Other = QContextMenuEvent::Other,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QContextMenuEvent_Type;
+              return RJSType_QContextMenuEvent::getIdStatic();
             
         }
 
@@ -10764,27 +10776,28 @@ Other = QContextMenuEvent::Other,
       static void init(RJSApi& handler);
 
       
-        static QDragMoveEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDragMoveEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QDragEnterEvent_Type:
+            if (t==RJSType_QDragEnterEvent::getIdStatic()) {
               return (QDragMoveEvent*)(QDragEnterEvent*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QDragMoveEvent_Type:
+              if (t==RJSType_QDragMoveEvent::getIdStatic()) {
                 return (QDragMoveEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDragMoveEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDragMoveEvent*: wrapper wraps NULL";
@@ -11465,9 +11478,9 @@ MaxUser = QDragMoveEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDragMoveEvent_Type;
+              return RJSType_QDragMoveEvent::getIdStatic();
             
         }
 
@@ -11634,24 +11647,24 @@ MaxUser = QDragMoveEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QDragLeaveEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QDragLeaveEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QDragLeaveEvent_Type:
+              if (t==RJSType_QDragLeaveEvent::getIdStatic()) {
                 return (QDragLeaveEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QDragLeaveEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QDragLeaveEvent*: wrapper wraps NULL";
@@ -12130,9 +12143,9 @@ MaxUser = QDragLeaveEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QDragLeaveEvent_Type;
+              return RJSType_QDragLeaveEvent::getIdStatic();
             
         }
 
@@ -12299,24 +12312,24 @@ MaxUser = QDragLeaveEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QHelpEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QHelpEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QHelpEvent_Type:
+              if (t==RJSType_QHelpEvent::getIdStatic()) {
                 return (QHelpEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QHelpEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QHelpEvent*: wrapper wraps NULL";
@@ -12924,9 +12937,9 @@ MaxUser = QHelpEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QHelpEvent_Type;
+              return RJSType_QHelpEvent::getIdStatic();
             
         }
 
@@ -13093,24 +13106,24 @@ MaxUser = QHelpEvent::MaxUser,
       static void init(RJSApi& handler);
 
       
-        static QActionEvent* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QActionEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QActionEvent_Type:
+              if (t==RJSType_QActionEvent::getIdStatic()) {
                 return (QActionEvent*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QActionEvent* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QActionEvent*: wrapper wraps NULL";
@@ -13641,9 +13654,9 @@ MaxUser = QActionEvent::MaxUser,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QActionEvent_Type;
+              return RJSType_QActionEvent::getIdStatic();
             
         }
 

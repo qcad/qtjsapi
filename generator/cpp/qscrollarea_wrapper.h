@@ -536,24 +536,24 @@
       static void init(RJSApi& handler);
 
       
-        static QScrollArea* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QScrollArea* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QScrollArea_Type:
+              if (t==RJSType_QScrollArea::getIdStatic()) {
                 return (QScrollArea*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QScrollArea* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QScrollArea*: wrapper wraps NULL";
@@ -6988,9 +6988,9 @@ AdjustToContents = QScrollArea::AdjustToContents,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QScrollArea_Type;
+              return RJSType_QScrollArea::getIdStatic();
             
         }
 

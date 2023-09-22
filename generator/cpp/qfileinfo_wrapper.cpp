@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QFileInfo* t = new RJSType_QFileInfo();
+          global.setProperty("RJSType_QFileInfo", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QFileInfo::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QFileInfo_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QFileInfo_Wrapper", mo);

@@ -13,6 +13,8 @@
 
 <xsl:output method="text" />
 
+<xsl:param name="mode" />
+
 <xsl:template match="text()" />
 
 <xsl:template match="/">
@@ -26,12 +28,56 @@
 </xsl:template>
 
 <xsl:template match="*" mode="enum" />
-<xsl:template match="*" mode="case" />
+<xsl:template match="*" mode="class" />
 
-<xsl:template match="manual|shared_ptr|shared_ptr_no_copy|wrapped_ptr|wrapped_qobject_ptr|dummy|dummy_ptr|wrapped" mode="enum">
+<xsl:template match="manual|shared_ptr|shared_ptr_no_copy|wrapped_ptr|wrapped_qobject_ptr|dummy|dummy_ptr|wrapped" mode="class">
+  <!--
   <xsl:for-each select="type[not(.=preceding::*)]">
     <xsl:value-of select="text()" />_Type,
     <xsl:text>&#10;</xsl:text>
+  </xsl:for-each>
+  -->
+
+  <xsl:for-each select="type[not(.=preceding::*)]">
+    <xsl:if test="$mode='h'">
+      class RJSType_<xsl:value-of select="text()" /> : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_<xsl:value-of select="text()" />::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "<xsl:value-of select="text()" />";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_<xsl:value-of select="text()" />();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id&lt;0) {
+                  id = RJSTypeEnum::reserve(new RJSType_<xsl:value-of select="text()" />());
+              }
+              return id;
+          }
+
+
+      private:
+          static int id;
+      };
+    </xsl:if>
+
+    <xsl:if test="$mode='cpp'">
+      int RJSType_<xsl:value-of select="text()" />::id = -1;
+    </xsl:if>
   </xsl:for-each>
 
   <!--
@@ -51,21 +97,42 @@
   -->
 </xsl:template>
 
+<!--
 <xsl:template match="manual|shared_ptr|shared_ptr_no_copy|wrapped_ptr|wrapped_qobject_ptr|dummy|dummy_ptr|wrapped" mode="case">
   <xsl:for-each select="type[not(.=preceding::*)]">
     case <xsl:value-of select="text()" />_Type:
       return "<xsl:value-of select="text()" />_Type";
   </xsl:for-each>
 </xsl:template>
+-->
 
 <xsl:template match="types">
   // Automatically generated, do not edit
-  #ifndef RJSTYPE_H
-  #define RJSTYPE_H
+  <xsl:if test="$mode='h'">
+    #ifndef RJSTYPE_H
+    #define RJSTYPE_H
 
-  #include &lt;QObject&gt;
-  #include &lt;QQmlEngine&gt;
+    #include &lt;QObject&gt;
+    #include &lt;QQmlEngine&gt;
 
+    #include "RJSTypeEnum.h"
+
+    <xsl:apply-templates mode="class" />
+
+    static QString getTypeName(int type) {
+      RJSTypeEnum* t = RJSTypeEnum::getById(type);
+      return t->getName();
+    }
+    #endif
+  </xsl:if>
+
+  <xsl:if test="$mode='cpp'">
+    #include "RJSType.h"
+
+    <xsl:apply-templates mode="class" />
+  </xsl:if>
+
+  <!--
   class RJSType : public QObject {
       Q_OBJECT
       QML_INTERFACE
@@ -92,8 +159,8 @@
   Q_DECLARE_METATYPE(RJSType*)
 
   Q_DECLARE_INTERFACE(RJSType, "org.qcad.RJSType")
+  -->
 
-  #endif
 </xsl:template>
 
 </xsl:stylesheet>

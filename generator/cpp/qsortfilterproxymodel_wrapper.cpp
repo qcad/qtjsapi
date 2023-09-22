@@ -119,6 +119,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QSortFilterProxyModel* t = new RJSType_QSortFilterProxyModel();
+          global.setProperty("RJSType_QSortFilterProxyModel", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QSortFilterProxyModel::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QSortFilterProxyModel_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QSortFilterProxyModel_Wrapper", mo);

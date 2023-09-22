@@ -47,24 +47,24 @@
       static void init(RJSApi& handler);
 
       
-        static QPainterPath* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QPainterPath* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QPainterPath_Type:
+              if (t==RJSType_QPainterPath::getIdStatic()) {
                 return (QPainterPath*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QPainterPath* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QPainterPath*: wrapper wraps NULL";
@@ -1318,9 +1318,9 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QPainterPath_Type;
+              return RJSType_QPainterPath::getIdStatic();
             
         }
 
@@ -1430,24 +1430,24 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
       static void init(RJSApi& handler);
 
       
-        static QPainterPathStroker* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QPainterPathStroker* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QPainterPathStroker_Type:
+              if (t==RJSType_QPainterPathStroker::getIdStatic()) {
                 return (QPainterPathStroker*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QPainterPathStroker* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QPainterPathStroker*: wrapper wraps NULL";
@@ -1867,9 +1867,9 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QPainterPathStroker_Type;
+              return RJSType_QPainterPathStroker::getIdStatic();
             
         }
 

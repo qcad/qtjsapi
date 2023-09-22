@@ -43,24 +43,24 @@
       static void init(RJSApi& handler);
 
       
-        static QBrush* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QBrush* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QBrush_Type:
+              if (t==RJSType_QBrush::getIdStatic()) {
                 return (QBrush*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QBrush* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QBrush*: wrapper wraps NULL";
@@ -457,9 +457,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QBrush_Type;
+              return RJSType_QBrush::getIdStatic();
             
         }
 
@@ -569,33 +569,36 @@
       static void init(RJSApi& handler);
 
       
-        static QGradient* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QGradient* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QLinearGradient_Type:
+            if (t==RJSType_QLinearGradient::getIdStatic()) {
               return (QGradient*)(QLinearGradient*)vp;
-          
-            case RJSType::QRadialGradient_Type:
+            }
+            
+            if (t==RJSType_QRadialGradient::getIdStatic()) {
               return (QGradient*)(QRadialGradient*)vp;
-          
-            case RJSType::QConicalGradient_Type:
+            }
+            
+            if (t==RJSType_QConicalGradient::getIdStatic()) {
               return (QGradient*)(QConicalGradient*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QGradient_Type:
+              if (t==RJSType_QGradient::getIdStatic()) {
                 return (QGradient*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QGradient* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QGradient*: wrapper wraps NULL";
@@ -1071,9 +1074,9 @@ NumPresets = QGradient::NumPresets,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QGradient_Type;
+              return RJSType_QGradient::getIdStatic();
             
         }
 
@@ -1183,24 +1186,24 @@ NumPresets = QGradient::NumPresets,
       static void init(RJSApi& handler);
 
       
-        static QLinearGradient* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QLinearGradient* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QLinearGradient_Type:
+              if (t==RJSType_QLinearGradient::getIdStatic()) {
                 return (QLinearGradient*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QLinearGradient* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QLinearGradient*: wrapper wraps NULL";
@@ -1784,9 +1787,9 @@ NumPresets = QLinearGradient::NumPresets,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QLinearGradient_Type;
+              return RJSType_QLinearGradient::getIdStatic();
             
         }
 
@@ -1896,24 +1899,24 @@ NumPresets = QLinearGradient::NumPresets,
       static void init(RJSApi& handler);
 
       
-        static QRadialGradient* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QRadialGradient* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QRadialGradient_Type:
+              if (t==RJSType_QRadialGradient::getIdStatic()) {
                 return (QRadialGradient*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QRadialGradient* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QRadialGradient*: wrapper wraps NULL";
@@ -2637,9 +2640,9 @@ NumPresets = QRadialGradient::NumPresets,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QRadialGradient_Type;
+              return RJSType_QRadialGradient::getIdStatic();
             
         }
 
@@ -2749,24 +2752,24 @@ NumPresets = QRadialGradient::NumPresets,
       static void init(RJSApi& handler);
 
       
-        static QConicalGradient* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QConicalGradient* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QConicalGradient_Type:
+              if (t==RJSType_QConicalGradient::getIdStatic()) {
                 return (QConicalGradient*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QConicalGradient* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QConicalGradient*: wrapper wraps NULL";
@@ -3342,9 +3345,9 @@ NumPresets = QConicalGradient::NumPresets,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QConicalGradient_Type;
+              return RJSType_QConicalGradient::getIdStatic();
             
         }
 

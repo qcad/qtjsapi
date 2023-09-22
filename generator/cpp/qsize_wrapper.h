@@ -37,24 +37,24 @@
       static void init(RJSApi& handler);
 
       
-        static QSize* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QSize* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QSize_Type:
+              if (t==RJSType_QSize::getIdStatic()) {
                 return (QSize*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QSize* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QSize*: wrapper wraps NULL";
@@ -538,9 +538,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QSize_Type;
+              return RJSType_QSize::getIdStatic();
             
         }
 
@@ -650,24 +650,24 @@
       static void init(RJSApi& handler);
 
       
-        static QSizeF* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QSizeF* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QSizeF_Type:
+              if (t==RJSType_QSizeF::getIdStatic()) {
                 return (QSizeF*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QSizeF* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QSizeF*: wrapper wraps NULL";
@@ -1172,9 +1172,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QSizeF_Type;
+              return RJSType_QSizeF::getIdStatic();
             
         }
 

@@ -532,75 +532,92 @@
       static void init(RJSApi& handler);
 
       
-        static QFrame* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QFrame* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QAbstractItemView_Type:
+            if (t==RJSType_QAbstractItemView::getIdStatic()) {
               return (QFrame*)(QAbstractItemView*)vp;
-          
-            case RJSType::QAbstractScrollArea_Type:
+            }
+            
+            if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
               return (QFrame*)(QAbstractScrollArea*)vp;
-          
-            case RJSType::QHeaderView_Type:
+            }
+            
+            if (t==RJSType_QHeaderView::getIdStatic()) {
               return (QFrame*)(QHeaderView*)vp;
-          
-            case RJSType::QLabel_Type:
+            }
+            
+            if (t==RJSType_QLabel::getIdStatic()) {
               return (QFrame*)(QLabel*)vp;
-          
-            case RJSType::QListView_Type:
+            }
+            
+            if (t==RJSType_QListView::getIdStatic()) {
               return (QFrame*)(QListView*)vp;
-          
-            case RJSType::QListWidget_Type:
+            }
+            
+            if (t==RJSType_QListWidget::getIdStatic()) {
               return (QFrame*)(QListWidget*)vp;
-          
-            case RJSType::QMdiArea_Type:
+            }
+            
+            if (t==RJSType_QMdiArea::getIdStatic()) {
               return (QFrame*)(QMdiArea*)vp;
-          
-            case RJSType::QPlainTextEdit_Type:
+            }
+            
+            if (t==RJSType_QPlainTextEdit::getIdStatic()) {
               return (QFrame*)(QPlainTextEdit*)vp;
-          
-            case RJSType::QScrollArea_Type:
+            }
+            
+            if (t==RJSType_QScrollArea::getIdStatic()) {
               return (QFrame*)(QScrollArea*)vp;
-          
-            case RJSType::QSplitter_Type:
+            }
+            
+            if (t==RJSType_QSplitter::getIdStatic()) {
               return (QFrame*)(QSplitter*)vp;
-          
-            case RJSType::QStackedWidget_Type:
+            }
+            
+            if (t==RJSType_QStackedWidget::getIdStatic()) {
               return (QFrame*)(QStackedWidget*)vp;
-          
-            case RJSType::QTableView_Type:
+            }
+            
+            if (t==RJSType_QTableView::getIdStatic()) {
               return (QFrame*)(QTableView*)vp;
-          
-            case RJSType::QTableWidget_Type:
+            }
+            
+            if (t==RJSType_QTableWidget::getIdStatic()) {
               return (QFrame*)(QTableWidget*)vp;
-          
-            case RJSType::QTextBrowser_Type:
+            }
+            
+            if (t==RJSType_QTextBrowser::getIdStatic()) {
               return (QFrame*)(QTextBrowser*)vp;
-          
-            case RJSType::QTextEdit_Type:
+            }
+            
+            if (t==RJSType_QTextEdit::getIdStatic()) {
               return (QFrame*)(QTextEdit*)vp;
-          
-            case RJSType::QTreeView_Type:
+            }
+            
+            if (t==RJSType_QTreeView::getIdStatic()) {
               return (QFrame*)(QTreeView*)vp;
-          
-            case RJSType::QTreeWidget_Type:
+            }
+            
+            if (t==RJSType_QTreeWidget::getIdStatic()) {
               return (QFrame*)(QTreeWidget*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QFrame_Type:
+              if (t==RJSType_QFrame::getIdStatic()) {
                 return (QFrame*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QFrame* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QFrame*: wrapper wraps NULL";
@@ -6108,9 +6125,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QFrame_Type;
+              return RJSType_QFrame::getIdStatic();
             
         }
 

@@ -87,6 +87,17 @@ QStringConverter::Encoding a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QStringConverter* t = new RJSType_QStringConverter();
+          global.setProperty("RJSType_QStringConverter", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QStringConverter::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QStringConverter_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QStringConverter_Wrapper", mo);
@@ -511,6 +522,17 @@ QStringConverter::Encoding a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QStringEncoder* t = new RJSType_QStringEncoder();
+          global.setProperty("RJSType_QStringEncoder", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QStringEncoder::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QStringEncoder_Wrapper::staticMetaObject);
@@ -1220,6 +1242,17 @@ QStringConverter::Encoding a1_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QStringDecoder* t = new RJSType_QStringDecoder();
+          global.setProperty("RJSType_QStringDecoder", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QStringDecoder::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QStringDecoder_Wrapper::staticMetaObject);

@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QStackedWidget* t = new RJSType_QStackedWidget();
+          global.setProperty("RJSType_QStackedWidget", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QStackedWidget::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QStackedWidget_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QStackedWidget_Wrapper", mo);

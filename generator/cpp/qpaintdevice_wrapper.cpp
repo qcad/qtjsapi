@@ -64,6 +64,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPaintDevice* t = new RJSType_QPaintDevice();
+          global.setProperty("RJSType_QPaintDevice", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPaintDevice::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPaintDevice_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPaintDevice_Wrapper", mo);

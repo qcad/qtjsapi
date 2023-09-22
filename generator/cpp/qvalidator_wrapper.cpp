@@ -119,6 +119,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QValidator* t = new RJSType_QValidator();
+          global.setProperty("RJSType_QValidator", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QValidator::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QValidator_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QValidator_Wrapper", mo);
@@ -1877,6 +1888,17 @@ int a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QIntValidator* t = new RJSType_QIntValidator();
+          global.setProperty("RJSType_QIntValidator", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QIntValidator::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QIntValidator_Wrapper::staticMetaObject);
@@ -4193,6 +4215,17 @@ int a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDoubleValidator* t = new RJSType_QDoubleValidator();
+          global.setProperty("RJSType_QDoubleValidator", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDoubleValidator::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDoubleValidator_Wrapper::staticMetaObject);
@@ -6856,6 +6889,17 @@ int a3_cpp;
       
 
       QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QRegularExpressionValidator* t = new RJSType_QRegularExpressionValidator();
+          global.setProperty("RJSType_QRegularExpressionValidator", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QRegularExpressionValidator::getIdStatic();
+
+          
 
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QRegularExpressionValidator_Wrapper::staticMetaObject);

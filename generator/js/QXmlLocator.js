@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QXmlLocator_Type
+                  RJSType_QXmlLocator.getIdStatic()
                 
             ))) {
 
@@ -75,33 +75,27 @@
         };
       QXmlLocator.getObjectType = function() {
         
-            return RJSType.QXmlLocator_Type;
+            return RJSType_QXmlLocator.getIdStatic();
           
       };
 
       QXmlLocator.prototype.getObjectType = function() {
         
-            return RJSType.QXmlLocator_Type;
+            return RJSType_QXmlLocator.getIdStatic();
           
       };
 
       QXmlLocator.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QXmlLocator.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QXmlLocator_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QXmlLocator_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

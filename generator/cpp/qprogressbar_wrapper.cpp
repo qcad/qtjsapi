@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QProgressBar* t = new RJSType_QProgressBar();
+          global.setProperty("RJSType_QProgressBar", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QProgressBar::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QProgressBar_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QProgressBar_Wrapper", mo);

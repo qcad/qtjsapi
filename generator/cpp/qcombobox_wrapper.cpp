@@ -308,6 +308,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QComboBox* t = new RJSType_QComboBox();
+          global.setProperty("RJSType_QComboBox", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QComboBox::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QComboBox_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QComboBox_Wrapper", mo);

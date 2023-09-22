@@ -709,27 +709,28 @@
       static void init(RJSApi& handler);
 
       
-        static QTreeView* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QTreeView* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QTreeWidget_Type:
+            if (t==RJSType_QTreeWidget::getIdStatic()) {
               return (QTreeView*)(QTreeWidget*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QTreeView_Type:
+              if (t==RJSType_QTreeView::getIdStatic()) {
                 return (QTreeView*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QTreeView* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QTreeView*: wrapper wraps NULL";
@@ -9701,9 +9702,9 @@ InternalMove = QTreeView::InternalMove,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QTreeView_Type;
+              return RJSType_QTreeView::getIdStatic();
             
         }
 

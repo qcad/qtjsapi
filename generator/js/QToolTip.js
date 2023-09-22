@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QToolTip_Type
+                  RJSType_QToolTip.getIdStatic()
                 
             ))) {
 
@@ -75,33 +75,27 @@
         };
       QToolTip.getObjectType = function() {
         
-            return RJSType.QToolTip_Type;
+            return RJSType_QToolTip.getIdStatic();
           
       };
 
       QToolTip.prototype.getObjectType = function() {
         
-            return RJSType.QToolTip_Type;
+            return RJSType_QToolTip.getIdStatic();
           
       };
 
       QToolTip.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QToolTip.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QToolTip_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QToolTip_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

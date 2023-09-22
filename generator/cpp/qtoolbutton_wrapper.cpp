@@ -296,6 +296,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QToolButton* t = new RJSType_QToolButton();
+          global.setProperty("RJSType_QToolButton", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QToolButton::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QToolButton_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QToolButton_Wrapper", mo);

@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QFontComboBox* t = new RJSType_QFontComboBox();
+          global.setProperty("RJSType_QFontComboBox", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QFontComboBox::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QFontComboBox_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QFontComboBox_Wrapper", mo);

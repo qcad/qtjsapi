@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QSinglePointEvent_Type
+                  RJSType_QSinglePointEvent.getIdStatic()
                 
             ))) {
 
@@ -75,43 +75,35 @@
         };
       QSinglePointEvent.getObjectType = function() {
         
-            return RJSType.QSinglePointEvent_Type;
+            return RJSType_QSinglePointEvent.getIdStatic();
           
       };
 
       QSinglePointEvent.prototype.getObjectType = function() {
         
-            return RJSType.QSinglePointEvent_Type;
+            return RJSType_QSinglePointEvent.getIdStatic();
           
       };
 
       QSinglePointEvent.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QSinglePointEvent_Type:
+            if (t===RJSType_QSinglePointEvent.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QEvent_Type:
-          return true;
+          if (t===RJSType_QEvent.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QPointerEvent_Type:
-          return true;
+          if (t===RJSType_QPointerEvent.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QSinglePointEvent_Type, 
-          
-            RJSType.QEvent_Type
-            ,
-            RJSType.QPointerEvent_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextBrowser* t = new RJSType_QTextBrowser();
+          global.setProperty("RJSType_QTextBrowser", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextBrowser::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextBrowser_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTextBrowser_Wrapper", mo);

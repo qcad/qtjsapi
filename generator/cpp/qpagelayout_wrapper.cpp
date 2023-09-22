@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPageLayout* t = new RJSType_QPageLayout();
+          global.setProperty("RJSType_QPageLayout", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPageLayout::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPageLayout_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPageLayout_Wrapper", mo);

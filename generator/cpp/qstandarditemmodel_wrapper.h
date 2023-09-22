@@ -39,24 +39,24 @@
       static void init(RJSApi& handler);
 
       
-        static QStandardItem* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QStandardItem* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QStandardItem_Type:
+              if (t==RJSType_QStandardItem::getIdStatic()) {
                 return (QStandardItem*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QStandardItem* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QStandardItem*: wrapper wraps NULL";
@@ -1931,9 +1931,9 @@ UserType = QStandardItem::UserType,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QStandardItem_Type;
+              return RJSType_QStandardItem::getIdStatic();
             
         }
 
@@ -2114,24 +2114,24 @@ UserType = QStandardItem::UserType,
       static void init(RJSApi& handler);
 
       
-        static QStandardItemModel* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QStandardItemModel* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QStandardItemModel_Type:
+              if (t==RJSType_QStandardItemModel::getIdStatic()) {
                 return (QStandardItemModel*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QStandardItemModel* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QStandardItemModel*: wrapper wraps NULL";
@@ -4328,9 +4328,9 @@ HorizontalSortHint = QStandardItemModel::HorizontalSortHint,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QStandardItemModel_Type;
+              return RJSType_QStandardItemModel::getIdStatic();
             
         }
 

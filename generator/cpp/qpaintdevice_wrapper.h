@@ -95,54 +95,64 @@
       static void init(RJSApi& handler);
 
       
-        static QPaintDevice* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QPaintDevice* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QAbstractItemView_Type:
+            if (t==RJSType_QAbstractItemView::getIdStatic()) {
               return (QPaintDevice*)(QAbstractItemView*)vp;
-          
-            case RJSType::QBitmap_Type:
+            }
+            
+            if (t==RJSType_QBitmap::getIdStatic()) {
               return (QPaintDevice*)(QBitmap*)vp;
-          
-            case RJSType::QHeaderView_Type:
+            }
+            
+            if (t==RJSType_QHeaderView::getIdStatic()) {
               return (QPaintDevice*)(QHeaderView*)vp;
-          
-            case RJSType::QImage_Type:
+            }
+            
+            if (t==RJSType_QImage::getIdStatic()) {
               return (QPaintDevice*)(QImage*)vp;
-          
-            case RJSType::QPagedPaintDevice_Type:
+            }
+            
+            if (t==RJSType_QPagedPaintDevice::getIdStatic()) {
               return (QPaintDevice*)(QPagedPaintDevice*)vp;
-          
-            case RJSType::QPicture_Type:
+            }
+            
+            if (t==RJSType_QPicture::getIdStatic()) {
               return (QPaintDevice*)(QPicture*)vp;
-          
-            case RJSType::QPixmap_Type:
+            }
+            
+            if (t==RJSType_QPixmap::getIdStatic()) {
               return (QPaintDevice*)(QPixmap*)vp;
-          
-            case RJSType::QPrinter_Type:
+            }
+            
+            if (t==RJSType_QPrinter::getIdStatic()) {
               return (QPaintDevice*)(QPrinter*)vp;
-          
-            case RJSType::QTreeView_Type:
+            }
+            
+            if (t==RJSType_QTreeView::getIdStatic()) {
               return (QPaintDevice*)(QTreeView*)vp;
-          
-            case RJSType::QWidget_Type:
+            }
+            
+            if (t==RJSType_QWidget::getIdStatic()) {
               return (QPaintDevice*)(QWidget*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QPaintDevice_Type:
+              if (t==RJSType_QPaintDevice::getIdStatic()) {
                 return (QPaintDevice*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QPaintDevice* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QPaintDevice*: wrapper wraps NULL";
@@ -528,9 +538,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QPaintDevice_Type;
+              return RJSType_QPaintDevice::getIdStatic();
             
         }
 

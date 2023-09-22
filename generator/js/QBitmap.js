@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QBitmap_Type
+                  RJSType_QBitmap.getIdStatic()
                 
             ))) {
 
@@ -183,43 +183,35 @@
         };
       QBitmap.getObjectType = function() {
         
-            return RJSType.QBitmap_Type;
+            return RJSType_QBitmap.getIdStatic();
           
       };
 
       QBitmap.prototype.getObjectType = function() {
         
-            return RJSType.QBitmap_Type;
+            return RJSType_QBitmap.getIdStatic();
           
       };
 
       QBitmap.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QBitmap_Type:
+            if (t===RJSType_QBitmap.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QPaintDevice_Type:
-          return true;
+          if (t===RJSType_QPaintDevice.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QPixmap_Type:
-          return true;
+          if (t===RJSType_QPixmap.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QBitmap_Type, 
-          
-            RJSType.QPaintDevice_Type
-            ,
-            RJSType.QPixmap_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

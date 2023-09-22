@@ -350,6 +350,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QAbstractItemView* t = new RJSType_QAbstractItemView();
+          global.setProperty("RJSType_QAbstractItemView", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QAbstractItemView::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QAbstractItemView_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QAbstractItemView_Wrapper", mo);

@@ -98,30 +98,32 @@
       static void init(RJSApi& handler);
 
       
-        static QStringConverter* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QStringConverter* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QStringEncoder_Type:
+            if (t==RJSType_QStringEncoder::getIdStatic()) {
               return (QStringConverter*)(QStringEncoder*)vp;
-          
-            case RJSType::QStringDecoder_Type:
+            }
+            
+            if (t==RJSType_QStringDecoder::getIdStatic()) {
               return (QStringConverter*)(QStringDecoder*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QStringConverter_Type:
+              if (t==RJSType_QStringConverter::getIdStatic()) {
                 return (QStringConverter*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QStringConverter* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QStringConverter*: wrapper wraps NULL";
@@ -288,9 +290,9 @@ LastEncoding = QStringConverter::LastEncoding,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QStringConverter_Type;
+              return RJSType_QStringConverter::getIdStatic();
             
         }
 
@@ -457,24 +459,24 @@ LastEncoding = QStringConverter::LastEncoding,
       static void init(RJSApi& handler);
 
       
-        static QStringEncoder* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QStringEncoder* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QStringEncoder_Type:
+              if (t==RJSType_QStringEncoder::getIdStatic()) {
                 return (QStringEncoder*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QStringEncoder* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QStringEncoder*: wrapper wraps NULL";
@@ -708,9 +710,9 @@ LastEncoding = QStringEncoder::LastEncoding,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QStringEncoder_Type;
+              return RJSType_QStringEncoder::getIdStatic();
             
         }
 
@@ -877,24 +879,24 @@ LastEncoding = QStringEncoder::LastEncoding,
       static void init(RJSApi& handler);
 
       
-        static QStringDecoder* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QStringDecoder* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QStringDecoder_Type:
+              if (t==RJSType_QStringDecoder::getIdStatic()) {
                 return (QStringDecoder*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QStringDecoder* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QStringDecoder*: wrapper wraps NULL";
@@ -1128,9 +1130,9 @@ LastEncoding = QStringDecoder::LastEncoding,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QStringDecoder_Type;
+              return RJSType_QStringDecoder::getIdStatic();
             
         }
 

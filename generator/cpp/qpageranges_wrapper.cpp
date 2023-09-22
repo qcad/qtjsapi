@@ -81,6 +81,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QPageRanges* t = new RJSType_QPageRanges();
+          global.setProperty("RJSType_QPageRanges", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QPageRanges::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QPageRanges_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QPageRanges_Wrapper", mo);

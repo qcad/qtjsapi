@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QProgressDialog_Type
+                  RJSType_QProgressDialog.getIdStatic()
                 
             ))) {
 
@@ -136,48 +136,39 @@
         };
       QProgressDialog.getObjectType = function() {
         
-            return RJSType.QProgressDialog_Type;
+            return RJSType_QProgressDialog.getIdStatic();
           
       };
 
       QProgressDialog.prototype.getObjectType = function() {
         
-            return RJSType.QProgressDialog_Type;
+            return RJSType_QProgressDialog.getIdStatic();
           
       };
 
       QProgressDialog.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QProgressDialog_Type:
+            if (t===RJSType_QProgressDialog.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QDialog_Type:
-          return true;
+          if (t===RJSType_QDialog.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QProgressDialog_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QWidget_Type
-            ,
-            RJSType.QDialog_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

@@ -138,30 +138,32 @@
       static void init(RJSApi& handler);
 
       
-        static QBoxLayout* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QBoxLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QHBoxLayout_Type:
+            if (t==RJSType_QHBoxLayout::getIdStatic()) {
               return (QBoxLayout*)(QHBoxLayout*)vp;
-          
-            case RJSType::QVBoxLayout_Type:
+            }
+            
+            if (t==RJSType_QVBoxLayout::getIdStatic()) {
               return (QBoxLayout*)(QVBoxLayout*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QBoxLayout_Type:
+              if (t==RJSType_QBoxLayout::getIdStatic()) {
                 return (QBoxLayout*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QBoxLayout* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QBoxLayout*: wrapper wraps NULL";
@@ -2030,9 +2032,9 @@ Up = QBoxLayout::Up,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QBoxLayout_Type;
+              return RJSType_QBoxLayout::getIdStatic();
             
         }
 
@@ -2261,24 +2263,24 @@ Up = QBoxLayout::Up,
       static void init(RJSApi& handler);
 
       
-        static QHBoxLayout* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QHBoxLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QHBoxLayout_Type:
+              if (t==RJSType_QHBoxLayout::getIdStatic()) {
                 return (QHBoxLayout*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QHBoxLayout* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QHBoxLayout*: wrapper wraps NULL";
@@ -4143,9 +4145,9 @@ Up = QHBoxLayout::Up,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QHBoxLayout_Type;
+              return RJSType_QHBoxLayout::getIdStatic();
             
         }
 
@@ -4374,24 +4376,24 @@ Up = QHBoxLayout::Up,
       static void init(RJSApi& handler);
 
       
-        static QVBoxLayout* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QVBoxLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QVBoxLayout_Type:
+              if (t==RJSType_QVBoxLayout::getIdStatic()) {
                 return (QVBoxLayout*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QVBoxLayout* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QVBoxLayout*: wrapper wraps NULL";
@@ -6256,9 +6258,9 @@ Up = QVBoxLayout::Up,
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QVBoxLayout_Type;
+              return RJSType_QVBoxLayout::getIdStatic();
             
         }
 

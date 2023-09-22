@@ -127,6 +127,17 @@ QByteArray a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QImageWriter* t = new RJSType_QImageWriter();
+          global.setProperty("RJSType_QImageWriter", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QImageWriter::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QImageWriter_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QImageWriter_Wrapper", mo);

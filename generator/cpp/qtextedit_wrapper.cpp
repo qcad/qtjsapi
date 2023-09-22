@@ -352,6 +352,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QTextEdit* t = new RJSType_QTextEdit();
+          global.setProperty("RJSType_QTextEdit", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QTextEdit::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QTextEdit_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QTextEdit_Wrapper", mo);

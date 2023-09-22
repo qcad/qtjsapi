@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QGroupBox* t = new RJSType_QGroupBox();
+          global.setProperty("RJSType_QGroupBox", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QGroupBox::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QGroupBox_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QGroupBox_Wrapper", mo);

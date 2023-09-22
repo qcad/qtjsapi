@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QDate_Type
+                  RJSType_QDate.getIdStatic()
                 
             ))) {
 
@@ -126,33 +126,27 @@
 
       QDate.getObjectType = function() {
         
-            return RJSType.QDate_Type;
+            return RJSType_QDate.getIdStatic();
           
       };
 
       QDate.prototype.getObjectType = function() {
         
-            return RJSType.QDate_Type;
+            return RJSType_QDate.getIdStatic();
           
       };
 
       QDate.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QDate.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QDate_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QDate_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

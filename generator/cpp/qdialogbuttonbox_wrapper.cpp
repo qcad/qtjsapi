@@ -288,6 +288,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QDialogButtonBox* t = new RJSType_QDialogButtonBox();
+          global.setProperty("RJSType_QDialogButtonBox", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QDialogButtonBox::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QDialogButtonBox_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QDialogButtonBox_Wrapper", mo);

@@ -611,6 +611,17 @@ QString a1_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QIcon* t = new RJSType_QIcon();
+          global.setProperty("RJSType_QIcon", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QIcon::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QIcon_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QIcon_Wrapper", mo);

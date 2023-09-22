@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QEasingCurve_Type
+                  RJSType_QEasingCurve.getIdStatic()
                 
             ))) {
 
@@ -157,33 +157,27 @@
         };
       QEasingCurve.getObjectType = function() {
         
-            return RJSType.QEasingCurve_Type;
+            return RJSType_QEasingCurve.getIdStatic();
           
       };
 
       QEasingCurve.prototype.getObjectType = function() {
         
-            return RJSType.QEasingCurve_Type;
+            return RJSType_QEasingCurve.getIdStatic();
           
       };
 
       QEasingCurve.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QEasingCurve.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QEasingCurve_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QEasingCurve_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:

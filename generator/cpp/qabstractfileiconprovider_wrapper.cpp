@@ -18,6 +18,17 @@
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QAbstractFileIconProvider* t = new RJSType_QAbstractFileIconProvider();
+          global.setProperty("RJSType_QAbstractFileIconProvider", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QAbstractFileIconProvider::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QAbstractFileIconProvider_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QAbstractFileIconProvider_Wrapper", mo);

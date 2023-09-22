@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QAbstractItemView_Type
+                  RJSType_QAbstractItemView.getIdStatic()
                 
             ))) {
 
@@ -89,58 +89,47 @@
         };
       QAbstractItemView.getObjectType = function() {
         
-            return RJSType.QAbstractItemView_Type;
+            return RJSType_QAbstractItemView.getIdStatic();
           
       };
 
       QAbstractItemView.prototype.getObjectType = function() {
         
-            return RJSType.QAbstractItemView_Type;
+            return RJSType_QAbstractItemView.getIdStatic();
           
       };
 
       QAbstractItemView.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QAbstractItemView_Type:
+            if (t===RJSType_QAbstractItemView.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QPaintDevice_Type:
-          return true;
+          if (t===RJSType_QPaintDevice.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QWidget_Type:
-          return true;
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QFrame_Type:
-          return true;
+          if (t===RJSType_QFrame.getIdStatic()) {
+            return true;
+          }
         
-        case RJSType.QAbstractScrollArea_Type:
-          return true;
+          if (t===RJSType_QAbstractScrollArea.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QAbstractItemView_Type, 
-          
-            RJSType.QObject_Type
-            ,
-            RJSType.QPaintDevice_Type
-            ,
-            RJSType.QWidget_Type
-            ,
-            RJSType.QFrame_Type
-            ,
-            RJSType.QAbstractScrollArea_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

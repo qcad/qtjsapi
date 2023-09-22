@@ -142,42 +142,48 @@
       static void init(RJSApi& handler);
 
       
-        static QLayout* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
-            case RJSType::QBoxLayout_Type:
+            if (t==RJSType_QBoxLayout::getIdStatic()) {
               return (QLayout*)(QBoxLayout*)vp;
-          
-            case RJSType::QHBoxLayout_Type:
+            }
+            
+            if (t==RJSType_QHBoxLayout::getIdStatic()) {
               return (QLayout*)(QHBoxLayout*)vp;
-          
-            case RJSType::QVBoxLayout_Type:
+            }
+            
+            if (t==RJSType_QVBoxLayout::getIdStatic()) {
               return (QLayout*)(QVBoxLayout*)vp;
-          
-            case RJSType::QFormLayout_Type:
+            }
+            
+            if (t==RJSType_QFormLayout::getIdStatic()) {
               return (QLayout*)(QFormLayout*)vp;
-          
-            case RJSType::QGridLayout_Type:
+            }
+            
+            if (t==RJSType_QGridLayout::getIdStatic()) {
               return (QLayout*)(QGridLayout*)vp;
-          
-            case RJSType::QStackedLayout_Type:
+            }
+            
+            if (t==RJSType_QStackedLayout::getIdStatic()) {
               return (QLayout*)(QStackedLayout*)vp;
-          
+            }
+            
 
           // pointer to desired type:
           
-              case RJSType::QLayout_Type:
+              if (t==RJSType_QLayout::getIdStatic()) {
                 return (QLayout*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QLayout* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QLayout*: wrapper wraps NULL";
@@ -1626,9 +1632,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QLayout_Type;
+              return RJSType_QLayout::getIdStatic();
             
         }
 

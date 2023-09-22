@@ -122,24 +122,24 @@
       static void init(RJSApi& handler);
 
       
-        static QUiLoader* castToBase(void* vp, /*RJSType::WrappedType*/ int t) {
-          switch (t) {
+        static QUiLoader* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
           // check if pointer points to derrived type:
           
 
           // pointer to desired type:
           
-              case RJSType::QUiLoader_Type:
+              if (t==RJSType_QUiLoader::getIdStatic()) {
                 return (QUiLoader*)vp;
-            
+              }
+              
 
-          default:
-            return nullptr;
-          }
+          return nullptr;
+          
         }
 
         static QUiLoader* getWrappedBase(RJSWrapper* wrapper) {
-          RJSType::WrappedType t = (RJSType::WrappedType)wrapper->getWrappedType();
+          int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
               //qWarning() << "getWrapped_QUiLoader*: wrapper wraps NULL";
@@ -1038,9 +1038,9 @@
 
         // get type of wrapped object:
         Q_INVOKABLE
-        virtual /*RJSType::WrappedType*/ int getWrappedType() const {
+        virtual /*RJSType ID*/ int getWrappedType() const {
           
-              return RJSType::QUiLoader_Type;
+              return RJSType_QUiLoader::getIdStatic();
             
         }
 

@@ -296,6 +296,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QMdiSubWindow* t = new RJSType_QMdiSubWindow();
+          global.setProperty("RJSType_QMdiSubWindow", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QMdiSubWindow::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QMdiSubWindow_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QMdiSubWindow_Wrapper", mo);

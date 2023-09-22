@@ -304,6 +304,17 @@ int a3_cpp;
 
       QJSEngine* engine = handler.getEngine();
 
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QMdiArea* t = new RJSType_QMdiArea();
+          global.setProperty("RJSType_QMdiArea", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QMdiArea::getIdStatic();
+
+          
+
       // wrapper:
       QJSValue mo = engine->newQMetaObject(&QMdiArea_Wrapper::staticMetaObject);
       engine->globalObject().setProperty("QMdiArea_Wrapper", mo);

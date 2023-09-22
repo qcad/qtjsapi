@@ -270,8 +270,8 @@ void RJSApi::init() {
         }
     }
 
-    RJSType* t = new RJSType();
-    global.setProperty("RJSType", engine->newQObject(t));
+    //RJSType* t = new RJSType();
+    //global.setProperty("RJSType", engine->newQObject(t));
 
     Qt_Wrapper::init(*this);
     QCoreApplication_Wrapper::init(*this);

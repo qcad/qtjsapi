@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QDrag_Type
+                  RJSType_QDrag.getIdStatic()
                 
             ))) {
 
@@ -108,38 +108,31 @@
         };
       QDrag.getObjectType = function() {
         
-            return RJSType.QDrag_Type;
+            return RJSType_QDrag.getIdStatic();
           
       };
 
       QDrag.prototype.getObjectType = function() {
         
-            return RJSType.QDrag_Type;
+            return RJSType_QDrag.getIdStatic();
           
       };
 
       QDrag.prototype.isOfObjectType = function(t) {
-        switch(t) {
-
         
-            case RJSType.QDrag_Type:
+            if (t===RJSType_QDrag.getIdStatic()) {
               return true;
+            }
           
-        case RJSType.QObject_Type:
-          return true;
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
         
-        default:
-          return false;
-        }
 
-        /*
-        return [
-          RJSType.QDrag_Type, 
-          
-            RJSType.QObject_Type
-            
-        ].includes(t);
-        */
+        return false;
+
+
+        
       };
 
       // enum values:

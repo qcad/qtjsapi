@@ -19,7 +19,7 @@
             (typeof(arguments[2].getWrappedType)==="function" && 
             arguments[2].getWrappedType()===
               
-                  RJSType.QCalendar_Type
+                  RJSType_QCalendar.getIdStatic()
                 
             ))) {
 
@@ -104,33 +104,27 @@
         };
       QCalendar.getObjectType = function() {
         
-            return RJSType.QCalendar_Type;
+            return RJSType_QCalendar.getIdStatic();
           
       };
 
       QCalendar.prototype.getObjectType = function() {
         
-            return RJSType.QCalendar_Type;
+            return RJSType_QCalendar.getIdStatic();
           
       };
 
       QCalendar.prototype.isOfObjectType = function(t) {
-        switch(t) {
+        
+            if (t===RJSType_QCalendar.getIdStatic()) {
+              return true;
+            }
+          
+
+        return false;
+
 
         
-            case RJSType.QCalendar_Type:
-              return true;
-          
-        default:
-          return false;
-        }
-
-        /*
-        return [
-          RJSType.QCalendar_Type, 
-          
-        ].includes(t);
-        */
       };
 
       // enum values:
