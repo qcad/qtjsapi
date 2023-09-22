@@ -44,11 +44,18 @@
       #include "RJSWrapper.h"
 
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+        // Base class for downcasters that can downcast <xsl:value-of select="@name" /> to specific types.
         class RJSDowncaster_<xsl:value-of select="@name" /> {
         public:
           virtual QJSValue downcast(RJSApi&amp; handler, <xsl:value-of select="@name" />* o) = 0;
         };
       </xsl:for-each>
+
+      // Base class for converters that can convert QVariant to specific types.
+      class RJSQVariantConverter {
+      public:
+        virtual QJSValue convert(RJSApi&amp; handler, const QVariant&amp; o) = 0;
+      };
 
 
       QVariant getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj);
@@ -125,6 +132,14 @@
               downcasters_<xsl:value-of select="@name"/>.append(dc);
             }
         </xsl:for-each>
+
+        private:
+          static QList&lt;RJSQVariantConverter*&gt; qvariantConverters;
+
+        public:
+          static void registerQVariantConverter(RJSQVariantConverter* vc) {
+            qvariantConverters.append(vc);
+          }
       };
 
       #endif
@@ -138,6 +153,8 @@
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
         QList&lt;RJSDowncaster_<xsl:value-of select="@name" />*&gt; RJSHelper::downcasters_<xsl:value-of select="@name" />;
       </xsl:for-each>
+
+      QList&lt;RJSQVariantConverter*&gt; RJSHelper::qvariantConverters;
 
       /**
        * \return existing wrapper object for the given object in the context of the given engine.
@@ -336,6 +353,15 @@
           }
           if (v.canConvert&lt;QKeySequence&gt;()) {
               return RJSHelper::cpp2js_QKeySequence(handler, v.value&lt;QKeySequence&gt;());
+          }
+
+          // hook to convert more types from other modules:
+          for (int i=0; i&lt;qvariantConverters.length(); i++) {
+            RJSQVariantConverter* vc = qvariantConverters[i];
+            QJSValue res = vc->convert(handler, v);
+            if (!res.isUndefined()) {
+              return res;
+            }
           }
 
           qWarning() &lt;&lt; "RJSHelper::cpp2js_QVariant: unhandled variant type: " &lt;&lt; v.userType() &lt;&lt; " / " &lt;&lt; v.metaType().name();

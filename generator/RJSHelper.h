@@ -18,11 +18,18 @@
       #include "RJSWrapper.h"
 
       
+        // Base class for downcasters that can downcast QWidget to specific types.
         class RJSDowncaster_QWidget {
         public:
           virtual QJSValue downcast(RJSApi& handler, QWidget* o) = 0;
         };
       
+
+      // Base class for converters that can convert QVariant to specific types.
+      class RJSQVariantConverter {
+      public:
+        virtual QJSValue convert(RJSApi& handler, const QVariant& o) = 0;
+      };
 
 
       QVariant getWrapperProperty(RJSApi& handler, const QObject& obj);
@@ -2897,6 +2904,14 @@
               downcasters_QWidget.append(dc);
             }
         
+
+        private:
+          static QList<RJSQVariantConverter*> qvariantConverters;
+
+        public:
+          static void registerQVariantConverter(RJSQVariantConverter* vc) {
+            qvariantConverters.append(vc);
+          }
       };
 
       #endif

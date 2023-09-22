@@ -9,6 +9,8 @@
         QList<RJSDowncaster_QWidget*> RJSHelper::downcasters_QWidget;
       
 
+      QList<RJSQVariantConverter*> RJSHelper::qvariantConverters;
+
       /**
        * \return existing wrapper object for the given object in the context of the given engine.
        */
@@ -206,6 +208,15 @@
           }
           if (v.canConvert<QKeySequence>()) {
               return RJSHelper::cpp2js_QKeySequence(handler, v.value<QKeySequence>());
+          }
+
+          // hook to convert more types from other modules:
+          for (int i=0; i<qvariantConverters.length(); i++) {
+            RJSQVariantConverter* vc = qvariantConverters[i];
+            QJSValue res = vc->convert(handler, v);
+            if (!res.isUndefined()) {
+              return res;
+            }
           }
 
           qWarning() << "RJSHelper::cpp2js_QVariant: unhandled variant type: " << v.userType() << " / " << v.metaType().name();
