@@ -44,7 +44,7 @@
         //QJSValue mob = engine->newQMetaObject(&QStandardItem_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QStandardItem_BaseJs", mob);
       
-      QString fileName = ":generated/js/QStandardItem.js";
+      QString fileName = ":generator/js/QStandardItem.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -5585,7 +5585,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QStandardItemModel_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QStandardItemModel.js";
+      QString fileName = ":generator/js/QStandardItemModel.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -5701,12 +5701,14 @@ int a3_cpp;
     SLOT(itemChangedEmitter(QStandardItem*))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

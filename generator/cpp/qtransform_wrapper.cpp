@@ -424,7 +424,7 @@ qreal a2_cpp;
         engine->globalObject().setProperty("QTransform_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QTransform.js";
+      QString fileName = ":generator/js/QTransform.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

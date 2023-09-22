@@ -138,7 +138,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QGraphicsEffect_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QGraphicsEffect.js";
+      QString fileName = ":generator/js/QGraphicsEffect.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -233,12 +233,14 @@ int a3_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -1784,7 +1786,7 @@ bool a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QGraphicsColorizeEffect_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QGraphicsColorizeEffect_BaseJs", mob);
       
-      QString fileName = ":generated/js/QGraphicsColorizeEffect.js";
+      QString fileName = ":generator/js/QGraphicsColorizeEffect.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2650,7 +2652,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QGraphicsBlurEffect_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QGraphicsBlurEffect.js";
+      QString fileName = ":generator/js/QGraphicsBlurEffect.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2745,12 +2747,14 @@ int a3_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -4630,7 +4634,7 @@ QGraphicsBlurEffect::BlurHints a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QGraphicsDropShadowEffect_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QGraphicsDropShadowEffect_BaseJs", mob);
       
-      QString fileName = ":generated/js/QGraphicsDropShadowEffect.js";
+      QString fileName = ":generator/js/QGraphicsDropShadowEffect.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -5843,7 +5847,7 @@ QColor a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QGraphicsOpacityEffect_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QGraphicsOpacityEffect_BaseJs", mob);
       
-      QString fileName = ":generated/js/QGraphicsOpacityEffect.js";
+      QString fileName = ":generator/js/QGraphicsOpacityEffect.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

@@ -138,7 +138,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QValidator_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QValidator.js";
+      QString fileName = ":generator/js/QValidator.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -240,12 +240,14 @@ int a3_cpp;
     SLOT(changedEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -1895,7 +1897,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QIntValidator_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QIntValidator.js";
+      QString fileName = ":generator/js/QIntValidator.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2011,12 +2013,14 @@ int a3_cpp;
     SLOT(topChangedEmitter(int))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -4209,7 +4213,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QDoubleValidator_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QDoubleValidator.js";
+      QString fileName = ":generator/js/QDoubleValidator.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -4339,12 +4343,14 @@ int a3_cpp;
     SLOT(notationChangedEmitter(QDoubleValidator::Notation))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -6870,7 +6876,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QRegularExpressionValidator_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QRegularExpressionValidator.js";
+      QString fileName = ":generator/js/QRegularExpressionValidator.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -6979,12 +6985,14 @@ int a3_cpp;
     SLOT(regularExpressionChangedEmitter(const QRegularExpression&))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

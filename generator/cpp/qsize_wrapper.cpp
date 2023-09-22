@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QSize_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QSize_BaseJs", mob);
       
-      QString fileName = ":generated/js/QSize.js";
+      QString fileName = ":generator/js/QSize.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1678,7 +1678,7 @@ QMargins a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QSizeF_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QSizeF_BaseJs", mob);
       
-      QString fileName = ":generated/js/QSizeF.js";
+      QString fileName = ":generator/js/QSizeF.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

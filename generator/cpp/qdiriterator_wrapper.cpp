@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QDirIterator_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDirIterator_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDirIterator.js";
+      QString fileName = ":generator/js/QDirIterator.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

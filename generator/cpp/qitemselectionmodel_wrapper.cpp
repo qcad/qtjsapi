@@ -138,7 +138,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QItemSelectionModel_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QItemSelectionModel.js";
+      QString fileName = ":generator/js/QItemSelectionModel.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -268,12 +268,14 @@ int a3_cpp;
     SLOT(modelChangedEmitter(QAbstractItemModel*))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -3247,7 +3249,7 @@ QItemSelectionModel::SelectionFlags a2_cpp;
         //QJSValue mob = engine->newQMetaObject(&QItemSelection_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QItemSelection_BaseJs", mob);
       
-      QString fileName = ":generated/js/QItemSelection.js";
+      QString fileName = ":generator/js/QItemSelection.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

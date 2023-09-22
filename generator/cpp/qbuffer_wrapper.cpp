@@ -152,7 +152,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QBuffer_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QBuffer.js";
+      QString fileName = ":generator/js/QBuffer.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -289,12 +289,14 @@ int a3_cpp;
     SLOT(readChannelFinishedEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

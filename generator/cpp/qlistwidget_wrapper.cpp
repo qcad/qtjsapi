@@ -40,7 +40,7 @@
         //QJSValue mob = engine->newQMetaObject(&QListWidgetItem_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QListWidgetItem_BaseJs", mob);
       
-      QString fileName = ":generated/js/QListWidgetItem.js";
+      QString fileName = ":generator/js/QListWidgetItem.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2772,7 +2772,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QListWidget_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QListWidget.js";
+      QString fileName = ":generator/js/QListWidget.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2951,12 +2951,14 @@ int a3_cpp;
     SLOT(itemSelectionChangedEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

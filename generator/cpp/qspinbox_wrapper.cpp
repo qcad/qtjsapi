@@ -307,7 +307,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QSpinBox_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QSpinBox.js";
+      QString fileName = ":generator/js/QSpinBox.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -423,12 +423,14 @@ int a3_cpp;
     SLOT(textChangedEmitter(const QString&))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -18263,7 +18265,7 @@ int a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDoubleSpinBox_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDoubleSpinBox_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDoubleSpinBox.js";
+      QString fileName = ":generator/js/QDoubleSpinBox.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

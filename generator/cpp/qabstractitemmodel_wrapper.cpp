@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QModelIndex_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QModelIndex_BaseJs", mob);
       
-      QString fileName = ":generated/js/QModelIndex.js";
+      QString fileName = ":generator/js/QModelIndex.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -863,7 +863,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QAbstractItemModel_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QAbstractItemModel.js";
+      QString fileName = ":generator/js/QAbstractItemModel.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -972,12 +972,14 @@ int a3_cpp;
     SLOT(rowsInsertedEmitter(const QModelIndex&, int, int))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -5433,7 +5435,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QAbstractTableModel_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QAbstractTableModel.js";
+      QString fileName = ":generator/js/QAbstractTableModel.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -5542,12 +5544,14 @@ int a3_cpp;
     SLOT(rowsInsertedEmitter(const QModelIndex&, int, int))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -9921,7 +9925,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QAbstractListModel_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QAbstractListModel.js";
+      QString fileName = ":generator/js/QAbstractListModel.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -10030,12 +10034,14 @@ int a3_cpp;
     SLOT(rowsInsertedEmitter(const QModelIndex&, int, int))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

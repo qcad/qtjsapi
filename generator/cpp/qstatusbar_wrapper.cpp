@@ -307,7 +307,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QStatusBar_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QStatusBar.js";
+      QString fileName = ":generator/js/QStatusBar.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -416,12 +416,14 @@ int a3_cpp;
     SLOT(messageChangedEmitter(const QString&))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

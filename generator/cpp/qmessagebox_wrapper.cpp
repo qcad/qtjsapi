@@ -1367,7 +1367,7 @@ QString a2_cpp;
         engine->globalObject().setProperty("QMessageBox_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QMessageBox.js";
+      QString fileName = ":generator/js/QMessageBox.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1497,12 +1497,14 @@ QString a2_cpp;
     SLOT(buttonClickedEmitter(QAbstractButton*))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

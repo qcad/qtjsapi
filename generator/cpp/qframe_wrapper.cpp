@@ -307,7 +307,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QFrame_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QFrame.js";
+      QString fileName = ":generator/js/QFrame.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -409,12 +409,14 @@ int a3_cpp;
     SLOT(customContextMenuRequestedEmitter(const QPoint&))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

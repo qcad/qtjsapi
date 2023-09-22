@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QTextStream_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextStream_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextStream.js";
+      QString fileName = ":generator/js/QTextStream.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

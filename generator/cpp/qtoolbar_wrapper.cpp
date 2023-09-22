@@ -313,7 +313,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QToolBar_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QToolBar.js";
+      QString fileName = ":generator/js/QToolBar.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -471,12 +471,14 @@ int a3_cpp;
     SLOT(visibilityChangedEmitter(bool))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

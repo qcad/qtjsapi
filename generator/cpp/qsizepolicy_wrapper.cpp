@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QSizePolicy_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QSizePolicy_BaseJs", mob);
       
-      QString fileName = ":generated/js/QSizePolicy.js";
+      QString fileName = ":generator/js/QSizePolicy.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

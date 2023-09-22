@@ -516,7 +516,7 @@ QPixmap a1_cpp;
         engine->globalObject().setProperty("QBitmap_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QBitmap.js";
+      QString fileName = ":generator/js/QBitmap.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

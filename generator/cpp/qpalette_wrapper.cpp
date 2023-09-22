@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QPalette_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPalette_BaseJs", mob);
       
-      QString fileName = ":generated/js/QPalette.js";
+      QString fileName = ":generator/js/QPalette.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

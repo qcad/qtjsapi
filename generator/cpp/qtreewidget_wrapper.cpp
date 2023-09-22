@@ -40,7 +40,7 @@
         //QJSValue mob = engine->newQMetaObject(&QTreeWidgetItem_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTreeWidgetItem_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTreeWidgetItem.js";
+      QString fileName = ":generator/js/QTreeWidgetItem.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -4447,7 +4447,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QTreeWidget_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QTreeWidget.js";
+      QString fileName = ":generator/js/QTreeWidget.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -4640,12 +4640,14 @@ int a3_cpp;
     SLOT(itemSelectionChangedEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

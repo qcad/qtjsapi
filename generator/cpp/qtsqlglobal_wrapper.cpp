@@ -26,7 +26,7 @@
         //QJSValue mob = engine->newQMetaObject(&QSql_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QSql_BaseJs", mob);
       
-      QString fileName = ":generated/js/QSql.js";
+      QString fileName = ":generator/js/QSql.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

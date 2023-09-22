@@ -95,7 +95,7 @@
         engine->globalObject().setProperty("QCalendar_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QCalendar.js";
+      QString fileName = ":generator/js/QCalendar.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

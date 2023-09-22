@@ -247,7 +247,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QImageReader_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QImageReader.js";
+      QString fileName = ":generator/js/QImageReader.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

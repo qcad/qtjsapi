@@ -50,7 +50,7 @@
         //QJSValue mob = engine->newQMetaObject(&QTableWidgetItem_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTableWidgetItem_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTableWidgetItem.js";
+      QString fileName = ":generator/js/QTableWidgetItem.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2832,7 +2832,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QTableWidget_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QTableWidget.js";
+      QString fileName = ":generator/js/QTableWidget.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -3047,12 +3047,14 @@ int a3_cpp;
     SLOT(currentCellChangedEmitter(int, int, int, int))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

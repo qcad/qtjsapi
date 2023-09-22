@@ -1680,7 +1680,7 @@ QString a1_cpp;
         engine->globalObject().setProperty("QCoreApplication_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QCoreApplication.js";
+      QString fileName = ":generator/js/QCoreApplication.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1803,12 +1803,14 @@ QString a1_cpp;
     SLOT(applicationVersionChangedEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

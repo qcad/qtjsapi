@@ -370,7 +370,7 @@
       <!--
       QString fileName = "<xsl:value-of select="qc:lowercase(ancestor::qsrc:unit/@filename)" />.js";
       -->
-      QString fileName = ":generated/js/<xsl:value-of select="@name" />.js";
+      QString fileName = ":generator/js/<xsl:value-of select="@name" />.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() &lt;&lt; "JS script wrapper file not found:" &lt;&lt; fileName;
@@ -570,12 +570,14 @@
             <xsl:apply-templates select="qsrc:function/qsrc:variant[@signal='true' and @access='public']" mode="signalconnections" />
 
             <xsl:if test="ancestor-or-self::qsrc:class/qsrc:super_list/qsrc:super[@name='QObject']">
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &amp;handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             </xsl:if>
           }
         }

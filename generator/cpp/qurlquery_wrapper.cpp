@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QUrlQuery_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QUrlQuery_BaseJs", mob);
       
-      QString fileName = ":generated/js/QUrlQuery.js";
+      QString fileName = ":generator/js/QUrlQuery.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

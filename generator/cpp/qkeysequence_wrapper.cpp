@@ -412,7 +412,7 @@ QKeySequence::StandardKey a1_cpp;
         engine->globalObject().setProperty("QKeySequence_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QKeySequence.js";
+      QString fileName = ":generator/js/QKeySequence.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

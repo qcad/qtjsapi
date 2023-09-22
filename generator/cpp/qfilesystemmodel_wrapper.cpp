@@ -138,7 +138,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QFileSystemModel_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QFileSystemModel.js";
+      QString fileName = ":generator/js/QFileSystemModel.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -248,12 +248,14 @@ int a3_cpp;
     SLOT(rowsInsertedEmitter(const QModelIndex&, int, int))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

@@ -108,7 +108,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QInputEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QInputEvent.js";
+      QString fileName = ":generator/js/QInputEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1110,7 +1110,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QPointerEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QPointerEvent.js";
+      QString fileName = ":generator/js/QPointerEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -3002,7 +3002,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QSinglePointEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QSinglePointEvent.js";
+      QString fileName = ":generator/js/QSinglePointEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -5131,7 +5131,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QMouseEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QMouseEvent.js";
+      QString fileName = ":generator/js/QMouseEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -7971,7 +7971,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QWheelEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QWheelEvent.js";
+      QString fileName = ":generator/js/QWheelEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -10870,7 +10870,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QKeyEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QKeyEvent.js";
+      QString fileName = ":generator/js/QKeyEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -12523,7 +12523,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QPaintEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QPaintEvent.js";
+      QString fileName = ":generator/js/QPaintEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -13526,7 +13526,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QResizeEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QResizeEvent.js";
+      QString fileName = ":generator/js/QResizeEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -14504,7 +14504,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QDragEnterEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QDragEnterEvent.js";
+      QString fileName = ":generator/js/QDragEnterEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -15941,7 +15941,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QDropEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QDropEvent.js";
+      QString fileName = ":generator/js/QDropEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -17256,7 +17256,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QContextMenuEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QContextMenuEvent.js";
+      QString fileName = ":generator/js/QContextMenuEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -18843,7 +18843,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QDragMoveEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QDragMoveEvent.js";
+      QString fileName = ":generator/js/QDragMoveEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -20301,7 +20301,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QDragLeaveEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QDragLeaveEvent.js";
+      QString fileName = ":generator/js/QDragLeaveEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -21114,7 +21114,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QHelpEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QHelpEvent.js";
+      QString fileName = ":generator/js/QHelpEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -22336,7 +22336,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QActionEvent_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QActionEvent.js";
+      QString fileName = ":generator/js/QActionEvent.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

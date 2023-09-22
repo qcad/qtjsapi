@@ -138,7 +138,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QItemDelegate_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QItemDelegate.js";
+      QString fileName = ":generator/js/QItemDelegate.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -254,12 +254,14 @@ int a3_cpp;
     SLOT(sizeHintChangedEmitter(const QModelIndex&))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

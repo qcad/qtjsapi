@@ -457,7 +457,7 @@ Qt::ImageConversionFlags a2_cpp;
         engine->globalObject().setProperty("QPixmap_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QPixmap.js";
+      QString fileName = ":generator/js/QPixmap.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

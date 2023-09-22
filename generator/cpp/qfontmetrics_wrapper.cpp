@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QFontMetrics_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QFontMetrics_BaseJs", mob);
       
-      QString fileName = ":generated/js/QFontMetrics.js";
+      QString fileName = ":generator/js/QFontMetrics.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2317,7 +2317,7 @@ int a4_cpp;
         //QJSValue mob = engine->newQMetaObject(&QFontMetricsF_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QFontMetricsF_BaseJs", mob);
       
-      QString fileName = ":generated/js/QFontMetricsF.js";
+      QString fileName = ":generator/js/QFontMetricsF.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

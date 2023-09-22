@@ -146,7 +146,7 @@ QByteArray a1_cpp;
         engine->globalObject().setProperty("QImageWriter_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QImageWriter.js";
+      QString fileName = ":generator/js/QImageWriter.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

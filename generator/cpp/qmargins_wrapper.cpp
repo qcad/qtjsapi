@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QMargins_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QMargins_BaseJs", mob);
       
-      QString fileName = ":generated/js/QMargins.js";
+      QString fileName = ":generator/js/QMargins.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -882,7 +882,7 @@ int a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QMarginsF_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QMarginsF_BaseJs", mob);
       
-      QString fileName = ":generated/js/QMarginsF.js";
+      QString fileName = ":generator/js/QMarginsF.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

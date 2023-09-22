@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QTextLength_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextLength_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextLength.js";
+      QString fileName = ":generator/js/QTextLength.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -457,7 +457,7 @@ qreal a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QTextFormat_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextFormat_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextFormat.js";
+      QString fileName = ":generator/js/QTextFormat.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -3581,7 +3581,7 @@ QBrush a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QTextCharFormat_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextCharFormat_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextCharFormat.js";
+      QString fileName = ":generator/js/QTextCharFormat.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -10528,7 +10528,7 @@ int a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QTextBlockFormat_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextBlockFormat_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextBlockFormat.js";
+      QString fileName = ":generator/js/QTextBlockFormat.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -15026,7 +15026,7 @@ QTextFormat::PageBreakFlags a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QTextListFormat_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextListFormat_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextListFormat.js";
+      QString fileName = ":generator/js/QTextListFormat.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -18545,7 +18545,7 @@ QString a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QTextImageFormat_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextImageFormat_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextImageFormat.js";
+      QString fileName = ":generator/js/QTextImageFormat.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -23183,7 +23183,7 @@ int a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QTextFrameFormat_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextFrameFormat_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextFrameFormat.js";
+      QString fileName = ":generator/js/QTextFrameFormat.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -27873,7 +27873,7 @@ QTextFormat::PageBreakFlags a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QTextTableFormat_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextTableFormat_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextTableFormat.js";
+      QString fileName = ":generator/js/QTextTableFormat.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -30656,7 +30656,7 @@ bool a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QTextTableCellFormat_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextTableCellFormat_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextTableCellFormat.js";
+      QString fileName = ":generator/js/QTextTableCellFormat.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

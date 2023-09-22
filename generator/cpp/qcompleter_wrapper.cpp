@@ -142,7 +142,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QCompleter_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QCompleter.js";
+      QString fileName = ":generator/js/QCompleter.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -237,12 +237,14 @@ int a3_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

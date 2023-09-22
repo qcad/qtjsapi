@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QLine_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QLine_BaseJs", mob);
       
-      QString fileName = ":generated/js/QLine.js";
+      QString fileName = ":generator/js/QLine.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1621,7 +1621,7 @@ qreal a2_cpp;
         engine->globalObject().setProperty("QLineF_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QLineF.js";
+      QString fileName = ":generator/js/QLineF.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

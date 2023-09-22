@@ -218,7 +218,7 @@ QSize a2_cpp;
         engine->globalObject().setProperty("QGridLayout_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QGridLayout.js";
+      QString fileName = ":generator/js/QGridLayout.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -313,12 +313,14 @@ QSize a2_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

@@ -83,7 +83,7 @@
         engine->globalObject().setProperty("QProcessEnvironment_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QProcessEnvironment.js";
+      QString fileName = ":generator/js/QProcessEnvironment.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1251,7 +1251,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QProcess_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QProcess.js";
+      QString fileName = ":generator/js/QProcess.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1416,12 +1416,14 @@ int a3_cpp;
     SLOT(readyReadStandardErrorEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

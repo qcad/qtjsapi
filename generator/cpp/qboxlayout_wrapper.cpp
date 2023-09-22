@@ -218,7 +218,7 @@ QSize a2_cpp;
         engine->globalObject().setProperty("QBoxLayout_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QBoxLayout.js";
+      QString fileName = ":generator/js/QBoxLayout.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -313,12 +313,14 @@ QSize a2_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -6288,7 +6290,7 @@ QSize a2_cpp;
         engine->globalObject().setProperty("QHBoxLayout_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QHBoxLayout.js";
+      QString fileName = ":generator/js/QHBoxLayout.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -6383,12 +6385,14 @@ QSize a2_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -12369,7 +12373,7 @@ QSize a2_cpp;
         engine->globalObject().setProperty("QVBoxLayout_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QVBoxLayout.js";
+      QString fileName = ":generator/js/QVBoxLayout.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -12464,12 +12468,14 @@ QSize a2_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

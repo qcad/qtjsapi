@@ -156,7 +156,7 @@
 #include "generator/cpp/qgraphicseffect_wrapper.h"
 
 RJSApi::RJSApi(QJSEngine* engine) : engine(engine) {
-
+    init();
 }
 
 
@@ -204,7 +204,7 @@ RJSApi::~RJSApi() {
     qDebug() << "collect garbage: DONE";
 
     qDebug() << "delete engine:" << (unsigned long long int)engine << "...";
-    delete engine;
+    //delete engine;
     qDebug() << "delete engine:" << (unsigned long long int)engine << " DONE";
 }
 
@@ -219,7 +219,7 @@ void RJSApi::init() {
     qDebug() << "RJSApi::RJSApi";
 
     // TODO: use QQmlApplicationEngine to allow mixing QML / JS:
-    engine = new QJSEngine();
+    //engine = new QJSEngine();
     engine->setObjectName(QString("E%1").arg(counter++));
     qDebug() << "script engine:" << engine->objectName();
 

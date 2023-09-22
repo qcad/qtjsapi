@@ -138,7 +138,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QButtonGroup_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QButtonGroup.js";
+      QString fileName = ":generator/js/QButtonGroup.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -289,12 +289,14 @@ int a3_cpp;
     SLOT(idToggledEmitter(int, bool))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

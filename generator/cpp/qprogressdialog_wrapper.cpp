@@ -307,7 +307,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QProgressDialog_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QProgressDialog.js";
+      QString fileName = ":generator/js/QProgressDialog.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -437,12 +437,14 @@ int a3_cpp;
     SLOT(canceledEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

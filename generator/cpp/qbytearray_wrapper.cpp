@@ -487,7 +487,7 @@ char a2_cpp;
         engine->globalObject().setProperty("QByteArray_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QByteArray.js";
+      QString fileName = ":generator/js/QByteArray.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

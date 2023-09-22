@@ -315,7 +315,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QTabWidget_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QTabWidget.js";
+      QString fileName = ":generator/js/QTabWidget.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -445,12 +445,14 @@ int a3_cpp;
     SLOT(tabBarDoubleClickedEmitter(int))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

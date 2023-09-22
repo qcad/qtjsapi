@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QLayoutItem_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QLayoutItem_BaseJs", mob);
       
-      QString fileName = ":generated/js/QLayoutItem.js";
+      QString fileName = ":generator/js/QLayoutItem.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1161,7 +1161,7 @@ Qt::Alignment a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QSpacerItem_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QSpacerItem_BaseJs", mob);
       
-      QString fileName = ":generated/js/QSpacerItem.js";
+      QString fileName = ":generator/js/QSpacerItem.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2596,7 +2596,7 @@ QRect a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QWidgetItem_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QWidgetItem_BaseJs", mob);
       
-      QString fileName = ":generated/js/QWidgetItem.js";
+      QString fileName = ":generator/js/QWidgetItem.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

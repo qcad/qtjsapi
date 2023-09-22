@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QPainterPath_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPainterPath_BaseJs", mob);
       
-      QString fileName = ":generated/js/QPainterPath.js";
+      QString fileName = ":generator/js/QPainterPath.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -4361,7 +4361,7 @@ QPainterPath a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QPainterPathStroker_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPainterPathStroker_BaseJs", mob);
       
-      QString fileName = ":generated/js/QPainterPathStroker.js";
+      QString fileName = ":generator/js/QPainterPathStroker.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

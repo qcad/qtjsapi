@@ -106,7 +106,7 @@ QStringConverter::Encoding a1_cpp;
         engine->globalObject().setProperty("QStringConverter_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QStringConverter.js";
+      QString fileName = ":generator/js/QStringConverter.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -531,7 +531,7 @@ QStringConverter::Encoding a1_cpp;
         engine->globalObject().setProperty("QStringEncoder_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QStringEncoder.js";
+      QString fileName = ":generator/js/QStringEncoder.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1240,7 +1240,7 @@ QStringConverter::Encoding a1_cpp;
         engine->globalObject().setProperty("QStringDecoder_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QStringDecoder.js";
+      QString fileName = ":generator/js/QStringDecoder.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

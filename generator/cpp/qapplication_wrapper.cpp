@@ -4754,7 +4754,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QApplication_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QApplication.js";
+      QString fileName = ":generator/js/QApplication.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -4961,12 +4961,14 @@ int a1_cpp;
     SLOT(focusChangedEmitter(QWidget*, QWidget*))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

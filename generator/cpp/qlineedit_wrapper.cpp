@@ -347,7 +347,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QLineEdit_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QLineEdit.js";
+      QString fileName = ":generator/js/QLineEdit.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -498,12 +498,14 @@ int a3_cpp;
     SLOT(inputRejectedEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

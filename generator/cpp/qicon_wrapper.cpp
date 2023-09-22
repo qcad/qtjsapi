@@ -630,7 +630,7 @@ QString a1_cpp;
         engine->globalObject().setProperty("QIcon_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QIcon.js";
+      QString fileName = ":generator/js/QIcon.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

@@ -315,7 +315,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QMdiSubWindow_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QMdiSubWindow.js";
+      QString fileName = ":generator/js/QMdiSubWindow.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -431,12 +431,14 @@ int a3_cpp;
     SLOT(aboutToActivateEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

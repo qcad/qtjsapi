@@ -100,7 +100,7 @@ int a1_cpp;
         engine->globalObject().setProperty("QKeyCombination_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QKeyCombination.js";
+      QString fileName = ":generator/js/QKeyCombination.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -533,7 +533,7 @@ Qt::Key a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&Qt_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("Qt_BaseJs", mob);
       
-      QString fileName = ":generated/js/Qt.js";
+      QString fileName = ":generator/js/Qt.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

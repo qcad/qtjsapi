@@ -32,7 +32,7 @@
         //QJSValue mob = engine->newQMetaObject(&QTextCursor_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextCursor_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextCursor.js";
+      QString fileName = ":generator/js/QTextCursor.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

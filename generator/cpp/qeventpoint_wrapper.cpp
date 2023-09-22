@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QEventPoint_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QEventPoint_BaseJs", mob);
       
-      QString fileName = ":generated/js/QEventPoint.js";
+      QString fileName = ":generator/js/QEventPoint.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

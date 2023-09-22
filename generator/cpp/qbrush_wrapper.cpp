@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QBrush_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QBrush_BaseJs", mob);
       
-      QString fileName = ":generated/js/QBrush.js";
+      QString fileName = ":generator/js/QBrush.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1499,7 +1499,7 @@ Qt::GlobalColor a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QGradient_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QGradient_BaseJs", mob);
       
-      QString fileName = ":generated/js/QGradient.js";
+      QString fileName = ":generator/js/QGradient.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2223,7 +2223,7 @@ QGradient::InterpolationMode a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QLinearGradient_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QLinearGradient_BaseJs", mob);
       
-      QString fileName = ":generated/js/QLinearGradient.js";
+      QString fileName = ":generator/js/QLinearGradient.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -3382,7 +3382,7 @@ QPointF a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QRadialGradient_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QRadialGradient_BaseJs", mob);
       
-      QString fileName = ":generated/js/QRadialGradient.js";
+      QString fileName = ":generator/js/QRadialGradient.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -5192,7 +5192,7 @@ qreal a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QConicalGradient_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QConicalGradient_BaseJs", mob);
       
-      QString fileName = ":generated/js/QConicalGradient.js";
+      QString fileName = ":generator/js/QConicalGradient.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

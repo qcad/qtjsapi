@@ -36,7 +36,7 @@
         //QJSValue mob = engine->newQMetaObject(&QPainter_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPainter_BaseJs", mob);
       
-      QString fileName = ":generated/js/QPainter.js";
+      QString fileName = ":generator/js/QPainter.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

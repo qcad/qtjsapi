@@ -322,7 +322,7 @@ QString a3_cpp;
         engine->globalObject().setProperty("QSettings_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QSettings.js";
+      QString fileName = ":generator/js/QSettings.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -417,12 +417,14 @@ QString a3_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

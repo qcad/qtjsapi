@@ -307,7 +307,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QTextBrowser_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QTextBrowser.js";
+      QString fileName = ":generator/js/QTextBrowser.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -500,12 +500,14 @@ int a3_cpp;
     SLOT(anchorClickedEmitter(const QUrl&))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

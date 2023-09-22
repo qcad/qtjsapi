@@ -36,7 +36,7 @@
         //QJSValue mob = engine->newQMetaObject(&QEasingCurve_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QEasingCurve_BaseJs", mob);
       
-      QString fileName = ":generated/js/QEasingCurve.js";
+      QString fileName = ":generator/js/QEasingCurve.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

@@ -333,7 +333,7 @@ QString a2_cpp;
         engine->globalObject().setProperty("QFile_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QFile.js";
+      QString fileName = ":generator/js/QFile.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QPen_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPen_BaseJs", mob);
       
-      QString fileName = ":generated/js/QPen.js";
+      QString fileName = ":generator/js/QPen.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

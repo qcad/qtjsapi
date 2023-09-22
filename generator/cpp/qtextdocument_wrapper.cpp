@@ -170,7 +170,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QTextDocument_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QTextDocument.js";
+      QString fileName = ":generator/js/QTextDocument.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -335,12 +335,14 @@ int a3_cpp;
     SLOT(documentLayoutChangedEmitter())
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

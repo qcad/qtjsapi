@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QRect_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QRect_BaseJs", mob);
       
-      QString fileName = ":generated/js/QRect.js";
+      QString fileName = ":generator/js/QRect.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -4458,7 +4458,7 @@ QMargins a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QRectF_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QRectF_BaseJs", mob);
       
-      QString fileName = ":generated/js/QRectF.js";
+      QString fileName = ":generator/js/QRectF.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

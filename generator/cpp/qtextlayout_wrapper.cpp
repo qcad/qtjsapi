@@ -36,7 +36,7 @@
         //QJSValue mob = engine->newQMetaObject(&QTextLayout_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTextLayout_BaseJs", mob);
       
-      QString fileName = ":generated/js/QTextLayout.js";
+      QString fileName = ":generator/js/QTextLayout.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

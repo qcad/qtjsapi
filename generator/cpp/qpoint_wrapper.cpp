@@ -116,7 +116,7 @@ QPoint a2_cpp;
         engine->globalObject().setProperty("QPoint_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QPoint.js";
+      QString fileName = ":generator/js/QPoint.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1294,7 +1294,7 @@ QPointF a2_cpp;
         engine->globalObject().setProperty("QPointF_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QPointF.js";
+      QString fileName = ":generator/js/QPointF.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

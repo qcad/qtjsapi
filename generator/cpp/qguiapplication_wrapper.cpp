@@ -3279,7 +3279,7 @@ bool a1_cpp;
         engine->globalObject().setProperty("QGuiApplication_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QGuiApplication.js";
+      QString fileName = ":generator/js/QGuiApplication.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -3479,12 +3479,14 @@ bool a1_cpp;
     SLOT(fontChangedEmitter(const QFont&))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

@@ -100,7 +100,7 @@ QString a1_cpp;
         engine->globalObject().setProperty("QPageRanges_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QPageRanges.js";
+      QString fileName = ":generator/js/QPageRanges.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

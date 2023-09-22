@@ -28,6 +28,8 @@ qt_add_library(rjsapi SHARED
     generator/RJSType.h
     RJSWrapperObj.h
     RJSApi.h RJSApi.cpp
+    RJSTypeEnum.h RJSTypeEnum.cpp
+    RJSTypeEnumExample.h RJSTypeEnumExample.cpp
     ${SOURCES}
 )
 

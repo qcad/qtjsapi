@@ -347,7 +347,7 @@ QPoint a1_cpp;
         engine->globalObject().setProperty("QCursor_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QCursor.js";
+      QString fileName = ":generator/js/QCursor.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

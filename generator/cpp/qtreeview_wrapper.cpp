@@ -361,7 +361,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QTreeView_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QTreeView.js";
+      QString fileName = ":generator/js/QTreeView.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -484,12 +484,14 @@ int a3_cpp;
     SLOT(collapsedEmitter(const QModelIndex&))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

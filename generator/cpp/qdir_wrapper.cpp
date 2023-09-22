@@ -1310,7 +1310,7 @@ QString a1_cpp;
         engine->globalObject().setProperty("QDir_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QDir.js";
+      QString fileName = ":generator/js/QDir.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

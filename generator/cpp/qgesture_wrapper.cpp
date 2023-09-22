@@ -138,7 +138,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QGesture_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QGesture.js";
+      QString fileName = ":generator/js/QGesture.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -233,12 +233,14 @@ int a3_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -2037,7 +2039,7 @@ QGesture::GestureCancelPolicy a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QPanGesture_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPanGesture_BaseJs", mob);
       
-      QString fileName = ":generated/js/QPanGesture.js";
+      QString fileName = ":generator/js/QPanGesture.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -3242,7 +3244,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QPinchGesture_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QPinchGesture.js";
+      QString fileName = ":generator/js/QPinchGesture.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -3337,12 +3339,14 @@ int a3_cpp;
               
             // set up signal forwarding:
             
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }
@@ -6472,7 +6476,7 @@ qreal a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QSwipeGesture_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QSwipeGesture_BaseJs", mob);
       
-      QString fileName = ":generated/js/QSwipeGesture.js";
+      QString fileName = ":generator/js/QSwipeGesture.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

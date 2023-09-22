@@ -138,7 +138,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QScreen_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QScreen.js";
+      QString fileName = ":generator/js/QScreen.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -296,12 +296,14 @@ int a3_cpp;
     SLOT(refreshRateChangedEmitter(qreal))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

@@ -358,7 +358,7 @@ qint64 a1_cpp;
         engine->globalObject().setProperty("QDate_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QDate.js";
+      QString fileName = ":generator/js/QDate.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2450,7 +2450,7 @@ QTime a2_cpp;
         engine->globalObject().setProperty("QTime_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QTime.js";
+      QString fileName = ":generator/js/QTime.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -4583,7 +4583,7 @@ QDateTime a2_cpp;
         engine->globalObject().setProperty("QDateTime_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QDateTime.js";
+      QString fileName = ":generator/js/QDateTime.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

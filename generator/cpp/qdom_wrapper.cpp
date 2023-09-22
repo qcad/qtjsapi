@@ -138,7 +138,7 @@ QDomImplementation::InvalidDataPolicy a1_cpp;
         engine->globalObject().setProperty("QDomImplementation_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QDomImplementation.js";
+      QString fileName = ":generator/js/QDomImplementation.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -924,7 +924,7 @@ QDomDocumentType a3_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomNode_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomNode_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomNode.js";
+      QString fileName = ":generator/js/QDomNode.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -5210,7 +5210,7 @@ QString a2_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomNodeList_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomNodeList_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomNodeList.js";
+      QString fileName = ":generator/js/QDomNodeList.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -6039,7 +6039,7 @@ int a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomDocumentType_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomDocumentType_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomDocumentType.js";
+      QString fileName = ":generator/js/QDomDocumentType.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -10667,7 +10667,7 @@ QDomDocumentType a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomDocument_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomDocument_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomDocument.js";
+      QString fileName = ":generator/js/QDomDocument.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -16643,7 +16643,7 @@ int a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomNamedNodeMap_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomNamedNodeMap_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomNamedNodeMap.js";
+      QString fileName = ":generator/js/QDomNamedNodeMap.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -17932,7 +17932,7 @@ QString a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomDocumentFragment_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomDocumentFragment_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomDocumentFragment.js";
+      QString fileName = ":generator/js/QDomDocumentFragment.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -22218,7 +22218,7 @@ QDomDocumentFragment a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomCharacterData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomCharacterData_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomCharacterData.js";
+      QString fileName = ":generator/js/QDomCharacterData.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -27070,7 +27070,7 @@ QString a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomAttr_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomAttr_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomAttr.js";
+      QString fileName = ":generator/js/QDomAttr.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -31648,7 +31648,7 @@ QString a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomElement_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomElement_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomElement.js";
+      QString fileName = ":generator/js/QDomElement.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -37919,7 +37919,7 @@ QString a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomText_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomText_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomText.js";
+      QString fileName = ":generator/js/QDomText.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -42843,7 +42843,7 @@ int a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomComment_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomComment_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomComment.js";
+      QString fileName = ":generator/js/QDomComment.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -43771,7 +43771,7 @@ QDomComment a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomCDATASection_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomCDATASection_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomCDATASection.js";
+      QString fileName = ":generator/js/QDomCDATASection.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -44205,7 +44205,7 @@ QDomCDATASection a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomNotation_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomNotation_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomNotation.js";
+      QString fileName = ":generator/js/QDomNotation.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -48605,7 +48605,7 @@ QDomNotation a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomEntity_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomEntity_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomEntity.js";
+      QString fileName = ":generator/js/QDomEntity.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -53062,7 +53062,7 @@ QDomEntity a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomEntityReference_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomEntityReference_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomEntityReference.js";
+      QString fileName = ":generator/js/QDomEntityReference.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -57348,7 +57348,7 @@ QDomEntityReference a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QDomProcessingInstruction_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDomProcessingInstruction_BaseJs", mob);
       
-      QString fileName = ":generated/js/QDomProcessingInstruction.js";
+      QString fileName = ":generator/js/QDomProcessingInstruction.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

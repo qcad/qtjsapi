@@ -250,7 +250,7 @@ QString a1_cpp;
         engine->globalObject().setProperty("QRegularExpression_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QRegularExpression.js";
+      QString fileName = ":generator/js/QRegularExpression.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1365,7 +1365,7 @@ QRegularExpression::MatchOptions a4_cpp;
         //QJSValue mob = engine->newQMetaObject(&QRegularExpressionMatch_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QRegularExpressionMatch_BaseJs", mob);
       
-      QString fileName = ":generated/js/QRegularExpressionMatch.js";
+      QString fileName = ":generator/js/QRegularExpressionMatch.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

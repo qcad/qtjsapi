@@ -315,7 +315,7 @@ int a3_cpp;
         engine->globalObject().setProperty("QListView_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QListView.js";
+      QString fileName = ":generator/js/QListView.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -424,12 +424,14 @@ int a3_cpp;
     SLOT(doubleClickedEmitter(const QModelIndex&))
   );
 
+              /*
               connect(
                 getWrapped(),
                 SIGNAL(destroyed(QObject*)),
                 &handler,
                 SLOT(slotDestroyed(QObject*))
               );
+              */
             
           }
         }

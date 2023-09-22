@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QXmlAttributes_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlAttributes_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlAttributes.js";
+      QString fileName = ":generator/js/QXmlAttributes.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1344,7 +1344,7 @@ QString a4_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlInputSource_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlInputSource_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlInputSource.js";
+      QString fileName = ":generator/js/QXmlInputSource.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1887,7 +1887,7 @@ QByteArray a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlParseException_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlParseException_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlParseException.js";
+      QString fileName = ":generator/js/QXmlParseException.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -2509,7 +2509,7 @@ QString a5_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlReader_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlReader_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlReader.js";
+      QString fileName = ":generator/js/QXmlReader.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -3816,7 +3816,7 @@ QString a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlSimpleReader_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlSimpleReader_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlSimpleReader.js";
+      QString fileName = ":generator/js/QXmlSimpleReader.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -5297,7 +5297,7 @@ bool a2_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlLocator_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlLocator_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlLocator.js";
+      QString fileName = ":generator/js/QXmlLocator.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -5535,7 +5535,7 @@ bool a2_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlContentHandler_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlContentHandler_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlContentHandler.js";
+      QString fileName = ":generator/js/QXmlContentHandler.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -6554,7 +6554,7 @@ QString a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlErrorHandler_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlErrorHandler_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlErrorHandler.js";
+      QString fileName = ":generator/js/QXmlErrorHandler.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -6959,7 +6959,7 @@ QString a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlDTDHandler_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlDTDHandler_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlDTDHandler.js";
+      QString fileName = ":generator/js/QXmlDTDHandler.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -7343,7 +7343,7 @@ QString a4_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlEntityResolver_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlEntityResolver_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlEntityResolver.js";
+      QString fileName = ":generator/js/QXmlEntityResolver.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -7523,7 +7523,7 @@ QString a4_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlLexicalHandler_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlLexicalHandler_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlLexicalHandler.js";
+      QString fileName = ":generator/js/QXmlLexicalHandler.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -8180,7 +8180,7 @@ QString a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlDeclHandler_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlDeclHandler_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlDeclHandler.js";
+      QString fileName = ":generator/js/QXmlDeclHandler.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -8660,7 +8660,7 @@ QString a3_cpp;
         //QJSValue mob = engine->newQMetaObject(&QXmlDefaultHandler_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QXmlDefaultHandler_BaseJs", mob);
       
-      QString fileName = ":generated/js/QXmlDefaultHandler.js";
+      QString fileName = ":generator/js/QXmlDefaultHandler.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

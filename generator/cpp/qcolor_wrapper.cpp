@@ -1038,7 +1038,7 @@ QString a1_cpp;
         engine->globalObject().setProperty("QColor_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QColor.js";
+      QString fileName = ":generator/js/QColor.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

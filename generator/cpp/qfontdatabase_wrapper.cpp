@@ -1789,7 +1789,7 @@ QFontDatabase::SystemFont a1_cpp;
         engine->globalObject().setProperty("QFontDatabase_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generated/js/QFontDatabase.js";
+      QString fileName = ":generator/js/QFontDatabase.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

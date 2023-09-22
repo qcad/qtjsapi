@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QFileIconProvider_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QFileIconProvider_BaseJs", mob);
       
-      QString fileName = ":generated/js/QFileIconProvider.js";
+      QString fileName = ":generator/js/QFileIconProvider.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

@@ -28,7 +28,7 @@
         //QJSValue mob = engine->newQMetaObject(&QPolygon_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPolygon_BaseJs", mob);
       
-      QString fileName = ":generated/js/QPolygon.js";
+      QString fileName = ":generator/js/QPolygon.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -1260,7 +1260,7 @@ QPolygon a1_cpp;
         //QJSValue mob = engine->newQMetaObject(&QPolygonF_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPolygonF_BaseJs", mob);
       
-      QString fileName = ":generated/js/QPolygonF.js";
+      QString fileName = ":generator/js/QPolygonF.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;

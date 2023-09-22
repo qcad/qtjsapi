@@ -52,7 +52,7 @@
         //QJSValue mob = engine->newQMetaObject(&QVariant_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QVariant_BaseJs", mob);
       
-      QString fileName = ":generated/js/QVariant.js";
+      QString fileName = ":generator/js/QVariant.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
