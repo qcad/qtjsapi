@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSettings.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSettings.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -239,23 +235,19 @@
           return "QSettings [JS]";
         };
       QSettings.getObjectType = function() {
-        
-            return RJSType_QSettings.getIdStatic();
-          
+        return RJSType_QSettings.getIdStatic();
       };
 
       QSettings.prototype.getObjectType = function() {
-        
-            return RJSType_QSettings.getIdStatic();
-          
+        return RJSType_QSettings.getIdStatic();
       };
 
       QSettings.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSettings.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSettings.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

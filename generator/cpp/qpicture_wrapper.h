@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QPICTURE_H_WRAPPER
-  #define QPICTURE_H_WRAPPER
+    #ifndef QPICTURE_H_WRAPPER
+    #define QPICTURE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPicture>
       
       // singleton class wrapper for static functions:
@@ -96,11 +96,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPicture::getIdStatic()) {
-                return (QPicture*)vp;
-              }
-              
+          if (t==RJSType_QPicture::getIdStatic()) {
+            return (QPicture*)vp;
+          }
 
           return nullptr;
           
@@ -749,9 +747,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPicture::getIdStatic();
-            
+          return RJSType_QPicture::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

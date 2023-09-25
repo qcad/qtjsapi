@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QTABLEWIDGET_H_WRAPPER
-  #define QTABLEWIDGET_H_WRAPPER
+    #ifndef QTABLEWIDGET_H_WRAPPER
+    #define QTABLEWIDGET_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QTableWidget>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTableWidgetItem>
       
     // static functions implementation in singleton wrapper:
@@ -45,11 +45,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTableWidgetItem::getIdStatic()) {
-                return (QTableWidgetItem*)vp;
-              }
-              
+          if (t==RJSType_QTableWidgetItem::getIdStatic()) {
+            return (QTableWidgetItem*)vp;
+          }
 
           return nullptr;
           
@@ -947,9 +945,7 @@ UserType = QTableWidgetItem::UserType,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTableWidgetItem::getIdStatic();
-            
+          return RJSType_QTableWidgetItem::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1034,9 +1030,9 @@ UserType = QTableWidgetItem::UserType,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTableWidget>
       
       // singleton class wrapper for static functions:
@@ -1684,11 +1680,9 @@ UserType = QTableWidgetItem::UserType,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTableWidget::getIdStatic()) {
-                return (QTableWidget*)vp;
-              }
-              
+          if (t==RJSType_QTableWidget::getIdStatic()) {
+            return (QTableWidget*)vp;
+          }
 
           return nullptr;
           
@@ -11069,9 +11063,7 @@ InternalMove = QTableWidget::InternalMove,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTableWidget::getIdStatic();
-            
+          return RJSType_QTableWidget::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

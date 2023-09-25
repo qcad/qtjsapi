@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QListView.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QListView.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -118,23 +114,19 @@
           return "QListView [JS]";
         };
       QListView.getObjectType = function() {
-        
-            return RJSType_QListView.getIdStatic();
-          
+        return RJSType_QListView.getIdStatic();
       };
 
       QListView.prototype.getObjectType = function() {
-        
-            return RJSType_QListView.getIdStatic();
-          
+        return RJSType_QListView.getIdStatic();
       };
 
       QListView.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QListView.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QListView.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

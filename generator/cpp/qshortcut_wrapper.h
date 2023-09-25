@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QSHORTCUT_H_WRAPPER
-  #define QSHORTCUT_H_WRAPPER
+    #ifndef QSHORTCUT_H_WRAPPER
+    #define QSHORTCUT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QWindow>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QShortcut>
       
       // wrapped object is QShortcut_Base class if new object is created: 
@@ -159,11 +159,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QShortcut::getIdStatic()) {
-                return (QShortcut*)vp;
-              }
-              
+          if (t==RJSType_QShortcut::getIdStatic()) {
+            return (QShortcut*)vp;
+          }
 
           return nullptr;
           
@@ -1066,9 +1064,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QShortcut::getIdStatic();
-            
+          return RJSType_QShortcut::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

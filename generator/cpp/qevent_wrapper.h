@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QEVENT_H_WRAPPER
-  #define QEVENT_H_WRAPPER
+    #ifndef QEVENT_H_WRAPPER
+    #define QEVENT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QAction>
       
@@ -21,9 +21,9 @@
         #include <QMimeData>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QInputEvent>
       
       // singleton class wrapper for static functions:
@@ -128,11 +128,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QInputEvent::getIdStatic()) {
-                return (QInputEvent*)vp;
-              }
-              
+          if (t==RJSType_QInputEvent::getIdStatic()) {
+            return (QInputEvent*)vp;
+          }
 
           return nullptr;
           
@@ -686,9 +684,7 @@ MaxUser = QInputEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QInputEvent::getIdStatic();
-            
+          return RJSType_QInputEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -773,9 +769,9 @@ MaxUser = QInputEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPointerEvent>
       
       // singleton class wrapper for static functions:
@@ -872,11 +868,9 @@ MaxUser = QInputEvent::MaxUser,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPointerEvent::getIdStatic()) {
-                return (QPointerEvent*)vp;
-              }
-              
+          if (t==RJSType_QPointerEvent::getIdStatic()) {
+            return (QPointerEvent*)vp;
+          }
 
           return nullptr;
           
@@ -1731,9 +1725,7 @@ MaxUser = QPointerEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPointerEvent::getIdStatic();
-            
+          return RJSType_QPointerEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1818,9 +1810,9 @@ MaxUser = QPointerEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSinglePointEvent>
       
       // singleton class wrapper for static functions:
@@ -1913,11 +1905,9 @@ MaxUser = QPointerEvent::MaxUser,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QSinglePointEvent::getIdStatic()) {
-                return (QSinglePointEvent*)vp;
-              }
-              
+          if (t==RJSType_QSinglePointEvent::getIdStatic()) {
+            return (QSinglePointEvent*)vp;
+          }
 
           return nullptr;
           
@@ -2856,9 +2846,7 @@ MaxUser = QSinglePointEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QSinglePointEvent::getIdStatic();
-            
+          return RJSType_QSinglePointEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2943,9 +2931,9 @@ MaxUser = QSinglePointEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QMouseEvent>
       
       // singleton class wrapper for static functions:
@@ -3034,11 +3022,9 @@ MaxUser = QSinglePointEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QMouseEvent::getIdStatic()) {
-                return (QMouseEvent*)vp;
-              }
-              
+          if (t==RJSType_QMouseEvent::getIdStatic()) {
+            return (QMouseEvent*)vp;
+          }
 
           return nullptr;
           
@@ -4168,9 +4154,7 @@ MaxUser = QMouseEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QMouseEvent::getIdStatic();
-            
+          return RJSType_QMouseEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -4255,9 +4239,9 @@ MaxUser = QMouseEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QWheelEvent>
       
       // singleton class wrapper for static functions:
@@ -4366,11 +4350,9 @@ MaxUser = QMouseEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QWheelEvent::getIdStatic()) {
-                return (QWheelEvent*)vp;
-              }
-              
+          if (t==RJSType_QWheelEvent::getIdStatic()) {
+            return (QWheelEvent*)vp;
+          }
 
           return nullptr;
           
@@ -5580,9 +5562,7 @@ MaxUser = QWheelEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QWheelEvent::getIdStatic();
-            
+          return RJSType_QWheelEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -5667,9 +5647,9 @@ MaxUser = QWheelEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QKeyEvent>
       
       // singleton class wrapper for static functions:
@@ -5758,11 +5738,9 @@ MaxUser = QWheelEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QKeyEvent::getIdStatic()) {
-                return (QKeyEvent*)vp;
-              }
-              
+          if (t==RJSType_QKeyEvent::getIdStatic()) {
+            return (QKeyEvent*)vp;
+          }
 
           return nullptr;
           
@@ -6543,9 +6521,7 @@ MaxUser = QKeyEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QKeyEvent::getIdStatic();
-            
+          return RJSType_QKeyEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -6630,9 +6606,9 @@ MaxUser = QKeyEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPaintEvent>
       
       // singleton class wrapper for static functions:
@@ -6717,11 +6693,9 @@ MaxUser = QKeyEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPaintEvent::getIdStatic()) {
-                return (QPaintEvent*)vp;
-              }
-              
+          if (t==RJSType_QPaintEvent::getIdStatic()) {
+            return (QPaintEvent*)vp;
+          }
 
           return nullptr;
           
@@ -7256,9 +7230,7 @@ MaxUser = QPaintEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPaintEvent::getIdStatic();
-            
+          return RJSType_QPaintEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -7343,9 +7315,9 @@ MaxUser = QPaintEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QResizeEvent>
       
       // singleton class wrapper for static functions:
@@ -7430,11 +7402,9 @@ MaxUser = QPaintEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QResizeEvent::getIdStatic()) {
-                return (QResizeEvent*)vp;
-              }
-              
+          if (t==RJSType_QResizeEvent::getIdStatic()) {
+            return (QResizeEvent*)vp;
+          }
 
           return nullptr;
           
@@ -7973,9 +7943,7 @@ MaxUser = QResizeEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QResizeEvent::getIdStatic();
-            
+          return RJSType_QResizeEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -8060,9 +8028,9 @@ MaxUser = QResizeEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDragEnterEvent>
       
       // singleton class wrapper for static functions:
@@ -8147,11 +8115,9 @@ MaxUser = QResizeEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDragEnterEvent::getIdStatic()) {
-                return (QDragEnterEvent*)vp;
-              }
-              
+          if (t==RJSType_QDragEnterEvent::getIdStatic()) {
+            return (QDragEnterEvent*)vp;
+          }
 
           return nullptr;
           
@@ -8836,9 +8802,7 @@ MaxUser = QDragEnterEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDragEnterEvent::getIdStatic();
-            
+          return RJSType_QDragEnterEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -8923,9 +8887,9 @@ MaxUser = QDragEnterEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDropEvent>
       
       // singleton class wrapper for static functions:
@@ -9018,11 +8982,9 @@ MaxUser = QDragEnterEvent::MaxUser,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDropEvent::getIdStatic()) {
-                return (QDropEvent*)vp;
-              }
-              
+          if (t==RJSType_QDropEvent::getIdStatic()) {
+            return (QDropEvent*)vp;
+          }
 
           return nullptr;
           
@@ -9682,9 +9644,7 @@ MaxUser = QDropEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDropEvent::getIdStatic();
-            
+          return RJSType_QDropEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -9769,9 +9729,9 @@ MaxUser = QDropEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QContextMenuEvent>
       
       // singleton class wrapper for static functions:
@@ -9856,11 +9816,9 @@ MaxUser = QDropEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QContextMenuEvent::getIdStatic()) {
-                return (QContextMenuEvent*)vp;
-              }
-              
+          if (t==RJSType_QContextMenuEvent::getIdStatic()) {
+            return (QContextMenuEvent*)vp;
+          }
 
           return nullptr;
           
@@ -10608,9 +10566,7 @@ Other = QContextMenuEvent::Other,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QContextMenuEvent::getIdStatic();
-            
+          return RJSType_QContextMenuEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -10695,9 +10651,9 @@ Other = QContextMenuEvent::Other,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDragMoveEvent>
       
       // singleton class wrapper for static functions:
@@ -10786,11 +10742,9 @@ Other = QContextMenuEvent::Other,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDragMoveEvent::getIdStatic()) {
-                return (QDragMoveEvent*)vp;
-              }
-              
+          if (t==RJSType_QDragMoveEvent::getIdStatic()) {
+            return (QDragMoveEvent*)vp;
+          }
 
           return nullptr;
           
@@ -11479,9 +11433,7 @@ MaxUser = QDragMoveEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDragMoveEvent::getIdStatic();
-            
+          return RJSType_QDragMoveEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -11566,9 +11518,9 @@ MaxUser = QDragMoveEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDragLeaveEvent>
       
       // singleton class wrapper for static functions:
@@ -11653,11 +11605,9 @@ MaxUser = QDragMoveEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDragLeaveEvent::getIdStatic()) {
-                return (QDragLeaveEvent*)vp;
-              }
-              
+          if (t==RJSType_QDragLeaveEvent::getIdStatic()) {
+            return (QDragLeaveEvent*)vp;
+          }
 
           return nullptr;
           
@@ -12144,9 +12094,7 @@ MaxUser = QDragLeaveEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDragLeaveEvent::getIdStatic();
-            
+          return RJSType_QDragLeaveEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -12231,9 +12179,9 @@ MaxUser = QDragLeaveEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QHelpEvent>
       
       // singleton class wrapper for static functions:
@@ -12318,11 +12266,9 @@ MaxUser = QDragLeaveEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QHelpEvent::getIdStatic()) {
-                return (QHelpEvent*)vp;
-              }
-              
+          if (t==RJSType_QHelpEvent::getIdStatic()) {
+            return (QHelpEvent*)vp;
+          }
 
           return nullptr;
           
@@ -12938,9 +12884,7 @@ MaxUser = QHelpEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QHelpEvent::getIdStatic();
-            
+          return RJSType_QHelpEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -13025,9 +12969,9 @@ MaxUser = QHelpEvent::MaxUser,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QActionEvent>
       
       // singleton class wrapper for static functions:
@@ -13112,11 +13056,9 @@ MaxUser = QHelpEvent::MaxUser,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QActionEvent::getIdStatic()) {
-                return (QActionEvent*)vp;
-              }
-              
+          if (t==RJSType_QActionEvent::getIdStatic()) {
+            return (QActionEvent*)vp;
+          }
 
           return nullptr;
           
@@ -13655,9 +13597,7 @@ MaxUser = QActionEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QActionEvent::getIdStatic();
-            
+          return RJSType_QActionEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

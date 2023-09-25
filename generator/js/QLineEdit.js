@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QLineEdit.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QLineEdit.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -139,23 +135,19 @@
           return "QLineEdit [JS]";
         };
       QLineEdit.getObjectType = function() {
-        
-            return RJSType_QLineEdit.getIdStatic();
-          
+        return RJSType_QLineEdit.getIdStatic();
       };
 
       QLineEdit.prototype.getObjectType = function() {
-        
-            return RJSType_QLineEdit.getIdStatic();
-          
+        return RJSType_QLineEdit.getIdStatic();
       };
 
       QLineEdit.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QLineEdit.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QLineEdit.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

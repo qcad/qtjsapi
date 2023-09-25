@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QGroupBox.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QGroupBox.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -137,23 +133,19 @@
           return "QGroupBox [JS]";
         };
       QGroupBox.getObjectType = function() {
-        
-            return RJSType_QGroupBox.getIdStatic();
-          
+        return RJSType_QGroupBox.getIdStatic();
       };
 
       QGroupBox.prototype.getObjectType = function() {
-        
-            return RJSType_QGroupBox.getIdStatic();
-          
+        return RJSType_QGroupBox.getIdStatic();
       };
 
       QGroupBox.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QGroupBox.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QGroupBox.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

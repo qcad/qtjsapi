@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QClipboard.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QClipboard.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -76,23 +72,19 @@
           return "QClipboard [JS]";
         };
       QClipboard.getObjectType = function() {
-        
-            return RJSType_QClipboard.getIdStatic();
-          
+        return RJSType_QClipboard.getIdStatic();
       };
 
       QClipboard.prototype.getObjectType = function() {
-        
-            return RJSType_QClipboard.getIdStatic();
-          
+        return RJSType_QClipboard.getIdStatic();
       };
 
       QClipboard.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QClipboard.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QClipboard.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

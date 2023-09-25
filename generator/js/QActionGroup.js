@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QActionGroup.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QActionGroup.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -107,23 +103,19 @@
           return "QActionGroup [JS]";
         };
       QActionGroup.getObjectType = function() {
-        
-            return RJSType_QActionGroup.getIdStatic();
-          
+        return RJSType_QActionGroup.getIdStatic();
       };
 
       QActionGroup.prototype.getObjectType = function() {
-        
-            return RJSType_QActionGroup.getIdStatic();
-          
+        return RJSType_QActionGroup.getIdStatic();
       };
 
       QActionGroup.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QActionGroup.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QActionGroup.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

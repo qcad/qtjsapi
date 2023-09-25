@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPanGesture.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPanGesture.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QPanGesture [JS]";
         };
       QPanGesture.getObjectType = function() {
-        
-            return RJSType_QPanGesture.getIdStatic();
-          
+        return RJSType_QPanGesture.getIdStatic();
       };
 
       QPanGesture.prototype.getObjectType = function() {
-        
-            return RJSType_QPanGesture.getIdStatic();
-          
+        return RJSType_QPanGesture.getIdStatic();
       };
 
       QPanGesture.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPanGesture.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPanGesture.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QGesture.getIdStatic()) {
             return true;
           }

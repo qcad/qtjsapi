@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QBITMAP_H_WRAPPER
-  #define QBITMAP_H_WRAPPER
+    #ifndef QBITMAP_H_WRAPPER
+    #define QBITMAP_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QVariant>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QBitmap>
       
       // singleton class wrapper for static functions:
@@ -233,11 +233,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QBitmap::getIdStatic()) {
-                return (QBitmap*)vp;
-              }
-              
+          if (t==RJSType_QBitmap::getIdStatic()) {
+            return (QBitmap*)vp;
+          }
 
           return nullptr;
           
@@ -1404,9 +1402,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QBitmap::getIdStatic();
-            
+          return RJSType_QBitmap::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

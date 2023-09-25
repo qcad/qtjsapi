@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QABSTRACTITEMMODEL_H_WRAPPER
-  #define QABSTRACTITEMMODEL_H_WRAPPER
+    #ifndef QABSTRACTITEMMODEL_H_WRAPPER
+    #define QABSTRACTITEMMODEL_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QAbstractItemModel>
       
@@ -19,9 +19,9 @@
         #include <QMap>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QModelIndex>
       
     // static functions implementation in singleton wrapper:
@@ -49,11 +49,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QModelIndex::getIdStatic()) {
-                return (QModelIndex*)vp;
-              }
-              
+          if (t==RJSType_QModelIndex::getIdStatic()) {
+            return (QModelIndex*)vp;
+          }
 
           return nullptr;
           
@@ -330,9 +328,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QModelIndex::getIdStatic();
-            
+          return RJSType_QModelIndex::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -417,9 +413,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QAbstractItemModel>
       
       // singleton class wrapper for static functions:
@@ -538,11 +534,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QAbstractItemModel::getIdStatic()) {
-                return (QAbstractItemModel*)vp;
-              }
-              
+          if (t==RJSType_QAbstractItemModel::getIdStatic()) {
+            return (QAbstractItemModel*)vp;
+          }
 
           return nullptr;
           
@@ -2037,9 +2031,7 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QAbstractItemModel::getIdStatic();
-            
+          return RJSType_QAbstractItemModel::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2124,9 +2116,9 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QAbstractTableModel>
       
       // singleton class wrapper for static functions:
@@ -2225,11 +2217,9 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QAbstractTableModel::getIdStatic()) {
-                return (QAbstractTableModel*)vp;
-              }
-              
+          if (t==RJSType_QAbstractTableModel::getIdStatic()) {
+            return (QAbstractTableModel*)vp;
+          }
 
           return nullptr;
           
@@ -3699,9 +3689,7 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QAbstractTableModel::getIdStatic();
-            
+          return RJSType_QAbstractTableModel::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -3786,9 +3774,9 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QAbstractListModel>
       
       // singleton class wrapper for static functions:
@@ -3887,11 +3875,9 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QAbstractListModel::getIdStatic()) {
-                return (QAbstractListModel*)vp;
-              }
-              
+          if (t==RJSType_QAbstractListModel::getIdStatic()) {
+            return (QAbstractListModel*)vp;
+          }
 
           return nullptr;
           
@@ -5336,9 +5322,7 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QAbstractListModel::getIdStatic();
-            
+          return RJSType_QAbstractListModel::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

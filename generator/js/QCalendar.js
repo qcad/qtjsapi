@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QCalendar.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QCalendar.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QCalendar [JS]";
         };
       QCalendar.getObjectType = function() {
-        
-            return RJSType_QCalendar.getIdStatic();
-          
+        return RJSType_QCalendar.getIdStatic();
       };
 
       QCalendar.prototype.getObjectType = function() {
-        
-            return RJSType_QCalendar.getIdStatic();
-          
+        return RJSType_QCalendar.getIdStatic();
       };
 
       QCalendar.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QCalendar.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QCalendar.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

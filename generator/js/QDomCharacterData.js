@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDomCharacterData.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDomCharacterData.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QDomCharacterData [JS]";
         };
       QDomCharacterData.getObjectType = function() {
-        
-            return RJSType_QDomCharacterData.getIdStatic();
-          
+        return RJSType_QDomCharacterData.getIdStatic();
       };
 
       QDomCharacterData.prototype.getObjectType = function() {
-        
-            return RJSType_QDomCharacterData.getIdStatic();
-          
+        return RJSType_QDomCharacterData.getIdStatic();
       };
 
       QDomCharacterData.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDomCharacterData.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDomCharacterData.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QDomNode.getIdStatic()) {
             return true;
           }

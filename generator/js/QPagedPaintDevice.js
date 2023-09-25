@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPagedPaintDevice.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPagedPaintDevice.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QPagedPaintDevice [JS]";
         };
       QPagedPaintDevice.getObjectType = function() {
-        
-            return RJSType_QPagedPaintDevice.getIdStatic();
-          
+        return RJSType_QPagedPaintDevice.getIdStatic();
       };
 
       QPagedPaintDevice.prototype.getObjectType = function() {
-        
-            return RJSType_QPagedPaintDevice.getIdStatic();
-          
+        return RJSType_QPagedPaintDevice.getIdStatic();
       };
 
       QPagedPaintDevice.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPagedPaintDevice.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPagedPaintDevice.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QPaintDevice.getIdStatic()) {
             return true;
           }

@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QCOMPLETER_H_WRAPPER
-  #define QCOMPLETER_H_WRAPPER
+    #ifndef QCOMPLETER_H_WRAPPER
+    #define QCOMPLETER_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QWidget>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QCompleter>
       
       // singleton class wrapper for static functions:
@@ -120,11 +120,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QCompleter::getIdStatic()) {
-                return (QCompleter*)vp;
-              }
-              
+          if (t==RJSType_QCompleter::getIdStatic()) {
+            return (QCompleter*)vp;
+          }
 
           return nullptr;
           
@@ -1234,9 +1232,7 @@ CaseInsensitivelySortedModel = QCompleter::CaseInsensitivelySortedModel,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QCompleter::getIdStatic();
-            
+          return RJSType_QCompleter::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

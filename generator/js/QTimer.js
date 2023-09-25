@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTimer.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTimer.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QTimer [JS]";
         };
       QTimer.getObjectType = function() {
-        
-            return RJSType_QTimer.getIdStatic();
-          
+        return RJSType_QTimer.getIdStatic();
       };
 
       QTimer.prototype.getObjectType = function() {
-        
-            return RJSType_QTimer.getIdStatic();
-          
+        return RJSType_QTimer.getIdStatic();
       };
 
       QTimer.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTimer.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTimer.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

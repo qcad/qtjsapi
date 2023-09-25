@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QFrame.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QFrame.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -106,23 +102,19 @@
           return "QFrame [JS]";
         };
       QFrame.getObjectType = function() {
-        
-            return RJSType_QFrame.getIdStatic();
-          
+        return RJSType_QFrame.getIdStatic();
       };
 
       QFrame.prototype.getObjectType = function() {
-        
-            return RJSType_QFrame.getIdStatic();
-          
+        return RJSType_QFrame.getIdStatic();
       };
 
       QFrame.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QFrame.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QFrame.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

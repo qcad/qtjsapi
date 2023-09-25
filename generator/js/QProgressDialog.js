@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QProgressDialog.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QProgressDialog.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -135,23 +131,19 @@
           return "QProgressDialog [JS]";
         };
       QProgressDialog.getObjectType = function() {
-        
-            return RJSType_QProgressDialog.getIdStatic();
-          
+        return RJSType_QProgressDialog.getIdStatic();
       };
 
       QProgressDialog.prototype.getObjectType = function() {
-        
-            return RJSType_QProgressDialog.getIdStatic();
-          
+        return RJSType_QProgressDialog.getIdStatic();
       };
 
       QProgressDialog.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QProgressDialog.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QProgressDialog.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

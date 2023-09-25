@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QHEADERVIEW_H_WRAPPER
-  #define QHEADERVIEW_H_WRAPPER
+    #ifndef QHEADERVIEW_H_WRAPPER
+    #define QHEADERVIEW_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QStyleOptionHeader>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QHeaderView>
       
       // wrapped object is QHeaderView_Base class if new object is created: 
@@ -705,11 +705,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QHeaderView::getIdStatic()) {
-                return (QHeaderView*)vp;
-              }
-              
+          if (t==RJSType_QHeaderView::getIdStatic()) {
+            return (QHeaderView*)vp;
+          }
 
           return nullptr;
           
@@ -10016,9 +10014,7 @@ Custom = QHeaderView::Custom,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QHeaderView::getIdStatic();
-            
+          return RJSType_QHeaderView::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

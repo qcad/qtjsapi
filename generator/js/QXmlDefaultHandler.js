@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QXmlDefaultHandler.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QXmlDefaultHandler.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QXmlDefaultHandler [JS]";
         };
       QXmlDefaultHandler.getObjectType = function() {
-        
-            return RJSType_QXmlDefaultHandler.getIdStatic();
-          
+        return RJSType_QXmlDefaultHandler.getIdStatic();
       };
 
       QXmlDefaultHandler.prototype.getObjectType = function() {
-        
-            return RJSType_QXmlDefaultHandler.getIdStatic();
-          
+        return RJSType_QXmlDefaultHandler.getIdStatic();
       };
 
       QXmlDefaultHandler.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QXmlDefaultHandler.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QXmlDefaultHandler.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QXmlContentHandler.getIdStatic()) {
             return true;
           }

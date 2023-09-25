@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QCheckBox.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QCheckBox.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -139,23 +135,19 @@
           return "QCheckBox [JS]";
         };
       QCheckBox.getObjectType = function() {
-        
-            return RJSType_QCheckBox.getIdStatic();
-          
+        return RJSType_QCheckBox.getIdStatic();
       };
 
       QCheckBox.prototype.getObjectType = function() {
-        
-            return RJSType_QCheckBox.getIdStatic();
-          
+        return RJSType_QCheckBox.getIdStatic();
       };
 
       QCheckBox.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QCheckBox.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QCheckBox.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

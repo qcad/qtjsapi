@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDomNamedNodeMap.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDomNamedNodeMap.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QDomNamedNodeMap [JS]";
         };
       QDomNamedNodeMap.getObjectType = function() {
-        
-            return RJSType_QDomNamedNodeMap.getIdStatic();
-          
+        return RJSType_QDomNamedNodeMap.getIdStatic();
       };
 
       QDomNamedNodeMap.prototype.getObjectType = function() {
-        
-            return RJSType_QDomNamedNodeMap.getIdStatic();
-          
+        return RJSType_QDomNamedNodeMap.getIdStatic();
       };
 
       QDomNamedNodeMap.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDomNamedNodeMap.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDomNamedNodeMap.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

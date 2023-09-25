@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QItemSelection.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QItemSelection.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QItemSelection [JS]";
         };
       QItemSelection.getObjectType = function() {
-        
-            return RJSType_QItemSelection.getIdStatic();
-          
+        return RJSType_QItemSelection.getIdStatic();
       };
 
       QItemSelection.prototype.getObjectType = function() {
-        
-            return RJSType_QItemSelection.getIdStatic();
-          
+        return RJSType_QItemSelection.getIdStatic();
       };
 
       QItemSelection.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QItemSelection.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QItemSelection.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QSTATUSBAR_H_WRAPPER
-  #define QSTATUSBAR_H_WRAPPER
+    #ifndef QSTATUSBAR_H_WRAPPER
+    #define QSTATUSBAR_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QStatusBar>
       
       // wrapped object is QStatusBar_Base class if new object is created: 
@@ -536,11 +536,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QStatusBar::getIdStatic()) {
-                return (QStatusBar*)vp;
-              }
-              
+          if (t==RJSType_QStatusBar::getIdStatic()) {
+            return (QStatusBar*)vp;
+          }
 
           return nullptr;
           
@@ -6038,9 +6036,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QStatusBar::getIdStatic();
-            
+          return RJSType_QStatusBar::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

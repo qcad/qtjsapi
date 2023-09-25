@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDialog.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDialog.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -108,23 +104,19 @@
           return "QDialog [JS]";
         };
       QDialog.getObjectType = function() {
-        
-            return RJSType_QDialog.getIdStatic();
-          
+        return RJSType_QDialog.getIdStatic();
       };
 
       QDialog.prototype.getObjectType = function() {
-        
-            return RJSType_QDialog.getIdStatic();
-          
+        return RJSType_QDialog.getIdStatic();
       };
 
       QDialog.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDialog.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDialog.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

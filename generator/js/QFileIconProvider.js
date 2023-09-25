@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QFileIconProvider.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QFileIconProvider.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QFileIconProvider [JS]";
         };
       QFileIconProvider.getObjectType = function() {
-        
-            return RJSType_QFileIconProvider.getIdStatic();
-          
+        return RJSType_QFileIconProvider.getIdStatic();
       };
 
       QFileIconProvider.prototype.getObjectType = function() {
-        
-            return RJSType_QFileIconProvider.getIdStatic();
-          
+        return RJSType_QFileIconProvider.getIdStatic();
       };
 
       QFileIconProvider.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QFileIconProvider.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QFileIconProvider.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QAbstractFileIconProvider.getIdStatic()) {
             return true;
           }

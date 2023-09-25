@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QRegularExpressionMatch.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QRegularExpressionMatch.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -155,23 +151,19 @@
           return "QRegularExpressionMatch [JS]";
         };
       QRegularExpressionMatch.getObjectType = function() {
-        
-            return RJSType_QRegularExpressionMatch.getIdStatic();
-          
+        return RJSType_QRegularExpressionMatch.getIdStatic();
       };
 
       QRegularExpressionMatch.prototype.getObjectType = function() {
-        
-            return RJSType_QRegularExpressionMatch.getIdStatic();
-          
+        return RJSType_QRegularExpressionMatch.getIdStatic();
       };
 
       QRegularExpressionMatch.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QRegularExpressionMatch.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QRegularExpressionMatch.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

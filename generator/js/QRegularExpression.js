@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QRegularExpression.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QRegularExpression.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -182,23 +178,19 @@
           return "QRegularExpression [JS]";
         };
       QRegularExpression.getObjectType = function() {
-        
-            return RJSType_QRegularExpression.getIdStatic();
-          
+        return RJSType_QRegularExpression.getIdStatic();
       };
 
       QRegularExpression.prototype.getObjectType = function() {
-        
-            return RJSType_QRegularExpression.getIdStatic();
-          
+        return RJSType_QRegularExpression.getIdStatic();
       };
 
       QRegularExpression.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QRegularExpression.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QRegularExpression.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QProcessEnvironment.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QProcessEnvironment.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -155,23 +151,19 @@
           return "QProcessEnvironment [JS]";
         };
       QProcessEnvironment.getObjectType = function() {
-        
-            return RJSType_QProcessEnvironment.getIdStatic();
-          
+        return RJSType_QProcessEnvironment.getIdStatic();
       };
 
       QProcessEnvironment.prototype.getObjectType = function() {
-        
-            return RJSType_QProcessEnvironment.getIdStatic();
-          
+        return RJSType_QProcessEnvironment.getIdStatic();
       };
 
       QProcessEnvironment.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QProcessEnvironment.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QProcessEnvironment.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

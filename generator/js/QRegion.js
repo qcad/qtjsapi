@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QRegion.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QRegion.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -262,23 +258,19 @@
           return "QRegion [JS]";
         };
       QRegion.getObjectType = function() {
-        
-            return RJSType_QRegion.getIdStatic();
-          
+        return RJSType_QRegion.getIdStatic();
       };
 
       QRegion.prototype.getObjectType = function() {
-        
-            return RJSType_QRegion.getIdStatic();
-          
+        return RJSType_QRegion.getIdStatic();
       };
 
       QRegion.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QRegion.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QRegion.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

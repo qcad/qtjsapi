@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QAction.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QAction.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -162,23 +158,19 @@
           return "QAction [JS]";
         };
       QAction.getObjectType = function() {
-        
-            return RJSType_QAction.getIdStatic();
-          
+        return RJSType_QAction.getIdStatic();
       };
 
       QAction.prototype.getObjectType = function() {
-        
-            return RJSType_QAction.getIdStatic();
-          
+        return RJSType_QAction.getIdStatic();
       };
 
       QAction.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QAction.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QAction.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

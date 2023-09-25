@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDragMoveEvent.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDragMoveEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QDragMoveEvent [JS]";
         };
       QDragMoveEvent.getObjectType = function() {
-        
-            return RJSType_QDragMoveEvent.getIdStatic();
-          
+        return RJSType_QDragMoveEvent.getIdStatic();
       };
 
       QDragMoveEvent.prototype.getObjectType = function() {
-        
-            return RJSType_QDragMoveEvent.getIdStatic();
-          
+        return RJSType_QDragMoveEvent.getIdStatic();
       };
 
       QDragMoveEvent.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDragMoveEvent.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDragMoveEvent.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QEvent.getIdStatic()) {
             return true;
           }

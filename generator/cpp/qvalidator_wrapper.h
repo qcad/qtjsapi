@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QVALIDATOR_H_WRAPPER
-  #define QVALIDATOR_H_WRAPPER
+    #ifndef QVALIDATOR_H_WRAPPER
+    #define QVALIDATOR_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QValidator>
       
       // singleton class wrapper for static functions:
@@ -126,11 +126,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QValidator::getIdStatic()) {
-                return (QValidator*)vp;
-              }
-              
+          if (t==RJSType_QValidator::getIdStatic()) {
+            return (QValidator*)vp;
+          }
 
           return nullptr;
           
@@ -736,9 +734,7 @@ Acceptable = QValidator::Acceptable,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QValidator::getIdStatic();
-            
+          return RJSType_QValidator::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -823,9 +819,9 @@ Acceptable = QValidator::Acceptable,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QIntValidator>
       
       // singleton class wrapper for static functions:
@@ -924,11 +920,9 @@ Acceptable = QValidator::Acceptable,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QIntValidator::getIdStatic()) {
-                return (QIntValidator*)vp;
-              }
-              
+          if (t==RJSType_QIntValidator::getIdStatic()) {
+            return (QIntValidator*)vp;
+          }
 
           return nullptr;
           
@@ -1726,9 +1720,7 @@ Acceptable = QIntValidator::Acceptable,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QIntValidator::getIdStatic();
-            
+          return RJSType_QIntValidator::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1813,9 +1805,9 @@ Acceptable = QIntValidator::Acceptable,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDoubleValidator>
       
       // singleton class wrapper for static functions:
@@ -1932,11 +1924,9 @@ Acceptable = QIntValidator::Acceptable,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDoubleValidator::getIdStatic()) {
-                return (QDoubleValidator*)vp;
-              }
-              
+          if (t==RJSType_QDoubleValidator::getIdStatic()) {
+            return (QDoubleValidator*)vp;
+          }
 
           return nullptr;
           
@@ -2879,9 +2869,7 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDoubleValidator::getIdStatic();
-            
+          return RJSType_QDoubleValidator::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2966,9 +2954,9 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QRegularExpressionValidator>
       
       // singleton class wrapper for static functions:
@@ -3067,11 +3055,9 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QRegularExpressionValidator::getIdStatic()) {
-                return (QRegularExpressionValidator*)vp;
-              }
-              
+          if (t==RJSType_QRegularExpressionValidator::getIdStatic()) {
+            return (QRegularExpressionValidator*)vp;
+          }
 
           return nullptr;
           
@@ -3773,9 +3759,7 @@ Acceptable = QRegularExpressionValidator::Acceptable,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QRegularExpressionValidator::getIdStatic();
-            
+          return RJSType_QRegularExpressionValidator::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

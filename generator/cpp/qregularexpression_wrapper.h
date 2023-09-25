@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QREGULAREXPRESSION_H_WRAPPER
-  #define QREGULAREXPRESSION_H_WRAPPER
+    #ifndef QREGULAREXPRESSION_H_WRAPPER
+    #define QREGULAREXPRESSION_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QLatin1String>
       
@@ -21,9 +21,9 @@
         #include <QRegularExpression>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QRegularExpression>
       
       // singleton class wrapper for static functions:
@@ -162,11 +162,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QRegularExpression::getIdStatic()) {
-                return (QRegularExpression*)vp;
-              }
-              
+          if (t==RJSType_QRegularExpression::getIdStatic()) {
+            return (QRegularExpression*)vp;
+          }
 
           return nullptr;
           
@@ -586,9 +584,7 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QRegularExpression::getIdStatic();
-            
+          return RJSType_QRegularExpression::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -673,9 +669,9 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QRegularExpressionMatch>
       
     // static functions implementation in singleton wrapper:
@@ -703,11 +699,9 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QRegularExpressionMatch::getIdStatic()) {
-                return (QRegularExpressionMatch*)vp;
-              }
-              
+          if (t==RJSType_QRegularExpressionMatch::getIdStatic()) {
+            return (QRegularExpressionMatch*)vp;
+          }
 
           return nullptr;
           
@@ -1109,9 +1103,7 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QRegularExpressionMatch::getIdStatic();
-            
+          return RJSType_QRegularExpressionMatch::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

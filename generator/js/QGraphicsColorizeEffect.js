@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QGraphicsColorizeEffect.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QGraphicsColorizeEffect.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QGraphicsColorizeEffect [JS]";
         };
       QGraphicsColorizeEffect.getObjectType = function() {
-        
-            return RJSType_QGraphicsColorizeEffect.getIdStatic();
-          
+        return RJSType_QGraphicsColorizeEffect.getIdStatic();
       };
 
       QGraphicsColorizeEffect.prototype.getObjectType = function() {
-        
-            return RJSType_QGraphicsColorizeEffect.getIdStatic();
-          
+        return RJSType_QGraphicsColorizeEffect.getIdStatic();
       };
 
       QGraphicsColorizeEffect.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QGraphicsColorizeEffect.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QGraphicsColorizeEffect.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QGraphicsEffect.getIdStatic()) {
             return true;
           }

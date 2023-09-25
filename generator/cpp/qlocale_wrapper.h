@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QLOCALE_H_WRAPPER
-  #define QLOCALE_H_WRAPPER
+    #ifndef QLOCALE_H_WRAPPER
+    #define QLOCALE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QCalendar>
       
@@ -27,9 +27,9 @@
         #include <QTextStream>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QLocale>
       
       // singleton class wrapper for static functions:
@@ -422,11 +422,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QLocale::getIdStatic()) {
-                return (QLocale*)vp;
-              }
-              
+          if (t==RJSType_QLocale::getIdStatic()) {
+            return (QLocale*)vp;
+          }
 
           return nullptr;
           
@@ -2781,9 +2779,7 @@ AlternateQuotation = QLocale::AlternateQuotation,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QLocale::getIdStatic();
-            
+          return RJSType_QLocale::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

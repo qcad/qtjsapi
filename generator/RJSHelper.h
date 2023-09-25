@@ -1,8 +1,9 @@
 
   // Automatically generated, do not edit
   
-      #ifndef RJSHELPER_H
-      #define RJSHELPER_H
+          #ifndef RJSHELPER_H
+          #define RJSHELPER_H
+        
 
       #include <QtCore>
       #include <QtGui>
@@ -15,8 +16,15 @@
       #include <QtSvg>
       #include <QtUiTools>
 
+
       #include "RJSWrapper.h"
 
+      
+        // Base class for downcasters that can downcast QEvent to specific types.
+        class RJSDowncaster_QEvent {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QEvent* o) = 0;
+        };
       
         // Base class for downcasters that can downcast QWidget to specific types.
         class RJSDowncaster_QWidget {
@@ -24,70 +32,67 @@
           virtual QJSValue downcast(RJSApi& handler, QWidget* o) = 0;
         };
       
-
-      // Base class for converters that can convert QVariant to specific types.
-      class RJSQVariantConverter {
-      public:
-        virtual QJSValue convert(RJSApi& handler, const QVariant& o) = 0;
-      };
-
-
-      QVariant getWrapperProperty(RJSApi& handler, const QObject& obj);
-      void setWrapperProperty(RJSApi& handler, QObject& obj, const QVariant& wrapper);
+        // Base class for converters that can convert QVariant to specific types.
+        class RJSQVariantConverter {
+        public:
+          virtual QJSValue convert(RJSApi& handler, const QVariant& o) = 0;
+        };
       
-      QJSValue getWrapperQJSValue(const QJSValue& v);
-      QObject* getWrapperQObject(const QJSValue& v);
-      RJSWrapper* getWrapperRJSWrapper(const QJSValue& v);
+        QVariant getWrapperProperty(RJSApi& handler, const QObject& obj);
+        void setWrapperProperty(RJSApi& handler, QObject& obj, const QVariant& wrapper);
+        
+        QJSValue getWrapperQJSValue(const QJSValue& v);
+        QObject* getWrapperQObject(const QJSValue& v);
+        RJSWrapper* getWrapperRJSWrapper(const QJSValue& v);
 
-      /**
-       * \return Wrapper in given type T for the given QJSValue.
-       */
-      template<typename T>
-      T* getWrapper(const QJSValue& v) {
-          return dynamic_cast<T*>(getWrapperQObject(v));
-      }
+        /**
+         * \return Wrapper in given type T for the given QJSValue.
+         */
+        template<typename T>
+        T* getWrapper(const QJSValue& v) {
+            return dynamic_cast<T*>(getWrapperQObject(v));
+        }
+      
+
 
 
       class RJSHelper {
 
       public:
-
-       
-       
-        //
-        // custom types (manual implementation):
-        //
-       
-        static QJSValue cpp2js_bool(RJSApi& handler, bool v);
-        static bool js2cpp_bool(RJSApi& handler, const QJSValue& v);
-        static bool is_bool(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-       
-        static QString js2cpp_char_ptr(RJSApi& handler, const QJSValue& v);
-        static bool is_char_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-       
-        static QJSValue cpp2js_char(RJSApi& handler, const char* v);
-       
-        static QJSValue cpp2js_QVariant(RJSApi& handler, const QVariant& v);
-        static QVariant js2cpp_QVariant(RJSApi& handler, const QJSValue& v);
-        static bool is_QVariant(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-       
-        static QJSValue cpp2js_QObjectList(RJSApi& handler, const QList<QObject*>& v);
-        static QList<QObject*> js2cpp_QObjectList(RJSApi& handler, const QJSValue& v);
-       
-        static QJSValue cpp2js_QObject(RJSApi& handler, QObject* v);
-        static QObject* js2cpp_QObject_ptr(RJSApi& handler, const QJSValue& v);
-        static bool is_QObject_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-       
-        static QJSValue cpp2js_QWidget(RJSApi& handler, QWidget* v);
-        static QWidget* js2cpp_QWidget_ptr(RJSApi& handler, const QJSValue& v);
-        static bool is_QWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-       
-        static QJSValue cpp2js_QDomDocument_ParseResult(RJSApi& handler, QDomDocument::ParseResult v);
-       
-        static QJSValue cpp2js_QList_QPair_QString_QString(RJSApi& handler, const QList<QPair<QString,QString> >& v);
-        static QList<QPair<QString,QString> > js2cpp_QList_QPair_QString_QString(RJSApi& handler, const QJSValue& v);
-        static bool is_QList_QPair_QString_QString(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-       
+        
+          //
+          // custom types (manual implementation):
+          //
+         
+          static QJSValue cpp2js_bool(RJSApi& handler, bool v);
+          static bool js2cpp_bool(RJSApi& handler, const QJSValue& v);
+          static bool is_bool(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+         
+          static QString js2cpp_char_ptr(RJSApi& handler, const QJSValue& v);
+          static bool is_char_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+         
+          static QJSValue cpp2js_char(RJSApi& handler, const char* v);
+         
+          static QJSValue cpp2js_QVariant(RJSApi& handler, const QVariant& v);
+          static QVariant js2cpp_QVariant(RJSApi& handler, const QJSValue& v);
+          static bool is_QVariant(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+         
+          static QJSValue cpp2js_QObjectList(RJSApi& handler, const QList<QObject*>& v);
+          static QList<QObject*> js2cpp_QObjectList(RJSApi& handler, const QJSValue& v);
+         
+          static QJSValue cpp2js_QObject(RJSApi& handler, QObject* v);
+          static QObject* js2cpp_QObject_ptr(RJSApi& handler, const QJSValue& v);
+          static bool is_QObject_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+         
+          static QJSValue cpp2js_QWidget(RJSApi& handler, QWidget* v);
+          static QWidget* js2cpp_QWidget_ptr(RJSApi& handler, const QJSValue& v);
+          static bool is_QWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+         
+          static QJSValue cpp2js_QDomDocument_ParseResult(RJSApi& handler, QDomDocument::ParseResult v);
+         
+          static QJSValue cpp2js_QList_QPair_QString_QString(RJSApi& handler, const QList<QPair<QString,QString> >& v);
+          static QList<QPair<QString,QString> > js2cpp_QList_QPair_QString_QString(RJSApi& handler, const QJSValue& v);
+          static bool is_QList_QPair_QString_QString(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
         
   // ----------------
   // primitive types:
@@ -2887,13 +2892,19 @@
       static QPaintEngine* js2cpp_QPaintEngine(RJSApi& handler, const QJSValue& v);
       static bool is_QPaintEngine(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
-       
-        // more dummy implementations
-        static QJSValue cpp2js_QList_QAction(RJSApi& handler, const QList<QAction*>& v);
-       
-        static QList<QAction*> js2cpp_QList_QAction(RJSApi& handler, const QJSValue& v);
+          // more dummy implementations
+          static QJSValue cpp2js_QList_QAction(RJSApi& handler, const QList<QAction*>& v);
+         
+          static QList<QAction*> js2cpp_QList_QAction(RJSApi& handler, const QJSValue& v);
+        
+          // allow downcasting for type QEvent:
+          private:
+            static QList<RJSDowncaster_QEvent*> downcasters_QEvent;
 
-      
+          public:
+            static void registerDowncaster_QEvent(RJSDowncaster_QEvent* dc) {
+              downcasters_QEvent.append(dc);
+            }
         
           // allow downcasting for type QWidget:
           private:
@@ -2904,7 +2915,6 @@
               downcasters_QWidget.append(dc);
             }
         
-
         private:
           static QList<RJSQVariantConverter*> qvariantConverters;
 
@@ -2912,7 +2922,15 @@
           static void registerQVariantConverter(RJSQVariantConverter* vc) {
             qvariantConverters.append(vc);
           }
+        
       };
+
+
+
+
+      
+
+
 
       #endif
     

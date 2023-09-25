@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QToolTip.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QToolTip.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QToolTip [JS]";
         };
       QToolTip.getObjectType = function() {
-        
-            return RJSType_QToolTip.getIdStatic();
-          
+        return RJSType_QToolTip.getIdStatic();
       };
 
       QToolTip.prototype.getObjectType = function() {
-        
-            return RJSType_QToolTip.getIdStatic();
-          
+        return RJSType_QToolTip.getIdStatic();
       };
 
       QToolTip.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QToolTip.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QToolTip.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPaintEvent.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPaintEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QPaintEvent [JS]";
         };
       QPaintEvent.getObjectType = function() {
-        
-            return RJSType_QPaintEvent.getIdStatic();
-          
+        return RJSType_QPaintEvent.getIdStatic();
       };
 
       QPaintEvent.prototype.getObjectType = function() {
-        
-            return RJSType_QPaintEvent.getIdStatic();
-          
+        return RJSType_QPaintEvent.getIdStatic();
       };
 
       QPaintEvent.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPaintEvent.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPaintEvent.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QEvent.getIdStatic()) {
             return true;
           }

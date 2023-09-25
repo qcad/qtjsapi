@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QFRAME_H_WRAPPER
-  #define QFRAME_H_WRAPPER
+    #ifndef QFRAME_H_WRAPPER
+    #define QFRAME_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QStyleOptionFrame>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QFrame>
       
       // wrapped object is QFrame_Base class if new object is created: 
@@ -606,11 +606,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QFrame::getIdStatic()) {
-                return (QFrame*)vp;
-              }
-              
+          if (t==RJSType_QFrame::getIdStatic()) {
+            return (QFrame*)vp;
+          }
 
           return nullptr;
           
@@ -6126,9 +6124,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QFrame::getIdStatic();
-            
+          return RJSType_QFrame::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPageRanges.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPageRanges.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -151,23 +147,19 @@
       QPageRanges.prototype = new Object();
 
       QPageRanges.getObjectType = function() {
-        
-            return RJSType_QPageRanges.getIdStatic();
-          
+        return RJSType_QPageRanges.getIdStatic();
       };
 
       QPageRanges.prototype.getObjectType = function() {
-        
-            return RJSType_QPageRanges.getIdStatic();
-          
+        return RJSType_QPageRanges.getIdStatic();
       };
 
       QPageRanges.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPageRanges.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPageRanges.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

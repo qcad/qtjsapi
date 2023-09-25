@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QDOM_H_WRAPPER
-  #define QDOM_H_WRAPPER
+    #ifndef QDOM_H_WRAPPER
+    #define QDOM_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QIODevice>
       
@@ -55,9 +55,9 @@
         #include <QXmlStreamReader>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomImplementation>
       
       // singleton class wrapper for static functions:
@@ -161,11 +161,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomImplementation::getIdStatic()) {
-                return (QDomImplementation*)vp;
-              }
-              
+          if (t==RJSType_QDomImplementation::getIdStatic()) {
+            return (QDomImplementation*)vp;
+          }
 
           return nullptr;
           
@@ -453,9 +451,7 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomImplementation::getIdStatic();
-            
+          return RJSType_QDomImplementation::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -540,9 +536,9 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomNode>
       
     // static functions implementation in singleton wrapper:
@@ -614,11 +610,9 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomNode::getIdStatic()) {
-                return (QDomNode*)vp;
-              }
-              
+          if (t==RJSType_QDomNode::getIdStatic()) {
+            return (QDomNode*)vp;
+          }
 
           return nullptr;
           
@@ -2165,9 +2159,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomNode::getIdStatic();
-            
+          return RJSType_QDomNode::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2252,9 +2244,9 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomNodeList>
       
     // static functions implementation in singleton wrapper:
@@ -2282,11 +2274,9 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomNodeList::getIdStatic()) {
-                return (QDomNodeList*)vp;
-              }
-              
+          if (t==RJSType_QDomNodeList::getIdStatic()) {
+            return (QDomNodeList*)vp;
+          }
 
           return nullptr;
           
@@ -2588,9 +2578,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomNodeList::getIdStatic();
-            
+          return RJSType_QDomNodeList::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2675,9 +2663,9 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomDocumentType>
       
     // static functions implementation in singleton wrapper:
@@ -2705,11 +2693,9 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomDocumentType::getIdStatic()) {
-                return (QDomDocumentType*)vp;
-              }
-              
+          if (t==RJSType_QDomDocumentType::getIdStatic()) {
+            return (QDomDocumentType*)vp;
+          }
 
           return nullptr;
           
@@ -4382,9 +4368,7 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomDocumentType::getIdStatic();
-            
+          return RJSType_QDomDocumentType::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -4469,9 +4453,9 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomDocument>
       
     // static functions implementation in singleton wrapper:
@@ -4499,11 +4483,9 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomDocument::getIdStatic()) {
-                return (QDomDocument*)vp;
-              }
-              
+          if (t==RJSType_QDomDocument::getIdStatic()) {
+            return (QDomDocument*)vp;
+          }
 
           return nullptr;
           
@@ -6528,9 +6510,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomDocument::getIdStatic();
-            
+          return RJSType_QDomDocument::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -6615,9 +6595,9 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomNamedNodeMap>
       
     // static functions implementation in singleton wrapper:
@@ -6645,11 +6625,9 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomNamedNodeMap::getIdStatic()) {
-                return (QDomNamedNodeMap*)vp;
-              }
-              
+          if (t==RJSType_QDomNamedNodeMap::getIdStatic()) {
+            return (QDomNamedNodeMap*)vp;
+          }
 
           return nullptr;
           
@@ -7101,9 +7079,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomNamedNodeMap::getIdStatic();
-            
+          return RJSType_QDomNamedNodeMap::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -7188,9 +7164,9 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomDocumentFragment>
       
     // static functions implementation in singleton wrapper:
@@ -7218,11 +7194,9 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomDocumentFragment::getIdStatic()) {
-                return (QDomDocumentFragment*)vp;
-              }
-              
+          if (t==RJSType_QDomDocumentFragment::getIdStatic()) {
+            return (QDomDocumentFragment*)vp;
+          }
 
           return nullptr;
           
@@ -8769,9 +8743,7 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomDocumentFragment::getIdStatic();
-            
+          return RJSType_QDomDocumentFragment::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -8856,9 +8828,9 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomCharacterData>
       
     // static functions implementation in singleton wrapper:
@@ -8894,11 +8866,9 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomCharacterData::getIdStatic()) {
-                return (QDomCharacterData*)vp;
-              }
-              
+          if (t==RJSType_QDomCharacterData::getIdStatic()) {
+            return (QDomCharacterData*)vp;
+          }
 
           return nullptr;
           
@@ -10645,9 +10615,7 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomCharacterData::getIdStatic();
-            
+          return RJSType_QDomCharacterData::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -10732,9 +10700,9 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomAttr>
       
     // static functions implementation in singleton wrapper:
@@ -10762,11 +10730,9 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomAttr::getIdStatic()) {
-                return (QDomAttr*)vp;
-              }
-              
+          if (t==RJSType_QDomAttr::getIdStatic()) {
+            return (QDomAttr*)vp;
+          }
 
           return nullptr;
           
@@ -12420,9 +12386,7 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomAttr::getIdStatic();
-            
+          return RJSType_QDomAttr::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -12507,9 +12471,9 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomElement>
       
     // static functions implementation in singleton wrapper:
@@ -12537,11 +12501,9 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomElement::getIdStatic()) {
-                return (QDomElement*)vp;
-              }
-              
+          if (t==RJSType_QDomElement::getIdStatic()) {
+            return (QDomElement*)vp;
+          }
 
           return nullptr;
           
@@ -14550,9 +14512,7 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomElement::getIdStatic();
-            
+          return RJSType_QDomElement::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -14637,9 +14597,9 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomText>
       
     // static functions implementation in singleton wrapper:
@@ -14671,11 +14631,9 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomText::getIdStatic()) {
-                return (QDomText*)vp;
-              }
-              
+          if (t==RJSType_QDomText::getIdStatic()) {
+            return (QDomText*)vp;
+          }
 
           return nullptr;
           
@@ -16445,9 +16403,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomText::getIdStatic();
-            
+          return RJSType_QDomText::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -16532,9 +16488,9 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomComment>
       
     // static functions implementation in singleton wrapper:
@@ -16562,11 +16518,9 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomComment::getIdStatic()) {
-                return (QDomComment*)vp;
-              }
-              
+          if (t==RJSType_QDomComment::getIdStatic()) {
+            return (QDomComment*)vp;
+          }
 
           return nullptr;
           
@@ -16905,9 +16859,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomComment::getIdStatic();
-            
+          return RJSType_QDomComment::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -16992,9 +16944,9 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomCDATASection>
       
     // static functions implementation in singleton wrapper:
@@ -17022,11 +16974,9 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomCDATASection::getIdStatic()) {
-                return (QDomCDATASection*)vp;
-              }
-              
+          if (t==RJSType_QDomCDATASection::getIdStatic()) {
+            return (QDomCDATASection*)vp;
+          }
 
           return nullptr;
           
@@ -17188,9 +17138,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomCDATASection::getIdStatic();
-            
+          return RJSType_QDomCDATASection::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -17275,9 +17223,9 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomNotation>
       
     // static functions implementation in singleton wrapper:
@@ -17305,11 +17253,9 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomNotation::getIdStatic()) {
-                return (QDomNotation*)vp;
-              }
-              
+          if (t==RJSType_QDomNotation::getIdStatic()) {
+            return (QDomNotation*)vp;
+          }
 
           return nullptr;
           
@@ -18898,9 +18844,7 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomNotation::getIdStatic();
-            
+          return RJSType_QDomNotation::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -18985,9 +18929,9 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomEntity>
       
     // static functions implementation in singleton wrapper:
@@ -19015,11 +18959,9 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomEntity::getIdStatic()) {
-                return (QDomEntity*)vp;
-              }
-              
+          if (t==RJSType_QDomEntity::getIdStatic()) {
+            return (QDomEntity*)vp;
+          }
 
           return nullptr;
           
@@ -20629,9 +20571,7 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomEntity::getIdStatic();
-            
+          return RJSType_QDomEntity::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -20716,9 +20656,9 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomEntityReference>
       
     // static functions implementation in singleton wrapper:
@@ -20746,11 +20686,9 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomEntityReference::getIdStatic()) {
-                return (QDomEntityReference*)vp;
-              }
-              
+          if (t==RJSType_QDomEntityReference::getIdStatic()) {
+            return (QDomEntityReference*)vp;
+          }
 
           return nullptr;
           
@@ -22297,9 +22235,7 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomEntityReference::getIdStatic();
-            
+          return RJSType_QDomEntityReference::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -22384,9 +22320,9 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDomProcessingInstruction>
       
     // static functions implementation in singleton wrapper:
@@ -22414,11 +22350,9 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDomProcessingInstruction::getIdStatic()) {
-                return (QDomProcessingInstruction*)vp;
-              }
-              
+          if (t==RJSType_QDomProcessingInstruction::getIdStatic()) {
+            return (QDomProcessingInstruction*)vp;
+          }
 
           return nullptr;
           
@@ -24030,9 +23964,7 @@ EncodingFromTextStream = QDomProcessingInstruction::EncodingFromTextStream,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDomProcessingInstruction::getIdStatic();
-            
+          return RJSType_QDomProcessingInstruction::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

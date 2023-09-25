@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QABSTRACTFILEICONPROVIDER_H_WRAPPER
-  #define QABSTRACTFILEICONPROVIDER_H_WRAPPER
+    #ifndef QABSTRACTFILEICONPROVIDER_H_WRAPPER
+    #define QABSTRACTFILEICONPROVIDER_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QAbstractFileIconProvider>
       
     // static functions implementation in singleton wrapper:
@@ -47,11 +47,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QAbstractFileIconProvider::getIdStatic()) {
-                return (QAbstractFileIconProvider*)vp;
-              }
-              
+          if (t==RJSType_QAbstractFileIconProvider::getIdStatic()) {
+            return (QAbstractFileIconProvider*)vp;
+          }
 
           return nullptr;
           
@@ -265,9 +263,7 @@ File = QAbstractFileIconProvider::File,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QAbstractFileIconProvider::getIdStatic();
-            
+          return RJSType_QAbstractFileIconProvider::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

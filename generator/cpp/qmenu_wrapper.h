@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QMENU_H_WRAPPER
-  #define QMENU_H_WRAPPER
+    #ifndef QMENU_H_WRAPPER
+    #define QMENU_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QStyleOptionMenuItem>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QMenu>
       
       // wrapped object is QMenu_Base class if new object is created: 
@@ -611,11 +611,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QMenu::getIdStatic()) {
-                return (QMenu*)vp;
-              }
-              
+          if (t==RJSType_QMenu::getIdStatic()) {
+            return (QMenu*)vp;
+          }
 
           return nullptr;
           
@@ -6626,9 +6624,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QMenu::getIdStatic();
-            
+          return RJSType_QMenu::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QAbstractTableModel.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QAbstractTableModel.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -78,23 +74,19 @@
           return "QAbstractTableModel [JS]";
         };
       QAbstractTableModel.getObjectType = function() {
-        
-            return RJSType_QAbstractTableModel.getIdStatic();
-          
+        return RJSType_QAbstractTableModel.getIdStatic();
       };
 
       QAbstractTableModel.prototype.getObjectType = function() {
-        
-            return RJSType_QAbstractTableModel.getIdStatic();
-          
+        return RJSType_QAbstractTableModel.getIdStatic();
       };
 
       QAbstractTableModel.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QAbstractTableModel.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QAbstractTableModel.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

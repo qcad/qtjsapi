@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QBRUSH_H_WRAPPER
-  #define QBRUSH_H_WRAPPER
+    #ifndef QBRUSH_H_WRAPPER
+    #define QBRUSH_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QPixmap>
       
@@ -19,9 +19,9 @@
         #include <QVariant>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QBrush>
       
     // static functions implementation in singleton wrapper:
@@ -49,11 +49,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QBrush::getIdStatic()) {
-                return (QBrush*)vp;
-              }
-              
+          if (t==RJSType_QBrush::getIdStatic()) {
+            return (QBrush*)vp;
+          }
 
           return nullptr;
           
@@ -458,9 +456,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QBrush::getIdStatic();
-            
+          return RJSType_QBrush::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -545,9 +541,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QGradient>
       
     // static functions implementation in singleton wrapper:
@@ -587,11 +583,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QGradient::getIdStatic()) {
-                return (QGradient*)vp;
-              }
-              
+          if (t==RJSType_QGradient::getIdStatic()) {
+            return (QGradient*)vp;
+          }
 
           return nullptr;
           
@@ -1075,9 +1069,7 @@ NumPresets = QGradient::NumPresets,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QGradient::getIdStatic();
-            
+          return RJSType_QGradient::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1162,9 +1154,9 @@ NumPresets = QGradient::NumPresets,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QLinearGradient>
       
     // static functions implementation in singleton wrapper:
@@ -1192,11 +1184,9 @@ NumPresets = QGradient::NumPresets,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QLinearGradient::getIdStatic()) {
-                return (QLinearGradient*)vp;
-              }
-              
+          if (t==RJSType_QLinearGradient::getIdStatic()) {
+            return (QLinearGradient*)vp;
+          }
 
           return nullptr;
           
@@ -1788,9 +1778,7 @@ NumPresets = QLinearGradient::NumPresets,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QLinearGradient::getIdStatic();
-            
+          return RJSType_QLinearGradient::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1875,9 +1863,9 @@ NumPresets = QLinearGradient::NumPresets,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QRadialGradient>
       
     // static functions implementation in singleton wrapper:
@@ -1905,11 +1893,9 @@ NumPresets = QLinearGradient::NumPresets,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QRadialGradient::getIdStatic()) {
-                return (QRadialGradient*)vp;
-              }
-              
+          if (t==RJSType_QRadialGradient::getIdStatic()) {
+            return (QRadialGradient*)vp;
+          }
 
           return nullptr;
           
@@ -2641,9 +2627,7 @@ NumPresets = QRadialGradient::NumPresets,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QRadialGradient::getIdStatic();
-            
+          return RJSType_QRadialGradient::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2728,9 +2712,9 @@ NumPresets = QRadialGradient::NumPresets,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QConicalGradient>
       
     // static functions implementation in singleton wrapper:
@@ -2758,11 +2742,9 @@ NumPresets = QRadialGradient::NumPresets,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QConicalGradient::getIdStatic()) {
-                return (QConicalGradient*)vp;
-              }
-              
+          if (t==RJSType_QConicalGradient::getIdStatic()) {
+            return (QConicalGradient*)vp;
+          }
 
           return nullptr;
           
@@ -3346,9 +3328,7 @@ NumPresets = QConicalGradient::NumPresets,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QConicalGradient::getIdStatic();
-            
+          return RJSType_QConicalGradient::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

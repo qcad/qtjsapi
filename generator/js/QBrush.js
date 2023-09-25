@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QBrush.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QBrush.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -338,23 +334,19 @@
           return "QBrush [JS]";
         };
       QBrush.getObjectType = function() {
-        
-            return RJSType_QBrush.getIdStatic();
-          
+        return RJSType_QBrush.getIdStatic();
       };
 
       QBrush.prototype.getObjectType = function() {
-        
-            return RJSType_QBrush.getIdStatic();
-          
+        return RJSType_QBrush.getIdStatic();
       };
 
       QBrush.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QBrush.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QBrush.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QColor.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QColor.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -182,23 +178,19 @@
           return "QColor [JS]";
         };
       QColor.getObjectType = function() {
-        
-            return RJSType_QColor.getIdStatic();
-          
+        return RJSType_QColor.getIdStatic();
       };
 
       QColor.prototype.getObjectType = function() {
-        
-            return RJSType_QColor.getIdStatic();
-          
+        return RJSType_QColor.getIdStatic();
       };
 
       QColor.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QColor.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QColor.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

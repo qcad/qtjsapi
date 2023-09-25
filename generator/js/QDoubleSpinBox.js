@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDoubleSpinBox.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDoubleSpinBox.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -108,23 +104,19 @@
           return "QDoubleSpinBox [JS]";
         };
       QDoubleSpinBox.getObjectType = function() {
-        
-            return RJSType_QDoubleSpinBox.getIdStatic();
-          
+        return RJSType_QDoubleSpinBox.getIdStatic();
       };
 
       QDoubleSpinBox.prototype.getObjectType = function() {
-        
-            return RJSType_QDoubleSpinBox.getIdStatic();
-          
+        return RJSType_QDoubleSpinBox.getIdStatic();
       };
 
       QDoubleSpinBox.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDoubleSpinBox.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDoubleSpinBox.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QAbstractSpinBox.getIdStatic()) {
             return true;
           }

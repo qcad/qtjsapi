@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QEventLoop.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QEventLoop.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QEventLoop [JS]";
         };
       QEventLoop.getObjectType = function() {
-        
-            return RJSType_QEventLoop.getIdStatic();
-          
+        return RJSType_QEventLoop.getIdStatic();
       };
 
       QEventLoop.prototype.getObjectType = function() {
-        
-            return RJSType_QEventLoop.getIdStatic();
-          
+        return RJSType_QEventLoop.getIdStatic();
       };
 
       QEventLoop.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QEventLoop.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QEventLoop.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

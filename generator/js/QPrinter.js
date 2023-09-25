@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPrinter.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPrinter.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -131,23 +127,19 @@
           return "QPrinter [JS]";
         };
       QPrinter.getObjectType = function() {
-        
-            return RJSType_QPrinter.getIdStatic();
-          
+        return RJSType_QPrinter.getIdStatic();
       };
 
       QPrinter.prototype.getObjectType = function() {
-        
-            return RJSType_QPrinter.getIdStatic();
-          
+        return RJSType_QPrinter.getIdStatic();
       };
 
       QPrinter.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPrinter.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPrinter.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QPaintDevice.getIdStatic()) {
             return true;
           }

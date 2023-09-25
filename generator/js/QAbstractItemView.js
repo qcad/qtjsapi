@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QAbstractItemView.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QAbstractItemView.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -88,23 +84,19 @@
           return "QAbstractItemView [JS]";
         };
       QAbstractItemView.getObjectType = function() {
-        
-            return RJSType_QAbstractItemView.getIdStatic();
-          
+        return RJSType_QAbstractItemView.getIdStatic();
       };
 
       QAbstractItemView.prototype.getObjectType = function() {
-        
-            return RJSType_QAbstractItemView.getIdStatic();
-          
+        return RJSType_QAbstractItemView.getIdStatic();
       };
 
       QAbstractItemView.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QAbstractItemView.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QAbstractItemView.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

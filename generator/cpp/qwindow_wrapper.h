@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QWINDOW_H_WRAPPER
-  #define QWINDOW_H_WRAPPER
+    #ifndef QWINDOW_H_WRAPPER
+    #define QWINDOW_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QExposeEvent>
       
@@ -47,9 +47,9 @@
         #include <QDebug>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QWindow>
       
       // wrapped object is QWindow_Base class if new object is created: 
@@ -271,11 +271,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QWindow::getIdStatic()) {
-                return (QWindow*)vp;
-              }
-              
+          if (t==RJSType_QWindow::getIdStatic()) {
+            return (QWindow*)vp;
+          }
 
           return nullptr;
           
@@ -3372,9 +3370,7 @@ IncludeTransients = QWindow::IncludeTransients,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QWindow::getIdStatic();
-            
+          return RJSType_QWindow::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

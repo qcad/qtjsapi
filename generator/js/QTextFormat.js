@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTextFormat.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTextFormat.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -155,23 +151,19 @@
           return "QTextFormat [JS]";
         };
       QTextFormat.getObjectType = function() {
-        
-            return RJSType_QTextFormat.getIdStatic();
-          
+        return RJSType_QTextFormat.getIdStatic();
       };
 
       QTextFormat.prototype.getObjectType = function() {
-        
-            return RJSType_QTextFormat.getIdStatic();
-          
+        return RJSType_QTextFormat.getIdStatic();
       };
 
       QTextFormat.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTextFormat.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTextFormat.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

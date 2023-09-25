@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QTABBAR_H_WRAPPER
-  #define QTABBAR_H_WRAPPER
+    #ifndef QTABBAR_H_WRAPPER
+    #define QTABBAR_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QIcon>
       
         #include <QStyleOptionTab>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTabBar>
       
       // wrapped object is QTabBar_Base class if new object is created: 
@@ -630,11 +630,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTabBar::getIdStatic()) {
-                return (QTabBar*)vp;
-              }
-              
+          if (t==RJSType_QTabBar::getIdStatic()) {
+            return (QTabBar*)vp;
+          }
 
           return nullptr;
           
@@ -7301,9 +7299,7 @@ SelectPreviousTab = QTabBar::SelectPreviousTab,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTabBar::getIdStatic();
-            
+          return RJSType_QTabBar::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

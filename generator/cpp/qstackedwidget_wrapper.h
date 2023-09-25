@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QSTACKEDWIDGET_H_WRAPPER
-  #define QSTACKEDWIDGET_H_WRAPPER
+    #ifndef QSTACKEDWIDGET_H_WRAPPER
+    #define QSTACKEDWIDGET_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QStackedWidget>
       
       // wrapped object is QStackedWidget_Base class if new object is created: 
@@ -542,11 +542,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QStackedWidget::getIdStatic()) {
-                return (QStackedWidget*)vp;
-              }
-              
+          if (t==RJSType_QStackedWidget::getIdStatic()) {
+            return (QStackedWidget*)vp;
+          }
 
           return nullptr;
           
@@ -6347,9 +6345,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QStackedWidget::getIdStatic();
-            
+          return RJSType_QStackedWidget::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

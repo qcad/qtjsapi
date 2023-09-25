@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QIMAGE_H_WRAPPER
-  #define QIMAGE_H_WRAPPER
+    #ifndef QIMAGE_H_WRAPPER
+    #define QIMAGE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QColorSpace>
       
@@ -23,9 +23,9 @@
         #include <QVariant>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QImage>
       
       // singleton class wrapper for static functions:
@@ -157,11 +157,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QImage::getIdStatic()) {
-                return (QImage*)vp;
-              }
-              
+          if (t==RJSType_QImage::getIdStatic()) {
+            return (QImage*)vp;
+          }
 
           return nullptr;
           
@@ -1929,9 +1927,7 @@ NImageFormats = QImage::NImageFormats,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QImage::getIdStatic();
-            
+          return RJSType_QImage::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

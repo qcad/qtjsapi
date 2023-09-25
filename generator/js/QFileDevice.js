@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QFileDevice.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QFileDevice.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -80,23 +76,19 @@
           return "QFileDevice [JS]";
         };
       QFileDevice.getObjectType = function() {
-        
-            return RJSType_QFileDevice.getIdStatic();
-          
+        return RJSType_QFileDevice.getIdStatic();
       };
 
       QFileDevice.prototype.getObjectType = function() {
-        
-            return RJSType_QFileDevice.getIdStatic();
-          
+        return RJSType_QFileDevice.getIdStatic();
       };
 
       QFileDevice.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QFileDevice.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QFileDevice.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

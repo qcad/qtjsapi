@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QFontDatabase.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QFontDatabase.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QFontDatabase [JS]";
         };
       QFontDatabase.getObjectType = function() {
-        
-            return RJSType_QFontDatabase.getIdStatic();
-          
+        return RJSType_QFontDatabase.getIdStatic();
       };
 
       QFontDatabase.prototype.getObjectType = function() {
-        
-            return RJSType_QFontDatabase.getIdStatic();
-          
+        return RJSType_QFontDatabase.getIdStatic();
       };
 
       QFontDatabase.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QFontDatabase.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QFontDatabase.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

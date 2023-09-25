@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QFILESYSTEMMODEL_H_WRAPPER
-  #define QFILESYSTEMMODEL_H_WRAPPER
+    #ifndef QFILESYSTEMMODEL_H_WRAPPER
+    #define QFILESYSTEMMODEL_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QAbstractFileIconProvider>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QFileSystemModel>
       
       // singleton class wrapper for static functions:
@@ -134,11 +134,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QFileSystemModel::getIdStatic()) {
-                return (QFileSystemModel*)vp;
-              }
-              
+          if (t==RJSType_QFileSystemModel::getIdStatic()) {
+            return (QFileSystemModel*)vp;
+          }
 
           return nullptr;
           
@@ -2457,9 +2455,7 @@ DontUseCustomDirectoryIcons = QFileSystemModel::DontUseCustomDirectoryIcons,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QFileSystemModel::getIdStatic();
-            
+          return RJSType_QFileSystemModel::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

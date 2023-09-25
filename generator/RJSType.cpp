@@ -1,9 +1,8 @@
 
   // Automatically generated, do not edit
   
-    #include "RJSType.h"
-
-    
+        #include "RJSType.h"
+      
 
   
       int RJSType_QGesture::id = -1;

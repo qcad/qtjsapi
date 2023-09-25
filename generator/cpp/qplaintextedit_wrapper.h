@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QPLAINTEXTEDIT_H_WRAPPER
-  #define QPLAINTEXTEDIT_H_WRAPPER
+    #ifndef QPLAINTEXTEDIT_H_WRAPPER
+    #define QPLAINTEXTEDIT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QTextDocument>
       
@@ -23,9 +23,9 @@
         #include <QRegularExpression>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPlainTextEdit>
       
       // wrapped object is QPlainTextEdit_Base class if new object is created: 
@@ -660,11 +660,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPlainTextEdit::getIdStatic()) {
-                return (QPlainTextEdit*)vp;
-              }
-              
+          if (t==RJSType_QPlainTextEdit::getIdStatic()) {
+            return (QPlainTextEdit*)vp;
+          }
 
           return nullptr;
           
@@ -8250,9 +8248,7 @@ WidgetWidth = QPlainTextEdit::WidgetWidth,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPlainTextEdit::getIdStatic();
-            
+          return RJSType_QPlainTextEdit::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

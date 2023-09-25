@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QPRINTDIALOG_H_WRAPPER
-  #define QPRINTDIALOG_H_WRAPPER
+    #ifndef QPRINTDIALOG_H_WRAPPER
+    #define QPRINTDIALOG_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QPushButton>
       
         #include <QPrinter>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPrintDialog>
       
       // wrapped object is QPrintDialog_Base class if new object is created: 
@@ -566,11 +566,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPrintDialog::getIdStatic()) {
-                return (QPrintDialog*)vp;
-              }
-              
+          if (t==RJSType_QPrintDialog::getIdStatic()) {
+            return (QPrintDialog*)vp;
+          }
 
           return nullptr;
           
@@ -6469,9 +6467,7 @@ PrintCurrentPage = QPrintDialog::PrintCurrentPage,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPrintDialog::getIdStatic();
-            
+          return RJSType_QPrintDialog::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

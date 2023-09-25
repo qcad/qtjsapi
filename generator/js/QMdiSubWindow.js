@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QMdiSubWindow.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QMdiSubWindow.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -108,23 +104,19 @@
           return "QMdiSubWindow [JS]";
         };
       QMdiSubWindow.getObjectType = function() {
-        
-            return RJSType_QMdiSubWindow.getIdStatic();
-          
+        return RJSType_QMdiSubWindow.getIdStatic();
       };
 
       QMdiSubWindow.prototype.getObjectType = function() {
-        
-            return RJSType_QMdiSubWindow.getIdStatic();
-          
+        return RJSType_QMdiSubWindow.getIdStatic();
       };
 
       QMdiSubWindow.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QMdiSubWindow.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QMdiSubWindow.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

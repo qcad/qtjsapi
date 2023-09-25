@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSize.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSize.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -259,23 +255,19 @@
           return "QSize [JS]";
         };
       QSize.getObjectType = function() {
-        
-            return RJSType_QSize.getIdStatic();
-          
+        return RJSType_QSize.getIdStatic();
       };
 
       QSize.prototype.getObjectType = function() {
-        
-            return RJSType_QSize.getIdStatic();
-          
+        return RJSType_QSize.getIdStatic();
       };
 
       QSize.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSize.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSize.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

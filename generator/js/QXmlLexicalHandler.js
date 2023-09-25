@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QXmlLexicalHandler.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QXmlLexicalHandler.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QXmlLexicalHandler [JS]";
         };
       QXmlLexicalHandler.getObjectType = function() {
-        
-            return RJSType_QXmlLexicalHandler.getIdStatic();
-          
+        return RJSType_QXmlLexicalHandler.getIdStatic();
       };
 
       QXmlLexicalHandler.prototype.getObjectType = function() {
-        
-            return RJSType_QXmlLexicalHandler.getIdStatic();
-          
+        return RJSType_QXmlLexicalHandler.getIdStatic();
       };
 
       QXmlLexicalHandler.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QXmlLexicalHandler.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QXmlLexicalHandler.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

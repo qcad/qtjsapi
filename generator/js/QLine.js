@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QLine.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QLine.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -181,23 +177,19 @@
           return "QLine [JS]";
         };
       QLine.getObjectType = function() {
-        
-            return RJSType_QLine.getIdStatic();
-          
+        return RJSType_QLine.getIdStatic();
       };
 
       QLine.prototype.getObjectType = function() {
-        
-            return RJSType_QLine.getIdStatic();
-          
+        return RJSType_QLine.getIdStatic();
       };
 
       QLine.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QLine.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QLine.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTreeWidgetItem.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTreeWidgetItem.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -319,23 +315,19 @@
           return "QTreeWidgetItem [JS]";
         };
       QTreeWidgetItem.getObjectType = function() {
-        
-            return RJSType_QTreeWidgetItem.getIdStatic();
-          
+        return RJSType_QTreeWidgetItem.getIdStatic();
       };
 
       QTreeWidgetItem.prototype.getObjectType = function() {
-        
-            return RJSType_QTreeWidgetItem.getIdStatic();
-          
+        return RJSType_QTreeWidgetItem.getIdStatic();
       };
 
       QTreeWidgetItem.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTreeWidgetItem.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTreeWidgetItem.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

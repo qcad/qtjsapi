@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QAbstractSlider.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QAbstractSlider.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -114,23 +110,19 @@
           return "QAbstractSlider [JS]";
         };
       QAbstractSlider.getObjectType = function() {
-        
-            return RJSType_QAbstractSlider.getIdStatic();
-          
+        return RJSType_QAbstractSlider.getIdStatic();
       };
 
       QAbstractSlider.prototype.getObjectType = function() {
-        
-            return RJSType_QAbstractSlider.getIdStatic();
-          
+        return RJSType_QAbstractSlider.getIdStatic();
       };
 
       QAbstractSlider.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QAbstractSlider.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QAbstractSlider.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

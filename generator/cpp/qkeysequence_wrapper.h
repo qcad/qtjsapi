@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QKEYSEQUENCE_H_WRAPPER
-  #define QKEYSEQUENCE_H_WRAPPER
+    #ifndef QKEYSEQUENCE_H_WRAPPER
+    #define QKEYSEQUENCE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QKeySequence>
       
         #include <QVariant>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QKeySequence>
       
       // singleton class wrapper for static functions:
@@ -208,11 +208,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QKeySequence::getIdStatic()) {
-                return (QKeySequence*)vp;
-              }
-              
+          if (t==RJSType_QKeySequence::getIdStatic()) {
+            return (QKeySequence*)vp;
+          }
 
           return nullptr;
           
@@ -550,9 +548,7 @@ ExactMatch = QKeySequence::ExactMatch,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QKeySequence::getIdStatic();
-            
+          return RJSType_QKeySequence::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

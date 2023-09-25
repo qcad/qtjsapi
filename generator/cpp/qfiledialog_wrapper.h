@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QFILEDIALOG_H_WRAPPER
-  #define QFILEDIALOG_H_WRAPPER
+    #ifndef QFILEDIALOG_H_WRAPPER
+    #define QFILEDIALOG_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QModelIndex>
       
@@ -23,9 +23,9 @@
         #include <QAbstractProxyModel>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QFileDialog>
       
       // wrapped object is QFileDialog_Base class if new object is created: 
@@ -895,11 +895,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QFileDialog::getIdStatic()) {
-                return (QFileDialog*)vp;
-              }
-              
+          if (t==RJSType_QFileDialog::getIdStatic()) {
+            return (QFileDialog*)vp;
+          }
 
           return nullptr;
           
@@ -7551,9 +7549,7 @@ DontUseCustomDirectoryIcons = QFileDialog::DontUseCustomDirectoryIcons,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QFileDialog::getIdStatic();
-            
+          return RJSType_QFileDialog::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

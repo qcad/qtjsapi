@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPainterPath.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPainterPath.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QPainterPath [JS]";
         };
       QPainterPath.getObjectType = function() {
-        
-            return RJSType_QPainterPath.getIdStatic();
-          
+        return RJSType_QPainterPath.getIdStatic();
       };
 
       QPainterPath.prototype.getObjectType = function() {
-        
-            return RJSType_QPainterPath.getIdStatic();
-          
+        return RJSType_QPainterPath.getIdStatic();
       };
 
       QPainterPath.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPainterPath.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPainterPath.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

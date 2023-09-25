@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QLINEEDIT_H_WRAPPER
-  #define QLINEEDIT_H_WRAPPER
+    #ifndef QLINEEDIT_H_WRAPPER
+    #define QLINEEDIT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QValidator>
       
@@ -29,9 +29,9 @@
         #include <QToolButton>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QLineEdit>
       
       // wrapped object is QLineEdit_Base class if new object is created: 
@@ -700,11 +700,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QLineEdit::getIdStatic()) {
-                return (QLineEdit*)vp;
-              }
-              
+          if (t==RJSType_QLineEdit::getIdStatic()) {
+            return (QLineEdit*)vp;
+          }
 
           return nullptr;
           
@@ -7444,9 +7442,7 @@ PasswordEchoOnEdit = QLineEdit::PasswordEchoOnEdit,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QLineEdit::getIdStatic();
-            
+          return RJSType_QLineEdit::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

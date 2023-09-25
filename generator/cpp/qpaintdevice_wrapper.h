@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QPAINTDEVICE_H_WRAPPER
-  #define QPAINTDEVICE_H_WRAPPER
+    #ifndef QPAINTDEVICE_H_WRAPPER
+    #define QPAINTDEVICE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QPaintEngine>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPaintDevice>
       
       // wrapped object is QPaintDevice_Base class if new object is created: 
@@ -141,11 +141,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPaintDevice::getIdStatic()) {
-                return (QPaintDevice*)vp;
-              }
-              
+          if (t==RJSType_QPaintDevice::getIdStatic()) {
+            return (QPaintDevice*)vp;
+          }
 
           return nullptr;
           
@@ -539,9 +537,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPaintDevice::getIdStatic();
-            
+          return RJSType_QPaintDevice::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

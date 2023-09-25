@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPinchGesture.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPinchGesture.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QPinchGesture [JS]";
         };
       QPinchGesture.getObjectType = function() {
-        
-            return RJSType_QPinchGesture.getIdStatic();
-          
+        return RJSType_QPinchGesture.getIdStatic();
       };
 
       QPinchGesture.prototype.getObjectType = function() {
-        
-            return RJSType_QPinchGesture.getIdStatic();
-          
+        return RJSType_QPinchGesture.getIdStatic();
       };
 
       QPinchGesture.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPinchGesture.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPinchGesture.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QLineF.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QLineF.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -337,23 +333,19 @@
           return "QLineF [JS]";
         };
       QLineF.getObjectType = function() {
-        
-            return RJSType_QLineF.getIdStatic();
-          
+        return RJSType_QLineF.getIdStatic();
       };
 
       QLineF.prototype.getObjectType = function() {
-        
-            return RJSType_QLineF.getIdStatic();
-          
+        return RJSType_QLineF.getIdStatic();
       };
 
       QLineF.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QLineF.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QLineF.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

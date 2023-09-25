@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTreeView.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTreeView.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -122,23 +118,19 @@
           return "QTreeView [JS]";
         };
       QTreeView.getObjectType = function() {
-        
-            return RJSType_QTreeView.getIdStatic();
-          
+        return RJSType_QTreeView.getIdStatic();
       };
 
       QTreeView.prototype.getObjectType = function() {
-        
-            return RJSType_QTreeView.getIdStatic();
-          
+        return RJSType_QTreeView.getIdStatic();
       };
 
       QTreeView.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTreeView.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTreeView.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

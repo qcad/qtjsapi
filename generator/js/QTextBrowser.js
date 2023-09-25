@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTextBrowser.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTextBrowser.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -124,23 +120,19 @@
           return "QTextBrowser [JS]";
         };
       QTextBrowser.getObjectType = function() {
-        
-            return RJSType_QTextBrowser.getIdStatic();
-          
+        return RJSType_QTextBrowser.getIdStatic();
       };
 
       QTextBrowser.prototype.getObjectType = function() {
-        
-            return RJSType_QTextBrowser.getIdStatic();
-          
+        return RJSType_QTextBrowser.getIdStatic();
       };
 
       QTextBrowser.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTextBrowser.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTextBrowser.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QLAYOUT_H_WRAPPER
-  #define QLAYOUT_H_WRAPPER
+    #ifndef QLAYOUT_H_WRAPPER
+    #define QLAYOUT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QLayout>
       
         #include <QSize>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QLayout>
       
       // wrapped object is QLayout_Base class if new object is created: 
@@ -172,11 +172,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QLayout::getIdStatic()) {
-                return (QLayout*)vp;
-              }
-              
+          if (t==RJSType_QLayout::getIdStatic()) {
+            return (QLayout*)vp;
+          }
 
           return nullptr;
           
@@ -1633,9 +1631,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QLayout::getIdStatic();
-            
+          return RJSType_QLayout::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

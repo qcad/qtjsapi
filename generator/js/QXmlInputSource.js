@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QXmlInputSource.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QXmlInputSource.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QXmlInputSource [JS]";
         };
       QXmlInputSource.getObjectType = function() {
-        
-            return RJSType_QXmlInputSource.getIdStatic();
-          
+        return RJSType_QXmlInputSource.getIdStatic();
       };
 
       QXmlInputSource.prototype.getObjectType = function() {
-        
-            return RJSType_QXmlInputSource.getIdStatic();
-          
+        return RJSType_QXmlInputSource.getIdStatic();
       };
 
       QXmlInputSource.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QXmlInputSource.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QXmlInputSource.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

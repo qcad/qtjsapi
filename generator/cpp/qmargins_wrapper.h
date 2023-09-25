@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QMARGINS_H_WRAPPER
-  #define QMARGINS_H_WRAPPER
+    #ifndef QMARGINS_H_WRAPPER
+    #define QMARGINS_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QMargins>
       
     // static functions implementation in singleton wrapper:
@@ -43,11 +43,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QMargins::getIdStatic()) {
-                return (QMargins*)vp;
-              }
-              
+          if (t==RJSType_QMargins::getIdStatic()) {
+            return (QMargins*)vp;
+          }
 
           return nullptr;
           
@@ -351,9 +349,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QMargins::getIdStatic();
-            
+          return RJSType_QMargins::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -438,9 +434,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QMarginsF>
       
     // static functions implementation in singleton wrapper:
@@ -468,11 +464,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QMarginsF::getIdStatic()) {
-                return (QMarginsF*)vp;
-              }
-              
+          if (t==RJSType_QMarginsF::getIdStatic()) {
+            return (QMarginsF*)vp;
+          }
 
           return nullptr;
           
@@ -797,9 +791,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QMarginsF::getIdStatic();
-            
+          return RJSType_QMarginsF::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

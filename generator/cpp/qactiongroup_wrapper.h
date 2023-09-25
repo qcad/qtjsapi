@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QACTIONGROUP_H_WRAPPER
-  #define QACTIONGROUP_H_WRAPPER
+    #ifndef QACTIONGROUP_H_WRAPPER
+    #define QACTIONGROUP_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QActionGroup>
       
       // singleton class wrapper for static functions:
@@ -114,11 +114,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QActionGroup::getIdStatic()) {
-                return (QActionGroup*)vp;
-              }
-              
+          if (t==RJSType_QActionGroup::getIdStatic()) {
+            return (QActionGroup*)vp;
+          }
 
           return nullptr;
           
@@ -913,9 +911,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QActionGroup::getIdStatic();
-            
+          return RJSType_QActionGroup::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

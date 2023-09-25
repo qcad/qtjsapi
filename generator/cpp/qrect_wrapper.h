@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QRECT_H_WRAPPER
-  #define QRECT_H_WRAPPER
+    #ifndef QRECT_H_WRAPPER
+    #define QRECT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QRect>
       
     // static functions implementation in singleton wrapper:
@@ -43,11 +43,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QRect::getIdStatic()) {
-                return (QRect*)vp;
-              }
-              
+          if (t==RJSType_QRect::getIdStatic()) {
+            return (QRect*)vp;
+          }
 
           return nullptr;
           
@@ -1442,9 +1440,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QRect::getIdStatic();
-            
+          return RJSType_QRect::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1529,9 +1525,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QRectF>
       
     // static functions implementation in singleton wrapper:
@@ -1559,11 +1555,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QRectF::getIdStatic()) {
-                return (QRectF*)vp;
-              }
-              
+          if (t==RJSType_QRectF::getIdStatic()) {
+            return (QRectF*)vp;
+          }
 
           return nullptr;
           
@@ -2996,9 +2990,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QRectF::getIdStatic();
-            
+          return RJSType_QRectF::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

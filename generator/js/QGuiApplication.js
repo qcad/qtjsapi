@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QGuiApplication.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QGuiApplication.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -90,23 +86,19 @@
           return "QGuiApplication [JS]";
         };
       QGuiApplication.getObjectType = function() {
-        
-            return RJSType_QGuiApplication.getIdStatic();
-          
+        return RJSType_QGuiApplication.getIdStatic();
       };
 
       QGuiApplication.prototype.getObjectType = function() {
-        
-            return RJSType_QGuiApplication.getIdStatic();
-          
+        return RJSType_QGuiApplication.getIdStatic();
       };
 
       QGuiApplication.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QGuiApplication.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QGuiApplication.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

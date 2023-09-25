@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QSIZEPOLICY_H_WRAPPER
-  #define QSIZEPOLICY_H_WRAPPER
+    #ifndef QSIZEPOLICY_H_WRAPPER
+    #define QSIZEPOLICY_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QVariant>
       
         #include <QSizePolicy>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSizePolicy>
       
     // static functions implementation in singleton wrapper:
@@ -47,11 +47,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QSizePolicy::getIdStatic()) {
-                return (QSizePolicy*)vp;
-              }
-              
+          if (t==RJSType_QSizePolicy::getIdStatic()) {
+            return (QSizePolicy*)vp;
+          }
 
           return nullptr;
           
@@ -610,9 +608,7 @@ ToolButton = QSizePolicy::ToolButton,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QSizePolicy::getIdStatic();
-            
+          return RJSType_QSizePolicy::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

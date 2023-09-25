@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QTEXTBROWSER_H_WRAPPER
-  #define QTEXTBROWSER_H_WRAPPER
+    #ifndef QTEXTBROWSER_H_WRAPPER
+    #define QTEXTBROWSER_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextBrowser>
       
       // wrapped object is QTextBrowser_Base class if new object is created: 
@@ -656,11 +656,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextBrowser::getIdStatic()) {
-                return (QTextBrowser*)vp;
-              }
-              
+          if (t==RJSType_QTextBrowser::getIdStatic()) {
+            return (QTextBrowser*)vp;
+          }
 
           return nullptr;
           
@@ -8525,9 +8523,7 @@ AutoAll = QTextBrowser::AutoAll,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextBrowser::getIdStatic();
-            
+          return RJSType_QTextBrowser::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSurfaceFormat.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSurfaceFormat.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -155,23 +151,19 @@
           return "QSurfaceFormat [JS]";
         };
       QSurfaceFormat.getObjectType = function() {
-        
-            return RJSType_QSurfaceFormat.getIdStatic();
-          
+        return RJSType_QSurfaceFormat.getIdStatic();
       };
 
       QSurfaceFormat.prototype.getObjectType = function() {
-        
-            return RJSType_QSurfaceFormat.getIdStatic();
-          
+        return RJSType_QSurfaceFormat.getIdStatic();
       };
 
       QSurfaceFormat.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSurfaceFormat.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSurfaceFormat.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

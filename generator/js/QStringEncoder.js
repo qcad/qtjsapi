@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QStringEncoder.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QStringEncoder.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -155,23 +151,19 @@
           return "QStringEncoder [JS]";
         };
       QStringEncoder.getObjectType = function() {
-        
-            return RJSType_QStringEncoder.getIdStatic();
-          
+        return RJSType_QStringEncoder.getIdStatic();
       };
 
       QStringEncoder.prototype.getObjectType = function() {
-        
-            return RJSType_QStringEncoder.getIdStatic();
-          
+        return RJSType_QStringEncoder.getIdStatic();
       };
 
       QStringEncoder.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QStringEncoder.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QStringEncoder.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QStringConverter.getIdStatic()) {
             return true;
           }

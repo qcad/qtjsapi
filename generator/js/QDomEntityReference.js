@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDomEntityReference.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDomEntityReference.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QDomEntityReference [JS]";
         };
       QDomEntityReference.getObjectType = function() {
-        
-            return RJSType_QDomEntityReference.getIdStatic();
-          
+        return RJSType_QDomEntityReference.getIdStatic();
       };
 
       QDomEntityReference.prototype.getObjectType = function() {
-        
-            return RJSType_QDomEntityReference.getIdStatic();
-          
+        return RJSType_QDomEntityReference.getIdStatic();
       };
 
       QDomEntityReference.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDomEntityReference.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDomEntityReference.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QDomNode.getIdStatic()) {
             return true;
           }

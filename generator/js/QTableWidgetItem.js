@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTableWidgetItem.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTableWidgetItem.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -158,23 +154,19 @@
           return "QTableWidgetItem [JS]";
         };
       QTableWidgetItem.getObjectType = function() {
-        
-            return RJSType_QTableWidgetItem.getIdStatic();
-          
+        return RJSType_QTableWidgetItem.getIdStatic();
       };
 
       QTableWidgetItem.prototype.getObjectType = function() {
-        
-            return RJSType_QTableWidgetItem.getIdStatic();
-          
+        return RJSType_QTableWidgetItem.getIdStatic();
       };
 
       QTableWidgetItem.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTableWidgetItem.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTableWidgetItem.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

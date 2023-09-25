@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QIcon.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QIcon.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -181,23 +177,19 @@
           return "QIcon [JS]";
         };
       QIcon.getObjectType = function() {
-        
-            return RJSType_QIcon.getIdStatic();
-          
+        return RJSType_QIcon.getIdStatic();
       };
 
       QIcon.prototype.getObjectType = function() {
-        
-            return RJSType_QIcon.getIdStatic();
-          
+        return RJSType_QIcon.getIdStatic();
       };
 
       QIcon.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QIcon.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QIcon.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QTREEWIDGET_H_WRAPPER
-  #define QTREEWIDGET_H_WRAPPER
+    #ifndef QTREEWIDGET_H_WRAPPER
+    #define QTREEWIDGET_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QTreeWidget>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTreeWidgetItem>
       
     // static functions implementation in singleton wrapper:
@@ -45,11 +45,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTreeWidgetItem::getIdStatic()) {
-                return (QTreeWidgetItem*)vp;
-              }
-              
+          if (t==RJSType_QTreeWidgetItem::getIdStatic()) {
+            return (QTreeWidgetItem*)vp;
+          }
 
           return nullptr;
           
@@ -1385,9 +1383,7 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTreeWidgetItem::getIdStatic();
-            
+          return RJSType_QTreeWidgetItem::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1472,9 +1468,9 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTreeWidget>
       
       // wrapped object is QTreeWidget_Base class if new object is created: 
@@ -2161,11 +2157,9 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTreeWidget::getIdStatic()) {
-                return (QTreeWidget*)vp;
-              }
-              
+          if (t==RJSType_QTreeWidget::getIdStatic()) {
+            return (QTreeWidget*)vp;
+          }
 
           return nullptr;
           
@@ -11568,9 +11562,7 @@ InternalMove = QTreeWidget::InternalMove,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTreeWidget::getIdStatic();
-            
+          return RJSType_QTreeWidget::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

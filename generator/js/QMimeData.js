@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QMimeData.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QMimeData.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QMimeData [JS]";
         };
       QMimeData.getObjectType = function() {
-        
-            return RJSType_QMimeData.getIdStatic();
-          
+        return RJSType_QMimeData.getIdStatic();
       };
 
       QMimeData.prototype.getObjectType = function() {
-        
-            return RJSType_QMimeData.getIdStatic();
-          
+        return RJSType_QMimeData.getIdStatic();
       };
 
       QMimeData.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QMimeData.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QMimeData.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

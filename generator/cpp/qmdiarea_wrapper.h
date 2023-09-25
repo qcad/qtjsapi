@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QMDIAREA_H_WRAPPER
-  #define QMDIAREA_H_WRAPPER
+    #ifndef QMDIAREA_H_WRAPPER
+    #define QMDIAREA_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QMdiSubWindow>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QMdiArea>
       
       // wrapped object is QMdiArea_Base class if new object is created: 
@@ -596,11 +596,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QMdiArea::getIdStatic()) {
-                return (QMdiArea*)vp;
-              }
-              
+          if (t==RJSType_QMdiArea::getIdStatic()) {
+            return (QMdiArea*)vp;
+          }
 
           return nullptr;
           
@@ -7482,9 +7480,7 @@ TabbedView = QMdiArea::TabbedView,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QMdiArea::getIdStatic();
-            
+          return RJSType_QMdiArea::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

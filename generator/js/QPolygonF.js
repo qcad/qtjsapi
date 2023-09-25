@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPolygonF.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPolygonF.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -155,23 +151,19 @@
           return "QPolygonF [JS]";
         };
       QPolygonF.getObjectType = function() {
-        
-            return RJSType_QPolygonF.getIdStatic();
-          
+        return RJSType_QPolygonF.getIdStatic();
       };
 
       QPolygonF.prototype.getObjectType = function() {
-        
-            return RJSType_QPolygonF.getIdStatic();
-          
+        return RJSType_QPolygonF.getIdStatic();
       };
 
       QPolygonF.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPolygonF.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPolygonF.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

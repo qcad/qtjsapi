@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QAbstractListModel.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QAbstractListModel.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -78,23 +74,19 @@
           return "QAbstractListModel [JS]";
         };
       QAbstractListModel.getObjectType = function() {
-        
-            return RJSType_QAbstractListModel.getIdStatic();
-          
+        return RJSType_QAbstractListModel.getIdStatic();
       };
 
       QAbstractListModel.prototype.getObjectType = function() {
-        
-            return RJSType_QAbstractListModel.getIdStatic();
-          
+        return RJSType_QAbstractListModel.getIdStatic();
       };
 
       QAbstractListModel.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QAbstractListModel.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QAbstractListModel.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

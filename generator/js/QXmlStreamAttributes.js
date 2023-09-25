@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QXmlStreamAttributes.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QXmlStreamAttributes.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QXmlStreamAttributes [JS]";
         };
       QXmlStreamAttributes.getObjectType = function() {
-        
-            return RJSType_QXmlStreamAttributes.getIdStatic();
-          
+        return RJSType_QXmlStreamAttributes.getIdStatic();
       };
 
       QXmlStreamAttributes.prototype.getObjectType = function() {
-        
-            return RJSType_QXmlStreamAttributes.getIdStatic();
-          
+        return RJSType_QXmlStreamAttributes.getIdStatic();
       };
 
       QXmlStreamAttributes.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QXmlStreamAttributes.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QXmlStreamAttributes.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_.getIdStatic()) {
             return true;
           }

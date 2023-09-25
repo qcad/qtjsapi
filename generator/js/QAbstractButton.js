@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QAbstractButton.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QAbstractButton.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -80,23 +76,19 @@
           return "QAbstractButton [JS]";
         };
       QAbstractButton.getObjectType = function() {
-        
-            return RJSType_QAbstractButton.getIdStatic();
-          
+        return RJSType_QAbstractButton.getIdStatic();
       };
 
       QAbstractButton.prototype.getObjectType = function() {
-        
-            return RJSType_QAbstractButton.getIdStatic();
-          
+        return RJSType_QAbstractButton.getIdStatic();
       };
 
       QAbstractButton.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QAbstractButton.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QAbstractButton.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QBoxLayout.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QBoxLayout.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QBoxLayout [JS]";
         };
       QBoxLayout.getObjectType = function() {
-        
-            return RJSType_QBoxLayout.getIdStatic();
-          
+        return RJSType_QBoxLayout.getIdStatic();
       };
 
       QBoxLayout.prototype.getObjectType = function() {
-        
-            return RJSType_QBoxLayout.getIdStatic();
-          
+        return RJSType_QBoxLayout.getIdStatic();
       };
 
       QBoxLayout.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QBoxLayout.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QBoxLayout.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

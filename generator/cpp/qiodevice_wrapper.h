@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QIODEVICE_H_WRAPPER
-  #define QIODEVICE_H_WRAPPER
+    #ifndef QIODEVICE_H_WRAPPER
+    #define QIODEVICE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QByteArray>
       
         #include <QDebug>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QIODevice>
       
       // singleton class wrapper for static functions:
@@ -138,11 +138,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QIODevice::getIdStatic()) {
-                return (QIODevice*)vp;
-              }
-              
+          if (t==RJSType_QIODevice::getIdStatic()) {
+            return (QIODevice*)vp;
+          }
 
           return nullptr;
           
@@ -1517,9 +1515,7 @@ ExistingOnly = QIODevice::ExistingOnly,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QIODevice::getIdStatic();
-            
+          return RJSType_QIODevice::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

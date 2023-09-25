@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QLINE_H_WRAPPER
-  #define QLINE_H_WRAPPER
+    #ifndef QLINE_H_WRAPPER
+    #define QLINE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QLine>
       
     // static functions implementation in singleton wrapper:
@@ -43,11 +43,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QLine::getIdStatic()) {
-                return (QLine*)vp;
-              }
-              
+          if (t==RJSType_QLine::getIdStatic()) {
+            return (QLine*)vp;
+          }
 
           return nullptr;
           
@@ -528,9 +526,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QLine::getIdStatic();
-            
+          return RJSType_QLine::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -615,9 +611,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QLineF>
       
       // singleton class wrapper for static functions:
@@ -706,11 +702,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QLineF::getIdStatic()) {
-                return (QLineF*)vp;
-              }
-              
+          if (t==RJSType_QLineF::getIdStatic()) {
+            return (QLineF*)vp;
+          }
 
           return nullptr;
           
@@ -1392,9 +1386,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QLineF::getIdStatic();
-            
+          return RJSType_QLineF::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

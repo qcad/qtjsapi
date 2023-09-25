@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QComboBox.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QComboBox.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -120,23 +116,19 @@
           return "QComboBox [JS]";
         };
       QComboBox.getObjectType = function() {
-        
-            return RJSType_QComboBox.getIdStatic();
-          
+        return RJSType_QComboBox.getIdStatic();
       };
 
       QComboBox.prototype.getObjectType = function() {
-        
-            return RJSType_QComboBox.getIdStatic();
-          
+        return RJSType_QComboBox.getIdStatic();
       };
 
       QComboBox.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QComboBox.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QComboBox.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

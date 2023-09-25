@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSplitter.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSplitter.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -135,23 +131,19 @@
           return "QSplitter [JS]";
         };
       QSplitter.getObjectType = function() {
-        
-            return RJSType_QSplitter.getIdStatic();
-          
+        return RJSType_QSplitter.getIdStatic();
       };
 
       QSplitter.prototype.getObjectType = function() {
-        
-            return RJSType_QSplitter.getIdStatic();
-          
+        return RJSType_QSplitter.getIdStatic();
       };
 
       QSplitter.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSplitter.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSplitter.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

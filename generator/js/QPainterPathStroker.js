@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPainterPathStroker.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPainterPathStroker.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QPainterPathStroker [JS]";
         };
       QPainterPathStroker.getObjectType = function() {
-        
-            return RJSType_QPainterPathStroker.getIdStatic();
-          
+        return RJSType_QPainterPathStroker.getIdStatic();
       };
 
       QPainterPathStroker.prototype.getObjectType = function() {
-        
-            return RJSType_QPainterPathStroker.getIdStatic();
-          
+        return RJSType_QPainterPathStroker.getIdStatic();
       };
 
       QPainterPathStroker.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPainterPathStroker.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPainterPathStroker.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

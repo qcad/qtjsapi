@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QTEXTFORMAT_H_WRAPPER
-  #define QTEXTFORMAT_H_WRAPPER
+    #ifndef QTEXTFORMAT_H_WRAPPER
+    #define QTEXTFORMAT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QString>
       
@@ -43,9 +43,9 @@
         #include <QTextLength>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextLength>
       
     // static functions implementation in singleton wrapper:
@@ -73,11 +73,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextLength::getIdStatic()) {
-                return (QTextLength*)vp;
-              }
-              
+          if (t==RJSType_QTextLength::getIdStatic()) {
+            return (QTextLength*)vp;
+          }
 
           return nullptr;
           
@@ -253,9 +251,7 @@ PercentageLength = QTextLength::PercentageLength,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextLength::getIdStatic();
-            
+          return RJSType_QTextLength::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -340,9 +336,9 @@ PercentageLength = QTextLength::PercentageLength,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextFormat>
       
     // static functions implementation in singleton wrapper:
@@ -386,11 +382,9 @@ PercentageLength = QTextLength::PercentageLength,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextFormat::getIdStatic()) {
-                return (QTextFormat*)vp;
-              }
-              
+          if (t==RJSType_QTextFormat::getIdStatic()) {
+            return (QTextFormat*)vp;
+          }
 
           return nullptr;
           
@@ -1638,9 +1632,7 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextFormat::getIdStatic();
-            
+          return RJSType_QTextFormat::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1725,9 +1717,9 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextCharFormat>
       
     // static functions implementation in singleton wrapper:
@@ -1763,11 +1755,9 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextCharFormat::getIdStatic()) {
-                return (QTextCharFormat*)vp;
-              }
-              
+          if (t==RJSType_QTextCharFormat::getIdStatic()) {
+            return (QTextCharFormat*)vp;
+          }
 
           return nullptr;
           
@@ -4457,9 +4447,7 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextCharFormat::getIdStatic();
-            
+          return RJSType_QTextCharFormat::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -4544,9 +4532,9 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextBlockFormat>
       
     // static functions implementation in singleton wrapper:
@@ -4574,11 +4562,9 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextBlockFormat::getIdStatic()) {
-                return (QTextBlockFormat*)vp;
-              }
-              
+          if (t==RJSType_QTextBlockFormat::getIdStatic()) {
+            return (QTextBlockFormat*)vp;
+          }
 
           return nullptr;
           
@@ -6347,9 +6333,7 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextBlockFormat::getIdStatic();
-            
+          return RJSType_QTextBlockFormat::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -6434,9 +6418,9 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextListFormat>
       
     // static functions implementation in singleton wrapper:
@@ -6464,11 +6448,9 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextListFormat::getIdStatic()) {
-                return (QTextListFormat*)vp;
-              }
-              
+          if (t==RJSType_QTextListFormat::getIdStatic()) {
+            return (QTextListFormat*)vp;
+          }
 
           return nullptr;
           
@@ -7900,9 +7882,7 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextListFormat::getIdStatic();
-            
+          return RJSType_QTextListFormat::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -7987,9 +7967,9 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextImageFormat>
       
     // static functions implementation in singleton wrapper:
@@ -8017,11 +7997,9 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextImageFormat::getIdStatic()) {
-                return (QTextImageFormat*)vp;
-              }
-              
+          if (t==RJSType_QTextImageFormat::getIdStatic()) {
+            return (QTextImageFormat*)vp;
+          }
 
           return nullptr;
           
@@ -9757,9 +9735,7 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextImageFormat::getIdStatic();
-            
+          return RJSType_QTextImageFormat::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -9844,9 +9820,9 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextFrameFormat>
       
     // static functions implementation in singleton wrapper:
@@ -9878,11 +9854,9 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextFrameFormat::getIdStatic()) {
-                return (QTextFrameFormat*)vp;
-              }
-              
+          if (t==RJSType_QTextFrameFormat::getIdStatic()) {
+            return (QTextFrameFormat*)vp;
+          }
 
           return nullptr;
           
@@ -11720,9 +11694,7 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextFrameFormat::getIdStatic();
-            
+          return RJSType_QTextFrameFormat::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -11807,9 +11779,9 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextTableFormat>
       
     // static functions implementation in singleton wrapper:
@@ -11837,11 +11809,9 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextTableFormat::getIdStatic()) {
-                return (QTextTableFormat*)vp;
-              }
-              
+          if (t==RJSType_QTextTableFormat::getIdStatic()) {
+            return (QTextTableFormat*)vp;
+          }
 
           return nullptr;
           
@@ -12876,9 +12846,7 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextTableFormat::getIdStatic();
-            
+          return RJSType_QTextTableFormat::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -12963,9 +12931,9 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextTableCellFormat>
       
     // static functions implementation in singleton wrapper:
@@ -12993,11 +12961,9 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextTableCellFormat::getIdStatic()) {
-                return (QTextTableCellFormat*)vp;
-              }
-              
+          if (t==RJSType_QTextTableCellFormat::getIdStatic()) {
+            return (QTextTableCellFormat*)vp;
+          }
 
           return nullptr;
           
@@ -15353,9 +15319,7 @@ FontPropertiesAll = QTextTableCellFormat::FontPropertiesAll,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextTableCellFormat::getIdStatic();
-            
+          return RJSType_QTextTableCellFormat::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

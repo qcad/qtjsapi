@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QLocale.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QLocale.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -125,23 +121,19 @@
       QLocale.prototype = new Object();
 
       QLocale.getObjectType = function() {
-        
-            return RJSType_QLocale.getIdStatic();
-          
+        return RJSType_QLocale.getIdStatic();
       };
 
       QLocale.prototype.getObjectType = function() {
-        
-            return RJSType_QLocale.getIdStatic();
-          
+        return RJSType_QLocale.getIdStatic();
       };
 
       QLocale.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QLocale.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QLocale.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

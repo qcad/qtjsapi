@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTextBlockFormat.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTextBlockFormat.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QTextBlockFormat [JS]";
         };
       QTextBlockFormat.getObjectType = function() {
-        
-            return RJSType_QTextBlockFormat.getIdStatic();
-          
+        return RJSType_QTextBlockFormat.getIdStatic();
       };
 
       QTextBlockFormat.prototype.getObjectType = function() {
-        
-            return RJSType_QTextBlockFormat.getIdStatic();
-          
+        return RJSType_QTextBlockFormat.getIdStatic();
       };
 
       QTextBlockFormat.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTextBlockFormat.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTextBlockFormat.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QTextFormat.getIdStatic()) {
             return true;
           }

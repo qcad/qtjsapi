@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QPAINTERPATH_H_WRAPPER
-  #define QPAINTERPATH_H_WRAPPER
+    #ifndef QPAINTERPATH_H_WRAPPER
+    #define QPAINTERPATH_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QFont>
       
@@ -23,9 +23,9 @@
         #include <QTransform>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPainterPath>
       
     // static functions implementation in singleton wrapper:
@@ -53,11 +53,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPainterPath::getIdStatic()) {
-                return (QPainterPath*)vp;
-              }
-              
+          if (t==RJSType_QPainterPath::getIdStatic()) {
+            return (QPainterPath*)vp;
+          }
 
           return nullptr;
           
@@ -1319,9 +1317,7 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPainterPath::getIdStatic();
-            
+          return RJSType_QPainterPath::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1406,9 +1402,9 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPainterPathStroker>
       
     // static functions implementation in singleton wrapper:
@@ -1436,11 +1432,9 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPainterPathStroker::getIdStatic()) {
-                return (QPainterPathStroker*)vp;
-              }
-              
+          if (t==RJSType_QPainterPathStroker::getIdStatic()) {
+            return (QPainterPathStroker*)vp;
+          }
 
           return nullptr;
           
@@ -1868,9 +1862,7 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPainterPathStroker::getIdStatic();
-            
+          return RJSType_QPainterPathStroker::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

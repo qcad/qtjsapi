@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QPROCESS_H_WRAPPER
-  #define QPROCESS_H_WRAPPER
+    #ifndef QPROCESS_H_WRAPPER
+    #define QPROCESS_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QProcessEnvironment>
       
       // singleton class wrapper for static functions:
@@ -96,11 +96,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QProcessEnvironment::getIdStatic()) {
-                return (QProcessEnvironment*)vp;
-              }
-              
+          if (t==RJSType_QProcessEnvironment::getIdStatic()) {
+            return (QProcessEnvironment*)vp;
+          }
 
           return nullptr;
           
@@ -433,9 +431,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QProcessEnvironment::getIdStatic();
-            
+          return RJSType_QProcessEnvironment::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -520,9 +516,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QProcess>
       
       // singleton class wrapper for static functions:
@@ -671,11 +667,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QProcess::getIdStatic()) {
-                return (QProcess*)vp;
-              }
-              
+          if (t==RJSType_QProcess::getIdStatic()) {
+            return (QProcess*)vp;
+          }
 
           return nullptr;
           
@@ -3052,9 +3046,7 @@ CrashExit = QProcess::CrashExit,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QProcess::getIdStatic();
-            
+          return RJSType_QProcess::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QXmlLocator.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QXmlLocator.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QXmlLocator [JS]";
         };
       QXmlLocator.getObjectType = function() {
-        
-            return RJSType_QXmlLocator.getIdStatic();
-          
+        return RJSType_QXmlLocator.getIdStatic();
       };
 
       QXmlLocator.prototype.getObjectType = function() {
-        
-            return RJSType_QXmlLocator.getIdStatic();
-          
+        return RJSType_QXmlLocator.getIdStatic();
       };
 
       QXmlLocator.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QXmlLocator.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QXmlLocator.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

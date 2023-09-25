@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QItemDelegate.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QItemDelegate.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -110,23 +106,19 @@
           return "QItemDelegate [JS]";
         };
       QItemDelegate.getObjectType = function() {
-        
-            return RJSType_QItemDelegate.getIdStatic();
-          
+        return RJSType_QItemDelegate.getIdStatic();
       };
 
       QItemDelegate.prototype.getObjectType = function() {
-        
-            return RJSType_QItemDelegate.getIdStatic();
-          
+        return RJSType_QItemDelegate.getIdStatic();
       };
 
       QItemDelegate.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QItemDelegate.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QItemDelegate.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

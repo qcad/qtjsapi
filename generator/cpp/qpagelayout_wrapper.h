@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QPAGELAYOUT_H_WRAPPER
-  #define QPAGELAYOUT_H_WRAPPER
+    #ifndef QPAGELAYOUT_H_WRAPPER
+    #define QPAGELAYOUT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QMarginsF>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPageLayout>
       
     // static functions implementation in singleton wrapper:
@@ -45,11 +45,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPageLayout::getIdStatic()) {
-                return (QPageLayout*)vp;
-              }
-              
+          if (t==RJSType_QPageLayout::getIdStatic()) {
+            return (QPageLayout*)vp;
+          }
 
           return nullptr;
           
@@ -829,9 +827,7 @@ FullPageMode = QPageLayout::FullPageMode,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPageLayout::getIdStatic();
-            
+          return RJSType_QPageLayout::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

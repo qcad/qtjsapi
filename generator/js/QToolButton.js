@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QToolButton.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QToolButton.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -112,23 +108,19 @@
           return "QToolButton [JS]";
         };
       QToolButton.getObjectType = function() {
-        
-            return RJSType_QToolButton.getIdStatic();
-          
+        return RJSType_QToolButton.getIdStatic();
       };
 
       QToolButton.prototype.getObjectType = function() {
-        
-            return RJSType_QToolButton.getIdStatic();
-          
+        return RJSType_QToolButton.getIdStatic();
       };
 
       QToolButton.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QToolButton.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QToolButton.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

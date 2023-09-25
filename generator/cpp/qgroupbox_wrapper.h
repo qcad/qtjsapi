@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QGROUPBOX_H_WRAPPER
-  #define QGROUPBOX_H_WRAPPER
+    #ifndef QGROUPBOX_H_WRAPPER
+    #define QGROUPBOX_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QStyleOptionGroupBox>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QGroupBox>
       
       // wrapped object is QGroupBox_Base class if new object is created: 
@@ -568,11 +568,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QGroupBox::getIdStatic()) {
-                return (QGroupBox*)vp;
-              }
-              
+          if (t==RJSType_QGroupBox::getIdStatic()) {
+            return (QGroupBox*)vp;
+          }
 
           return nullptr;
           
@@ -6013,9 +6011,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QGroupBox::getIdStatic();
-            
+          return RJSType_QGroupBox::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

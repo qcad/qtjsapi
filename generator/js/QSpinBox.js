@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSpinBox.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSpinBox.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -110,23 +106,19 @@
           return "QSpinBox [JS]";
         };
       QSpinBox.getObjectType = function() {
-        
-            return RJSType_QSpinBox.getIdStatic();
-          
+        return RJSType_QSpinBox.getIdStatic();
       };
 
       QSpinBox.prototype.getObjectType = function() {
-        
-            return RJSType_QSpinBox.getIdStatic();
-          
+        return RJSType_QSpinBox.getIdStatic();
       };
 
       QSpinBox.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSpinBox.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSpinBox.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

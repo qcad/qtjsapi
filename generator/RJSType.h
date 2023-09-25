@@ -1,8 +1,9 @@
 
   // Automatically generated, do not edit
   
-    #ifndef RJSTYPE_H
-    #define RJSTYPE_H
+        #ifndef RJSTYPE_H
+        #define RJSTYPE_H
+      
 
     #include <QObject>
     #include <QQmlEngine>
@@ -8878,10 +8879,10 @@
     
 
 
-
-    static QString getTypeName(int type) {
-      RJSTypeEnum* t = RJSTypeEnum::getById(type);
-      return t->getName();
-    }
+      static QString getTypeName(int type) {
+        RJSTypeEnum* t = RJSTypeEnum::getById(type);
+        return t->getName();
+      }
+    
     #endif
   

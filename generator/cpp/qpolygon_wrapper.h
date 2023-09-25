@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QPOLYGON_H_WRAPPER
-  #define QPOLYGON_H_WRAPPER
+    #ifndef QPOLYGON_H_WRAPPER
+    #define QPOLYGON_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QTransform>
       
@@ -21,9 +21,9 @@
         #include <QRectF>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPolygon>
       
     // static functions implementation in singleton wrapper:
@@ -51,11 +51,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPolygon::getIdStatic()) {
-                return (QPolygon*)vp;
-              }
-              
+          if (t==RJSType_QPolygon::getIdStatic()) {
+            return (QPolygon*)vp;
+          }
 
           return nullptr;
           
@@ -433,9 +431,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPolygon::getIdStatic();
-            
+          return RJSType_QPolygon::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -520,9 +516,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPolygonF>
       
     // static functions implementation in singleton wrapper:
@@ -550,11 +546,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPolygonF::getIdStatic()) {
-                return (QPolygonF*)vp;
-              }
-              
+          if (t==RJSType_QPolygonF::getIdStatic()) {
+            return (QPolygonF*)vp;
+          }
 
           return nullptr;
           
@@ -918,9 +912,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPolygonF::getIdStatic();
-            
+          return RJSType_QPolygonF::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

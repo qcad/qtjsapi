@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QITEMSELECTIONMODEL_H_WRAPPER
-  #define QITEMSELECTIONMODEL_H_WRAPPER
+    #ifndef QITEMSELECTIONMODEL_H_WRAPPER
+    #define QITEMSELECTIONMODEL_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QItemSelection>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QItemSelectionModel>
       
       // singleton class wrapper for static functions:
@@ -122,11 +122,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QItemSelectionModel::getIdStatic()) {
-                return (QItemSelectionModel*)vp;
-              }
-              
+          if (t==RJSType_QItemSelectionModel::getIdStatic()) {
+            return (QItemSelectionModel*)vp;
+          }
 
           return nullptr;
           
@@ -1216,9 +1214,7 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QItemSelectionModel::getIdStatic();
-            
+          return RJSType_QItemSelectionModel::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1303,9 +1299,9 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QItemSelection>
       
     // static functions implementation in singleton wrapper:
@@ -1333,11 +1329,9 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QItemSelection::getIdStatic()) {
-                return (QItemSelection*)vp;
-              }
-              
+          if (t==RJSType_QItemSelection::getIdStatic()) {
+            return (QItemSelection*)vp;
+          }
 
           return nullptr;
           
@@ -1536,9 +1530,7 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QItemSelection::getIdStatic();
-            
+          return RJSType_QItemSelection::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

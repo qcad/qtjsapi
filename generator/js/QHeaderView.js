@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QHeaderView.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QHeaderView.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -138,23 +134,19 @@
           return "QHeaderView [JS]";
         };
       QHeaderView.getObjectType = function() {
-        
-            return RJSType_QHeaderView.getIdStatic();
-          
+        return RJSType_QHeaderView.getIdStatic();
       };
 
       QHeaderView.prototype.getObjectType = function() {
-        
-            return RJSType_QHeaderView.getIdStatic();
-          
+        return RJSType_QHeaderView.getIdStatic();
       };
 
       QHeaderView.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QHeaderView.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QHeaderView.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

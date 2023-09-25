@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTextTableFormat.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTextTableFormat.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QTextTableFormat [JS]";
         };
       QTextTableFormat.getObjectType = function() {
-        
-            return RJSType_QTextTableFormat.getIdStatic();
-          
+        return RJSType_QTextTableFormat.getIdStatic();
       };
 
       QTextTableFormat.prototype.getObjectType = function() {
-        
-            return RJSType_QTextTableFormat.getIdStatic();
-          
+        return RJSType_QTextTableFormat.getIdStatic();
       };
 
       QTextTableFormat.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTextTableFormat.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTextTableFormat.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QTextFrameFormat.getIdStatic()) {
             return true;
           }

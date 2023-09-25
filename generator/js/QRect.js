@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QRect.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QRect.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -233,23 +229,19 @@
           return "QRect [JS]";
         };
       QRect.getObjectType = function() {
-        
-            return RJSType_QRect.getIdStatic();
-          
+        return RJSType_QRect.getIdStatic();
       };
 
       QRect.prototype.getObjectType = function() {
-        
-            return RJSType_QRect.getIdStatic();
-          
+        return RJSType_QRect.getIdStatic();
       };
 
       QRect.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QRect.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QRect.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

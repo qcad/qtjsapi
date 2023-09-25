@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QTABLEVIEW_H_WRAPPER
-  #define QTABLEVIEW_H_WRAPPER
+    #ifndef QTABLEVIEW_H_WRAPPER
+    #define QTABLEVIEW_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QHeaderView>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTableView>
       
       // wrapped object is QTableView_Base class if new object is created: 
@@ -664,11 +664,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTableView::getIdStatic()) {
-                return (QTableView*)vp;
-              }
-              
+          if (t==RJSType_QTableView::getIdStatic()) {
+            return (QTableView*)vp;
+          }
 
           return nullptr;
           
@@ -9828,9 +9826,7 @@ InternalMove = QTableView::InternalMove,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTableView::getIdStatic();
-            
+          return RJSType_QTableView::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

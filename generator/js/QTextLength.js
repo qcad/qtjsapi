@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTextLength.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTextLength.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QTextLength [JS]";
         };
       QTextLength.getObjectType = function() {
-        
-            return RJSType_QTextLength.getIdStatic();
-          
+        return RJSType_QTextLength.getIdStatic();
       };
 
       QTextLength.prototype.getObjectType = function() {
-        
-            return RJSType_QTextLength.getIdStatic();
-          
+        return RJSType_QTextLength.getIdStatic();
       };
 
       QTextLength.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTextLength.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTextLength.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

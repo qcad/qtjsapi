@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QSTRINGCONVERTER_H_WRAPPER
-  #define QSTRINGCONVERTER_H_WRAPPER
+    #ifndef QSTRINGCONVERTER_H_WRAPPER
+    #define QSTRINGCONVERTER_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QStringConverter>
       
       // singleton class wrapper for static functions:
@@ -112,11 +112,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QStringConverter::getIdStatic()) {
-                return (QStringConverter*)vp;
-              }
-              
+          if (t==RJSType_QStringConverter::getIdStatic()) {
+            return (QStringConverter*)vp;
+          }
 
           return nullptr;
           
@@ -291,9 +289,7 @@ LastEncoding = QStringConverter::LastEncoding,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QStringConverter::getIdStatic();
-            
+          return RJSType_QStringConverter::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -378,9 +374,9 @@ LastEncoding = QStringConverter::LastEncoding,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QStringEncoder>
       
       // singleton class wrapper for static functions:
@@ -465,11 +461,9 @@ LastEncoding = QStringConverter::LastEncoding,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QStringEncoder::getIdStatic()) {
-                return (QStringEncoder*)vp;
-              }
-              
+          if (t==RJSType_QStringEncoder::getIdStatic()) {
+            return (QStringEncoder*)vp;
+          }
 
           return nullptr;
           
@@ -711,9 +705,7 @@ LastEncoding = QStringEncoder::LastEncoding,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QStringEncoder::getIdStatic();
-            
+          return RJSType_QStringEncoder::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -798,9 +790,9 @@ LastEncoding = QStringEncoder::LastEncoding,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QStringDecoder>
       
       // singleton class wrapper for static functions:
@@ -885,11 +877,9 @@ LastEncoding = QStringEncoder::LastEncoding,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QStringDecoder::getIdStatic()) {
-                return (QStringDecoder*)vp;
-              }
-              
+          if (t==RJSType_QStringDecoder::getIdStatic()) {
+            return (QStringDecoder*)vp;
+          }
 
           return nullptr;
           
@@ -1131,9 +1121,7 @@ LastEncoding = QStringDecoder::LastEncoding,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QStringDecoder::getIdStatic();
-            
+          return RJSType_QStringDecoder::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

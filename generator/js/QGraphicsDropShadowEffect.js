@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QGraphicsDropShadowEffect.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QGraphicsDropShadowEffect.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QGraphicsDropShadowEffect [JS]";
         };
       QGraphicsDropShadowEffect.getObjectType = function() {
-        
-            return RJSType_QGraphicsDropShadowEffect.getIdStatic();
-          
+        return RJSType_QGraphicsDropShadowEffect.getIdStatic();
       };
 
       QGraphicsDropShadowEffect.prototype.getObjectType = function() {
-        
-            return RJSType_QGraphicsDropShadowEffect.getIdStatic();
-          
+        return RJSType_QGraphicsDropShadowEffect.getIdStatic();
       };
 
       QGraphicsDropShadowEffect.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QGraphicsDropShadowEffect.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QGraphicsDropShadowEffect.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QGraphicsEffect.getIdStatic()) {
             return true;
           }

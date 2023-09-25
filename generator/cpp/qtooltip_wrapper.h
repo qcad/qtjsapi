@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QTOOLTIP_H_WRAPPER
-  #define QTOOLTIP_H_WRAPPER
+    #ifndef QTOOLTIP_H_WRAPPER
+    #define QTOOLTIP_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QToolTip>
       
       // singleton class wrapper for static functions:
@@ -249,11 +249,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QToolTip::getIdStatic()) {
-                return (QToolTip*)vp;
-              }
-              
+          if (t==RJSType_QToolTip::getIdStatic()) {
+            return (QToolTip*)vp;
+          }
 
           return nullptr;
           
@@ -321,9 +319,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QToolTip::getIdStatic();
-            
+          return RJSType_QToolTip::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

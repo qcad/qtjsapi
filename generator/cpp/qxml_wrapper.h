@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QXML_H_WRAPPER
-  #define QXML_H_WRAPPER
+    #ifndef QXML_H_WRAPPER
+    #define QXML_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QXmlAttributes>
       
@@ -39,9 +39,9 @@
         #include <QXmlSimpleReader>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlAttributes>
       
     // static functions implementation in singleton wrapper:
@@ -69,11 +69,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlAttributes::getIdStatic()) {
-                return (QXmlAttributes*)vp;
-              }
-              
+          if (t==RJSType_QXmlAttributes::getIdStatic()) {
+            return (QXmlAttributes*)vp;
+          }
 
           return nullptr;
           
@@ -449,9 +447,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlAttributes::getIdStatic();
-            
+          return RJSType_QXmlAttributes::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -536,9 +532,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlInputSource>
       
     // static functions implementation in singleton wrapper:
@@ -566,11 +562,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlInputSource::getIdStatic()) {
-                return (QXmlInputSource*)vp;
-              }
-              
+          if (t==RJSType_QXmlInputSource::getIdStatic()) {
+            return (QXmlInputSource*)vp;
+          }
 
           return nullptr;
           
@@ -777,9 +771,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlInputSource::getIdStatic();
-            
+          return RJSType_QXmlInputSource::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -864,9 +856,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlParseException>
       
     // static functions implementation in singleton wrapper:
@@ -894,11 +886,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlParseException::getIdStatic()) {
-                return (QXmlParseException*)vp;
-              }
-              
+          if (t==RJSType_QXmlParseException::getIdStatic()) {
+            return (QXmlParseException*)vp;
+          }
 
           return nullptr;
           
@@ -1125,9 +1115,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlParseException::getIdStatic();
-            
+          return RJSType_QXmlParseException::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1212,9 +1200,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlReader>
       
     // static functions implementation in singleton wrapper:
@@ -1246,11 +1234,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlReader::getIdStatic()) {
-                return (QXmlReader*)vp;
-              }
-              
+          if (t==RJSType_QXmlReader::getIdStatic()) {
+            return (QXmlReader*)vp;
+          }
 
           return nullptr;
           
@@ -1707,9 +1693,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlReader::getIdStatic();
-            
+          return RJSType_QXmlReader::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1794,9 +1778,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlSimpleReader>
       
     // static functions implementation in singleton wrapper:
@@ -1824,11 +1808,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlSimpleReader::getIdStatic()) {
-                return (QXmlSimpleReader*)vp;
-              }
-              
+          if (t==RJSType_QXmlSimpleReader::getIdStatic()) {
+            return (QXmlSimpleReader*)vp;
+          }
 
           return nullptr;
           
@@ -2329,9 +2311,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlSimpleReader::getIdStatic();
-            
+          return RJSType_QXmlSimpleReader::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2416,9 +2396,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlLocator>
       
     // static functions implementation in singleton wrapper:
@@ -2446,11 +2426,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlLocator::getIdStatic()) {
-                return (QXmlLocator*)vp;
-              }
-              
+          if (t==RJSType_QXmlLocator::getIdStatic()) {
+            return (QXmlLocator*)vp;
+          }
 
           return nullptr;
           
@@ -2560,9 +2538,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlLocator::getIdStatic();
-            
+          return RJSType_QXmlLocator::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2647,9 +2623,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlContentHandler>
       
     // static functions implementation in singleton wrapper:
@@ -2681,11 +2657,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlContentHandler::getIdStatic()) {
-                return (QXmlContentHandler*)vp;
-              }
-              
+          if (t==RJSType_QXmlContentHandler::getIdStatic()) {
+            return (QXmlContentHandler*)vp;
+          }
 
           return nullptr;
           
@@ -3058,9 +3032,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlContentHandler::getIdStatic();
-            
+          return RJSType_QXmlContentHandler::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -3145,9 +3117,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlErrorHandler>
       
     // static functions implementation in singleton wrapper:
@@ -3179,11 +3151,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlErrorHandler::getIdStatic()) {
-                return (QXmlErrorHandler*)vp;
-              }
-              
+          if (t==RJSType_QXmlErrorHandler::getIdStatic()) {
+            return (QXmlErrorHandler*)vp;
+          }
 
           return nullptr;
           
@@ -3352,9 +3322,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlErrorHandler::getIdStatic();
-            
+          return RJSType_QXmlErrorHandler::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -3439,9 +3407,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlDTDHandler>
       
     // static functions implementation in singleton wrapper:
@@ -3473,11 +3441,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlDTDHandler::getIdStatic()) {
-                return (QXmlDTDHandler*)vp;
-              }
-              
+          if (t==RJSType_QXmlDTDHandler::getIdStatic()) {
+            return (QXmlDTDHandler*)vp;
+          }
 
           return nullptr;
           
@@ -3643,9 +3609,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlDTDHandler::getIdStatic();
-            
+          return RJSType_QXmlDTDHandler::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -3730,9 +3694,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlEntityResolver>
       
     // static functions implementation in singleton wrapper:
@@ -3764,11 +3728,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlEntityResolver::getIdStatic()) {
-                return (QXmlEntityResolver*)vp;
-              }
-              
+          if (t==RJSType_QXmlEntityResolver::getIdStatic()) {
+            return (QXmlEntityResolver*)vp;
+          }
 
           return nullptr;
           
@@ -3868,9 +3830,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlEntityResolver::getIdStatic();
-            
+          return RJSType_QXmlEntityResolver::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -3955,9 +3915,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlLexicalHandler>
       
     // static functions implementation in singleton wrapper:
@@ -3989,11 +3949,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlLexicalHandler::getIdStatic()) {
-                return (QXmlLexicalHandler*)vp;
-              }
-              
+          if (t==RJSType_QXmlLexicalHandler::getIdStatic()) {
+            return (QXmlLexicalHandler*)vp;
+          }
 
           return nullptr;
           
@@ -4250,9 +4208,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlLexicalHandler::getIdStatic();
-            
+          return RJSType_QXmlLexicalHandler::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -4337,9 +4293,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlDeclHandler>
       
     // static functions implementation in singleton wrapper:
@@ -4371,11 +4327,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlDeclHandler::getIdStatic()) {
-                return (QXmlDeclHandler*)vp;
-              }
-              
+          if (t==RJSType_QXmlDeclHandler::getIdStatic()) {
+            return (QXmlDeclHandler*)vp;
+          }
 
           return nullptr;
           
@@ -4572,9 +4526,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlDeclHandler::getIdStatic();
-            
+          return RJSType_QXmlDeclHandler::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -4659,9 +4611,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlDefaultHandler>
       
       // wrapped object is QXmlDefaultHandler_Base class if new object is created: 
@@ -4692,11 +4644,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
-                return (QXmlDefaultHandler*)vp;
-              }
-              
+          if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
+            return (QXmlDefaultHandler*)vp;
+          }
 
           return nullptr;
           
@@ -5540,9 +5490,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlDefaultHandler::getIdStatic();
-            
+          return RJSType_QXmlDefaultHandler::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

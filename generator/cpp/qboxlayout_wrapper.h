@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QBOXLAYOUT_H_WRAPPER
-  #define QBOXLAYOUT_H_WRAPPER
+    #ifndef QBOXLAYOUT_H_WRAPPER
+    #define QBOXLAYOUT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QBoxLayout>
       
       // wrapped object is QBoxLayout_Base class if new object is created: 
@@ -152,11 +152,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QBoxLayout::getIdStatic()) {
-                return (QBoxLayout*)vp;
-              }
-              
+          if (t==RJSType_QBoxLayout::getIdStatic()) {
+            return (QBoxLayout*)vp;
+          }
 
           return nullptr;
           
@@ -2033,9 +2031,7 @@ Up = QBoxLayout::Up,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QBoxLayout::getIdStatic();
-            
+          return RJSType_QBoxLayout::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2138,9 +2134,9 @@ Up = QBoxLayout::Up,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QHBoxLayout>
       
       // wrapped object is QHBoxLayout_Base class if new object is created: 
@@ -2269,11 +2265,9 @@ Up = QBoxLayout::Up,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QHBoxLayout::getIdStatic()) {
-                return (QHBoxLayout*)vp;
-              }
-              
+          if (t==RJSType_QHBoxLayout::getIdStatic()) {
+            return (QHBoxLayout*)vp;
+          }
 
           return nullptr;
           
@@ -4146,9 +4140,7 @@ Up = QHBoxLayout::Up,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QHBoxLayout::getIdStatic();
-            
+          return RJSType_QHBoxLayout::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -4251,9 +4243,9 @@ Up = QHBoxLayout::Up,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QVBoxLayout>
       
       // wrapped object is QVBoxLayout_Base class if new object is created: 
@@ -4382,11 +4374,9 @@ Up = QHBoxLayout::Up,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QVBoxLayout::getIdStatic()) {
-                return (QVBoxLayout*)vp;
-              }
-              
+          if (t==RJSType_QVBoxLayout::getIdStatic()) {
+            return (QVBoxLayout*)vp;
+          }
 
           return nullptr;
           
@@ -6259,9 +6249,7 @@ Up = QVBoxLayout::Up,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QVBoxLayout::getIdStatic();
-            
+          return RJSType_QVBoxLayout::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

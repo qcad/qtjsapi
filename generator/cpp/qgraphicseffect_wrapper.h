@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QGRAPHICSEFFECT_H_WRAPPER
-  #define QGRAPHICSEFFECT_H_WRAPPER
+    #ifndef QGRAPHICSEFFECT_H_WRAPPER
+    #define QGRAPHICSEFFECT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QGraphicsItem>
       
@@ -21,9 +21,9 @@
         #include <QPixmap>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QGraphicsEffect>
       
       // singleton class wrapper for static functions:
@@ -138,11 +138,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QGraphicsEffect::getIdStatic()) {
-                return (QGraphicsEffect*)vp;
-              }
-              
+          if (t==RJSType_QGraphicsEffect::getIdStatic()) {
+            return (QGraphicsEffect*)vp;
+          }
 
           return nullptr;
           
@@ -749,9 +747,7 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QGraphicsEffect::getIdStatic();
-            
+          return RJSType_QGraphicsEffect::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -836,9 +832,9 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QGraphicsColorizeEffect>
       
     // static functions implementation in singleton wrapper:
@@ -872,11 +868,9 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QGraphicsColorizeEffect::getIdStatic()) {
-                return (QGraphicsColorizeEffect*)vp;
-              }
-              
+          if (t==RJSType_QGraphicsColorizeEffect::getIdStatic()) {
+            return (QGraphicsColorizeEffect*)vp;
+          }
 
           return nullptr;
           
@@ -1198,9 +1192,7 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QGraphicsColorizeEffect::getIdStatic();
-            
+          return RJSType_QGraphicsColorizeEffect::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1285,9 +1277,9 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QGraphicsBlurEffect>
       
       // singleton class wrapper for static functions:
@@ -1392,11 +1384,9 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QGraphicsBlurEffect::getIdStatic()) {
-                return (QGraphicsBlurEffect*)vp;
-              }
-              
+          if (t==RJSType_QGraphicsBlurEffect::getIdStatic()) {
+            return (QGraphicsBlurEffect*)vp;
+          }
 
           return nullptr;
           
@@ -2126,9 +2116,7 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QGraphicsBlurEffect::getIdStatic();
-            
+          return RJSType_QGraphicsBlurEffect::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2213,9 +2201,9 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QGraphicsDropShadowEffect>
       
     // static functions implementation in singleton wrapper:
@@ -2267,11 +2255,9 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QGraphicsDropShadowEffect::getIdStatic()) {
-                return (QGraphicsDropShadowEffect*)vp;
-              }
-              
+          if (t==RJSType_QGraphicsDropShadowEffect::getIdStatic()) {
+            return (QGraphicsDropShadowEffect*)vp;
+          }
 
           return nullptr;
           
@@ -2729,9 +2715,7 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QGraphicsDropShadowEffect::getIdStatic();
-            
+          return RJSType_QGraphicsDropShadowEffect::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2816,9 +2800,9 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QGraphicsOpacityEffect>
       
     // static functions implementation in singleton wrapper:
@@ -2852,11 +2836,9 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QGraphicsOpacityEffect::getIdStatic()) {
-                return (QGraphicsOpacityEffect*)vp;
-              }
-              
+          if (t==RJSType_QGraphicsOpacityEffect::getIdStatic()) {
+            return (QGraphicsOpacityEffect*)vp;
+          }
 
           return nullptr;
           
@@ -3178,9 +3160,7 @@ PadToEffectiveBoundingRect = QGraphicsOpacityEffect::PadToEffectiveBoundingRect,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QGraphicsOpacityEffect::getIdStatic();
-            
+          return RJSType_QGraphicsOpacityEffect::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

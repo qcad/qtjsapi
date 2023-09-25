@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QModelIndex.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QModelIndex.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QModelIndex [JS]";
         };
       QModelIndex.getObjectType = function() {
-        
-            return RJSType_QModelIndex.getIdStatic();
-          
+        return RJSType_QModelIndex.getIdStatic();
       };
 
       QModelIndex.prototype.getObjectType = function() {
-        
-            return RJSType_QModelIndex.getIdStatic();
-          
+        return RJSType_QModelIndex.getIdStatic();
       };
 
       QModelIndex.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QModelIndex.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QModelIndex.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

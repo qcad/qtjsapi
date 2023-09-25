@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QImageWriter.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QImageWriter.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -156,23 +152,19 @@
           return "QImageWriter [JS]";
         };
       QImageWriter.getObjectType = function() {
-        
-            return RJSType_QImageWriter.getIdStatic();
-          
+        return RJSType_QImageWriter.getIdStatic();
       };
 
       QImageWriter.prototype.getObjectType = function() {
-        
-            return RJSType_QImageWriter.getIdStatic();
-          
+        return RJSType_QImageWriter.getIdStatic();
       };
 
       QImageWriter.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QImageWriter.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QImageWriter.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

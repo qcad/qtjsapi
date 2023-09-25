@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QTEXTOBJECT_H_WRAPPER
-  #define QTEXTOBJECT_H_WRAPPER
+    #ifndef QTEXTOBJECT_H_WRAPPER
+    #define QTEXTOBJECT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QTextDocument>
       

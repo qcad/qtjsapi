@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QSTANDARDITEMMODEL_H_WRAPPER
-  #define QSTANDARDITEMMODEL_H_WRAPPER
+    #ifndef QSTANDARDITEMMODEL_H_WRAPPER
+    #define QSTANDARDITEMMODEL_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QStandardItemModel>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QStandardItem>
       
     // static functions implementation in singleton wrapper:
@@ -45,11 +45,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QStandardItem::getIdStatic()) {
-                return (QStandardItem*)vp;
-              }
-              
+          if (t==RJSType_QStandardItem::getIdStatic()) {
+            return (QStandardItem*)vp;
+          }
 
           return nullptr;
           
@@ -1932,9 +1930,7 @@ UserType = QStandardItem::UserType,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QStandardItem::getIdStatic();
-            
+          return RJSType_QStandardItem::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2019,9 +2015,9 @@ UserType = QStandardItem::UserType,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QStandardItemModel>
       
       // singleton class wrapper for static functions:
@@ -2120,11 +2116,9 @@ UserType = QStandardItem::UserType,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QStandardItemModel::getIdStatic()) {
-                return (QStandardItemModel*)vp;
-              }
-              
+          if (t==RJSType_QStandardItemModel::getIdStatic()) {
+            return (QStandardItemModel*)vp;
+          }
 
           return nullptr;
           
@@ -4329,9 +4323,7 @@ HorizontalSortHint = QStandardItemModel::HorizontalSortHint,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QStandardItemModel::getIdStatic();
-            
+          return RJSType_QStandardItemModel::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

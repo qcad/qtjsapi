@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QStackedLayout.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QStackedLayout.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -159,23 +155,19 @@
           return "QStackedLayout [JS]";
         };
       QStackedLayout.getObjectType = function() {
-        
-            return RJSType_QStackedLayout.getIdStatic();
-          
+        return RJSType_QStackedLayout.getIdStatic();
       };
 
       QStackedLayout.prototype.getObjectType = function() {
-        
-            return RJSType_QStackedLayout.getIdStatic();
-          
+        return RJSType_QStackedLayout.getIdStatic();
       };
 
       QStackedLayout.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QStackedLayout.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QStackedLayout.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

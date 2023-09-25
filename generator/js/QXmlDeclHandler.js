@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QXmlDeclHandler.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QXmlDeclHandler.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QXmlDeclHandler [JS]";
         };
       QXmlDeclHandler.getObjectType = function() {
-        
-            return RJSType_QXmlDeclHandler.getIdStatic();
-          
+        return RJSType_QXmlDeclHandler.getIdStatic();
       };
 
       QXmlDeclHandler.prototype.getObjectType = function() {
-        
-            return RJSType_QXmlDeclHandler.getIdStatic();
-          
+        return RJSType_QXmlDeclHandler.getIdStatic();
       };
 
       QXmlDeclHandler.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QXmlDeclHandler.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QXmlDeclHandler.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

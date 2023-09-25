@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDomComment.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDomComment.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QDomComment [JS]";
         };
       QDomComment.getObjectType = function() {
-        
-            return RJSType_QDomComment.getIdStatic();
-          
+        return RJSType_QDomComment.getIdStatic();
       };
 
       QDomComment.prototype.getObjectType = function() {
-        
-            return RJSType_QDomComment.getIdStatic();
-          
+        return RJSType_QDomComment.getIdStatic();
       };
 
       QDomComment.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDomComment.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDomComment.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QDomCharacterData.getIdStatic()) {
             return true;
           }

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QXmlStreamWriter.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QXmlStreamWriter.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QXmlStreamWriter [JS]";
         };
       QXmlStreamWriter.getObjectType = function() {
-        
-            return RJSType_QXmlStreamWriter.getIdStatic();
-          
+        return RJSType_QXmlStreamWriter.getIdStatic();
       };
 
       QXmlStreamWriter.prototype.getObjectType = function() {
-        
-            return RJSType_QXmlStreamWriter.getIdStatic();
-          
+        return RJSType_QXmlStreamWriter.getIdStatic();
       };
 
       QXmlStreamWriter.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QXmlStreamWriter.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QXmlStreamWriter.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

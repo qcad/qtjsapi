@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QUiLoader.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QUiLoader.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QUiLoader [JS]";
         };
       QUiLoader.getObjectType = function() {
-        
-            return RJSType_QUiLoader.getIdStatic();
-          
+        return RJSType_QUiLoader.getIdStatic();
       };
 
       QUiLoader.prototype.getObjectType = function() {
-        
-            return RJSType_QUiLoader.getIdStatic();
-          
+        return RJSType_QUiLoader.getIdStatic();
       };
 
       QUiLoader.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QUiLoader.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QUiLoader.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

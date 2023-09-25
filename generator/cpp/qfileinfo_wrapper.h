@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QFILEINFO_H_WRAPPER
-  #define QFILEINFO_H_WRAPPER
+    #ifndef QFILEINFO_H_WRAPPER
+    #define QFILEINFO_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QDir>
       
         #include <QDateTime>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QFileInfo>
       
     // static functions implementation in singleton wrapper:
@@ -47,11 +47,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QFileInfo::getIdStatic()) {
-                return (QFileInfo*)vp;
-              }
-              
+          if (t==RJSType_QFileInfo::getIdStatic()) {
+            return (QFileInfo*)vp;
+          }
 
           return nullptr;
           
@@ -1195,9 +1193,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QFileInfo::getIdStatic();
-            
+          return RJSType_QFileInfo::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

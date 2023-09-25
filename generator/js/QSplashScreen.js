@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSplashScreen.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSplashScreen.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -135,23 +131,19 @@
           return "QSplashScreen [JS]";
         };
       QSplashScreen.getObjectType = function() {
-        
-            return RJSType_QSplashScreen.getIdStatic();
-          
+        return RJSType_QSplashScreen.getIdStatic();
       };
 
       QSplashScreen.prototype.getObjectType = function() {
-        
-            return RJSType_QSplashScreen.getIdStatic();
-          
+        return RJSType_QSplashScreen.getIdStatic();
       };
 
       QSplashScreen.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSplashScreen.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSplashScreen.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

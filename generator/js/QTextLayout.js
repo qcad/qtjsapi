@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTextLayout.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTextLayout.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -156,23 +152,19 @@
           return "QTextLayout [JS]";
         };
       QTextLayout.getObjectType = function() {
-        
-            return RJSType_QTextLayout.getIdStatic();
-          
+        return RJSType_QTextLayout.getIdStatic();
       };
 
       QTextLayout.prototype.getObjectType = function() {
-        
-            return RJSType_QTextLayout.getIdStatic();
-          
+        return RJSType_QTextLayout.getIdStatic();
       };
 
       QTextLayout.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTextLayout.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTextLayout.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

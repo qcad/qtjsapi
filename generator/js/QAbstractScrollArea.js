@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QAbstractScrollArea.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QAbstractScrollArea.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -106,23 +102,19 @@
           return "QAbstractScrollArea [JS]";
         };
       QAbstractScrollArea.getObjectType = function() {
-        
-            return RJSType_QAbstractScrollArea.getIdStatic();
-          
+        return RJSType_QAbstractScrollArea.getIdStatic();
       };
 
       QAbstractScrollArea.prototype.getObjectType = function() {
-        
-            return RJSType_QAbstractScrollArea.getIdStatic();
-          
+        return RJSType_QAbstractScrollArea.getIdStatic();
       };
 
       QAbstractScrollArea.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QAbstractScrollArea.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QAbstractScrollArea.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

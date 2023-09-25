@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QKeySequence.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QKeySequence.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -210,23 +206,19 @@
           return this.toStr.apply(this, arguments);
         }
       QKeySequence.getObjectType = function() {
-        
-            return RJSType_QKeySequence.getIdStatic();
-          
+        return RJSType_QKeySequence.getIdStatic();
       };
 
       QKeySequence.prototype.getObjectType = function() {
-        
-            return RJSType_QKeySequence.getIdStatic();
-          
+        return RJSType_QKeySequence.getIdStatic();
       };
 
       QKeySequence.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QKeySequence.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QKeySequence.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

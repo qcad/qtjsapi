@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QScrollArea.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QScrollArea.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -106,23 +102,19 @@
           return "QScrollArea [JS]";
         };
       QScrollArea.getObjectType = function() {
-        
-            return RJSType_QScrollArea.getIdStatic();
-          
+        return RJSType_QScrollArea.getIdStatic();
       };
 
       QScrollArea.prototype.getObjectType = function() {
-        
-            return RJSType_QScrollArea.getIdStatic();
-          
+        return RJSType_QScrollArea.getIdStatic();
       };
 
       QScrollArea.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QScrollArea.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QScrollArea.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

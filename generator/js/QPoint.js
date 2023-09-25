@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPoint.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPoint.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QPoint [JS]";
         };
       QPoint.getObjectType = function() {
-        
-            return RJSType_QPoint.getIdStatic();
-          
+        return RJSType_QPoint.getIdStatic();
       };
 
       QPoint.prototype.getObjectType = function() {
-        
-            return RJSType_QPoint.getIdStatic();
-          
+        return RJSType_QPoint.getIdStatic();
       };
 
       QPoint.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPoint.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPoint.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

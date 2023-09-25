@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QCoreApplication.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QCoreApplication.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QCoreApplication [JS]";
         };
       QCoreApplication.getObjectType = function() {
-        
-            return RJSType_QCoreApplication.getIdStatic();
-          
+        return RJSType_QCoreApplication.getIdStatic();
       };
 
       QCoreApplication.prototype.getObjectType = function() {
-        
-            return RJSType_QCoreApplication.getIdStatic();
-          
+        return RJSType_QCoreApplication.getIdStatic();
       };
 
       QCoreApplication.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QCoreApplication.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QCoreApplication.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

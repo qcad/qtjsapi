@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QUrl.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QUrl.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -100,23 +96,19 @@
       QUrl.prototype = new Object();
 
       QUrl.getObjectType = function() {
-        
-            return RJSType_QUrl.getIdStatic();
-          
+        return RJSType_QUrl.getIdStatic();
       };
 
       QUrl.prototype.getObjectType = function() {
-        
-            return RJSType_QUrl.getIdStatic();
-          
+        return RJSType_QUrl.getIdStatic();
       };
 
       QUrl.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QUrl.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QUrl.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

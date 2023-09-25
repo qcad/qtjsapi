@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QStringConverter.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QStringConverter.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QStringConverter [JS]";
         };
       QStringConverter.getObjectType = function() {
-        
-            return RJSType_QStringConverter.getIdStatic();
-          
+        return RJSType_QStringConverter.getIdStatic();
       };
 
       QStringConverter.prototype.getObjectType = function() {
-        
-            return RJSType_QStringConverter.getIdStatic();
-          
+        return RJSType_QStringConverter.getIdStatic();
       };
 
       QStringConverter.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QStringConverter.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QStringConverter.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QStringConverterBase.getIdStatic()) {
             return true;
           }

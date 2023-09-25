@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QDOCKWIDGET_H_WRAPPER
-  #define QDOCKWIDGET_H_WRAPPER
+    #ifndef QDOCKWIDGET_H_WRAPPER
+    #define QDOCKWIDGET_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QMainWindow>
       
         #include <QStyleOptionDockWidget>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDockWidget>
       
       // wrapped object is QDockWidget_Base class if new object is created: 
@@ -556,11 +556,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDockWidget::getIdStatic()) {
-                return (QDockWidget*)vp;
-              }
-              
+          if (t==RJSType_QDockWidget::getIdStatic()) {
+            return (QDockWidget*)vp;
+          }
 
           return nullptr;
           
@@ -6188,9 +6186,7 @@ Reserved = QDockWidget::Reserved,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDockWidget::getIdStatic();
-            
+          return RJSType_QDockWidget::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

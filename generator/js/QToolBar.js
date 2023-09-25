@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QToolBar.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QToolBar.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -149,23 +145,19 @@
           return "QToolBar [JS]";
         };
       QToolBar.getObjectType = function() {
-        
-            return RJSType_QToolBar.getIdStatic();
-          
+        return RJSType_QToolBar.getIdStatic();
       };
 
       QToolBar.prototype.getObjectType = function() {
-        
-            return RJSType_QToolBar.getIdStatic();
-          
+        return RJSType_QToolBar.getIdStatic();
       };
 
       QToolBar.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QToolBar.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QToolBar.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

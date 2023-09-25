@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QFONTCOMBOBOX_H_WRAPPER
-  #define QFONTCOMBOBOX_H_WRAPPER
+    #ifndef QFONTCOMBOBOX_H_WRAPPER
+    #define QFONTCOMBOBOX_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QFontComboBox>
       
       // wrapped object is QFontComboBox_Base class if new object is created: 
@@ -632,11 +632,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QFontComboBox::getIdStatic()) {
-                return (QFontComboBox*)vp;
-              }
-              
+          if (t==RJSType_QFontComboBox::getIdStatic()) {
+            return (QFontComboBox*)vp;
+          }
 
           return nullptr;
           
@@ -7384,9 +7382,7 @@ ProportionalFonts = QFontComboBox::ProportionalFonts,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QFontComboBox::getIdStatic();
-            
+          return RJSType_QFontComboBox::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

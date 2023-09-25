@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QInputDevice.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QInputDevice.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -106,23 +102,19 @@
           return "QInputDevice [JS]";
         };
       QInputDevice.getObjectType = function() {
-        
-            return RJSType_QInputDevice.getIdStatic();
-          
+        return RJSType_QInputDevice.getIdStatic();
       };
 
       QInputDevice.prototype.getObjectType = function() {
-        
-            return RJSType_QInputDevice.getIdStatic();
-          
+        return RJSType_QInputDevice.getIdStatic();
       };
 
       QInputDevice.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QInputDevice.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QInputDevice.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

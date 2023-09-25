@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QMarginsF.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QMarginsF.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -207,23 +203,19 @@
           return "QMarginsF [JS]";
         };
       QMarginsF.getObjectType = function() {
-        
-            return RJSType_QMarginsF.getIdStatic();
-          
+        return RJSType_QMarginsF.getIdStatic();
       };
 
       QMarginsF.prototype.getObjectType = function() {
-        
-            return RJSType_QMarginsF.getIdStatic();
-          
+        return RJSType_QMarginsF.getIdStatic();
       };
 
       QMarginsF.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QMarginsF.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QMarginsF.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

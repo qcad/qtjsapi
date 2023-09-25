@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QITEMDELEGATE_H_WRAPPER
-  #define QITEMDELEGATE_H_WRAPPER
+    #ifndef QITEMDELEGATE_H_WRAPPER
+    #define QITEMDELEGATE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QItemEditorFactory>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QItemDelegate>
       
       // wrapped object is QItemDelegate_Base class if new object is created: 
@@ -119,11 +119,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QItemDelegate::getIdStatic()) {
-                return (QItemDelegate*)vp;
-              }
-              
+          if (t==RJSType_QItemDelegate::getIdStatic()) {
+            return (QItemDelegate*)vp;
+          }
 
           return nullptr;
           
@@ -862,9 +860,7 @@ RevertModelCache = QItemDelegate::RevertModelCache,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QItemDelegate::getIdStatic();
-            
+          return RJSType_QItemDelegate::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

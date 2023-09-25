@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QXmlParseException.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QXmlParseException.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -130,23 +126,19 @@
           return "QXmlParseException [JS]";
         };
       QXmlParseException.getObjectType = function() {
-        
-            return RJSType_QXmlParseException.getIdStatic();
-          
+        return RJSType_QXmlParseException.getIdStatic();
       };
 
       QXmlParseException.prototype.getObjectType = function() {
-        
-            return RJSType_QXmlParseException.getIdStatic();
-          
+        return RJSType_QXmlParseException.getIdStatic();
       };
 
       QXmlParseException.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QXmlParseException.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QXmlParseException.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

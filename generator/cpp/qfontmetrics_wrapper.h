@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QFONTMETRICS_H_WRAPPER
-  #define QFONTMETRICS_H_WRAPPER
+    #ifndef QFONTMETRICS_H_WRAPPER
+    #define QFONTMETRICS_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QRect>
       
         #include <QTextOption>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QFontMetrics>
       
     // static functions implementation in singleton wrapper:
@@ -47,11 +47,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QFontMetrics::getIdStatic()) {
-                return (QFontMetrics*)vp;
-              }
-              
+          if (t==RJSType_QFontMetrics::getIdStatic()) {
+            return (QFontMetrics*)vp;
+          }
 
           return nullptr;
           
@@ -770,9 +768,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QFontMetrics::getIdStatic();
-            
+          return RJSType_QFontMetrics::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -857,9 +853,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QFontMetricsF>
       
     // static functions implementation in singleton wrapper:
@@ -887,11 +883,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QFontMetricsF::getIdStatic()) {
-                return (QFontMetricsF*)vp;
-              }
-              
+          if (t==RJSType_QFontMetricsF::getIdStatic()) {
+            return (QFontMetricsF*)vp;
+          }
 
           return nullptr;
           
@@ -1621,9 +1615,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QFontMetricsF::getIdStatic();
-            
+          return RJSType_QFontMetricsF::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

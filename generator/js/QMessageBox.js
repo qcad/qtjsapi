@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QMessageBox.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QMessageBox.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -137,23 +133,19 @@
           return "QMessageBox [JS]";
         };
       QMessageBox.getObjectType = function() {
-        
-            return RJSType_QMessageBox.getIdStatic();
-          
+        return RJSType_QMessageBox.getIdStatic();
       };
 
       QMessageBox.prototype.getObjectType = function() {
-        
-            return RJSType_QMessageBox.getIdStatic();
-          
+        return RJSType_QMessageBox.getIdStatic();
       };
 
       QMessageBox.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QMessageBox.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QMessageBox.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

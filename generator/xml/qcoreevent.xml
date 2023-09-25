@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcoreevent.h">
   <class_decl name="QObject" />
-  <class name="QEvent" ownership="cpp">
+  <class name="QEvent" ownership="cpp" downcast="true">
     <enum name="Type">
       <key>None</key>
       <key>Timer</key>

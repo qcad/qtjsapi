@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QSORTFILTERPROXYMODEL_H_WRAPPER
-  #define QSORTFILTERPROXYMODEL_H_WRAPPER
+    #ifndef QSORTFILTERPROXYMODEL_H_WRAPPER
+    #define QSORTFILTERPROXYMODEL_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSortFilterProxyModel>
       
       // singleton class wrapper for static functions:
@@ -114,11 +114,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QSortFilterProxyModel::getIdStatic()) {
-                return (QSortFilterProxyModel*)vp;
-              }
-              
+          if (t==RJSType_QSortFilterProxyModel::getIdStatic()) {
+            return (QSortFilterProxyModel*)vp;
+          }
 
           return nullptr;
           
@@ -2028,9 +2026,7 @@ HorizontalSortHint = QSortFilterProxyModel::HorizontalSortHint,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QSortFilterProxyModel::getIdStatic();
-            
+          return RJSType_QSortFilterProxyModel::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

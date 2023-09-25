@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QGraphicsBlurEffect.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QGraphicsBlurEffect.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QGraphicsBlurEffect [JS]";
         };
       QGraphicsBlurEffect.getObjectType = function() {
-        
-            return RJSType_QGraphicsBlurEffect.getIdStatic();
-          
+        return RJSType_QGraphicsBlurEffect.getIdStatic();
       };
 
       QGraphicsBlurEffect.prototype.getObjectType = function() {
-        
-            return RJSType_QGraphicsBlurEffect.getIdStatic();
-          
+        return RJSType_QGraphicsBlurEffect.getIdStatic();
       };
 
       QGraphicsBlurEffect.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QGraphicsBlurEffect.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QGraphicsBlurEffect.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

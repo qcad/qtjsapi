@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDateTime.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDateTime.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -99,23 +95,19 @@
       QDateTime.prototype = new Object();
 
       QDateTime.getObjectType = function() {
-        
-            return RJSType_QDateTime.getIdStatic();
-          
+        return RJSType_QDateTime.getIdStatic();
       };
 
       QDateTime.prototype.getObjectType = function() {
-        
-            return RJSType_QDateTime.getIdStatic();
-          
+        return RJSType_QDateTime.getIdStatic();
       };
 
       QDateTime.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDateTime.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDateTime.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

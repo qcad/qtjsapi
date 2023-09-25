@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QPRINTERINFO_H_WRAPPER
-  #define QPRINTERINFO_H_WRAPPER
+    #ifndef QPRINTERINFO_H_WRAPPER
+    #define QPRINTERINFO_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QDebug>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPrinterInfo>
       
       // singleton class wrapper for static functions:
@@ -182,11 +182,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPrinterInfo::getIdStatic()) {
-                return (QPrinterInfo*)vp;
-              }
-              
+          if (t==RJSType_QPrinterInfo::getIdStatic()) {
+            return (QPrinterInfo*)vp;
+          }
 
           return nullptr;
           
@@ -667,9 +665,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPrinterInfo::getIdStatic();
-            
+          return RJSType_QPrinterInfo::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QSCROLLBAR_H_WRAPPER
-  #define QSCROLLBAR_H_WRAPPER
+    #ifndef QSCROLLBAR_H_WRAPPER
+    #define QSCROLLBAR_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QStyleOptionSlider>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QScrollBar>
       
       // wrapped object is QScrollBar_Base class if new object is created: 
@@ -610,11 +610,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QScrollBar::getIdStatic()) {
-                return (QScrollBar*)vp;
-              }
-              
+          if (t==RJSType_QScrollBar::getIdStatic()) {
+            return (QScrollBar*)vp;
+          }
 
           return nullptr;
           
@@ -6513,9 +6511,7 @@ SliderMove = QScrollBar::SliderMove,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QScrollBar::getIdStatic();
-            
+          return RJSType_QScrollBar::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QSPINBOX_H_WRAPPER
-  #define QSPINBOX_H_WRAPPER
+    #ifndef QSPINBOX_H_WRAPPER
+    #define QSPINBOX_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSpinBox>
       
       // wrapped object is QSpinBox_Base class if new object is created: 
@@ -584,11 +584,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QSpinBox::getIdStatic()) {
-                return (QSpinBox*)vp;
-              }
-              
+          if (t==RJSType_QSpinBox::getIdStatic()) {
+            return (QSpinBox*)vp;
+          }
 
           return nullptr;
           
@@ -6257,9 +6255,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QSpinBox::getIdStatic();
-            
+          return RJSType_QSpinBox::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -6362,9 +6358,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDoubleSpinBox>
       
     // static functions implementation in singleton wrapper:
@@ -6392,11 +6388,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDoubleSpinBox::getIdStatic()) {
-                return (QDoubleSpinBox*)vp;
-              }
-              
+          if (t==RJSType_QDoubleSpinBox::getIdStatic()) {
+            return (QDoubleSpinBox*)vp;
+          }
 
           return nullptr;
           
@@ -7048,9 +7042,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDoubleSpinBox::getIdStatic();
-            
+          return RJSType_QDoubleSpinBox::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

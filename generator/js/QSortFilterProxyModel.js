@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSortFilterProxyModel.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSortFilterProxyModel.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -124,23 +120,19 @@
           return "QSortFilterProxyModel [JS]";
         };
       QSortFilterProxyModel.getObjectType = function() {
-        
-            return RJSType_QSortFilterProxyModel.getIdStatic();
-          
+        return RJSType_QSortFilterProxyModel.getIdStatic();
       };
 
       QSortFilterProxyModel.prototype.getObjectType = function() {
-        
-            return RJSType_QSortFilterProxyModel.getIdStatic();
-          
+        return RJSType_QSortFilterProxyModel.getIdStatic();
       };
 
       QSortFilterProxyModel.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSortFilterProxyModel.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSortFilterProxyModel.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

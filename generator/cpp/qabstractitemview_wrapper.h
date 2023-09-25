@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QABSTRACTITEMVIEW_H_WRAPPER
-  #define QABSTRACTITEMVIEW_H_WRAPPER
+    #ifndef QABSTRACTITEMVIEW_H_WRAPPER
+    #define QABSTRACTITEMVIEW_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QMenu>
       
@@ -19,9 +19,9 @@
         #include <QEvent>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QAbstractItemView>
       
       // wrapped object is QAbstractItemView_Base class if new object is created: 
@@ -695,11 +695,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QAbstractItemView::getIdStatic()) {
-                return (QAbstractItemView*)vp;
-              }
-              
+          if (t==RJSType_QAbstractItemView::getIdStatic()) {
+            return (QAbstractItemView*)vp;
+          }
 
           return nullptr;
           
@@ -8000,9 +7998,7 @@ InternalMove = QAbstractItemView::InternalMove,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QAbstractItemView::getIdStatic();
-            
+          return RJSType_QAbstractItemView::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

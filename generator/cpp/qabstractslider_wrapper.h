@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QABSTRACTSLIDER_H_WRAPPER
-  #define QABSTRACTSLIDER_H_WRAPPER
+    #ifndef QABSTRACTSLIDER_H_WRAPPER
+    #define QABSTRACTSLIDER_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QAbstractSlider>
       
       // wrapped object is QAbstractSlider_Base class if new object is created: 
@@ -608,11 +608,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QAbstractSlider::getIdStatic()) {
-                return (QAbstractSlider*)vp;
-              }
-              
+          if (t==RJSType_QAbstractSlider::getIdStatic()) {
+            return (QAbstractSlider*)vp;
+          }
 
           return nullptr;
           
@@ -6520,9 +6518,7 @@ SliderMove = QAbstractSlider::SliderMove,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QAbstractSlider::getIdStatic();
-            
+          return RJSType_QAbstractSlider::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

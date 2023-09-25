@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QMenuBar.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QMenuBar.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -110,23 +106,19 @@
           return "QMenuBar [JS]";
         };
       QMenuBar.getObjectType = function() {
-        
-            return RJSType_QMenuBar.getIdStatic();
-          
+        return RJSType_QMenuBar.getIdStatic();
       };
 
       QMenuBar.prototype.getObjectType = function() {
-        
-            return RJSType_QMenuBar.getIdStatic();
-          
+        return RJSType_QMenuBar.getIdStatic();
       };
 
       QMenuBar.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QMenuBar.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QMenuBar.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

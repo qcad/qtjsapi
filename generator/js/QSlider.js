@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSlider.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSlider.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -141,23 +137,19 @@
           return "QSlider [JS]";
         };
       QSlider.getObjectType = function() {
-        
-            return RJSType_QSlider.getIdStatic();
-          
+        return RJSType_QSlider.getIdStatic();
       };
 
       QSlider.prototype.getObjectType = function() {
-        
-            return RJSType_QSlider.getIdStatic();
-          
+        return RJSType_QSlider.getIdStatic();
       };
 
       QSlider.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSlider.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSlider.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

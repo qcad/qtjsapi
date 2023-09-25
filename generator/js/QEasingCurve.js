@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QEasingCurve.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QEasingCurve.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -156,23 +152,19 @@
           return "QEasingCurve [JS]";
         };
       QEasingCurve.getObjectType = function() {
-        
-            return RJSType_QEasingCurve.getIdStatic();
-          
+        return RJSType_QEasingCurve.getIdStatic();
       };
 
       QEasingCurve.prototype.getObjectType = function() {
-        
-            return RJSType_QEasingCurve.getIdStatic();
-          
+        return RJSType_QEasingCurve.getIdStatic();
       };
 
       QEasingCurve.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QEasingCurve.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QEasingCurve.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

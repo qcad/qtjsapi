@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QMAINWINDOW_H_WRAPPER
-  #define QMAINWINDOW_H_WRAPPER
+    #ifndef QMAINWINDOW_H_WRAPPER
+    #define QMAINWINDOW_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QDockWidget>
       
@@ -23,9 +23,9 @@
         #include <QMenu>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QMainWindow>
       
       // wrapped object is QMainWindow_Base class if new object is created: 
@@ -660,11 +660,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QMainWindow::getIdStatic()) {
-                return (QMainWindow*)vp;
-              }
-              
+          if (t==RJSType_QMainWindow::getIdStatic()) {
+            return (QMainWindow*)vp;
+          }
 
           return nullptr;
           
@@ -7326,9 +7324,7 @@ GroupedDragging = QMainWindow::GroupedDragging,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QMainWindow::getIdStatic();
-            
+          return RJSType_QMainWindow::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

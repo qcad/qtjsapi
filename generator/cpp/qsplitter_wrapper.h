@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QSPLITTER_H_WRAPPER
-  #define QSPLITTER_H_WRAPPER
+    #ifndef QSPLITTER_H_WRAPPER
+    #define QSPLITTER_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QTextStream>
       
         #include <QSplitterHandle>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSplitter>
       
       // wrapped object is QSplitter_Base class if new object is created: 
@@ -558,11 +558,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QSplitter::getIdStatic()) {
-                return (QSplitter*)vp;
-              }
-              
+          if (t==RJSType_QSplitter::getIdStatic()) {
+            return (QSplitter*)vp;
+          }
 
           return nullptr;
           
@@ -6636,9 +6634,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QSplitter::getIdStatic();
-            
+          return RJSType_QSplitter::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -6741,9 +6737,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSplitterHandle>
       
       // wrapped object is QSplitterHandle_Base class if new object is created: 
@@ -7227,11 +7223,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QSplitterHandle::getIdStatic()) {
-                return (QSplitterHandle*)vp;
-              }
-              
+          if (t==RJSType_QSplitterHandle::getIdStatic()) {
+            return (QSplitterHandle*)vp;
+          }
 
           return nullptr;
           
@@ -12119,9 +12113,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QSplitterHandle::getIdStatic();
-            
+          return RJSType_QSplitterHandle::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

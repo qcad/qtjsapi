@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDomText.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDomText.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QDomText [JS]";
         };
       QDomText.getObjectType = function() {
-        
-            return RJSType_QDomText.getIdStatic();
-          
+        return RJSType_QDomText.getIdStatic();
       };
 
       QDomText.prototype.getObjectType = function() {
-        
-            return RJSType_QDomText.getIdStatic();
-          
+        return RJSType_QDomText.getIdStatic();
       };
 
       QDomText.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDomText.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDomText.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QDomNode.getIdStatic()) {
             return true;
           }

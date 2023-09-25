@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QCALENDAR_H_WRAPPER
-  #define QCALENDAR_H_WRAPPER
+    #ifndef QCALENDAR_H_WRAPPER
+    #define QCALENDAR_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QDate>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QCalendar>
       
       // singleton class wrapper for static functions:
@@ -110,11 +110,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QCalendar::getIdStatic()) {
-                return (QCalendar*)vp;
-              }
-              
+          if (t==RJSType_QCalendar::getIdStatic()) {
+            return (QCalendar*)vp;
+          }
 
           return nullptr;
           
@@ -760,9 +758,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QCalendar::getIdStatic();
-            
+          return RJSType_QCalendar::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

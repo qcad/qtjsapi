@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QPROGRESSDIALOG_H_WRAPPER
-  #define QPROGRESSDIALOG_H_WRAPPER
+    #ifndef QPROGRESSDIALOG_H_WRAPPER
+    #define QPROGRESSDIALOG_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QPushButton>
       
@@ -21,9 +21,9 @@
         #include <QTimer>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QProgressDialog>
       
       // wrapped object is QProgressDialog_Base class if new object is created: 
@@ -592,11 +592,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QProgressDialog::getIdStatic()) {
-                return (QProgressDialog*)vp;
-              }
-              
+          if (t==RJSType_QProgressDialog::getIdStatic()) {
+            return (QProgressDialog*)vp;
+          }
 
           return nullptr;
           
@@ -6634,9 +6632,7 @@ Accepted = QProgressDialog::Accepted,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QProgressDialog::getIdStatic();
-            
+          return RJSType_QProgressDialog::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

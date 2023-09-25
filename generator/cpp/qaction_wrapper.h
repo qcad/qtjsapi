@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QACTION_H_WRAPPER
-  #define QACTION_H_WRAPPER
+    #ifndef QACTION_H_WRAPPER
+    #define QACTION_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QMenu>
       
@@ -19,9 +19,9 @@
         #include <QGraphicsWidget>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QAction>
       
       // wrapped object is QAction_Base class if new object is created: 
@@ -251,11 +251,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QAction::getIdStatic()) {
-                return (QAction*)vp;
-              }
-              
+          if (t==RJSType_QAction::getIdStatic()) {
+            return (QAction*)vp;
+          }
 
           return nullptr;
           
@@ -1995,9 +1993,7 @@ HighPriority = QAction::HighPriority,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QAction::getIdStatic();
-            
+          return RJSType_QAction::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

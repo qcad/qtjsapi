@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QLAYOUTITEM_H_WRAPPER
-  #define QLAYOUTITEM_H_WRAPPER
+    #ifndef QLAYOUTITEM_H_WRAPPER
+    #define QLAYOUTITEM_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QLayout>
       
@@ -23,9 +23,9 @@
         #include <QSize>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QLayoutItem>
       
       // wrapped object is QLayoutItem_Base class if new object is created: 
@@ -88,11 +88,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QLayoutItem::getIdStatic()) {
-                return (QLayoutItem*)vp;
-              }
-              
+          if (t==RJSType_QLayoutItem::getIdStatic()) {
+            return (QLayoutItem*)vp;
+          }
 
           return nullptr;
           
@@ -513,9 +511,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QLayoutItem::getIdStatic();
-            
+          return RJSType_QLayoutItem::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -618,9 +614,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSpacerItem>
       
     // static functions implementation in singleton wrapper:
@@ -648,11 +644,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QSpacerItem::getIdStatic()) {
-                return (QSpacerItem*)vp;
-              }
-              
+          if (t==RJSType_QSpacerItem::getIdStatic()) {
+            return (QSpacerItem*)vp;
+          }
 
           return nullptr;
           
@@ -1189,9 +1183,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QSpacerItem::getIdStatic();
-            
+          return RJSType_QSpacerItem::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1276,9 +1268,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QWidgetItem>
       
     // static functions implementation in singleton wrapper:
@@ -1306,11 +1298,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QWidgetItem::getIdStatic()) {
-                return (QWidgetItem*)vp;
-              }
-              
+          if (t==RJSType_QWidgetItem::getIdStatic()) {
+            return (QWidgetItem*)vp;
+          }
 
           return nullptr;
           
@@ -1768,9 +1758,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QWidgetItem::getIdStatic();
-            
+          return RJSType_QWidgetItem::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

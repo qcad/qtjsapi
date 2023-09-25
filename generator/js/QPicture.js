@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPicture.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPicture.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -130,23 +126,19 @@
           return "QPicture [JS]";
         };
       QPicture.getObjectType = function() {
-        
-            return RJSType_QPicture.getIdStatic();
-          
+        return RJSType_QPicture.getIdStatic();
       };
 
       QPicture.prototype.getObjectType = function() {
-        
-            return RJSType_QPicture.getIdStatic();
-          
+        return RJSType_QPicture.getIdStatic();
       };
 
       QPicture.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPicture.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPicture.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QPaintDevice.getIdStatic()) {
             return true;
           }

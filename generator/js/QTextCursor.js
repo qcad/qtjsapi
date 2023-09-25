@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTextCursor.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTextCursor.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -155,23 +151,19 @@
           return "QTextCursor [JS]";
         };
       QTextCursor.getObjectType = function() {
-        
-            return RJSType_QTextCursor.getIdStatic();
-          
+        return RJSType_QTextCursor.getIdStatic();
       };
 
       QTextCursor.prototype.getObjectType = function() {
-        
-            return RJSType_QTextCursor.getIdStatic();
-          
+        return RJSType_QTextCursor.getIdStatic();
       };
 
       QTextCursor.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTextCursor.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTextCursor.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

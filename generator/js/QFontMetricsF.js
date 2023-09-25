@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QFontMetricsF.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QFontMetricsF.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -181,23 +177,19 @@
           return "QFontMetricsF [JS]";
         };
       QFontMetricsF.getObjectType = function() {
-        
-            return RJSType_QFontMetricsF.getIdStatic();
-          
+        return RJSType_QFontMetricsF.getIdStatic();
       };
 
       QFontMetricsF.prototype.getObjectType = function() {
-        
-            return RJSType_QFontMetricsF.getIdStatic();
-          
+        return RJSType_QFontMetricsF.getIdStatic();
       };
 
       QFontMetricsF.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QFontMetricsF.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QFontMetricsF.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

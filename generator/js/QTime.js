@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTime.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTime.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -126,23 +122,19 @@
       QTime.prototype = new Object();
 
       QTime.getObjectType = function() {
-        
-            return RJSType_QTime.getIdStatic();
-          
+        return RJSType_QTime.getIdStatic();
       };
 
       QTime.prototype.getObjectType = function() {
-        
-            return RJSType_QTime.getIdStatic();
-          
+        return RJSType_QTime.getIdStatic();
       };
 
       QTime.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTime.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTime.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

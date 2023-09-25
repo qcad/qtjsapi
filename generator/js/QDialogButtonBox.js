@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDialogButtonBox.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDialogButtonBox.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -162,23 +158,19 @@
           return "QDialogButtonBox [JS]";
         };
       QDialogButtonBox.getObjectType = function() {
-        
-            return RJSType_QDialogButtonBox.getIdStatic();
-          
+        return RJSType_QDialogButtonBox.getIdStatic();
       };
 
       QDialogButtonBox.prototype.getObjectType = function() {
-        
-            return RJSType_QDialogButtonBox.getIdStatic();
-          
+        return RJSType_QDialogButtonBox.getIdStatic();
       };
 
       QDialogButtonBox.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDialogButtonBox.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDialogButtonBox.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

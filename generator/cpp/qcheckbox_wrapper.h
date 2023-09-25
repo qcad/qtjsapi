@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QCHECKBOX_H_WRAPPER
-  #define QCHECKBOX_H_WRAPPER
+    #ifndef QCHECKBOX_H_WRAPPER
+    #define QCHECKBOX_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QStyleOptionButton>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QCheckBox>
       
       // wrapped object is QCheckBox_Base class if new object is created: 
@@ -610,11 +610,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QCheckBox::getIdStatic()) {
-                return (QCheckBox*)vp;
-              }
-              
+          if (t==RJSType_QCheckBox::getIdStatic()) {
+            return (QCheckBox*)vp;
+          }
 
           return nullptr;
           
@@ -6596,9 +6594,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QCheckBox::getIdStatic();
-            
+          return RJSType_QCheckBox::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

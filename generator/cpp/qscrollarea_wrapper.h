@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QSCROLLAREA_H_WRAPPER
-  #define QSCROLLAREA_H_WRAPPER
+    #ifndef QSCROLLAREA_H_WRAPPER
+    #define QSCROLLAREA_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QScrollArea>
       
       // wrapped object is QScrollArea_Base class if new object is created: 
@@ -542,11 +542,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QScrollArea::getIdStatic()) {
-                return (QScrollArea*)vp;
-              }
-              
+          if (t==RJSType_QScrollArea::getIdStatic()) {
+            return (QScrollArea*)vp;
+          }
 
           return nullptr;
           
@@ -6989,9 +6987,7 @@ AdjustToContents = QScrollArea::AdjustToContents,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QScrollArea::getIdStatic();
-            
+          return RJSType_QScrollArea::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

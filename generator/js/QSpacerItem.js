@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSpacerItem.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSpacerItem.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QSpacerItem [JS]";
         };
       QSpacerItem.getObjectType = function() {
-        
-            return RJSType_QSpacerItem.getIdStatic();
-          
+        return RJSType_QSpacerItem.getIdStatic();
       };
 
       QSpacerItem.prototype.getObjectType = function() {
-        
-            return RJSType_QSpacerItem.getIdStatic();
-          
+        return RJSType_QSpacerItem.getIdStatic();
       };
 
       QSpacerItem.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSpacerItem.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSpacerItem.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QLayoutItem.getIdStatic()) {
             return true;
           }

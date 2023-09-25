@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QSPLASHSCREEN_H_WRAPPER
-  #define QSPLASHSCREEN_H_WRAPPER
+    #ifndef QSPLASHSCREEN_H_WRAPPER
+    #define QSPLASHSCREEN_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSplashScreen>
       
       // wrapped object is QSplashScreen_Base class if new object is created: 
@@ -536,11 +536,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QSplashScreen::getIdStatic()) {
-                return (QSplashScreen*)vp;
-              }
-              
+          if (t==RJSType_QSplashScreen::getIdStatic()) {
+            return (QSplashScreen*)vp;
+          }
 
           return nullptr;
           
@@ -5892,9 +5890,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QSplashScreen::getIdStatic();
-            
+          return RJSType_QSplashScreen::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

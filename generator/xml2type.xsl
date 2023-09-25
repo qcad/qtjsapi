@@ -14,6 +14,7 @@
 <xsl:output method="text" />
 
 <xsl:param name="mode" />
+<xsl:param name="module" />
 
 <xsl:template match="text()" />
 

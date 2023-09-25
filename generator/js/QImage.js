@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QImage.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QImage.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -182,23 +178,19 @@
           return "QImage [JS]";
         };
       QImage.getObjectType = function() {
-        
-            return RJSType_QImage.getIdStatic();
-          
+        return RJSType_QImage.getIdStatic();
       };
 
       QImage.prototype.getObjectType = function() {
-        
-            return RJSType_QImage.getIdStatic();
-          
+        return RJSType_QImage.getIdStatic();
       };
 
       QImage.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QImage.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QImage.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QPaintDevice.getIdStatic()) {
             return true;
           }

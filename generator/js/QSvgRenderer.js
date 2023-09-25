@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSvgRenderer.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSvgRenderer.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -185,23 +181,19 @@
           return "QSvgRenderer [JS]";
         };
       QSvgRenderer.getObjectType = function() {
-        
-            return RJSType_QSvgRenderer.getIdStatic();
-          
+        return RJSType_QSvgRenderer.getIdStatic();
       };
 
       QSvgRenderer.prototype.getObjectType = function() {
-        
-            return RJSType_QSvgRenderer.getIdStatic();
-          
+        return RJSType_QSvgRenderer.getIdStatic();
       };
 
       QSvgRenderer.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSvgRenderer.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSvgRenderer.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

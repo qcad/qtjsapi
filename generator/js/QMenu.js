@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QMenu.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QMenu.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -137,23 +133,19 @@
           return "QMenu [JS]";
         };
       QMenu.getObjectType = function() {
-        
-            return RJSType_QMenu.getIdStatic();
-          
+        return RJSType_QMenu.getIdStatic();
       };
 
       QMenu.prototype.getObjectType = function() {
-        
-            return RJSType_QMenu.getIdStatic();
-          
+        return RJSType_QMenu.getIdStatic();
       };
 
       QMenu.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QMenu.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QMenu.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

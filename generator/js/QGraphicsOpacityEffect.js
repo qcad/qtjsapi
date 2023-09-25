@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QGraphicsOpacityEffect.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QGraphicsOpacityEffect.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QGraphicsOpacityEffect [JS]";
         };
       QGraphicsOpacityEffect.getObjectType = function() {
-        
-            return RJSType_QGraphicsOpacityEffect.getIdStatic();
-          
+        return RJSType_QGraphicsOpacityEffect.getIdStatic();
       };
 
       QGraphicsOpacityEffect.prototype.getObjectType = function() {
-        
-            return RJSType_QGraphicsOpacityEffect.getIdStatic();
-          
+        return RJSType_QGraphicsOpacityEffect.getIdStatic();
       };
 
       QGraphicsOpacityEffect.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QGraphicsOpacityEffect.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QGraphicsOpacityEffect.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QGraphicsEffect.getIdStatic()) {
             return true;
           }

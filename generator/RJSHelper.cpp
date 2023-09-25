@@ -1,16 +1,16 @@
 
   // Automatically generated, do not edit
   
-      #include "RJSHelper.h"
-
-      #include "header_cpp.h"
-
+          #include "RJSHelper.h"
+        
+          #include "header_cpp.h"
+        
+        QList<RJSDowncaster_QEvent*> RJSHelper::downcasters_QEvent;
       
         QList<RJSDowncaster_QWidget*> RJSHelper::downcasters_QWidget;
       
-
-      QList<RJSQVariantConverter*> RJSHelper::qvariantConverters;
-
+        QList<RJSQVariantConverter*> RJSHelper::qvariantConverters;
+      
       /**
        * \return existing wrapper object for the given object in the context of the given engine.
        */
@@ -494,7 +494,6 @@
       }
 
       QJSValue RJSHelper::cpp2js_QWidget(RJSApi& handler, QWidget* v) {
-            qDebug() << "RJSHelper::cpp2js_QWidget";
           {
               QDockWidget* o = qobject_cast<QDockWidget*>(v);
               if (o!=nullptr) {
@@ -634,14 +633,12 @@
           }
 
           // QListWidget:
-          /*
           {
               QListWidget* o = qobject_cast<QListWidget*>(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QListWidget(handler, o);
               }
           }
-          */
 
           // QTextEdit:
           {
@@ -672,14 +669,12 @@
 
 
 
-          /*
           {
               QFrame* o = qobject_cast<QFrame*>(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QFrame(handler, o);
               }
           }
-          */
           {
               QDialog* o = qobject_cast<QDialog*>(v);
               if (o!=nullptr) {
@@ -708,12 +703,9 @@
               }
           }
 
-          qDebug() << "cpp2js_QWidget: try to downcast...";
           for (int i=0; i<downcasters_QWidget.length(); i++) {
               QJSValue dc = downcasters_QWidget[i]->downcast(handler, v);
-              qDebug() << "cpp2js_QWidget: got downcaster...";
               if (!dc.isUndefined()) {
-                  qDebug() << "cpp2js_QWidget: got res from downcaster...";
                   return dc;
               }
           }
@@ -858,7 +850,6 @@
           }
           return v.isArray();
       }
-
       
   // ----------------
   // primitive types:
@@ -35251,8 +35242,7 @@
           return !v.isUndefined() || (v.isNumber() && v.toInt()==0);
       }
     
-
       QJSValue RJSHelper::cpp2js_QList_QAction(RJSApi& handler, const QList<QAction*>& v) { return QJSValue(); }
 
       QList<QAction*> RJSHelper::js2cpp_QList_QAction(RJSApi& handler, const QJSValue& v) { return QList<QAction*>(); }
-    
+      

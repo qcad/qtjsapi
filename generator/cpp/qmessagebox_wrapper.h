@@ -1,16 +1,16 @@
 
   // Auto generated
   
-  #ifndef QMESSAGEBOX_H_WRAPPER
-  #define QMESSAGEBOX_H_WRAPPER
+    #ifndef QMESSAGEBOX_H_WRAPPER
+    #define QMESSAGEBOX_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QLabel>
       
@@ -19,9 +19,9 @@
         #include <QCheckBox>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QMessageBox>
       
       // wrapped object is QMessageBox_Base class if new object is created: 
@@ -824,11 +824,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QMessageBox::getIdStatic()) {
-                return (QMessageBox*)vp;
-              }
-              
+          if (t==RJSType_QMessageBox::getIdStatic()) {
+            return (QMessageBox*)vp;
+          }
 
           return nullptr;
           
@@ -7131,9 +7129,7 @@ ButtonMask = QMessageBox::ButtonMask,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QMessageBox::getIdStatic();
-            
+          return RJSType_QMessageBox::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPointerEvent.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPointerEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QPointerEvent [JS]";
         };
       QPointerEvent.getObjectType = function() {
-        
-            return RJSType_QPointerEvent.getIdStatic();
-          
+        return RJSType_QPointerEvent.getIdStatic();
       };
 
       QPointerEvent.prototype.getObjectType = function() {
-        
-            return RJSType_QPointerEvent.getIdStatic();
-          
+        return RJSType_QPointerEvent.getIdStatic();
       };
 
       QPointerEvent.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPointerEvent.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPointerEvent.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QEvent.getIdStatic()) {
             return true;
           }

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDropEvent.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDropEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QDropEvent [JS]";
         };
       QDropEvent.getObjectType = function() {
-        
-            return RJSType_QDropEvent.getIdStatic();
-          
+        return RJSType_QDropEvent.getIdStatic();
       };
 
       QDropEvent.prototype.getObjectType = function() {
-        
-            return RJSType_QDropEvent.getIdStatic();
-          
+        return RJSType_QDropEvent.getIdStatic();
       };
 
       QDropEvent.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDropEvent.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDropEvent.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QEvent.getIdStatic()) {
             return true;
           }

@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QUrlQuery.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QUrlQuery.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -177,23 +173,19 @@
       QUrlQuery.prototype = new Object();
 
       QUrlQuery.getObjectType = function() {
-        
-            return RJSType_QUrlQuery.getIdStatic();
-          
+        return RJSType_QUrlQuery.getIdStatic();
       };
 
       QUrlQuery.prototype.getObjectType = function() {
-        
-            return RJSType_QUrlQuery.getIdStatic();
-          
+        return RJSType_QUrlQuery.getIdStatic();
       };
 
       QUrlQuery.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QUrlQuery.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QUrlQuery.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

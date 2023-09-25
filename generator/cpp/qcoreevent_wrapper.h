@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QCOREEVENT_H_WRAPPER
-  #define QCOREEVENT_H_WRAPPER
+    #ifndef QCOREEVENT_H_WRAPPER
+    #define QCOREEVENT_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QObject>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QEvent>
       
       // singleton class wrapper for static functions:
@@ -162,11 +162,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QEvent::getIdStatic()) {
-                return (QEvent*)vp;
-              }
-              
+          if (t==RJSType_QEvent::getIdStatic()) {
+            return (QEvent*)vp;
+          }
 
           return nullptr;
           
@@ -659,9 +657,7 @@ MaxUser = QEvent::MaxUser,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QEvent::getIdStatic();
-            
+          return RJSType_QEvent::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

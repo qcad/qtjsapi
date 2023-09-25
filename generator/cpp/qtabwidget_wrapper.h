@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QTABWIDGET_H_WRAPPER
-  #define QTABWIDGET_H_WRAPPER
+    #ifndef QTABWIDGET_H_WRAPPER
+    #define QTABWIDGET_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QTabBar>
       
         #include <QStyleOptionTabWidgetFrame>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTabWidget>
       
       // wrapped object is QTabWidget_Base class if new object is created: 
@@ -608,11 +608,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTabWidget::getIdStatic()) {
-                return (QTabWidget*)vp;
-              }
-              
+          if (t==RJSType_QTabWidget::getIdStatic()) {
+            return (QTabWidget*)vp;
+          }
 
           return nullptr;
           
@@ -7005,9 +7003,7 @@ Triangular = QTabWidget::Triangular,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTabWidget::getIdStatic();
-            
+          return RJSType_QTabWidget::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

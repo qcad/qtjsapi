@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QGESTURE_H_WRAPPER
-  #define QGESTURE_H_WRAPPER
+    #ifndef QGESTURE_H_WRAPPER
+    #define QGESTURE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QGesture>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QGesture>
       
       // singleton class wrapper for static functions:
@@ -158,11 +158,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QGesture::getIdStatic()) {
-                return (QGesture*)vp;
-              }
-              
+          if (t==RJSType_QGesture::getIdStatic()) {
+            return (QGesture*)vp;
+          }
 
           return nullptr;
           
@@ -838,9 +836,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QGesture::getIdStatic();
-            
+          return RJSType_QGesture::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -925,9 +921,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPanGesture>
       
     // static functions implementation in singleton wrapper:
@@ -1009,11 +1005,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPanGesture::getIdStatic()) {
-                return (QPanGesture*)vp;
-              }
-              
+          if (t==RJSType_QPanGesture::getIdStatic()) {
+            return (QPanGesture*)vp;
+          }
 
           return nullptr;
           
@@ -1442,9 +1436,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPanGesture::getIdStatic();
-            
+          return RJSType_QPanGesture::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1529,9 +1521,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPinchGesture>
       
       // singleton class wrapper for static functions:
@@ -1726,11 +1718,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPinchGesture::getIdStatic()) {
-                return (QPinchGesture*)vp;
-              }
-              
+          if (t==RJSType_QPinchGesture::getIdStatic()) {
+            return (QPinchGesture*)vp;
+          }
 
           return nullptr;
           
@@ -2900,9 +2890,7 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPinchGesture::getIdStatic();
-            
+          return RJSType_QPinchGesture::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -2987,9 +2975,9 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSwipeGesture>
       
     // static functions implementation in singleton wrapper:
@@ -3047,11 +3035,9 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QSwipeGesture::getIdStatic()) {
-                return (QSwipeGesture*)vp;
-              }
-              
+          if (t==RJSType_QSwipeGesture::getIdStatic()) {
+            return (QSwipeGesture*)vp;
+          }
 
           return nullptr;
           
@@ -3413,9 +3399,7 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QSwipeGesture::getIdStatic();
-            
+          return RJSType_QSwipeGesture::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

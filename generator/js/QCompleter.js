@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QCompleter.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QCompleter.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -131,23 +127,19 @@
           return "QCompleter [JS]";
         };
       QCompleter.getObjectType = function() {
-        
-            return RJSType_QCompleter.getIdStatic();
-          
+        return RJSType_QCompleter.getIdStatic();
       };
 
       QCompleter.prototype.getObjectType = function() {
-        
-            return RJSType_QCompleter.getIdStatic();
-          
+        return RJSType_QCompleter.getIdStatic();
       };
 
       QCompleter.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QCompleter.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QCompleter.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

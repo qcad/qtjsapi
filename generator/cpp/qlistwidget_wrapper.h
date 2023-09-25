@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QLISTWIDGET_H_WRAPPER
-  #define QLISTWIDGET_H_WRAPPER
+    #ifndef QLISTWIDGET_H_WRAPPER
+    #define QLISTWIDGET_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QListWidget>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QListWidgetItem>
       
     // static functions implementation in singleton wrapper:
@@ -45,11 +45,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QListWidgetItem::getIdStatic()) {
-                return (QListWidgetItem*)vp;
-              }
-              
+          if (t==RJSType_QListWidgetItem::getIdStatic()) {
+            return (QListWidgetItem*)vp;
+          }
 
           return nullptr;
           
@@ -931,9 +929,7 @@ UserType = QListWidgetItem::UserType,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QListWidgetItem::getIdStatic();
-            
+          return RJSType_QListWidgetItem::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1018,9 +1014,9 @@ UserType = QListWidgetItem::UserType,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QListWidget>
       
       // wrapped object is QListWidget_Base class if new object is created: 
@@ -1741,11 +1737,9 @@ UserType = QListWidgetItem::UserType,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QListWidget::getIdStatic()) {
-                return (QListWidget*)vp;
-              }
-              
+          if (t==RJSType_QListWidget::getIdStatic()) {
+            return (QListWidget*)vp;
+          }
 
           return nullptr;
           
@@ -10427,9 +10421,7 @@ IconMode = QListWidget::IconMode,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QListWidget::getIdStatic();
-            
+          return RJSType_QListWidget::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

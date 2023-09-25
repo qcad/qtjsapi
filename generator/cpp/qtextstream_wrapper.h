@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QTEXTSTREAM_H_WRAPPER
-  #define QTEXTSTREAM_H_WRAPPER
+    #ifndef QTEXTSTREAM_H_WRAPPER
+    #define QTEXTSTREAM_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QIODevice>
       
         #include <QLocale>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTextStream>
       
     // static functions implementation in singleton wrapper:
@@ -47,11 +47,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTextStream::getIdStatic()) {
-                return (QTextStream*)vp;
-              }
-              
+          if (t==RJSType_QTextStream::getIdStatic()) {
+            return (QTextStream*)vp;
+          }
 
           return nullptr;
           
@@ -1015,9 +1013,7 @@ UppercaseDigits = QTextStream::UppercaseDigits,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTextStream::getIdStatic();
-            
+          return RJSType_QTextStream::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

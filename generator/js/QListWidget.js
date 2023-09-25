@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QListWidget.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QListWidget.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -106,23 +102,19 @@
           return "QListWidget [JS]";
         };
       QListWidget.getObjectType = function() {
-        
-            return RJSType_QListWidget.getIdStatic();
-          
+        return RJSType_QListWidget.getIdStatic();
       };
 
       QListWidget.prototype.getObjectType = function() {
-        
-            return RJSType_QListWidget.getIdStatic();
-          
+        return RJSType_QListWidget.getIdStatic();
       };
 
       QListWidget.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QListWidget.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QListWidget.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

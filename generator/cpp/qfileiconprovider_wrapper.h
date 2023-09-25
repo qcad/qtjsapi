@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QFILEICONPROVIDER_H_WRAPPER
-  #define QFILEICONPROVIDER_H_WRAPPER
+    #ifndef QFILEICONPROVIDER_H_WRAPPER
+    #define QFILEICONPROVIDER_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QFileIconProvider>
       
       // wrapped object is QFileIconProvider_Base class if new object is created: 
@@ -46,11 +46,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QFileIconProvider::getIdStatic()) {
-                return (QFileIconProvider*)vp;
-              }
-              
+          if (t==RJSType_QFileIconProvider::getIdStatic()) {
+            return (QFileIconProvider*)vp;
+          }
 
           return nullptr;
           
@@ -264,9 +262,7 @@ File = QFileIconProvider::File,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QFileIconProvider::getIdStatic();
-            
+          return RJSType_QFileIconProvider::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QDIALOGBUTTONBOX_H_WRAPPER
-  #define QDIALOGBUTTONBOX_H_WRAPPER
+    #ifndef QDIALOGBUTTONBOX_H_WRAPPER
+    #define QDIALOGBUTTONBOX_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QAbstractButton>
       
         #include <QPushButton>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDialogButtonBox>
       
       // wrapped object is QDialogButtonBox_Base class if new object is created: 
@@ -540,11 +540,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDialogButtonBox::getIdStatic()) {
-                return (QDialogButtonBox*)vp;
-              }
-              
+          if (t==RJSType_QDialogButtonBox::getIdStatic()) {
+            return (QDialogButtonBox*)vp;
+          }
 
           return nullptr;
           
@@ -6208,9 +6206,7 @@ AndroidLayout = QDialogButtonBox::AndroidLayout,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDialogButtonBox::getIdStatic();
-            
+          return RJSType_QDialogButtonBox::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

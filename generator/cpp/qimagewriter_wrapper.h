@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QIMAGEWRITER_H_WRAPPER
-  #define QIMAGEWRITER_H_WRAPPER
+    #ifndef QIMAGEWRITER_H_WRAPPER
+    #define QIMAGEWRITER_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QIODevice>
       
         #include <QImage>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QImageWriter>
       
       // singleton class wrapper for static functions:
@@ -142,11 +142,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QImageWriter::getIdStatic()) {
-                return (QImageWriter*)vp;
-              }
-              
+          if (t==RJSType_QImageWriter::getIdStatic()) {
+            return (QImageWriter*)vp;
+          }
 
           return nullptr;
           
@@ -811,9 +809,7 @@ InvalidImageError = QImageWriter::InvalidImageError,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QImageWriter::getIdStatic();
-            
+          return RJSType_QImageWriter::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

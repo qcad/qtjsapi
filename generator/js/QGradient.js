@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QGradient.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QGradient.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -129,23 +125,19 @@
           return "QGradient [JS]";
         };
       QGradient.getObjectType = function() {
-        
-            return RJSType_QGradient.getIdStatic();
-          
+        return RJSType_QGradient.getIdStatic();
       };
 
       QGradient.prototype.getObjectType = function() {
-        
-            return RJSType_QGradient.getIdStatic();
-          
+        return RJSType_QGradient.getIdStatic();
       };
 
       QGradient.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QGradient.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QGradient.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

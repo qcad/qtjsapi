@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QSwipeGesture.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QSwipeGesture.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -104,23 +100,19 @@
           return "QSwipeGesture [JS]";
         };
       QSwipeGesture.getObjectType = function() {
-        
-            return RJSType_QSwipeGesture.getIdStatic();
-          
+        return RJSType_QSwipeGesture.getIdStatic();
       };
 
       QSwipeGesture.prototype.getObjectType = function() {
-        
-            return RJSType_QSwipeGesture.getIdStatic();
-          
+        return RJSType_QSwipeGesture.getIdStatic();
       };
 
       QSwipeGesture.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QSwipeGesture.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QSwipeGesture.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QGesture.getIdStatic()) {
             return true;
           }

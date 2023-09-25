@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QABSTRACTBUTTON_H_WRAPPER
-  #define QABSTRACTBUTTON_H_WRAPPER
+    #ifndef QABSTRACTBUTTON_H_WRAPPER
+    #define QABSTRACTBUTTON_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QButtonGroup>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QAbstractButton>
       
       // wrapped object is QAbstractButton_Base class if new object is created: 
@@ -632,11 +632,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QAbstractButton::getIdStatic()) {
-                return (QAbstractButton*)vp;
-              }
-              
+          if (t==RJSType_QAbstractButton::getIdStatic()) {
+            return (QAbstractButton*)vp;
+          }
 
           return nullptr;
           
@@ -6346,9 +6344,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QAbstractButton::getIdStatic();
-            
+          return RJSType_QAbstractButton::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

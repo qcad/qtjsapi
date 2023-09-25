@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QResizeEvent.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QResizeEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QResizeEvent [JS]";
         };
       QResizeEvent.getObjectType = function() {
-        
-            return RJSType_QResizeEvent.getIdStatic();
-          
+        return RJSType_QResizeEvent.getIdStatic();
       };
 
       QResizeEvent.prototype.getObjectType = function() {
-        
-            return RJSType_QResizeEvent.getIdStatic();
-          
+        return RJSType_QResizeEvent.getIdStatic();
       };
 
       QResizeEvent.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QResizeEvent.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QResizeEvent.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QEvent.getIdStatic()) {
             return true;
           }

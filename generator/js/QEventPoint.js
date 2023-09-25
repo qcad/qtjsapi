@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QEventPoint.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QEventPoint.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -182,23 +178,19 @@
           return "QEventPoint [JS]";
         };
       QEventPoint.getObjectType = function() {
-        
-            return RJSType_QEventPoint.getIdStatic();
-          
+        return RJSType_QEventPoint.getIdStatic();
       };
 
       QEventPoint.prototype.getObjectType = function() {
-        
-            return RJSType_QEventPoint.getIdStatic();
-          
+        return RJSType_QEventPoint.getIdStatic();
       };
 
       QEventPoint.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QEventPoint.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QEventPoint.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

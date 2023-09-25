@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QIODevice.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QIODevice.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -80,23 +76,19 @@
           return "QIODevice [JS]";
         };
       QIODevice.getObjectType = function() {
-        
-            return RJSType_QIODevice.getIdStatic();
-          
+        return RJSType_QIODevice.getIdStatic();
       };
 
       QIODevice.prototype.getObjectType = function() {
-        
-            return RJSType_QIODevice.getIdStatic();
-          
+        return RJSType_QIODevice.getIdStatic();
       };
 
       QIODevice.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QIODevice.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QIODevice.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

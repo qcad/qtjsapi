@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QPROGRESSBAR_H_WRAPPER
-  #define QPROGRESSBAR_H_WRAPPER
+    #ifndef QPROGRESSBAR_H_WRAPPER
+    #define QPROGRESSBAR_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QStyleOptionProgressBar>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QProgressBar>
       
       // wrapped object is QProgressBar_Base class if new object is created: 
@@ -592,11 +592,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QProgressBar::getIdStatic()) {
-                return (QProgressBar*)vp;
-              }
-              
+          if (t==RJSType_QProgressBar::getIdStatic()) {
+            return (QProgressBar*)vp;
+          }
 
           return nullptr;
           
@@ -6361,9 +6359,7 @@ BottomToTop = QProgressBar::BottomToTop,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QProgressBar::getIdStatic();
-            
+          return RJSType_QProgressBar::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

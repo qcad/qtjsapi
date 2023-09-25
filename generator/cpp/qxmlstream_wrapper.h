@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QXMLSTREAM_H_WRAPPER
-  #define QXMLSTREAM_H_WRAPPER
+    #ifndef QXMLSTREAM_H_WRAPPER
+    #define QXMLSTREAM_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QXmlStreamAttributes>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlStreamAttribute>
       
     // static functions implementation in singleton wrapper:
@@ -45,11 +45,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlStreamAttribute::getIdStatic()) {
-                return (QXmlStreamAttribute*)vp;
-              }
-              
+          if (t==RJSType_QXmlStreamAttribute::getIdStatic()) {
+            return (QXmlStreamAttribute*)vp;
+          }
 
           return nullptr;
           
@@ -199,9 +197,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlStreamAttribute::getIdStatic();
-            
+          return RJSType_QXmlStreamAttribute::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -286,9 +282,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlStreamAttributes>
       
     // static functions implementation in singleton wrapper:
@@ -316,11 +312,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlStreamAttributes::getIdStatic()) {
-                return (QXmlStreamAttributes*)vp;
-              }
-              
+          if (t==RJSType_QXmlStreamAttributes::getIdStatic()) {
+            return (QXmlStreamAttributes*)vp;
+          }
 
           return nullptr;
           
@@ -469,9 +463,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlStreamAttributes::getIdStatic();
-            
+          return RJSType_QXmlStreamAttributes::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -556,9 +548,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlStreamReader>
       
     // static functions implementation in singleton wrapper:
@@ -586,11 +578,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlStreamReader::getIdStatic()) {
-                return (QXmlStreamReader*)vp;
-              }
-              
+          if (t==RJSType_QXmlStreamReader::getIdStatic()) {
+            return (QXmlStreamReader*)vp;
+          }
 
           return nullptr;
           
@@ -1492,9 +1482,7 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlStreamReader::getIdStatic();
-            
+          return RJSType_QXmlStreamReader::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1579,9 +1567,9 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QXmlStreamWriter>
       
     // static functions implementation in singleton wrapper:
@@ -1609,11 +1597,9 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QXmlStreamWriter::getIdStatic()) {
-                return (QXmlStreamWriter*)vp;
-              }
-              
+          if (t==RJSType_QXmlStreamWriter::getIdStatic()) {
+            return (QXmlStreamWriter*)vp;
+          }
 
           return nullptr;
           
@@ -2299,9 +2285,7 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QXmlStreamWriter::getIdStatic();
-            
+          return RJSType_QXmlStreamWriter::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

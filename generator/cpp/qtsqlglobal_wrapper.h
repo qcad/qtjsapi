@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QTSQLGLOBAL_H_WRAPPER
-  #define QTSQLGLOBAL_H_WRAPPER
+    #ifndef QTSQLGLOBAL_H_WRAPPER
+    #define QTSQLGLOBAL_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QSql>
       
     // wrapper class for QSql

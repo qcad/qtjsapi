@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QFontComboBox.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QFontComboBox.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -122,23 +118,19 @@
           return "QFontComboBox [JS]";
         };
       QFontComboBox.getObjectType = function() {
-        
-            return RJSType_QFontComboBox.getIdStatic();
-          
+        return RJSType_QFontComboBox.getIdStatic();
       };
 
       QFontComboBox.prototype.getObjectType = function() {
-        
-            return RJSType_QFontComboBox.getIdStatic();
-          
+        return RJSType_QFontComboBox.getIdStatic();
       };
 
       QFontComboBox.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QFontComboBox.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QFontComboBox.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

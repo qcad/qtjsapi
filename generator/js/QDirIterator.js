@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDirIterator.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDirIterator.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -158,23 +154,19 @@
           return "QDirIterator [JS]";
         };
       QDirIterator.getObjectType = function() {
-        
-            return RJSType_QDirIterator.getIdStatic();
-          
+        return RJSType_QDirIterator.getIdStatic();
       };
 
       QDirIterator.prototype.getObjectType = function() {
-        
-            return RJSType_QDirIterator.getIdStatic();
-          
+        return RJSType_QDirIterator.getIdStatic();
       };
 
       QDirIterator.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDirIterator.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDirIterator.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

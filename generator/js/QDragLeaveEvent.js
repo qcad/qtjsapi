@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDragLeaveEvent.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDragLeaveEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -103,23 +99,19 @@
           return "QDragLeaveEvent [JS]";
         };
       QDragLeaveEvent.getObjectType = function() {
-        
-            return RJSType_QDragLeaveEvent.getIdStatic();
-          
+        return RJSType_QDragLeaveEvent.getIdStatic();
       };
 
       QDragLeaveEvent.prototype.getObjectType = function() {
-        
-            return RJSType_QDragLeaveEvent.getIdStatic();
-          
+        return RJSType_QDragLeaveEvent.getIdStatic();
       };
 
       QDragLeaveEvent.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDragLeaveEvent.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDragLeaveEvent.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QEvent.getIdStatic()) {
             return true;
           }

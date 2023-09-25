@@ -1,10 +1,10 @@
 MODULE="$1"
 
-NAME="rsjapi"
+NAME="rjsapi"
 
 if [ ! -z $MODULE ]
 then
-    NAME="rjsapi_$MODULE"
+    NAME="${MODULE}jsapi"
 fi
 
 echo "# Automatically generated, do not edit" > new_CMakeInclude.txt

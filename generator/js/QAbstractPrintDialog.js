@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QAbstractPrintDialog.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QAbstractPrintDialog.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -108,23 +104,19 @@
           return "QAbstractPrintDialog [JS]";
         };
       QAbstractPrintDialog.getObjectType = function() {
-        
-            return RJSType_QAbstractPrintDialog.getIdStatic();
-          
+        return RJSType_QAbstractPrintDialog.getIdStatic();
       };
 
       QAbstractPrintDialog.prototype.getObjectType = function() {
-        
-            return RJSType_QAbstractPrintDialog.getIdStatic();
-          
+        return RJSType_QAbstractPrintDialog.getIdStatic();
       };
 
       QAbstractPrintDialog.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QAbstractPrintDialog.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QAbstractPrintDialog.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

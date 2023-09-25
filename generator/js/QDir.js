@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QDir.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QDir.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -131,23 +127,19 @@
           return "QDir [JS]";
         };
       QDir.getObjectType = function() {
-        
-            return RJSType_QDir.getIdStatic();
-          
+        return RJSType_QDir.getIdStatic();
       };
 
       QDir.prototype.getObjectType = function() {
-        
-            return RJSType_QDir.getIdStatic();
-          
+        return RJSType_QDir.getIdStatic();
       };
 
       QDir.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QDir.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QDir.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

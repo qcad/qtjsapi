@@ -1,23 +1,23 @@
 
   // Auto generated
   
-  #ifndef QTREEVIEW_H_WRAPPER
-  #define QTREEVIEW_H_WRAPPER
+    #ifndef QTREEVIEW_H_WRAPPER
+    #define QTREEVIEW_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QHeaderView>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTreeView>
       
       // wrapped object is QTreeView_Base class if new object is created: 
@@ -719,11 +719,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTreeView::getIdStatic()) {
-                return (QTreeView*)vp;
-              }
-              
+          if (t==RJSType_QTreeView::getIdStatic()) {
+            return (QTreeView*)vp;
+          }
 
           return nullptr;
           
@@ -9703,9 +9701,7 @@ InternalMove = QTreeView::InternalMove,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTreeView::getIdStatic();
-            
+          return RJSType_QTreeView::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

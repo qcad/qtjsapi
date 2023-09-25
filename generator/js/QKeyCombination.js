@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QKeyCombination.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QKeyCombination.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -130,23 +126,19 @@
           return "QKeyCombination [JS]";
         };
       QKeyCombination.getObjectType = function() {
-        
-            return RJSType_QKeyCombination.getIdStatic();
-          
+        return RJSType_QKeyCombination.getIdStatic();
       };
 
       QKeyCombination.prototype.getObjectType = function() {
-        
-            return RJSType_QKeyCombination.getIdStatic();
-          
+        return RJSType_QKeyCombination.getIdStatic();
       };
 
       QKeyCombination.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QKeyCombination.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QKeyCombination.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

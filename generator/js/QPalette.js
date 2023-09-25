@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QPalette.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QPalette.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -285,23 +281,19 @@
           return "QPalette [JS]";
         };
       QPalette.getObjectType = function() {
-        
-            return RJSType_QPalette.getIdStatic();
-          
+        return RJSType_QPalette.getIdStatic();
       };
 
       QPalette.prototype.getObjectType = function() {
-        
-            return RJSType_QPalette.getIdStatic();
-          
+        return RJSType_QPalette.getIdStatic();
       };
 
       QPalette.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QPalette.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QPalette.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

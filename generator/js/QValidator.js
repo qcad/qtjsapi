@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QValidator.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QValidator.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -74,23 +70,19 @@
           return "QValidator [JS]";
         };
       QValidator.getObjectType = function() {
-        
-            return RJSType_QValidator.getIdStatic();
-          
+        return RJSType_QValidator.getIdStatic();
       };
 
       QValidator.prototype.getObjectType = function() {
-        
-            return RJSType_QValidator.getIdStatic();
-          
+        return RJSType_QValidator.getIdStatic();
       };
 
       QValidator.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QValidator.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QValidator.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QObject.getIdStatic()) {
             return true;
           }

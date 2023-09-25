@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTransform.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTransform.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -207,23 +203,19 @@
           return "QTransform [JS]";
         };
       QTransform.getObjectType = function() {
-        
-            return RJSType_QTransform.getIdStatic();
-          
+        return RJSType_QTransform.getIdStatic();
       };
 
       QTransform.prototype.getObjectType = function() {
-        
-            return RJSType_QTransform.getIdStatic();
-          
+        return RJSType_QTransform.getIdStatic();
       };
 
       QTransform.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTransform.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTransform.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 

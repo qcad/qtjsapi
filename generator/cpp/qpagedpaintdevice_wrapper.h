@@ -1,21 +1,21 @@
 
   // Auto generated
   
-  #ifndef QPAGEDPAINTDEVICE_H_WRAPPER
-  #define QPAGEDPAINTDEVICE_H_WRAPPER
+    #ifndef QPAGEDPAINTDEVICE_H_WRAPPER
+    #define QPAGEDPAINTDEVICE_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QPagedPaintDevice>
       
       // singleton class wrapper for static functions:
@@ -100,11 +100,9 @@
             
 
           // pointer to desired type:
-          
-              if (t==RJSType_QPagedPaintDevice::getIdStatic()) {
-                return (QPagedPaintDevice*)vp;
-              }
-              
+          if (t==RJSType_QPagedPaintDevice::getIdStatic()) {
+            return (QPagedPaintDevice*)vp;
+          }
 
           return nullptr;
           
@@ -677,9 +675,7 @@ PdfVersion_1_6 = QPagedPaintDevice::PdfVersion_1_6,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QPagedPaintDevice::getIdStatic();
-            
+          return RJSType_QPagedPaintDevice::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

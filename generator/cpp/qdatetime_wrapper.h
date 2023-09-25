@@ -1,25 +1,25 @@
 
   // Auto generated
   
-  #ifndef QDATETIME_H_WRAPPER
-  #define QDATETIME_H_WRAPPER
+    #ifndef QDATETIME_H_WRAPPER
+    #define QDATETIME_H_WRAPPER
 
-  // include header:
-  //#include "header_h.h"
-  
-      #include "../RJSHelper.h"
+    // include header:
+    //#include "header_h.h"
     
+        #include "../RJSHelper.h"
+      
 
-  #include "RJSWrapperObj.h"
+    #include "RJSWrapperObj.h"
   
         #include <QTimeZone>
       
         #include <QDateTime>
       
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDate>
       
       // singleton class wrapper for static functions:
@@ -189,11 +189,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDate::getIdStatic()) {
-                return (QDate*)vp;
-              }
-              
+          if (t==RJSType_QDate::getIdStatic()) {
+            return (QDate*)vp;
+          }
 
           return nullptr;
           
@@ -762,9 +760,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDate::getIdStatic();
-            
+          return RJSType_QDate::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -849,9 +845,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QTime>
       
       // singleton class wrapper for static functions:
@@ -1021,11 +1017,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QTime::getIdStatic()) {
-                return (QTime*)vp;
-              }
-              
+          if (t==RJSType_QTime::getIdStatic()) {
+            return (QTime*)vp;
+          }
 
           return nullptr;
           
@@ -1477,9 +1471,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QTime::getIdStatic();
-            
+          return RJSType_QTime::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -1564,9 +1556,9 @@
 
   
     #include <QQmlEngine>
-    #include "RJSType.h"
-
     
+        #include "RJSType.h"
+      
         #include <QDateTime>
       
       // singleton class wrapper for static functions:
@@ -1872,11 +1864,9 @@
           
 
           // pointer to desired type:
-          
-              if (t==RJSType_QDateTime::getIdStatic()) {
-                return (QDateTime*)vp;
-              }
-              
+          if (t==RJSType_QDateTime::getIdStatic()) {
+            return (QDateTime*)vp;
+          }
 
           return nullptr;
           
@@ -2826,9 +2816,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          
-              return RJSType_QDateTime::getIdStatic();
-            
+          return RJSType_QDateTime::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):

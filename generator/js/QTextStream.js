@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QTextStream.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QTextStream.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -156,23 +152,19 @@
           return "QTextStream [JS]";
         };
       QTextStream.getObjectType = function() {
-        
-            return RJSType_QTextStream.getIdStatic();
-          
+        return RJSType_QTextStream.getIdStatic();
       };
 
       QTextStream.prototype.getObjectType = function() {
-        
-            return RJSType_QTextStream.getIdStatic();
-          
+        return RJSType_QTextStream.getIdStatic();
       };
 
       QTextStream.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QTextStream.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QTextStream.getIdStatic()) {
-              return true;
-            }
-          
           if (t===RJSType_QIODeviceBase.getIdStatic()) {
             return true;
           }

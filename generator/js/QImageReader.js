@@ -17,11 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===
-              
-                  RJSType_QImageReader.getIdStatic()
-                
-            ))) {
+            arguments[2].getWrappedType()===RJSType_QImageReader.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -157,23 +153,19 @@
           return "QImageReader [JS]";
         };
       QImageReader.getObjectType = function() {
-        
-            return RJSType_QImageReader.getIdStatic();
-          
+        return RJSType_QImageReader.getIdStatic();
       };
 
       QImageReader.prototype.getObjectType = function() {
-        
-            return RJSType_QImageReader.getIdStatic();
-          
+        return RJSType_QImageReader.getIdStatic();
       };
 
       QImageReader.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QImageReader.getIdStatic()) {
+          return true;
+        }
+
         
-            if (t===RJSType_QImageReader.getIdStatic()) {
-              return true;
-            }
-          
 
         return false;
 
