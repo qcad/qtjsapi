@@ -5,7 +5,12 @@ echo "Generating script bindings..."
 DIR=`dirname $0`
 echo $DIR
 
-MODULE=$1
+if [[ `pwd` == *rjsapi_qcad* ]]
+then
+    MODULE="qcad"
+fi
+
+echo "Generating module $MODULE"
 
 echo "Generating helpers..."
 sh $DIR/xml2type.sh $MODULE
@@ -77,6 +82,6 @@ sh $DIR/generate_CMakeInclude.sh $MODULE
 
 wait
 cd ..
-sh update_qrc.sh
+sh update_qrc.sh $MODULE
 
 echo "done"

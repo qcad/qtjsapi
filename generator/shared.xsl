@@ -129,13 +129,25 @@
 <func:function name="qc:get-helper-postfix">
   <xsl:param name="type" />
 
+  <xsl:variable name="class">
+    <xsl:value-of select="qc:strip-pointer-reference-const($type)" />
+  </xsl:variable>
+
+  <xsl:variable name="itemtype">
+    <xsl:value-of select="substring-before(substring-after($type, '&lt;'), '&gt;')" />
+  </xsl:variable>
+
+  <xsl:variable name="itemclass">
+    <xsl:value-of select="qc:strip-pointer-reference-const($itemtype)" />
+  </xsl:variable>
+
   <func:result>
     <xsl:choose>
       <!-- we're generating the qcad module -->
       <xsl:when test="$module='qcad'">
         <xsl:choose>
           <!-- local types.xml is for qcad -->
-          <xsl:when test="document('types.xml')//type[text()=$type]">
+          <xsl:when test="document('types.xml')//type[text()=$class or text()=$itemclass]">
             <xsl:value-of select="'_qcad'" />
           </xsl:when>
           <xsl:otherwise>

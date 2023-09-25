@@ -10,7 +10,7 @@
     xmlns:com="http://exslt.org/common"
     extension-element-prefixes="func date str com">
 
-<xsl:include href="string.xsl" />
+<xsl:include href="shared.xsl" />
 
 <xsl:output method="text" />
 
@@ -1346,7 +1346,7 @@
         return QJSValue(<xsl:value-of select="$cast"/>v<xsl:value-of select="$conv"/>);
       }
 
-      <xsl:value-of select="$type"/> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func"/>(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type"/><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func"/>(RJSApi&amp; handler, const QJSValue&amp; v) {
         if (!v.<xsl:value-of select="$test"/>) {
           return <xsl:value-of select="$def"/>;
         }
@@ -1442,7 +1442,7 @@
           return cl.callAsConstructor(args);
       }
 
-      <xsl:value-of select="$sharedPointerType" /> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$sharedPointerType" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: no wrapper";
@@ -1551,7 +1551,7 @@
           return cl.callAsConstructor(args);
       }
 
-      <xsl:value-of select="$sharedPointerType" /> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$sharedPointerType" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: no wrapper";
@@ -2110,7 +2110,7 @@
           return ret;
       }
 
-      <xsl:value-of select="$type" /> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           //return engine-&gt;fromScriptValue&lt;<xsl:value-of select="$type" />&gt;(v);
           <xsl:value-of select="$type" /> ret;
 
@@ -2217,7 +2217,7 @@
           return ret;
       }
 
-      <xsl:value-of select="$type" /> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
           // TODO:
           qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
           return handler.getEngine()->fromScriptValue&lt;<xsl:value-of select="$type" />>(v);
@@ -2309,7 +2309,7 @@
           return ret;
       }
 
-      <xsl:value-of select="$type" /> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           // TODO:
           qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
@@ -2392,7 +2392,7 @@
           return ret;
       }
 
-      <xsl:value-of select="$type" /> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           <xsl:value-of select="$type" /> ret;
           if (!v.isArray()) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: value is not an array";
@@ -2487,7 +2487,7 @@
           return ret;
       }
 
-      <xsl:value-of select="$type" /> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           // TODO:
           qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
@@ -2580,12 +2580,12 @@
       QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine-&gt;newArray(2);
-          ret.setProperty(0, <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$itemtype1" />(handler, v.first));
-          ret.setProperty(1, <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$itemtype2" />(handler, v.second));
+          ret.setProperty(0, RJSHelper<xsl:value-of select="qc:get-helper-postfix($itemtype1)"/>::cpp2js_<xsl:value-of select="$itemtype1" />(handler, v.first));
+          ret.setProperty(1, RJSHelper<xsl:value-of select="qc:get-helper-postfix($itemtype2)"/>::cpp2js_<xsl:value-of select="$itemtype2" />(handler, v.second));
           return ret;
       }
 
-      <xsl:value-of select="$type" /> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
           // TODO:
           qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
@@ -2659,7 +2659,7 @@
     <xsl:when test="$mode='cpp'">
       QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) { return QJSValue(); }
 
-      <xsl:value-of select="$type" /> <xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) { <xsl:value-of select="$preconstr" />; return <xsl:value-of select="$type" />(<xsl:value-of select="$constr" />); }
+      <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) { <xsl:value-of select="$preconstr" />; return <xsl:value-of select="$type" />(<xsl:value-of select="$constr" />); }
 
       bool <xsl:value-of select="$rjshelper_class"/>::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
