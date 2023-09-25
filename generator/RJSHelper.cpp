@@ -494,6 +494,7 @@
       }
 
       QJSValue RJSHelper::cpp2js_QWidget(RJSApi& handler, QWidget* v) {
+            qDebug() << "RJSHelper::cpp2js_QWidget";
           {
               QDockWidget* o = qobject_cast<QDockWidget*>(v);
               if (o!=nullptr) {
@@ -633,12 +634,14 @@
           }
 
           // QListWidget:
+          /*
           {
               QListWidget* o = qobject_cast<QListWidget*>(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QListWidget(handler, o);
               }
           }
+          */
 
           // QTextEdit:
           {
@@ -669,12 +672,14 @@
 
 
 
+          /*
           {
               QFrame* o = qobject_cast<QFrame*>(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QFrame(handler, o);
               }
           }
+          */
           {
               QDialog* o = qobject_cast<QDialog*>(v);
               if (o!=nullptr) {
@@ -703,9 +708,12 @@
               }
           }
 
+          qDebug() << "cpp2js_QWidget: try to downcast...";
           for (int i=0; i<downcasters_QWidget.length(); i++) {
               QJSValue dc = downcasters_QWidget[i]->downcast(handler, v);
+              qDebug() << "cpp2js_QWidget: got downcaster...";
               if (!dc.isUndefined()) {
+                  qDebug() << "cpp2js_QWidget: got res from downcaster...";
                   return dc;
               }
           }

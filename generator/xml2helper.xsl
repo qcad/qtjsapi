@@ -101,9 +101,14 @@
         }
       </xsl:if>
 
+
+
       class <xsl:value-of select="$rjshelper_class"/> {
 
       public:
+        <xsl:if test="$module!=''">
+          static void registerDowncasters();
+        </xsl:if>
 
         <xsl:if test="$module=''">
           //
@@ -173,6 +178,37 @@
         </xsl:if>
       };
 
+
+
+
+      <!-- get list of Qt classes that can be downcast from rjsapi, e.g. QWidget -->
+      <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+        <xsl:variable name="downcast-from">
+          <xsl:value-of select="@name"/>
+        </xsl:variable>
+        // downcasters from <xsl:value-of select="$downcast-from"/> to ...
+        <!-- get list of R classes to be downcast to from rjsapi_qcad, e.g. RWidget -->
+        <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$downcast-from and not(@nodowncast='true') and position()=last()]">
+          <xsl:variable name="downcast-to">
+            <xsl:value-of select="../../@name"/>
+          </xsl:variable>
+
+          // downcasters from <xsl:value-of select="$downcast-from"/> to <xsl:value-of select="../../@name"/>
+          class RJSDowncaster_<xsl:value-of select="$downcast-from"/>_<xsl:value-of select="$downcast-to"/> : public RJSDowncaster_<xsl:value-of select="$downcast-from"/> {
+              QJSValue downcast(RJSApi&amp; handler, <xsl:value-of select="$downcast-from"/>* o) {
+                  <xsl:value-of select="$downcast-to"/>* c = qobject_cast&lt;<xsl:value-of select="$downcast-to"/>*&gt;(o);
+                  if (c!=nullptr) {
+                      return RJSHelper_qcad::cpp2js_<xsl:value-of select="$downcast-to"/>(handler, c);
+                  }
+                  return QJSValue();
+              }
+          };
+
+        </xsl:for-each>
+      </xsl:for-each>
+
+
+
       #endif
     </xsl:when>
 
@@ -202,6 +238,26 @@
 
       <xsl:if test="$module=''">
         QList&lt;RJSQVariantConverter*&gt; RJSHelper::qvariantConverters;
+      </xsl:if>
+
+      <xsl:if test="$module!=''">
+        void <xsl:value-of select="$rjshelper_class"/>::registerDowncasters() {
+
+          <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+            <xsl:variable name="downcast-from">
+              <xsl:value-of select="@name"/>
+            </xsl:variable>
+            // downcasters from <xsl:value-of select="$downcast-from"/> to ...
+            <!-- get list of R classes to be downcast to from rjsapi_qcad, e.g. RWidget -->
+            <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$downcast-from and not(@nodowncast='true') and position()=last()]">
+              <xsl:variable name="downcast-to">
+                <xsl:value-of select="../../@name"/>
+              </xsl:variable>
+              // downcasters from <xsl:value-of select="$downcast-from"/> to <xsl:value-of select="$downcast-to"/>
+              RJSHelper::registerDowncaster_<xsl:value-of select="$downcast-from"/>(new RJSDowncaster_<xsl:value-of select="$downcast-from"/>_<xsl:value-of select="$downcast-to"/>());
+            </xsl:for-each>
+          </xsl:for-each>
+        }
       </xsl:if>
 
       <xsl:if test="$module=''">

@@ -44,7 +44,7 @@ public:
             RGuiAction* guiAction);
             */
 
-    void initGlobalVariables(const QString& scriptFile);
+    //void initGlobalVariables(const QString& scriptFile);
 
     QJSEngine* getEngine() {
         return engine;
