@@ -5,7 +5,669 @@
         
           #include "header_cpp.h"
         
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qabstractitemmodel_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qabstractitemmodel_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qdialog_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qcoreapplication_wrapper.h"
+        
+          #include "qguiapplication_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qpixmap_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qlayoutitem_wrapper.h"
+        
+          #include "qlayout_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qlayoutitem_wrapper.h"
+        
+          #include "qlayout_wrapper.h"
+        
+          #include "qboxlayout_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qlayoutitem_wrapper.h"
+        
+          #include "qlayout_wrapper.h"
+        
+          #include "qboxlayout_wrapper.h"
+        
+          #include "qgradient_wrapper.h"
+        
+          #include "qgradient_wrapper.h"
+        
+          #include "qgradient_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qiodevicebase_wrapper.h"
+        
+          #include "qiodevice_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qabstractbutton_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomcharacterdata_wrapper.h"
+        
+          #include "qdomcharacterdata_wrapper.h"
+        
+          #include "qdomtext_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomnode_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qinputevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qpointerevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qinputevent_wrapper.h"
+        
+          #include "qpointerevent_wrapper.h"
+        
+          #include "qsinglepointevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qinputevent_wrapper.h"
+        
+          #include "qpointerevent_wrapper.h"
+        
+          #include "qsinglepointevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qinputevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qdropevent_wrapper.h"
+        
+          #include "qdragmoveevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qinputevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qdropevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qevent_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qfiledevice_wrapper.h"
+        
+          #include "qiodevice_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qiodevicebase_wrapper.h"
+        
+          #include "qiodevice_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qdialog_wrapper.h"
+        
+          #include "qabstractfileiconprovider_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qabstractitemmodel_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qcombobox_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qlayout_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qgesture_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qgesture_wrapper.h"
+        
+          #include "qgesture_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qgraphicseffect_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qgraphicseffect_wrapper.h"
+        
+          #include "qgraphicseffect_wrapper.h"
+        
+          #include "qgraphicseffect_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qlayoutitem_wrapper.h"
+        
+          #include "qlayout_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qcoreapplication_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qabstractitemview_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qiodevicebase_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qabstractitemdelegate_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qlayoutitem_wrapper.h"
+        
+          #include "qlayoutitem_wrapper.h"
+        
+          #include "qlayoutitem_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qabstractitemview_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qabstractitemview_wrapper.h"
+        
+          #include "qlistview_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qdialog_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qdialog_wrapper.h"
+        
+          #include "qabstractprintdialog_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qpagedpaintdevice_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qiodevice_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qdialog_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qabstractbutton_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qabstractbutton_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qabstractslider_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qabstractslider_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qabstractitemmodel_wrapper.h"
+        
+          #include "qabstractproxymodel_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qabstractspinbox_wrapper.h"
+        
+          #include "qabstractspinbox_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qlayoutitem_wrapper.h"
+        
+          #include "qlayout_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qabstractitemmodel_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qstringconverterbase_wrapper.h"
+        
+          #include "qstringconverter_wrapper.h"
+        
+          #include "qstringconverter_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qabstractitemview_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qabstractitemview_wrapper.h"
+        
+          #include "qtableview_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qtextedit_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qtextformat_wrapper.h"
+        
+          #include "qtextformat_wrapper.h"
+        
+          #include "qtextformat_wrapper.h"
+        
+          #include "qtextcharformat_wrapper.h"
+        
+          #include "qtextformat_wrapper.h"
+        
+          #include "qtextframeformat_wrapper.h"
+        
+          #include "qtextcharformat_wrapper.h"
+        
+          #include "qiodevicebase_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qabstractbutton_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qabstractitemview_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qframe_wrapper.h"
+        
+          #include "qabstractscrollarea_wrapper.h"
+        
+          #include "qabstractitemview_wrapper.h"
+        
+          #include "qtreeview_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qvalidator_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qvalidator_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qvalidator_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qaction_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qsurface_wrapper.h"
+        
+          #include "qxmlreader_wrapper.h"
+        
+          #include "qxmlcontenthandler_wrapper.h"
+        
+          #include "qxmlerrorhandler_wrapper.h"
+        
+          #include "qxmldtdhandler_wrapper.h"
+        
+          #include "qxmlentityresolver_wrapper.h"
+        
+          #include "qxmllexicalhandler_wrapper.h"
+        
+          #include "qxmldeclhandler_wrapper.h"
+        
         QList<RJSDowncaster_QEvent*> RJSHelper::downcasters_QEvent;
+      
+        QList<RJSDowncaster_QObject*> RJSHelper::downcasters_QObject;
+      
+        QList<RJSDowncaster_QToolBar*> RJSHelper::downcasters_QToolBar;
       
         QList<RJSDowncaster_QWidget*> RJSHelper::downcasters_QWidget;
       
@@ -213,7 +875,7 @@
           // hook to convert more types from other modules:
           for (int i=0; i<qvariantConverters.length(); i++) {
             RJSQVariantConverter* vc = qvariantConverters[i];
-            QJSValue res = vc->convert(handler, v);
+            QJSValue res = vc->fromVariant(handler, v);
             if (!res.isUndefined()) {
               return res;
             }
@@ -359,6 +1021,15 @@
             return var;
           }
 
+          // hook to convert more types from other modules:
+          for (int i=0; i<qvariantConverters.length(); i++) {
+            RJSQVariantConverter* vc = qvariantConverters[i];
+            QVariant res = vc->toVariant(handler, v);
+            if (res.isValid()) {
+              return res;
+            }
+          }
+
           {
               QVariant var = *(QVariant*)wrapper->getWrappedVoid();
               if (var.canConvert<QList<QKeySequence> >()) {
@@ -366,7 +1037,7 @@
               }
           }
 
-          qWarning() << "unhandled QVariant type:" << wrapper->getWrappedType();
+          qWarning() << "unhandled QVariant type:" << getTypeName(wrapper->getWrappedType());
           handler.trace();
           return *(QVariant*)wrapper->getWrappedVoid();
 
@@ -416,6 +1087,14 @@
               QLayout* o = qobject_cast<QLayout*>(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QLayout(handler, o);
+              }
+          }
+
+
+          for (int i=0; i<downcasters_QObject.length(); i++) {
+              QJSValue dc = downcasters_QObject[i]->downcast(handler, v);
+              if (!dc.isUndefined()) {
+                  return dc;
               }
           }
 
@@ -18739,6 +19418,14 @@
                 }
             }
           
+            // downcast to types derrived from QEvent but defined in other modules:
+            for (int i=0; i<downcasters_QEvent.length(); i++) {
+                QJSValue dc = downcasters_QEvent[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
+          
 
           QJSEngine* engine = handler.getEngine();
           QEvent_Wrapper* ret = new QEvent_Wrapper(handler, v, false);
@@ -32579,6 +33266,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QToolBar(RJSApi& handler, QToolBar* v) {
+          
+            // downcast to types derrived from QToolBar but defined in other modules:
+            for (int i=0; i<downcasters_QToolBar.length(); i++) {
+                QJSValue dc = downcasters_QToolBar[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QToolBar_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {

@@ -111,9 +111,6 @@
     </function>
   </class>
   <class name="QXmlStreamAttributes">
-    <super_list>
-      <super name="" />
-    </super_list>
     <constructor>
       <variant>
         <parameters />

@@ -112,10 +112,6 @@
         }
 
         
-          if (t===RJSType_.getIdStatic()) {
-            return true;
-          }
-        
 
         return false;
 

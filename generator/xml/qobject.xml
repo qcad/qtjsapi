@@ -9,7 +9,7 @@
   <class_decl name="QWidget" />
   <class_decl name="QAccessibleWidget" />
   <class_decl name="QRegularExpression" />
-  <class name="QObject">
+  <class name="QObject" downcast="true">
     <constructor>
       <variant>
         <parameters>

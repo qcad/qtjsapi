@@ -26,6 +26,18 @@
           virtual QJSValue downcast(RJSApi& handler, QEvent* o) = 0;
         };
       
+        // Base class for downcasters that can downcast QObject to specific types:
+        class RJSDowncaster_QObject {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QObject* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QToolBar to specific types:
+        class RJSDowncaster_QToolBar {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QToolBar* o) = 0;
+        };
+      
         // Base class for downcasters that can downcast QWidget to specific types:
         class RJSDowncaster_QWidget {
         public:
@@ -1559,7 +1571,8 @@
         // Base class for converters that can convert QVariant to specific types.
         class RJSQVariantConverter {
         public:
-          virtual QJSValue convert(RJSApi& handler, const QVariant& o) = 0;
+          virtual QJSValue fromVariant(RJSApi& handler, const QVariant& v) = 0;
+          virtual QVariant toVariant(RJSApi& handler, const QJSValue& v) = 0;
         };
       
         QVariant getWrapperProperty(RJSApi& handler, const QObject& obj);
@@ -4428,6 +4441,24 @@
           public:
             static void registerDowncaster_QEvent(RJSDowncaster_QEvent* dc) {
               downcasters_QEvent.append(dc);
+            }
+        
+          // allow downcasting for type QObject:
+          private:
+            static QList<RJSDowncaster_QObject*> downcasters_QObject;
+
+          public:
+            static void registerDowncaster_QObject(RJSDowncaster_QObject* dc) {
+              downcasters_QObject.append(dc);
+            }
+        
+          // allow downcasting for type QToolBar:
+          private:
+            static QList<RJSDowncaster_QToolBar*> downcasters_QToolBar;
+
+          public:
+            static void registerDowncaster_QToolBar(RJSDowncaster_QToolBar* dc) {
+              downcasters_QToolBar.append(dc);
             }
         
           // allow downcasting for type QWidget:

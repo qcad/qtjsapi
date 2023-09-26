@@ -112,7 +112,8 @@
         // Base class for converters that can convert QVariant to specific types.
         class RJSQVariantConverter {
         public:
-          virtual QJSValue convert(RJSApi&amp; handler, const QVariant&amp; o) = 0;
+          virtual QJSValue fromVariant(RJSApi&amp; handler, const QVariant&amp; v) = 0;
+          virtual QVariant toVariant(RJSApi&amp; handler, const QJSValue&amp; v) = 0;
         };
       </xsl:if>
 
@@ -540,7 +541,7 @@
           // hook to convert more types from other modules:
           for (int i=0; i&lt;qvariantConverters.length(); i++) {
             RJSQVariantConverter* vc = qvariantConverters[i];
-            QJSValue res = vc->convert(handler, v);
+            QJSValue res = vc-&gt;fromVariant(handler, v);
             if (!res.isUndefined()) {
               return res;
             }
@@ -686,6 +687,15 @@
             return var;
           }
 
+          // hook to convert more types from other modules:
+          for (int i=0; i&lt;qvariantConverters.length(); i++) {
+            RJSQVariantConverter* vc = qvariantConverters[i];
+            QVariant res = vc-&gt;toVariant(handler, v);
+            if (res.isValid()) {
+              return res;
+            }
+          }
+
           {
               QVariant var = *(QVariant*)wrapper->getWrappedVoid();
               if (var.canConvert&lt;QList&lt;QKeySequence&gt; &gt;()) {
@@ -693,7 +703,7 @@
               }
           }
 
-          qWarning() &lt;&lt; "unhandled QVariant type:" &lt;&lt; wrapper-&gt;getWrappedType();
+          qWarning() &lt;&lt; "unhandled QVariant type:" &lt;&lt; getTypeName(wrapper-&gt;getWrappedType());
           handler.trace();
           return *(QVariant*)wrapper-&gt;getWrappedVoid();
 
@@ -856,6 +866,14 @@
               QLayout* o = qobject_cast&lt;QLayout*&gt;(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QLayout(handler, o);
+              }
+          }
+
+
+          for (int i=0; i&lt;downcasters_QObject.length(); i++) {
+              QJSValue dc = downcasters_QObject[i]-&gt;downcast(handler, v);
+              if (!dc.isUndefined()) {
+                  return dc;
               }
           }
 
@@ -1924,6 +1942,7 @@
             }
           </xsl:for-each>
 
+          <!--
           <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$type]/qsrc:downcasts/qsrc:class">
             // manually configured downcast to <xsl:value-of select="@name" />:
             {
@@ -1933,6 +1952,17 @@
                 }
             }
           </xsl:for-each>
+          -->
+
+          <xsl:if test="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$type and @downcast='true']">
+            // downcast to types derrived from <xsl:value-of select="$type" /> but defined in other modules:
+            for (int i=0; i&lt;downcasters_<xsl:value-of select="$type" />.length(); i++) {
+                QJSValue dc = downcasters_<xsl:value-of select="$type" />[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
+          </xsl:if>
 
           QJSEngine* engine = handler.getEngine();
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v, false);
@@ -2051,6 +2081,16 @@
                 }
             }
           </xsl:for-each>
+
+          <xsl:if test="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$type and @downcast='true']">
+            // downcast to types derrived from <xsl:value-of select="$type" /> but defined in other modules:
+            for (int i=0; i&lt;downcasters_<xsl:value-of select="$type" />.length(); i++) {
+                QJSValue dc = downcasters_<xsl:value-of select="$type" />[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
+          </xsl:if>
 
           <xsl:if test="$type='QObject'">
             // don't return wrapper objects to prevent wrappers from being deleted in scripts (e.g. while destroying children):

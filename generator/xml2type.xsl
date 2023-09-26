@@ -129,7 +129,7 @@
     <xsl:apply-templates mode="class" />
 
     <xsl:if test="$module=''">
-      static QString getTypeName(int type) {
+      QString getTypeName(int type) {
         RJSTypeEnum* t = RJSTypeEnum::getById(type);
         return t->getName();
       }

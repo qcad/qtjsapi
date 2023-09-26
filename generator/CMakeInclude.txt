@@ -71,10 +71,29 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qdockwidget_wrapper.h
     generator/cpp/qdom_base.h
     generator/cpp/qdom_wrapper.h
+    generator/cpp/qdomattr_wrapper.h
+    generator/cpp/qdomcdatasection_wrapper.h
+    generator/cpp/qdomcharacterdata_wrapper.h
+    generator/cpp/qdomcomment_wrapper.h
+    generator/cpp/qdomdocument_wrapper.h
+    generator/cpp/qdomdocumentfragment_wrapper.h
+    generator/cpp/qdomdocumenttype_wrapper.h
+    generator/cpp/qdomelement_wrapper.h
+    generator/cpp/qdomentity_wrapper.h
+    generator/cpp/qdomentityreference_wrapper.h
+    generator/cpp/qdomimplementation_wrapper.h
+    generator/cpp/qdomnamednodemap_wrapper.h
+    generator/cpp/qdomnode_wrapper.h
+    generator/cpp/qdomnodelist_wrapper.h
+    generator/cpp/qdomnotation_wrapper.h
+    generator/cpp/qdomprocessinginstruction_wrapper.h
+    generator/cpp/qdomtext_wrapper.h
     generator/cpp/qdoublespinbox_wrapper.h
     generator/cpp/qdoublevalidator_wrapper.h
     generator/cpp/qdrag_base.h
     generator/cpp/qdrag_wrapper.h
+    generator/cpp/qdragmoveevent_wrapper.h
+    generator/cpp/qdropevent_wrapper.h
     generator/cpp/qeasingcurve_base.h
     generator/cpp/qeasingcurve_wrapper.h
     generator/cpp/qevent_base.h
@@ -109,6 +128,7 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qframe_wrapper.h
     generator/cpp/qgesture_base.h
     generator/cpp/qgesture_wrapper.h
+    generator/cpp/qgradient_wrapper.h
     generator/cpp/qgraphicseffect_base.h
     generator/cpp/qgraphicseffect_wrapper.h
     generator/cpp/qgridlayout_base.h
@@ -213,6 +233,7 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qplaintextedit_wrapper.h
     generator/cpp/qpoint_base.h
     generator/cpp/qpoint_wrapper.h
+    generator/cpp/qpointerevent_wrapper.h
     generator/cpp/qpointf_wrapper.h
     generator/cpp/qpolygon_base.h
     generator/cpp/qpolygon_wrapper.h
@@ -256,6 +277,7 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qsettings_wrapper.h
     generator/cpp/qshortcut_base.h
     generator/cpp/qshortcut_wrapper.h
+    generator/cpp/qsinglepointevent_wrapper.h
     generator/cpp/qsize_base.h
     generator/cpp/qsize_wrapper.h
     generator/cpp/qsizef_wrapper.h
@@ -341,6 +363,7 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qvalidator_wrapper.h
     generator/cpp/qvariant_base.h
     generator/cpp/qvariant_wrapper.h
+    generator/cpp/qwheelevent_wrapper.h
     generator/cpp/qwidget_base.h
     generator/cpp/qwidget_wrapper.h
     generator/cpp/qwidgetaction_base.h

@@ -36,6 +36,7 @@ include(generator/CMakeInclude.txt)
 
 target_include_directories(rjsapi PRIVATE
     generator
+    generator/cpp
     .
 )
 
