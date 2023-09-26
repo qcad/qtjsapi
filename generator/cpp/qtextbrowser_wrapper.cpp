@@ -8,6 +8,9 @@
     #include "qtextbrowser_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextBrowser*> QTextBrowser_Wrapper::basecasters_QTextBrowser;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QTextBrowser

@@ -41,13 +41,24 @@
       
         static QListWidgetItem* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QListWidgetItem.length(); i++) {
+            RJSBasecaster_QListWidgetItem* basecaster = basecasters_QListWidgetItem[i];
+            QListWidgetItem* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QListWidgetItem::getIdStatic()) {
             return (QListWidgetItem*)vp;
           }
+
+          qWarning() << "QListWidgetItem::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1006,6 +1017,15 @@ UserType = QListWidgetItem::UserType,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QListWidgetItem*> basecasters_QListWidgetItem;
+
+      public:
+        static void registerBasecaster_QListWidgetItem(RJSBasecaster_QListWidgetItem* bc) {
+          basecasters_QListWidgetItem.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QListWidgetItem_Wrapper*)
@@ -1039,8 +1059,7 @@ UserType = QListWidgetItem::UserType,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1158,7 +1177,6 @@ UserType = QListWidgetItem::UserType,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1733,13 +1751,24 @@ UserType = QListWidgetItem::UserType,
       
         static QListWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QListWidget.length(); i++) {
+            RJSBasecaster_QListWidget* basecaster = basecasters_QListWidget[i];
+            QListWidget* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QListWidget::getIdStatic()) {
             return (QListWidget*)vp;
           }
+
+          qWarning() << "QListWidget::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -10515,6 +10544,15 @@ IconMode = QListWidget::IconMode,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QListWidget*> basecasters_QListWidget;
+
+      public:
+        static void registerBasecaster_QListWidget(RJSBasecaster_QListWidget* bc) {
+          basecasters_QListWidget.append(bc);
+        }
       
     };
 

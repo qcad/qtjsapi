@@ -8,6 +8,9 @@
     #include "qitemdelegate_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QItemDelegate*> QItemDelegate_Wrapper::basecasters_QItemDelegate;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QItemDelegate

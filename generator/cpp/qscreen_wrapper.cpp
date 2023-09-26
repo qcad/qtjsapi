@@ -8,6 +8,9 @@
     #include "qscreen_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QScreen*> QScreen_Wrapper::basecasters_QScreen;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QScreen

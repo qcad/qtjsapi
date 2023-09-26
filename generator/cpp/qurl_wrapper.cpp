@@ -8,6 +8,9 @@
     #include "qurl_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QUrl*> QUrl_Wrapper::basecasters_QUrl;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QUrl

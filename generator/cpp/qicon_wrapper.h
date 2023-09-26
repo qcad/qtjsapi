@@ -39,8 +39,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -280,7 +279,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -303,13 +301,24 @@
       
         static QIcon* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QIcon.length(); i++) {
+            RJSBasecaster_QIcon* basecaster = basecasters_QIcon[i];
+            QIcon* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QIcon::getIdStatic()) {
             return (QIcon*)vp;
           }
+
+          qWarning() << "QIcon::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -902,6 +911,15 @@ Off = QIcon::Off,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QIcon*> basecasters_QIcon;
+
+      public:
+        static void registerBasecaster_QIcon(RJSBasecaster_QIcon* bc) {
+          basecasters_QIcon.append(bc);
+        }
       
     };
 

@@ -49,13 +49,24 @@
       
         static QPainterPath* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPainterPath.length(); i++) {
+            RJSBasecaster_QPainterPath* basecaster = basecasters_QPainterPath[i];
+            QPainterPath* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPainterPath::getIdStatic()) {
             return (QPainterPath*)vp;
           }
+
+          qWarning() << "QPainterPath::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1394,6 +1405,15 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPainterPath*> basecasters_QPainterPath;
+
+      public:
+        static void registerBasecaster_QPainterPath(RJSBasecaster_QPainterPath* bc) {
+          basecasters_QPainterPath.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QPainterPath_Wrapper*)
@@ -1428,13 +1448,24 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
       
         static QPainterPathStroker* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPainterPathStroker.length(); i++) {
+            RJSBasecaster_QPainterPathStroker* basecaster = basecasters_QPainterPathStroker[i];
+            QPainterPathStroker* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPainterPathStroker::getIdStatic()) {
             return (QPainterPathStroker*)vp;
           }
+
+          qWarning() << "QPainterPathStroker::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1938,6 +1969,15 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPainterPathStroker*> basecasters_QPainterPathStroker;
+
+      public:
+        static void registerBasecaster_QPainterPathStroker(RJSBasecaster_QPainterPathStroker* bc) {
+          basecasters_QPainterPathStroker.append(bc);
+        }
       
     };
 

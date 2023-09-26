@@ -8,6 +8,9 @@
     #include "qstatusbar_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QStatusBar*> QStatusBar_Wrapper::basecasters_QStatusBar;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QStatusBar

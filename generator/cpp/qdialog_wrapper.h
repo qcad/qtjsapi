@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -155,7 +154,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -538,33 +536,44 @@
       
         static QDialog* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
-              return (QDialog*)(QAbstractPrintDialog*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QFileDialog::getIdStatic()) {
-              return (QDialog*)(QFileDialog*)vp;
+              if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
+                return (QDialog*)(QAbstractPrintDialog*)vp;
+              }
+              
+              if (t==RJSType_QFileDialog::getIdStatic()) {
+                return (QDialog*)(QFileDialog*)vp;
+              }
+              
+              if (t==RJSType_QMessageBox::getIdStatic()) {
+                return (QDialog*)(QMessageBox*)vp;
+              }
+              
+              if (t==RJSType_QPrintDialog::getIdStatic()) {
+                return (QDialog*)(QPrintDialog*)vp;
+              }
+              
+              if (t==RJSType_QProgressDialog::getIdStatic()) {
+                return (QDialog*)(QProgressDialog*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDialog.length(); i++) {
+            RJSBasecaster_QDialog* basecaster = basecasters_QDialog[i];
+            QDialog* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QMessageBox::getIdStatic()) {
-              return (QDialog*)(QMessageBox*)vp;
-            }
-            
-            if (t==RJSType_QPrintDialog::getIdStatic()) {
-              return (QDialog*)(QPrintDialog*)vp;
-            }
-            
-            if (t==RJSType_QProgressDialog::getIdStatic()) {
-              return (QDialog*)(QProgressDialog*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDialog::getIdStatic()) {
             return (QDialog*)vp;
           }
+
+          qWarning() << "QDialog::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6175,6 +6184,15 @@ Accepted = QDialog::Accepted,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDialog*> basecasters_QDialog;
+
+      public:
+        static void registerBasecaster_QDialog(RJSBasecaster_QDialog* bc) {
+          basecasters_QDialog.append(bc);
+        }
       
     };
 

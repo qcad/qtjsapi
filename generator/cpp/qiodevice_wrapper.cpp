@@ -8,6 +8,9 @@
     #include "qiodevice_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QIODevice*> QIODevice_Wrapper::basecasters_QIODevice;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QIODevice

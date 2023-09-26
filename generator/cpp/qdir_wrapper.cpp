@@ -8,6 +8,9 @@
     #include "qdir_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDir*> QDir_Wrapper::basecasters_QDir;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QDir

@@ -35,8 +35,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -222,7 +221,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -245,13 +243,24 @@
       
         static QToolTip* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QToolTip.length(); i++) {
+            RJSBasecaster_QToolTip* basecaster = basecasters_QToolTip[i];
+            QToolTip* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QToolTip::getIdStatic()) {
             return (QToolTip*)vp;
           }
+
+          qWarning() << "QToolTip::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -395,6 +404,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QToolTip*> basecasters_QToolTip;
+
+      public:
+        static void registerBasecaster_QToolTip(RJSBasecaster_QToolTip* bc) {
+          basecasters_QToolTip.append(bc);
+        }
       
     };
 

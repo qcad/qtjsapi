@@ -8,6 +8,9 @@
     #include "qwidgetaction_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QWidgetAction*> QWidgetAction_Wrapper::basecasters_QWidgetAction;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QWidgetAction

@@ -37,8 +37,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -83,7 +82,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -106,13 +104,24 @@
       
         static QCalendar* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QCalendar.length(); i++) {
+            RJSBasecaster_QCalendar* basecaster = basecasters_QCalendar[i];
+            QCalendar* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QCalendar::getIdStatic()) {
             return (QCalendar*)vp;
           }
+
+          qWarning() << "QCalendar::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -834,6 +843,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QCalendar*> basecasters_QCalendar;
+
+      public:
+        static void registerBasecaster_QCalendar(RJSBasecaster_QCalendar* bc) {
+          basecasters_QCalendar.append(bc);
+        }
       
     };
 

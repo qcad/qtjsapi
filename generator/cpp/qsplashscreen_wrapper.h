@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -149,7 +148,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -532,13 +530,24 @@
       
         static QSplashScreen* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QSplashScreen.length(); i++) {
+            RJSBasecaster_QSplashScreen* basecaster = basecasters_QSplashScreen[i];
+            QSplashScreen* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QSplashScreen::getIdStatic()) {
             return (QSplashScreen*)vp;
           }
+
+          qWarning() << "QSplashScreen::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -5984,6 +5993,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QSplashScreen*> basecasters_QSplashScreen;
+
+      public:
+        static void registerBasecaster_QSplashScreen(RJSBasecaster_QSplashScreen* bc) {
+          basecasters_QSplashScreen.append(bc);
+        }
       
     };
 

@@ -8,6 +8,9 @@
     #include "qsurfaceformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSurfaceFormat*> QSurfaceFormat_Wrapper::basecasters_QSurfaceFormat;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_DEPRECATED_SINCE(6,0)

@@ -42,8 +42,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -165,7 +164,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -548,61 +546,72 @@
       
         static QAbstractScrollArea* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QAbstractItemView::getIdStatic()) {
-              return (QAbstractScrollArea*)(QAbstractItemView*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QHeaderView::getIdStatic()) {
-              return (QAbstractScrollArea*)(QHeaderView*)vp;
+              if (t==RJSType_QAbstractItemView::getIdStatic()) {
+                return (QAbstractScrollArea*)(QAbstractItemView*)vp;
+              }
+              
+              if (t==RJSType_QHeaderView::getIdStatic()) {
+                return (QAbstractScrollArea*)(QHeaderView*)vp;
+              }
+              
+              if (t==RJSType_QListView::getIdStatic()) {
+                return (QAbstractScrollArea*)(QListView*)vp;
+              }
+              
+              if (t==RJSType_QListWidget::getIdStatic()) {
+                return (QAbstractScrollArea*)(QListWidget*)vp;
+              }
+              
+              if (t==RJSType_QMdiArea::getIdStatic()) {
+                return (QAbstractScrollArea*)(QMdiArea*)vp;
+              }
+              
+              if (t==RJSType_QPlainTextEdit::getIdStatic()) {
+                return (QAbstractScrollArea*)(QPlainTextEdit*)vp;
+              }
+              
+              if (t==RJSType_QScrollArea::getIdStatic()) {
+                return (QAbstractScrollArea*)(QScrollArea*)vp;
+              }
+              
+              if (t==RJSType_QTableView::getIdStatic()) {
+                return (QAbstractScrollArea*)(QTableView*)vp;
+              }
+              
+              if (t==RJSType_QTableWidget::getIdStatic()) {
+                return (QAbstractScrollArea*)(QTableWidget*)vp;
+              }
+              
+              if (t==RJSType_QTextEdit::getIdStatic()) {
+                return (QAbstractScrollArea*)(QTextEdit*)vp;
+              }
+              
+              if (t==RJSType_QTreeView::getIdStatic()) {
+                return (QAbstractScrollArea*)(QTreeView*)vp;
+              }
+              
+              if (t==RJSType_QTreeWidget::getIdStatic()) {
+                return (QAbstractScrollArea*)(QTreeWidget*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QAbstractScrollArea.length(); i++) {
+            RJSBasecaster_QAbstractScrollArea* basecaster = basecasters_QAbstractScrollArea[i];
+            QAbstractScrollArea* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QListView::getIdStatic()) {
-              return (QAbstractScrollArea*)(QListView*)vp;
-            }
-            
-            if (t==RJSType_QListWidget::getIdStatic()) {
-              return (QAbstractScrollArea*)(QListWidget*)vp;
-            }
-            
-            if (t==RJSType_QMdiArea::getIdStatic()) {
-              return (QAbstractScrollArea*)(QMdiArea*)vp;
-            }
-            
-            if (t==RJSType_QPlainTextEdit::getIdStatic()) {
-              return (QAbstractScrollArea*)(QPlainTextEdit*)vp;
-            }
-            
-            if (t==RJSType_QScrollArea::getIdStatic()) {
-              return (QAbstractScrollArea*)(QScrollArea*)vp;
-            }
-            
-            if (t==RJSType_QTableView::getIdStatic()) {
-              return (QAbstractScrollArea*)(QTableView*)vp;
-            }
-            
-            if (t==RJSType_QTableWidget::getIdStatic()) {
-              return (QAbstractScrollArea*)(QTableWidget*)vp;
-            }
-            
-            if (t==RJSType_QTextEdit::getIdStatic()) {
-              return (QAbstractScrollArea*)(QTextEdit*)vp;
-            }
-            
-            if (t==RJSType_QTreeView::getIdStatic()) {
-              return (QAbstractScrollArea*)(QTreeView*)vp;
-            }
-            
-            if (t==RJSType_QTreeWidget::getIdStatic()) {
-              return (QAbstractScrollArea*)(QTreeWidget*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
             return (QAbstractScrollArea*)vp;
           }
+
+          qWarning() << "QAbstractScrollArea::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6923,6 +6932,15 @@ AdjustToContents = QAbstractScrollArea::AdjustToContents,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QAbstractScrollArea*> basecasters_QAbstractScrollArea;
+
+      public:
+        static void registerBasecaster_QAbstractScrollArea(RJSBasecaster_QAbstractScrollArea* bc) {
+          basecasters_QAbstractScrollArea.append(bc);
+        }
       
     };
 

@@ -8,6 +8,9 @@
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QInputEvent*> QInputEvent_Wrapper::basecasters_QInputEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QInputEvent
@@ -1021,6 +1024,9 @@ quint64 a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPointerEvent*> QPointerEvent_Wrapper::basecasters_QPointerEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPointerEvent
@@ -2924,6 +2930,9 @@ QEventPoint a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSinglePointEvent*> QSinglePointEvent_Wrapper::basecasters_QSinglePointEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QSinglePointEvent
@@ -5060,6 +5069,9 @@ QEventPoint a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QMouseEvent*> QMouseEvent_Wrapper::basecasters_QMouseEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QMouseEvent
@@ -7915,6 +7927,9 @@ QEventPoint a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QWheelEvent*> QWheelEvent_Wrapper::basecasters_QWheelEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QWheelEvent
@@ -10821,6 +10836,9 @@ QEventPoint a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QKeyEvent*> QKeyEvent_Wrapper::basecasters_QKeyEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QKeyEvent
@@ -12489,6 +12507,9 @@ QKeySequence::StandardKey a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPaintEvent*> QPaintEvent_Wrapper::basecasters_QPaintEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPaintEvent
@@ -13503,6 +13524,9 @@ bool a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QResizeEvent*> QResizeEvent_Wrapper::basecasters_QResizeEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QResizeEvent
@@ -14492,6 +14516,9 @@ bool a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDragEnterEvent*> QDragEnterEvent_Wrapper::basecasters_QDragEnterEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QDragEnterEvent
@@ -15940,6 +15967,9 @@ QRect a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDropEvent*> QDropEvent_Wrapper::basecasters_QDropEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QDropEvent
@@ -17266,6 +17296,9 @@ Qt::DropAction a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QContextMenuEvent*> QContextMenuEvent_Wrapper::basecasters_QContextMenuEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QContextMenuEvent
@@ -18864,6 +18897,9 @@ quint64 a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDragMoveEvent*> QDragMoveEvent_Wrapper::basecasters_QDragMoveEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QDragMoveEvent
@@ -20333,6 +20369,9 @@ QRect a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDragLeaveEvent*> QDragLeaveEvent_Wrapper::basecasters_QDragLeaveEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QDragLeaveEvent
@@ -21157,6 +21196,9 @@ bool a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QHelpEvent*> QHelpEvent_Wrapper::basecasters_QHelpEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QHelpEvent
@@ -22390,6 +22432,9 @@ bool a1_cpp;
     #include "qevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QActionEvent*> QActionEvent_Wrapper::basecasters_QActionEvent;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QActionEvent

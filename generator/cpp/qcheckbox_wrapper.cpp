@@ -8,6 +8,9 @@
     #include "qcheckbox_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QCheckBox*> QCheckBox_Wrapper::basecasters_QCheckBox;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QCheckBox

@@ -41,13 +41,24 @@
       
         static QEasingCurve* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QEasingCurve.length(); i++) {
+            RJSBasecaster_QEasingCurve* basecaster = basecasters_QEasingCurve[i];
+            QEasingCurve* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QEasingCurve::getIdStatic()) {
             return (QEasingCurve*)vp;
           }
+
+          qWarning() << "QEasingCurve::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -674,6 +685,15 @@ NCurveTypes = QEasingCurve::NCurveTypes,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QEasingCurve*> basecasters_QEasingCurve;
+
+      public:
+        static void registerBasecaster_QEasingCurve(RJSBasecaster_QEasingCurve* bc) {
+          basecasters_QEasingCurve.append(bc);
+        }
       
     };
 

@@ -8,6 +8,9 @@
     #include "qclipboard_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QClipboard*> QClipboard_Wrapper::basecasters_QClipboard;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QClipboard

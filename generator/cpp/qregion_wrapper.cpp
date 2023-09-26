@@ -8,6 +8,9 @@
     #include "qregion_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QRegion*> QRegion_Wrapper::basecasters_QRegion;
+    
     // static functions implementation in singleton wrapper:
     
 #ifdef Q_COMPILER_MANGLES_RETURN_TYPE

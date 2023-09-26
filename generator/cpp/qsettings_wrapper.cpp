@@ -8,6 +8,9 @@
     #include "qsettings_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSettings*> QSettings_Wrapper::basecasters_QSettings;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QSettings

@@ -27,7 +27,7 @@ echo "xml2helper (relies on xmlall)..."
 sh $DIR/xml2helper.sh $MODULE
 
 echo "xml2merged..."
-sh $DIR/xml2merged.sh
+sh $DIR/xml2merged.sh $MODULE
 if [ $? -ne 0 ]; then exit $?; fi
 
 echo "xml2unique..."

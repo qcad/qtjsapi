@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -149,7 +148,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -580,13 +578,24 @@
       
         static QSpinBox* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QSpinBox.length(); i++) {
+            RJSBasecaster_QSpinBox* basecaster = basecasters_QSpinBox[i];
+            QSpinBox* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QSpinBox::getIdStatic()) {
             return (QSpinBox*)vp;
           }
+
+          qWarning() << "QSpinBox::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6350,6 +6359,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QSpinBox*> basecasters_QSpinBox;
+
+      public:
+        static void registerBasecaster_QSpinBox(RJSBasecaster_QSpinBox* bc) {
+          basecasters_QSpinBox.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QSpinBox_Wrapper*)
@@ -6384,13 +6402,24 @@
       
         static QDoubleSpinBox* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDoubleSpinBox.length(); i++) {
+            RJSBasecaster_QDoubleSpinBox* basecaster = basecasters_QDoubleSpinBox[i];
+            QDoubleSpinBox* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDoubleSpinBox::getIdStatic()) {
             return (QDoubleSpinBox*)vp;
           }
+
+          qWarning() << "QDoubleSpinBox::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7118,6 +7147,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDoubleSpinBox*> basecasters_QDoubleSpinBox;
+
+      public:
+        static void registerBasecaster_QDoubleSpinBox(RJSBasecaster_QDoubleSpinBox* bc) {
+          basecasters_QDoubleSpinBox.append(bc);
+        }
       
     };
 

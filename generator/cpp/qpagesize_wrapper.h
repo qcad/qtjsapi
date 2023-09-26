@@ -41,8 +41,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -279,7 +278,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -302,13 +300,24 @@
       
         static QPageSize* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPageSize.length(); i++) {
+            RJSBasecaster_QPageSize* basecaster = basecasters_QPageSize[i];
+            QPageSize* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPageSize::getIdStatic()) {
             return (QPageSize*)vp;
           }
+
+          qWarning() << "QPageSize::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -979,6 +988,15 @@ ExactMatch = QPageSize::ExactMatch,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPageSize*> basecasters_QPageSize;
+
+      public:
+        static void registerBasecaster_QPageSize(RJSBasecaster_QPageSize* bc) {
+          basecasters_QPageSize.append(bc);
+        }
       
     };
 

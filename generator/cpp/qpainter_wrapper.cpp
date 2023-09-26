@@ -8,6 +8,9 @@
     #include "qpainter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPainter*> QPainter_Wrapper::basecasters_QPainter;
+    
     // static functions implementation in singleton wrapper:
     
 #ifndef QT_NO_PICTURE

@@ -46,8 +46,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -157,7 +156,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -588,13 +586,24 @@
       
         static QProgressDialog* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QProgressDialog.length(); i++) {
+            RJSBasecaster_QProgressDialog* basecaster = basecasters_QProgressDialog[i];
+            QProgressDialog* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QProgressDialog::getIdStatic()) {
             return (QProgressDialog*)vp;
           }
+
+          qWarning() << "QProgressDialog::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6726,6 +6735,15 @@ Accepted = QProgressDialog::Accepted,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QProgressDialog*> basecasters_QProgressDialog;
+
+      public:
+        static void registerBasecaster_QProgressDialog(RJSBasecaster_QProgressDialog* bc) {
+          basecasters_QProgressDialog.append(bc);
+        }
       
     };
 

@@ -66,8 +66,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -144,7 +143,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -245,13 +243,24 @@
       
         static QTextDocument* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextDocument.length(); i++) {
+            RJSBasecaster_QTextDocument* basecaster = basecasters_QTextDocument[i];
+            QTextDocument* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextDocument::getIdStatic()) {
             return (QTextDocument*)vp;
           }
+
+          qWarning() << "QTextDocument::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2638,6 +2647,15 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextDocument*> basecasters_QTextDocument;
+
+      public:
+        static void registerBasecaster_QTextDocument(RJSBasecaster_QTextDocument* bc) {
+          basecasters_QTextDocument.append(bc);
+        }
       
     };
 

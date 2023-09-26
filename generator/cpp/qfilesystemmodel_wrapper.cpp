@@ -8,6 +8,9 @@
     #include "qfilesystemmodel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QFileSystemModel*> QFileSystemModel_Wrapper::basecasters_QFileSystemModel;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QFileSystemModel

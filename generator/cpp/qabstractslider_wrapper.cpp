@@ -8,6 +8,9 @@
     #include "qabstractslider_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QAbstractSlider*> QAbstractSlider_Wrapper::basecasters_QAbstractSlider;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QAbstractSlider

@@ -8,6 +8,9 @@
     #include "qscrollarea_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QScrollArea*> QScrollArea_Wrapper::basecasters_QScrollArea;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QScrollArea

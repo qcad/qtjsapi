@@ -41,13 +41,24 @@
       
         static QPageLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPageLayout.length(); i++) {
+            RJSBasecaster_QPageLayout* basecaster = basecasters_QPageLayout[i];
+            QPageLayout* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPageLayout::getIdStatic()) {
             return (QPageLayout*)vp;
           }
+
+          qWarning() << "QPageLayout::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -903,6 +914,15 @@ FullPageMode = QPageLayout::FullPageMode,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPageLayout*> basecasters_QPageLayout;
+
+      public:
+        static void registerBasecaster_QPageLayout(RJSBasecaster_QPageLayout* bc) {
+          basecasters_QPageLayout.append(bc);
+        }
       
     };
 

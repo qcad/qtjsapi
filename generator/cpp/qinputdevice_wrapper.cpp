@@ -8,6 +8,9 @@
     #include "qinputdevice_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QInputDevice*> QInputDevice_Wrapper::basecasters_QInputDevice;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QInputDevice

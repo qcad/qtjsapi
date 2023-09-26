@@ -8,6 +8,9 @@
     #include "qgesture_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QGesture*> QGesture_Wrapper::basecasters_QGesture;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QGesture
@@ -2030,6 +2033,9 @@ QGesture::GestureCancelPolicy a1_cpp;
     #include "qgesture_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPanGesture*> QPanGesture_Wrapper::basecasters_QPanGesture;
+    
     // static functions implementation in singleton wrapper:
     
     void QPanGesture_Wrapper::init(RJSApi& handler) {
@@ -3136,6 +3142,9 @@ qreal a1_cpp;
     #include "qgesture_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPinchGesture*> QPinchGesture_Wrapper::basecasters_QPinchGesture;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPinchGesture
@@ -6489,6 +6498,9 @@ qreal a1_cpp;
     #include "qgesture_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSwipeGesture*> QSwipeGesture_Wrapper::basecasters_QSwipeGesture;
+    
     // static functions implementation in singleton wrapper:
     
     void QSwipeGesture_Wrapper::init(RJSApi& handler) {

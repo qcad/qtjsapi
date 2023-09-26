@@ -8,6 +8,9 @@
     #include "qabstractitemview_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QAbstractItemView*> QAbstractItemView_Wrapper::basecasters_QAbstractItemView;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QAbstractItemView

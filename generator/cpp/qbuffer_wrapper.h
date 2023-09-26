@@ -37,8 +37,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -97,7 +96,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -126,13 +124,24 @@
       
         static QBuffer* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QBuffer.length(); i++) {
+            RJSBasecaster_QBuffer* basecaster = basecasters_QBuffer[i];
+            QBuffer* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QBuffer::getIdStatic()) {
             return (QBuffer*)vp;
           }
+
+          qWarning() << "QBuffer::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1697,6 +1706,15 @@ ExistingOnly = QBuffer::ExistingOnly,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QBuffer*> basecasters_QBuffer;
+
+      public:
+        static void registerBasecaster_QBuffer(RJSBasecaster_QBuffer* bc) {
+          basecasters_QBuffer.append(bc);
+        }
       
     };
 

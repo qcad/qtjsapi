@@ -42,8 +42,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -115,7 +114,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -144,37 +142,48 @@
       
         static QLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QBoxLayout::getIdStatic()) {
-              return (QLayout*)(QBoxLayout*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QHBoxLayout::getIdStatic()) {
-              return (QLayout*)(QHBoxLayout*)vp;
+              if (t==RJSType_QBoxLayout::getIdStatic()) {
+                return (QLayout*)(QBoxLayout*)vp;
+              }
+              
+              if (t==RJSType_QHBoxLayout::getIdStatic()) {
+                return (QLayout*)(QHBoxLayout*)vp;
+              }
+              
+              if (t==RJSType_QVBoxLayout::getIdStatic()) {
+                return (QLayout*)(QVBoxLayout*)vp;
+              }
+              
+              if (t==RJSType_QFormLayout::getIdStatic()) {
+                return (QLayout*)(QFormLayout*)vp;
+              }
+              
+              if (t==RJSType_QGridLayout::getIdStatic()) {
+                return (QLayout*)(QGridLayout*)vp;
+              }
+              
+              if (t==RJSType_QStackedLayout::getIdStatic()) {
+                return (QLayout*)(QStackedLayout*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QLayout.length(); i++) {
+            RJSBasecaster_QLayout* basecaster = basecasters_QLayout[i];
+            QLayout* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QVBoxLayout::getIdStatic()) {
-              return (QLayout*)(QVBoxLayout*)vp;
-            }
-            
-            if (t==RJSType_QFormLayout::getIdStatic()) {
-              return (QLayout*)(QFormLayout*)vp;
-            }
-            
-            if (t==RJSType_QGridLayout::getIdStatic()) {
-              return (QLayout*)(QGridLayout*)vp;
-            }
-            
-            if (t==RJSType_QStackedLayout::getIdStatic()) {
-              return (QLayout*)(QStackedLayout*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QLayout::getIdStatic()) {
             return (QLayout*)vp;
           }
+
+          qWarning() << "QLayout::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1725,6 +1734,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QLayout*> basecasters_QLayout;
+
+      public:
+        static void registerBasecaster_QLayout(RJSBasecaster_QLayout* bc) {
+          basecasters_QLayout.append(bc);
+        }
       
     };
 

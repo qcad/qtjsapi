@@ -8,6 +8,9 @@
     #include "qlayoutitem_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QLayoutItem*> QLayoutItem_Wrapper::basecasters_QLayoutItem;
+    
     // static functions implementation in singleton wrapper:
     
     void QLayoutItem_Wrapper::init(RJSApi& handler) {
@@ -1152,6 +1155,9 @@ Qt::Alignment a1_cpp;
     #include "qlayoutitem_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSpacerItem*> QSpacerItem_Wrapper::basecasters_QSpacerItem;
+    
     // static functions implementation in singleton wrapper:
     
     void QSpacerItem_Wrapper::init(RJSApi& handler) {
@@ -2598,6 +2604,9 @@ QRect a1_cpp;
     #include "qlayoutitem_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QWidgetItem*> QWidgetItem_Wrapper::basecasters_QWidgetItem;
+    
     // static functions implementation in singleton wrapper:
     
     void QWidgetItem_Wrapper::init(RJSApi& handler) {

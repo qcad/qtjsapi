@@ -8,6 +8,9 @@
     #include "qtextdocument_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextDocument*> QTextDocument_Wrapper::basecasters_QTextDocument;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QTextDocument

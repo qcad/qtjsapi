@@ -8,6 +8,9 @@
     #include "qfiledialog_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QFileDialog*> QFileDialog_Wrapper::basecasters_QFileDialog;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QFileDialog

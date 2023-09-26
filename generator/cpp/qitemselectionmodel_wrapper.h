@@ -37,8 +37,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -83,7 +82,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -118,13 +116,24 @@
       
         static QItemSelectionModel* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QItemSelectionModel.length(); i++) {
+            RJSBasecaster_QItemSelectionModel* basecaster = basecasters_QItemSelectionModel[i];
+            QItemSelectionModel* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QItemSelectionModel::getIdStatic()) {
             return (QItemSelectionModel*)vp;
           }
+
+          qWarning() << "QItemSelectionModel::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1291,6 +1300,15 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QItemSelectionModel*> basecasters_QItemSelectionModel;
+
+      public:
+        static void registerBasecaster_QItemSelectionModel(RJSBasecaster_QItemSelectionModel* bc) {
+          basecasters_QItemSelectionModel.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QItemSelectionModel_Wrapper*)
@@ -1325,13 +1343,24 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
       
         static QItemSelection* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QItemSelection.length(); i++) {
+            RJSBasecaster_QItemSelection* basecaster = basecasters_QItemSelection[i];
+            QItemSelection* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QItemSelection::getIdStatic()) {
             return (QItemSelection*)vp;
           }
+
+          qWarning() << "QItemSelection::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1606,6 +1635,15 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QItemSelection*> basecasters_QItemSelection;
+
+      public:
+        static void registerBasecaster_QItemSelection(RJSBasecaster_QItemSelection* bc) {
+          basecasters_QItemSelection.append(bc);
+        }
       
     };
 

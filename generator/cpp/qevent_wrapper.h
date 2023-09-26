@@ -43,8 +43,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -81,7 +80,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -104,33 +102,44 @@
       
         static QInputEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QPointerEvent::getIdStatic()) {
-              return (QInputEvent*)(QPointerEvent*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QMouseEvent::getIdStatic()) {
-              return (QInputEvent*)(QMouseEvent*)vp;
+              if (t==RJSType_QPointerEvent::getIdStatic()) {
+                return (QInputEvent*)(QPointerEvent*)vp;
+              }
+              
+              if (t==RJSType_QMouseEvent::getIdStatic()) {
+                return (QInputEvent*)(QMouseEvent*)vp;
+              }
+              
+              if (t==RJSType_QWheelEvent::getIdStatic()) {
+                return (QInputEvent*)(QWheelEvent*)vp;
+              }
+              
+              if (t==RJSType_QKeyEvent::getIdStatic()) {
+                return (QInputEvent*)(QKeyEvent*)vp;
+              }
+              
+              if (t==RJSType_QContextMenuEvent::getIdStatic()) {
+                return (QInputEvent*)(QContextMenuEvent*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QInputEvent.length(); i++) {
+            RJSBasecaster_QInputEvent* basecaster = basecasters_QInputEvent[i];
+            QInputEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QWheelEvent::getIdStatic()) {
-              return (QInputEvent*)(QWheelEvent*)vp;
-            }
-            
-            if (t==RJSType_QKeyEvent::getIdStatic()) {
-              return (QInputEvent*)(QKeyEvent*)vp;
-            }
-            
-            if (t==RJSType_QContextMenuEvent::getIdStatic()) {
-              return (QInputEvent*)(QContextMenuEvent*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QInputEvent::getIdStatic()) {
             return (QInputEvent*)vp;
           }
+
+          qWarning() << "QInputEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -761,6 +770,15 @@ MaxUser = QInputEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QInputEvent*> basecasters_QInputEvent;
+
+      public:
+        static void registerBasecaster_QInputEvent(RJSBasecaster_QInputEvent* bc) {
+          basecasters_QInputEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QInputEvent_Wrapper*)
@@ -791,8 +809,7 @@ MaxUser = QInputEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -829,7 +846,6 @@ MaxUser = QInputEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -852,25 +868,36 @@ MaxUser = QInputEvent::MaxUser,
       
         static QPointerEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QSinglePointEvent::getIdStatic()) {
-              return (QPointerEvent*)(QSinglePointEvent*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QMouseEvent::getIdStatic()) {
-              return (QPointerEvent*)(QMouseEvent*)vp;
+              if (t==RJSType_QSinglePointEvent::getIdStatic()) {
+                return (QPointerEvent*)(QSinglePointEvent*)vp;
+              }
+              
+              if (t==RJSType_QMouseEvent::getIdStatic()) {
+                return (QPointerEvent*)(QMouseEvent*)vp;
+              }
+              
+              if (t==RJSType_QWheelEvent::getIdStatic()) {
+                return (QPointerEvent*)(QWheelEvent*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPointerEvent.length(); i++) {
+            RJSBasecaster_QPointerEvent* basecaster = basecasters_QPointerEvent[i];
+            QPointerEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QWheelEvent::getIdStatic()) {
-              return (QPointerEvent*)(QWheelEvent*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPointerEvent::getIdStatic()) {
             return (QPointerEvent*)vp;
           }
+
+          qWarning() << "QPointerEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1802,6 +1829,15 @@ MaxUser = QPointerEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPointerEvent*> basecasters_QPointerEvent;
+
+      public:
+        static void registerBasecaster_QPointerEvent(RJSBasecaster_QPointerEvent* bc) {
+          basecasters_QPointerEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QPointerEvent_Wrapper*)
@@ -1832,8 +1868,7 @@ MaxUser = QPointerEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1870,7 +1905,6 @@ MaxUser = QPointerEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1893,21 +1927,32 @@ MaxUser = QPointerEvent::MaxUser,
       
         static QSinglePointEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QMouseEvent::getIdStatic()) {
-              return (QSinglePointEvent*)(QMouseEvent*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QWheelEvent::getIdStatic()) {
-              return (QSinglePointEvent*)(QWheelEvent*)vp;
+              if (t==RJSType_QMouseEvent::getIdStatic()) {
+                return (QSinglePointEvent*)(QMouseEvent*)vp;
+              }
+              
+              if (t==RJSType_QWheelEvent::getIdStatic()) {
+                return (QSinglePointEvent*)(QWheelEvent*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QSinglePointEvent.length(); i++) {
+            RJSBasecaster_QSinglePointEvent* basecaster = basecasters_QSinglePointEvent[i];
+            QSinglePointEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QSinglePointEvent::getIdStatic()) {
             return (QSinglePointEvent*)vp;
           }
+
+          qWarning() << "QSinglePointEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2923,6 +2968,15 @@ MaxUser = QSinglePointEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QSinglePointEvent*> basecasters_QSinglePointEvent;
+
+      public:
+        static void registerBasecaster_QSinglePointEvent(RJSBasecaster_QSinglePointEvent* bc) {
+          basecasters_QSinglePointEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QSinglePointEvent_Wrapper*)
@@ -2953,8 +3007,7 @@ MaxUser = QSinglePointEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -2995,7 +3048,6 @@ MaxUser = QSinglePointEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -3018,13 +3070,24 @@ MaxUser = QSinglePointEvent::MaxUser,
       
         static QMouseEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QMouseEvent.length(); i++) {
+            RJSBasecaster_QMouseEvent* basecaster = basecasters_QMouseEvent[i];
+            QMouseEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QMouseEvent::getIdStatic()) {
             return (QMouseEvent*)vp;
           }
+
+          qWarning() << "QMouseEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4231,6 +4294,15 @@ MaxUser = QMouseEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QMouseEvent*> basecasters_QMouseEvent;
+
+      public:
+        static void registerBasecaster_QMouseEvent(RJSBasecaster_QMouseEvent* bc) {
+          basecasters_QMouseEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QMouseEvent_Wrapper*)
@@ -4261,8 +4333,7 @@ MaxUser = QMouseEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -4299,7 +4370,6 @@ MaxUser = QMouseEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -4346,13 +4416,24 @@ MaxUser = QMouseEvent::MaxUser,
       
         static QWheelEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QWheelEvent.length(); i++) {
+            RJSBasecaster_QWheelEvent* basecaster = basecasters_QWheelEvent[i];
+            QWheelEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QWheelEvent::getIdStatic()) {
             return (QWheelEvent*)vp;
           }
+
+          qWarning() << "QWheelEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -5639,6 +5720,15 @@ MaxUser = QWheelEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QWheelEvent*> basecasters_QWheelEvent;
+
+      public:
+        static void registerBasecaster_QWheelEvent(RJSBasecaster_QWheelEvent* bc) {
+          basecasters_QWheelEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QWheelEvent_Wrapper*)
@@ -5669,8 +5759,7 @@ MaxUser = QWheelEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -5711,7 +5800,6 @@ MaxUser = QWheelEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -5734,13 +5822,24 @@ MaxUser = QWheelEvent::MaxUser,
       
         static QKeyEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QKeyEvent.length(); i++) {
+            RJSBasecaster_QKeyEvent* basecaster = basecasters_QKeyEvent[i];
+            QKeyEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QKeyEvent::getIdStatic()) {
             return (QKeyEvent*)vp;
           }
+
+          qWarning() << "QKeyEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6598,6 +6697,15 @@ MaxUser = QKeyEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QKeyEvent*> basecasters_QKeyEvent;
+
+      public:
+        static void registerBasecaster_QKeyEvent(RJSBasecaster_QKeyEvent* bc) {
+          basecasters_QKeyEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QKeyEvent_Wrapper*)
@@ -6628,8 +6736,7 @@ MaxUser = QKeyEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -6666,7 +6773,6 @@ MaxUser = QKeyEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -6689,13 +6795,24 @@ MaxUser = QKeyEvent::MaxUser,
       
         static QPaintEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPaintEvent.length(); i++) {
+            RJSBasecaster_QPaintEvent* basecaster = basecasters_QPaintEvent[i];
+            QPaintEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPaintEvent::getIdStatic()) {
             return (QPaintEvent*)vp;
           }
+
+          qWarning() << "QPaintEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7307,6 +7424,15 @@ MaxUser = QPaintEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPaintEvent*> basecasters_QPaintEvent;
+
+      public:
+        static void registerBasecaster_QPaintEvent(RJSBasecaster_QPaintEvent* bc) {
+          basecasters_QPaintEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QPaintEvent_Wrapper*)
@@ -7337,8 +7463,7 @@ MaxUser = QPaintEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -7375,7 +7500,6 @@ MaxUser = QPaintEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -7398,13 +7522,24 @@ MaxUser = QPaintEvent::MaxUser,
       
         static QResizeEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QResizeEvent.length(); i++) {
+            RJSBasecaster_QResizeEvent* basecaster = basecasters_QResizeEvent[i];
+            QResizeEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QResizeEvent::getIdStatic()) {
             return (QResizeEvent*)vp;
           }
+
+          qWarning() << "QResizeEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -8020,6 +8155,15 @@ MaxUser = QResizeEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QResizeEvent*> basecasters_QResizeEvent;
+
+      public:
+        static void registerBasecaster_QResizeEvent(RJSBasecaster_QResizeEvent* bc) {
+          basecasters_QResizeEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QResizeEvent_Wrapper*)
@@ -8050,8 +8194,7 @@ MaxUser = QResizeEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -8088,7 +8231,6 @@ MaxUser = QResizeEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -8111,13 +8253,24 @@ MaxUser = QResizeEvent::MaxUser,
       
         static QDragEnterEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDragEnterEvent.length(); i++) {
+            RJSBasecaster_QDragEnterEvent* basecaster = basecasters_QDragEnterEvent[i];
+            QDragEnterEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDragEnterEvent::getIdStatic()) {
             return (QDragEnterEvent*)vp;
           }
+
+          qWarning() << "QDragEnterEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -8879,6 +9032,15 @@ MaxUser = QDragEnterEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDragEnterEvent*> basecasters_QDragEnterEvent;
+
+      public:
+        static void registerBasecaster_QDragEnterEvent(RJSBasecaster_QDragEnterEvent* bc) {
+          basecasters_QDragEnterEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDragEnterEvent_Wrapper*)
@@ -8909,8 +9071,7 @@ MaxUser = QDragEnterEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -8947,7 +9108,6 @@ MaxUser = QDragEnterEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -8970,21 +9130,32 @@ MaxUser = QDragEnterEvent::MaxUser,
       
         static QDropEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QDragEnterEvent::getIdStatic()) {
-              return (QDropEvent*)(QDragEnterEvent*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QDragMoveEvent::getIdStatic()) {
-              return (QDropEvent*)(QDragMoveEvent*)vp;
+              if (t==RJSType_QDragEnterEvent::getIdStatic()) {
+                return (QDropEvent*)(QDragEnterEvent*)vp;
+              }
+              
+              if (t==RJSType_QDragMoveEvent::getIdStatic()) {
+                return (QDropEvent*)(QDragMoveEvent*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDropEvent.length(); i++) {
+            RJSBasecaster_QDropEvent* basecaster = basecasters_QDropEvent[i];
+            QDropEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDropEvent::getIdStatic()) {
             return (QDropEvent*)vp;
           }
+
+          qWarning() << "QDropEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -9721,6 +9892,15 @@ MaxUser = QDropEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDropEvent*> basecasters_QDropEvent;
+
+      public:
+        static void registerBasecaster_QDropEvent(RJSBasecaster_QDropEvent* bc) {
+          basecasters_QDropEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDropEvent_Wrapper*)
@@ -9751,8 +9931,7 @@ MaxUser = QDropEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -9789,7 +9968,6 @@ MaxUser = QDropEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -9812,13 +9990,24 @@ MaxUser = QDropEvent::MaxUser,
       
         static QContextMenuEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QContextMenuEvent.length(); i++) {
+            RJSBasecaster_QContextMenuEvent* basecaster = basecasters_QContextMenuEvent[i];
+            QContextMenuEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QContextMenuEvent::getIdStatic()) {
             return (QContextMenuEvent*)vp;
           }
+
+          qWarning() << "QContextMenuEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -10643,6 +10832,15 @@ Other = QContextMenuEvent::Other,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QContextMenuEvent*> basecasters_QContextMenuEvent;
+
+      public:
+        static void registerBasecaster_QContextMenuEvent(RJSBasecaster_QContextMenuEvent* bc) {
+          basecasters_QContextMenuEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QContextMenuEvent_Wrapper*)
@@ -10673,8 +10871,7 @@ Other = QContextMenuEvent::Other,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -10711,7 +10908,6 @@ Other = QContextMenuEvent::Other,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -10734,17 +10930,28 @@ Other = QContextMenuEvent::Other,
       
         static QDragMoveEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QDragEnterEvent::getIdStatic()) {
-              return (QDragMoveEvent*)(QDragEnterEvent*)vp;
-            }
+            // check if pointer points to derrived type:
             
+              if (t==RJSType_QDragEnterEvent::getIdStatic()) {
+                return (QDragMoveEvent*)(QDragEnterEvent*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDragMoveEvent.length(); i++) {
+            RJSBasecaster_QDragMoveEvent* basecaster = basecasters_QDragMoveEvent[i];
+            QDragMoveEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDragMoveEvent::getIdStatic()) {
             return (QDragMoveEvent*)vp;
           }
+
+          qWarning() << "QDragMoveEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -11510,6 +11717,15 @@ MaxUser = QDragMoveEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDragMoveEvent*> basecasters_QDragMoveEvent;
+
+      public:
+        static void registerBasecaster_QDragMoveEvent(RJSBasecaster_QDragMoveEvent* bc) {
+          basecasters_QDragMoveEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDragMoveEvent_Wrapper*)
@@ -11540,8 +11756,7 @@ MaxUser = QDragMoveEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -11578,7 +11793,6 @@ MaxUser = QDragMoveEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -11601,13 +11815,24 @@ MaxUser = QDragMoveEvent::MaxUser,
       
         static QDragLeaveEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDragLeaveEvent.length(); i++) {
+            RJSBasecaster_QDragLeaveEvent* basecaster = basecasters_QDragLeaveEvent[i];
+            QDragLeaveEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDragLeaveEvent::getIdStatic()) {
             return (QDragLeaveEvent*)vp;
           }
+
+          qWarning() << "QDragLeaveEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -12171,6 +12396,15 @@ MaxUser = QDragLeaveEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDragLeaveEvent*> basecasters_QDragLeaveEvent;
+
+      public:
+        static void registerBasecaster_QDragLeaveEvent(RJSBasecaster_QDragLeaveEvent* bc) {
+          basecasters_QDragLeaveEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDragLeaveEvent_Wrapper*)
@@ -12201,8 +12435,7 @@ MaxUser = QDragLeaveEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -12239,7 +12472,6 @@ MaxUser = QDragLeaveEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -12262,13 +12494,24 @@ MaxUser = QDragLeaveEvent::MaxUser,
       
         static QHelpEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QHelpEvent.length(); i++) {
+            RJSBasecaster_QHelpEvent* basecaster = basecasters_QHelpEvent[i];
+            QHelpEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QHelpEvent::getIdStatic()) {
             return (QHelpEvent*)vp;
           }
+
+          qWarning() << "QHelpEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -12961,6 +13204,15 @@ MaxUser = QHelpEvent::MaxUser,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QHelpEvent*> basecasters_QHelpEvent;
+
+      public:
+        static void registerBasecaster_QHelpEvent(RJSBasecaster_QHelpEvent* bc) {
+          basecasters_QHelpEvent.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QHelpEvent_Wrapper*)
@@ -12991,8 +13243,7 @@ MaxUser = QHelpEvent::MaxUser,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -13029,7 +13280,6 @@ MaxUser = QHelpEvent::MaxUser,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -13052,13 +13302,24 @@ MaxUser = QHelpEvent::MaxUser,
       
         static QActionEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QActionEvent.length(); i++) {
+            RJSBasecaster_QActionEvent* basecaster = basecasters_QActionEvent[i];
+            QActionEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QActionEvent::getIdStatic()) {
             return (QActionEvent*)vp;
           }
+
+          qWarning() << "QActionEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -13673,6 +13934,15 @@ MaxUser = QActionEvent::MaxUser,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QActionEvent*> basecasters_QActionEvent;
+
+      public:
+        static void registerBasecaster_QActionEvent(RJSBasecaster_QActionEvent* bc) {
+          basecasters_QActionEvent.append(bc);
+        }
       
     };
 

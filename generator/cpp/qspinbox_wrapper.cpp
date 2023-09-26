@@ -8,6 +8,9 @@
     #include "qspinbox_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSpinBox*> QSpinBox_Wrapper::basecasters_QSpinBox;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QSpinBox
@@ -18256,6 +18259,9 @@ int a1_cpp;
     #include "qspinbox_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDoubleSpinBox*> QDoubleSpinBox_Wrapper::basecasters_QDoubleSpinBox;
+    
     // static functions implementation in singleton wrapper:
     
     void QDoubleSpinBox_Wrapper::init(RJSApi& handler) {

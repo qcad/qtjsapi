@@ -20,16 +20,1540 @@
       #include "RJSWrapper.h"
 
       
-        // Base class for downcasters that can downcast QEvent to specific types.
+        // Base class for downcasters that can downcast QEvent to specific types:
         class RJSDowncaster_QEvent {
         public:
           virtual QJSValue downcast(RJSApi& handler, QEvent* o) = 0;
         };
       
-        // Base class for downcasters that can downcast QWidget to specific types.
+        // Base class for downcasters that can downcast QWidget to specific types:
         class RJSDowncaster_QWidget {
         public:
           virtual QJSValue downcast(RJSApi& handler, QWidget* o) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractButton:
+        class RJSBasecaster_QAbstractButton {
+        public:
+          virtual QAbstractButton* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractFileIconProvider:
+        class RJSBasecaster_QAbstractFileIconProvider {
+        public:
+          virtual QAbstractFileIconProvider* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractItemDelegate:
+        class RJSBasecaster_QAbstractItemDelegate {
+        public:
+          virtual QAbstractItemDelegate* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QModelIndex:
+        class RJSBasecaster_QModelIndex {
+        public:
+          virtual QModelIndex* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractItemModel:
+        class RJSBasecaster_QAbstractItemModel {
+        public:
+          virtual QAbstractItemModel* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractTableModel:
+        class RJSBasecaster_QAbstractTableModel {
+        public:
+          virtual QAbstractTableModel* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractListModel:
+        class RJSBasecaster_QAbstractListModel {
+        public:
+          virtual QAbstractListModel* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractItemView:
+        class RJSBasecaster_QAbstractItemView {
+        public:
+          virtual QAbstractItemView* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractPrintDialog:
+        class RJSBasecaster_QAbstractPrintDialog {
+        public:
+          virtual QAbstractPrintDialog* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractScrollArea:
+        class RJSBasecaster_QAbstractScrollArea {
+        public:
+          virtual QAbstractScrollArea* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractSlider:
+        class RJSBasecaster_QAbstractSlider {
+        public:
+          virtual QAbstractSlider* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAction:
+        class RJSBasecaster_QAction {
+        public:
+          virtual QAction* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QActionGroup:
+        class RJSBasecaster_QActionGroup {
+        public:
+          virtual QActionGroup* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QApplication:
+        class RJSBasecaster_QApplication {
+        public:
+          virtual QApplication* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QBitmap:
+        class RJSBasecaster_QBitmap {
+        public:
+          virtual QBitmap* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QBoxLayout:
+        class RJSBasecaster_QBoxLayout {
+        public:
+          virtual QBoxLayout* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QHBoxLayout:
+        class RJSBasecaster_QHBoxLayout {
+        public:
+          virtual QHBoxLayout* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QVBoxLayout:
+        class RJSBasecaster_QVBoxLayout {
+        public:
+          virtual QVBoxLayout* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QBrush:
+        class RJSBasecaster_QBrush {
+        public:
+          virtual QBrush* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGradient:
+        class RJSBasecaster_QGradient {
+        public:
+          virtual QGradient* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QLinearGradient:
+        class RJSBasecaster_QLinearGradient {
+        public:
+          virtual QLinearGradient* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QRadialGradient:
+        class RJSBasecaster_QRadialGradient {
+        public:
+          virtual QRadialGradient* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QConicalGradient:
+        class RJSBasecaster_QConicalGradient {
+        public:
+          virtual QConicalGradient* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QBuffer:
+        class RJSBasecaster_QBuffer {
+        public:
+          virtual QBuffer* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QButtonGroup:
+        class RJSBasecaster_QButtonGroup {
+        public:
+          virtual QButtonGroup* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QByteArray:
+        class RJSBasecaster_QByteArray {
+        public:
+          virtual QByteArray* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QCalendar:
+        class RJSBasecaster_QCalendar {
+        public:
+          virtual QCalendar* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QCheckBox:
+        class RJSBasecaster_QCheckBox {
+        public:
+          virtual QCheckBox* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QClipboard:
+        class RJSBasecaster_QClipboard {
+        public:
+          virtual QClipboard* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QColor:
+        class RJSBasecaster_QColor {
+        public:
+          virtual QColor* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QComboBox:
+        class RJSBasecaster_QComboBox {
+        public:
+          virtual QComboBox* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QCompleter:
+        class RJSBasecaster_QCompleter {
+        public:
+          virtual QCompleter* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QCoreApplication:
+        class RJSBasecaster_QCoreApplication {
+        public:
+          virtual QCoreApplication* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QEvent:
+        class RJSBasecaster_QEvent {
+        public:
+          virtual QEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QCursor:
+        class RJSBasecaster_QCursor {
+        public:
+          virtual QCursor* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDate:
+        class RJSBasecaster_QDate {
+        public:
+          virtual QDate* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTime:
+        class RJSBasecaster_QTime {
+        public:
+          virtual QTime* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDateTime:
+        class RJSBasecaster_QDateTime {
+        public:
+          virtual QDateTime* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDesktopServices:
+        class RJSBasecaster_QDesktopServices {
+        public:
+          virtual QDesktopServices* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDialog:
+        class RJSBasecaster_QDialog {
+        public:
+          virtual QDialog* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDialogButtonBox:
+        class RJSBasecaster_QDialogButtonBox {
+        public:
+          virtual QDialogButtonBox* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDir:
+        class RJSBasecaster_QDir {
+        public:
+          virtual QDir* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDirIterator:
+        class RJSBasecaster_QDirIterator {
+        public:
+          virtual QDirIterator* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDockWidget:
+        class RJSBasecaster_QDockWidget {
+        public:
+          virtual QDockWidget* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomImplementation:
+        class RJSBasecaster_QDomImplementation {
+        public:
+          virtual QDomImplementation* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomNode:
+        class RJSBasecaster_QDomNode {
+        public:
+          virtual QDomNode* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomNodeList:
+        class RJSBasecaster_QDomNodeList {
+        public:
+          virtual QDomNodeList* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomDocumentType:
+        class RJSBasecaster_QDomDocumentType {
+        public:
+          virtual QDomDocumentType* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomDocument:
+        class RJSBasecaster_QDomDocument {
+        public:
+          virtual QDomDocument* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomNamedNodeMap:
+        class RJSBasecaster_QDomNamedNodeMap {
+        public:
+          virtual QDomNamedNodeMap* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomDocumentFragment:
+        class RJSBasecaster_QDomDocumentFragment {
+        public:
+          virtual QDomDocumentFragment* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomCharacterData:
+        class RJSBasecaster_QDomCharacterData {
+        public:
+          virtual QDomCharacterData* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomAttr:
+        class RJSBasecaster_QDomAttr {
+        public:
+          virtual QDomAttr* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomElement:
+        class RJSBasecaster_QDomElement {
+        public:
+          virtual QDomElement* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomText:
+        class RJSBasecaster_QDomText {
+        public:
+          virtual QDomText* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomComment:
+        class RJSBasecaster_QDomComment {
+        public:
+          virtual QDomComment* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomCDATASection:
+        class RJSBasecaster_QDomCDATASection {
+        public:
+          virtual QDomCDATASection* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomNotation:
+        class RJSBasecaster_QDomNotation {
+        public:
+          virtual QDomNotation* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomEntity:
+        class RJSBasecaster_QDomEntity {
+        public:
+          virtual QDomEntity* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomEntityReference:
+        class RJSBasecaster_QDomEntityReference {
+        public:
+          virtual QDomEntityReference* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDomProcessingInstruction:
+        class RJSBasecaster_QDomProcessingInstruction {
+        public:
+          virtual QDomProcessingInstruction* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDrag:
+        class RJSBasecaster_QDrag {
+        public:
+          virtual QDrag* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QEasingCurve:
+        class RJSBasecaster_QEasingCurve {
+        public:
+          virtual QEasingCurve* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QInputEvent:
+        class RJSBasecaster_QInputEvent {
+        public:
+          virtual QInputEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPointerEvent:
+        class RJSBasecaster_QPointerEvent {
+        public:
+          virtual QPointerEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSinglePointEvent:
+        class RJSBasecaster_QSinglePointEvent {
+        public:
+          virtual QSinglePointEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMouseEvent:
+        class RJSBasecaster_QMouseEvent {
+        public:
+          virtual QMouseEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QWheelEvent:
+        class RJSBasecaster_QWheelEvent {
+        public:
+          virtual QWheelEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QKeyEvent:
+        class RJSBasecaster_QKeyEvent {
+        public:
+          virtual QKeyEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPaintEvent:
+        class RJSBasecaster_QPaintEvent {
+        public:
+          virtual QPaintEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QResizeEvent:
+        class RJSBasecaster_QResizeEvent {
+        public:
+          virtual QResizeEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDragEnterEvent:
+        class RJSBasecaster_QDragEnterEvent {
+        public:
+          virtual QDragEnterEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDropEvent:
+        class RJSBasecaster_QDropEvent {
+        public:
+          virtual QDropEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QContextMenuEvent:
+        class RJSBasecaster_QContextMenuEvent {
+        public:
+          virtual QContextMenuEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDragMoveEvent:
+        class RJSBasecaster_QDragMoveEvent {
+        public:
+          virtual QDragMoveEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDragLeaveEvent:
+        class RJSBasecaster_QDragLeaveEvent {
+        public:
+          virtual QDragLeaveEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QHelpEvent:
+        class RJSBasecaster_QHelpEvent {
+        public:
+          virtual QHelpEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QActionEvent:
+        class RJSBasecaster_QActionEvent {
+        public:
+          virtual QActionEvent* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QEventLoop:
+        class RJSBasecaster_QEventLoop {
+        public:
+          virtual QEventLoop* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QEventPoint:
+        class RJSBasecaster_QEventPoint {
+        public:
+          virtual QEventPoint* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFile:
+        class RJSBasecaster_QFile {
+        public:
+          virtual QFile* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFileDevice:
+        class RJSBasecaster_QFileDevice {
+        public:
+          virtual QFileDevice* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFileDialog:
+        class RJSBasecaster_QFileDialog {
+        public:
+          virtual QFileDialog* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFileIconProvider:
+        class RJSBasecaster_QFileIconProvider {
+        public:
+          virtual QFileIconProvider* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFileInfo:
+        class RJSBasecaster_QFileInfo {
+        public:
+          virtual QFileInfo* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFileSystemModel:
+        class RJSBasecaster_QFileSystemModel {
+        public:
+          virtual QFileSystemModel* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFont:
+        class RJSBasecaster_QFont {
+        public:
+          virtual QFont* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFontComboBox:
+        class RJSBasecaster_QFontComboBox {
+        public:
+          virtual QFontComboBox* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFontDatabase:
+        class RJSBasecaster_QFontDatabase {
+        public:
+          virtual QFontDatabase* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFontMetrics:
+        class RJSBasecaster_QFontMetrics {
+        public:
+          virtual QFontMetrics* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFontMetricsF:
+        class RJSBasecaster_QFontMetricsF {
+        public:
+          virtual QFontMetricsF* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFormLayout:
+        class RJSBasecaster_QFormLayout {
+        public:
+          virtual QFormLayout* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFrame:
+        class RJSBasecaster_QFrame {
+        public:
+          virtual QFrame* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGesture:
+        class RJSBasecaster_QGesture {
+        public:
+          virtual QGesture* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPanGesture:
+        class RJSBasecaster_QPanGesture {
+        public:
+          virtual QPanGesture* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPinchGesture:
+        class RJSBasecaster_QPinchGesture {
+        public:
+          virtual QPinchGesture* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSwipeGesture:
+        class RJSBasecaster_QSwipeGesture {
+        public:
+          virtual QSwipeGesture* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGraphicsEffect:
+        class RJSBasecaster_QGraphicsEffect {
+        public:
+          virtual QGraphicsEffect* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGraphicsColorizeEffect:
+        class RJSBasecaster_QGraphicsColorizeEffect {
+        public:
+          virtual QGraphicsColorizeEffect* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGraphicsBlurEffect:
+        class RJSBasecaster_QGraphicsBlurEffect {
+        public:
+          virtual QGraphicsBlurEffect* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGraphicsDropShadowEffect:
+        class RJSBasecaster_QGraphicsDropShadowEffect {
+        public:
+          virtual QGraphicsDropShadowEffect* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGraphicsOpacityEffect:
+        class RJSBasecaster_QGraphicsOpacityEffect {
+        public:
+          virtual QGraphicsOpacityEffect* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGridLayout:
+        class RJSBasecaster_QGridLayout {
+        public:
+          virtual QGridLayout* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGroupBox:
+        class RJSBasecaster_QGroupBox {
+        public:
+          virtual QGroupBox* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QGuiApplication:
+        class RJSBasecaster_QGuiApplication {
+        public:
+          virtual QGuiApplication* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QHeaderView:
+        class RJSBasecaster_QHeaderView {
+        public:
+          virtual QHeaderView* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QIcon:
+        class RJSBasecaster_QIcon {
+        public:
+          virtual QIcon* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QImage:
+        class RJSBasecaster_QImage {
+        public:
+          virtual QImage* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QImageReader:
+        class RJSBasecaster_QImageReader {
+        public:
+          virtual QImageReader* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QImageWriter:
+        class RJSBasecaster_QImageWriter {
+        public:
+          virtual QImageWriter* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QInputDevice:
+        class RJSBasecaster_QInputDevice {
+        public:
+          virtual QInputDevice* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QIODevice:
+        class RJSBasecaster_QIODevice {
+        public:
+          virtual QIODevice* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QIODeviceBase:
+        class RJSBasecaster_QIODeviceBase {
+        public:
+          virtual QIODeviceBase* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QItemDelegate:
+        class RJSBasecaster_QItemDelegate {
+        public:
+          virtual QItemDelegate* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QItemSelectionModel:
+        class RJSBasecaster_QItemSelectionModel {
+        public:
+          virtual QItemSelectionModel* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QItemSelection:
+        class RJSBasecaster_QItemSelection {
+        public:
+          virtual QItemSelection* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QKeySequence:
+        class RJSBasecaster_QKeySequence {
+        public:
+          virtual QKeySequence* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QLabel:
+        class RJSBasecaster_QLabel {
+        public:
+          virtual QLabel* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QLayout:
+        class RJSBasecaster_QLayout {
+        public:
+          virtual QLayout* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QLayoutItem:
+        class RJSBasecaster_QLayoutItem {
+        public:
+          virtual QLayoutItem* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSpacerItem:
+        class RJSBasecaster_QSpacerItem {
+        public:
+          virtual QSpacerItem* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QWidgetItem:
+        class RJSBasecaster_QWidgetItem {
+        public:
+          virtual QWidgetItem* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QLine:
+        class RJSBasecaster_QLine {
+        public:
+          virtual QLine* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QLineF:
+        class RJSBasecaster_QLineF {
+        public:
+          virtual QLineF* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QLineEdit:
+        class RJSBasecaster_QLineEdit {
+        public:
+          virtual QLineEdit* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QListView:
+        class RJSBasecaster_QListView {
+        public:
+          virtual QListView* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QListWidgetItem:
+        class RJSBasecaster_QListWidgetItem {
+        public:
+          virtual QListWidgetItem* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QListWidget:
+        class RJSBasecaster_QListWidget {
+        public:
+          virtual QListWidget* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QLocale:
+        class RJSBasecaster_QLocale {
+        public:
+          virtual QLocale* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMainWindow:
+        class RJSBasecaster_QMainWindow {
+        public:
+          virtual QMainWindow* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMargins:
+        class RJSBasecaster_QMargins {
+        public:
+          virtual QMargins* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMarginsF:
+        class RJSBasecaster_QMarginsF {
+        public:
+          virtual QMarginsF* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMdiArea:
+        class RJSBasecaster_QMdiArea {
+        public:
+          virtual QMdiArea* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMdiSubWindow:
+        class RJSBasecaster_QMdiSubWindow {
+        public:
+          virtual QMdiSubWindow* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMenu:
+        class RJSBasecaster_QMenu {
+        public:
+          virtual QMenu* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMenuBar:
+        class RJSBasecaster_QMenuBar {
+        public:
+          virtual QMenuBar* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMessageBox:
+        class RJSBasecaster_QMessageBox {
+        public:
+          virtual QMessageBox* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QMimeData:
+        class RJSBasecaster_QMimeData {
+        public:
+          virtual QMimeData* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QKeyCombination:
+        class RJSBasecaster_QKeyCombination {
+        public:
+          virtual QKeyCombination* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QObject:
+        class RJSBasecaster_QObject {
+        public:
+          virtual QObject* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPagedPaintDevice:
+        class RJSBasecaster_QPagedPaintDevice {
+        public:
+          virtual QPagedPaintDevice* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPageLayout:
+        class RJSBasecaster_QPageLayout {
+        public:
+          virtual QPageLayout* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPageRanges:
+        class RJSBasecaster_QPageRanges {
+        public:
+          virtual QPageRanges* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPageSize:
+        class RJSBasecaster_QPageSize {
+        public:
+          virtual QPageSize* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPaintDevice:
+        class RJSBasecaster_QPaintDevice {
+        public:
+          virtual QPaintDevice* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPainter:
+        class RJSBasecaster_QPainter {
+        public:
+          virtual QPainter* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPainterPath:
+        class RJSBasecaster_QPainterPath {
+        public:
+          virtual QPainterPath* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPainterPathStroker:
+        class RJSBasecaster_QPainterPathStroker {
+        public:
+          virtual QPainterPathStroker* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPalette:
+        class RJSBasecaster_QPalette {
+        public:
+          virtual QPalette* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPen:
+        class RJSBasecaster_QPen {
+        public:
+          virtual QPen* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPicture:
+        class RJSBasecaster_QPicture {
+        public:
+          virtual QPicture* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPixmap:
+        class RJSBasecaster_QPixmap {
+        public:
+          virtual QPixmap* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPlainTextEdit:
+        class RJSBasecaster_QPlainTextEdit {
+        public:
+          virtual QPlainTextEdit* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPoint:
+        class RJSBasecaster_QPoint {
+        public:
+          virtual QPoint* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPointF:
+        class RJSBasecaster_QPointF {
+        public:
+          virtual QPointF* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPolygon:
+        class RJSBasecaster_QPolygon {
+        public:
+          virtual QPolygon* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPolygonF:
+        class RJSBasecaster_QPolygonF {
+        public:
+          virtual QPolygonF* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPrintDialog:
+        class RJSBasecaster_QPrintDialog {
+        public:
+          virtual QPrintDialog* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPrinter:
+        class RJSBasecaster_QPrinter {
+        public:
+          virtual QPrinter* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPrinterInfo:
+        class RJSBasecaster_QPrinterInfo {
+        public:
+          virtual QPrinterInfo* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QProcessEnvironment:
+        class RJSBasecaster_QProcessEnvironment {
+        public:
+          virtual QProcessEnvironment* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QProcess:
+        class RJSBasecaster_QProcess {
+        public:
+          virtual QProcess* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QProgressBar:
+        class RJSBasecaster_QProgressBar {
+        public:
+          virtual QProgressBar* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QProgressDialog:
+        class RJSBasecaster_QProgressDialog {
+        public:
+          virtual QProgressDialog* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QPushButton:
+        class RJSBasecaster_QPushButton {
+        public:
+          virtual QPushButton* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QQuickWidget:
+        class RJSBasecaster_QQuickWidget {
+        public:
+          virtual QQuickWidget* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QRadioButton:
+        class RJSBasecaster_QRadioButton {
+        public:
+          virtual QRadioButton* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QRect:
+        class RJSBasecaster_QRect {
+        public:
+          virtual QRect* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QRectF:
+        class RJSBasecaster_QRectF {
+        public:
+          virtual QRectF* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QRegion:
+        class RJSBasecaster_QRegion {
+        public:
+          virtual QRegion* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QRegularExpression:
+        class RJSBasecaster_QRegularExpression {
+        public:
+          virtual QRegularExpression* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QRegularExpressionMatch:
+        class RJSBasecaster_QRegularExpressionMatch {
+        public:
+          virtual QRegularExpressionMatch* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QScreen:
+        class RJSBasecaster_QScreen {
+        public:
+          virtual QScreen* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QScrollArea:
+        class RJSBasecaster_QScrollArea {
+        public:
+          virtual QScrollArea* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QScrollBar:
+        class RJSBasecaster_QScrollBar {
+        public:
+          virtual QScrollBar* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSettings:
+        class RJSBasecaster_QSettings {
+        public:
+          virtual QSettings* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QShortcut:
+        class RJSBasecaster_QShortcut {
+        public:
+          virtual QShortcut* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSize:
+        class RJSBasecaster_QSize {
+        public:
+          virtual QSize* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSizeF:
+        class RJSBasecaster_QSizeF {
+        public:
+          virtual QSizeF* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSizePolicy:
+        class RJSBasecaster_QSizePolicy {
+        public:
+          virtual QSizePolicy* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSlider:
+        class RJSBasecaster_QSlider {
+        public:
+          virtual QSlider* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSortFilterProxyModel:
+        class RJSBasecaster_QSortFilterProxyModel {
+        public:
+          virtual QSortFilterProxyModel* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSpinBox:
+        class RJSBasecaster_QSpinBox {
+        public:
+          virtual QSpinBox* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDoubleSpinBox:
+        class RJSBasecaster_QDoubleSpinBox {
+        public:
+          virtual QDoubleSpinBox* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSplashScreen:
+        class RJSBasecaster_QSplashScreen {
+        public:
+          virtual QSplashScreen* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSplitter:
+        class RJSBasecaster_QSplitter {
+        public:
+          virtual QSplitter* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSplitterHandle:
+        class RJSBasecaster_QSplitterHandle {
+        public:
+          virtual QSplitterHandle* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QStackedLayout:
+        class RJSBasecaster_QStackedLayout {
+        public:
+          virtual QStackedLayout* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QStackedWidget:
+        class RJSBasecaster_QStackedWidget {
+        public:
+          virtual QStackedWidget* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QStandardItem:
+        class RJSBasecaster_QStandardItem {
+        public:
+          virtual QStandardItem* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QStandardItemModel:
+        class RJSBasecaster_QStandardItemModel {
+        public:
+          virtual QStandardItemModel* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QStatusBar:
+        class RJSBasecaster_QStatusBar {
+        public:
+          virtual QStatusBar* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QStringConverter:
+        class RJSBasecaster_QStringConverter {
+        public:
+          virtual QStringConverter* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QStringEncoder:
+        class RJSBasecaster_QStringEncoder {
+        public:
+          virtual QStringEncoder* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QStringDecoder:
+        class RJSBasecaster_QStringDecoder {
+        public:
+          virtual QStringDecoder* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSurfaceFormat:
+        class RJSBasecaster_QSurfaceFormat {
+        public:
+          virtual QSurfaceFormat* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QSvgRenderer:
+        class RJSBasecaster_QSvgRenderer {
+        public:
+          virtual QSvgRenderer* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTabBar:
+        class RJSBasecaster_QTabBar {
+        public:
+          virtual QTabBar* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTableView:
+        class RJSBasecaster_QTableView {
+        public:
+          virtual QTableView* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTableWidgetItem:
+        class RJSBasecaster_QTableWidgetItem {
+        public:
+          virtual QTableWidgetItem* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTableWidget:
+        class RJSBasecaster_QTableWidget {
+        public:
+          virtual QTableWidget* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTabWidget:
+        class RJSBasecaster_QTabWidget {
+        public:
+          virtual QTabWidget* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextBrowser:
+        class RJSBasecaster_QTextBrowser {
+        public:
+          virtual QTextBrowser* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextCursor:
+        class RJSBasecaster_QTextCursor {
+        public:
+          virtual QTextCursor* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextDocument:
+        class RJSBasecaster_QTextDocument {
+        public:
+          virtual QTextDocument* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextEdit:
+        class RJSBasecaster_QTextEdit {
+        public:
+          virtual QTextEdit* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextLength:
+        class RJSBasecaster_QTextLength {
+        public:
+          virtual QTextLength* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextFormat:
+        class RJSBasecaster_QTextFormat {
+        public:
+          virtual QTextFormat* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextCharFormat:
+        class RJSBasecaster_QTextCharFormat {
+        public:
+          virtual QTextCharFormat* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextBlockFormat:
+        class RJSBasecaster_QTextBlockFormat {
+        public:
+          virtual QTextBlockFormat* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextListFormat:
+        class RJSBasecaster_QTextListFormat {
+        public:
+          virtual QTextListFormat* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextImageFormat:
+        class RJSBasecaster_QTextImageFormat {
+        public:
+          virtual QTextImageFormat* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextFrameFormat:
+        class RJSBasecaster_QTextFrameFormat {
+        public:
+          virtual QTextFrameFormat* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextTableFormat:
+        class RJSBasecaster_QTextTableFormat {
+        public:
+          virtual QTextTableFormat* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextTableCellFormat:
+        class RJSBasecaster_QTextTableCellFormat {
+        public:
+          virtual QTextTableCellFormat* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextLayout:
+        class RJSBasecaster_QTextLayout {
+        public:
+          virtual QTextLayout* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTextStream:
+        class RJSBasecaster_QTextStream {
+        public:
+          virtual QTextStream* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTimer:
+        class RJSBasecaster_QTimer {
+        public:
+          virtual QTimer* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QToolBar:
+        class RJSBasecaster_QToolBar {
+        public:
+          virtual QToolBar* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QToolButton:
+        class RJSBasecaster_QToolButton {
+        public:
+          virtual QToolButton* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QToolTip:
+        class RJSBasecaster_QToolTip {
+        public:
+          virtual QToolTip* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTransform:
+        class RJSBasecaster_QTransform {
+        public:
+          virtual QTransform* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTranslator:
+        class RJSBasecaster_QTranslator {
+        public:
+          virtual QTranslator* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTreeView:
+        class RJSBasecaster_QTreeView {
+        public:
+          virtual QTreeView* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTreeWidgetItem:
+        class RJSBasecaster_QTreeWidgetItem {
+        public:
+          virtual QTreeWidgetItem* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QTreeWidget:
+        class RJSBasecaster_QTreeWidget {
+        public:
+          virtual QTreeWidget* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QUiLoader:
+        class RJSBasecaster_QUiLoader {
+        public:
+          virtual QUiLoader* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QUrl:
+        class RJSBasecaster_QUrl {
+        public:
+          virtual QUrl* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QUrlQuery:
+        class RJSBasecaster_QUrlQuery {
+        public:
+          virtual QUrlQuery* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QValidator:
+        class RJSBasecaster_QValidator {
+        public:
+          virtual QValidator* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QIntValidator:
+        class RJSBasecaster_QIntValidator {
+        public:
+          virtual QIntValidator* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QDoubleValidator:
+        class RJSBasecaster_QDoubleValidator {
+        public:
+          virtual QDoubleValidator* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QRegularExpressionValidator:
+        class RJSBasecaster_QRegularExpressionValidator {
+        public:
+          virtual QRegularExpressionValidator* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QVariant:
+        class RJSBasecaster_QVariant {
+        public:
+          virtual QVariant* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QWidget:
+        class RJSBasecaster_QWidget {
+        public:
+          virtual QWidget* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QWidgetAction:
+        class RJSBasecaster_QWidgetAction {
+        public:
+          virtual QWidgetAction* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QWindow:
+        class RJSBasecaster_QWindow {
+        public:
+          virtual QWindow* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlAttributes:
+        class RJSBasecaster_QXmlAttributes {
+        public:
+          virtual QXmlAttributes* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlInputSource:
+        class RJSBasecaster_QXmlInputSource {
+        public:
+          virtual QXmlInputSource* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlParseException:
+        class RJSBasecaster_QXmlParseException {
+        public:
+          virtual QXmlParseException* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlReader:
+        class RJSBasecaster_QXmlReader {
+        public:
+          virtual QXmlReader* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlSimpleReader:
+        class RJSBasecaster_QXmlSimpleReader {
+        public:
+          virtual QXmlSimpleReader* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlLocator:
+        class RJSBasecaster_QXmlLocator {
+        public:
+          virtual QXmlLocator* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlContentHandler:
+        class RJSBasecaster_QXmlContentHandler {
+        public:
+          virtual QXmlContentHandler* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlErrorHandler:
+        class RJSBasecaster_QXmlErrorHandler {
+        public:
+          virtual QXmlErrorHandler* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlDTDHandler:
+        class RJSBasecaster_QXmlDTDHandler {
+        public:
+          virtual QXmlDTDHandler* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlEntityResolver:
+        class RJSBasecaster_QXmlEntityResolver {
+        public:
+          virtual QXmlEntityResolver* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlLexicalHandler:
+        class RJSBasecaster_QXmlLexicalHandler {
+        public:
+          virtual QXmlLexicalHandler* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlDeclHandler:
+        class RJSBasecaster_QXmlDeclHandler {
+        public:
+          virtual QXmlDeclHandler* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlDefaultHandler:
+        class RJSBasecaster_QXmlDefaultHandler {
+        public:
+          virtual QXmlDefaultHandler* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlStreamAttribute:
+        class RJSBasecaster_QXmlStreamAttribute {
+        public:
+          virtual QXmlStreamAttribute* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlStreamAttributes:
+        class RJSBasecaster_QXmlStreamAttributes {
+        public:
+          virtual QXmlStreamAttributes* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlStreamReader:
+        class RJSBasecaster_QXmlStreamReader {
+        public:
+          virtual QXmlStreamReader* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QXmlStreamWriter:
+        class RJSBasecaster_QXmlStreamWriter {
+        public:
+          virtual QXmlStreamWriter* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for converters that can convert QVariant to specific types.

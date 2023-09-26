@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -149,7 +148,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -538,13 +536,24 @@
       
         static QScrollArea* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QScrollArea.length(); i++) {
+            RJSBasecaster_QScrollArea* basecaster = basecasters_QScrollArea[i];
+            QScrollArea* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QScrollArea::getIdStatic()) {
             return (QScrollArea*)vp;
           }
+
+          qWarning() << "QScrollArea::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7081,6 +7090,15 @@ AdjustToContents = QScrollArea::AdjustToContents,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QScrollArea*> basecasters_QScrollArea;
+
+      public:
+        static void registerBasecaster_QScrollArea(RJSBasecaster_QScrollArea* bc) {
+          basecasters_QScrollArea.append(bc);
+        }
       
     };
 

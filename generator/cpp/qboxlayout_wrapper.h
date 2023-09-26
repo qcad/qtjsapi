@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -111,7 +110,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -140,21 +138,32 @@
       
         static QBoxLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QHBoxLayout::getIdStatic()) {
-              return (QBoxLayout*)(QHBoxLayout*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QVBoxLayout::getIdStatic()) {
-              return (QBoxLayout*)(QVBoxLayout*)vp;
+              if (t==RJSType_QHBoxLayout::getIdStatic()) {
+                return (QBoxLayout*)(QHBoxLayout*)vp;
+              }
+              
+              if (t==RJSType_QVBoxLayout::getIdStatic()) {
+                return (QBoxLayout*)(QVBoxLayout*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QBoxLayout.length(); i++) {
+            RJSBasecaster_QBoxLayout* basecaster = basecasters_QBoxLayout[i];
+            QBoxLayout* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QBoxLayout::getIdStatic()) {
             return (QBoxLayout*)vp;
           }
+
+          qWarning() << "QBoxLayout::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2126,6 +2135,15 @@ Up = QBoxLayout::Up,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QBoxLayout*> basecasters_QBoxLayout;
+
+      public:
+        static void registerBasecaster_QBoxLayout(RJSBasecaster_QBoxLayout* bc) {
+          basecasters_QBoxLayout.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QBoxLayout_Wrapper*)
@@ -2159,8 +2177,7 @@ Up = QBoxLayout::Up,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -2232,7 +2249,6 @@ Up = QBoxLayout::Up,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -2261,13 +2277,24 @@ Up = QBoxLayout::Up,
       
         static QHBoxLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QHBoxLayout.length(); i++) {
+            RJSBasecaster_QHBoxLayout* basecaster = basecasters_QHBoxLayout[i];
+            QHBoxLayout* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QHBoxLayout::getIdStatic()) {
             return (QHBoxLayout*)vp;
           }
+
+          qWarning() << "QHBoxLayout::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4235,6 +4262,15 @@ Up = QHBoxLayout::Up,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QHBoxLayout*> basecasters_QHBoxLayout;
+
+      public:
+        static void registerBasecaster_QHBoxLayout(RJSBasecaster_QHBoxLayout* bc) {
+          basecasters_QHBoxLayout.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QHBoxLayout_Wrapper*)
@@ -4268,8 +4304,7 @@ Up = QHBoxLayout::Up,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -4341,7 +4376,6 @@ Up = QHBoxLayout::Up,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -4370,13 +4404,24 @@ Up = QHBoxLayout::Up,
       
         static QVBoxLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QVBoxLayout.length(); i++) {
+            RJSBasecaster_QVBoxLayout* basecaster = basecasters_QVBoxLayout[i];
+            QVBoxLayout* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QVBoxLayout::getIdStatic()) {
             return (QVBoxLayout*)vp;
           }
+
+          qWarning() << "QVBoxLayout::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6343,6 +6388,15 @@ Up = QVBoxLayout::Up,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QVBoxLayout*> basecasters_QVBoxLayout;
+
+      public:
+        static void registerBasecaster_QVBoxLayout(RJSBasecaster_QVBoxLayout* bc) {
+          basecasters_QVBoxLayout.append(bc);
+        }
       
     };
 

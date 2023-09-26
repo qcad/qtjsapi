@@ -63,13 +63,24 @@
       
         static QTextCursor* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextCursor.length(); i++) {
+            RJSBasecaster_QTextCursor* basecaster = basecasters_QTextCursor[i];
+            QTextCursor* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextCursor::getIdStatic()) {
             return (QTextCursor*)vp;
           }
+
+          qWarning() << "QTextCursor::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1327,6 +1338,15 @@ Document = QTextCursor::Document,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextCursor*> basecasters_QTextCursor;
+
+      public:
+        static void registerBasecaster_QTextCursor(RJSBasecaster_QTextCursor* bc) {
+          basecasters_QTextCursor.append(bc);
+        }
       
     };
 

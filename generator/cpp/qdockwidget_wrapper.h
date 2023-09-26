@@ -42,8 +42,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -157,7 +156,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -552,13 +550,24 @@
       
         static QDockWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDockWidget.length(); i++) {
+            RJSBasecaster_QDockWidget* basecaster = basecasters_QDockWidget[i];
+            QDockWidget* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDockWidget::getIdStatic()) {
             return (QDockWidget*)vp;
           }
+
+          qWarning() << "QDockWidget::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6280,6 +6289,15 @@ Reserved = QDockWidget::Reserved,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDockWidget*> basecasters_QDockWidget;
+
+      public:
+        static void registerBasecaster_QDockWidget(RJSBasecaster_QDockWidget* bc) {
+          basecasters_QDockWidget.append(bc);
+        }
       
     };
 

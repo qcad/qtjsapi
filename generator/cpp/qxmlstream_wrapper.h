@@ -41,13 +41,24 @@
       
         static QXmlStreamAttribute* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QXmlStreamAttribute.length(); i++) {
+            RJSBasecaster_QXmlStreamAttribute* basecaster = basecasters_QXmlStreamAttribute[i];
+            QXmlStreamAttribute* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QXmlStreamAttribute::getIdStatic()) {
             return (QXmlStreamAttribute*)vp;
           }
+
+          qWarning() << "QXmlStreamAttribute::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -274,6 +285,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QXmlStreamAttribute*> basecasters_QXmlStreamAttribute;
+
+      public:
+        static void registerBasecaster_QXmlStreamAttribute(RJSBasecaster_QXmlStreamAttribute* bc) {
+          basecasters_QXmlStreamAttribute.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QXmlStreamAttribute_Wrapper*)
@@ -308,13 +328,24 @@
       
         static QXmlStreamAttributes* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QXmlStreamAttributes.length(); i++) {
+            RJSBasecaster_QXmlStreamAttributes* basecaster = basecasters_QXmlStreamAttributes[i];
+            QXmlStreamAttributes* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QXmlStreamAttributes::getIdStatic()) {
             return (QXmlStreamAttributes*)vp;
           }
+
+          qWarning() << "QXmlStreamAttributes::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -540,6 +571,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QXmlStreamAttributes*> basecasters_QXmlStreamAttributes;
+
+      public:
+        static void registerBasecaster_QXmlStreamAttributes(RJSBasecaster_QXmlStreamAttributes* bc) {
+          basecasters_QXmlStreamAttributes.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QXmlStreamAttributes_Wrapper*)
@@ -574,13 +614,24 @@
       
         static QXmlStreamReader* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QXmlStreamReader.length(); i++) {
+            RJSBasecaster_QXmlStreamReader* basecaster = basecasters_QXmlStreamReader[i];
+            QXmlStreamReader* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QXmlStreamReader::getIdStatic()) {
             return (QXmlStreamReader*)vp;
           }
+
+          qWarning() << "QXmlStreamReader::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1559,6 +1610,15 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QXmlStreamReader*> basecasters_QXmlStreamReader;
+
+      public:
+        static void registerBasecaster_QXmlStreamReader(RJSBasecaster_QXmlStreamReader* bc) {
+          basecasters_QXmlStreamReader.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QXmlStreamReader_Wrapper*)
@@ -1593,13 +1653,24 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
       
         static QXmlStreamWriter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QXmlStreamWriter.length(); i++) {
+            RJSBasecaster_QXmlStreamWriter* basecaster = basecasters_QXmlStreamWriter[i];
+            QXmlStreamWriter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QXmlStreamWriter::getIdStatic()) {
             return (QXmlStreamWriter*)vp;
           }
+
+          qWarning() << "QXmlStreamWriter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2361,6 +2432,15 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QXmlStreamWriter*> basecasters_QXmlStreamWriter;
+
+      public:
+        static void registerBasecaster_QXmlStreamWriter(RJSBasecaster_QXmlStreamWriter* bc) {
+          basecasters_QXmlStreamWriter.append(bc);
+        }
       
     };
 

@@ -8,6 +8,9 @@
     #include "qtextformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextLength*> QTextLength_Wrapper::basecasters_QTextLength;
+    
     // static functions implementation in singleton wrapper:
     
     void QTextLength_Wrapper::init(RJSApi& handler) {
@@ -448,6 +451,9 @@ qreal a1_cpp;
     #include "qtextformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextFormat*> QTextFormat_Wrapper::basecasters_QTextFormat;
+    
     // static functions implementation in singleton wrapper:
     
     void QTextFormat_Wrapper::init(RJSApi& handler) {
@@ -3583,6 +3589,9 @@ QBrush a1_cpp;
     #include "qtextformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextCharFormat*> QTextCharFormat_Wrapper::basecasters_QTextCharFormat;
+    
     // static functions implementation in singleton wrapper:
     
     void QTextCharFormat_Wrapper::init(RJSApi& handler) {
@@ -10541,6 +10550,9 @@ int a1_cpp;
     #include "qtextformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextBlockFormat*> QTextBlockFormat_Wrapper::basecasters_QTextBlockFormat;
+    
     // static functions implementation in singleton wrapper:
     
     void QTextBlockFormat_Wrapper::init(RJSApi& handler) {
@@ -15050,6 +15062,9 @@ QTextFormat::PageBreakFlags a1_cpp;
     #include "qtextformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextListFormat*> QTextListFormat_Wrapper::basecasters_QTextListFormat;
+    
     // static functions implementation in singleton wrapper:
     
     void QTextListFormat_Wrapper::init(RJSApi& handler) {
@@ -18580,6 +18595,9 @@ QString a1_cpp;
     #include "qtextformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextImageFormat*> QTextImageFormat_Wrapper::basecasters_QTextImageFormat;
+    
     // static functions implementation in singleton wrapper:
     
     void QTextImageFormat_Wrapper::init(RJSApi& handler) {
@@ -23229,6 +23247,9 @@ int a1_cpp;
     #include "qtextformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextFrameFormat*> QTextFrameFormat_Wrapper::basecasters_QTextFrameFormat;
+    
     // static functions implementation in singleton wrapper:
     
     void QTextFrameFormat_Wrapper::init(RJSApi& handler) {
@@ -27930,6 +27951,9 @@ QTextFormat::PageBreakFlags a1_cpp;
     #include "qtextformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextTableFormat*> QTextTableFormat_Wrapper::basecasters_QTextTableFormat;
+    
     // static functions implementation in singleton wrapper:
     
     void QTextTableFormat_Wrapper::init(RJSApi& handler) {
@@ -30724,6 +30748,9 @@ bool a1_cpp;
     #include "qtextformat_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextTableCellFormat*> QTextTableCellFormat_Wrapper::basecasters_QTextTableCellFormat;
+    
     // static functions implementation in singleton wrapper:
     
     void QTextTableCellFormat_Wrapper::init(RJSApi& handler) {

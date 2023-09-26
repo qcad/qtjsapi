@@ -8,6 +8,9 @@
     #include "qfontmetrics_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QFontMetrics*> QFontMetrics_Wrapper::basecasters_QFontMetrics;
+    
     // static functions implementation in singleton wrapper:
     
     void QFontMetrics_Wrapper::init(RJSApi& handler) {
@@ -2308,6 +2311,9 @@ int a4_cpp;
     #include "qfontmetrics_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QFontMetricsF*> QFontMetricsF_Wrapper::basecasters_QFontMetricsF;
+    
     // static functions implementation in singleton wrapper:
     
     void QFontMetricsF_Wrapper::init(RJSApi& handler) {

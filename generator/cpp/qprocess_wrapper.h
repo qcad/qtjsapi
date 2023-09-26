@@ -35,8 +35,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -69,7 +68,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -92,13 +90,24 @@
       
         static QProcessEnvironment* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QProcessEnvironment.length(); i++) {
+            RJSBasecaster_QProcessEnvironment* basecaster = basecasters_QProcessEnvironment[i];
+            QProcessEnvironment* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QProcessEnvironment::getIdStatic()) {
             return (QProcessEnvironment*)vp;
           }
+
+          qWarning() << "QProcessEnvironment::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -508,6 +517,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QProcessEnvironment*> basecasters_QProcessEnvironment;
+
+      public:
+        static void registerBasecaster_QProcessEnvironment(RJSBasecaster_QProcessEnvironment* bc) {
+          basecasters_QProcessEnvironment.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QProcessEnvironment_Wrapper*)
@@ -538,8 +556,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -634,7 +651,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -663,13 +679,24 @@
       
         static QProcess* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QProcess.length(); i++) {
+            RJSBasecaster_QProcess* basecaster = basecasters_QProcess[i];
+            QProcess* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QProcess::getIdStatic()) {
             return (QProcess*)vp;
           }
+
+          qWarning() << "QProcess::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3122,6 +3149,15 @@ CrashExit = QProcess::CrashExit,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QProcess*> basecasters_QProcess;
+
+      public:
+        static void registerBasecaster_QProcess(RJSBasecaster_QProcess* bc) {
+          basecasters_QProcess.append(bc);
+        }
       
     };
 

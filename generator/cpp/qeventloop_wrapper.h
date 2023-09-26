@@ -35,8 +35,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -81,7 +80,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -110,13 +108,24 @@
       
         static QEventLoop* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QEventLoop.length(); i++) {
+            RJSBasecaster_QEventLoop* basecaster = basecasters_QEventLoop[i];
+            QEventLoop* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QEventLoop::getIdStatic()) {
             return (QEventLoop*)vp;
           }
+
+          qWarning() << "QEventLoop::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -868,6 +877,15 @@ ApplicationExec = QEventLoop::ApplicationExec,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QEventLoop*> basecasters_QEventLoop;
+
+      public:
+        static void registerBasecaster_QEventLoop(RJSBasecaster_QEventLoop* bc) {
+          basecasters_QEventLoop.append(bc);
+        }
       
     };
 

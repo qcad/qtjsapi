@@ -37,8 +37,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -155,7 +154,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -178,13 +176,24 @@
       
         static QPrinterInfo* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPrinterInfo.length(); i++) {
+            RJSBasecaster_QPrinterInfo* basecaster = basecasters_QPrinterInfo[i];
+            QPrinterInfo* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPrinterInfo::getIdStatic()) {
             return (QPrinterInfo*)vp;
           }
+
+          qWarning() << "QPrinterInfo::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -741,6 +750,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPrinterInfo*> basecasters_QPrinterInfo;
+
+      public:
+        static void registerBasecaster_QPrinterInfo(RJSBasecaster_QPrinterInfo* bc) {
+          basecasters_QPrinterInfo.append(bc);
+        }
       
     };
 

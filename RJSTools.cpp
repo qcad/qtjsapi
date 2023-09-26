@@ -26,6 +26,9 @@ bool RJSTools::isIncluded(const QString& className) {
     QVariant vAlreadyIncluded;
 
     QJSEngine* engine = handler.getEngine();
+    if (engine==NULL) {
+        qWarning() << "script handler not initialized";
+    }
     vAlreadyIncluded = engine->property("alreadyIncluded");
     if (!vAlreadyIncluded.isValid()) {
         return false;

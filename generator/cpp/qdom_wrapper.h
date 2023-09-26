@@ -77,8 +77,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -134,7 +133,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -157,13 +155,24 @@
       
         static QDomImplementation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomImplementation.length(); i++) {
+            RJSBasecaster_QDomImplementation* basecaster = basecasters_QDomImplementation[i];
+            QDomImplementation* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomImplementation::getIdStatic()) {
             return (QDomImplementation*)vp;
           }
+
+          qWarning() << "QDomImplementation::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -528,6 +537,15 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomImplementation*> basecasters_QDomImplementation;
+
+      public:
+        static void registerBasecaster_QDomImplementation(RJSBasecaster_QDomImplementation* bc) {
+          basecasters_QDomImplementation.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomImplementation_Wrapper*)
@@ -562,57 +580,68 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
       
         static QDomNode* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QDomDocumentType::getIdStatic()) {
-              return (QDomNode*)(QDomDocumentType*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QDomDocument::getIdStatic()) {
-              return (QDomNode*)(QDomDocument*)vp;
+              if (t==RJSType_QDomDocumentType::getIdStatic()) {
+                return (QDomNode*)(QDomDocumentType*)vp;
+              }
+              
+              if (t==RJSType_QDomDocument::getIdStatic()) {
+                return (QDomNode*)(QDomDocument*)vp;
+              }
+              
+              if (t==RJSType_QDomDocumentFragment::getIdStatic()) {
+                return (QDomNode*)(QDomDocumentFragment*)vp;
+              }
+              
+              if (t==RJSType_QDomCharacterData::getIdStatic()) {
+                return (QDomNode*)(QDomCharacterData*)vp;
+              }
+              
+              if (t==RJSType_QDomAttr::getIdStatic()) {
+                return (QDomNode*)(QDomAttr*)vp;
+              }
+              
+              if (t==RJSType_QDomElement::getIdStatic()) {
+                return (QDomNode*)(QDomElement*)vp;
+              }
+              
+              if (t==RJSType_QDomText::getIdStatic()) {
+                return (QDomNode*)(QDomText*)vp;
+              }
+              
+              if (t==RJSType_QDomNotation::getIdStatic()) {
+                return (QDomNode*)(QDomNotation*)vp;
+              }
+              
+              if (t==RJSType_QDomEntity::getIdStatic()) {
+                return (QDomNode*)(QDomEntity*)vp;
+              }
+              
+              if (t==RJSType_QDomEntityReference::getIdStatic()) {
+                return (QDomNode*)(QDomEntityReference*)vp;
+              }
+              
+              if (t==RJSType_QDomProcessingInstruction::getIdStatic()) {
+                return (QDomNode*)(QDomProcessingInstruction*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomNode.length(); i++) {
+            RJSBasecaster_QDomNode* basecaster = basecasters_QDomNode[i];
+            QDomNode* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QDomDocumentFragment::getIdStatic()) {
-              return (QDomNode*)(QDomDocumentFragment*)vp;
-            }
-            
-            if (t==RJSType_QDomCharacterData::getIdStatic()) {
-              return (QDomNode*)(QDomCharacterData*)vp;
-            }
-            
-            if (t==RJSType_QDomAttr::getIdStatic()) {
-              return (QDomNode*)(QDomAttr*)vp;
-            }
-            
-            if (t==RJSType_QDomElement::getIdStatic()) {
-              return (QDomNode*)(QDomElement*)vp;
-            }
-            
-            if (t==RJSType_QDomText::getIdStatic()) {
-              return (QDomNode*)(QDomText*)vp;
-            }
-            
-            if (t==RJSType_QDomNotation::getIdStatic()) {
-              return (QDomNode*)(QDomNotation*)vp;
-            }
-            
-            if (t==RJSType_QDomEntity::getIdStatic()) {
-              return (QDomNode*)(QDomEntity*)vp;
-            }
-            
-            if (t==RJSType_QDomEntityReference::getIdStatic()) {
-              return (QDomNode*)(QDomEntityReference*)vp;
-            }
-            
-            if (t==RJSType_QDomProcessingInstruction::getIdStatic()) {
-              return (QDomNode*)(QDomProcessingInstruction*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomNode::getIdStatic()) {
             return (QDomNode*)vp;
           }
+
+          qWarning() << "QDomNode::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2236,6 +2265,15 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomNode*> basecasters_QDomNode;
+
+      public:
+        static void registerBasecaster_QDomNode(RJSBasecaster_QDomNode* bc) {
+          basecasters_QDomNode.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomNode_Wrapper*)
@@ -2270,13 +2308,24 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
       
         static QDomNodeList* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomNodeList.length(); i++) {
+            RJSBasecaster_QDomNodeList* basecaster = basecasters_QDomNodeList[i];
+            QDomNodeList* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomNodeList::getIdStatic()) {
             return (QDomNodeList*)vp;
           }
+
+          qWarning() << "QDomNodeList::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2655,6 +2704,15 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomNodeList*> basecasters_QDomNodeList;
+
+      public:
+        static void registerBasecaster_QDomNodeList(RJSBasecaster_QDomNodeList* bc) {
+          basecasters_QDomNodeList.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomNodeList_Wrapper*)
@@ -2689,13 +2747,24 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
       
         static QDomDocumentType* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomDocumentType.length(); i++) {
+            RJSBasecaster_QDomDocumentType* basecaster = basecasters_QDomDocumentType[i];
+            QDomDocumentType* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomDocumentType::getIdStatic()) {
             return (QDomDocumentType*)vp;
           }
+
+          qWarning() << "QDomDocumentType::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4445,6 +4514,15 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomDocumentType*> basecasters_QDomDocumentType;
+
+      public:
+        static void registerBasecaster_QDomDocumentType(RJSBasecaster_QDomDocumentType* bc) {
+          basecasters_QDomDocumentType.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomDocumentType_Wrapper*)
@@ -4479,13 +4557,24 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
       
         static QDomDocument* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomDocument.length(); i++) {
+            RJSBasecaster_QDomDocument* basecaster = basecasters_QDomDocument[i];
+            QDomDocument* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomDocument::getIdStatic()) {
             return (QDomDocument*)vp;
           }
+
+          qWarning() << "QDomDocument::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6587,6 +6676,15 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomDocument*> basecasters_QDomDocument;
+
+      public:
+        static void registerBasecaster_QDomDocument(RJSBasecaster_QDomDocument* bc) {
+          basecasters_QDomDocument.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomDocument_Wrapper*)
@@ -6621,13 +6719,24 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
       
         static QDomNamedNodeMap* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomNamedNodeMap.length(); i++) {
+            RJSBasecaster_QDomNamedNodeMap* basecaster = basecasters_QDomNamedNodeMap[i];
+            QDomNamedNodeMap* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomNamedNodeMap::getIdStatic()) {
             return (QDomNamedNodeMap*)vp;
           }
+
+          qWarning() << "QDomNamedNodeMap::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7156,6 +7265,15 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomNamedNodeMap*> basecasters_QDomNamedNodeMap;
+
+      public:
+        static void registerBasecaster_QDomNamedNodeMap(RJSBasecaster_QDomNamedNodeMap* bc) {
+          basecasters_QDomNamedNodeMap.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomNamedNodeMap_Wrapper*)
@@ -7190,13 +7308,24 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
       
         static QDomDocumentFragment* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomDocumentFragment.length(); i++) {
+            RJSBasecaster_QDomDocumentFragment* basecaster = basecasters_QDomDocumentFragment[i];
+            QDomDocumentFragment* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomDocumentFragment::getIdStatic()) {
             return (QDomDocumentFragment*)vp;
           }
+
+          qWarning() << "QDomDocumentFragment::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -8820,6 +8949,15 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomDocumentFragment*> basecasters_QDomDocumentFragment;
+
+      public:
+        static void registerBasecaster_QDomDocumentFragment(RJSBasecaster_QDomDocumentFragment* bc) {
+          basecasters_QDomDocumentFragment.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomDocumentFragment_Wrapper*)
@@ -8854,21 +8992,32 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
       
         static QDomCharacterData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QDomText::getIdStatic()) {
-              return (QDomCharacterData*)(QDomText*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QDomComment::getIdStatic()) {
-              return (QDomCharacterData*)(QDomComment*)vp;
+              if (t==RJSType_QDomText::getIdStatic()) {
+                return (QDomCharacterData*)(QDomText*)vp;
+              }
+              
+              if (t==RJSType_QDomComment::getIdStatic()) {
+                return (QDomCharacterData*)(QDomComment*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomCharacterData.length(); i++) {
+            RJSBasecaster_QDomCharacterData* basecaster = basecasters_QDomCharacterData[i];
+            QDomCharacterData* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomCharacterData::getIdStatic()) {
             return (QDomCharacterData*)vp;
           }
+
+          qWarning() << "QDomCharacterData::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -10692,6 +10841,15 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomCharacterData*> basecasters_QDomCharacterData;
+
+      public:
+        static void registerBasecaster_QDomCharacterData(RJSBasecaster_QDomCharacterData* bc) {
+          basecasters_QDomCharacterData.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomCharacterData_Wrapper*)
@@ -10726,13 +10884,24 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
       
         static QDomAttr* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomAttr.length(); i++) {
+            RJSBasecaster_QDomAttr* basecaster = basecasters_QDomAttr[i];
+            QDomAttr* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomAttr::getIdStatic()) {
             return (QDomAttr*)vp;
           }
+
+          qWarning() << "QDomAttr::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -12463,6 +12632,15 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomAttr*> basecasters_QDomAttr;
+
+      public:
+        static void registerBasecaster_QDomAttr(RJSBasecaster_QDomAttr* bc) {
+          basecasters_QDomAttr.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomAttr_Wrapper*)
@@ -12497,13 +12675,24 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
       
         static QDomElement* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomElement.length(); i++) {
+            RJSBasecaster_QDomElement* basecaster = basecasters_QDomElement[i];
+            QDomElement* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomElement::getIdStatic()) {
             return (QDomElement*)vp;
           }
+
+          qWarning() << "QDomElement::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -14589,6 +14778,15 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomElement*> basecasters_QDomElement;
+
+      public:
+        static void registerBasecaster_QDomElement(RJSBasecaster_QDomElement* bc) {
+          basecasters_QDomElement.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomElement_Wrapper*)
@@ -14623,17 +14821,28 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
       
         static QDomText* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QDomCDATASection::getIdStatic()) {
-              return (QDomText*)(QDomCDATASection*)vp;
-            }
+            // check if pointer points to derrived type:
             
+              if (t==RJSType_QDomCDATASection::getIdStatic()) {
+                return (QDomText*)(QDomCDATASection*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomText.length(); i++) {
+            RJSBasecaster_QDomText* basecaster = basecasters_QDomText[i];
+            QDomText* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomText::getIdStatic()) {
             return (QDomText*)vp;
           }
+
+          qWarning() << "QDomText::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -16480,6 +16689,15 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomText*> basecasters_QDomText;
+
+      public:
+        static void registerBasecaster_QDomText(RJSBasecaster_QDomText* bc) {
+          basecasters_QDomText.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomText_Wrapper*)
@@ -16514,13 +16732,24 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
       
         static QDomComment* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomComment.length(); i++) {
+            RJSBasecaster_QDomComment* basecaster = basecasters_QDomComment[i];
+            QDomComment* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomComment::getIdStatic()) {
             return (QDomComment*)vp;
           }
+
+          qWarning() << "QDomComment::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -16936,6 +17165,15 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomComment*> basecasters_QDomComment;
+
+      public:
+        static void registerBasecaster_QDomComment(RJSBasecaster_QDomComment* bc) {
+          basecasters_QDomComment.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomComment_Wrapper*)
@@ -16970,13 +17208,24 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
       
         static QDomCDATASection* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomCDATASection.length(); i++) {
+            RJSBasecaster_QDomCDATASection* basecaster = basecasters_QDomCDATASection[i];
+            QDomCDATASection* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomCDATASection::getIdStatic()) {
             return (QDomCDATASection*)vp;
           }
+
+          qWarning() << "QDomCDATASection::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -17215,6 +17464,15 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomCDATASection*> basecasters_QDomCDATASection;
+
+      public:
+        static void registerBasecaster_QDomCDATASection(RJSBasecaster_QDomCDATASection* bc) {
+          basecasters_QDomCDATASection.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomCDATASection_Wrapper*)
@@ -17249,13 +17507,24 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
       
         static QDomNotation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomNotation.length(); i++) {
+            RJSBasecaster_QDomNotation* basecaster = basecasters_QDomNotation[i];
+            QDomNotation* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomNotation::getIdStatic()) {
             return (QDomNotation*)vp;
           }
+
+          qWarning() << "QDomNotation::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -18921,6 +19190,15 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomNotation*> basecasters_QDomNotation;
+
+      public:
+        static void registerBasecaster_QDomNotation(RJSBasecaster_QDomNotation* bc) {
+          basecasters_QDomNotation.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomNotation_Wrapper*)
@@ -18955,13 +19233,24 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
       
         static QDomEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomEntity.length(); i++) {
+            RJSBasecaster_QDomEntity* basecaster = basecasters_QDomEntity[i];
+            QDomEntity* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomEntity::getIdStatic()) {
             return (QDomEntity*)vp;
           }
+
+          qWarning() << "QDomEntity::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -20648,6 +20937,15 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomEntity*> basecasters_QDomEntity;
+
+      public:
+        static void registerBasecaster_QDomEntity(RJSBasecaster_QDomEntity* bc) {
+          basecasters_QDomEntity.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomEntity_Wrapper*)
@@ -20682,13 +20980,24 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
       
         static QDomEntityReference* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomEntityReference.length(); i++) {
+            RJSBasecaster_QDomEntityReference* basecaster = basecasters_QDomEntityReference[i];
+            QDomEntityReference* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomEntityReference::getIdStatic()) {
             return (QDomEntityReference*)vp;
           }
+
+          qWarning() << "QDomEntityReference::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -22312,6 +22621,15 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomEntityReference*> basecasters_QDomEntityReference;
+
+      public:
+        static void registerBasecaster_QDomEntityReference(RJSBasecaster_QDomEntityReference* bc) {
+          basecasters_QDomEntityReference.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDomEntityReference_Wrapper*)
@@ -22346,13 +22664,24 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
       
         static QDomProcessingInstruction* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDomProcessingInstruction.length(); i++) {
+            RJSBasecaster_QDomProcessingInstruction* basecaster = basecasters_QDomProcessingInstruction[i];
+            QDomProcessingInstruction* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDomProcessingInstruction::getIdStatic()) {
             return (QDomProcessingInstruction*)vp;
           }
+
+          qWarning() << "QDomProcessingInstruction::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -24040,6 +24369,15 @@ EncodingFromTextStream = QDomProcessingInstruction::EncodingFromTextStream,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDomProcessingInstruction*> basecasters_QDomProcessingInstruction;
+
+      public:
+        static void registerBasecaster_QDomProcessingInstruction(RJSBasecaster_QDomProcessingInstruction* bc) {
+          basecasters_QDomProcessingInstruction.append(bc);
+        }
       
     };
 

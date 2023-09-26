@@ -160,6 +160,12 @@
     </xsl:if>
   </xsl:if>
 
+  <xsl:if test="$mode='cpp'">
+    <xsl:if test="not(ancestor-or-self::qsrc:namespace)">
+      // list of registered base casters for this wrapper class:
+      QList&lt;RJSBasecaster_<xsl:value-of select="@name" />*&gt; <xsl:value-of select="@name" />_Wrapper::basecasters_<xsl:value-of select="@name" />;
+    </xsl:if>
+  </xsl:if>
 
   <xsl:if test="$mode='h'">
     <xsl:if test="not(ancestor-or-self::qsrc:namespace) and (qsrc:function[@static='true'] or qsrc:function/qsrc:variant[@static='true'])">
@@ -180,8 +186,7 @@
         : QObject(), 
           handler(h)
           <xsl:apply-templates select="qsrc:constant" mode="init" />
-          {
-      }
+          {}
 
       <!--
       // create / return single instance:
@@ -211,7 +216,6 @@
           // constants:
           <xsl:apply-templates select="qsrc:constant" mode="declare" />
       };
-
     </xsl:if>
   </xsl:if>
 
@@ -284,16 +288,19 @@
           <!--
           switch (t) {
           -->
-          // check if pointer points to derrived type:
-          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$classname]">
-            if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
-              return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
-            }
-            <!--
-            case RJSType::<xsl:value-of select="../../@name" />_Type:
-              return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
-            -->
-          </xsl:for-each>
+          <!-- cast to base class (only for Qt module), in other modules this is handled through hooks below -->
+          <xsl:if test="$module=''">
+            // check if pointer points to derrived type:
+            <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$classname]">
+              if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
+                return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
+              }
+              <!--
+              case RJSType::<xsl:value-of select="../../@name" />_Type:
+                return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
+              -->
+            </xsl:for-each>
+          </xsl:if>
 
           <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$classname]/qsrc:downcasts/qsrc:class">
             if (t==RJSType_<xsl:value-of select="@type" />::getIdStatic()) {
@@ -305,10 +312,21 @@
             -->
           </xsl:for-each>
 
+          // hook for modules to cast to other base types:
+          for (int i=0; i&lt;basecasters_<xsl:value-of select="@name" />.length(); i++) {
+            RJSBasecaster_<xsl:value-of select="@name" />* basecaster = basecasters_<xsl:value-of select="@name" />[i];
+            <xsl:value-of select="@name" />* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
+
           // pointer to desired type:
           if (t==RJSType_<xsl:value-of select="@name" />::getIdStatic()) {
             return (<xsl:value-of select="@name" />*)vp;
           }
+
+          qWarning() &lt;&lt; "<xsl:value-of select="@name" />::castToBase: type not found: " &lt;&lt; getTypeName(t);
 
           return nullptr;
           <!--
@@ -924,6 +942,16 @@
   -->
 
   <xsl:if test="$mode='h'">
+    <xsl:if test="not(ancestor-or-self::qsrc:namespace)">
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList&lt;RJSBasecaster_<xsl:value-of select="@name" />*&gt; basecasters_<xsl:value-of select="@name" />;
+
+      public:
+        static void registerBasecaster_<xsl:value-of select="@name" />(RJSBasecaster_<xsl:value-of select="@name" />* bc) {
+          basecasters_<xsl:value-of select="@name" />.append(bc);
+        }
+      </xsl:if>
     };
 
     Q_DECLARE_METATYPE(<xsl:value-of select="@name" />_Wrapper*)

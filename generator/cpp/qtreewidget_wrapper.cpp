@@ -8,6 +8,9 @@
     #include "qtreewidget_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTreeWidgetItem*> QTreeWidgetItem_Wrapper::basecasters_QTreeWidgetItem;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_CONFIG(tooltip)
@@ -4155,6 +4158,9 @@ QList<QTreeWidgetItem*> a2_cpp;
     #include "qtreewidget_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTreeWidget*> QTreeWidget_Wrapper::basecasters_QTreeWidget;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QTreeWidget

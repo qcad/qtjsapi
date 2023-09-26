@@ -8,6 +8,9 @@
     #include "qsizepolicy_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSizePolicy*> QSizePolicy_Wrapper::basecasters_QSizePolicy;
+    
     // static functions implementation in singleton wrapper:
     
     void QSizePolicy_Wrapper::init(RJSApi& handler) {

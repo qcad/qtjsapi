@@ -35,8 +35,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -108,7 +107,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -137,13 +135,24 @@
       
         static QGridLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QGridLayout.length(); i++) {
+            RJSBasecaster_QGridLayout* basecaster = basecasters_QGridLayout[i];
+            QGridLayout* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QGridLayout::getIdStatic()) {
             return (QGridLayout*)vp;
           }
+
+          qWarning() << "QGridLayout::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2205,6 +2214,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QGridLayout*> basecasters_QGridLayout;
+
+      public:
+        static void registerBasecaster_QGridLayout(RJSBasecaster_QGridLayout* bc) {
+          basecasters_QGridLayout.append(bc);
+        }
       
     };
 

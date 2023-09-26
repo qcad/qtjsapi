@@ -8,6 +8,9 @@
     #include "qpagelayout_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPageLayout*> QPageLayout_Wrapper::basecasters_QPageLayout;
+    
     // static functions implementation in singleton wrapper:
     
     void QPageLayout_Wrapper::init(RJSApi& handler) {

@@ -8,6 +8,9 @@
     #include "qcombobox_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QComboBox*> QComboBox_Wrapper::basecasters_QComboBox;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QComboBox

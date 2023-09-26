@@ -8,6 +8,9 @@
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlAttributes*> QXmlAttributes_Wrapper::basecasters_QXmlAttributes;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlAttributes_Wrapper::init(RJSApi& handler) {
@@ -1335,6 +1338,9 @@ QString a4_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlInputSource*> QXmlInputSource_Wrapper::basecasters_QXmlInputSource;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlInputSource_Wrapper::init(RJSApi& handler) {
@@ -1889,6 +1895,9 @@ QByteArray a1_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlParseException*> QXmlParseException_Wrapper::basecasters_QXmlParseException;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlParseException_Wrapper::init(RJSApi& handler) {
@@ -2522,6 +2531,9 @@ QString a5_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlReader*> QXmlReader_Wrapper::basecasters_QXmlReader;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlReader_Wrapper::init(RJSApi& handler) {
@@ -3840,6 +3852,9 @@ QString a1_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlSimpleReader*> QXmlSimpleReader_Wrapper::basecasters_QXmlSimpleReader;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlSimpleReader_Wrapper::init(RJSApi& handler) {
@@ -5332,6 +5347,9 @@ bool a2_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlLocator*> QXmlLocator_Wrapper::basecasters_QXmlLocator;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlLocator_Wrapper::init(RJSApi& handler) {
@@ -5581,6 +5599,9 @@ bool a2_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlContentHandler*> QXmlContentHandler_Wrapper::basecasters_QXmlContentHandler;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlContentHandler_Wrapper::init(RJSApi& handler) {
@@ -6611,6 +6632,9 @@ QString a1_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlErrorHandler*> QXmlErrorHandler_Wrapper::basecasters_QXmlErrorHandler;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlErrorHandler_Wrapper::init(RJSApi& handler) {
@@ -7027,6 +7051,9 @@ QString a1_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlDTDHandler*> QXmlDTDHandler_Wrapper::basecasters_QXmlDTDHandler;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlDTDHandler_Wrapper::init(RJSApi& handler) {
@@ -7422,6 +7449,9 @@ QString a4_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlEntityResolver*> QXmlEntityResolver_Wrapper::basecasters_QXmlEntityResolver;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlEntityResolver_Wrapper::init(RJSApi& handler) {
@@ -7613,6 +7643,9 @@ QString a4_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlLexicalHandler*> QXmlLexicalHandler_Wrapper::basecasters_QXmlLexicalHandler;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlLexicalHandler_Wrapper::init(RJSApi& handler) {
@@ -8281,6 +8314,9 @@ QString a1_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlDeclHandler*> QXmlDeclHandler_Wrapper::basecasters_QXmlDeclHandler;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlDeclHandler_Wrapper::init(RJSApi& handler) {
@@ -8772,6 +8808,9 @@ QString a3_cpp;
     #include "qxml_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlDefaultHandler*> QXmlDefaultHandler_Wrapper::basecasters_QXmlDefaultHandler;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlDefaultHandler_Wrapper::init(RJSApi& handler) {

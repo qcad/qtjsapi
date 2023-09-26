@@ -8,6 +8,9 @@
     #include "qbytearray_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QByteArray*> QByteArray_Wrapper::basecasters_QByteArray;
+    
     // static functions implementation in singleton wrapper:
     
 #ifndef QT_NO_CAST_FROM_BYTEARRAY

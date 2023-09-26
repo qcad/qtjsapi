@@ -8,6 +8,9 @@
     #include "qcalendar_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QCalendar*> QCalendar_Wrapper::basecasters_QCalendar;
+    
     // static functions implementation in singleton wrapper:
     
 #ifndef QT_BOOTSTRAPPED

@@ -8,6 +8,9 @@
     #include "qmdiarea_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QMdiArea*> QMdiArea_Wrapper::basecasters_QMdiArea;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QMdiArea

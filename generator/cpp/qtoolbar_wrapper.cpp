@@ -8,6 +8,9 @@
     #include "qtoolbar_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QToolBar*> QToolBar_Wrapper::basecasters_QToolBar;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QToolBar

@@ -39,13 +39,24 @@
       
         static QUrlQuery* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QUrlQuery.length(); i++) {
+            RJSBasecaster_QUrlQuery* basecaster = basecasters_QUrlQuery[i];
+            QUrlQuery* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QUrlQuery::getIdStatic()) {
             return (QUrlQuery*)vp;
           }
+
+          qWarning() << "QUrlQuery::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -719,6 +730,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QUrlQuery*> basecasters_QUrlQuery;
+
+      public:
+        static void registerBasecaster_QUrlQuery(RJSBasecaster_QUrlQuery* bc) {
+          basecasters_QUrlQuery.append(bc);
+        }
       
     };
 

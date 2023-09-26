@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -151,7 +150,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -534,17 +532,28 @@
       
         static QAbstractPrintDialog* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QPrintDialog::getIdStatic()) {
-              return (QAbstractPrintDialog*)(QPrintDialog*)vp;
-            }
+            // check if pointer points to derrived type:
             
+              if (t==RJSType_QPrintDialog::getIdStatic()) {
+                return (QAbstractPrintDialog*)(QPrintDialog*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QAbstractPrintDialog.length(); i++) {
+            RJSBasecaster_QAbstractPrintDialog* basecaster = basecasters_QAbstractPrintDialog[i];
+            QAbstractPrintDialog* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
             return (QAbstractPrintDialog*)vp;
           }
+
+          qWarning() << "QAbstractPrintDialog::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6393,6 +6402,15 @@ PrintCurrentPage = QAbstractPrintDialog::PrintCurrentPage,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QAbstractPrintDialog*> basecasters_QAbstractPrintDialog;
+
+      public:
+        static void registerBasecaster_QAbstractPrintDialog(RJSBasecaster_QAbstractPrintDialog* bc) {
+          basecasters_QAbstractPrintDialog.append(bc);
+        }
       
     };
 

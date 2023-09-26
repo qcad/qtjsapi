@@ -8,6 +8,9 @@
     #include "qgridlayout_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QGridLayout*> QGridLayout_Wrapper::basecasters_QGridLayout;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QGridLayout

@@ -8,6 +8,9 @@
     #include "qboxlayout_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QBoxLayout*> QBoxLayout_Wrapper::basecasters_QBoxLayout;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QBoxLayout
@@ -6091,6 +6094,9 @@ QRect a1_cpp;
     #include "qboxlayout_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QHBoxLayout*> QHBoxLayout_Wrapper::basecasters_QHBoxLayout;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QHBoxLayout
@@ -12185,6 +12191,9 @@ QRect a1_cpp;
     #include "qboxlayout_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QVBoxLayout*> QVBoxLayout_Wrapper::basecasters_QVBoxLayout;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QVBoxLayout

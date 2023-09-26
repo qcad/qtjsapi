@@ -41,13 +41,24 @@
       
         static QTreeWidgetItem* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTreeWidgetItem.length(); i++) {
+            RJSBasecaster_QTreeWidgetItem* basecaster = basecasters_QTreeWidgetItem[i];
+            QTreeWidgetItem* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTreeWidgetItem::getIdStatic()) {
             return (QTreeWidgetItem*)vp;
           }
+
+          qWarning() << "QTreeWidgetItem::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1460,6 +1471,15 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTreeWidgetItem*> basecasters_QTreeWidgetItem;
+
+      public:
+        static void registerBasecaster_QTreeWidgetItem(RJSBasecaster_QTreeWidgetItem* bc) {
+          basecasters_QTreeWidgetItem.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTreeWidgetItem_Wrapper*)
@@ -1493,8 +1513,7 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1608,7 +1627,6 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -2153,13 +2171,24 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
       
         static QTreeWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTreeWidget.length(); i++) {
+            RJSBasecaster_QTreeWidget* basecaster = basecasters_QTreeWidget[i];
+            QTreeWidget* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTreeWidget::getIdStatic()) {
             return (QTreeWidget*)vp;
           }
+
+          qWarning() << "QTreeWidget::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -11656,6 +11685,15 @@ InternalMove = QTreeWidget::InternalMove,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTreeWidget*> basecasters_QTreeWidget;
+
+      public:
+        static void registerBasecaster_QTreeWidget(RJSBasecaster_QTreeWidget* bc) {
+          basecasters_QTreeWidget.append(bc);
+        }
       
     };
 

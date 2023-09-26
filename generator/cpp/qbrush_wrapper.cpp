@@ -8,6 +8,9 @@
     #include "qbrush_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QBrush*> QBrush_Wrapper::basecasters_QBrush;
+    
     // static functions implementation in singleton wrapper:
     
     void QBrush_Wrapper::init(RJSApi& handler) {
@@ -1490,6 +1493,9 @@ Qt::GlobalColor a1_cpp;
     #include "qbrush_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QGradient*> QGradient_Wrapper::basecasters_QGradient;
+    
     // static functions implementation in singleton wrapper:
     
     void QGradient_Wrapper::init(RJSApi& handler) {
@@ -2225,6 +2231,9 @@ QGradient::InterpolationMode a1_cpp;
     #include "qbrush_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QLinearGradient*> QLinearGradient_Wrapper::basecasters_QLinearGradient;
+    
     // static functions implementation in singleton wrapper:
     
     void QLinearGradient_Wrapper::init(RJSApi& handler) {
@@ -3395,6 +3404,9 @@ QPointF a1_cpp;
     #include "qbrush_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QRadialGradient*> QRadialGradient_Wrapper::basecasters_QRadialGradient;
+    
     // static functions implementation in singleton wrapper:
     
     void QRadialGradient_Wrapper::init(RJSApi& handler) {
@@ -5216,6 +5228,9 @@ qreal a1_cpp;
     #include "qbrush_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QConicalGradient*> QConicalGradient_Wrapper::basecasters_QConicalGradient;
+    
     // static functions implementation in singleton wrapper:
     
     void QConicalGradient_Wrapper::init(RJSApi& handler) {

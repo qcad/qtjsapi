@@ -41,13 +41,24 @@
       
         static QTableWidgetItem* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTableWidgetItem.length(); i++) {
+            RJSBasecaster_QTableWidgetItem* basecaster = basecasters_QTableWidgetItem[i];
+            QTableWidgetItem* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTableWidgetItem::getIdStatic()) {
             return (QTableWidgetItem*)vp;
           }
+
+          qWarning() << "QTableWidgetItem::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1022,6 +1033,15 @@ UserType = QTableWidgetItem::UserType,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTableWidgetItem*> basecasters_QTableWidgetItem;
+
+      public:
+        static void registerBasecaster_QTableWidgetItem(RJSBasecaster_QTableWidgetItem* bc) {
+          basecasters_QTableWidgetItem.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTableWidgetItem_Wrapper*)
@@ -1052,8 +1072,7 @@ UserType = QTableWidgetItem::UserType,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1167,7 +1186,6 @@ UserType = QTableWidgetItem::UserType,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1676,13 +1694,24 @@ UserType = QTableWidgetItem::UserType,
       
         static QTableWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTableWidget.length(); i++) {
+            RJSBasecaster_QTableWidget* basecaster = basecasters_QTableWidget[i];
+            QTableWidget* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTableWidget::getIdStatic()) {
             return (QTableWidget*)vp;
           }
+
+          qWarning() << "QTableWidget::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -11139,6 +11168,15 @@ InternalMove = QTableWidget::InternalMove,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTableWidget*> basecasters_QTableWidget;
+
+      public:
+        static void registerBasecaster_QTableWidget(RJSBasecaster_QTableWidget* bc) {
+          basecasters_QTableWidget.append(bc);
+        }
       
     };
 

@@ -39,13 +39,24 @@
       
         static QRect* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QRect.length(); i++) {
+            RJSBasecaster_QRect* basecaster = basecasters_QRect[i];
+            QRect* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QRect::getIdStatic()) {
             return (QRect*)vp;
           }
+
+          qWarning() << "QRect::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1517,6 +1528,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QRect*> basecasters_QRect;
+
+      public:
+        static void registerBasecaster_QRect(RJSBasecaster_QRect* bc) {
+          basecasters_QRect.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QRect_Wrapper*)
@@ -1551,13 +1571,24 @@
       
         static QRectF* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QRectF.length(); i++) {
+            RJSBasecaster_QRectF* basecaster = basecasters_QRectF[i];
+            QRectF* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QRectF::getIdStatic()) {
             return (QRectF*)vp;
           }
+
+          qWarning() << "QRectF::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3066,6 +3097,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QRectF*> basecasters_QRectF;
+
+      public:
+        static void registerBasecaster_QRectF(RJSBasecaster_QRectF* bc) {
+          basecasters_QRectF.append(bc);
+        }
       
     };
 

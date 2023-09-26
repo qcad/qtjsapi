@@ -8,6 +8,9 @@
     #include "qxmlstream_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlStreamAttribute*> QXmlStreamAttribute_Wrapper::basecasters_QXmlStreamAttribute;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlStreamAttribute_Wrapper::init(RJSApi& handler) {
@@ -353,6 +356,9 @@
     #include "qxmlstream_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlStreamAttributes*> QXmlStreamAttributes_Wrapper::basecasters_QXmlStreamAttributes;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlStreamAttributes_Wrapper::init(RJSApi& handler) {
@@ -815,6 +821,9 @@ QString a1_cpp;
     #include "qxmlstream_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlStreamReader*> QXmlStreamReader_Wrapper::basecasters_QXmlStreamReader;
+    
     // static functions implementation in singleton wrapper:
     
     void QXmlStreamReader_Wrapper::init(RJSApi& handler) {
@@ -3280,6 +3289,9 @@ QString a1_cpp;
     #include "qxmlstream_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QXmlStreamWriter*> QXmlStreamWriter_Wrapper::basecasters_QXmlStreamWriter;
+    
     // static functions implementation in singleton wrapper:
     
 #ifndef QT_NO_XMLSTREAMREADER

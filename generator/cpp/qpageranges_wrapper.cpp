@@ -8,6 +8,9 @@
     #include "qpageranges_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPageRanges*> QPageRanges_Wrapper::basecasters_QPageRanges;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPageRanges

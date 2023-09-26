@@ -8,6 +8,9 @@
     #include "qvariant_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QVariant*> QVariant_Wrapper::basecasters_QVariant;
+    
     // static functions implementation in singleton wrapper:
     
 #ifndef QT_NO_GEOM_VARIANT

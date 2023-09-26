@@ -37,8 +37,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -83,7 +82,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -142,25 +140,36 @@
       
         static QGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QPanGesture::getIdStatic()) {
-              return (QGesture*)(QPanGesture*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QPinchGesture::getIdStatic()) {
-              return (QGesture*)(QPinchGesture*)vp;
+              if (t==RJSType_QPanGesture::getIdStatic()) {
+                return (QGesture*)(QPanGesture*)vp;
+              }
+              
+              if (t==RJSType_QPinchGesture::getIdStatic()) {
+                return (QGesture*)(QPinchGesture*)vp;
+              }
+              
+              if (t==RJSType_QSwipeGesture::getIdStatic()) {
+                return (QGesture*)(QSwipeGesture*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QGesture.length(); i++) {
+            RJSBasecaster_QGesture* basecaster = basecasters_QGesture[i];
+            QGesture* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QSwipeGesture::getIdStatic()) {
-              return (QGesture*)(QSwipeGesture*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QGesture::getIdStatic()) {
             return (QGesture*)vp;
           }
+
+          qWarning() << "QGesture::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -913,6 +922,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QGesture*> basecasters_QGesture;
+
+      public:
+        static void registerBasecaster_QGesture(RJSBasecaster_QGesture* bc) {
+          basecasters_QGesture.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QGesture_Wrapper*)
@@ -1001,13 +1019,24 @@
       
         static QPanGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPanGesture.length(); i++) {
+            RJSBasecaster_QPanGesture* basecaster = basecasters_QPanGesture[i];
+            QPanGesture* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPanGesture::getIdStatic()) {
             return (QPanGesture*)vp;
           }
+
+          qWarning() << "QPanGesture::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1513,6 +1542,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPanGesture*> basecasters_QPanGesture;
+
+      public:
+        static void registerBasecaster_QPanGesture(RJSBasecaster_QPanGesture* bc) {
+          basecasters_QPanGesture.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QPanGesture_Wrapper*)
@@ -1543,8 +1581,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1589,7 +1626,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1714,13 +1750,24 @@
       
         static QPinchGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPinchGesture.length(); i++) {
+            RJSBasecaster_QPinchGesture* basecaster = basecasters_QPinchGesture[i];
+            QPinchGesture* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPinchGesture::getIdStatic()) {
             return (QPinchGesture*)vp;
           }
+
+          qWarning() << "QPinchGesture::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2967,6 +3014,15 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPinchGesture*> basecasters_QPinchGesture;
+
+      public:
+        static void registerBasecaster_QPinchGesture(RJSBasecaster_QPinchGesture* bc) {
+          basecasters_QPinchGesture.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QPinchGesture_Wrapper*)
@@ -3031,13 +3087,24 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
       
         static QSwipeGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QSwipeGesture.length(); i++) {
+            RJSBasecaster_QSwipeGesture* basecaster = basecasters_QSwipeGesture[i];
+            QSwipeGesture* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QSwipeGesture::getIdStatic()) {
             return (QSwipeGesture*)vp;
           }
+
+          qWarning() << "QSwipeGesture::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3475,6 +3542,15 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QSwipeGesture*> basecasters_QSwipeGesture;
+
+      public:
+        static void registerBasecaster_QSwipeGesture(RJSBasecaster_QSwipeGesture* bc) {
+          basecasters_QSwipeGesture.append(bc);
+        }
       
     };
 

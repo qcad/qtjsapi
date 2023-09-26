@@ -8,6 +8,9 @@
     #include "qtooltip_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QToolTip*> QToolTip_Wrapper::basecasters_QToolTip;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QToolTip

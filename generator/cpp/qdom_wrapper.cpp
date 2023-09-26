@@ -8,6 +8,9 @@
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomImplementation*> QDomImplementation_Wrapper::basecasters_QDomImplementation;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QDomImplementation
@@ -915,6 +918,9 @@ QDomDocumentType a3_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomNode*> QDomNode_Wrapper::basecasters_QDomNode;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomNode_Wrapper::init(RJSApi& handler) {
@@ -5212,6 +5218,9 @@ QString a2_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomNodeList*> QDomNodeList_Wrapper::basecasters_QDomNodeList;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomNodeList_Wrapper::init(RJSApi& handler) {
@@ -6052,6 +6061,9 @@ int a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomDocumentType*> QDomDocumentType_Wrapper::basecasters_QDomDocumentType;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomDocumentType_Wrapper::init(RJSApi& handler) {
@@ -10691,6 +10703,9 @@ QDomDocumentType a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomDocument*> QDomDocument_Wrapper::basecasters_QDomDocument;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomDocument_Wrapper::init(RJSApi& handler) {
@@ -16678,6 +16693,9 @@ int a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomNamedNodeMap*> QDomNamedNodeMap_Wrapper::basecasters_QDomNamedNodeMap;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomNamedNodeMap_Wrapper::init(RJSApi& handler) {
@@ -17978,6 +17996,9 @@ QString a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomDocumentFragment*> QDomDocumentFragment_Wrapper::basecasters_QDomDocumentFragment;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomDocumentFragment_Wrapper::init(RJSApi& handler) {
@@ -22275,6 +22296,9 @@ QDomDocumentFragment a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomCharacterData*> QDomCharacterData_Wrapper::basecasters_QDomCharacterData;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomCharacterData_Wrapper::init(RJSApi& handler) {
@@ -27138,6 +27162,9 @@ QString a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomAttr*> QDomAttr_Wrapper::basecasters_QDomAttr;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomAttr_Wrapper::init(RJSApi& handler) {
@@ -31727,6 +31754,9 @@ QString a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomElement*> QDomElement_Wrapper::basecasters_QDomElement;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomElement_Wrapper::init(RJSApi& handler) {
@@ -38009,6 +38039,9 @@ QString a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomText*> QDomText_Wrapper::basecasters_QDomText;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomText_Wrapper::init(RJSApi& handler) {
@@ -42944,6 +42977,9 @@ int a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomComment*> QDomComment_Wrapper::basecasters_QDomComment;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomComment_Wrapper::init(RJSApi& handler) {
@@ -43883,6 +43919,9 @@ QDomComment a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomCDATASection*> QDomCDATASection_Wrapper::basecasters_QDomCDATASection;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomCDATASection_Wrapper::init(RJSApi& handler) {
@@ -44328,6 +44367,9 @@ QDomCDATASection a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomNotation*> QDomNotation_Wrapper::basecasters_QDomNotation;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomNotation_Wrapper::init(RJSApi& handler) {
@@ -48739,6 +48781,9 @@ QDomNotation a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomEntity*> QDomEntity_Wrapper::basecasters_QDomEntity;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomEntity_Wrapper::init(RJSApi& handler) {
@@ -53207,6 +53252,9 @@ QDomEntity a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomEntityReference*> QDomEntityReference_Wrapper::basecasters_QDomEntityReference;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomEntityReference_Wrapper::init(RJSApi& handler) {
@@ -57504,6 +57552,9 @@ QDomEntityReference a1_cpp;
     #include "qdom_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDomProcessingInstruction*> QDomProcessingInstruction_Wrapper::basecasters_QDomProcessingInstruction;
+    
     // static functions implementation in singleton wrapper:
     
     void QDomProcessingInstruction_Wrapper::init(RJSApi& handler) {

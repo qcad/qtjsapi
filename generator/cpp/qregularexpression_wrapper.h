@@ -43,8 +43,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -135,7 +134,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -158,13 +156,24 @@
       
         static QRegularExpression* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QRegularExpression.length(); i++) {
+            RJSBasecaster_QRegularExpression* basecaster = basecasters_QRegularExpression[i];
+            QRegularExpression* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QRegularExpression::getIdStatic()) {
             return (QRegularExpression*)vp;
           }
+
+          qWarning() << "QRegularExpression::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -661,6 +670,15 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QRegularExpression*> basecasters_QRegularExpression;
+
+      public:
+        static void registerBasecaster_QRegularExpression(RJSBasecaster_QRegularExpression* bc) {
+          basecasters_QRegularExpression.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QRegularExpression_Wrapper*)
@@ -695,13 +713,24 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
       
         static QRegularExpressionMatch* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QRegularExpressionMatch.length(); i++) {
+            RJSBasecaster_QRegularExpressionMatch* basecaster = basecasters_QRegularExpressionMatch[i];
+            QRegularExpressionMatch* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QRegularExpressionMatch::getIdStatic()) {
             return (QRegularExpressionMatch*)vp;
           }
+
+          qWarning() << "QRegularExpressionMatch::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1179,6 +1208,15 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QRegularExpressionMatch*> basecasters_QRegularExpressionMatch;
+
+      public:
+        static void registerBasecaster_QRegularExpressionMatch(RJSBasecaster_QRegularExpressionMatch* bc) {
+          basecasters_QRegularExpressionMatch.append(bc);
+        }
       
     };
 

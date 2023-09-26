@@ -8,6 +8,9 @@
     #include "qpolygon_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPolygon*> QPolygon_Wrapper::basecasters_QPolygon;
+    
     // static functions implementation in singleton wrapper:
     
     void QPolygon_Wrapper::init(RJSApi& handler) {
@@ -1251,6 +1254,9 @@ QPolygon a1_cpp;
     #include "qpolygon_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPolygonF*> QPolygonF_Wrapper::basecasters_QPolygonF;
+    
     // static functions implementation in singleton wrapper:
     
     void QPolygonF_Wrapper::init(RJSApi& handler) {

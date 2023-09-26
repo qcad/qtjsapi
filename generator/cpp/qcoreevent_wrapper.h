@@ -37,8 +37,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -75,7 +74,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -98,73 +96,84 @@
       
         static QEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QInputEvent::getIdStatic()) {
-              return (QEvent*)(QInputEvent*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QPointerEvent::getIdStatic()) {
-              return (QEvent*)(QPointerEvent*)vp;
+              if (t==RJSType_QInputEvent::getIdStatic()) {
+                return (QEvent*)(QInputEvent*)vp;
+              }
+              
+              if (t==RJSType_QPointerEvent::getIdStatic()) {
+                return (QEvent*)(QPointerEvent*)vp;
+              }
+              
+              if (t==RJSType_QSinglePointEvent::getIdStatic()) {
+                return (QEvent*)(QSinglePointEvent*)vp;
+              }
+              
+              if (t==RJSType_QMouseEvent::getIdStatic()) {
+                return (QEvent*)(QMouseEvent*)vp;
+              }
+              
+              if (t==RJSType_QWheelEvent::getIdStatic()) {
+                return (QEvent*)(QWheelEvent*)vp;
+              }
+              
+              if (t==RJSType_QKeyEvent::getIdStatic()) {
+                return (QEvent*)(QKeyEvent*)vp;
+              }
+              
+              if (t==RJSType_QPaintEvent::getIdStatic()) {
+                return (QEvent*)(QPaintEvent*)vp;
+              }
+              
+              if (t==RJSType_QResizeEvent::getIdStatic()) {
+                return (QEvent*)(QResizeEvent*)vp;
+              }
+              
+              if (t==RJSType_QDragEnterEvent::getIdStatic()) {
+                return (QEvent*)(QDragEnterEvent*)vp;
+              }
+              
+              if (t==RJSType_QDropEvent::getIdStatic()) {
+                return (QEvent*)(QDropEvent*)vp;
+              }
+              
+              if (t==RJSType_QContextMenuEvent::getIdStatic()) {
+                return (QEvent*)(QContextMenuEvent*)vp;
+              }
+              
+              if (t==RJSType_QDragMoveEvent::getIdStatic()) {
+                return (QEvent*)(QDragMoveEvent*)vp;
+              }
+              
+              if (t==RJSType_QDragLeaveEvent::getIdStatic()) {
+                return (QEvent*)(QDragLeaveEvent*)vp;
+              }
+              
+              if (t==RJSType_QHelpEvent::getIdStatic()) {
+                return (QEvent*)(QHelpEvent*)vp;
+              }
+              
+              if (t==RJSType_QActionEvent::getIdStatic()) {
+                return (QEvent*)(QActionEvent*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QEvent.length(); i++) {
+            RJSBasecaster_QEvent* basecaster = basecasters_QEvent[i];
+            QEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QSinglePointEvent::getIdStatic()) {
-              return (QEvent*)(QSinglePointEvent*)vp;
-            }
-            
-            if (t==RJSType_QMouseEvent::getIdStatic()) {
-              return (QEvent*)(QMouseEvent*)vp;
-            }
-            
-            if (t==RJSType_QWheelEvent::getIdStatic()) {
-              return (QEvent*)(QWheelEvent*)vp;
-            }
-            
-            if (t==RJSType_QKeyEvent::getIdStatic()) {
-              return (QEvent*)(QKeyEvent*)vp;
-            }
-            
-            if (t==RJSType_QPaintEvent::getIdStatic()) {
-              return (QEvent*)(QPaintEvent*)vp;
-            }
-            
-            if (t==RJSType_QResizeEvent::getIdStatic()) {
-              return (QEvent*)(QResizeEvent*)vp;
-            }
-            
-            if (t==RJSType_QDragEnterEvent::getIdStatic()) {
-              return (QEvent*)(QDragEnterEvent*)vp;
-            }
-            
-            if (t==RJSType_QDropEvent::getIdStatic()) {
-              return (QEvent*)(QDropEvent*)vp;
-            }
-            
-            if (t==RJSType_QContextMenuEvent::getIdStatic()) {
-              return (QEvent*)(QContextMenuEvent*)vp;
-            }
-            
-            if (t==RJSType_QDragMoveEvent::getIdStatic()) {
-              return (QEvent*)(QDragMoveEvent*)vp;
-            }
-            
-            if (t==RJSType_QDragLeaveEvent::getIdStatic()) {
-              return (QEvent*)(QDragLeaveEvent*)vp;
-            }
-            
-            if (t==RJSType_QHelpEvent::getIdStatic()) {
-              return (QEvent*)(QHelpEvent*)vp;
-            }
-            
-            if (t==RJSType_QActionEvent::getIdStatic()) {
-              return (QEvent*)(QActionEvent*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QEvent::getIdStatic()) {
             return (QEvent*)vp;
           }
+
+          qWarning() << "QEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -733,6 +742,15 @@ MaxUser = QEvent::MaxUser,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QEvent*> basecasters_QEvent;
+
+      public:
+        static void registerBasecaster_QEvent(RJSBasecaster_QEvent* bc) {
+          basecasters_QEvent.append(bc);
+        }
       
     };
 

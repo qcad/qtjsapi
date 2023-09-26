@@ -8,6 +8,9 @@
     #include "qobject_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QObject*> QObject_Wrapper::basecasters_QObject;
+    
     // static functions implementation in singleton wrapper:
     
 #if defined(QT_NO_TRANSLATION)||defined(Q_CLANG_QDOC)

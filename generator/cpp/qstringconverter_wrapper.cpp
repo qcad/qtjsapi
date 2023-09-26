@@ -8,6 +8,9 @@
     #include "qstringconverter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QStringConverter*> QStringConverter_Wrapper::basecasters_QStringConverter;
+    
     // static functions implementation in singleton wrapper:
     
 #ifdef Q_QDOC
@@ -448,6 +451,9 @@ QStringConverter::Encoding a1_cpp;
     #include "qstringconverter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QStringEncoder*> QStringEncoder_Wrapper::basecasters_QStringEncoder;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QStringEncoder
@@ -1168,6 +1174,9 @@ qsizetype a1_cpp;
     #include "qstringconverter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QStringDecoder*> QStringDecoder_Wrapper::basecasters_QStringDecoder;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QStringDecoder

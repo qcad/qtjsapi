@@ -41,8 +41,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -398,7 +397,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -421,13 +419,24 @@
       
         static QColor* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QColor.length(); i++) {
+            RJSBasecaster_QColor* basecaster = basecasters_QColor[i];
+            QColor* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QColor::getIdStatic()) {
             return (QColor*)vp;
           }
+
+          qWarning() << "QColor::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2060,6 +2069,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QColor*> basecasters_QColor;
+
+      public:
+        static void registerBasecaster_QColor(RJSBasecaster_QColor* bc) {
+          basecasters_QColor.append(bc);
+        }
       
     };
 

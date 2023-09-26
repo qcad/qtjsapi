@@ -8,6 +8,9 @@
     #include "qfont_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QFont*> QFont_Wrapper::basecasters_QFont;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QFont

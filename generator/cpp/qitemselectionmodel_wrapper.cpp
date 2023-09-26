@@ -8,6 +8,9 @@
     #include "qitemselectionmodel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QItemSelectionModel*> QItemSelectionModel_Wrapper::basecasters_QItemSelectionModel;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QItemSelectionModel
@@ -3240,6 +3243,9 @@ QItemSelectionModel::SelectionFlags a2_cpp;
     #include "qitemselectionmodel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QItemSelection*> QItemSelection_Wrapper::basecasters_QItemSelection;
+    
     // static functions implementation in singleton wrapper:
     
     void QItemSelection_Wrapper::init(RJSApi& handler) {

@@ -45,13 +45,24 @@
       
         static QBrush* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QBrush.length(); i++) {
+            RJSBasecaster_QBrush* basecaster = basecasters_QBrush[i];
+            QBrush* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QBrush::getIdStatic()) {
             return (QBrush*)vp;
           }
+
+          qWarning() << "QBrush::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -533,6 +544,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QBrush*> basecasters_QBrush;
+
+      public:
+        static void registerBasecaster_QBrush(RJSBasecaster_QBrush* bc) {
+          basecasters_QBrush.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QBrush_Wrapper*)
@@ -567,25 +587,36 @@
       
         static QGradient* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QLinearGradient::getIdStatic()) {
-              return (QGradient*)(QLinearGradient*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QRadialGradient::getIdStatic()) {
-              return (QGradient*)(QRadialGradient*)vp;
+              if (t==RJSType_QLinearGradient::getIdStatic()) {
+                return (QGradient*)(QLinearGradient*)vp;
+              }
+              
+              if (t==RJSType_QRadialGradient::getIdStatic()) {
+                return (QGradient*)(QRadialGradient*)vp;
+              }
+              
+              if (t==RJSType_QConicalGradient::getIdStatic()) {
+                return (QGradient*)(QConicalGradient*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QGradient.length(); i++) {
+            RJSBasecaster_QGradient* basecaster = basecasters_QGradient[i];
+            QGradient* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QConicalGradient::getIdStatic()) {
-              return (QGradient*)(QConicalGradient*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QGradient::getIdStatic()) {
             return (QGradient*)vp;
           }
+
+          qWarning() << "QGradient::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1146,6 +1177,15 @@ NumPresets = QGradient::NumPresets,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QGradient*> basecasters_QGradient;
+
+      public:
+        static void registerBasecaster_QGradient(RJSBasecaster_QGradient* bc) {
+          basecasters_QGradient.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QGradient_Wrapper*)
@@ -1180,13 +1220,24 @@ NumPresets = QGradient::NumPresets,
       
         static QLinearGradient* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QLinearGradient.length(); i++) {
+            RJSBasecaster_QLinearGradient* basecaster = basecasters_QLinearGradient[i];
+            QLinearGradient* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QLinearGradient::getIdStatic()) {
             return (QLinearGradient*)vp;
           }
+
+          qWarning() << "QLinearGradient::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1855,6 +1906,15 @@ NumPresets = QLinearGradient::NumPresets,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QLinearGradient*> basecasters_QLinearGradient;
+
+      public:
+        static void registerBasecaster_QLinearGradient(RJSBasecaster_QLinearGradient* bc) {
+          basecasters_QLinearGradient.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QLinearGradient_Wrapper*)
@@ -1889,13 +1949,24 @@ NumPresets = QLinearGradient::NumPresets,
       
         static QRadialGradient* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QRadialGradient.length(); i++) {
+            RJSBasecaster_QRadialGradient* basecaster = basecasters_QRadialGradient[i];
+            QRadialGradient* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QRadialGradient::getIdStatic()) {
             return (QRadialGradient*)vp;
           }
+
+          qWarning() << "QRadialGradient::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2704,6 +2775,15 @@ NumPresets = QRadialGradient::NumPresets,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QRadialGradient*> basecasters_QRadialGradient;
+
+      public:
+        static void registerBasecaster_QRadialGradient(RJSBasecaster_QRadialGradient* bc) {
+          basecasters_QRadialGradient.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QRadialGradient_Wrapper*)
@@ -2738,13 +2818,24 @@ NumPresets = QRadialGradient::NumPresets,
       
         static QConicalGradient* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QConicalGradient.length(); i++) {
+            RJSBasecaster_QConicalGradient* basecaster = basecasters_QConicalGradient[i];
+            QConicalGradient* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QConicalGradient::getIdStatic()) {
             return (QConicalGradient*)vp;
           }
+
+          qWarning() << "QConicalGradient::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3404,6 +3495,15 @@ NumPresets = QConicalGradient::NumPresets,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QConicalGradient*> basecasters_QConicalGradient;
+
+      public:
+        static void registerBasecaster_QConicalGradient(RJSBasecaster_QConicalGradient* bc) {
+          basecasters_QConicalGradient.append(bc);
+        }
       
     };
 

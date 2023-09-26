@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -151,7 +150,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -534,81 +532,92 @@
       
         static QFrame* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QAbstractItemView::getIdStatic()) {
-              return (QFrame*)(QAbstractItemView*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
-              return (QFrame*)(QAbstractScrollArea*)vp;
+              if (t==RJSType_QAbstractItemView::getIdStatic()) {
+                return (QFrame*)(QAbstractItemView*)vp;
+              }
+              
+              if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
+                return (QFrame*)(QAbstractScrollArea*)vp;
+              }
+              
+              if (t==RJSType_QHeaderView::getIdStatic()) {
+                return (QFrame*)(QHeaderView*)vp;
+              }
+              
+              if (t==RJSType_QLabel::getIdStatic()) {
+                return (QFrame*)(QLabel*)vp;
+              }
+              
+              if (t==RJSType_QListView::getIdStatic()) {
+                return (QFrame*)(QListView*)vp;
+              }
+              
+              if (t==RJSType_QListWidget::getIdStatic()) {
+                return (QFrame*)(QListWidget*)vp;
+              }
+              
+              if (t==RJSType_QMdiArea::getIdStatic()) {
+                return (QFrame*)(QMdiArea*)vp;
+              }
+              
+              if (t==RJSType_QPlainTextEdit::getIdStatic()) {
+                return (QFrame*)(QPlainTextEdit*)vp;
+              }
+              
+              if (t==RJSType_QScrollArea::getIdStatic()) {
+                return (QFrame*)(QScrollArea*)vp;
+              }
+              
+              if (t==RJSType_QSplitter::getIdStatic()) {
+                return (QFrame*)(QSplitter*)vp;
+              }
+              
+              if (t==RJSType_QStackedWidget::getIdStatic()) {
+                return (QFrame*)(QStackedWidget*)vp;
+              }
+              
+              if (t==RJSType_QTableView::getIdStatic()) {
+                return (QFrame*)(QTableView*)vp;
+              }
+              
+              if (t==RJSType_QTableWidget::getIdStatic()) {
+                return (QFrame*)(QTableWidget*)vp;
+              }
+              
+              if (t==RJSType_QTextBrowser::getIdStatic()) {
+                return (QFrame*)(QTextBrowser*)vp;
+              }
+              
+              if (t==RJSType_QTextEdit::getIdStatic()) {
+                return (QFrame*)(QTextEdit*)vp;
+              }
+              
+              if (t==RJSType_QTreeView::getIdStatic()) {
+                return (QFrame*)(QTreeView*)vp;
+              }
+              
+              if (t==RJSType_QTreeWidget::getIdStatic()) {
+                return (QFrame*)(QTreeWidget*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QFrame.length(); i++) {
+            RJSBasecaster_QFrame* basecaster = basecasters_QFrame[i];
+            QFrame* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QHeaderView::getIdStatic()) {
-              return (QFrame*)(QHeaderView*)vp;
-            }
-            
-            if (t==RJSType_QLabel::getIdStatic()) {
-              return (QFrame*)(QLabel*)vp;
-            }
-            
-            if (t==RJSType_QListView::getIdStatic()) {
-              return (QFrame*)(QListView*)vp;
-            }
-            
-            if (t==RJSType_QListWidget::getIdStatic()) {
-              return (QFrame*)(QListWidget*)vp;
-            }
-            
-            if (t==RJSType_QMdiArea::getIdStatic()) {
-              return (QFrame*)(QMdiArea*)vp;
-            }
-            
-            if (t==RJSType_QPlainTextEdit::getIdStatic()) {
-              return (QFrame*)(QPlainTextEdit*)vp;
-            }
-            
-            if (t==RJSType_QScrollArea::getIdStatic()) {
-              return (QFrame*)(QScrollArea*)vp;
-            }
-            
-            if (t==RJSType_QSplitter::getIdStatic()) {
-              return (QFrame*)(QSplitter*)vp;
-            }
-            
-            if (t==RJSType_QStackedWidget::getIdStatic()) {
-              return (QFrame*)(QStackedWidget*)vp;
-            }
-            
-            if (t==RJSType_QTableView::getIdStatic()) {
-              return (QFrame*)(QTableView*)vp;
-            }
-            
-            if (t==RJSType_QTableWidget::getIdStatic()) {
-              return (QFrame*)(QTableWidget*)vp;
-            }
-            
-            if (t==RJSType_QTextBrowser::getIdStatic()) {
-              return (QFrame*)(QTextBrowser*)vp;
-            }
-            
-            if (t==RJSType_QTextEdit::getIdStatic()) {
-              return (QFrame*)(QTextEdit*)vp;
-            }
-            
-            if (t==RJSType_QTreeView::getIdStatic()) {
-              return (QFrame*)(QTreeView*)vp;
-            }
-            
-            if (t==RJSType_QTreeWidget::getIdStatic()) {
-              return (QFrame*)(QTreeWidget*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QFrame::getIdStatic()) {
             return (QFrame*)vp;
           }
+
+          qWarning() << "QFrame::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6218,6 +6227,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QFrame*> basecasters_QFrame;
+
+      public:
+        static void registerBasecaster_QFrame(RJSBasecaster_QFrame* bc) {
+          basecasters_QFrame.append(bc);
+        }
       
     };
 

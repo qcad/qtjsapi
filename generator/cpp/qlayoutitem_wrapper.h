@@ -52,45 +52,56 @@
       
         static QLayoutItem* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QBoxLayout::getIdStatic()) {
-              return (QLayoutItem*)(QBoxLayout*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QHBoxLayout::getIdStatic()) {
-              return (QLayoutItem*)(QHBoxLayout*)vp;
+              if (t==RJSType_QBoxLayout::getIdStatic()) {
+                return (QLayoutItem*)(QBoxLayout*)vp;
+              }
+              
+              if (t==RJSType_QHBoxLayout::getIdStatic()) {
+                return (QLayoutItem*)(QHBoxLayout*)vp;
+              }
+              
+              if (t==RJSType_QVBoxLayout::getIdStatic()) {
+                return (QLayoutItem*)(QVBoxLayout*)vp;
+              }
+              
+              if (t==RJSType_QGridLayout::getIdStatic()) {
+                return (QLayoutItem*)(QGridLayout*)vp;
+              }
+              
+              if (t==RJSType_QLayout::getIdStatic()) {
+                return (QLayoutItem*)(QLayout*)vp;
+              }
+              
+              if (t==RJSType_QSpacerItem::getIdStatic()) {
+                return (QLayoutItem*)(QSpacerItem*)vp;
+              }
+              
+              if (t==RJSType_QWidgetItem::getIdStatic()) {
+                return (QLayoutItem*)(QWidgetItem*)vp;
+              }
+              
+              if (t==RJSType_QStackedLayout::getIdStatic()) {
+                return (QLayoutItem*)(QStackedLayout*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QLayoutItem.length(); i++) {
+            RJSBasecaster_QLayoutItem* basecaster = basecasters_QLayoutItem[i];
+            QLayoutItem* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QVBoxLayout::getIdStatic()) {
-              return (QLayoutItem*)(QVBoxLayout*)vp;
-            }
-            
-            if (t==RJSType_QGridLayout::getIdStatic()) {
-              return (QLayoutItem*)(QGridLayout*)vp;
-            }
-            
-            if (t==RJSType_QLayout::getIdStatic()) {
-              return (QLayoutItem*)(QLayout*)vp;
-            }
-            
-            if (t==RJSType_QSpacerItem::getIdStatic()) {
-              return (QLayoutItem*)(QSpacerItem*)vp;
-            }
-            
-            if (t==RJSType_QWidgetItem::getIdStatic()) {
-              return (QLayoutItem*)(QWidgetItem*)vp;
-            }
-            
-            if (t==RJSType_QStackedLayout::getIdStatic()) {
-              return (QLayoutItem*)(QStackedLayout*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QLayoutItem::getIdStatic()) {
             return (QLayoutItem*)vp;
           }
+
+          qWarning() << "QLayoutItem::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -606,6 +617,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QLayoutItem*> basecasters_QLayoutItem;
+
+      public:
+        static void registerBasecaster_QLayoutItem(RJSBasecaster_QLayoutItem* bc) {
+          basecasters_QLayoutItem.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QLayoutItem_Wrapper*)
@@ -640,13 +660,24 @@
       
         static QSpacerItem* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QSpacerItem.length(); i++) {
+            RJSBasecaster_QSpacerItem* basecaster = basecasters_QSpacerItem[i];
+            QSpacerItem* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QSpacerItem::getIdStatic()) {
             return (QSpacerItem*)vp;
           }
+
+          qWarning() << "QSpacerItem::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1260,6 +1291,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QSpacerItem*> basecasters_QSpacerItem;
+
+      public:
+        static void registerBasecaster_QSpacerItem(RJSBasecaster_QSpacerItem* bc) {
+          basecasters_QSpacerItem.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QSpacerItem_Wrapper*)
@@ -1294,13 +1334,24 @@
       
         static QWidgetItem* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QWidgetItem.length(); i++) {
+            RJSBasecaster_QWidgetItem* basecaster = basecasters_QWidgetItem[i];
+            QWidgetItem* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QWidgetItem::getIdStatic()) {
             return (QWidgetItem*)vp;
           }
+
+          qWarning() << "QWidgetItem::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1834,6 +1885,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QWidgetItem*> basecasters_QWidgetItem;
+
+      public:
+        static void registerBasecaster_QWidgetItem(RJSBasecaster_QWidgetItem* bc) {
+          basecasters_QWidgetItem.append(bc);
+        }
       
     };
 

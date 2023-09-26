@@ -8,6 +8,9 @@
     #include "qprogressdialog_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QProgressDialog*> QProgressDialog_Wrapper::basecasters_QProgressDialog;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QProgressDialog

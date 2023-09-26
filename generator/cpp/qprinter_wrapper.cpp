@@ -8,6 +8,9 @@
     #include "qprinter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPrinter*> QPrinter_Wrapper::basecasters_QPrinter;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPrinter

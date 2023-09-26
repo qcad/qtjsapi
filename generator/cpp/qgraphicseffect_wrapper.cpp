@@ -8,6 +8,9 @@
     #include "qgraphicseffect_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QGraphicsEffect*> QGraphicsEffect_Wrapper::basecasters_QGraphicsEffect;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QGraphicsEffect
@@ -1777,6 +1780,9 @@ bool a1_cpp;
     #include "qgraphicseffect_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QGraphicsColorizeEffect*> QGraphicsColorizeEffect_Wrapper::basecasters_QGraphicsColorizeEffect;
+    
     // static functions implementation in singleton wrapper:
     
     void QGraphicsColorizeEffect_Wrapper::init(RJSApi& handler) {
@@ -2544,6 +2550,9 @@ qreal a1_cpp;
     #include "qgraphicseffect_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QGraphicsBlurEffect*> QGraphicsBlurEffect_Wrapper::basecasters_QGraphicsBlurEffect;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QGraphicsBlurEffect
@@ -4647,6 +4656,9 @@ QGraphicsBlurEffect::BlurHints a1_cpp;
     #include "qgraphicseffect_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QGraphicsDropShadowEffect*> QGraphicsDropShadowEffect_Wrapper::basecasters_QGraphicsDropShadowEffect;
+    
     // static functions implementation in singleton wrapper:
     
     void QGraphicsDropShadowEffect_Wrapper::init(RJSApi& handler) {
@@ -5871,6 +5883,9 @@ QColor a1_cpp;
     #include "qgraphicseffect_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QGraphicsOpacityEffect*> QGraphicsOpacityEffect_Wrapper::basecasters_QGraphicsOpacityEffect;
+    
     // static functions implementation in singleton wrapper:
     
     void QGraphicsOpacityEffect_Wrapper::init(RJSApi& handler) {

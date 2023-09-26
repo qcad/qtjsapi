@@ -8,6 +8,9 @@
     #include "qheaderview_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QHeaderView*> QHeaderView_Wrapper::basecasters_QHeaderView;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QHeaderView

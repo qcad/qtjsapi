@@ -35,8 +35,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -81,7 +80,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -110,25 +108,36 @@
       
         static QValidator* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QIntValidator::getIdStatic()) {
-              return (QValidator*)(QIntValidator*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QDoubleValidator::getIdStatic()) {
-              return (QValidator*)(QDoubleValidator*)vp;
+              if (t==RJSType_QIntValidator::getIdStatic()) {
+                return (QValidator*)(QIntValidator*)vp;
+              }
+              
+              if (t==RJSType_QDoubleValidator::getIdStatic()) {
+                return (QValidator*)(QDoubleValidator*)vp;
+              }
+              
+              if (t==RJSType_QRegularExpressionValidator::getIdStatic()) {
+                return (QValidator*)(QRegularExpressionValidator*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QValidator.length(); i++) {
+            RJSBasecaster_QValidator* basecaster = basecasters_QValidator[i];
+            QValidator* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QRegularExpressionValidator::getIdStatic()) {
-              return (QValidator*)(QRegularExpressionValidator*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QValidator::getIdStatic()) {
             return (QValidator*)vp;
           }
+
+          qWarning() << "QValidator::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -811,6 +820,15 @@ Acceptable = QValidator::Acceptable,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QValidator*> basecasters_QValidator;
+
+      public:
+        static void registerBasecaster_QValidator(RJSBasecaster_QValidator* bc) {
+          basecasters_QValidator.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QValidator_Wrapper*)
@@ -841,8 +859,7 @@ Acceptable = QValidator::Acceptable,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -887,7 +904,6 @@ Acceptable = QValidator::Acceptable,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -916,13 +932,24 @@ Acceptable = QValidator::Acceptable,
       
         static QIntValidator* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QIntValidator.length(); i++) {
+            RJSBasecaster_QIntValidator* basecaster = basecasters_QIntValidator[i];
+            QIntValidator* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QIntValidator::getIdStatic()) {
             return (QIntValidator*)vp;
           }
+
+          qWarning() << "QIntValidator::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1797,6 +1824,15 @@ Acceptable = QIntValidator::Acceptable,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QIntValidator*> basecasters_QIntValidator;
+
+      public:
+        static void registerBasecaster_QIntValidator(RJSBasecaster_QIntValidator* bc) {
+          basecasters_QIntValidator.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QIntValidator_Wrapper*)
@@ -1827,8 +1863,7 @@ Acceptable = QIntValidator::Acceptable,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1873,7 +1908,6 @@ Acceptable = QIntValidator::Acceptable,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1920,13 +1954,24 @@ Acceptable = QIntValidator::Acceptable,
       
         static QDoubleValidator* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDoubleValidator.length(); i++) {
+            RJSBasecaster_QDoubleValidator* basecaster = basecasters_QDoubleValidator[i];
+            QDoubleValidator* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDoubleValidator::getIdStatic()) {
             return (QDoubleValidator*)vp;
           }
+
+          qWarning() << "QDoubleValidator::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2946,6 +2991,15 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDoubleValidator*> basecasters_QDoubleValidator;
+
+      public:
+        static void registerBasecaster_QDoubleValidator(RJSBasecaster_QDoubleValidator* bc) {
+          basecasters_QDoubleValidator.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDoubleValidator_Wrapper*)
@@ -2976,8 +3030,7 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -3022,7 +3075,6 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -3051,13 +3103,24 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
       
         static QRegularExpressionValidator* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QRegularExpressionValidator.length(); i++) {
+            RJSBasecaster_QRegularExpressionValidator* basecaster = basecasters_QRegularExpressionValidator[i];
+            QRegularExpressionValidator* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QRegularExpressionValidator::getIdStatic()) {
             return (QRegularExpressionValidator*)vp;
           }
+
+          qWarning() << "QRegularExpressionValidator::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3835,6 +3898,15 @@ Acceptable = QRegularExpressionValidator::Acceptable,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QRegularExpressionValidator*> basecasters_QRegularExpressionValidator;
+
+      public:
+        static void registerBasecaster_QRegularExpressionValidator(RJSBasecaster_QRegularExpressionValidator* bc) {
+          basecasters_QRegularExpressionValidator.append(bc);
+        }
       
     };
 

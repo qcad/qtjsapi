@@ -8,6 +8,9 @@
     #include "qeventloop_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QEventLoop*> QEventLoop_Wrapper::basecasters_QEventLoop;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QEventLoop

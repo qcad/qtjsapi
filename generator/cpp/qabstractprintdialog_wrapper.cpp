@@ -8,6 +8,9 @@
     #include "qabstractprintdialog_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QAbstractPrintDialog*> QAbstractPrintDialog_Wrapper::basecasters_QAbstractPrintDialog;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QAbstractPrintDialog

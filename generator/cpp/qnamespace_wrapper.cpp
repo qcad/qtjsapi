@@ -8,6 +8,9 @@
     #include "qnamespace_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QKeyCombination*> QKeyCombination_Wrapper::basecasters_QKeyCombination;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QKeyCombination

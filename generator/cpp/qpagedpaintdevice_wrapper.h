@@ -35,8 +35,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -69,7 +68,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -92,17 +90,28 @@
       
         static QPagedPaintDevice* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QPrinter::getIdStatic()) {
-              return (QPagedPaintDevice*)(QPrinter*)vp;
-            }
+            // check if pointer points to derrived type:
             
+              if (t==RJSType_QPrinter::getIdStatic()) {
+                return (QPagedPaintDevice*)(QPrinter*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPagedPaintDevice.length(); i++) {
+            RJSBasecaster_QPagedPaintDevice* basecaster = basecasters_QPagedPaintDevice[i];
+            QPagedPaintDevice* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPagedPaintDevice::getIdStatic()) {
             return (QPagedPaintDevice*)vp;
           }
+
+          qWarning() << "QPagedPaintDevice::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -751,6 +760,15 @@ PdfVersion_1_6 = QPagedPaintDevice::PdfVersion_1_6,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPagedPaintDevice*> basecasters_QPagedPaintDevice;
+
+      public:
+        static void registerBasecaster_QPagedPaintDevice(RJSBasecaster_QPagedPaintDevice* bc) {
+          basecasters_QPagedPaintDevice.append(bc);
+        }
       
     };
 

@@ -43,8 +43,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -89,7 +88,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -118,29 +116,40 @@
       
         static QGraphicsEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QGraphicsColorizeEffect::getIdStatic()) {
-              return (QGraphicsEffect*)(QGraphicsColorizeEffect*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QGraphicsBlurEffect::getIdStatic()) {
-              return (QGraphicsEffect*)(QGraphicsBlurEffect*)vp;
+              if (t==RJSType_QGraphicsColorizeEffect::getIdStatic()) {
+                return (QGraphicsEffect*)(QGraphicsColorizeEffect*)vp;
+              }
+              
+              if (t==RJSType_QGraphicsBlurEffect::getIdStatic()) {
+                return (QGraphicsEffect*)(QGraphicsBlurEffect*)vp;
+              }
+              
+              if (t==RJSType_QGraphicsDropShadowEffect::getIdStatic()) {
+                return (QGraphicsEffect*)(QGraphicsDropShadowEffect*)vp;
+              }
+              
+              if (t==RJSType_QGraphicsOpacityEffect::getIdStatic()) {
+                return (QGraphicsEffect*)(QGraphicsOpacityEffect*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QGraphicsEffect.length(); i++) {
+            RJSBasecaster_QGraphicsEffect* basecaster = basecasters_QGraphicsEffect[i];
+            QGraphicsEffect* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QGraphicsDropShadowEffect::getIdStatic()) {
-              return (QGraphicsEffect*)(QGraphicsDropShadowEffect*)vp;
-            }
-            
-            if (t==RJSType_QGraphicsOpacityEffect::getIdStatic()) {
-              return (QGraphicsEffect*)(QGraphicsOpacityEffect*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QGraphicsEffect::getIdStatic()) {
             return (QGraphicsEffect*)vp;
           }
+
+          qWarning() << "QGraphicsEffect::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -824,6 +833,15 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QGraphicsEffect*> basecasters_QGraphicsEffect;
+
+      public:
+        static void registerBasecaster_QGraphicsEffect(RJSBasecaster_QGraphicsEffect* bc) {
+          basecasters_QGraphicsEffect.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QGraphicsEffect_Wrapper*)
@@ -864,13 +882,24 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
       
         static QGraphicsColorizeEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QGraphicsColorizeEffect.length(); i++) {
+            RJSBasecaster_QGraphicsColorizeEffect* basecaster = basecasters_QGraphicsColorizeEffect[i];
+            QGraphicsColorizeEffect* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QGraphicsColorizeEffect::getIdStatic()) {
             return (QGraphicsColorizeEffect*)vp;
           }
+
+          qWarning() << "QGraphicsColorizeEffect::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1269,6 +1298,15 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QGraphicsColorizeEffect*> basecasters_QGraphicsColorizeEffect;
+
+      public:
+        static void registerBasecaster_QGraphicsColorizeEffect(RJSBasecaster_QGraphicsColorizeEffect* bc) {
+          basecasters_QGraphicsColorizeEffect.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QGraphicsColorizeEffect_Wrapper*)
@@ -1299,8 +1337,7 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1345,7 +1382,6 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1380,13 +1416,24 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
       
         static QGraphicsBlurEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QGraphicsBlurEffect.length(); i++) {
+            RJSBasecaster_QGraphicsBlurEffect* basecaster = basecasters_QGraphicsBlurEffect[i];
+            QGraphicsBlurEffect* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QGraphicsBlurEffect::getIdStatic()) {
             return (QGraphicsBlurEffect*)vp;
           }
+
+          qWarning() << "QGraphicsBlurEffect::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2193,6 +2240,15 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QGraphicsBlurEffect*> basecasters_QGraphicsBlurEffect;
+
+      public:
+        static void registerBasecaster_QGraphicsBlurEffect(RJSBasecaster_QGraphicsBlurEffect* bc) {
+          basecasters_QGraphicsBlurEffect.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QGraphicsBlurEffect_Wrapper*)
@@ -2251,13 +2307,24 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
       
         static QGraphicsDropShadowEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QGraphicsDropShadowEffect.length(); i++) {
+            RJSBasecaster_QGraphicsDropShadowEffect* basecaster = basecasters_QGraphicsDropShadowEffect[i];
+            QGraphicsDropShadowEffect* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QGraphicsDropShadowEffect::getIdStatic()) {
             return (QGraphicsDropShadowEffect*)vp;
           }
+
+          qWarning() << "QGraphicsDropShadowEffect::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2792,6 +2859,15 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QGraphicsDropShadowEffect*> basecasters_QGraphicsDropShadowEffect;
+
+      public:
+        static void registerBasecaster_QGraphicsDropShadowEffect(RJSBasecaster_QGraphicsDropShadowEffect* bc) {
+          basecasters_QGraphicsDropShadowEffect.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QGraphicsDropShadowEffect_Wrapper*)
@@ -2832,13 +2908,24 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
       
         static QGraphicsOpacityEffect* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QGraphicsOpacityEffect.length(); i++) {
+            RJSBasecaster_QGraphicsOpacityEffect* basecaster = basecasters_QGraphicsOpacityEffect[i];
+            QGraphicsOpacityEffect* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QGraphicsOpacityEffect::getIdStatic()) {
             return (QGraphicsOpacityEffect*)vp;
           }
+
+          qWarning() << "QGraphicsOpacityEffect::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3236,6 +3323,15 @@ PadToEffectiveBoundingRect = QGraphicsOpacityEffect::PadToEffectiveBoundingRect,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QGraphicsOpacityEffect*> basecasters_QGraphicsOpacityEffect;
+
+      public:
+        static void registerBasecaster_QGraphicsOpacityEffect(RJSBasecaster_QGraphicsOpacityEffect* bc) {
+          basecasters_QGraphicsOpacityEffect.append(bc);
+        }
       
     };
 

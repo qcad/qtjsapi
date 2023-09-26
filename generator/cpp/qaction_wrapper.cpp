@@ -8,6 +8,9 @@
     #include "qaction_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QAction*> QAction_Wrapper::basecasters_QAction;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QAction

@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -86,7 +85,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -115,13 +113,24 @@
       
         static QButtonGroup* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QButtonGroup.length(); i++) {
+            RJSBasecaster_QButtonGroup* basecaster = basecasters_QButtonGroup[i];
+            QButtonGroup* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QButtonGroup::getIdStatic()) {
             return (QButtonGroup*)vp;
           }
+
+          qWarning() << "QButtonGroup::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1127,6 +1136,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QButtonGroup*> basecasters_QButtonGroup;
+
+      public:
+        static void registerBasecaster_QButtonGroup(RJSBasecaster_QButtonGroup* bc) {
+          basecasters_QButtonGroup.append(bc);
+        }
       
     };
 

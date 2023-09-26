@@ -41,13 +41,24 @@
       
         static QPalette* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPalette.length(); i++) {
+            RJSBasecaster_QPalette* basecaster = basecasters_QPalette[i];
+            QPalette* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPalette::getIdStatic()) {
             return (QPalette*)vp;
           }
+
+          qWarning() << "QPalette::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1086,6 +1097,15 @@ NColorRoles = QPalette::NColorRoles,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPalette*> basecasters_QPalette;
+
+      public:
+        static void registerBasecaster_QPalette(RJSBasecaster_QPalette* bc) {
+          basecasters_QPalette.append(bc);
+        }
       
     };
 

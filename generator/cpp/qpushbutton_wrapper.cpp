@@ -8,6 +8,9 @@
     #include "qpushbutton_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPushButton*> QPushButton_Wrapper::basecasters_QPushButton;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPushButton

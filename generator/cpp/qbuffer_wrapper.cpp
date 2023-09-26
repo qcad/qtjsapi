@@ -8,6 +8,9 @@
     #include "qbuffer_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QBuffer*> QBuffer_Wrapper::basecasters_QBuffer;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QBuffer

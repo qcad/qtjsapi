@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -74,7 +73,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -97,53 +95,64 @@
       
         static QPaintDevice* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QAbstractItemView::getIdStatic()) {
-              return (QPaintDevice*)(QAbstractItemView*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QBitmap::getIdStatic()) {
-              return (QPaintDevice*)(QBitmap*)vp;
+              if (t==RJSType_QAbstractItemView::getIdStatic()) {
+                return (QPaintDevice*)(QAbstractItemView*)vp;
+              }
+              
+              if (t==RJSType_QBitmap::getIdStatic()) {
+                return (QPaintDevice*)(QBitmap*)vp;
+              }
+              
+              if (t==RJSType_QHeaderView::getIdStatic()) {
+                return (QPaintDevice*)(QHeaderView*)vp;
+              }
+              
+              if (t==RJSType_QImage::getIdStatic()) {
+                return (QPaintDevice*)(QImage*)vp;
+              }
+              
+              if (t==RJSType_QPagedPaintDevice::getIdStatic()) {
+                return (QPaintDevice*)(QPagedPaintDevice*)vp;
+              }
+              
+              if (t==RJSType_QPicture::getIdStatic()) {
+                return (QPaintDevice*)(QPicture*)vp;
+              }
+              
+              if (t==RJSType_QPixmap::getIdStatic()) {
+                return (QPaintDevice*)(QPixmap*)vp;
+              }
+              
+              if (t==RJSType_QPrinter::getIdStatic()) {
+                return (QPaintDevice*)(QPrinter*)vp;
+              }
+              
+              if (t==RJSType_QTreeView::getIdStatic()) {
+                return (QPaintDevice*)(QTreeView*)vp;
+              }
+              
+              if (t==RJSType_QWidget::getIdStatic()) {
+                return (QPaintDevice*)(QWidget*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPaintDevice.length(); i++) {
+            RJSBasecaster_QPaintDevice* basecaster = basecasters_QPaintDevice[i];
+            QPaintDevice* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QHeaderView::getIdStatic()) {
-              return (QPaintDevice*)(QHeaderView*)vp;
-            }
-            
-            if (t==RJSType_QImage::getIdStatic()) {
-              return (QPaintDevice*)(QImage*)vp;
-            }
-            
-            if (t==RJSType_QPagedPaintDevice::getIdStatic()) {
-              return (QPaintDevice*)(QPagedPaintDevice*)vp;
-            }
-            
-            if (t==RJSType_QPicture::getIdStatic()) {
-              return (QPaintDevice*)(QPicture*)vp;
-            }
-            
-            if (t==RJSType_QPixmap::getIdStatic()) {
-              return (QPaintDevice*)(QPixmap*)vp;
-            }
-            
-            if (t==RJSType_QPrinter::getIdStatic()) {
-              return (QPaintDevice*)(QPrinter*)vp;
-            }
-            
-            if (t==RJSType_QTreeView::getIdStatic()) {
-              return (QPaintDevice*)(QTreeView*)vp;
-            }
-            
-            if (t==RJSType_QWidget::getIdStatic()) {
-              return (QPaintDevice*)(QWidget*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPaintDevice::getIdStatic()) {
             return (QPaintDevice*)vp;
           }
+
+          qWarning() << "QPaintDevice::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -631,6 +640,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPaintDevice*> basecasters_QPaintDevice;
+
+      public:
+        static void registerBasecaster_QPaintDevice(RJSBasecaster_QPaintDevice* bc) {
+          basecasters_QPaintDevice.append(bc);
+        }
       
     };
 

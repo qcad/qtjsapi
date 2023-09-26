@@ -8,6 +8,9 @@
     #include "qvalidator_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QValidator*> QValidator_Wrapper::basecasters_QValidator;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QValidator
@@ -1778,6 +1781,9 @@ QString a1_cpp;
     #include "qvalidator_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QIntValidator*> QIntValidator_Wrapper::basecasters_QIntValidator;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QIntValidator
@@ -4105,6 +4111,9 @@ int a2_cpp;
     #include "qvalidator_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDoubleValidator*> QDoubleValidator_Wrapper::basecasters_QDoubleValidator;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QDoubleValidator
@@ -6779,6 +6788,9 @@ QDoubleValidator::Notation a1_cpp;
     #include "qvalidator_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QRegularExpressionValidator*> QRegularExpressionValidator_Wrapper::basecasters_QRegularExpressionValidator;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QRegularExpressionValidator

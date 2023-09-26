@@ -8,6 +8,9 @@
     #include "qmdisubwindow_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QMdiSubWindow*> QMdiSubWindow_Wrapper::basecasters_QMdiSubWindow;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QMdiSubWindow

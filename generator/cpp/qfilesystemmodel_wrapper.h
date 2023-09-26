@@ -37,8 +37,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -83,7 +82,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -130,13 +128,24 @@
       
         static QFileSystemModel* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QFileSystemModel.length(); i++) {
+            RJSBasecaster_QFileSystemModel* basecaster = basecasters_QFileSystemModel[i];
+            QFileSystemModel* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QFileSystemModel::getIdStatic()) {
             return (QFileSystemModel*)vp;
           }
+
+          qWarning() << "QFileSystemModel::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2531,6 +2540,15 @@ DontUseCustomDirectoryIcons = QFileSystemModel::DontUseCustomDirectoryIcons,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QFileSystemModel*> basecasters_QFileSystemModel;
+
+      public:
+        static void registerBasecaster_QFileSystemModel(RJSBasecaster_QFileSystemModel* bc) {
+          basecasters_QFileSystemModel.append(bc);
+        }
       
     };
 

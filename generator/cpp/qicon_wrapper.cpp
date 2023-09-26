@@ -8,6 +8,9 @@
     #include "qicon_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QIcon*> QIcon_Wrapper::basecasters_QIcon;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_DEPRECATED_SINCE(6,0)

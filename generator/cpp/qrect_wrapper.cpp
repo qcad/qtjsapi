@@ -8,6 +8,9 @@
     #include "qrect_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QRect*> QRect_Wrapper::basecasters_QRect;
+    
     // static functions implementation in singleton wrapper:
     
     void QRect_Wrapper::init(RJSApi& handler) {
@@ -4449,6 +4452,9 @@ QMargins a1_cpp;
     #include "qrect_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QRectF*> QRectF_Wrapper::basecasters_QRectF;
+    
     // static functions implementation in singleton wrapper:
     
     void QRectF_Wrapper::init(RJSApi& handler) {

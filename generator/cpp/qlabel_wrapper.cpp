@@ -8,6 +8,9 @@
     #include "qlabel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QLabel*> QLabel_Wrapper::basecasters_QLabel;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QLabel

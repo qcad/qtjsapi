@@ -69,13 +69,24 @@
       
         static QTextLength* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextLength.length(); i++) {
+            RJSBasecaster_QTextLength* basecaster = basecasters_QTextLength[i];
+            QTextLength* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextLength::getIdStatic()) {
             return (QTextLength*)vp;
           }
+
+          qWarning() << "QTextLength::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -328,6 +339,15 @@ PercentageLength = QTextLength::PercentageLength,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextLength*> basecasters_QTextLength;
+
+      public:
+        static void registerBasecaster_QTextLength(RJSBasecaster_QTextLength* bc) {
+          basecasters_QTextLength.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTextLength_Wrapper*)
@@ -362,29 +382,40 @@ PercentageLength = QTextLength::PercentageLength,
       
         static QTextFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QTextCharFormat::getIdStatic()) {
-              return (QTextFormat*)(QTextCharFormat*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QTextBlockFormat::getIdStatic()) {
-              return (QTextFormat*)(QTextBlockFormat*)vp;
+              if (t==RJSType_QTextCharFormat::getIdStatic()) {
+                return (QTextFormat*)(QTextCharFormat*)vp;
+              }
+              
+              if (t==RJSType_QTextBlockFormat::getIdStatic()) {
+                return (QTextFormat*)(QTextBlockFormat*)vp;
+              }
+              
+              if (t==RJSType_QTextListFormat::getIdStatic()) {
+                return (QTextFormat*)(QTextListFormat*)vp;
+              }
+              
+              if (t==RJSType_QTextFrameFormat::getIdStatic()) {
+                return (QTextFormat*)(QTextFrameFormat*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextFormat.length(); i++) {
+            RJSBasecaster_QTextFormat* basecaster = basecasters_QTextFormat[i];
+            QTextFormat* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QTextListFormat::getIdStatic()) {
-              return (QTextFormat*)(QTextListFormat*)vp;
-            }
-            
-            if (t==RJSType_QTextFrameFormat::getIdStatic()) {
-              return (QTextFormat*)(QTextFrameFormat*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextFormat::getIdStatic()) {
             return (QTextFormat*)vp;
           }
+
+          qWarning() << "QTextFormat::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1709,6 +1740,15 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextFormat*> basecasters_QTextFormat;
+
+      public:
+        static void registerBasecaster_QTextFormat(RJSBasecaster_QTextFormat* bc) {
+          basecasters_QTextFormat.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTextFormat_Wrapper*)
@@ -1743,21 +1783,32 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
       
         static QTextCharFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QTextImageFormat::getIdStatic()) {
-              return (QTextCharFormat*)(QTextImageFormat*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QTextTableCellFormat::getIdStatic()) {
-              return (QTextCharFormat*)(QTextTableCellFormat*)vp;
+              if (t==RJSType_QTextImageFormat::getIdStatic()) {
+                return (QTextCharFormat*)(QTextImageFormat*)vp;
+              }
+              
+              if (t==RJSType_QTextTableCellFormat::getIdStatic()) {
+                return (QTextCharFormat*)(QTextTableCellFormat*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextCharFormat.length(); i++) {
+            RJSBasecaster_QTextCharFormat* basecaster = basecasters_QTextCharFormat[i];
+            QTextCharFormat* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextCharFormat::getIdStatic()) {
             return (QTextCharFormat*)vp;
           }
+
+          qWarning() << "QTextCharFormat::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4524,6 +4575,15 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextCharFormat*> basecasters_QTextCharFormat;
+
+      public:
+        static void registerBasecaster_QTextCharFormat(RJSBasecaster_QTextCharFormat* bc) {
+          basecasters_QTextCharFormat.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTextCharFormat_Wrapper*)
@@ -4558,13 +4618,24 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
       
         static QTextBlockFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextBlockFormat.length(); i++) {
+            RJSBasecaster_QTextBlockFormat* basecaster = basecasters_QTextBlockFormat[i];
+            QTextBlockFormat* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextBlockFormat::getIdStatic()) {
             return (QTextBlockFormat*)vp;
           }
+
+          qWarning() << "QTextBlockFormat::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6410,6 +6481,15 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextBlockFormat*> basecasters_QTextBlockFormat;
+
+      public:
+        static void registerBasecaster_QTextBlockFormat(RJSBasecaster_QTextBlockFormat* bc) {
+          basecasters_QTextBlockFormat.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTextBlockFormat_Wrapper*)
@@ -6444,13 +6524,24 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
       
         static QTextListFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextListFormat.length(); i++) {
+            RJSBasecaster_QTextListFormat* basecaster = basecasters_QTextListFormat[i];
+            QTextListFormat* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextListFormat::getIdStatic()) {
             return (QTextListFormat*)vp;
           }
+
+          qWarning() << "QTextListFormat::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7959,6 +8050,15 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextListFormat*> basecasters_QTextListFormat;
+
+      public:
+        static void registerBasecaster_QTextListFormat(RJSBasecaster_QTextListFormat* bc) {
+          basecasters_QTextListFormat.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTextListFormat_Wrapper*)
@@ -7993,13 +8093,24 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
       
         static QTextImageFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextImageFormat.length(); i++) {
+            RJSBasecaster_QTextImageFormat* basecaster = basecasters_QTextImageFormat[i];
+            QTextImageFormat* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextImageFormat::getIdStatic()) {
             return (QTextImageFormat*)vp;
           }
+
+          qWarning() << "QTextImageFormat::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -9812,6 +9923,15 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextImageFormat*> basecasters_QTextImageFormat;
+
+      public:
+        static void registerBasecaster_QTextImageFormat(RJSBasecaster_QTextImageFormat* bc) {
+          basecasters_QTextImageFormat.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTextImageFormat_Wrapper*)
@@ -9846,17 +9966,28 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
       
         static QTextFrameFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QTextTableFormat::getIdStatic()) {
-              return (QTextFrameFormat*)(QTextTableFormat*)vp;
-            }
+            // check if pointer points to derrived type:
             
+              if (t==RJSType_QTextTableFormat::getIdStatic()) {
+                return (QTextFrameFormat*)(QTextTableFormat*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextFrameFormat.length(); i++) {
+            RJSBasecaster_QTextFrameFormat* basecaster = basecasters_QTextFrameFormat[i];
+            QTextFrameFormat* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextFrameFormat::getIdStatic()) {
             return (QTextFrameFormat*)vp;
           }
+
+          qWarning() << "QTextFrameFormat::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -11771,6 +11902,15 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextFrameFormat*> basecasters_QTextFrameFormat;
+
+      public:
+        static void registerBasecaster_QTextFrameFormat(RJSBasecaster_QTextFrameFormat* bc) {
+          basecasters_QTextFrameFormat.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTextFrameFormat_Wrapper*)
@@ -11805,13 +11945,24 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
       
         static QTextTableFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextTableFormat.length(); i++) {
+            RJSBasecaster_QTextTableFormat* basecaster = basecasters_QTextTableFormat[i];
+            QTextTableFormat* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextTableFormat::getIdStatic()) {
             return (QTextTableFormat*)vp;
           }
+
+          qWarning() << "QTextTableFormat::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -12923,6 +13074,15 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextTableFormat*> basecasters_QTextTableFormat;
+
+      public:
+        static void registerBasecaster_QTextTableFormat(RJSBasecaster_QTextTableFormat* bc) {
+          basecasters_QTextTableFormat.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTextTableFormat_Wrapper*)
@@ -12957,13 +13117,24 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
       
         static QTextTableCellFormat* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextTableCellFormat.length(); i++) {
+            RJSBasecaster_QTextTableCellFormat* basecaster = basecasters_QTextTableCellFormat[i];
+            QTextTableCellFormat* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextTableCellFormat::getIdStatic()) {
             return (QTextTableCellFormat*)vp;
           }
+
+          qWarning() << "QTextTableCellFormat::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -15395,6 +15566,15 @@ FontPropertiesAll = QTextTableCellFormat::FontPropertiesAll,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextTableCellFormat*> basecasters_QTextTableCellFormat;
+
+      public:
+        static void registerBasecaster_QTextTableCellFormat(RJSBasecaster_QTextTableCellFormat* bc) {
+          basecasters_QTextTableCellFormat.append(bc);
+        }
       
     };
 

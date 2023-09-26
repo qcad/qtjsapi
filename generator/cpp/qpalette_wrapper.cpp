@@ -8,6 +8,9 @@
     #include "qpalette_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPalette*> QPalette_Wrapper::basecasters_QPalette;
+    
     // static functions implementation in singleton wrapper:
     
     void QPalette_Wrapper::init(RJSApi& handler) {

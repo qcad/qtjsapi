@@ -8,6 +8,9 @@
     #include "qwindow_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QWindow*> QWindow_Wrapper::basecasters_QWindow;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QWindow

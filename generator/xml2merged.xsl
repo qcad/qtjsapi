@@ -16,6 +16,8 @@
 
 <xsl:output method="xml" />
 
+<xsl:param name="module" />
+
 <xsl:template match="node()|@*|text()">
   <xsl:copy>
      <xsl:apply-templates select="node()|@*"/>
@@ -50,6 +52,14 @@
         </xsl:apply-templates>
       </xsl:for-each>
 
+      <xsl:if test="$module!=''">
+        <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:constant">
+          <xsl:apply-templates select=".">
+            <xsl:with-param name="super-class-name" select="$super-class-name" />
+          </xsl:apply-templates>
+        </xsl:for-each>
+      </xsl:if>
+
       <!-- merge enums from super classes -->
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:enum">
         <xsl:apply-templates select=".">
@@ -57,12 +67,28 @@
         </xsl:apply-templates>
       </xsl:for-each>
 
+      <xsl:if test="$module!=''">
+        <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:enum">
+          <xsl:apply-templates select=".">
+            <xsl:with-param name="super-class-name" select="$super-class-name" />
+          </xsl:apply-templates>
+        </xsl:for-each>
+      </xsl:if>
+
       <!-- merge properties from super classes -->
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:property">
         <xsl:apply-templates select=".">
           <xsl:with-param name="super-class-name" select="$super-class-name" />
         </xsl:apply-templates>
       </xsl:for-each>
+
+      <xsl:if test="$module!=''">
+        <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:property">
+          <xsl:apply-templates select=".">
+            <xsl:with-param name="super-class-name" select="$super-class-name" />
+          </xsl:apply-templates>
+        </xsl:for-each>
+      </xsl:if>
 
 
       <!-- merge functions from super classes -->
@@ -73,16 +99,6 @@
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:function">
         <xsl:variable name="super-function-name" select="@name" />
 
-        <!--
-        <xsl:message>class: <xsl:value-of select="$class-name"/></xsl:message>
-        <xsl:message>s class: <xsl:value-of select="$super-class-name"/></xsl:message>
-        <xsl:message>s function: <xsl:value-of select="$super-function-name"/></xsl:message>
-        -->
-
-        <!--
-        <qwidget val="{$is-qwidget}" />
-        -->
-
         <!-- TODO: needed in some cases -->
         <!-- TODO: avoid same function from multiple base classes (e.g. QObject::setParent, QWidget::setParent -->
         <!--
@@ -92,12 +108,6 @@
         <!--
         <xsl:if test="not(document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$class-name]/qsrc:function[@name=$super-function-name])">
         -->
-          <!--
-          <xsl:message>
-          function not found in class
-          </xsl:message>
-          -->
-
           <xsl:apply-templates select=".">
             <xsl:with-param name="super-class-name" select="$super-class-name" />
           </xsl:apply-templates>
@@ -106,7 +116,23 @@
         -->
         </xsl:if>
       </xsl:for-each>
+
+      <xsl:if test="$module!=''">
+        <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:function">
+          <xsl:variable name="super-function-name" select="@name" />
+
+          <xsl:if test="not($is-qwidget='1') or not($super-function-name='setParent') or not($super-class-name='QObject')">
+            <xsl:apply-templates select=".">
+              <xsl:with-param name="super-class-name" select="$super-class-name" />
+            </xsl:apply-templates>
+          </xsl:if>
+        </xsl:for-each>
+      </xsl:if>
+
     </xsl:for-each>
+
+
+
 
     <!--
       Own members at last (these will be used in case of duplicates):

@@ -8,6 +8,9 @@
     #include "qeasingcurve_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QEasingCurve*> QEasingCurve_Wrapper::basecasters_QEasingCurve;
+    
     // static functions implementation in singleton wrapper:
     
 #ifndef QT_NO_DEBUG_STREAM

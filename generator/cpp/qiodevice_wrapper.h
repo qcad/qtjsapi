@@ -39,8 +39,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -89,7 +88,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -118,29 +116,40 @@
       
         static QIODevice* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QBuffer::getIdStatic()) {
-              return (QIODevice*)(QBuffer*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QFile::getIdStatic()) {
-              return (QIODevice*)(QFile*)vp;
+              if (t==RJSType_QBuffer::getIdStatic()) {
+                return (QIODevice*)(QBuffer*)vp;
+              }
+              
+              if (t==RJSType_QFile::getIdStatic()) {
+                return (QIODevice*)(QFile*)vp;
+              }
+              
+              if (t==RJSType_QFileDevice::getIdStatic()) {
+                return (QIODevice*)(QFileDevice*)vp;
+              }
+              
+              if (t==RJSType_QProcess::getIdStatic()) {
+                return (QIODevice*)(QProcess*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QIODevice.length(); i++) {
+            RJSBasecaster_QIODevice* basecaster = basecasters_QIODevice[i];
+            QIODevice* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QFileDevice::getIdStatic()) {
-              return (QIODevice*)(QFileDevice*)vp;
-            }
-            
-            if (t==RJSType_QProcess::getIdStatic()) {
-              return (QIODevice*)(QProcess*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QIODevice::getIdStatic()) {
             return (QIODevice*)vp;
           }
+
+          qWarning() << "QIODevice::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1591,6 +1600,15 @@ ExistingOnly = QIODevice::ExistingOnly,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QIODevice*> basecasters_QIODevice;
+
+      public:
+        static void registerBasecaster_QIODevice(RJSBasecaster_QIODevice* bc) {
+          basecasters_QIODevice.append(bc);
+        }
       
     };
 

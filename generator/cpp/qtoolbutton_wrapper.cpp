@@ -8,6 +8,9 @@
     #include "qtoolbutton_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QToolButton*> QToolButton_Wrapper::basecasters_QToolButton;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QToolButton

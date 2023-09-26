@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -189,7 +188,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -644,13 +642,24 @@
       
         static QLabel* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QLabel.length(); i++) {
+            RJSBasecaster_QLabel* basecaster = basecasters_QLabel[i];
+            QLabel* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QLabel::getIdStatic()) {
             return (QLabel*)vp;
           }
+
+          qWarning() << "QLabel::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7002,6 +7011,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QLabel*> basecasters_QLabel;
+
+      public:
+        static void registerBasecaster_QLabel(RJSBasecaster_QLabel* bc) {
+          basecasters_QLabel.append(bc);
+        }
       
     };
 

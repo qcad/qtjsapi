@@ -8,6 +8,9 @@
     #include "qpainterpath_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPainterPath*> QPainterPath_Wrapper::basecasters_QPainterPath;
+    
     // static functions implementation in singleton wrapper:
     
     void QPainterPath_Wrapper::init(RJSApi& handler) {
@@ -4352,6 +4355,9 @@ QPainterPath a1_cpp;
     #include "qpainterpath_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPainterPathStroker*> QPainterPathStroker_Wrapper::basecasters_QPainterPathStroker;
+    
     // static functions implementation in singleton wrapper:
     
     void QPainterPathStroker_Wrapper::init(RJSApi& handler) {

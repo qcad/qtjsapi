@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -149,7 +148,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -628,13 +626,24 @@
       
         static QFontComboBox* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QFontComboBox.length(); i++) {
+            RJSBasecaster_QFontComboBox* basecaster = basecasters_QFontComboBox[i];
+            QFontComboBox* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QFontComboBox::getIdStatic()) {
             return (QFontComboBox*)vp;
           }
+
+          qWarning() << "QFontComboBox::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7476,6 +7485,15 @@ ProportionalFonts = QFontComboBox::ProportionalFonts,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QFontComboBox*> basecasters_QFontComboBox;
+
+      public:
+        static void registerBasecaster_QFontComboBox(RJSBasecaster_QFontComboBox* bc) {
+          basecasters_QFontComboBox.append(bc);
+        }
       
     };
 

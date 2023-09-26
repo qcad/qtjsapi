@@ -47,13 +47,24 @@
       
         static QPolygon* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPolygon.length(); i++) {
+            RJSBasecaster_QPolygon* basecaster = basecasters_QPolygon[i];
+            QPolygon* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPolygon::getIdStatic()) {
             return (QPolygon*)vp;
           }
+
+          qWarning() << "QPolygon::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -508,6 +519,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPolygon*> basecasters_QPolygon;
+
+      public:
+        static void registerBasecaster_QPolygon(RJSBasecaster_QPolygon* bc) {
+          basecasters_QPolygon.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QPolygon_Wrapper*)
@@ -542,13 +562,24 @@
       
         static QPolygonF* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPolygonF.length(); i++) {
+            RJSBasecaster_QPolygonF* basecaster = basecasters_QPolygonF[i];
+            QPolygonF* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPolygonF::getIdStatic()) {
             return (QPolygonF*)vp;
           }
+
+          qWarning() << "QPolygonF::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -988,6 +1019,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPolygonF*> basecasters_QPolygonF;
+
+      public:
+        static void registerBasecaster_QPolygonF(RJSBasecaster_QPolygonF* bc) {
+          basecasters_QPolygonF.append(bc);
+        }
       
     };
 

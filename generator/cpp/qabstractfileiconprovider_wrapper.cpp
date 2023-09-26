@@ -8,6 +8,9 @@
     #include "qabstractfileiconprovider_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QAbstractFileIconProvider*> QAbstractFileIconProvider_Wrapper::basecasters_QAbstractFileIconProvider;
+    
     // static functions implementation in singleton wrapper:
     
     void QAbstractFileIconProvider_Wrapper::init(RJSApi& handler) {

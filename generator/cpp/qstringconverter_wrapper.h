@@ -35,8 +35,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -77,7 +76,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -100,21 +98,32 @@
       
         static QStringConverter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QStringEncoder::getIdStatic()) {
-              return (QStringConverter*)(QStringEncoder*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QStringDecoder::getIdStatic()) {
-              return (QStringConverter*)(QStringDecoder*)vp;
+              if (t==RJSType_QStringEncoder::getIdStatic()) {
+                return (QStringConverter*)(QStringEncoder*)vp;
+              }
+              
+              if (t==RJSType_QStringDecoder::getIdStatic()) {
+                return (QStringConverter*)(QStringDecoder*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QStringConverter.length(); i++) {
+            RJSBasecaster_QStringConverter* basecaster = basecasters_QStringConverter[i];
+            QStringConverter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QStringConverter::getIdStatic()) {
             return (QStringConverter*)vp;
           }
+
+          qWarning() << "QStringConverter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -366,6 +375,15 @@ LastEncoding = QStringConverter::LastEncoding,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QStringConverter*> basecasters_QStringConverter;
+
+      public:
+        static void registerBasecaster_QStringConverter(RJSBasecaster_QStringConverter* bc) {
+          basecasters_QStringConverter.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QStringConverter_Wrapper*)
@@ -396,8 +414,7 @@ LastEncoding = QStringConverter::LastEncoding,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -434,7 +451,6 @@ LastEncoding = QStringConverter::LastEncoding,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -457,13 +473,24 @@ LastEncoding = QStringConverter::LastEncoding,
       
         static QStringEncoder* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QStringEncoder.length(); i++) {
+            RJSBasecaster_QStringEncoder* basecaster = basecasters_QStringEncoder[i];
+            QStringEncoder* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QStringEncoder::getIdStatic()) {
             return (QStringEncoder*)vp;
           }
+
+          qWarning() << "QStringEncoder::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -782,6 +809,15 @@ LastEncoding = QStringEncoder::LastEncoding,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QStringEncoder*> basecasters_QStringEncoder;
+
+      public:
+        static void registerBasecaster_QStringEncoder(RJSBasecaster_QStringEncoder* bc) {
+          basecasters_QStringEncoder.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QStringEncoder_Wrapper*)
@@ -812,8 +848,7 @@ LastEncoding = QStringEncoder::LastEncoding,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -850,7 +885,6 @@ LastEncoding = QStringEncoder::LastEncoding,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -873,13 +907,24 @@ LastEncoding = QStringEncoder::LastEncoding,
       
         static QStringDecoder* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QStringDecoder.length(); i++) {
+            RJSBasecaster_QStringDecoder* basecaster = basecasters_QStringDecoder[i];
+            QStringDecoder* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QStringDecoder::getIdStatic()) {
             return (QStringDecoder*)vp;
           }
+
+          qWarning() << "QStringDecoder::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1197,6 +1242,15 @@ LastEncoding = QStringDecoder::LastEncoding,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QStringDecoder*> basecasters_QStringDecoder;
+
+      public:
+        static void registerBasecaster_QStringDecoder(RJSBasecaster_QStringDecoder* bc) {
+          basecasters_QStringDecoder.append(bc);
+        }
       
     };
 

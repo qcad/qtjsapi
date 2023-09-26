@@ -8,6 +8,9 @@
     #include "qtextlayout_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextLayout*> QTextLayout_Wrapper::basecasters_QTextLayout;
+    
     // static functions implementation in singleton wrapper:
     
 #ifndef QT_NO_RAWFONT

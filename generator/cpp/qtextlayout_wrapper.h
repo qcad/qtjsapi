@@ -63,13 +63,24 @@
       
         static QTextLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextLayout.length(); i++) {
+            RJSBasecaster_QTextLayout* basecaster = basecasters_QTextLayout[i];
+            QTextLayout* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextLayout::getIdStatic()) {
             return (QTextLayout*)vp;
           }
+
+          qWarning() << "QTextLayout::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -963,6 +974,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextLayout*> basecasters_QTextLayout;
+
+      public:
+        static void registerBasecaster_QTextLayout(RJSBasecaster_QTextLayout* bc) {
+          basecasters_QTextLayout.append(bc);
+        }
       
     };
 

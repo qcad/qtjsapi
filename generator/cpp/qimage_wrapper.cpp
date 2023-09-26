@@ -8,6 +8,9 @@
     #include "qimage_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QImage*> QImage_Wrapper::basecasters_QImage;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QImage

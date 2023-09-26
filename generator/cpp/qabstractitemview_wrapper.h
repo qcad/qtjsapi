@@ -44,8 +44,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -190,7 +189,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -663,41 +661,52 @@
       
         static QAbstractItemView* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QHeaderView::getIdStatic()) {
-              return (QAbstractItemView*)(QHeaderView*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QListView::getIdStatic()) {
-              return (QAbstractItemView*)(QListView*)vp;
+              if (t==RJSType_QHeaderView::getIdStatic()) {
+                return (QAbstractItemView*)(QHeaderView*)vp;
+              }
+              
+              if (t==RJSType_QListView::getIdStatic()) {
+                return (QAbstractItemView*)(QListView*)vp;
+              }
+              
+              if (t==RJSType_QListWidget::getIdStatic()) {
+                return (QAbstractItemView*)(QListWidget*)vp;
+              }
+              
+              if (t==RJSType_QTableView::getIdStatic()) {
+                return (QAbstractItemView*)(QTableView*)vp;
+              }
+              
+              if (t==RJSType_QTableWidget::getIdStatic()) {
+                return (QAbstractItemView*)(QTableWidget*)vp;
+              }
+              
+              if (t==RJSType_QTreeView::getIdStatic()) {
+                return (QAbstractItemView*)(QTreeView*)vp;
+              }
+              
+              if (t==RJSType_QTreeWidget::getIdStatic()) {
+                return (QAbstractItemView*)(QTreeWidget*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QAbstractItemView.length(); i++) {
+            RJSBasecaster_QAbstractItemView* basecaster = basecasters_QAbstractItemView[i];
+            QAbstractItemView* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QListWidget::getIdStatic()) {
-              return (QAbstractItemView*)(QListWidget*)vp;
-            }
-            
-            if (t==RJSType_QTableView::getIdStatic()) {
-              return (QAbstractItemView*)(QTableView*)vp;
-            }
-            
-            if (t==RJSType_QTableWidget::getIdStatic()) {
-              return (QAbstractItemView*)(QTableWidget*)vp;
-            }
-            
-            if (t==RJSType_QTreeView::getIdStatic()) {
-              return (QAbstractItemView*)(QTreeView*)vp;
-            }
-            
-            if (t==RJSType_QTreeWidget::getIdStatic()) {
-              return (QAbstractItemView*)(QTreeWidget*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QAbstractItemView::getIdStatic()) {
             return (QAbstractItemView*)vp;
           }
+
+          qWarning() << "QAbstractItemView::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -8092,6 +8101,15 @@ InternalMove = QAbstractItemView::InternalMove,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QAbstractItemView*> basecasters_QAbstractItemView;
+
+      public:
+        static void registerBasecaster_QAbstractItemView(RJSBasecaster_QAbstractItemView* bc) {
+          basecasters_QAbstractItemView.append(bc);
+        }
       
     };
 

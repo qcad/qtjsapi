@@ -102,8 +102,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -380,7 +379,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -763,217 +761,228 @@
       
         static QWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QAbstractButton::getIdStatic()) {
-              return (QWidget*)(QAbstractButton*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QAbstractItemView::getIdStatic()) {
-              return (QWidget*)(QAbstractItemView*)vp;
+              if (t==RJSType_QAbstractButton::getIdStatic()) {
+                return (QWidget*)(QAbstractButton*)vp;
+              }
+              
+              if (t==RJSType_QAbstractItemView::getIdStatic()) {
+                return (QWidget*)(QAbstractItemView*)vp;
+              }
+              
+              if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
+                return (QWidget*)(QAbstractPrintDialog*)vp;
+              }
+              
+              if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
+                return (QWidget*)(QAbstractScrollArea*)vp;
+              }
+              
+              if (t==RJSType_QAbstractSlider::getIdStatic()) {
+                return (QWidget*)(QAbstractSlider*)vp;
+              }
+              
+              if (t==RJSType_QCheckBox::getIdStatic()) {
+                return (QWidget*)(QCheckBox*)vp;
+              }
+              
+              if (t==RJSType_QComboBox::getIdStatic()) {
+                return (QWidget*)(QComboBox*)vp;
+              }
+              
+              if (t==RJSType_QDialog::getIdStatic()) {
+                return (QWidget*)(QDialog*)vp;
+              }
+              
+              if (t==RJSType_QDialogButtonBox::getIdStatic()) {
+                return (QWidget*)(QDialogButtonBox*)vp;
+              }
+              
+              if (t==RJSType_QDockWidget::getIdStatic()) {
+                return (QWidget*)(QDockWidget*)vp;
+              }
+              
+              if (t==RJSType_QFileDialog::getIdStatic()) {
+                return (QWidget*)(QFileDialog*)vp;
+              }
+              
+              if (t==RJSType_QFontComboBox::getIdStatic()) {
+                return (QWidget*)(QFontComboBox*)vp;
+              }
+              
+              if (t==RJSType_QFrame::getIdStatic()) {
+                return (QWidget*)(QFrame*)vp;
+              }
+              
+              if (t==RJSType_QGroupBox::getIdStatic()) {
+                return (QWidget*)(QGroupBox*)vp;
+              }
+              
+              if (t==RJSType_QHeaderView::getIdStatic()) {
+                return (QWidget*)(QHeaderView*)vp;
+              }
+              
+              if (t==RJSType_QLabel::getIdStatic()) {
+                return (QWidget*)(QLabel*)vp;
+              }
+              
+              if (t==RJSType_QLineEdit::getIdStatic()) {
+                return (QWidget*)(QLineEdit*)vp;
+              }
+              
+              if (t==RJSType_QListView::getIdStatic()) {
+                return (QWidget*)(QListView*)vp;
+              }
+              
+              if (t==RJSType_QListWidget::getIdStatic()) {
+                return (QWidget*)(QListWidget*)vp;
+              }
+              
+              if (t==RJSType_QMainWindow::getIdStatic()) {
+                return (QWidget*)(QMainWindow*)vp;
+              }
+              
+              if (t==RJSType_QMdiArea::getIdStatic()) {
+                return (QWidget*)(QMdiArea*)vp;
+              }
+              
+              if (t==RJSType_QMdiSubWindow::getIdStatic()) {
+                return (QWidget*)(QMdiSubWindow*)vp;
+              }
+              
+              if (t==RJSType_QMenu::getIdStatic()) {
+                return (QWidget*)(QMenu*)vp;
+              }
+              
+              if (t==RJSType_QMenuBar::getIdStatic()) {
+                return (QWidget*)(QMenuBar*)vp;
+              }
+              
+              if (t==RJSType_QMessageBox::getIdStatic()) {
+                return (QWidget*)(QMessageBox*)vp;
+              }
+              
+              if (t==RJSType_QPlainTextEdit::getIdStatic()) {
+                return (QWidget*)(QPlainTextEdit*)vp;
+              }
+              
+              if (t==RJSType_QPrintDialog::getIdStatic()) {
+                return (QWidget*)(QPrintDialog*)vp;
+              }
+              
+              if (t==RJSType_QProgressBar::getIdStatic()) {
+                return (QWidget*)(QProgressBar*)vp;
+              }
+              
+              if (t==RJSType_QProgressDialog::getIdStatic()) {
+                return (QWidget*)(QProgressDialog*)vp;
+              }
+              
+              if (t==RJSType_QPushButton::getIdStatic()) {
+                return (QWidget*)(QPushButton*)vp;
+              }
+              
+              if (t==RJSType_QQuickWidget::getIdStatic()) {
+                return (QWidget*)(QQuickWidget*)vp;
+              }
+              
+              if (t==RJSType_QRadioButton::getIdStatic()) {
+                return (QWidget*)(QRadioButton*)vp;
+              }
+              
+              if (t==RJSType_QScrollArea::getIdStatic()) {
+                return (QWidget*)(QScrollArea*)vp;
+              }
+              
+              if (t==RJSType_QScrollBar::getIdStatic()) {
+                return (QWidget*)(QScrollBar*)vp;
+              }
+              
+              if (t==RJSType_QSlider::getIdStatic()) {
+                return (QWidget*)(QSlider*)vp;
+              }
+              
+              if (t==RJSType_QSpinBox::getIdStatic()) {
+                return (QWidget*)(QSpinBox*)vp;
+              }
+              
+              if (t==RJSType_QSplashScreen::getIdStatic()) {
+                return (QWidget*)(QSplashScreen*)vp;
+              }
+              
+              if (t==RJSType_QSplitter::getIdStatic()) {
+                return (QWidget*)(QSplitter*)vp;
+              }
+              
+              if (t==RJSType_QSplitterHandle::getIdStatic()) {
+                return (QWidget*)(QSplitterHandle*)vp;
+              }
+              
+              if (t==RJSType_QStackedWidget::getIdStatic()) {
+                return (QWidget*)(QStackedWidget*)vp;
+              }
+              
+              if (t==RJSType_QStatusBar::getIdStatic()) {
+                return (QWidget*)(QStatusBar*)vp;
+              }
+              
+              if (t==RJSType_QTabBar::getIdStatic()) {
+                return (QWidget*)(QTabBar*)vp;
+              }
+              
+              if (t==RJSType_QTableView::getIdStatic()) {
+                return (QWidget*)(QTableView*)vp;
+              }
+              
+              if (t==RJSType_QTableWidget::getIdStatic()) {
+                return (QWidget*)(QTableWidget*)vp;
+              }
+              
+              if (t==RJSType_QTabWidget::getIdStatic()) {
+                return (QWidget*)(QTabWidget*)vp;
+              }
+              
+              if (t==RJSType_QTextBrowser::getIdStatic()) {
+                return (QWidget*)(QTextBrowser*)vp;
+              }
+              
+              if (t==RJSType_QTextEdit::getIdStatic()) {
+                return (QWidget*)(QTextEdit*)vp;
+              }
+              
+              if (t==RJSType_QToolBar::getIdStatic()) {
+                return (QWidget*)(QToolBar*)vp;
+              }
+              
+              if (t==RJSType_QToolButton::getIdStatic()) {
+                return (QWidget*)(QToolButton*)vp;
+              }
+              
+              if (t==RJSType_QTreeView::getIdStatic()) {
+                return (QWidget*)(QTreeView*)vp;
+              }
+              
+              if (t==RJSType_QTreeWidget::getIdStatic()) {
+                return (QWidget*)(QTreeWidget*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QWidget.length(); i++) {
+            RJSBasecaster_QWidget* basecaster = basecasters_QWidget[i];
+            QWidget* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
-              return (QWidget*)(QAbstractPrintDialog*)vp;
-            }
-            
-            if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
-              return (QWidget*)(QAbstractScrollArea*)vp;
-            }
-            
-            if (t==RJSType_QAbstractSlider::getIdStatic()) {
-              return (QWidget*)(QAbstractSlider*)vp;
-            }
-            
-            if (t==RJSType_QCheckBox::getIdStatic()) {
-              return (QWidget*)(QCheckBox*)vp;
-            }
-            
-            if (t==RJSType_QComboBox::getIdStatic()) {
-              return (QWidget*)(QComboBox*)vp;
-            }
-            
-            if (t==RJSType_QDialog::getIdStatic()) {
-              return (QWidget*)(QDialog*)vp;
-            }
-            
-            if (t==RJSType_QDialogButtonBox::getIdStatic()) {
-              return (QWidget*)(QDialogButtonBox*)vp;
-            }
-            
-            if (t==RJSType_QDockWidget::getIdStatic()) {
-              return (QWidget*)(QDockWidget*)vp;
-            }
-            
-            if (t==RJSType_QFileDialog::getIdStatic()) {
-              return (QWidget*)(QFileDialog*)vp;
-            }
-            
-            if (t==RJSType_QFontComboBox::getIdStatic()) {
-              return (QWidget*)(QFontComboBox*)vp;
-            }
-            
-            if (t==RJSType_QFrame::getIdStatic()) {
-              return (QWidget*)(QFrame*)vp;
-            }
-            
-            if (t==RJSType_QGroupBox::getIdStatic()) {
-              return (QWidget*)(QGroupBox*)vp;
-            }
-            
-            if (t==RJSType_QHeaderView::getIdStatic()) {
-              return (QWidget*)(QHeaderView*)vp;
-            }
-            
-            if (t==RJSType_QLabel::getIdStatic()) {
-              return (QWidget*)(QLabel*)vp;
-            }
-            
-            if (t==RJSType_QLineEdit::getIdStatic()) {
-              return (QWidget*)(QLineEdit*)vp;
-            }
-            
-            if (t==RJSType_QListView::getIdStatic()) {
-              return (QWidget*)(QListView*)vp;
-            }
-            
-            if (t==RJSType_QListWidget::getIdStatic()) {
-              return (QWidget*)(QListWidget*)vp;
-            }
-            
-            if (t==RJSType_QMainWindow::getIdStatic()) {
-              return (QWidget*)(QMainWindow*)vp;
-            }
-            
-            if (t==RJSType_QMdiArea::getIdStatic()) {
-              return (QWidget*)(QMdiArea*)vp;
-            }
-            
-            if (t==RJSType_QMdiSubWindow::getIdStatic()) {
-              return (QWidget*)(QMdiSubWindow*)vp;
-            }
-            
-            if (t==RJSType_QMenu::getIdStatic()) {
-              return (QWidget*)(QMenu*)vp;
-            }
-            
-            if (t==RJSType_QMenuBar::getIdStatic()) {
-              return (QWidget*)(QMenuBar*)vp;
-            }
-            
-            if (t==RJSType_QMessageBox::getIdStatic()) {
-              return (QWidget*)(QMessageBox*)vp;
-            }
-            
-            if (t==RJSType_QPlainTextEdit::getIdStatic()) {
-              return (QWidget*)(QPlainTextEdit*)vp;
-            }
-            
-            if (t==RJSType_QPrintDialog::getIdStatic()) {
-              return (QWidget*)(QPrintDialog*)vp;
-            }
-            
-            if (t==RJSType_QProgressBar::getIdStatic()) {
-              return (QWidget*)(QProgressBar*)vp;
-            }
-            
-            if (t==RJSType_QProgressDialog::getIdStatic()) {
-              return (QWidget*)(QProgressDialog*)vp;
-            }
-            
-            if (t==RJSType_QPushButton::getIdStatic()) {
-              return (QWidget*)(QPushButton*)vp;
-            }
-            
-            if (t==RJSType_QQuickWidget::getIdStatic()) {
-              return (QWidget*)(QQuickWidget*)vp;
-            }
-            
-            if (t==RJSType_QRadioButton::getIdStatic()) {
-              return (QWidget*)(QRadioButton*)vp;
-            }
-            
-            if (t==RJSType_QScrollArea::getIdStatic()) {
-              return (QWidget*)(QScrollArea*)vp;
-            }
-            
-            if (t==RJSType_QScrollBar::getIdStatic()) {
-              return (QWidget*)(QScrollBar*)vp;
-            }
-            
-            if (t==RJSType_QSlider::getIdStatic()) {
-              return (QWidget*)(QSlider*)vp;
-            }
-            
-            if (t==RJSType_QSpinBox::getIdStatic()) {
-              return (QWidget*)(QSpinBox*)vp;
-            }
-            
-            if (t==RJSType_QSplashScreen::getIdStatic()) {
-              return (QWidget*)(QSplashScreen*)vp;
-            }
-            
-            if (t==RJSType_QSplitter::getIdStatic()) {
-              return (QWidget*)(QSplitter*)vp;
-            }
-            
-            if (t==RJSType_QSplitterHandle::getIdStatic()) {
-              return (QWidget*)(QSplitterHandle*)vp;
-            }
-            
-            if (t==RJSType_QStackedWidget::getIdStatic()) {
-              return (QWidget*)(QStackedWidget*)vp;
-            }
-            
-            if (t==RJSType_QStatusBar::getIdStatic()) {
-              return (QWidget*)(QStatusBar*)vp;
-            }
-            
-            if (t==RJSType_QTabBar::getIdStatic()) {
-              return (QWidget*)(QTabBar*)vp;
-            }
-            
-            if (t==RJSType_QTableView::getIdStatic()) {
-              return (QWidget*)(QTableView*)vp;
-            }
-            
-            if (t==RJSType_QTableWidget::getIdStatic()) {
-              return (QWidget*)(QTableWidget*)vp;
-            }
-            
-            if (t==RJSType_QTabWidget::getIdStatic()) {
-              return (QWidget*)(QTabWidget*)vp;
-            }
-            
-            if (t==RJSType_QTextBrowser::getIdStatic()) {
-              return (QWidget*)(QTextBrowser*)vp;
-            }
-            
-            if (t==RJSType_QTextEdit::getIdStatic()) {
-              return (QWidget*)(QTextEdit*)vp;
-            }
-            
-            if (t==RJSType_QToolBar::getIdStatic()) {
-              return (QWidget*)(QToolBar*)vp;
-            }
-            
-            if (t==RJSType_QToolButton::getIdStatic()) {
-              return (QWidget*)(QToolButton*)vp;
-            }
-            
-            if (t==RJSType_QTreeView::getIdStatic()) {
-              return (QWidget*)(QTreeView*)vp;
-            }
-            
-            if (t==RJSType_QTreeWidget::getIdStatic()) {
-              return (QWidget*)(QTreeWidget*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QWidget::getIdStatic()) {
             return (QWidget*)vp;
           }
+
+          qWarning() << "QWidget::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6825,6 +6834,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QWidget*> basecasters_QWidget;
+
+      public:
+        static void registerBasecaster_QWidget(RJSBasecaster_QWidget* bc) {
+          basecasters_QWidget.append(bc);
+        }
       
     };
 

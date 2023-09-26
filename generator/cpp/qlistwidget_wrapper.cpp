@@ -8,6 +8,9 @@
     #include "qlistwidget_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QListWidgetItem*> QListWidgetItem_Wrapper::basecasters_QListWidgetItem;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_CONFIG(tooltip)
@@ -2476,6 +2479,9 @@ QVariant a2_cpp;
     #include "qlistwidget_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QListWidget*> QListWidget_Wrapper::basecasters_QListWidget;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QListWidget

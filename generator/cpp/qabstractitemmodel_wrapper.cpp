@@ -8,6 +8,9 @@
     #include "qabstractitemmodel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QModelIndex*> QModelIndex_Wrapper::basecasters_QModelIndex;
+    
     // static functions implementation in singleton wrapper:
     
     void QModelIndex_Wrapper::init(RJSApi& handler) {
@@ -744,6 +747,9 @@ int a1_cpp;
     #include "qabstractitemmodel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QAbstractItemModel*> QAbstractItemModel_Wrapper::basecasters_QAbstractItemModel;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QAbstractItemModel
@@ -5327,6 +5333,9 @@ QModelIndex a1_cpp;
     #include "qabstractitemmodel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QAbstractTableModel*> QAbstractTableModel_Wrapper::basecasters_QAbstractTableModel;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QAbstractTableModel
@@ -9828,6 +9837,9 @@ QModelIndex a1_cpp;
     #include "qabstractitemmodel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QAbstractListModel*> QAbstractListModel_Wrapper::basecasters_QAbstractListModel;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QAbstractListModel

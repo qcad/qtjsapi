@@ -8,6 +8,9 @@
     #include "qpagesize_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPageSize*> QPageSize_Wrapper::basecasters_QPageSize;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPageSize

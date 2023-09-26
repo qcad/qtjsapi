@@ -39,8 +39,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -181,7 +180,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -204,13 +202,24 @@
       
         static QKeySequence* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QKeySequence.length(); i++) {
+            RJSBasecaster_QKeySequence* basecaster = basecasters_QKeySequence[i];
+            QKeySequence* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QKeySequence::getIdStatic()) {
             return (QKeySequence*)vp;
           }
+
+          qWarning() << "QKeySequence::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -624,6 +633,15 @@ ExactMatch = QKeySequence::ExactMatch,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QKeySequence*> basecasters_QKeySequence;
+
+      public:
+        static void registerBasecaster_QKeySequence(RJSBasecaster_QKeySequence* bc) {
+          basecasters_QKeySequence.append(bc);
+        }
       
     };
 

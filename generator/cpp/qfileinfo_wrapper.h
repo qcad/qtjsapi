@@ -43,13 +43,24 @@
       
         static QFileInfo* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QFileInfo.length(); i++) {
+            RJSBasecaster_QFileInfo* basecaster = basecasters_QFileInfo[i];
+            QFileInfo* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QFileInfo::getIdStatic()) {
             return (QFileInfo*)vp;
           }
+
+          qWarning() << "QFileInfo::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1269,6 +1280,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QFileInfo*> basecasters_QFileInfo;
+
+      public:
+        static void registerBasecaster_QFileInfo(RJSBasecaster_QFileInfo* bc) {
+          basecasters_QFileInfo.append(bc);
+        }
       
     };
 

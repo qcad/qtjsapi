@@ -8,6 +8,9 @@
     #include "qurlquery_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QUrlQuery*> QUrlQuery_Wrapper::basecasters_QUrlQuery;
+    
     // static functions implementation in singleton wrapper:
     
     void QUrlQuery_Wrapper::init(RJSApi& handler) {

@@ -8,6 +8,9 @@
     #include "qtranslator_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTranslator*> QTranslator_Wrapper::basecasters_QTranslator;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QTranslator

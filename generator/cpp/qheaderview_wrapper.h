@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -174,7 +173,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -701,13 +699,24 @@
       
         static QHeaderView* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QHeaderView.length(); i++) {
+            RJSBasecaster_QHeaderView* basecaster = basecasters_QHeaderView[i];
+            QHeaderView* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QHeaderView::getIdStatic()) {
             return (QHeaderView*)vp;
           }
+
+          qWarning() << "QHeaderView::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -10108,6 +10117,15 @@ Custom = QHeaderView::Custom,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QHeaderView*> basecasters_QHeaderView;
+
+      public:
+        static void registerBasecaster_QHeaderView(RJSBasecaster_QHeaderView* bc) {
+          basecasters_QHeaderView.append(bc);
+        }
       
     };
 

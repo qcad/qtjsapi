@@ -8,6 +8,9 @@
     #include "qpixmap_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPixmap*> QPixmap_Wrapper::basecasters_QPixmap;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPixmap

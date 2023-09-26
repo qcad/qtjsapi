@@ -8,6 +8,9 @@
     #include "qdatetime_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDate*> QDate_Wrapper::basecasters_QDate;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_CONFIG(datestring)
@@ -2103,6 +2106,9 @@ QDate a1_cpp;
     #include "qdatetime_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTime*> QTime_Wrapper::basecasters_QTime;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_CONFIG(datestring)
@@ -3794,6 +3800,9 @@ QTime a1_cpp;
     #include "qdatetime_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDateTime*> QDateTime_Wrapper::basecasters_QDateTime;
+    
     // static functions implementation in singleton wrapper:
     
 #if Q_BYTE_ORDER==Q_LITTLE_ENDIAN

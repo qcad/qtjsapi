@@ -8,6 +8,9 @@
     #include "qstandarditemmodel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QStandardItem*> QStandardItem_Wrapper::basecasters_QStandardItem;
+    
     // static functions implementation in singleton wrapper:
     
 #ifndef QT_NO_STATUSTIP
@@ -5466,6 +5469,9 @@ Qt::SortOrder a2_cpp;
     #include "qstandarditemmodel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QStandardItemModel*> QStandardItemModel_Wrapper::basecasters_QStandardItemModel;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QStandardItemModel

@@ -8,6 +8,9 @@
     #include "qlocale_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QLocale*> QLocale_Wrapper::basecasters_QLocale;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_DEPRECATED_SINCE(6,6)

@@ -35,8 +35,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -108,7 +107,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -149,13 +147,24 @@
       
         static QStackedLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QStackedLayout.length(); i++) {
+            RJSBasecaster_QStackedLayout* basecaster = basecasters_QStackedLayout[i];
+            QStackedLayout* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QStackedLayout::getIdStatic()) {
             return (QStackedLayout*)vp;
           }
+
+          qWarning() << "QStackedLayout::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1881,6 +1890,15 @@ StackAll = QStackedLayout::StackAll,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QStackedLayout*> basecasters_QStackedLayout;
+
+      public:
+        static void registerBasecaster_QStackedLayout(RJSBasecaster_QStackedLayout* bc) {
+          basecasters_QStackedLayout.append(bc);
+        }
       
     };
 

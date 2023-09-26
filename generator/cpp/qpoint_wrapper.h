@@ -35,8 +35,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -81,7 +80,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -104,13 +102,24 @@
       
         static QPoint* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPoint.length(); i++) {
+            RJSBasecaster_QPoint* basecaster = basecasters_QPoint[i];
+            QPoint* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPoint::getIdStatic()) {
             return (QPoint*)vp;
           }
+
+          qWarning() << "QPoint::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -575,6 +584,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPoint*> basecasters_QPoint;
+
+      public:
+        static void registerBasecaster_QPoint(RJSBasecaster_QPoint* bc) {
+          basecasters_QPoint.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QPoint_Wrapper*)
@@ -605,8 +623,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -651,7 +668,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -674,13 +690,24 @@
       
         static QPointF* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPointF.length(); i++) {
+            RJSBasecaster_QPointF* basecaster = basecasters_QPointF[i];
+            QPointF* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPointF::getIdStatic()) {
             return (QPointF*)vp;
           }
+
+          qWarning() << "QPointF::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1073,6 +1100,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPointF*> basecasters_QPointF;
+
+      public:
+        static void registerBasecaster_QPointF(RJSBasecaster_QPointF* bc) {
+          basecasters_QPointF.append(bc);
+        }
       
     };
 

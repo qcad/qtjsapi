@@ -8,6 +8,9 @@
     #include "qdrag_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDrag*> QDrag_Wrapper::basecasters_QDrag;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QDrag

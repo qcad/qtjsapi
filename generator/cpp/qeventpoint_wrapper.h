@@ -165,13 +165,24 @@
       
         static QEventPoint* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QEventPoint.length(); i++) {
+            RJSBasecaster_QEventPoint* basecaster = basecasters_QEventPoint[i];
+            QEventPoint* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QEventPoint::getIdStatic()) {
             return (QEventPoint*)vp;
           }
+
+          qWarning() << "QEventPoint::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -895,6 +906,15 @@ Released = QEventPoint::Released,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QEventPoint*> basecasters_QEventPoint;
+
+      public:
+        static void registerBasecaster_QEventPoint(RJSBasecaster_QEventPoint* bc) {
+          basecasters_QEventPoint.append(bc);
+        }
       
     };
 

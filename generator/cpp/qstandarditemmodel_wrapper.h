@@ -41,13 +41,24 @@
       
         static QStandardItem* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QStandardItem.length(); i++) {
+            RJSBasecaster_QStandardItem* basecaster = basecasters_QStandardItem[i];
+            QStandardItem* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QStandardItem::getIdStatic()) {
             return (QStandardItem*)vp;
           }
+
+          qWarning() << "QStandardItem::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2007,6 +2018,15 @@ UserType = QStandardItem::UserType,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QStandardItem*> basecasters_QStandardItem;
+
+      public:
+        static void registerBasecaster_QStandardItem(RJSBasecaster_QStandardItem* bc) {
+          basecasters_QStandardItem.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QStandardItem_Wrapper*)
@@ -2037,8 +2057,7 @@ UserType = QStandardItem::UserType,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -2083,7 +2102,6 @@ UserType = QStandardItem::UserType,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -2112,13 +2130,24 @@ UserType = QStandardItem::UserType,
       
         static QStandardItemModel* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QStandardItemModel.length(); i++) {
+            RJSBasecaster_QStandardItemModel* basecaster = basecasters_QStandardItemModel[i];
+            QStandardItemModel* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QStandardItemModel::getIdStatic()) {
             return (QStandardItemModel*)vp;
           }
+
+          qWarning() << "QStandardItemModel::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4399,6 +4428,15 @@ HorizontalSortHint = QStandardItemModel::HorizontalSortHint,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QStandardItemModel*> basecasters_QStandardItemModel;
+
+      public:
+        static void registerBasecaster_QStandardItemModel(RJSBasecaster_QStandardItemModel* bc) {
+          basecasters_QStandardItemModel.append(bc);
+        }
       
     };
 

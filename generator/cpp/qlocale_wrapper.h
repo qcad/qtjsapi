@@ -49,8 +49,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -395,7 +394,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -418,13 +416,24 @@
       
         static QLocale* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QLocale.length(); i++) {
+            RJSBasecaster_QLocale* basecaster = basecasters_QLocale[i];
+            QLocale* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QLocale::getIdStatic()) {
             return (QLocale*)vp;
           }
+
+          qWarning() << "QLocale::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2855,6 +2864,15 @@ AlternateQuotation = QLocale::AlternateQuotation,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QLocale*> basecasters_QLocale;
+
+      public:
+        static void registerBasecaster_QLocale(RJSBasecaster_QLocale* bc) {
+          basecasters_QLocale.append(bc);
+        }
       
     };
 

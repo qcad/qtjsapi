@@ -8,6 +8,9 @@
     #include "qdiriterator_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDirIterator*> QDirIterator_Wrapper::basecasters_QDirIterator;
+    
     // static functions implementation in singleton wrapper:
     
     void QDirIterator_Wrapper::init(RJSApi& handler) {

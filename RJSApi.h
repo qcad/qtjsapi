@@ -49,6 +49,9 @@ public:
     QJSEngine* getEngine() {
         return engine;
     }
+    RJSTools* getTools() {
+        return tools;
+    }
 
     void trace() {
         engine->evaluate("console.trace();");

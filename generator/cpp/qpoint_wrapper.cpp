@@ -8,6 +8,9 @@
     #include "qpoint_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPoint*> QPoint_Wrapper::basecasters_QPoint;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPoint
@@ -1197,6 +1200,9 @@ qreal a1_cpp;
     #include "qpoint_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QPointF*> QPointF_Wrapper::basecasters_QPointF;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QPointF

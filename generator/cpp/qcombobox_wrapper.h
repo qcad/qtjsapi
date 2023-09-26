@@ -42,8 +42,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -173,7 +172,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -646,17 +644,28 @@
       
         static QComboBox* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QFontComboBox::getIdStatic()) {
-              return (QComboBox*)(QFontComboBox*)vp;
-            }
+            // check if pointer points to derrived type:
             
+              if (t==RJSType_QFontComboBox::getIdStatic()) {
+                return (QComboBox*)(QFontComboBox*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QComboBox.length(); i++) {
+            RJSBasecaster_QComboBox* basecaster = basecasters_QComboBox[i];
+            QComboBox* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QComboBox::getIdStatic()) {
             return (QComboBox*)vp;
           }
+
+          qWarning() << "QComboBox::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7375,6 +7384,15 @@ AdjustToMinimumContentsLengthWithIcon = QComboBox::AdjustToMinimumContentsLength
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QComboBox*> basecasters_QComboBox;
+
+      public:
+        static void registerBasecaster_QComboBox(RJSBasecaster_QComboBox* bc) {
+          basecasters_QComboBox.append(bc);
+        }
       
     };
 

@@ -8,6 +8,9 @@
     #include "qregularexpression_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QRegularExpression*> QRegularExpression_Wrapper::basecasters_QRegularExpression;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_STRINGVIEW_LEVEL<2
@@ -1348,6 +1351,9 @@ QRegularExpression::MatchOptions a4_cpp;
     #include "qregularexpression_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QRegularExpressionMatch*> QRegularExpressionMatch_Wrapper::basecasters_QRegularExpressionMatch;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_STRINGVIEW_LEVEL<2

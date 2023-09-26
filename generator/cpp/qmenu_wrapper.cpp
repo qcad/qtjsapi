@@ -8,6 +8,9 @@
     #include "qmenu_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QMenu*> QMenu_Wrapper::basecasters_QMenu;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QMenu

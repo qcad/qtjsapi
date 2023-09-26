@@ -8,6 +8,9 @@
     #include "qfontcombobox_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QFontComboBox*> QFontComboBox_Wrapper::basecasters_QFontComboBox;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QFontComboBox

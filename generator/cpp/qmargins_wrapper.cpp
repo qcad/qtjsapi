@@ -8,6 +8,9 @@
     #include "qmargins_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QMargins*> QMargins_Wrapper::basecasters_QMargins;
+    
     // static functions implementation in singleton wrapper:
     
     void QMargins_Wrapper::init(RJSApi& handler) {
@@ -873,6 +876,9 @@ int a1_cpp;
     #include "qmargins_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QMarginsF*> QMarginsF_Wrapper::basecasters_QMarginsF;
+    
     // static functions implementation in singleton wrapper:
     
     void QMarginsF_Wrapper::init(RJSApi& handler) {

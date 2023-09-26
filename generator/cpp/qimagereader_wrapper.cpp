@@ -8,6 +8,9 @@
     #include "qimagereader_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QImageReader*> QImageReader_Wrapper::basecasters_QImageReader;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QImageReader

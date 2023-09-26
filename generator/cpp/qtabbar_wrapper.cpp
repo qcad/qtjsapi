@@ -8,6 +8,9 @@
     #include "qtabbar_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTabBar*> QTabBar_Wrapper::basecasters_QTabBar;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QTabBar

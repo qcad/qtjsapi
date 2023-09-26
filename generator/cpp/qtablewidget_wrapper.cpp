@@ -8,6 +8,9 @@
     #include "qtablewidget_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTableWidgetItem*> QTableWidgetItem_Wrapper::basecasters_QTableWidgetItem;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_CONFIG(tooltip)
@@ -2540,6 +2543,9 @@ QVariant a2_cpp;
     #include "qtablewidget_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTableWidget*> QTableWidget_Wrapper::basecasters_QTableWidget;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QTableWidget

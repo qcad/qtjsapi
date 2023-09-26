@@ -43,13 +43,24 @@
       
         static QFontMetrics* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QFontMetrics.length(); i++) {
+            RJSBasecaster_QFontMetrics* basecaster = basecasters_QFontMetrics[i];
+            QFontMetrics* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QFontMetrics::getIdStatic()) {
             return (QFontMetrics*)vp;
           }
+
+          qWarning() << "QFontMetrics::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -845,6 +856,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QFontMetrics*> basecasters_QFontMetrics;
+
+      public:
+        static void registerBasecaster_QFontMetrics(RJSBasecaster_QFontMetrics* bc) {
+          basecasters_QFontMetrics.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QFontMetrics_Wrapper*)
@@ -879,13 +899,24 @@
       
         static QFontMetricsF* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QFontMetricsF.length(); i++) {
+            RJSBasecaster_QFontMetricsF* basecaster = basecasters_QFontMetricsF[i];
+            QFontMetricsF* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QFontMetricsF::getIdStatic()) {
             return (QFontMetricsF*)vp;
           }
+
+          qWarning() << "QFontMetricsF::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1691,6 +1722,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QFontMetricsF*> basecasters_QFontMetricsF;
+
+      public:
+        static void registerBasecaster_QFontMetricsF(RJSBasecaster_QFontMetricsF* bc) {
+          basecasters_QFontMetricsF.append(bc);
+        }
       
     };
 

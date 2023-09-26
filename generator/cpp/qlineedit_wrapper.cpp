@@ -8,6 +8,9 @@
     #include "qlineedit_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QLineEdit*> QLineEdit_Wrapper::basecasters_QLineEdit;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QLineEdit

@@ -8,6 +8,9 @@
     #include "qfileinfo_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QFileInfo*> QFileInfo_Wrapper::basecasters_QFileInfo;
+    
     // static functions implementation in singleton wrapper:
     
     void QFileInfo_Wrapper::init(RJSApi& handler) {

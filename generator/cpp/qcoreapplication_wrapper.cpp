@@ -8,6 +8,9 @@
     #include "qcoreapplication_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QCoreApplication*> QCoreApplication_Wrapper::basecasters_QCoreApplication;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QCoreApplication

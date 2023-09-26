@@ -8,6 +8,9 @@
     #include "qcolor_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QColor*> QColor_Wrapper::basecasters_QColor;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_STRINGVIEW_LEVEL<2

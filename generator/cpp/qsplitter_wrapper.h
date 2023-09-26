@@ -42,8 +42,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -153,7 +152,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -554,13 +552,24 @@
       
         static QSplitter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QSplitter.length(); i++) {
+            RJSBasecaster_QSplitter* basecaster = basecasters_QSplitter[i];
+            QSplitter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QSplitter::getIdStatic()) {
             return (QSplitter*)vp;
           }
+
+          qWarning() << "QSplitter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6729,6 +6738,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QSplitter*> basecasters_QSplitter;
+
+      public:
+        static void registerBasecaster_QSplitter(RJSBasecaster_QSplitter* bc) {
+          basecasters_QSplitter.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QSplitter_Wrapper*)
@@ -6762,8 +6780,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -6842,7 +6859,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -7219,13 +7235,24 @@
       
         static QSplitterHandle* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QSplitterHandle.length(); i++) {
+            RJSBasecaster_QSplitterHandle* basecaster = basecasters_QSplitterHandle[i];
+            QSplitterHandle* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QSplitterHandle::getIdStatic()) {
             return (QSplitterHandle*)vp;
           }
+
+          qWarning() << "QSplitterHandle::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -12207,6 +12234,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QSplitterHandle*> basecasters_QSplitterHandle;
+
+      public:
+        static void registerBasecaster_QSplitterHandle(RJSBasecaster_QSplitterHandle* bc) {
+          basecasters_QSplitterHandle.append(bc);
+        }
       
     };
 

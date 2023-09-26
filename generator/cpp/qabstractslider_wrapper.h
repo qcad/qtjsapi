@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -153,7 +152,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -596,21 +594,32 @@
       
         static QAbstractSlider* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QScrollBar::getIdStatic()) {
-              return (QAbstractSlider*)(QScrollBar*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QSlider::getIdStatic()) {
-              return (QAbstractSlider*)(QSlider*)vp;
+              if (t==RJSType_QScrollBar::getIdStatic()) {
+                return (QAbstractSlider*)(QScrollBar*)vp;
+              }
+              
+              if (t==RJSType_QSlider::getIdStatic()) {
+                return (QAbstractSlider*)(QSlider*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QAbstractSlider.length(); i++) {
+            RJSBasecaster_QAbstractSlider* basecaster = basecasters_QAbstractSlider[i];
+            QAbstractSlider* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QAbstractSlider::getIdStatic()) {
             return (QAbstractSlider*)vp;
           }
+
+          qWarning() << "QAbstractSlider::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6612,6 +6621,15 @@ SliderMove = QAbstractSlider::SliderMove,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QAbstractSlider*> basecasters_QAbstractSlider;
+
+      public:
+        static void registerBasecaster_QAbstractSlider(RJSBasecaster_QAbstractSlider* bc) {
+          basecasters_QAbstractSlider.append(bc);
+        }
       
     };
 

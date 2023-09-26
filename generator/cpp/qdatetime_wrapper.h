@@ -39,8 +39,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -162,7 +161,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -185,13 +183,24 @@
       
         static QDate* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDate.length(); i++) {
+            RJSBasecaster_QDate* basecaster = basecasters_QDate[i];
+            QDate* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDate::getIdStatic()) {
             return (QDate*)vp;
           }
+
+          qWarning() << "QDate::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -837,6 +846,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDate*> basecasters_QDate;
+
+      public:
+        static void registerBasecaster_QDate(RJSBasecaster_QDate* bc) {
+          basecasters_QDate.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QDate_Wrapper*)
@@ -867,8 +885,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -990,7 +1007,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1013,13 +1029,24 @@
       
         static QTime* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTime.length(); i++) {
+            RJSBasecaster_QTime* basecaster = basecasters_QTime[i];
+            QTime* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTime::getIdStatic()) {
             return (QTime*)vp;
           }
+
+          qWarning() << "QTime::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1548,6 +1575,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTime*> basecasters_QTime;
+
+      public:
+        static void registerBasecaster_QTime(RJSBasecaster_QTime* bc) {
+          basecasters_QTime.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QTime_Wrapper*)
@@ -1578,8 +1614,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1837,7 +1872,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1860,13 +1894,24 @@
       
         static QDateTime* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QDateTime.length(); i++) {
+            RJSBasecaster_QDateTime* basecaster = basecasters_QDateTime[i];
+            QDateTime* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QDateTime::getIdStatic()) {
             return (QDateTime*)vp;
           }
+
+          qWarning() << "QDateTime::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2892,6 +2937,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QDateTime*> basecasters_QDateTime;
+
+      public:
+        static void registerBasecaster_QDateTime(RJSBasecaster_QDateTime* bc) {
+          basecasters_QDateTime.append(bc);
+        }
       
     };
 

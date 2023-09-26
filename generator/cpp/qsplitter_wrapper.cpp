@@ -8,6 +8,9 @@
     #include "qsplitter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSplitter*> QSplitter_Wrapper::basecasters_QSplitter;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QSplitter
@@ -19592,6 +19595,9 @@ int a2_cpp;
     #include "qsplitter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSplitterHandle*> QSplitterHandle_Wrapper::basecasters_QSplitterHandle;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QSplitterHandle

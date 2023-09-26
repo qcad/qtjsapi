@@ -39,8 +39,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -115,7 +114,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -138,13 +136,24 @@
       
         static QImageWriter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QImageWriter.length(); i++) {
+            RJSBasecaster_QImageWriter* basecaster = basecasters_QImageWriter[i];
+            QImageWriter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QImageWriter::getIdStatic()) {
             return (QImageWriter*)vp;
           }
+
+          qWarning() << "QImageWriter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -885,6 +894,15 @@ InvalidImageError = QImageWriter::InvalidImageError,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QImageWriter*> basecasters_QImageWriter;
+
+      public:
+        static void registerBasecaster_QImageWriter(RJSBasecaster_QImageWriter* bc) {
+          basecasters_QImageWriter.append(bc);
+        }
       
     };
 

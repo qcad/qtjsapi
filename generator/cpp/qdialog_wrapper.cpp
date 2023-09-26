@@ -8,6 +8,9 @@
     #include "qdialog_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QDialog*> QDialog_Wrapper::basecasters_QDialog;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QDialog

@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -151,7 +150,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -600,13 +598,24 @@
       
         static QSlider* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QSlider.length(); i++) {
+            RJSBasecaster_QSlider* basecaster = basecasters_QSlider[i];
+            QSlider* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QSlider::getIdStatic()) {
             return (QSlider*)vp;
           }
+
+          qWarning() << "QSlider::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6674,6 +6683,15 @@ TicksBothSides = QSlider::TicksBothSides,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QSlider*> basecasters_QSlider;
+
+      public:
+        static void registerBasecaster_QSlider(RJSBasecaster_QSlider* bc) {
+          basecasters_QSlider.append(bc);
+        }
       
     };
 

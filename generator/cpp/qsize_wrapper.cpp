@@ -8,6 +8,9 @@
     #include "qsize_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSize*> QSize_Wrapper::basecasters_QSize;
+    
     // static functions implementation in singleton wrapper:
     
     void QSize_Wrapper::init(RJSApi& handler) {
@@ -1669,6 +1672,9 @@ QMargins a1_cpp;
     #include "qsize_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QSizeF*> QSizeF_Wrapper::basecasters_QSizeF;
+    
     // static functions implementation in singleton wrapper:
     
     void QSizeF_Wrapper::init(RJSApi& handler) {

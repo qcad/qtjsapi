@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -102,7 +101,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -155,13 +153,24 @@
       
         static QShortcut* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QShortcut.length(); i++) {
+            RJSBasecaster_QShortcut* basecaster = basecasters_QShortcut[i];
+            QShortcut* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QShortcut::getIdStatic()) {
             return (QShortcut*)vp;
           }
+
+          qWarning() << "QShortcut::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1158,6 +1167,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QShortcut*> basecasters_QShortcut;
+
+      public:
+        static void registerBasecaster_QShortcut(RJSBasecaster_QShortcut* bc) {
+          basecasters_QShortcut.append(bc);
+        }
       
     };
 

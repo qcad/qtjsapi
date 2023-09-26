@@ -39,13 +39,24 @@
       
         static QMargins* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QMargins.length(); i++) {
+            RJSBasecaster_QMargins* basecaster = basecasters_QMargins[i];
+            QMargins* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QMargins::getIdStatic()) {
             return (QMargins*)vp;
           }
+
+          qWarning() << "QMargins::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -426,6 +437,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QMargins*> basecasters_QMargins;
+
+      public:
+        static void registerBasecaster_QMargins(RJSBasecaster_QMargins* bc) {
+          basecasters_QMargins.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QMargins_Wrapper*)
@@ -460,13 +480,24 @@
       
         static QMarginsF* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QMarginsF.length(); i++) {
+            RJSBasecaster_QMarginsF* basecaster = basecasters_QMarginsF[i];
+            QMarginsF* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QMarginsF::getIdStatic()) {
             return (QMarginsF*)vp;
           }
+
+          qWarning() << "QMarginsF::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -867,6 +898,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QMarginsF*> basecasters_QMarginsF;
+
+      public:
+        static void registerBasecaster_QMarginsF(RJSBasecaster_QMarginsF* bc) {
+          basecasters_QMarginsF.append(bc);
+        }
       
     };
 

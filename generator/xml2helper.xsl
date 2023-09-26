@@ -69,12 +69,44 @@
       #include "RJSWrapper.h"
 
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
-        // Base class for downcasters that can downcast <xsl:value-of select="@name" /> to specific types.
+        // Base class for downcasters that can downcast <xsl:value-of select="@name" /> to specific types:
         class RJSDowncaster_<xsl:value-of select="@name" /> {
         public:
           virtual QJSValue downcast(RJSApi&amp; handler, <xsl:value-of select="@name" />* o) = 0;
         };
       </xsl:for-each>
+
+      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class">
+        // Base class for basecasters that can cast void* to base class <xsl:value-of select="@name" />:
+        class RJSBasecaster_<xsl:value-of select="@name" /> {
+        public:
+          virtual <xsl:value-of select="@name" />* castToBase(int t, void* vp) = 0;
+        };
+      </xsl:for-each>
+
+      <xsl:if test="$module!=''">
+        <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class">
+          // implementation of base casters that cast <xsl:value-of select="@name" /> to base classes:
+          <xsl:variable name="basecast-from">
+            <xsl:value-of select="@name" />
+          </xsl:variable>
+          <!--
+          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super">
+          -->
+          <xsl:for-each select="./qsrc:super_list/qsrc:super">
+            <xsl:variable name="basecast-to">
+              <xsl:value-of select="@name" />
+            </xsl:variable>
+            // implementation of base casters that casts <xsl:value-of select="$basecast-from" /> to <xsl:value-of select="$basecast-to" />
+            class RJSBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" /> {
+            public:
+              virtual <xsl:value-of select="$basecast-to" />* castToBase(int t, void* vp) {
+                return (<xsl:value-of select="$basecast-to" />*)(<xsl:value-of select="$basecast-from" />*)vp;
+              }
+            };
+          </xsl:for-each>
+        </xsl:for-each>
+      </xsl:if>
 
       <xsl:if test="$module=''">
         // Base class for converters that can convert QVariant to specific types.
@@ -108,6 +140,7 @@
       public:
         <xsl:if test="$module!=''">
           static void registerDowncasters();
+          static void registerBasecasters();
         </xsl:if>
 
         <xsl:if test="$module=''">
@@ -268,6 +301,25 @@
               </xsl:variable>
               // downcasters from <xsl:value-of select="$downcast-from"/> to <xsl:value-of select="$downcast-to"/>
               RJSHelper::registerDowncaster_<xsl:value-of select="$downcast-from"/>(new RJSDowncaster_<xsl:value-of select="$downcast-from"/>_<xsl:value-of select="$downcast-to"/>());
+            </xsl:for-each>
+          </xsl:for-each>
+        }
+
+        void <xsl:value-of select="$rjshelper_class"/>::registerBasecasters() {
+          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class">
+            // registration of base casters that cast <xsl:value-of select="@name" /> to base classes:
+            <xsl:variable name="basecast-from">
+              <xsl:value-of select="@name" />
+            </xsl:variable>
+            <!--
+            <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super">
+            -->
+            <xsl:for-each select="qsrc:super_list/qsrc:super">
+              <xsl:variable name="basecast-to">
+                <xsl:value-of select="@name" />
+              </xsl:variable>
+              // registration of base casters that casts <xsl:value-of select="$basecast-from" /> to <xsl:value-of select="$basecast-to" />:
+              RJSHelper::registerBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" />(new RJSBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" />());
             </xsl:for-each>
           </xsl:for-each>
         }

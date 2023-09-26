@@ -39,13 +39,24 @@
       
         static QLine* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QLine.length(); i++) {
+            RJSBasecaster_QLine* basecaster = basecasters_QLine[i];
+            QLine* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QLine::getIdStatic()) {
             return (QLine*)vp;
           }
+
+          qWarning() << "QLine::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -603,6 +614,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QLine*> basecasters_QLine;
+
+      public:
+        static void registerBasecaster_QLine(RJSBasecaster_QLine* bc) {
+          basecasters_QLine.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QLine_Wrapper*)
@@ -633,8 +653,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -675,7 +694,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -698,13 +716,24 @@
       
         static QLineF* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QLineF.length(); i++) {
+            RJSBasecaster_QLineF* basecaster = basecasters_QLineF[i];
+            QLineF* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QLineF::getIdStatic()) {
             return (QLineF*)vp;
           }
+
+          qWarning() << "QLineF::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1462,6 +1491,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QLineF*> basecasters_QLineF;
+
+      public:
+        static void registerBasecaster_QLineF(RJSBasecaster_QLineF* bc) {
+          basecasters_QLineF.append(bc);
+        }
       
     };
 

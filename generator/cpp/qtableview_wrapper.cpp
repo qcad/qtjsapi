@@ -8,6 +8,9 @@
     #include "qtableview_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTableView*> QTableView_Wrapper::basecasters_QTableView;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QTableView

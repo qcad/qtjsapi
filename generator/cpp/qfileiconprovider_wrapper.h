@@ -42,13 +42,24 @@
       
         static QFileIconProvider* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QFileIconProvider.length(); i++) {
+            RJSBasecaster_QFileIconProvider* basecaster = basecasters_QFileIconProvider[i];
+            QFileIconProvider* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QFileIconProvider::getIdStatic()) {
             return (QFileIconProvider*)vp;
           }
+
+          qWarning() << "QFileIconProvider::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -356,6 +367,15 @@ File = QFileIconProvider::File,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QFileIconProvider*> basecasters_QFileIconProvider;
+
+      public:
+        static void registerBasecaster_QFileIconProvider(RJSBasecaster_QFileIconProvider* bc) {
+          basecasters_QFileIconProvider.append(bc);
+        }
       
     };
 

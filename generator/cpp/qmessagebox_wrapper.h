@@ -44,8 +44,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -389,7 +388,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -820,13 +818,24 @@
       
         static QMessageBox* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QMessageBox.length(); i++) {
+            RJSBasecaster_QMessageBox* basecaster = basecasters_QMessageBox[i];
+            QMessageBox* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QMessageBox::getIdStatic()) {
             return (QMessageBox*)vp;
           }
+
+          qWarning() << "QMessageBox::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7223,6 +7232,15 @@ ButtonMask = QMessageBox::ButtonMask,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QMessageBox*> basecasters_QMessageBox;
+
+      public:
+        static void registerBasecaster_QMessageBox(RJSBasecaster_QMessageBox* bc) {
+          basecasters_QMessageBox.append(bc);
+        }
       
     };
 

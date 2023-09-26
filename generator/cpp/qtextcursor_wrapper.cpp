@@ -8,6 +8,9 @@
     #include "qtextcursor_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QTextCursor*> QTextCursor_Wrapper::basecasters_QTextCursor;
+    
     // static functions implementation in singleton wrapper:
     
 #ifndef QT_NO_TEXTHTMLPARSER

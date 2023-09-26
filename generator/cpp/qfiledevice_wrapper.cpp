@@ -8,6 +8,9 @@
     #include "qfiledevice_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QFileDevice*> QFileDevice_Wrapper::basecasters_QFileDevice;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QFileDevice

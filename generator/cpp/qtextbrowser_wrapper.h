@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -149,7 +148,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -652,13 +650,24 @@
       
         static QTextBrowser* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QTextBrowser.length(); i++) {
+            RJSBasecaster_QTextBrowser* basecaster = basecasters_QTextBrowser[i];
+            QTextBrowser* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QTextBrowser::getIdStatic()) {
             return (QTextBrowser*)vp;
           }
+
+          qWarning() << "QTextBrowser::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -8617,6 +8626,15 @@ AutoAll = QTextBrowser::AutoAll,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QTextBrowser*> basecasters_QTextBrowser;
+
+      public:
+        static void registerBasecaster_QTextBrowser(RJSBasecaster_QTextBrowser* bc) {
+          basecasters_QTextBrowser.append(bc);
+        }
       
     };
 

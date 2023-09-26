@@ -8,6 +8,9 @@
     #include "qprocess_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QProcessEnvironment*> QProcessEnvironment_Wrapper::basecasters_QProcessEnvironment;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QProcessEnvironment
@@ -1028,6 +1031,9 @@ QString a2_cpp;
     #include "qprocess_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QProcess*> QProcess_Wrapper::basecasters_QProcess;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QProcess

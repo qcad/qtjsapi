@@ -8,6 +8,9 @@
     #include "qline_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QLine*> QLine_Wrapper::basecasters_QLine;
+    
     // static functions implementation in singleton wrapper:
     
     void QLine_Wrapper::init(RJSApi& handler) {
@@ -1528,6 +1531,9 @@ int a4_cpp;
     #include "qline_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QLineF*> QLineF_Wrapper::basecasters_QLineF;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: QLineF

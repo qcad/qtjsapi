@@ -45,13 +45,24 @@
       
         static QModelIndex* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QModelIndex.length(); i++) {
+            RJSBasecaster_QModelIndex* basecaster = basecasters_QModelIndex[i];
+            QModelIndex* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QModelIndex::getIdStatic()) {
             return (QModelIndex*)vp;
           }
+
+          qWarning() << "QModelIndex::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -405,6 +416,15 @@
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QModelIndex*> basecasters_QModelIndex;
+
+      public:
+        static void registerBasecaster_QModelIndex(RJSBasecaster_QModelIndex* bc) {
+          basecasters_QModelIndex.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QModelIndex_Wrapper*)
@@ -435,8 +455,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -481,7 +500,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -510,33 +528,44 @@
       
         static QAbstractItemModel* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_QAbstractTableModel::getIdStatic()) {
-              return (QAbstractItemModel*)(QAbstractTableModel*)vp;
-            }
+            // check if pointer points to derrived type:
             
-            if (t==RJSType_QAbstractListModel::getIdStatic()) {
-              return (QAbstractItemModel*)(QAbstractListModel*)vp;
+              if (t==RJSType_QAbstractTableModel::getIdStatic()) {
+                return (QAbstractItemModel*)(QAbstractTableModel*)vp;
+              }
+              
+              if (t==RJSType_QAbstractListModel::getIdStatic()) {
+                return (QAbstractItemModel*)(QAbstractListModel*)vp;
+              }
+              
+              if (t==RJSType_QFileSystemModel::getIdStatic()) {
+                return (QAbstractItemModel*)(QFileSystemModel*)vp;
+              }
+              
+              if (t==RJSType_QSortFilterProxyModel::getIdStatic()) {
+                return (QAbstractItemModel*)(QSortFilterProxyModel*)vp;
+              }
+              
+              if (t==RJSType_QStandardItemModel::getIdStatic()) {
+                return (QAbstractItemModel*)(QStandardItemModel*)vp;
+              }
+              
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QAbstractItemModel.length(); i++) {
+            RJSBasecaster_QAbstractItemModel* basecaster = basecasters_QAbstractItemModel[i];
+            QAbstractItemModel* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_QFileSystemModel::getIdStatic()) {
-              return (QAbstractItemModel*)(QFileSystemModel*)vp;
-            }
-            
-            if (t==RJSType_QSortFilterProxyModel::getIdStatic()) {
-              return (QAbstractItemModel*)(QSortFilterProxyModel*)vp;
-            }
-            
-            if (t==RJSType_QStandardItemModel::getIdStatic()) {
-              return (QAbstractItemModel*)(QStandardItemModel*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_QAbstractItemModel::getIdStatic()) {
             return (QAbstractItemModel*)vp;
           }
+
+          qWarning() << "QAbstractItemModel::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2108,6 +2137,15 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QAbstractItemModel*> basecasters_QAbstractItemModel;
+
+      public:
+        static void registerBasecaster_QAbstractItemModel(RJSBasecaster_QAbstractItemModel* bc) {
+          basecasters_QAbstractItemModel.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QAbstractItemModel_Wrapper*)
@@ -2138,8 +2176,7 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -2184,7 +2221,6 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -2213,13 +2249,24 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
       
         static QAbstractTableModel* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QAbstractTableModel.length(); i++) {
+            RJSBasecaster_QAbstractTableModel* basecaster = basecasters_QAbstractTableModel[i];
+            QAbstractTableModel* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QAbstractTableModel::getIdStatic()) {
             return (QAbstractTableModel*)vp;
           }
+
+          qWarning() << "QAbstractTableModel::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3766,6 +3813,15 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
 
         bool wrappedCreated;
       
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QAbstractTableModel*> basecasters_QAbstractTableModel;
+
+      public:
+        static void registerBasecaster_QAbstractTableModel(RJSBasecaster_QAbstractTableModel* bc) {
+          basecasters_QAbstractTableModel.append(bc);
+        }
+      
     };
 
     Q_DECLARE_METATYPE(QAbstractTableModel_Wrapper*)
@@ -3796,8 +3852,7 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -3842,7 +3897,6 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -3871,13 +3925,24 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
       
         static QAbstractListModel* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QAbstractListModel.length(); i++) {
+            RJSBasecaster_QAbstractListModel* basecaster = basecasters_QAbstractListModel[i];
+            QAbstractListModel* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QAbstractListModel::getIdStatic()) {
             return (QAbstractListModel*)vp;
           }
+
+          qWarning() << "QAbstractListModel::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -5398,6 +5463,15 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QAbstractListModel*> basecasters_QAbstractListModel;
+
+      public:
+        static void registerBasecaster_QAbstractListModel(RJSBasecaster_QAbstractListModel* bc) {
+          basecasters_QAbstractListModel.append(bc);
+        }
       
     };
 

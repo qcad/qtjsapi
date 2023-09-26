@@ -48,8 +48,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -183,7 +182,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -656,13 +654,24 @@
       
         static QPlainTextEdit* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_QPlainTextEdit.length(); i++) {
+            RJSBasecaster_QPlainTextEdit* basecaster = basecasters_QPlainTextEdit[i];
+            QPlainTextEdit* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_QPlainTextEdit::getIdStatic()) {
             return (QPlainTextEdit*)vp;
           }
+
+          qWarning() << "QPlainTextEdit::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -8342,6 +8351,15 @@ WidgetWidth = QPlainTextEdit::WidgetWidth,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QPlainTextEdit*> basecasters_QPlainTextEdit;
+
+      public:
+        static void registerBasecaster_QPlainTextEdit(RJSBasecaster_QPlainTextEdit* bc) {
+          basecasters_QPlainTextEdit.append(bc);
+        }
       
     };
 
