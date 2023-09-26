@@ -79,6 +79,7 @@
   <xsl:if test="$mode='h'">
   #endif
   </xsl:if>
+  <xsl:text>&#xa;</xsl:text>
 </xsl:template>
 
 

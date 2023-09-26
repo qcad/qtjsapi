@@ -220,7 +220,6 @@
             
 
           // hook for modules to cast to other base types:
-          /*
           for (int i=0; i<basecasters_QWidgetAction.length(); i++) {
             RJSBasecaster_QWidgetAction* basecaster = basecasters_QWidgetAction[i];
             QWidgetAction* ret = basecaster->castToBase(t, vp);
@@ -228,7 +227,6 @@
               return ret;
             }
           }
-          */
 
           // pointer to desired type:
           if (t==RJSType_QWidgetAction::getIdStatic()) {
