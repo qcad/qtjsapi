@@ -98,7 +98,7 @@
               <xsl:value-of select="@name" />
             </xsl:variable>
             // implementation of base casters that casts <xsl:value-of select="$basecast-from" /> to <xsl:value-of select="$basecast-to" />
-            class RJSBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" /> {
+            class RJSBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" /> : public RJSBasecaster_<xsl:value-of select="$basecast-to" /> {
             public:
               virtual <xsl:value-of select="$basecast-to" />* castToBase(int t, void* vp) {
                 return (<xsl:value-of select="$basecast-to" />*)(<xsl:value-of select="$basecast-from" />*)vp;
@@ -277,6 +277,18 @@
         </xsl:otherwise>
       </xsl:choose>
 
+      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class">
+        <xsl:variable name="basecast-from">
+          <xsl:value-of select="@name" />
+        </xsl:variable>
+        <xsl:for-each select="qsrc:super_list/qsrc:super">
+          <xsl:variable name="basecast-to">
+            <xsl:value-of select="@name" />
+          </xsl:variable>
+          #include "<xsl:value-of select="qc:lowercase($basecast-to)"/>_wrapper.h"
+        </xsl:for-each>
+      </xsl:for-each>
+
 
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
         QList&lt;RJSDowncaster_<xsl:value-of select="@name" />*&gt; <xsl:value-of select="$rjshelper_class"/>::downcasters_<xsl:value-of select="@name" />;
@@ -319,7 +331,7 @@
                 <xsl:value-of select="@name" />
               </xsl:variable>
               // registration of base casters that casts <xsl:value-of select="$basecast-from" /> to <xsl:value-of select="$basecast-to" />:
-              RJSHelper::registerBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" />(new RJSBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" />());
+              <xsl:value-of select="$basecast-to"/>_Wrapper::registerBasecaster_<xsl:value-of select="$basecast-to" />(new RJSBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" />());
             </xsl:for-each>
           </xsl:for-each>
         }

@@ -4,7 +4,7 @@
   <class_decl name="QIcon" />
   <class_decl name="QMainWindow" />
   <class_decl name="QStyleOptionToolBar" />
-  <class name="QToolBar" ownership="cpp">
+  <class name="QToolBar" ownership="cpp" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />
