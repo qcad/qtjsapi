@@ -60,7 +60,7 @@
             return (QFontMetrics*)vp;
           }
 
-          qWarning() << "QFontMetrics::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFontMetrics_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -916,7 +916,7 @@
             return (QFontMetricsF*)vp;
           }
 
-          qWarning() << "QFontMetricsF::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFontMetricsF_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

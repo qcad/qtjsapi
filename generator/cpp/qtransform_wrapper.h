@@ -231,7 +231,7 @@
             return (QTransform*)vp;
           }
 
-          qWarning() << "QTransform::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTransform_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

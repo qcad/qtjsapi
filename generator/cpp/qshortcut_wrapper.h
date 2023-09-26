@@ -170,7 +170,7 @@
             return (QShortcut*)vp;
           }
 
-          qWarning() << "QShortcut::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QShortcut_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

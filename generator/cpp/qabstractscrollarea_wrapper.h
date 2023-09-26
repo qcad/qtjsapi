@@ -611,7 +611,7 @@
             return (QAbstractScrollArea*)vp;
           }
 
-          qWarning() << "QAbstractScrollArea::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractScrollArea_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

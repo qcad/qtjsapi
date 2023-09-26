@@ -571,7 +571,7 @@
             return (QObject*)vp;
           }
 
-          qWarning() << "QObject::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QObject_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

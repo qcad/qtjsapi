@@ -617,7 +617,7 @@
             return (QFrame*)vp;
           }
 
-          qWarning() << "QFrame::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFrame_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

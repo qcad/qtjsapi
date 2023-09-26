@@ -570,7 +570,7 @@
             return (QDir*)vp;
           }
 
-          qWarning() << "QDir::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDir_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

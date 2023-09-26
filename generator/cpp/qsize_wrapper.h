@@ -56,7 +56,7 @@
             return (QSize*)vp;
           }
 
-          qWarning() << "QSize::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSize_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -685,7 +685,7 @@
             return (QSizeF*)vp;
           }
 
-          qWarning() << "QSizeF::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSizeF_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

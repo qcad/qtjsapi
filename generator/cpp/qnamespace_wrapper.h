@@ -111,7 +111,7 @@
             return (QKeyCombination*)vp;
           }
 
-          qWarning() << "QKeyCombination::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QKeyCombination_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

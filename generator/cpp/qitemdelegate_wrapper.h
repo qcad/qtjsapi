@@ -130,7 +130,7 @@
             return (QItemDelegate*)vp;
           }
 
-          qWarning() << "QItemDelegate::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QItemDelegate_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -58,7 +58,7 @@
             return (QXmlStreamAttribute*)vp;
           }
 
-          qWarning() << "QXmlStreamAttribute::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlStreamAttribute_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -345,7 +345,7 @@
             return (QXmlStreamAttributes*)vp;
           }
 
-          qWarning() << "QXmlStreamAttributes::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlStreamAttributes_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -631,7 +631,7 @@
             return (QXmlStreamReader*)vp;
           }
 
-          qWarning() << "QXmlStreamReader::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlStreamReader_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1670,7 +1670,7 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
             return (QXmlStreamWriter*)vp;
           }
 
-          qWarning() << "QXmlStreamWriter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlStreamWriter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

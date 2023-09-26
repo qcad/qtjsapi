@@ -282,7 +282,7 @@
             return (QWindow*)vp;
           }
 
-          qWarning() << "QWindow::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QWindow_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

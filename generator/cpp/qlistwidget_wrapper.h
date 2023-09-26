@@ -58,7 +58,7 @@
             return (QListWidgetItem*)vp;
           }
 
-          qWarning() << "QListWidgetItem::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QListWidgetItem_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1768,7 +1768,7 @@ UserType = QListWidgetItem::UserType,
             return (QListWidget*)vp;
           }
 
-          qWarning() << "QListWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QListWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

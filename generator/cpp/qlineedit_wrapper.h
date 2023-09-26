@@ -711,7 +711,7 @@
             return (QLineEdit*)vp;
           }
 
-          qWarning() << "QLineEdit::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QLineEdit_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

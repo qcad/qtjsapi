@@ -137,7 +137,7 @@
             return (QValidator*)vp;
           }
 
-          qWarning() << "QValidator::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QValidator_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -949,7 +949,7 @@ Acceptable = QValidator::Acceptable,
             return (QIntValidator*)vp;
           }
 
-          qWarning() << "QIntValidator::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QIntValidator_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1971,7 +1971,7 @@ Acceptable = QIntValidator::Acceptable,
             return (QDoubleValidator*)vp;
           }
 
-          qWarning() << "QDoubleValidator::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDoubleValidator_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3120,7 +3120,7 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
             return (QRegularExpressionValidator*)vp;
           }
 
-          qWarning() << "QRegularExpressionValidator::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QRegularExpressionValidator_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

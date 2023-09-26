@@ -119,7 +119,7 @@
             return (QPrinter*)vp;
           }
 
-          qWarning() << "QPrinter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPrinter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

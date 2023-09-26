@@ -123,7 +123,7 @@
             return (QStringConverter*)vp;
           }
 
-          qWarning() << "QStringConverter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QStringConverter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -490,7 +490,7 @@ LastEncoding = QStringConverter::LastEncoding,
             return (QStringEncoder*)vp;
           }
 
-          qWarning() << "QStringEncoder::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QStringEncoder_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -924,7 +924,7 @@ LastEncoding = QStringEncoder::LastEncoding,
             return (QStringDecoder*)vp;
           }
 
-          qWarning() << "QStringDecoder::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QStringDecoder_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

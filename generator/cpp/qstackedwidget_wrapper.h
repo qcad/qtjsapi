@@ -553,7 +553,7 @@
             return (QStackedWidget*)vp;
           }
 
-          qWarning() << "QStackedWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QStackedWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -131,7 +131,7 @@
             return (QClipboard*)vp;
           }
 
-          qWarning() << "QClipboard::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QClipboard_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

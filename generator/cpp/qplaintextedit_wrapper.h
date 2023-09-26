@@ -671,7 +671,7 @@
             return (QPlainTextEdit*)vp;
           }
 
-          qWarning() << "QPlainTextEdit::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPlainTextEdit_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

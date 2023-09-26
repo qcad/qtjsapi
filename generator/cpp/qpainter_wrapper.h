@@ -78,7 +78,7 @@
             return (QPainter*)vp;
           }
 
-          qWarning() << "QPainter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPainter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

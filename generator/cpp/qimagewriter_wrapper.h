@@ -153,7 +153,7 @@
             return (QImageWriter*)vp;
           }
 
-          qWarning() << "QImageWriter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QImageWriter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

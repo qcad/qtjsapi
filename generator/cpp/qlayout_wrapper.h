@@ -183,7 +183,7 @@
             return (QLayout*)vp;
           }
 
-          qWarning() << "QLayout::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

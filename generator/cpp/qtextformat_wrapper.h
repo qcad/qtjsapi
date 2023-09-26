@@ -86,7 +86,7 @@
             return (QTextLength*)vp;
           }
 
-          qWarning() << "QTextLength::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextLength_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -415,7 +415,7 @@ PercentageLength = QTextLength::PercentageLength,
             return (QTextFormat*)vp;
           }
 
-          qWarning() << "QTextFormat::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1808,7 +1808,7 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
             return (QTextCharFormat*)vp;
           }
 
-          qWarning() << "QTextCharFormat::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextCharFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4635,7 +4635,7 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
             return (QTextBlockFormat*)vp;
           }
 
-          qWarning() << "QTextBlockFormat::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextBlockFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6541,7 +6541,7 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
             return (QTextListFormat*)vp;
           }
 
-          qWarning() << "QTextListFormat::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextListFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -8110,7 +8110,7 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
             return (QTextImageFormat*)vp;
           }
 
-          qWarning() << "QTextImageFormat::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextImageFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -9987,7 +9987,7 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
             return (QTextFrameFormat*)vp;
           }
 
-          qWarning() << "QTextFrameFormat::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextFrameFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -11962,7 +11962,7 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
             return (QTextTableFormat*)vp;
           }
 
-          qWarning() << "QTextTableFormat::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextTableFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -13134,7 +13134,7 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
             return (QTextTableCellFormat*)vp;
           }
 
-          qWarning() << "QTextTableCellFormat::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextTableCellFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

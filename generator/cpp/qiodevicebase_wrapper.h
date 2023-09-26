@@ -72,7 +72,7 @@
             return (QIODeviceBase*)vp;
           }
 
-          qWarning() << "QIODeviceBase::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QIODeviceBase_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

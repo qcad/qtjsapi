@@ -59,7 +59,7 @@
             return (QFileIconProvider*)vp;
           }
 
-          qWarning() << "QFileIconProvider::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFileIconProvider_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

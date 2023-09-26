@@ -659,7 +659,7 @@
             return (QLabel*)vp;
           }
 
-          qWarning() << "QLabel::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QLabel_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -164,7 +164,7 @@
             return (QStackedLayout*)vp;
           }
 
-          qWarning() << "QStackedLayout::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QStackedLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

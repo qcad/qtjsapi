@@ -730,7 +730,7 @@
             return (QTreeView*)vp;
           }
 
-          qWarning() << "QTreeView::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTreeView_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

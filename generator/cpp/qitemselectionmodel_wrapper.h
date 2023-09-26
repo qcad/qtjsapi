@@ -133,7 +133,7 @@
             return (QItemSelectionModel*)vp;
           }
 
-          qWarning() << "QItemSelectionModel::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QItemSelectionModel_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1360,7 +1360,7 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
             return (QItemSelection*)vp;
           }
 
-          qWarning() << "QItemSelection::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QItemSelection_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -60,7 +60,7 @@
             return (QTextStream*)vp;
           }
 
-          qWarning() << "QTextStream::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextStream_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

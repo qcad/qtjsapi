@@ -125,7 +125,7 @@
             return (QActionGroup*)vp;
           }
 
-          qWarning() << "QActionGroup::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QActionGroup_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

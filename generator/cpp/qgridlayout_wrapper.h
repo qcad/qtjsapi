@@ -152,7 +152,7 @@
             return (QGridLayout*)vp;
           }
 
-          qWarning() << "QGridLayout::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGridLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

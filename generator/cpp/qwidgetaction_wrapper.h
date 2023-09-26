@@ -233,7 +233,7 @@
             return (QWidgetAction*)vp;
           }
 
-          qWarning() << "QWidgetAction::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QWidgetAction_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -139,7 +139,7 @@
             return (QUiLoader*)vp;
           }
 
-          qWarning() << "QUiLoader::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QUiLoader_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

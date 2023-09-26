@@ -577,7 +577,7 @@
             return (QPrintDialog*)vp;
           }
 
-          qWarning() << "QPrintDialog::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPrintDialog_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

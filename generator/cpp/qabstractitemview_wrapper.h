@@ -706,7 +706,7 @@
             return (QAbstractItemView*)vp;
           }
 
-          qWarning() << "QAbstractItemView::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractItemView_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

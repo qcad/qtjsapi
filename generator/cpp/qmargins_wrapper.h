@@ -56,7 +56,7 @@
             return (QMargins*)vp;
           }
 
-          qWarning() << "QMargins::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QMargins_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -497,7 +497,7 @@
             return (QMarginsF*)vp;
           }
 
-          qWarning() << "QMarginsF::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QMarginsF_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

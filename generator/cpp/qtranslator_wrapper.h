@@ -127,7 +127,7 @@
             return (QTranslator*)vp;
           }
 
-          qWarning() << "QTranslator::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTranslator_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

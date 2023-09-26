@@ -1972,7 +1972,7 @@
             return (QApplication*)vp;
           }
 
-          qWarning() << "QApplication::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QApplication_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

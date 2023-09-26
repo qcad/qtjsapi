@@ -643,7 +643,7 @@
             return (QAbstractButton*)vp;
           }
 
-          qWarning() << "QAbstractButton::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractButton_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

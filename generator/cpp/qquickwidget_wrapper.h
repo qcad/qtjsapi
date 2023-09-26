@@ -569,7 +569,7 @@
             return (QQuickWidget*)vp;
           }
 
-          qWarning() << "QQuickWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QQuickWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

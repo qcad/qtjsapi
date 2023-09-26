@@ -146,7 +146,7 @@
             return (QSurfaceFormat*)vp;
           }
 
-          qWarning() << "QSurfaceFormat::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSurfaceFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

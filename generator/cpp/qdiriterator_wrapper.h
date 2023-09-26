@@ -56,7 +56,7 @@
             return (QDirIterator*)vp;
           }
 
-          qWarning() << "QDirIterator::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDirIterator_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

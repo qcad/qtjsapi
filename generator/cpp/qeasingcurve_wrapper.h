@@ -58,7 +58,7 @@
             return (QEasingCurve*)vp;
           }
 
-          qWarning() << "QEasingCurve::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QEasingCurve_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

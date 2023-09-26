@@ -643,7 +643,7 @@
             return (QFontComboBox*)vp;
           }
 
-          qWarning() << "QFontComboBox::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFontComboBox_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

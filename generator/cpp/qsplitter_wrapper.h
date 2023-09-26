@@ -569,7 +569,7 @@
             return (QSplitter*)vp;
           }
 
-          qWarning() << "QSplitter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSplitter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -7252,7 +7252,7 @@
             return (QSplitterHandle*)vp;
           }
 
-          qWarning() << "QSplitterHandle::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSplitterHandle_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

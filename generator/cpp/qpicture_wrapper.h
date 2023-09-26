@@ -107,7 +107,7 @@
             return (QPicture*)vp;
           }
 
-          qWarning() << "QPicture::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPicture_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -56,7 +56,7 @@
             return (QUrlQuery*)vp;
           }
 
-          qWarning() << "QUrlQuery::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QUrlQuery_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

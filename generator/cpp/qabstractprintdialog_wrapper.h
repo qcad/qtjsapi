@@ -553,7 +553,7 @@
             return (QAbstractPrintDialog*)vp;
           }
 
-          qWarning() << "QAbstractPrintDialog::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractPrintDialog_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

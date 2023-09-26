@@ -649,7 +649,7 @@
             return (QToolButton*)vp;
           }
 
-          qWarning() << "QToolButton::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QToolButton_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

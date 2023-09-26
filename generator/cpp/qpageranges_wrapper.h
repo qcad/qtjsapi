@@ -113,7 +113,7 @@
             return (QPageRanges*)vp;
           }
 
-          qWarning() << "QPageRanges::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPageRanges_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

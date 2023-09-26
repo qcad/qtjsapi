@@ -121,7 +121,7 @@
             return (QCalendar*)vp;
           }
 
-          qWarning() << "QCalendar::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QCalendar_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

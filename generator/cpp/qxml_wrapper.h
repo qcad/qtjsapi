@@ -82,7 +82,7 @@
             return (QXmlAttributes*)vp;
           }
 
-          qWarning() << "QXmlAttributes::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlAttributes_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -595,7 +595,7 @@
             return (QXmlInputSource*)vp;
           }
 
-          qWarning() << "QXmlInputSource::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlInputSource_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -939,7 +939,7 @@
             return (QXmlParseException*)vp;
           }
 
-          qWarning() << "QXmlParseException::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlParseException_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1307,7 +1307,7 @@
             return (QXmlReader*)vp;
           }
 
-          qWarning() << "QXmlReader::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlReader_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1901,7 +1901,7 @@
             return (QXmlSimpleReader*)vp;
           }
 
-          qWarning() << "QXmlSimpleReader::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlSimpleReader_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2539,7 +2539,7 @@
             return (QXmlLocator*)vp;
           }
 
-          qWarning() << "QXmlLocator::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlLocator_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2790,7 +2790,7 @@
             return (QXmlContentHandler*)vp;
           }
 
-          qWarning() << "QXmlContentHandler::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlContentHandler_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3304,7 +3304,7 @@
             return (QXmlErrorHandler*)vp;
           }
 
-          qWarning() << "QXmlErrorHandler::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlErrorHandler_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3614,7 +3614,7 @@
             return (QXmlDTDHandler*)vp;
           }
 
-          qWarning() << "QXmlDTDHandler::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlDTDHandler_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3921,7 +3921,7 @@
             return (QXmlEntityResolver*)vp;
           }
 
-          qWarning() << "QXmlEntityResolver::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlEntityResolver_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4162,7 +4162,7 @@
             return (QXmlLexicalHandler*)vp;
           }
 
-          qWarning() << "QXmlLexicalHandler::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlLexicalHandler_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4560,7 +4560,7 @@
             return (QXmlDeclHandler*)vp;
           }
 
-          qWarning() << "QXmlDeclHandler::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlDeclHandler_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4897,7 +4897,7 @@
             return (QXmlDefaultHandler*)vp;
           }
 
-          qWarning() << "QXmlDefaultHandler::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QXmlDefaultHandler_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

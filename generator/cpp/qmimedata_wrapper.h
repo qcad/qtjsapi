@@ -127,7 +127,7 @@
             return (QMimeData*)vp;
           }
 
-          qWarning() << "QMimeData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QMimeData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

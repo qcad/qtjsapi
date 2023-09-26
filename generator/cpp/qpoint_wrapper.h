@@ -119,7 +119,7 @@
             return (QPoint*)vp;
           }
 
-          qWarning() << "QPoint::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPoint_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -707,7 +707,7 @@
             return (QPointF*)vp;
           }
 
-          qWarning() << "QPointF::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPointF_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

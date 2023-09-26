@@ -641,7 +641,7 @@
             return (QTabBar*)vp;
           }
 
-          qWarning() << "QTabBar::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTabBar_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

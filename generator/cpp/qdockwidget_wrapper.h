@@ -567,7 +567,7 @@
             return (QDockWidget*)vp;
           }
 
-          qWarning() << "QDockWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDockWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

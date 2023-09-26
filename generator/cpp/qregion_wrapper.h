@@ -108,7 +108,7 @@
             return (QRegion*)vp;
           }
 
-          qWarning() << "QRegion::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QRegion_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -149,7 +149,7 @@
             return (QSvgRenderer*)vp;
           }
 
-          qWarning() << "QSvgRenderer::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSvgRenderer_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

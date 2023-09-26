@@ -615,7 +615,7 @@
             return (QSlider*)vp;
           }
 
-          qWarning() << "QSlider::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSlider_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

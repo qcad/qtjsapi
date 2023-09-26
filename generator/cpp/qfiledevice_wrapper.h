@@ -131,7 +131,7 @@
             return (QFileDevice*)vp;
           }
 
-          qWarning() << "QFileDevice::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFileDevice_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

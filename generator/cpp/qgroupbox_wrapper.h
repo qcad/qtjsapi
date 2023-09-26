@@ -579,7 +579,7 @@
             return (QGroupBox*)vp;
           }
 
-          qWarning() << "QGroupBox::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGroupBox_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

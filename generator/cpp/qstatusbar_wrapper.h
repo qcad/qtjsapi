@@ -547,7 +547,7 @@
             return (QStatusBar*)vp;
           }
 
-          qWarning() << "QStatusBar::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QStatusBar_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

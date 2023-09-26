@@ -169,7 +169,7 @@
             return (QTimer*)vp;
           }
 
-          qWarning() << "QTimer::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTimer_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

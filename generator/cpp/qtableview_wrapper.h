@@ -675,7 +675,7 @@
             return (QTableView*)vp;
           }
 
-          qWarning() << "QTableView::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTableView_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

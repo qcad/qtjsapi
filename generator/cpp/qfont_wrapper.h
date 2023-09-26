@@ -289,7 +289,7 @@
             return (QFont*)vp;
           }
 
-          qWarning() << "QFont::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFont_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

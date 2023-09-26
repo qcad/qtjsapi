@@ -168,7 +168,7 @@
             return (QImage*)vp;
           }
 
-          qWarning() << "QImage::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QImage_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

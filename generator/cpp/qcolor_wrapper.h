@@ -436,7 +436,7 @@
             return (QColor*)vp;
           }
 
-          qWarning() << "QColor::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QColor_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

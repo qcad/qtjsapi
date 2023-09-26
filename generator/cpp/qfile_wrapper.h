@@ -210,7 +210,7 @@
             return (QFile*)vp;
           }
 
-          qWarning() << "QFile::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFile_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

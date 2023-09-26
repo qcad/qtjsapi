@@ -603,7 +603,7 @@
             return (QProgressDialog*)vp;
           }
 
-          qWarning() << "QProgressDialog::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QProgressDialog_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

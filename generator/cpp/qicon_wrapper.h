@@ -318,7 +318,7 @@
             return (QIcon*)vp;
           }
 
-          qWarning() << "QIcon::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QIcon_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

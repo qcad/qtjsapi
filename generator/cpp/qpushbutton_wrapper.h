@@ -647,7 +647,7 @@
             return (QPushButton*)vp;
           }
 
-          qWarning() << "QPushButton::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPushButton_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

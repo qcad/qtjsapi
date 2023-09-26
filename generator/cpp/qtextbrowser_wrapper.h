@@ -667,7 +667,7 @@
             return (QTextBrowser*)vp;
           }
 
-          qWarning() << "QTextBrowser::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextBrowser_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

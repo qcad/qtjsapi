@@ -551,7 +551,7 @@
             return (QDialogButtonBox*)vp;
           }
 
-          qWarning() << "QDialogButtonBox::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDialogButtonBox_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

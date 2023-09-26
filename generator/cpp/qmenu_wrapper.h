@@ -622,7 +622,7 @@
             return (QMenu*)vp;
           }
 
-          qWarning() << "QMenu::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QMenu_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

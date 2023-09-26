@@ -56,7 +56,7 @@
             return (QLine*)vp;
           }
 
-          qWarning() << "QLine::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QLine_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -733,7 +733,7 @@
             return (QLineF*)vp;
           }
 
-          qWarning() << "QLineF::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QLineF_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

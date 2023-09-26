@@ -373,7 +373,7 @@
             return (QUrl*)vp;
           }
 
-          qWarning() << "QUrl::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QUrl_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

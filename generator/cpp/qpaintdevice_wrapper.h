@@ -152,7 +152,7 @@
             return (QPaintDevice*)vp;
           }
 
-          qWarning() << "QPaintDevice::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPaintDevice_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

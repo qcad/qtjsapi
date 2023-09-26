@@ -107,7 +107,7 @@
             return (QProcessEnvironment*)vp;
           }
 
-          qWarning() << "QProcessEnvironment::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QProcessEnvironment_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -696,7 +696,7 @@
             return (QProcess*)vp;
           }
 
-          qWarning() << "QProcess::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QProcess_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

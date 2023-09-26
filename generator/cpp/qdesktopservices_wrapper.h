@@ -169,7 +169,7 @@
             return (QDesktopServices*)vp;
           }
 
-          qWarning() << "QDesktopServices::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDesktopServices_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

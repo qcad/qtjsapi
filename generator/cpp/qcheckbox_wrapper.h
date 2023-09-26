@@ -621,7 +621,7 @@
             return (QCheckBox*)vp;
           }
 
-          qWarning() << "QCheckBox::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QCheckBox_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

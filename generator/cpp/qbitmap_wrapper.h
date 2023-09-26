@@ -244,7 +244,7 @@
             return (QBitmap*)vp;
           }
 
-          qWarning() << "QBitmap::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QBitmap_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

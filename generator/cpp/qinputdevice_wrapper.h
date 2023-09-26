@@ -170,7 +170,7 @@
             return (QInputDevice*)vp;
           }
 
-          qWarning() << "QInputDevice::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QInputDevice_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

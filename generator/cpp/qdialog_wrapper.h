@@ -573,7 +573,7 @@
             return (QDialog*)vp;
           }
 
-          qWarning() << "QDialog::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDialog_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

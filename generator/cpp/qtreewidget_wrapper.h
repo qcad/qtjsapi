@@ -58,7 +58,7 @@
             return (QTreeWidgetItem*)vp;
           }
 
-          qWarning() << "QTreeWidgetItem::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTreeWidgetItem_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2188,7 +2188,7 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
             return (QTreeWidget*)vp;
           }
 
-          qWarning() << "QTreeWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTreeWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

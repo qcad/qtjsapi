@@ -906,7 +906,7 @@
             return (QFileDialog*)vp;
           }
 
-          qWarning() << "QFileDialog::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFileDialog_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

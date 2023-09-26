@@ -58,7 +58,7 @@
             return (QTableWidgetItem*)vp;
           }
 
-          qWarning() << "QTableWidgetItem::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTableWidgetItem_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1711,7 +1711,7 @@ UserType = QTableWidgetItem::UserType,
             return (QTableWidget*)vp;
           }
 
-          qWarning() << "QTableWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTableWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

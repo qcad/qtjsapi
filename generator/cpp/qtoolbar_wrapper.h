@@ -597,7 +597,7 @@
             return (QToolBar*)vp;
           }
 
-          qWarning() << "QToolBar::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QToolBar_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

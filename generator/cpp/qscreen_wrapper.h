@@ -136,7 +136,7 @@
             return (QScreen*)vp;
           }
 
-          qWarning() << "QScreen::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QScreen_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

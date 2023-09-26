@@ -62,7 +62,7 @@
             return (QModelIndex*)vp;
           }
 
-          qWarning() << "QModelIndex::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QModelIndex_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -565,7 +565,7 @@
             return (QAbstractItemModel*)vp;
           }
 
-          qWarning() << "QAbstractItemModel::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractItemModel_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2266,7 +2266,7 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
             return (QAbstractTableModel*)vp;
           }
 
-          qWarning() << "QAbstractTableModel::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractTableModel_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3942,7 +3942,7 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
             return (QAbstractListModel*)vp;
           }
 
-          qWarning() << "QAbstractListModel::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractListModel_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

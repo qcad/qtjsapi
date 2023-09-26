@@ -595,7 +595,7 @@
             return (QSpinBox*)vp;
           }
 
-          qWarning() << "QSpinBox::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSpinBox_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -6419,7 +6419,7 @@
             return (QDoubleSpinBox*)vp;
           }
 
-          qWarning() << "QDoubleSpinBox::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDoubleSpinBox_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -603,7 +603,7 @@
             return (QProgressBar*)vp;
           }
 
-          qWarning() << "QProgressBar::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QProgressBar_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

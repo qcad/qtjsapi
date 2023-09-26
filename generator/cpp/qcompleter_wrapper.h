@@ -131,7 +131,7 @@
             return (QCompleter*)vp;
           }
 
-          qWarning() << "QCompleter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QCompleter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -621,7 +621,7 @@
             return (QScrollBar*)vp;
           }
 
-          qWarning() << "QScrollBar::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QScrollBar_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

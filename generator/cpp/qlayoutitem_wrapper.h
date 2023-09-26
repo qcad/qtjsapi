@@ -101,7 +101,7 @@
             return (QLayoutItem*)vp;
           }
 
-          qWarning() << "QLayoutItem::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QLayoutItem_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -677,7 +677,7 @@
             return (QSpacerItem*)vp;
           }
 
-          qWarning() << "QSpacerItem::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSpacerItem_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1351,7 +1351,7 @@
             return (QWidgetItem*)vp;
           }
 
-          qWarning() << "QWidgetItem::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QWidgetItem_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

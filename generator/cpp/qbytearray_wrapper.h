@@ -241,7 +241,7 @@
             return (QByteArray*)vp;
           }
 
-          qWarning() << "QByteArray::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QByteArray_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -80,7 +80,7 @@
             return (QTextCursor*)vp;
           }
 
-          qWarning() << "QTextCursor::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextCursor_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

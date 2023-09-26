@@ -125,7 +125,7 @@
             return (QEventLoop*)vp;
           }
 
-          qWarning() << "QEventLoop::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QEventLoop_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
