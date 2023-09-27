@@ -85,6 +85,16 @@
       </xsl:for-each>
 
       <xsl:if test="$module!=''">
+        <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@variant-conversion='true']">
+          class RJSQVariantConverter_<xsl:value-of select="@name" /> : public RJSQVariantConverter {
+          public:
+              virtual QJSValue fromVariant(RJSApi&amp; handler, const QVariant&amp; v);
+              virtual QVariant toVariant(RJSApi&amp; handler, const QJSValue&amp; v);
+          };
+        </xsl:for-each>
+      </xsl:if>
+
+      <xsl:if test="$module!=''">
         <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class">
           // implementation of base casters that cast <xsl:value-of select="@name" /> to base classes:
           <xsl:variable name="basecast-from">
@@ -142,6 +152,7 @@
         <xsl:if test="$module!=''">
           static void registerDowncasters();
           static void registerBasecasters();
+          static void registerQVariantConverters();
         </xsl:if>
 
         <xsl:if test="$module=''">
@@ -304,6 +315,30 @@
       </xsl:if>
 
       <xsl:if test="$module!=''">
+        <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@variant-conversion='true']">
+          QJSValue RJSQVariantConverter_<xsl:value-of select="@name" />::fromVariant(RJSApi&amp; handler, const QVariant&amp; v) {
+              if (v.canConvert&lt;<xsl:value-of select="@name" />&gt;()) {
+                  return RJSHelper_qcad::cpp2js_<xsl:value-of select="@name" />(handler, v.value&lt;<xsl:value-of select="@name" />&gt;());
+              }
+              return QJSValue();
+          }
+
+          QVariant RJSQVariantConverter_<xsl:value-of select="@name" />::toVariant(RJSApi&amp; handler, const QJSValue&amp; v) {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              if (wrapper==nullptr) {
+                  qWarning() &lt;&lt; "RJSQVariantConverter_<xsl:value-of select="@name" />::toVariant: no wrapper";
+                  return QVariant();
+              }
+              int t = wrapper->getWrappedType();
+              if (t==RJSType_<xsl:value-of select="@name" />::getIdStatic()) {
+                  return QVariant(<xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="@name" />(handler, v));
+              }
+              return QVariant();
+          }
+        </xsl:for-each>
+      </xsl:if>
+
+      <xsl:if test="$module!=''">
         void <xsl:value-of select="$rjshelper_class"/>::registerDowncasters() {
 
           <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
@@ -338,6 +373,12 @@
               // registration of base casters that casts <xsl:value-of select="$basecast-from" /> to <xsl:value-of select="$basecast-to" />:
               <xsl:value-of select="$basecast-to"/>_Wrapper::registerBasecaster_<xsl:value-of select="$basecast-to" />(new RJSBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" />());
             </xsl:for-each>
+          </xsl:for-each>
+        }
+
+        void <xsl:value-of select="$rjshelper_class"/>::registerQVariantConverters() {
+          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@variant-conversion='true']">
+            RJSHelper::registerQVariantConverter(new RJSQVariantConverter_<xsl:value-of select="@name" />());
           </xsl:for-each>
         }
       </xsl:if>
