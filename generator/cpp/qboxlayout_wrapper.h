@@ -163,7 +163,7 @@
             return (QBoxLayout*)vp;
           }
 
-          qWarning() << "QBoxLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QBoxLayout_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -2294,7 +2294,7 @@ Up = QBoxLayout::Up,
             return (QHBoxLayout*)vp;
           }
 
-          qWarning() << "QHBoxLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QHBoxLayout_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -4421,7 +4421,7 @@ Up = QHBoxLayout::Up,
             return (QVBoxLayout*)vp;
           }
 
-          qWarning() << "QVBoxLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QVBoxLayout_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

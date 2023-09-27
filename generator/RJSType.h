@@ -8879,10 +8879,5 @@
     
 
 
-      static QString getTypeName(int type) {
-        RJSTypeEnum* t = RJSTypeEnum::getById(type);
-        return t->getName();
-      }
-    
     #endif
   

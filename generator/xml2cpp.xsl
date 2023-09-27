@@ -327,7 +327,7 @@
             return (<xsl:value-of select="@name" />*)vp;
           }
 
-          qWarning() &lt;&lt; "<xsl:value-of select="@name" />_Wrapper::castToBase: type not found: " &lt;&lt; getTypeName(t);
+          qWarning() &lt;&lt; "<xsl:value-of select="@name" />_Wrapper::castToBase: type not found: " &lt;&lt; RJSHelper::getTypeName(t);
 
           return nullptr;
           <!--

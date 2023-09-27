@@ -665,7 +665,7 @@
             return (QComboBox*)vp;
           }
 
-          qWarning() << "QComboBox_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QComboBox_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

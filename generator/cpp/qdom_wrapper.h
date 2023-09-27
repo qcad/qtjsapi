@@ -172,7 +172,7 @@
             return (QDomImplementation*)vp;
           }
 
-          qWarning() << "QDomImplementation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomImplementation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -641,7 +641,7 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
             return (QDomNode*)vp;
           }
 
-          qWarning() << "QDomNode_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomNode_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -2325,7 +2325,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
             return (QDomNodeList*)vp;
           }
 
-          qWarning() << "QDomNodeList_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomNodeList_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -2764,7 +2764,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
             return (QDomDocumentType*)vp;
           }
 
-          qWarning() << "QDomDocumentType_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomDocumentType_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -4574,7 +4574,7 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
             return (QDomDocument*)vp;
           }
 
-          qWarning() << "QDomDocument_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomDocument_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -6736,7 +6736,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
             return (QDomNamedNodeMap*)vp;
           }
 
-          qWarning() << "QDomNamedNodeMap_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomNamedNodeMap_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -7325,7 +7325,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
             return (QDomDocumentFragment*)vp;
           }
 
-          qWarning() << "QDomDocumentFragment_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomDocumentFragment_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -9017,7 +9017,7 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
             return (QDomCharacterData*)vp;
           }
 
-          qWarning() << "QDomCharacterData_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomCharacterData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -10901,7 +10901,7 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
             return (QDomAttr*)vp;
           }
 
-          qWarning() << "QDomAttr_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomAttr_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -12692,7 +12692,7 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
             return (QDomElement*)vp;
           }
 
-          qWarning() << "QDomElement_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomElement_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -14842,7 +14842,7 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
             return (QDomText*)vp;
           }
 
-          qWarning() << "QDomText_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomText_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -16749,7 +16749,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             return (QDomComment*)vp;
           }
 
-          qWarning() << "QDomComment_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomComment_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -17225,7 +17225,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             return (QDomCDATASection*)vp;
           }
 
-          qWarning() << "QDomCDATASection_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomCDATASection_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -17524,7 +17524,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             return (QDomNotation*)vp;
           }
 
-          qWarning() << "QDomNotation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomNotation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -19250,7 +19250,7 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
             return (QDomEntity*)vp;
           }
 
-          qWarning() << "QDomEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -20997,7 +20997,7 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
             return (QDomEntityReference*)vp;
           }
 
-          qWarning() << "QDomEntityReference_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomEntityReference_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -22681,7 +22681,7 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
             return (QDomProcessingInstruction*)vp;
           }
 
-          qWarning() << "QDomProcessingInstruction_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDomProcessingInstruction_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

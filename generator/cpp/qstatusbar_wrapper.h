@@ -547,7 +547,7 @@
             return (QStatusBar*)vp;
           }
 
-          qWarning() << "QStatusBar_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QStatusBar_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

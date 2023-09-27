@@ -716,7 +716,7 @@
             return (QHeaderView*)vp;
           }
 
-          qWarning() << "QHeaderView_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QHeaderView_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -1597,6 +1597,8 @@
 
       public:
         
+          static QString getTypeName(int type);
+        
           //
           // custom types (manual implementation):
           //

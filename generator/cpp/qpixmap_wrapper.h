@@ -235,7 +235,7 @@
             return (QPixmap*)vp;
           }
 
-          qWarning() << "QPixmap_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPixmap_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

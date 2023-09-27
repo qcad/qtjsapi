@@ -200,7 +200,7 @@
             return (QDate*)vp;
           }
 
-          qWarning() << "QDate_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDate_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1046,7 +1046,7 @@
             return (QTime*)vp;
           }
 
-          qWarning() << "QTime_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTime_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1911,7 +1911,7 @@
             return (QDateTime*)vp;
           }
 
-          qWarning() << "QDateTime_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDateTime_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

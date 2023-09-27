@@ -615,7 +615,7 @@
             return (QRadioButton*)vp;
           }
 
-          qWarning() << "QRadioButton_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QRadioButton_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

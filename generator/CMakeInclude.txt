@@ -13,10 +13,12 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qabstractlistmodel_wrapper.h
     generator/cpp/qabstractprintdialog_base.h
     generator/cpp/qabstractprintdialog_wrapper.h
+    generator/cpp/qabstractproxymodel_wrapper.h
     generator/cpp/qabstractscrollarea_base.h
     generator/cpp/qabstractscrollarea_wrapper.h
     generator/cpp/qabstractslider_base.h
     generator/cpp/qabstractslider_wrapper.h
+    generator/cpp/qabstractspinbox_wrapper.h
     generator/cpp/qabstracttablemodel_wrapper.h
     generator/cpp/qaction_base.h
     generator/cpp/qaction_wrapper.h
@@ -303,6 +305,8 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qstatusbar_wrapper.h
     generator/cpp/qstringconverter_base.h
     generator/cpp/qstringconverter_wrapper.h
+    generator/cpp/qstringconverterbase_wrapper.h
+    generator/cpp/qsurface_wrapper.h
     generator/cpp/qsurfaceformat_base.h
     generator/cpp/qsurfaceformat_wrapper.h
     generator/cpp/qsvgrenderer_base.h
@@ -319,6 +323,7 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qtabwidget_wrapper.h
     generator/cpp/qtextbrowser_base.h
     generator/cpp/qtextbrowser_wrapper.h
+    generator/cpp/qtextcharformat_wrapper.h
     generator/cpp/qtextcursor_base.h
     generator/cpp/qtextcursor_wrapper.h
     generator/cpp/qtextdocument_base.h
@@ -327,6 +332,7 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qtextedit_wrapper.h
     generator/cpp/qtextformat_base.h
     generator/cpp/qtextformat_wrapper.h
+    generator/cpp/qtextframeformat_wrapper.h
     generator/cpp/qtextlayout_base.h
     generator/cpp/qtextlayout_wrapper.h
     generator/cpp/qtextobject_base.h
@@ -373,6 +379,13 @@ target_sources(rjsapi PUBLIC
     generator/cpp/qwindow_wrapper.h
     generator/cpp/qxml_base.h
     generator/cpp/qxml_wrapper.h
+    generator/cpp/qxmlcontenthandler_wrapper.h
+    generator/cpp/qxmldeclhandler_wrapper.h
+    generator/cpp/qxmldtdhandler_wrapper.h
+    generator/cpp/qxmlentityresolver_wrapper.h
+    generator/cpp/qxmlerrorhandler_wrapper.h
+    generator/cpp/qxmllexicalhandler_wrapper.h
+    generator/cpp/qxmlreader_wrapper.h
     generator/cpp/qxmlstream_base.h
     generator/cpp/qxmlstream_wrapper.h
     generator/cpp/qabstractbutton_base.cpp

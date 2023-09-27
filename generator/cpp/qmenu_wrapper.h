@@ -622,7 +622,7 @@
             return (QMenu*)vp;
           }
 
-          qWarning() << "QMenu_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QMenu_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

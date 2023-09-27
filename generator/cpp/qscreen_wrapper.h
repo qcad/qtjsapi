@@ -136,7 +136,7 @@
             return (QScreen*)vp;
           }
 
-          qWarning() << "QScreen_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QScreen_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -559,7 +559,7 @@
             return (QMdiSubWindow*)vp;
           }
 
-          qWarning() << "QMdiSubWindow_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QMdiSubWindow_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

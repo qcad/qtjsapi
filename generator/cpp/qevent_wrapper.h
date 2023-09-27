@@ -139,7 +139,7 @@
             return (QInputEvent*)vp;
           }
 
-          qWarning() << "QInputEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QInputEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -897,7 +897,7 @@ MaxUser = QInputEvent::MaxUser,
             return (QPointerEvent*)vp;
           }
 
-          qWarning() << "QPointerEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPointerEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1952,7 +1952,7 @@ MaxUser = QPointerEvent::MaxUser,
             return (QSinglePointEvent*)vp;
           }
 
-          qWarning() << "QSinglePointEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSinglePointEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -3087,7 +3087,7 @@ MaxUser = QSinglePointEvent::MaxUser,
             return (QMouseEvent*)vp;
           }
 
-          qWarning() << "QMouseEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QMouseEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -4433,7 +4433,7 @@ MaxUser = QMouseEvent::MaxUser,
             return (QWheelEvent*)vp;
           }
 
-          qWarning() << "QWheelEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QWheelEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -5839,7 +5839,7 @@ MaxUser = QWheelEvent::MaxUser,
             return (QKeyEvent*)vp;
           }
 
-          qWarning() << "QKeyEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QKeyEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -6812,7 +6812,7 @@ MaxUser = QKeyEvent::MaxUser,
             return (QPaintEvent*)vp;
           }
 
-          qWarning() << "QPaintEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPaintEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -7539,7 +7539,7 @@ MaxUser = QPaintEvent::MaxUser,
             return (QResizeEvent*)vp;
           }
 
-          qWarning() << "QResizeEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QResizeEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -8270,7 +8270,7 @@ MaxUser = QResizeEvent::MaxUser,
             return (QDragEnterEvent*)vp;
           }
 
-          qWarning() << "QDragEnterEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDragEnterEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -9155,7 +9155,7 @@ MaxUser = QDragEnterEvent::MaxUser,
             return (QDropEvent*)vp;
           }
 
-          qWarning() << "QDropEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDropEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -10007,7 +10007,7 @@ MaxUser = QDropEvent::MaxUser,
             return (QContextMenuEvent*)vp;
           }
 
-          qWarning() << "QContextMenuEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QContextMenuEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -10951,7 +10951,7 @@ Other = QContextMenuEvent::Other,
             return (QDragMoveEvent*)vp;
           }
 
-          qWarning() << "QDragMoveEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDragMoveEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -11832,7 +11832,7 @@ MaxUser = QDragMoveEvent::MaxUser,
             return (QDragLeaveEvent*)vp;
           }
 
-          qWarning() << "QDragLeaveEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QDragLeaveEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -12511,7 +12511,7 @@ MaxUser = QDragLeaveEvent::MaxUser,
             return (QHelpEvent*)vp;
           }
 
-          qWarning() << "QHelpEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QHelpEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -13319,7 +13319,7 @@ MaxUser = QHelpEvent::MaxUser,
             return (QActionEvent*)vp;
           }
 
-          qWarning() << "QActionEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QActionEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

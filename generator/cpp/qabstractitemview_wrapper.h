@@ -706,7 +706,7 @@
             return (QAbstractItemView*)vp;
           }
 
-          qWarning() << "QAbstractItemView_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractItemView_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

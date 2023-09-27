@@ -643,7 +643,7 @@
             return (QFontComboBox*)vp;
           }
 
-          qWarning() << "QFontComboBox_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFontComboBox_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

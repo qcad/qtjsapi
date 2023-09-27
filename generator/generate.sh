@@ -5,7 +5,7 @@ echo "Generating script bindings..."
 DIR=`dirname $0`
 echo $DIR
 
-if [[ `pwd` == *rjsapi_qcad* ]]
+if [[ `pwd` == *qcadjsapi* ]]
 then
     MODULE="qcad"
 fi

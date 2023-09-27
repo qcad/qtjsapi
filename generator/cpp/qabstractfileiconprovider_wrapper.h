@@ -60,7 +60,7 @@
             return (QAbstractFileIconProvider*)vp;
           }
 
-          qWarning() << "QAbstractFileIconProvider_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractFileIconProvider_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

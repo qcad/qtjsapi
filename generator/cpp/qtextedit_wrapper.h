@@ -719,7 +719,7 @@
             return (QTextEdit*)vp;
           }
 
-          qWarning() << "QTextEdit_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextEdit_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

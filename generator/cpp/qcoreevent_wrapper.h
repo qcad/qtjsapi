@@ -173,7 +173,7 @@
             return (QEvent*)vp;
           }
 
-          qWarning() << "QEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

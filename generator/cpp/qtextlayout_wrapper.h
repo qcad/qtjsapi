@@ -80,7 +80,7 @@
             return (QTextLayout*)vp;
           }
 
-          qWarning() << "QTextLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextLayout_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

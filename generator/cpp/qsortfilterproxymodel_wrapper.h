@@ -125,7 +125,7 @@
             return (QSortFilterProxyModel*)vp;
           }
 
-          qWarning() << "QSortFilterProxyModel_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSortFilterProxyModel_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

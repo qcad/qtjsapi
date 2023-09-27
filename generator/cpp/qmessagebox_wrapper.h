@@ -835,7 +835,7 @@
             return (QMessageBox*)vp;
           }
 
-          qWarning() << "QMessageBox_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QMessageBox_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -66,7 +66,7 @@
             return (QPainterPath*)vp;
           }
 
-          qWarning() << "QPainterPath_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPainterPath_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1465,7 +1465,7 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
             return (QPainterPathStroker*)vp;
           }
 
-          qWarning() << "QPainterPathStroker_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPainterPathStroker_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

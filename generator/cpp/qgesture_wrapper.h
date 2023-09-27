@@ -169,7 +169,7 @@
             return (QGesture*)vp;
           }
 
-          qWarning() << "QGesture_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1036,7 +1036,7 @@
             return (QPanGesture*)vp;
           }
 
-          qWarning() << "QPanGesture_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPanGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1767,7 +1767,7 @@
             return (QPinchGesture*)vp;
           }
 
-          qWarning() << "QPinchGesture_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPinchGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -3104,7 +3104,7 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
             return (QSwipeGesture*)vp;
           }
 
-          qWarning() << "QSwipeGesture_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSwipeGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

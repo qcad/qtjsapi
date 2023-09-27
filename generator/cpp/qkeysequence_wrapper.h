@@ -219,7 +219,7 @@
             return (QKeySequence*)vp;
           }
 
-          qWarning() << "QKeySequence_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QKeySequence_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

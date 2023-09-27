@@ -130,7 +130,7 @@
             return (QButtonGroup*)vp;
           }
 
-          qWarning() << "QButtonGroup_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QButtonGroup_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

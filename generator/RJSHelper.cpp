@@ -673,6 +673,11 @@
       
         QList<RJSQVariantConverter*> RJSHelper::qvariantConverters;
       
+        QString RJSHelper::getTypeName(int type) {
+          RJSTypeEnum* t = RJSTypeEnum::getById(type);
+          return t->getName();
+        }
+      
       /**
        * \return existing wrapper object for the given object in the context of the given engine.
        */
@@ -1037,7 +1042,7 @@
               }
           }
 
-          qWarning() << "unhandled QVariant type:" << getTypeName(wrapper->getWrappedType());
+          qWarning() << "unhandled QVariant type:" << RJSHelper::getTypeName(wrapper->getWrappedType());
           handler.trace();
           return *(QVariant*)wrapper->getWrappedVoid();
 

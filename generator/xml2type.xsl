@@ -128,12 +128,14 @@
 
     <xsl:apply-templates mode="class" />
 
+    <!--
     <xsl:if test="$module=''">
       QString getTypeName(int type) {
         RJSTypeEnum* t = RJSTypeEnum::getById(type);
         return t->getName();
       }
     </xsl:if>
+    -->
     #endif
   </xsl:if>
 

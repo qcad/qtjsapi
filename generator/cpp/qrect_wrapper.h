@@ -56,7 +56,7 @@
             return (QRect*)vp;
           }
 
-          qWarning() << "QRect_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QRect_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1588,7 +1588,7 @@
             return (QRectF*)vp;
           }
 
-          qWarning() << "QRectF_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QRectF_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

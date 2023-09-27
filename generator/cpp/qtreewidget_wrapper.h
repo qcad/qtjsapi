@@ -58,7 +58,7 @@
             return (QTreeWidgetItem*)vp;
           }
 
-          qWarning() << "QTreeWidgetItem_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTreeWidgetItem_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -2188,7 +2188,7 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
             return (QTreeWidget*)vp;
           }
 
-          qWarning() << "QTreeWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTreeWidget_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

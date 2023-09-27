@@ -58,7 +58,7 @@
             return (QStandardItem*)vp;
           }
 
-          qWarning() << "QStandardItem_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QStandardItem_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -2147,7 +2147,7 @@ UserType = QStandardItem::UserType,
             return (QStandardItemModel*)vp;
           }
 
-          qWarning() << "QStandardItemModel_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QStandardItemModel_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

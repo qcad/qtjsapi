@@ -149,7 +149,7 @@
             return (QGraphicsEffect*)vp;
           }
 
-          qWarning() << "QGraphicsEffect_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGraphicsEffect_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -899,7 +899,7 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
             return (QGraphicsColorizeEffect*)vp;
           }
 
-          qWarning() << "QGraphicsColorizeEffect_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGraphicsColorizeEffect_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1433,7 +1433,7 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
             return (QGraphicsBlurEffect*)vp;
           }
 
-          qWarning() << "QGraphicsBlurEffect_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGraphicsBlurEffect_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -2324,7 +2324,7 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
             return (QGraphicsDropShadowEffect*)vp;
           }
 
-          qWarning() << "QGraphicsDropShadowEffect_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGraphicsDropShadowEffect_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -2925,7 +2925,7 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
             return (QGraphicsOpacityEffect*)vp;
           }
 
-          qWarning() << "QGraphicsOpacityEffect_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGraphicsOpacityEffect_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

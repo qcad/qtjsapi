@@ -317,7 +317,7 @@
             return (QPageSize*)vp;
           }
 
-          qWarning() << "QPageSize_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPageSize_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

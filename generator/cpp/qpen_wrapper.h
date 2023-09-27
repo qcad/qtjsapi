@@ -62,7 +62,7 @@
             return (QPen*)vp;
           }
 
-          qWarning() << "QPen_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPen_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

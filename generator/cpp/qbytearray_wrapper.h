@@ -241,7 +241,7 @@
             return (QByteArray*)vp;
           }
 
-          qWarning() << "QByteArray_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QByteArray_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

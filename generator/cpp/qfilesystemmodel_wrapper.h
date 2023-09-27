@@ -145,7 +145,7 @@
             return (QFileSystemModel*)vp;
           }
 
-          qWarning() << "QFileSystemModel_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFileSystemModel_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

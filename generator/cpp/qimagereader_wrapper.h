@@ -199,7 +199,7 @@
             return (QImageReader*)vp;
           }
 
-          qWarning() << "QImageReader_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QImageReader_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

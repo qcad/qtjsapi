@@ -1415,7 +1415,7 @@
             return (QGuiApplication*)vp;
           }
 
-          qWarning() << "QGuiApplication_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGuiApplication_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

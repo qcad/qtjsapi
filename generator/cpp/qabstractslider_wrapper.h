@@ -619,7 +619,7 @@
             return (QAbstractSlider*)vp;
           }
 
-          qWarning() << "QAbstractSlider_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractSlider_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

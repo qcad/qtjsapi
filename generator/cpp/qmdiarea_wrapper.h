@@ -607,7 +607,7 @@
             return (QMdiArea*)vp;
           }
 
-          qWarning() << "QMdiArea_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QMdiArea_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

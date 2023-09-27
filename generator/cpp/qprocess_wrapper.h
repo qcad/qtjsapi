@@ -107,7 +107,7 @@
             return (QProcessEnvironment*)vp;
           }
 
-          qWarning() << "QProcessEnvironment_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QProcessEnvironment_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -696,7 +696,7 @@
             return (QProcess*)vp;
           }
 
-          qWarning() << "QProcess_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QProcess_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

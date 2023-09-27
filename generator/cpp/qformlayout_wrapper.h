@@ -156,7 +156,7 @@
             return (QFormLayout*)vp;
           }
 
-          qWarning() << "QFormLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QFormLayout_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

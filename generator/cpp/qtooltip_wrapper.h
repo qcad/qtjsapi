@@ -260,7 +260,7 @@
             return (QToolTip*)vp;
           }
 
-          qWarning() << "QToolTip_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QToolTip_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

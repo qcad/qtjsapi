@@ -62,7 +62,7 @@
             return (QBrush*)vp;
           }
 
-          qWarning() << "QBrush_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QBrush_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -616,7 +616,7 @@
             return (QGradient*)vp;
           }
 
-          qWarning() << "QGradient_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QGradient_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1237,7 +1237,7 @@ NumPresets = QGradient::NumPresets,
             return (QLinearGradient*)vp;
           }
 
-          qWarning() << "QLinearGradient_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QLinearGradient_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -1966,7 +1966,7 @@ NumPresets = QLinearGradient::NumPresets,
             return (QRadialGradient*)vp;
           }
 
-          qWarning() << "QRadialGradient_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QRadialGradient_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -2835,7 +2835,7 @@ NumPresets = QRadialGradient::NumPresets,
             return (QConicalGradient*)vp;
           }
 
-          qWarning() << "QConicalGradient_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QConicalGradient_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

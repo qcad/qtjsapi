@@ -145,6 +145,10 @@
         </xsl:if>
 
         <xsl:if test="$module=''">
+          static QString getTypeName(int type);
+        </xsl:if>
+
+        <xsl:if test="$module=''">
           //
           // custom types (manual implementation):
           //
@@ -335,6 +339,13 @@
               <xsl:value-of select="$basecast-to"/>_Wrapper::registerBasecaster_<xsl:value-of select="$basecast-to" />(new RJSBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" />());
             </xsl:for-each>
           </xsl:for-each>
+        }
+      </xsl:if>
+        
+      <xsl:if test="$module=''">
+        QString <xsl:value-of select="$rjshelper_class"/>::getTypeName(int type) {
+          RJSTypeEnum* t = RJSTypeEnum::getById(type);
+          return t->getName();
         }
       </xsl:if>
 
@@ -703,7 +714,7 @@
               }
           }
 
-          qWarning() &lt;&lt; "unhandled QVariant type:" &lt;&lt; getTypeName(wrapper-&gt;getWrappedType());
+          qWarning() &lt;&lt; "unhandled QVariant type:" &lt;&lt; RJSHelper::getTypeName(wrapper-&gt;getWrappedType());
           handler.trace();
           return *(QVariant*)wrapper-&gt;getWrappedVoid();
 

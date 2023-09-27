@@ -173,7 +173,7 @@
             return (QRegularExpression*)vp;
           }
 
-          qWarning() << "QRegularExpression_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QRegularExpression_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -730,7 +730,7 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
             return (QRegularExpressionMatch*)vp;
           }
 
-          qWarning() << "QRegularExpressionMatch_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QRegularExpressionMatch_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

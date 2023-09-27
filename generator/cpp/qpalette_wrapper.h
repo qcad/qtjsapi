@@ -58,7 +58,7 @@
             return (QPalette*)vp;
           }
 
-          qWarning() << "QPalette_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPalette_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

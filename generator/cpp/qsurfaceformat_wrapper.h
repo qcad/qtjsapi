@@ -146,7 +146,7 @@
             return (QSurfaceFormat*)vp;
           }
 
-          qWarning() << "QSurfaceFormat_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSurfaceFormat_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

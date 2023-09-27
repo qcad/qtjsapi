@@ -202,7 +202,7 @@
             return (QSettings*)vp;
           }
 
-          qWarning() << "QSettings_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QSettings_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -64,7 +64,7 @@
             return (QPolygon*)vp;
           }
 
-          qWarning() << "QPolygon_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPolygon_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
@@ -579,7 +579,7 @@
             return (QPolygonF*)vp;
           }
 
-          qWarning() << "QPolygonF_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QPolygonF_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -982,7 +982,7 @@
             return (QWidget*)vp;
           }
 
-          qWarning() << "QWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QWidget_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

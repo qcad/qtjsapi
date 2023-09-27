@@ -260,7 +260,7 @@
             return (QTextDocument*)vp;
           }
 
-          qWarning() << "QTextDocument_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QTextDocument_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

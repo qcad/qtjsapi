@@ -149,7 +149,7 @@
             return (QIODevice*)vp;
           }
 
-          qWarning() << "QIODevice_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QIODevice_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

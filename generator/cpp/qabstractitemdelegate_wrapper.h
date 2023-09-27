@@ -139,7 +139,7 @@
             return (QAbstractItemDelegate*)vp;
           }
 
-          qWarning() << "QAbstractItemDelegate_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "QAbstractItemDelegate_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
