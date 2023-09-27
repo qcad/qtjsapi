@@ -26,6 +26,12 @@
           virtual QJSValue downcast(RJSApi& handler, QEvent* o) = 0;
         };
       
+        // Base class for downcasters that can downcast QLineEdit to specific types:
+        class RJSDowncaster_QLineEdit {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QLineEdit* o) = 0;
+        };
+      
         // Base class for downcasters that can downcast QObject to specific types:
         class RJSDowncaster_QObject {
         public:
@@ -4445,6 +4451,15 @@
               downcasters_QEvent.append(dc);
             }
         
+          // allow downcasting for type QLineEdit:
+          private:
+            static QList<RJSDowncaster_QLineEdit*> downcasters_QLineEdit;
+
+          public:
+            static void registerDowncaster_QLineEdit(RJSDowncaster_QLineEdit* dc) {
+              downcasters_QLineEdit.append(dc);
+            }
+        
           // allow downcasting for type QObject:
           private:
             static QList<RJSDowncaster_QObject*> downcasters_QObject;
@@ -4484,8 +4499,6 @@
 
 
 
-
-      
 
 
 

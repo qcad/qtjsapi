@@ -8,7 +8,7 @@
   <class_decl name="QDateTimeEdit" />
   <class_decl name="QIcon" />
   <class_decl name="QToolButton" />
-  <class name="QLineEdit">
+  <class name="QLineEdit" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

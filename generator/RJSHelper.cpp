@@ -665,6 +665,8 @@
         
         QList<RJSDowncaster_QEvent*> RJSHelper::downcasters_QEvent;
       
+        QList<RJSDowncaster_QLineEdit*> RJSHelper::downcasters_QLineEdit;
+      
         QList<RJSDowncaster_QObject*> RJSHelper::downcasters_QObject;
       
         QList<RJSDowncaster_QToolBar*> RJSHelper::downcasters_QToolBar;
@@ -29087,6 +29089,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QLineEdit(RJSApi& handler, QLineEdit* v) {
+          
+            // downcast to types derrived from QLineEdit but defined in other modules:
+            for (int i=0; i<downcasters_QLineEdit.length(); i++) {
+                QJSValue dc = downcasters_QLineEdit[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QLineEdit_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
