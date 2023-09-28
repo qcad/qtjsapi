@@ -105,7 +105,7 @@
           <!--
           <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super">
           -->
-          <xsl:for-each select="./qsrc:super_list/qsrc:super">
+          <xsl:for-each select="./qsrc:super_list/qsrc:super[not(@nobasecast='true')]">
             <xsl:variable name="basecast-to">
               <xsl:value-of select="@name" />
             </xsl:variable>
@@ -340,7 +340,7 @@
                 QJSValue downcast(RJSApi&amp; handler, <xsl:value-of select="$downcast-from"/>* o) {
                     <xsl:value-of select="$downcast-to"/>* c = <xsl:value-of select="$cast-function"/>&lt;<xsl:value-of select="$downcast-to"/>*&gt;(o);
                     if (c!=nullptr) {
-                        return RJSHelper_qcad::cpp2js_<xsl:value-of select="$downcast-to"/>(handler, c);
+                        return RJSHelper<xsl:value-of select="qc:get-helper-postfix($downcast-to)"/>::cpp2js_<xsl:value-of select="$downcast-to"/>(handler, c);
                     }
                     return QJSValue();
                 }

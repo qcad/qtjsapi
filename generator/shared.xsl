@@ -127,29 +127,55 @@
 </func:function>
 
 <func:function name="qc:get-helper-postfix">
+  <!-- e.g. RShape or QSharedPointer<RShape> or QList<QSharedPointer<RShape>> -->
   <xsl:param name="type" />
+
+  <xsl:message>get-helper-postfix: type: <xsl:value-of select="$type" /></xsl:message>
 
   <xsl:variable name="class">
     <xsl:value-of select="qc:strip-pointer-reference-const($type)" />
   </xsl:variable>
 
+  <!-- e.g. RShape or QSharedPointer<RShape> -->
   <xsl:variable name="itemtype">
-    <xsl:value-of select="substring-before(substring-after($type, '&lt;'), '&gt;')" />
+    <xsl:value-of select="qc:substring-before-last(substring-after($type, '&lt;'), '&gt;')" />
   </xsl:variable>
+
+  <xsl:message>get-helper-postfix: itemtype: <xsl:value-of select="$itemtype" /></xsl:message>
+
+  <!-- e.g. RShape or RShape* -->
+  <xsl:variable name="itemtype2">
+    <xsl:value-of select="substring-before(substring-after($itemtype, '&lt;'), '&gt;')" />
+  </xsl:variable>
+
+  <xsl:message>get-helper-postfix: itemtype2: <xsl:value-of select="$itemtype2" /></xsl:message>
 
   <xsl:variable name="itemclass">
     <xsl:value-of select="qc:strip-pointer-reference-const($itemtype)" />
   </xsl:variable>
 
+  <xsl:message>get-helper-postfix: itemclass: <xsl:value-of select="$itemclass" /></xsl:message>
+
+  <xsl:variable name="itemclass2">
+    <xsl:value-of select="qc:strip-pointer-reference-const($itemtype2)" />
+  </xsl:variable>
+
+  <xsl:message>get-helper-postfix: itemclass2: <xsl:value-of select="$itemclass2" /></xsl:message>
+
   <func:result>
     <xsl:choose>
       <!-- we're generating the qcad module -->
-      <xsl:when test="$module='qcad'">
+      <xsl:when test="$module!=''">
         <xsl:choose>
-          <!-- local types.xml is for qcad -->
-          <xsl:when test="document('types.xml')//type[text()=$class or text()=$itemclass]">
+          <!-- qcadjsapi types.xml is for qcad -->
+          <xsl:when test="document('../../qcadjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcad'" />
           </xsl:when>
+          <!-- qcadprojsapi types.xml is for qcadpro -->
+          <xsl:when test="document('../../qcadprojsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
+            <xsl:value-of select="'_qcadpro'" />
+          </xsl:when>
+          <!-- default to RJSHelper (rjsapi) -->
           <xsl:otherwise>
             <xsl:value-of select="''" />
           </xsl:otherwise>

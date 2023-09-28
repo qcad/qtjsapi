@@ -6,7 +6,7 @@ MODULE="$1"
 OUTPUT="rjsapi"
 if [ ! -z $MODULE ]
 then
-    OUTPUT="rjsapi_$MODULE"
+    OUTPUT="${MODULE}jsapi"
 fi
 
 tmp="tmp.qrc"

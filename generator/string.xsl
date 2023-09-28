@@ -18,7 +18,7 @@
       <xsl:value-of select="substring-before($input, $substr)" />
       <xsl:if test="contains($temp, $substr)">
         <xsl:value-of select="$substr" />
-        <xsl:value-of select="xpxslt:substring-before-last($temp, $substr)" />
+        <xsl:value-of select="qc:substring-before-last($temp, $substr)" />
       </xsl:if>
     </xsl:if>
   </func:result>
