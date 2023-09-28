@@ -4,7 +4,6 @@ int RJSTypeEnum::idCounter = 0;
 QMap<int, RJSTypeEnum*> RJSTypeEnum::allTypes;
 
 int RJSTypeEnum::reserve(RJSTypeEnum* obj) {
-    qDebug() << "RJSTypeEnum::reserve:" << idCounter;
     int id = idCounter++;
     allTypes.insert(id, obj);
     return id;
