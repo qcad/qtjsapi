@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfilesystemmodel.h">
   <class_decl name="QAbstractFileIconProvider" />
-  <class name="QFileSystemModel">
+  <class name="QFileSystemModel" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QAbstractItemModel" />

@@ -58,7 +58,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QIODeviceBase:
           for (int i=0; i<basecasters_QIODeviceBase.length(); i++) {
             RJSBasecaster_QIODeviceBase* basecaster = basecasters_QIODeviceBase[i];
             QIODeviceBase* ret = basecaster->castToBase(t, vp);
@@ -67,7 +67,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QIODeviceBase:
           if (t==RJSType_QIODeviceBase::getIdStatic()) {
             return (QIODeviceBase*)vp;
           }

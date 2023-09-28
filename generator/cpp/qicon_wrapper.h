@@ -304,7 +304,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QIcon:
           for (int i=0; i<basecasters_QIcon.length(); i++) {
             RJSBasecaster_QIcon* basecaster = basecasters_QIcon[i];
             QIcon* ret = basecaster->castToBase(t, vp);
@@ -313,7 +313,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QIcon:
           if (t==RJSType_QIcon::getIdStatic()) {
             return (QIcon*)vp;
           }

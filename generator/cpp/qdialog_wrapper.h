@@ -559,7 +559,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDialog:
           for (int i=0; i<basecasters_QDialog.length(); i++) {
             RJSBasecaster_QDialog* basecaster = basecasters_QDialog[i];
             QDialog* ret = basecaster->castToBase(t, vp);
@@ -568,7 +568,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDialog:
           if (t==RJSType_QDialog::getIdStatic()) {
             return (QDialog*)vp;
           }

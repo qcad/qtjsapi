@@ -135,7 +135,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QGraphicsEffect:
           for (int i=0; i<basecasters_QGraphicsEffect.length(); i++) {
             RJSBasecaster_QGraphicsEffect* basecaster = basecasters_QGraphicsEffect[i];
             QGraphicsEffect* ret = basecaster->castToBase(t, vp);
@@ -144,7 +144,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QGraphicsEffect:
           if (t==RJSType_QGraphicsEffect::getIdStatic()) {
             return (QGraphicsEffect*)vp;
           }
@@ -885,7 +885,7 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QGraphicsColorizeEffect:
           for (int i=0; i<basecasters_QGraphicsColorizeEffect.length(); i++) {
             RJSBasecaster_QGraphicsColorizeEffect* basecaster = basecasters_QGraphicsColorizeEffect[i];
             QGraphicsColorizeEffect* ret = basecaster->castToBase(t, vp);
@@ -894,7 +894,7 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QGraphicsColorizeEffect:
           if (t==RJSType_QGraphicsColorizeEffect::getIdStatic()) {
             return (QGraphicsColorizeEffect*)vp;
           }
@@ -1419,7 +1419,7 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QGraphicsBlurEffect:
           for (int i=0; i<basecasters_QGraphicsBlurEffect.length(); i++) {
             RJSBasecaster_QGraphicsBlurEffect* basecaster = basecasters_QGraphicsBlurEffect[i];
             QGraphicsBlurEffect* ret = basecaster->castToBase(t, vp);
@@ -1428,7 +1428,7 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QGraphicsBlurEffect:
           if (t==RJSType_QGraphicsBlurEffect::getIdStatic()) {
             return (QGraphicsBlurEffect*)vp;
           }
@@ -2310,7 +2310,7 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QGraphicsDropShadowEffect:
           for (int i=0; i<basecasters_QGraphicsDropShadowEffect.length(); i++) {
             RJSBasecaster_QGraphicsDropShadowEffect* basecaster = basecasters_QGraphicsDropShadowEffect[i];
             QGraphicsDropShadowEffect* ret = basecaster->castToBase(t, vp);
@@ -2319,7 +2319,7 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QGraphicsDropShadowEffect:
           if (t==RJSType_QGraphicsDropShadowEffect::getIdStatic()) {
             return (QGraphicsDropShadowEffect*)vp;
           }
@@ -2911,7 +2911,7 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QGraphicsOpacityEffect:
           for (int i=0; i<basecasters_QGraphicsOpacityEffect.length(); i++) {
             RJSBasecaster_QGraphicsOpacityEffect* basecaster = basecasters_QGraphicsOpacityEffect[i];
             QGraphicsOpacityEffect* ret = basecaster->castToBase(t, vp);
@@ -2920,7 +2920,7 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QGraphicsOpacityEffect:
           if (t==RJSType_QGraphicsOpacityEffect::getIdStatic()) {
             return (QGraphicsOpacityEffect*)vp;
           }

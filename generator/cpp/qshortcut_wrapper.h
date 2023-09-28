@@ -156,7 +156,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QShortcut:
           for (int i=0; i<basecasters_QShortcut.length(); i++) {
             RJSBasecaster_QShortcut* basecaster = basecasters_QShortcut[i];
             QShortcut* ret = basecaster->castToBase(t, vp);
@@ -165,7 +165,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QShortcut:
           if (t==RJSType_QShortcut::getIdStatic()) {
             return (QShortcut*)vp;
           }

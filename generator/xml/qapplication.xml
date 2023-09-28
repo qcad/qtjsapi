@@ -5,7 +5,7 @@
   <class_decl name="QIcon" />
   <class_decl name="QLocale" />
   <class_decl name="QApplication" />
-  <class name="QApplication" ownership="cpp">
+  <class name="QApplication" ownership="cpp" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QCoreApplication" />

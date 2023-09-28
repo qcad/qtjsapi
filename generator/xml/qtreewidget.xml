@@ -475,7 +475,7 @@
     <function name="executePendingSort" />
     <function name="treeModel" />
   </class>
-  <class name="QTreeWidget">
+  <class name="QTreeWidget" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

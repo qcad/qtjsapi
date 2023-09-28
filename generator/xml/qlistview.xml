@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qlistview.h">
-  <class name="QListView" ownership="cpp" inheritable="true">
+  <class name="QListView" ownership="cpp" inheritable="true" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

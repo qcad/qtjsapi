@@ -663,13 +663,45 @@
         
           #include "qxmldeclhandler_wrapper.h"
         
+        QList<RJSDowncaster_QAction*> RJSHelper::downcasters_QAction;
+      
+        QList<RJSDowncaster_QApplication*> RJSHelper::downcasters_QApplication;
+      
+        QList<RJSDowncaster_QComboBox*> RJSHelper::downcasters_QComboBox;
+      
         QList<RJSDowncaster_QEvent*> RJSHelper::downcasters_QEvent;
+      
+        QList<RJSDowncaster_QDockWidget*> RJSHelper::downcasters_QDockWidget;
+      
+        QList<RJSDowncaster_QFileSystemModel*> RJSHelper::downcasters_QFileSystemModel;
+      
+        QList<RJSDowncaster_QFrame*> RJSHelper::downcasters_QFrame;
+      
+        QList<RJSDowncaster_QItemDelegate*> RJSHelper::downcasters_QItemDelegate;
+      
+        QList<RJSDowncaster_QLayout*> RJSHelper::downcasters_QLayout;
       
         QList<RJSDowncaster_QLineEdit*> RJSHelper::downcasters_QLineEdit;
       
+        QList<RJSDowncaster_QListView*> RJSHelper::downcasters_QListView;
+      
+        QList<RJSDowncaster_QListWidget*> RJSHelper::downcasters_QListWidget;
+      
+        QList<RJSDowncaster_QMainWindow*> RJSHelper::downcasters_QMainWindow;
+      
+        QList<RJSDowncaster_QMdiArea*> RJSHelper::downcasters_QMdiArea;
+      
+        QList<RJSDowncaster_QMdiSubWindow*> RJSHelper::downcasters_QMdiSubWindow;
+      
         QList<RJSDowncaster_QObject*> RJSHelper::downcasters_QObject;
       
+        QList<RJSDowncaster_QTextBrowser*> RJSHelper::downcasters_QTextBrowser;
+      
         QList<RJSDowncaster_QToolBar*> RJSHelper::downcasters_QToolBar;
+      
+        QList<RJSDowncaster_QToolButton*> RJSHelper::downcasters_QToolButton;
+      
+        QList<RJSDowncaster_QTreeWidget*> RJSHelper::downcasters_QTreeWidget;
       
         QList<RJSDowncaster_QWidget*> RJSHelper::downcasters_QWidget;
       
@@ -1180,6 +1212,13 @@
       }
 
       QJSValue RJSHelper::cpp2js_QWidget(RJSApi& handler, QWidget* v) {
+          {
+              QMainWindow* o = qobject_cast<QMainWindow*>(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QMainWindow(handler, o);
+              }
+          }
+
           {
               QDockWidget* o = qobject_cast<QDockWidget*>(v);
               if (o!=nullptr) {
@@ -8807,6 +8846,7 @@
       }
 
       QSharedPointer<QTextLayout> RJSHelper::js2cpp_QSharedPointer_QTextLayout(RJSApi& handler, const QJSValue& v) {
+
           QTextLayout_Wrapper* wrapper = getWrapper<QTextLayout_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_QTextLayout: no wrapper";
@@ -25177,6 +25217,14 @@
                     return RJSHelper::cpp2js_QWidgetAction(handler, o);
                 }
             }
+          
+            // downcast to types derrived from QAction but defined in other modules:
+            for (int i=0; i<downcasters_QAction.length(); i++) {
+                QJSValue dc = downcasters_QAction[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QAction_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -25385,6 +25433,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QApplication(RJSApi& handler, QApplication* v) {
+          
+            // downcast to types derrived from QApplication but defined in other modules:
+            for (int i=0; i<downcasters_QApplication.length(); i++) {
+                QJSValue dc = downcasters_QApplication[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QApplication_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -26033,6 +26089,14 @@
                     return RJSHelper::cpp2js_QFontComboBox(handler, o);
                 }
             }
+          
+            // downcast to types derrived from QComboBox but defined in other modules:
+            for (int i=0; i<downcasters_QComboBox.length(); i++) {
+                QJSValue dc = downcasters_QComboBox[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QComboBox_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -26489,6 +26553,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QDockWidget(RJSApi& handler, QDockWidget* v) {
+          
+            // downcast to types derrived from QDockWidget but defined in other modules:
+            for (int i=0; i<downcasters_QDockWidget.length(); i++) {
+                QJSValue dc = downcasters_QDockWidget[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QDockWidget_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -27321,6 +27393,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QFileSystemModel(RJSApi& handler, QFileSystemModel* v) {
+          
+            // downcast to types derrived from QFileSystemModel but defined in other modules:
+            for (int i=0; i<downcasters_QFileSystemModel.length(); i++) {
+                QJSValue dc = downcasters_QFileSystemModel[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QFileSystemModel_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -27663,6 +27743,14 @@
                 QStackedWidget* o = qobject_cast<QStackedWidget*>(v);
                 if (o!=nullptr) {
                     return RJSHelper::cpp2js_QStackedWidget(handler, o);
+                }
+            }
+          
+            // downcast to types derrived from QFrame but defined in other modules:
+            for (int i=0; i<downcasters_QFrame.length(); i++) {
+                QJSValue dc = downcasters_QFrame[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
                 }
             }
           QFrame_Wrapper* ret = nullptr;
@@ -28641,6 +28729,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QItemDelegate(RJSApi& handler, QItemDelegate* v) {
+          
+            // downcast to types derrived from QItemDelegate but defined in other modules:
+            for (int i=0; i<downcasters_QItemDelegate.length(); i++) {
+                QJSValue dc = downcasters_QItemDelegate[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QItemDelegate_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -28985,6 +29081,14 @@
                     return RJSHelper::cpp2js_QStackedLayout(handler, o);
                 }
             }
+          
+            // downcast to types derrived from QLayout but defined in other modules:
+            for (int i=0; i<downcasters_QLayout.length(); i++) {
+                QJSValue dc = downcasters_QLayout[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QLayout_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -29209,6 +29313,14 @@
                     return RJSHelper::cpp2js_QListWidget(handler, o);
                 }
             }
+          
+            // downcast to types derrived from QListView but defined in other modules:
+            for (int i=0; i<downcasters_QListView.length(); i++) {
+                QJSValue dc = downcasters_QListView[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QListView_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -29313,6 +29425,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QListWidget(RJSApi& handler, QListWidget* v) {
+          
+            // downcast to types derrived from QListWidget but defined in other modules:
+            for (int i=0; i<downcasters_QListWidget.length(); i++) {
+                QJSValue dc = downcasters_QListWidget[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QListWidget_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -29417,6 +29537,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QMainWindow(RJSApi& handler, QMainWindow* v) {
+          
+            // downcast to types derrived from QMainWindow but defined in other modules:
+            for (int i=0; i<downcasters_QMainWindow.length(); i++) {
+                QJSValue dc = downcasters_QMainWindow[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QMainWindow_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -29521,6 +29649,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QMdiArea(RJSApi& handler, QMdiArea* v) {
+          
+            // downcast to types derrived from QMdiArea but defined in other modules:
+            for (int i=0; i<downcasters_QMdiArea.length(); i++) {
+                QJSValue dc = downcasters_QMdiArea[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QMdiArea_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -29625,6 +29761,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QMdiSubWindow(RJSApi& handler, QMdiSubWindow* v) {
+          
+            // downcast to types derrived from QMdiSubWindow but defined in other modules:
+            for (int i=0; i<downcasters_QMdiSubWindow.length(); i++) {
+                QJSValue dc = downcasters_QMdiSubWindow[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QMdiSubWindow_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -32857,6 +33001,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QTextBrowser(RJSApi& handler, QTextBrowser* v) {
+          
+            // downcast to types derrived from QTextBrowser but defined in other modules:
+            for (int i=0; i<downcasters_QTextBrowser.length(); i++) {
+                QJSValue dc = downcasters_QTextBrowser[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QTextBrowser_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -33393,6 +33545,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QToolButton(RJSApi& handler, QToolButton* v) {
+          
+            // downcast to types derrived from QToolButton but defined in other modules:
+            for (int i=0; i<downcasters_QToolButton.length(); i++) {
+                QJSValue dc = downcasters_QToolButton[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QToolButton_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
@@ -33713,6 +33873,14 @@
 
     
       QJSValue RJSHelper::cpp2js_QTreeWidget(RJSApi& handler, QTreeWidget* v) {
+          
+            // downcast to types derrived from QTreeWidget but defined in other modules:
+            for (int i=0; i<downcasters_QTreeWidget.length(); i++) {
+                QJSValue dc = downcasters_QTreeWidget[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QTreeWidget_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {

@@ -168,7 +168,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QEventPoint:
           for (int i=0; i<basecasters_QEventPoint.length(); i++) {
             RJSBasecaster_QEventPoint* basecaster = basecasters_QEventPoint[i];
             QEventPoint* ret = basecaster->castToBase(t, vp);
@@ -177,7 +177,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QEventPoint:
           if (t==RJSType_QEventPoint::getIdStatic()) {
             return (QEventPoint*)vp;
           }

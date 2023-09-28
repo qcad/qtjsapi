@@ -117,7 +117,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QCompleter:
           for (int i=0; i<basecasters_QCompleter.length(); i++) {
             RJSBasecaster_QCompleter* basecaster = basecasters_QCompleter[i];
             QCompleter* ret = basecaster->castToBase(t, vp);
@@ -126,7 +126,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QCompleter:
           if (t==RJSType_QCompleter::getIdStatic()) {
             return (QCompleter*)vp;
           }

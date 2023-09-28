@@ -702,7 +702,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QHeaderView:
           for (int i=0; i<basecasters_QHeaderView.length(); i++) {
             RJSBasecaster_QHeaderView* basecaster = basecasters_QHeaderView[i];
             QHeaderView* ret = basecaster->castToBase(t, vp);
@@ -711,7 +711,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QHeaderView:
           if (t==RJSType_QHeaderView::getIdStatic()) {
             return (QHeaderView*)vp;
           }

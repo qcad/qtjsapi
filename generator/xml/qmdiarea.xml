@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qmdiarea.h">
   <class_decl name="QMdiSubWindow" />
-  <class name="QMdiArea">
+  <class name="QMdiArea" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

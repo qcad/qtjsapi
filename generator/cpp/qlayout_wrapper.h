@@ -169,7 +169,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QLayout:
           for (int i=0; i<basecasters_QLayout.length(); i++) {
             RJSBasecaster_QLayout* basecaster = basecasters_QLayout[i];
             QLayout* ret = basecaster->castToBase(t, vp);
@@ -178,7 +178,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QLayout:
           if (t==RJSType_QLayout::getIdStatic()) {
             return (QLayout*)vp;
           }

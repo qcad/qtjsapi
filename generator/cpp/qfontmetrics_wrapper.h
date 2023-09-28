@@ -46,7 +46,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QFontMetrics:
           for (int i=0; i<basecasters_QFontMetrics.length(); i++) {
             RJSBasecaster_QFontMetrics* basecaster = basecasters_QFontMetrics[i];
             QFontMetrics* ret = basecaster->castToBase(t, vp);
@@ -55,7 +55,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QFontMetrics:
           if (t==RJSType_QFontMetrics::getIdStatic()) {
             return (QFontMetrics*)vp;
           }
@@ -902,7 +902,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QFontMetricsF:
           for (int i=0; i<basecasters_QFontMetricsF.length(); i++) {
             RJSBasecaster_QFontMetricsF* basecaster = basecasters_QFontMetricsF[i];
             QFontMetricsF* ret = basecaster->castToBase(t, vp);
@@ -911,7 +911,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QFontMetricsF:
           if (t==RJSType_QFontMetricsF::getIdStatic()) {
             return (QFontMetricsF*)vp;
           }

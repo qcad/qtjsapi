@@ -42,7 +42,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QRect:
           for (int i=0; i<basecasters_QRect.length(); i++) {
             RJSBasecaster_QRect* basecaster = basecasters_QRect[i];
             QRect* ret = basecaster->castToBase(t, vp);
@@ -51,7 +51,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QRect:
           if (t==RJSType_QRect::getIdStatic()) {
             return (QRect*)vp;
           }
@@ -1574,7 +1574,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QRectF:
           for (int i=0; i<basecasters_QRectF.length(); i++) {
             RJSBasecaster_QRectF* basecaster = basecasters_QRectF[i];
             QRectF* ret = basecaster->castToBase(t, vp);
@@ -1583,7 +1583,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QRectF:
           if (t==RJSType_QRectF::getIdStatic()) {
             return (QRectF*)vp;
           }

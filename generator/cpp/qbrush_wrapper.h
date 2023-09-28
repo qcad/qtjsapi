@@ -48,7 +48,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QBrush:
           for (int i=0; i<basecasters_QBrush.length(); i++) {
             RJSBasecaster_QBrush* basecaster = basecasters_QBrush[i];
             QBrush* ret = basecaster->castToBase(t, vp);
@@ -57,7 +57,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QBrush:
           if (t==RJSType_QBrush::getIdStatic()) {
             return (QBrush*)vp;
           }
@@ -602,7 +602,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QGradient:
           for (int i=0; i<basecasters_QGradient.length(); i++) {
             RJSBasecaster_QGradient* basecaster = basecasters_QGradient[i];
             QGradient* ret = basecaster->castToBase(t, vp);
@@ -611,7 +611,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QGradient:
           if (t==RJSType_QGradient::getIdStatic()) {
             return (QGradient*)vp;
           }
@@ -1223,7 +1223,7 @@ NumPresets = QGradient::NumPresets,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QLinearGradient:
           for (int i=0; i<basecasters_QLinearGradient.length(); i++) {
             RJSBasecaster_QLinearGradient* basecaster = basecasters_QLinearGradient[i];
             QLinearGradient* ret = basecaster->castToBase(t, vp);
@@ -1232,7 +1232,7 @@ NumPresets = QGradient::NumPresets,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QLinearGradient:
           if (t==RJSType_QLinearGradient::getIdStatic()) {
             return (QLinearGradient*)vp;
           }
@@ -1952,7 +1952,7 @@ NumPresets = QLinearGradient::NumPresets,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QRadialGradient:
           for (int i=0; i<basecasters_QRadialGradient.length(); i++) {
             RJSBasecaster_QRadialGradient* basecaster = basecasters_QRadialGradient[i];
             QRadialGradient* ret = basecaster->castToBase(t, vp);
@@ -1961,7 +1961,7 @@ NumPresets = QLinearGradient::NumPresets,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QRadialGradient:
           if (t==RJSType_QRadialGradient::getIdStatic()) {
             return (QRadialGradient*)vp;
           }
@@ -2821,7 +2821,7 @@ NumPresets = QRadialGradient::NumPresets,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QConicalGradient:
           for (int i=0; i<basecasters_QConicalGradient.length(); i++) {
             RJSBasecaster_QConicalGradient* basecaster = basecasters_QConicalGradient[i];
             QConicalGradient* ret = basecaster->castToBase(t, vp);
@@ -2830,7 +2830,7 @@ NumPresets = QRadialGradient::NumPresets,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QConicalGradient:
           if (t==RJSType_QConicalGradient::getIdStatic()) {
             return (QConicalGradient*)vp;
           }

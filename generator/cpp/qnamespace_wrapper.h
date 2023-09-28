@@ -97,7 +97,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QKeyCombination:
           for (int i=0; i<basecasters_QKeyCombination.length(); i++) {
             RJSBasecaster_QKeyCombination* basecaster = basecasters_QKeyCombination[i];
             QKeyCombination* ret = basecaster->castToBase(t, vp);
@@ -106,7 +106,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QKeyCombination:
           if (t==RJSType_QKeyCombination::getIdStatic()) {
             return (QKeyCombination*)vp;
           }

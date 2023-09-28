@@ -123,7 +123,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QValidator:
           for (int i=0; i<basecasters_QValidator.length(); i++) {
             RJSBasecaster_QValidator* basecaster = basecasters_QValidator[i];
             QValidator* ret = basecaster->castToBase(t, vp);
@@ -132,7 +132,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QValidator:
           if (t==RJSType_QValidator::getIdStatic()) {
             return (QValidator*)vp;
           }
@@ -935,7 +935,7 @@ Acceptable = QValidator::Acceptable,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QIntValidator:
           for (int i=0; i<basecasters_QIntValidator.length(); i++) {
             RJSBasecaster_QIntValidator* basecaster = basecasters_QIntValidator[i];
             QIntValidator* ret = basecaster->castToBase(t, vp);
@@ -944,7 +944,7 @@ Acceptable = QValidator::Acceptable,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QIntValidator:
           if (t==RJSType_QIntValidator::getIdStatic()) {
             return (QIntValidator*)vp;
           }
@@ -1957,7 +1957,7 @@ Acceptable = QIntValidator::Acceptable,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDoubleValidator:
           for (int i=0; i<basecasters_QDoubleValidator.length(); i++) {
             RJSBasecaster_QDoubleValidator* basecaster = basecasters_QDoubleValidator[i];
             QDoubleValidator* ret = basecaster->castToBase(t, vp);
@@ -1966,7 +1966,7 @@ Acceptable = QIntValidator::Acceptable,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDoubleValidator:
           if (t==RJSType_QDoubleValidator::getIdStatic()) {
             return (QDoubleValidator*)vp;
           }
@@ -3106,7 +3106,7 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QRegularExpressionValidator:
           for (int i=0; i<basecasters_QRegularExpressionValidator.length(); i++) {
             RJSBasecaster_QRegularExpressionValidator* basecaster = basecasters_QRegularExpressionValidator[i];
             QRegularExpressionValidator* ret = basecaster->castToBase(t, vp);
@@ -3115,7 +3115,7 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QRegularExpressionValidator:
           if (t==RJSType_QRegularExpressionValidator::getIdStatic()) {
             return (QRegularExpressionValidator*)vp;
           }

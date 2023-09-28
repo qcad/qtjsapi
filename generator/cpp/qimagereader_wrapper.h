@@ -185,7 +185,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QImageReader:
           for (int i=0; i<basecasters_QImageReader.length(); i++) {
             RJSBasecaster_QImageReader* basecaster = basecasters_QImageReader[i];
             QImageReader* ret = basecaster->castToBase(t, vp);
@@ -194,7 +194,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QImageReader:
           if (t==RJSType_QImageReader::getIdStatic()) {
             return (QImageReader*)vp;
           }

@@ -892,7 +892,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QFileDialog:
           for (int i=0; i<basecasters_QFileDialog.length(); i++) {
             RJSBasecaster_QFileDialog* basecaster = basecasters_QFileDialog[i];
             QFileDialog* ret = basecaster->castToBase(t, vp);
@@ -901,7 +901,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QFileDialog:
           if (t==RJSType_QFileDialog::getIdStatic()) {
             return (QFileDialog*)vp;
           }

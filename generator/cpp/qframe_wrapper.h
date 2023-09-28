@@ -603,7 +603,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QFrame:
           for (int i=0; i<basecasters_QFrame.length(); i++) {
             RJSBasecaster_QFrame* basecaster = basecasters_QFrame[i];
             QFrame* ret = basecaster->castToBase(t, vp);
@@ -612,7 +612,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QFrame:
           if (t==RJSType_QFrame::getIdStatic()) {
             return (QFrame*)vp;
           }

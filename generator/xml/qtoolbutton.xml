@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtoolbutton.h">
   <class_decl name="QMenu" />
   <class_decl name="QStyleOptionToolButton" />
-  <class name="QToolButton">
+  <class name="QToolButton" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

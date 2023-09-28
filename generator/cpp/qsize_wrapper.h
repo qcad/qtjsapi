@@ -42,7 +42,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QSize:
           for (int i=0; i<basecasters_QSize.length(); i++) {
             RJSBasecaster_QSize* basecaster = basecasters_QSize[i];
             QSize* ret = basecaster->castToBase(t, vp);
@@ -51,7 +51,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QSize:
           if (t==RJSType_QSize::getIdStatic()) {
             return (QSize*)vp;
           }
@@ -671,7 +671,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QSizeF:
           for (int i=0; i<basecasters_QSizeF.length(); i++) {
             RJSBasecaster_QSizeF* basecaster = basecasters_QSizeF[i];
             QSizeF* ret = basecaster->castToBase(t, vp);
@@ -680,7 +680,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QSizeF:
           if (t==RJSType_QSizeF::getIdStatic()) {
             return (QSizeF*)vp;
           }

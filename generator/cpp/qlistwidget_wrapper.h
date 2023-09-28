@@ -44,7 +44,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QListWidgetItem:
           for (int i=0; i<basecasters_QListWidgetItem.length(); i++) {
             RJSBasecaster_QListWidgetItem* basecaster = basecasters_QListWidgetItem[i];
             QListWidgetItem* ret = basecaster->castToBase(t, vp);
@@ -53,7 +53,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QListWidgetItem:
           if (t==RJSType_QListWidgetItem::getIdStatic()) {
             return (QListWidgetItem*)vp;
           }
@@ -1754,7 +1754,7 @@ UserType = QListWidgetItem::UserType,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QListWidget:
           for (int i=0; i<basecasters_QListWidget.length(); i++) {
             RJSBasecaster_QListWidget* basecaster = basecasters_QListWidget[i];
             QListWidget* ret = basecaster->castToBase(t, vp);
@@ -1763,7 +1763,7 @@ UserType = QListWidgetItem::UserType,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QListWidget:
           if (t==RJSType_QListWidget::getIdStatic()) {
             return (QListWidget*)vp;
           }

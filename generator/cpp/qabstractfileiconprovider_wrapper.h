@@ -46,7 +46,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QAbstractFileIconProvider:
           for (int i=0; i<basecasters_QAbstractFileIconProvider.length(); i++) {
             RJSBasecaster_QAbstractFileIconProvider* basecaster = basecasters_QAbstractFileIconProvider[i];
             QAbstractFileIconProvider* ret = basecaster->castToBase(t, vp);
@@ -55,7 +55,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QAbstractFileIconProvider:
           if (t==RJSType_QAbstractFileIconProvider::getIdStatic()) {
             return (QAbstractFileIconProvider*)vp;
           }

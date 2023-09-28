@@ -359,7 +359,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QUrl:
           for (int i=0; i<basecasters_QUrl.length(); i++) {
             RJSBasecaster_QUrl* basecaster = basecasters_QUrl[i];
             QUrl* ret = basecaster->castToBase(t, vp);
@@ -368,7 +368,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QUrl:
           if (t==RJSType_QUrl::getIdStatic()) {
             return (QUrl*)vp;
           }

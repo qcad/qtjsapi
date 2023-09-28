@@ -105,7 +105,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPoint:
           for (int i=0; i<basecasters_QPoint.length(); i++) {
             RJSBasecaster_QPoint* basecaster = basecasters_QPoint[i];
             QPoint* ret = basecaster->castToBase(t, vp);
@@ -114,7 +114,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPoint:
           if (t==RJSType_QPoint::getIdStatic()) {
             return (QPoint*)vp;
           }
@@ -693,7 +693,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPointF:
           for (int i=0; i<basecasters_QPointF.length(); i++) {
             RJSBasecaster_QPointF* basecaster = basecasters_QPointF[i];
             QPointF* ret = basecaster->castToBase(t, vp);
@@ -702,7 +702,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPointF:
           if (t==RJSType_QPointF::getIdStatic()) {
             return (QPointF*)vp;
           }

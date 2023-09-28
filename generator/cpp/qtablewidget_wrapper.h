@@ -44,7 +44,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTableWidgetItem:
           for (int i=0; i<basecasters_QTableWidgetItem.length(); i++) {
             RJSBasecaster_QTableWidgetItem* basecaster = basecasters_QTableWidgetItem[i];
             QTableWidgetItem* ret = basecaster->castToBase(t, vp);
@@ -53,7 +53,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTableWidgetItem:
           if (t==RJSType_QTableWidgetItem::getIdStatic()) {
             return (QTableWidgetItem*)vp;
           }
@@ -1697,7 +1697,7 @@ UserType = QTableWidgetItem::UserType,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTableWidget:
           for (int i=0; i<basecasters_QTableWidget.length(); i++) {
             RJSBasecaster_QTableWidget* basecaster = basecasters_QTableWidget[i];
             QTableWidget* ret = basecaster->castToBase(t, vp);
@@ -1706,7 +1706,7 @@ UserType = QTableWidgetItem::UserType,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTableWidget:
           if (t==RJSType_QTableWidget::getIdStatic()) {
             return (QTableWidget*)vp;
           }

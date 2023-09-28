@@ -159,7 +159,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QRegularExpression:
           for (int i=0; i<basecasters_QRegularExpression.length(); i++) {
             RJSBasecaster_QRegularExpression* basecaster = basecasters_QRegularExpression[i];
             QRegularExpression* ret = basecaster->castToBase(t, vp);
@@ -168,7 +168,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QRegularExpression:
           if (t==RJSType_QRegularExpression::getIdStatic()) {
             return (QRegularExpression*)vp;
           }
@@ -716,7 +716,7 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QRegularExpressionMatch:
           for (int i=0; i<basecasters_QRegularExpressionMatch.length(); i++) {
             RJSBasecaster_QRegularExpressionMatch* basecaster = basecasters_QRegularExpressionMatch[i];
             QRegularExpressionMatch* ret = basecaster->castToBase(t, vp);
@@ -725,7 +725,7 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QRegularExpressionMatch:
           if (t==RJSType_QRegularExpressionMatch::getIdStatic()) {
             return (QRegularExpressionMatch*)vp;
           }

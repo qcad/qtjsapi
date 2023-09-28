@@ -653,7 +653,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextBrowser:
           for (int i=0; i<basecasters_QTextBrowser.length(); i++) {
             RJSBasecaster_QTextBrowser* basecaster = basecasters_QTextBrowser[i];
             QTextBrowser* ret = basecaster->castToBase(t, vp);
@@ -662,7 +662,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextBrowser:
           if (t==RJSType_QTextBrowser::getIdStatic()) {
             return (QTextBrowser*)vp;
           }

@@ -42,7 +42,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QMargins:
           for (int i=0; i<basecasters_QMargins.length(); i++) {
             RJSBasecaster_QMargins* basecaster = basecasters_QMargins[i];
             QMargins* ret = basecaster->castToBase(t, vp);
@@ -51,7 +51,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QMargins:
           if (t==RJSType_QMargins::getIdStatic()) {
             return (QMargins*)vp;
           }
@@ -483,7 +483,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QMarginsF:
           for (int i=0; i<basecasters_QMarginsF.length(); i++) {
             RJSBasecaster_QMarginsF* basecaster = basecasters_QMarginsF[i];
             QMarginsF* ret = basecaster->castToBase(t, vp);
@@ -492,7 +492,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QMarginsF:
           if (t==RJSType_QMarginsF::getIdStatic()) {
             return (QMarginsF*)vp;
           }

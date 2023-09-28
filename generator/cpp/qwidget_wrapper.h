@@ -968,7 +968,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QWidget:
           for (int i=0; i<basecasters_QWidget.length(); i++) {
             RJSBasecaster_QWidget* basecaster = basecasters_QWidget[i];
             QWidget* ret = basecaster->castToBase(t, vp);
@@ -977,7 +977,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QWidget:
           if (t==RJSType_QWidget::getIdStatic()) {
             return (QWidget*)vp;
           }

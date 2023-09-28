@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtextbrowser.h">
-  <class name="QTextBrowser">
+  <class name="QTextBrowser" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

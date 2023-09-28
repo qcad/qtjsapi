@@ -188,7 +188,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QSettings:
           for (int i=0; i<basecasters_QSettings.length(); i++) {
             RJSBasecaster_QSettings* basecaster = basecasters_QSettings[i];
             QSettings* ret = basecaster->castToBase(t, vp);
@@ -197,7 +197,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QSettings:
           if (t==RJSType_QSettings::getIdStatic()) {
             return (QSettings*)vp;
           }

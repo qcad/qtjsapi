@@ -87,7 +87,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QLayoutItem:
           for (int i=0; i<basecasters_QLayoutItem.length(); i++) {
             RJSBasecaster_QLayoutItem* basecaster = basecasters_QLayoutItem[i];
             QLayoutItem* ret = basecaster->castToBase(t, vp);
@@ -96,7 +96,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QLayoutItem:
           if (t==RJSType_QLayoutItem::getIdStatic()) {
             return (QLayoutItem*)vp;
           }
@@ -663,7 +663,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QSpacerItem:
           for (int i=0; i<basecasters_QSpacerItem.length(); i++) {
             RJSBasecaster_QSpacerItem* basecaster = basecasters_QSpacerItem[i];
             QSpacerItem* ret = basecaster->castToBase(t, vp);
@@ -672,7 +672,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QSpacerItem:
           if (t==RJSType_QSpacerItem::getIdStatic()) {
             return (QSpacerItem*)vp;
           }
@@ -1337,7 +1337,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QWidgetItem:
           for (int i=0; i<basecasters_QWidgetItem.length(); i++) {
             RJSBasecaster_QWidgetItem* basecaster = basecasters_QWidgetItem[i];
             QWidgetItem* ret = basecaster->castToBase(t, vp);
@@ -1346,7 +1346,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QWidgetItem:
           if (t==RJSType_QWidgetItem::getIdStatic()) {
             return (QWidgetItem*)vp;
           }

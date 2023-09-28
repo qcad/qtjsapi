@@ -113,7 +113,12 @@
             class RJSBasecaster_<xsl:value-of select="$basecast-from" />_<xsl:value-of select="$basecast-to" /> : public RJSBasecaster_<xsl:value-of select="$basecast-to" /> {
             public:
               virtual <xsl:value-of select="$basecast-to" />* castToBase(int t, void* vp) {
-                return (<xsl:value-of select="$basecast-to" />*)(<xsl:value-of select="$basecast-from" />*)vp;
+                if (t==RJSType_<xsl:value-of select="$basecast-from" />::getIdStatic()) {
+                  return (<xsl:value-of select="$basecast-to" />*)(<xsl:value-of select="$basecast-from" />*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           </xsl:for-each>
@@ -1014,6 +1019,13 @@
 
       QJSValue RJSHelper::cpp2js_QWidget(RJSApi&amp; handler, QWidget* v) {
           {
+              QMainWindow* o = qobject_cast&lt;QMainWindow*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QMainWindow(handler, o);
+              }
+          }
+
+          {
               QDockWidget* o = qobject_cast&lt;QDockWidget*&gt;(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QDockWidget(handler, o);
@@ -1609,7 +1621,6 @@
   </xsl:variable>
 
   <xsl:variable name="func">
-    <xsl:text>QSharedPointer_</xsl:text>
     <xsl:value-of select="
       qc:replace(
       qc:replace(
@@ -1629,18 +1640,29 @@
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
-      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v);
-      static <xsl:value-of select="$sharedPointerType" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
-      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+      static QJSValue cpp2js_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v);
+      static <xsl:value-of select="$sharedPointerType" /> js2cpp_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
     <xsl:when test="$mode='cpp'">
-      QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
+      QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
           //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
           //return engine-&gt;evaluate("new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type:
+          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and @downcast='true']">
+            {
+              QSharedPointer&lt;<xsl:value-of select="../../@name" />&gt; s = v.dynamicCast&lt;<xsl:value-of select="../../@name" />&gt;();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_<xsl:value-of select="../../@name" />(handler, s);
+              }
+            }
+          </xsl:for-each>
+
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
@@ -1654,10 +1676,28 @@
           return cl.callAsConstructor(args);
       }
 
-      <xsl:value-of select="$sharedPointerType" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+      <xsl:value-of select="$sharedPointerType" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+
+          <xsl:if test="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and @downcast='true']">
+            {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              int t = wrapper->getWrappedType();
+
+              // attempt to downcast to specific type:
+              <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and @downcast='true']">
+                if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
+                  return <xsl:value-of select="$rjshelper_class"/>::js2cpp_QSharedPointer_<xsl:value-of select="../../@name" />(handler, v);
+                }
+              </xsl:for-each>
+            }
+          </xsl:if>
+
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
-              qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: no wrapper";
+              qWarning() &lt;&lt; "js2cpp_QSharedPointer_<xsl:value-of select="$func" />: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() &lt;&lt; "class found: " &lt;&lt; v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;();
           }
           //return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;(getWrapped_<xsl:value-of select="$type" />(wrapper));
@@ -1684,11 +1724,11 @@
           }
       }
 
-      bool <xsl:value-of select="$rjshelper_class"/>::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+      bool <xsl:value-of select="$rjshelper_class"/>::is_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }
-          //return v.property("getType").call().toInt()==RJSType::<xsl:value-of select="$func" />_Type;
+          //return v.property("getType").call().toInt()==RJSType::QSharedPointer_<xsl:value-of select="$func" />_Type;
           return !v.isUndefined();
       }
     </xsl:when>
@@ -1764,6 +1804,22 @@
       }
 
       <xsl:value-of select="$sharedPointerType" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+
+          <xsl:if test="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and @downcast='true']">
+            {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              int t = wrapper->getWrappedType();
+
+              // attempt to downcast to specific type:
+              <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and @downcast='true']">
+                if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
+                  return <xsl:value-of select="$rjshelper_class"/>::js2cpp_QSharedPointer_<xsl:value-of select="../../@name" />(handler, v);
+                }
+              </xsl:for-each>
+            }
+          </xsl:if>
+
+
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: no wrapper";

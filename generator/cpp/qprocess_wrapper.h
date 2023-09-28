@@ -93,7 +93,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QProcessEnvironment:
           for (int i=0; i<basecasters_QProcessEnvironment.length(); i++) {
             RJSBasecaster_QProcessEnvironment* basecaster = basecasters_QProcessEnvironment[i];
             QProcessEnvironment* ret = basecaster->castToBase(t, vp);
@@ -102,7 +102,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QProcessEnvironment:
           if (t==RJSType_QProcessEnvironment::getIdStatic()) {
             return (QProcessEnvironment*)vp;
           }
@@ -682,7 +682,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QProcess:
           for (int i=0; i<basecasters_QProcess.length(); i++) {
             RJSBasecaster_QProcess* basecaster = basecasters_QProcess[i];
             QProcess* ret = basecaster->castToBase(t, vp);
@@ -691,7 +691,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QProcess:
           if (t==RJSType_QProcess::getIdStatic()) {
             return (QProcess*)vp;
           }

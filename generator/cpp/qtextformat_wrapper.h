@@ -72,7 +72,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextLength:
           for (int i=0; i<basecasters_QTextLength.length(); i++) {
             RJSBasecaster_QTextLength* basecaster = basecasters_QTextLength[i];
             QTextLength* ret = basecaster->castToBase(t, vp);
@@ -81,7 +81,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextLength:
           if (t==RJSType_QTextLength::getIdStatic()) {
             return (QTextLength*)vp;
           }
@@ -401,7 +401,7 @@ PercentageLength = QTextLength::PercentageLength,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextFormat:
           for (int i=0; i<basecasters_QTextFormat.length(); i++) {
             RJSBasecaster_QTextFormat* basecaster = basecasters_QTextFormat[i];
             QTextFormat* ret = basecaster->castToBase(t, vp);
@@ -410,7 +410,7 @@ PercentageLength = QTextLength::PercentageLength,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextFormat:
           if (t==RJSType_QTextFormat::getIdStatic()) {
             return (QTextFormat*)vp;
           }
@@ -1794,7 +1794,7 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextCharFormat:
           for (int i=0; i<basecasters_QTextCharFormat.length(); i++) {
             RJSBasecaster_QTextCharFormat* basecaster = basecasters_QTextCharFormat[i];
             QTextCharFormat* ret = basecaster->castToBase(t, vp);
@@ -1803,7 +1803,7 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextCharFormat:
           if (t==RJSType_QTextCharFormat::getIdStatic()) {
             return (QTextCharFormat*)vp;
           }
@@ -4621,7 +4621,7 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextBlockFormat:
           for (int i=0; i<basecasters_QTextBlockFormat.length(); i++) {
             RJSBasecaster_QTextBlockFormat* basecaster = basecasters_QTextBlockFormat[i];
             QTextBlockFormat* ret = basecaster->castToBase(t, vp);
@@ -4630,7 +4630,7 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextBlockFormat:
           if (t==RJSType_QTextBlockFormat::getIdStatic()) {
             return (QTextBlockFormat*)vp;
           }
@@ -6527,7 +6527,7 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextListFormat:
           for (int i=0; i<basecasters_QTextListFormat.length(); i++) {
             RJSBasecaster_QTextListFormat* basecaster = basecasters_QTextListFormat[i];
             QTextListFormat* ret = basecaster->castToBase(t, vp);
@@ -6536,7 +6536,7 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextListFormat:
           if (t==RJSType_QTextListFormat::getIdStatic()) {
             return (QTextListFormat*)vp;
           }
@@ -8096,7 +8096,7 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextImageFormat:
           for (int i=0; i<basecasters_QTextImageFormat.length(); i++) {
             RJSBasecaster_QTextImageFormat* basecaster = basecasters_QTextImageFormat[i];
             QTextImageFormat* ret = basecaster->castToBase(t, vp);
@@ -8105,7 +8105,7 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextImageFormat:
           if (t==RJSType_QTextImageFormat::getIdStatic()) {
             return (QTextImageFormat*)vp;
           }
@@ -9973,7 +9973,7 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextFrameFormat:
           for (int i=0; i<basecasters_QTextFrameFormat.length(); i++) {
             RJSBasecaster_QTextFrameFormat* basecaster = basecasters_QTextFrameFormat[i];
             QTextFrameFormat* ret = basecaster->castToBase(t, vp);
@@ -9982,7 +9982,7 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextFrameFormat:
           if (t==RJSType_QTextFrameFormat::getIdStatic()) {
             return (QTextFrameFormat*)vp;
           }
@@ -11948,7 +11948,7 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextTableFormat:
           for (int i=0; i<basecasters_QTextTableFormat.length(); i++) {
             RJSBasecaster_QTextTableFormat* basecaster = basecasters_QTextTableFormat[i];
             QTextTableFormat* ret = basecaster->castToBase(t, vp);
@@ -11957,7 +11957,7 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextTableFormat:
           if (t==RJSType_QTextTableFormat::getIdStatic()) {
             return (QTextTableFormat*)vp;
           }
@@ -13120,7 +13120,7 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextTableCellFormat:
           for (int i=0; i<basecasters_QTextTableCellFormat.length(); i++) {
             RJSBasecaster_QTextTableCellFormat* basecaster = basecasters_QTextTableCellFormat[i];
             QTextTableCellFormat* ret = basecaster->castToBase(t, vp);
@@ -13129,7 +13129,7 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextTableCellFormat:
           if (t==RJSType_QTextTableCellFormat::getIdStatic()) {
             return (QTextTableCellFormat*)vp;
           }

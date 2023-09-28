@@ -158,7 +158,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomImplementation:
           for (int i=0; i<basecasters_QDomImplementation.length(); i++) {
             RJSBasecaster_QDomImplementation* basecaster = basecasters_QDomImplementation[i];
             QDomImplementation* ret = basecaster->castToBase(t, vp);
@@ -167,7 +167,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomImplementation:
           if (t==RJSType_QDomImplementation::getIdStatic()) {
             return (QDomImplementation*)vp;
           }
@@ -627,7 +627,7 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomNode:
           for (int i=0; i<basecasters_QDomNode.length(); i++) {
             RJSBasecaster_QDomNode* basecaster = basecasters_QDomNode[i];
             QDomNode* ret = basecaster->castToBase(t, vp);
@@ -636,7 +636,7 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomNode:
           if (t==RJSType_QDomNode::getIdStatic()) {
             return (QDomNode*)vp;
           }
@@ -2311,7 +2311,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomNodeList:
           for (int i=0; i<basecasters_QDomNodeList.length(); i++) {
             RJSBasecaster_QDomNodeList* basecaster = basecasters_QDomNodeList[i];
             QDomNodeList* ret = basecaster->castToBase(t, vp);
@@ -2320,7 +2320,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomNodeList:
           if (t==RJSType_QDomNodeList::getIdStatic()) {
             return (QDomNodeList*)vp;
           }
@@ -2750,7 +2750,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomDocumentType:
           for (int i=0; i<basecasters_QDomDocumentType.length(); i++) {
             RJSBasecaster_QDomDocumentType* basecaster = basecasters_QDomDocumentType[i];
             QDomDocumentType* ret = basecaster->castToBase(t, vp);
@@ -2759,7 +2759,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomDocumentType:
           if (t==RJSType_QDomDocumentType::getIdStatic()) {
             return (QDomDocumentType*)vp;
           }
@@ -4560,7 +4560,7 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomDocument:
           for (int i=0; i<basecasters_QDomDocument.length(); i++) {
             RJSBasecaster_QDomDocument* basecaster = basecasters_QDomDocument[i];
             QDomDocument* ret = basecaster->castToBase(t, vp);
@@ -4569,7 +4569,7 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomDocument:
           if (t==RJSType_QDomDocument::getIdStatic()) {
             return (QDomDocument*)vp;
           }
@@ -6722,7 +6722,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomNamedNodeMap:
           for (int i=0; i<basecasters_QDomNamedNodeMap.length(); i++) {
             RJSBasecaster_QDomNamedNodeMap* basecaster = basecasters_QDomNamedNodeMap[i];
             QDomNamedNodeMap* ret = basecaster->castToBase(t, vp);
@@ -6731,7 +6731,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomNamedNodeMap:
           if (t==RJSType_QDomNamedNodeMap::getIdStatic()) {
             return (QDomNamedNodeMap*)vp;
           }
@@ -7311,7 +7311,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomDocumentFragment:
           for (int i=0; i<basecasters_QDomDocumentFragment.length(); i++) {
             RJSBasecaster_QDomDocumentFragment* basecaster = basecasters_QDomDocumentFragment[i];
             QDomDocumentFragment* ret = basecaster->castToBase(t, vp);
@@ -7320,7 +7320,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomDocumentFragment:
           if (t==RJSType_QDomDocumentFragment::getIdStatic()) {
             return (QDomDocumentFragment*)vp;
           }
@@ -9003,7 +9003,7 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomCharacterData:
           for (int i=0; i<basecasters_QDomCharacterData.length(); i++) {
             RJSBasecaster_QDomCharacterData* basecaster = basecasters_QDomCharacterData[i];
             QDomCharacterData* ret = basecaster->castToBase(t, vp);
@@ -9012,7 +9012,7 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomCharacterData:
           if (t==RJSType_QDomCharacterData::getIdStatic()) {
             return (QDomCharacterData*)vp;
           }
@@ -10887,7 +10887,7 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomAttr:
           for (int i=0; i<basecasters_QDomAttr.length(); i++) {
             RJSBasecaster_QDomAttr* basecaster = basecasters_QDomAttr[i];
             QDomAttr* ret = basecaster->castToBase(t, vp);
@@ -10896,7 +10896,7 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomAttr:
           if (t==RJSType_QDomAttr::getIdStatic()) {
             return (QDomAttr*)vp;
           }
@@ -12678,7 +12678,7 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomElement:
           for (int i=0; i<basecasters_QDomElement.length(); i++) {
             RJSBasecaster_QDomElement* basecaster = basecasters_QDomElement[i];
             QDomElement* ret = basecaster->castToBase(t, vp);
@@ -12687,7 +12687,7 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomElement:
           if (t==RJSType_QDomElement::getIdStatic()) {
             return (QDomElement*)vp;
           }
@@ -14828,7 +14828,7 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomText:
           for (int i=0; i<basecasters_QDomText.length(); i++) {
             RJSBasecaster_QDomText* basecaster = basecasters_QDomText[i];
             QDomText* ret = basecaster->castToBase(t, vp);
@@ -14837,7 +14837,7 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomText:
           if (t==RJSType_QDomText::getIdStatic()) {
             return (QDomText*)vp;
           }
@@ -16735,7 +16735,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomComment:
           for (int i=0; i<basecasters_QDomComment.length(); i++) {
             RJSBasecaster_QDomComment* basecaster = basecasters_QDomComment[i];
             QDomComment* ret = basecaster->castToBase(t, vp);
@@ -16744,7 +16744,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomComment:
           if (t==RJSType_QDomComment::getIdStatic()) {
             return (QDomComment*)vp;
           }
@@ -17211,7 +17211,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomCDATASection:
           for (int i=0; i<basecasters_QDomCDATASection.length(); i++) {
             RJSBasecaster_QDomCDATASection* basecaster = basecasters_QDomCDATASection[i];
             QDomCDATASection* ret = basecaster->castToBase(t, vp);
@@ -17220,7 +17220,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomCDATASection:
           if (t==RJSType_QDomCDATASection::getIdStatic()) {
             return (QDomCDATASection*)vp;
           }
@@ -17510,7 +17510,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomNotation:
           for (int i=0; i<basecasters_QDomNotation.length(); i++) {
             RJSBasecaster_QDomNotation* basecaster = basecasters_QDomNotation[i];
             QDomNotation* ret = basecaster->castToBase(t, vp);
@@ -17519,7 +17519,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomNotation:
           if (t==RJSType_QDomNotation::getIdStatic()) {
             return (QDomNotation*)vp;
           }
@@ -19236,7 +19236,7 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomEntity:
           for (int i=0; i<basecasters_QDomEntity.length(); i++) {
             RJSBasecaster_QDomEntity* basecaster = basecasters_QDomEntity[i];
             QDomEntity* ret = basecaster->castToBase(t, vp);
@@ -19245,7 +19245,7 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomEntity:
           if (t==RJSType_QDomEntity::getIdStatic()) {
             return (QDomEntity*)vp;
           }
@@ -20983,7 +20983,7 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomEntityReference:
           for (int i=0; i<basecasters_QDomEntityReference.length(); i++) {
             RJSBasecaster_QDomEntityReference* basecaster = basecasters_QDomEntityReference[i];
             QDomEntityReference* ret = basecaster->castToBase(t, vp);
@@ -20992,7 +20992,7 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomEntityReference:
           if (t==RJSType_QDomEntityReference::getIdStatic()) {
             return (QDomEntityReference*)vp;
           }
@@ -22667,7 +22667,7 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDomProcessingInstruction:
           for (int i=0; i<basecasters_QDomProcessingInstruction.length(); i++) {
             RJSBasecaster_QDomProcessingInstruction* basecaster = basecasters_QDomProcessingInstruction[i];
             QDomProcessingInstruction* ret = basecaster->castToBase(t, vp);
@@ -22676,7 +22676,7 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDomProcessingInstruction:
           if (t==RJSType_QDomProcessingInstruction::getIdStatic()) {
             return (QDomProcessingInstruction*)vp;
           }

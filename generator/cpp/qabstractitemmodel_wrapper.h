@@ -48,7 +48,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QModelIndex:
           for (int i=0; i<basecasters_QModelIndex.length(); i++) {
             RJSBasecaster_QModelIndex* basecaster = basecasters_QModelIndex[i];
             QModelIndex* ret = basecaster->castToBase(t, vp);
@@ -57,7 +57,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QModelIndex:
           if (t==RJSType_QModelIndex::getIdStatic()) {
             return (QModelIndex*)vp;
           }
@@ -551,7 +551,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QAbstractItemModel:
           for (int i=0; i<basecasters_QAbstractItemModel.length(); i++) {
             RJSBasecaster_QAbstractItemModel* basecaster = basecasters_QAbstractItemModel[i];
             QAbstractItemModel* ret = basecaster->castToBase(t, vp);
@@ -560,7 +560,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QAbstractItemModel:
           if (t==RJSType_QAbstractItemModel::getIdStatic()) {
             return (QAbstractItemModel*)vp;
           }
@@ -2252,7 +2252,7 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QAbstractTableModel:
           for (int i=0; i<basecasters_QAbstractTableModel.length(); i++) {
             RJSBasecaster_QAbstractTableModel* basecaster = basecasters_QAbstractTableModel[i];
             QAbstractTableModel* ret = basecaster->castToBase(t, vp);
@@ -2261,7 +2261,7 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QAbstractTableModel:
           if (t==RJSType_QAbstractTableModel::getIdStatic()) {
             return (QAbstractTableModel*)vp;
           }
@@ -3928,7 +3928,7 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QAbstractListModel:
           for (int i=0; i<basecasters_QAbstractListModel.length(); i++) {
             RJSBasecaster_QAbstractListModel* basecaster = basecasters_QAbstractListModel[i];
             QAbstractListModel* ret = basecaster->castToBase(t, vp);
@@ -3937,7 +3937,7 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QAbstractListModel:
           if (t==RJSType_QAbstractListModel::getIdStatic()) {
             return (QAbstractListModel*)vp;
           }

@@ -539,7 +539,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QAbstractPrintDialog:
           for (int i=0; i<basecasters_QAbstractPrintDialog.length(); i++) {
             RJSBasecaster_QAbstractPrintDialog* basecaster = basecasters_QAbstractPrintDialog[i];
             QAbstractPrintDialog* ret = basecaster->castToBase(t, vp);
@@ -548,7 +548,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QAbstractPrintDialog:
           if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
             return (QAbstractPrintDialog*)vp;
           }

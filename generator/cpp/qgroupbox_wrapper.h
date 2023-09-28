@@ -565,7 +565,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QGroupBox:
           for (int i=0; i<basecasters_QGroupBox.length(); i++) {
             RJSBasecaster_QGroupBox* basecaster = basecasters_QGroupBox[i];
             QGroupBox* ret = basecaster->castToBase(t, vp);
@@ -574,7 +574,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QGroupBox:
           if (t==RJSType_QGroupBox::getIdStatic()) {
             return (QGroupBox*)vp;
           }

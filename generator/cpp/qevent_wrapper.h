@@ -125,7 +125,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QInputEvent:
           for (int i=0; i<basecasters_QInputEvent.length(); i++) {
             RJSBasecaster_QInputEvent* basecaster = basecasters_QInputEvent[i];
             QInputEvent* ret = basecaster->castToBase(t, vp);
@@ -134,7 +134,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QInputEvent:
           if (t==RJSType_QInputEvent::getIdStatic()) {
             return (QInputEvent*)vp;
           }
@@ -883,7 +883,7 @@ MaxUser = QInputEvent::MaxUser,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPointerEvent:
           for (int i=0; i<basecasters_QPointerEvent.length(); i++) {
             RJSBasecaster_QPointerEvent* basecaster = basecasters_QPointerEvent[i];
             QPointerEvent* ret = basecaster->castToBase(t, vp);
@@ -892,7 +892,7 @@ MaxUser = QInputEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPointerEvent:
           if (t==RJSType_QPointerEvent::getIdStatic()) {
             return (QPointerEvent*)vp;
           }
@@ -1938,7 +1938,7 @@ MaxUser = QPointerEvent::MaxUser,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QSinglePointEvent:
           for (int i=0; i<basecasters_QSinglePointEvent.length(); i++) {
             RJSBasecaster_QSinglePointEvent* basecaster = basecasters_QSinglePointEvent[i];
             QSinglePointEvent* ret = basecaster->castToBase(t, vp);
@@ -1947,7 +1947,7 @@ MaxUser = QPointerEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QSinglePointEvent:
           if (t==RJSType_QSinglePointEvent::getIdStatic()) {
             return (QSinglePointEvent*)vp;
           }
@@ -3073,7 +3073,7 @@ MaxUser = QSinglePointEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QMouseEvent:
           for (int i=0; i<basecasters_QMouseEvent.length(); i++) {
             RJSBasecaster_QMouseEvent* basecaster = basecasters_QMouseEvent[i];
             QMouseEvent* ret = basecaster->castToBase(t, vp);
@@ -3082,7 +3082,7 @@ MaxUser = QSinglePointEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QMouseEvent:
           if (t==RJSType_QMouseEvent::getIdStatic()) {
             return (QMouseEvent*)vp;
           }
@@ -4419,7 +4419,7 @@ MaxUser = QMouseEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QWheelEvent:
           for (int i=0; i<basecasters_QWheelEvent.length(); i++) {
             RJSBasecaster_QWheelEvent* basecaster = basecasters_QWheelEvent[i];
             QWheelEvent* ret = basecaster->castToBase(t, vp);
@@ -4428,7 +4428,7 @@ MaxUser = QMouseEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QWheelEvent:
           if (t==RJSType_QWheelEvent::getIdStatic()) {
             return (QWheelEvent*)vp;
           }
@@ -5825,7 +5825,7 @@ MaxUser = QWheelEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QKeyEvent:
           for (int i=0; i<basecasters_QKeyEvent.length(); i++) {
             RJSBasecaster_QKeyEvent* basecaster = basecasters_QKeyEvent[i];
             QKeyEvent* ret = basecaster->castToBase(t, vp);
@@ -5834,7 +5834,7 @@ MaxUser = QWheelEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QKeyEvent:
           if (t==RJSType_QKeyEvent::getIdStatic()) {
             return (QKeyEvent*)vp;
           }
@@ -6798,7 +6798,7 @@ MaxUser = QKeyEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPaintEvent:
           for (int i=0; i<basecasters_QPaintEvent.length(); i++) {
             RJSBasecaster_QPaintEvent* basecaster = basecasters_QPaintEvent[i];
             QPaintEvent* ret = basecaster->castToBase(t, vp);
@@ -6807,7 +6807,7 @@ MaxUser = QKeyEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPaintEvent:
           if (t==RJSType_QPaintEvent::getIdStatic()) {
             return (QPaintEvent*)vp;
           }
@@ -7525,7 +7525,7 @@ MaxUser = QPaintEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QResizeEvent:
           for (int i=0; i<basecasters_QResizeEvent.length(); i++) {
             RJSBasecaster_QResizeEvent* basecaster = basecasters_QResizeEvent[i];
             QResizeEvent* ret = basecaster->castToBase(t, vp);
@@ -7534,7 +7534,7 @@ MaxUser = QPaintEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QResizeEvent:
           if (t==RJSType_QResizeEvent::getIdStatic()) {
             return (QResizeEvent*)vp;
           }
@@ -8256,7 +8256,7 @@ MaxUser = QResizeEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDragEnterEvent:
           for (int i=0; i<basecasters_QDragEnterEvent.length(); i++) {
             RJSBasecaster_QDragEnterEvent* basecaster = basecasters_QDragEnterEvent[i];
             QDragEnterEvent* ret = basecaster->castToBase(t, vp);
@@ -8265,7 +8265,7 @@ MaxUser = QResizeEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDragEnterEvent:
           if (t==RJSType_QDragEnterEvent::getIdStatic()) {
             return (QDragEnterEvent*)vp;
           }
@@ -9141,7 +9141,7 @@ MaxUser = QDragEnterEvent::MaxUser,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDropEvent:
           for (int i=0; i<basecasters_QDropEvent.length(); i++) {
             RJSBasecaster_QDropEvent* basecaster = basecasters_QDropEvent[i];
             QDropEvent* ret = basecaster->castToBase(t, vp);
@@ -9150,7 +9150,7 @@ MaxUser = QDragEnterEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDropEvent:
           if (t==RJSType_QDropEvent::getIdStatic()) {
             return (QDropEvent*)vp;
           }
@@ -9993,7 +9993,7 @@ MaxUser = QDropEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QContextMenuEvent:
           for (int i=0; i<basecasters_QContextMenuEvent.length(); i++) {
             RJSBasecaster_QContextMenuEvent* basecaster = basecasters_QContextMenuEvent[i];
             QContextMenuEvent* ret = basecaster->castToBase(t, vp);
@@ -10002,7 +10002,7 @@ MaxUser = QDropEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QContextMenuEvent:
           if (t==RJSType_QContextMenuEvent::getIdStatic()) {
             return (QContextMenuEvent*)vp;
           }
@@ -10937,7 +10937,7 @@ Other = QContextMenuEvent::Other,
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDragMoveEvent:
           for (int i=0; i<basecasters_QDragMoveEvent.length(); i++) {
             RJSBasecaster_QDragMoveEvent* basecaster = basecasters_QDragMoveEvent[i];
             QDragMoveEvent* ret = basecaster->castToBase(t, vp);
@@ -10946,7 +10946,7 @@ Other = QContextMenuEvent::Other,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDragMoveEvent:
           if (t==RJSType_QDragMoveEvent::getIdStatic()) {
             return (QDragMoveEvent*)vp;
           }
@@ -11818,7 +11818,7 @@ MaxUser = QDragMoveEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDragLeaveEvent:
           for (int i=0; i<basecasters_QDragLeaveEvent.length(); i++) {
             RJSBasecaster_QDragLeaveEvent* basecaster = basecasters_QDragLeaveEvent[i];
             QDragLeaveEvent* ret = basecaster->castToBase(t, vp);
@@ -11827,7 +11827,7 @@ MaxUser = QDragMoveEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDragLeaveEvent:
           if (t==RJSType_QDragLeaveEvent::getIdStatic()) {
             return (QDragLeaveEvent*)vp;
           }
@@ -12497,7 +12497,7 @@ MaxUser = QDragLeaveEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QHelpEvent:
           for (int i=0; i<basecasters_QHelpEvent.length(); i++) {
             RJSBasecaster_QHelpEvent* basecaster = basecasters_QHelpEvent[i];
             QHelpEvent* ret = basecaster->castToBase(t, vp);
@@ -12506,7 +12506,7 @@ MaxUser = QDragLeaveEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QHelpEvent:
           if (t==RJSType_QHelpEvent::getIdStatic()) {
             return (QHelpEvent*)vp;
           }
@@ -13305,7 +13305,7 @@ MaxUser = QHelpEvent::MaxUser,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QActionEvent:
           for (int i=0; i<basecasters_QActionEvent.length(); i++) {
             RJSBasecaster_QActionEvent* basecaster = basecasters_QActionEvent[i];
             QActionEvent* ret = basecaster->castToBase(t, vp);
@@ -13314,7 +13314,7 @@ MaxUser = QHelpEvent::MaxUser,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QActionEvent:
           if (t==RJSType_QActionEvent::getIdStatic()) {
             return (QActionEvent*)vp;
           }

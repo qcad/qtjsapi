@@ -20,10 +20,58 @@
       #include "RJSWrapper.h"
 
       
+        // Base class for downcasters that can downcast QAction to specific types:
+        class RJSDowncaster_QAction {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QAction* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QApplication to specific types:
+        class RJSDowncaster_QApplication {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QApplication* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QComboBox to specific types:
+        class RJSDowncaster_QComboBox {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QComboBox* o) = 0;
+        };
+      
         // Base class for downcasters that can downcast QEvent to specific types:
         class RJSDowncaster_QEvent {
         public:
           virtual QJSValue downcast(RJSApi& handler, QEvent* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QDockWidget to specific types:
+        class RJSDowncaster_QDockWidget {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QDockWidget* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QFileSystemModel to specific types:
+        class RJSDowncaster_QFileSystemModel {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QFileSystemModel* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QFrame to specific types:
+        class RJSDowncaster_QFrame {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QFrame* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QItemDelegate to specific types:
+        class RJSDowncaster_QItemDelegate {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QItemDelegate* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QLayout to specific types:
+        class RJSDowncaster_QLayout {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QLayout* o) = 0;
         };
       
         // Base class for downcasters that can downcast QLineEdit to specific types:
@@ -32,16 +80,64 @@
           virtual QJSValue downcast(RJSApi& handler, QLineEdit* o) = 0;
         };
       
+        // Base class for downcasters that can downcast QListView to specific types:
+        class RJSDowncaster_QListView {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QListView* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QListWidget to specific types:
+        class RJSDowncaster_QListWidget {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QListWidget* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QMainWindow to specific types:
+        class RJSDowncaster_QMainWindow {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QMainWindow* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QMdiArea to specific types:
+        class RJSDowncaster_QMdiArea {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QMdiArea* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QMdiSubWindow to specific types:
+        class RJSDowncaster_QMdiSubWindow {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QMdiSubWindow* o) = 0;
+        };
+      
         // Base class for downcasters that can downcast QObject to specific types:
         class RJSDowncaster_QObject {
         public:
           virtual QJSValue downcast(RJSApi& handler, QObject* o) = 0;
         };
       
+        // Base class for downcasters that can downcast QTextBrowser to specific types:
+        class RJSDowncaster_QTextBrowser {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QTextBrowser* o) = 0;
+        };
+      
         // Base class for downcasters that can downcast QToolBar to specific types:
         class RJSDowncaster_QToolBar {
         public:
           virtual QJSValue downcast(RJSApi& handler, QToolBar* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QToolButton to specific types:
+        class RJSDowncaster_QToolButton {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QToolButton* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QTreeWidget to specific types:
+        class RJSDowncaster_QTreeWidget {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QTreeWidget* o) = 0;
         };
       
         // Base class for downcasters that can downcast QWidget to specific types:
@@ -4442,6 +4538,33 @@
          
           static QList<QAction*> js2cpp_QList_QAction(RJSApi& handler, const QJSValue& v);
         
+          // allow downcasting for type QAction:
+          private:
+            static QList<RJSDowncaster_QAction*> downcasters_QAction;
+
+          public:
+            static void registerDowncaster_QAction(RJSDowncaster_QAction* dc) {
+              downcasters_QAction.append(dc);
+            }
+        
+          // allow downcasting for type QApplication:
+          private:
+            static QList<RJSDowncaster_QApplication*> downcasters_QApplication;
+
+          public:
+            static void registerDowncaster_QApplication(RJSDowncaster_QApplication* dc) {
+              downcasters_QApplication.append(dc);
+            }
+        
+          // allow downcasting for type QComboBox:
+          private:
+            static QList<RJSDowncaster_QComboBox*> downcasters_QComboBox;
+
+          public:
+            static void registerDowncaster_QComboBox(RJSDowncaster_QComboBox* dc) {
+              downcasters_QComboBox.append(dc);
+            }
+        
           // allow downcasting for type QEvent:
           private:
             static QList<RJSDowncaster_QEvent*> downcasters_QEvent;
@@ -4449,6 +4572,51 @@
           public:
             static void registerDowncaster_QEvent(RJSDowncaster_QEvent* dc) {
               downcasters_QEvent.append(dc);
+            }
+        
+          // allow downcasting for type QDockWidget:
+          private:
+            static QList<RJSDowncaster_QDockWidget*> downcasters_QDockWidget;
+
+          public:
+            static void registerDowncaster_QDockWidget(RJSDowncaster_QDockWidget* dc) {
+              downcasters_QDockWidget.append(dc);
+            }
+        
+          // allow downcasting for type QFileSystemModel:
+          private:
+            static QList<RJSDowncaster_QFileSystemModel*> downcasters_QFileSystemModel;
+
+          public:
+            static void registerDowncaster_QFileSystemModel(RJSDowncaster_QFileSystemModel* dc) {
+              downcasters_QFileSystemModel.append(dc);
+            }
+        
+          // allow downcasting for type QFrame:
+          private:
+            static QList<RJSDowncaster_QFrame*> downcasters_QFrame;
+
+          public:
+            static void registerDowncaster_QFrame(RJSDowncaster_QFrame* dc) {
+              downcasters_QFrame.append(dc);
+            }
+        
+          // allow downcasting for type QItemDelegate:
+          private:
+            static QList<RJSDowncaster_QItemDelegate*> downcasters_QItemDelegate;
+
+          public:
+            static void registerDowncaster_QItemDelegate(RJSDowncaster_QItemDelegate* dc) {
+              downcasters_QItemDelegate.append(dc);
+            }
+        
+          // allow downcasting for type QLayout:
+          private:
+            static QList<RJSDowncaster_QLayout*> downcasters_QLayout;
+
+          public:
+            static void registerDowncaster_QLayout(RJSDowncaster_QLayout* dc) {
+              downcasters_QLayout.append(dc);
             }
         
           // allow downcasting for type QLineEdit:
@@ -4460,6 +4628,51 @@
               downcasters_QLineEdit.append(dc);
             }
         
+          // allow downcasting for type QListView:
+          private:
+            static QList<RJSDowncaster_QListView*> downcasters_QListView;
+
+          public:
+            static void registerDowncaster_QListView(RJSDowncaster_QListView* dc) {
+              downcasters_QListView.append(dc);
+            }
+        
+          // allow downcasting for type QListWidget:
+          private:
+            static QList<RJSDowncaster_QListWidget*> downcasters_QListWidget;
+
+          public:
+            static void registerDowncaster_QListWidget(RJSDowncaster_QListWidget* dc) {
+              downcasters_QListWidget.append(dc);
+            }
+        
+          // allow downcasting for type QMainWindow:
+          private:
+            static QList<RJSDowncaster_QMainWindow*> downcasters_QMainWindow;
+
+          public:
+            static void registerDowncaster_QMainWindow(RJSDowncaster_QMainWindow* dc) {
+              downcasters_QMainWindow.append(dc);
+            }
+        
+          // allow downcasting for type QMdiArea:
+          private:
+            static QList<RJSDowncaster_QMdiArea*> downcasters_QMdiArea;
+
+          public:
+            static void registerDowncaster_QMdiArea(RJSDowncaster_QMdiArea* dc) {
+              downcasters_QMdiArea.append(dc);
+            }
+        
+          // allow downcasting for type QMdiSubWindow:
+          private:
+            static QList<RJSDowncaster_QMdiSubWindow*> downcasters_QMdiSubWindow;
+
+          public:
+            static void registerDowncaster_QMdiSubWindow(RJSDowncaster_QMdiSubWindow* dc) {
+              downcasters_QMdiSubWindow.append(dc);
+            }
+        
           // allow downcasting for type QObject:
           private:
             static QList<RJSDowncaster_QObject*> downcasters_QObject;
@@ -4469,6 +4682,15 @@
               downcasters_QObject.append(dc);
             }
         
+          // allow downcasting for type QTextBrowser:
+          private:
+            static QList<RJSDowncaster_QTextBrowser*> downcasters_QTextBrowser;
+
+          public:
+            static void registerDowncaster_QTextBrowser(RJSDowncaster_QTextBrowser* dc) {
+              downcasters_QTextBrowser.append(dc);
+            }
+        
           // allow downcasting for type QToolBar:
           private:
             static QList<RJSDowncaster_QToolBar*> downcasters_QToolBar;
@@ -4476,6 +4698,24 @@
           public:
             static void registerDowncaster_QToolBar(RJSDowncaster_QToolBar* dc) {
               downcasters_QToolBar.append(dc);
+            }
+        
+          // allow downcasting for type QToolButton:
+          private:
+            static QList<RJSDowncaster_QToolButton*> downcasters_QToolButton;
+
+          public:
+            static void registerDowncaster_QToolButton(RJSDowncaster_QToolButton* dc) {
+              downcasters_QToolButton.append(dc);
+            }
+        
+          // allow downcasting for type QTreeWidget:
+          private:
+            static QList<RJSDowncaster_QTreeWidget*> downcasters_QTreeWidget;
+
+          public:
+            static void registerDowncaster_QTreeWidget(RJSDowncaster_QTreeWidget* dc) {
+              downcasters_QTreeWidget.append(dc);
             }
         
           // allow downcasting for type QWidget:

@@ -3,7 +3,7 @@
   <class_decl name="QMenu" />
   <class_decl name="QActionGroup" />
   <class_decl name="QGraphicsWidget" />
-  <class name="QAction">
+  <class name="QAction" downcast="true">
     <super_list>
       <super name="QObject" />
     </super_list>

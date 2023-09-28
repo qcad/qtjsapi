@@ -93,7 +93,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPicture:
           for (int i=0; i<basecasters_QPicture.length(); i++) {
             RJSBasecaster_QPicture* basecaster = basecasters_QPicture[i];
             QPicture* ret = basecaster->castToBase(t, vp);
@@ -102,7 +102,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPicture:
           if (t==RJSType_QPicture::getIdStatic()) {
             return (QPicture*)vp;
           }

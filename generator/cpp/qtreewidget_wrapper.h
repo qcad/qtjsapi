@@ -44,7 +44,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTreeWidgetItem:
           for (int i=0; i<basecasters_QTreeWidgetItem.length(); i++) {
             RJSBasecaster_QTreeWidgetItem* basecaster = basecasters_QTreeWidgetItem[i];
             QTreeWidgetItem* ret = basecaster->castToBase(t, vp);
@@ -53,7 +53,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTreeWidgetItem:
           if (t==RJSType_QTreeWidgetItem::getIdStatic()) {
             return (QTreeWidgetItem*)vp;
           }
@@ -2174,7 +2174,7 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTreeWidget:
           for (int i=0; i<basecasters_QTreeWidget.length(); i++) {
             RJSBasecaster_QTreeWidget* basecaster = basecasters_QTreeWidget[i];
             QTreeWidget* ret = basecaster->castToBase(t, vp);
@@ -2183,7 +2183,7 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTreeWidget:
           if (t==RJSType_QTreeWidget::getIdStatic()) {
             return (QTreeWidget*)vp;
           }

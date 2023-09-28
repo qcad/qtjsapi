@@ -230,7 +230,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QBitmap:
           for (int i=0; i<basecasters_QBitmap.length(); i++) {
             RJSBasecaster_QBitmap* basecaster = basecasters_QBitmap[i];
             QBitmap* ret = basecaster->castToBase(t, vp);
@@ -239,7 +239,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QBitmap:
           if (t==RJSType_QBitmap::getIdStatic()) {
             return (QBitmap*)vp;
           }

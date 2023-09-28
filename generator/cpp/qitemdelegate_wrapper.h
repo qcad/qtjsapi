@@ -116,7 +116,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QItemDelegate:
           for (int i=0; i<basecasters_QItemDelegate.length(); i++) {
             RJSBasecaster_QItemDelegate* basecaster = basecasters_QItemDelegate[i];
             QItemDelegate* ret = basecaster->castToBase(t, vp);
@@ -125,7 +125,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QItemDelegate:
           if (t==RJSType_QItemDelegate::getIdStatic()) {
             return (QItemDelegate*)vp;
           }

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qitemdelegate.h">
   <class_decl name="QItemEditorFactory" />
-  <class name="QItemDelegate" ownership="cpp" inheritable="true">
+  <class name="QItemDelegate" ownership="cpp" inheritable="true" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QAbstractItemDelegate" />

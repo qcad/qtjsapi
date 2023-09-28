@@ -50,7 +50,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPolygon:
           for (int i=0; i<basecasters_QPolygon.length(); i++) {
             RJSBasecaster_QPolygon* basecaster = basecasters_QPolygon[i];
             QPolygon* ret = basecaster->castToBase(t, vp);
@@ -59,7 +59,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPolygon:
           if (t==RJSType_QPolygon::getIdStatic()) {
             return (QPolygon*)vp;
           }
@@ -565,7 +565,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPolygonF:
           for (int i=0; i<basecasters_QPolygonF.length(); i++) {
             RJSBasecaster_QPolygonF* basecaster = basecasters_QPolygonF[i];
             QPolygonF* ret = basecaster->castToBase(t, vp);
@@ -574,7 +574,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPolygonF:
           if (t==RJSType_QPolygonF::getIdStatic()) {
             return (QPolygonF*)vp;
           }

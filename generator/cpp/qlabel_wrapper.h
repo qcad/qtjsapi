@@ -645,7 +645,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QLabel:
           for (int i=0; i<basecasters_QLabel.length(); i++) {
             RJSBasecaster_QLabel* basecaster = basecasters_QLabel[i];
             QLabel* ret = basecaster->castToBase(t, vp);
@@ -654,7 +654,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QLabel:
           if (t==RJSType_QLabel::getIdStatic()) {
             return (QLabel*)vp;
           }

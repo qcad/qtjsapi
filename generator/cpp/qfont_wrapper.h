@@ -275,7 +275,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QFont:
           for (int i=0; i<basecasters_QFont.length(); i++) {
             RJSBasecaster_QFont* basecaster = basecasters_QFont[i];
             QFont* ret = basecaster->castToBase(t, vp);
@@ -284,7 +284,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QFont:
           if (t==RJSType_QFont::getIdStatic()) {
             return (QFont*)vp;
           }

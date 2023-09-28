@@ -716,7 +716,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTreeView:
           for (int i=0; i<basecasters_QTreeView.length(); i++) {
             RJSBasecaster_QTreeView* basecaster = basecasters_QTreeView[i];
             QTreeView* ret = basecaster->castToBase(t, vp);
@@ -725,7 +725,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTreeView:
           if (t==RJSType_QTreeView::getIdStatic()) {
             return (QTreeView*)vp;
           }

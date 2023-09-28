@@ -155,7 +155,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QGesture:
           for (int i=0; i<basecasters_QGesture.length(); i++) {
             RJSBasecaster_QGesture* basecaster = basecasters_QGesture[i];
             QGesture* ret = basecaster->castToBase(t, vp);
@@ -164,7 +164,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QGesture:
           if (t==RJSType_QGesture::getIdStatic()) {
             return (QGesture*)vp;
           }
@@ -1022,7 +1022,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPanGesture:
           for (int i=0; i<basecasters_QPanGesture.length(); i++) {
             RJSBasecaster_QPanGesture* basecaster = basecasters_QPanGesture[i];
             QPanGesture* ret = basecaster->castToBase(t, vp);
@@ -1031,7 +1031,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPanGesture:
           if (t==RJSType_QPanGesture::getIdStatic()) {
             return (QPanGesture*)vp;
           }
@@ -1753,7 +1753,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPinchGesture:
           for (int i=0; i<basecasters_QPinchGesture.length(); i++) {
             RJSBasecaster_QPinchGesture* basecaster = basecasters_QPinchGesture[i];
             QPinchGesture* ret = basecaster->castToBase(t, vp);
@@ -1762,7 +1762,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPinchGesture:
           if (t==RJSType_QPinchGesture::getIdStatic()) {
             return (QPinchGesture*)vp;
           }
@@ -3090,7 +3090,7 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QSwipeGesture:
           for (int i=0; i<basecasters_QSwipeGesture.length(); i++) {
             RJSBasecaster_QSwipeGesture* basecaster = basecasters_QSwipeGesture[i];
             QSwipeGesture* ret = basecaster->castToBase(t, vp);
@@ -3099,7 +3099,7 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QSwipeGesture:
           if (t==RJSType_QSwipeGesture::getIdStatic()) {
             return (QSwipeGesture*)vp;
           }

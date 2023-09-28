@@ -42,7 +42,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QLine:
           for (int i=0; i<basecasters_QLine.length(); i++) {
             RJSBasecaster_QLine* basecaster = basecasters_QLine[i];
             QLine* ret = basecaster->castToBase(t, vp);
@@ -51,7 +51,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QLine:
           if (t==RJSType_QLine::getIdStatic()) {
             return (QLine*)vp;
           }
@@ -719,7 +719,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QLineF:
           for (int i=0; i<basecasters_QLineF.length(); i++) {
             RJSBasecaster_QLineF* basecaster = basecasters_QLineF[i];
             QLineF* ret = basecaster->castToBase(t, vp);
@@ -728,7 +728,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QLineF:
           if (t==RJSType_QLineF::getIdStatic()) {
             return (QLineF*)vp;
           }

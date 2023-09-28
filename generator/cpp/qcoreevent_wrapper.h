@@ -159,7 +159,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QEvent:
           for (int i=0; i<basecasters_QEvent.length(); i++) {
             RJSBasecaster_QEvent* basecaster = basecasters_QEvent[i];
             QEvent* ret = basecaster->castToBase(t, vp);
@@ -168,7 +168,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QEvent:
           if (t==RJSType_QEvent::getIdStatic()) {
             return (QEvent*)vp;
           }

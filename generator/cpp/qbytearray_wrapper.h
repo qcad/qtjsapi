@@ -227,7 +227,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QByteArray:
           for (int i=0; i<basecasters_QByteArray.length(); i++) {
             RJSBasecaster_QByteArray* basecaster = basecasters_QByteArray[i];
             QByteArray* ret = basecaster->castToBase(t, vp);
@@ -236,7 +236,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QByteArray:
           if (t==RJSType_QByteArray::getIdStatic()) {
             return (QByteArray*)vp;
           }

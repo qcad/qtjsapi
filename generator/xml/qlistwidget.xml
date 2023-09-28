@@ -268,7 +268,7 @@
     </function>
     <function name="listModel" />
   </class>
-  <class name="QListWidget">
+  <class name="QListWidget" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

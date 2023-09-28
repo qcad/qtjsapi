@@ -627,7 +627,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTabBar:
           for (int i=0; i<basecasters_QTabBar.length(); i++) {
             RJSBasecaster_QTabBar* basecaster = basecasters_QTabBar[i];
             QTabBar* ret = basecaster->castToBase(t, vp);
@@ -636,7 +636,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTabBar:
           if (t==RJSType_QTabBar::getIdStatic()) {
             return (QTabBar*)vp;
           }

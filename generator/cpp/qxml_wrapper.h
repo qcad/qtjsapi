@@ -68,7 +68,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlAttributes:
           for (int i=0; i<basecasters_QXmlAttributes.length(); i++) {
             RJSBasecaster_QXmlAttributes* basecaster = basecasters_QXmlAttributes[i];
             QXmlAttributes* ret = basecaster->castToBase(t, vp);
@@ -77,7 +77,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlAttributes:
           if (t==RJSType_QXmlAttributes::getIdStatic()) {
             return (QXmlAttributes*)vp;
           }
@@ -581,7 +581,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlInputSource:
           for (int i=0; i<basecasters_QXmlInputSource.length(); i++) {
             RJSBasecaster_QXmlInputSource* basecaster = basecasters_QXmlInputSource[i];
             QXmlInputSource* ret = basecaster->castToBase(t, vp);
@@ -590,7 +590,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlInputSource:
           if (t==RJSType_QXmlInputSource::getIdStatic()) {
             return (QXmlInputSource*)vp;
           }
@@ -925,7 +925,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlParseException:
           for (int i=0; i<basecasters_QXmlParseException.length(); i++) {
             RJSBasecaster_QXmlParseException* basecaster = basecasters_QXmlParseException[i];
             QXmlParseException* ret = basecaster->castToBase(t, vp);
@@ -934,7 +934,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlParseException:
           if (t==RJSType_QXmlParseException::getIdStatic()) {
             return (QXmlParseException*)vp;
           }
@@ -1293,7 +1293,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlReader:
           for (int i=0; i<basecasters_QXmlReader.length(); i++) {
             RJSBasecaster_QXmlReader* basecaster = basecasters_QXmlReader[i];
             QXmlReader* ret = basecaster->castToBase(t, vp);
@@ -1302,7 +1302,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlReader:
           if (t==RJSType_QXmlReader::getIdStatic()) {
             return (QXmlReader*)vp;
           }
@@ -1887,7 +1887,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlSimpleReader:
           for (int i=0; i<basecasters_QXmlSimpleReader.length(); i++) {
             RJSBasecaster_QXmlSimpleReader* basecaster = basecasters_QXmlSimpleReader[i];
             QXmlSimpleReader* ret = basecaster->castToBase(t, vp);
@@ -1896,7 +1896,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlSimpleReader:
           if (t==RJSType_QXmlSimpleReader::getIdStatic()) {
             return (QXmlSimpleReader*)vp;
           }
@@ -2525,7 +2525,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlLocator:
           for (int i=0; i<basecasters_QXmlLocator.length(); i++) {
             RJSBasecaster_QXmlLocator* basecaster = basecasters_QXmlLocator[i];
             QXmlLocator* ret = basecaster->castToBase(t, vp);
@@ -2534,7 +2534,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlLocator:
           if (t==RJSType_QXmlLocator::getIdStatic()) {
             return (QXmlLocator*)vp;
           }
@@ -2776,7 +2776,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlContentHandler:
           for (int i=0; i<basecasters_QXmlContentHandler.length(); i++) {
             RJSBasecaster_QXmlContentHandler* basecaster = basecasters_QXmlContentHandler[i];
             QXmlContentHandler* ret = basecaster->castToBase(t, vp);
@@ -2785,7 +2785,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlContentHandler:
           if (t==RJSType_QXmlContentHandler::getIdStatic()) {
             return (QXmlContentHandler*)vp;
           }
@@ -3290,7 +3290,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlErrorHandler:
           for (int i=0; i<basecasters_QXmlErrorHandler.length(); i++) {
             RJSBasecaster_QXmlErrorHandler* basecaster = basecasters_QXmlErrorHandler[i];
             QXmlErrorHandler* ret = basecaster->castToBase(t, vp);
@@ -3299,7 +3299,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlErrorHandler:
           if (t==RJSType_QXmlErrorHandler::getIdStatic()) {
             return (QXmlErrorHandler*)vp;
           }
@@ -3600,7 +3600,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlDTDHandler:
           for (int i=0; i<basecasters_QXmlDTDHandler.length(); i++) {
             RJSBasecaster_QXmlDTDHandler* basecaster = basecasters_QXmlDTDHandler[i];
             QXmlDTDHandler* ret = basecaster->castToBase(t, vp);
@@ -3609,7 +3609,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlDTDHandler:
           if (t==RJSType_QXmlDTDHandler::getIdStatic()) {
             return (QXmlDTDHandler*)vp;
           }
@@ -3907,7 +3907,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlEntityResolver:
           for (int i=0; i<basecasters_QXmlEntityResolver.length(); i++) {
             RJSBasecaster_QXmlEntityResolver* basecaster = basecasters_QXmlEntityResolver[i];
             QXmlEntityResolver* ret = basecaster->castToBase(t, vp);
@@ -3916,7 +3916,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlEntityResolver:
           if (t==RJSType_QXmlEntityResolver::getIdStatic()) {
             return (QXmlEntityResolver*)vp;
           }
@@ -4148,7 +4148,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlLexicalHandler:
           for (int i=0; i<basecasters_QXmlLexicalHandler.length(); i++) {
             RJSBasecaster_QXmlLexicalHandler* basecaster = basecasters_QXmlLexicalHandler[i];
             QXmlLexicalHandler* ret = basecaster->castToBase(t, vp);
@@ -4157,7 +4157,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlLexicalHandler:
           if (t==RJSType_QXmlLexicalHandler::getIdStatic()) {
             return (QXmlLexicalHandler*)vp;
           }
@@ -4546,7 +4546,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlDeclHandler:
           for (int i=0; i<basecasters_QXmlDeclHandler.length(); i++) {
             RJSBasecaster_QXmlDeclHandler* basecaster = basecasters_QXmlDeclHandler[i];
             QXmlDeclHandler* ret = basecaster->castToBase(t, vp);
@@ -4555,7 +4555,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlDeclHandler:
           if (t==RJSType_QXmlDeclHandler::getIdStatic()) {
             return (QXmlDeclHandler*)vp;
           }
@@ -4883,7 +4883,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlDefaultHandler:
           for (int i=0; i<basecasters_QXmlDefaultHandler.length(); i++) {
             RJSBasecaster_QXmlDefaultHandler* basecaster = basecasters_QXmlDefaultHandler[i];
             QXmlDefaultHandler* ret = basecaster->castToBase(t, vp);
@@ -4892,7 +4892,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlDefaultHandler:
           if (t==RJSType_QXmlDefaultHandler::getIdStatic()) {
             return (QXmlDefaultHandler*)vp;
           }

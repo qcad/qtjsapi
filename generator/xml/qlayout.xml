@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qlayout.h">
   <class_decl name="QLayout" />
   <class_decl name="QSize" />
-  <class name="QLayout">
+  <class name="QLayout" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QLayoutItem" />

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qframe.h">
   <class_decl name="QStyleOptionFrame" />
-  <class name="QFrame">
+  <class name="QFrame" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

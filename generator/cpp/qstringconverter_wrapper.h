@@ -109,7 +109,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QStringConverter:
           for (int i=0; i<basecasters_QStringConverter.length(); i++) {
             RJSBasecaster_QStringConverter* basecaster = basecasters_QStringConverter[i];
             QStringConverter* ret = basecaster->castToBase(t, vp);
@@ -118,7 +118,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QStringConverter:
           if (t==RJSType_QStringConverter::getIdStatic()) {
             return (QStringConverter*)vp;
           }
@@ -476,7 +476,7 @@ LastEncoding = QStringConverter::LastEncoding,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QStringEncoder:
           for (int i=0; i<basecasters_QStringEncoder.length(); i++) {
             RJSBasecaster_QStringEncoder* basecaster = basecasters_QStringEncoder[i];
             QStringEncoder* ret = basecaster->castToBase(t, vp);
@@ -485,7 +485,7 @@ LastEncoding = QStringConverter::LastEncoding,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QStringEncoder:
           if (t==RJSType_QStringEncoder::getIdStatic()) {
             return (QStringEncoder*)vp;
           }
@@ -910,7 +910,7 @@ LastEncoding = QStringEncoder::LastEncoding,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QStringDecoder:
           for (int i=0; i<basecasters_QStringDecoder.length(); i++) {
             RJSBasecaster_QStringDecoder* basecaster = basecasters_QStringDecoder[i];
             QStringDecoder* ret = basecaster->castToBase(t, vp);
@@ -919,7 +919,7 @@ LastEncoding = QStringEncoder::LastEncoding,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QStringDecoder:
           if (t==RJSType_QStringDecoder::getIdStatic()) {
             return (QStringDecoder*)vp;
           }

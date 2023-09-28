@@ -5,7 +5,7 @@
   -->
   <class_decl name="QLineEdit" />
   <class_decl name="QCompleter" />
-  <class name="QComboBox">
+  <class name="QComboBox" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

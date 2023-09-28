@@ -44,7 +44,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QEasingCurve:
           for (int i=0; i<basecasters_QEasingCurve.length(); i++) {
             RJSBasecaster_QEasingCurve* basecaster = basecasters_QEasingCurve[i];
             QEasingCurve* ret = basecaster->castToBase(t, vp);
@@ -53,7 +53,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QEasingCurve:
           if (t==RJSType_QEasingCurve::getIdStatic()) {
             return (QEasingCurve*)vp;
           }

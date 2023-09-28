@@ -119,7 +119,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QItemSelectionModel:
           for (int i=0; i<basecasters_QItemSelectionModel.length(); i++) {
             RJSBasecaster_QItemSelectionModel* basecaster = basecasters_QItemSelectionModel[i];
             QItemSelectionModel* ret = basecaster->castToBase(t, vp);
@@ -128,7 +128,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QItemSelectionModel:
           if (t==RJSType_QItemSelectionModel::getIdStatic()) {
             return (QItemSelectionModel*)vp;
           }
@@ -1346,7 +1346,7 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QItemSelection:
           for (int i=0; i<basecasters_QItemSelection.length(); i++) {
             RJSBasecaster_QItemSelection* basecaster = basecasters_QItemSelection[i];
             QItemSelection* ret = basecaster->castToBase(t, vp);
@@ -1355,7 +1355,7 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QItemSelection:
           if (t==RJSType_QItemSelection::getIdStatic()) {
             return (QItemSelection*)vp;
           }

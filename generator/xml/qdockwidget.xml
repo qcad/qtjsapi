@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdockwidget.h">
   <class_decl name="QMainWindow" />
   <class_decl name="QStyleOptionDockWidget" />
-  <class name="QDockWidget">
+  <class name="QDockWidget" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

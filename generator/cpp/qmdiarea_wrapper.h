@@ -593,7 +593,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QMdiArea:
           for (int i=0; i<basecasters_QMdiArea.length(); i++) {
             RJSBasecaster_QMdiArea* basecaster = basecasters_QMdiArea[i];
             QMdiArea* ret = basecaster->castToBase(t, vp);
@@ -602,7 +602,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QMdiArea:
           if (t==RJSType_QMdiArea::getIdStatic()) {
             return (QMdiArea*)vp;
           }

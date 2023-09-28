@@ -111,7 +111,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QActionGroup:
           for (int i=0; i<basecasters_QActionGroup.length(); i++) {
             RJSBasecaster_QActionGroup* basecaster = basecasters_QActionGroup[i];
             QActionGroup* ret = basecaster->castToBase(t, vp);
@@ -120,7 +120,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QActionGroup:
           if (t==RJSType_QActionGroup::getIdStatic()) {
             return (QActionGroup*)vp;
           }

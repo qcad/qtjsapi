@@ -633,7 +633,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPushButton:
           for (int i=0; i<basecasters_QPushButton.length(); i++) {
             RJSBasecaster_QPushButton* basecaster = basecasters_QPushButton[i];
             QPushButton* ret = basecaster->castToBase(t, vp);
@@ -642,7 +642,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPushButton:
           if (t==RJSType_QPushButton::getIdStatic()) {
             return (QPushButton*)vp;
           }

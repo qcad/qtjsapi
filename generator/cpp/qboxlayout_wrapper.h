@@ -149,7 +149,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QBoxLayout:
           for (int i=0; i<basecasters_QBoxLayout.length(); i++) {
             RJSBasecaster_QBoxLayout* basecaster = basecasters_QBoxLayout[i];
             QBoxLayout* ret = basecaster->castToBase(t, vp);
@@ -158,7 +158,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QBoxLayout:
           if (t==RJSType_QBoxLayout::getIdStatic()) {
             return (QBoxLayout*)vp;
           }
@@ -2280,7 +2280,7 @@ Up = QBoxLayout::Up,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QHBoxLayout:
           for (int i=0; i<basecasters_QHBoxLayout.length(); i++) {
             RJSBasecaster_QHBoxLayout* basecaster = basecasters_QHBoxLayout[i];
             QHBoxLayout* ret = basecaster->castToBase(t, vp);
@@ -2289,7 +2289,7 @@ Up = QBoxLayout::Up,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QHBoxLayout:
           if (t==RJSType_QHBoxLayout::getIdStatic()) {
             return (QHBoxLayout*)vp;
           }
@@ -4407,7 +4407,7 @@ Up = QHBoxLayout::Up,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QVBoxLayout:
           for (int i=0; i<basecasters_QVBoxLayout.length(); i++) {
             RJSBasecaster_QVBoxLayout* basecaster = basecasters_QVBoxLayout[i];
             QVBoxLayout* ret = basecaster->castToBase(t, vp);
@@ -4416,7 +4416,7 @@ Up = QHBoxLayout::Up,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QVBoxLayout:
           if (t==RJSType_QVBoxLayout::getIdStatic()) {
             return (QVBoxLayout*)vp;
           }

@@ -44,7 +44,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPageLayout:
           for (int i=0; i<basecasters_QPageLayout.length(); i++) {
             RJSBasecaster_QPageLayout* basecaster = basecasters_QPageLayout[i];
             QPageLayout* ret = basecaster->castToBase(t, vp);
@@ -53,7 +53,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPageLayout:
           if (t==RJSType_QPageLayout::getIdStatic()) {
             return (QPageLayout*)vp;
           }

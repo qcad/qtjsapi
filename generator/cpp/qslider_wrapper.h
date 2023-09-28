@@ -601,7 +601,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QSlider:
           for (int i=0; i<basecasters_QSlider.length(); i++) {
             RJSBasecaster_QSlider* basecaster = basecasters_QSlider[i];
             QSlider* ret = basecaster->castToBase(t, vp);
@@ -610,7 +610,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QSlider:
           if (t==RJSType_QSlider::getIdStatic()) {
             return (QSlider*)vp;
           }

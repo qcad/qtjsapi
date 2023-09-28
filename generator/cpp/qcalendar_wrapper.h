@@ -107,7 +107,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QCalendar:
           for (int i=0; i<basecasters_QCalendar.length(); i++) {
             RJSBasecaster_QCalendar* basecaster = basecasters_QCalendar[i];
             QCalendar* ret = basecaster->castToBase(t, vp);
@@ -116,7 +116,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QCalendar:
           if (t==RJSType_QCalendar::getIdStatic()) {
             return (QCalendar*)vp;
           }

@@ -719,7 +719,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QListView:
           for (int i=0; i<basecasters_QListView.length(); i++) {
             RJSBasecaster_QListView* basecaster = basecasters_QListView[i];
             QListView* ret = basecaster->castToBase(t, vp);
@@ -728,7 +728,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QListView:
           if (t==RJSType_QListView::getIdStatic()) {
             return (QListView*)vp;
           }

@@ -246,7 +246,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextDocument:
           for (int i=0; i<basecasters_QTextDocument.length(); i++) {
             RJSBasecaster_QTextDocument* basecaster = basecasters_QTextDocument[i];
             QTextDocument* ret = basecaster->castToBase(t, vp);
@@ -255,7 +255,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextDocument:
           if (t==RJSType_QTextDocument::getIdStatic()) {
             return (QTextDocument*)vp;
           }

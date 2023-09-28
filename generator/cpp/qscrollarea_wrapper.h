@@ -539,7 +539,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QScrollArea:
           for (int i=0; i<basecasters_QScrollArea.length(); i++) {
             RJSBasecaster_QScrollArea* basecaster = basecasters_QScrollArea[i];
             QScrollArea* ret = basecaster->castToBase(t, vp);
@@ -548,7 +548,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QScrollArea:
           if (t==RJSType_QScrollArea::getIdStatic()) {
             return (QScrollArea*)vp;
           }

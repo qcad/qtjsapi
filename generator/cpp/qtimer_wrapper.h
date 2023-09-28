@@ -155,7 +155,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTimer:
           for (int i=0; i<basecasters_QTimer.length(); i++) {
             RJSBasecaster_QTimer* basecaster = basecasters_QTimer[i];
             QTimer* ret = basecaster->castToBase(t, vp);
@@ -164,7 +164,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTimer:
           if (t==RJSType_QTimer::getIdStatic()) {
             return (QTimer*)vp;
           }

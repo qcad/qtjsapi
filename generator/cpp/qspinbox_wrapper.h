@@ -581,7 +581,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QSpinBox:
           for (int i=0; i<basecasters_QSpinBox.length(); i++) {
             RJSBasecaster_QSpinBox* basecaster = basecasters_QSpinBox[i];
             QSpinBox* ret = basecaster->castToBase(t, vp);
@@ -590,7 +590,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QSpinBox:
           if (t==RJSType_QSpinBox::getIdStatic()) {
             return (QSpinBox*)vp;
           }
@@ -6405,7 +6405,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDoubleSpinBox:
           for (int i=0; i<basecasters_QDoubleSpinBox.length(); i++) {
             RJSBasecaster_QDoubleSpinBox* basecaster = basecasters_QDoubleSpinBox[i];
             QDoubleSpinBox* ret = basecaster->castToBase(t, vp);
@@ -6414,7 +6414,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDoubleSpinBox:
           if (t==RJSType_QDoubleSpinBox::getIdStatic()) {
             return (QDoubleSpinBox*)vp;
           }

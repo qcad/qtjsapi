@@ -545,7 +545,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QMdiSubWindow:
           for (int i=0; i<basecasters_QMdiSubWindow.length(); i++) {
             RJSBasecaster_QMdiSubWindow* basecaster = basecasters_QMdiSubWindow[i];
             QMdiSubWindow* ret = basecaster->castToBase(t, vp);
@@ -554,7 +554,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QMdiSubWindow:
           if (t==RJSType_QMdiSubWindow::getIdStatic()) {
             return (QMdiSubWindow*)vp;
           }

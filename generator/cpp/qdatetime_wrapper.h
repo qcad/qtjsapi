@@ -186,7 +186,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDate:
           for (int i=0; i<basecasters_QDate.length(); i++) {
             RJSBasecaster_QDate* basecaster = basecasters_QDate[i];
             QDate* ret = basecaster->castToBase(t, vp);
@@ -195,7 +195,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDate:
           if (t==RJSType_QDate::getIdStatic()) {
             return (QDate*)vp;
           }
@@ -1032,7 +1032,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTime:
           for (int i=0; i<basecasters_QTime.length(); i++) {
             RJSBasecaster_QTime* basecaster = basecasters_QTime[i];
             QTime* ret = basecaster->castToBase(t, vp);
@@ -1041,7 +1041,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTime:
           if (t==RJSType_QTime::getIdStatic()) {
             return (QTime*)vp;
           }
@@ -1897,7 +1897,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QDateTime:
           for (int i=0; i<basecasters_QDateTime.length(); i++) {
             RJSBasecaster_QDateTime* basecaster = basecasters_QDateTime[i];
             QDateTime* ret = basecaster->castToBase(t, vp);
@@ -1906,7 +1906,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QDateTime:
           if (t==RJSType_QDateTime::getIdStatic()) {
             return (QDateTime*)vp;
           }

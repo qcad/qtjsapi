@@ -44,7 +44,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QStandardItem:
           for (int i=0; i<basecasters_QStandardItem.length(); i++) {
             RJSBasecaster_QStandardItem* basecaster = basecasters_QStandardItem[i];
             QStandardItem* ret = basecaster->castToBase(t, vp);
@@ -53,7 +53,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QStandardItem:
           if (t==RJSType_QStandardItem::getIdStatic()) {
             return (QStandardItem*)vp;
           }
@@ -2133,7 +2133,7 @@ UserType = QStandardItem::UserType,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QStandardItemModel:
           for (int i=0; i<basecasters_QStandardItemModel.length(); i++) {
             RJSBasecaster_QStandardItemModel* basecaster = basecasters_QStandardItemModel[i];
             QStandardItemModel* ret = basecaster->castToBase(t, vp);
@@ -2142,7 +2142,7 @@ UserType = QStandardItem::UserType,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QStandardItemModel:
           if (t==RJSType_QStandardItemModel::getIdStatic()) {
             return (QStandardItemModel*)vp;
           }

@@ -125,7 +125,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QAbstractItemDelegate:
           for (int i=0; i<basecasters_QAbstractItemDelegate.length(); i++) {
             RJSBasecaster_QAbstractItemDelegate* basecaster = basecasters_QAbstractItemDelegate[i];
             QAbstractItemDelegate* ret = basecaster->castToBase(t, vp);
@@ -134,7 +134,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QAbstractItemDelegate:
           if (t==RJSType_QAbstractItemDelegate::getIdStatic()) {
             return (QAbstractItemDelegate*)vp;
           }

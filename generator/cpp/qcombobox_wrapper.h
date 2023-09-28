@@ -651,7 +651,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QComboBox:
           for (int i=0; i<basecasters_QComboBox.length(); i++) {
             RJSBasecaster_QComboBox* basecaster = basecasters_QComboBox[i];
             QComboBox* ret = basecaster->castToBase(t, vp);
@@ -660,7 +660,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QComboBox:
           if (t==RJSType_QComboBox::getIdStatic()) {
             return (QComboBox*)vp;
           }

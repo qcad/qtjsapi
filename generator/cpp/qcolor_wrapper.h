@@ -422,7 +422,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QColor:
           for (int i=0; i<basecasters_QColor.length(); i++) {
             RJSBasecaster_QColor* basecaster = basecasters_QColor[i];
             QColor* ret = basecaster->castToBase(t, vp);
@@ -431,7 +431,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QColor:
           if (t==RJSType_QColor::getIdStatic()) {
             return (QColor*)vp;
           }

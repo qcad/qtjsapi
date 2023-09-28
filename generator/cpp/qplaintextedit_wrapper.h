@@ -657,7 +657,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPlainTextEdit:
           for (int i=0; i<basecasters_QPlainTextEdit.length(); i++) {
             RJSBasecaster_QPlainTextEdit* basecaster = basecasters_QPlainTextEdit[i];
             QPlainTextEdit* ret = basecaster->castToBase(t, vp);
@@ -666,7 +666,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPlainTextEdit:
           if (t==RJSType_QPlainTextEdit::getIdStatic()) {
             return (QPlainTextEdit*)vp;
           }

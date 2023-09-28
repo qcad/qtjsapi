@@ -45,7 +45,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QFileIconProvider:
           for (int i=0; i<basecasters_QFileIconProvider.length(); i++) {
             RJSBasecaster_QFileIconProvider* basecaster = basecasters_QFileIconProvider[i];
             QFileIconProvider* ret = basecaster->castToBase(t, vp);
@@ -54,7 +54,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QFileIconProvider:
           if (t==RJSType_QFileIconProvider::getIdStatic()) {
             return (QFileIconProvider*)vp;
           }

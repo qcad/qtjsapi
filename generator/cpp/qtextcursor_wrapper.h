@@ -66,7 +66,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QTextCursor:
           for (int i=0; i<basecasters_QTextCursor.length(); i++) {
             RJSBasecaster_QTextCursor* basecaster = basecasters_QTextCursor[i];
             QTextCursor* ret = basecaster->castToBase(t, vp);
@@ -75,7 +75,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QTextCursor:
           if (t==RJSType_QTextCursor::getIdStatic()) {
             return (QTextCursor*)vp;
           }

@@ -52,7 +52,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPainterPath:
           for (int i=0; i<basecasters_QPainterPath.length(); i++) {
             RJSBasecaster_QPainterPath* basecaster = basecasters_QPainterPath[i];
             QPainterPath* ret = basecaster->castToBase(t, vp);
@@ -61,7 +61,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPainterPath:
           if (t==RJSType_QPainterPath::getIdStatic()) {
             return (QPainterPath*)vp;
           }
@@ -1451,7 +1451,7 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPainterPathStroker:
           for (int i=0; i<basecasters_QPainterPathStroker.length(); i++) {
             RJSBasecaster_QPainterPathStroker* basecaster = basecasters_QPainterPathStroker[i];
             QPainterPathStroker* ret = basecaster->castToBase(t, vp);
@@ -1460,7 +1460,7 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPainterPathStroker:
           if (t==RJSType_QPainterPathStroker::getIdStatic()) {
             return (QPainterPathStroker*)vp;
           }

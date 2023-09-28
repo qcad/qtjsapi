@@ -5,7 +5,7 @@
   <class_decl name="QStatusBar" />
   <class_decl name="QToolBar" />
   <class_decl name="QMenu" />
-  <class name="QMainWindow">
+  <class name="QMainWindow" downcast="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

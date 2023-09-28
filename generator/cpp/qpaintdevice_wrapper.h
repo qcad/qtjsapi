@@ -138,7 +138,7 @@
               }
               
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QPaintDevice:
           for (int i=0; i<basecasters_QPaintDevice.length(); i++) {
             RJSBasecaster_QPaintDevice* basecaster = basecasters_QPaintDevice[i];
             QPaintDevice* ret = basecaster->castToBase(t, vp);
@@ -147,7 +147,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QPaintDevice:
           if (t==RJSType_QPaintDevice::getIdStatic()) {
             return (QPaintDevice*)vp;
           }

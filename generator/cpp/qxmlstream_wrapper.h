@@ -44,7 +44,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlStreamAttribute:
           for (int i=0; i<basecasters_QXmlStreamAttribute.length(); i++) {
             RJSBasecaster_QXmlStreamAttribute* basecaster = basecasters_QXmlStreamAttribute[i];
             QXmlStreamAttribute* ret = basecaster->castToBase(t, vp);
@@ -53,7 +53,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlStreamAttribute:
           if (t==RJSType_QXmlStreamAttribute::getIdStatic()) {
             return (QXmlStreamAttribute*)vp;
           }
@@ -331,7 +331,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlStreamAttributes:
           for (int i=0; i<basecasters_QXmlStreamAttributes.length(); i++) {
             RJSBasecaster_QXmlStreamAttributes* basecaster = basecasters_QXmlStreamAttributes[i];
             QXmlStreamAttributes* ret = basecaster->castToBase(t, vp);
@@ -340,7 +340,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlStreamAttributes:
           if (t==RJSType_QXmlStreamAttributes::getIdStatic()) {
             return (QXmlStreamAttributes*)vp;
           }
@@ -617,7 +617,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlStreamReader:
           for (int i=0; i<basecasters_QXmlStreamReader.length(); i++) {
             RJSBasecaster_QXmlStreamReader* basecaster = basecasters_QXmlStreamReader[i];
             QXmlStreamReader* ret = basecaster->castToBase(t, vp);
@@ -626,7 +626,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlStreamReader:
           if (t==RJSType_QXmlStreamReader::getIdStatic()) {
             return (QXmlStreamReader*)vp;
           }
@@ -1656,7 +1656,7 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QXmlStreamWriter:
           for (int i=0; i<basecasters_QXmlStreamWriter.length(); i++) {
             RJSBasecaster_QXmlStreamWriter* basecaster = basecasters_QXmlStreamWriter[i];
             QXmlStreamWriter* ret = basecaster->castToBase(t, vp);
@@ -1665,7 +1665,7 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QXmlStreamWriter:
           if (t==RJSType_QXmlStreamWriter::getIdStatic()) {
             return (QXmlStreamWriter*)vp;
           }

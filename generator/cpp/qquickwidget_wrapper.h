@@ -555,7 +555,7 @@
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base QQuickWidget:
           for (int i=0; i<basecasters_QQuickWidget.length(); i++) {
             RJSBasecaster_QQuickWidget* basecaster = basecasters_QQuickWidget[i];
             QQuickWidget* ret = basecaster->castToBase(t, vp);
@@ -564,7 +564,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class QQuickWidget:
           if (t==RJSType_QQuickWidget::getIdStatic()) {
             return (QQuickWidget*)vp;
           }
