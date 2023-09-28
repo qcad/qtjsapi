@@ -1685,7 +1685,10 @@
 
               // attempt to downcast to specific type:
               <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and @downcast='true']">
+                <!--
                 if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
+                -->
+                if (RJSType_<xsl:value-of select="../../@name" />::isOfType(t)) {
                   return <xsl:value-of select="$rjshelper_class"/>::js2cpp_QSharedPointer_<xsl:value-of select="../../@name" />(handler, v);
                 }
               </xsl:for-each>
@@ -1812,7 +1815,10 @@
 
               // attempt to downcast to specific type:
               <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and @downcast='true']">
+                <!--
                 if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
+                -->
+                if (RJSType_<xsl:value-of select="../../@name" />::isOfType(t)) {
                   return <xsl:value-of select="$rjshelper_class"/>::js2cpp_QSharedPointer_<xsl:value-of select="../../@name" />(handler, v);
                 }
               </xsl:for-each>

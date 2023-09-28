@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xsl:stylesheet version="1.0"
+    xmlns:qsrc="http://qcad.org/namespaces/src" 
     xmlns:qc="http://qcad.org/namespaces/xsl"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:func="http://exslt.org/functions"
@@ -70,6 +71,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -78,6 +83,30 @@
 
     <xsl:if test="$mode='cpp'">
       int RJSType_<xsl:value-of select="text()" />::id = -1;
+
+
+      bool RJSType_<xsl:value-of select="text()" />::isOfType(int otherType) {
+          if (otherType==getIdStatic()) return true;
+
+          // check for derived types:
+          <xsl:variable name="type">
+            <xsl:value-of select="text()" />
+          </xsl:variable>
+          <!--
+          last position is not enough (multiple inheritance):
+          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and position()=last()]">
+          -->
+          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type]">
+            <!--
+            if (RJSType_<xsl:value-of select="../../@name" />::isOfType(t)) {
+              return true;
+            }
+            -->
+            if (otherType==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) return true;
+          </xsl:for-each>
+
+          return false;
+      }
     </xsl:if>
   </xsl:for-each>
 
