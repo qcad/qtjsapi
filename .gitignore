@@ -79,3 +79,4 @@ tmp
 .qtc
 .qtc_clangd
 qtcsettings.cmake
+Testing

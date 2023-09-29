@@ -130,8 +130,6 @@
   <!-- e.g. RShape or QSharedPointer<RShape> or QList<QSharedPointer<RShape>> -->
   <xsl:param name="type" />
 
-  <xsl:message>get-helper-postfix: type: <xsl:value-of select="$type" /></xsl:message>
-
   <xsl:variable name="class">
     <xsl:value-of select="qc:strip-pointer-reference-const($type)" />
   </xsl:variable>
@@ -141,26 +139,18 @@
     <xsl:value-of select="qc:substring-before-last(substring-after($type, '&lt;'), '&gt;')" />
   </xsl:variable>
 
-  <xsl:message>get-helper-postfix: itemtype: <xsl:value-of select="$itemtype" /></xsl:message>
-
   <!-- e.g. RShape or RShape* -->
   <xsl:variable name="itemtype2">
     <xsl:value-of select="substring-before(substring-after($itemtype, '&lt;'), '&gt;')" />
   </xsl:variable>
 
-  <xsl:message>get-helper-postfix: itemtype2: <xsl:value-of select="$itemtype2" /></xsl:message>
-
   <xsl:variable name="itemclass">
     <xsl:value-of select="qc:strip-pointer-reference-const($itemtype)" />
   </xsl:variable>
 
-  <xsl:message>get-helper-postfix: itemclass: <xsl:value-of select="$itemclass" /></xsl:message>
-
   <xsl:variable name="itemclass2">
     <xsl:value-of select="qc:strip-pointer-reference-const($itemtype2)" />
   </xsl:variable>
-
-  <xsl:message>get-helper-postfix: itemclass2: <xsl:value-of select="$itemclass2" /></xsl:message>
 
   <func:result>
     <xsl:choose>
