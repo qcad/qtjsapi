@@ -16,8 +16,6 @@
 
 <xsl:output method="xml" />
 
-<xsl:param name="module" />
-
 <xsl:template match="node()|@*|text()">
   <xsl:copy>
      <xsl:apply-templates select="node()|@*"/>
@@ -46,79 +44,29 @@
       <xsl:variable name="super-class-name" select="@name" />
 
       <!-- merge constants from super classes -->
-      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:constant">
-        <xsl:apply-templates select=".">
-          <xsl:with-param name="super-class-name" select="$super-class-name" />
-        </xsl:apply-templates>
-      </xsl:for-each>
-
-      <xsl:if test="$module!=''">
-        <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:constant">
+      <xsl:for-each select="document('merge_modules.xml')/paths/path">
+        <xsl:for-each select="document(text())/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:constant">
           <xsl:apply-templates select=".">
             <xsl:with-param name="super-class-name" select="$super-class-name" />
           </xsl:apply-templates>
         </xsl:for-each>
-      </xsl:if>
 
-      <!-- merge enums from super classes -->
-      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:enum">
-        <xsl:apply-templates select=".">
-          <xsl:with-param name="super-class-name" select="$super-class-name" />
-        </xsl:apply-templates>
-      </xsl:for-each>
-
-      <xsl:if test="$module!=''">
-        <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:enum">
+        <!-- merge enums from super classes -->
+        <xsl:for-each select="document(text())/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:enum">
           <xsl:apply-templates select=".">
             <xsl:with-param name="super-class-name" select="$super-class-name" />
           </xsl:apply-templates>
         </xsl:for-each>
-      </xsl:if>
 
-      <!-- merge properties from super classes -->
-      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:property">
-        <xsl:apply-templates select=".">
-          <xsl:with-param name="super-class-name" select="$super-class-name" />
-        </xsl:apply-templates>
-      </xsl:for-each>
-
-      <xsl:if test="$module!=''">
-        <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:property">
+        <!-- merge properties from super classes -->
+        <xsl:for-each select="document(text())/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:property">
           <xsl:apply-templates select=".">
             <xsl:with-param name="super-class-name" select="$super-class-name" />
           </xsl:apply-templates>
         </xsl:for-each>
-      </xsl:if>
 
-
-      <!-- merge functions from super classes -->
-      <!--
-      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:function[@static!='true']">
-      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:function[not(@static='true')]">
-      -->
-      <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:function">
-        <xsl:variable name="super-function-name" select="@name" />
-
-        <!-- TODO: needed in some cases -->
-        <!-- TODO: avoid same function from multiple base classes (e.g. QObject::setParent, QWidget::setParent -->
-        <!--
-        <xsl:if test="not(qsrc:super_list/qsrc:super[@name='QWidget']) or not($super-function-name='setParent') or not($super-class-name='QObject')">
-        -->
-        <xsl:if test="not($is-qwidget='1') or not($super-function-name='setParent') or not($super-class-name='QObject')">
-        <!--
-        <xsl:if test="not(document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$class-name]/qsrc:function[@name=$super-function-name])">
-        -->
-          <xsl:apply-templates select=".">
-            <xsl:with-param name="super-class-name" select="$super-class-name" />
-          </xsl:apply-templates>
-        <!--
-        </xsl:if>
-        -->
-        </xsl:if>
-      </xsl:for-each>
-
-      <xsl:if test="$module!=''">
-        <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:function">
+        <!-- merge functions from super classes -->
+        <xsl:for-each select="document(text())/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:function">
           <xsl:variable name="super-function-name" select="@name" />
 
           <xsl:if test="not($is-qwidget='1') or not($super-function-name='setParent') or not($super-class-name='QObject')">
@@ -127,12 +75,9 @@
             </xsl:apply-templates>
           </xsl:if>
         </xsl:for-each>
-      </xsl:if>
+      </xsl:for-each>
 
     </xsl:for-each>
-
-
-
 
     <!--
       Own members at last (these will be used in case of duplicates):
