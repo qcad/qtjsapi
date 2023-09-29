@@ -71,10 +71,12 @@
               return id;
           }
 
-          // return true if the given type is derived from type
-          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
-          Q_INVOKABLE
-          static bool isOfType(int otherType);
+          <xsl:if test="$module!=''">
+            // return true if the given type is derived from type
+            // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+            Q_INVOKABLE
+            static bool isOfType(int otherType);
+          </xsl:if>
 
       private:
           static int id;
@@ -85,28 +87,26 @@
       int RJSType_<xsl:value-of select="text()" />::id = -1;
 
 
-      bool RJSType_<xsl:value-of select="text()" />::isOfType(int otherType) {
-          if (otherType==getIdStatic()) return true;
+      <xsl:if test="$module!=''">
+        bool RJSType_<xsl:value-of select="text()" />::isOfType(int otherType) {
+            // initialize list of derrived types:
+            <xsl:variable name="type">
+              <xsl:value-of select="text()" />
+            </xsl:variable>
+            static QSet&lt;int&gt; derrivedTypes = {
+              getIdStatic(),
+              <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type]">
+                RJSType_<xsl:value-of select="../../@name" />::getIdStatic()
+                <xsl:if test="position()!=last()">
+                  <xsl:text>,</xsl:text>
+                </xsl:if>
+              </xsl:for-each>
+            };
 
-          // check for derived types:
-          <xsl:variable name="type">
-            <xsl:value-of select="text()" />
-          </xsl:variable>
-          <!--
-          last position is not enough (multiple inheritance):
-          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and position()=last()]">
-          -->
-          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type]">
-            <!--
-            if (RJSType_<xsl:value-of select="../../@name" />::isOfType(t)) {
-              return true;
-            }
-            -->
-            if (otherType==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) return true;
-          </xsl:for-each>
-
-          return false;
-      }
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      </xsl:if>
     </xsl:if>
   </xsl:for-each>
 
