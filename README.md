@@ -9,7 +9,7 @@ for Qt 5 which was made obsolete when the Qt Script module was declared deprecat
 
 License
 -------
-MIT License (see [LICENSE.txt](https://github.com/qcad/qtjsapi/blob/main/LICENSE.txt))
+MIT License. See [LICENSE.txt](https://github.com/qcad/qtjsapi/blob/main/LICENSE.txt).
 
 Usage
 -----
