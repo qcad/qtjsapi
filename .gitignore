@@ -80,3 +80,4 @@ tmp
 .qtc_clangd
 qtcsettings.cmake
 Testing
+out

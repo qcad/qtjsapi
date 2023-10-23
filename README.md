@@ -9,12 +9,9 @@ Usage
 
 QJSEngine* engine = new QJSEngine();
 RJSApi* rjsapi = new RJSApi(engine);
-rjsapi->e
+engine-&gt;evaluate("print('Hello World')");
 
 Build
 
 CMAKE_PREFIX_PATH=/path/to/Qt/6.5.2/macos cmake -G Ninja .
 ninja
-
-
-

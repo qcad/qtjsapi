@@ -15,7 +15,7 @@ class RJSTools;
 
 
 /**
- * Script handler implementation for JS scripts, based on QJSEngine.
+ * Qt Script API based on QJSEngine.
  */
 class QTJSAPI_EXPORT RJSApi: public QObject {
 Q_OBJECT
@@ -50,8 +50,7 @@ private:
     QJSEngine* engine;
     RJSTools* tools;
 
-    // list of wrappers created for this script handler:
-    // deleted when script handler is deleted:
+    // list of wrappers created for this RJSApi instance:
     QSet<RJSWrapperObj*> wrappers;
 };
 
