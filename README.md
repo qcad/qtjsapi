@@ -4,12 +4,12 @@ QtJSAPI
 QJSEngine bindings for the Qt API
 
 This project was developed as part of the QCAD application and
-replaces the Qt Script based <a href="https://github.com/qt-labs/qtscriptgenerator">qtscriptgenerator</a> 
+replaces the Qt Script based [qtscriptgenerator](https://github.com/qt-labs/qtscriptgenerator)
 for Qt 5 which was made obsolete when the Qt Script module was declared deprecated.
 
 License
 -------
-MIT License (see LICENSE.txt)
+MIT License (see [LICENSE.txt](https://github.com/qcad/qtjsapi/blob/main/LICENSE.txt))
 
 Usage
 -----
