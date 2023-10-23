@@ -161,28 +161,13 @@ RJSApi::RJSApi(QJSEngine* engine) : engine(engine) {
 
 
 RJSApi::~RJSApi() {
-    qDebug() << "RJSApi::~RJSApi";
-    //if (engine->hasUncaughtException()) {
-    //    qWarning() << "At least one uncaught exception:";
-    //}
-
-//    if (engine->isEvaluating()) {
-//        qWarning() << "Deleting script engine that is still evaluating.";
-//    }
     // collect garbage... (objects are scheduled for removal, not removed):
     qDebug() << "collect garbage...";
     engine->collectGarbage();
-    //QCoreApplication::processEvents();
     qDebug() << "collect garbage: DONE";
-
-    //QVariant v = engine->property("__to_delete__");
-    //RMdiArea_Wrapper* w = v.value<RMdiArea_Wrapper*>();
-    //delete w;
 
     // delete wrappers:
     qDebug() << "deleting wrappers (" + engine->objectName() + "): " << wrappers.size();
-    // TODO: crashes:
-    //QtConcurrent::blockingMap(RS::toList<RJSWrapperObj*>(wrappers), RJSApi::deleteWrapper);
     QSetIterator<RJSWrapperObj*> i(wrappers);
     while (i.hasNext()) {
         RJSWrapperObj* wrapper = i.next();
@@ -202,26 +187,12 @@ RJSApi::~RJSApi() {
     // objects are deleted here:
     QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
     qDebug() << "collect garbage: DONE";
-
-    qDebug() << "delete engine:" << (unsigned long long int)engine << "...";
-    //delete engine;
-    qDebug() << "delete engine:" << (unsigned long long int)engine << " DONE";
 }
-
-//void RJSApi::deleteWrapper(RJSWrapperObj* wrapper) {
-//    qDebug() << "deleting wrapper: " << (unsigned long long int)wrapper;
-//    delete wrapper;
-//}
 
 void RJSApi::init() {
     static int counter = 0;
 
-    qDebug() << "RJSApi::RJSApi";
-
-    // TODO: use QQmlApplicationEngine to allow mixing QML / JS:
-    //engine = new QJSEngine();
     engine->setObjectName(QString("E%1").arg(counter++));
-    qDebug() << "script engine:" << engine->objectName();
 
     engine->installExtensions(QJSEngine::AllExtensions);
     QJSValue global = engine->globalObject();
@@ -246,13 +217,6 @@ void RJSApi::init() {
     engine->evaluate("function qDebug() { tools.debug(Array.prototype.slice.apply(arguments)); } ");
     engine->evaluate("function qWarning() { tools.warning(Array.prototype.slice.apply(arguments)); } ");
 
-    //RSingleApplication* app = dynamic_cast<RSingleApplication*>(qApp);
-    /*
-    RSingleApplication_Wrapper* app = new RSingleApplication_Wrapper(*this, dynamic_cast<RSingleApplication*>(qApp), false);
-    global.setProperty("qApp", engine->newQObject(app));
-    QQmlEngine::setObjectOwnership(app, QQmlEngine::CppOwnership);
-    */
-
     {
         QString fileName = ":copyproperties.js";
         QFile scriptFile(fileName);
@@ -269,9 +233,6 @@ void RJSApi::init() {
             }
         }
     }
-
-    //RJSType* t = new RJSType();
-    //global.setProperty("RJSType", engine->newQObject(t));
 
     Qt_Wrapper::init(*this);
     QCoreApplication_Wrapper::init(*this);
@@ -345,7 +306,6 @@ void RJSApi::init() {
     QTimer_Wrapper::init(*this);
     QKeySequence_Wrapper::init(*this);
     QCheckBox_Wrapper::init(*this);
-    //QCoreApplication_Wrapper::init(*this);
     QTextCursor_Wrapper::init(*this);
     QSplitter_Wrapper::init(*this);
     QStatusBar_Wrapper::init(*this);
@@ -500,9 +460,7 @@ void RJSApi::unregisterWrapper(RJSWrapperObj& obj) {
     if (!obj.isCppOwnership()) {
         return;
     }
-    //RDebug::startTimer(123);
     wrappers.remove(&obj);
-    //RDebug::stopTimer(123, QString("wrappers.remove ") + engine->objectName());
 }
 
 

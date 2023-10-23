@@ -13,12 +13,16 @@ if(MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /bigobj")
 endif()
 
-if(CMAKE_BUILD_TYPE STREQUAL "Release")
-    link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/release)
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/../qcad)
+    # build for QCAD:
+    if(CMAKE_BUILD_TYPE STREQUAL "Release")
+        link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/release)
+    else()
+        link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/debug)
+    endif()
     link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/plugins)
 else()
-    link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/debug)
-    link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/plugins)
+    link_directories(out)
 endif()
 
 qt_add_library(qtjsapi SHARED
@@ -35,19 +39,26 @@ qt_add_library(qtjsapi SHARED
 include(generator/CMakeInclude.txt)
 
 target_include_directories(qtjsapi PRIVATE
+    .
     generator
     generator/cpp
-    .
 )
 
-if (CMAKE_BUILD_TYPE STREQUAL "Release")
-    set_target_properties(qtjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/release)
-    set_target_properties(qtjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/release)
-    set_target_properties(qtjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../qcad/release)
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/../qcad)
+    # build for QCAD:
+    if(CMAKE_BUILD_TYPE STREQUAL "Release")
+        set_target_properties(qtjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/release)
+        set_target_properties(qtjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/release)
+        set_target_properties(qtjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../qcad/release)
+    else()
+        set_target_properties(qtjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/debug)
+        set_target_properties(qtjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/debug)
+        set_target_properties(qtjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../qcad/debug)
+    endif()
 else()
-    set_target_properties(qtjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/debug)
-    set_target_properties(qtjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/debug)
-    set_target_properties(qtjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../qcad/debug)
+    set_target_properties(qtjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY out)
+    set_target_properties(qtjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY out)
+    set_target_properties(qtjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY out)
 endif()
 
 target_compile_definitions(qtjsapi PRIVATE
@@ -71,3 +82,5 @@ target_link_libraries(qtjsapi PRIVATE
     Qt::Core5Compat
     Qt::QuickWidgets
 )
+
+add_subdirectory(console)
