@@ -16,8 +16,6 @@ class RJSTools;
 
 /**
  * Script handler implementation for JS scripts, based on QJSEngine.
- *
- * \ingroup js
  */
 class QTJSAPI_EXPORT RJSApi: public QObject {
 Q_OBJECT
@@ -26,25 +24,7 @@ public:
     RJSApi(QJSEngine* engine);
     virtual ~RJSApi();
 
-    //static void deleteWrapper(RJSWrapperObj* wrapper);
-
     virtual void init();
-
-    /*
-    virtual void doScript(const QString& scriptFile,const QStringList& arguments = QStringList());
-    virtual QVariant eval(const QString& script, const QString& fileName = QString());
-    virtual QVariant evalGlobal(const QString& script, const QString& fileName = QString());
-    virtual RFileImporterAdapter* createFileImporter(const QString& className, RDocument& document);
-    */
-
-    /*
-    virtual void createActionDocumentLevel(const QString& scriptFile,
-            RGuiAction* guiAction, RDocumentInterface* documentInterface);
-    virtual void createActionApplicationLevel(const QString& scriptFile,
-            RGuiAction* guiAction);
-            */
-
-    //void initGlobalVariables(const QString& scriptFile);
 
     QJSEngine* getEngine() {
         return engine;
