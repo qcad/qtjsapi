@@ -1,6 +1,6 @@
 MODULE="$1"
 
-NAME="rjsapi"
+NAME="qtjsapi"
 
 if [ ! -z $MODULE ]
 then

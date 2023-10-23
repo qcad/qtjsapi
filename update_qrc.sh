@@ -3,7 +3,7 @@ dirname=`dirname "$0"`
 cd $dirname
 
 MODULE="$1"
-OUTPUT="rjsapi"
+OUTPUT="qtjsapi"
 if [ ! -z $MODULE ]
 then
     OUTPUT="${MODULE}jsapi"

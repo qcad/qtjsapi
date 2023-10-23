@@ -1,7 +1,7 @@
 #ifndef RJSTOOLS_H
 #define RJSTOOLS_H
 
-#include "rjsapi_global.h"
+#include "qtjsapi_global.h"
 
 #include <QString>
 #include <QJSEngine>
@@ -20,7 +20,7 @@ class RJSApi;
  *
  * \ingroup js
  */
-class RJSAPI_EXPORT RJSTools: public QObject {
+class QTJSAPI_EXPORT RJSTools: public QObject {
 Q_OBJECT
 
 public:

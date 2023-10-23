@@ -1,5 +1,5 @@
 # Automatically generated, do not edit
-target_sources(rjsapi PUBLIC
+target_sources(qtjsapi PUBLIC
     generator/cpp/qabstractbutton_base.h
     generator/cpp/qabstractbutton_wrapper.h
     generator/cpp/qabstractfileiconprovider_base.h

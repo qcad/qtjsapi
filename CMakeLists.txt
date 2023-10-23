@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(rjsapi VERSION 1.0 LANGUAGES CXX)
+project(qtjsapi VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Sql Svg Xml PrintSupport Qml UiTools QuickWidgets Core5Compat)
 qt_standard_project_setup()
 
-qt_add_resources(SOURCES rjsapi.qrc)
+qt_add_resources(SOURCES qtjsapi.qrc)
 
 if(MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /bigobj")
@@ -21,7 +21,7 @@ else()
     link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/plugins)
 endif()
 
-qt_add_library(rjsapi SHARED
+qt_add_library(qtjsapi SHARED
     RJSWrapper.cpp RJSWrapper.h
     RJSTools.cpp RJSTools.h
     generator/RJSHelper.cpp generator/RJSHelper.h
@@ -34,28 +34,28 @@ qt_add_library(rjsapi SHARED
 
 include(generator/CMakeInclude.txt)
 
-target_include_directories(rjsapi PRIVATE
+target_include_directories(qtjsapi PRIVATE
     generator
     generator/cpp
     .
 )
 
 if (CMAKE_BUILD_TYPE STREQUAL "Release")
-    set_target_properties(rjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/release)
-    set_target_properties(rjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/release)
-    set_target_properties(rjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../qcad/release)
+    set_target_properties(qtjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/release)
+    set_target_properties(qtjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/release)
+    set_target_properties(qtjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../qcad/release)
 else()
-    set_target_properties(rjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/debug)
-    set_target_properties(rjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/debug)
-    set_target_properties(rjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../qcad/debug)
+    set_target_properties(qtjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/debug)
+    set_target_properties(qtjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/debug)
+    set_target_properties(qtjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../qcad/debug)
 endif()
 
-target_compile_definitions(rjsapi PRIVATE
-    RJSAPI_LIBRARY
-    RJSAPI_DLL
+target_compile_definitions(qtjsapi PRIVATE
+    QTJSAPI_LIBRARY
+    QTJSAPI_DLL
 )
 
-target_link_libraries(rjsapi PRIVATE
+target_link_libraries(qtjsapi PRIVATE
     Qt::Concurrent
     Qt::Core
     Qt::Gui
