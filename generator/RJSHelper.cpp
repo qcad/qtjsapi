@@ -982,6 +982,7 @@
           RJSWrapper* wrapper = getWrapperRJSWrapper(v);
           if (wrapper==nullptr) {
               qWarning() << "RJSHelper::js2cpp_QVariant: no wrapper";
+              handler.trace();
               return QVariant();
           }
 
@@ -1196,6 +1197,7 @@
           //QObject_Wrapper* wrapper = getWrapper<QObject_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "RJSHelper::js2cpp_QObject: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QObject*)wrapper->getWrappedVoid();
@@ -1506,6 +1508,7 @@
           //QWidget_Wrapper* wrapper = getWrapper<QWidget_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "RJSHelper::js2cpp_QWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QWidget*)wrapper->getWrappedVoid();
@@ -8850,6 +8853,7 @@
           QTextLayout_Wrapper* wrapper = getWrapper<QTextLayout_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_QTextLayout: no wrapper";
+              handler.trace();
               return QSharedPointer<QTextLayout>();
           }
           //return QSharedPointer<QTextLayout>(getWrapped_QTextLayout(wrapper));
@@ -8951,6 +8955,7 @@
           QSurfaceFormat_Wrapper* wrapper = getWrapper<QSurfaceFormat_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSurfaceFormat: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QSurfaceFormat();
           }
@@ -8972,6 +8977,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSurfaceFormat_ptr: no wrapper";
+              handler.trace();
               return QSurfaceFormat();
           }
           //QSurfaceFormat* ret = getWrapped_QSurfaceFormat(wrapper);
@@ -9065,6 +9071,7 @@
           QBitmap_Wrapper* wrapper = getWrapper<QBitmap_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QBitmap: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QBitmap();
           }
@@ -9086,6 +9093,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QBitmap_ptr: no wrapper";
+              handler.trace();
               return QBitmap();
           }
           //QBitmap* ret = getWrapped_QBitmap(wrapper);
@@ -9179,6 +9187,7 @@
           QBrush_Wrapper* wrapper = getWrapper<QBrush_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QBrush: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QBrush();
           }
@@ -9200,6 +9209,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QBrush_ptr: no wrapper";
+              handler.trace();
               return QBrush();
           }
           //QBrush* ret = getWrapped_QBrush(wrapper);
@@ -9293,6 +9303,7 @@
           QByteArray_Wrapper* wrapper = getWrapper<QByteArray_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QByteArray: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QByteArray();
           }
@@ -9314,6 +9325,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QByteArray_ptr: no wrapper";
+              handler.trace();
               return QByteArray();
           }
           //QByteArray* ret = getWrapped_QByteArray(wrapper);
@@ -9407,6 +9419,7 @@
           QColor_Wrapper* wrapper = getWrapper<QColor_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QColor: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QColor();
           }
@@ -9428,6 +9441,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QColor_ptr: no wrapper";
+              handler.trace();
               return QColor();
           }
           //QColor* ret = getWrapped_QColor(wrapper);
@@ -9521,6 +9535,7 @@
           QConicalGradient_Wrapper* wrapper = getWrapper<QConicalGradient_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QConicalGradient: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QConicalGradient();
           }
@@ -9542,6 +9557,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QConicalGradient_ptr: no wrapper";
+              handler.trace();
               return QConicalGradient();
           }
           //QConicalGradient* ret = getWrapped_QConicalGradient(wrapper);
@@ -9635,6 +9651,7 @@
           QCursor_Wrapper* wrapper = getWrapper<QCursor_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QCursor: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QCursor();
           }
@@ -9656,6 +9673,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QCursor_ptr: no wrapper";
+              handler.trace();
               return QCursor();
           }
           //QCursor* ret = getWrapped_QCursor(wrapper);
@@ -9749,6 +9767,7 @@
           QDate_Wrapper* wrapper = getWrapper<QDate_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDate: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDate();
           }
@@ -9770,6 +9789,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDate_ptr: no wrapper";
+              handler.trace();
               return QDate();
           }
           //QDate* ret = getWrapped_QDate(wrapper);
@@ -9863,6 +9883,7 @@
           QDateTime_Wrapper* wrapper = getWrapper<QDateTime_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDateTime: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDateTime();
           }
@@ -9884,6 +9905,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDateTime_ptr: no wrapper";
+              handler.trace();
               return QDateTime();
           }
           //QDateTime* ret = getWrapped_QDateTime(wrapper);
@@ -9977,6 +9999,7 @@
           QDesktopServices_Wrapper* wrapper = getWrapper<QDesktopServices_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDesktopServices: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDesktopServices();
           }
@@ -9998,6 +10021,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDesktopServices_ptr: no wrapper";
+              handler.trace();
               return QDesktopServices();
           }
           //QDesktopServices* ret = getWrapped_QDesktopServices(wrapper);
@@ -10091,6 +10115,7 @@
           QDir_Wrapper* wrapper = getWrapper<QDir_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDir: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDir();
           }
@@ -10112,6 +10137,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDir_ptr: no wrapper";
+              handler.trace();
               return QDir();
           }
           //QDir* ret = getWrapped_QDir(wrapper);
@@ -10205,6 +10231,7 @@
           QDomAttr_Wrapper* wrapper = getWrapper<QDomAttr_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomAttr: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomAttr();
           }
@@ -10226,6 +10253,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomAttr_ptr: no wrapper";
+              handler.trace();
               return QDomAttr();
           }
           //QDomAttr* ret = getWrapped_QDomAttr(wrapper);
@@ -10319,6 +10347,7 @@
           QDomCDATASection_Wrapper* wrapper = getWrapper<QDomCDATASection_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomCDATASection: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomCDATASection();
           }
@@ -10340,6 +10369,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomCDATASection_ptr: no wrapper";
+              handler.trace();
               return QDomCDATASection();
           }
           //QDomCDATASection* ret = getWrapped_QDomCDATASection(wrapper);
@@ -10433,6 +10463,7 @@
           QDomCharacterData_Wrapper* wrapper = getWrapper<QDomCharacterData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomCharacterData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomCharacterData();
           }
@@ -10454,6 +10485,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomCharacterData_ptr: no wrapper";
+              handler.trace();
               return QDomCharacterData();
           }
           //QDomCharacterData* ret = getWrapped_QDomCharacterData(wrapper);
@@ -10547,6 +10579,7 @@
           QDomComment_Wrapper* wrapper = getWrapper<QDomComment_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomComment: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomComment();
           }
@@ -10568,6 +10601,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomComment_ptr: no wrapper";
+              handler.trace();
               return QDomComment();
           }
           //QDomComment* ret = getWrapped_QDomComment(wrapper);
@@ -10661,6 +10695,7 @@
           QDomDocument_Wrapper* wrapper = getWrapper<QDomDocument_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomDocument: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomDocument();
           }
@@ -10682,6 +10717,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomDocument_ptr: no wrapper";
+              handler.trace();
               return QDomDocument();
           }
           //QDomDocument* ret = getWrapped_QDomDocument(wrapper);
@@ -10775,6 +10811,7 @@
           QDomDocumentFragment_Wrapper* wrapper = getWrapper<QDomDocumentFragment_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomDocumentFragment: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomDocumentFragment();
           }
@@ -10796,6 +10833,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomDocumentFragment_ptr: no wrapper";
+              handler.trace();
               return QDomDocumentFragment();
           }
           //QDomDocumentFragment* ret = getWrapped_QDomDocumentFragment(wrapper);
@@ -10889,6 +10927,7 @@
           QDomDocumentType_Wrapper* wrapper = getWrapper<QDomDocumentType_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomDocumentType: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomDocumentType();
           }
@@ -10910,6 +10949,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomDocumentType_ptr: no wrapper";
+              handler.trace();
               return QDomDocumentType();
           }
           //QDomDocumentType* ret = getWrapped_QDomDocumentType(wrapper);
@@ -11003,6 +11043,7 @@
           QDomElement_Wrapper* wrapper = getWrapper<QDomElement_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomElement: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomElement();
           }
@@ -11024,6 +11065,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomElement_ptr: no wrapper";
+              handler.trace();
               return QDomElement();
           }
           //QDomElement* ret = getWrapped_QDomElement(wrapper);
@@ -11117,6 +11159,7 @@
           QDomEntity_Wrapper* wrapper = getWrapper<QDomEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomEntity: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomEntity();
           }
@@ -11138,6 +11181,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomEntity_ptr: no wrapper";
+              handler.trace();
               return QDomEntity();
           }
           //QDomEntity* ret = getWrapped_QDomEntity(wrapper);
@@ -11231,6 +11275,7 @@
           QDomEntityReference_Wrapper* wrapper = getWrapper<QDomEntityReference_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomEntityReference: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomEntityReference();
           }
@@ -11252,6 +11297,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomEntityReference_ptr: no wrapper";
+              handler.trace();
               return QDomEntityReference();
           }
           //QDomEntityReference* ret = getWrapped_QDomEntityReference(wrapper);
@@ -11345,6 +11391,7 @@
           QDomImplementation_Wrapper* wrapper = getWrapper<QDomImplementation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomImplementation: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomImplementation();
           }
@@ -11366,6 +11413,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomImplementation_ptr: no wrapper";
+              handler.trace();
               return QDomImplementation();
           }
           //QDomImplementation* ret = getWrapped_QDomImplementation(wrapper);
@@ -11459,6 +11507,7 @@
           QDomNamedNodeMap_Wrapper* wrapper = getWrapper<QDomNamedNodeMap_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomNamedNodeMap: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomNamedNodeMap();
           }
@@ -11480,6 +11529,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomNamedNodeMap_ptr: no wrapper";
+              handler.trace();
               return QDomNamedNodeMap();
           }
           //QDomNamedNodeMap* ret = getWrapped_QDomNamedNodeMap(wrapper);
@@ -11573,6 +11623,7 @@
           QDomNode_Wrapper* wrapper = getWrapper<QDomNode_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomNode: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomNode();
           }
@@ -11594,6 +11645,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomNode_ptr: no wrapper";
+              handler.trace();
               return QDomNode();
           }
           //QDomNode* ret = getWrapped_QDomNode(wrapper);
@@ -11687,6 +11739,7 @@
           QDomNodeList_Wrapper* wrapper = getWrapper<QDomNodeList_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomNodeList: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomNodeList();
           }
@@ -11708,6 +11761,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomNodeList_ptr: no wrapper";
+              handler.trace();
               return QDomNodeList();
           }
           //QDomNodeList* ret = getWrapped_QDomNodeList(wrapper);
@@ -11801,6 +11855,7 @@
           QDomNotation_Wrapper* wrapper = getWrapper<QDomNotation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomNotation: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomNotation();
           }
@@ -11822,6 +11877,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomNotation_ptr: no wrapper";
+              handler.trace();
               return QDomNotation();
           }
           //QDomNotation* ret = getWrapped_QDomNotation(wrapper);
@@ -11915,6 +11971,7 @@
           QDomProcessingInstruction_Wrapper* wrapper = getWrapper<QDomProcessingInstruction_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomProcessingInstruction: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomProcessingInstruction();
           }
@@ -11936,6 +11993,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomProcessingInstruction_ptr: no wrapper";
+              handler.trace();
               return QDomProcessingInstruction();
           }
           //QDomProcessingInstruction* ret = getWrapped_QDomProcessingInstruction(wrapper);
@@ -12029,6 +12087,7 @@
           QDomText_Wrapper* wrapper = getWrapper<QDomText_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomText: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QDomText();
           }
@@ -12050,6 +12109,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDomText_ptr: no wrapper";
+              handler.trace();
               return QDomText();
           }
           //QDomText* ret = getWrapped_QDomText(wrapper);
@@ -12143,6 +12203,7 @@
           QEventPoint_Wrapper* wrapper = getWrapper<QEventPoint_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QEventPoint: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QEventPoint();
           }
@@ -12164,6 +12225,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QEventPoint_ptr: no wrapper";
+              handler.trace();
               return QEventPoint();
           }
           //QEventPoint* ret = getWrapped_QEventPoint(wrapper);
@@ -12257,6 +12319,7 @@
           QFileInfo_Wrapper* wrapper = getWrapper<QFileInfo_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFileInfo: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QFileInfo();
           }
@@ -12278,6 +12341,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFileInfo_ptr: no wrapper";
+              handler.trace();
               return QFileInfo();
           }
           //QFileInfo* ret = getWrapped_QFileInfo(wrapper);
@@ -12371,6 +12435,7 @@
           QFont_Wrapper* wrapper = getWrapper<QFont_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFont: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QFont();
           }
@@ -12392,6 +12457,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFont_ptr: no wrapper";
+              handler.trace();
               return QFont();
           }
           //QFont* ret = getWrapped_QFont(wrapper);
@@ -12485,6 +12551,7 @@
           QFontDatabase_Wrapper* wrapper = getWrapper<QFontDatabase_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFontDatabase: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QFontDatabase();
           }
@@ -12506,6 +12573,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFontDatabase_ptr: no wrapper";
+              handler.trace();
               return QFontDatabase();
           }
           //QFontDatabase* ret = getWrapped_QFontDatabase(wrapper);
@@ -12599,6 +12667,7 @@
           QGradient_Wrapper* wrapper = getWrapper<QGradient_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGradient: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QGradient();
           }
@@ -12620,6 +12689,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGradient_ptr: no wrapper";
+              handler.trace();
               return QGradient();
           }
           //QGradient* ret = getWrapped_QGradient(wrapper);
@@ -12713,6 +12783,7 @@
           QIcon_Wrapper* wrapper = getWrapper<QIcon_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QIcon: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QIcon();
           }
@@ -12734,6 +12805,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QIcon_ptr: no wrapper";
+              handler.trace();
               return QIcon();
           }
           //QIcon* ret = getWrapped_QIcon(wrapper);
@@ -12827,6 +12899,7 @@
           QImage_Wrapper* wrapper = getWrapper<QImage_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QImage: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QImage();
           }
@@ -12848,6 +12921,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QImage_ptr: no wrapper";
+              handler.trace();
               return QImage();
           }
           //QImage* ret = getWrapped_QImage(wrapper);
@@ -12941,6 +13015,7 @@
           QItemSelection_Wrapper* wrapper = getWrapper<QItemSelection_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QItemSelection: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QItemSelection();
           }
@@ -12962,6 +13037,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QItemSelection_ptr: no wrapper";
+              handler.trace();
               return QItemSelection();
           }
           //QItemSelection* ret = getWrapped_QItemSelection(wrapper);
@@ -13055,6 +13131,7 @@
           QKeyCombination_Wrapper* wrapper = getWrapper<QKeyCombination_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QKeyCombination: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QKeyCombination();
           }
@@ -13076,6 +13153,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QKeyCombination_ptr: no wrapper";
+              handler.trace();
               return QKeyCombination();
           }
           //QKeyCombination* ret = getWrapped_QKeyCombination(wrapper);
@@ -13169,6 +13247,7 @@
           QKeySequence_Wrapper* wrapper = getWrapper<QKeySequence_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QKeySequence: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QKeySequence();
           }
@@ -13190,6 +13269,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QKeySequence_ptr: no wrapper";
+              handler.trace();
               return QKeySequence();
           }
           //QKeySequence* ret = getWrapped_QKeySequence(wrapper);
@@ -13283,6 +13363,7 @@
           QLine_Wrapper* wrapper = getWrapper<QLine_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLine: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QLine();
           }
@@ -13304,6 +13385,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLine_ptr: no wrapper";
+              handler.trace();
               return QLine();
           }
           //QLine* ret = getWrapped_QLine(wrapper);
@@ -13397,6 +13479,7 @@
           QLineF_Wrapper* wrapper = getWrapper<QLineF_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLineF: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QLineF();
           }
@@ -13418,6 +13501,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLineF_ptr: no wrapper";
+              handler.trace();
               return QLineF();
           }
           //QLineF* ret = getWrapped_QLineF(wrapper);
@@ -13511,6 +13595,7 @@
           QLinearGradient_Wrapper* wrapper = getWrapper<QLinearGradient_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLinearGradient: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QLinearGradient();
           }
@@ -13532,6 +13617,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLinearGradient_ptr: no wrapper";
+              handler.trace();
               return QLinearGradient();
           }
           //QLinearGradient* ret = getWrapped_QLinearGradient(wrapper);
@@ -13625,6 +13711,7 @@
           QLocale_Wrapper* wrapper = getWrapper<QLocale_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLocale: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QLocale();
           }
@@ -13646,6 +13733,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLocale_ptr: no wrapper";
+              handler.trace();
               return QLocale();
           }
           //QLocale* ret = getWrapped_QLocale(wrapper);
@@ -13739,6 +13827,7 @@
           QEasingCurve_Wrapper* wrapper = getWrapper<QEasingCurve_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QEasingCurve: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QEasingCurve();
           }
@@ -13760,6 +13849,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QEasingCurve_ptr: no wrapper";
+              handler.trace();
               return QEasingCurve();
           }
           //QEasingCurve* ret = getWrapped_QEasingCurve(wrapper);
@@ -13853,6 +13943,7 @@
           QMargins_Wrapper* wrapper = getWrapper<QMargins_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMargins: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QMargins();
           }
@@ -13874,6 +13965,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMargins_ptr: no wrapper";
+              handler.trace();
               return QMargins();
           }
           //QMargins* ret = getWrapped_QMargins(wrapper);
@@ -13967,6 +14059,7 @@
           QMarginsF_Wrapper* wrapper = getWrapper<QMarginsF_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMarginsF: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QMarginsF();
           }
@@ -13988,6 +14081,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMarginsF_ptr: no wrapper";
+              handler.trace();
               return QMarginsF();
           }
           //QMarginsF* ret = getWrapped_QMarginsF(wrapper);
@@ -14081,6 +14175,7 @@
           QModelIndex_Wrapper* wrapper = getWrapper<QModelIndex_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QModelIndex: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QModelIndex();
           }
@@ -14102,6 +14197,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QModelIndex_ptr: no wrapper";
+              handler.trace();
               return QModelIndex();
           }
           //QModelIndex* ret = getWrapped_QModelIndex(wrapper);
@@ -14195,6 +14291,7 @@
           QPageLayout_Wrapper* wrapper = getWrapper<QPageLayout_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPageLayout: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPageLayout();
           }
@@ -14216,6 +14313,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPageLayout_ptr: no wrapper";
+              handler.trace();
               return QPageLayout();
           }
           //QPageLayout* ret = getWrapped_QPageLayout(wrapper);
@@ -14309,6 +14407,7 @@
           QPageRanges_Wrapper* wrapper = getWrapper<QPageRanges_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPageRanges: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPageRanges();
           }
@@ -14330,6 +14429,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPageRanges_ptr: no wrapper";
+              handler.trace();
               return QPageRanges();
           }
           //QPageRanges* ret = getWrapped_QPageRanges(wrapper);
@@ -14423,6 +14523,7 @@
           QPageSize_Wrapper* wrapper = getWrapper<QPageSize_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPageSize: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPageSize();
           }
@@ -14444,6 +14545,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPageSize_ptr: no wrapper";
+              handler.trace();
               return QPageSize();
           }
           //QPageSize* ret = getWrapped_QPageSize(wrapper);
@@ -14537,6 +14639,7 @@
           QPainterPath_Wrapper* wrapper = getWrapper<QPainterPath_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPainterPath: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPainterPath();
           }
@@ -14558,6 +14661,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPainterPath_ptr: no wrapper";
+              handler.trace();
               return QPainterPath();
           }
           //QPainterPath* ret = getWrapped_QPainterPath(wrapper);
@@ -14651,6 +14755,7 @@
           QPalette_Wrapper* wrapper = getWrapper<QPalette_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPalette: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPalette();
           }
@@ -14672,6 +14777,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPalette_ptr: no wrapper";
+              handler.trace();
               return QPalette();
           }
           //QPalette* ret = getWrapped_QPalette(wrapper);
@@ -14765,6 +14871,7 @@
           QPen_Wrapper* wrapper = getWrapper<QPen_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPen: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPen();
           }
@@ -14786,6 +14893,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPen_ptr: no wrapper";
+              handler.trace();
               return QPen();
           }
           //QPen* ret = getWrapped_QPen(wrapper);
@@ -14879,6 +14987,7 @@
           QPicture_Wrapper* wrapper = getWrapper<QPicture_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPicture: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPicture();
           }
@@ -14900,6 +15009,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPicture_ptr: no wrapper";
+              handler.trace();
               return QPicture();
           }
           //QPicture* ret = getWrapped_QPicture(wrapper);
@@ -14993,6 +15103,7 @@
           QPixmap_Wrapper* wrapper = getWrapper<QPixmap_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPixmap: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPixmap();
           }
@@ -15014,6 +15125,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPixmap_ptr: no wrapper";
+              handler.trace();
               return QPixmap();
           }
           //QPixmap* ret = getWrapped_QPixmap(wrapper);
@@ -15107,6 +15219,7 @@
           QPoint_Wrapper* wrapper = getWrapper<QPoint_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPoint: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPoint();
           }
@@ -15128,6 +15241,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPoint_ptr: no wrapper";
+              handler.trace();
               return QPoint();
           }
           //QPoint* ret = getWrapped_QPoint(wrapper);
@@ -15221,6 +15335,7 @@
           QPointF_Wrapper* wrapper = getWrapper<QPointF_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPointF: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPointF();
           }
@@ -15242,6 +15357,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPointF_ptr: no wrapper";
+              handler.trace();
               return QPointF();
           }
           //QPointF* ret = getWrapped_QPointF(wrapper);
@@ -15335,6 +15451,7 @@
           QPolygon_Wrapper* wrapper = getWrapper<QPolygon_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPolygon: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPolygon();
           }
@@ -15356,6 +15473,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPolygon_ptr: no wrapper";
+              handler.trace();
               return QPolygon();
           }
           //QPolygon* ret = getWrapped_QPolygon(wrapper);
@@ -15449,6 +15567,7 @@
           QPolygonF_Wrapper* wrapper = getWrapper<QPolygonF_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPolygonF: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPolygonF();
           }
@@ -15470,6 +15589,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPolygonF_ptr: no wrapper";
+              handler.trace();
               return QPolygonF();
           }
           //QPolygonF* ret = getWrapped_QPolygonF(wrapper);
@@ -15563,6 +15683,7 @@
           QPrinterInfo_Wrapper* wrapper = getWrapper<QPrinterInfo_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPrinterInfo: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QPrinterInfo();
           }
@@ -15584,6 +15705,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPrinterInfo_ptr: no wrapper";
+              handler.trace();
               return QPrinterInfo();
           }
           //QPrinterInfo* ret = getWrapped_QPrinterInfo(wrapper);
@@ -15677,6 +15799,7 @@
           QProcessEnvironment_Wrapper* wrapper = getWrapper<QProcessEnvironment_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QProcessEnvironment: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QProcessEnvironment();
           }
@@ -15698,6 +15821,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QProcessEnvironment_ptr: no wrapper";
+              handler.trace();
               return QProcessEnvironment();
           }
           //QProcessEnvironment* ret = getWrapped_QProcessEnvironment(wrapper);
@@ -15791,6 +15915,7 @@
           QRadialGradient_Wrapper* wrapper = getWrapper<QRadialGradient_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRadialGradient: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QRadialGradient();
           }
@@ -15812,6 +15937,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRadialGradient_ptr: no wrapper";
+              handler.trace();
               return QRadialGradient();
           }
           //QRadialGradient* ret = getWrapped_QRadialGradient(wrapper);
@@ -15905,6 +16031,7 @@
           QRect_Wrapper* wrapper = getWrapper<QRect_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRect: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QRect();
           }
@@ -15926,6 +16053,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRect_ptr: no wrapper";
+              handler.trace();
               return QRect();
           }
           //QRect* ret = getWrapped_QRect(wrapper);
@@ -16019,6 +16147,7 @@
           QRectF_Wrapper* wrapper = getWrapper<QRectF_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRectF: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QRectF();
           }
@@ -16040,6 +16169,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRectF_ptr: no wrapper";
+              handler.trace();
               return QRectF();
           }
           //QRectF* ret = getWrapped_QRectF(wrapper);
@@ -16133,6 +16263,7 @@
           QRegion_Wrapper* wrapper = getWrapper<QRegion_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRegion: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QRegion();
           }
@@ -16154,6 +16285,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRegion_ptr: no wrapper";
+              handler.trace();
               return QRegion();
           }
           //QRegion* ret = getWrapped_QRegion(wrapper);
@@ -16247,6 +16379,7 @@
           QRegularExpression_Wrapper* wrapper = getWrapper<QRegularExpression_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRegularExpression: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QRegularExpression();
           }
@@ -16268,6 +16401,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRegularExpression_ptr: no wrapper";
+              handler.trace();
               return QRegularExpression();
           }
           //QRegularExpression* ret = getWrapped_QRegularExpression(wrapper);
@@ -16361,6 +16495,7 @@
           QRegularExpressionMatch_Wrapper* wrapper = getWrapper<QRegularExpressionMatch_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRegularExpressionMatch: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QRegularExpressionMatch();
           }
@@ -16382,6 +16517,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRegularExpressionMatch_ptr: no wrapper";
+              handler.trace();
               return QRegularExpressionMatch();
           }
           //QRegularExpressionMatch* ret = getWrapped_QRegularExpressionMatch(wrapper);
@@ -16475,6 +16611,7 @@
           QSize_Wrapper* wrapper = getWrapper<QSize_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSize: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QSize();
           }
@@ -16496,6 +16633,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSize_ptr: no wrapper";
+              handler.trace();
               return QSize();
           }
           //QSize* ret = getWrapped_QSize(wrapper);
@@ -16589,6 +16727,7 @@
           QSizeF_Wrapper* wrapper = getWrapper<QSizeF_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSizeF: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QSizeF();
           }
@@ -16610,6 +16749,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSizeF_ptr: no wrapper";
+              handler.trace();
               return QSizeF();
           }
           //QSizeF* ret = getWrapped_QSizeF(wrapper);
@@ -16703,6 +16843,7 @@
           QSizePolicy_Wrapper* wrapper = getWrapper<QSizePolicy_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSizePolicy: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QSizePolicy();
           }
@@ -16724,6 +16865,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSizePolicy_ptr: no wrapper";
+              handler.trace();
               return QSizePolicy();
           }
           //QSizePolicy* ret = getWrapped_QSizePolicy(wrapper);
@@ -16817,6 +16959,7 @@
           QTextBlockFormat_Wrapper* wrapper = getWrapper<QTextBlockFormat_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextBlockFormat: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextBlockFormat();
           }
@@ -16838,6 +16981,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextBlockFormat_ptr: no wrapper";
+              handler.trace();
               return QTextBlockFormat();
           }
           //QTextBlockFormat* ret = getWrapped_QTextBlockFormat(wrapper);
@@ -16931,6 +17075,7 @@
           QTextCharFormat_Wrapper* wrapper = getWrapper<QTextCharFormat_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextCharFormat: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextCharFormat();
           }
@@ -16952,6 +17097,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextCharFormat_ptr: no wrapper";
+              handler.trace();
               return QTextCharFormat();
           }
           //QTextCharFormat* ret = getWrapped_QTextCharFormat(wrapper);
@@ -17045,6 +17191,7 @@
           QTextCursor_Wrapper* wrapper = getWrapper<QTextCursor_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextCursor: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextCursor();
           }
@@ -17066,6 +17213,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextCursor_ptr: no wrapper";
+              handler.trace();
               return QTextCursor();
           }
           //QTextCursor* ret = getWrapped_QTextCursor(wrapper);
@@ -17159,6 +17307,7 @@
           QTextFormat_Wrapper* wrapper = getWrapper<QTextFormat_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextFormat: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextFormat();
           }
@@ -17180,6 +17329,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextFormat_ptr: no wrapper";
+              handler.trace();
               return QTextFormat();
           }
           //QTextFormat* ret = getWrapped_QTextFormat(wrapper);
@@ -17273,6 +17423,7 @@
           QTextFrameFormat_Wrapper* wrapper = getWrapper<QTextFrameFormat_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextFrameFormat: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextFrameFormat();
           }
@@ -17294,6 +17445,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextFrameFormat_ptr: no wrapper";
+              handler.trace();
               return QTextFrameFormat();
           }
           //QTextFrameFormat* ret = getWrapped_QTextFrameFormat(wrapper);
@@ -17387,6 +17539,7 @@
           QTextImageFormat_Wrapper* wrapper = getWrapper<QTextImageFormat_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextImageFormat: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextImageFormat();
           }
@@ -17408,6 +17561,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextImageFormat_ptr: no wrapper";
+              handler.trace();
               return QTextImageFormat();
           }
           //QTextImageFormat* ret = getWrapped_QTextImageFormat(wrapper);
@@ -17501,6 +17655,7 @@
           QTextLength_Wrapper* wrapper = getWrapper<QTextLength_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextLength: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextLength();
           }
@@ -17522,6 +17677,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextLength_ptr: no wrapper";
+              handler.trace();
               return QTextLength();
           }
           //QTextLength* ret = getWrapped_QTextLength(wrapper);
@@ -17615,6 +17771,7 @@
           QTextListFormat_Wrapper* wrapper = getWrapper<QTextListFormat_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextListFormat: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextListFormat();
           }
@@ -17636,6 +17793,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextListFormat_ptr: no wrapper";
+              handler.trace();
               return QTextListFormat();
           }
           //QTextListFormat* ret = getWrapped_QTextListFormat(wrapper);
@@ -17729,6 +17887,7 @@
           QTextTableCellFormat_Wrapper* wrapper = getWrapper<QTextTableCellFormat_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextTableCellFormat: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextTableCellFormat();
           }
@@ -17750,6 +17909,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextTableCellFormat_ptr: no wrapper";
+              handler.trace();
               return QTextTableCellFormat();
           }
           //QTextTableCellFormat* ret = getWrapped_QTextTableCellFormat(wrapper);
@@ -17843,6 +18003,7 @@
           QTextTableFormat_Wrapper* wrapper = getWrapper<QTextTableFormat_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextTableFormat: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTextTableFormat();
           }
@@ -17864,6 +18025,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextTableFormat_ptr: no wrapper";
+              handler.trace();
               return QTextTableFormat();
           }
           //QTextTableFormat* ret = getWrapped_QTextTableFormat(wrapper);
@@ -17957,6 +18119,7 @@
           QTime_Wrapper* wrapper = getWrapper<QTime_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTime: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTime();
           }
@@ -17978,6 +18141,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTime_ptr: no wrapper";
+              handler.trace();
               return QTime();
           }
           //QTime* ret = getWrapped_QTime(wrapper);
@@ -18071,6 +18235,7 @@
           QTransform_Wrapper* wrapper = getWrapper<QTransform_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTransform: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QTransform();
           }
@@ -18092,6 +18257,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTransform_ptr: no wrapper";
+              handler.trace();
               return QTransform();
           }
           //QTransform* ret = getWrapped_QTransform(wrapper);
@@ -18185,6 +18351,7 @@
           QUrl_Wrapper* wrapper = getWrapper<QUrl_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QUrl: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QUrl();
           }
@@ -18206,6 +18373,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QUrl_ptr: no wrapper";
+              handler.trace();
               return QUrl();
           }
           //QUrl* ret = getWrapped_QUrl(wrapper);
@@ -18299,6 +18467,7 @@
           QUrlQuery_Wrapper* wrapper = getWrapper<QUrlQuery_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QUrlQuery: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QUrlQuery();
           }
@@ -18320,6 +18489,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QUrlQuery_ptr: no wrapper";
+              handler.trace();
               return QUrlQuery();
           }
           //QUrlQuery* ret = getWrapped_QUrlQuery(wrapper);
@@ -18413,6 +18583,7 @@
           QXmlAttributes_Wrapper* wrapper = getWrapper<QXmlAttributes_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlAttributes: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QXmlAttributes();
           }
@@ -18434,6 +18605,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlAttributes_ptr: no wrapper";
+              handler.trace();
               return QXmlAttributes();
           }
           //QXmlAttributes* ret = getWrapped_QXmlAttributes(wrapper);
@@ -18527,6 +18699,7 @@
           QXmlStreamAttributes_Wrapper* wrapper = getWrapper<QXmlStreamAttributes_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlStreamAttributes: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return QXmlStreamAttributes();
           }
@@ -18548,6 +18721,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlStreamAttributes_ptr: no wrapper";
+              handler.trace();
               return QXmlStreamAttributes();
           }
           //QXmlStreamAttributes* ret = getWrapped_QXmlStreamAttributes(wrapper);
@@ -18636,6 +18810,7 @@
           //QAbstractFileIconProvider_Wrapper* wrapper = getWrapper<QAbstractFileIconProvider_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractFileIconProvider_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QAbstractFileIconProvider(wrapper);
@@ -18709,6 +18884,7 @@
           //QAbstractListModel_Wrapper* wrapper = getWrapper<QAbstractListModel_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractListModel_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QAbstractListModel(wrapper);
@@ -18782,6 +18958,7 @@
           //QAbstractTableModel_Wrapper* wrapper = getWrapper<QAbstractTableModel_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractTableModel_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QAbstractTableModel(wrapper);
@@ -18855,6 +19032,7 @@
           //QCompleter_Wrapper* wrapper = getWrapper<QCompleter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QCompleter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QCompleter(wrapper);
@@ -18928,6 +19106,7 @@
           //QContextMenuEvent_Wrapper* wrapper = getWrapper<QContextMenuEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QContextMenuEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QContextMenuEvent(wrapper);
@@ -19001,6 +19180,7 @@
           //QDirIterator_Wrapper* wrapper = getWrapper<QDirIterator_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDirIterator_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QDirIterator(wrapper);
@@ -19074,6 +19254,7 @@
           //QDragEnterEvent_Wrapper* wrapper = getWrapper<QDragEnterEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDragEnterEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QDragEnterEvent(wrapper);
@@ -19147,6 +19328,7 @@
           //QActionEvent_Wrapper* wrapper = getWrapper<QActionEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QActionEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QActionEvent(wrapper);
@@ -19220,6 +19402,7 @@
           //QDragLeaveEvent_Wrapper* wrapper = getWrapper<QDragLeaveEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDragLeaveEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QDragLeaveEvent(wrapper);
@@ -19301,6 +19484,7 @@
           //QDragMoveEvent_Wrapper* wrapper = getWrapper<QDragMoveEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDragMoveEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QDragMoveEvent(wrapper);
@@ -19382,6 +19566,7 @@
           //QDropEvent_Wrapper* wrapper = getWrapper<QDropEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDropEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QDropEvent(wrapper);
@@ -19519,6 +19704,7 @@
           //QEvent_Wrapper* wrapper = getWrapper<QEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QEvent(wrapper);
@@ -19592,6 +19778,7 @@
           //QFileIconProvider_Wrapper* wrapper = getWrapper<QFileIconProvider_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFileIconProvider_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QFileIconProvider(wrapper);
@@ -19665,6 +19852,7 @@
           //QFontMetrics_Wrapper* wrapper = getWrapper<QFontMetrics_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFontMetrics_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QFontMetrics(wrapper);
@@ -19738,6 +19926,7 @@
           //QFontMetricsF_Wrapper* wrapper = getWrapper<QFontMetricsF_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFontMetricsF_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QFontMetricsF(wrapper);
@@ -19811,6 +20000,7 @@
           //QHelpEvent_Wrapper* wrapper = getWrapper<QHelpEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QHelpEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QHelpEvent(wrapper);
@@ -19884,6 +20074,7 @@
           //QIODeviceBase_Wrapper* wrapper = getWrapper<QIODeviceBase_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QIODeviceBase_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QIODeviceBase(wrapper);
@@ -19957,6 +20148,7 @@
           //QImageReader_Wrapper* wrapper = getWrapper<QImageReader_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QImageReader_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QImageReader(wrapper);
@@ -20030,6 +20222,7 @@
           //QImageWriter_Wrapper* wrapper = getWrapper<QImageWriter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QImageWriter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QImageWriter(wrapper);
@@ -20127,6 +20320,7 @@
           //QInputEvent_Wrapper* wrapper = getWrapper<QInputEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QInputEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QInputEvent(wrapper);
@@ -20200,6 +20394,7 @@
           //QKeyEvent_Wrapper* wrapper = getWrapper<QKeyEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QKeyEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QKeyEvent(wrapper);
@@ -20297,6 +20492,7 @@
           //QLayoutItem_Wrapper* wrapper = getWrapper<QLayoutItem_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLayoutItem_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QLayoutItem(wrapper);
@@ -20370,6 +20566,7 @@
           //QListWidgetItem_Wrapper* wrapper = getWrapper<QListWidgetItem_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QListWidgetItem_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QListWidgetItem(wrapper);
@@ -20443,6 +20640,7 @@
           //QMouseEvent_Wrapper* wrapper = getWrapper<QMouseEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMouseEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QMouseEvent(wrapper);
@@ -20524,6 +20722,7 @@
           //QPagedPaintDevice_Wrapper* wrapper = getWrapper<QPagedPaintDevice_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPagedPaintDevice_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QPagedPaintDevice(wrapper);
@@ -20637,6 +20836,7 @@
           //QPaintDevice_Wrapper* wrapper = getWrapper<QPaintDevice_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPaintDevice_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QPaintDevice(wrapper);
@@ -20710,6 +20910,7 @@
           //QPaintEvent_Wrapper* wrapper = getWrapper<QPaintEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPaintEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QPaintEvent(wrapper);
@@ -20783,6 +20984,7 @@
           //QPainter_Wrapper* wrapper = getWrapper<QPainter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPainter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QPainter(wrapper);
@@ -20856,6 +21058,7 @@
           //QPanGesture_Wrapper* wrapper = getWrapper<QPanGesture_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPanGesture_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QPanGesture(wrapper);
@@ -20929,6 +21132,7 @@
           //QPinchGesture_Wrapper* wrapper = getWrapper<QPinchGesture_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPinchGesture_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QPinchGesture(wrapper);
@@ -21010,6 +21214,7 @@
           //QPointerEvent_Wrapper* wrapper = getWrapper<QPointerEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPointerEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QPointerEvent(wrapper);
@@ -21083,6 +21288,7 @@
           //QPrinter_Wrapper* wrapper = getWrapper<QPrinter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPrinter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QPrinter(wrapper);
@@ -21156,6 +21362,7 @@
           //QProcess_Wrapper* wrapper = getWrapper<QProcess_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QProcess_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QProcess(wrapper);
@@ -21229,6 +21436,7 @@
           //QResizeEvent_Wrapper* wrapper = getWrapper<QResizeEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QResizeEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QResizeEvent(wrapper);
@@ -21318,6 +21526,7 @@
           //QSinglePointEvent_Wrapper* wrapper = getWrapper<QSinglePointEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSinglePointEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QSinglePointEvent(wrapper);
@@ -21391,6 +21600,7 @@
           //QSpacerItem_Wrapper* wrapper = getWrapper<QSpacerItem_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSpacerItem_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QSpacerItem(wrapper);
@@ -21464,6 +21674,7 @@
           //QStandardItem_Wrapper* wrapper = getWrapper<QStandardItem_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QStandardItem_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QStandardItem(wrapper);
@@ -21537,6 +21748,7 @@
           //QStringConverter_Wrapper* wrapper = getWrapper<QStringConverter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QStringConverter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QStringConverter(wrapper);
@@ -21610,6 +21822,7 @@
           //QStringDecoder_Wrapper* wrapper = getWrapper<QStringDecoder_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QStringDecoder_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QStringDecoder(wrapper);
@@ -21683,6 +21896,7 @@
           //QStringEncoder_Wrapper* wrapper = getWrapper<QStringEncoder_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QStringEncoder_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QStringEncoder(wrapper);
@@ -21756,6 +21970,7 @@
           //QSwipeGesture_Wrapper* wrapper = getWrapper<QSwipeGesture_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSwipeGesture_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QSwipeGesture(wrapper);
@@ -21829,6 +22044,7 @@
           //QTableWidgetItem_Wrapper* wrapper = getWrapper<QTableWidgetItem_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTableWidgetItem_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QTableWidgetItem(wrapper);
@@ -21902,6 +22118,7 @@
           //QTextCursor_Wrapper* wrapper = getWrapper<QTextCursor_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextCursor_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QTextCursor(wrapper);
@@ -21975,6 +22192,7 @@
           //QTextLayout_Wrapper* wrapper = getWrapper<QTextLayout_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextLayout_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QTextLayout(wrapper);
@@ -22048,6 +22266,7 @@
           //QTextStream_Wrapper* wrapper = getWrapper<QTextStream_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextStream_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QTextStream(wrapper);
@@ -22121,6 +22340,7 @@
           //QToolTip_Wrapper* wrapper = getWrapper<QToolTip_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QToolTip_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QToolTip(wrapper);
@@ -22194,6 +22414,7 @@
           //QTreeWidgetItem_Wrapper* wrapper = getWrapper<QTreeWidgetItem_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTreeWidgetItem_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QTreeWidgetItem(wrapper);
@@ -22267,6 +22488,7 @@
           //QUiLoader_Wrapper* wrapper = getWrapper<QUiLoader_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QUiLoader_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QUiLoader(wrapper);
@@ -22340,6 +22562,7 @@
           //QWheelEvent_Wrapper* wrapper = getWrapper<QWheelEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QWheelEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QWheelEvent(wrapper);
@@ -22413,6 +22636,7 @@
           //QWidgetItem_Wrapper* wrapper = getWrapper<QWidgetItem_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QWidgetItem_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QWidgetItem(wrapper);
@@ -22486,6 +22710,7 @@
           //QXmlContentHandler_Wrapper* wrapper = getWrapper<QXmlContentHandler_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlContentHandler_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlContentHandler(wrapper);
@@ -22559,6 +22784,7 @@
           //QXmlDTDHandler_Wrapper* wrapper = getWrapper<QXmlDTDHandler_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlDTDHandler_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlDTDHandler(wrapper);
@@ -22640,6 +22866,7 @@
           //QXmlDeclHandler_Wrapper* wrapper = getWrapper<QXmlDeclHandler_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlDeclHandler_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlDeclHandler(wrapper);
@@ -22713,6 +22940,7 @@
           //QXmlDefaultHandler_Wrapper* wrapper = getWrapper<QXmlDefaultHandler_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlDefaultHandler_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlDefaultHandler(wrapper);
@@ -22786,6 +23014,7 @@
           //QXmlEntityResolver_Wrapper* wrapper = getWrapper<QXmlEntityResolver_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlEntityResolver_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlEntityResolver(wrapper);
@@ -22859,6 +23088,7 @@
           //QXmlErrorHandler_Wrapper* wrapper = getWrapper<QXmlErrorHandler_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlErrorHandler_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlErrorHandler(wrapper);
@@ -22932,6 +23162,7 @@
           //QXmlInputSource_Wrapper* wrapper = getWrapper<QXmlInputSource_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlInputSource_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlInputSource(wrapper);
@@ -23005,6 +23236,7 @@
           //QXmlLexicalHandler_Wrapper* wrapper = getWrapper<QXmlLexicalHandler_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlLexicalHandler_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlLexicalHandler(wrapper);
@@ -23078,6 +23310,7 @@
           //QXmlLocator_Wrapper* wrapper = getWrapper<QXmlLocator_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlLocator_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlLocator(wrapper);
@@ -23151,6 +23384,7 @@
           //QXmlParseException_Wrapper* wrapper = getWrapper<QXmlParseException_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlParseException_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlParseException(wrapper);
@@ -23232,6 +23466,7 @@
           //QXmlReader_Wrapper* wrapper = getWrapper<QXmlReader_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlReader_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlReader(wrapper);
@@ -23305,6 +23540,7 @@
           //QXmlSimpleReader_Wrapper* wrapper = getWrapper<QXmlSimpleReader_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlSimpleReader_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlSimpleReader(wrapper);
@@ -23378,6 +23614,7 @@
           //QXmlStreamAttribute_Wrapper* wrapper = getWrapper<QXmlStreamAttribute_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlStreamAttribute_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlStreamAttribute(wrapper);
@@ -23451,6 +23688,7 @@
           //QXmlStreamReader_Wrapper* wrapper = getWrapper<QXmlStreamReader_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlStreamReader_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlStreamReader(wrapper);
@@ -23524,6 +23762,7 @@
           //QXmlStreamWriter_Wrapper* wrapper = getWrapper<QXmlStreamWriter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QXmlStreamWriter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_QXmlStreamWriter(wrapper);
@@ -23659,6 +23898,7 @@
           //QGraphicsEffect_Wrapper* wrapper = (QGraphicsEffect_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGraphicsEffect: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QGraphicsEffect*)wrapper->getWrappedVoid();
@@ -23763,6 +24003,7 @@
           //QGraphicsBlurEffect_Wrapper* wrapper = (QGraphicsBlurEffect_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGraphicsBlurEffect: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QGraphicsBlurEffect*)wrapper->getWrappedVoid();
@@ -23867,6 +24108,7 @@
           //QGraphicsDropShadowEffect_Wrapper* wrapper = (QGraphicsDropShadowEffect_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGraphicsDropShadowEffect: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QGraphicsDropShadowEffect*)wrapper->getWrappedVoid();
@@ -23971,6 +24213,7 @@
           //QGraphicsColorizeEffect_Wrapper* wrapper = (QGraphicsColorizeEffect_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGraphicsColorizeEffect: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QGraphicsColorizeEffect*)wrapper->getWrappedVoid();
@@ -24075,6 +24318,7 @@
           //QGraphicsOpacityEffect_Wrapper* wrapper = (QGraphicsOpacityEffect_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGraphicsOpacityEffect: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QGraphicsOpacityEffect*)wrapper->getWrappedVoid();
@@ -24179,6 +24423,7 @@
           //QQuickWidget_Wrapper* wrapper = (QQuickWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QQuickWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QQuickWidget*)wrapper->getWrappedVoid();
@@ -24283,6 +24528,7 @@
           //QSvgRenderer_Wrapper* wrapper = (QSvgRenderer_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSvgRenderer: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QSvgRenderer*)wrapper->getWrappedVoid();
@@ -24419,6 +24665,7 @@
           //QAbstractButton_Wrapper* wrapper = (QAbstractButton_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractButton: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QAbstractButton*)wrapper->getWrappedVoid();
@@ -24531,6 +24778,7 @@
           //QAbstractItemDelegate_Wrapper* wrapper = (QAbstractItemDelegate_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractItemDelegate: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QAbstractItemDelegate*)wrapper->getWrappedVoid();
@@ -24667,6 +24915,7 @@
           //QAbstractItemModel_Wrapper* wrapper = (QAbstractItemModel_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractItemModel: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QAbstractItemModel*)wrapper->getWrappedVoid();
@@ -24803,6 +25052,7 @@
           //QAbstractItemView_Wrapper* wrapper = (QAbstractItemView_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractItemView: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QAbstractItemView*)wrapper->getWrappedVoid();
@@ -24915,6 +25165,7 @@
           //QAbstractPrintDialog_Wrapper* wrapper = (QAbstractPrintDialog_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractPrintDialog: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QAbstractPrintDialog*)wrapper->getWrappedVoid();
@@ -25059,6 +25310,7 @@
           //QAbstractScrollArea_Wrapper* wrapper = (QAbstractScrollArea_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractScrollArea: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QAbstractScrollArea*)wrapper->getWrappedVoid();
@@ -25179,6 +25431,7 @@
           //QAbstractSlider_Wrapper* wrapper = (QAbstractSlider_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAbstractSlider: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QAbstractSlider*)wrapper->getWrappedVoid();
@@ -25299,6 +25552,7 @@
           //QAction_Wrapper* wrapper = (QAction_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QAction: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QAction*)wrapper->getWrappedVoid();
@@ -25403,6 +25657,7 @@
           //QActionGroup_Wrapper* wrapper = (QActionGroup_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QActionGroup: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QActionGroup*)wrapper->getWrappedVoid();
@@ -25515,6 +25770,7 @@
           //QApplication_Wrapper* wrapper = (QApplication_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QApplication: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QApplication*)wrapper->getWrappedVoid();
@@ -25635,6 +25891,7 @@
           //QBoxLayout_Wrapper* wrapper = (QBoxLayout_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QBoxLayout: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QBoxLayout*)wrapper->getWrappedVoid();
@@ -25739,6 +25996,7 @@
           //QBuffer_Wrapper* wrapper = (QBuffer_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QBuffer: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QBuffer*)wrapper->getWrappedVoid();
@@ -25843,6 +26101,7 @@
           //QButtonGroup_Wrapper* wrapper = (QButtonGroup_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QButtonGroup: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QButtonGroup*)wrapper->getWrappedVoid();
@@ -25947,6 +26206,7 @@
           //QCheckBox_Wrapper* wrapper = (QCheckBox_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QCheckBox: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QCheckBox*)wrapper->getWrappedVoid();
@@ -26051,6 +26311,7 @@
           //QClipboard_Wrapper* wrapper = (QClipboard_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QClipboard: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QClipboard*)wrapper->getWrappedVoid();
@@ -26171,6 +26432,7 @@
           //QComboBox_Wrapper* wrapper = (QComboBox_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QComboBox: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QComboBox*)wrapper->getWrappedVoid();
@@ -26283,6 +26545,7 @@
           //QCoreApplication_Wrapper* wrapper = (QCoreApplication_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QCoreApplication: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QCoreApplication*)wrapper->getWrappedVoid();
@@ -26419,6 +26682,7 @@
           //QDialog_Wrapper* wrapper = (QDialog_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDialog: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QDialog*)wrapper->getWrappedVoid();
@@ -26523,6 +26787,7 @@
           //QDialogButtonBox_Wrapper* wrapper = (QDialogButtonBox_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDialogButtonBox: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QDialogButtonBox*)wrapper->getWrappedVoid();
@@ -26635,6 +26900,7 @@
           //QDockWidget_Wrapper* wrapper = (QDockWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDockWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QDockWidget*)wrapper->getWrappedVoid();
@@ -26739,6 +27005,7 @@
           //QDoubleSpinBox_Wrapper* wrapper = (QDoubleSpinBox_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDoubleSpinBox: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QDoubleSpinBox*)wrapper->getWrappedVoid();
@@ -26843,6 +27110,7 @@
           //QDoubleValidator_Wrapper* wrapper = (QDoubleValidator_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDoubleValidator: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QDoubleValidator*)wrapper->getWrappedVoid();
@@ -26947,6 +27215,7 @@
           //QDrag_Wrapper* wrapper = (QDrag_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QDrag: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QDrag*)wrapper->getWrappedVoid();
@@ -27051,6 +27320,7 @@
           //QEventLoop_Wrapper* wrapper = (QEventLoop_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QEventLoop: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QEventLoop*)wrapper->getWrappedVoid();
@@ -27155,6 +27425,7 @@
           //QFile_Wrapper* wrapper = (QFile_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFile: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QFile*)wrapper->getWrappedVoid();
@@ -27259,6 +27530,7 @@
           //QFileDevice_Wrapper* wrapper = (QFileDevice_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFileDevice: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QFileDevice*)wrapper->getWrappedVoid();
@@ -27363,6 +27635,7 @@
           //QFileDialog_Wrapper* wrapper = (QFileDialog_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFileDialog: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QFileDialog*)wrapper->getWrappedVoid();
@@ -27475,6 +27748,7 @@
           //QFileSystemModel_Wrapper* wrapper = (QFileSystemModel_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFileSystemModel: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QFileSystemModel*)wrapper->getWrappedVoid();
@@ -27579,6 +27853,7 @@
           //QFontComboBox_Wrapper* wrapper = (QFontComboBox_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFontComboBox: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QFontComboBox*)wrapper->getWrappedVoid();
@@ -27683,6 +27958,7 @@
           //QFormLayout_Wrapper* wrapper = (QFormLayout_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFormLayout: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QFormLayout*)wrapper->getWrappedVoid();
@@ -27827,6 +28103,7 @@
           //QFrame_Wrapper* wrapper = (QFrame_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QFrame: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QFrame*)wrapper->getWrappedVoid();
@@ -27931,6 +28208,7 @@
           //QGridLayout_Wrapper* wrapper = (QGridLayout_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGridLayout: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QGridLayout*)wrapper->getWrappedVoid();
@@ -28035,6 +28313,7 @@
           //QGroupBox_Wrapper* wrapper = (QGroupBox_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGroupBox: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QGroupBox*)wrapper->getWrappedVoid();
@@ -28147,6 +28426,7 @@
           //QGuiApplication_Wrapper* wrapper = (QGuiApplication_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QGuiApplication: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QGuiApplication*)wrapper->getWrappedVoid();
@@ -28251,6 +28531,7 @@
           //QHBoxLayout_Wrapper* wrapper = (QHBoxLayout_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QHBoxLayout: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QHBoxLayout*)wrapper->getWrappedVoid();
@@ -28355,6 +28636,7 @@
           //QHeaderView_Wrapper* wrapper = (QHeaderView_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QHeaderView: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QHeaderView*)wrapper->getWrappedVoid();
@@ -28491,6 +28773,7 @@
           //QIODevice_Wrapper* wrapper = (QIODevice_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QIODevice: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QIODevice*)wrapper->getWrappedVoid();
@@ -28595,6 +28878,7 @@
           //QInputDevice_Wrapper* wrapper = (QInputDevice_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QInputDevice: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QInputDevice*)wrapper->getWrappedVoid();
@@ -28699,6 +28983,7 @@
           //QIntValidator_Wrapper* wrapper = (QIntValidator_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QIntValidator: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QIntValidator*)wrapper->getWrappedVoid();
@@ -28811,6 +29096,7 @@
           //QItemDelegate_Wrapper* wrapper = (QItemDelegate_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QItemDelegate: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QItemDelegate*)wrapper->getWrappedVoid();
@@ -28915,6 +29201,7 @@
           //QItemSelectionModel_Wrapper* wrapper = (QItemSelectionModel_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QItemSelectionModel: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QItemSelectionModel*)wrapper->getWrappedVoid();
@@ -29019,6 +29306,7 @@
           //QLabel_Wrapper* wrapper = (QLabel_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLabel: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QLabel*)wrapper->getWrappedVoid();
@@ -29163,6 +29451,7 @@
           //QLayout_Wrapper* wrapper = (QLayout_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLayout: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QLayout*)wrapper->getWrappedVoid();
@@ -29275,6 +29564,7 @@
           //QLineEdit_Wrapper* wrapper = (QLineEdit_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QLineEdit: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QLineEdit*)wrapper->getWrappedVoid();
@@ -29395,6 +29685,7 @@
           //QListView_Wrapper* wrapper = (QListView_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QListView: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QListView*)wrapper->getWrappedVoid();
@@ -29507,6 +29798,7 @@
           //QListWidget_Wrapper* wrapper = (QListWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QListWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QListWidget*)wrapper->getWrappedVoid();
@@ -29619,6 +29911,7 @@
           //QMainWindow_Wrapper* wrapper = (QMainWindow_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMainWindow: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QMainWindow*)wrapper->getWrappedVoid();
@@ -29731,6 +30024,7 @@
           //QMdiArea_Wrapper* wrapper = (QMdiArea_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMdiArea: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QMdiArea*)wrapper->getWrappedVoid();
@@ -29843,6 +30137,7 @@
           //QMdiSubWindow_Wrapper* wrapper = (QMdiSubWindow_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMdiSubWindow: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QMdiSubWindow*)wrapper->getWrappedVoid();
@@ -29947,6 +30242,7 @@
           //QMenu_Wrapper* wrapper = (QMenu_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMenu: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QMenu*)wrapper->getWrappedVoid();
@@ -30051,6 +30347,7 @@
           //QMenuBar_Wrapper* wrapper = (QMenuBar_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMenuBar: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QMenuBar*)wrapper->getWrappedVoid();
@@ -30155,6 +30452,7 @@
           //QMessageBox_Wrapper* wrapper = (QMessageBox_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMessageBox: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QMessageBox*)wrapper->getWrappedVoid();
@@ -30259,6 +30557,7 @@
           //QMimeData_Wrapper* wrapper = (QMimeData_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QMimeData: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QMimeData*)wrapper->getWrappedVoid();
@@ -30363,6 +30662,7 @@
           //QPlainTextEdit_Wrapper* wrapper = (QPlainTextEdit_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPlainTextEdit: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QPlainTextEdit*)wrapper->getWrappedVoid();
@@ -30467,6 +30767,7 @@
           //QPrintDialog_Wrapper* wrapper = (QPrintDialog_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPrintDialog: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QPrintDialog*)wrapper->getWrappedVoid();
@@ -30571,6 +30872,7 @@
           //QProgressBar_Wrapper* wrapper = (QProgressBar_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QProgressBar: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QProgressBar*)wrapper->getWrappedVoid();
@@ -30675,6 +30977,7 @@
           //QProgressDialog_Wrapper* wrapper = (QProgressDialog_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QProgressDialog: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QProgressDialog*)wrapper->getWrappedVoid();
@@ -30779,6 +31082,7 @@
           //QPushButton_Wrapper* wrapper = (QPushButton_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QPushButton: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QPushButton*)wrapper->getWrappedVoid();
@@ -30883,6 +31187,7 @@
           //QRadioButton_Wrapper* wrapper = (QRadioButton_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRadioButton: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QRadioButton*)wrapper->getWrappedVoid();
@@ -30987,6 +31292,7 @@
           //QRegularExpressionValidator_Wrapper* wrapper = (QRegularExpressionValidator_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QRegularExpressionValidator: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QRegularExpressionValidator*)wrapper->getWrappedVoid();
@@ -31091,6 +31397,7 @@
           //QScreen_Wrapper* wrapper = (QScreen_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QScreen: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QScreen*)wrapper->getWrappedVoid();
@@ -31195,6 +31502,7 @@
           //QScrollArea_Wrapper* wrapper = (QScrollArea_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QScrollArea: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QScrollArea*)wrapper->getWrappedVoid();
@@ -31299,6 +31607,7 @@
           //QScrollBar_Wrapper* wrapper = (QScrollBar_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QScrollBar: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QScrollBar*)wrapper->getWrappedVoid();
@@ -31403,6 +31712,7 @@
           //QSettings_Wrapper* wrapper = (QSettings_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSettings: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QSettings*)wrapper->getWrappedVoid();
@@ -31507,6 +31817,7 @@
           //QShortcut_Wrapper* wrapper = (QShortcut_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QShortcut: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QShortcut*)wrapper->getWrappedVoid();
@@ -31611,6 +31922,7 @@
           //QSlider_Wrapper* wrapper = (QSlider_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSlider: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QSlider*)wrapper->getWrappedVoid();
@@ -31715,6 +32027,7 @@
           //QSortFilterProxyModel_Wrapper* wrapper = (QSortFilterProxyModel_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSortFilterProxyModel: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QSortFilterProxyModel*)wrapper->getWrappedVoid();
@@ -31819,6 +32132,7 @@
           //QSpinBox_Wrapper* wrapper = (QSpinBox_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSpinBox: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QSpinBox*)wrapper->getWrappedVoid();
@@ -31923,6 +32237,7 @@
           //QSplashScreen_Wrapper* wrapper = (QSplashScreen_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSplashScreen: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QSplashScreen*)wrapper->getWrappedVoid();
@@ -32027,6 +32342,7 @@
           //QSplitter_Wrapper* wrapper = (QSplitter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSplitter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QSplitter*)wrapper->getWrappedVoid();
@@ -32131,6 +32447,7 @@
           //QSplitterHandle_Wrapper* wrapper = (QSplitterHandle_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSplitterHandle: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QSplitterHandle*)wrapper->getWrappedVoid();
@@ -32235,6 +32552,7 @@
           //QStackedLayout_Wrapper* wrapper = (QStackedLayout_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QStackedLayout: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QStackedLayout*)wrapper->getWrappedVoid();
@@ -32339,6 +32657,7 @@
           //QStackedWidget_Wrapper* wrapper = (QStackedWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QStackedWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QStackedWidget*)wrapper->getWrappedVoid();
@@ -32443,6 +32762,7 @@
           //QStandardItemModel_Wrapper* wrapper = (QStandardItemModel_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QStandardItemModel: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QStandardItemModel*)wrapper->getWrappedVoid();
@@ -32547,6 +32867,7 @@
           //QStatusBar_Wrapper* wrapper = (QStatusBar_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QStatusBar: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QStatusBar*)wrapper->getWrappedVoid();
@@ -32651,6 +32972,7 @@
           //QTabBar_Wrapper* wrapper = (QTabBar_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTabBar: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTabBar*)wrapper->getWrappedVoid();
@@ -32755,6 +33077,7 @@
           //QTabWidget_Wrapper* wrapper = (QTabWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTabWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTabWidget*)wrapper->getWrappedVoid();
@@ -32867,6 +33190,7 @@
           //QTableView_Wrapper* wrapper = (QTableView_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTableView: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTableView*)wrapper->getWrappedVoid();
@@ -32971,6 +33295,7 @@
           //QTableWidget_Wrapper* wrapper = (QTableWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTableWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTableWidget*)wrapper->getWrappedVoid();
@@ -33083,6 +33408,7 @@
           //QTextBrowser_Wrapper* wrapper = (QTextBrowser_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextBrowser: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTextBrowser*)wrapper->getWrappedVoid();
@@ -33187,6 +33513,7 @@
           //QTextDocument_Wrapper* wrapper = (QTextDocument_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextDocument: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTextDocument*)wrapper->getWrappedVoid();
@@ -33299,6 +33626,7 @@
           //QTextEdit_Wrapper* wrapper = (QTextEdit_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTextEdit: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTextEdit*)wrapper->getWrappedVoid();
@@ -33403,6 +33731,7 @@
           //QTimer_Wrapper* wrapper = (QTimer_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTimer: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTimer*)wrapper->getWrappedVoid();
@@ -33515,6 +33844,7 @@
           //QToolBar_Wrapper* wrapper = (QToolBar_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QToolBar: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QToolBar*)wrapper->getWrappedVoid();
@@ -33627,6 +33957,7 @@
           //QToolButton_Wrapper* wrapper = (QToolButton_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QToolButton: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QToolButton*)wrapper->getWrappedVoid();
@@ -33731,6 +34062,7 @@
           //QTranslator_Wrapper* wrapper = (QTranslator_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTranslator: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTranslator*)wrapper->getWrappedVoid();
@@ -33843,6 +34175,7 @@
           //QTreeView_Wrapper* wrapper = (QTreeView_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTreeView: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTreeView*)wrapper->getWrappedVoid();
@@ -33955,6 +34288,7 @@
           //QTreeWidget_Wrapper* wrapper = (QTreeWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QTreeWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QTreeWidget*)wrapper->getWrappedVoid();
@@ -34059,6 +34393,7 @@
           //QVBoxLayout_Wrapper* wrapper = (QVBoxLayout_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QVBoxLayout: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QVBoxLayout*)wrapper->getWrappedVoid();
@@ -34187,6 +34522,7 @@
           //QValidator_Wrapper* wrapper = (QValidator_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QValidator: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QValidator*)wrapper->getWrappedVoid();
@@ -34291,6 +34627,7 @@
           //QWidgetAction_Wrapper* wrapper = (QWidgetAction_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QWidgetAction: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QWidgetAction*)wrapper->getWrappedVoid();
@@ -34395,6 +34732,7 @@
           //QWindow_Wrapper* wrapper = (QWindow_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QWindow: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QWindow*)wrapper->getWrappedVoid();

@@ -165,6 +165,10 @@
           <xsl:when test="document('../../qcadprojsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcadpro'" />
           </xsl:when>
+          <!-- qcadnestjsapi types.xml is for qcadnest -->
+          <xsl:when test="document('../../qcadnestjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
+            <xsl:value-of select="'_qcadnest'" />
+          </xsl:when>
           <!-- default to RJSHelper (rjsapi) -->
           <xsl:otherwise>
             <xsl:value-of select="''" />

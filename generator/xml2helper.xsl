@@ -320,7 +320,7 @@
 
           // downcasters from <xsl:value-of select="$downcast-from"/> to ...
           <!-- get list of R classes to be downcast to from qcadjsapi, e.g. RWidget -->
-          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$downcast-from and not(@nodowncast='true') and position()=last()]">
+          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$downcast-from and not(@nodowncast='true') and (position()=last() or @downcast='true')]">
             <xsl:variable name="downcast-to">
               <xsl:value-of select="../../@name"/>
             </xsl:variable>
@@ -359,7 +359,7 @@
             </xsl:variable>
             // downcasters from <xsl:value-of select="$downcast-from"/> to ...
             <!-- get list of R classes to be downcast to from qcadjsapi, e.g. RWidget -->
-            <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$downcast-from and not(@nodowncast='true') and position()=last()]">
+            <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$downcast-from and not(@nodowncast='true') and (position()=last() or @downcast='true')]">
               <xsl:variable name="downcast-to">
                 <xsl:value-of select="../../@name"/>
               </xsl:variable>
@@ -675,6 +675,7 @@
           RJSWrapper* wrapper = getWrapperRJSWrapper(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "RJSHelper::js2cpp_QVariant: no wrapper";
+              handler.trace();
               return QVariant();
           }
 
@@ -1002,6 +1003,7 @@
           //QObject_Wrapper* wrapper = getWrapper&lt;QObject_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "RJSHelper::js2cpp_QObject: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QObject*)wrapper-&gt;getWrappedVoid();
@@ -1312,6 +1314,7 @@
           //QWidget_Wrapper* wrapper = getWrapper&lt;QWidget_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "RJSHelper::js2cpp_QWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (QWidget*)wrapper-&gt;getWrappedVoid();
@@ -1829,6 +1832,7 @@
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: no wrapper";
+              handler.trace();
               return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;();
           }
           //return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;(getWrapped_<xsl:value-of select="$type" />(wrapper));
@@ -1968,6 +1972,7 @@
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return <xsl:value-of select="$type" />();
           }
@@ -1989,6 +1994,7 @@
           RJSWrapper* wrapper = dynamic_cast&lt;RJSWrapper*&gt;(obj);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />_ptr: no wrapper";
+              handler.trace();
               return <xsl:value-of select="$type" />();
           }
           //<xsl:value-of select="$type" />* ret = getWrapped_<xsl:value-of select="$type" />(wrapper);
@@ -2132,6 +2138,7 @@
           //<xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_<xsl:value-of select="$type" />(wrapper);
@@ -2300,6 +2307,7 @@
           //<xsl:value-of select="$type" />_Wrapper* wrapper = (<xsl:value-of select="$type" />_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$type" />: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (<xsl:value-of select="$type" />*)wrapper-&gt;getWrappedVoid();
