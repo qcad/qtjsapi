@@ -16,7 +16,7 @@ Usage
 ```
 QJSEngine* engine = new QJSEngine();
 RJSApi* rjsapi = new RJSApi(engine);
-engine-&gt;evaluate("print('Hello World')");
+engine->evaluate("print('Hello World')");
 ```
 
 Build
