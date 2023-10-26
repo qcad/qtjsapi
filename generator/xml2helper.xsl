@@ -85,6 +85,7 @@
       </xsl:for-each>
 
       <!--
+      // moved to RJSQVariantConverter_qcad for whole module:
       <xsl:if test="$module!=''">
         <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@variant-conversion='true']">
           class RJSQVariantConverter_<xsl:value-of select="@name" /> : public RJSQVariantConverter {
@@ -285,6 +286,7 @@
       </xsl:if>
 
       <!--
+      // moved to RJSQVariantConverter_qcad for whole module:
       <xsl:if test="$module!=''">
         <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@variant-conversion='true']">
           QJSValue RJSQVariantConverter_<xsl:value-of select="@name" />::fromVariant(RJSApi&amp; handler, const QVariant&amp; v) {
@@ -313,7 +315,7 @@
       <xsl:if test="$module!=''">
         // downcaster classes:
         <!-- get list of Qt classes that can be downcast from rjsapi, e.g. QWidget -->
-        <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+        <xsl:for-each select="document('../../qtjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
           <xsl:variable name="downcast-from">
             <xsl:value-of select="@name"/>
           </xsl:variable>
@@ -353,7 +355,7 @@
       <xsl:if test="$module!=''">
         void <xsl:value-of select="$rjshelper_class"/>::registerDowncasters() {
 
-          <xsl:for-each select="document('../../rjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+          <xsl:for-each select="document('../../qtjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
             <xsl:variable name="downcast-from">
               <xsl:value-of select="@name"/>
             </xsl:variable>
@@ -389,6 +391,7 @@
         }
 
         <!--
+        // moved to RJSQVariantConverter_qcad for whole module:
         void <xsl:value-of select="$rjshelper_class"/>::registerQVariantConverters() {
           <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@variant-conversion='true']">
             RJSHelper::registerQVariantConverter(new RJSQVariantConverter_<xsl:value-of select="@name" />());
@@ -502,6 +505,19 @@
               for (int i=0; i&lt;vList.length(); i++) {
                   QVariant vItem = vList[i];
                   ret.setProperty(i, RJSHelper::cpp2js_QVariant(handler, vItem));
+              }
+              return ret;
+          }
+
+          if (v.userType()==QMetaType::QVariantMap) {
+              // convert QVariant map to QJSValue object:
+              QMap&lt;QString, QVariant&gt; vMap = v.toMap();
+              QJSEngine* engine = handler.getEngine();
+              QJSValue ret = engine-&gt;newObject();
+              QList&lt;QString&gt; keys = vMap.keys();
+              for (int i=0; i&lt;keys.length(); i++) {
+                  QVariant vItem = vMap[keys[i]];
+                  ret.setProperty(keys[i], RJSHelper::cpp2js_QVariant(handler, vItem));
               }
               return ret;
           }
@@ -672,6 +688,21 @@
               return QVariant(variantList);
           }
 
+          // hook to convert more types from other modules:
+          for (int i=0; i&lt;qvariantConverters.length(); i++) {
+            RJSQVariantConverter* vc = qvariantConverters[i];
+            QVariant res = vc-&gt;toVariant(handler, v);
+            if (res.isValid()) {
+              return res;
+            }
+          }
+
+          // after custom conversions to prevent false matches to Object instead of specialized classes:
+          if (v.isObject()) {
+              // JS objects are converted to QVariantMap:
+              return v.toVariant(QJSValue::ConvertJSObjects);
+          }
+
           RJSWrapper* wrapper = getWrapperRJSWrapper(v);
           if (wrapper==nullptr) {
               qWarning() &lt;&lt; "RJSHelper::js2cpp_QVariant: no wrapper";
@@ -754,14 +785,6 @@
             return var;
           }
 
-          // hook to convert more types from other modules:
-          for (int i=0; i&lt;qvariantConverters.length(); i++) {
-            RJSQVariantConverter* vc = qvariantConverters[i];
-            QVariant res = vc-&gt;toVariant(handler, v);
-            if (res.isValid()) {
-              return res;
-            }
-          }
 
           {
               QVariant var = *(QVariant*)wrapper->getWrappedVoid();
@@ -904,6 +927,28 @@
               return QJSValue(QJSValue::UndefinedValue);
           }
 
+          static QStringList ignoreList = {
+            "QPropertyAnimation", 
+            "QFormInternal::TranslationWatcher",
+            "QItemSelectionModel",
+            "QTableModel",
+            "QStyledItemDelegate",
+            "QWidgetTextControl",
+            "QPlainTextEditControl",
+            "QWidgetLineControl",
+            "QTreeModel",
+            "QComboMenuDelegate",
+            "QStandardItemModel",
+          };
+
+          QString className = v->metaObject()->className();
+          for (int i=0; i&lt;ignoreList.length(); i++) {
+            if (className==ignoreList[i]) {
+              // silently ignore class:
+              return QJSValue();
+            }
+          }
+
           if (v-&gt;isWidgetType()) {
               QWidget* o = qobject_cast&lt;QWidget*&gt;(v);
               if (o!=nullptr) {
@@ -953,9 +998,7 @@
           }
           // TODO: add more QObject but not QWidget or QLayout types
 
-          if (v->metaObject()->className()!="QPropertyAnimation" &amp;&amp; v->metaObject()->className()!="QFormInternal::TranslationWatcher") {
-              qWarning() &lt;&lt; "RJSHelper::cpp2js_QObject: not wrapping object:" &lt;&lt; v->objectName() &lt;&lt; " class: " &lt;&lt; v->metaObject()->className();
-          }
+          qWarning() &lt;&lt; "RJSHelper::cpp2js_QObject: not wrapping object:" &lt;&lt; v->objectName() &lt;&lt; " class: " &lt;&lt; v->metaObject()->className();
 
           //QObject_Wrapper* ret = new QObject_Wrapper(handler, v, false);
           //return handler-&gt;newQObject(ret);
@@ -1648,8 +1691,7 @@
       static bool is_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
     </xsl:when>
 
-    <xsl:when test="$mode='cpp'">
-      QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
+    <xsl:when test="$mode='cpp'"> QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
           QJSEngine* engine = handler.getEngine();
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
@@ -1686,7 +1728,7 @@
               RJSWrapper* wrapper = getWrapperRJSWrapper(v);
               int t = wrapper->getWrappedType();
 
-              // attempt to downcast to specific type:
+              // use conversion function of appropriate sub class:
               <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and @downcast='true']">
                 <!--
                 if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
@@ -1796,6 +1838,16 @@
 
           //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
           //return engine-&gt;evaluate("new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and @downcast='true']">
+            {
+              QSharedPointer&lt;<xsl:value-of select="../../@name" />&gt; s = v.dynamicCast&lt;<xsl:value-of select="../../@name" />&gt;();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_<xsl:value-of select="../../@name" />(handler, s);
+              }
+            }
+          </xsl:for-each>
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
@@ -2061,7 +2113,7 @@
     <xsl:when test="$mode='cpp'">
       QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$type" />* v) {
 
-          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and not(@nodowncast='true') and position()=last()]">
+          <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$type and not(@nodowncast='true') and (position()=last() or @downcast='true')]">
             // downcast to <xsl:value-of select="../../@name" />:
             {
                 <xsl:value-of select="../../@name" />* o = dynamic_cast&lt;<xsl:value-of select="../../@name" />*&gt;(v);
