@@ -813,6 +813,19 @@
               return ret;
           }
 
+          if (v.userType()==QMetaType::QVariantMap) {
+              // convert QVariant map to QJSValue object:
+              QMap<QString, QVariant> vMap = v.toMap();
+              QJSEngine* engine = handler.getEngine();
+              QJSValue ret = engine->newObject();
+              QList<QString> keys = vMap.keys();
+              for (int i=0; i<keys.length(); i++) {
+                  QVariant vItem = vMap[keys[i]];
+                  ret.setProperty(keys[i], RJSHelper::cpp2js_QVariant(handler, vItem));
+              }
+              return ret;
+          }
+
           //QVariant_Wrapper* ret = new QVariant_Wrapper(handler, new QVariant(v), true);
           //QVariant* v = ret->getWrapped();
           //if (v!=nullptr) {
@@ -979,6 +992,21 @@
               return QVariant(variantList);
           }
 
+          // hook to convert more types from other modules:
+          for (int i=0; i<qvariantConverters.length(); i++) {
+            RJSQVariantConverter* vc = qvariantConverters[i];
+            QVariant res = vc->toVariant(handler, v);
+            if (res.isValid()) {
+              return res;
+            }
+          }
+
+          // after custom conversions to prevent false matches to Object instead of specialized classes:
+          if (v.isObject()) {
+              // JS objects are converted to QVariantMap:
+              return v.toVariant(QJSValue::ConvertJSObjects);
+          }
+
           RJSWrapper* wrapper = getWrapperRJSWrapper(v);
           if (wrapper==nullptr) {
               qWarning() << "RJSHelper::js2cpp_QVariant: no wrapper";
@@ -1061,14 +1089,6 @@
             return var;
           }
 
-          // hook to convert more types from other modules:
-          for (int i=0; i<qvariantConverters.length(); i++) {
-            RJSQVariantConverter* vc = qvariantConverters[i];
-            QVariant res = vc->toVariant(handler, v);
-            if (res.isValid()) {
-              return res;
-            }
-          }
 
           {
               QVariant var = *(QVariant*)wrapper->getWrappedVoid();
@@ -1096,6 +1116,28 @@
       QJSValue RJSHelper::cpp2js_QObject(RJSApi& handler, QObject* v) {
           if (v==nullptr) {
               return QJSValue(QJSValue::UndefinedValue);
+          }
+
+          static QStringList ignoreList = {
+            "QPropertyAnimation", 
+            "QFormInternal::TranslationWatcher",
+            "QItemSelectionModel",
+            "QTableModel",
+            "QStyledItemDelegate",
+            "QWidgetTextControl",
+            "QPlainTextEditControl",
+            "QWidgetLineControl",
+            "QTreeModel",
+            "QComboMenuDelegate",
+            "QStandardItemModel",
+          };
+
+          QString className = v->metaObject()->className();
+          for (int i=0; i<ignoreList.length(); i++) {
+            if (className==ignoreList[i]) {
+              // silently ignore class:
+              return QJSValue();
+            }
           }
 
           if (v->isWidgetType()) {
@@ -1147,9 +1189,7 @@
           }
           // TODO: add more QObject but not QWidget or QLayout types
 
-          if (v->metaObject()->className()!="QPropertyAnimation" && v->metaObject()->className()!="QFormInternal::TranslationWatcher") {
-              qWarning() << "RJSHelper::cpp2js_QObject: not wrapping object:" << v->objectName() << " class: " << v->metaObject()->className();
-          }
+          qWarning() << "RJSHelper::cpp2js_QObject: not wrapping object:" << v->objectName() << " class: " << v->metaObject()->className();
 
           //QObject_Wrapper* ret = new QObject_Wrapper(handler, v, false);
           //return handler->newQObject(ret);
@@ -8835,6 +8875,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new QTextLayout('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new QTextLayout('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("QTextLayout");
