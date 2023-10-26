@@ -29,21 +29,9 @@ target_include_directories(qtjsapiconsole PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../generator
 )
 
-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/../../qcad)
-    if (CMAKE_BUILD_TYPE STREQUAL "Release")
-        set_target_properties(qtjsapiconsole PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../../../../qcad/release)
-        set_target_properties(qtjsapiconsole PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../../../../qcad/release)
-        set_target_properties(qtjsapiconsole PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../../../../qcad/release)
-    else()
-        set_target_properties(qtjsapiconsole PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../../../../qcad/debug)
-        set_target_properties(qtjsapiconsole PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../../../../qcad/debug)
-        set_target_properties(qtjsapiconsole PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../../../../qcad/debug)
-    endif()
-else()
-    set_target_properties(qtjsapiconsole PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../out)
-    set_target_properties(qtjsapiconsole PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../out)
-    set_target_properties(qtjsapiconsole PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../out)
-endif()
+set_target_properties(qtjsapiconsole PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../out)
+set_target_properties(qtjsapiconsole PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../out)
+set_target_properties(qtjsapiconsole PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../out)
 
 target_link_libraries(qtjsapiconsole PRIVATE
     Qt::Concurrent
