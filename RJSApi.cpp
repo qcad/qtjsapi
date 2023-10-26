@@ -11,6 +11,7 @@
 #include "generator/cpp/qcoreevent_wrapper.h"
 #include "generator/cpp/qfileinfo_wrapper.h"
 #include "generator/cpp/qfile_wrapper.h"
+#include "generator/cpp/qfiledevice_wrapper.h"
 #include "generator/cpp/qwidget_wrapper.h"
 #include "generator/cpp/qcoreapplication_wrapper.h"
 #include "generator/cpp/qpoint_wrapper.h"
@@ -240,6 +241,7 @@ void RJSApi::init() {
     QDirIterator_Wrapper::init(*this);
     QFileInfo_Wrapper::init(*this);
     QFile_Wrapper::init(*this);
+    QFileDevice_Wrapper::init(*this);
     QMouseEvent_Wrapper::init(*this);
     QPaintEvent_Wrapper::init(*this);
     QResizeEvent_Wrapper::init(*this);
