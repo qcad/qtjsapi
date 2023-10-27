@@ -1001,14 +1001,15 @@
             }
           }
 
-          // after custom conversions to prevent false matches to Object instead of specialized classes:
-          if (v.isObject()) {
-              // JS objects are converted to QVariantMap:
-              return v.toVariant(QJSValue::ConvertJSObjects);
-          }
-
           RJSWrapper* wrapper = getWrapperRJSWrapper(v);
           if (wrapper==nullptr) {
+              // only if we have no wrapper (i.e. unknown type to C++):
+              // after custom conversions to prevent false matches to Object instead of specialized classes:
+              if (v.isObject()) {
+                // JS objects are converted to QVariantMap:
+                return v.toVariant(QJSValue::ConvertJSObjects);
+              }
+
               qWarning() << "RJSHelper::js2cpp_QVariant: no wrapper";
               handler.trace();
               return QVariant();
