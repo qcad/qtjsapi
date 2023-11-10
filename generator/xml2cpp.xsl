@@ -714,7 +714,10 @@
         </xsl:if>
         -->
 
+        <!--
         <xsl:if test="qc:is-non-copyable(@name)='true' and not(@nodestructor='true')">
+        -->
+        <xsl:if test="not(@nodestructor='true')">
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             if (wrapped!=nullptr) {

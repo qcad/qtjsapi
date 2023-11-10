@@ -177,6 +177,10 @@ RJSApi::~RJSApi() {
             continue;
         }
 
+        if (wrappers.size()%1000==0) {
+            qDebug() << "deleting wrappers..." << wrappers.size();
+        }
+
         //qDebug() << "deleting wrapper:" << RJSType::getTypeName(wrapper->getWrappedType());
         delete wrapper;
     }
@@ -186,7 +190,7 @@ RJSApi::~RJSApi() {
     qDebug() << "collect garbage...";
     engine->collectGarbage();
     // objects are deleted here:
-    QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
+    //QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
     qDebug() << "collect garbage: DONE";
 }
 
@@ -380,6 +384,8 @@ void RJSApi::init() {
     QDomNode_Wrapper::init(*this);
     QDomText_Wrapper::init(*this);
     QDomNodeList_Wrapper::init(*this);
+    QDomCharacterData_Wrapper::init(*this);
+    QDomCDATASection_Wrapper::init(*this);
     QGridLayout_Wrapper::init(*this);
     QPen_Wrapper::init(*this);
     QKeyCombination_Wrapper::init(*this);

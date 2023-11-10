@@ -1,6 +1,6 @@
 QCoreApplication.args = function() {
     if (arguments.length==0) {
-        return QCoreApplicationWrapperSingletonInstance.arguments();
+        return QCoreApplication_WrapperSingletonInstance.arguments();
     }
     else {
         print("QCoreApplication.args(): wrong number / type of arguments");

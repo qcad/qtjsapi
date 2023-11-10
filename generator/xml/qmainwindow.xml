@@ -8,7 +8,7 @@
   <class name="QMainWindow" downcast="true">
     <super_list>
       <super name="QObject" />
-      <super name="QWidget" />
+      <super name="QWidget" downcast="true"/>
     </super_list>
     <property type="Qt::ToolButtonStyle" name="toolButtonStyle" read="toolButtonStyle" write="setToolButtonStyle" />
     <preproc plain="#if QT_CONFIG(dockwidget)" />

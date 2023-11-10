@@ -441,6 +441,17 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -608,6 +619,10 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
               
               if (t==RJSType_QDomText::getIdStatic()) {
                 return (QDomNode*)(QDomText*)vp;
+              }
+              
+              if (t==RJSType_QDomCDATASection::getIdStatic()) {
+                return (QDomNode*)(QDomCDATASection*)vp;
               }
               
               if (t==RJSType_QDomNotation::getIdStatic()) {
@@ -2169,6 +2184,17 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -2608,6 +2634,17 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -4418,6 +4455,17 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -6580,6 +6628,17 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -7169,6 +7228,17 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -8853,6 +8923,17 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -9000,6 +9081,10 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
               
               if (t==RJSType_QDomComment::getIdStatic()) {
                 return (QDomCharacterData*)(QDomComment*)vp;
+              }
+              
+              if (t==RJSType_QDomCDATASection::getIdStatic()) {
+                return (QDomCharacterData*)(QDomCDATASection*)vp;
               }
               
 
@@ -10745,6 +10830,17 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -12536,6 +12632,17 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -14682,6 +14789,17 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -16593,6 +16711,17 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -17069,6 +17198,17 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -17245,6 +17385,34 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
           return ret;
         }
       
+        // enums:
+        
+  enum NodeType {
+    ElementNode = QDomCDATASection::ElementNode,
+AttributeNode = QDomCDATASection::AttributeNode,
+TextNode = QDomCDATASection::TextNode,
+CDATASectionNode = QDomCDATASection::CDATASectionNode,
+EntityReferenceNode = QDomCDATASection::EntityReferenceNode,
+EntityNode = QDomCDATASection::EntityNode,
+ProcessingInstructionNode = QDomCDATASection::ProcessingInstructionNode,
+CommentNode = QDomCDATASection::CommentNode,
+DocumentNode = QDomCDATASection::DocumentNode,
+DocumentTypeNode = QDomCDATASection::DocumentTypeNode,
+DocumentFragmentNode = QDomCDATASection::DocumentFragmentNode,
+NotationNode = QDomCDATASection::NotationNode,
+BaseNode = QDomCDATASection::BaseNode,
+CharacterDataNode = QDomCDATASection::CharacterDataNode,
+
+  };
+  Q_ENUM(NodeType)
+
+  enum EncodingPolicy {
+    EncodingFromDocument = QDomCDATASection::EncodingFromDocument,
+EncodingFromTextStream = QDomCDATASection::EncodingFromTextStream,
+
+  };
+  Q_ENUM(EncodingPolicy)
+
     /*
     // special constructor used as prototype:
     
@@ -17301,6 +17469,1586 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
     // non-static functions:
     
+    // Class: QDomCDATASection
+    // Function: operator_equal
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  operator_equal
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: operator_unequal
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  operator_unequal
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: insertBefore
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertBefore
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: insertAfter
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertAfter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: replaceChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  replaceChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: removeChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: appendChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  appendChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: hasChildNodes
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  hasChildNodes
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: cloneNode
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  cloneNode
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: normalize
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  normalize
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isSupported
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSupported
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: nodeName
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  nodeName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: parentNode
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  parentNode
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: childNodes
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  childNodes
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: firstChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  firstChild
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: lastChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  lastChild
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: previousSibling
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  previousSibling
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: nextSibling
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  nextSibling
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: attributes
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  attributes
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: ownerDocument
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  ownerDocument
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: namespaceURI
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  namespaceURI
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: localName
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  localName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: hasAttributes
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  hasAttributes
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: nodeValue
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  nodeValue
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: setNodeValue
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setNodeValue
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: prefix
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  prefix
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: setPrefix
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setPrefix
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isAttr
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isAttr
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isCDATASection
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isCDATASection
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isDocumentFragment
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isDocumentFragment
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isDocument
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isDocument
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isDocumentType
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isDocumentType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isElement
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isEntityReference
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isEntityReference
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isText
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isText
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isEntity
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isEntity
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isNotation
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isNotation
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isProcessingInstruction
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isProcessingInstruction
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isCharacterData
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isCharacterData
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isComment
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isComment
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: namedItem
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  namedItem
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: isNull
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isNull
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: clear
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clear
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toAttr
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toAttr
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toCDATASection
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toCDATASection
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toDocumentFragment
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toDocumentFragment
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toDocument
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toDocument
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toDocumentType
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toDocumentType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toElement
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toEntityReference
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toEntityReference
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toText
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toText
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toEntity
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toEntity
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toNotation
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toNotation
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toProcessingInstruction
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toProcessingInstruction
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toCharacterData
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toCharacterData
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: toComment
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toComment
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: firstChildElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  firstChildElement
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: lastChildElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  lastChildElement
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: previousSiblingElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  previousSiblingElement
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: nextSiblingElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  nextSiblingElement
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: lineNumber
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  lineNumber
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: columnNumber
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  columnNumber
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: substringData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  substringData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: appendData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  appendData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: insertData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: deleteData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  deleteData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: replaceData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  replaceData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: length
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  length
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: data
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  data
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QDomCDATASection
+    // Function: setData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
     // Class: QDomCDATASection
     // Function: splitText
     // Source: QDomText
@@ -17368,6 +19116,17 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -19094,6 +20853,17 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -20841,6 +22611,17 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -22525,6 +24306,17 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -24274,6 +26066,17 @@ EncodingFromTextStream = QDomProcessingInstruction::EncodingFromTextStream,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:

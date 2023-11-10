@@ -138,6 +138,14 @@
         }
 
         
+          if (t===RJSType_QDomNode.getIdStatic()) {
+            return true;
+          }
+        
+          if (t===RJSType_QDomCharacterData.getIdStatic()) {
+            return true;
+          }
+        
           if (t===RJSType_QDomText.getIdStatic()) {
             return true;
           }
@@ -151,6 +159,26 @@
 
       // enum values:
       
+  // enum: NodeType
+QDomCDATASection.ElementNode = QDomCDATASection_Wrapper.ElementNode;
+QDomCDATASection.AttributeNode = QDomCDATASection_Wrapper.AttributeNode;
+QDomCDATASection.TextNode = QDomCDATASection_Wrapper.TextNode;
+QDomCDATASection.CDATASectionNode = QDomCDATASection_Wrapper.CDATASectionNode;
+QDomCDATASection.EntityReferenceNode = QDomCDATASection_Wrapper.EntityReferenceNode;
+QDomCDATASection.EntityNode = QDomCDATASection_Wrapper.EntityNode;
+QDomCDATASection.ProcessingInstructionNode = QDomCDATASection_Wrapper.ProcessingInstructionNode;
+QDomCDATASection.CommentNode = QDomCDATASection_Wrapper.CommentNode;
+QDomCDATASection.DocumentNode = QDomCDATASection_Wrapper.DocumentNode;
+QDomCDATASection.DocumentTypeNode = QDomCDATASection_Wrapper.DocumentTypeNode;
+QDomCDATASection.DocumentFragmentNode = QDomCDATASection_Wrapper.DocumentFragmentNode;
+QDomCDATASection.NotationNode = QDomCDATASection_Wrapper.NotationNode;
+QDomCDATASection.BaseNode = QDomCDATASection_Wrapper.BaseNode;
+QDomCDATASection.CharacterDataNode = QDomCDATASection_Wrapper.CharacterDataNode;
+
+  // enum: EncodingPolicy
+QDomCDATASection.EncodingFromDocument = QDomCDATASection_Wrapper.EncodingFromDocument;
+QDomCDATASection.EncodingFromTextStream = QDomCDATASection_Wrapper.EncodingFromTextStream;
+
 
       // functions:
       

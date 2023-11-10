@@ -143,6 +143,10 @@
         
           #include "qdomcharacterdata_wrapper.h"
         
+          #include "qdomnode_wrapper.h"
+        
+          #include "qdomcharacterdata_wrapper.h"
+        
           #include "qdomtext_wrapper.h"
         
           #include "qdomnode_wrapper.h"
@@ -1304,6 +1308,13 @@
               QMenu* o = qobject_cast<QMenu*>(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QMenu(handler, o);
+              }
+          }
+
+          {
+              QMenuBar* o = qobject_cast<QMenuBar*>(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QMenuBar(handler, o);
               }
           }
 

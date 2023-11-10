@@ -518,6 +518,17 @@
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -1396,6 +1407,17 @@
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:

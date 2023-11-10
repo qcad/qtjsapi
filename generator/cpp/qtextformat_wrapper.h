@@ -243,6 +243,17 @@ PercentageLength = QTextLength::PercentageLength,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -1644,6 +1655,17 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -4479,6 +4501,17 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -6385,6 +6418,17 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -7954,6 +7998,17 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -9827,6 +9882,17 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -11806,6 +11872,17 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -12978,6 +13055,17 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -15471,6 +15559,17 @@ FontPropertiesAll = QTextTableCellFormat::FontPropertiesAll,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:

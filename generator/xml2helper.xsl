@@ -1117,6 +1117,13 @@
           }
 
           {
+              QMenuBar* o = qobject_cast&lt;QMenuBar*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QMenuBar(handler, o);
+              }
+          }
+
+          {
               QLabel* o = qobject_cast&lt;QLabel*&gt;(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QLabel(handler, o);

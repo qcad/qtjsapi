@@ -448,6 +448,17 @@
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -1081,6 +1092,17 @@ NumPresets = QGradient::NumPresets,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -1810,6 +1832,17 @@ NumPresets = QLinearGradient::NumPresets,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -2679,6 +2712,17 @@ NumPresets = QRadialGradient::NumPresets,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:
@@ -3400,6 +3444,17 @@ NumPresets = QConicalGradient::NumPresets,
               
               ;
             
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
 
         //public:
         // set engine:

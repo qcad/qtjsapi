@@ -1457,6 +1457,8 @@
   </class>
   <class name="QDomCDATASection">
     <super_list>
+      <super name="QDomNode" />
+      <super name="QDomCharacterData" />
       <super name="QDomText" />
     </super_list>
     <constructor>

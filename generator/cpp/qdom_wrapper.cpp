@@ -44152,6 +44152,4496 @@ QDomCDATASection a1_cpp;
     // non-static functions:
     
     // Class: QDomCDATASection
+    // Function: operator_equal
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::operator_equal
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDomNode(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (QDomNode)
+  
+QDomNode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDomNode(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->operator==(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for operator_equal";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: operator_unequal
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::operator_unequal
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDomNode(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (QDomNode)
+  
+QDomNode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDomNode(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->operator!=(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for operator_unequal";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: insertBefore
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::insertBefore
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDomNode(handler, a1
+  )
+
+   && RJSHelper::is_QDomNode(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: newChild (QDomNode)
+  
+QDomNode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDomNode(handler, a1);
+        
+  // convert js parameter to cpp: refChild (QDomNode)
+  
+QDomNode a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QDomNode(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->insertBefore(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for insertBefore";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: insertAfter
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::insertAfter
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDomNode(handler, a1
+  )
+
+   && RJSHelper::is_QDomNode(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: newChild (QDomNode)
+  
+QDomNode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDomNode(handler, a1);
+        
+  // convert js parameter to cpp: refChild (QDomNode)
+  
+QDomNode a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QDomNode(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->insertAfter(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for insertAfter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: replaceChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::replaceChild
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDomNode(handler, a1
+  )
+
+   && RJSHelper::is_QDomNode(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: newChild (QDomNode)
+  
+QDomNode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDomNode(handler, a1);
+        
+  // convert js parameter to cpp: oldChild (QDomNode)
+  
+QDomNode a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QDomNode(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->replaceChild(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for replaceChild";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: removeChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::removeChild
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDomNode(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: oldChild (QDomNode)
+  
+QDomNode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDomNode(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->removeChild(
+                  a1_cpp
+    
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for removeChild";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: appendChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::appendChild
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDomNode(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: newChild (QDomNode)
+  
+QDomNode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDomNode(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->appendChild(
+                  a1_cpp
+    
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for appendChild";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: hasChildNodes
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::hasChildNodes
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->hasChildNodes(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for hasChildNodes";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: cloneNode
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::cloneNode
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: deep (bool)
+  
+bool a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = true;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->cloneNode(
+                  a1_cpp
+    
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for cloneNode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: normalize
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::normalize
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                
+                w->normalize(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for normalize";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isSupported
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isSupported
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+   && RJSHelper::is_QString(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: feature (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+  // convert js parameter to cpp: version (QString)
+  
+QString a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isSupported(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isSupported";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: nodeName
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::nodeName
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QString res = 
+                    
+                w->nodeName(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for nodeName";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: parentNode
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::parentNode
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->parentNode(
+                  
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for parentNode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: childNodes
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::childNodes
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNodeList res = 
+                    
+                w->childNodes(
+                  
+                );
+              
+            // return type: QDomNodeList
+
+            return RJSHelper::cpp2js_QDomNodeList(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for childNodes";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: firstChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::firstChild
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->firstChild(
+                  
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for firstChild";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: lastChild
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::lastChild
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->lastChild(
+                  
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for lastChild";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: previousSibling
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::previousSibling
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->previousSibling(
+                  
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for previousSibling";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: nextSibling
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::nextSibling
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->nextSibling(
+                  
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for nextSibling";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: attributes
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::attributes
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNamedNodeMap res = 
+                    
+                w->attributes(
+                  
+                );
+              
+            // return type: QDomNamedNodeMap
+
+            return RJSHelper::cpp2js_QDomNamedNodeMap(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for attributes";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: ownerDocument
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::ownerDocument
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomDocument res = 
+                    
+                w->ownerDocument(
+                  
+                );
+              
+            // return type: QDomDocument
+
+            return RJSHelper::cpp2js_QDomDocument(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for ownerDocument";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: namespaceURI
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::namespaceURI
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QString res = 
+                    
+                w->namespaceURI(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for namespaceURI";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: localName
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::localName
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QString res = 
+                    
+                w->localName(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for localName";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: hasAttributes
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::hasAttributes
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->hasAttributes(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for hasAttributes";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: nodeValue
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::nodeValue
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QString res = 
+                    
+                w->nodeValue(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for nodeValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: setNodeValue
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::setNodeValue
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                
+                w->setNodeValue(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setNodeValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: prefix
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::prefix
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QString res = 
+                    
+                w->prefix(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for prefix";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: setPrefix
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::setPrefix
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: pre (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                
+                w->setPrefix(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setPrefix";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isAttr
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isAttr
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isAttr(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isAttr";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isCDATASection
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isCDATASection
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isCDATASection(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isCDATASection";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isDocumentFragment
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isDocumentFragment
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isDocumentFragment(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isDocumentFragment";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isDocument
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isDocument
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isDocument(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isDocument";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isDocumentType
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isDocumentType
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isDocumentType(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isDocumentType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isElement
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isElement(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isElement";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isEntityReference
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isEntityReference
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isEntityReference(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isEntityReference";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isText
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isText
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isText(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isEntity
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isEntity
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isEntity(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isEntity";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isNotation
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isNotation
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isNotation(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isNotation";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isProcessingInstruction
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isProcessingInstruction
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isProcessingInstruction(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isProcessingInstruction";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isCharacterData
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isCharacterData
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isCharacterData(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isCharacterData";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isComment
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isComment
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isComment(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isComment";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: namedItem
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::namedItem
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: name (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNode res = 
+                    
+                w->namedItem(
+                  a1_cpp
+    
+                );
+              
+            // return type: QDomNode
+
+            return RJSHelper::cpp2js_QDomNode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for namedItem";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: isNull
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::isNull
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                bool res = 
+                    
+                w->isNull(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isNull";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: clear
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::clear
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                
+                w->clear(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for clear";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toAttr
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toAttr
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomAttr res = 
+                    
+                w->toAttr(
+                  
+                );
+              
+            // return type: QDomAttr
+
+            return RJSHelper::cpp2js_QDomAttr(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toAttr";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toCDATASection
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toCDATASection
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomCDATASection res = 
+                    
+                w->toCDATASection(
+                  
+                );
+              
+            // return type: QDomCDATASection
+
+            return RJSHelper::cpp2js_QDomCDATASection(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toCDATASection";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toDocumentFragment
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toDocumentFragment
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomDocumentFragment res = 
+                    
+                w->toDocumentFragment(
+                  
+                );
+              
+            // return type: QDomDocumentFragment
+
+            return RJSHelper::cpp2js_QDomDocumentFragment(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toDocumentFragment";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toDocument
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toDocument
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomDocument res = 
+                    
+                w->toDocument(
+                  
+                );
+              
+            // return type: QDomDocument
+
+            return RJSHelper::cpp2js_QDomDocument(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toDocument";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toDocumentType
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toDocumentType
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomDocumentType res = 
+                    
+                w->toDocumentType(
+                  
+                );
+              
+            // return type: QDomDocumentType
+
+            return RJSHelper::cpp2js_QDomDocumentType(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toDocumentType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toElement
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomElement res = 
+                    
+                w->toElement(
+                  
+                );
+              
+            // return type: QDomElement
+
+            return RJSHelper::cpp2js_QDomElement(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toElement";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toEntityReference
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toEntityReference
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomEntityReference res = 
+                    
+                w->toEntityReference(
+                  
+                );
+              
+            // return type: QDomEntityReference
+
+            return RJSHelper::cpp2js_QDomEntityReference(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toEntityReference";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toText
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toText
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomText res = 
+                    
+                w->toText(
+                  
+                );
+              
+            // return type: QDomText
+
+            return RJSHelper::cpp2js_QDomText(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toEntity
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toEntity
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomEntity res = 
+                    
+                w->toEntity(
+                  
+                );
+              
+            // return type: QDomEntity
+
+            return RJSHelper::cpp2js_QDomEntity(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toEntity";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toNotation
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toNotation
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomNotation res = 
+                    
+                w->toNotation(
+                  
+                );
+              
+            // return type: QDomNotation
+
+            return RJSHelper::cpp2js_QDomNotation(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toNotation";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toProcessingInstruction
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toProcessingInstruction
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomProcessingInstruction res = 
+                    
+                w->toProcessingInstruction(
+                  
+                );
+              
+            // return type: QDomProcessingInstruction
+
+            return RJSHelper::cpp2js_QDomProcessingInstruction(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toProcessingInstruction";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toCharacterData
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toCharacterData
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomCharacterData res = 
+                    
+                w->toCharacterData(
+                  
+                );
+              
+            // return type: QDomCharacterData
+
+            return RJSHelper::cpp2js_QDomCharacterData(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toCharacterData";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: toComment
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::toComment
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomComment res = 
+                    
+                w->toComment(
+                  
+                );
+              
+            // return type: QDomComment
+
+            return RJSHelper::cpp2js_QDomComment(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toComment";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: firstChildElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::firstChildElement
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QString(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: tagName (QString)
+  
+QString a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QString();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+          }
+        
+  // convert js parameter to cpp: namespaceURI (QString)
+  
+QString a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = QString();
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomElement res = 
+                    
+                w->firstChildElement(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QDomElement
+
+            return RJSHelper::cpp2js_QDomElement(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for firstChildElement";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: lastChildElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::lastChildElement
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QString(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: tagName (QString)
+  
+QString a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QString();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+          }
+        
+  // convert js parameter to cpp: namespaceURI (QString)
+  
+QString a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = QString();
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomElement res = 
+                    
+                w->lastChildElement(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QDomElement
+
+            return RJSHelper::cpp2js_QDomElement(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for lastChildElement";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: previousSiblingElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::previousSiblingElement
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QString(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: tagName (QString)
+  
+QString a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QString();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+          }
+        
+  // convert js parameter to cpp: namespaceURI (QString)
+  
+QString a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = QString();
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomElement res = 
+                    
+                w->previousSiblingElement(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QDomElement
+
+            return RJSHelper::cpp2js_QDomElement(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for previousSiblingElement";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: nextSiblingElement
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::nextSiblingElement
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QString(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: taName (QString)
+  
+QString a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QString();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+          }
+        
+  // convert js parameter to cpp: namespaceURI (QString)
+  
+QString a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = QString();
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QDomElement res = 
+                    
+                w->nextSiblingElement(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QDomElement
+
+            return RJSHelper::cpp2js_QDomElement(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for nextSiblingElement";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: lineNumber
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::lineNumber
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                int res = 
+                    
+                w->lineNumber(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for lineNumber";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: columnNumber
+    // Source: QDomNode
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::columnNumber
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                int res = 
+                    
+                w->columnNumber(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for columnNumber";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: substringData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::substringData
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_unsignedlong(handler, a1
+  )
+
+   && RJSHelper::is_unsignedlong(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: offset (unsigned long)
+  
+unsigned long a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_unsignedlong(handler, a1);
+        
+  // convert js parameter to cpp: count (unsigned long)
+  
+unsigned long a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_unsignedlong(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QString res = 
+                    
+                w->substringData(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for substringData";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: appendData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::appendData
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: arg (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                
+                w->appendData(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for appendData";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: insertData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::insertData
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_unsignedlong(handler, a1
+  )
+
+   && RJSHelper::is_QString(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: offset (unsigned long)
+  
+unsigned long a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_unsignedlong(handler, a1);
+        
+  // convert js parameter to cpp: arg (QString)
+  
+QString a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                
+                w->insertData(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for insertData";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: deleteData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::deleteData
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_unsignedlong(handler, a1
+  )
+
+   && RJSHelper::is_unsignedlong(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: offset (unsigned long)
+  
+unsigned long a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_unsignedlong(handler, a1);
+        
+  // convert js parameter to cpp: count (unsigned long)
+  
+unsigned long a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_unsignedlong(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                
+                w->deleteData(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for deleteData";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: replaceData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::replaceData
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_unsignedlong(handler, a1
+  )
+
+   && RJSHelper::is_unsignedlong(handler, a2
+  )
+
+   && RJSHelper::is_QString(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: offset (unsigned long)
+  
+unsigned long a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_unsignedlong(handler, a1);
+        
+  // convert js parameter to cpp: count (unsigned long)
+  
+unsigned long a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_unsignedlong(handler, a2);
+        
+  // convert js parameter to cpp: arg (QString)
+  
+QString a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                
+                w->replaceData(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for replaceData";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: length
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::length
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                int res = 
+                    
+                w->length(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for length";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: data
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::data
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                QString res = 
+                    
+                w->data(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for data";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
+    // Function: setData
+    // Source: QDomCharacterData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDomCDATASection_Wrapper::setData
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDomCDATASection* w = getWrapped();
+                
+                w->setData(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setData";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDomCDATASection
     // Function: splitText
     // Source: QDomText
     // Static: false

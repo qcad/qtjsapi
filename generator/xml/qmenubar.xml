@@ -3,7 +3,7 @@
   <class name="QMenuBar">
     <super_list>
       <super name="QObject" />
-      <super name="QWidget" />
+      <super name="QWidget" downcast="true" />
     </super_list>
     <constructor>
       <variant>
