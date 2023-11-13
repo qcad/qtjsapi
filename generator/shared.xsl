@@ -169,7 +169,7 @@
           <xsl:when test="document('../../qcadnestjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcadnest'" />
           </xsl:when>
-          <!-- default to RJSHelper (rjsapi) -->
+          <!-- default to RJSHelper (qtjsapi) -->
           <xsl:otherwise>
             <xsl:value-of select="''" />
           </xsl:otherwise>

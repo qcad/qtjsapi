@@ -314,7 +314,7 @@
 
       <xsl:if test="$module!=''">
         // downcaster classes:
-        <!-- get list of Qt classes that can be downcast from rjsapi, e.g. QWidget -->
+        <!-- get list of Qt classes that can be downcast from qtjsapi, e.g. QWidget -->
         <xsl:for-each select="document('../../qtjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
           <xsl:variable name="downcast-from">
             <xsl:value-of select="@name"/>
