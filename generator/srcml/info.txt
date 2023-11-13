@@ -1,0 +1,1 @@
+SRCML files generated from C++ headers are placed here.

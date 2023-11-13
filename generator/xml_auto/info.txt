@@ -1,0 +1,2 @@
+Automatically generated XML API definitions from cpp2xml are placed here.
+Clean up and copy to xml to use these.
