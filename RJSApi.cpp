@@ -434,6 +434,7 @@ void RJSApi::init() {
     QXmlStreamReader_Wrapper::init(*this);
     QQuickWidget_Wrapper::init(*this);
     QGraphicsBlurEffect_Wrapper::init(*this);
+    QFocusEvent_Wrapper::init(*this);
 
     {
         QString fileName = ":fixes.js";

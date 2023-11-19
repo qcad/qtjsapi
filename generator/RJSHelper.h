@@ -560,6 +560,12 @@
           virtual QKeyEvent* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class QFocusEvent:
+        class RJSBasecaster_QFocusEvent {
+        public:
+          virtual QFocusEvent* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class QPaintEvent:
         class RJSBasecaster_QPaintEvent {
         public:
@@ -1743,10 +1749,6 @@
       static QAbstractFileIconProvider::Options js2cpp_QAbstractFileIconProvider_Options(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractFileIconProvider_Options(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
-      static QJSValue cpp2js_QDirIterator_IteratorFlags(RJSApi& handler, QDirIterator::IteratorFlags v);
-      static QDirIterator::IteratorFlags js2cpp_QDirIterator_IteratorFlags(RJSApi& handler, const QJSValue& v);
-      static bool is_QDirIterator_IteratorFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
       static QJSValue cpp2js_QAbstractItemView_EditTriggers(RJSApi& handler, QAbstractItemView::EditTriggers v);
       static QAbstractItemView::EditTriggers js2cpp_QAbstractItemView_EditTriggers(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractItemView_EditTriggers(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -1766,6 +1768,10 @@
       static QJSValue cpp2js_QDir_SortFlags(RJSApi& handler, QDir::SortFlags v);
       static QDir::SortFlags js2cpp_QDir_SortFlags(RJSApi& handler, const QJSValue& v);
       static bool is_QDir_SortFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QDirIterator_IteratorFlags(RJSApi& handler, QDirIterator::IteratorFlags v);
+      static QDirIterator::IteratorFlags js2cpp_QDirIterator_IteratorFlags(RJSApi& handler, const QJSValue& v);
+      static bool is_QDirIterator_IteratorFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QDockWidget_DockWidgetFeatures(RJSApi& handler, QDockWidget::DockWidgetFeatures v);
       static QDockWidget::DockWidgetFeatures js2cpp_QDockWidget_DockWidgetFeatures(RJSApi& handler, const QJSValue& v);
@@ -1795,6 +1801,14 @@
       static QFontComboBox::FontFilters js2cpp_QFontComboBox_FontFilters(RJSApi& handler, const QJSValue& v);
       static bool is_QFontComboBox_FontFilters(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QGraphicsBlurEffect_BlurHints(RJSApi& handler, QGraphicsBlurEffect::BlurHints v);
+      static QGraphicsBlurEffect::BlurHints js2cpp_QGraphicsBlurEffect_BlurHints(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsBlurEffect_BlurHints(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QGraphicsEffect_ChangeFlags(RJSApi& handler, QGraphicsEffect::ChangeFlags v);
+      static QGraphicsEffect::ChangeFlags js2cpp_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QItemSelectionModel_SelectionFlags(RJSApi& handler, QItemSelectionModel::SelectionFlags v);
       static QItemSelectionModel::SelectionFlags js2cpp_QItemSelectionModel_SelectionFlags(RJSApi& handler, const QJSValue& v);
       static bool is_QItemSelectionModel_SelectionFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -1822,6 +1836,10 @@
       static QJSValue cpp2js_QSizePolicy_ControlTypes(RJSApi& handler, QSizePolicy::ControlTypes v);
       static QSizePolicy::ControlTypes js2cpp_QSizePolicy_ControlTypes(RJSApi& handler, const QJSValue& v);
       static bool is_QSizePolicy_ControlTypes(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSurfaceFormat_FormatOptions(RJSApi& handler, QSurfaceFormat::FormatOptions v);
+      static QSurfaceFormat::FormatOptions js2cpp_QSurfaceFormat_FormatOptions(RJSApi& handler, const QJSValue& v);
+      static bool is_QSurfaceFormat_FormatOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QTextDocument_FindFlags(RJSApi& handler, QTextDocument::FindFlags v);
       static QTextDocument::FindFlags js2cpp_QTextDocument_FindFlags(RJSApi& handler, const QJSValue& v);
@@ -1902,62 +1920,6 @@
       static QJSValue cpp2js_Qt_WindowStates(RJSApi& handler, Qt::WindowStates v);
       static Qt::WindowStates js2cpp_Qt_WindowStates(RJSApi& handler, const QJSValue& v);
       static bool is_Qt_WindowStates(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QSurfaceFormat_FormatOptions(RJSApi& handler, QSurfaceFormat::FormatOptions v);
-      static QSurfaceFormat::FormatOptions js2cpp_QSurfaceFormat_FormatOptions(RJSApi& handler, const QJSValue& v);
-      static bool is_QSurfaceFormat_FormatOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QGraphicsEffect_ChangeFlags(RJSApi& handler, QGraphicsEffect::ChangeFlags v);
-      static QGraphicsEffect::ChangeFlags js2cpp_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QGraphicsBlurEffect_BlurHints(RJSApi& handler, QGraphicsBlurEffect::BlurHints v);
-      static QGraphicsBlurEffect::BlurHints js2cpp_QGraphicsBlurEffect_BlurHints(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsBlurEffect_BlurHints(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QDirIterator_IteratorFlag(RJSApi& handler, QDirIterator::IteratorFlag v);
-      static QDirIterator::IteratorFlag js2cpp_QDirIterator_IteratorFlag(RJSApi& handler, const QJSValue& v);
-      static bool is_QDirIterator_IteratorFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QGraphicsBlurEffect_BlurHint(RJSApi& handler, QGraphicsBlurEffect::BlurHint v);
-      static QGraphicsBlurEffect::BlurHint js2cpp_QGraphicsBlurEffect_BlurHint(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsBlurEffect_BlurHint(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QGraphicsEffect_PixmapPadMode(RJSApi& handler, QGraphicsEffect::PixmapPadMode v);
-      static QGraphicsEffect::PixmapPadMode js2cpp_QGraphicsEffect_PixmapPadMode(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsEffect_PixmapPadMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QGraphicsEffect_ChangeFlag(RJSApi& handler, QGraphicsEffect::ChangeFlag v);
-      static QGraphicsEffect::ChangeFlag js2cpp_QGraphicsEffect_ChangeFlag(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsEffect_ChangeFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QSurfaceFormat_FormatOption(RJSApi& handler, QSurfaceFormat::FormatOption v);
-      static QSurfaceFormat::FormatOption js2cpp_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v);
-      static bool is_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QSurfaceFormat_SwapBehavior(RJSApi& handler, QSurfaceFormat::SwapBehavior v);
-      static QSurfaceFormat::SwapBehavior js2cpp_QSurfaceFormat_SwapBehavior(RJSApi& handler, const QJSValue& v);
-      static bool is_QSurfaceFormat_SwapBehavior(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QSurfaceFormat_RenderableType(RJSApi& handler, QSurfaceFormat::RenderableType v);
-      static QSurfaceFormat::RenderableType js2cpp_QSurfaceFormat_RenderableType(RJSApi& handler, const QJSValue& v);
-      static bool is_QSurfaceFormat_RenderableType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, QSurfaceFormat::OpenGLContextProfile v);
-      static QSurfaceFormat::OpenGLContextProfile js2cpp_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, const QJSValue& v);
-      static bool is_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QQuickWidget_ResizeMode(RJSApi& handler, QQuickWidget::ResizeMode v);
-      static QQuickWidget::ResizeMode js2cpp_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v);
-      static bool is_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QQuickWidget_Status(RJSApi& handler, QQuickWidget::Status v);
-      static QQuickWidget::Status js2cpp_QQuickWidget_Status(RJSApi& handler, const QJSValue& v);
-      static bool is_QQuickWidget_Status(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QEasingCurve_Type(RJSApi& handler, QEasingCurve::Type v);
-      static QEasingCurve::Type js2cpp_QEasingCurve_Type(RJSApi& handler, const QJSValue& v);
-      static bool is_QEasingCurve_Type(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QAbstractFileIconProvider_IconType(RJSApi& handler, QAbstractFileIconProvider::IconType v);
       static QAbstractFileIconProvider::IconType js2cpp_QAbstractFileIconProvider_IconType(RJSApi& handler, const QJSValue& v);
@@ -2075,6 +2037,10 @@
       static QDialogButtonBox::StandardButton js2cpp_QDialogButtonBox_StandardButton(RJSApi& handler, const QJSValue& v);
       static bool is_QDialogButtonBox_StandardButton(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QDirIterator_IteratorFlag(RJSApi& handler, QDirIterator::IteratorFlag v);
+      static QDirIterator::IteratorFlag js2cpp_QDirIterator_IteratorFlag(RJSApi& handler, const QJSValue& v);
+      static bool is_QDirIterator_IteratorFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QDockWidget_DockWidgetFeature(RJSApi& handler, QDockWidget::DockWidgetFeature v);
       static QDockWidget::DockWidgetFeature js2cpp_QDockWidget_DockWidgetFeature(RJSApi& handler, const QJSValue& v);
       static bool is_QDockWidget_DockWidgetFeature(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -2094,6 +2060,10 @@
       static QJSValue cpp2js_QDoubleValidator_Notation(RJSApi& handler, QDoubleValidator::Notation v);
       static QDoubleValidator::Notation js2cpp_QDoubleValidator_Notation(RJSApi& handler, const QJSValue& v);
       static bool is_QDoubleValidator_Notation(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QEasingCurve_Type(RJSApi& handler, QEasingCurve::Type v);
+      static QEasingCurve::Type js2cpp_QEasingCurve_Type(RJSApi& handler, const QJSValue& v);
+      static bool is_QEasingCurve_Type(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QEvent_Type(RJSApi& handler, QEvent::Type v);
       static QEvent::Type js2cpp_QEvent_Type(RJSApi& handler, const QJSValue& v);
@@ -2238,6 +2208,18 @@
       static QJSValue cpp2js_QGradient_Type(RJSApi& handler, QGradient::Type v);
       static QGradient::Type js2cpp_QGradient_Type(RJSApi& handler, const QJSValue& v);
       static bool is_QGradient_Type(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QGraphicsBlurEffect_BlurHint(RJSApi& handler, QGraphicsBlurEffect::BlurHint v);
+      static QGraphicsBlurEffect::BlurHint js2cpp_QGraphicsBlurEffect_BlurHint(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsBlurEffect_BlurHint(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QGraphicsEffect_ChangeFlag(RJSApi& handler, QGraphicsEffect::ChangeFlag v);
+      static QGraphicsEffect::ChangeFlag js2cpp_QGraphicsEffect_ChangeFlag(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsEffect_ChangeFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QGraphicsEffect_PixmapPadMode(RJSApi& handler, QGraphicsEffect::PixmapPadMode v);
+      static QGraphicsEffect::PixmapPadMode js2cpp_QGraphicsEffect_PixmapPadMode(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsEffect_PixmapPadMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QHeaderView_ResizeMode(RJSApi& handler, QHeaderView::ResizeMode v);
       static QHeaderView::ResizeMode js2cpp_QHeaderView_ResizeMode(RJSApi& handler, const QJSValue& v);
@@ -2531,6 +2513,14 @@
       static QProgressBar::Direction js2cpp_QProgressBar_Direction(RJSApi& handler, const QJSValue& v);
       static bool is_QProgressBar_Direction(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QQuickWidget_ResizeMode(RJSApi& handler, QQuickWidget::ResizeMode v);
+      static QQuickWidget::ResizeMode js2cpp_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v);
+      static bool is_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QQuickWidget_Status(RJSApi& handler, QQuickWidget::Status v);
+      static QQuickWidget::Status js2cpp_QQuickWidget_Status(RJSApi& handler, const QJSValue& v);
+      static bool is_QQuickWidget_Status(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QRegion_RegionType(RJSApi& handler, QRegion::RegionType v);
       static QRegion::RegionType js2cpp_QRegion_RegionType(RJSApi& handler, const QJSValue& v);
       static bool is_QRegion_RegionType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -2575,13 +2565,29 @@
       static QString js2cpp_QString(RJSApi& handler, const QJSValue& v);
       static bool is_QString(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QStringConverter_Encoding(RJSApi& handler, QStringConverter::Encoding v);
+      static QStringConverter::Encoding js2cpp_QStringConverter_Encoding(RJSApi& handler, const QJSValue& v);
+      static bool is_QStringConverter_Encoding(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QStringView(RJSApi& handler, QStringView v);
       static QStringView js2cpp_QStringView(RJSApi& handler, const QJSValue& v);
       static bool is_QStringView(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
-      static QJSValue cpp2js_QStringConverter_Encoding(RJSApi& handler, QStringConverter::Encoding v);
-      static QStringConverter::Encoding js2cpp_QStringConverter_Encoding(RJSApi& handler, const QJSValue& v);
-      static bool is_QStringConverter_Encoding(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+      static QJSValue cpp2js_QSurfaceFormat_FormatOption(RJSApi& handler, QSurfaceFormat::FormatOption v);
+      static QSurfaceFormat::FormatOption js2cpp_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v);
+      static bool is_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, QSurfaceFormat::OpenGLContextProfile v);
+      static QSurfaceFormat::OpenGLContextProfile js2cpp_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, const QJSValue& v);
+      static bool is_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSurfaceFormat_RenderableType(RJSApi& handler, QSurfaceFormat::RenderableType v);
+      static QSurfaceFormat::RenderableType js2cpp_QSurfaceFormat_RenderableType(RJSApi& handler, const QJSValue& v);
+      static bool is_QSurfaceFormat_RenderableType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSurfaceFormat_SwapBehavior(RJSApi& handler, QSurfaceFormat::SwapBehavior v);
+      static QSurfaceFormat::SwapBehavior js2cpp_QSurfaceFormat_SwapBehavior(RJSApi& handler, const QJSValue& v);
+      static bool is_QSurfaceFormat_SwapBehavior(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QSwipeGesture_SwipeDirection(RJSApi& handler, QSwipeGesture::SwipeDirection v);
       static QSwipeGesture::SwipeDirection js2cpp_QSwipeGesture_SwipeDirection(RJSApi& handler, const QJSValue& v);
@@ -3091,11 +3097,6 @@
   // wrapped types:
   // --------------
   
-      static QJSValue cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat* v);
-      static QJSValue cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat& v);
-      static QSurfaceFormat js2cpp_QSurfaceFormat(RJSApi& handler, const QJSValue& v);
-      static bool is_QSurfaceFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
       static QJSValue cpp2js_QBitmap(RJSApi& handler, const QBitmap* v);
       static QJSValue cpp2js_QBitmap(RJSApi& handler, const QBitmap& v);
       static QBitmap js2cpp_QBitmap(RJSApi& handler, const QJSValue& v);
@@ -3231,6 +3232,11 @@
       static QDomText js2cpp_QDomText(RJSApi& handler, const QJSValue& v);
       static bool is_QDomText(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QEasingCurve(RJSApi& handler, const QEasingCurve* v);
+      static QJSValue cpp2js_QEasingCurve(RJSApi& handler, const QEasingCurve& v);
+      static QEasingCurve js2cpp_QEasingCurve(RJSApi& handler, const QJSValue& v);
+      static bool is_QEasingCurve(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QEventPoint(RJSApi& handler, const QEventPoint* v);
       static QJSValue cpp2js_QEventPoint(RJSApi& handler, const QEventPoint& v);
       static QEventPoint js2cpp_QEventPoint(RJSApi& handler, const QJSValue& v);
@@ -3300,11 +3306,6 @@
       static QJSValue cpp2js_QLocale(RJSApi& handler, const QLocale& v);
       static QLocale js2cpp_QLocale(RJSApi& handler, const QJSValue& v);
       static bool is_QLocale(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QEasingCurve(RJSApi& handler, const QEasingCurve* v);
-      static QJSValue cpp2js_QEasingCurve(RJSApi& handler, const QEasingCurve& v);
-      static QEasingCurve js2cpp_QEasingCurve(RJSApi& handler, const QJSValue& v);
-      static bool is_QEasingCurve(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QMargins(RJSApi& handler, const QMargins* v);
       static QJSValue cpp2js_QMargins(RJSApi& handler, const QMargins& v);
@@ -3436,6 +3437,11 @@
       static QSizePolicy js2cpp_QSizePolicy(RJSApi& handler, const QJSValue& v);
       static bool is_QSizePolicy(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat* v);
+      static QJSValue cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat& v);
+      static QSurfaceFormat js2cpp_QSurfaceFormat(RJSApi& handler, const QJSValue& v);
+      static bool is_QSurfaceFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QTextBlockFormat(RJSApi& handler, const QTextBlockFormat* v);
       static QJSValue cpp2js_QTextBlockFormat(RJSApi& handler, const QTextBlockFormat& v);
       static QTextBlockFormat js2cpp_QTextBlockFormat(RJSApi& handler, const QJSValue& v);
@@ -3532,6 +3538,10 @@
       static QAbstractTableModel* js2cpp_QAbstractTableModel_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractTableModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QActionEvent(RJSApi& handler, QActionEvent* v);
+      static QActionEvent* js2cpp_QActionEvent_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QActionEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QCompleter(RJSApi& handler, QCompleter* v);
       static QCompleter* js2cpp_QCompleter_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QCompleter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -3547,10 +3557,6 @@
       static QJSValue cpp2js_QDragEnterEvent(RJSApi& handler, QDragEnterEvent* v);
       static QDragEnterEvent* js2cpp_QDragEnterEvent_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QDragEnterEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QActionEvent(RJSApi& handler, QActionEvent* v);
-      static QActionEvent* js2cpp_QActionEvent_ptr(RJSApi& handler, const QJSValue& v);
-      static bool is_QActionEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QDragLeaveEvent(RJSApi& handler, QDragLeaveEvent* v);
       static QDragLeaveEvent* js2cpp_QDragLeaveEvent_ptr(RJSApi& handler, const QJSValue& v);
@@ -3571,6 +3577,10 @@
       static QJSValue cpp2js_QFileIconProvider(RJSApi& handler, QFileIconProvider* v);
       static QFileIconProvider* js2cpp_QFileIconProvider_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QFileIconProvider_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QFocusEvent(RJSApi& handler, QFocusEvent* v);
+      static QFocusEvent* js2cpp_QFocusEvent_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QFocusEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QFontMetrics(RJSApi& handler, QFontMetrics* v);
       static QFontMetrics* js2cpp_QFontMetrics_ptr(RJSApi& handler, const QJSValue& v);
@@ -3784,41 +3794,6 @@
   // wrapped QObject pointer types:
   // ------------------------------
   
-      static QJSValue cpp2js_QGraphicsEffect(RJSApi& handler, QGraphicsEffect* v);
-      static QJSValue cpp2js_QGraphicsEffect(RJSApi& handler, const QGraphicsEffect* v);
-      static QGraphicsEffect* js2cpp_QGraphicsEffect_ptr(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QGraphicsBlurEffect(RJSApi& handler, QGraphicsBlurEffect* v);
-      static QJSValue cpp2js_QGraphicsBlurEffect(RJSApi& handler, const QGraphicsBlurEffect* v);
-      static QGraphicsBlurEffect* js2cpp_QGraphicsBlurEffect_ptr(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsBlurEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QGraphicsDropShadowEffect(RJSApi& handler, QGraphicsDropShadowEffect* v);
-      static QJSValue cpp2js_QGraphicsDropShadowEffect(RJSApi& handler, const QGraphicsDropShadowEffect* v);
-      static QGraphicsDropShadowEffect* js2cpp_QGraphicsDropShadowEffect_ptr(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsDropShadowEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QGraphicsColorizeEffect(RJSApi& handler, QGraphicsColorizeEffect* v);
-      static QJSValue cpp2js_QGraphicsColorizeEffect(RJSApi& handler, const QGraphicsColorizeEffect* v);
-      static QGraphicsColorizeEffect* js2cpp_QGraphicsColorizeEffect_ptr(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsColorizeEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QGraphicsOpacityEffect(RJSApi& handler, QGraphicsOpacityEffect* v);
-      static QJSValue cpp2js_QGraphicsOpacityEffect(RJSApi& handler, const QGraphicsOpacityEffect* v);
-      static QGraphicsOpacityEffect* js2cpp_QGraphicsOpacityEffect_ptr(RJSApi& handler, const QJSValue& v);
-      static bool is_QGraphicsOpacityEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QQuickWidget(RJSApi& handler, QQuickWidget* v);
-      static QJSValue cpp2js_QQuickWidget(RJSApi& handler, const QQuickWidget* v);
-      static QQuickWidget* js2cpp_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v);
-      static bool is_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QSvgRenderer(RJSApi& handler, QSvgRenderer* v);
-      static QJSValue cpp2js_QSvgRenderer(RJSApi& handler, const QSvgRenderer* v);
-      static QSvgRenderer* js2cpp_QSvgRenderer_ptr(RJSApi& handler, const QJSValue& v);
-      static bool is_QSvgRenderer_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
       static QJSValue cpp2js_QAbstractButton(RJSApi& handler, QAbstractButton* v);
       static QJSValue cpp2js_QAbstractButton(RJSApi& handler, const QAbstractButton* v);
       static QAbstractButton* js2cpp_QAbstractButton_ptr(RJSApi& handler, const QJSValue& v);
@@ -3974,6 +3949,31 @@
       static QFrame* js2cpp_QFrame_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QFrame_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QGraphicsBlurEffect(RJSApi& handler, QGraphicsBlurEffect* v);
+      static QJSValue cpp2js_QGraphicsBlurEffect(RJSApi& handler, const QGraphicsBlurEffect* v);
+      static QGraphicsBlurEffect* js2cpp_QGraphicsBlurEffect_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsBlurEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QGraphicsColorizeEffect(RJSApi& handler, QGraphicsColorizeEffect* v);
+      static QJSValue cpp2js_QGraphicsColorizeEffect(RJSApi& handler, const QGraphicsColorizeEffect* v);
+      static QGraphicsColorizeEffect* js2cpp_QGraphicsColorizeEffect_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsColorizeEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QGraphicsDropShadowEffect(RJSApi& handler, QGraphicsDropShadowEffect* v);
+      static QJSValue cpp2js_QGraphicsDropShadowEffect(RJSApi& handler, const QGraphicsDropShadowEffect* v);
+      static QGraphicsDropShadowEffect* js2cpp_QGraphicsDropShadowEffect_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsDropShadowEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QGraphicsEffect(RJSApi& handler, QGraphicsEffect* v);
+      static QJSValue cpp2js_QGraphicsEffect(RJSApi& handler, const QGraphicsEffect* v);
+      static QGraphicsEffect* js2cpp_QGraphicsEffect_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QGraphicsOpacityEffect(RJSApi& handler, QGraphicsOpacityEffect* v);
+      static QJSValue cpp2js_QGraphicsOpacityEffect(RJSApi& handler, const QGraphicsOpacityEffect* v);
+      static QGraphicsOpacityEffect* js2cpp_QGraphicsOpacityEffect_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QGraphicsOpacityEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QGridLayout(RJSApi& handler, QGridLayout* v);
       static QJSValue cpp2js_QGridLayout(RJSApi& handler, const QGridLayout* v);
       static QGridLayout* js2cpp_QGridLayout_ptr(RJSApi& handler, const QJSValue& v);
@@ -4109,6 +4109,11 @@
       static QPushButton* js2cpp_QPushButton_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QPushButton_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QQuickWidget(RJSApi& handler, QQuickWidget* v);
+      static QJSValue cpp2js_QQuickWidget(RJSApi& handler, const QQuickWidget* v);
+      static QQuickWidget* js2cpp_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QRadioButton(RJSApi& handler, QRadioButton* v);
       static QJSValue cpp2js_QRadioButton(RJSApi& handler, const QRadioButton* v);
       static QRadioButton* js2cpp_QRadioButton_ptr(RJSApi& handler, const QJSValue& v);
@@ -4193,6 +4198,11 @@
       static QJSValue cpp2js_QStatusBar(RJSApi& handler, const QStatusBar* v);
       static QStatusBar* js2cpp_QStatusBar_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QStatusBar_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSvgRenderer(RJSApi& handler, QSvgRenderer* v);
+      static QJSValue cpp2js_QSvgRenderer(RJSApi& handler, const QSvgRenderer* v);
+      static QSvgRenderer* js2cpp_QSvgRenderer_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QSvgRenderer_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QTabBar(RJSApi& handler, QTabBar* v);
       static QJSValue cpp2js_QTabBar(RJSApi& handler, const QTabBar* v);
@@ -4343,6 +4353,10 @@
       static QList<QPrinter::DuplexMode> js2cpp_QList_QPrinter_DuplexMode(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QPrinter_DuplexMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QList_QPrinter_PaperSource(RJSApi& handler, const QList<QPrinter::PaperSource>& v);
+      static QList<QPrinter::PaperSource> js2cpp_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QList_QPrinterInfo(RJSApi& handler, const QList<QPrinterInfo>& v);
       static QList<QPrinterInfo> js2cpp_QList_QPrinterInfo(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QPrinterInfo(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -4398,10 +4412,6 @@
       static QJSValue cpp2js_QList_qreal(RJSApi& handler, const QList<qreal>& v);
       static QList<qreal> js2cpp_QList_qreal(RJSApi& handler, const QJSValue& v);
       static bool is_QList_qreal(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QList_QPrinter_PaperSource(RJSApi& handler, const QList<QPrinter::PaperSource>& v);
-      static QList<QPrinter::PaperSource> js2cpp_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v);
-      static bool is_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QModelIndexList(RJSApi& handler, const QModelIndexList& v);
       static QModelIndexList js2cpp_QModelIndexList(RJSApi& handler, const QJSValue& v);

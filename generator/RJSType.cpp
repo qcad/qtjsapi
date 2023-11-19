@@ -47,10 +47,6 @@
       
 
   
-      int RJSType_QSurfaceFormat::id = -1;
-
-
-      
       int RJSType_QBitmap::id = -1;
 
 
@@ -159,6 +155,10 @@
 
 
       
+      int RJSType_QEasingCurve::id = -1;
+
+
+      
       int RJSType_QEventPoint::id = -1;
 
 
@@ -212,10 +212,6 @@
 
       
       int RJSType_QLocale::id = -1;
-
-
-      
-      int RJSType_QEasingCurve::id = -1;
 
 
       
@@ -323,6 +319,10 @@
 
 
       
+      int RJSType_QSurfaceFormat::id = -1;
+
+
+      
       int RJSType_QTextBlockFormat::id = -1;
 
 
@@ -401,6 +401,10 @@
 
 
       
+      int RJSType_QActionEvent::id = -1;
+
+
+      
       int RJSType_QCompleter::id = -1;
 
 
@@ -414,10 +418,6 @@
 
       
       int RJSType_QDragEnterEvent::id = -1;
-
-
-      
-      int RJSType_QActionEvent::id = -1;
 
 
       
@@ -438,6 +438,10 @@
 
       
       int RJSType_QFileIconProvider::id = -1;
+
+
+      
+      int RJSType_QFocusEvent::id = -1;
 
 
       
@@ -639,34 +643,6 @@
       
 
   
-      int RJSType_QGraphicsEffect::id = -1;
-
-
-      
-      int RJSType_QGraphicsBlurEffect::id = -1;
-
-
-      
-      int RJSType_QGraphicsDropShadowEffect::id = -1;
-
-
-      
-      int RJSType_QGraphicsColorizeEffect::id = -1;
-
-
-      
-      int RJSType_QGraphicsOpacityEffect::id = -1;
-
-
-      
-      int RJSType_QQuickWidget::id = -1;
-
-
-      
-      int RJSType_QSvgRenderer::id = -1;
-
-
-      
       int RJSType_QAbstractButton::id = -1;
 
 
@@ -791,6 +767,26 @@
 
 
       
+      int RJSType_QGraphicsBlurEffect::id = -1;
+
+
+      
+      int RJSType_QGraphicsColorizeEffect::id = -1;
+
+
+      
+      int RJSType_QGraphicsDropShadowEffect::id = -1;
+
+
+      
+      int RJSType_QGraphicsEffect::id = -1;
+
+
+      
+      int RJSType_QGraphicsOpacityEffect::id = -1;
+
+
+      
       int RJSType_QGridLayout::id = -1;
 
 
@@ -899,6 +895,10 @@
 
 
       
+      int RJSType_QQuickWidget::id = -1;
+
+
+      
       int RJSType_QRadioButton::id = -1;
 
 
@@ -964,6 +964,10 @@
 
       
       int RJSType_QStatusBar::id = -1;
+
+
+      
+      int RJSType_QSvgRenderer::id = -1;
 
 
       

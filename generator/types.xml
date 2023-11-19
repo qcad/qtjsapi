@@ -13,12 +13,12 @@
 
   <primitive>
     <type flags="true">QAbstractFileIconProvider::Options</type>
-    <type flags="true">QDirIterator::IteratorFlags</type>
     <type flags="true">QAbstractItemView::EditTriggers</type>
     <type flags="true">QAbstractPrintDialog::PrintDialogOptions</type>
     <type flags="true">QDialogButtonBox::StandardButtons</type>
     <type flags="true">QDir::Filters</type>
     <type flags="true">QDir::SortFlags</type>
+    <type flags="true">QDirIterator::IteratorFlags</type>
     <type flags="true">QDockWidget::DockWidgetFeatures</type>
     <type flags="true">QEventLoop::ProcessEventsFlags</type>
     <type flags="true">QFile::OpenMode</type>
@@ -26,6 +26,8 @@
     <type flags="true">QFileDialog::Options</type>
     <type flags="true">QFileSystemModel::Options</type>
     <type flags="true">QFontComboBox::FontFilters</type>
+    <type flags="true">QGraphicsBlurEffect::BlurHints</type>
+    <type flags="true">QGraphicsEffect::ChangeFlags</type>
     <type flags="true">QItemSelectionModel::SelectionFlags</type>
     <type flags="true">QLocale::DataSizeFormats</type>
     <type flags="true">QMessageBox::StandardButtons</type>
@@ -33,6 +35,7 @@
     <type flags="true">QRegularExpression::PatternOptions</type>
     <type flags="true">QRegularExpression::WildcardConversionOptions</type>
     <type flags="true">QSizePolicy::ControlTypes</type>
+    <type flags="true">QSurfaceFormat::FormatOptions</type>
     <type flags="true">QTextDocument::FindFlags</type>
     <type flags="true">QTextEdit::AutoFormatting</type>
     <type flags="true">QTextFormat::PageBreakFlags</type>
@@ -53,20 +56,6 @@
     <type flags="true">Qt::TextInteractionFlags</type>
     <type flags="true">Qt::WindowFlags</type>
     <type flags="true">Qt::WindowStates</type>
-    <type flags="true">QSurfaceFormat::FormatOptions</type>
-    <type flags="true">QGraphicsEffect::ChangeFlags</type>
-    <type flags="true">QGraphicsBlurEffect::BlurHints</type>
-    <type>QDirIterator::IteratorFlag</type>
-    <type>QGraphicsBlurEffect::BlurHint</type>
-    <type>QGraphicsEffect::PixmapPadMode</type>
-    <type>QGraphicsEffect::ChangeFlag</type>
-    <type>QSurfaceFormat::FormatOption</type>
-    <type>QSurfaceFormat::SwapBehavior</type>
-    <type>QSurfaceFormat::RenderableType</type>
-    <type>QSurfaceFormat::OpenGLContextProfile</type>
-    <type>QQuickWidget::ResizeMode</type>
-    <type>QQuickWidget::Status</type>
-    <type>QEasingCurve::Type</type>
     <type>QAbstractFileIconProvider::IconType</type>
     <type>QAbstractFileIconProvider::Option</type>
     <type>QAbstractItemDelegate::EndEditHint</type>
@@ -96,11 +85,13 @@
     <type>QDialogButtonBox::ButtonLayout</type>
     <type>QDialogButtonBox::ButtonRole</type>
     <type>QDialogButtonBox::StandardButton</type>
+    <type>QDirIterator::IteratorFlag</type>
     <type>QDockWidget::DockWidgetFeature</type>
     <type>QDomImplementation::InvalidDataPolicy</type>
     <type>QDomNode::EncodingPolicy</type>
     <type>QDomNode::NodeType</type>
     <type>QDoubleValidator::Notation</type>
+    <type>QEasingCurve::Type</type>
     <type>QEvent::Type</type>
     <type>QEventLoop::ProcessEventsFlag</type>
     <type>QEventPoint::State</type>
@@ -137,6 +128,9 @@
     <type>QGradient::Preset</type>
     <type>QGradient::Spread</type>
     <type>QGradient::Type</type>
+    <type>QGraphicsBlurEffect::BlurHint</type>
+    <type>QGraphicsEffect::ChangeFlag</type>
+    <type>QGraphicsEffect::PixmapPadMode</type>
     <type>QHeaderView::ResizeMode</type>
     <type>QIODeviceBase::OpenMode</type>
     <type>QIcon::Mode</type>
@@ -210,6 +204,8 @@
     <type>QProcess::ProcessState</type>
     <type>QProcessEnvironment::Initialization</type>
     <type>QProgressBar::Direction</type>
+    <type>QQuickWidget::ResizeMode</type>
+    <type>QQuickWidget::Status</type>
     <type>QRegion::RegionType</type>
     <type>QRegularExpression::MatchOptions</type>
     <type>QRegularExpression::MatchType</type>
@@ -221,8 +217,12 @@
     <type>QSlider::TickPosition</type>
     <type>QStackedLayout::StackingMode</type>
     <type>QString</type>
-    <type>QStringView</type>
     <type>QStringConverter::Encoding</type>
+    <type>QStringView</type>
+    <type>QSurfaceFormat::FormatOption</type>
+    <type>QSurfaceFormat::OpenGLContextProfile</type>
+    <type>QSurfaceFormat::RenderableType</type>
+    <type>QSurfaceFormat::SwapBehavior</type>
     <type>QSwipeGesture::SwipeDirection</type>
     <type>QTabBar::ButtonPosition</type>
     <type>QTabBar::SelectionBehavior</type>
@@ -354,7 +354,6 @@
   </shared_ptr_no_copy>
 
   <wrapped>
-    <type>QSurfaceFormat</type>
     <type>QBitmap</type>
     <type>QBrush</type>
     <type>QByteArray</type>
@@ -382,6 +381,7 @@
     <type>QDomNotation</type>
     <type>QDomProcessingInstruction</type>
     <type>QDomText</type>
+    <type>QEasingCurve</type>
     <type>QEventPoint</type>
     <type>QFileInfo</type>
     <type>QFont</type>
@@ -396,7 +396,6 @@
     <type>QLineF</type>
     <type>QLinearGradient</type>
     <type>QLocale</type>
-    <type>QEasingCurve</type>
     <type>QMargins</type>
     <type>QMarginsF</type>
     <type>QModelIndex</type>
@@ -423,6 +422,7 @@
     <type>QSize</type>
     <type>QSizeF</type>
     <type>QSizePolicy</type>
+    <type>QSurfaceFormat</type>
     <type>QTextBlockFormat</type>
     <type>QTextCharFormat</type>
     <type>QTextCursor</type>
@@ -445,16 +445,17 @@
     <type>QAbstractFileIconProvider</type>
     <type>QAbstractListModel</type>
     <type>QAbstractTableModel</type>
+    <type>QActionEvent</type>
     <type>QCompleter</type>
     <type>QContextMenuEvent</type>
     <type>QDirIterator</type>
     <type>QDragEnterEvent</type>
-    <type>QActionEvent</type>
     <type>QDragLeaveEvent</type>
     <type>QDragMoveEvent</type>
     <type>QDropEvent</type>
     <type>QEvent</type>
     <type>QFileIconProvider</type>
+    <type>QFocusEvent</type>
     <type>QFontMetrics</type>
     <type>QFontMetricsF</type>
     <type>QHelpEvent</type>
@@ -510,13 +511,6 @@
   </wrapped_ptr>
 
   <wrapped_qobject_ptr>
-    <type>QGraphicsEffect</type>
-    <type>QGraphicsBlurEffect</type>
-    <type>QGraphicsDropShadowEffect</type>
-    <type>QGraphicsColorizeEffect</type>
-    <type>QGraphicsOpacityEffect</type>
-    <type>QQuickWidget</type>
-    <type>QSvgRenderer</type>
     <type>QAbstractButton</type>
     <type>QAbstractItemDelegate</type>
     <type>QAbstractItemModel</type>
@@ -548,6 +542,11 @@
     <type>QFontComboBox</type>
     <type>QFormLayout</type>
     <type>QFrame</type>
+    <type>QGraphicsBlurEffect</type>
+    <type>QGraphicsColorizeEffect</type>
+    <type>QGraphicsDropShadowEffect</type>
+    <type>QGraphicsEffect</type>
+    <type>QGraphicsOpacityEffect</type>
     <type>QGridLayout</type>
     <type>QGroupBox</type>
     <type>QGuiApplication</type>
@@ -575,6 +574,7 @@
     <type>QProgressBar</type>
     <type>QProgressDialog</type>
     <type>QPushButton</type>
+    <type>QQuickWidget</type>
     <type>QRadioButton</type>
     <type>QRegularExpressionValidator</type>
     <type>QScreen</type>
@@ -592,6 +592,7 @@
     <type>QStackedWidget</type>
     <type>QStandardItemModel</type>
     <type>QStatusBar</type>
+    <type>QSvgRenderer</type>
     <type>QTabBar</type>
     <type>QTabWidget</type>
     <type>QTableView</type>
@@ -627,6 +628,7 @@
     <type>QList&lt;QPolygonF&gt;</type>
     <type>QList&lt;QPrinter::ColorMode&gt;</type>
     <type>QList&lt;QPrinter::DuplexMode&gt;</type>
+    <type>QList&lt;QPrinter::PaperSource&gt;</type>
     <type>QList&lt;QPrinterInfo&gt;</type>
     <type>QList&lt;QRect&gt;</type>
     <type>QList&lt;QRectF&gt;</type>
@@ -641,7 +643,6 @@
     <type>QList&lt;double&gt;</type>
     <type>QList&lt;int&gt;</type>
     <type>QList&lt;qreal&gt;</type>
-    <type>QList&lt;QPrinter::PaperSource&gt;</type>
     <type>QModelIndexList</type>
     <type>QStringList</type>
   </qlist>

@@ -53,6 +53,11 @@
     #include <QQmlEngine>
 
     
+        #include <QFocusEvent>
+      
+    #include <QQmlEngine>
+
+    
         #include <QPaintEvent>
       
     #include <QQmlEngine>

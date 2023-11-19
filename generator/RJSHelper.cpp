@@ -195,6 +195,8 @@
         
           #include "qevent_wrapper.h"
         
+          #include "qevent_wrapper.h"
+        
           #include "qdropevent_wrapper.h"
         
           #include "qdragmoveevent_wrapper.h"
@@ -1656,27 +1658,6 @@
         return v.isNumber();
       }
     
-      QJSValue RJSHelper::cpp2js_QDirIterator_IteratorFlags(RJSApi& handler, QDirIterator::IteratorFlags v) {
-        return QJSValue(v);
-      }
-
-      QDirIterator::IteratorFlags RJSHelper::js2cpp_QDirIterator_IteratorFlags(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return QDirIterator::IteratorFlags()
-          ;
-        }
-        return 
-        (QDirIterator::IteratorFlags)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QDirIterator_IteratorFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
       QJSValue RJSHelper::cpp2js_QAbstractItemView_EditTriggers(RJSApi& handler, QAbstractItemView::EditTriggers v) {
         return QJSValue(v);
       }
@@ -1776,6 +1757,27 @@
       }
 
       bool RJSHelper::is_QDir_SortFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QDirIterator_IteratorFlags(RJSApi& handler, QDirIterator::IteratorFlags v) {
+        return QJSValue(v);
+      }
+
+      QDirIterator::IteratorFlags RJSHelper::js2cpp_QDirIterator_IteratorFlags(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QDirIterator::IteratorFlags()
+          ;
+        }
+        return 
+        (QDirIterator::IteratorFlags)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QDirIterator_IteratorFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
@@ -1929,6 +1931,48 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper::cpp2js_QGraphicsBlurEffect_BlurHints(RJSApi& handler, QGraphicsBlurEffect::BlurHints v) {
+        return QJSValue(v);
+      }
+
+      QGraphicsBlurEffect::BlurHints RJSHelper::js2cpp_QGraphicsBlurEffect_BlurHints(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QGraphicsBlurEffect::BlurHints()
+          ;
+        }
+        return 
+        (QGraphicsBlurEffect::BlurHints)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QGraphicsBlurEffect_BlurHints(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QGraphicsEffect_ChangeFlags(RJSApi& handler, QGraphicsEffect::ChangeFlags v) {
+        return QJSValue(v);
+      }
+
+      QGraphicsEffect::ChangeFlags RJSHelper::js2cpp_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QGraphicsEffect::ChangeFlags()
+          ;
+        }
+        return 
+        (QGraphicsEffect::ChangeFlags)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
       QJSValue RJSHelper::cpp2js_QItemSelectionModel_SelectionFlags(RJSApi& handler, QItemSelectionModel::SelectionFlags v) {
         return QJSValue(v);
       }
@@ -2070,6 +2114,27 @@
       }
 
       bool RJSHelper::is_QSizePolicy_ControlTypes(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSurfaceFormat_FormatOptions(RJSApi& handler, QSurfaceFormat::FormatOptions v) {
+        return QJSValue(v);
+      }
+
+      QSurfaceFormat::FormatOptions RJSHelper::js2cpp_QSurfaceFormat_FormatOptions(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QSurfaceFormat::FormatOptions()
+          ;
+        }
+        return 
+        (QSurfaceFormat::FormatOptions)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSurfaceFormat_FormatOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
@@ -2490,311 +2555,6 @@
       }
 
       bool RJSHelper::is_Qt_WindowStates(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QSurfaceFormat_FormatOptions(RJSApi& handler, QSurfaceFormat::FormatOptions v) {
-        return QJSValue(v);
-      }
-
-      QSurfaceFormat::FormatOptions RJSHelper::js2cpp_QSurfaceFormat_FormatOptions(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return QSurfaceFormat::FormatOptions()
-          ;
-        }
-        return 
-        (QSurfaceFormat::FormatOptions)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QSurfaceFormat_FormatOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QGraphicsEffect_ChangeFlags(RJSApi& handler, QGraphicsEffect::ChangeFlags v) {
-        return QJSValue(v);
-      }
-
-      QGraphicsEffect::ChangeFlags RJSHelper::js2cpp_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return QGraphicsEffect::ChangeFlags()
-          ;
-        }
-        return 
-        (QGraphicsEffect::ChangeFlags)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QGraphicsBlurEffect_BlurHints(RJSApi& handler, QGraphicsBlurEffect::BlurHints v) {
-        return QJSValue(v);
-      }
-
-      QGraphicsBlurEffect::BlurHints RJSHelper::js2cpp_QGraphicsBlurEffect_BlurHints(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return QGraphicsBlurEffect::BlurHints()
-          ;
-        }
-        return 
-        (QGraphicsBlurEffect::BlurHints)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QGraphicsBlurEffect_BlurHints(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QDirIterator_IteratorFlag(RJSApi& handler, QDirIterator::IteratorFlag v) {
-        return QJSValue(v);
-      }
-
-      QDirIterator::IteratorFlag RJSHelper::js2cpp_QDirIterator_IteratorFlag(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QDirIterator::IteratorFlag)0
-          ;
-        }
-        return 
-        (QDirIterator::IteratorFlag)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QDirIterator_IteratorFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QGraphicsBlurEffect_BlurHint(RJSApi& handler, QGraphicsBlurEffect::BlurHint v) {
-        return QJSValue(v);
-      }
-
-      QGraphicsBlurEffect::BlurHint RJSHelper::js2cpp_QGraphicsBlurEffect_BlurHint(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QGraphicsBlurEffect::BlurHint)0
-          ;
-        }
-        return 
-        (QGraphicsBlurEffect::BlurHint)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QGraphicsBlurEffect_BlurHint(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QGraphicsEffect_PixmapPadMode(RJSApi& handler, QGraphicsEffect::PixmapPadMode v) {
-        return QJSValue(v);
-      }
-
-      QGraphicsEffect::PixmapPadMode RJSHelper::js2cpp_QGraphicsEffect_PixmapPadMode(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QGraphicsEffect::PixmapPadMode)0
-          ;
-        }
-        return 
-        (QGraphicsEffect::PixmapPadMode)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QGraphicsEffect_PixmapPadMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QGraphicsEffect_ChangeFlag(RJSApi& handler, QGraphicsEffect::ChangeFlag v) {
-        return QJSValue(v);
-      }
-
-      QGraphicsEffect::ChangeFlag RJSHelper::js2cpp_QGraphicsEffect_ChangeFlag(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QGraphicsEffect::ChangeFlag)0
-          ;
-        }
-        return 
-        (QGraphicsEffect::ChangeFlag)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QGraphicsEffect_ChangeFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QSurfaceFormat_FormatOption(RJSApi& handler, QSurfaceFormat::FormatOption v) {
-        return QJSValue(v);
-      }
-
-      QSurfaceFormat::FormatOption RJSHelper::js2cpp_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QSurfaceFormat::FormatOption)0
-          ;
-        }
-        return 
-        (QSurfaceFormat::FormatOption)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QSurfaceFormat_SwapBehavior(RJSApi& handler, QSurfaceFormat::SwapBehavior v) {
-        return QJSValue(v);
-      }
-
-      QSurfaceFormat::SwapBehavior RJSHelper::js2cpp_QSurfaceFormat_SwapBehavior(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QSurfaceFormat::SwapBehavior)0
-          ;
-        }
-        return 
-        (QSurfaceFormat::SwapBehavior)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QSurfaceFormat_SwapBehavior(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QSurfaceFormat_RenderableType(RJSApi& handler, QSurfaceFormat::RenderableType v) {
-        return QJSValue(v);
-      }
-
-      QSurfaceFormat::RenderableType RJSHelper::js2cpp_QSurfaceFormat_RenderableType(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QSurfaceFormat::RenderableType)0
-          ;
-        }
-        return 
-        (QSurfaceFormat::RenderableType)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QSurfaceFormat_RenderableType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, QSurfaceFormat::OpenGLContextProfile v) {
-        return QJSValue(v);
-      }
-
-      QSurfaceFormat::OpenGLContextProfile RJSHelper::js2cpp_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QSurfaceFormat::OpenGLContextProfile)0
-          ;
-        }
-        return 
-        (QSurfaceFormat::OpenGLContextProfile)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QQuickWidget_ResizeMode(RJSApi& handler, QQuickWidget::ResizeMode v) {
-        return QJSValue(v);
-      }
-
-      QQuickWidget::ResizeMode RJSHelper::js2cpp_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QQuickWidget::ResizeMode)0
-          ;
-        }
-        return 
-        (QQuickWidget::ResizeMode)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QQuickWidget_Status(RJSApi& handler, QQuickWidget::Status v) {
-        return QJSValue(v);
-      }
-
-      QQuickWidget::Status RJSHelper::js2cpp_QQuickWidget_Status(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QQuickWidget::Status)0
-          ;
-        }
-        return 
-        (QQuickWidget::Status)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QQuickWidget_Status(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QEasingCurve_Type(RJSApi& handler, QEasingCurve::Type v) {
-        return QJSValue(v);
-      }
-
-      QEasingCurve::Type RJSHelper::js2cpp_QEasingCurve_Type(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 
-            (QEasingCurve::Type)0
-          ;
-        }
-        return 
-        (QEasingCurve::Type)
-      v.toInt();
-      }
-
-      bool RJSHelper::is_QEasingCurve_Type(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
@@ -3435,6 +3195,28 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper::cpp2js_QDirIterator_IteratorFlag(RJSApi& handler, QDirIterator::IteratorFlag v) {
+        return QJSValue(v);
+      }
+
+      QDirIterator::IteratorFlag RJSHelper::js2cpp_QDirIterator_IteratorFlag(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QDirIterator::IteratorFlag)0
+          ;
+        }
+        return 
+        (QDirIterator::IteratorFlag)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QDirIterator_IteratorFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
       QJSValue RJSHelper::cpp2js_QDockWidget_DockWidgetFeature(RJSApi& handler, QDockWidget::DockWidgetFeature v) {
         return QJSValue(v);
       }
@@ -3539,6 +3321,28 @@
       }
 
       bool RJSHelper::is_QDoubleValidator_Notation(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QEasingCurve_Type(RJSApi& handler, QEasingCurve::Type v) {
+        return QJSValue(v);
+      }
+
+      QEasingCurve::Type RJSHelper::js2cpp_QEasingCurve_Type(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QEasingCurve::Type)0
+          ;
+        }
+        return 
+        (QEasingCurve::Type)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QEasingCurve_Type(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
@@ -4331,6 +4135,72 @@
       }
 
       bool RJSHelper::is_QGradient_Type(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QGraphicsBlurEffect_BlurHint(RJSApi& handler, QGraphicsBlurEffect::BlurHint v) {
+        return QJSValue(v);
+      }
+
+      QGraphicsBlurEffect::BlurHint RJSHelper::js2cpp_QGraphicsBlurEffect_BlurHint(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QGraphicsBlurEffect::BlurHint)0
+          ;
+        }
+        return 
+        (QGraphicsBlurEffect::BlurHint)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QGraphicsBlurEffect_BlurHint(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QGraphicsEffect_ChangeFlag(RJSApi& handler, QGraphicsEffect::ChangeFlag v) {
+        return QJSValue(v);
+      }
+
+      QGraphicsEffect::ChangeFlag RJSHelper::js2cpp_QGraphicsEffect_ChangeFlag(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QGraphicsEffect::ChangeFlag)0
+          ;
+        }
+        return 
+        (QGraphicsEffect::ChangeFlag)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QGraphicsEffect_ChangeFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QGraphicsEffect_PixmapPadMode(RJSApi& handler, QGraphicsEffect::PixmapPadMode v) {
+        return QJSValue(v);
+      }
+
+      QGraphicsEffect::PixmapPadMode RJSHelper::js2cpp_QGraphicsEffect_PixmapPadMode(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QGraphicsEffect::PixmapPadMode)0
+          ;
+        }
+        return 
+        (QGraphicsEffect::PixmapPadMode)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QGraphicsEffect_PixmapPadMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
@@ -5943,6 +5813,50 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper::cpp2js_QQuickWidget_ResizeMode(RJSApi& handler, QQuickWidget::ResizeMode v) {
+        return QJSValue(v);
+      }
+
+      QQuickWidget::ResizeMode RJSHelper::js2cpp_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QQuickWidget::ResizeMode)0
+          ;
+        }
+        return 
+        (QQuickWidget::ResizeMode)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QQuickWidget_Status(RJSApi& handler, QQuickWidget::Status v) {
+        return QJSValue(v);
+      }
+
+      QQuickWidget::Status RJSHelper::js2cpp_QQuickWidget_Status(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QQuickWidget::Status)0
+          ;
+        }
+        return 
+        (QQuickWidget::Status)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QQuickWidget_Status(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
       QJSValue RJSHelper::cpp2js_QRegion_RegionType(RJSApi& handler, QRegion::RegionType v) {
         return QJSValue(v);
       }
@@ -6181,6 +6095,28 @@
         return v.isString();
       }
     
+      QJSValue RJSHelper::cpp2js_QStringConverter_Encoding(RJSApi& handler, QStringConverter::Encoding v) {
+        return QJSValue(v);
+      }
+
+      QStringConverter::Encoding RJSHelper::js2cpp_QStringConverter_Encoding(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QStringConverter::Encoding)0
+          ;
+        }
+        return 
+        (QStringConverter::Encoding)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QStringConverter_Encoding(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
       QJSValue RJSHelper::cpp2js_QStringView(RJSApi& handler, QStringView v) {
         return QJSValue(v.toString());
       }
@@ -6199,22 +6135,88 @@
         return v.isString();
       }
     
-      QJSValue RJSHelper::cpp2js_QStringConverter_Encoding(RJSApi& handler, QStringConverter::Encoding v) {
+      QJSValue RJSHelper::cpp2js_QSurfaceFormat_FormatOption(RJSApi& handler, QSurfaceFormat::FormatOption v) {
         return QJSValue(v);
       }
 
-      QStringConverter::Encoding RJSHelper::js2cpp_QStringConverter_Encoding(RJSApi& handler, const QJSValue& v) {
+      QSurfaceFormat::FormatOption RJSHelper::js2cpp_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v) {
         if (!v.isNumber()) {
           return 
-            (QStringConverter::Encoding)0
+            (QSurfaceFormat::FormatOption)0
           ;
         }
         return 
-        (QStringConverter::Encoding)
+        (QSurfaceFormat::FormatOption)
       v.toInt();
       }
 
-      bool RJSHelper::is_QStringConverter_Encoding(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+      bool RJSHelper::is_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, QSurfaceFormat::OpenGLContextProfile v) {
+        return QJSValue(v);
+      }
+
+      QSurfaceFormat::OpenGLContextProfile RJSHelper::js2cpp_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSurfaceFormat::OpenGLContextProfile)0
+          ;
+        }
+        return 
+        (QSurfaceFormat::OpenGLContextProfile)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSurfaceFormat_OpenGLContextProfile(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSurfaceFormat_RenderableType(RJSApi& handler, QSurfaceFormat::RenderableType v) {
+        return QJSValue(v);
+      }
+
+      QSurfaceFormat::RenderableType RJSHelper::js2cpp_QSurfaceFormat_RenderableType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSurfaceFormat::RenderableType)0
+          ;
+        }
+        return 
+        (QSurfaceFormat::RenderableType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSurfaceFormat_RenderableType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSurfaceFormat_SwapBehavior(RJSApi& handler, QSurfaceFormat::SwapBehavior v) {
+        return QJSValue(v);
+      }
+
+      QSurfaceFormat::SwapBehavior RJSHelper::js2cpp_QSurfaceFormat_SwapBehavior(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSurfaceFormat::SwapBehavior)0
+          ;
+        }
+        return 
+        (QSurfaceFormat::SwapBehavior)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSurfaceFormat_SwapBehavior(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
@@ -8944,122 +8946,6 @@
   // wrapped types:
   // --------------
   
-      QJSValue RJSHelper::cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat* v) {
-          QJSEngine* engine = handler.getEngine();
-          QSurfaceFormat_Wrapper* ret;
-
-          if (v==nullptr) {
-              ret = new QSurfaceFormat_Wrapper(handler, nullptr, false);
-          }
-          else {
-              // wrapper takes ownership of QSurfaceFormat object:
-              ret = new QSurfaceFormat_Wrapper(handler, new QSurfaceFormat(*v), true);
-          }
-
-          // JS: new QSurfaceFormat('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSurfaceFormat");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSurfaceFormat is undefined. Use QSurfaceFormat_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSurfaceFormat('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSurfaceFormat(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat& v) {
-          QJSEngine* engine = handler.getEngine();
-          // wrapper takes ownership of the QSurfaceFormat object:
-          QSurfaceFormat_Wrapper* ret = new QSurfaceFormat_Wrapper(handler, new QSurfaceFormat(v), true);
-
-          // JS: new QSurfaceFormat('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSurfaceFormat");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSurfaceFormat is undefined. Use QSurfaceFormat_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSurfaceFormat('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSurfaceFormat(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QSurfaceFormat RJSHelper::js2cpp_QSurfaceFormat(RJSApi& handler, const QJSValue& v) {
-          /*
-          QSurfaceFormat_Wrapper* wrapper = getWrapper<QSurfaceFormat_Wrapper>(v);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QSurfaceFormat: no wrapper";
-              handler.trace();
-              Q_ASSERT(false);
-              return QSurfaceFormat();
-          }
-          //return *(QSurfaceFormat*)wrapper->getWrappedVoid();
-          QSurfaceFormat* ret = wrapper->getWrapped();
-          if (ret==nullptr) {
-              qWarning() << "js2cpp_QSurfaceFormat: wrapped pointer is NULL";
-              return QSurfaceFormat();
-          }
-          return *ret;
-          */
-
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QSurfaceFormat: not a QObject";
-              return QSurfaceFormat();
-          }
-          QObject* obj = jwrapper.toQObject();
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QSurfaceFormat_ptr: no wrapper";
-              handler.trace();
-              return QSurfaceFormat();
-          }
-          //QSurfaceFormat* ret = getWrapped_QSurfaceFormat(wrapper);
-          QSurfaceFormat* ret = QSurfaceFormat_Wrapper::getWrappedBase(wrapper);
-          if (ret==nullptr) {
-              return QSurfaceFormat();
-          }
-          return *ret;
-      }
-
-      bool RJSHelper::is_QSurfaceFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QSurfaceFormat: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QSurfaceFormat::getIdStatic())).toBool();
-      }
-    
       QJSValue RJSHelper::cpp2js_QBitmap(RJSApi& handler, const QBitmap* v) {
           QJSEngine* engine = handler.getEngine();
           QBitmap_Wrapper* ret;
@@ -12192,6 +12078,122 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QDomText::getIdStatic())).toBool();
       }
     
+      QJSValue RJSHelper::cpp2js_QEasingCurve(RJSApi& handler, const QEasingCurve* v) {
+          QJSEngine* engine = handler.getEngine();
+          QEasingCurve_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QEasingCurve_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QEasingCurve object:
+              ret = new QEasingCurve_Wrapper(handler, new QEasingCurve(*v), true);
+          }
+
+          // JS: new QEasingCurve('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QEasingCurve");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QEasingCurve is undefined. Use QEasingCurve_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QEasingCurve('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QEasingCurve(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QEasingCurve(RJSApi& handler, const QEasingCurve& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QEasingCurve object:
+          QEasingCurve_Wrapper* ret = new QEasingCurve_Wrapper(handler, new QEasingCurve(v), true);
+
+          // JS: new QEasingCurve('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QEasingCurve");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QEasingCurve is undefined. Use QEasingCurve_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QEasingCurve('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QEasingCurve(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QEasingCurve RJSHelper::js2cpp_QEasingCurve(RJSApi& handler, const QJSValue& v) {
+          /*
+          QEasingCurve_Wrapper* wrapper = getWrapper<QEasingCurve_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QEasingCurve: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QEasingCurve();
+          }
+          //return *(QEasingCurve*)wrapper->getWrappedVoid();
+          QEasingCurve* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QEasingCurve: wrapped pointer is NULL";
+              return QEasingCurve();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QEasingCurve: not a QObject";
+              return QEasingCurve();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QEasingCurve_ptr: no wrapper";
+              handler.trace();
+              return QEasingCurve();
+          }
+          //QEasingCurve* ret = getWrapped_QEasingCurve(wrapper);
+          QEasingCurve* ret = QEasingCurve_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QEasingCurve();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QEasingCurve(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QEasingCurve: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QEasingCurve::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper::cpp2js_QEventPoint(RJSApi& handler, const QEventPoint* v) {
           QJSEngine* engine = handler.getEngine();
           QEventPoint_Wrapper* ret;
@@ -13814,122 +13816,6 @@
           }
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QLocale::getIdStatic())).toBool();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QEasingCurve(RJSApi& handler, const QEasingCurve* v) {
-          QJSEngine* engine = handler.getEngine();
-          QEasingCurve_Wrapper* ret;
-
-          if (v==nullptr) {
-              ret = new QEasingCurve_Wrapper(handler, nullptr, false);
-          }
-          else {
-              // wrapper takes ownership of QEasingCurve object:
-              ret = new QEasingCurve_Wrapper(handler, new QEasingCurve(*v), true);
-          }
-
-          // JS: new QEasingCurve('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QEasingCurve");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QEasingCurve is undefined. Use QEasingCurve_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QEasingCurve('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QEasingCurve(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QEasingCurve(RJSApi& handler, const QEasingCurve& v) {
-          QJSEngine* engine = handler.getEngine();
-          // wrapper takes ownership of the QEasingCurve object:
-          QEasingCurve_Wrapper* ret = new QEasingCurve_Wrapper(handler, new QEasingCurve(v), true);
-
-          // JS: new QEasingCurve('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QEasingCurve");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QEasingCurve is undefined. Use QEasingCurve_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QEasingCurve('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QEasingCurve(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QEasingCurve RJSHelper::js2cpp_QEasingCurve(RJSApi& handler, const QJSValue& v) {
-          /*
-          QEasingCurve_Wrapper* wrapper = getWrapper<QEasingCurve_Wrapper>(v);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QEasingCurve: no wrapper";
-              handler.trace();
-              Q_ASSERT(false);
-              return QEasingCurve();
-          }
-          //return *(QEasingCurve*)wrapper->getWrappedVoid();
-          QEasingCurve* ret = wrapper->getWrapped();
-          if (ret==nullptr) {
-              qWarning() << "js2cpp_QEasingCurve: wrapped pointer is NULL";
-              return QEasingCurve();
-          }
-          return *ret;
-          */
-
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QEasingCurve: not a QObject";
-              return QEasingCurve();
-          }
-          QObject* obj = jwrapper.toQObject();
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QEasingCurve_ptr: no wrapper";
-              handler.trace();
-              return QEasingCurve();
-          }
-          //QEasingCurve* ret = getWrapped_QEasingCurve(wrapper);
-          QEasingCurve* ret = QEasingCurve_Wrapper::getWrappedBase(wrapper);
-          if (ret==nullptr) {
-              return QEasingCurve();
-          }
-          return *ret;
-      }
-
-      bool RJSHelper::is_QEasingCurve(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QEasingCurve: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QEasingCurve::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper::cpp2js_QMargins(RJSApi& handler, const QMargins* v) {
@@ -16948,6 +16834,122 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QSizePolicy::getIdStatic())).toBool();
       }
     
+      QJSValue RJSHelper::cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSurfaceFormat_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSurfaceFormat_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSurfaceFormat object:
+              ret = new QSurfaceFormat_Wrapper(handler, new QSurfaceFormat(*v), true);
+          }
+
+          // JS: new QSurfaceFormat('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSurfaceFormat");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSurfaceFormat is undefined. Use QSurfaceFormat_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSurfaceFormat('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSurfaceFormat(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSurfaceFormat object:
+          QSurfaceFormat_Wrapper* ret = new QSurfaceFormat_Wrapper(handler, new QSurfaceFormat(v), true);
+
+          // JS: new QSurfaceFormat('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSurfaceFormat");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSurfaceFormat is undefined. Use QSurfaceFormat_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSurfaceFormat('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSurfaceFormat(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSurfaceFormat RJSHelper::js2cpp_QSurfaceFormat(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSurfaceFormat_Wrapper* wrapper = getWrapper<QSurfaceFormat_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSurfaceFormat: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSurfaceFormat();
+          }
+          //return *(QSurfaceFormat*)wrapper->getWrappedVoid();
+          QSurfaceFormat* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSurfaceFormat: wrapped pointer is NULL";
+              return QSurfaceFormat();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSurfaceFormat: not a QObject";
+              return QSurfaceFormat();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSurfaceFormat_ptr: no wrapper";
+              handler.trace();
+              return QSurfaceFormat();
+          }
+          //QSurfaceFormat* ret = getWrapped_QSurfaceFormat(wrapper);
+          QSurfaceFormat* ret = QSurfaceFormat_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSurfaceFormat();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSurfaceFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSurfaceFormat: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSurfaceFormat::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper::cpp2js_QTextBlockFormat(RJSApi& handler, const QTextBlockFormat* v) {
           QJSEngine* engine = handler.getEngine();
           QTextBlockFormat_Wrapper* ret;
@@ -19038,6 +19040,80 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QAbstractTableModel::getIdStatic())).toBool();
       }
     
+      QJSValue RJSHelper::cpp2js_QActionEvent(RJSApi& handler, QActionEvent* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          QActionEvent_Wrapper* ret = new QActionEvent_Wrapper(handler, v, false);
+
+          // JS: new QActionEvent('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QActionEvent");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QActionEvent is undefined. Use QActionEvent_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QActionEvent('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QActionEvent(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      QActionEvent* RJSHelper::js2cpp_QActionEvent_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QActionEvent: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QActionEvent_Wrapper* wrapper = qobject_cast<QActionEvent_Wrapper*>(obj);
+          //QActionEvent_Wrapper* wrapper = dynamic_cast<QActionEvent_Wrapper*>(obj);
+          //QActionEvent_Wrapper* wrapper = (QActionEvent_Wrapper*)(obj);
+          //QActionEvent_Wrapper* wrapper = getWrapper<QActionEvent_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QActionEvent_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_QActionEvent(wrapper);
+          return QActionEvent_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QActionEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QActionEvent: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_QActionEvent::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper::cpp2js_QCompleter(RJSApi& handler, QCompleter* v) {
 
           
@@ -19334,80 +19410,6 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QDragEnterEvent::getIdStatic())).toBool();
       }
     
-      QJSValue RJSHelper::cpp2js_QActionEvent(RJSApi& handler, QActionEvent* v) {
-
-          
-
-          QJSEngine* engine = handler.getEngine();
-          QActionEvent_Wrapper* ret = new QActionEvent_Wrapper(handler, v, false);
-
-          // JS: new QActionEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QActionEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QActionEvent is undefined. Use QActionEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QActionEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QActionEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-
-          //return engine->newQObject(ret);
-      }
-
-      QActionEvent* RJSHelper::js2cpp_QActionEvent_ptr(RJSApi& handler, const QJSValue& v) {
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
-              // 0 is allowed for pointers (null ptr):
-              return nullptr;
-          }
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QActionEvent: not a QObject";
-              return nullptr;
-          }
-          QObject* obj = jwrapper.toQObject();
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          //QActionEvent_Wrapper* wrapper = qobject_cast<QActionEvent_Wrapper*>(obj);
-          //QActionEvent_Wrapper* wrapper = dynamic_cast<QActionEvent_Wrapper*>(obj);
-          //QActionEvent_Wrapper* wrapper = (QActionEvent_Wrapper*)(obj);
-          //QActionEvent_Wrapper* wrapper = getWrapper<QActionEvent_Wrapper>(v);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QActionEvent_ptr: no wrapper";
-              handler.trace();
-              return nullptr;
-          }
-          //return getWrapped_QActionEvent(wrapper);
-          return QActionEvent_Wrapper::getWrappedBase(wrapper);
-          //return wrapper->getWrapped();
-      }
-
-      bool RJSHelper::is_QActionEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          if (v.isNumber()) {
-              return v.toInt()==0;
-          }
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QActionEvent: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              // type is for example string, number, etc.:
-              return false;
-          }
-          return fun.call(QJSValueList() << QJSValue(RJSType_QActionEvent::getIdStatic())).toBool();
-      }
-    
       QJSValue RJSHelper::cpp2js_QDragLeaveEvent(RJSApi& handler, QDragLeaveEvent* v) {
 
           
@@ -19657,6 +19659,14 @@
                 }
             }
           
+            // downcast to QFocusEvent:
+            {
+                QFocusEvent* o = dynamic_cast<QFocusEvent*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QFocusEvent(handler, o);
+                }
+            }
+          
             // downcast to QPaintEvent:
             {
                 QPaintEvent* o = dynamic_cast<QPaintEvent*>(v);
@@ -19856,6 +19866,80 @@
               return false;
           }
           return fun.call(QJSValueList() << QJSValue(RJSType_QFileIconProvider::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QFocusEvent(RJSApi& handler, QFocusEvent* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          QFocusEvent_Wrapper* ret = new QFocusEvent_Wrapper(handler, v, false);
+
+          // JS: new QFocusEvent('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QFocusEvent");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QFocusEvent is undefined. Use QFocusEvent_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QFocusEvent('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QFocusEvent(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      QFocusEvent* RJSHelper::js2cpp_QFocusEvent_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QFocusEvent: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QFocusEvent_Wrapper* wrapper = qobject_cast<QFocusEvent_Wrapper*>(obj);
+          //QFocusEvent_Wrapper* wrapper = dynamic_cast<QFocusEvent_Wrapper*>(obj);
+          //QFocusEvent_Wrapper* wrapper = (QFocusEvent_Wrapper*)(obj);
+          //QFocusEvent_Wrapper* wrapper = getWrapper<QFocusEvent_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QFocusEvent_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_QFocusEvent(wrapper);
+          return QFocusEvent_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QFocusEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QFocusEvent: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_QFocusEvent::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper::cpp2js_QFontMetrics(RJSApi& handler, QFontMetrics* v) {
@@ -23846,773 +23930,6 @@
   // wrapped QObject pointer types:
   // ------------------------------
   
-      QJSValue RJSHelper::cpp2js_QGraphicsEffect(RJSApi& handler, QGraphicsEffect* v) {
-          
-            // downcast to QGraphicsColorizeEffect:
-            {
-                QGraphicsColorizeEffect* o = qobject_cast<QGraphicsColorizeEffect*>(v);
-                if (o!=nullptr) {
-                    return RJSHelper::cpp2js_QGraphicsColorizeEffect(handler, o);
-                }
-            }
-          
-            // downcast to QGraphicsBlurEffect:
-            {
-                QGraphicsBlurEffect* o = qobject_cast<QGraphicsBlurEffect*>(v);
-                if (o!=nullptr) {
-                    return RJSHelper::cpp2js_QGraphicsBlurEffect(handler, o);
-                }
-            }
-          
-            // downcast to QGraphicsDropShadowEffect:
-            {
-                QGraphicsDropShadowEffect* o = qobject_cast<QGraphicsDropShadowEffect*>(v);
-                if (o!=nullptr) {
-                    return RJSHelper::cpp2js_QGraphicsDropShadowEffect(handler, o);
-                }
-            }
-          
-            // downcast to QGraphicsOpacityEffect:
-            {
-                QGraphicsOpacityEffect* o = qobject_cast<QGraphicsOpacityEffect*>(v);
-                if (o!=nullptr) {
-                    return RJSHelper::cpp2js_QGraphicsOpacityEffect(handler, o);
-                }
-            }
-          QGraphicsEffect_Wrapper* ret = nullptr;
-          bool existing = false;
-          if (v) {
-              // look up existing wrapper:
-              QVariant var = getWrapperProperty(handler, *v);
-              //qDebug() << "existing wrapper QVariant:" << var;
-              ret = var.value<QGraphicsEffect_Wrapper*>();
-              if (ret==nullptr) {
-                  if (var.isValid()) {
-                      qWarning() << "RJSHelper::cpp2js_QGraphicsEffect: invalid wrapper attached to QObject: " << var.typeName();
-                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
-                      delete ow;
-                  }
-                  // create new wrapper:
-                  //qDebug() << "creating new wrapper for " << (long int)v;
-                  ret = new QGraphicsEffect_Wrapper(handler, v, false);
-                  QVariant varNew = QVariant::fromValue(ret);
-                  setWrapperProperty(handler, *v, varNew);
-              }
-              else {
-                  existing = true;
-              }
-          }
-          else {
-              // wrapper for nullptr:
-              ret = new QGraphicsEffect_Wrapper(handler, nullptr, false);
-          }
-
-          QJSEngine* engine = handler.getEngine();
-
-          // JS: new QGraphicsEffect('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QGraphicsEffect");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QGraphicsEffect is undefined. Use QGraphicsEffect_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(existing));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QGraphicsEffect('__GOT_WRAPPER__', __wrapper__);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QGraphicsEffect(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QGraphicsEffect(RJSApi& handler, const QGraphicsEffect* v) {
-          return RJSHelper::cpp2js_QGraphicsEffect(handler, const_cast<QGraphicsEffect*>(v));
-      }
-
-      QGraphicsEffect* RJSHelper::js2cpp_QGraphicsEffect_ptr(RJSApi& handler, const QJSValue& v) {
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
-              // 0 is allowed for pointers (null ptr):
-              return nullptr;
-          }
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QGraphicsEffect: not a QObject";
-              return nullptr;
-          }
-          //QGraphicsEffect_Wrapper* wrapper = getWrapper<QGraphicsEffect_Wrapper>(v);
-          QObject* obj = jwrapper.toQObject();
-          //QGraphicsEffect_Wrapper* wrapper = qobject_cast<QGraphicsEffect_Wrapper*>(obj);
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          //QGraphicsEffect_Wrapper* wrapper = dynamic_cast<QGraphicsEffect_Wrapper*>(obj);
-          //QGraphicsEffect_Wrapper* wrapper = (QGraphicsEffect_Wrapper*)obj;
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QGraphicsEffect: no wrapper";
-              handler.trace();
-              return nullptr;
-          }
-          //return (QGraphicsEffect*)wrapper->getWrappedVoid();
-          //return getWrapped_QGraphicsEffect(wrapper);
-          return QGraphicsEffect_Wrapper::getWrappedBase(wrapper);
-          //return wrapper->getWrapped();
-      }
-
-      bool RJSHelper::is_QGraphicsEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getObjectType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QGraphicsEffect: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-          //return fun.call(RJSType::QGraphicsEffect_Type);
-          //return fun.call().toInt()==RJSType::QGraphicsEffect_Type;
-          //return v.isObject() || (v.isNumber() && v.toInt()==0);
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsEffect::getIdStatic())).toBool();
-      }
-
-    
-      QJSValue RJSHelper::cpp2js_QGraphicsBlurEffect(RJSApi& handler, QGraphicsBlurEffect* v) {
-          QGraphicsBlurEffect_Wrapper* ret = nullptr;
-          bool existing = false;
-          if (v) {
-              // look up existing wrapper:
-              QVariant var = getWrapperProperty(handler, *v);
-              //qDebug() << "existing wrapper QVariant:" << var;
-              ret = var.value<QGraphicsBlurEffect_Wrapper*>();
-              if (ret==nullptr) {
-                  if (var.isValid()) {
-                      qWarning() << "RJSHelper::cpp2js_QGraphicsBlurEffect: invalid wrapper attached to QObject: " << var.typeName();
-                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
-                      delete ow;
-                  }
-                  // create new wrapper:
-                  //qDebug() << "creating new wrapper for " << (long int)v;
-                  ret = new QGraphicsBlurEffect_Wrapper(handler, v, false);
-                  QVariant varNew = QVariant::fromValue(ret);
-                  setWrapperProperty(handler, *v, varNew);
-              }
-              else {
-                  existing = true;
-              }
-          }
-          else {
-              // wrapper for nullptr:
-              ret = new QGraphicsBlurEffect_Wrapper(handler, nullptr, false);
-          }
-
-          QJSEngine* engine = handler.getEngine();
-
-          // JS: new QGraphicsBlurEffect('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QGraphicsBlurEffect");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QGraphicsBlurEffect is undefined. Use QGraphicsBlurEffect_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(existing));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QGraphicsBlurEffect('__GOT_WRAPPER__', __wrapper__);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QGraphicsBlurEffect(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QGraphicsBlurEffect(RJSApi& handler, const QGraphicsBlurEffect* v) {
-          return RJSHelper::cpp2js_QGraphicsBlurEffect(handler, const_cast<QGraphicsBlurEffect*>(v));
-      }
-
-      QGraphicsBlurEffect* RJSHelper::js2cpp_QGraphicsBlurEffect_ptr(RJSApi& handler, const QJSValue& v) {
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
-              // 0 is allowed for pointers (null ptr):
-              return nullptr;
-          }
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QGraphicsBlurEffect: not a QObject";
-              return nullptr;
-          }
-          //QGraphicsBlurEffect_Wrapper* wrapper = getWrapper<QGraphicsBlurEffect_Wrapper>(v);
-          QObject* obj = jwrapper.toQObject();
-          //QGraphicsBlurEffect_Wrapper* wrapper = qobject_cast<QGraphicsBlurEffect_Wrapper*>(obj);
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          //QGraphicsBlurEffect_Wrapper* wrapper = dynamic_cast<QGraphicsBlurEffect_Wrapper*>(obj);
-          //QGraphicsBlurEffect_Wrapper* wrapper = (QGraphicsBlurEffect_Wrapper*)obj;
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QGraphicsBlurEffect: no wrapper";
-              handler.trace();
-              return nullptr;
-          }
-          //return (QGraphicsBlurEffect*)wrapper->getWrappedVoid();
-          //return getWrapped_QGraphicsBlurEffect(wrapper);
-          return QGraphicsBlurEffect_Wrapper::getWrappedBase(wrapper);
-          //return wrapper->getWrapped();
-      }
-
-      bool RJSHelper::is_QGraphicsBlurEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getObjectType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QGraphicsBlurEffect: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-          //return fun.call(RJSType::QGraphicsBlurEffect_Type);
-          //return fun.call().toInt()==RJSType::QGraphicsBlurEffect_Type;
-          //return v.isObject() || (v.isNumber() && v.toInt()==0);
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsBlurEffect::getIdStatic())).toBool();
-      }
-
-    
-      QJSValue RJSHelper::cpp2js_QGraphicsDropShadowEffect(RJSApi& handler, QGraphicsDropShadowEffect* v) {
-          QGraphicsDropShadowEffect_Wrapper* ret = nullptr;
-          bool existing = false;
-          if (v) {
-              // look up existing wrapper:
-              QVariant var = getWrapperProperty(handler, *v);
-              //qDebug() << "existing wrapper QVariant:" << var;
-              ret = var.value<QGraphicsDropShadowEffect_Wrapper*>();
-              if (ret==nullptr) {
-                  if (var.isValid()) {
-                      qWarning() << "RJSHelper::cpp2js_QGraphicsDropShadowEffect: invalid wrapper attached to QObject: " << var.typeName();
-                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
-                      delete ow;
-                  }
-                  // create new wrapper:
-                  //qDebug() << "creating new wrapper for " << (long int)v;
-                  ret = new QGraphicsDropShadowEffect_Wrapper(handler, v, false);
-                  QVariant varNew = QVariant::fromValue(ret);
-                  setWrapperProperty(handler, *v, varNew);
-              }
-              else {
-                  existing = true;
-              }
-          }
-          else {
-              // wrapper for nullptr:
-              ret = new QGraphicsDropShadowEffect_Wrapper(handler, nullptr, false);
-          }
-
-          QJSEngine* engine = handler.getEngine();
-
-          // JS: new QGraphicsDropShadowEffect('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QGraphicsDropShadowEffect");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QGraphicsDropShadowEffect is undefined. Use QGraphicsDropShadowEffect_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(existing));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QGraphicsDropShadowEffect('__GOT_WRAPPER__', __wrapper__);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QGraphicsDropShadowEffect(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QGraphicsDropShadowEffect(RJSApi& handler, const QGraphicsDropShadowEffect* v) {
-          return RJSHelper::cpp2js_QGraphicsDropShadowEffect(handler, const_cast<QGraphicsDropShadowEffect*>(v));
-      }
-
-      QGraphicsDropShadowEffect* RJSHelper::js2cpp_QGraphicsDropShadowEffect_ptr(RJSApi& handler, const QJSValue& v) {
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
-              // 0 is allowed for pointers (null ptr):
-              return nullptr;
-          }
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QGraphicsDropShadowEffect: not a QObject";
-              return nullptr;
-          }
-          //QGraphicsDropShadowEffect_Wrapper* wrapper = getWrapper<QGraphicsDropShadowEffect_Wrapper>(v);
-          QObject* obj = jwrapper.toQObject();
-          //QGraphicsDropShadowEffect_Wrapper* wrapper = qobject_cast<QGraphicsDropShadowEffect_Wrapper*>(obj);
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          //QGraphicsDropShadowEffect_Wrapper* wrapper = dynamic_cast<QGraphicsDropShadowEffect_Wrapper*>(obj);
-          //QGraphicsDropShadowEffect_Wrapper* wrapper = (QGraphicsDropShadowEffect_Wrapper*)obj;
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QGraphicsDropShadowEffect: no wrapper";
-              handler.trace();
-              return nullptr;
-          }
-          //return (QGraphicsDropShadowEffect*)wrapper->getWrappedVoid();
-          //return getWrapped_QGraphicsDropShadowEffect(wrapper);
-          return QGraphicsDropShadowEffect_Wrapper::getWrappedBase(wrapper);
-          //return wrapper->getWrapped();
-      }
-
-      bool RJSHelper::is_QGraphicsDropShadowEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getObjectType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QGraphicsDropShadowEffect: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-          //return fun.call(RJSType::QGraphicsDropShadowEffect_Type);
-          //return fun.call().toInt()==RJSType::QGraphicsDropShadowEffect_Type;
-          //return v.isObject() || (v.isNumber() && v.toInt()==0);
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsDropShadowEffect::getIdStatic())).toBool();
-      }
-
-    
-      QJSValue RJSHelper::cpp2js_QGraphicsColorizeEffect(RJSApi& handler, QGraphicsColorizeEffect* v) {
-          QGraphicsColorizeEffect_Wrapper* ret = nullptr;
-          bool existing = false;
-          if (v) {
-              // look up existing wrapper:
-              QVariant var = getWrapperProperty(handler, *v);
-              //qDebug() << "existing wrapper QVariant:" << var;
-              ret = var.value<QGraphicsColorizeEffect_Wrapper*>();
-              if (ret==nullptr) {
-                  if (var.isValid()) {
-                      qWarning() << "RJSHelper::cpp2js_QGraphicsColorizeEffect: invalid wrapper attached to QObject: " << var.typeName();
-                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
-                      delete ow;
-                  }
-                  // create new wrapper:
-                  //qDebug() << "creating new wrapper for " << (long int)v;
-                  ret = new QGraphicsColorizeEffect_Wrapper(handler, v, false);
-                  QVariant varNew = QVariant::fromValue(ret);
-                  setWrapperProperty(handler, *v, varNew);
-              }
-              else {
-                  existing = true;
-              }
-          }
-          else {
-              // wrapper for nullptr:
-              ret = new QGraphicsColorizeEffect_Wrapper(handler, nullptr, false);
-          }
-
-          QJSEngine* engine = handler.getEngine();
-
-          // JS: new QGraphicsColorizeEffect('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QGraphicsColorizeEffect");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QGraphicsColorizeEffect is undefined. Use QGraphicsColorizeEffect_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(existing));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QGraphicsColorizeEffect('__GOT_WRAPPER__', __wrapper__);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QGraphicsColorizeEffect(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QGraphicsColorizeEffect(RJSApi& handler, const QGraphicsColorizeEffect* v) {
-          return RJSHelper::cpp2js_QGraphicsColorizeEffect(handler, const_cast<QGraphicsColorizeEffect*>(v));
-      }
-
-      QGraphicsColorizeEffect* RJSHelper::js2cpp_QGraphicsColorizeEffect_ptr(RJSApi& handler, const QJSValue& v) {
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
-              // 0 is allowed for pointers (null ptr):
-              return nullptr;
-          }
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QGraphicsColorizeEffect: not a QObject";
-              return nullptr;
-          }
-          //QGraphicsColorizeEffect_Wrapper* wrapper = getWrapper<QGraphicsColorizeEffect_Wrapper>(v);
-          QObject* obj = jwrapper.toQObject();
-          //QGraphicsColorizeEffect_Wrapper* wrapper = qobject_cast<QGraphicsColorizeEffect_Wrapper*>(obj);
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          //QGraphicsColorizeEffect_Wrapper* wrapper = dynamic_cast<QGraphicsColorizeEffect_Wrapper*>(obj);
-          //QGraphicsColorizeEffect_Wrapper* wrapper = (QGraphicsColorizeEffect_Wrapper*)obj;
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QGraphicsColorizeEffect: no wrapper";
-              handler.trace();
-              return nullptr;
-          }
-          //return (QGraphicsColorizeEffect*)wrapper->getWrappedVoid();
-          //return getWrapped_QGraphicsColorizeEffect(wrapper);
-          return QGraphicsColorizeEffect_Wrapper::getWrappedBase(wrapper);
-          //return wrapper->getWrapped();
-      }
-
-      bool RJSHelper::is_QGraphicsColorizeEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getObjectType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QGraphicsColorizeEffect: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-          //return fun.call(RJSType::QGraphicsColorizeEffect_Type);
-          //return fun.call().toInt()==RJSType::QGraphicsColorizeEffect_Type;
-          //return v.isObject() || (v.isNumber() && v.toInt()==0);
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsColorizeEffect::getIdStatic())).toBool();
-      }
-
-    
-      QJSValue RJSHelper::cpp2js_QGraphicsOpacityEffect(RJSApi& handler, QGraphicsOpacityEffect* v) {
-          QGraphicsOpacityEffect_Wrapper* ret = nullptr;
-          bool existing = false;
-          if (v) {
-              // look up existing wrapper:
-              QVariant var = getWrapperProperty(handler, *v);
-              //qDebug() << "existing wrapper QVariant:" << var;
-              ret = var.value<QGraphicsOpacityEffect_Wrapper*>();
-              if (ret==nullptr) {
-                  if (var.isValid()) {
-                      qWarning() << "RJSHelper::cpp2js_QGraphicsOpacityEffect: invalid wrapper attached to QObject: " << var.typeName();
-                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
-                      delete ow;
-                  }
-                  // create new wrapper:
-                  //qDebug() << "creating new wrapper for " << (long int)v;
-                  ret = new QGraphicsOpacityEffect_Wrapper(handler, v, false);
-                  QVariant varNew = QVariant::fromValue(ret);
-                  setWrapperProperty(handler, *v, varNew);
-              }
-              else {
-                  existing = true;
-              }
-          }
-          else {
-              // wrapper for nullptr:
-              ret = new QGraphicsOpacityEffect_Wrapper(handler, nullptr, false);
-          }
-
-          QJSEngine* engine = handler.getEngine();
-
-          // JS: new QGraphicsOpacityEffect('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QGraphicsOpacityEffect");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QGraphicsOpacityEffect is undefined. Use QGraphicsOpacityEffect_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(existing));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QGraphicsOpacityEffect('__GOT_WRAPPER__', __wrapper__);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QGraphicsOpacityEffect(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QGraphicsOpacityEffect(RJSApi& handler, const QGraphicsOpacityEffect* v) {
-          return RJSHelper::cpp2js_QGraphicsOpacityEffect(handler, const_cast<QGraphicsOpacityEffect*>(v));
-      }
-
-      QGraphicsOpacityEffect* RJSHelper::js2cpp_QGraphicsOpacityEffect_ptr(RJSApi& handler, const QJSValue& v) {
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
-              // 0 is allowed for pointers (null ptr):
-              return nullptr;
-          }
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QGraphicsOpacityEffect: not a QObject";
-              return nullptr;
-          }
-          //QGraphicsOpacityEffect_Wrapper* wrapper = getWrapper<QGraphicsOpacityEffect_Wrapper>(v);
-          QObject* obj = jwrapper.toQObject();
-          //QGraphicsOpacityEffect_Wrapper* wrapper = qobject_cast<QGraphicsOpacityEffect_Wrapper*>(obj);
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          //QGraphicsOpacityEffect_Wrapper* wrapper = dynamic_cast<QGraphicsOpacityEffect_Wrapper*>(obj);
-          //QGraphicsOpacityEffect_Wrapper* wrapper = (QGraphicsOpacityEffect_Wrapper*)obj;
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QGraphicsOpacityEffect: no wrapper";
-              handler.trace();
-              return nullptr;
-          }
-          //return (QGraphicsOpacityEffect*)wrapper->getWrappedVoid();
-          //return getWrapped_QGraphicsOpacityEffect(wrapper);
-          return QGraphicsOpacityEffect_Wrapper::getWrappedBase(wrapper);
-          //return wrapper->getWrapped();
-      }
-
-      bool RJSHelper::is_QGraphicsOpacityEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getObjectType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QGraphicsOpacityEffect: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-          //return fun.call(RJSType::QGraphicsOpacityEffect_Type);
-          //return fun.call().toInt()==RJSType::QGraphicsOpacityEffect_Type;
-          //return v.isObject() || (v.isNumber() && v.toInt()==0);
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsOpacityEffect::getIdStatic())).toBool();
-      }
-
-    
-      QJSValue RJSHelper::cpp2js_QQuickWidget(RJSApi& handler, QQuickWidget* v) {
-          QQuickWidget_Wrapper* ret = nullptr;
-          bool existing = false;
-          if (v) {
-              // look up existing wrapper:
-              QVariant var = getWrapperProperty(handler, *v);
-              //qDebug() << "existing wrapper QVariant:" << var;
-              ret = var.value<QQuickWidget_Wrapper*>();
-              if (ret==nullptr) {
-                  if (var.isValid()) {
-                      qWarning() << "RJSHelper::cpp2js_QQuickWidget: invalid wrapper attached to QObject: " << var.typeName();
-                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
-                      delete ow;
-                  }
-                  // create new wrapper:
-                  //qDebug() << "creating new wrapper for " << (long int)v;
-                  ret = new QQuickWidget_Wrapper(handler, v, false);
-                  QVariant varNew = QVariant::fromValue(ret);
-                  setWrapperProperty(handler, *v, varNew);
-              }
-              else {
-                  existing = true;
-              }
-          }
-          else {
-              // wrapper for nullptr:
-              ret = new QQuickWidget_Wrapper(handler, nullptr, false);
-          }
-
-          QJSEngine* engine = handler.getEngine();
-
-          // JS: new QQuickWidget('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QQuickWidget");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QQuickWidget is undefined. Use QQuickWidget_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(existing));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QQuickWidget('__GOT_WRAPPER__', __wrapper__);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QQuickWidget(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QQuickWidget(RJSApi& handler, const QQuickWidget* v) {
-          return RJSHelper::cpp2js_QQuickWidget(handler, const_cast<QQuickWidget*>(v));
-      }
-
-      QQuickWidget* RJSHelper::js2cpp_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v) {
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
-              // 0 is allowed for pointers (null ptr):
-              return nullptr;
-          }
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QQuickWidget: not a QObject";
-              return nullptr;
-          }
-          //QQuickWidget_Wrapper* wrapper = getWrapper<QQuickWidget_Wrapper>(v);
-          QObject* obj = jwrapper.toQObject();
-          //QQuickWidget_Wrapper* wrapper = qobject_cast<QQuickWidget_Wrapper*>(obj);
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          //QQuickWidget_Wrapper* wrapper = dynamic_cast<QQuickWidget_Wrapper*>(obj);
-          //QQuickWidget_Wrapper* wrapper = (QQuickWidget_Wrapper*)obj;
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QQuickWidget: no wrapper";
-              handler.trace();
-              return nullptr;
-          }
-          //return (QQuickWidget*)wrapper->getWrappedVoid();
-          //return getWrapped_QQuickWidget(wrapper);
-          return QQuickWidget_Wrapper::getWrappedBase(wrapper);
-          //return wrapper->getWrapped();
-      }
-
-      bool RJSHelper::is_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getObjectType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QQuickWidget: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-          //return fun.call(RJSType::QQuickWidget_Type);
-          //return fun.call().toInt()==RJSType::QQuickWidget_Type;
-          //return v.isObject() || (v.isNumber() && v.toInt()==0);
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QQuickWidget::getIdStatic())).toBool();
-      }
-
-    
-      QJSValue RJSHelper::cpp2js_QSvgRenderer(RJSApi& handler, QSvgRenderer* v) {
-          QSvgRenderer_Wrapper* ret = nullptr;
-          bool existing = false;
-          if (v) {
-              // look up existing wrapper:
-              QVariant var = getWrapperProperty(handler, *v);
-              //qDebug() << "existing wrapper QVariant:" << var;
-              ret = var.value<QSvgRenderer_Wrapper*>();
-              if (ret==nullptr) {
-                  if (var.isValid()) {
-                      qWarning() << "RJSHelper::cpp2js_QSvgRenderer: invalid wrapper attached to QObject: " << var.typeName();
-                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
-                      delete ow;
-                  }
-                  // create new wrapper:
-                  //qDebug() << "creating new wrapper for " << (long int)v;
-                  ret = new QSvgRenderer_Wrapper(handler, v, false);
-                  QVariant varNew = QVariant::fromValue(ret);
-                  setWrapperProperty(handler, *v, varNew);
-              }
-              else {
-                  existing = true;
-              }
-          }
-          else {
-              // wrapper for nullptr:
-              ret = new QSvgRenderer_Wrapper(handler, nullptr, false);
-          }
-
-          QJSEngine* engine = handler.getEngine();
-
-          // JS: new QSvgRenderer('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSvgRenderer");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSvgRenderer is undefined. Use QSvgRenderer_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(existing));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSvgRenderer('__GOT_WRAPPER__', __wrapper__);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSvgRenderer(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QSvgRenderer(RJSApi& handler, const QSvgRenderer* v) {
-          return RJSHelper::cpp2js_QSvgRenderer(handler, const_cast<QSvgRenderer*>(v));
-      }
-
-      QSvgRenderer* RJSHelper::js2cpp_QSvgRenderer_ptr(RJSApi& handler, const QJSValue& v) {
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
-              // 0 is allowed for pointers (null ptr):
-              return nullptr;
-          }
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QSvgRenderer: not a QObject";
-              return nullptr;
-          }
-          //QSvgRenderer_Wrapper* wrapper = getWrapper<QSvgRenderer_Wrapper>(v);
-          QObject* obj = jwrapper.toQObject();
-          //QSvgRenderer_Wrapper* wrapper = qobject_cast<QSvgRenderer_Wrapper*>(obj);
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          //QSvgRenderer_Wrapper* wrapper = dynamic_cast<QSvgRenderer_Wrapper*>(obj);
-          //QSvgRenderer_Wrapper* wrapper = (QSvgRenderer_Wrapper*)obj;
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QSvgRenderer: no wrapper";
-              handler.trace();
-              return nullptr;
-          }
-          //return (QSvgRenderer*)wrapper->getWrappedVoid();
-          //return getWrapped_QSvgRenderer(wrapper);
-          return QSvgRenderer_Wrapper::getWrappedBase(wrapper);
-          //return wrapper->getWrapped();
-      }
-
-      bool RJSHelper::is_QSvgRenderer_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getObjectType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QSvgRenderer: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-          //return fun.call(RJSType::QSvgRenderer_Type);
-          //return fun.call().toInt()==RJSType::QSvgRenderer_Type;
-          //return v.isObject() || (v.isNumber() && v.toInt()==0);
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QSvgRenderer::getIdStatic())).toBool();
-      }
-
-    
       QJSValue RJSHelper::cpp2js_QAbstractButton(RJSApi& handler, QAbstractButton* v) {
           
             // downcast to QCheckBox:
@@ -28188,6 +27505,563 @@
       }
 
     
+      QJSValue RJSHelper::cpp2js_QGraphicsBlurEffect(RJSApi& handler, QGraphicsBlurEffect* v) {
+          QGraphicsBlurEffect_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QGraphicsBlurEffect_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QGraphicsBlurEffect: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QGraphicsBlurEffect_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QGraphicsBlurEffect_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QGraphicsBlurEffect('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGraphicsBlurEffect");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGraphicsBlurEffect is undefined. Use QGraphicsBlurEffect_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGraphicsBlurEffect('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGraphicsBlurEffect(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGraphicsBlurEffect(RJSApi& handler, const QGraphicsBlurEffect* v) {
+          return RJSHelper::cpp2js_QGraphicsBlurEffect(handler, const_cast<QGraphicsBlurEffect*>(v));
+      }
+
+      QGraphicsBlurEffect* RJSHelper::js2cpp_QGraphicsBlurEffect_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGraphicsBlurEffect: not a QObject";
+              return nullptr;
+          }
+          //QGraphicsBlurEffect_Wrapper* wrapper = getWrapper<QGraphicsBlurEffect_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QGraphicsBlurEffect_Wrapper* wrapper = qobject_cast<QGraphicsBlurEffect_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QGraphicsBlurEffect_Wrapper* wrapper = dynamic_cast<QGraphicsBlurEffect_Wrapper*>(obj);
+          //QGraphicsBlurEffect_Wrapper* wrapper = (QGraphicsBlurEffect_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGraphicsBlurEffect: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QGraphicsBlurEffect*)wrapper->getWrappedVoid();
+          //return getWrapped_QGraphicsBlurEffect(wrapper);
+          return QGraphicsBlurEffect_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QGraphicsBlurEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGraphicsBlurEffect: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QGraphicsBlurEffect_Type);
+          //return fun.call().toInt()==RJSType::QGraphicsBlurEffect_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsBlurEffect::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper::cpp2js_QGraphicsColorizeEffect(RJSApi& handler, QGraphicsColorizeEffect* v) {
+          QGraphicsColorizeEffect_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QGraphicsColorizeEffect_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QGraphicsColorizeEffect: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QGraphicsColorizeEffect_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QGraphicsColorizeEffect_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QGraphicsColorizeEffect('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGraphicsColorizeEffect");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGraphicsColorizeEffect is undefined. Use QGraphicsColorizeEffect_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGraphicsColorizeEffect('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGraphicsColorizeEffect(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGraphicsColorizeEffect(RJSApi& handler, const QGraphicsColorizeEffect* v) {
+          return RJSHelper::cpp2js_QGraphicsColorizeEffect(handler, const_cast<QGraphicsColorizeEffect*>(v));
+      }
+
+      QGraphicsColorizeEffect* RJSHelper::js2cpp_QGraphicsColorizeEffect_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGraphicsColorizeEffect: not a QObject";
+              return nullptr;
+          }
+          //QGraphicsColorizeEffect_Wrapper* wrapper = getWrapper<QGraphicsColorizeEffect_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QGraphicsColorizeEffect_Wrapper* wrapper = qobject_cast<QGraphicsColorizeEffect_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QGraphicsColorizeEffect_Wrapper* wrapper = dynamic_cast<QGraphicsColorizeEffect_Wrapper*>(obj);
+          //QGraphicsColorizeEffect_Wrapper* wrapper = (QGraphicsColorizeEffect_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGraphicsColorizeEffect: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QGraphicsColorizeEffect*)wrapper->getWrappedVoid();
+          //return getWrapped_QGraphicsColorizeEffect(wrapper);
+          return QGraphicsColorizeEffect_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QGraphicsColorizeEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGraphicsColorizeEffect: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QGraphicsColorizeEffect_Type);
+          //return fun.call().toInt()==RJSType::QGraphicsColorizeEffect_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsColorizeEffect::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper::cpp2js_QGraphicsDropShadowEffect(RJSApi& handler, QGraphicsDropShadowEffect* v) {
+          QGraphicsDropShadowEffect_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QGraphicsDropShadowEffect_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QGraphicsDropShadowEffect: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QGraphicsDropShadowEffect_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QGraphicsDropShadowEffect_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QGraphicsDropShadowEffect('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGraphicsDropShadowEffect");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGraphicsDropShadowEffect is undefined. Use QGraphicsDropShadowEffect_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGraphicsDropShadowEffect('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGraphicsDropShadowEffect(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGraphicsDropShadowEffect(RJSApi& handler, const QGraphicsDropShadowEffect* v) {
+          return RJSHelper::cpp2js_QGraphicsDropShadowEffect(handler, const_cast<QGraphicsDropShadowEffect*>(v));
+      }
+
+      QGraphicsDropShadowEffect* RJSHelper::js2cpp_QGraphicsDropShadowEffect_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGraphicsDropShadowEffect: not a QObject";
+              return nullptr;
+          }
+          //QGraphicsDropShadowEffect_Wrapper* wrapper = getWrapper<QGraphicsDropShadowEffect_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QGraphicsDropShadowEffect_Wrapper* wrapper = qobject_cast<QGraphicsDropShadowEffect_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QGraphicsDropShadowEffect_Wrapper* wrapper = dynamic_cast<QGraphicsDropShadowEffect_Wrapper*>(obj);
+          //QGraphicsDropShadowEffect_Wrapper* wrapper = (QGraphicsDropShadowEffect_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGraphicsDropShadowEffect: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QGraphicsDropShadowEffect*)wrapper->getWrappedVoid();
+          //return getWrapped_QGraphicsDropShadowEffect(wrapper);
+          return QGraphicsDropShadowEffect_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QGraphicsDropShadowEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGraphicsDropShadowEffect: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QGraphicsDropShadowEffect_Type);
+          //return fun.call().toInt()==RJSType::QGraphicsDropShadowEffect_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsDropShadowEffect::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper::cpp2js_QGraphicsEffect(RJSApi& handler, QGraphicsEffect* v) {
+          
+            // downcast to QGraphicsColorizeEffect:
+            {
+                QGraphicsColorizeEffect* o = qobject_cast<QGraphicsColorizeEffect*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QGraphicsColorizeEffect(handler, o);
+                }
+            }
+          
+            // downcast to QGraphicsBlurEffect:
+            {
+                QGraphicsBlurEffect* o = qobject_cast<QGraphicsBlurEffect*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QGraphicsBlurEffect(handler, o);
+                }
+            }
+          
+            // downcast to QGraphicsDropShadowEffect:
+            {
+                QGraphicsDropShadowEffect* o = qobject_cast<QGraphicsDropShadowEffect*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QGraphicsDropShadowEffect(handler, o);
+                }
+            }
+          
+            // downcast to QGraphicsOpacityEffect:
+            {
+                QGraphicsOpacityEffect* o = qobject_cast<QGraphicsOpacityEffect*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QGraphicsOpacityEffect(handler, o);
+                }
+            }
+          QGraphicsEffect_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QGraphicsEffect_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QGraphicsEffect: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QGraphicsEffect_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QGraphicsEffect_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QGraphicsEffect('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGraphicsEffect");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGraphicsEffect is undefined. Use QGraphicsEffect_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGraphicsEffect('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGraphicsEffect(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGraphicsEffect(RJSApi& handler, const QGraphicsEffect* v) {
+          return RJSHelper::cpp2js_QGraphicsEffect(handler, const_cast<QGraphicsEffect*>(v));
+      }
+
+      QGraphicsEffect* RJSHelper::js2cpp_QGraphicsEffect_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGraphicsEffect: not a QObject";
+              return nullptr;
+          }
+          //QGraphicsEffect_Wrapper* wrapper = getWrapper<QGraphicsEffect_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QGraphicsEffect_Wrapper* wrapper = qobject_cast<QGraphicsEffect_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QGraphicsEffect_Wrapper* wrapper = dynamic_cast<QGraphicsEffect_Wrapper*>(obj);
+          //QGraphicsEffect_Wrapper* wrapper = (QGraphicsEffect_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGraphicsEffect: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QGraphicsEffect*)wrapper->getWrappedVoid();
+          //return getWrapped_QGraphicsEffect(wrapper);
+          return QGraphicsEffect_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QGraphicsEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGraphicsEffect: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QGraphicsEffect_Type);
+          //return fun.call().toInt()==RJSType::QGraphicsEffect_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsEffect::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper::cpp2js_QGraphicsOpacityEffect(RJSApi& handler, QGraphicsOpacityEffect* v) {
+          QGraphicsOpacityEffect_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QGraphicsOpacityEffect_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QGraphicsOpacityEffect: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QGraphicsOpacityEffect_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QGraphicsOpacityEffect_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QGraphicsOpacityEffect('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGraphicsOpacityEffect");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGraphicsOpacityEffect is undefined. Use QGraphicsOpacityEffect_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGraphicsOpacityEffect('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGraphicsOpacityEffect(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGraphicsOpacityEffect(RJSApi& handler, const QGraphicsOpacityEffect* v) {
+          return RJSHelper::cpp2js_QGraphicsOpacityEffect(handler, const_cast<QGraphicsOpacityEffect*>(v));
+      }
+
+      QGraphicsOpacityEffect* RJSHelper::js2cpp_QGraphicsOpacityEffect_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGraphicsOpacityEffect: not a QObject";
+              return nullptr;
+          }
+          //QGraphicsOpacityEffect_Wrapper* wrapper = getWrapper<QGraphicsOpacityEffect_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QGraphicsOpacityEffect_Wrapper* wrapper = qobject_cast<QGraphicsOpacityEffect_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QGraphicsOpacityEffect_Wrapper* wrapper = dynamic_cast<QGraphicsOpacityEffect_Wrapper*>(obj);
+          //QGraphicsOpacityEffect_Wrapper* wrapper = (QGraphicsOpacityEffect_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGraphicsOpacityEffect: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QGraphicsOpacityEffect*)wrapper->getWrappedVoid();
+          //return getWrapped_QGraphicsOpacityEffect(wrapper);
+          return QGraphicsOpacityEffect_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QGraphicsOpacityEffect_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGraphicsOpacityEffect: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QGraphicsOpacityEffect_Type);
+          //return fun.call().toInt()==RJSType::QGraphicsOpacityEffect_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGraphicsOpacityEffect::getIdStatic())).toBool();
+      }
+
+    
       QJSValue RJSHelper::cpp2js_QGridLayout(RJSApi& handler, QGridLayout* v) {
           QGridLayout_Wrapper* ret = nullptr;
           bool existing = false;
@@ -31167,6 +31041,111 @@
       }
 
     
+      QJSValue RJSHelper::cpp2js_QQuickWidget(RJSApi& handler, QQuickWidget* v) {
+          QQuickWidget_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QQuickWidget_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QQuickWidget: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QQuickWidget_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QQuickWidget_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QQuickWidget('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QQuickWidget");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QQuickWidget is undefined. Use QQuickWidget_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QQuickWidget('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QQuickWidget(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QQuickWidget(RJSApi& handler, const QQuickWidget* v) {
+          return RJSHelper::cpp2js_QQuickWidget(handler, const_cast<QQuickWidget*>(v));
+      }
+
+      QQuickWidget* RJSHelper::js2cpp_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QQuickWidget: not a QObject";
+              return nullptr;
+          }
+          //QQuickWidget_Wrapper* wrapper = getWrapper<QQuickWidget_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QQuickWidget_Wrapper* wrapper = qobject_cast<QQuickWidget_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QQuickWidget_Wrapper* wrapper = dynamic_cast<QQuickWidget_Wrapper*>(obj);
+          //QQuickWidget_Wrapper* wrapper = (QQuickWidget_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QQuickWidget: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QQuickWidget*)wrapper->getWrappedVoid();
+          //return getWrapped_QQuickWidget(wrapper);
+          return QQuickWidget_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QQuickWidget: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QQuickWidget_Type);
+          //return fun.call().toInt()==RJSType::QQuickWidget_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QQuickWidget::getIdStatic())).toBool();
+      }
+
+    
       QJSValue RJSHelper::cpp2js_QRadioButton(RJSApi& handler, QRadioButton* v) {
           QRadioButton_Wrapper* ret = nullptr;
           bool existing = false;
@@ -32949,6 +32928,111 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QStatusBar::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper::cpp2js_QSvgRenderer(RJSApi& handler, QSvgRenderer* v) {
+          QSvgRenderer_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QSvgRenderer_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QSvgRenderer: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QSvgRenderer_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QSvgRenderer_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QSvgRenderer('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSvgRenderer");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSvgRenderer is undefined. Use QSvgRenderer_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSvgRenderer('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSvgRenderer(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSvgRenderer(RJSApi& handler, const QSvgRenderer* v) {
+          return RJSHelper::cpp2js_QSvgRenderer(handler, const_cast<QSvgRenderer*>(v));
+      }
+
+      QSvgRenderer* RJSHelper::js2cpp_QSvgRenderer_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSvgRenderer: not a QObject";
+              return nullptr;
+          }
+          //QSvgRenderer_Wrapper* wrapper = getWrapper<QSvgRenderer_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QSvgRenderer_Wrapper* wrapper = qobject_cast<QSvgRenderer_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QSvgRenderer_Wrapper* wrapper = dynamic_cast<QSvgRenderer_Wrapper*>(obj);
+          //QSvgRenderer_Wrapper* wrapper = (QSvgRenderer_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSvgRenderer: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QSvgRenderer*)wrapper->getWrappedVoid();
+          //return getWrapped_QSvgRenderer(wrapper);
+          return QSvgRenderer_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QSvgRenderer_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSvgRenderer: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QSvgRenderer_Type);
+          //return fun.call().toInt()==RJSType::QSvgRenderer_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSvgRenderer::getIdStatic())).toBool();
       }
 
     
@@ -35376,6 +35460,43 @@
           return v.isArray();
       }
     
+      QJSValue RJSHelper::cpp2js_QList_QPrinter_PaperSource(RJSApi& handler, const QList<QPrinter::PaperSource>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QPrinter_PaperSource(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QPrinter::PaperSource> RJSHelper::js2cpp_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QPrinter::PaperSource>>(v);
+          QList<QPrinter::PaperSource> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QPrinter_PaperSource: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QPrinter_PaperSource(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
       QJSValue RJSHelper::cpp2js_QList_QPrinterInfo(RJSApi& handler, const QList<QPrinterInfo>& v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine->newArray((uint)v.length());
@@ -35888,43 +36009,6 @@
       }
 
       bool RJSHelper::is_QList_qreal(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          return v.isArray();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QList_QPrinter_PaperSource(RJSApi& handler, const QList<QPrinter::PaperSource>& v) {
-          QJSEngine* engine = handler.getEngine();
-          QJSValue ret = engine->newArray((uint)v.length());
-          for (int i=0; i<v.length(); i++) {
-              QJSValue jv = RJSHelper::cpp2js_QPrinter_PaperSource(handler, v.at(i));
-              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
-              if (!jv.isUndefined()) {
-                  ret.setProperty((quint32)i, jv);
-              }
-          }
-          return ret;
-      }
-
-      QList<QPrinter::PaperSource> RJSHelper::js2cpp_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v) {
-          //return engine->fromScriptValue<QList<QPrinter::PaperSource>>(v);
-          QList<QPrinter::PaperSource> ret;
-
-          if (!v.isArray()) {
-              qWarning() << "js2cpp_QList_QPrinter_PaperSource: value is not an array";
-              return ret;
-          }
-
-          const int length = v.property("length").toInt();
-          for (int i=0; i<length; ++i) {
-              ret.append(js2cpp_QPrinter_PaperSource(handler, v.property(i)));
-          }
-
-          return ret;
-      }
-
-      bool RJSHelper::is_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }

@@ -122,6 +122,10 @@
                 return (QEvent*)(QKeyEvent*)vp;
               }
               
+              if (t==RJSType_QFocusEvent::getIdStatic()) {
+                return (QEvent*)(QFocusEvent*)vp;
+              }
+              
               if (t==RJSType_QPaintEvent::getIdStatic()) {
                 return (QEvent*)(QPaintEvent*)vp;
               }

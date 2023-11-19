@@ -12508,6 +12508,1054 @@ QKeySequence::StandardKey a1_cpp;
 
   
       // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_QFocusEvent*> QFocusEvent_Wrapper::basecasters_QFocusEvent;
+    
+    // static functions implementation in singleton wrapper:
+    
+    // Class: QFocusEvent
+    // Function: registerEventType
+    // Source: QEvent
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_WrapperSingleton::registerEventType
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: hint (int)
+  
+int a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = -1;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            int res = 
+                
+                // call static member function:
+                QEvent::registerEventType(
+              a1_cpp
+    
+            );
+          
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for registerEventType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    void QFocusEvent_Wrapper::init(RJSApi& handler) {
+      
+        //qmlRegisterType<QFocusEvent_Wrapper>("org.qcad", 1, 0, "QFocusEvent_Wrapper");
+        qmlRegisterInterface<QFocusEvent_Wrapper>("QFocusEvent_Wrapper", 1);
+      
+
+      QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_QFocusEvent* t = new RJSType_QFocusEvent();
+          global.setProperty("RJSType_QFocusEvent", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_QFocusEvent::getIdStatic();
+
+          
+
+      // wrapper:
+      QJSValue mo = engine->newQMetaObject(&QFocusEvent_Wrapper::staticMetaObject);
+      engine->globalObject().setProperty("QFocusEvent_Wrapper", mo);
+
+
+      
+        // JS base class:
+        //QJSValue mob = engine->newQMetaObject(&QFocusEvent_BaseJs::staticMetaObject);
+        //engine->globalObject().setProperty("QFocusEvent_BaseJs", mob);
+      
+        // singleton wrapper:
+        QJSValue mos = engine->newQMetaObject(&QFocusEvent_WrapperSingleton::staticMetaObject);
+        engine->globalObject().setProperty("QFocusEvent_WrapperSingleton", mos);
+
+        // create instance of singleton wrapper for static functions:
+        QFocusEvent_WrapperSingleton * s = new QFocusEvent_WrapperSingleton(handler);
+        engine->globalObject().setProperty("QFocusEvent_WrapperSingletonInstance", engine->newQObject(s));
+        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
+      
+      QString fileName = ":generator/js/QFocusEvent.js";
+      QFile scriptFile(fileName);
+      if (!scriptFile.open(QIODevice::ReadOnly)) {
+        qWarning() << "JS script wrapper file not found:" << fileName;
+        return;
+      }
+      QTextStream stream(&scriptFile);
+      QString contents = stream.readAll();
+      scriptFile.close();
+
+      qDebug() << "Evaluating file: " << fileName;
+      QJSValue result = engine->evaluate(contents, fileName);
+      if (result.isError()) {
+          qWarning()
+              << "Uncaught exception at line"
+              << result.property("lineNumber").toInt()
+              << ":" << result.toString();
+      }
+    }
+  
+    /*
+    // special constructor used as prototype:
+    QFocusEvent_Wrapper::QFocusEvent_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
+            //setObjectName("QFocusEvent_Wrapper");
+            setEngine(e);
+
+            // signal forwarding:
+            //initConnections();
+          }
+        
+    */
+
+    
+      // special constructor to wrap existing object:
+      QFocusEvent_Wrapper::QFocusEvent_Wrapper(RJSApi& h, QFocusEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+              //RDebug::incCounter(QString("QFocusEvent_Wrapper_") + handler.getEngine()->objectName());
+              //RDebug::incCounter(QString("QFocusEvent_Wrapper"));
+              //setObjectName("QFocusEvent_Wrapper");
+              //setHandler(h);
+
+              // signal forwarding:
+              initConnections();
+            }
+          
+
+      // destructor:
+      QFocusEvent_Wrapper::~QFocusEvent_Wrapper() {
+            //RDebug::decCounter(QString("QFocusEvent_Wrapper_") + handler.getEngine()->objectName());
+            //RDebug::decCounter(QString("QFocusEvent_Wrapper"));
+
+            //qDebug() << "QFocusEvent_Wrapper::~QFocusEvent_Wrapper";
+
+            // tell script handler that this wrapper no longer exists:
+            handler.unregisterWrapper(*this);
+
+            
+            if (wrappedCreated) {
+              
+                  // delete wrapped object (copyable, JS ownership)
+                  //qDebug() << "deleting instance of QFocusEvent";
+                  delete wrapped;
+                
+            }
+            
+          }
+        
+    // initialization of signal forwarding
+    
+        void QFocusEvent_Wrapper::initConnections() {
+
+          //setObjectName("QFocusEvent_Wrapper");
+
+          // tell script handler that this wrapper needs to be deleted if the engine is deleted:
+          handler.registerWrapper(*this);
+
+          
+              // wrapped object is not a QObject:
+              // wrapper is managed by script engine:
+              //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
+            
+
+          if (hasWrapped()) {
+            
+            // set up signal forwarding:
+            
+          }
+        }
+      
+
+  // constructors:
+  
+    // Class: QFocusEvent
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+QFocusEvent_Wrapper::QFocusEvent_Wrapper
+                
+              (
+                
+                  // RJSApi:
+                  QObject* h
+                  ,
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                : RJSWrapperObj(*(RJSApi*)h)
+              
+              {
+                
+                  //RDebug::incCounter(QString("QFocusEvent_Wrapper_") + handler.getEngine()->objectName());
+                  //RDebug::incCounter(QString("QFocusEvent_Wrapper"));
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QEvent_Type(handler, a1
+  )
+
+   && RJSHelper::is_Qt_FocusReason(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: type (QEvent::Type)
+  
+QEvent::Type a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QEvent_Type(handler, a1);
+        
+  // convert js parameter to cpp: reason (Qt::FocusReason)
+  
+Qt::FocusReason a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = Qt::OtherFocusReason;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_Qt_FocusReason(handler, a2);
+          }
+        
+
+    // call function:
+    
+        // construct wrapper:
+
+        
+            wrapped = new QFocusEvent(
+                a1_cpp
+    , a2_cpp
+    
+            );
+            wrappedCreated = true;
+          
+
+        // signal forwarding:
+        // TODO
+        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
+        initConnections();
+        return;
+
+      
+  }
+
+                    // no constructor without arguments defined
+                    // allow constructor for prototype objects without args:
+                    if (
+                      a1.isUndefined()
+   && a2.isUndefined()
+  
+                      ) {
+                      wrapped = nullptr;
+                      wrappedCreated = false;
+                      return;
+                    }
+                  
+
+                  qWarning() << "no matching constructor variant found for QFocusEvent";
+                  wrapped = nullptr;
+                  wrappedCreated = false;
+                  handler.trace();
+                
+              }
+            
+
+    // non-static functions:
+    
+    // Class: QFocusEvent
+    // Function: type
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::type
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                QEvent::Type res = 
+                    
+                w->type(
+                  
+                );
+              
+            // return type: QEvent::Type
+
+            return RJSHelper::cpp2js_QEvent_Type(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for type";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: spontaneous
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::spontaneous
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                bool res = 
+                    
+                w->spontaneous(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for spontaneous";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: setAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::setAccepted
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: accepted (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                
+                w->setAccepted(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setAccepted";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: isAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::isAccepted
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isAccepted(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isAccepted";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: accept
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::accept
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                
+                w->accept(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for accept";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: ignore
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::ignore
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                
+                w->ignore(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for ignore";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: isInputEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::isInputEvent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isInputEvent(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isInputEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: isPointerEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::isPointerEvent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isPointerEvent(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isPointerEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: isSinglePointEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::isSinglePointEvent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isSinglePointEvent(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isSinglePointEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: clone
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::clone
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                QEvent* res = 
+                    
+                w->clone(
+                  
+                );
+              
+            // return type: QEvent*
+
+            return RJSHelper::cpp2js_QEvent(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for clone";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: gotFocus
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::gotFocus
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                bool res = 
+                    
+                w->gotFocus(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for gotFocus";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: lostFocus
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::lostFocus
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                bool res = 
+                    
+                w->lostFocus(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for lostFocus";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFocusEvent
+    // Function: reason
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFocusEvent_Wrapper::reason
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFocusEvent* w = getWrapped();
+                Qt::FocusReason res = 
+                    
+                w->reason(
+                  
+                );
+              
+            // return type: Qt::FocusReason
+
+            return RJSHelper::cpp2js_Qt_FocusReason(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for reason";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+
+  // member functions for static properties, forward to static function
+  
+
+
+  // protected overwritten functions / events and their public invokable counterparts:
+  
+    #include "qevent_wrapper.h"
+
+  
+      // list of registered base casters for this wrapper class:
       QList<RJSBasecaster_QPaintEvent*> QPaintEvent_Wrapper::basecasters_QPaintEvent;
     
     // static functions implementation in singleton wrapper:

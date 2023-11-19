@@ -588,6 +588,34 @@
       </variant>
     </function>
   </class>
+  <class name="QFocusEvent">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="false" type="Qt::FocusReason" modifier="" name="reason" default="Qt::OtherFocusReason" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="gotFocus">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lostFocus">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reason">
+      <variant return-type="Qt::FocusReason" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
   <class name="QPaintEvent" ownership="cpp">
     <super_list>
       <super name="QEvent" />

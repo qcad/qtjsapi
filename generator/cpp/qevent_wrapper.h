@@ -6717,6 +6717,758 @@ MaxUser = QKeyEvent::MaxUser,
     
         #include "RJSType.h"
       
+        #include <QFocusEvent>
+      
+      // singleton class wrapper for static functions:
+      class QFocusEvent_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      QFocusEvent_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {}
+
+      
+
+      // static functions:
+      
+    // Class: QFocusEvent
+    // Function: registerEventType
+    // Source: QEvent
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  registerEventType
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static QFocusEvent_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+    
+    // static functions implementation in singleton wrapper:
+    
+    // wrapper class for QFocusEvent
+    class QFocusEvent_Wrapper : public RJSWrapperObj {
+
+    
+      Q_OBJECT
+      QML_INTERFACE
+    
+
+    private:
+      // disable copy constructor:
+      QFocusEvent_Wrapper(const QFocusEvent_Wrapper&);
+
+    public:
+      // initialization of QFocusEvent:
+      static void init(RJSApi& handler);
+
+      
+        static QFocusEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
+          
+            // check if pointer points to derrived type:
+            
+
+          // hook for modules to cast from other types to base QFocusEvent:
+          for (int i=0; i<basecasters_QFocusEvent.length(); i++) {
+            RJSBasecaster_QFocusEvent* basecaster = basecasters_QFocusEvent[i];
+            QFocusEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
+
+          // object is a pointer to base class QFocusEvent:
+          if (t==RJSType_QFocusEvent::getIdStatic()) {
+            return (QFocusEvent*)vp;
+          }
+
+          qWarning() << "QFocusEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
+
+          return nullptr;
+          
+        }
+
+        static QFocusEvent* getWrappedBase(RJSWrapper* wrapper) {
+          int t = wrapper->getWrappedType();
+          void* vp = wrapper->getWrappedVoid();
+          if (vp==nullptr) {
+              //qWarning() << "getWrapped_QFocusEvent*: wrapper wraps NULL";
+          }
+
+          QFocusEvent* ret = castToBase(vp, t);
+          if (ret==nullptr && vp!=nullptr) {
+              qWarning() << "QFocusEvent*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+          }
+          return ret;
+        }
+      
+        // enums:
+        
+  enum Type {
+    None = QFocusEvent::None,
+Timer = QFocusEvent::Timer,
+MouseButtonPress = QFocusEvent::MouseButtonPress,
+MouseButtonRelease = QFocusEvent::MouseButtonRelease,
+MouseButtonDblClick = QFocusEvent::MouseButtonDblClick,
+MouseMove = QFocusEvent::MouseMove,
+KeyPress = QFocusEvent::KeyPress,
+KeyRelease = QFocusEvent::KeyRelease,
+FocusIn = QFocusEvent::FocusIn,
+FocusOut = QFocusEvent::FocusOut,
+FocusAboutToChange = QFocusEvent::FocusAboutToChange,
+Enter = QFocusEvent::Enter,
+Leave = QFocusEvent::Leave,
+Paint = QFocusEvent::Paint,
+Move = QFocusEvent::Move,
+Resize = QFocusEvent::Resize,
+Create = QFocusEvent::Create,
+Destroy = QFocusEvent::Destroy,
+Show = QFocusEvent::Show,
+Hide = QFocusEvent::Hide,
+Close = QFocusEvent::Close,
+Quit = QFocusEvent::Quit,
+ParentChange = QFocusEvent::ParentChange,
+ParentAboutToChange = QFocusEvent::ParentAboutToChange,
+ThreadChange = QFocusEvent::ThreadChange,
+WindowActivate = QFocusEvent::WindowActivate,
+WindowDeactivate = QFocusEvent::WindowDeactivate,
+ShowToParent = QFocusEvent::ShowToParent,
+HideToParent = QFocusEvent::HideToParent,
+Wheel = QFocusEvent::Wheel,
+WindowTitleChange = QFocusEvent::WindowTitleChange,
+WindowIconChange = QFocusEvent::WindowIconChange,
+ApplicationWindowIconChange = QFocusEvent::ApplicationWindowIconChange,
+ApplicationFontChange = QFocusEvent::ApplicationFontChange,
+ApplicationLayoutDirectionChange = QFocusEvent::ApplicationLayoutDirectionChange,
+ApplicationPaletteChange = QFocusEvent::ApplicationPaletteChange,
+PaletteChange = QFocusEvent::PaletteChange,
+Clipboard = QFocusEvent::Clipboard,
+Speech = QFocusEvent::Speech,
+MetaCall = QFocusEvent::MetaCall,
+SockAct = QFocusEvent::SockAct,
+WinEventAct = QFocusEvent::WinEventAct,
+DeferredDelete = QFocusEvent::DeferredDelete,
+DragEnter = QFocusEvent::DragEnter,
+DragMove = QFocusEvent::DragMove,
+DragLeave = QFocusEvent::DragLeave,
+Drop = QFocusEvent::Drop,
+DragResponse = QFocusEvent::DragResponse,
+ChildAdded = QFocusEvent::ChildAdded,
+ChildPolished = QFocusEvent::ChildPolished,
+ChildRemoved = QFocusEvent::ChildRemoved,
+ShowWindowRequest = QFocusEvent::ShowWindowRequest,
+PolishRequest = QFocusEvent::PolishRequest,
+Polish = QFocusEvent::Polish,
+LayoutRequest = QFocusEvent::LayoutRequest,
+UpdateRequest = QFocusEvent::UpdateRequest,
+UpdateLater = QFocusEvent::UpdateLater,
+EmbeddingControl = QFocusEvent::EmbeddingControl,
+ActivateControl = QFocusEvent::ActivateControl,
+DeactivateControl = QFocusEvent::DeactivateControl,
+ContextMenu = QFocusEvent::ContextMenu,
+InputMethod = QFocusEvent::InputMethod,
+TabletMove = QFocusEvent::TabletMove,
+LocaleChange = QFocusEvent::LocaleChange,
+LanguageChange = QFocusEvent::LanguageChange,
+LayoutDirectionChange = QFocusEvent::LayoutDirectionChange,
+Style = QFocusEvent::Style,
+TabletPress = QFocusEvent::TabletPress,
+TabletRelease = QFocusEvent::TabletRelease,
+OkRequest = QFocusEvent::OkRequest,
+HelpRequest = QFocusEvent::HelpRequest,
+IconDrag = QFocusEvent::IconDrag,
+FontChange = QFocusEvent::FontChange,
+EnabledChange = QFocusEvent::EnabledChange,
+ActivationChange = QFocusEvent::ActivationChange,
+StyleChange = QFocusEvent::StyleChange,
+IconTextChange = QFocusEvent::IconTextChange,
+ModifiedChange = QFocusEvent::ModifiedChange,
+MouseTrackingChange = QFocusEvent::MouseTrackingChange,
+WindowBlocked = QFocusEvent::WindowBlocked,
+WindowUnblocked = QFocusEvent::WindowUnblocked,
+WindowStateChange = QFocusEvent::WindowStateChange,
+ReadOnlyChange = QFocusEvent::ReadOnlyChange,
+ToolTip = QFocusEvent::ToolTip,
+WhatsThis = QFocusEvent::WhatsThis,
+StatusTip = QFocusEvent::StatusTip,
+ActionChanged = QFocusEvent::ActionChanged,
+ActionAdded = QFocusEvent::ActionAdded,
+ActionRemoved = QFocusEvent::ActionRemoved,
+FileOpen = QFocusEvent::FileOpen,
+Shortcut = QFocusEvent::Shortcut,
+ShortcutOverride = QFocusEvent::ShortcutOverride,
+WhatsThisClicked = QFocusEvent::WhatsThisClicked,
+ToolBarChange = QFocusEvent::ToolBarChange,
+ApplicationActivate = QFocusEvent::ApplicationActivate,
+ApplicationActivated = QFocusEvent::ApplicationActivated,
+ApplicationDeactivate = QFocusEvent::ApplicationDeactivate,
+ApplicationDeactivated = QFocusEvent::ApplicationDeactivated,
+QueryWhatsThis = QFocusEvent::QueryWhatsThis,
+EnterWhatsThisMode = QFocusEvent::EnterWhatsThisMode,
+LeaveWhatsThisMode = QFocusEvent::LeaveWhatsThisMode,
+ZOrderChange = QFocusEvent::ZOrderChange,
+HoverEnter = QFocusEvent::HoverEnter,
+HoverLeave = QFocusEvent::HoverLeave,
+HoverMove = QFocusEvent::HoverMove,
+AcceptDropsChange = QFocusEvent::AcceptDropsChange,
+ZeroTimerEvent = QFocusEvent::ZeroTimerEvent,
+GraphicsSceneMouseMove = QFocusEvent::GraphicsSceneMouseMove,
+GraphicsSceneMousePress = QFocusEvent::GraphicsSceneMousePress,
+GraphicsSceneMouseRelease = QFocusEvent::GraphicsSceneMouseRelease,
+GraphicsSceneMouseDoubleClick = QFocusEvent::GraphicsSceneMouseDoubleClick,
+GraphicsSceneContextMenu = QFocusEvent::GraphicsSceneContextMenu,
+GraphicsSceneHoverEnter = QFocusEvent::GraphicsSceneHoverEnter,
+GraphicsSceneHoverMove = QFocusEvent::GraphicsSceneHoverMove,
+GraphicsSceneHoverLeave = QFocusEvent::GraphicsSceneHoverLeave,
+GraphicsSceneHelp = QFocusEvent::GraphicsSceneHelp,
+GraphicsSceneDragEnter = QFocusEvent::GraphicsSceneDragEnter,
+GraphicsSceneDragMove = QFocusEvent::GraphicsSceneDragMove,
+GraphicsSceneDragLeave = QFocusEvent::GraphicsSceneDragLeave,
+GraphicsSceneDrop = QFocusEvent::GraphicsSceneDrop,
+GraphicsSceneWheel = QFocusEvent::GraphicsSceneWheel,
+GraphicsSceneLeave = QFocusEvent::GraphicsSceneLeave,
+KeyboardLayoutChange = QFocusEvent::KeyboardLayoutChange,
+DynamicPropertyChange = QFocusEvent::DynamicPropertyChange,
+TabletEnterProximity = QFocusEvent::TabletEnterProximity,
+TabletLeaveProximity = QFocusEvent::TabletLeaveProximity,
+NonClientAreaMouseMove = QFocusEvent::NonClientAreaMouseMove,
+NonClientAreaMouseButtonPress = QFocusEvent::NonClientAreaMouseButtonPress,
+NonClientAreaMouseButtonRelease = QFocusEvent::NonClientAreaMouseButtonRelease,
+NonClientAreaMouseButtonDblClick = QFocusEvent::NonClientAreaMouseButtonDblClick,
+MacSizeChange = QFocusEvent::MacSizeChange,
+ContentsRectChange = QFocusEvent::ContentsRectChange,
+MacGLWindowChange = QFocusEvent::MacGLWindowChange,
+FutureCallOut = QFocusEvent::FutureCallOut,
+GraphicsSceneResize = QFocusEvent::GraphicsSceneResize,
+GraphicsSceneMove = QFocusEvent::GraphicsSceneMove,
+CursorChange = QFocusEvent::CursorChange,
+ToolTipChange = QFocusEvent::ToolTipChange,
+NetworkReplyUpdated = QFocusEvent::NetworkReplyUpdated,
+GrabMouse = QFocusEvent::GrabMouse,
+UngrabMouse = QFocusEvent::UngrabMouse,
+GrabKeyboard = QFocusEvent::GrabKeyboard,
+UngrabKeyboard = QFocusEvent::UngrabKeyboard,
+StateMachineSignal = QFocusEvent::StateMachineSignal,
+StateMachineWrapped = QFocusEvent::StateMachineWrapped,
+TouchBegin = QFocusEvent::TouchBegin,
+TouchUpdate = QFocusEvent::TouchUpdate,
+TouchEnd = QFocusEvent::TouchEnd,
+NativeGesture = QFocusEvent::NativeGesture,
+RequestSoftwareInputPanel = QFocusEvent::RequestSoftwareInputPanel,
+CloseSoftwareInputPanel = QFocusEvent::CloseSoftwareInputPanel,
+WinIdChange = QFocusEvent::WinIdChange,
+Gesture = QFocusEvent::Gesture,
+GestureOverride = QFocusEvent::GestureOverride,
+ScrollPrepare = QFocusEvent::ScrollPrepare,
+Scroll = QFocusEvent::Scroll,
+Expose = QFocusEvent::Expose,
+InputMethodQuery = QFocusEvent::InputMethodQuery,
+OrientationChange = QFocusEvent::OrientationChange,
+TouchCancel = QFocusEvent::TouchCancel,
+ThemeChange = QFocusEvent::ThemeChange,
+SockClose = QFocusEvent::SockClose,
+PlatformPanel = QFocusEvent::PlatformPanel,
+StyleAnimationUpdate = QFocusEvent::StyleAnimationUpdate,
+ApplicationStateChange = QFocusEvent::ApplicationStateChange,
+WindowChangeInternal = QFocusEvent::WindowChangeInternal,
+ScreenChangeInternal = QFocusEvent::ScreenChangeInternal,
+PlatformSurface = QFocusEvent::PlatformSurface,
+Pointer = QFocusEvent::Pointer,
+TabletTrackingChange = QFocusEvent::TabletTrackingChange,
+User = QFocusEvent::User,
+MaxUser = QFocusEvent::MaxUser,
+
+  };
+  Q_ENUM(Type)
+
+    /*
+    // special constructor used as prototype:
+    
+          Q_INVOKABLE 
+          QFocusEvent_Wrapper(QJSEngine* e);
+        
+    */
+
+    
+      // special constructor to wrap existing object:
+      
+            //Q_INVOKABLE 
+            QFocusEvent_Wrapper(RJSApi& h, QFocusEvent* o, bool wrappedCreated);
+          
+
+      // destructor:
+      
+          virtual ~QFocusEvent_Wrapper();
+        
+    // initialization of signal forwarding
+    
+        void initConnections();
+      
+
+  // constructors:
+  
+    // Class: QFocusEvent
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              QFocusEvent_Wrapper
+                
+              (
+
+                
+                  // RJSApi:
+                  QObject* h
+                  
+                  ,
+                  
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+    // non-static functions:
+    
+    // Class: QFocusEvent
+    // Function: type
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  type
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: spontaneous
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  spontaneous
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: setAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setAccepted
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: isAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isAccepted
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: accept
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  accept
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: ignore
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  ignore
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: isInputEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isInputEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: isPointerEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isPointerEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: isSinglePointEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSinglePointEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: clone
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clone
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: gotFocus
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  gotFocus
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: lostFocus
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  lostFocus
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFocusEvent
+    // Function: reason
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  reason
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+          }
+        
+
+        //public:
+        // set engine:
+        //Q_INVOKABLE void setHandler(RJSApi* h) {
+        //  RJSWrapperObj::setHandler(h);
+        //}
+      
+
+  // member functions for static properties, forward to static function
+  
+
+
+  // protected overwritten functions / events and their public invokable counterparts:
+  
+        public:
+
+        // get type of wrapped object:
+        Q_INVOKABLE
+        virtual /*RJSType ID*/ int getWrappedType() const {
+          return RJSType_QFocusEvent::getIdStatic();
+        }
+
+        // return true if wrapped object is owned by C++ (not deleted):
+        Q_INVOKABLE
+        virtual bool isCppOwnership() const {
+          
+              return false;
+            
+        }
+
+        // get wrapped object:
+        QFocusEvent* getWrapped() {
+          if (wrapped!=nullptr) {
+            return wrapped;
+          }
+          
+          return nullptr;
+        }
+
+        // get wrapped object (const):
+        QFocusEvent* getWrapped() const {
+          if (wrapped!=nullptr) {
+            return wrapped;
+          }
+          
+          return nullptr;
+        }
+
+        // get wrapped object as void*:
+        virtual void* getWrappedVoid() {
+          if (wrapped!=nullptr) {
+            return wrapped;
+          }
+          
+          return nullptr;
+        }
+
+        
+
+        bool hasWrapped() const {
+          return wrapped!=nullptr 
+          
+          ;
+        }
+
+        Q_INVOKABLE
+        bool isNullWrapper() const {
+          return !hasWrapped();
+        }
+
+        Q_INVOKABLE
+        unsigned long long int getAddress() const {
+          if (wrapped!=nullptr) {
+            return (unsigned long long int)wrapped;
+          }
+          
+          return (unsigned long long int)0;
+        }
+
+        
+
+        //public slots:
+          //void slotDestroyed(QObject* obj) {
+          //  qDebug() << "destroying QObject:" << (long int)obj;
+          //}
+
+        
+
+        private:
+        // wrapped object:
+        QFocusEvent* wrapped;
+
+        
+
+        bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_QFocusEvent*> basecasters_QFocusEvent;
+
+      public:
+        static void registerBasecaster_QFocusEvent(RJSBasecaster_QFocusEvent* bc) {
+          basecasters_QFocusEvent.append(bc);
+        }
+      
+    };
+
+    Q_DECLARE_METATYPE(QFocusEvent_Wrapper*)
+
+    Q_DECLARE_INTERFACE(QFocusEvent_Wrapper, "org.qcad.QFocusEvent_Wrapper")
+
+  
+    #include <QQmlEngine>
+    
+        #include "RJSType.h"
+      
         #include <QPaintEvent>
       
       // singleton class wrapper for static functions:

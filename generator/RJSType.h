@@ -334,41 +334,6 @@
     
 
   
-      class RJSType_QSurfaceFormat : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSurfaceFormat::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QSurfaceFormat";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QSurfaceFormat();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSurfaceFormat());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
       class RJSType_QBitmap : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -1314,6 +1279,41 @@
           static int id;
       };
     
+      class RJSType_QEasingCurve : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QEasingCurve::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QEasingCurve";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QEasingCurve();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QEasingCurve());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
       class RJSType_QEventPoint : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -1794,41 +1794,6 @@
           static int getIdStatic() {
               if (id<0) {
                   id = RJSTypeEnum::reserve(new RJSType_QLocale());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_QEasingCurve : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QEasingCurve::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QEasingCurve";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QEasingCurve();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QEasingCurve());
               }
               return id;
           }
@@ -2749,6 +2714,41 @@
           static int id;
       };
     
+      class RJSType_QSurfaceFormat : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QSurfaceFormat::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSurfaceFormat";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSurfaceFormat();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QSurfaceFormat());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
       class RJSType_QTextBlockFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -3416,6 +3416,41 @@
           static int id;
       };
     
+      class RJSType_QActionEvent : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QActionEvent::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QActionEvent";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QActionEvent();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QActionEvent());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
       class RJSType_QCompleter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -3546,41 +3581,6 @@
           static int getIdStatic() {
               if (id<0) {
                   id = RJSTypeEnum::reserve(new RJSType_QDragEnterEvent());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_QActionEvent : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QActionEvent::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QActionEvent";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QActionEvent();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QActionEvent());
               }
               return id;
           }
@@ -3756,6 +3756,41 @@
           static int getIdStatic() {
               if (id<0) {
                   id = RJSTypeEnum::reserve(new RJSType_QFileIconProvider());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class RJSType_QFocusEvent : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QFocusEvent::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QFocusEvent";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QFocusEvent();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QFocusEvent());
               }
               return id;
           }
@@ -5483,251 +5518,6 @@
     
 
   
-      class RJSType_QGraphicsEffect : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsEffect::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QGraphicsEffect";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QGraphicsEffect();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsEffect());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_QGraphicsBlurEffect : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsBlurEffect::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QGraphicsBlurEffect";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QGraphicsBlurEffect();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsBlurEffect());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_QGraphicsDropShadowEffect : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsDropShadowEffect::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QGraphicsDropShadowEffect";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QGraphicsDropShadowEffect();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsDropShadowEffect());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_QGraphicsColorizeEffect : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsColorizeEffect::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QGraphicsColorizeEffect";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QGraphicsColorizeEffect();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsColorizeEffect());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_QGraphicsOpacityEffect : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsOpacityEffect::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QGraphicsOpacityEffect";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QGraphicsOpacityEffect();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsOpacityEffect());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_QQuickWidget : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QQuickWidget::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QQuickWidget";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QQuickWidget();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QQuickWidget());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_QSvgRenderer : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSvgRenderer::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QSvgRenderer";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QSvgRenderer();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSvgRenderer());
-              }
-              return id;
-          }
-
-          
-
-      private:
-          static int id;
-      };
-    
       class RJSType_QAbstractButton : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -6813,6 +6603,181 @@
           static int id;
       };
     
+      class RJSType_QGraphicsBlurEffect : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QGraphicsBlurEffect::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGraphicsBlurEffect";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGraphicsBlurEffect();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsBlurEffect());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class RJSType_QGraphicsColorizeEffect : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QGraphicsColorizeEffect::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGraphicsColorizeEffect";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGraphicsColorizeEffect();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsColorizeEffect());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class RJSType_QGraphicsDropShadowEffect : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QGraphicsDropShadowEffect::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGraphicsDropShadowEffect";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGraphicsDropShadowEffect();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsDropShadowEffect());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class RJSType_QGraphicsEffect : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QGraphicsEffect::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGraphicsEffect";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGraphicsEffect();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsEffect());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class RJSType_QGraphicsOpacityEffect : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QGraphicsOpacityEffect::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGraphicsOpacityEffect";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGraphicsOpacityEffect();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsOpacityEffect());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
       class RJSType_QGridLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -7758,6 +7723,41 @@
           static int id;
       };
     
+      class RJSType_QQuickWidget : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QQuickWidget::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QQuickWidget";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QQuickWidget();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QQuickWidget());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
       class RJSType_QRadioButton : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -8343,6 +8343,41 @@
           static int getIdStatic() {
               if (id<0) {
                   id = RJSTypeEnum::reserve(new RJSType_QStatusBar());
+              }
+              return id;
+          }
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class RJSType_QSvgRenderer : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_QSvgRenderer::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSvgRenderer";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSvgRenderer();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_QSvgRenderer());
               }
               return id;
           }
