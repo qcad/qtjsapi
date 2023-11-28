@@ -1682,8 +1682,7 @@
           virtual QJSValue fromVariant(RJSApi& handler, const QVariant& v) = 0;
           virtual QVariant toVariant(RJSApi& handler, const QJSValue& v) = 0;
         };
-      
-        QTJSAPI_EXPORT extern QVariant getWrapperProperty(RJSApi& handler, const QObject& obj);
+      QTJSAPI_EXPORT extern QVariant  getWrapperProperty(RJSApi& handler, const QObject& obj);
         QTJSAPI_EXPORT extern void setWrapperProperty(RJSApi& handler, QObject& obj, const QVariant& wrapper);
         
         QTJSAPI_EXPORT extern QJSValue getWrapperQJSValue(const QJSValue& v);

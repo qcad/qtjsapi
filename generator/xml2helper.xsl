@@ -147,18 +147,18 @@
       </xsl:if>
 
       <xsl:if test="$module=''">
-        QVariant <xsl:value-of select="$class_export"/> getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj);
-        void <xsl:value-of select="$class_export"/> setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper);
+        <xsl:value-of select="$class_export"/>extern QVariant  getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj);
+        <xsl:value-of select="$class_export"/>extern void setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper);
         
-        QJSValue <xsl:value-of select="$class_export"/> getWrapperQJSValue(const QJSValue&amp; v);
-        QObject* <xsl:value-of select="$class_export"/> getWrapperQObject(const QJSValue&amp; v);
-        RJSWrapper* <xsl:value-of select="$class_export"/> getWrapperRJSWrapper(const QJSValue&amp; v);
+        <xsl:value-of select="$class_export"/>extern QJSValue getWrapperQJSValue(const QJSValue&amp; v);
+        <xsl:value-of select="$class_export"/>extern QObject* getWrapperQObject(const QJSValue&amp; v);
+        <xsl:value-of select="$class_export"/>extern RJSWrapper* getWrapperRJSWrapper(const QJSValue&amp; v);
 
         /**
          * \return Wrapper in given type T for the given QJSValue.
          */
         template&lt;typename T&gt;
-        T* <xsl:value-of select="$class_export"/> getWrapper(const QJSValue&amp; v) {
+        T* getWrapper(const QJSValue&amp; v) {
             return dynamic_cast&lt;T*&gt;(getWrapperQObject(v));
         }
       </xsl:if>
