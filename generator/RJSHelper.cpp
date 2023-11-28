@@ -721,7 +721,7 @@
       /**
        * \return existing wrapper object for the given object in the context of the given engine.
        */
-      QVariant QTJSAPI_EXPORT  getWrapperProperty(RJSApi& handler, const QObject& obj) {
+      QVariant getWrapperProperty(RJSApi& handler, const QObject& obj) {
           QJSEngine* engine = handler.getEngine();
           return obj.property((const char*)QString("%1__wrapper__").arg(engine->objectName()).toUtf8());
       }
@@ -729,12 +729,12 @@
       /**
        * Attaches the script wrapper to the original QObject as a property in the context of the given engine.
        */
-      void QTJSAPI_EXPORT  setWrapperProperty(RJSApi& handler, QObject& obj, const QVariant& wrapper) {
+      void setWrapperProperty(RJSApi& handler, QObject& obj, const QVariant& wrapper) {
           QJSEngine* engine = handler.getEngine();
           obj.setProperty((const char*)QString("%1__wrapper__").arg(engine->objectName()).toUtf8(), wrapper);
       }
 
-      QJSValue QTJSAPI_EXPORT  getWrapperQJSValue(const QJSValue& v) {
+      QJSValue getWrapperQJSValue(const QJSValue& v) {
           if (v.prototype().hasOwnProperty("__WRAPPER__")) {
               return v.prototype();
           }
@@ -743,7 +743,7 @@
           }
       }
 
-      QObject* QTJSAPI_EXPORT  getWrapperQObject(const QJSValue& v) {
+      QObject* getWrapperQObject(const QJSValue& v) {
           QJSValue w = getWrapperQJSValue(v);
           if (!w.isQObject()) {
               return nullptr;
@@ -751,7 +751,7 @@
           return w.toQObject();
       }
 
-      RJSWrapper* QTJSAPI_EXPORT  getWrapperRJSWrapper(const QJSValue& v) {
+      RJSWrapper* getWrapperRJSWrapper(const QJSValue& v) {
           return dynamic_cast<RJSWrapper*>(getWrapperQObject(v));
       }
 

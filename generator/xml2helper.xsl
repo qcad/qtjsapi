@@ -147,18 +147,18 @@
       </xsl:if>
 
       <xsl:if test="$module=''">
-        QVariant getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj);
-        void setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper);
+        QVariant <xsl:value-of select="$class_export"/> getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj);
+        void <xsl:value-of select="$class_export"/> setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper);
         
-        QJSValue getWrapperQJSValue(const QJSValue&amp; v);
-        QObject* getWrapperQObject(const QJSValue&amp; v);
-        RJSWrapper* getWrapperRJSWrapper(const QJSValue&amp; v);
+        QJSValue <xsl:value-of select="$class_export"/> getWrapperQJSValue(const QJSValue&amp; v);
+        QObject* <xsl:value-of select="$class_export"/> getWrapperQObject(const QJSValue&amp; v);
+        RJSWrapper* <xsl:value-of select="$class_export"/> getWrapperRJSWrapper(const QJSValue&amp; v);
 
         /**
          * \return Wrapper in given type T for the given QJSValue.
          */
         template&lt;typename T&gt;
-        T* getWrapper(const QJSValue&amp; v) {
+        T* <xsl:value-of select="$class_export"/> getWrapper(const QJSValue&amp; v) {
             return dynamic_cast&lt;T*&gt;(getWrapperQObject(v));
         }
       </xsl:if>
@@ -422,7 +422,7 @@
       /**
        * \return existing wrapper object for the given object in the context of the given engine.
        */
-      QVariant <xsl:value-of select="$class_export"/> getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj) {
+      QVariant getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj) {
           QJSEngine* engine = handler.getEngine();
           return obj.property((const char*)QString("%1__wrapper__").arg(engine-&gt;objectName()).toUtf8());
       }
@@ -430,12 +430,12 @@
       /**
        * Attaches the script wrapper to the original QObject as a property in the context of the given engine.
        */
-      void <xsl:value-of select="$class_export"/> setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper) {
+      void setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper) {
           QJSEngine* engine = handler.getEngine();
           obj.setProperty((const char*)QString("%1__wrapper__").arg(engine-&gt;objectName()).toUtf8(), wrapper);
       }
 
-      QJSValue <xsl:value-of select="$class_export"/> getWrapperQJSValue(const QJSValue&amp; v) {
+      QJSValue getWrapperQJSValue(const QJSValue&amp; v) {
           if (v.prototype().hasOwnProperty("__WRAPPER__")) {
               return v.prototype();
           }
@@ -444,7 +444,7 @@
           }
       }
 
-      QObject* <xsl:value-of select="$class_export"/> getWrapperQObject(const QJSValue&amp; v) {
+      QObject* getWrapperQObject(const QJSValue&amp; v) {
           QJSValue w = getWrapperQJSValue(v);
           if (!w.isQObject()) {
               return nullptr;
@@ -452,7 +452,7 @@
           return w.toQObject();
       }
 
-      RJSWrapper* <xsl:value-of select="$class_export"/> getWrapperRJSWrapper(const QJSValue&amp; v) {
+      RJSWrapper* getWrapperRJSWrapper(const QJSValue&amp; v) {
           return dynamic_cast&lt;RJSWrapper*&gt;(getWrapperQObject(v));
       }
 
