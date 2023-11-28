@@ -16,7 +16,7 @@ See [LICENSE.txt](https://github.com/qcad/qtjsapi/blob/main/LICENSE.txt).
 Build
 -----
 ```
-CMAKE_PREFIX_PATH=/path/to/Qt/6.5.2/macos cmake -G Ninja .
+cmake -G Ninja .
 ninja
 ```
 
