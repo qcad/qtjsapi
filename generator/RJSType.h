@@ -21,9 +21,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGesture::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -35,12 +33,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGesture());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -56,9 +49,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGestureEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -70,12 +61,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGestureEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -91,9 +77,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QKeyEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -105,12 +89,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QKeyEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -126,9 +105,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QObject::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -140,12 +117,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QObject());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -161,9 +133,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPainterPathStroker::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -175,12 +145,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPainterPathStroker());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -196,9 +161,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QRegularExpressionMatchIterator::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -210,12 +173,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QRegularExpressionMatchIterator());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -231,9 +189,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QVariant::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -245,12 +201,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QVariant());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -266,9 +217,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -280,12 +229,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -305,9 +249,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -319,12 +261,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -342,9 +279,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QBitmap::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -356,12 +291,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QBitmap());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -377,9 +307,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QBrush::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -391,12 +319,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QBrush());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -412,9 +335,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QByteArray::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -426,12 +347,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QByteArray());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -447,9 +363,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QColor::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -461,12 +375,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QColor());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -482,9 +391,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QConicalGradient::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -496,12 +403,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QConicalGradient());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -517,9 +419,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QCursor::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -531,12 +431,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QCursor());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -552,9 +447,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDate::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -566,12 +459,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDate());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -587,9 +475,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDateTime::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -601,12 +487,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDateTime());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -622,9 +503,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDesktopServices::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -636,12 +515,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDesktopServices());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -657,9 +531,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDir::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -671,12 +543,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDir());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -692,9 +559,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomAttr::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -706,12 +571,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomAttr());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -727,9 +587,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomCDATASection::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -741,12 +599,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomCDATASection());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -762,9 +615,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomCharacterData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -776,12 +627,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomCharacterData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -797,9 +643,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomComment::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -811,12 +655,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomComment());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -832,9 +671,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomDocument::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -846,12 +683,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomDocument());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -867,9 +699,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomDocumentFragment::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -881,12 +711,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomDocumentFragment());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -902,9 +727,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomDocumentType::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -916,12 +739,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomDocumentType());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -937,9 +755,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomElement::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -951,12 +767,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomElement());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -972,9 +783,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -986,12 +795,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1007,9 +811,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomEntityReference::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1021,12 +823,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomEntityReference());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1042,9 +839,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomImplementation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1056,12 +851,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomImplementation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1077,9 +867,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomNamedNodeMap::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1091,12 +879,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomNamedNodeMap());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1112,9 +895,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomNode::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1126,12 +907,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomNode());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1147,9 +923,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomNodeList::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1161,12 +935,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomNodeList());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1182,9 +951,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomNotation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1196,12 +963,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomNotation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1217,9 +979,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomProcessingInstruction::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1231,12 +991,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomProcessingInstruction());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1252,9 +1007,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDomText::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1266,12 +1019,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDomText());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1287,9 +1035,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QEasingCurve::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1301,12 +1047,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QEasingCurve());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1322,9 +1063,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QEventPoint::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1336,12 +1075,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QEventPoint());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1357,9 +1091,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFileInfo::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1371,12 +1103,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFileInfo());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1392,9 +1119,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFont::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1406,12 +1131,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFont());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1427,9 +1147,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFontDatabase::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1441,12 +1159,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFontDatabase());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1462,9 +1175,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGradient::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1476,12 +1187,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGradient());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1497,9 +1203,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QIcon::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1511,12 +1215,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QIcon());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1532,9 +1231,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QImage::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1546,12 +1243,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QImage());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1567,9 +1259,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QItemSelection::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1581,12 +1271,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QItemSelection());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1602,9 +1287,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QKeyCombination::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1616,12 +1299,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QKeyCombination());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1637,9 +1315,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QKeySequence::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1651,12 +1327,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QKeySequence());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1672,9 +1343,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QLine::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1686,12 +1355,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QLine());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1707,9 +1371,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QLineF::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1721,12 +1383,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QLineF());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1742,9 +1399,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QLinearGradient::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1756,12 +1411,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QLinearGradient());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1777,9 +1427,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QLocale::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1791,12 +1439,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QLocale());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1812,9 +1455,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMargins::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1826,12 +1467,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMargins());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1847,9 +1483,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMarginsF::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1861,12 +1495,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMarginsF());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1882,9 +1511,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QModelIndex::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1896,12 +1523,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QModelIndex());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1917,9 +1539,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPageLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1931,12 +1551,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPageLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1952,9 +1567,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPageRanges::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1966,12 +1579,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPageRanges());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -1987,9 +1595,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPageSize::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2001,12 +1607,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPageSize());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2022,9 +1623,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPainterPath::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2036,12 +1635,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPainterPath());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2057,9 +1651,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPalette::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2071,12 +1663,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPalette());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2092,9 +1679,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPen::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2106,12 +1691,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPen());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2127,9 +1707,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPicture::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2141,12 +1719,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPicture());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2162,9 +1735,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPixmap::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2176,12 +1747,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPixmap());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2197,9 +1763,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPoint::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2211,12 +1775,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPoint());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2232,9 +1791,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPointF::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2246,12 +1803,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPointF());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2267,9 +1819,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPolygon::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2281,12 +1831,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPolygon());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2302,9 +1847,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPolygonF::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2316,12 +1859,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPolygonF());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2337,9 +1875,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPrinterInfo::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2351,12 +1887,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPrinterInfo());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2372,9 +1903,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QProcessEnvironment::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2386,12 +1915,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QProcessEnvironment());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2407,9 +1931,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QRadialGradient::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2421,12 +1943,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QRadialGradient());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2442,9 +1959,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QRect::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2456,12 +1971,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QRect());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2477,9 +1987,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QRectF::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2491,12 +1999,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QRectF());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2512,9 +2015,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QRegion::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2526,12 +2027,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QRegion());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2547,9 +2043,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QRegularExpression::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2561,12 +2055,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QRegularExpression());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2582,9 +2071,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QRegularExpressionMatch::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2596,12 +2083,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QRegularExpressionMatch());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2617,9 +2099,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSize::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2631,12 +2111,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSize());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2652,9 +2127,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSizeF::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2666,12 +2139,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSizeF());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2687,9 +2155,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSizePolicy::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2701,12 +2167,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSizePolicy());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2722,9 +2183,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSurfaceFormat::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2736,12 +2195,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSurfaceFormat());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2757,9 +2211,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextBlockFormat::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2771,12 +2223,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextBlockFormat());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2792,9 +2239,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextCharFormat::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2806,12 +2251,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextCharFormat());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2827,9 +2267,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextCursor::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2841,12 +2279,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextCursor());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2862,9 +2295,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextFormat::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2876,12 +2307,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextFormat());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2897,9 +2323,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextFrameFormat::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2911,12 +2335,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextFrameFormat());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2932,9 +2351,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextImageFormat::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2946,12 +2363,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextImageFormat());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -2967,9 +2379,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextLength::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2981,12 +2391,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextLength());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3002,9 +2407,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextListFormat::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3016,12 +2419,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextListFormat());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3037,9 +2435,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextTableCellFormat::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3051,12 +2447,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextTableCellFormat());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3072,9 +2463,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextTableFormat::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3086,12 +2475,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextTableFormat());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3107,9 +2491,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTime::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3121,12 +2503,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTime());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3142,9 +2519,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTransform::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3156,12 +2531,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTransform());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3177,9 +2547,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QUrl::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3191,12 +2559,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QUrl());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3212,9 +2575,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QUrlQuery::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3226,12 +2587,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QUrlQuery());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3247,9 +2603,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlAttributes::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3261,12 +2615,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlAttributes());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3282,9 +2631,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlStreamAttributes::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3296,12 +2643,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlStreamAttributes());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3319,9 +2661,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractFileIconProvider::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3333,12 +2673,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractFileIconProvider());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3354,9 +2689,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractListModel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3368,12 +2701,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractListModel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3389,9 +2717,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractTableModel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3403,12 +2729,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractTableModel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3424,9 +2745,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QActionEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3438,12 +2757,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QActionEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3459,9 +2773,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QCompleter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3473,12 +2785,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QCompleter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3494,9 +2801,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QContextMenuEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3508,12 +2813,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QContextMenuEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3529,9 +2829,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDirIterator::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3543,12 +2841,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDirIterator());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3564,9 +2857,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDragEnterEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3578,12 +2869,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDragEnterEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3599,9 +2885,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDragLeaveEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3613,12 +2897,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDragLeaveEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3634,9 +2913,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDragMoveEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3648,12 +2925,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDragMoveEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3669,9 +2941,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDropEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3683,12 +2953,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDropEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3704,9 +2969,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3718,12 +2981,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3739,9 +2997,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFileIconProvider::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3753,12 +3009,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFileIconProvider());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3774,9 +3025,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFocusEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3788,12 +3037,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFocusEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3809,9 +3053,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFontMetrics::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3823,12 +3065,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFontMetrics());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3844,9 +3081,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFontMetricsF::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3858,12 +3093,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFontMetricsF());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3879,9 +3109,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QHelpEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3893,12 +3121,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QHelpEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3914,9 +3137,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QIODeviceBase::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3928,12 +3149,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QIODeviceBase());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3949,9 +3165,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QImageReader::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3963,12 +3177,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QImageReader());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -3984,9 +3193,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QImageWriter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3998,12 +3205,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QImageWriter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4019,9 +3221,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QInputEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4033,12 +3233,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QInputEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4054,9 +3249,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QLayoutItem::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4068,12 +3261,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QLayoutItem());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4089,9 +3277,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QListWidgetItem::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4103,12 +3289,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QListWidgetItem());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4124,9 +3305,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMouseEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4138,12 +3317,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMouseEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4159,9 +3333,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPagedPaintDevice::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4173,12 +3345,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPagedPaintDevice());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4194,9 +3361,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPaintDevice::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4208,12 +3373,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPaintDevice());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4229,9 +3389,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPaintEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4243,12 +3401,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPaintEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4264,9 +3417,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPainter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4278,12 +3429,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPainter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4299,9 +3445,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPanGesture::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4313,12 +3457,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPanGesture());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4334,9 +3473,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPinchGesture::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4348,12 +3485,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPinchGesture());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4369,9 +3501,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPointerEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4383,12 +3513,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPointerEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4404,9 +3529,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPrinter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4418,12 +3541,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPrinter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4439,9 +3557,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QProcess::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4453,12 +3569,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QProcess());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4474,9 +3585,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QResizeEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4488,12 +3597,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QResizeEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4509,9 +3613,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSinglePointEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4523,12 +3625,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSinglePointEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4544,9 +3641,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSpacerItem::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4558,12 +3653,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSpacerItem());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4579,9 +3669,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QStandardItem::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4593,12 +3681,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QStandardItem());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4614,9 +3697,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QStringConverter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4628,12 +3709,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QStringConverter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4649,9 +3725,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QStringDecoder::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4663,12 +3737,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QStringDecoder());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4684,9 +3753,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QStringEncoder::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4698,12 +3765,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QStringEncoder());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4719,9 +3781,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSwipeGesture::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4733,12 +3793,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSwipeGesture());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4754,9 +3809,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTableWidgetItem::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4768,12 +3821,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTableWidgetItem());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4789,9 +3837,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextStream::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4803,12 +3849,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextStream());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4824,9 +3865,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QToolTip::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4838,12 +3877,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QToolTip());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4859,9 +3893,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTreeWidgetItem::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4873,12 +3905,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTreeWidgetItem());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4894,9 +3921,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QUiLoader::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4908,12 +3933,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QUiLoader());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4929,9 +3949,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QWheelEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4943,12 +3961,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QWheelEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4964,9 +3977,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QWidgetItem::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4978,12 +3989,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QWidgetItem());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -4999,9 +4005,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlContentHandler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5013,12 +4017,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlContentHandler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5034,9 +4033,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlDTDHandler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5048,12 +4045,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlDTDHandler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5069,9 +4061,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlDeclHandler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5083,12 +4073,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlDeclHandler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5104,9 +4089,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlDefaultHandler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5118,12 +4101,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlDefaultHandler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5139,9 +4117,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlEntityResolver::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5153,12 +4129,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlEntityResolver());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5174,9 +4145,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlErrorHandler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5188,12 +4157,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlErrorHandler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5209,9 +4173,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlInputSource::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5223,12 +4185,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlInputSource());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5244,9 +4201,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlLexicalHandler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5258,12 +4213,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlLexicalHandler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5279,9 +4229,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlLocator::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5293,12 +4241,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlLocator());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5314,9 +4257,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlParseException::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5328,12 +4269,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlParseException());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5349,9 +4285,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlReader::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5363,12 +4297,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlReader());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5384,9 +4313,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlSimpleReader::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5398,12 +4325,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlSimpleReader());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5419,9 +4341,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlStreamAttribute::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5433,12 +4353,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlStreamAttribute());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5454,9 +4369,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlStreamReader::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5468,12 +4381,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlStreamReader());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5489,9 +4397,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QXmlStreamWriter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5503,12 +4409,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QXmlStreamWriter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5526,9 +4427,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractButton::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5540,12 +4439,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractButton());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5561,9 +4455,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractItemDelegate::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5575,12 +4467,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractItemDelegate());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5596,9 +4483,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractItemModel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5610,12 +4495,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractItemModel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5631,9 +4511,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractItemView::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5645,12 +4523,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractItemView());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5666,9 +4539,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractPrintDialog::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5680,12 +4551,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractPrintDialog());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5701,9 +4567,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractScrollArea::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5715,12 +4579,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractScrollArea());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5736,9 +4595,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAbstractSlider::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5750,12 +4607,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAbstractSlider());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5771,9 +4623,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QAction::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5785,12 +4635,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QAction());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5806,9 +4651,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QActionGroup::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5820,12 +4663,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QActionGroup());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5841,9 +4679,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QApplication::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5855,12 +4691,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QApplication());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5876,9 +4707,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QBoxLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5890,12 +4719,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QBoxLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5911,9 +4735,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QBuffer::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5925,12 +4747,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QBuffer());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5946,9 +4763,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QButtonGroup::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5960,12 +4775,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QButtonGroup());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -5981,9 +4791,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QCheckBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5995,12 +4803,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QCheckBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6016,9 +4819,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QClipboard::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6030,12 +4831,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QClipboard());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6051,9 +4847,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QComboBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6065,12 +4859,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QComboBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6086,9 +4875,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QCoreApplication::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6100,12 +4887,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QCoreApplication());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6121,9 +4903,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDialog::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6135,12 +4915,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDialog());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6156,9 +4931,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDialogButtonBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6170,12 +4943,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDialogButtonBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6191,9 +4959,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDockWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6205,12 +4971,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDockWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6226,9 +4987,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDoubleSpinBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6240,12 +4999,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDoubleSpinBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6261,9 +5015,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDoubleValidator::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6275,12 +5027,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDoubleValidator());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6296,9 +5043,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QDrag::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6310,12 +5055,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QDrag());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6331,9 +5071,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QEventLoop::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6345,12 +5083,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QEventLoop());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6366,9 +5099,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFile::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6380,12 +5111,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFile());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6401,9 +5127,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFileDevice::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6415,12 +5139,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFileDevice());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6436,9 +5155,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFileDialog::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6450,12 +5167,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFileDialog());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6471,9 +5183,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFileSystemModel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6485,12 +5195,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFileSystemModel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6506,9 +5211,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFontComboBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6520,12 +5223,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFontComboBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6541,9 +5239,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFormLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6555,12 +5251,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFormLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6576,9 +5267,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFrame::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6590,12 +5279,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFrame());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6611,9 +5295,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsBlurEffect::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6625,12 +5307,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsBlurEffect());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6646,9 +5323,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsColorizeEffect::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6660,12 +5335,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsColorizeEffect());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6681,9 +5351,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsDropShadowEffect::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6695,12 +5363,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsDropShadowEffect());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6716,9 +5379,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsEffect::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6730,12 +5391,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsEffect());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6751,9 +5407,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsOpacityEffect::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6765,12 +5419,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsOpacityEffect());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6786,9 +5435,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGridLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6800,12 +5447,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGridLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6821,9 +5463,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGroupBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6835,12 +5475,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGroupBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6856,9 +5491,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGuiApplication::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6870,12 +5503,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGuiApplication());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6891,9 +5519,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QHBoxLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6905,12 +5531,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QHBoxLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6926,9 +5547,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QHeaderView::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6940,12 +5559,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QHeaderView());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6961,9 +5575,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QIODevice::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6975,12 +5587,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QIODevice());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -6996,9 +5603,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QInputDevice::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7010,12 +5615,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QInputDevice());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7031,9 +5631,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QIntValidator::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7045,12 +5643,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QIntValidator());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7066,9 +5659,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QItemDelegate::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7080,12 +5671,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QItemDelegate());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7101,9 +5687,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QItemSelectionModel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7115,12 +5699,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QItemSelectionModel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7136,9 +5715,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QLabel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7150,12 +5727,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QLabel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7171,9 +5743,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7185,12 +5755,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7206,9 +5771,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QLineEdit::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7220,12 +5783,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QLineEdit());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7241,9 +5799,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QListView::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7255,12 +5811,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QListView());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7276,9 +5827,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QListWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7290,12 +5839,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QListWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7311,9 +5855,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMainWindow::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7325,12 +5867,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMainWindow());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7346,9 +5883,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMdiArea::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7360,12 +5895,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMdiArea());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7381,9 +5911,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMdiSubWindow::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7395,12 +5923,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMdiSubWindow());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7416,9 +5939,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMenu::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7430,12 +5951,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMenu());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7451,9 +5967,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMenuBar::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7465,12 +5979,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMenuBar());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7486,9 +5995,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMessageBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7500,12 +6007,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMessageBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7521,9 +6023,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QMimeData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7535,12 +6035,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QMimeData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7556,9 +6051,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPlainTextEdit::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7570,12 +6063,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPlainTextEdit());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7591,9 +6079,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPrintDialog::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7605,12 +6091,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPrintDialog());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7626,9 +6107,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QProgressBar::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7640,12 +6119,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QProgressBar());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7661,9 +6135,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QProgressDialog::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7675,12 +6147,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QProgressDialog());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7696,9 +6163,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPushButton::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7710,12 +6175,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPushButton());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7731,9 +6191,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QQuickWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7745,12 +6203,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QQuickWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7766,9 +6219,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QRadioButton::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7780,12 +6231,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QRadioButton());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7801,9 +6247,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QRegularExpressionValidator::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7815,12 +6259,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QRegularExpressionValidator());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7836,9 +6275,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QScreen::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7850,12 +6287,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QScreen());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7871,9 +6303,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QScrollArea::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7885,12 +6315,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QScrollArea());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7906,9 +6331,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QScrollBar::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7920,12 +6343,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QScrollBar());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7941,9 +6359,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSettings::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7955,12 +6371,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSettings());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -7976,9 +6387,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QShortcut::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7990,12 +6399,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QShortcut());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8011,9 +6415,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSlider::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8025,12 +6427,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSlider());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8046,9 +6443,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSortFilterProxyModel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8060,12 +6455,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSortFilterProxyModel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8081,9 +6471,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSpinBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8095,12 +6483,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSpinBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8116,9 +6499,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSplashScreen::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8130,12 +6511,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSplashScreen());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8151,9 +6527,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSplitter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8165,12 +6539,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSplitter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8186,9 +6555,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSplitterHandle::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8200,12 +6567,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSplitterHandle());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8221,9 +6583,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QStackedLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8235,12 +6595,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QStackedLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8256,9 +6611,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QStackedWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8270,12 +6623,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QStackedWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8291,9 +6639,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QStandardItemModel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8305,12 +6651,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QStandardItemModel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8326,9 +6667,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QStatusBar::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8340,12 +6679,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QStatusBar());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8361,9 +6695,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QSvgRenderer::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8375,12 +6707,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QSvgRenderer());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8396,9 +6723,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTabBar::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8410,12 +6735,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTabBar());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8431,9 +6751,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTabWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8445,12 +6763,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTabWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8466,9 +6779,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTableView::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8480,12 +6791,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTableView());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8501,9 +6807,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTableWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8515,12 +6819,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTableWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8536,9 +6835,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextBrowser::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8550,12 +6847,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextBrowser());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8571,9 +6863,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextDocument::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8585,12 +6875,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextDocument());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8606,9 +6891,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTextEdit::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8620,12 +6903,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTextEdit());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8641,9 +6919,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTimer::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8655,12 +6931,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTimer());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8676,9 +6947,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QToolBar::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8690,12 +6959,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QToolBar());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8711,9 +6975,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QToolButton::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8725,12 +6987,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QToolButton());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8746,9 +7003,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTranslator::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8760,12 +7015,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTranslator());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8781,9 +7031,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTreeView::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8795,12 +7043,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTreeView());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8816,9 +7059,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTreeWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8830,12 +7071,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTreeWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8851,9 +7087,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QVBoxLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8865,12 +7099,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QVBoxLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8886,9 +7115,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QValidator::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8900,12 +7127,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QValidator());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8921,9 +7143,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QWidgetAction::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8935,12 +7155,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QWidgetAction());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -8956,9 +7171,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QWindow::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8970,12 +7183,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QWindow());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -9003,9 +7211,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QCalendar::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9017,12 +7223,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QCalendar());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -9038,9 +7239,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QFontInfo::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9052,12 +7251,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QFontInfo());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -9073,9 +7267,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QTimeZone::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9087,12 +7279,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QTimeZone());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -9110,9 +7297,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QGraphicsProxyWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9124,12 +7309,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QGraphicsProxyWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 
@@ -9145,9 +7325,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_QPaintEngine::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9159,12 +7337,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_QPaintEngine());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
 

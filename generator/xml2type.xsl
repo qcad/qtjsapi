@@ -61,9 +61,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_<xsl:value-of select="text()" />::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -75,12 +73,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id&lt;0) {
-                  id = RJSTypeEnum::reserve(new RJSType_<xsl:value-of select="text()" />());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           <xsl:if test="$module!=''">
             // return true if the given type is derived from type
@@ -96,6 +89,17 @@
 
     <xsl:if test="$mode='cpp'">
       int RJSType_<xsl:value-of select="text()" />::id = -1;
+
+      int RJSType_<xsl:value-of select="text()" />::getId() const {
+          return RJSType_<xsl:value-of select="text()" />::getIdStatic();
+      }
+
+      int RJSType_<xsl:value-of select="text()" />::getIdStatic() {
+          if (id&lt;0) {
+              id = RJSTypeEnum::reserve(new RJSType_<xsl:value-of select="text()" />());
+          }
+          return id;
+      }
 
 
       <xsl:if test="$module!=''">
