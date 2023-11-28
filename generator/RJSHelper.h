@@ -1701,7 +1701,8 @@
 
 
 
-      class RJSHelper {
+      class 
+       QTJSAPI_EXPORT RJSHelper {
 
       public:
         

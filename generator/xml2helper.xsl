@@ -154,7 +154,18 @@
 
 
 
-      class <xsl:value-of select="$rjshelper_class"/> {
+      class 
+      <xsl:text> </xsl:text>
+      <xsl:choose>
+        <xsl:when test="$module=''">
+          <xsl:text>QTJSAPI_EXPORT</xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="qc:uppercase($module)"/>JSAPI_EXPORT 
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:text> </xsl:text>
+      <xsl:value-of select="$rjshelper_class"/> {
 
       public:
         <xsl:if test="$module!=''">

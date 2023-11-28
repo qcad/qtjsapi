@@ -155,6 +155,7 @@
 #include "generator/cpp/qsvgrenderer_wrapper.h"
 #include "generator/cpp/qquickwidget_wrapper.h"
 #include "generator/cpp/qgraphicseffect_wrapper.h"
+#include "generator/cpp/qpaintdevice_wrapper.h"
 
 RJSApi::RJSApi(QJSEngine* engine) : engine(engine) {
     init();
@@ -435,6 +436,7 @@ void RJSApi::init() {
     QQuickWidget_Wrapper::init(*this);
     QGraphicsBlurEffect_Wrapper::init(*this);
     QFocusEvent_Wrapper::init(*this);
+    QPaintDevice_Wrapper::init(*this);
 
     {
         QString fileName = ":fixes.js";

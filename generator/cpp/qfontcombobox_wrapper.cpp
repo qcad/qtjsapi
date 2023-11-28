@@ -20662,6 +20662,8 @@ QString a1_cpp;
               QFontComboBox_Wrapper::textActivatedEmitter(
                 const QString& a1
               ) {
+
+                qDebug() << "QFontComboBox_Wrapper::textActivatedEmitter";
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20674,6 +20676,7 @@ QString a1_cpp;
   );
 
 
+  qDebug() << "emit textActivated";
                 emit textActivated(
                   a1_js
                 );
