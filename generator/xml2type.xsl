@@ -16,6 +16,17 @@
 
 <xsl:param name="mode" />
 <xsl:param name="module" />
+<xsl:param name="class_export">
+  <xsl:choose>
+    <xsl:when test="$module=''">
+      <xsl:text>QTJSAPI_EXPORT</xsl:text>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="qc:uppercase($module)"/>JSAPI_EXPORT 
+    </xsl:otherwise>
+  </xsl:choose>
+  <xsl:text> </xsl:text>
+</xsl:param>
 
 <xsl:template match="text()" />
 
@@ -42,7 +53,7 @@
 
   <xsl:for-each select="type[not(.=preceding::*)]">
     <xsl:if test="$mode='h'">
-      class RJSType_<xsl:value-of select="text()" /> : public RJSTypeEnum {
+      class <xsl:value-of select="$class_export"/> RJSType_<xsl:value-of select="text()" /> : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 

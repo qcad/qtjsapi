@@ -13,7 +13,7 @@
     
 
   
-      class RJSType_QGesture : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGesture : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -48,7 +48,7 @@
           static int id;
       };
     
-      class RJSType_QGestureEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGestureEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -83,7 +83,7 @@
           static int id;
       };
     
-      class RJSType_QKeyEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QKeyEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -118,7 +118,7 @@
           static int id;
       };
     
-      class RJSType_QObject : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QObject : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -153,7 +153,7 @@
           static int id;
       };
     
-      class RJSType_QPainterPathStroker : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPainterPathStroker : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -188,7 +188,7 @@
           static int id;
       };
     
-      class RJSType_QRegularExpressionMatchIterator : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QRegularExpressionMatchIterator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -223,7 +223,7 @@
           static int id;
       };
     
-      class RJSType_QVariant : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QVariant : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -258,7 +258,7 @@
           static int id;
       };
     
-      class RJSType_QWidget : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -297,7 +297,7 @@
   
 
   
-      class RJSType_QTextLayout : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -334,7 +334,7 @@
     
 
   
-      class RJSType_QBitmap : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QBitmap : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -369,7 +369,7 @@
           static int id;
       };
     
-      class RJSType_QBrush : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QBrush : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -404,7 +404,7 @@
           static int id;
       };
     
-      class RJSType_QByteArray : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QByteArray : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -439,7 +439,7 @@
           static int id;
       };
     
-      class RJSType_QColor : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QColor : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -474,7 +474,7 @@
           static int id;
       };
     
-      class RJSType_QConicalGradient : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QConicalGradient : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -509,7 +509,7 @@
           static int id;
       };
     
-      class RJSType_QCursor : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QCursor : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -544,7 +544,7 @@
           static int id;
       };
     
-      class RJSType_QDate : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDate : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -579,7 +579,7 @@
           static int id;
       };
     
-      class RJSType_QDateTime : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDateTime : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -614,7 +614,7 @@
           static int id;
       };
     
-      class RJSType_QDesktopServices : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDesktopServices : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -649,7 +649,7 @@
           static int id;
       };
     
-      class RJSType_QDir : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDir : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -684,7 +684,7 @@
           static int id;
       };
     
-      class RJSType_QDomAttr : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomAttr : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -719,7 +719,7 @@
           static int id;
       };
     
-      class RJSType_QDomCDATASection : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomCDATASection : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -754,7 +754,7 @@
           static int id;
       };
     
-      class RJSType_QDomCharacterData : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomCharacterData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -789,7 +789,7 @@
           static int id;
       };
     
-      class RJSType_QDomComment : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomComment : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -824,7 +824,7 @@
           static int id;
       };
     
-      class RJSType_QDomDocument : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomDocument : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -859,7 +859,7 @@
           static int id;
       };
     
-      class RJSType_QDomDocumentFragment : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomDocumentFragment : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -894,7 +894,7 @@
           static int id;
       };
     
-      class RJSType_QDomDocumentType : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomDocumentType : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -929,7 +929,7 @@
           static int id;
       };
     
-      class RJSType_QDomElement : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomElement : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -964,7 +964,7 @@
           static int id;
       };
     
-      class RJSType_QDomEntity : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -999,7 +999,7 @@
           static int id;
       };
     
-      class RJSType_QDomEntityReference : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomEntityReference : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1034,7 +1034,7 @@
           static int id;
       };
     
-      class RJSType_QDomImplementation : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomImplementation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1069,7 +1069,7 @@
           static int id;
       };
     
-      class RJSType_QDomNamedNodeMap : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomNamedNodeMap : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1104,7 +1104,7 @@
           static int id;
       };
     
-      class RJSType_QDomNode : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomNode : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1139,7 +1139,7 @@
           static int id;
       };
     
-      class RJSType_QDomNodeList : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomNodeList : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1174,7 +1174,7 @@
           static int id;
       };
     
-      class RJSType_QDomNotation : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomNotation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1209,7 +1209,7 @@
           static int id;
       };
     
-      class RJSType_QDomProcessingInstruction : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomProcessingInstruction : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1244,7 +1244,7 @@
           static int id;
       };
     
-      class RJSType_QDomText : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDomText : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1279,7 +1279,7 @@
           static int id;
       };
     
-      class RJSType_QEasingCurve : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QEasingCurve : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1314,7 +1314,7 @@
           static int id;
       };
     
-      class RJSType_QEventPoint : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QEventPoint : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1349,7 +1349,7 @@
           static int id;
       };
     
-      class RJSType_QFileInfo : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFileInfo : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1384,7 +1384,7 @@
           static int id;
       };
     
-      class RJSType_QFont : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFont : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1419,7 +1419,7 @@
           static int id;
       };
     
-      class RJSType_QFontDatabase : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFontDatabase : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1454,7 +1454,7 @@
           static int id;
       };
     
-      class RJSType_QGradient : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGradient : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1489,7 +1489,7 @@
           static int id;
       };
     
-      class RJSType_QIcon : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QIcon : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1524,7 +1524,7 @@
           static int id;
       };
     
-      class RJSType_QImage : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QImage : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1559,7 +1559,7 @@
           static int id;
       };
     
-      class RJSType_QItemSelection : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QItemSelection : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1594,7 +1594,7 @@
           static int id;
       };
     
-      class RJSType_QKeyCombination : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QKeyCombination : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1629,7 +1629,7 @@
           static int id;
       };
     
-      class RJSType_QKeySequence : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QKeySequence : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1664,7 +1664,7 @@
           static int id;
       };
     
-      class RJSType_QLine : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QLine : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1699,7 +1699,7 @@
           static int id;
       };
     
-      class RJSType_QLineF : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QLineF : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1734,7 +1734,7 @@
           static int id;
       };
     
-      class RJSType_QLinearGradient : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QLinearGradient : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1769,7 +1769,7 @@
           static int id;
       };
     
-      class RJSType_QLocale : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QLocale : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1804,7 +1804,7 @@
           static int id;
       };
     
-      class RJSType_QMargins : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMargins : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1839,7 +1839,7 @@
           static int id;
       };
     
-      class RJSType_QMarginsF : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMarginsF : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1874,7 +1874,7 @@
           static int id;
       };
     
-      class RJSType_QModelIndex : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QModelIndex : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1909,7 +1909,7 @@
           static int id;
       };
     
-      class RJSType_QPageLayout : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPageLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1944,7 +1944,7 @@
           static int id;
       };
     
-      class RJSType_QPageRanges : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPageRanges : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1979,7 +1979,7 @@
           static int id;
       };
     
-      class RJSType_QPageSize : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPageSize : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2014,7 +2014,7 @@
           static int id;
       };
     
-      class RJSType_QPainterPath : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPainterPath : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2049,7 +2049,7 @@
           static int id;
       };
     
-      class RJSType_QPalette : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPalette : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2084,7 +2084,7 @@
           static int id;
       };
     
-      class RJSType_QPen : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPen : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2119,7 +2119,7 @@
           static int id;
       };
     
-      class RJSType_QPicture : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPicture : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2154,7 +2154,7 @@
           static int id;
       };
     
-      class RJSType_QPixmap : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPixmap : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2189,7 +2189,7 @@
           static int id;
       };
     
-      class RJSType_QPoint : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPoint : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2224,7 +2224,7 @@
           static int id;
       };
     
-      class RJSType_QPointF : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPointF : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2259,7 +2259,7 @@
           static int id;
       };
     
-      class RJSType_QPolygon : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPolygon : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2294,7 +2294,7 @@
           static int id;
       };
     
-      class RJSType_QPolygonF : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPolygonF : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2329,7 +2329,7 @@
           static int id;
       };
     
-      class RJSType_QPrinterInfo : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPrinterInfo : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2364,7 +2364,7 @@
           static int id;
       };
     
-      class RJSType_QProcessEnvironment : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QProcessEnvironment : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2399,7 +2399,7 @@
           static int id;
       };
     
-      class RJSType_QRadialGradient : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QRadialGradient : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2434,7 +2434,7 @@
           static int id;
       };
     
-      class RJSType_QRect : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QRect : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2469,7 +2469,7 @@
           static int id;
       };
     
-      class RJSType_QRectF : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QRectF : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2504,7 +2504,7 @@
           static int id;
       };
     
-      class RJSType_QRegion : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QRegion : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2539,7 +2539,7 @@
           static int id;
       };
     
-      class RJSType_QRegularExpression : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QRegularExpression : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2574,7 +2574,7 @@
           static int id;
       };
     
-      class RJSType_QRegularExpressionMatch : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QRegularExpressionMatch : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2609,7 +2609,7 @@
           static int id;
       };
     
-      class RJSType_QSize : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSize : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2644,7 +2644,7 @@
           static int id;
       };
     
-      class RJSType_QSizeF : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSizeF : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2679,7 +2679,7 @@
           static int id;
       };
     
-      class RJSType_QSizePolicy : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSizePolicy : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2714,7 +2714,7 @@
           static int id;
       };
     
-      class RJSType_QSurfaceFormat : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSurfaceFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2749,7 +2749,7 @@
           static int id;
       };
     
-      class RJSType_QTextBlockFormat : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextBlockFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2784,7 +2784,7 @@
           static int id;
       };
     
-      class RJSType_QTextCharFormat : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextCharFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2819,7 +2819,7 @@
           static int id;
       };
     
-      class RJSType_QTextCursor : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextCursor : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2854,7 +2854,7 @@
           static int id;
       };
     
-      class RJSType_QTextFormat : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2889,7 +2889,7 @@
           static int id;
       };
     
-      class RJSType_QTextFrameFormat : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextFrameFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2924,7 +2924,7 @@
           static int id;
       };
     
-      class RJSType_QTextImageFormat : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextImageFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2959,7 +2959,7 @@
           static int id;
       };
     
-      class RJSType_QTextLength : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextLength : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2994,7 +2994,7 @@
           static int id;
       };
     
-      class RJSType_QTextListFormat : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextListFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3029,7 +3029,7 @@
           static int id;
       };
     
-      class RJSType_QTextTableCellFormat : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextTableCellFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3064,7 +3064,7 @@
           static int id;
       };
     
-      class RJSType_QTextTableFormat : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextTableFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3099,7 +3099,7 @@
           static int id;
       };
     
-      class RJSType_QTime : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTime : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3134,7 +3134,7 @@
           static int id;
       };
     
-      class RJSType_QTransform : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTransform : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3169,7 +3169,7 @@
           static int id;
       };
     
-      class RJSType_QUrl : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QUrl : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3204,7 +3204,7 @@
           static int id;
       };
     
-      class RJSType_QUrlQuery : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QUrlQuery : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3239,7 +3239,7 @@
           static int id;
       };
     
-      class RJSType_QXmlAttributes : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlAttributes : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3274,7 +3274,7 @@
           static int id;
       };
     
-      class RJSType_QXmlStreamAttributes : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlStreamAttributes : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3311,7 +3311,7 @@
     
 
   
-      class RJSType_QAbstractFileIconProvider : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractFileIconProvider : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3346,7 +3346,7 @@
           static int id;
       };
     
-      class RJSType_QAbstractListModel : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractListModel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3381,7 +3381,7 @@
           static int id;
       };
     
-      class RJSType_QAbstractTableModel : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractTableModel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3416,7 +3416,7 @@
           static int id;
       };
     
-      class RJSType_QActionEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QActionEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3451,7 +3451,7 @@
           static int id;
       };
     
-      class RJSType_QCompleter : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QCompleter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3486,7 +3486,7 @@
           static int id;
       };
     
-      class RJSType_QContextMenuEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QContextMenuEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3521,7 +3521,7 @@
           static int id;
       };
     
-      class RJSType_QDirIterator : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDirIterator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3556,7 +3556,7 @@
           static int id;
       };
     
-      class RJSType_QDragEnterEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDragEnterEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3591,7 +3591,7 @@
           static int id;
       };
     
-      class RJSType_QDragLeaveEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDragLeaveEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3626,7 +3626,7 @@
           static int id;
       };
     
-      class RJSType_QDragMoveEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDragMoveEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3661,7 +3661,7 @@
           static int id;
       };
     
-      class RJSType_QDropEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDropEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3696,7 +3696,7 @@
           static int id;
       };
     
-      class RJSType_QEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3731,7 +3731,7 @@
           static int id;
       };
     
-      class RJSType_QFileIconProvider : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFileIconProvider : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3766,7 +3766,7 @@
           static int id;
       };
     
-      class RJSType_QFocusEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFocusEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3801,7 +3801,7 @@
           static int id;
       };
     
-      class RJSType_QFontMetrics : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFontMetrics : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3836,7 +3836,7 @@
           static int id;
       };
     
-      class RJSType_QFontMetricsF : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFontMetricsF : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3871,7 +3871,7 @@
           static int id;
       };
     
-      class RJSType_QHelpEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QHelpEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3906,7 +3906,7 @@
           static int id;
       };
     
-      class RJSType_QIODeviceBase : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QIODeviceBase : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3941,7 +3941,7 @@
           static int id;
       };
     
-      class RJSType_QImageReader : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QImageReader : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3976,7 +3976,7 @@
           static int id;
       };
     
-      class RJSType_QImageWriter : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QImageWriter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4011,7 +4011,7 @@
           static int id;
       };
     
-      class RJSType_QInputEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QInputEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4046,7 +4046,7 @@
           static int id;
       };
     
-      class RJSType_QLayoutItem : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QLayoutItem : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4081,7 +4081,7 @@
           static int id;
       };
     
-      class RJSType_QListWidgetItem : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QListWidgetItem : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4116,7 +4116,7 @@
           static int id;
       };
     
-      class RJSType_QMouseEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMouseEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4151,7 +4151,7 @@
           static int id;
       };
     
-      class RJSType_QPagedPaintDevice : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPagedPaintDevice : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4186,7 +4186,7 @@
           static int id;
       };
     
-      class RJSType_QPaintDevice : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPaintDevice : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4221,7 +4221,7 @@
           static int id;
       };
     
-      class RJSType_QPaintEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPaintEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4256,7 +4256,7 @@
           static int id;
       };
     
-      class RJSType_QPainter : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPainter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4291,7 +4291,7 @@
           static int id;
       };
     
-      class RJSType_QPanGesture : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPanGesture : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4326,7 +4326,7 @@
           static int id;
       };
     
-      class RJSType_QPinchGesture : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPinchGesture : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4361,7 +4361,7 @@
           static int id;
       };
     
-      class RJSType_QPointerEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPointerEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4396,7 +4396,7 @@
           static int id;
       };
     
-      class RJSType_QPrinter : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPrinter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4431,7 +4431,7 @@
           static int id;
       };
     
-      class RJSType_QProcess : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QProcess : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4466,7 +4466,7 @@
           static int id;
       };
     
-      class RJSType_QResizeEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QResizeEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4501,7 +4501,7 @@
           static int id;
       };
     
-      class RJSType_QSinglePointEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSinglePointEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4536,7 +4536,7 @@
           static int id;
       };
     
-      class RJSType_QSpacerItem : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSpacerItem : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4571,7 +4571,7 @@
           static int id;
       };
     
-      class RJSType_QStandardItem : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QStandardItem : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4606,7 +4606,7 @@
           static int id;
       };
     
-      class RJSType_QStringConverter : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QStringConverter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4641,7 +4641,7 @@
           static int id;
       };
     
-      class RJSType_QStringDecoder : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QStringDecoder : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4676,7 +4676,7 @@
           static int id;
       };
     
-      class RJSType_QStringEncoder : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QStringEncoder : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4711,7 +4711,7 @@
           static int id;
       };
     
-      class RJSType_QSwipeGesture : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSwipeGesture : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4746,7 +4746,7 @@
           static int id;
       };
     
-      class RJSType_QTableWidgetItem : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTableWidgetItem : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4781,7 +4781,7 @@
           static int id;
       };
     
-      class RJSType_QTextStream : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextStream : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4816,7 +4816,7 @@
           static int id;
       };
     
-      class RJSType_QToolTip : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QToolTip : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4851,7 +4851,7 @@
           static int id;
       };
     
-      class RJSType_QTreeWidgetItem : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTreeWidgetItem : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4886,7 +4886,7 @@
           static int id;
       };
     
-      class RJSType_QUiLoader : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QUiLoader : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4921,7 +4921,7 @@
           static int id;
       };
     
-      class RJSType_QWheelEvent : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QWheelEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4956,7 +4956,7 @@
           static int id;
       };
     
-      class RJSType_QWidgetItem : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QWidgetItem : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4991,7 +4991,7 @@
           static int id;
       };
     
-      class RJSType_QXmlContentHandler : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlContentHandler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5026,7 +5026,7 @@
           static int id;
       };
     
-      class RJSType_QXmlDTDHandler : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlDTDHandler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5061,7 +5061,7 @@
           static int id;
       };
     
-      class RJSType_QXmlDeclHandler : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlDeclHandler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5096,7 +5096,7 @@
           static int id;
       };
     
-      class RJSType_QXmlDefaultHandler : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlDefaultHandler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5131,7 +5131,7 @@
           static int id;
       };
     
-      class RJSType_QXmlEntityResolver : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlEntityResolver : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5166,7 +5166,7 @@
           static int id;
       };
     
-      class RJSType_QXmlErrorHandler : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlErrorHandler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5201,7 +5201,7 @@
           static int id;
       };
     
-      class RJSType_QXmlInputSource : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlInputSource : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5236,7 +5236,7 @@
           static int id;
       };
     
-      class RJSType_QXmlLexicalHandler : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlLexicalHandler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5271,7 +5271,7 @@
           static int id;
       };
     
-      class RJSType_QXmlLocator : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlLocator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5306,7 +5306,7 @@
           static int id;
       };
     
-      class RJSType_QXmlParseException : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlParseException : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5341,7 +5341,7 @@
           static int id;
       };
     
-      class RJSType_QXmlReader : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlReader : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5376,7 +5376,7 @@
           static int id;
       };
     
-      class RJSType_QXmlSimpleReader : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlSimpleReader : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5411,7 +5411,7 @@
           static int id;
       };
     
-      class RJSType_QXmlStreamAttribute : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlStreamAttribute : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5446,7 +5446,7 @@
           static int id;
       };
     
-      class RJSType_QXmlStreamReader : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlStreamReader : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5481,7 +5481,7 @@
           static int id;
       };
     
-      class RJSType_QXmlStreamWriter : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QXmlStreamWriter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5518,7 +5518,7 @@
     
 
   
-      class RJSType_QAbstractButton : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractButton : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5553,7 +5553,7 @@
           static int id;
       };
     
-      class RJSType_QAbstractItemDelegate : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractItemDelegate : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5588,7 +5588,7 @@
           static int id;
       };
     
-      class RJSType_QAbstractItemModel : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractItemModel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5623,7 +5623,7 @@
           static int id;
       };
     
-      class RJSType_QAbstractItemView : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractItemView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5658,7 +5658,7 @@
           static int id;
       };
     
-      class RJSType_QAbstractPrintDialog : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractPrintDialog : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5693,7 +5693,7 @@
           static int id;
       };
     
-      class RJSType_QAbstractScrollArea : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractScrollArea : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5728,7 +5728,7 @@
           static int id;
       };
     
-      class RJSType_QAbstractSlider : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAbstractSlider : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5763,7 +5763,7 @@
           static int id;
       };
     
-      class RJSType_QAction : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QAction : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5798,7 +5798,7 @@
           static int id;
       };
     
-      class RJSType_QActionGroup : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QActionGroup : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5833,7 +5833,7 @@
           static int id;
       };
     
-      class RJSType_QApplication : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QApplication : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5868,7 +5868,7 @@
           static int id;
       };
     
-      class RJSType_QBoxLayout : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QBoxLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5903,7 +5903,7 @@
           static int id;
       };
     
-      class RJSType_QBuffer : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QBuffer : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5938,7 +5938,7 @@
           static int id;
       };
     
-      class RJSType_QButtonGroup : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QButtonGroup : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5973,7 +5973,7 @@
           static int id;
       };
     
-      class RJSType_QCheckBox : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QCheckBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6008,7 +6008,7 @@
           static int id;
       };
     
-      class RJSType_QClipboard : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QClipboard : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6043,7 +6043,7 @@
           static int id;
       };
     
-      class RJSType_QComboBox : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QComboBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6078,7 +6078,7 @@
           static int id;
       };
     
-      class RJSType_QCoreApplication : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QCoreApplication : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6113,7 +6113,7 @@
           static int id;
       };
     
-      class RJSType_QDialog : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDialog : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6148,7 +6148,7 @@
           static int id;
       };
     
-      class RJSType_QDialogButtonBox : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDialogButtonBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6183,7 +6183,7 @@
           static int id;
       };
     
-      class RJSType_QDockWidget : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDockWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6218,7 +6218,7 @@
           static int id;
       };
     
-      class RJSType_QDoubleSpinBox : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDoubleSpinBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6253,7 +6253,7 @@
           static int id;
       };
     
-      class RJSType_QDoubleValidator : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDoubleValidator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6288,7 +6288,7 @@
           static int id;
       };
     
-      class RJSType_QDrag : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QDrag : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6323,7 +6323,7 @@
           static int id;
       };
     
-      class RJSType_QEventLoop : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QEventLoop : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6358,7 +6358,7 @@
           static int id;
       };
     
-      class RJSType_QFile : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFile : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6393,7 +6393,7 @@
           static int id;
       };
     
-      class RJSType_QFileDevice : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFileDevice : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6428,7 +6428,7 @@
           static int id;
       };
     
-      class RJSType_QFileDialog : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFileDialog : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6463,7 +6463,7 @@
           static int id;
       };
     
-      class RJSType_QFileSystemModel : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFileSystemModel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6498,7 +6498,7 @@
           static int id;
       };
     
-      class RJSType_QFontComboBox : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFontComboBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6533,7 +6533,7 @@
           static int id;
       };
     
-      class RJSType_QFormLayout : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFormLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6568,7 +6568,7 @@
           static int id;
       };
     
-      class RJSType_QFrame : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFrame : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6603,7 +6603,7 @@
           static int id;
       };
     
-      class RJSType_QGraphicsBlurEffect : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGraphicsBlurEffect : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6638,7 +6638,7 @@
           static int id;
       };
     
-      class RJSType_QGraphicsColorizeEffect : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGraphicsColorizeEffect : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6673,7 +6673,7 @@
           static int id;
       };
     
-      class RJSType_QGraphicsDropShadowEffect : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGraphicsDropShadowEffect : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6708,7 +6708,7 @@
           static int id;
       };
     
-      class RJSType_QGraphicsEffect : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGraphicsEffect : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6743,7 +6743,7 @@
           static int id;
       };
     
-      class RJSType_QGraphicsOpacityEffect : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGraphicsOpacityEffect : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6778,7 +6778,7 @@
           static int id;
       };
     
-      class RJSType_QGridLayout : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGridLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6813,7 +6813,7 @@
           static int id;
       };
     
-      class RJSType_QGroupBox : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGroupBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6848,7 +6848,7 @@
           static int id;
       };
     
-      class RJSType_QGuiApplication : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGuiApplication : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6883,7 +6883,7 @@
           static int id;
       };
     
-      class RJSType_QHBoxLayout : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QHBoxLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6918,7 +6918,7 @@
           static int id;
       };
     
-      class RJSType_QHeaderView : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QHeaderView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6953,7 +6953,7 @@
           static int id;
       };
     
-      class RJSType_QIODevice : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QIODevice : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6988,7 +6988,7 @@
           static int id;
       };
     
-      class RJSType_QInputDevice : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QInputDevice : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7023,7 +7023,7 @@
           static int id;
       };
     
-      class RJSType_QIntValidator : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QIntValidator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7058,7 +7058,7 @@
           static int id;
       };
     
-      class RJSType_QItemDelegate : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QItemDelegate : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7093,7 +7093,7 @@
           static int id;
       };
     
-      class RJSType_QItemSelectionModel : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QItemSelectionModel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7128,7 +7128,7 @@
           static int id;
       };
     
-      class RJSType_QLabel : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QLabel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7163,7 +7163,7 @@
           static int id;
       };
     
-      class RJSType_QLayout : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7198,7 +7198,7 @@
           static int id;
       };
     
-      class RJSType_QLineEdit : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QLineEdit : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7233,7 +7233,7 @@
           static int id;
       };
     
-      class RJSType_QListView : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QListView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7268,7 +7268,7 @@
           static int id;
       };
     
-      class RJSType_QListWidget : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QListWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7303,7 +7303,7 @@
           static int id;
       };
     
-      class RJSType_QMainWindow : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMainWindow : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7338,7 +7338,7 @@
           static int id;
       };
     
-      class RJSType_QMdiArea : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMdiArea : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7373,7 +7373,7 @@
           static int id;
       };
     
-      class RJSType_QMdiSubWindow : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMdiSubWindow : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7408,7 +7408,7 @@
           static int id;
       };
     
-      class RJSType_QMenu : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMenu : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7443,7 +7443,7 @@
           static int id;
       };
     
-      class RJSType_QMenuBar : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMenuBar : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7478,7 +7478,7 @@
           static int id;
       };
     
-      class RJSType_QMessageBox : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMessageBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7513,7 +7513,7 @@
           static int id;
       };
     
-      class RJSType_QMimeData : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QMimeData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7548,7 +7548,7 @@
           static int id;
       };
     
-      class RJSType_QPlainTextEdit : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPlainTextEdit : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7583,7 +7583,7 @@
           static int id;
       };
     
-      class RJSType_QPrintDialog : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPrintDialog : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7618,7 +7618,7 @@
           static int id;
       };
     
-      class RJSType_QProgressBar : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QProgressBar : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7653,7 +7653,7 @@
           static int id;
       };
     
-      class RJSType_QProgressDialog : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QProgressDialog : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7688,7 +7688,7 @@
           static int id;
       };
     
-      class RJSType_QPushButton : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPushButton : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7723,7 +7723,7 @@
           static int id;
       };
     
-      class RJSType_QQuickWidget : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QQuickWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7758,7 +7758,7 @@
           static int id;
       };
     
-      class RJSType_QRadioButton : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QRadioButton : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7793,7 +7793,7 @@
           static int id;
       };
     
-      class RJSType_QRegularExpressionValidator : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QRegularExpressionValidator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7828,7 +7828,7 @@
           static int id;
       };
     
-      class RJSType_QScreen : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QScreen : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7863,7 +7863,7 @@
           static int id;
       };
     
-      class RJSType_QScrollArea : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QScrollArea : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7898,7 +7898,7 @@
           static int id;
       };
     
-      class RJSType_QScrollBar : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QScrollBar : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7933,7 +7933,7 @@
           static int id;
       };
     
-      class RJSType_QSettings : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSettings : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7968,7 +7968,7 @@
           static int id;
       };
     
-      class RJSType_QShortcut : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QShortcut : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8003,7 +8003,7 @@
           static int id;
       };
     
-      class RJSType_QSlider : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSlider : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8038,7 +8038,7 @@
           static int id;
       };
     
-      class RJSType_QSortFilterProxyModel : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSortFilterProxyModel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8073,7 +8073,7 @@
           static int id;
       };
     
-      class RJSType_QSpinBox : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSpinBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8108,7 +8108,7 @@
           static int id;
       };
     
-      class RJSType_QSplashScreen : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSplashScreen : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8143,7 +8143,7 @@
           static int id;
       };
     
-      class RJSType_QSplitter : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSplitter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8178,7 +8178,7 @@
           static int id;
       };
     
-      class RJSType_QSplitterHandle : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSplitterHandle : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8213,7 +8213,7 @@
           static int id;
       };
     
-      class RJSType_QStackedLayout : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QStackedLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8248,7 +8248,7 @@
           static int id;
       };
     
-      class RJSType_QStackedWidget : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QStackedWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8283,7 +8283,7 @@
           static int id;
       };
     
-      class RJSType_QStandardItemModel : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QStandardItemModel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8318,7 +8318,7 @@
           static int id;
       };
     
-      class RJSType_QStatusBar : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QStatusBar : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8353,7 +8353,7 @@
           static int id;
       };
     
-      class RJSType_QSvgRenderer : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QSvgRenderer : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8388,7 +8388,7 @@
           static int id;
       };
     
-      class RJSType_QTabBar : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTabBar : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8423,7 +8423,7 @@
           static int id;
       };
     
-      class RJSType_QTabWidget : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTabWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8458,7 +8458,7 @@
           static int id;
       };
     
-      class RJSType_QTableView : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTableView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8493,7 +8493,7 @@
           static int id;
       };
     
-      class RJSType_QTableWidget : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTableWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8528,7 +8528,7 @@
           static int id;
       };
     
-      class RJSType_QTextBrowser : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextBrowser : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8563,7 +8563,7 @@
           static int id;
       };
     
-      class RJSType_QTextDocument : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextDocument : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8598,7 +8598,7 @@
           static int id;
       };
     
-      class RJSType_QTextEdit : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTextEdit : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8633,7 +8633,7 @@
           static int id;
       };
     
-      class RJSType_QTimer : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTimer : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8668,7 +8668,7 @@
           static int id;
       };
     
-      class RJSType_QToolBar : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QToolBar : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8703,7 +8703,7 @@
           static int id;
       };
     
-      class RJSType_QToolButton : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QToolButton : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8738,7 +8738,7 @@
           static int id;
       };
     
-      class RJSType_QTranslator : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTranslator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8773,7 +8773,7 @@
           static int id;
       };
     
-      class RJSType_QTreeView : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTreeView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8808,7 +8808,7 @@
           static int id;
       };
     
-      class RJSType_QTreeWidget : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTreeWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8843,7 +8843,7 @@
           static int id;
       };
     
-      class RJSType_QVBoxLayout : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QVBoxLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8878,7 +8878,7 @@
           static int id;
       };
     
-      class RJSType_QValidator : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QValidator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8913,7 +8913,7 @@
           static int id;
       };
     
-      class RJSType_QWidgetAction : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QWidgetAction : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8948,7 +8948,7 @@
           static int id;
       };
     
-      class RJSType_QWindow : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QWindow : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8995,7 +8995,7 @@
   
 
   
-      class RJSType_QCalendar : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QCalendar : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9030,7 +9030,7 @@
           static int id;
       };
     
-      class RJSType_QFontInfo : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QFontInfo : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9065,7 +9065,7 @@
           static int id;
       };
     
-      class RJSType_QTimeZone : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QTimeZone : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9102,7 +9102,7 @@
     
 
   
-      class RJSType_QGraphicsProxyWidget : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QGraphicsProxyWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9137,7 +9137,7 @@
           static int id;
       };
     
-      class RJSType_QPaintEngine : public RJSTypeEnum {
+      class QTJSAPI_EXPORT  RJSType_QPaintEngine : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
