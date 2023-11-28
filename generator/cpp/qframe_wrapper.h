@@ -154,7 +154,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QFrame
-    class QFrame_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QFrame_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

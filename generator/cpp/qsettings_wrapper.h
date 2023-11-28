@@ -161,7 +161,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSettings
-    class QSettings_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSettings_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

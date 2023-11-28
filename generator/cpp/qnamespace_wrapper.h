@@ -76,7 +76,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QKeyCombination
-    class QKeyCombination_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QKeyCombination_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -384,7 +384,7 @@
         #include <Qt>
       
     // wrapper class for Qt
-    class Qt_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT Qt_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

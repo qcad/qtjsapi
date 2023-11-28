@@ -154,7 +154,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QGroupBox
-    class QGroupBox_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QGroupBox_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

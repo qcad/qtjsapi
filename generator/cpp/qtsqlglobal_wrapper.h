@@ -19,7 +19,7 @@
         #include <QSql>
       
     // wrapper class for QSql
-    class QSql_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSql_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -282,7 +282,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPageSize
-    class QPageSize_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPageSize_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

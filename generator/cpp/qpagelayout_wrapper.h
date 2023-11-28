@@ -23,7 +23,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPageLayout
-    class QPageLayout_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPageLayout_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

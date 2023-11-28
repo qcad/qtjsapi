@@ -160,7 +160,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QListView
-    class QListView_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QListView_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

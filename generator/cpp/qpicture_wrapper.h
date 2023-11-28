@@ -72,7 +72,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPicture
-    class QPicture_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPicture_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

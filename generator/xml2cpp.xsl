@@ -264,7 +264,7 @@
     </xsl:choose>
     -->
     // wrapper class for <xsl:value-of select="@name" />
-    class <xsl:value-of select="@name" />_Wrapper : public RJSWrapperObj {
+    class <xsl:value-of select="$class_export"/> <xsl:value-of select="@name" />_Wrapper : public RJSWrapperObj {
 
     <!--
     <xsl:if test="$base='RJSWrapper'">

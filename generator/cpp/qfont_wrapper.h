@@ -254,7 +254,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QFont
-    class QFont_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QFont_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

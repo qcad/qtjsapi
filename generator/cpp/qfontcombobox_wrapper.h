@@ -152,7 +152,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QFontComboBox
-    class QFontComboBox_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QFontComboBox_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

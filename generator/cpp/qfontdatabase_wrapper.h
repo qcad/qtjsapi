@@ -670,7 +670,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QFontDatabase
-    class QFontDatabase_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QFontDatabase_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

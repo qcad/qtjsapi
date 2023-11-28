@@ -138,7 +138,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QRegularExpression
-    class QRegularExpression_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QRegularExpression_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -706,7 +706,7 @@ UnanchoredWildcardConversion = QRegularExpression::UnanchoredWildcardConversion,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QRegularExpressionMatch
-    class QRegularExpressionMatch_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QRegularExpressionMatch_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

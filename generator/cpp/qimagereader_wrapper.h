@@ -164,7 +164,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QImageReader
-    class QImageReader_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QImageReader_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

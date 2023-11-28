@@ -283,7 +283,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QIcon
-    class QIcon_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QIcon_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

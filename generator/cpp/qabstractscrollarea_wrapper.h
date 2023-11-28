@@ -168,7 +168,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QAbstractScrollArea
-    class QAbstractScrollArea_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QAbstractScrollArea_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

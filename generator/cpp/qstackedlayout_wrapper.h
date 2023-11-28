@@ -111,7 +111,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStackedLayout
-    class QStackedLayout_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QStackedLayout_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

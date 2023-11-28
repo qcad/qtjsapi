@@ -45,7 +45,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextLayout
-    class QTextLayout_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextLayout_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

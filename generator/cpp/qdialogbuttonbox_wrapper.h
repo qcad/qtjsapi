@@ -156,7 +156,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDialogButtonBox
-    class QDialogButtonBox_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDialogButtonBox_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -154,7 +154,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QAbstractPrintDialog
-    class QAbstractPrintDialog_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QAbstractPrintDialog_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

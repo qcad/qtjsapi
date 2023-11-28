@@ -105,7 +105,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QShortcut
-    class QShortcut_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QShortcut_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

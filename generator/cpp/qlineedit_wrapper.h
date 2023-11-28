@@ -208,7 +208,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QLineEdit
-    class QLineEdit_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QLineEdit_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

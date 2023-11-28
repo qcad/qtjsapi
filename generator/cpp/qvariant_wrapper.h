@@ -47,7 +47,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QVariant
-    class QVariant_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QVariant_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

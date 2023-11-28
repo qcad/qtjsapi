@@ -160,7 +160,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QProgressDialog
-    class QProgressDialog_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QProgressDialog_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

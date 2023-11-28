@@ -95,7 +95,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QScreen
-    class QScreen_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QScreen_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

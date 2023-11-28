@@ -98,7 +98,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QUiLoader
-    class QUiLoader_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QUiLoader_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

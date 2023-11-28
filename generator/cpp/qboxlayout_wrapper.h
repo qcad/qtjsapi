@@ -114,7 +114,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QBoxLayout
-    class QBoxLayout_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QBoxLayout_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2253,7 +2253,7 @@ Up = QBoxLayout::Up,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QHBoxLayout
-    class QHBoxLayout_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QHBoxLayout_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -4380,7 +4380,7 @@ Up = QHBoxLayout::Up,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QVBoxLayout
-    class QVBoxLayout_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QVBoxLayout_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -23,7 +23,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlStreamAttribute
-    class QXmlStreamAttribute_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlStreamAttribute_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -310,7 +310,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlStreamAttributes
-    class QXmlStreamAttributes_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlStreamAttributes_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -607,7 +607,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlStreamReader
-    class QXmlStreamReader_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlStreamReader_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1646,7 +1646,7 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlStreamWriter
-    class QXmlStreamWriter_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlStreamWriter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

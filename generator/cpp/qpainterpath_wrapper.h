@@ -31,7 +31,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPainterPath
-    class QPainterPath_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPainterPath_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1441,7 +1441,7 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPainterPathStroker
-    class QPainterPathStroker_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPainterPathStroker_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

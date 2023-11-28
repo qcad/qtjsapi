@@ -24,7 +24,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QFileIconProvider
-    class QFileIconProvider_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QFileIconProvider_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

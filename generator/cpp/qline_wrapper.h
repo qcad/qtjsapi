@@ -21,7 +21,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QLine
-    class QLine_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QLine_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -709,7 +709,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QLineF
-    class QLineF_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QLineF_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

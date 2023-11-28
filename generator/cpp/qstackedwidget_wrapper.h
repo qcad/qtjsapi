@@ -152,7 +152,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStackedWidget
-    class QStackedWidget_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QStackedWidget_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

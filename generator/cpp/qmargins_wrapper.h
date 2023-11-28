@@ -21,7 +21,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QMargins
-    class QMargins_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QMargins_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -473,7 +473,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QMarginsF
-    class QMarginsF_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QMarginsF_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

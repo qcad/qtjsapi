@@ -51,7 +51,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextLength
-    class QTextLength_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextLength_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -375,7 +375,7 @@ PercentageLength = QTextLength::PercentageLength,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextFormat
-    class QTextFormat_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextFormat_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1787,7 +1787,7 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextCharFormat
-    class QTextCharFormat_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextCharFormat_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -4633,7 +4633,7 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextBlockFormat
-    class QTextBlockFormat_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextBlockFormat_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -6550,7 +6550,7 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextListFormat
-    class QTextListFormat_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextListFormat_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -8130,7 +8130,7 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextImageFormat
-    class QTextImageFormat_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextImageFormat_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -10014,7 +10014,7 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextFrameFormat
-    class QTextFrameFormat_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextFrameFormat_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -12004,7 +12004,7 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextTableFormat
-    class QTextTableFormat_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextTableFormat_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -13187,7 +13187,7 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextTableCellFormat
-    class QTextTableCellFormat_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextTableCellFormat_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

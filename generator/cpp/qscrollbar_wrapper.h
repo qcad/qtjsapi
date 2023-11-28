@@ -166,7 +166,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QScrollBar
-    class QScrollBar_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QScrollBar_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

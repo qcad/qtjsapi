@@ -89,7 +89,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QButtonGroup
-    class QButtonGroup_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QButtonGroup_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

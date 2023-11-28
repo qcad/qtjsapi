@@ -23,7 +23,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStandardItem
-    class QStandardItem_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QStandardItem_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2106,7 +2106,7 @@ UserType = QStandardItem::UserType,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStandardItemModel
-    class QStandardItemModel_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QStandardItemModel_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

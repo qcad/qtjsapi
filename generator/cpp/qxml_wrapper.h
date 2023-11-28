@@ -47,7 +47,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlAttributes
-    class QXmlAttributes_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlAttributes_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -571,7 +571,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlInputSource
-    class QXmlInputSource_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlInputSource_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -915,7 +915,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlParseException
-    class QXmlParseException_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlParseException_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1279,7 +1279,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlReader
-    class QXmlReader_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlReader_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1888,7 +1888,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlSimpleReader
-    class QXmlSimpleReader_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlSimpleReader_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2537,7 +2537,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlLocator
-    class QXmlLocator_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlLocator_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2795,7 +2795,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlContentHandler
-    class QXmlContentHandler_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlContentHandler_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -3309,7 +3309,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlErrorHandler
-    class QXmlErrorHandler_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlErrorHandler_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -3619,7 +3619,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlDTDHandler
-    class QXmlDTDHandler_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlDTDHandler_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -3926,7 +3926,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlEntityResolver
-    class QXmlEntityResolver_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlEntityResolver_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -4167,7 +4167,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlLexicalHandler
-    class QXmlLexicalHandler_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlLexicalHandler_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -4565,7 +4565,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlDeclHandler
-    class QXmlDeclHandler_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlDeclHandler_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -4906,7 +4906,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QXmlDefaultHandler
-    class QXmlDefaultHandler_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QXmlDefaultHandler_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

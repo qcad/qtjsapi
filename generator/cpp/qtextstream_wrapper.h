@@ -25,7 +25,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextStream
-    class QTextStream_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextStream_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

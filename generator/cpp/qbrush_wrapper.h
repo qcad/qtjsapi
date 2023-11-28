@@ -27,7 +27,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QBrush
-    class QBrush_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QBrush_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -580,7 +580,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QGradient
-    class QGradient_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QGradient_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1224,7 +1224,7 @@ NumPresets = QGradient::NumPresets,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QLinearGradient
-    class QLinearGradient_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QLinearGradient_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1964,7 +1964,7 @@ NumPresets = QLinearGradient::NumPresets,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QRadialGradient
-    class QRadialGradient_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QRadialGradient_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2844,7 +2844,7 @@ NumPresets = QRadialGradient::NumPresets,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QConicalGradient
-    class QConicalGradient_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QConicalGradient_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -21,7 +21,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSize
-    class QSize_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSize_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -661,7 +661,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSizeF
-    class QSizeF_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSizeF_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

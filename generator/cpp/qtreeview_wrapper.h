@@ -181,7 +181,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTreeView
-    class QTreeView_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTreeView_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

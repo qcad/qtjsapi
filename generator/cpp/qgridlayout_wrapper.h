@@ -111,7 +111,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QGridLayout
-    class QGridLayout_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QGridLayout_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

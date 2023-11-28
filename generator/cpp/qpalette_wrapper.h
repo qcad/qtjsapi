@@ -23,7 +23,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPalette
-    class QPalette_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPalette_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

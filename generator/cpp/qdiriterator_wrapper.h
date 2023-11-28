@@ -21,7 +21,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDirIterator
-    class QDirIterator_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDirIterator_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -21,7 +21,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QIODeviceBase
-    class QIODeviceBase_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QIODeviceBase_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

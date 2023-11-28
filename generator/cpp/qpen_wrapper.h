@@ -27,7 +27,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPen
-    class QPen_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPen_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

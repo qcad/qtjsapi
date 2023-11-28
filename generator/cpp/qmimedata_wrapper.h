@@ -86,7 +86,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QMimeData
-    class QMimeData_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QMimeData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

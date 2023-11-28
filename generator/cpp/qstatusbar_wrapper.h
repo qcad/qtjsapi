@@ -152,7 +152,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStatusBar
-    class QStatusBar_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QStatusBar_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

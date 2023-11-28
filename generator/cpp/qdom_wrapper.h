@@ -137,7 +137,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomImplementation
-    class QDomImplementation_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomImplementation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -573,7 +573,7 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomNode
-    class QDomNode_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomNode_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2316,7 +2316,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomNodeList
-    class QDomNodeList_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomNodeList_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2766,7 +2766,7 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomDocumentType
-    class QDomDocumentType_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomDocumentType_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -4587,7 +4587,7 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomDocument
-    class QDomDocument_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomDocument_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -6760,7 +6760,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomNamedNodeMap
-    class QDomNamedNodeMap_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomNamedNodeMap_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -7360,7 +7360,7 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomDocumentFragment
-    class QDomDocumentFragment_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomDocumentFragment_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -9055,7 +9055,7 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomCharacterData
-    class QDomCharacterData_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomCharacterData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -10962,7 +10962,7 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomAttr
-    class QDomAttr_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomAttr_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -12764,7 +12764,7 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomElement
-    class QDomElement_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomElement_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -14921,7 +14921,7 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomText
-    class QDomText_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomText_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -16843,7 +16843,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomComment
-    class QDomComment_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomComment_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -17330,7 +17330,7 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomCDATASection
-    class QDomCDATASection_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomCDATASection_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -19248,7 +19248,7 @@ EncodingFromTextStream = QDomCDATASection::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomNotation
-    class QDomNotation_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomNotation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -20985,7 +20985,7 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomEntity
-    class QDomEntity_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomEntity_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -22743,7 +22743,7 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomEntityReference
-    class QDomEntityReference_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomEntityReference_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -24438,7 +24438,7 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDomProcessingInstruction
-    class QDomProcessingInstruction_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDomProcessingInstruction_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

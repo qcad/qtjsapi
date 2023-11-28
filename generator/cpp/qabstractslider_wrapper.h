@@ -156,7 +156,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QAbstractSlider
-    class QAbstractSlider_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QAbstractSlider_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

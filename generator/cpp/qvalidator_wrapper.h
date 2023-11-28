@@ -84,7 +84,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QValidator
-    class QValidator_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QValidator_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -908,7 +908,7 @@ Acceptable = QValidator::Acceptable,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QIntValidator
-    class QIntValidator_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QIntValidator_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1912,7 +1912,7 @@ Acceptable = QIntValidator::Acceptable,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDoubleValidator
-    class QDoubleValidator_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDoubleValidator_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -3079,7 +3079,7 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QRegularExpressionValidator
-    class QRegularExpressionValidator_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QRegularExpressionValidator_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

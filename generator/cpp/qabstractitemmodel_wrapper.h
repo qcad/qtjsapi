@@ -27,7 +27,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QModelIndex
-    class QModelIndex_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QModelIndex_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -515,7 +515,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QAbstractItemModel
-    class QAbstractItemModel_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QAbstractItemModel_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2236,7 +2236,7 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QAbstractTableModel
-    class QAbstractTableModel_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QAbstractTableModel_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -3912,7 +3912,7 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QAbstractListModel
-    class QAbstractListModel_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QAbstractListModel_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

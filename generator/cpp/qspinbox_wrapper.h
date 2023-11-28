@@ -152,7 +152,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSpinBox
-    class QSpinBox_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSpinBox_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -6384,7 +6384,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDoubleSpinBox
-    class QDoubleSpinBox_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDoubleSpinBox_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

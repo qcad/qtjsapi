@@ -21,7 +21,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QRect
-    class QRect_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QRect_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1564,7 +1564,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QRectF
-    class QRectF_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QRectF_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

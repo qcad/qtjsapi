@@ -84,7 +84,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QActionGroup
-    class QActionGroup_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QActionGroup_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

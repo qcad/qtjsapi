@@ -25,7 +25,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QFontMetrics
-    class QFontMetrics_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QFontMetrics_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -881,7 +881,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QFontMetricsF
-    class QFontMetricsF_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QFontMetricsF_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

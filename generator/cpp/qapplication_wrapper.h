@@ -1859,7 +1859,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QApplication
-    class QApplication_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QApplication_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

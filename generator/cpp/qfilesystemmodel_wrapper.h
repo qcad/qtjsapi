@@ -86,7 +86,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QFileSystemModel
-    class QFileSystemModel_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QFileSystemModel_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

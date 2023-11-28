@@ -23,7 +23,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QEasingCurve
-    class QEasingCurve_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QEasingCurve_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

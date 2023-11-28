@@ -398,7 +398,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QLocale
-    class QLocale_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QLocale_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

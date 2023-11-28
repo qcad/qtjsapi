@@ -156,7 +156,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSplitter
-    class QSplitter_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSplitter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -6863,7 +6863,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSplitterHandle
-    class QSplitterHandle_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSplitterHandle_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

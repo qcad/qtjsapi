@@ -84,7 +84,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QEventLoop
-    class QEventLoop_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QEventLoop_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

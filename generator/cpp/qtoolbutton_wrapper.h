@@ -164,7 +164,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QToolButton
-    class QToolButton_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QToolButton_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

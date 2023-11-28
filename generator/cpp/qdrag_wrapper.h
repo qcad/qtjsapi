@@ -109,7 +109,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDrag
-    class QDrag_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDrag_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

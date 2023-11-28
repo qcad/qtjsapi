@@ -23,7 +23,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTreeWidgetItem
-    class QTreeWidgetItem_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTreeWidgetItem_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1631,7 +1631,7 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTreeWidget
-    class QTreeWidget_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTreeWidget_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

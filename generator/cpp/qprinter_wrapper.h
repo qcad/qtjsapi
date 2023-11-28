@@ -84,7 +84,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPrinter
-    class QPrinter_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPrinter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

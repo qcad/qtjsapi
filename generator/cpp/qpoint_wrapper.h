@@ -84,7 +84,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPoint
-    class QPoint_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPoint_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -683,7 +683,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPointF
-    class QPointF_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPointF_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

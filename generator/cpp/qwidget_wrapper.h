@@ -383,7 +383,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QWidget
-    class QWidget_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QWidget_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

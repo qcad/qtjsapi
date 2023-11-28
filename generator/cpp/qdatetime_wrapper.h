@@ -165,7 +165,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDate
-    class QDate_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDate_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1022,7 +1022,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTime
-    class QTime_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTime_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1898,7 +1898,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QDateTime
-    class QDateTime_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QDateTime_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

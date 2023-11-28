@@ -100,7 +100,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QBuffer
-    class QBuffer_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QBuffer_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

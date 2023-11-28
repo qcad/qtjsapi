@@ -392,7 +392,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QMessageBox
-    class QMessageBox_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QMessageBox_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

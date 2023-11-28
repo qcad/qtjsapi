@@ -338,7 +338,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QUrl
-    class QUrl_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QUrl_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

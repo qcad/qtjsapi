@@ -72,7 +72,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QProcessEnvironment
-    class QProcessEnvironment_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QProcessEnvironment_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -666,7 +666,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QProcess
-    class QProcess_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QProcess_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

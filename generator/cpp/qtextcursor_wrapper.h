@@ -45,7 +45,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextCursor
-    class QTextCursor_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTextCursor_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -196,7 +196,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTransform
-    class QTransform_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTransform_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

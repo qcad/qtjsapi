@@ -94,7 +94,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QAbstractItemDelegate
-    class QAbstractItemDelegate_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QAbstractItemDelegate_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

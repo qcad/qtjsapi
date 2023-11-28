@@ -80,7 +80,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStringConverter
-    class QStringConverter_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QStringConverter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -455,7 +455,7 @@ LastEncoding = QStringConverter::LastEncoding,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStringEncoder
-    class QStringEncoder_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QStringEncoder_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -900,7 +900,7 @@ LastEncoding = QStringEncoder::LastEncoding,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStringDecoder
-    class QStringDecoder_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QStringDecoder_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

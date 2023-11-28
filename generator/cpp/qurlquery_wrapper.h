@@ -21,7 +21,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QUrlQuery
-    class QUrlQuery_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QUrlQuery_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

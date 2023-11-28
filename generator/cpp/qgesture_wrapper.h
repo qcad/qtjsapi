@@ -86,7 +86,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QGesture
-    class QGesture_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QGesture_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -947,7 +947,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPanGesture
-    class QPanGesture_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPanGesture_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1630,7 +1630,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPinchGesture
-    class QPinchGesture_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPinchGesture_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -3039,7 +3039,7 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSwipeGesture
-    class QSwipeGesture_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSwipeGesture_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

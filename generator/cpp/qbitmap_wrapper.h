@@ -209,7 +209,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QBitmap
-    class QBitmap_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QBitmap_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

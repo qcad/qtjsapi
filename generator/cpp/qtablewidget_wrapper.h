@@ -23,7 +23,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTableWidgetItem
-    class QTableWidgetItem_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTableWidgetItem_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1190,7 +1190,7 @@ UserType = QTableWidgetItem::UserType,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTableWidget
-    class QTableWidget_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QTableWidget_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

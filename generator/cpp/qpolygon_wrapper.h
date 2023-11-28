@@ -29,7 +29,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPolygon
-    class QPolygon_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPolygon_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -555,7 +555,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPolygonF
-    class QPolygonF_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QPolygonF_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

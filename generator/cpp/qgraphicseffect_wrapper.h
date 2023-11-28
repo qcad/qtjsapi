@@ -92,7 +92,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QGraphicsEffect
-    class QGraphicsEffect_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QGraphicsEffect_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -858,7 +858,7 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QGraphicsColorizeEffect
-    class QGraphicsColorizeEffect_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QGraphicsColorizeEffect_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1386,7 +1386,7 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QGraphicsBlurEffect
-    class QGraphicsBlurEffect_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QGraphicsBlurEffect_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2265,7 +2265,7 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QGraphicsDropShadowEffect
-    class QGraphicsDropShadowEffect_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QGraphicsDropShadowEffect_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -2884,7 +2884,7 @@ PadToEffectiveBoundingRect = QGraphicsDropShadowEffect::PadToEffectiveBoundingRe
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QGraphicsOpacityEffect
-    class QGraphicsOpacityEffect_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QGraphicsOpacityEffect_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

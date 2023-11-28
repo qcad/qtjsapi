@@ -90,7 +90,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSvgRenderer
-    class QSvgRenderer_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSvgRenderer_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -105,7 +105,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QInputDevice
-    class QInputDevice_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QInputDevice_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -225,7 +225,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QToolTip
-    class QToolTip_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QToolTip_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

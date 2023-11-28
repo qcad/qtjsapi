@@ -184,7 +184,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QKeySequence
-    class QKeySequence_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QKeySequence_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

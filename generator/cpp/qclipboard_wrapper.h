@@ -90,7 +90,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QClipboard
-    class QClipboard_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QClipboard_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

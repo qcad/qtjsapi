@@ -92,7 +92,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QIODevice
-    class QIODevice_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QIODevice_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

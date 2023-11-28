@@ -73,7 +73,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QRegion
-    class QRegion_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QRegion_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

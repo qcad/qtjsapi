@@ -34,7 +34,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QLayoutItem
-    class QLayoutItem_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QLayoutItem_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -642,7 +642,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSpacerItem
-    class QSpacerItem_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSpacerItem_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1316,7 +1316,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QWidgetItem
-    class QWidgetItem_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QWidgetItem_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

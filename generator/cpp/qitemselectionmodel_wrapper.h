@@ -86,7 +86,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QItemSelectionModel
-    class QItemSelectionModel_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QItemSelectionModel_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -1325,7 +1325,7 @@ ClearAndSelect = QItemSelectionModel::ClearAndSelect,
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QItemSelection
-    class QItemSelection_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QItemSelection_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

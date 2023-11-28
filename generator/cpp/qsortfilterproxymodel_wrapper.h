@@ -84,7 +84,7 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QSortFilterProxyModel
-    class QSortFilterProxyModel_Wrapper : public RJSWrapperObj {
+    class QTJSAPI_EXPORT QSortFilterProxyModel_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
