@@ -16,6 +16,17 @@
 
 <xsl:param name="mode" />
 <xsl:param name="module" />
+<xsl:param name="class_export">
+  <xsl:choose>
+    <xsl:when test="$module=''">
+      <xsl:text>QTJSAPI_EXPORT</xsl:text>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="qc:uppercase($module)"/>JSAPI_EXPORT 
+    </xsl:otherwise>
+  </xsl:choose>
+  <xsl:text> </xsl:text>
+</xsl:param>
 
 <!--
 <xsl:param name="qobject">
@@ -171,7 +182,7 @@
   <xsl:if test="$mode='h'">
     <xsl:if test="not(ancestor-or-self::qsrc:namespace) and (qsrc:function[@static='true'] or qsrc:function/qsrc:variant[@static='true'])">
       // singleton class wrapper for static functions:
-      class <xsl:value-of select="@name" />_WrapperSingleton: public QObject {
+      class <xsl:value-of select="$class_export"/> <xsl:value-of select="@name" />_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

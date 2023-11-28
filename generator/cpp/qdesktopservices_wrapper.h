@@ -23,7 +23,7 @@
         #include <QDesktopServices>
       
       // singleton class wrapper for static functions:
-      class QDesktopServices_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDesktopServices_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

@@ -24,7 +24,7 @@
       #include "qitemdelegate_base.h"
     
       // singleton class wrapper for static functions:
-      class QItemDelegate_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QItemDelegate_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

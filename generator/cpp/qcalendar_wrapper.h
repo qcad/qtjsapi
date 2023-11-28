@@ -21,7 +21,7 @@
         #include <QCalendar>
       
       // singleton class wrapper for static functions:
-      class QCalendar_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QCalendar_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

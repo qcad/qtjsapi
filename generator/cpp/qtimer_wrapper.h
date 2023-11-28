@@ -19,7 +19,7 @@
         #include <QTimer>
       
       // singleton class wrapper for static functions:
-      class QTimer_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTimer_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

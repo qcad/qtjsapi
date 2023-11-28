@@ -27,7 +27,7 @@
         #include <QGraphicsEffect>
       
       // singleton class wrapper for static functions:
-      class QGraphicsEffect_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QGraphicsEffect_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1321,7 +1321,7 @@ PadToEffectiveBoundingRect = QGraphicsColorizeEffect::PadToEffectiveBoundingRect
         #include <QGraphicsBlurEffect>
       
       // singleton class wrapper for static functions:
-      class QGraphicsBlurEffect_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QGraphicsBlurEffect_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

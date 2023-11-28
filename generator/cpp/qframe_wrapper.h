@@ -24,7 +24,7 @@
       #include "qframe_base.h"
     
       // singleton class wrapper for static functions:
-      class QFrame_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QFrame_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

@@ -25,7 +25,7 @@
         #include <QClipboard>
       
       // singleton class wrapper for static functions:
-      class QClipboard_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QClipboard_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

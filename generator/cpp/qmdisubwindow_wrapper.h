@@ -26,7 +26,7 @@
       #include "qmdisubwindow_base.h"
     
       // singleton class wrapper for static functions:
-      class QMdiSubWindow_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QMdiSubWindow_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

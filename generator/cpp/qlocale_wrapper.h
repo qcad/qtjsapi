@@ -33,7 +33,7 @@
         #include <QLocale>
       
       // singleton class wrapper for static functions:
-      class QLocale_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QLocale_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

@@ -24,7 +24,7 @@
       #include "qabstractprintdialog_base.h"
     
       // singleton class wrapper for static functions:
-      class QAbstractPrintDialog_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QAbstractPrintDialog_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

@@ -25,7 +25,7 @@
         #include <QColor>
       
       // singleton class wrapper for static functions:
-      class QColor_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QColor_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

@@ -24,7 +24,7 @@
       #include "qtreeview_base.h"
     
       // singleton class wrapper for static functions:
-      class QTreeView_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTreeView_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

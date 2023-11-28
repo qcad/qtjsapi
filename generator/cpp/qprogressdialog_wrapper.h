@@ -30,7 +30,7 @@
       #include "qprogressdialog_base.h"
     
       // singleton class wrapper for static functions:
-      class QProgressDialog_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QProgressDialog_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

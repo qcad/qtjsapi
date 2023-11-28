@@ -27,7 +27,7 @@
         #include <QRegularExpression>
       
       // singleton class wrapper for static functions:
-      class QRegularExpression_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QRegularExpression_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

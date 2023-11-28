@@ -23,7 +23,7 @@
         #include <QTransform>
       
       // singleton class wrapper for static functions:
-      class QTransform_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTransform_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

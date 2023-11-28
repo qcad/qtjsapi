@@ -24,7 +24,7 @@
       #include "qradiobutton_base.h"
     
       // singleton class wrapper for static functions:
-      class QRadioButton_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QRadioButton_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

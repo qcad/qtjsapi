@@ -27,7 +27,7 @@
         #include <QInputEvent>
       
       // singleton class wrapper for static functions:
-      class QInputEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QInputEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -793,7 +793,7 @@ MaxUser = QInputEvent::MaxUser,
         #include <QPointerEvent>
       
       // singleton class wrapper for static functions:
-      class QPointerEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPointerEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1852,7 +1852,7 @@ MaxUser = QPointerEvent::MaxUser,
         #include <QSinglePointEvent>
       
       // singleton class wrapper for static functions:
-      class QSinglePointEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QSinglePointEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -2991,7 +2991,7 @@ MaxUser = QSinglePointEvent::MaxUser,
         #include <QMouseEvent>
       
       // singleton class wrapper for static functions:
-      class QMouseEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QMouseEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -4317,7 +4317,7 @@ MaxUser = QMouseEvent::MaxUser,
         #include <QWheelEvent>
       
       // singleton class wrapper for static functions:
-      class QWheelEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QWheelEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -5743,7 +5743,7 @@ MaxUser = QWheelEvent::MaxUser,
         #include <QKeyEvent>
       
       // singleton class wrapper for static functions:
-      class QKeyEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QKeyEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -6720,7 +6720,7 @@ MaxUser = QKeyEvent::MaxUser,
         #include <QFocusEvent>
       
       // singleton class wrapper for static functions:
-      class QFocusEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QFocusEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -7472,7 +7472,7 @@ MaxUser = QFocusEvent::MaxUser,
         #include <QPaintEvent>
       
       // singleton class wrapper for static functions:
-      class QPaintEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPaintEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -8199,7 +8199,7 @@ MaxUser = QPaintEvent::MaxUser,
         #include <QResizeEvent>
       
       // singleton class wrapper for static functions:
-      class QResizeEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QResizeEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -8930,7 +8930,7 @@ MaxUser = QResizeEvent::MaxUser,
         #include <QDragEnterEvent>
       
       // singleton class wrapper for static functions:
-      class QDragEnterEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDragEnterEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -9807,7 +9807,7 @@ MaxUser = QDragEnterEvent::MaxUser,
         #include <QDropEvent>
       
       // singleton class wrapper for static functions:
-      class QDropEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDropEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -10667,7 +10667,7 @@ MaxUser = QDropEvent::MaxUser,
         #include <QContextMenuEvent>
       
       // singleton class wrapper for static functions:
-      class QContextMenuEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QContextMenuEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -11607,7 +11607,7 @@ Other = QContextMenuEvent::Other,
         #include <QDragMoveEvent>
       
       // singleton class wrapper for static functions:
-      class QDragMoveEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDragMoveEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -12492,7 +12492,7 @@ MaxUser = QDragMoveEvent::MaxUser,
         #include <QDragLeaveEvent>
       
       // singleton class wrapper for static functions:
-      class QDragLeaveEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDragLeaveEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -13171,7 +13171,7 @@ MaxUser = QDragLeaveEvent::MaxUser,
         #include <QHelpEvent>
       
       // singleton class wrapper for static functions:
-      class QHelpEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QHelpEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -13990,7 +13990,7 @@ MaxUser = QHelpEvent::MaxUser,
         #include <QActionEvent>
       
       // singleton class wrapper for static functions:
-      class QActionEvent_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QActionEvent_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

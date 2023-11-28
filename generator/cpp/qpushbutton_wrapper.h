@@ -26,7 +26,7 @@
       #include "qpushbutton_base.h"
     
       // singleton class wrapper for static functions:
-      class QPushButton_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPushButton_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

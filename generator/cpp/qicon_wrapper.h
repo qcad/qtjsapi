@@ -23,7 +23,7 @@
         #include <QIcon>
       
       // singleton class wrapper for static functions:
-      class QIcon_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QIcon_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

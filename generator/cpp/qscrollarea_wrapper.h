@@ -22,7 +22,7 @@
       #include "qscrollarea_base.h"
     
       // singleton class wrapper for static functions:
-      class QScrollArea_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QScrollArea_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

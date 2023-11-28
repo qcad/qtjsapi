@@ -27,7 +27,7 @@
         #include <QImageReader>
       
       // singleton class wrapper for static functions:
-      class QImageReader_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QImageReader_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

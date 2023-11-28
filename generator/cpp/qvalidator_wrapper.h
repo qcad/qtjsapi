@@ -19,7 +19,7 @@
         #include <QValidator>
       
       // singleton class wrapper for static functions:
-      class QValidator_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QValidator_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -843,7 +843,7 @@ Acceptable = QValidator::Acceptable,
         #include <QIntValidator>
       
       // singleton class wrapper for static functions:
-      class QIntValidator_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QIntValidator_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1847,7 +1847,7 @@ Acceptable = QIntValidator::Acceptable,
         #include <QDoubleValidator>
       
       // singleton class wrapper for static functions:
-      class QDoubleValidator_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDoubleValidator_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -3014,7 +3014,7 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
         #include <QRegularExpressionValidator>
       
       // singleton class wrapper for static functions:
-      class QRegularExpressionValidator_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QRegularExpressionValidator_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

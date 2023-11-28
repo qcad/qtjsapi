@@ -19,7 +19,7 @@
         #include <QWidgetAction>
       
       // singleton class wrapper for static functions:
-      class QWidgetAction_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QWidgetAction_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

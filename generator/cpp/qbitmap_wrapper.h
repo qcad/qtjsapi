@@ -21,7 +21,7 @@
         #include <QBitmap>
       
       // singleton class wrapper for static functions:
-      class QBitmap_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QBitmap_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

@@ -19,7 +19,7 @@
         #include <QActionGroup>
       
       // singleton class wrapper for static functions:
-      class QActionGroup_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QActionGroup_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

@@ -19,7 +19,7 @@
         #include <QPoint>
       
       // singleton class wrapper for static functions:
-      class QPoint_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPoint_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -618,7 +618,7 @@
         #include <QPointF>
       
       // singleton class wrapper for static functions:
-      class QPointF_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPointF_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

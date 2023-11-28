@@ -19,7 +19,7 @@
         #include <QStringConverter>
       
       // singleton class wrapper for static functions:
-      class QStringConverter_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QStringConverter_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -398,7 +398,7 @@ LastEncoding = QStringConverter::LastEncoding,
         #include <QStringEncoder>
       
       // singleton class wrapper for static functions:
-      class QStringEncoder_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QStringEncoder_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -843,7 +843,7 @@ LastEncoding = QStringEncoder::LastEncoding,
         #include <QStringDecoder>
       
       // singleton class wrapper for static functions:
-      class QStringDecoder_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QStringDecoder_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

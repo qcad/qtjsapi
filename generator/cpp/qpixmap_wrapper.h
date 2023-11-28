@@ -27,7 +27,7 @@
         #include <QPixmap>
       
       // singleton class wrapper for static functions:
-      class QPixmap_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPixmap_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

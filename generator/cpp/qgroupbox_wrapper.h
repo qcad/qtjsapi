@@ -24,7 +24,7 @@
       #include "qgroupbox_base.h"
     
       // singleton class wrapper for static functions:
-      class QGroupBox_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QGroupBox_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

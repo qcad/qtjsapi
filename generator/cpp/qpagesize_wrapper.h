@@ -25,7 +25,7 @@
         #include <QPageSize>
       
       // singleton class wrapper for static functions:
-      class QPageSize_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPageSize_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

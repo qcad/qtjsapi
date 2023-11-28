@@ -19,7 +19,7 @@
         #include <QKeyCombination>
       
       // singleton class wrapper for static functions:
-      class QKeyCombination_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QKeyCombination_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

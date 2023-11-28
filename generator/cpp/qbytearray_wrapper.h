@@ -23,7 +23,7 @@
         #include <QByteArray>
       
       // singleton class wrapper for static functions:
-      class QByteArray_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QByteArray_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

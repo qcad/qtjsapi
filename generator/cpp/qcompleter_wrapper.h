@@ -21,7 +21,7 @@
         #include <QCompleter>
       
       // singleton class wrapper for static functions:
-      class QCompleter_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QCompleter_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

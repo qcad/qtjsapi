@@ -1043,7 +1043,7 @@ UserType = QListWidgetItem::UserType,
       #include "qlistwidget_base.h"
     
       // singleton class wrapper for static functions:
-      class QListWidget_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QListWidget_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

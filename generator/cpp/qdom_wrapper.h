@@ -61,7 +61,7 @@
         #include <QDomImplementation>
       
       // singleton class wrapper for static functions:
-      class QDomImplementation_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDomImplementation_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

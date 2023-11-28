@@ -23,7 +23,7 @@
         #include <QDate>
       
       // singleton class wrapper for static functions:
-      class QDate_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDate_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -880,7 +880,7 @@
         #include <QTime>
       
       // singleton class wrapper for static functions:
-      class QTime_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTime_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1620,7 +1620,7 @@
         #include <QDateTime>
       
       // singleton class wrapper for static functions:
-      class QDateTime_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDateTime_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

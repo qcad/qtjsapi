@@ -25,7 +25,7 @@
         #include <QSvgRenderer>
       
       // singleton class wrapper for static functions:
-      class QSvgRenderer_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QSvgRenderer_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

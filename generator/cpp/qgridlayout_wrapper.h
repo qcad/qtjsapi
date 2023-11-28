@@ -19,7 +19,7 @@
         #include <QGridLayout>
       
       // singleton class wrapper for static functions:
-      class QGridLayout_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QGridLayout_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

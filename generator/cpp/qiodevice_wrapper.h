@@ -23,7 +23,7 @@
         #include <QIODevice>
       
       // singleton class wrapper for static functions:
-      class QIODevice_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QIODevice_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

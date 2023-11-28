@@ -19,7 +19,7 @@
         #include <QSortFilterProxyModel>
       
       // singleton class wrapper for static functions:
-      class QSortFilterProxyModel_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QSortFilterProxyModel_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

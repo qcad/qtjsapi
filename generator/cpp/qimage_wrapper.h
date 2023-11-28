@@ -29,7 +29,7 @@
         #include <QImage>
       
       // singleton class wrapper for static functions:
-      class QImage_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QImage_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

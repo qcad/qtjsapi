@@ -28,7 +28,7 @@
       #include "qmessagebox_base.h"
     
       // singleton class wrapper for static functions:
-      class QMessageBox_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QMessageBox_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

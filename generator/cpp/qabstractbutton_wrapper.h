@@ -24,7 +24,7 @@
       #include "qabstractbutton_base.h"
     
       // singleton class wrapper for static functions:
-      class QAbstractButton_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QAbstractButton_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

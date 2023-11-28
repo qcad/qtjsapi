@@ -22,7 +22,7 @@
       #include "qsplashscreen_base.h"
     
       // singleton class wrapper for static functions:
-      class QSplashScreen_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QSplashScreen_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

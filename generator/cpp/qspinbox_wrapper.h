@@ -22,7 +22,7 @@
       #include "qspinbox_base.h"
     
       // singleton class wrapper for static functions:
-      class QSpinBox_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QSpinBox_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

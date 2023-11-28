@@ -19,7 +19,7 @@
         #include <QEventLoop>
       
       // singleton class wrapper for static functions:
-      class QEventLoop_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QEventLoop_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

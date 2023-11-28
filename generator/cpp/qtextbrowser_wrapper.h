@@ -22,7 +22,7 @@
       #include "qtextbrowser_base.h"
     
       // singleton class wrapper for static functions:
-      class QTextBrowser_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTextBrowser_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

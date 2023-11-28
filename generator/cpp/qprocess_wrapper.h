@@ -19,7 +19,7 @@
         #include <QProcessEnvironment>
       
       // singleton class wrapper for static functions:
-      class QProcessEnvironment_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QProcessEnvironment_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -551,7 +551,7 @@
         #include <QProcess>
       
       // singleton class wrapper for static functions:
-      class QProcess_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QProcess_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

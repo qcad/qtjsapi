@@ -27,7 +27,7 @@
         #include <QPrinter>
       
       // singleton class wrapper for static functions:
-      class QPrinter_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPrinter_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

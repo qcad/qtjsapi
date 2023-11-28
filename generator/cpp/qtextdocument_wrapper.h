@@ -50,7 +50,7 @@
       #include "qtextdocument_base.h"
     
       // singleton class wrapper for static functions:
-      class QTextDocument_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTextDocument_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

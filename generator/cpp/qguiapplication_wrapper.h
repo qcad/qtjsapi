@@ -25,7 +25,7 @@
         #include <QGuiApplication>
       
       // singleton class wrapper for static functions:
-      class QGuiApplication_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QGuiApplication_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

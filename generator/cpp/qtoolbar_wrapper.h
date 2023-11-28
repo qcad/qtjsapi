@@ -30,7 +30,7 @@
       #include "qtoolbar_base.h"
     
       // singleton class wrapper for static functions:
-      class QToolBar_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QToolBar_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

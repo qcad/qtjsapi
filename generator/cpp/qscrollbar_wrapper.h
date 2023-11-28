@@ -24,7 +24,7 @@
       #include "qscrollbar_base.h"
     
       // singleton class wrapper for static functions:
-      class QScrollBar_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QScrollBar_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

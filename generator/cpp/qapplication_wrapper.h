@@ -29,7 +29,7 @@
         #include <QApplication>
       
       // singleton class wrapper for static functions:
-      class QApplication_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QApplication_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

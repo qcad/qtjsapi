@@ -26,7 +26,7 @@
       #include "qsplitter_base.h"
     
       // singleton class wrapper for static functions:
-      class QSplitter_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QSplitter_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -6764,7 +6764,7 @@
       #include "qsplitter_base.h"
     
       // singleton class wrapper for static functions:
-      class QSplitterHandle_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QSplitterHandle_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

@@ -22,7 +22,7 @@
       #include "qabstractslider_base.h"
     
       // singleton class wrapper for static functions:
-      class QAbstractSlider_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QAbstractSlider_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

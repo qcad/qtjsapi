@@ -30,7 +30,7 @@
       #include "qtextedit_base.h"
     
       // singleton class wrapper for static functions:
-      class QTextEdit_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTextEdit_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

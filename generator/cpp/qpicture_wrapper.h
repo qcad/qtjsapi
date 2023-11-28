@@ -19,7 +19,7 @@
         #include <QPicture>
       
       // singleton class wrapper for static functions:
-      class QPicture_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPicture_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

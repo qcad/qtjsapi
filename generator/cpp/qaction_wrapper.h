@@ -28,7 +28,7 @@
       #include "qaction_base.h"
     
       // singleton class wrapper for static functions:
-      class QAction_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QAction_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

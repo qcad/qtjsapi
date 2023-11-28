@@ -37,7 +37,7 @@
         #include <QObject>
       
       // singleton class wrapper for static functions:
-      class QObject_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QObject_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

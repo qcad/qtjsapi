@@ -24,7 +24,7 @@
       #include "qslider_base.h"
     
       // singleton class wrapper for static functions:
-      class QSlider_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QSlider_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

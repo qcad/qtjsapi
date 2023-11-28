@@ -24,7 +24,7 @@
       #include "qheaderview_base.h"
     
       // singleton class wrapper for static functions:
-      class QHeaderView_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QHeaderView_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

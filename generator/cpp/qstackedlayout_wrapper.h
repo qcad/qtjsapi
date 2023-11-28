@@ -19,7 +19,7 @@
         #include <QStackedLayout>
       
       // singleton class wrapper for static functions:
-      class QStackedLayout_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QStackedLayout_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

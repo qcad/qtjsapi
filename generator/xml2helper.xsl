@@ -30,6 +30,17 @@
     </xsl:otherwise>
   </xsl:choose>
 </xsl:param>
+<xsl:param name="class_export">
+  <xsl:choose>
+    <xsl:when test="$module=''">
+      <xsl:text>QTJSAPI_EXPORT</xsl:text>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="qc:uppercase($module)"/>JSAPI_EXPORT 
+    </xsl:otherwise>
+  </xsl:choose>
+  <xsl:text> </xsl:text>
+</xsl:param>
 
 <xsl:template match="text()" />
 
@@ -154,18 +165,7 @@
 
 
 
-      class 
-      <xsl:text> </xsl:text>
-      <xsl:choose>
-        <xsl:when test="$module=''">
-          <xsl:text>QTJSAPI_EXPORT</xsl:text>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="qc:uppercase($module)"/>JSAPI_EXPORT 
-        </xsl:otherwise>
-      </xsl:choose>
-      <xsl:text> </xsl:text>
-      <xsl:value-of select="$rjshelper_class"/> {
+      class <xsl:value-of select="$class_export"/><xsl:value-of select="$rjshelper_class"/> {
 
       public:
         <xsl:if test="$module!=''">

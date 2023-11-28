@@ -19,7 +19,7 @@
         #include <QFormLayout>
       
       // singleton class wrapper for static functions:
-      class QFormLayout_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QFormLayout_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

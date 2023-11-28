@@ -22,7 +22,7 @@
       #include "qfontcombobox_base.h"
     
       // singleton class wrapper for static functions:
-      class QFontComboBox_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QFontComboBox_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

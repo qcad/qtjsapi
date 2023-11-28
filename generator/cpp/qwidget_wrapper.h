@@ -86,7 +86,7 @@
       #include "qwidget_base.h"
     
       // singleton class wrapper for static functions:
-      class QWidget_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QWidget_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

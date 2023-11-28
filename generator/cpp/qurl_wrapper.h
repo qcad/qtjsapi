@@ -23,7 +23,7 @@
         #include <QUrl>
       
       // singleton class wrapper for static functions:
-      class QUrl_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QUrl_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

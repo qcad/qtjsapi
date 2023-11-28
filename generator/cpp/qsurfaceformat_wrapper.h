@@ -23,7 +23,7 @@
         #include <QSurfaceFormat>
       
       // singleton class wrapper for static functions:
-      class QSurfaceFormat_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QSurfaceFormat_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

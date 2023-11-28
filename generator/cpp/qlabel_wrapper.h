@@ -22,7 +22,7 @@
       #include "qlabel_base.h"
     
       // singleton class wrapper for static functions:
-      class QLabel_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QLabel_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

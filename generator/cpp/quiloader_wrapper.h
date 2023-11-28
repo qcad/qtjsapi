@@ -33,7 +33,7 @@
         #include <QUiLoader>
       
       // singleton class wrapper for static functions:
-      class QUiLoader_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QUiLoader_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

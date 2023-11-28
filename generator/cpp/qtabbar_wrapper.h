@@ -26,7 +26,7 @@
       #include "qtabbar_base.h"
     
       // singleton class wrapper for static functions:
-      class QTabBar_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTabBar_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

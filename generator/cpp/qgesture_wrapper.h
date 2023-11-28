@@ -21,7 +21,7 @@
         #include <QGesture>
       
       // singleton class wrapper for static functions:
-      class QGesture_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QGesture_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1565,7 +1565,7 @@
         #include <QPinchGesture>
       
       // singleton class wrapper for static functions:
-      class QPinchGesture_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPinchGesture_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

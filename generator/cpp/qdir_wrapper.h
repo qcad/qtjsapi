@@ -23,7 +23,7 @@
         #include <QDir>
       
       // singleton class wrapper for static functions:
-      class QDir_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QDir_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

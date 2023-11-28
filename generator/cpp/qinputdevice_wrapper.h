@@ -21,7 +21,7 @@
         #include <QInputDevice>
       
       // singleton class wrapper for static functions:
-      class QInputDevice_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QInputDevice_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

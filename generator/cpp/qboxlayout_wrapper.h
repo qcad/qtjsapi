@@ -22,7 +22,7 @@
       #include "qboxlayout_base.h"
     
       // singleton class wrapper for static functions:
-      class QBoxLayout_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QBoxLayout_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -2161,7 +2161,7 @@ Up = QBoxLayout::Up,
       #include "qboxlayout_base.h"
     
       // singleton class wrapper for static functions:
-      class QHBoxLayout_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QHBoxLayout_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -4288,7 +4288,7 @@ Up = QHBoxLayout::Up,
       #include "qboxlayout_base.h"
     
       // singleton class wrapper for static functions:
-      class QVBoxLayout_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QVBoxLayout_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

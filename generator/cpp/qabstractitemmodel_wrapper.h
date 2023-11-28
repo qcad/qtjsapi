@@ -450,7 +450,7 @@
         #include <QAbstractItemModel>
       
       // singleton class wrapper for static functions:
-      class QAbstractItemModel_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QAbstractItemModel_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -2171,7 +2171,7 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
         #include <QAbstractTableModel>
       
       // singleton class wrapper for static functions:
-      class QAbstractTableModel_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QAbstractTableModel_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -3847,7 +3847,7 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
         #include <QAbstractListModel>
       
       // singleton class wrapper for static functions:
-      class QAbstractListModel_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QAbstractListModel_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

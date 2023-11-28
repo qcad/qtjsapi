@@ -19,7 +19,7 @@
         #include <QPagedPaintDevice>
       
       // singleton class wrapper for static functions:
-      class QPagedPaintDevice_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QPagedPaintDevice_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

@@ -29,7 +29,7 @@
         #include <QAbstractItemDelegate>
       
       // singleton class wrapper for static functions:
-      class QAbstractItemDelegate_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QAbstractItemDelegate_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

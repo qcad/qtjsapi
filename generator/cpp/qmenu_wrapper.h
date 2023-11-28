@@ -24,7 +24,7 @@
       #include "qmenu_base.h"
     
       // singleton class wrapper for static functions:
-      class QMenu_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QMenu_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

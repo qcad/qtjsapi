@@ -1056,7 +1056,7 @@ UserType = QTableWidgetItem::UserType,
         #include <QTableWidget>
       
       // singleton class wrapper for static functions:
-      class QTableWidget_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTableWidget_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

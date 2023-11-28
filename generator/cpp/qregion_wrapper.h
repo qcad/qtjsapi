@@ -25,7 +25,7 @@
         #include <QRegion>
       
       // singleton class wrapper for static functions:
-      class QRegion_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QRegion_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 

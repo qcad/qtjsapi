@@ -24,7 +24,7 @@
       #include "qtableview_base.h"
     
       // singleton class wrapper for static functions:
-      class QTableView_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QTableView_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
