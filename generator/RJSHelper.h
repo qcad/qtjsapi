@@ -1683,18 +1683,18 @@
           virtual QVariant toVariant(RJSApi& handler, const QJSValue& v) = 0;
         };
       
-        QVariant QTJSAPI_EXPORT  getWrapperProperty(RJSApi& handler, const QObject& obj);
-        void QTJSAPI_EXPORT  setWrapperProperty(RJSApi& handler, QObject& obj, const QVariant& wrapper);
+        QTJSAPI_EXPORT extern QVariant getWrapperProperty(RJSApi& handler, const QObject& obj);
+        QTJSAPI_EXPORT extern void setWrapperProperty(RJSApi& handler, QObject& obj, const QVariant& wrapper);
         
-        QJSValue QTJSAPI_EXPORT  getWrapperQJSValue(const QJSValue& v);
-        QObject* QTJSAPI_EXPORT  getWrapperQObject(const QJSValue& v);
-        RJSWrapper* QTJSAPI_EXPORT  getWrapperRJSWrapper(const QJSValue& v);
+        QTJSAPI_EXPORT extern QJSValue getWrapperQJSValue(const QJSValue& v);
+        QTJSAPI_EXPORT extern QObject* getWrapperQObject(const QJSValue& v);
+        QTJSAPI_EXPORT extern RJSWrapper* getWrapperRJSWrapper(const QJSValue& v);
 
         /**
          * \return Wrapper in given type T for the given QJSValue.
          */
         template<typename T>
-        T* QTJSAPI_EXPORT  getWrapper(const QJSValue& v) {
+        T* getWrapper(const QJSValue& v) {
             return dynamic_cast<T*>(getWrapperQObject(v));
         }
       
