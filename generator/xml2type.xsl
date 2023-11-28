@@ -165,6 +165,8 @@
       </xsl:otherwise>
     </xsl:choose>
 
+    #include "<xsl:value-of select="$module"/>jsapi_global.h"
+
     #include &lt;QObject&gt;
     #include &lt;QQmlEngine&gt;
 
