@@ -165,7 +165,14 @@
       </xsl:otherwise>
     </xsl:choose>
 
-    #include "<xsl:value-of select="$module"/>jsapi_global.h"
+    <xsl:choose>
+      <xsl:when test="$module=''">
+        #include "qtjsapi_global.h"
+      </xsl:when>
+      <xsl:otherwise>
+        #include "<xsl:value-of select="$module"/>jsapi_global.h"
+      </xsl:otherwise>
+    </xsl:choose>
 
     #include &lt;QObject&gt;
     #include &lt;QQmlEngine&gt;

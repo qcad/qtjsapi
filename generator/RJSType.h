@@ -4,6 +4,8 @@
         #ifndef RJSTYPE_H
         #define RJSTYPE_H
       
+        #include "qtjsapi_global.h"
+      
 
     #include <QObject>
     #include <QQmlEngine>
