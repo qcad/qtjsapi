@@ -449,7 +449,7 @@
         <parameters />
       </variant>
     </function>
-    <function name="toString">
+    <function name="toString" cppname="toStr">
       <variant return-type="QString" const="true" access="public">
         <parameters />
       </variant>

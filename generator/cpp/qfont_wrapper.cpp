@@ -3981,7 +3981,9 @@ QFont a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QFont_Wrapper::toString
+              QFont_Wrapper::
+                          // special function name for JS wrapper:
+                          toStr
               (
                 
               ) 

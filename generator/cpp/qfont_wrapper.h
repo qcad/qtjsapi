@@ -1600,7 +1600,9 @@ AllPropertiesResolved = QFont::AllPropertiesResolved,
               Q_INVOKABLE 
               
                   QJSValue 
-                  toString
+                  
+                          // special function name for JS wrapper:
+                          toStr
               (
 
                 

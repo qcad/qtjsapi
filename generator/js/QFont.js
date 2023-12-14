@@ -200,6 +200,11 @@
       //QFont.prototype = new QFont_Wrapper(engine);
       QFont.prototype = new Object();
 
+      
+        // function with alias name in CPP wrapper:
+        QFont.prototype.toString = function() {
+          return this.toStr.apply(this, arguments);
+        }
       QFont.getObjectType = function() {
         return RJSType_QFont.getIdStatic();
       };
