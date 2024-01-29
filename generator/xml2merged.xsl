@@ -24,6 +24,7 @@
 
 <xsl:template match="qsrc:class">
   <xsl:variable name="class-name" select="@name" />
+  <xsl:variable name="class-inheritable" select="@inheritable" />
 
   <xsl:variable name="is-qwidget">
     <xsl:choose>
@@ -68,11 +69,14 @@
         <!-- merge functions from super classes -->
         <xsl:for-each select="document(text())/qsrc:unit/qsrc:class[@name=$super-class-name]/qsrc:function">
           <xsl:variable name="super-function-name" select="@name" />
+          <xsl:variable name="super-function-access" select="qsrc:variant/@access" />
 
-          <xsl:if test="not($is-qwidget='1') or not($super-function-name='setParent') or not($super-class-name='QObject')">
-            <xsl:apply-templates select=".">
-              <xsl:with-param name="super-class-name" select="$super-class-name" />
-            </xsl:apply-templates>
+          <xsl:if test="$class-inheritable='true' or not($super-function-access='protected')">
+            <xsl:if test="not($is-qwidget='1') or not($super-function-name='setParent') or not($super-class-name='QObject')">
+              <xsl:apply-templates select=".">
+                <xsl:with-param name="super-class-name" select="$super-class-name" />
+              </xsl:apply-templates>
+            </xsl:if>
           </xsl:if>
         </xsl:for-each>
       </xsl:for-each>
