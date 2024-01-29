@@ -173,6 +173,10 @@
           <xsl:when test="document('../../qcadgles3djsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcadgles3d'" />
           </xsl:when>
+          <!-- qcadquickjsapi types.xml is for qcadquick -->
+          <xsl:when test="document('../../qcadquickjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
+            <xsl:value-of select="'_qcadquick'" />
+          </xsl:when>
           <!-- default to RJSHelper (qtjsapi) -->
           <xsl:otherwise>
             <xsl:value-of select="''" />
