@@ -25,6 +25,11 @@ then
     MODULE="qcadtutorial"
 fi
 
+if [[ `pwd` == *qcadgles3djsapi* ]]
+then
+    MODULE="qcadgles3d"
+fi
+
 echo "Generating module $MODULE"
 
 echo "Generating helpers..."

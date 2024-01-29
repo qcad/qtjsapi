@@ -1578,11 +1578,13 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="paintEngine">
       <variant return-type="QPaintEngine*" const="true" access="public">
         <parameters />
       </variant>
     </function>
+    -->
     <function name="ensurePolished">
       <variant return-type="void" const="true" access="public">
         <parameters />

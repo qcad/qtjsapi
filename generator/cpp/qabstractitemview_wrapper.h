@@ -1236,6 +1236,27 @@ InternalMove = QAbstractItemView::InternalMove,
               ;
             
     // Class: QAbstractItemView
+    // Function: paintEngine
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintEngine
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QAbstractItemView
     // Function: widthMM
     // Source: QPaintDevice
     // Static: false
@@ -5749,27 +5770,6 @@ InternalMove = QAbstractItemView::InternalMove,
   a1
       = QJSValue()
     
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QAbstractItemView
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
               )
               
                 const

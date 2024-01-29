@@ -5436,27 +5436,6 @@
               ;
             
     // Class: QSpinBox
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QSpinBox
     // Function: ensurePolished
     // Source: QWidget
     // Static: false

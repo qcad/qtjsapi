@@ -1279,6 +1279,27 @@ InternalMove = QTreeView::InternalMove,
               ;
             
     // Class: QTreeView
+    // Function: paintEngine
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintEngine
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTreeView
     // Function: widthMM
     // Source: QPaintDevice
     // Static: false
@@ -5792,27 +5813,6 @@ InternalMove = QTreeView::InternalMove,
   a1
       = QJSValue()
     
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTreeView
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
               )
               
                 const

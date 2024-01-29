@@ -1609,6 +1609,27 @@
               ;
             
     // Class: QWidget
+    // Function: paintEngine
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintEngine
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QWidget
     // Function: widthMM
     // Source: QPaintDevice
     // Static: false
@@ -6309,27 +6330,6 @@
   a1
       = QJSValue()
     
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: paintEngine
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
               )
               
                 const

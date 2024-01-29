@@ -15949,67 +15949,6 @@ Qt::WidgetAttribute a1_cpp;
               }
             
     // Class: QLabel
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QLabel_Wrapper::paintEngine
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QLabel* w = getWrapped();
-                QPaintEngine* res = 
-                    
-                w->paintEngine(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QPaintEngine*
-
-            return RJSHelper::cpp2js_QPaintEngine(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for paintEngine";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QLabel
     // Function: ensurePolished
     // Source: QWidget
     // Static: false

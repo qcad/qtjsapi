@@ -1275,6 +1275,27 @@ Custom = QHeaderView::Custom,
               ;
             
     // Class: QHeaderView
+    // Function: paintEngine
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintEngine
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QHeaderView
     // Function: widthMM
     // Source: QPaintDevice
     // Static: false
@@ -5765,27 +5786,6 @@ Custom = QHeaderView::Custom,
   a1
       = QJSValue()
     
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QHeaderView
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
               )
               
                 const

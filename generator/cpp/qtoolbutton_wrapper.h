@@ -5456,27 +5456,6 @@
               ;
             
     // Class: QToolButton
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QToolButton
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
