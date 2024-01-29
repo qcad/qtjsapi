@@ -23,8 +23,11 @@ ninja
 Usage
 -----
 ```
+// create QJSEngine
 QJSEngine* engine = new QJSEngine();
+// make Qt API classes scriptable: 
 RJSApi* rjsapi = new RJSApi(engine);
+// usage example:
 engine->evaluate("var w = new QWidget(); w.show();");
 ```
 
