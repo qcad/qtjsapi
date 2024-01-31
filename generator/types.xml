@@ -204,6 +204,8 @@
     <type>QProcess::ProcessState</type>
     <type>QProcessEnvironment::Initialization</type>
     <type>QProgressBar::Direction</type>
+    <type>QQuickView::ResizeMode</type>
+    <type>QQuickView::Status</type>
     <type>QQuickWidget::ResizeMode</type>
     <type>QQuickWidget::Status</type>
     <type>QRegion::RegionType</type>
@@ -476,6 +478,7 @@
     <type>QPointerEvent</type>
     <type>QPrinter</type>
     <type>QProcess</type>
+    <type>QQmlApplicationEngine</type>
     <type>QResizeEvent</type>
     <type>QSinglePointEvent</type>
     <type>QSpacerItem</type>
@@ -574,6 +577,7 @@
     <type>QProgressBar</type>
     <type>QProgressDialog</type>
     <type>QPushButton</type>
+    <type>QQuickView</type>
     <type>QQuickWidget</type>
     <type>QRadioButton</type>
     <type>QRegularExpressionValidator</type>

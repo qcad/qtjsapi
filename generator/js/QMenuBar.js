@@ -139,37 +139,6 @@
 
       // functions:
       
-        // function 
-        QMenuBar.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QMenuBar.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QMenuBar);
-  }
-
-  
-  else {
-    
-        print("QMenuBar.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

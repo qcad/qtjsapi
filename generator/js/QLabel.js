@@ -170,37 +170,6 @@
 
       // functions:
       
-        // function 
-        QLabel.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QLabel.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QLabel);
-  }
-
-  
-  else {
-    
-        print("QLabel.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

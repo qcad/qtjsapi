@@ -5585,58 +5585,6 @@ ProportionalFonts = QFontComboBox::ProportionalFonts,
               );
             
     // Class: QFontComboBox
-    // Function: mouseMoveEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QFontComboBox
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QFontComboBox
     // Function: inputMethodHints
     // Source: QWidget
     // Static: false
@@ -7113,58 +7061,6 @@ ProportionalFonts = QFontComboBox::ProportionalFonts,
               void currentTextChangedEmitter(
                 const QString& a1
               );
-            
-    // Class: QFontComboBox
-    // Function: resizeEvent
-    // Source: QComboBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QFontComboBox
-    // Function: paintEvent
-    // Source: QComboBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
             
     // Class: QFontComboBox
     // Function: setWritingSystem

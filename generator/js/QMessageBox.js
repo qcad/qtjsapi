@@ -223,37 +223,6 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
 
       // functions:
       
-        // function 
-        QMessageBox.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QMessageBox.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QMessageBox);
-  }
-
-  
-  else {
-    
-        print("QMessageBox.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

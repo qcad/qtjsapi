@@ -219,37 +219,6 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
 
       // functions:
       
-        // function 
-        QFileDialog.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QFileDialog.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QFileDialog);
-  }
-
-  
-  else {
-    
-        print("QFileDialog.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

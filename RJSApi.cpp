@@ -153,6 +153,8 @@
 #include "generator/cpp/qitemdelegate_wrapper.h"
 #include "generator/cpp/qeasingcurve_wrapper.h"
 #include "generator/cpp/qsvgrenderer_wrapper.h"
+#include "generator/cpp/qqmlapplicationengine_wrapper.h"
+#include "generator/cpp/qquickview_wrapper.h"
 #include "generator/cpp/qquickwidget_wrapper.h"
 #include "generator/cpp/qgraphicseffect_wrapper.h"
 #include "generator/cpp/qpaintdevice_wrapper.h"
@@ -433,6 +435,8 @@ void RJSApi::init() {
     QStringEncoder_Wrapper::init(*this);
     QStringDecoder_Wrapper::init(*this);
     QXmlStreamReader_Wrapper::init(*this);
+    QQmlApplicationEngine_Wrapper::init(*this);
+    QQuickView_Wrapper::init(*this);
     QQuickWidget_Wrapper::init(*this);
     QGraphicsBlurEffect_Wrapper::init(*this);
     QFocusEvent_Wrapper::init(*this);

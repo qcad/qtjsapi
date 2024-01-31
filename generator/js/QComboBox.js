@@ -163,37 +163,6 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
 
       // functions:
       
-        // function 
-        QComboBox.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QComboBox.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QComboBox);
-  }
-
-  
-  else {
-    
-        print("QComboBox.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

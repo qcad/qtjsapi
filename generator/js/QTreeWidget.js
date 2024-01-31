@@ -59,17 +59,7 @@
             
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
-    this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
-  
-    this["clicked(QModelIndex)"] = Object.getPrototypeOf(this).clicked;
-  
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
-  
-    this["activated(QModelIndex)"] = Object.getPrototypeOf(this).activated;
-  
-    this["entered(QModelIndex)"] = Object.getPrototypeOf(this).entered;
-  
-    this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
   
     this["expanded(QModelIndex)"] = Object.getPrototypeOf(this).expanded;
   
@@ -197,37 +187,6 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
 
 
       // functions:
-      
-        // function 
-        QTreeWidget.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QTreeWidget.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeWidget);
-  }
-
-  
-  else {
-    
-        print("QTreeWidget.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // static functions:

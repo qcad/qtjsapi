@@ -404,6 +404,14 @@
                 return (QObject*)(QPushButton*)vp;
               }
               
+              if (t==RJSType_QQmlApplicationEngine::getIdStatic()) {
+                return (QObject*)(QQmlApplicationEngine*)vp;
+              }
+              
+              if (t==RJSType_QQuickView::getIdStatic()) {
+                return (QObject*)(QQuickView*)vp;
+              }
+              
               if (t==RJSType_QQuickWidget::getIdStatic()) {
                 return (QObject*)(QQuickWidget*)vp;
               }

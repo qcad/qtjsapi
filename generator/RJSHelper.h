@@ -1142,6 +1142,18 @@
           virtual QPushButton* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class QQmlApplicationEngine:
+        class RJSBasecaster_QQmlApplicationEngine {
+        public:
+          virtual QQmlApplicationEngine* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QQuickView:
+        class RJSBasecaster_QQuickView {
+        public:
+          virtual QQuickView* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class QQuickWidget:
         class RJSBasecaster_QQuickWidget {
         public:
@@ -2512,6 +2524,14 @@
       static QProgressBar::Direction js2cpp_QProgressBar_Direction(RJSApi& handler, const QJSValue& v);
       static bool is_QProgressBar_Direction(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QQuickView_ResizeMode(RJSApi& handler, QQuickView::ResizeMode v);
+      static QQuickView::ResizeMode js2cpp_QQuickView_ResizeMode(RJSApi& handler, const QJSValue& v);
+      static bool is_QQuickView_ResizeMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QQuickView_Status(RJSApi& handler, QQuickView::Status v);
+      static QQuickView::Status js2cpp_QQuickView_Status(RJSApi& handler, const QJSValue& v);
+      static bool is_QQuickView_Status(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QQuickWidget_ResizeMode(RJSApi& handler, QQuickWidget::ResizeMode v);
       static QQuickWidget::ResizeMode js2cpp_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v);
       static bool is_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -3661,6 +3681,10 @@
       static QProcess* js2cpp_QProcess_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QProcess_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QQmlApplicationEngine(RJSApi& handler, QQmlApplicationEngine* v);
+      static QQmlApplicationEngine* js2cpp_QQmlApplicationEngine_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QQmlApplicationEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QResizeEvent(RJSApi& handler, QResizeEvent* v);
       static QResizeEvent* js2cpp_QResizeEvent_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QResizeEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -4107,6 +4131,11 @@
       static QJSValue cpp2js_QPushButton(RJSApi& handler, const QPushButton* v);
       static QPushButton* js2cpp_QPushButton_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QPushButton_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QQuickView(RJSApi& handler, QQuickView* v);
+      static QJSValue cpp2js_QQuickView(RJSApi& handler, const QQuickView* v);
+      static QQuickView* js2cpp_QQuickView_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QQuickView_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QQuickWidget(RJSApi& handler, QQuickWidget* v);
       static QJSValue cpp2js_QQuickWidget(RJSApi& handler, const QQuickWidget* v);

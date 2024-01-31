@@ -99,25 +99,6 @@ QMenu_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
-    virtual void actionEvent(
-      QActionEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void actionEventPublic(
-      QActionEvent* event
-    ) {
-      //qDebug() << "QMenu_Base::actionEventPublic()";
-      QMenu::actionEvent(
-        event
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
     virtual void resizeEvent(
       QResizeEvent* event
     );

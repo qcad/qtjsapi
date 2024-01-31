@@ -82,63 +82,6 @@ QTabBar_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
-    virtual void mousePressEvent(
-      QMouseEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void mousePressEventPublic(
-      QMouseEvent* event
-    ) {
-      //qDebug() << "QTabBar_Base::mousePressEventPublic()";
-      QTabBar::mousePressEvent(
-        event
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    virtual void mouseReleaseEvent(
-      QMouseEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void mouseReleaseEventPublic(
-      QMouseEvent* event
-    ) {
-      //qDebug() << "QTabBar_Base::mouseReleaseEventPublic()";
-      QTabBar::mouseReleaseEvent(
-        event
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    virtual void actionEvent(
-      QActionEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void actionEventPublic(
-      QActionEvent* event
-    ) {
-      //qDebug() << "QTabBar_Base::actionEventPublic()";
-      QTabBar::actionEvent(
-        event
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
     virtual void paintEvent(
       QPaintEvent* event
     );

@@ -168,37 +168,6 @@
 
       // functions:
       
-        // function 
-        QSplitter.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QSplitter.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QSplitter);
-  }
-
-  
-  else {
-    
-        print("QSplitter.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

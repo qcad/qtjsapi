@@ -93,101 +93,6 @@ QSplitter_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
-    virtual void mousePressEvent(
-      QMouseEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void mousePressEventPublic(
-      QMouseEvent* event
-    ) {
-      //qDebug() << "QSplitter_Base::mousePressEventPublic()";
-      QSplitter::mousePressEvent(
-        event
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    virtual void mouseReleaseEvent(
-      QMouseEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void mouseReleaseEventPublic(
-      QMouseEvent* event
-    ) {
-      //qDebug() << "QSplitter_Base::mouseReleaseEventPublic()";
-      QSplitter::mouseReleaseEvent(
-        event
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    virtual void actionEvent(
-      QActionEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void actionEventPublic(
-      QActionEvent* event
-    ) {
-      //qDebug() << "QSplitter_Base::actionEventPublic()";
-      QSplitter::actionEvent(
-        event
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    virtual void paintEvent(
-      QPaintEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void paintEventPublic(
-      QPaintEvent* event
-    ) {
-      //qDebug() << "QSplitter_Base::paintEventPublic()";
-      QSplitter::paintEvent(
-        event
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    virtual void mouseMoveEvent(
-      QMouseEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void mouseMoveEventPublic(
-      QMouseEvent* event
-    ) {
-      //qDebug() << "QSplitter_Base::mouseMoveEventPublic()";
-      QSplitter::mouseMoveEvent(
-        event
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
     void resizeEvent(
       QResizeEvent* a1
     );
@@ -278,25 +183,6 @@ QSplitterHandle_Base
     
       // protected overwritten functions / events and their public invokable counterparts:
       
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    virtual void actionEvent(
-      QActionEvent* event
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE virtual void actionEventPublic(
-      QActionEvent* event
-    ) {
-      //qDebug() << "QSplitterHandle_Base::actionEventPublic()";
-      QSplitterHandle::actionEvent(
-        event
-      );
-    }
-  
     protected:
     // implementation of protected function
     // calls JS implementation if available

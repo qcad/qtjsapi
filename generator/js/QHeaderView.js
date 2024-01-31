@@ -89,17 +89,7 @@
             
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
-    this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
-  
-    this["clicked(QModelIndex)"] = Object.getPrototypeOf(this).clicked;
-  
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
-  
-    this["activated(QModelIndex)"] = Object.getPrototypeOf(this).activated;
-  
-    this["entered(QModelIndex)"] = Object.getPrototypeOf(this).entered;
-  
-    this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
   
     this["sectionMoved(int,int,int)"] = Object.getPrototypeOf(this).sectionMoved;
   
@@ -232,37 +222,6 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
 
 
       // functions:
-      
-        // function 
-        QHeaderView.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QHeaderView.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QHeaderView);
-  }
-
-  
-  else {
-    
-        print("QHeaderView.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // static functions:

@@ -135,37 +135,6 @@
 
       // functions:
       
-        // function 
-        QFrame.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QFrame.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QFrame);
-  }
-
-  
-  else {
-    
-        print("QFrame.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

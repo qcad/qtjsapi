@@ -141,37 +141,6 @@ QDialog.Accepted = QDialog_Wrapper.Accepted;
 
       // functions:
       
-        // function 
-        QDialog.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QDialog.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QDialog);
-  }
-
-  
-  else {
-    
-        print("QDialog.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

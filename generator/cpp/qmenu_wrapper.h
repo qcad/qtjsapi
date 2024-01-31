@@ -5542,32 +5542,6 @@
               );
             
     // Class: QMenu
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QMenu
     // Function: inputMethodQuery
     // Source: QWidget
     // Static: false

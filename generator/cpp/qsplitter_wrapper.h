@@ -5483,84 +5483,6 @@
               );
             
     // Class: QSplitter
-    // Function: mousePressEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mousePressEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QSplitter
-    // Function: mouseReleaseEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseReleaseEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QSplitter
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QSplitter
     // Function: inputMethodQuery
     // Source: QWidget
     // Static: false
@@ -5903,58 +5825,6 @@
               
                   QJSValue 
                   setFrameRect
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QSplitter
-    // Function: paintEvent
-    // Source: QFrame
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QSplitter
-    // Function: mouseMoveEvent
-    // Source: QFrame
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
               (
 
                 
@@ -11787,32 +11657,6 @@
               void customContextMenuRequestedEmitter(
                 const QPoint& pos
               );
-            
-    // Class: QSplitterHandle
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
             
     // Class: QSplitterHandle
     // Function: inputMethodQuery

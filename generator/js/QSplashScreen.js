@@ -164,37 +164,6 @@
 
       // functions:
       
-        // function 
-        QSplashScreen.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QSplashScreen.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QSplashScreen);
-  }
-
-  
-  else {
-    
-        print("QSplashScreen.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

@@ -192,37 +192,6 @@ QSlider.TicksBothSides = QSlider_Wrapper.TicksBothSides;
 
       // functions:
       
-        // function 
-        QSlider.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QSlider.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QSlider);
-  }
-
-  
-  else {
-    
-        print("QSlider.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

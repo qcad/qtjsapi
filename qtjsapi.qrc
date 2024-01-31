@@ -160,6 +160,8 @@
     <file alias="generator/js/QProgressBar.js">generator/js/QProgressBar.js</file>
     <file alias="generator/js/QProgressDialog.js">generator/js/QProgressDialog.js</file>
     <file alias="generator/js/QPushButton.js">generator/js/QPushButton.js</file>
+    <file alias="generator/js/QQmlApplicationEngine.js">generator/js/QQmlApplicationEngine.js</file>
+    <file alias="generator/js/QQuickView.js">generator/js/QQuickView.js</file>
     <file alias="generator/js/QQuickWidget.js">generator/js/QQuickWidget.js</file>
     <file alias="generator/js/QRadialGradient.js">generator/js/QRadialGradient.js</file>
     <file alias="generator/js/QRadioButton.js">generator/js/QRadioButton.js</file>

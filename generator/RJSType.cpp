@@ -1918,6 +1918,21 @@
 
 
       
+      int RJSType_QQmlApplicationEngine::id = -1;
+
+      int RJSType_QQmlApplicationEngine::getId() const {
+          return RJSType_QQmlApplicationEngine::getIdStatic();
+      }
+
+      int RJSType_QQmlApplicationEngine::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QQmlApplicationEngine());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QResizeEvent::id = -1;
 
       int RJSType_QResizeEvent::getId() const {
@@ -3309,6 +3324,21 @@
       int RJSType_QPushButton::getIdStatic() {
           if (id<0) {
               id = RJSTypeEnum::reserve(new RJSType_QPushButton());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QQuickView::id = -1;
+
+      int RJSType_QQuickView::getId() const {
+          return RJSType_QQuickView::getIdStatic();
+      }
+
+      int RJSType_QQuickView::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QQuickView());
           }
           return id;
       }

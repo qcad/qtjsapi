@@ -32,60 +32,7 @@
 #endif
 
       // protected overwritten functions / events and their public invokable counterparts:
-      void QMenu_Base::actionEvent(
-      QActionEvent* event
-    ) {
-
-      //qDebug() << "QMenu_Base::actionEvent()";
-
-      //QJSValue f = self.prototype().property("actionEvent");
-      QJSValue f = self.property("actionEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
-        
-
-
-        QJSEngine* engine = handler.getEngine();
-
-        QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QActionEvent(
-    handler, 
-    // non-copyable: true
-event
-  );
-
-
-        QJSValue argsValue = engine->newArray(args.length());
-        for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
-        }
-
-        engine->globalObject().setProperty("__self__", self);
-        engine->globalObject().setProperty("__args__", argsValue);
-        QStringList trace;
-        QJSValue res = engine->evaluate("__self__.actionEvent.apply(__self__, __args__);", "", 1, &trace);
-
-        if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
-        }
-
-
-        
-            return;
-          
-      }
-      else {
-        QMenu::actionEvent(
-          event
-        );
-      }
-    }
-
-  void QMenu_Base::resizeEvent(
+      void QMenu_Base::resizeEvent(
       QResizeEvent* event
     ) {
 

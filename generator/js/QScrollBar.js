@@ -184,37 +184,6 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
 
       // functions:
       
-        // function 
-        QScrollBar.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QScrollBar.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QScrollBar);
-  }
-
-  
-  else {
-    
-        print("QScrollBar.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

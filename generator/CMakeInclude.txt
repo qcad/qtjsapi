@@ -254,6 +254,10 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qprogressdialog_wrapper.h
     generator/cpp/qpushbutton_base.h
     generator/cpp/qpushbutton_wrapper.h
+    generator/cpp/qqmlapplicationengine_base.h
+    generator/cpp/qqmlapplicationengine_wrapper.h
+    generator/cpp/qquickview_base.h
+    generator/cpp/qquickview_wrapper.h
     generator/cpp/qquickwidget_base.h
     generator/cpp/qquickwidget_wrapper.h
     generator/cpp/qradiobutton_base.h
@@ -600,6 +604,10 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qprogressdialog_wrapper.cpp
     generator/cpp/qpushbutton_base.cpp
     generator/cpp/qpushbutton_wrapper.cpp
+    generator/cpp/qqmlapplicationengine_base.cpp
+    generator/cpp/qqmlapplicationengine_wrapper.cpp
+    generator/cpp/qquickview_base.cpp
+    generator/cpp/qquickview_wrapper.cpp
     generator/cpp/qquickwidget_base.cpp
     generator/cpp/qquickwidget_wrapper.cpp
     generator/cpp/qradiobutton_base.cpp
