@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qquickview.h">
+  <class_decl name="QQmlEngine" />
+  <class_decl name="QQmlContext" />
+  <class_decl name="QQmlError" />
+  <class_decl name="QQuickItem" />
+  <class_decl name="QQmlComponent" />
+  <class name="QQuickView">
+    <super_list>
+      <super name="QQuickWindow" />
+    </super_list>
+    <function name="source" />
+    <function name="engine" />
+    <function name="rootContext" />
+    <function name="rootObject" />
+    <enum name="ResizeMode">
+      <key>SizeViewToRootObject</key>
+      <key>SizeRootObjectToView</key>
+    </enum>
+    <function name="resizeMode" />
+    <function name="setResizeMode" />
+    <enum name="Status">
+      <key>Null</key>
+      <key>Ready</key>
+      <key>Loading</key>
+      <key>Error</key>
+    </enum>
+    <function name="status" />
+    <function name="errors" />
+    <function name="sizeHint" />
+    <function name="initialSize" />
+    <function name="setSource">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setInitialProperties">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QVariantMap" modifier="&amp;" name="initialProperties" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setContent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+          <parameter const="false" type="QQmlComponent" modifier="*" name="component" />
+          <parameter const="false" type="QObject" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="statusChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QQuickView::Status" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="continueExecute" />
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="timerEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QTimerEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyPressEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyReleaseEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qqmlapplicationengine.h">
+  <class name="QQmlApplicationEngine" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <!--
+      <super name="QQmlEngine" />
+      -->
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QAnyStringView" modifier="" name="uri" />
+          <parameter const="false" type="QAnyStringView" modifier="" name="typeName" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filePath" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="rootObjects">
+      <variant return-type="QList&lt;QObject*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="load">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filePath" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="loadFromModule">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAnyStringView" modifier="" name="uri" />
+          <parameter const="false" type="QAnyStringView" modifier="" name="typeName" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setInitialProperties">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QVariantMap" modifier="&amp;" name="initialProperties" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setExtraFileSelectors">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="extraFileSelectors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="loadData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" default="QUrl()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="objectCreated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="object" />
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="objectCreationFailed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>
