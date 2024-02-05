@@ -848,6 +848,12 @@
           virtual QItemSelection* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class QJSEngine:
+        class RJSBasecaster_QJSEngine {
+        public:
+          virtual QJSEngine* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class QKeySequence:
         class RJSBasecaster_QKeySequence {
         public:
@@ -1146,6 +1152,12 @@
         class RJSBasecaster_QQmlApplicationEngine {
         public:
           virtual QQmlApplicationEngine* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QQmlEngine:
+        class RJSBasecaster_QQmlEngine {
+        public:
+          virtual QQmlEngine* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class QQuickView:
@@ -3629,6 +3641,10 @@
       static QInputEvent* js2cpp_QInputEvent_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QInputEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QJSEngine(RJSApi& handler, QJSEngine* v);
+      static QJSEngine* js2cpp_QJSEngine_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QJSEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QKeyEvent(RJSApi& handler, QKeyEvent* v);
       static QKeyEvent* js2cpp_QKeyEvent_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QKeyEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -3680,6 +3696,10 @@
       static QJSValue cpp2js_QProcess(RJSApi& handler, QProcess* v);
       static QProcess* js2cpp_QProcess_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QProcess_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QQmlEngine(RJSApi& handler, QQmlEngine* v);
+      static QQmlEngine* js2cpp_QQmlEngine_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QQmlEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QQmlApplicationEngine(RJSApi& handler, QQmlApplicationEngine* v);
       static QQmlApplicationEngine* js2cpp_QQmlApplicationEngine_ptr(RJSApi& handler, const QJSValue& v);

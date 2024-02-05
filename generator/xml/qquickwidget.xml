@@ -38,13 +38,11 @@
         <parameters />
       </variant>
     </function>
-    <!--
     <function name="engine">
       <variant return-type="QQmlEngine*" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    -->
     <!--
     <function name="rootContext">
       <variant return-type="QQmlContext*" const="true" access="public">

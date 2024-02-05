@@ -3243,6 +3243,34 @@
           static int id;
       };
     
+      class QTJSAPI_EXPORT  RJSType_QJSEngine : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QJSEngine";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QJSEngine();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
       class QTJSAPI_EXPORT  RJSType_QLayoutItem : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -3568,6 +3596,34 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_QProcess();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QQmlEngine : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QQmlEngine";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QQmlEngine();
           //}
 
           Q_INVOKABLE

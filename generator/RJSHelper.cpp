@@ -319,6 +319,8 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
           #include "qwidget_wrapper.h"
         
           #include "qframe_wrapper.h"
@@ -436,6 +438,8 @@
           #include "qabstractbutton_wrapper.h"
         
           #include "qobject_wrapper.h"
+        
+          #include "qjsengine_wrapper.h"
         
           #include "qobject_wrapper.h"
         
@@ -20534,6 +20538,88 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QInputEvent::getIdStatic())).toBool();
       }
     
+      QJSValue RJSHelper::cpp2js_QJSEngine(RJSApi& handler, QJSEngine* v) {
+
+          
+            // downcast to QQmlEngine:
+            {
+                QQmlEngine* o = dynamic_cast<QQmlEngine*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QQmlEngine(handler, o);
+                }
+            }
+          
+
+          QJSEngine* engine = handler.getEngine();
+          QJSEngine_Wrapper* ret = new QJSEngine_Wrapper(handler, v, false);
+
+          // JS: new QJSEngine('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QJSEngine");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QJSEngine is undefined. Use QJSEngine_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QJSEngine('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QJSEngine(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      QJSEngine* RJSHelper::js2cpp_QJSEngine_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QJSEngine: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QJSEngine_Wrapper* wrapper = qobject_cast<QJSEngine_Wrapper*>(obj);
+          //QJSEngine_Wrapper* wrapper = dynamic_cast<QJSEngine_Wrapper*>(obj);
+          //QJSEngine_Wrapper* wrapper = (QJSEngine_Wrapper*)(obj);
+          //QJSEngine_Wrapper* wrapper = getWrapper<QJSEngine_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QJSEngine_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_QJSEngine(wrapper);
+          return QJSEngine_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QJSEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QJSEngine: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_QJSEngine::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper::cpp2js_QKeyEvent(RJSApi& handler, QKeyEvent* v) {
 
           
@@ -21574,6 +21660,80 @@
               return false;
           }
           return fun.call(QJSValueList() << QJSValue(RJSType_QProcess::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QQmlEngine(RJSApi& handler, QQmlEngine* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          QQmlEngine_Wrapper* ret = new QQmlEngine_Wrapper(handler, v, false);
+
+          // JS: new QQmlEngine('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QQmlEngine");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QQmlEngine is undefined. Use QQmlEngine_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QQmlEngine('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QQmlEngine(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      QQmlEngine* RJSHelper::js2cpp_QQmlEngine_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QQmlEngine: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QQmlEngine_Wrapper* wrapper = qobject_cast<QQmlEngine_Wrapper*>(obj);
+          //QQmlEngine_Wrapper* wrapper = dynamic_cast<QQmlEngine_Wrapper*>(obj);
+          //QQmlEngine_Wrapper* wrapper = (QQmlEngine_Wrapper*)(obj);
+          //QQmlEngine_Wrapper* wrapper = getWrapper<QQmlEngine_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QQmlEngine_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_QQmlEngine(wrapper);
+          return QQmlEngine_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QQmlEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QQmlEngine: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_QQmlEngine::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper::cpp2js_QQmlApplicationEngine(RJSApi& handler, QQmlApplicationEngine* v) {

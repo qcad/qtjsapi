@@ -1738,6 +1738,21 @@
 
 
       
+      int RJSType_QJSEngine::id = -1;
+
+      int RJSType_QJSEngine::getId() const {
+          return RJSType_QJSEngine::getIdStatic();
+      }
+
+      int RJSType_QJSEngine::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QJSEngine());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QLayoutItem::id = -1;
 
       int RJSType_QLayoutItem::getId() const {
@@ -1912,6 +1927,21 @@
       int RJSType_QProcess::getIdStatic() {
           if (id<0) {
               id = RJSTypeEnum::reserve(new RJSType_QProcess());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QQmlEngine::id = -1;
+
+      int RJSType_QQmlEngine::getId() const {
+          return RJSType_QQmlEngine::getIdStatic();
+      }
+
+      int RJSType_QQmlEngine::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QQmlEngine());
           }
           return id;
       }

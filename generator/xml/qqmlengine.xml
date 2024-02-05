@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qqmlengine.h">
+  <class_decl name="QQmlComponent" />
+  <class_decl name="QQmlExpression" />
+  <class_decl name="QQmlContext" />
+  <!--
+  <class_decl name="QQmlType" />
+  -->
+  <class_decl name="QUrl" />
+  <class_decl name="QNetworkAccessManager" />
+  <class_decl name="QQmlNetworkAccessManagerFactory" />
+  <class_decl name="QQmlIncubationController" />
+  <!--
+  <class name="QQmlImageProviderBase">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <enum name="ImageType">
+      <key>Invalid</key>
+      <key>Image</key>
+      <key>Pixmap</key>
+      <key>Texture</key>
+      <key>ImageResponse</key>
+    </enum>
+    <enum name="Flag">
+      <key>ForceAsynchronousImageLoading</key>
+    </enum>
+    <function name="imageType">
+      <variant return-type="ImageType" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flags">
+      <variant return-type="Flags" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QQuickImageProvider" />
+  </class>
+  -->
+  <class name="QQmlEngine" ownership="cpp">
+    <super_list>
+      <super name="QJSEngine" />
+    </super_list>
+    <!--
+    <property type="QString" name="offlineStoragePath" read="offlineStoragePath" write="setOfflineStoragePath" />
+    -->
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="p" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="rootContext">
+      <variant return-type="QQmlContext*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="clearComponentCache">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="trimComponentCache">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearSingletons">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="importPathList">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setImportPathList">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="paths" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addImportPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dir" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pluginPathList">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPluginPathList">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="paths" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPluginPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dir" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <function name="addNamedBundle">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_CONFIG(library)" />
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,4)" />
+    <!--
+    <function name="importPlugin">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filePath" />
+          <parameter const="true" type="QString" modifier="&amp;" name="uri" />
+          <parameter const="false" type="QList&lt;QQmlError&gt;" modifier="*" name="errors" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#endif" />
+    <preproc plain="#endif" />
+    <!--
+    <preproc plain="#if QT_CONFIG(qml_network)" />
+    <function name="setNetworkAccessManagerFactory">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QQmlNetworkAccessManagerFactory" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="networkAccessManagerFactory">
+      <variant return-type="QQmlNetworkAccessManagerFactory*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="networkAccessManager">
+      <variant return-type="QNetworkAccessManager*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,0)" />
+    <function name="setUrlInterceptor">
+      <variant return-type="QT_DEPRECATEDvoid" access="public">
+        <parameters>
+          <parameter const="false" type="QQmlAbstractUrlInterceptor" modifier="*" name="urlInterceptor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="urlInterceptor">
+      <variant return-type="QT_DEPRECATEDQQmlAbstractUrlInterceptor*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <!--
+    <function name="addUrlInterceptor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QQmlAbstractUrlInterceptor" modifier="*" name="urlInterceptor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeUrlInterceptor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QQmlAbstractUrlInterceptor" modifier="*" name="urlInterceptor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="urlInterceptors">
+      <variant return-type="QList&lt;QQmlAbstractUrlInterceptor*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="interceptUrl">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+          <parameter const="false" type="QQmlAbstractUrlInterceptor::DataType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="addImageProvider">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+          <parameter const="false" type="QQmlImageProviderBase" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="imageProvider">
+      <variant return-type="QQmlImageProviderBase*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeImageProvider">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setIncubationController">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QQmlIncubationController" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="incubationController">
+      <variant return-type="QQmlIncubationController*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOfflineStoragePath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dir" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="offlineStoragePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="offlineStorageDatabaseFilePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="databaseName" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="baseUrl">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBaseUrl">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="outputWarningsToStandardError">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOutputWarningsToStandardError">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="markCurrentFunctionAsTranslationBinding">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="singletonInstance">
+      <variant return-type="T" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="qmlTypeId" />
+        </parameters>
+      </variant>
+      <variant return-type="T" access="public">
+        <parameters>
+          <parameter const="false" type="QAnyStringView" modifier="" name="moduleName" />
+          <parameter const="false" type="QAnyStringView" modifier="" name="typeName" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="captureProperty">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="object" />
+          <parameter const="true" type="QMetaProperty" modifier="&amp;" name="property" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="retranslate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="offlineStoragePathChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="contextForObject" static="true">
+      <variant return-type="QQmlContext*" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setContextForObject" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="" />
+          <parameter const="false" type="QQmlContext" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quit">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exit">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="retCode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="warnings">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters>
+          <parameter const="true" type="QList&lt;QQmlError&gt;" modifier="&amp;" name="warnings" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

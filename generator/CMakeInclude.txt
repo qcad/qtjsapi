@@ -161,6 +161,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qitemdelegate_wrapper.h
     generator/cpp/qitemselectionmodel_base.h
     generator/cpp/qitemselectionmodel_wrapper.h
+    generator/cpp/qjsengine_base.h
+    generator/cpp/qjsengine_wrapper.h
     generator/cpp/qkeycombination_wrapper.h
     generator/cpp/qkeyevent_wrapper.h
     generator/cpp/qkeysequence_base.h
@@ -256,6 +258,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qpushbutton_wrapper.h
     generator/cpp/qqmlapplicationengine_base.h
     generator/cpp/qqmlapplicationengine_wrapper.h
+    generator/cpp/qqmlengine_base.h
+    generator/cpp/qqmlengine_wrapper.h
     generator/cpp/qquickview_base.h
     generator/cpp/qquickview_wrapper.h
     generator/cpp/qquickwidget_base.h
@@ -524,6 +528,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qitemdelegate_wrapper.cpp
     generator/cpp/qitemselectionmodel_base.cpp
     generator/cpp/qitemselectionmodel_wrapper.cpp
+    generator/cpp/qjsengine_base.cpp
+    generator/cpp/qjsengine_wrapper.cpp
     generator/cpp/qkeysequence_base.cpp
     generator/cpp/qkeysequence_wrapper.cpp
     generator/cpp/qlabel_base.cpp
@@ -606,6 +612,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qpushbutton_wrapper.cpp
     generator/cpp/qqmlapplicationengine_base.cpp
     generator/cpp/qqmlapplicationengine_wrapper.cpp
+    generator/cpp/qqmlengine_base.cpp
+    generator/cpp/qqmlengine_wrapper.cpp
     generator/cpp/qquickview_base.cpp
     generator/cpp/qquickview_wrapper.cpp
     generator/cpp/qquickwidget_base.cpp

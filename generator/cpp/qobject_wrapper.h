@@ -332,6 +332,10 @@
                 return (QObject*)(QItemSelectionModel*)vp;
               }
               
+              if (t==RJSType_QJSEngine::getIdStatic()) {
+                return (QObject*)(QJSEngine*)vp;
+              }
+              
               if (t==RJSType_QLabel::getIdStatic()) {
                 return (QObject*)(QLabel*)vp;
               }

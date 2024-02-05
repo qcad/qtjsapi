@@ -105,6 +105,7 @@
     <file alias="generator/js/QItemDelegate.js">generator/js/QItemDelegate.js</file>
     <file alias="generator/js/QItemSelection.js">generator/js/QItemSelection.js</file>
     <file alias="generator/js/QItemSelectionModel.js">generator/js/QItemSelectionModel.js</file>
+    <file alias="generator/js/QJSEngine.js">generator/js/QJSEngine.js</file>
     <file alias="generator/js/QKeyCombination.js">generator/js/QKeyCombination.js</file>
     <file alias="generator/js/QKeyEvent.js">generator/js/QKeyEvent.js</file>
     <file alias="generator/js/QKeySequence.js">generator/js/QKeySequence.js</file>
@@ -161,6 +162,7 @@
     <file alias="generator/js/QProgressDialog.js">generator/js/QProgressDialog.js</file>
     <file alias="generator/js/QPushButton.js">generator/js/QPushButton.js</file>
     <file alias="generator/js/QQmlApplicationEngine.js">generator/js/QQmlApplicationEngine.js</file>
+    <file alias="generator/js/QQmlEngine.js">generator/js/QQmlEngine.js</file>
     <file alias="generator/js/QQuickView.js">generator/js/QQuickView.js</file>
     <file alias="generator/js/QQuickWidget.js">generator/js/QQuickWidget.js</file>
     <file alias="generator/js/QRadialGradient.js">generator/js/QRadialGradient.js</file>

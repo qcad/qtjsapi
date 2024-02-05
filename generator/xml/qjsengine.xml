@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qjsengine.h">
+  <class name="QJSEngine" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <property type="QString" name="uiLanguage" read="uiLanguage" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="globalObject">
+      <variant return-type="QJSValue" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="evaluate">
+      <variant return-type="QJSValue" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="program" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" default="QString()" />
+          <parameter const="false" type="int" modifier="" name="lineNumber" default="1" />
+          <parameter const="false" type="QStringList" modifier="*" name="exceptionStackTrace" default="nullptr" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="importModule">
+      <variant return-type="QJSValue" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="registerModule">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="moduleName" />
+          <parameter const="true" type="QJSValue" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="newObject">
+      <variant return-type="QJSValue" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="newSymbol">
+      <variant return-type="QJSValue" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="newArray">
+      <variant return-type="QJSValue" access="public">
+        <parameters>
+          <parameter const="false" type="uint" modifier="" name="length" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="newQObject">
+      <variant return-type="QJSValue" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="object" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="newQMetaObject">
+      <variant return-type="QJSValue" access="public">
+        <parameters>
+          <parameter const="true" type="QMetaObject" modifier="*" name="metaObject" />
+        </parameters>
+      </variant>
+      <variant return-type="QJSValue" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="newErrorObject">
+      <variant return-type="QJSValue" access="public">
+        <parameters>
+          <parameter const="false" type="QJSValue::ErrorType" modifier="" name="errorType" />
+          <parameter const="true" type="QString" modifier="&amp;" name="message" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="toScriptValue">
+      <variant return-type="QJSValue" access="public">
+        <parameters>
+          <parameter const="true" type="T" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toManagedValue">
+      <variant return-type="QJSManagedValue" access="public">
+        <parameters>
+          <parameter const="true" type="T" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toPrimitiveValue">
+      <variant return-type="QJSPrimitiveValue" access="public">
+        <parameters>
+          <parameter const="true" type="T" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromScriptValue">
+      <variant return-type="T" access="public">
+        <parameters>
+          <parameter const="true" type="QJSValue" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromManagedValue">
+      <variant return-type="T" access="public">
+        <parameters>
+          <parameter const="true" type="QJSManagedValue" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromPrimitiveValue">
+      <variant return-type="T" access="public">
+        <parameters>
+          <parameter const="true" type="QJSPrimitiveValue" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromVariant">
+      <variant return-type="T" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="coerceValue">
+      <variant return-type="To" access="public">
+        <parameters>
+          <parameter const="true" type="From" modifier="&amp;" name="from" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="collectGarbage">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <enum name="ObjectOwnership">
+      <key>CppOwnership</key>
+      <key>JavaScriptOwnership</key>
+    </enum>
+    <function name="setObjectOwnership" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="" />
+          <parameter const="false" type="ObjectOwnership" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="objectOwnership" static="true">
+      <variant return-type="ObjectOwnership" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <enum name="Extension">
+      <key>TranslationExtension</key>
+      <key>ConsoleExtension</key>
+      <key>GarbageCollectionExtension</key>
+      <key>AllExtensions</key>
+    </enum>
+    <function name="installExtensions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Extensions" modifier="" name="extensions" />
+          <parameter const="true" type="QJSValue" modifier="&amp;" name="object" default="QJSValue()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setInterrupted">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="interrupted" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isInterrupted">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="handle">
+      <variant return-type="QV4::ExecutionEngine*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="throwError">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QJSValue::ErrorType" modifier="" name="errorType" />
+          <parameter const="true" type="QString" modifier="&amp;" name="message" default="QString()" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QJSValue" modifier="&amp;" name="error" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasError">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="catchError">
+      <variant return-type="QJSValue" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="uiLanguage">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUiLanguage">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="language" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="uiLanguageChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="createPrimitive" />
+    <function name="createManaged" />
+    <function name="create" />
+    <preproc plain="#if QT_QML_REMOVED_SINCE(6,5)" />
+    <preproc plain="#endif" />
+    <function name="convertPrimitive" static="true" />
+    <function name="convertManaged" static="true" />
+    <preproc plain="#if QT_QML_REMOVED_SINCE(6,5)" />
+    <function name="convertV2" static="true" />
+    <preproc plain="#endif" />
+    <function name="convertString" static="true" />
+    <function name="convertVariant" />
+    <function name="convertMetaType" />
+    <function name="convertQObjectToString" />
+    <function name="convertDateTimeToString" />
+    <function name="convertDateTimeToDate" static="true" />
+    -->
+  </class>
+</unit>

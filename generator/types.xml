@@ -465,6 +465,7 @@
     <type>QImageReader</type>
     <type>QImageWriter</type>
     <type>QInputEvent</type>
+    <type>QJSEngine</type>
     <type>QKeyEvent</type>
     <type>QLayoutItem</type>
     <type>QListWidgetItem</type>
@@ -478,6 +479,7 @@
     <type>QPointerEvent</type>
     <type>QPrinter</type>
     <type>QProcess</type>
+    <type>QQmlEngine</type>
     <type>QQmlApplicationEngine</type>
     <type>QResizeEvent</type>
     <type>QSinglePointEvent</type>
