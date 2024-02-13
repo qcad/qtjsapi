@@ -388,6 +388,7 @@ void RJSApi::init() {
     QDomElement_Wrapper::init(*this);
     QDomNode_Wrapper::init(*this);
     QDomNamedNodeMap_Wrapper::init(*this);
+    QDomAttr_Wrapper::init(*this);
     QDomText_Wrapper::init(*this);
     QDomNodeList_Wrapper::init(*this);
     QDomCharacterData_Wrapper::init(*this);
