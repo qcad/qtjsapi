@@ -565,25 +565,6 @@
               ;
             
     // Class: QQmlEngine
-    // Function: markCurrentFunctionAsTranslationBinding
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  markCurrentFunctionAsTranslationBinding
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QQmlEngine
     // Function: retranslate
     // Source: 
     // Static: false

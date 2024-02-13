@@ -282,11 +282,13 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="markCurrentFunctionAsTranslationBinding">
       <variant return-type="void" access="public">
         <parameters />
       </variant>
     </function>
+    -->
     <!--
     <function name="singletonInstance">
       <variant return-type="T" access="public">

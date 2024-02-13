@@ -1296,53 +1296,6 @@ bool a1_cpp;
               }
             
     // Class: QQmlEngine
-    // Function: markCurrentFunctionAsTranslationBinding
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlEngine_Wrapper::markCurrentFunctionAsTranslationBinding
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlEngine* w = getWrapped();
-                
-                w->markCurrentFunctionAsTranslationBinding(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for markCurrentFunctionAsTranslationBinding";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlEngine
     // Function: retranslate
     // Source: 
     // Static: false
