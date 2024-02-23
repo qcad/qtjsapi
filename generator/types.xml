@@ -349,6 +349,7 @@
     <type>ulong</type>
     <type>unsignedlong</type>
     <type>ushort</type>
+    <type>WId</type>
   </primitive>
 
   <shared_ptr_no_copy>

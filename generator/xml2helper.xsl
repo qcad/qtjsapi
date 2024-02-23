@@ -1533,7 +1533,7 @@
       <xsl:when test="contains($type, '::')">
         <xsl:text>toInt()</xsl:text>
       </xsl:when>
-      <xsl:when test="$type='double' or $type='char' or $type='qreal' or $type='float' or $type='int' or $type='uint' or $type='qint64' or $type='quint64' or $type='quint32' or $type='quint16' or $type='qlonglong' or $type='qulonglong' or $type='qsizetype' or $type='long int' or $type='long long int' or $type='short' or $type='ushort' or $type='long' or $type='ulong' or $type='unsigned long' or $type='unsigned long long int'">
+      <xsl:when test="$type='double' or $type='char' or $type='qreal' or $type='float' or $type='int' or $type='uint' or $type='qint64' or $type='quint64' or $type='quint32' or $type='quint16' or $type='qlonglong' or $type='qulonglong' or $type='qsizetype' or $type='long int' or $type='long long int' or $type='short' or $type='ushort' or $type='long' or $type='ulong' or $type='unsigned long' or $type='unsigned long long int' or $type='WId'">
         <xsl:text>toNumber()</xsl:text>
       </xsl:when>
     </xsl:choose>
@@ -1550,7 +1550,7 @@
       <xsl:when test="contains($type, '::')">
         <xsl:text>isNumber()</xsl:text>
       </xsl:when>
-      <xsl:when test="$type='double' or $type='char' or $type='qreal' or $type='float' or $type='int' or $type='uint' or $type='qint64' or $type='quint64' or $type='quint32' or $type='quint16' or $type='qlonglong' or $type='qulonglong' or $type='qsizetype' or $type='long int' or $type='long long int' or $type='short' or $type='ushort' or $type='long' or $type='ulong' or $type='unsigned long' or $type='unsigned long long int'">
+      <xsl:when test="$type='double' or $type='char' or $type='qreal' or $type='float' or $type='int' or $type='uint' or $type='qint64' or $type='quint64' or $type='quint32' or $type='quint16' or $type='qlonglong' or $type='qulonglong' or $type='qsizetype' or $type='long int' or $type='long long int' or $type='short' or $type='ushort' or $type='long' or $type='ulong' or $type='unsigned long' or $type='unsigned long long int' or $type='WId'">
         <xsl:text>isNumber()</xsl:text>
       </xsl:when>
     </xsl:choose>
@@ -1580,7 +1580,7 @@
           </xsl:otherwise>
         </xsl:choose>
       </xsl:when>
-      <xsl:when test="$type='double' or $type='char' or $type='qreal' or $type='float' or $type='int' or $type='uint' or $type='qint64' or $type='quint64' or $type='quint32' or $type='quint16' or $type='qlonglong' or $type='qulonglong' or $type='qsizetype' or $type='long int' or $type='short' or $type='ushort' or $type='long' or $type='ulong' or $type='unsigned long'">
+      <xsl:when test="$type='double' or $type='char' or $type='qreal' or $type='float' or $type='int' or $type='uint' or $type='qint64' or $type='quint64' or $type='quint32' or $type='quint16' or $type='qlonglong' or $type='qulonglong' or $type='qsizetype' or $type='long int' or $type='short' or $type='ushort' or $type='long' or $type='ulong' or $type='unsigned long' or $type='WId'">
         <xsl:text>0</xsl:text>
       </xsl:when>
     </xsl:choose>
@@ -1591,7 +1591,7 @@
       <xsl:when test="$type='bool'">
         <xsl:text></xsl:text>
       </xsl:when>
-      <xsl:when test="$type='qint64' or $type='quint64' or $type='qsizetype' or $type='long' or $type='qlonglong' or $type='ulong' or $type='qulonglong' or $type='unsigned long'"> 
+      <xsl:when test="$type='qint64' or $type='quint64' or $type='qsizetype' or $type='long' or $type='qlonglong' or $type='ulong' or $type='qulonglong' or $type='unsigned long' or $type='WId'"> 
         <xsl:text>(int)</xsl:text>
       </xsl:when>
     </xsl:choose>

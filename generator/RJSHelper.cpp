@@ -8933,6 +8933,24 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper::cpp2js_WId(RJSApi& handler, WId v) {
+        return QJSValue((int)v);
+      }
+
+      WId RJSHelper::js2cpp_WId(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 0;
+        }
+        return v.toNumber();
+      }
+
+      bool RJSHelper::is_WId(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
   // ------------------------------------
   // QSharedPointer types (non-copyable):
   // ------------------------------------

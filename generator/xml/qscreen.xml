@@ -180,7 +180,6 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="grabWindow">
       <variant return-type="QPixmap" access="public">
         <parameters>
@@ -192,7 +191,6 @@
         </parameters>
       </variant>
     </function>
-    -->
     <function name="refreshRate">
       <variant return-type="qreal" const="true" access="public">
         <parameters />

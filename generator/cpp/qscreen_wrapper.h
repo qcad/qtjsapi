@@ -1279,6 +1279,45 @@
               ;
             
     // Class: QScreen
+    // Function: grabWindow
+    // Source: 
+    // Static: false
+    // Parameters: 5
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  grabWindow
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QScreen
     // Function: refreshRate
     // Source: 
     // Static: false

@@ -3116,6 +3116,10 @@
       static ushort js2cpp_ushort(RJSApi& handler, const QJSValue& v);
       static bool is_ushort(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_WId(RJSApi& handler, WId v);
+      static WId js2cpp_WId(RJSApi& handler, const QJSValue& v);
+      static bool is_WId(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
   // ------------------------------------
   // QSharedPointer types (non-copyable):
   // ------------------------------------

@@ -3666,6 +3666,170 @@ Qt::ScreenOrientation a1_cpp;
               }
             
     // Class: QScreen
+    // Function: grabWindow
+    // Source: 
+    // Static: false
+    // Parameters: 5
+    // preceding Parameters: -1
+
+                QJSValue 
+              QScreen_Wrapper::grabWindow
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_WId(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a3
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a4
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a5
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: window (WId)
+  
+WId a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = 0;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_WId(handler, a1);
+          }
+        
+  // convert js parameter to cpp: x (int)
+  
+int a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = 0;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
+          }
+        
+  // convert js parameter to cpp: y (int)
+  
+int a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = 0;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
+          }
+        
+  // convert js parameter to cpp: w (int)
+  
+int a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = -1;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
+          }
+        
+  // convert js parameter to cpp: h (int)
+  
+int a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = -1;
+          }
+          else {
+            a5_cpp = RJSHelper::js2cpp_int(handler, a5);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QScreen* w = getWrapped();
+                QPixmap res = 
+                    
+                w->grabWindow(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QPixmap
+
+            return RJSHelper::cpp2js_QPixmap(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for grabWindow";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QScreen
     // Function: refreshRate
     // Source: 
     // Static: false
