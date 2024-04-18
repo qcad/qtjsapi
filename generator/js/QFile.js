@@ -305,6 +305,34 @@
       
 
         // static function 
+        QFile.link = function() 
+          
+        {
+          //print("JS: QFile.link");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return QFile_WrapperSingletonInstance.link(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, QFile);
+  }
+
+  
+  else {
+    
+        print("QFile.link(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         QFile.copy = function() 
           
         {

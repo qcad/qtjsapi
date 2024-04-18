@@ -131,6 +131,33 @@
               ;
             
     // Class: QFile
+    // Function: link
+    // Source: 
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  link
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QFile
     // Function: copy
     // Source: 
     // Static: true
@@ -1417,8 +1444,8 @@
     // Function: link
     // Source: 
     // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
+    // Parameters: 1
+    // preceding Parameters: 2
 
               public:
               Q_INVOKABLE 
@@ -1430,10 +1457,6 @@
                 
   const QJSValue& 
   a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
       = QJSValue()
     
               )

@@ -229,6 +229,81 @@ QString a2_cpp;
               }
             
     // Class: QFile
+    // Function: link
+    // Source: 
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFile_WrapperSingleton::link
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+   && RJSHelper::is_QString(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: fileName (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+  // convert js parameter to cpp: linkName (QString)
+  
+QString a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                QFile::link(
+              a1_cpp
+    , a2_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for link";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFile
     // Function: copy
     // Source: 
     // Static: true
@@ -3735,80 +3810,19 @@ QString a1_cpp;
     // Function: link
     // Source: 
     // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
+    // Parameters: 1
+    // preceding Parameters: 2
 
                 QJSValue 
               QFile_Wrapper::link
               (
                 
   const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
+  a1
               ) 
               
               {
                 
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-   && RJSHelper::is_QString(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: oldname (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-  // convert js parameter to cpp: newName (QString)
-  
-QString a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFile* w = getWrapped();
-                bool res = 
-                    
-                w->link(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
       // check parameter types:
       if (
         RJSHelper::is_QString(handler, a1

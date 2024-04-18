@@ -144,10 +144,10 @@
           <parameter const="true" type="QString" modifier="&amp;" name="newName" />
         </parameters>
       </variant>
-      <variant return-type="bool" access="public">
+      <variant return-type="bool" static="true" access="public">
         <parameters>
-          <parameter const="true" type="QString" modifier="&amp;" name="oldname" />
-          <parameter const="true" type="QString" modifier="&amp;" name="newName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="linkName" />
         </parameters>
       </variant>
     </function>
