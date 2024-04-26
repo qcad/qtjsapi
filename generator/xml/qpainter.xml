@@ -1176,26 +1176,26 @@
           <parameter const="false" type="int" modifier="" name="justificationPadding" />
         </parameters>
       </variant>
-      <!--
       <variant return-type="void" access="public">
         <parameters>
           <parameter const="true" type="QRectF" modifier="&amp;" name="r" />
           <parameter const="false" type="int" modifier="" name="flags" />
           <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <!--
           <parameter const="false" type="QRectF" modifier="*" name="br" default="nullptr" />
+          -->
         </parameters>
       </variant>
-      -->
-      <!--
       <variant return-type="void" access="public">
         <parameters>
           <parameter const="true" type="QRect" modifier="&amp;" name="r" />
           <parameter const="false" type="int" modifier="" name="flags" />
           <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <!--
           <parameter const="false" type="QRect" modifier="*" name="br" default="nullptr" />
+          -->
         </parameters>
       </variant>
-      -->
       <variant return-type="void" access="public">
         <parameters>
           <parameter const="false" type="int" modifier="" name="x" />

@@ -9277,6 +9277,128 @@ QString a3_cpp;
 
       // check parameter types:
       if (
+        RJSHelper::is_QRectF(handler, a1
+  )
+
+   && RJSHelper::is_int(handler, a2
+  )
+
+   && RJSHelper::is_QString(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: r (QRectF)
+  
+QRectF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
+        
+  // convert js parameter to cpp: flags (int)
+  
+int a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
+        
+  // convert js parameter to cpp: text (QString)
+  
+QString a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QPainter* w = getWrapped();
+                
+                w->drawText(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QRect(handler, a1
+  )
+
+   && RJSHelper::is_int(handler, a2
+  )
+
+   && RJSHelper::is_QString(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: r (QRect)
+  
+QRect a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
+        
+  // convert js parameter to cpp: flags (int)
+  
+int a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
+        
+  // convert js parameter to cpp: text (QString)
+  
+QString a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QPainter* w = getWrapped();
+                
+                w->drawText(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
         RJSHelper::is_QPointF(handler, a1
   )
 
