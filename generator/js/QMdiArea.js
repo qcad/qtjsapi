@@ -142,6 +142,24 @@
 
       // enum values:
       
+  // enum: Shape
+QMdiArea.NoFrame = QMdiArea_Wrapper.NoFrame;
+QMdiArea.Box = QMdiArea_Wrapper.Box;
+QMdiArea.Panel = QMdiArea_Wrapper.Panel;
+QMdiArea.WinPanel = QMdiArea_Wrapper.WinPanel;
+QMdiArea.HLine = QMdiArea_Wrapper.HLine;
+QMdiArea.VLine = QMdiArea_Wrapper.VLine;
+QMdiArea.StyledPanel = QMdiArea_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QMdiArea.Plain = QMdiArea_Wrapper.Plain;
+QMdiArea.Raised = QMdiArea_Wrapper.Raised;
+QMdiArea.Sunken = QMdiArea_Wrapper.Sunken;
+
+  // enum: StyleMask
+QMdiArea.Shadow_Mask = QMdiArea_Wrapper.Shadow_Mask;
+QMdiArea.Shape_Mask = QMdiArea_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QMdiArea.AdjustIgnored = QMdiArea_Wrapper.AdjustIgnored;
 QMdiArea.AdjustToContentsOnFirstShow = QMdiArea_Wrapper.AdjustToContentsOnFirstShow;

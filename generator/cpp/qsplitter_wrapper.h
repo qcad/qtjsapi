@@ -525,6 +525,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      opaqueResize READ opaqueResize WRITE setOpaqueResize
   )
 
@@ -589,6 +625,35 @@
           return ret;
         }
       
+        // enums:
+        
+  enum Shape {
+    NoFrame = QSplitter::NoFrame,
+Box = QSplitter::Box,
+Panel = QSplitter::Panel,
+WinPanel = QSplitter::WinPanel,
+HLine = QSplitter::HLine,
+VLine = QSplitter::VLine,
+StyledPanel = QSplitter::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QSplitter::Plain,
+Raised = QSplitter::Raised,
+Sunken = QSplitter::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QSplitter::Shadow_Mask,
+Shape_Mask = QSplitter::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
     /*
     // special constructor used as prototype:
     

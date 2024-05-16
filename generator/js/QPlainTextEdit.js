@@ -179,6 +179,24 @@
 
       // enum values:
       
+  // enum: Shape
+QPlainTextEdit.NoFrame = QPlainTextEdit_Wrapper.NoFrame;
+QPlainTextEdit.Box = QPlainTextEdit_Wrapper.Box;
+QPlainTextEdit.Panel = QPlainTextEdit_Wrapper.Panel;
+QPlainTextEdit.WinPanel = QPlainTextEdit_Wrapper.WinPanel;
+QPlainTextEdit.HLine = QPlainTextEdit_Wrapper.HLine;
+QPlainTextEdit.VLine = QPlainTextEdit_Wrapper.VLine;
+QPlainTextEdit.StyledPanel = QPlainTextEdit_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QPlainTextEdit.Plain = QPlainTextEdit_Wrapper.Plain;
+QPlainTextEdit.Raised = QPlainTextEdit_Wrapper.Raised;
+QPlainTextEdit.Sunken = QPlainTextEdit_Wrapper.Sunken;
+
+  // enum: StyleMask
+QPlainTextEdit.Shadow_Mask = QPlainTextEdit_Wrapper.Shadow_Mask;
+QPlainTextEdit.Shape_Mask = QPlainTextEdit_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QPlainTextEdit.AdjustIgnored = QPlainTextEdit_Wrapper.AdjustIgnored;
 QPlainTextEdit.AdjustToContentsOnFirstShow = QPlainTextEdit_Wrapper.AdjustToContentsOnFirstShow;

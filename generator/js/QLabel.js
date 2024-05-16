@@ -167,6 +167,24 @@
 
       // enum values:
       
+  // enum: Shape
+QLabel.NoFrame = QLabel_Wrapper.NoFrame;
+QLabel.Box = QLabel_Wrapper.Box;
+QLabel.Panel = QLabel_Wrapper.Panel;
+QLabel.WinPanel = QLabel_Wrapper.WinPanel;
+QLabel.HLine = QLabel_Wrapper.HLine;
+QLabel.VLine = QLabel_Wrapper.VLine;
+QLabel.StyledPanel = QLabel_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QLabel.Plain = QLabel_Wrapper.Plain;
+QLabel.Raised = QLabel_Wrapper.Raised;
+QLabel.Sunken = QLabel_Wrapper.Sunken;
+
+  // enum: StyleMask
+QLabel.Shadow_Mask = QLabel_Wrapper.Shadow_Mask;
+QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
+
 
       // functions:
       

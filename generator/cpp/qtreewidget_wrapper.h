@@ -2000,6 +2000,42 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -2210,6 +2246,33 @@ DontShowIndicatorWhenChildless = QTreeWidgetItem::DontShowIndicatorWhenChildless
       
         // enums:
         
+  enum Shape {
+    NoFrame = QTreeWidget::NoFrame,
+Box = QTreeWidget::Box,
+Panel = QTreeWidget::Panel,
+WinPanel = QTreeWidget::WinPanel,
+HLine = QTreeWidget::HLine,
+VLine = QTreeWidget::VLine,
+StyledPanel = QTreeWidget::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QTreeWidget::Plain,
+Raised = QTreeWidget::Raised,
+Sunken = QTreeWidget::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QTreeWidget::Shadow_Mask,
+Shape_Mask = QTreeWidget::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QTreeWidget::AdjustIgnored,
 AdjustToContentsOnFirstShow = QTreeWidget::AdjustToContentsOnFirstShow,

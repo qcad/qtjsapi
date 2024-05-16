@@ -1550,6 +1550,42 @@ UserType = QListWidgetItem::UserType,
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -1790,6 +1826,33 @@ UserType = QListWidgetItem::UserType,
       
         // enums:
         
+  enum Shape {
+    NoFrame = QListWidget::NoFrame,
+Box = QListWidget::Box,
+Panel = QListWidget::Panel,
+WinPanel = QListWidget::WinPanel,
+HLine = QListWidget::HLine,
+VLine = QListWidget::VLine,
+StyledPanel = QListWidget::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QListWidget::Plain,
+Raised = QListWidget::Raised,
+Sunken = QListWidget::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QListWidget::Shadow_Mask,
+Shape_Mask = QListWidget::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QListWidget::AdjustIgnored,
 AdjustToContentsOnFirstShow = QListWidget::AdjustToContentsOnFirstShow,

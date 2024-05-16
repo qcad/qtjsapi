@@ -170,6 +170,24 @@
 
       // enum values:
       
+  // enum: Shape
+QHeaderView.NoFrame = QHeaderView_Wrapper.NoFrame;
+QHeaderView.Box = QHeaderView_Wrapper.Box;
+QHeaderView.Panel = QHeaderView_Wrapper.Panel;
+QHeaderView.WinPanel = QHeaderView_Wrapper.WinPanel;
+QHeaderView.HLine = QHeaderView_Wrapper.HLine;
+QHeaderView.VLine = QHeaderView_Wrapper.VLine;
+QHeaderView.StyledPanel = QHeaderView_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QHeaderView.Plain = QHeaderView_Wrapper.Plain;
+QHeaderView.Raised = QHeaderView_Wrapper.Raised;
+QHeaderView.Sunken = QHeaderView_Wrapper.Sunken;
+
+  // enum: StyleMask
+QHeaderView.Shadow_Mask = QHeaderView_Wrapper.Shadow_Mask;
+QHeaderView.Shape_Mask = QHeaderView_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QHeaderView.AdjustIgnored = QHeaderView_Wrapper.AdjustIgnored;
 QHeaderView.AdjustToContentsOnFirstShow = QHeaderView_Wrapper.AdjustToContentsOnFirstShow;

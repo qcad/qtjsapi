@@ -1559,6 +1559,42 @@ UserType = QTableWidgetItem::UserType,
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -1733,6 +1769,33 @@ UserType = QTableWidgetItem::UserType,
       
         // enums:
         
+  enum Shape {
+    NoFrame = QTableWidget::NoFrame,
+Box = QTableWidget::Box,
+Panel = QTableWidget::Panel,
+WinPanel = QTableWidget::WinPanel,
+HLine = QTableWidget::HLine,
+VLine = QTableWidget::VLine,
+StyledPanel = QTableWidget::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QTableWidget::Plain,
+Raised = QTableWidget::Raised,
+Sunken = QTableWidget::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QTableWidget::Shadow_Mask,
+Shape_Mask = QTableWidget::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QTableWidget::AdjustIgnored,
 AdjustToContentsOnFirstShow = QTableWidget::AdjustToContentsOnFirstShow,

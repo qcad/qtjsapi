@@ -142,6 +142,24 @@
 
       // enum values:
       
+  // enum: Shape
+QTreeWidget.NoFrame = QTreeWidget_Wrapper.NoFrame;
+QTreeWidget.Box = QTreeWidget_Wrapper.Box;
+QTreeWidget.Panel = QTreeWidget_Wrapper.Panel;
+QTreeWidget.WinPanel = QTreeWidget_Wrapper.WinPanel;
+QTreeWidget.HLine = QTreeWidget_Wrapper.HLine;
+QTreeWidget.VLine = QTreeWidget_Wrapper.VLine;
+QTreeWidget.StyledPanel = QTreeWidget_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QTreeWidget.Plain = QTreeWidget_Wrapper.Plain;
+QTreeWidget.Raised = QTreeWidget_Wrapper.Raised;
+QTreeWidget.Sunken = QTreeWidget_Wrapper.Sunken;
+
+  // enum: StyleMask
+QTreeWidget.Shadow_Mask = QTreeWidget_Wrapper.Shadow_Mask;
+QTreeWidget.Shape_Mask = QTreeWidget_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QTreeWidget.AdjustIgnored = QTreeWidget_Wrapper.AdjustIgnored;
 QTreeWidget.AdjustToContentsOnFirstShow = QTreeWidget_Wrapper.AdjustToContentsOnFirstShow;

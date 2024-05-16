@@ -593,6 +593,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoFormatting READ autoFormatting WRITE setAutoFormatting
   )
 
@@ -741,6 +777,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QTextEdit::NoFrame,
+Box = QTextEdit::Box,
+Panel = QTextEdit::Panel,
+WinPanel = QTextEdit::WinPanel,
+HLine = QTextEdit::HLine,
+VLine = QTextEdit::VLine,
+StyledPanel = QTextEdit::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QTextEdit::Plain,
+Raised = QTextEdit::Raised,
+Sunken = QTextEdit::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QTextEdit::Shadow_Mask,
+Shape_Mask = QTextEdit::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QTextEdit::AdjustIgnored,
 AdjustToContentsOnFirstShow = QTextEdit::AdjustToContentsOnFirstShow,

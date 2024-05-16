@@ -165,6 +165,24 @@
 
       // enum values:
       
+  // enum: Shape
+QSplitter.NoFrame = QSplitter_Wrapper.NoFrame;
+QSplitter.Box = QSplitter_Wrapper.Box;
+QSplitter.Panel = QSplitter_Wrapper.Panel;
+QSplitter.WinPanel = QSplitter_Wrapper.WinPanel;
+QSplitter.HLine = QSplitter_Wrapper.HLine;
+QSplitter.VLine = QSplitter_Wrapper.VLine;
+QSplitter.StyledPanel = QSplitter_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QSplitter.Plain = QSplitter_Wrapper.Plain;
+QSplitter.Raised = QSplitter_Wrapper.Raised;
+QSplitter.Sunken = QSplitter_Wrapper.Sunken;
+
+  // enum: StyleMask
+QSplitter.Shadow_Mask = QSplitter_Wrapper.Shadow_Mask;
+QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
+
 
       // functions:
       

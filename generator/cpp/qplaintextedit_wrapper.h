@@ -555,6 +555,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      tabChangesFocus READ tabChangesFocus WRITE setTabChangesFocus
   )
 
@@ -693,6 +729,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QPlainTextEdit::NoFrame,
+Box = QPlainTextEdit::Box,
+Panel = QPlainTextEdit::Panel,
+WinPanel = QPlainTextEdit::WinPanel,
+HLine = QPlainTextEdit::HLine,
+VLine = QPlainTextEdit::VLine,
+StyledPanel = QPlainTextEdit::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QPlainTextEdit::Plain,
+Raised = QPlainTextEdit::Raised,
+Sunken = QPlainTextEdit::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QPlainTextEdit::Shadow_Mask,
+Shape_Mask = QPlainTextEdit::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QPlainTextEdit::AdjustIgnored,
 AdjustToContentsOnFirstShow = QPlainTextEdit::AdjustToContentsOnFirstShow,

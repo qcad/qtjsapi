@@ -132,6 +132,24 @@
 
       // enum values:
       
+  // enum: Shape
+QFrame.NoFrame = QFrame_Wrapper.NoFrame;
+QFrame.Box = QFrame_Wrapper.Box;
+QFrame.Panel = QFrame_Wrapper.Panel;
+QFrame.WinPanel = QFrame_Wrapper.WinPanel;
+QFrame.HLine = QFrame_Wrapper.HLine;
+QFrame.VLine = QFrame_Wrapper.VLine;
+QFrame.StyledPanel = QFrame_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QFrame.Plain = QFrame_Wrapper.Plain;
+QFrame.Raised = QFrame_Wrapper.Raised;
+QFrame.Sunken = QFrame_Wrapper.Sunken;
+
+  // enum: StyleMask
+QFrame.Shadow_Mask = QFrame_Wrapper.Shadow_Mask;
+QFrame.Shape_Mask = QFrame_Wrapper.Shape_Mask;
+
 
       // functions:
       

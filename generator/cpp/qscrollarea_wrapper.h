@@ -521,6 +521,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      alignment READ alignment WRITE setAlignment
   )
 
@@ -575,6 +611,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QScrollArea::NoFrame,
+Box = QScrollArea::Box,
+Panel = QScrollArea::Panel,
+WinPanel = QScrollArea::WinPanel,
+HLine = QScrollArea::HLine,
+VLine = QScrollArea::VLine,
+StyledPanel = QScrollArea::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QScrollArea::Plain,
+Raised = QScrollArea::Raised,
+Sunken = QScrollArea::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QScrollArea::Shadow_Mask,
+Shape_Mask = QScrollArea::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QScrollArea::AdjustIgnored,
 AdjustToContentsOnFirstShow = QScrollArea::AdjustToContentsOnFirstShow,

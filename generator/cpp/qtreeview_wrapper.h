@@ -550,6 +550,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -752,6 +788,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QTreeView::NoFrame,
+Box = QTreeView::Box,
+Panel = QTreeView::Panel,
+WinPanel = QTreeView::WinPanel,
+HLine = QTreeView::HLine,
+VLine = QTreeView::VLine,
+StyledPanel = QTreeView::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QTreeView::Plain,
+Raised = QTreeView::Raised,
+Sunken = QTreeView::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QTreeView::Shadow_Mask,
+Shape_Mask = QTreeView::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QTreeView::AdjustIgnored,
 AdjustToContentsOnFirstShow = QTreeView::AdjustToContentsOnFirstShow,

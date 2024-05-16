@@ -175,6 +175,24 @@
 
       // enum values:
       
+  // enum: Shape
+QTextEdit.NoFrame = QTextEdit_Wrapper.NoFrame;
+QTextEdit.Box = QTextEdit_Wrapper.Box;
+QTextEdit.Panel = QTextEdit_Wrapper.Panel;
+QTextEdit.WinPanel = QTextEdit_Wrapper.WinPanel;
+QTextEdit.HLine = QTextEdit_Wrapper.HLine;
+QTextEdit.VLine = QTextEdit_Wrapper.VLine;
+QTextEdit.StyledPanel = QTextEdit_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QTextEdit.Plain = QTextEdit_Wrapper.Plain;
+QTextEdit.Raised = QTextEdit_Wrapper.Raised;
+QTextEdit.Sunken = QTextEdit_Wrapper.Sunken;
+
+  // enum: StyleMask
+QTextEdit.Shadow_Mask = QTextEdit_Wrapper.Shadow_Mask;
+QTextEdit.Shape_Mask = QTextEdit_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QTextEdit.AdjustIgnored = QTextEdit_Wrapper.AdjustIgnored;
 QTextEdit.AdjustToContentsOnFirstShow = QTextEdit_Wrapper.AdjustToContentsOnFirstShow;

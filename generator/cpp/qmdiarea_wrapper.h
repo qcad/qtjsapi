@@ -539,6 +539,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      activationOrder READ activationOrder WRITE setActivationOrder
   )
 
@@ -629,6 +665,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QMdiArea::NoFrame,
+Box = QMdiArea::Box,
+Panel = QMdiArea::Panel,
+WinPanel = QMdiArea::WinPanel,
+HLine = QMdiArea::HLine,
+VLine = QMdiArea::VLine,
+StyledPanel = QMdiArea::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QMdiArea::Plain,
+Raised = QMdiArea::Raised,
+Sunken = QMdiArea::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QMdiArea::Shadow_Mask,
+Shape_Mask = QMdiArea::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QMdiArea::AdjustIgnored,
 AdjustToContentsOnFirstShow = QMdiArea::AdjustToContentsOnFirstShow,

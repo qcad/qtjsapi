@@ -534,6 +534,42 @@
      inputMethodHints READ inputMethodHints WRITE setInputMethodHints
   )
 
+  Q_PROPERTY(
+    
+    QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
 
     private:
       // disable copy constructor:
@@ -633,6 +669,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QAbstractScrollArea::NoFrame,
+Box = QAbstractScrollArea::Box,
+Panel = QAbstractScrollArea::Panel,
+WinPanel = QAbstractScrollArea::WinPanel,
+HLine = QAbstractScrollArea::HLine,
+VLine = QAbstractScrollArea::VLine,
+StyledPanel = QAbstractScrollArea::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QAbstractScrollArea::Plain,
+Raised = QAbstractScrollArea::Raised,
+Sunken = QAbstractScrollArea::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QAbstractScrollArea::Shadow_Mask,
+Shape_Mask = QAbstractScrollArea::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QAbstractScrollArea::AdjustIgnored,
 AdjustToContentsOnFirstShow = QAbstractScrollArea::AdjustToContentsOnFirstShow,

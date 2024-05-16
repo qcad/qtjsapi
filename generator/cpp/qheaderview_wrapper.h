@@ -546,6 +546,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -738,6 +774,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QHeaderView::NoFrame,
+Box = QHeaderView::Box,
+Panel = QHeaderView::Panel,
+WinPanel = QHeaderView::WinPanel,
+HLine = QHeaderView::HLine,
+VLine = QHeaderView::VLine,
+StyledPanel = QHeaderView::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QHeaderView::Plain,
+Raised = QHeaderView::Raised,
+Sunken = QHeaderView::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QHeaderView::Shadow_Mask,
+Shape_Mask = QHeaderView::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QHeaderView::AdjustIgnored,
 AdjustToContentsOnFirstShow = QHeaderView::AdjustToContentsOnFirstShow,

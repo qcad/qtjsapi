@@ -156,6 +156,24 @@
 
       // enum values:
       
+  // enum: Shape
+QTableView.NoFrame = QTableView_Wrapper.NoFrame;
+QTableView.Box = QTableView_Wrapper.Box;
+QTableView.Panel = QTableView_Wrapper.Panel;
+QTableView.WinPanel = QTableView_Wrapper.WinPanel;
+QTableView.HLine = QTableView_Wrapper.HLine;
+QTableView.VLine = QTableView_Wrapper.VLine;
+QTableView.StyledPanel = QTableView_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QTableView.Plain = QTableView_Wrapper.Plain;
+QTableView.Raised = QTableView_Wrapper.Raised;
+QTableView.Sunken = QTableView_Wrapper.Sunken;
+
+  // enum: StyleMask
+QTableView.Shadow_Mask = QTableView_Wrapper.Shadow_Mask;
+QTableView.Shape_Mask = QTableView_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QTableView.AdjustIgnored = QTableView_Wrapper.AdjustIgnored;
 QTableView.AdjustToContentsOnFirstShow = QTableView_Wrapper.AdjustToContentsOnFirstShow;

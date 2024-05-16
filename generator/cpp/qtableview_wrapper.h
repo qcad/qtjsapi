@@ -531,6 +531,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -697,6 +733,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QTableView::NoFrame,
+Box = QTableView::Box,
+Panel = QTableView::Panel,
+WinPanel = QTableView::WinPanel,
+HLine = QTableView::HLine,
+VLine = QTableView::VLine,
+StyledPanel = QTableView::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QTableView::Plain,
+Raised = QTableView::Raised,
+Sunken = QTableView::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QTableView::Shadow_Mask,
+Shape_Mask = QTableView::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QTableView::AdjustIgnored,
 AdjustToContentsOnFirstShow = QTableView::AdjustToContentsOnFirstShow,

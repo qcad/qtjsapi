@@ -138,6 +138,24 @@
 
       // enum values:
       
+  // enum: Shape
+QListWidget.NoFrame = QListWidget_Wrapper.NoFrame;
+QListWidget.Box = QListWidget_Wrapper.Box;
+QListWidget.Panel = QListWidget_Wrapper.Panel;
+QListWidget.WinPanel = QListWidget_Wrapper.WinPanel;
+QListWidget.HLine = QListWidget_Wrapper.HLine;
+QListWidget.VLine = QListWidget_Wrapper.VLine;
+QListWidget.StyledPanel = QListWidget_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QListWidget.Plain = QListWidget_Wrapper.Plain;
+QListWidget.Raised = QListWidget_Wrapper.Raised;
+QListWidget.Sunken = QListWidget_Wrapper.Sunken;
+
+  // enum: StyleMask
+QListWidget.Shadow_Mask = QListWidget_Wrapper.Shadow_Mask;
+QListWidget.Shape_Mask = QListWidget_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QListWidget.AdjustIgnored = QListWidget_Wrapper.AdjustIgnored;
 QListWidget.AdjustToContentsOnFirstShow = QListWidget_Wrapper.AdjustToContentsOnFirstShow;

@@ -136,6 +136,24 @@
 
       // enum values:
       
+  // enum: Shape
+QAbstractScrollArea.NoFrame = QAbstractScrollArea_Wrapper.NoFrame;
+QAbstractScrollArea.Box = QAbstractScrollArea_Wrapper.Box;
+QAbstractScrollArea.Panel = QAbstractScrollArea_Wrapper.Panel;
+QAbstractScrollArea.WinPanel = QAbstractScrollArea_Wrapper.WinPanel;
+QAbstractScrollArea.HLine = QAbstractScrollArea_Wrapper.HLine;
+QAbstractScrollArea.VLine = QAbstractScrollArea_Wrapper.VLine;
+QAbstractScrollArea.StyledPanel = QAbstractScrollArea_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QAbstractScrollArea.Plain = QAbstractScrollArea_Wrapper.Plain;
+QAbstractScrollArea.Raised = QAbstractScrollArea_Wrapper.Raised;
+QAbstractScrollArea.Sunken = QAbstractScrollArea_Wrapper.Sunken;
+
+  // enum: StyleMask
+QAbstractScrollArea.Shadow_Mask = QAbstractScrollArea_Wrapper.Shadow_Mask;
+QAbstractScrollArea.Shape_Mask = QAbstractScrollArea_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QAbstractScrollArea.AdjustIgnored = QAbstractScrollArea_Wrapper.AdjustIgnored;
 QAbstractScrollArea.AdjustToContentsOnFirstShow = QAbstractScrollArea_Wrapper.AdjustToContentsOnFirstShow;

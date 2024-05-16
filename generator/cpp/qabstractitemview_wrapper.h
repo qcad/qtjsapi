@@ -562,6 +562,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -728,6 +764,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QAbstractItemView::NoFrame,
+Box = QAbstractItemView::Box,
+Panel = QAbstractItemView::Panel,
+WinPanel = QAbstractItemView::WinPanel,
+HLine = QAbstractItemView::HLine,
+VLine = QAbstractItemView::VLine,
+StyledPanel = QAbstractItemView::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QAbstractItemView::Plain,
+Raised = QAbstractItemView::Raised,
+Sunken = QAbstractItemView::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QAbstractItemView::Shadow_Mask,
+Shape_Mask = QAbstractItemView::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QAbstractItemView::AdjustIgnored,
 AdjustToContentsOnFirstShow = QAbstractItemView::AdjustToContentsOnFirstShow,

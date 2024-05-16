@@ -561,6 +561,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      text READ text WRITE setText
   )
 
@@ -679,6 +715,35 @@
           return ret;
         }
       
+        // enums:
+        
+  enum Shape {
+    NoFrame = QLabel::NoFrame,
+Box = QLabel::Box,
+Panel = QLabel::Panel,
+WinPanel = QLabel::WinPanel,
+HLine = QLabel::HLine,
+VLine = QLabel::VLine,
+StyledPanel = QLabel::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QLabel::Plain,
+Raised = QLabel::Raised,
+Sunken = QLabel::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QLabel::Shadow_Mask,
+Shape_Mask = QLabel::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
     /*
     // special constructor used as prototype:
     

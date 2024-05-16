@@ -6,6 +6,26 @@
       <super name="QObject" />
       <super name="QWidget" />
     </super_list>
+
+    <enum name="Shape">
+      <key>NoFrame</key>
+      <key>Box</key>
+      <key>Panel</key>
+      <key>WinPanel</key>
+      <key>HLine</key>
+      <key>VLine</key>
+      <key>StyledPanel</key>
+    </enum>
+    <enum name="Shadow">
+      <key>Plain</key>
+      <key>Raised</key>
+      <key>Sunken</key>
+    </enum>
+    <enum name="StyleMask">
+      <key>Shadow_Mask</key>
+      <key>Shape_Mask</key>
+    </enum>
+
     <constructor>
       <variant>
         <parameters>
@@ -14,6 +34,14 @@
         </parameters>
       </variant>
     </constructor>
+
+    <property type="QRect" name="frameRect" read="frameRect" write="setFrameRect" />
+    <property type="QFrame::Shadow" name="frameShadow" read="frameShadow" write="setFrameShadow" />
+    <property type="QFrame::Shape" name="frameShape" read="frameShape" write="setFrameShape" />
+    <property type="const int" name="frameWidth" read="frameWidth" />
+    <property type="int" name="lineWidth" read="lineWidth" write="setLineWidth" />
+    <property type="int" name="midLineWidth" read="midLineWidth" write="setMidLineWidth" />
+
     <function name="frameStyle">
       <variant return-type="int" const="true" access="public">
         <parameters />

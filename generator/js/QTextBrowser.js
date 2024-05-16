@@ -158,6 +158,24 @@
 
       // enum values:
       
+  // enum: Shape
+QTextBrowser.NoFrame = QTextBrowser_Wrapper.NoFrame;
+QTextBrowser.Box = QTextBrowser_Wrapper.Box;
+QTextBrowser.Panel = QTextBrowser_Wrapper.Panel;
+QTextBrowser.WinPanel = QTextBrowser_Wrapper.WinPanel;
+QTextBrowser.HLine = QTextBrowser_Wrapper.HLine;
+QTextBrowser.VLine = QTextBrowser_Wrapper.VLine;
+QTextBrowser.StyledPanel = QTextBrowser_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QTextBrowser.Plain = QTextBrowser_Wrapper.Plain;
+QTextBrowser.Raised = QTextBrowser_Wrapper.Raised;
+QTextBrowser.Sunken = QTextBrowser_Wrapper.Sunken;
+
+  // enum: StyleMask
+QTextBrowser.Shadow_Mask = QTextBrowser_Wrapper.Shadow_Mask;
+QTextBrowser.Shape_Mask = QTextBrowser_Wrapper.Shape_Mask;
+
   // enum: LineWrapMode
 QTextBrowser.NoWrap = QTextBrowser_Wrapper.NoWrap;
 QTextBrowser.WidgetWidth = QTextBrowser_Wrapper.WidgetWidth;

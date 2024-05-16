@@ -521,6 +521,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      count READ count
   )
 
@@ -573,6 +609,35 @@
           return ret;
         }
       
+        // enums:
+        
+  enum Shape {
+    NoFrame = QStackedWidget::NoFrame,
+Box = QStackedWidget::Box,
+Panel = QStackedWidget::Panel,
+WinPanel = QStackedWidget::WinPanel,
+HLine = QStackedWidget::HLine,
+VLine = QStackedWidget::VLine,
+StyledPanel = QStackedWidget::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QStackedWidget::Plain,
+Raised = QStackedWidget::Raised,
+Sunken = QStackedWidget::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QStackedWidget::Shadow_Mask,
+Shape_Mask = QStackedWidget::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
     /*
     // special constructor used as prototype:
     

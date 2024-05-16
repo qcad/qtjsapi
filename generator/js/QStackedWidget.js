@@ -140,6 +140,24 @@
 
       // enum values:
       
+  // enum: Shape
+QStackedWidget.NoFrame = QStackedWidget_Wrapper.NoFrame;
+QStackedWidget.Box = QStackedWidget_Wrapper.Box;
+QStackedWidget.Panel = QStackedWidget_Wrapper.Panel;
+QStackedWidget.WinPanel = QStackedWidget_Wrapper.WinPanel;
+QStackedWidget.HLine = QStackedWidget_Wrapper.HLine;
+QStackedWidget.VLine = QStackedWidget_Wrapper.VLine;
+QStackedWidget.StyledPanel = QStackedWidget_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QStackedWidget.Plain = QStackedWidget_Wrapper.Plain;
+QStackedWidget.Raised = QStackedWidget_Wrapper.Raised;
+QStackedWidget.Sunken = QStackedWidget_Wrapper.Sunken;
+
+  // enum: StyleMask
+QStackedWidget.Shadow_Mask = QStackedWidget_Wrapper.Shadow_Mask;
+QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
+
 
       // functions:
       

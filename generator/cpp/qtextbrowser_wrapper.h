@@ -521,6 +521,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoFormatting READ autoFormatting WRITE setAutoFormatting
   )
 
@@ -689,6 +725,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QTextBrowser::NoFrame,
+Box = QTextBrowser::Box,
+Panel = QTextBrowser::Panel,
+WinPanel = QTextBrowser::WinPanel,
+HLine = QTextBrowser::HLine,
+VLine = QTextBrowser::VLine,
+StyledPanel = QTextBrowser::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QTextBrowser::Plain,
+Raised = QTextBrowser::Raised,
+Sunken = QTextBrowser::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QTextBrowser::Shadow_Mask,
+Shape_Mask = QTextBrowser::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum LineWrapMode {
     NoWrap = QTextBrowser::NoWrap,
 WidgetWidth = QTextBrowser::WidgetWidth,

@@ -529,6 +529,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -755,6 +791,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = QListView::NoFrame,
+Box = QListView::Box,
+Panel = QListView::Panel,
+WinPanel = QListView::WinPanel,
+HLine = QListView::HLine,
+VLine = QListView::VLine,
+StyledPanel = QListView::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = QListView::Plain,
+Raised = QListView::Raised,
+Sunken = QListView::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = QListView::Shadow_Mask,
+Shape_Mask = QListView::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = QListView::AdjustIgnored,
 AdjustToContentsOnFirstShow = QListView::AdjustToContentsOnFirstShow,

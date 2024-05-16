@@ -156,6 +156,24 @@
 
       // enum values:
       
+  // enum: Shape
+QListView.NoFrame = QListView_Wrapper.NoFrame;
+QListView.Box = QListView_Wrapper.Box;
+QListView.Panel = QListView_Wrapper.Panel;
+QListView.WinPanel = QListView_Wrapper.WinPanel;
+QListView.HLine = QListView_Wrapper.HLine;
+QListView.VLine = QListView_Wrapper.VLine;
+QListView.StyledPanel = QListView_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QListView.Plain = QListView_Wrapper.Plain;
+QListView.Raised = QListView_Wrapper.Raised;
+QListView.Sunken = QListView_Wrapper.Sunken;
+
+  // enum: StyleMask
+QListView.Shadow_Mask = QListView_Wrapper.Shadow_Mask;
+QListView.Shape_Mask = QListView_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QListView.AdjustIgnored = QListView_Wrapper.AdjustIgnored;
 QListView.AdjustToContentsOnFirstShow = QListView_Wrapper.AdjustToContentsOnFirstShow;

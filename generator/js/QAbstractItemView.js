@@ -126,6 +126,24 @@
 
       // enum values:
       
+  // enum: Shape
+QAbstractItemView.NoFrame = QAbstractItemView_Wrapper.NoFrame;
+QAbstractItemView.Box = QAbstractItemView_Wrapper.Box;
+QAbstractItemView.Panel = QAbstractItemView_Wrapper.Panel;
+QAbstractItemView.WinPanel = QAbstractItemView_Wrapper.WinPanel;
+QAbstractItemView.HLine = QAbstractItemView_Wrapper.HLine;
+QAbstractItemView.VLine = QAbstractItemView_Wrapper.VLine;
+QAbstractItemView.StyledPanel = QAbstractItemView_Wrapper.StyledPanel;
+
+  // enum: Shadow
+QAbstractItemView.Plain = QAbstractItemView_Wrapper.Plain;
+QAbstractItemView.Raised = QAbstractItemView_Wrapper.Raised;
+QAbstractItemView.Sunken = QAbstractItemView_Wrapper.Sunken;
+
+  // enum: StyleMask
+QAbstractItemView.Shadow_Mask = QAbstractItemView_Wrapper.Shadow_Mask;
+QAbstractItemView.Shape_Mask = QAbstractItemView_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 QAbstractItemView.AdjustIgnored = QAbstractItemView_Wrapper.AdjustIgnored;
 QAbstractItemView.AdjustToContentsOnFirstShow = QAbstractItemView_Wrapper.AdjustToContentsOnFirstShow;
