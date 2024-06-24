@@ -295,7 +295,7 @@
     <preproc plain="#endif" />
   </class>
   -->
-  <class name="QAbstractItemModel" ownership="cpp">
+  <class name="QAbstractItemModel" ownership="cpp" inheritable="true">
     <super_list>
       <super name="QObject" />
     </super_list>
@@ -636,13 +636,11 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="roleNames">
       <variant return-type="QHash&lt;int,QByteArray&gt;" virtual="true" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    -->
     <enum name="LayoutChangeHint">
       <key>NoLayoutChangeHint</key>
       <key>VerticalSortHint</key>
@@ -963,7 +961,7 @@
     </function>
     <function name="hasChildren" access="private"/>
   </class>
-  <class name="QAbstractListModel">
+  <class name="QAbstractListModel" ownership="cpp" inheritable="true">
     <super_list>
       <super name="QObject" />
       <super name="QAbstractItemModel" />

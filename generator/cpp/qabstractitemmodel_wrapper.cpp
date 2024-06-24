@@ -1047,6 +1047,8 @@ int a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1057,6 +1059,8 @@ int a3_cpp;
                 w->objectName(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: QString
 
@@ -1118,6 +1122,8 @@ QString a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1128,6 +1134,8 @@ QString a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1168,6 +1176,8 @@ QString a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1178,6 +1188,8 @@ QString a1_cpp;
                 w->isWidgetType(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -1225,6 +1237,8 @@ QString a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1235,6 +1249,8 @@ QString a1_cpp;
                 w->isWindowType(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -1282,6 +1298,8 @@ QString a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1292,6 +1310,8 @@ QString a1_cpp;
                 w->signalsBlocked(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -1353,6 +1373,8 @@ bool a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1364,6 +1386,8 @@ bool a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -1454,6 +1478,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1466,6 +1492,8 @@ Qt::FindChildOptions a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QObject*
 
@@ -1513,6 +1541,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1526,6 +1556,8 @@ Qt::FindChildOptions a2_cpp;
                 w->children(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: const QObjectList&
 
@@ -1594,6 +1626,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1604,6 +1638,8 @@ Qt::FindChildOptions a2_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1663,6 +1699,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1673,6 +1711,8 @@ Qt::FindChildOptions a2_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1732,6 +1772,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1742,6 +1784,8 @@ Qt::FindChildOptions a2_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1780,6 +1824,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1789,6 +1835,8 @@ Qt::FindChildOptions a2_cpp;
                 w->dumpObjectTree(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1806,6 +1854,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1815,6 +1865,8 @@ Qt::FindChildOptions a2_cpp;
                 w->dumpObjectTree(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1853,6 +1905,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1862,6 +1916,8 @@ Qt::FindChildOptions a2_cpp;
                 w->dumpObjectInfo(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1879,6 +1935,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1888,6 +1946,8 @@ Qt::FindChildOptions a2_cpp;
                 w->dumpObjectInfo(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1956,6 +2016,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -1968,6 +2030,8 @@ QVariant a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -2034,6 +2098,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2045,6 +2111,8 @@ QVariant a2_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QVariant
 
@@ -2092,6 +2160,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2102,6 +2172,8 @@ QVariant a2_cpp;
                 w->dynamicPropertyNames(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: QList<QByteArray>
 
@@ -2149,6 +2221,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2159,6 +2233,8 @@ QVariant a2_cpp;
                 w->parent(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: QObject*
 
@@ -2204,6 +2280,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2213,6 +2291,8 @@ QVariant a2_cpp;
                 w->deleteLater(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -2299,6 +2379,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2312,6 +2394,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -2405,6 +2489,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2418,6 +2504,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QModelIndex
 
@@ -2503,6 +2591,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2516,6 +2606,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QModelIndex
 
@@ -2587,6 +2679,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2598,6 +2692,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: int
 
@@ -2669,6 +2765,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2680,6 +2778,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: int
 
@@ -2751,6 +2851,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2762,6 +2864,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -2844,6 +2948,8 @@ int a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2856,6 +2962,8 @@ int a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QVariant
 
@@ -2947,6 +3055,8 @@ int a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -2960,6 +3070,8 @@ int a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -3053,6 +3165,8 @@ int a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3066,6 +3180,8 @@ int a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QVariant
 
@@ -3168,6 +3284,8 @@ int a4_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3182,6 +3300,8 @@ int a4_cpp;
     , a4_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -3243,6 +3363,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3254,6 +3376,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -3301,6 +3425,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3311,6 +3437,8 @@ QModelIndex a1_cpp;
                 w->mimeTypes(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: QStringList
 
@@ -3358,6 +3486,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3368,6 +3498,8 @@ QModelIndex a1_cpp;
                 w->supportedDropActions(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: Qt::DropActions
 
@@ -3415,6 +3547,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3425,6 +3559,8 @@ QModelIndex a1_cpp;
                 w->supportedDragActions(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: Qt::DropActions
 
@@ -3516,6 +3652,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3529,6 +3667,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -3620,6 +3760,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3633,6 +3775,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -3724,6 +3868,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3737,6 +3883,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -3828,6 +3976,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3841,6 +3991,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -3946,6 +4098,8 @@ int a5_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -3961,6 +4115,8 @@ int a5_cpp;
     , a5_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -4066,6 +4222,8 @@ int a5_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4081,6 +4239,8 @@ int a5_cpp;
     , a5_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -4161,6 +4321,8 @@ QModelIndex a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4173,6 +4335,8 @@ QModelIndex a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -4253,6 +4417,8 @@ QModelIndex a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4265,6 +4431,8 @@ QModelIndex a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -4345,6 +4513,8 @@ QModelIndex a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4357,6 +4527,8 @@ QModelIndex a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -4437,6 +4609,8 @@ QModelIndex a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4449,6 +4623,8 @@ QModelIndex a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -4543,6 +4719,8 @@ int a4_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4557,6 +4735,8 @@ int a4_cpp;
     , a4_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -4651,6 +4831,8 @@ int a4_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4665,6 +4847,8 @@ int a4_cpp;
     , a4_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -4726,6 +4910,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4736,6 +4922,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4792,6 +4980,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4803,6 +4993,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -4866,6 +5058,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4877,6 +5071,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: Qt::ItemFlags
 
@@ -4957,6 +5153,8 @@ Qt::SortOrder a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -4968,6 +5166,8 @@ Qt::SortOrder a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -5024,6 +5224,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -5035,6 +5237,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QModelIndex
 
@@ -5098,6 +5302,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -5109,6 +5315,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QSize
 
@@ -5122,6 +5330,67 @@ QModelIndex a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for span";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QAbstractItemModel
+    // Function: roleNames
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QAbstractItemModel_Wrapper::roleNames
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QAbstractItemModel* w = getWrapped();
+                QHash<int,QByteArray> res = 
+                    
+                w->roleNames(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QHash<int,QByteArray>
+
+            return RJSHelper::cpp2js_QHash_int_QByteArray(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for roleNames";
                   handler.trace();
                   return QJSValue();
                 
@@ -5248,6 +5517,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -5258,6 +5529,8 @@ QModelIndex a1_cpp;
                 w->submit(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -5303,6 +5576,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -5312,6 +5587,8 @@ QModelIndex a1_cpp;
                 w->revert(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9354,6 +9631,63 @@ QModelIndex a1_cpp;
               }
             
     // Class: QAbstractTableModel
+    // Function: roleNames
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QAbstractTableModel_Wrapper::roleNames
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QAbstractTableModel* w = getWrapped();
+                QHash<int,QByteArray> res = 
+                    
+                w->roleNames(
+                  
+                );
+              
+            // return type: QHash<int,QByteArray>
+
+            return RJSHelper::cpp2js_QHash_int_QByteArray(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for roleNames";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QAbstractTableModel
     // Function: headerDataChanged
     // Source: QAbstractItemModel
     // Static: false
@@ -10137,6 +10471,8 @@ int a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10147,6 +10483,8 @@ int a3_cpp;
                 w->objectName(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: QString
 
@@ -10208,6 +10546,8 @@ QString a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10218,6 +10558,8 @@ QString a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10258,6 +10600,8 @@ QString a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10268,6 +10612,8 @@ QString a1_cpp;
                 w->isWidgetType(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -10315,6 +10661,8 @@ QString a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10325,6 +10673,8 @@ QString a1_cpp;
                 w->isWindowType(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -10372,6 +10722,8 @@ QString a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10382,6 +10734,8 @@ QString a1_cpp;
                 w->signalsBlocked(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -10443,6 +10797,8 @@ bool a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10454,6 +10810,8 @@ bool a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -10544,6 +10902,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10556,6 +10916,8 @@ Qt::FindChildOptions a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QObject*
 
@@ -10603,6 +10965,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10616,6 +10980,8 @@ Qt::FindChildOptions a2_cpp;
                 w->children(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: const QObjectList&
 
@@ -10684,6 +11050,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10694,6 +11062,8 @@ Qt::FindChildOptions a2_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10753,6 +11123,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10763,6 +11135,8 @@ Qt::FindChildOptions a2_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10822,6 +11196,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10832,6 +11208,8 @@ Qt::FindChildOptions a2_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10870,6 +11248,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10879,6 +11259,8 @@ Qt::FindChildOptions a2_cpp;
                 w->dumpObjectTree(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10896,6 +11278,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10905,6 +11289,8 @@ Qt::FindChildOptions a2_cpp;
                 w->dumpObjectTree(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10943,6 +11329,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10952,6 +11340,8 @@ Qt::FindChildOptions a2_cpp;
                 w->dumpObjectInfo(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10969,6 +11359,8 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -10978,6 +11370,8 @@ Qt::FindChildOptions a2_cpp;
                 w->dumpObjectInfo(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11046,6 +11440,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11058,6 +11454,8 @@ QVariant a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -11124,6 +11522,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11135,6 +11535,8 @@ QVariant a2_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QVariant
 
@@ -11182,6 +11584,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11192,6 +11596,8 @@ QVariant a2_cpp;
                 w->dynamicPropertyNames(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: QList<QByteArray>
 
@@ -11239,6 +11645,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11249,6 +11657,8 @@ QVariant a2_cpp;
                 w->parent(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: QObject*
 
@@ -11294,6 +11704,8 @@ QVariant a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11303,6 +11715,8 @@ QVariant a2_cpp;
                 w->deleteLater(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11389,6 +11803,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11402,6 +11818,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -11473,6 +11891,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11484,6 +11904,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: int
 
@@ -11566,6 +11988,8 @@ int a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11578,6 +12002,8 @@ int a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QVariant
 
@@ -11669,6 +12095,8 @@ int a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11682,6 +12110,8 @@ int a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -11775,6 +12205,8 @@ int a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11788,6 +12220,8 @@ int a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QVariant
 
@@ -11890,6 +12324,8 @@ int a4_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11904,6 +12340,8 @@ int a4_cpp;
     , a4_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -11965,6 +12403,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -11976,6 +12416,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -12023,6 +12465,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12033,6 +12477,8 @@ QModelIndex a1_cpp;
                 w->mimeTypes(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: QStringList
 
@@ -12080,6 +12526,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12090,6 +12538,8 @@ QModelIndex a1_cpp;
                 w->supportedDropActions(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: Qt::DropActions
 
@@ -12137,6 +12587,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12147,6 +12599,8 @@ QModelIndex a1_cpp;
                 w->supportedDragActions(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: Qt::DropActions
 
@@ -12238,6 +12692,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12251,6 +12707,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -12342,6 +12800,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12355,6 +12815,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -12446,6 +12908,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12459,6 +12923,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -12550,6 +13016,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12563,6 +13031,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -12668,6 +13138,8 @@ int a5_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12683,6 +13155,8 @@ int a5_cpp;
     , a5_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -12788,6 +13262,8 @@ int a5_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12803,6 +13279,8 @@ int a5_cpp;
     , a5_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -12883,6 +13361,8 @@ QModelIndex a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12895,6 +13375,8 @@ QModelIndex a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -12975,6 +13457,8 @@ QModelIndex a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -12987,6 +13471,8 @@ QModelIndex a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -13067,6 +13553,8 @@ QModelIndex a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13079,6 +13567,8 @@ QModelIndex a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -13159,6 +13649,8 @@ QModelIndex a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13171,6 +13663,8 @@ QModelIndex a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -13265,6 +13759,8 @@ int a4_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13279,6 +13775,8 @@ int a4_cpp;
     , a4_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -13373,6 +13871,8 @@ int a4_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13387,6 +13887,8 @@ int a4_cpp;
     , a4_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -13448,6 +13950,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13458,6 +13962,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -13514,6 +14020,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13525,6 +14033,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -13605,6 +14115,8 @@ Qt::SortOrder a2_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13616,6 +14128,8 @@ Qt::SortOrder a2_cpp;
     , a2_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -13672,6 +14186,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13683,6 +14199,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QModelIndex
 
@@ -13746,6 +14264,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13757,6 +14277,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QSize
 
@@ -13770,6 +14292,67 @@ QModelIndex a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for span";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QAbstractListModel
+    // Function: roleNames
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QAbstractListModel_Wrapper::roleNames
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QAbstractListModel* w = getWrapped();
+                QHash<int,QByteArray> res = 
+                    
+                w->roleNames(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QHash<int,QByteArray>
+
+            return RJSHelper::cpp2js_QHash_int_QByteArray(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for roleNames";
                   handler.trace();
                   return QJSValue();
                 
@@ -13896,6 +14479,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13906,6 +14491,8 @@ QModelIndex a1_cpp;
                 w->submit(
                   
                 );
+              
+                //setRecFlag(false);
               
             // return type: bool
 
@@ -13951,6 +14538,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -13960,6 +14549,8 @@ QModelIndex a1_cpp;
                 w->revert(
                   
                 );
+              
+                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14054,6 +14645,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -14067,6 +14660,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QModelIndex
 
@@ -14152,6 +14747,8 @@ QModelIndex a3_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -14165,6 +14762,8 @@ QModelIndex a3_cpp;
     , a3_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: QModelIndex
 
@@ -14228,6 +14827,8 @@ QModelIndex a1_cpp;
           }
 
           
+            //setRecFlag(true);
+          
             // non-static member function:
             // call function of wrapped object:
             
@@ -14239,6 +14840,8 @@ QModelIndex a1_cpp;
                   a1_cpp
     
                 );
+              
+                //setRecFlag(false);
               
             // return type: Qt::ItemFlags
 

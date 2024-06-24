@@ -3635,6 +3635,34 @@
           static int id;
       };
     
+      class QTJSAPI_EXPORT  RJSType_QQmlContext : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QQmlContext";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QQmlContext();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
       class QTJSAPI_EXPORT  RJSType_QQmlApplicationEngine : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -7305,6 +7333,8 @@
           static int id;
       };
     
+
+  
 
   
 

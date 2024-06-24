@@ -1324,6 +1324,25 @@
               ;
             
     // Class: QApplication
+    // Function: topLevelWidgets
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  topLevelWidgets
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QApplication
     // Function: activePopupWidget
     // Source: 
     // Static: true

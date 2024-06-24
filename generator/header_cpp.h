@@ -259,6 +259,8 @@
 #include "generator/cpp/qpushbutton_wrapper.h"
 #include "generator/cpp/qqmlapplicationengine_base.h"
 #include "generator/cpp/qqmlapplicationengine_wrapper.h"
+#include "generator/cpp/qqmlcontext_base.h"
+#include "generator/cpp/qqmlcontext_wrapper.h"
 #include "generator/cpp/qqmlengine_base.h"
 #include "generator/cpp/qqmlengine_wrapper.h"
 #include "generator/cpp/qquickview_base.h"

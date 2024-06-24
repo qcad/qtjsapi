@@ -154,6 +154,7 @@
 #include "generator/cpp/qeasingcurve_wrapper.h"
 #include "generator/cpp/qsvgrenderer_wrapper.h"
 #include "generator/cpp/qqmlapplicationengine_wrapper.h"
+#include "generator/cpp/qqmlcontext_wrapper.h"
 #include "generator/cpp/qqmlengine_wrapper.h"
 #include "generator/cpp/qquickview_wrapper.h"
 #include "generator/cpp/qquickwidget_wrapper.h"
@@ -446,6 +447,7 @@ void RJSApi::init() {
     QFocusEvent_Wrapper::init(*this);
     QPaintDevice_Wrapper::init(*this);
     QJSEngine_Wrapper::init(*this);
+    QQmlContext_Wrapper::init(*this);
     QQmlEngine_Wrapper::init(*this);
 
     {

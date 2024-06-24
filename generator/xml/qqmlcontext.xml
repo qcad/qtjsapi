@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qqmlcontext.h">
+  <class_decl name="QString" />
+  <class_decl name="QQmlEngine" />
+  <class name="QQmlContext" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="engine">
+      <variant return-type="QQmlEngine*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="parentContext">
+      <variant return-type="QQmlContext*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contextObject">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setContextObject">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contextProperty">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setContextProperty">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="false" type="QObject" modifier="*" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setContextProperties">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;PropertyPair&gt;" modifier="&amp;" name="properties" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="nameForObject">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="objectForName">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resolvedUrl">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBaseUrl">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="baseUrl">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="importedScript">
+      <variant return-type="QJSValue" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <class_decl name="QQmlEngine" />
+    <class_decl name="QQmlExpression" />
+    <class_decl name="QQmlComponent" />
+    <class_decl name="QQmlContextData" />
+  </class>
+</unit>

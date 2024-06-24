@@ -1154,6 +1154,12 @@
           virtual QQmlApplicationEngine* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class QQmlContext:
+        class RJSBasecaster_QQmlContext {
+        public:
+          virtual QQmlContext* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class QQmlEngine:
         class RJSBasecaster_QQmlEngine {
         public:
@@ -3705,6 +3711,10 @@
       static QQmlEngine* js2cpp_QQmlEngine_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QQmlEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QQmlContext(RJSApi& handler, QQmlContext* v);
+      static QQmlContext* js2cpp_QQmlContext_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QQmlContext_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QQmlApplicationEngine(RJSApi& handler, QQmlApplicationEngine* v);
       static QQmlApplicationEngine* js2cpp_QQmlApplicationEngine_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QQmlApplicationEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -4544,6 +4554,14 @@
       static QJSValue cpp2js_QVariantMap(RJSApi& handler, const QVariantMap& v);
       static QVariantMap js2cpp_QVariantMap(RJSApi& handler, const QJSValue& v);
       static bool is_QVariantMap(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+  // -----------
+  // QHash types:
+  // -----------
+  
+      static QJSValue cpp2js_QHash_int_QByteArray(RJSApi& handler, const QHash<int,QByteArray>& v);
+      static QHash<int,QByteArray> js2cpp_QHash_int_QByteArray(RJSApi& handler, const QJSValue& v);
+      static bool is_QHash_int_QByteArray(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
   // ------------
   // QPair types:

@@ -52,13 +52,11 @@
         </parameters>
       </variant>
     </constructor>
-    <!--
     <function name="rootContext">
       <variant return-type="QQmlContext*" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    -->
     <function name="clearComponentCache">
       <variant return-type="void" access="public">
         <parameters />

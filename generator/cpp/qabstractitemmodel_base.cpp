@@ -9,3 +9,11 @@
   //#include "qabstractitemmodel_wrapper.h"
   //#include "header_cpp.h"
     
+    // Base class for QAbstractItemModel
+
+    // constructors:
+    
+    // Base class for QAbstractListModel
+
+    // constructors:
+    

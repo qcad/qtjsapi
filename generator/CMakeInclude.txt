@@ -258,6 +258,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qpushbutton_wrapper.h
     generator/cpp/qqmlapplicationengine_base.h
     generator/cpp/qqmlapplicationengine_wrapper.h
+    generator/cpp/qqmlcontext_base.h
+    generator/cpp/qqmlcontext_wrapper.h
     generator/cpp/qqmlengine_base.h
     generator/cpp/qqmlengine_wrapper.h
     generator/cpp/qquickview_base.h
@@ -612,6 +614,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qpushbutton_wrapper.cpp
     generator/cpp/qqmlapplicationengine_base.cpp
     generator/cpp/qqmlapplicationengine_wrapper.cpp
+    generator/cpp/qqmlcontext_base.cpp
+    generator/cpp/qqmlcontext_wrapper.cpp
     generator/cpp/qqmlengine_base.cpp
     generator/cpp/qqmlengine_wrapper.cpp
     generator/cpp/qquickview_base.cpp

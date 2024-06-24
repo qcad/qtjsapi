@@ -1948,6 +1948,21 @@
 
 
       
+      int RJSType_QQmlContext::id = -1;
+
+      int RJSType_QQmlContext::getId() const {
+          return RJSType_QQmlContext::getIdStatic();
+      }
+
+      int RJSType_QQmlContext::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QQmlContext());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QQmlApplicationEngine::id = -1;
 
       int RJSType_QQmlApplicationEngine::getId() const {
@@ -3915,6 +3930,8 @@
 
 
       
+
+  
 
   
 

@@ -28,6 +28,42 @@
     
         #include <QAbstractItemModel>
       
+    // Base class for QAbstractItemModel
+      class QAbstractItemModel_Base : public QAbstractItemModel {
+
+      
+        //Q_OBJECT
+      
+
+      public:
+    
+
+    // constructors:
+    
+    // destructor:
+    virtual ~QAbstractItemModel_Base() { }
+
+    public:
+      // set handler:
+      //void setHandler(RJSApi* h) {
+      //  handler = h;
+      //}
+    
+
+    public:
+      //void setRecFlag(bool on) {
+      //  recFlag = on;
+      //}
+
+    public:
+      QJSValue self;
+
+    private:
+      
+      //bool recFlag;
+
+    };
+    
     #include <QQmlEngine>
 
     
@@ -38,5 +74,41 @@
     
         #include <QAbstractListModel>
       
+    // Base class for QAbstractListModel
+      class QAbstractListModel_Base : public QAbstractListModel {
+
+      
+        //Q_OBJECT
+      
+
+      public:
+    
+
+    // constructors:
+    
+    // destructor:
+    virtual ~QAbstractListModel_Base() { }
+
+    public:
+      // set handler:
+      //void setHandler(RJSApi* h) {
+      //  handler = h;
+      //}
+    
+
+    public:
+      //void setRecFlag(bool on) {
+      //  recFlag = on;
+      //}
+
+    public:
+      QJSValue self;
+
+    private:
+      
+      //bool recFlag;
+
+    };
+    
   #endif
   

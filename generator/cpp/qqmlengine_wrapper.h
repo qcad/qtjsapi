@@ -247,6 +247,27 @@
               );
             
     // Class: QQmlEngine
+    // Function: rootContext
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  rootContext
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QQmlEngine
     // Function: clearComponentCache
     // Source: 
     // Static: false

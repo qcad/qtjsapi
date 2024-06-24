@@ -449,6 +449,9 @@
       
         #include <QAbstractItemModel>
       
+      // wrapped object is QAbstractItemModel_Base class if new object is created: 
+      #include "qabstractitemmodel_base.h"
+    
       // singleton class wrapper for static functions:
       class QTJSAPI_EXPORT QAbstractItemModel_WrapperSingleton: public QObject {
       Q_OBJECT
@@ -1954,6 +1957,27 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
               ;
             
     // Class: QAbstractItemModel
+    // Function: roleNames
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  roleNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QAbstractItemModel
     // Function: headerDataChanged
     // Source: 
     // Static: false
@@ -2110,6 +2134,17 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
         }
 
         
+          // get wrapped base object or nullptr:
+          QAbstractItemModel_Base* getWrappedBase() {
+            QAbstractItemModel* w = getWrapped();
+            return dynamic_cast<QAbstractItemModel_Base*>(w);
+          }
+
+          QAbstractItemModel_Base* getWrappedBase() const {
+            QAbstractItemModel* w = getWrapped();
+            return dynamic_cast<QAbstractItemModel_Base*>(w);
+          }
+        
 
         bool hasWrapped() const {
           return wrapped!=nullptr 
@@ -2138,6 +2173,13 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
           //  qDebug() << "destroying QObject:" << (long int)obj;
           //}
 
+        
+          //void setRecFlag(bool on) const {
+          //  QAbstractItemModel_Base* wb = getWrappedBase();
+          //  if (wb) {
+          //    wb->setRecFlag(on);
+          //  }
+          //}
         
 
         private:
@@ -3539,6 +3581,27 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
               ;
             
     // Class: QAbstractTableModel
+    // Function: roleNames
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  roleNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QAbstractTableModel
     // Function: headerDataChanged
     // Source: QAbstractItemModel
     // Static: false
@@ -3846,6 +3909,9 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
       
         #include <QAbstractListModel>
       
+      // wrapped object is QAbstractListModel_Base class if new object is created: 
+      #include "qabstractitemmodel_base.h"
+    
       // singleton class wrapper for static functions:
       class QTJSAPI_EXPORT QAbstractListModel_WrapperSingleton: public QObject {
       Q_OBJECT
@@ -5190,6 +5256,27 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
               ;
             
     // Class: QAbstractListModel
+    // Function: roleNames
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  roleNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QAbstractListModel
     // Function: headerDataChanged
     // Source: QAbstractItemModel
     // Static: false
@@ -5437,6 +5524,17 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
         }
 
         
+          // get wrapped base object or nullptr:
+          QAbstractListModel_Base* getWrappedBase() {
+            QAbstractListModel* w = getWrapped();
+            return dynamic_cast<QAbstractListModel_Base*>(w);
+          }
+
+          QAbstractListModel_Base* getWrappedBase() const {
+            QAbstractListModel* w = getWrapped();
+            return dynamic_cast<QAbstractListModel_Base*>(w);
+          }
+        
 
         bool hasWrapped() const {
           return wrapped!=nullptr 
@@ -5465,6 +5563,13 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
           //  qDebug() << "destroying QObject:" << (long int)obj;
           //}
 
+        
+          //void setRecFlag(bool on) const {
+          //  QAbstractListModel_Base* wb = getWrappedBase();
+          //  if (wb) {
+          //    wb->setRecFlag(on);
+          //  }
+          //}
         
 
         private:

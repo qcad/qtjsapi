@@ -447,6 +447,63 @@ QString a1_cpp;
               }
             
     // Class: QQmlEngine
+    // Function: rootContext
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QQmlEngine_Wrapper::rootContext
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QQmlEngine* w = getWrapped();
+                QQmlContext* res = 
+                    
+                w->rootContext(
+                  
+                );
+              
+            // return type: QQmlContext*
+
+            return RJSHelper::cpp2js_QQmlContext(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for rootContext";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QQmlEngine
     // Function: clearComponentCache
     // Source: 
     // Static: false

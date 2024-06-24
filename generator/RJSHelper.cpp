@@ -439,6 +439,8 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
           #include "qjsengine_wrapper.h"
         
           #include "qobject_wrapper.h"
@@ -21754,6 +21756,80 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QQmlEngine::getIdStatic())).toBool();
       }
     
+      QJSValue RJSHelper::cpp2js_QQmlContext(RJSApi& handler, QQmlContext* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          QQmlContext_Wrapper* ret = new QQmlContext_Wrapper(handler, v, false);
+
+          // JS: new QQmlContext('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QQmlContext");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QQmlContext is undefined. Use QQmlContext_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QQmlContext('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QQmlContext(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      QQmlContext* RJSHelper::js2cpp_QQmlContext_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QQmlContext: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QQmlContext_Wrapper* wrapper = qobject_cast<QQmlContext_Wrapper*>(obj);
+          //QQmlContext_Wrapper* wrapper = dynamic_cast<QQmlContext_Wrapper*>(obj);
+          //QQmlContext_Wrapper* wrapper = (QQmlContext_Wrapper*)(obj);
+          //QQmlContext_Wrapper* wrapper = getWrapper<QQmlContext_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QQmlContext_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_QQmlContext(wrapper);
+          return QQmlContext_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QQmlContext_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QQmlContext: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_QQmlContext::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper::cpp2js_QQmlApplicationEngine(RJSApi& handler, QQmlApplicationEngine* v) {
 
           
@@ -36895,6 +36971,42 @@
       }
 
       bool RJSHelper::is_QVariantMap(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isObject();
+      }
+    
+  // -----------
+  // QHash types:
+  // -----------
+  
+      QJSValue RJSHelper::cpp2js_QHash_int_QByteArray(RJSApi& handler, const QHash<int,QByteArray>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newObject();
+          QHash<int,QByteArray>::const_iterator it;
+          for (it=v.constBegin(); it!=v.constEnd(); it++) {
+              ret.setProperty(it.key(), RJSHelper::cpp2js_QByteArray(handler, it.value()));
+          }
+          return ret;
+      }
+
+      QHash<int,QByteArray> RJSHelper::js2cpp_QHash_int_QByteArray(RJSApi& handler, const QJSValue& v) {
+          QJSEngine* engine = handler.getEngine();
+
+          QHash<int,QByteArray> ret;
+
+          QJSValueIterator it(v);
+          while (it.hasNext()) {
+              it.next();
+
+              ret.insert(it.name().toInt(), it.value().toString().toUtf8());
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QHash_int_QByteArray(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }

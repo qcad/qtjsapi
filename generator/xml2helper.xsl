@@ -2884,6 +2884,100 @@
 
 
 
+<xsl:template match="qhash">
+  // -----------
+  // QHash types:
+  // -----------
+  <xsl:apply-templates />
+</xsl:template>
+
+<xsl:template match="qhash/type">
+  <xsl:variable name="type">
+    <xsl:value-of select="text()" />
+  </xsl:variable>
+
+  <xsl:variable name="para">
+    <xsl:value-of select="$type" />
+  </xsl:variable>
+
+  <xsl:variable name="func">
+    <xsl:value-of select="
+      qc:replace(
+      qc:replace(
+      qc:replace(
+      qc:replace(
+         $type, 
+         '&lt;', '_'
+      ), '&gt;', ''
+      ), '::', '_'
+      ), ',', '_'
+      )" />
+  </xsl:variable>
+
+  <xsl:variable name="itemtype">
+    <xsl:value-of select="
+      qc:replace(
+      qc:replace(
+      qc:replace(
+      qc:replace(
+         $type, 
+         'QHash&lt;int,', ''
+      ), '&gt;', ''
+      ), '::', '_'
+      ), 'Map', ''
+      )" />
+  </xsl:variable>
+
+  <xsl:apply-templates select="." mode="ifdef" />
+
+  <xsl:choose>
+    <xsl:when test="$mode='h'">
+      static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
+      static <xsl:value-of select="$type" /> js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v);
+      static bool is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+    </xsl:when>
+
+    <xsl:when test="$mode='cpp'">
+      QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine-&gt;newObject();
+          <xsl:value-of select="$type" />::const_iterator it;
+          for (it=v.constBegin(); it!=v.constEnd(); it++) {
+              ret.setProperty(it.key(), <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$itemtype" />(handler, it.value()));
+          }
+          return ret;
+      }
+
+      <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
+          QJSEngine* engine = handler.getEngine();
+
+          <xsl:value-of select="$type" /> ret;
+
+          QJSValueIterator it(v);
+          while (it.hasNext()) {
+              it.next();
+
+              ret.insert(it.name().toInt(), it.value().toString().toUtf8());
+          }
+
+          return ret;
+      }
+
+      bool <xsl:value-of select="$rjshelper_class"/>::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isObject();
+      }
+    </xsl:when>
+  </xsl:choose>
+
+  <xsl:apply-templates select="." mode="endif" />
+</xsl:template>
+
+
+
+
 <xsl:template match="qpair">
   // ------------
   // QPair types:

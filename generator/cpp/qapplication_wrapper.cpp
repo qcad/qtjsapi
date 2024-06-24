@@ -3389,6 +3389,52 @@ QFont a1_cpp;
               }
             
     // Class: QApplication
+    // Function: topLevelWidgets
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QApplication_WrapperSingleton::topLevelWidgets
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QWidgetList res = 
+                
+                // call static member function:
+                QApplication::topLevelWidgets(
+              
+            );
+          
+            // return type: QWidgetList
+
+            return RJSHelper::cpp2js_QWidgetList_ptr(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for topLevelWidgets";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QApplication
     // Function: activePopupWidget
     // Source: 
     // Static: true

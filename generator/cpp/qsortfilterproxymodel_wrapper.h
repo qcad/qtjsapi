@@ -924,6 +924,27 @@ HorizontalSortHint = QSortFilterProxyModel::HorizontalSortHint,
               ;
             
     // Class: QSortFilterProxyModel
+    // Function: roleNames
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  roleNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QSortFilterProxyModel
     // Function: headerDataChanged
     // Source: QAbstractItemModel
     // Static: false

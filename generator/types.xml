@@ -481,6 +481,7 @@
     <type>QPrinter</type>
     <type>QProcess</type>
     <type>QQmlEngine</type>
+    <type>QQmlContext</type>
     <type>QQmlApplicationEngine</type>
     <type>QResizeEvent</type>
     <type>QSinglePointEvent</type>
@@ -677,6 +678,10 @@
   <qmap>
     <type>QVariantMap</type>
   </qmap>
+
+  <qhash>
+    <type>QHash&lt;int,QByteArray&gt;</type>
+  </qhash>
 
   <qpair>
     <type>QPair&lt;QString,QString&gt;</type>

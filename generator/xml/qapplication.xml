@@ -117,12 +117,12 @@
         <parameters />
       </variant>
     </function>
+    -->
     <function name="topLevelWidgets" static="true">
       <variant return-type="QWidgetList" static="true" access="public">
         <parameters />
       </variant>
     </function>
-    -->
     <function name="activePopupWidget" static="true">
       <variant return-type="QWidget*" static="true" access="public">
         <parameters />

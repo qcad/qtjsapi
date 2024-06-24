@@ -412,6 +412,10 @@
                 return (QObject*)(QQmlApplicationEngine*)vp;
               }
               
+              if (t==RJSType_QQmlContext::getIdStatic()) {
+                return (QObject*)(QQmlContext*)vp;
+              }
+              
               if (t==RJSType_QQuickView::getIdStatic()) {
                 return (QObject*)(QQuickView*)vp;
               }

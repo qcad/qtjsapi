@@ -1170,6 +1170,27 @@ DontUseCustomDirectoryIcons = QFileSystemModel::DontUseCustomDirectoryIcons,
               ;
             
     // Class: QFileSystemModel
+    // Function: roleNames
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  roleNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFileSystemModel
     // Function: headerDataChanged
     // Source: QAbstractItemModel
     // Static: false

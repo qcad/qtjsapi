@@ -1883,6 +1883,34 @@
       
 
         // static function 
+        QApplication.topLevelWidgets = function() 
+          
+        {
+          //print("JS: QApplication.topLevelWidgets");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return QApplication_WrapperSingletonInstance.topLevelWidgets(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, QApplication);
+  }
+
+  
+  else {
+    
+        print("QApplication.topLevelWidgets(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         QApplication.activePopupWidget = function() 
           
         {

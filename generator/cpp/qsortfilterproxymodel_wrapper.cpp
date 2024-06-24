@@ -2636,6 +2636,63 @@ int a4_cpp;
               }
             
     // Class: QSortFilterProxyModel
+    // Function: roleNames
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSortFilterProxyModel_Wrapper::roleNames
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QSortFilterProxyModel* w = getWrapped();
+                QHash<int,QByteArray> res = 
+                    
+                w->roleNames(
+                  
+                );
+              
+            // return type: QHash<int,QByteArray>
+
+            return RJSHelper::cpp2js_QHash_int_QByteArray(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for roleNames";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSortFilterProxyModel
     // Function: headerDataChanged
     // Source: QAbstractItemModel
     // Static: false
