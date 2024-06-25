@@ -3,7 +3,6 @@ QtJSAPI
 
 QJSEngine bindings for the Qt API
 
-QtJSAPI is a part of the QCAD application.
 QtJSAPI replaces the Qt Script based [qtscriptgenerator](https://github.com/qt-labs/qtscriptgenerator)
 for Qt 5 which was made obsolete when the Qt Script module was declared deprecated.
 QtJSAPI has been tested with Qt 6.5.
