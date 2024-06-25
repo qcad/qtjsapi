@@ -51,11 +51,11 @@ QQuickWidget_Base
           RJSApi& _h
           
             ,
-          const QUrl& source, QWidget* parent=nullptr
+          QQmlEngine* engine, QWidget* parent
       )
       
         : QQuickWidget(
-          source, parent
+          engine, parent
         ) 
         
           , handler(_h) /*, recFlag(false)*/

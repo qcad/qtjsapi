@@ -68,6 +68,12 @@
           virtual QJSValue downcast(RJSApi& handler, QItemDelegate* o) = 0;
         };
       
+        // Base class for downcasters that can downcast QJSEngine to specific types:
+        class RJSDowncaster_QJSEngine {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QJSEngine* o) = 0;
+        };
+      
         // Base class for downcasters that can downcast QLayout to specific types:
         class RJSDowncaster_QLayout {
         public:
@@ -114,6 +120,12 @@
         class RJSDowncaster_QObject {
         public:
           virtual QJSValue downcast(RJSApi& handler, QObject* o) = 0;
+        };
+      
+        // Base class for downcasters that can downcast QQmlEngine to specific types:
+        class RJSDowncaster_QQmlEngine {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QQmlEngine* o) = 0;
         };
       
         // Base class for downcasters that can downcast QTextBrowser to specific types:
@@ -666,6 +678,12 @@
         class RJSBasecaster_QFileSystemModel {
         public:
           virtual QFileSystemModel* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QFileSystemWatcher:
+        class RJSBasecaster_QFileSystemWatcher {
+        public:
+          virtual QFileSystemWatcher* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class QFont:
@@ -3991,6 +4009,11 @@
       static QFileSystemModel* js2cpp_QFileSystemModel_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QFileSystemModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QFileSystemWatcher(RJSApi& handler, QFileSystemWatcher* v);
+      static QJSValue cpp2js_QFileSystemWatcher(RJSApi& handler, const QFileSystemWatcher* v);
+      static QFileSystemWatcher* js2cpp_QFileSystemWatcher_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QFileSystemWatcher_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QFontComboBox(RJSApi& handler, QFontComboBox* v);
       static QJSValue cpp2js_QFontComboBox(RJSApi& handler, const QFontComboBox* v);
       static QFontComboBox* js2cpp_QFontComboBox_ptr(RJSApi& handler, const QJSValue& v);
@@ -4690,6 +4713,15 @@
               downcasters_QItemDelegate.append(dc);
             }
         
+          // allow downcasting for type QJSEngine:
+          private:
+            static QList<RJSDowncaster_QJSEngine*> downcasters_QJSEngine;
+
+          public:
+            static void registerDowncaster_QJSEngine(RJSDowncaster_QJSEngine* dc) {
+              downcasters_QJSEngine.append(dc);
+            }
+        
           // allow downcasting for type QLayout:
           private:
             static QList<RJSDowncaster_QLayout*> downcasters_QLayout;
@@ -4760,6 +4792,15 @@
           public:
             static void registerDowncaster_QObject(RJSDowncaster_QObject* dc) {
               downcasters_QObject.append(dc);
+            }
+        
+          // allow downcasting for type QQmlEngine:
+          private:
+            static QList<RJSDowncaster_QQmlEngine*> downcasters_QQmlEngine;
+
+          public:
+            static void registerDowncaster_QQmlEngine(RJSDowncaster_QQmlEngine* dc) {
+              downcasters_QQmlEngine.append(dc);
             }
         
           // allow downcasting for type QTextBrowser:

@@ -272,6 +272,10 @@
                 return (QObject*)(QFileSystemModel*)vp;
               }
               
+              if (t==RJSType_QFileSystemWatcher::getIdStatic()) {
+                return (QObject*)(QFileSystemWatcher*)vp;
+              }
+              
               if (t==RJSType_QFontComboBox::getIdStatic()) {
                 return (QObject*)(QFontComboBox*)vp;
               }
@@ -414,6 +418,10 @@
               
               if (t==RJSType_QQmlContext::getIdStatic()) {
                 return (QObject*)(QQmlContext*)vp;
+              }
+              
+              if (t==RJSType_QQmlEngine::getIdStatic()) {
+                return (QObject*)(QQmlEngine*)vp;
               }
               
               if (t==RJSType_QQuickView::getIdStatic()) {

@@ -161,6 +161,7 @@
 #include "generator/cpp/qgraphicseffect_wrapper.h"
 #include "generator/cpp/qpaintdevice_wrapper.h"
 #include "generator/cpp/qjsengine_wrapper.h"
+#include "generator/cpp/qfilesystemwatcher_wrapper.h"
 
 RJSApi::RJSApi(QJSEngine* engine) : engine(engine) {
     init();
@@ -209,7 +210,6 @@ void RJSApi::init() {
     QJSValue global = engine->globalObject();
 
     global.setProperty("global", global);
-
     global.setProperty("engine", engine->newQObject(engine));
     QQmlEngine::setObjectOwnership(engine, QQmlEngine::CppOwnership);
 
@@ -440,15 +440,27 @@ void RJSApi::init() {
     QStringEncoder_Wrapper::init(*this);
     QStringDecoder_Wrapper::init(*this);
     QXmlStreamReader_Wrapper::init(*this);
-    QQmlApplicationEngine_Wrapper::init(*this);
-    QQuickView_Wrapper::init(*this);
-    QQuickWidget_Wrapper::init(*this);
     QGraphicsBlurEffect_Wrapper::init(*this);
     QFocusEvent_Wrapper::init(*this);
     QPaintDevice_Wrapper::init(*this);
+    QFileSystemWatcher_Wrapper::init(*this);
+
     QJSEngine_Wrapper::init(*this);
     QQmlContext_Wrapper::init(*this);
     QQmlEngine_Wrapper::init(*this);
+    QQmlApplicationEngine_Wrapper::init(*this);
+    QQuickWidget_Wrapper::init(*this);
+    QQuickView_Wrapper::init(*this);
+
+
+    // set engine property to QQmlApplicationEngine if appropriate
+    // to support mixing of QML with QtJSAPI
+    QQmlApplicationEngine* appEngine = dynamic_cast<QQmlApplicationEngine*>(engine);
+    if (appEngine!=NULL) {
+        QQmlApplicationEngine_Wrapper* appEngineWrapper = new QQmlApplicationEngine_Wrapper(*this, appEngine, false);
+        global.setProperty("engine", engine->newQObject(appEngineWrapper));
+    }
+
 
     {
         QString fileName = ":fixes.js";

@@ -243,6 +243,8 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
           #include "qwidget_wrapper.h"
         
           #include "qcombobox_wrapper.h"
@@ -436,6 +438,10 @@
           #include "qwidget_wrapper.h"
         
           #include "qabstractbutton_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qqmlengine_wrapper.h"
         
           #include "qobject_wrapper.h"
         
@@ -697,6 +703,8 @@
       
         QList<RJSDowncaster_QItemDelegate*> RJSHelper::downcasters_QItemDelegate;
       
+        QList<RJSDowncaster_QJSEngine*> RJSHelper::downcasters_QJSEngine;
+      
         QList<RJSDowncaster_QLayout*> RJSHelper::downcasters_QLayout;
       
         QList<RJSDowncaster_QLineEdit*> RJSHelper::downcasters_QLineEdit;
@@ -712,6 +720,8 @@
         QList<RJSDowncaster_QMdiSubWindow*> RJSHelper::downcasters_QMdiSubWindow;
       
         QList<RJSDowncaster_QObject*> RJSHelper::downcasters_QObject;
+      
+        QList<RJSDowncaster_QQmlEngine*> RJSHelper::downcasters_QQmlEngine;
       
         QList<RJSDowncaster_QTextBrowser*> RJSHelper::downcasters_QTextBrowser;
       
@@ -20569,6 +20579,14 @@
                 }
             }
           
+            // downcast to types derrived from QJSEngine but defined in other modules:
+            for (int i=0; i<downcasters_QJSEngine.length(); i++) {
+                QJSValue dc = downcasters_QJSEngine[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
+          
 
           QJSEngine* engine = handler.getEngine();
           QJSEngine_Wrapper* ret = new QJSEngine_Wrapper(handler, v, false);
@@ -21684,6 +21702,22 @@
     
       QJSValue RJSHelper::cpp2js_QQmlEngine(RJSApi& handler, QQmlEngine* v) {
 
+          
+            // downcast to QQmlApplicationEngine:
+            {
+                QQmlApplicationEngine* o = dynamic_cast<QQmlApplicationEngine*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QQmlApplicationEngine(handler, o);
+                }
+            }
+          
+            // downcast to types derrived from QQmlEngine but defined in other modules:
+            for (int i=0; i<downcasters_QQmlEngine.length(); i++) {
+                QJSValue dc = downcasters_QQmlEngine[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           
 
           QJSEngine* engine = handler.getEngine();
@@ -27525,6 +27559,111 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QFileSystemModel::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper::cpp2js_QFileSystemWatcher(RJSApi& handler, QFileSystemWatcher* v) {
+          QFileSystemWatcher_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QFileSystemWatcher_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QFileSystemWatcher: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QFileSystemWatcher_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QFileSystemWatcher_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QFileSystemWatcher('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QFileSystemWatcher");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QFileSystemWatcher is undefined. Use QFileSystemWatcher_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QFileSystemWatcher('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QFileSystemWatcher(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QFileSystemWatcher(RJSApi& handler, const QFileSystemWatcher* v) {
+          return RJSHelper::cpp2js_QFileSystemWatcher(handler, const_cast<QFileSystemWatcher*>(v));
+      }
+
+      QFileSystemWatcher* RJSHelper::js2cpp_QFileSystemWatcher_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QFileSystemWatcher: not a QObject";
+              return nullptr;
+          }
+          //QFileSystemWatcher_Wrapper* wrapper = getWrapper<QFileSystemWatcher_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QFileSystemWatcher_Wrapper* wrapper = qobject_cast<QFileSystemWatcher_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QFileSystemWatcher_Wrapper* wrapper = dynamic_cast<QFileSystemWatcher_Wrapper*>(obj);
+          //QFileSystemWatcher_Wrapper* wrapper = (QFileSystemWatcher_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QFileSystemWatcher: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QFileSystemWatcher*)wrapper->getWrappedVoid();
+          //return getWrapped_QFileSystemWatcher(wrapper);
+          return QFileSystemWatcher_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QFileSystemWatcher_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QFileSystemWatcher: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QFileSystemWatcher_Type);
+          //return fun.call().toInt()==RJSType::QFileSystemWatcher_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QFileSystemWatcher::getIdStatic())).toBool();
       }
 
     

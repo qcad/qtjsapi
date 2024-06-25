@@ -5317,6 +5317,34 @@
           static int id;
       };
     
+      class QTJSAPI_EXPORT  RJSType_QFileSystemWatcher : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QFileSystemWatcher";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QFileSystemWatcher();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
       class QTJSAPI_EXPORT  RJSType_QFontComboBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE

@@ -117,6 +117,8 @@
 #include "generator/cpp/qfileinfo_wrapper.h"
 #include "generator/cpp/qfilesystemmodel_base.h"
 #include "generator/cpp/qfilesystemmodel_wrapper.h"
+#include "generator/cpp/qfilesystemwatcher_base.h"
+#include "generator/cpp/qfilesystemwatcher_wrapper.h"
 #include "generator/cpp/qfont_base.h"
 #include "generator/cpp/qfont_wrapper.h"
 #include "generator/cpp/qfontcombobox_base.h"

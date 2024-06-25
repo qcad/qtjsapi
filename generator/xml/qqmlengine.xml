@@ -38,8 +38,9 @@
     <class_decl name="QQuickImageProvider" />
   </class>
   -->
-  <class name="QQmlEngine" ownership="cpp">
+  <class name="QQmlEngine" ownership="cpp" downcast="true">
     <super_list>
+      <super name="QObject" />
       <super name="QJSEngine" />
     </super_list>
     <!--

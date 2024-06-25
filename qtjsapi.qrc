@@ -72,6 +72,7 @@
     <file alias="generator/js/QFileIconProvider.js">generator/js/QFileIconProvider.js</file>
     <file alias="generator/js/QFileInfo.js">generator/js/QFileInfo.js</file>
     <file alias="generator/js/QFileSystemModel.js">generator/js/QFileSystemModel.js</file>
+    <file alias="generator/js/QFileSystemWatcher.js">generator/js/QFileSystemWatcher.js</file>
     <file alias="generator/js/QFocusEvent.js">generator/js/QFocusEvent.js</file>
     <file alias="generator/js/QFont.js">generator/js/QFont.js</file>
     <file alias="generator/js/QFontComboBox.js">generator/js/QFontComboBox.js</file>

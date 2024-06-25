@@ -2,18 +2,18 @@
   // Auto generated
   
   // include header:
-  //#include "qqmlapplicationenginewrapper.h"
+  //#include "qfilesystemwatcherwrapper.h"
   //#include "header_cpp.h"
   
-    #include "qqmlapplicationengine_wrapper.h"
+    #include "qfilesystemwatcher_wrapper.h"
 
   
       // list of registered base casters for this wrapper class:
-      QList<RJSBasecaster_QQmlApplicationEngine*> QQmlApplicationEngine_Wrapper::basecasters_QQmlApplicationEngine;
+      QList<RJSBasecaster_QFileSystemWatcher*> QFileSystemWatcher_Wrapper::basecasters_QFileSystemWatcher;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: tr
     // Source: QObject
     // Static: true
@@ -21,7 +21,7 @@
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_WrapperSingleton::tr
+              QFileSystemWatcher_WrapperSingleton::tr
               (
                 
   const QJSValue& 
@@ -114,10 +114,10 @@ int a3_cpp;
                 
               }
             
-    void QQmlApplicationEngine_Wrapper::init(RJSApi& handler) {
+    void QFileSystemWatcher_Wrapper::init(RJSApi& handler) {
       
-        //qmlRegisterType<QQmlApplicationEngine_Wrapper>("org.qcad", 1, 0, "QQmlApplicationEngine_Wrapper");
-        qmlRegisterInterface<QQmlApplicationEngine_Wrapper>("QQmlApplicationEngine_Wrapper", 1);
+        //qmlRegisterType<QFileSystemWatcher_Wrapper>("org.qcad", 1, 0, "QFileSystemWatcher_Wrapper");
+        qmlRegisterInterface<QFileSystemWatcher_Wrapper>("QFileSystemWatcher_Wrapper", 1);
       
 
       QJSEngine* engine = handler.getEngine();
@@ -125,34 +125,34 @@ int a3_cpp;
       
           // make type scriptable for JS files:
           QJSValue global = engine->globalObject();
-          RJSType_QQmlApplicationEngine* t = new RJSType_QQmlApplicationEngine();
-          global.setProperty("RJSType_QQmlApplicationEngine", engine->newQObject(t));
+          RJSType_QFileSystemWatcher* t = new RJSType_QFileSystemWatcher();
+          global.setProperty("RJSType_QFileSystemWatcher", engine->newQObject(t));
 
           // initialize ID for this type:
-          RJSType_QQmlApplicationEngine::getIdStatic();
+          RJSType_QFileSystemWatcher::getIdStatic();
 
           
 
       // wrapper:
-      QJSValue mo = engine->newQMetaObject(&QQmlApplicationEngine_Wrapper::staticMetaObject);
-      engine->globalObject().setProperty("QQmlApplicationEngine_Wrapper", mo);
+      QJSValue mo = engine->newQMetaObject(&QFileSystemWatcher_Wrapper::staticMetaObject);
+      engine->globalObject().setProperty("QFileSystemWatcher_Wrapper", mo);
 
 
       
         // JS base class:
-        //QJSValue mob = engine->newQMetaObject(&QQmlApplicationEngine_BaseJs::staticMetaObject);
-        //engine->globalObject().setProperty("QQmlApplicationEngine_BaseJs", mob);
+        //QJSValue mob = engine->newQMetaObject(&QFileSystemWatcher_BaseJs::staticMetaObject);
+        //engine->globalObject().setProperty("QFileSystemWatcher_BaseJs", mob);
       
         // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QQmlApplicationEngine_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QQmlApplicationEngine_WrapperSingleton", mos);
+        QJSValue mos = engine->newQMetaObject(&QFileSystemWatcher_WrapperSingleton::staticMetaObject);
+        engine->globalObject().setProperty("QFileSystemWatcher_WrapperSingleton", mos);
 
         // create instance of singleton wrapper for static functions:
-        QQmlApplicationEngine_WrapperSingleton * s = new QQmlApplicationEngine_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QQmlApplicationEngine_WrapperSingletonInstance", engine->newQObject(s));
+        QFileSystemWatcher_WrapperSingleton * s = new QFileSystemWatcher_WrapperSingleton(handler);
+        engine->globalObject().setProperty("QFileSystemWatcher_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generator/js/QQmlApplicationEngine.js";
+      QString fileName = ":generator/js/QFileSystemWatcher.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -174,8 +174,8 @@ int a3_cpp;
   
     /*
     // special constructor used as prototype:
-    QQmlApplicationEngine_Wrapper::QQmlApplicationEngine_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
-            //setObjectName("QQmlApplicationEngine_Wrapper");
+    QFileSystemWatcher_Wrapper::QFileSystemWatcher_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
+            //setObjectName("QFileSystemWatcher_Wrapper");
             setEngine(e);
 
             // signal forwarding:
@@ -186,10 +186,10 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QQmlApplicationEngine_Wrapper::QQmlApplicationEngine_Wrapper(RJSApi& h, QQmlApplicationEngine* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
-              //RDebug::incCounter(QString("QQmlApplicationEngine_Wrapper_") + handler.getEngine()->objectName());
-              //RDebug::incCounter(QString("QQmlApplicationEngine_Wrapper"));
-              //setObjectName("QQmlApplicationEngine_Wrapper");
+      QFileSystemWatcher_Wrapper::QFileSystemWatcher_Wrapper(RJSApi& h, QFileSystemWatcher* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+              //RDebug::incCounter(QString("QFileSystemWatcher_Wrapper_") + handler.getEngine()->objectName());
+              //RDebug::incCounter(QString("QFileSystemWatcher_Wrapper"));
+              //setObjectName("QFileSystemWatcher_Wrapper");
               //setHandler(h);
 
               // signal forwarding:
@@ -198,11 +198,11 @@ int a3_cpp;
           
 
       // destructor:
-      QQmlApplicationEngine_Wrapper::~QQmlApplicationEngine_Wrapper() {
-            //RDebug::decCounter(QString("QQmlApplicationEngine_Wrapper_") + handler.getEngine()->objectName());
-            //RDebug::decCounter(QString("QQmlApplicationEngine_Wrapper"));
+      QFileSystemWatcher_Wrapper::~QFileSystemWatcher_Wrapper() {
+            //RDebug::decCounter(QString("QFileSystemWatcher_Wrapper_") + handler.getEngine()->objectName());
+            //RDebug::decCounter(QString("QFileSystemWatcher_Wrapper"));
 
-            //qDebug() << "QQmlApplicationEngine_Wrapper::~QQmlApplicationEngine_Wrapper";
+            //qDebug() << "QFileSystemWatcher_Wrapper::~QFileSystemWatcher_Wrapper";
 
             // tell script handler that this wrapper no longer exists:
             handler.unregisterWrapper(*this);
@@ -210,8 +210,9 @@ int a3_cpp;
             
             if (wrappedCreated) {
               
-                  // never delete wrapped object (non-copyable, CPP ownership or private destructor)
-                  //qDebug() << "NOT deleting instance of QQmlApplicationEngine";
+                  // delete wrapped object (copyable, JS ownership)
+                  //qDebug() << "deleting instance of QFileSystemWatcher";
+                  delete wrapped;
                 
             }
             
@@ -219,9 +220,9 @@ int a3_cpp;
         
     // initialization of signal forwarding
     
-        void QQmlApplicationEngine_Wrapper::initConnections() {
+        void QFileSystemWatcher_Wrapper::initConnections() {
 
-          //setObjectName("QQmlApplicationEngine_Wrapper");
+          //setObjectName("QFileSystemWatcher_Wrapper");
 
           // tell script handler that this wrapper needs to be deleted if the engine is deleted:
           handler.registerWrapper(*this);
@@ -249,16 +250,16 @@ int a3_cpp;
             
   connect(
     getWrapped(), 
-    SIGNAL(objectCreated(QObject*, const QUrl&)), 
+    SIGNAL(fileChanged(const QString&)), 
     this, 
-    SLOT(objectCreatedEmitter(QObject*, const QUrl&))
+    SLOT(fileChangedEmitter(const QString&))
   );
 
   connect(
     getWrapped(), 
-    SIGNAL(objectCreationFailed(const QUrl&)), 
+    SIGNAL(directoryChanged(const QString&)), 
     this, 
-    SLOT(objectCreationFailedEmitter(const QUrl&))
+    SLOT(directoryChangedEmitter(const QString&))
   );
 
               /*
@@ -276,13 +277,13 @@ int a3_cpp;
 
   // constructors:
   
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: 
     // Source: 
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
-QQmlApplicationEngine_Wrapper::QQmlApplicationEngine_Wrapper
+QFileSystemWatcher_Wrapper::QFileSystemWatcher_Wrapper
                 
               (
                 
@@ -299,12 +300,12 @@ QQmlApplicationEngine_Wrapper::QQmlApplicationEngine_Wrapper
               
               {
                 
-                  //RDebug::incCounter(QString("QQmlApplicationEngine_Wrapper_") + handler.getEngine()->objectName());
-                  //RDebug::incCounter(QString("QQmlApplicationEngine_Wrapper"));
+                  //RDebug::incCounter(QString("QFileSystemWatcher_Wrapper_") + handler.getEngine()->objectName());
+                  //RDebug::incCounter(QString("QFileSystemWatcher_Wrapper"));
                 
       // check parameter types:
       if (
-        RJSHelper::is_QUrl(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
    && RJSHelper::is_QObject_ptr(handler, a2
@@ -317,11 +318,11 @@ QQmlApplicationEngine_Wrapper::QQmlApplicationEngine_Wrapper
     
       // prepare parameters:
     
-  // convert js parameter to cpp: url (QUrl)
+  // convert js parameter to cpp: paths (QStringList)
   
-QUrl a1_cpp;
+QStringList a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QUrl(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
   // convert js parameter to cpp: parent (QObject)
   
@@ -344,66 +345,7 @@ QUrl a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QQmlApplicationEngine(
-                a1_cpp
-    , a2_cpp
-    
-            );
-            wrappedCreated = true;
-          
-
-        // signal forwarding:
-        // TODO
-        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
-        initConnections();
-        return;
-
-      
-  }
-
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-   && RJSHelper::is_QObject_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: filePath (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-  // convert js parameter to cpp: parent (QObject)
-  
-
-          // pointer:
-          QObject*
-         a2_cpp;
-
-      
-          if (a2.isUndefined()) {
-            a2_cpp = nullptr;
-          }
-          else {
-            a2_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a2);
-          }
-        
-
-    // call function:
-    
-        // construct wrapper:
-
-        
-            wrapped = new QQmlApplicationEngine(
+            wrapped = new QFileSystemWatcher(
                 a1_cpp
     , a2_cpp
     
@@ -453,7 +395,7 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QQmlApplicationEngine(
+            wrapped = new QFileSystemWatcher(
                 a1_cpp
     
             );
@@ -482,7 +424,7 @@ QString a1_cpp;
                     }
                   
 
-                  qWarning() << "no matching constructor variant found for QQmlApplicationEngine";
+                  qWarning() << "no matching constructor variant found for QFileSystemWatcher";
                   wrapped = nullptr;
                   wrappedCreated = false;
                   handler.trace();
@@ -492,7 +434,7 @@ QString a1_cpp;
 
     // non-static functions:
     
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -500,7 +442,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::objectName
+              QFileSystemWatcher_Wrapper::objectName
               (
                 
               ) 
@@ -525,7 +467,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 QString res = 
                     
                 w->objectName(
@@ -549,7 +491,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: setObjectName
     // Source: QObject
     // Static: false
@@ -557,7 +499,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::setObjectName
+              QFileSystemWatcher_Wrapper::setObjectName
               (
                 
   const QJSValue& 
@@ -596,7 +538,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                 w->setObjectName(
                   a1_cpp
@@ -613,7 +555,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: isWidgetType
     // Source: QObject
     // Static: false
@@ -621,7 +563,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::isWidgetType
+              QFileSystemWatcher_Wrapper::isWidgetType
               (
                 
               ) 
@@ -646,7 +588,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 bool res = 
                     
                 w->isWidgetType(
@@ -670,7 +612,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: isWindowType
     // Source: QObject
     // Static: false
@@ -678,7 +620,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::isWindowType
+              QFileSystemWatcher_Wrapper::isWindowType
               (
                 
               ) 
@@ -703,7 +645,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 bool res = 
                     
                 w->isWindowType(
@@ -727,7 +669,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: signalsBlocked
     // Source: QObject
     // Static: false
@@ -735,7 +677,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::signalsBlocked
+              QFileSystemWatcher_Wrapper::signalsBlocked
               (
                 
               ) 
@@ -760,7 +702,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 bool res = 
                     
                 w->signalsBlocked(
@@ -784,7 +726,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: blockSignals
     // Source: QObject
     // Static: false
@@ -792,7 +734,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::blockSignals
+              QFileSystemWatcher_Wrapper::blockSignals
               (
                 
   const QJSValue& 
@@ -831,7 +773,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 bool res = 
                     
                 w->blockSignals(
@@ -856,7 +798,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: findChild
     // Source: QObject
     // Static: false
@@ -864,7 +806,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::findChild
+              QFileSystemWatcher_Wrapper::findChild
               (
                 
   const QJSValue& 
@@ -932,7 +874,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 QObject* res = 
                     
                 w->findChild<QObject*>(
@@ -958,7 +900,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: children
     // Source: QObject
     // Static: false
@@ -966,7 +908,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::children
+              QFileSystemWatcher_Wrapper::children
               (
                 
               ) 
@@ -991,7 +933,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                       // return type is reference:
                       // use pointer instead 3:
@@ -1020,7 +962,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: setParent
     // Source: QObject
     // Static: false
@@ -1028,7 +970,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::setParent
+              QFileSystemWatcher_Wrapper::setParent
               (
                 
   const QJSValue& 
@@ -1072,7 +1014,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                 w->setParent(
                   a1_cpp
@@ -1089,7 +1031,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: installEventFilter
     // Source: QObject
     // Static: false
@@ -1097,7 +1039,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::installEventFilter
+              QFileSystemWatcher_Wrapper::installEventFilter
               (
                 
   const QJSValue& 
@@ -1141,7 +1083,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                 w->installEventFilter(
                   a1_cpp
@@ -1158,7 +1100,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: removeEventFilter
     // Source: QObject
     // Static: false
@@ -1166,7 +1108,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::removeEventFilter
+              QFileSystemWatcher_Wrapper::removeEventFilter
               (
                 
   const QJSValue& 
@@ -1210,7 +1152,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                 w->removeEventFilter(
                   a1_cpp
@@ -1227,7 +1169,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: dumpObjectTree
     // Source: QObject
     // Static: false
@@ -1235,7 +1177,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::dumpObjectTree
+              QFileSystemWatcher_Wrapper::dumpObjectTree
               (
                 
               ) 
@@ -1258,7 +1200,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                 w->dumpObjectTree(
                   
@@ -1284,7 +1226,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                 w->dumpObjectTree(
                   
@@ -1300,7 +1242,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: dumpObjectInfo
     // Source: QObject
     // Static: false
@@ -1308,7 +1250,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::dumpObjectInfo
+              QFileSystemWatcher_Wrapper::dumpObjectInfo
               (
                 
               ) 
@@ -1331,7 +1273,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                 w->dumpObjectInfo(
                   
@@ -1357,7 +1299,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                 w->dumpObjectInfo(
                   
@@ -1373,7 +1315,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: setProperty
     // Source: QObject
     // Static: false
@@ -1381,7 +1323,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::setProperty
+              QFileSystemWatcher_Wrapper::setProperty
               (
                 
   const QJSValue& 
@@ -1434,7 +1376,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 bool res = 
                     
                 w->setProperty(
@@ -1460,7 +1402,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: property
     // Source: QObject
     // Static: false
@@ -1468,7 +1410,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::property
+              QFileSystemWatcher_Wrapper::property
               (
                 
   const QJSValue& 
@@ -1512,7 +1454,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 QVariant res = 
                     
                 w->property(
@@ -1537,7 +1479,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: dynamicPropertyNames
     // Source: QObject
     // Static: false
@@ -1545,7 +1487,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::dynamicPropertyNames
+              QFileSystemWatcher_Wrapper::dynamicPropertyNames
               (
                 
               ) 
@@ -1570,7 +1512,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 QList<QByteArray> res = 
                     
                 w->dynamicPropertyNames(
@@ -1594,7 +1536,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: parent
     // Source: QObject
     // Static: false
@@ -1602,7 +1544,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::parent
+              QFileSystemWatcher_Wrapper::parent
               (
                 
               ) 
@@ -1627,7 +1569,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 QObject* res = 
                     
                 w->parent(
@@ -1651,7 +1593,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: deleteLater
     // Source: QObject
     // Static: false
@@ -1659,7 +1601,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::deleteLater
+              QFileSystemWatcher_Wrapper::deleteLater
               (
                 
               ) 
@@ -1682,7 +1624,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 
                 w->deleteLater(
                   
@@ -1698,334 +1640,15 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QQmlApplicationEngine
-    // Function: rootContext
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::rootContext
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                QQmlContext* res = 
-                    
-                w->rootContext(
-                  
-                );
-              
-            // return type: QQmlContext*
-
-            return RJSHelper::cpp2js_QQmlContext(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for rootContext";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: clearComponentCache
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::clearComponentCache
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->clearComponentCache(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for clearComponentCache";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: trimComponentCache
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::trimComponentCache
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->trimComponentCache(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for trimComponentCache";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: clearSingletons
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::clearSingletons
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->clearSingletons(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for clearSingletons";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: importPathList
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::importPathList
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                QStringList res = 
-                    
-                w->importPathList(
-                  
-                );
-              
-            // return type: QStringList
-
-            return RJSHelper::cpp2js_QStringList(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for importPathList";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: setImportPathList
-    // Source: QQmlEngine
+    // Class: QFileSystemWatcher
+    // Function: addPath
+    // Source: 
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::setImportPathList
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QStringList(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: paths (QStringList)
-  
-QStringList a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->setImportPathList(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setImportPathList";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: addImportPath
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::addImportPath
+              QFileSystemWatcher_Wrapper::addPath
               (
                 
   const QJSValue& 
@@ -2044,7 +1667,7 @@ QStringList a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: dir (QString)
+  // convert js parameter to cpp: file (QString)
   
 QString a1_cpp;
 
@@ -2064,272 +1687,11 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->addImportPath(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for addImportPath";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: pluginPathList
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::pluginPathList
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                QStringList res = 
-                    
-                w->pluginPathList(
-                  
-                );
-              
-            // return type: QStringList
-
-            return RJSHelper::cpp2js_QStringList(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for pluginPathList";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: setPluginPathList
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::setPluginPathList
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QStringList(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: paths (QStringList)
-  
-QStringList a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->setPluginPathList(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setPluginPathList";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: addPluginPath
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::addPluginPath
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: dir (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->addPluginPath(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for addPluginPath";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: addNamedBundle
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::addNamedBundle
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-   && RJSHelper::is_QString(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-  // convert js parameter to cpp:  (QString)
-  
-QString a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
+                QFileSystemWatcher* w = getWrapped();
                 bool res = 
                     
-                w->addNamedBundle(
+                w->addPath(
                   a1_cpp
-    , a2_cpp
     
                 );
               
@@ -2344,536 +1706,21 @@ QString a2_cpp;
             
   }
 
-                  qWarning() << "no matching function variant found for addNamedBundle";
+                  qWarning() << "no matching function variant found for addPath";
                   handler.trace();
                   return QJSValue();
                 
               }
             
-    // Class: QQmlApplicationEngine
-    // Function: baseUrl
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::baseUrl
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                QUrl res = 
-                    
-                w->baseUrl(
-                  
-                );
-              
-            // return type: QUrl
-
-            return RJSHelper::cpp2js_QUrl(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for baseUrl";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: setBaseUrl
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::setBaseUrl
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QUrl(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (QUrl)
-  
-QUrl a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QUrl(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->setBaseUrl(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setBaseUrl";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: outputWarningsToStandardError
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::outputWarningsToStandardError
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                bool res = 
-                    
-                w->outputWarningsToStandardError(
-                  
-                );
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for outputWarningsToStandardError";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: setOutputWarningsToStandardError
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::setOutputWarningsToStandardError
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_bool(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (bool)
-  
-bool a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->setOutputWarningsToStandardError(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setOutputWarningsToStandardError";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: retranslate
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::retranslate
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->retranslate(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for retranslate";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: rootObjects
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::rootObjects
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                QList<QObject*> res = 
-                    
-                w->rootObjects(
-                  
-                );
-              
-            // return type: QList<QObject*>
-
-            return RJSHelper::cpp2js_QList_QObject_ptr(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for rootObjects";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: load
+    // Class: QFileSystemWatcher
+    // Function: addPaths
     // Source: 
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::load
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QUrl(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: url (QUrl)
-  
-QUrl a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QUrl(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->load(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: filePath (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->load(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for load";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: setInitialProperties
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::setInitialProperties
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QVariantMap(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: initialProperties (QVariantMap)
-  
-QVariantMap a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QVariantMap(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->setInitialProperties(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setInitialProperties";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQmlApplicationEngine
-    // Function: setExtraFileSelectors
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlApplicationEngine_Wrapper::setExtraFileSelectors
+              QFileSystemWatcher_Wrapper::addPaths
               (
                 
   const QJSValue& 
@@ -2892,7 +1739,7 @@ QVariantMap a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: extraFileSelectors (QStringList)
+  // convert js parameter to cpp: files (QStringList)
   
 QStringList a1_cpp;
 
@@ -2912,50 +1759,51 @@ QStringList a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->setExtraFileSelectors(
+                QFileSystemWatcher* w = getWrapped();
+                QStringList res = 
+                    
+                w->addPaths(
                   a1_cpp
     
                 );
               
-            return QJSValue();
-          
+            // return type: QStringList
+
+            return RJSHelper::cpp2js_QStringList(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
   }
 
-                  qWarning() << "no matching function variant found for setExtraFileSelectors";
+                  qWarning() << "no matching function variant found for addPaths";
                   handler.trace();
                   return QJSValue();
                 
               }
             
-    // Class: QQmlApplicationEngine
-    // Function: loadData
+    // Class: QFileSystemWatcher
+    // Function: removePath
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 1
     // preceding Parameters: -1
 
                 QJSValue 
-              QQmlApplicationEngine_Wrapper::loadData
+              QFileSystemWatcher_Wrapper::removePath
               (
                 
   const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
+  a1
               ) 
               
               {
                 
       // check parameter types:
       if (
-        RJSHelper::is_QByteArray(handler, a1
-  )
-
-   && RJSHelper::is_QUrl(handler, a2
-    , true
-  
+        RJSHelper::is_QString(handler, a1
   )
 
   
@@ -2963,23 +1811,11 @@ QStringList a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: data (QByteArray)
+  // convert js parameter to cpp: file (QString)
   
-QByteArray a1_cpp;
+QString a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
-        
-  // convert js parameter to cpp: url (QUrl)
-  
-QUrl a2_cpp;
-
-      
-          if (a2.isUndefined()) {
-            a2_cpp = QUrl();
-          }
-          else {
-            a2_cpp = RJSHelper::js2cpp_QUrl(handler, a2);
-          }
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
 
     // call function:
@@ -2995,64 +1831,219 @@ QUrl a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QQmlApplicationEngine* w = getWrapped();
-                
-                w->loadData(
+                QFileSystemWatcher* w = getWrapped();
+                bool res = 
+                    
+                w->removePath(
                   a1_cpp
-    , a2_cpp
     
                 );
               
-            return QJSValue();
-          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
   }
 
-                  qWarning() << "no matching function variant found for loadData";
+                  qWarning() << "no matching function variant found for removePath";
                   handler.trace();
                   return QJSValue();
                 
               }
             
-    // Class: QQmlApplicationEngine
-    // Function: objectCreated
+    // Class: QFileSystemWatcher
+    // Function: removePaths
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 1
     // preceding Parameters: -1
 
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              QQmlApplicationEngine_Wrapper::objectCreatedEmitter(
-                QObject* object, const QUrl& url
-              ) {
-                // convert cpp parameters to js:
+                QJSValue 
+              QFileSystemWatcher_Wrapper::removePaths
+              (
                 
-  // parameter: object (QObject)
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QStringList(handler, a1
+  )
+
   
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QObject(
-    handler, 
-    object
-  );
-
-  // parameter: url (QUrl)
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: files (QStringList)
   
+QStringList a1_cpp;
 
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
+        
 
-  QJSValue a2_js = RJSHelper::cpp2js_QUrl(
-    handler, 
-    url
-  );
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
 
-
-                emit objectCreated(
-                  a1_js, a2_js
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFileSystemWatcher* w = getWrapped();
+                QStringList res = 
+                    
+                w->removePaths(
+                  a1_cpp
+    
                 );
+              
+            // return type: QStringList
+
+            return RJSHelper::cpp2js_QStringList(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for removePaths";
+                  handler.trace();
+                  return QJSValue();
+                
               }
             
-    // Class: QQmlApplicationEngine
-    // Function: objectCreationFailed
+    // Class: QFileSystemWatcher
+    // Function: files
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFileSystemWatcher_Wrapper::files
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFileSystemWatcher* w = getWrapped();
+                QStringList res = 
+                    
+                w->files(
+                  
+                );
+              
+            // return type: QStringList
+
+            return RJSHelper::cpp2js_QStringList(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for files";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFileSystemWatcher
+    // Function: directories
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QFileSystemWatcher_Wrapper::directories
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QFileSystemWatcher* w = getWrapped();
+                QStringList res = 
+                    
+                w->directories(
+                  
+                );
+              
+            // return type: QStringList
+
+            return RJSHelper::cpp2js_QStringList(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for directories";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QFileSystemWatcher
+    // Function: fileChanged
     // Source: 
     // Static: false
     // Parameters: 1
@@ -3060,22 +2051,51 @@ QUrl a2_cpp;
 
               // signal emitter: called when signal is emitted from wrapped object:
               void 
-              QQmlApplicationEngine_Wrapper::objectCreationFailedEmitter(
-                const QUrl& url
+              QFileSystemWatcher_Wrapper::fileChangedEmitter(
+                const QString& path
               ) {
                 // convert cpp parameters to js:
                 
-  // parameter: url (QUrl)
+  // parameter: path (QString)
   
 
 
-  QJSValue a1_js = RJSHelper::cpp2js_QUrl(
+  QJSValue a1_js = RJSHelper::cpp2js_QString(
     handler, 
-    url
+    path
   );
 
 
-                emit objectCreationFailed(
+                emit fileChanged(
+                  a1_js
+                );
+              }
+            
+    // Class: QFileSystemWatcher
+    // Function: directoryChanged
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QFileSystemWatcher_Wrapper::directoryChangedEmitter(
+                const QString& path
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: path (QString)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QString(
+    handler, 
+    path
+  );
+
+
+                emit directoryChanged(
                   a1_js
                 );
               }

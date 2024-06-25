@@ -3,11 +3,11 @@
       //var self;
 
       // class constructor:
-      function QQmlEngine() {
+      function QFileSystemWatcher() {
         
 
-        // should be QQmlEngine_BaseJs.call(this, engine):
-        //QQmlEngine.prototype = new QQmlEngine_BaseJs(engine);
+        // should be QFileSystemWatcher_BaseJs.call(this, engine):
+        //QFileSystemWatcher.prototype = new QFileSystemWatcher_BaseJs(engine);
 
         var wrapper;
 
@@ -17,7 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QQmlEngine.getIdStatic()))) {
+            arguments[2].getWrappedType()===RJSType_QFileSystemWatcher.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -26,22 +26,49 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QQmlEngine);
+              copyProperties(this, wrapper, QFileSystemWatcher);
             //}
           }
           else {
-            qWarning("QQmlEngine.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
+            qWarning("QFileSystemWatcher.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
           }
 
         }
         else {
           
+      if (arguments.length >= 1 &&
+          arguments.length <= 2) {
+    
+            self = this;
+            wrapper = new QFileSystemWatcher_Wrapper(
+              // RJSApi:
+              handler
+              , arguments[0], arguments[1]
+              ////this.setWrapper(this.wrapper);
+              //Object.setPrototypeOf(this, wrapper);
+            );
+            //wrapper.__WRAPPER__ = true;
+            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+          
+
+        copyProperties(this, wrapper, QFileSystemWatcher);
+
+        //this.setWrapper(this.wrapper);
+
+      
+
+        //copyProperties(this, wrapper, QFileSystemWatcher);
+  }
+
+  
+  else 
+  
       if (arguments.length >= 0 &&
           arguments.length <= 1) {
     
             self = this;
-            wrapper = new QQmlEngine_Wrapper(
+            wrapper = new QFileSystemWatcher_Wrapper(
               // RJSApi:
               handler
               , arguments[0]
@@ -52,19 +79,19 @@
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
 
-        copyProperties(this, wrapper, QQmlEngine);
+        copyProperties(this, wrapper, QFileSystemWatcher);
 
         //this.setWrapper(this.wrapper);
 
       
 
-        //copyProperties(this, wrapper, QQmlEngine);
+        //copyProperties(this, wrapper, QFileSystemWatcher);
   }
 
   
   else {
     
-        print("QQmlEngine(): wrong number / type of arguments");
+        print("QFileSystemWatcher(): wrong number / type of arguments");
       
     console.trace();
   }
@@ -87,37 +114,37 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["fileChanged(QString)"] = Object.getPrototypeOf(this).fileChanged;
+  
+    this["directoryChanged(QString)"] = Object.getPrototypeOf(this).directoryChanged;
+  
           }
         }
       }
 
-      //QQmlEngine.prototype = new QQmlEngine_BaseJs(engine);
-      //QQmlEngine.prototype = new QQmlEngine_Wrapper(engine);
-      QQmlEngine.prototype = new Object();
+      //QFileSystemWatcher.prototype = new QFileSystemWatcher_BaseJs(engine);
+      //QFileSystemWatcher.prototype = new QFileSystemWatcher_Wrapper(engine);
+      QFileSystemWatcher.prototype = new Object();
 
-      QQmlEngine.prototype.toString = function() {
-          //return "QQmlEngine [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QQmlEngine [JS]";
+      QFileSystemWatcher.prototype.toString = function() {
+          //return "QFileSystemWatcher [JS] [0x" + this.getAddress().toString(16) + "]";
+          return "QFileSystemWatcher [JS]";
         };
-      QQmlEngine.getObjectType = function() {
-        return RJSType_QQmlEngine.getIdStatic();
+      QFileSystemWatcher.getObjectType = function() {
+        return RJSType_QFileSystemWatcher.getIdStatic();
       };
 
-      QQmlEngine.prototype.getObjectType = function() {
-        return RJSType_QQmlEngine.getIdStatic();
+      QFileSystemWatcher.prototype.getObjectType = function() {
+        return RJSType_QFileSystemWatcher.getIdStatic();
       };
 
-      QQmlEngine.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QQmlEngine.getIdStatic()) {
+      QFileSystemWatcher.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_QFileSystemWatcher.getIdStatic()) {
           return true;
         }
 
         
           if (t===RJSType_QObject.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QJSEngine.getIdStatic()) {
             return true;
           }
         
@@ -138,27 +165,27 @@
       
 
         // static function 
-        QQmlEngine.tr = function() 
+        QFileSystemWatcher.tr = function() 
           
         {
-          //print("JS: QQmlEngine.tr");
+          //print("JS: QFileSystemWatcher.tr");
           
       if (arguments.length >= 1 &&
           arguments.length <= 3) {
     
                 // calling static wrapper:
-                return QQmlEngine_WrapperSingletonInstance.tr(
+                return QFileSystemWatcher_WrapperSingletonInstance.tr(
                   arguments[0], arguments[1], arguments[2]
                 );
               
 
-        //copyProperties(this, wrapper, QQmlEngine);
+        //copyProperties(this, wrapper, QFileSystemWatcher);
   }
 
   
   else {
     
-        print("QQmlEngine.tr(): wrong number / type of arguments");
+        print("QFileSystemWatcher.tr(): wrong number / type of arguments");
       
     console.trace();
   }
@@ -173,12 +200,12 @@
       
 
       // copy function:
-      //QQmlEngine.prototype.copy = function() {
+      //QFileSystemWatcher.prototype.copy = function() {
       //  return this.wrapper.copy();
       //};
 
       // destroy function:
-      //QQmlEngine.prototype.destr = function() {
+      //QFileSystemWatcher.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
     

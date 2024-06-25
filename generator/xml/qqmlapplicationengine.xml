@@ -3,9 +3,7 @@
   <class name="QQmlApplicationEngine" ownership="cpp">
     <super_list>
       <super name="QObject" />
-      <!--
       <super name="QQmlEngine" />
-      -->
     </super_list>
     <constructor>
       <variant>

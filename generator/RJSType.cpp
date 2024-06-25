@@ -2850,6 +2850,21 @@
 
 
       
+      int RJSType_QFileSystemWatcher::id = -1;
+
+      int RJSType_QFileSystemWatcher::getId() const {
+          return RJSType_QFileSystemWatcher::getIdStatic();
+      }
+
+      int RJSType_QFileSystemWatcher::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QFileSystemWatcher());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QFontComboBox::id = -1;
 
       int RJSType_QFontComboBox::getId() const {

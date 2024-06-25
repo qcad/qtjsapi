@@ -37,8 +37,7 @@
         }
         else {
           
-      if (arguments.length >= 1 &&
-          arguments.length <= 2) {
+      if (arguments.length == 2) {
     
             self = this;
             wrapper = new QQuickWidget_Wrapper(

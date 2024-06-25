@@ -116,6 +116,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qfileinfo_wrapper.h
     generator/cpp/qfilesystemmodel_base.h
     generator/cpp/qfilesystemmodel_wrapper.h
+    generator/cpp/qfilesystemwatcher_base.h
+    generator/cpp/qfilesystemwatcher_wrapper.h
     generator/cpp/qfont_base.h
     generator/cpp/qfont_wrapper.h
     generator/cpp/qfontcombobox_base.h
@@ -488,6 +490,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qfileinfo_wrapper.cpp
     generator/cpp/qfilesystemmodel_base.cpp
     generator/cpp/qfilesystemmodel_wrapper.cpp
+    generator/cpp/qfilesystemwatcher_base.cpp
+    generator/cpp/qfilesystemwatcher_wrapper.cpp
     generator/cpp/qfont_base.cpp
     generator/cpp/qfont_wrapper.cpp
     generator/cpp/qfontcombobox_base.cpp

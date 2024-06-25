@@ -473,7 +473,9 @@ QQuickWidget_Wrapper::QQuickWidget_Wrapper
                 
       // check parameter types:
       if (
-        RJSHelper::is_QUrl(handler, a1
+        RJSHelper::is_QQmlEngine_ptr(handler, a1
+    , true
+  
   )
 
    && RJSHelper::is_QWidget_ptr(handler, a2
@@ -486,11 +488,14 @@ QQuickWidget_Wrapper::QQuickWidget_Wrapper
     
       // prepare parameters:
     
-  // convert js parameter to cpp: source (QUrl)
+  // convert js parameter to cpp: engine (QQmlEngine)
   
-QUrl a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QUrl(handler, a1);
+          // pointer:
+          QQmlEngine*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QQmlEngine_ptr(handler, a1);
         
   // convert js parameter to cpp: parent (QWidget)
   
@@ -499,13 +504,7 @@ QUrl a1_cpp;
           QWidget*
          a2_cpp;
 
-      
-          if (a2.isUndefined()) {
-            a2_cpp = nullptr;
-          }
-          else {
-            a2_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a2);
-          }
+      a2_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a2);
         
 
     // call function:

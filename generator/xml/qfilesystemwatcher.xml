@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfilesystemwatcher.h">
+  <class name="QFileSystemWatcher">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="paths" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="addPath">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPaths">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="files" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removePath">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removePaths">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="files" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="files">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="directories">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fileChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="directoryChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

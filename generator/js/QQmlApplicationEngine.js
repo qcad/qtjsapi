@@ -175,6 +175,10 @@
             return true;
           }
         
+          if (t===RJSType_QQmlEngine.getIdStatic()) {
+            return true;
+          }
+        
 
         return false;
 

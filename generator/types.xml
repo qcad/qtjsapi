@@ -546,6 +546,7 @@
     <type>QFileDevice</type>
     <type>QFileDialog</type>
     <type>QFileSystemModel</type>
+    <type>QFileSystemWatcher</type>
     <type>QFontComboBox</type>
     <type>QFormLayout</type>
     <type>QFrame</type>

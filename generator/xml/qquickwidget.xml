@@ -18,20 +18,20 @@
           <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
         </parameters>
       </variant>
-      <!--
       <variant>
         <parameters>
           <parameter const="false" type="QQmlEngine" modifier="*" name="engine" />
           <parameter const="false" type="QWidget" modifier="*" name="parent" />
         </parameters>
       </variant>
-      -->
+      <!--
       <variant>
         <parameters>
           <parameter const="true" type="QUrl" modifier="&amp;" name="source" />
           <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
         </parameters>
       </variant>
+      -->
     </constructor>
     <function name="source">
       <variant return-type="QUrl" const="true" access="public">

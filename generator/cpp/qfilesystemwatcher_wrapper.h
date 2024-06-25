@@ -1,8 +1,8 @@
 
   // Auto generated
   
-    #ifndef QQMLAPPLICATIONENGINE_H_WRAPPER
-    #define QQMLAPPLICATIONENGINE_H_WRAPPER
+    #ifndef QFILESYSTEMWATCHER_H_WRAPPER
+    #define QFILESYSTEMWATCHER_H_WRAPPER
 
     // include header:
     //#include "header_h.h"
@@ -16,10 +16,10 @@
     
         #include "RJSType.h"
       
-        #include <QQmlApplicationEngine>
+        #include <QFileSystemWatcher>
       
       // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QQmlApplicationEngine_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QFileSystemWatcher_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -31,7 +31,7 @@
 
       public:
       //Q_INVOKABLE 
-      QQmlApplicationEngine_WrapperSingleton(RJSApi& h) 
+      QFileSystemWatcher_WrapperSingleton(RJSApi& h) 
         : QObject(), 
           handler(h)
           
@@ -41,7 +41,7 @@
 
       // static functions:
       
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: tr
     // Source: QObject
     // Static: true
@@ -75,7 +75,7 @@
 
       private:
           RJSApi& handler;
-          //static QQmlApplicationEngine_WrapperSingleton* _singleInstance;
+          //static QFileSystemWatcher_WrapperSingleton* _singleInstance;
 
           // constants:
           
@@ -83,8 +83,8 @@
     
     // static functions implementation in singleton wrapper:
     
-    // wrapper class for QQmlApplicationEngine
-    class QTJSAPI_EXPORT QQmlApplicationEngine_Wrapper : public RJSWrapperObj {
+    // wrapper class for QFileSystemWatcher
+    class QTJSAPI_EXPORT QFileSystemWatcher_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -99,48 +99,48 @@
 
     private:
       // disable copy constructor:
-      QQmlApplicationEngine_Wrapper(const QQmlApplicationEngine_Wrapper&);
+      QFileSystemWatcher_Wrapper(const QFileSystemWatcher_Wrapper&);
 
     public:
-      // initialization of QQmlApplicationEngine:
+      // initialization of QFileSystemWatcher:
       static void init(RJSApi& handler);
 
       
-        static QQmlApplicationEngine* castToBase(void* vp, /*RJSType ID*/ int t) {
+        static QFileSystemWatcher* castToBase(void* vp, /*RJSType ID*/ int t) {
           
             // check if pointer points to derrived type:
             
 
-          // hook for modules to cast from other types to base QQmlApplicationEngine:
-          for (int i=0; i<basecasters_QQmlApplicationEngine.length(); i++) {
-            RJSBasecaster_QQmlApplicationEngine* basecaster = basecasters_QQmlApplicationEngine[i];
-            QQmlApplicationEngine* ret = basecaster->castToBase(t, vp);
+          // hook for modules to cast from other types to base QFileSystemWatcher:
+          for (int i=0; i<basecasters_QFileSystemWatcher.length(); i++) {
+            RJSBasecaster_QFileSystemWatcher* basecaster = basecasters_QFileSystemWatcher[i];
+            QFileSystemWatcher* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
               return ret;
             }
           }
 
-          // object is a pointer to base class QQmlApplicationEngine:
-          if (t==RJSType_QQmlApplicationEngine::getIdStatic()) {
-            return (QQmlApplicationEngine*)vp;
+          // object is a pointer to base class QFileSystemWatcher:
+          if (t==RJSType_QFileSystemWatcher::getIdStatic()) {
+            return (QFileSystemWatcher*)vp;
           }
 
-          qWarning() << "QQmlApplicationEngine_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
+          qWarning() << "QFileSystemWatcher_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
         }
 
-        static QQmlApplicationEngine* getWrappedBase(RJSWrapper* wrapper) {
+        static QFileSystemWatcher* getWrappedBase(RJSWrapper* wrapper) {
           int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
-              //qWarning() << "getWrapped_QQmlApplicationEngine*: wrapper wraps NULL";
+              //qWarning() << "getWrapped_QFileSystemWatcher*: wrapper wraps NULL";
           }
 
-          QQmlApplicationEngine* ret = castToBase(vp, t);
+          QFileSystemWatcher* ret = castToBase(vp, t);
           if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QQmlApplicationEngine*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+              qWarning() << "QFileSystemWatcher*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
           }
           return ret;
         }
@@ -149,7 +149,7 @@
     // special constructor used as prototype:
     
           Q_INVOKABLE 
-          QQmlApplicationEngine_Wrapper(QJSEngine* e);
+          QFileSystemWatcher_Wrapper(QJSEngine* e);
         
     */
 
@@ -157,12 +157,12 @@
       // special constructor to wrap existing object:
       
             //Q_INVOKABLE 
-            QQmlApplicationEngine_Wrapper(RJSApi& h, QQmlApplicationEngine* o, bool wrappedCreated);
+            QFileSystemWatcher_Wrapper(RJSApi& h, QFileSystemWatcher* o, bool wrappedCreated);
           
 
       // destructor:
       
-          virtual ~QQmlApplicationEngine_Wrapper();
+          virtual ~QFileSystemWatcher_Wrapper();
         
     // initialization of signal forwarding
     
@@ -171,7 +171,7 @@
 
   // constructors:
   
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: 
     // Source: 
     // Static: false
@@ -180,7 +180,7 @@
 
               public:
               Q_INVOKABLE 
-              QQmlApplicationEngine_Wrapper
+              QFileSystemWatcher_Wrapper
                 
               (
 
@@ -205,7 +205,7 @@
 
     // non-static functions:
     
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -226,7 +226,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: setObjectName
     // Source: QObject
     // Static: false
@@ -249,7 +249,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: isWidgetType
     // Source: QObject
     // Static: false
@@ -270,7 +270,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: isWindowType
     // Source: QObject
     // Static: false
@@ -291,7 +291,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: signalsBlocked
     // Source: QObject
     // Static: false
@@ -312,7 +312,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: blockSignals
     // Source: QObject
     // Static: false
@@ -335,7 +335,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: findChild
     // Source: QObject
     // Static: false
@@ -364,7 +364,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: children
     // Source: QObject
     // Static: false
@@ -385,7 +385,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: setParent
     // Source: QObject
     // Static: false
@@ -408,7 +408,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: installEventFilter
     // Source: QObject
     // Static: false
@@ -431,7 +431,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: removeEventFilter
     // Source: QObject
     // Static: false
@@ -454,7 +454,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: dumpObjectTree
     // Source: QObject
     // Static: false
@@ -473,7 +473,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: dumpObjectInfo
     // Source: QObject
     // Static: false
@@ -492,7 +492,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: setProperty
     // Source: QObject
     // Static: false
@@ -519,7 +519,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: property
     // Source: QObject
     // Static: false
@@ -544,7 +544,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: dynamicPropertyNames
     // Source: QObject
     // Static: false
@@ -565,7 +565,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: parent
     // Source: QObject
     // Static: false
@@ -586,7 +586,7 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
+    // Class: QFileSystemWatcher
     // Function: deleteLater
     // Source: QObject
     // Static: false
@@ -605,375 +605,8 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
-    // Function: rootContext
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rootContext
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: clearComponentCache
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearComponentCache
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: trimComponentCache
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  trimComponentCache
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: clearSingletons
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearSingletons
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: importPathList
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  importPathList
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: setImportPathList
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setImportPathList
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: addImportPath
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addImportPath
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: pluginPathList
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pluginPathList
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: setPluginPathList
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPluginPathList
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: addPluginPath
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addPluginPath
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: addNamedBundle
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addNamedBundle
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: baseUrl
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  baseUrl
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: setBaseUrl
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBaseUrl
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: outputWarningsToStandardError
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  outputWarningsToStandardError
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: setOutputWarningsToStandardError
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOutputWarningsToStandardError
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: retranslate
-    // Source: QQmlEngine
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  retranslate
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: rootObjects
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rootObjects
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QQmlApplicationEngine
-    // Function: load
+    // Class: QFileSystemWatcher
+    // Function: addPath
     // Source: 
     // Static: false
     // Parameters: 1
@@ -983,7 +616,7 @@
               Q_INVOKABLE 
               
                   QJSValue 
-                  load
+                  addPath
               (
 
                 
@@ -995,8 +628,8 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
-    // Function: setInitialProperties
+    // Class: QFileSystemWatcher
+    // Function: addPaths
     // Source: 
     // Static: false
     // Parameters: 1
@@ -1006,7 +639,7 @@
               Q_INVOKABLE 
               
                   QJSValue 
-                  setInitialProperties
+                  addPaths
               (
 
                 
@@ -1018,8 +651,8 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
-    // Function: setExtraFileSelectors
+    // Class: QFileSystemWatcher
+    // Function: removePath
     // Source: 
     // Static: false
     // Parameters: 1
@@ -1029,7 +662,7 @@
               Q_INVOKABLE 
               
                   QJSValue 
-                  setExtraFileSelectors
+                  removePath
               (
 
                 
@@ -1041,58 +674,73 @@
               
               ;
             
-    // Class: QQmlApplicationEngine
-    // Function: loadData
+    // Class: QFileSystemWatcher
+    // Function: removePaths
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 1
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  loadData
+                  removePaths
               (
 
                 
   const QJSValue& 
   a1
       = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
     
               )
               
               ;
             
-    // Class: QQmlApplicationEngine
-    // Function: objectCreated
+    // Class: QFileSystemWatcher
+    // Function: files
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void objectCreated(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  files
+              (
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void objectCreatedEmitter(
-                QObject* object, const QUrl& url
-              );
+                
+              )
+              
+                const
+              
+              ;
             
-    // Class: QQmlApplicationEngine
-    // Function: objectCreationFailed
+    // Class: QFileSystemWatcher
+    // Function: directories
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  directories
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFileSystemWatcher
+    // Function: fileChanged
     // Source: 
     // Static: false
     // Parameters: 1
@@ -1100,7 +748,7 @@
 
               // signal forwarded from wrapped class:
               signals:
-              void objectCreationFailed(
+              void fileChanged(
                 
   const QJSValue& 
   a1
@@ -1108,8 +756,29 @@
 
               // called when signal is emitted from wrapped class:
               public slots:
-              void objectCreationFailedEmitter(
-                const QUrl& url
+              void fileChangedEmitter(
+                const QString& path
+              );
+            
+    // Class: QFileSystemWatcher
+    // Function: directoryChanged
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void directoryChanged(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void directoryChangedEmitter(
+                const QString& path
               );
             
           // destroy function for non-copyable objects:
@@ -1142,19 +811,19 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QQmlApplicationEngine::getIdStatic();
+          return RJSType_QFileSystemWatcher::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
         Q_INVOKABLE
         virtual bool isCppOwnership() const {
           
-              return true;
+              return false;
             
         }
 
         // get wrapped object:
-        QQmlApplicationEngine* getWrapped() {
+        QFileSystemWatcher* getWrapped() {
           if (wrapped!=nullptr) {
             return wrapped;
           }
@@ -1163,7 +832,7 @@
         }
 
         // get wrapped object (const):
-        QQmlApplicationEngine* getWrapped() const {
+        QFileSystemWatcher* getWrapped() const {
           if (wrapped!=nullptr) {
             return wrapped;
           }
@@ -1213,7 +882,7 @@
 
         private:
         // wrapped object:
-        QQmlApplicationEngine* wrapped;
+        QFileSystemWatcher* wrapped;
 
         
 
@@ -1221,18 +890,18 @@
       
       private:
         // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QQmlApplicationEngine*> basecasters_QQmlApplicationEngine;
+        static QList<RJSBasecaster_QFileSystemWatcher*> basecasters_QFileSystemWatcher;
 
       public:
-        static void registerBasecaster_QQmlApplicationEngine(RJSBasecaster_QQmlApplicationEngine* bc) {
-          basecasters_QQmlApplicationEngine.append(bc);
+        static void registerBasecaster_QFileSystemWatcher(RJSBasecaster_QFileSystemWatcher* bc) {
+          basecasters_QFileSystemWatcher.append(bc);
         }
       
     };
 
-    Q_DECLARE_METATYPE(QQmlApplicationEngine_Wrapper*)
+    Q_DECLARE_METATYPE(QFileSystemWatcher_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QQmlApplicationEngine_Wrapper, "org.qcad.QQmlApplicationEngine_Wrapper")
+    Q_DECLARE_INTERFACE(QFileSystemWatcher_Wrapper, "org.qcad.QFileSystemWatcher_Wrapper")
 
   
   #endif
