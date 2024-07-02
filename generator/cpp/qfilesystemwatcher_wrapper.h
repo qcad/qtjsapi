@@ -818,7 +818,7 @@
         Q_INVOKABLE
         virtual bool isCppOwnership() const {
           
-              return false;
+              return true;
             
         }
 

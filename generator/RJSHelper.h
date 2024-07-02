@@ -338,6 +338,12 @@
           virtual QColor* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class QColorDialog:
+        class RJSBasecaster_QColorDialog {
+        public:
+          virtual QColorDialog* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class QComboBox:
         class RJSBasecaster_QComboBox {
         public:
@@ -1804,6 +1810,10 @@
       static QAbstractPrintDialog::PrintDialogOptions js2cpp_QAbstractPrintDialog_PrintDialogOptions(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractPrintDialog_PrintDialogOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QColorDialog_ColorDialogOptions(RJSApi& handler, QColorDialog::ColorDialogOptions v);
+      static QColorDialog::ColorDialogOptions js2cpp_QColorDialog_ColorDialogOptions(RJSApi& handler, const QJSValue& v);
+      static bool is_QColorDialog_ColorDialogOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QDialogButtonBox_StandardButtons(RJSApi& handler, QDialogButtonBox::StandardButtons v);
       static QDialogButtonBox::StandardButtons js2cpp_QDialogButtonBox_StandardButtons(RJSApi& handler, const QJSValue& v);
       static bool is_QDialogButtonBox_StandardButtons(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -2051,6 +2061,10 @@
       static QJSValue cpp2js_QColor_Spec(RJSApi& handler, QColor::Spec v);
       static QColor::Spec js2cpp_QColor_Spec(RJSApi& handler, const QJSValue& v);
       static bool is_QColor_Spec(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QColorDialog_ColorDialogOption(RJSApi& handler, QColorDialog::ColorDialogOption v);
+      static QColorDialog::ColorDialogOption js2cpp_QColorDialog_ColorDialogOption(RJSApi& handler, const QJSValue& v);
+      static bool is_QColorDialog_ColorDialogOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QComboBox_InsertPolicy(RJSApi& handler, QComboBox::InsertPolicy v);
       static QComboBox::InsertPolicy js2cpp_QComboBox_InsertPolicy(RJSApi& handler, const QJSValue& v);
@@ -3068,6 +3082,10 @@
       static Qt::WindowType js2cpp_Qt_WindowType(RJSApi& handler, const QJSValue& v);
       static bool is_Qt_WindowType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_WId(RJSApi& handler, WId v);
+      static WId js2cpp_WId(RJSApi& handler, const QJSValue& v);
+      static bool is_WId(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_char(RJSApi& handler, char v);
       static char js2cpp_char(RJSApi& handler, const QJSValue& v);
       static bool is_char(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -3139,10 +3157,6 @@
       static QJSValue cpp2js_ushort(RJSApi& handler, ushort v);
       static ushort js2cpp_ushort(RJSApi& handler, const QJSValue& v);
       static bool is_ushort(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_WId(RJSApi& handler, WId v);
-      static WId js2cpp_WId(RJSApi& handler, const QJSValue& v);
-      static bool is_WId(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
   // ------------------------------------
   // QSharedPointer types (non-copyable):
@@ -3943,6 +3957,11 @@
       static QJSValue cpp2js_QClipboard(RJSApi& handler, const QClipboard* v);
       static QClipboard* js2cpp_QClipboard_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QClipboard_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QColorDialog(RJSApi& handler, QColorDialog* v);
+      static QJSValue cpp2js_QColorDialog(RJSApi& handler, const QColorDialog* v);
+      static QColorDialog* js2cpp_QColorDialog_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QColorDialog_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QComboBox(RJSApi& handler, QComboBox* v);
       static QJSValue cpp2js_QComboBox(RJSApi& handler, const QComboBox* v);

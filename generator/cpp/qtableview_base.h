@@ -765,50 +765,6 @@ QTableView_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
-    int sizeHintForRow(
-      int row
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE int sizeHintForRowPublic(
-      int row
-    ) {
-      //qDebug() << "QTableView_Base::sizeHintForRowPublic()";
-      
-        // TODO: convert return value to QJSValue:
-        return
-      QTableView::sizeHintForRow(
-        row
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    int sizeHintForColumn(
-      int column
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE int sizeHintForColumnPublic(
-      int column
-    ) {
-      //qDebug() << "QTableView_Base::sizeHintForColumnPublic()";
-      
-        // TODO: convert return value to QJSValue:
-        return
-      QTableView::sizeHintForColumn(
-        column
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
     void verticalScrollbarAction(
       int action
     );

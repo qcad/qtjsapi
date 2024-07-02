@@ -59,6 +59,7 @@
 #include "generator/cpp/qabstractitemview_wrapper.h"
 #include "generator/cpp/qpalette_wrapper.h"
 #include "generator/cpp/qcolor_wrapper.h"
+#include "generator/cpp/qcolordialog_wrapper.h"
 #include "generator/cpp/qrect_wrapper.h"
 #include "generator/cpp/qrectf_wrapper.h"
 #include "generator/cpp/qregion_wrapper.h"
@@ -304,6 +305,7 @@ void RJSApi::init() {
     QAbstractItemView_Wrapper::init(*this);
     QPalette_Wrapper::init(*this);
     QColor_Wrapper::init(*this);
+    QColorDialog_Wrapper::init(*this);
     QRect_Wrapper::init(*this);
     QRectF_Wrapper::init(*this);
     QRegion_Wrapper::init(*this);

@@ -787,6 +787,10 @@
                 return (QWidget*)(QCheckBox*)vp;
               }
               
+              if (t==RJSType_QColorDialog::getIdStatic()) {
+                return (QWidget*)(QColorDialog*)vp;
+              }
+              
               if (t==RJSType_QComboBox::getIdStatic()) {
                 return (QWidget*)(QComboBox*)vp;
               }

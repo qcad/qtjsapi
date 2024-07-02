@@ -2655,6 +2655,21 @@
 
 
       
+      int RJSType_QColorDialog::id = -1;
+
+      int RJSType_QColorDialog::getId() const {
+          return RJSType_QColorDialog::getIdStatic();
+      }
+
+      int RJSType_QColorDialog::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QColorDialog());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QComboBox::id = -1;
 
       int RJSType_QComboBox::getId() const {

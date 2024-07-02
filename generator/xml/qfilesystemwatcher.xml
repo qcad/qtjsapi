@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfilesystemwatcher.h">
-  <class name="QFileSystemWatcher">
+  <class name="QFileSystemWatcher" ownership="cpp">
     <super_list>
       <super name="QObject" />
     </super_list>

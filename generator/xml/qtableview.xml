@@ -486,6 +486,7 @@
         <parameters />
       </variant>
     </function>
+    <!--
     <function name="sizeHintForRow">
       <variant return-type="int" const="true" access="protected">
         <parameters>
@@ -493,6 +494,8 @@
         </parameters>
       </variant>
     </function>
+    -->
+    <!--
     <function name="sizeHintForColumn">
       <variant return-type="int" const="true" access="protected">
         <parameters>
@@ -500,6 +503,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="verticalScrollbarAction">
       <variant return-type="void" access="protected">
         <parameters>

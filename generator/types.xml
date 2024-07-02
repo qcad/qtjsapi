@@ -15,6 +15,7 @@
     <type flags="true">QAbstractFileIconProvider::Options</type>
     <type flags="true">QAbstractItemView::EditTriggers</type>
     <type flags="true">QAbstractPrintDialog::PrintDialogOptions</type>
+    <type flags="true">QColorDialog::ColorDialogOptions</type>
     <type flags="true">QDialogButtonBox::StandardButtons</type>
     <type flags="true">QDir::Filters</type>
     <type flags="true">QDir::SortFlags</type>
@@ -77,6 +78,7 @@
     <type>QClipboard::Mode</type>
     <type>QColor::NameFormat</type>
     <type>QColor::Spec</type>
+    <type>QColorDialog::ColorDialogOption</type>
     <type>QComboBox::InsertPolicy</type>
     <type>QComboBox::SizeAdjustPolicy</type>
     <type>QCompleter::CompletionMode</type>
@@ -331,6 +333,7 @@
     <type>Qt::WindowModality</type>
     <type>Qt::WindowState</type>
     <type>Qt::WindowType</type>
+    <type>WId</type>
     <type>char</type>
     <type>double</type>
     <type>float</type>
@@ -349,7 +352,6 @@
     <type>ulong</type>
     <type>unsignedlong</type>
     <type>ushort</type>
-    <type>WId</type>
   </primitive>
 
   <shared_ptr_no_copy>
@@ -533,6 +535,7 @@
     <type>QButtonGroup</type>
     <type>QCheckBox</type>
     <type>QClipboard</type>
+    <type>QColorDialog</type>
     <type>QComboBox</type>
     <type>QCoreApplication</type>
     <type>QDialog</type>

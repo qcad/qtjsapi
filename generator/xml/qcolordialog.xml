@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcolordialog.h">
+  <class name="QColorDialog" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QDialog" />
+    </super_list>
+    <enum name="ColorDialogOption">
+      <key>ShowAlphaChannel</key>
+      <key>NoButtons</key>
+      <key>DontUseNativeDialog</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="initial" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setCurrentColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentColor">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectedColor">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QColorDialog::ColorDialogOption" modifier="" name="option" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QColorDialog::ColorDialogOption" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QColorDialog::ColorDialogOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="options">
+      <variant return-type="QColorDialog::ColorDialogOptions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColor" static="true">
+      <variant return-type="QColor" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="initial" default="Qt::white" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" default="QString()" />
+          <parameter const="false" type="QColorDialog::ColorDialogOptions" modifier="" name="options" default="QColorDialog::ColorDialogOptions()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="customCount" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="customColor" static="true">
+      <variant return-type="QColor" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCustomColor" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QColor" modifier="" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="standardColor" static="true">
+      <variant return-type="QColor" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStandardColor" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QColor" modifier="" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentColorChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="colorSelected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="done" ignore="true"/>
+    <!--
+    <function name="changeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="done">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="result" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

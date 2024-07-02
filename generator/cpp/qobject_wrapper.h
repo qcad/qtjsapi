@@ -228,6 +228,10 @@
                 return (QObject*)(QClipboard*)vp;
               }
               
+              if (t==RJSType_QColorDialog::getIdStatic()) {
+                return (QObject*)(QColorDialog*)vp;
+              }
+              
               if (t==RJSType_QComboBox::getIdStatic()) {
                 return (QObject*)(QComboBox*)vp;
               }

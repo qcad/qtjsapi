@@ -24,6 +24,7 @@
     <file alias="generator/js/QCheckBox.js">generator/js/QCheckBox.js</file>
     <file alias="generator/js/QClipboard.js">generator/js/QClipboard.js</file>
     <file alias="generator/js/QColor.js">generator/js/QColor.js</file>
+    <file alias="generator/js/QColorDialog.js">generator/js/QColorDialog.js</file>
     <file alias="generator/js/QComboBox.js">generator/js/QComboBox.js</file>
     <file alias="generator/js/QCompleter.js">generator/js/QCompleter.js</file>
     <file alias="generator/js/QConicalGradient.js">generator/js/QConicalGradient.js</file>

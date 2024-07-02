@@ -47,6 +47,8 @@
 #include "generator/cpp/qclipboard_wrapper.h"
 #include "generator/cpp/qcolor_base.h"
 #include "generator/cpp/qcolor_wrapper.h"
+#include "generator/cpp/qcolordialog_base.h"
+#include "generator/cpp/qcolordialog_wrapper.h"
 #include "generator/cpp/qcombobox_base.h"
 #include "generator/cpp/qcombobox_wrapper.h"
 #include "generator/cpp/qcompleter_base.h"

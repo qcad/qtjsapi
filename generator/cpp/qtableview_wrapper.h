@@ -9652,62 +9652,6 @@ InternalMove = QTableView::InternalMove,
               ;
             
     // Class: QTableView
-    // Function: sizeHintForRow
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      sizeHintForRowSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTableView
-    // Function: sizeHintForColumn
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      sizeHintForColumnSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTableView
     // Function: verticalScrollbarAction
     // Source: 
     // Static: false

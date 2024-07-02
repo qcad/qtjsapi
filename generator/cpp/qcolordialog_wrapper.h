@@ -1,8 +1,8 @@
 
   // Auto generated
   
-    #ifndef QDIALOG_H_WRAPPER
-    #define QDIALOG_H_WRAPPER
+    #ifndef QCOLORDIALOG_H_WRAPPER
+    #define QCOLORDIALOG_H_WRAPPER
 
     // include header:
     //#include "header_h.h"
@@ -12,19 +12,14 @@
 
     #include "RJSWrapperObj.h"
   
-        #include <QPushButton>
-      
     #include <QQmlEngine>
     
         #include "RJSType.h"
       
-        #include <QDialog>
+        #include <QColorDialog>
       
-      // wrapped object is QDialog_Base class if new object is created: 
-      #include "qdialog_base.h"
-    
       // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QDialog_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QColorDialog_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -36,7 +31,7 @@
 
       public:
       //Q_INVOKABLE 
-      QDialog_WrapperSingleton(RJSApi& h) 
+      QColorDialog_WrapperSingleton(RJSApi& h) 
         : QObject(), 
           handler(h)
           
@@ -46,7 +41,7 @@
 
       // static functions:
       
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: tr
     // Source: QObject
     // Static: true
@@ -77,7 +72,7 @@
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setTabOrder
     // Source: QWidget
     // Static: true
@@ -104,7 +99,7 @@
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: mouseGrabber
     // Source: QWidget
     // Static: true
@@ -123,7 +118,7 @@
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: keyboardGrabber
     // Source: QWidget
     // Static: true
@@ -142,14 +137,164 @@
               
               ;
             
-#ifndef QT_NO_CONTEXTMENU
+    // Class: QColorDialog
+    // Function: getColor
+    // Source: 
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
 
-#endif
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getColor
+              (
 
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: customCount
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  customCount
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: customColor
+    // Source: 
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  customColor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: setCustomColor
+    // Source: 
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCustomColor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: standardColor
+    // Source: 
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  standardColor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: setStandardColor
+    // Source: 
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setStandardColor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
 
       private:
           RJSApi& handler;
-          //static QDialog_WrapperSingleton* _singleInstance;
+          //static QColorDialog_WrapperSingleton* _singleInstance;
 
           // constants:
           
@@ -157,8 +302,8 @@
     
     // static functions implementation in singleton wrapper:
     
-    // wrapper class for QDialog
-    class QTJSAPI_EXPORT QDialog_Wrapper : public RJSWrapperObj {
+    // wrapper class for QColorDialog
+    class QTJSAPI_EXPORT QColorDialog_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -527,72 +672,48 @@
 
     private:
       // disable copy constructor:
-      QDialog_Wrapper(const QDialog_Wrapper&);
+      QColorDialog_Wrapper(const QColorDialog_Wrapper&);
 
     public:
-      // initialization of QDialog:
+      // initialization of QColorDialog:
       static void init(RJSApi& handler);
 
       
-        static QDialog* castToBase(void* vp, /*RJSType ID*/ int t) {
+        static QColorDialog* castToBase(void* vp, /*RJSType ID*/ int t) {
           
             // check if pointer points to derrived type:
             
-              if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
-                return (QDialog*)(QAbstractPrintDialog*)vp;
-              }
-              
-              if (t==RJSType_QColorDialog::getIdStatic()) {
-                return (QDialog*)(QColorDialog*)vp;
-              }
-              
-              if (t==RJSType_QFileDialog::getIdStatic()) {
-                return (QDialog*)(QFileDialog*)vp;
-              }
-              
-              if (t==RJSType_QMessageBox::getIdStatic()) {
-                return (QDialog*)(QMessageBox*)vp;
-              }
-              
-              if (t==RJSType_QPrintDialog::getIdStatic()) {
-                return (QDialog*)(QPrintDialog*)vp;
-              }
-              
-              if (t==RJSType_QProgressDialog::getIdStatic()) {
-                return (QDialog*)(QProgressDialog*)vp;
-              }
-              
 
-          // hook for modules to cast from other types to base QDialog:
-          for (int i=0; i<basecasters_QDialog.length(); i++) {
-            RJSBasecaster_QDialog* basecaster = basecasters_QDialog[i];
-            QDialog* ret = basecaster->castToBase(t, vp);
+          // hook for modules to cast from other types to base QColorDialog:
+          for (int i=0; i<basecasters_QColorDialog.length(); i++) {
+            RJSBasecaster_QColorDialog* basecaster = basecasters_QColorDialog[i];
+            QColorDialog* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
               return ret;
             }
           }
 
-          // object is a pointer to base class QDialog:
-          if (t==RJSType_QDialog::getIdStatic()) {
-            return (QDialog*)vp;
+          // object is a pointer to base class QColorDialog:
+          if (t==RJSType_QColorDialog::getIdStatic()) {
+            return (QColorDialog*)vp;
           }
 
-          qWarning() << "QDialog_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
+          qWarning() << "QColorDialog_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
         }
 
-        static QDialog* getWrappedBase(RJSWrapper* wrapper) {
+        static QColorDialog* getWrappedBase(RJSWrapper* wrapper) {
           int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
-              //qWarning() << "getWrapped_QDialog*: wrapper wraps NULL";
+              //qWarning() << "getWrapped_QColorDialog*: wrapper wraps NULL";
           }
 
-          QDialog* ret = castToBase(vp, t);
+          QColorDialog* ret = castToBase(vp, t);
           if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QDialog*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+              qWarning() << "QColorDialog*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
           }
           return ret;
         }
@@ -600,17 +721,25 @@
         // enums:
         
   enum DialogCode {
-    Rejected = QDialog::Rejected,
-Accepted = QDialog::Accepted,
+    Rejected = QColorDialog::Rejected,
+Accepted = QColorDialog::Accepted,
 
   };
   Q_ENUM(DialogCode)
+
+  enum ColorDialogOption {
+    ShowAlphaChannel = QColorDialog::ShowAlphaChannel,
+NoButtons = QColorDialog::NoButtons,
+DontUseNativeDialog = QColorDialog::DontUseNativeDialog,
+
+  };
+  Q_ENUM(ColorDialogOption)
 
     /*
     // special constructor used as prototype:
     
           Q_INVOKABLE 
-          QDialog_Wrapper(QJSEngine* e);
+          QColorDialog_Wrapper(QJSEngine* e);
         
     */
 
@@ -618,12 +747,12 @@ Accepted = QDialog::Accepted,
       // special constructor to wrap existing object:
       
             //Q_INVOKABLE 
-            QDialog_Wrapper(RJSApi& h, QDialog* o, bool wrappedCreated);
+            QColorDialog_Wrapper(RJSApi& h, QColorDialog* o, bool wrappedCreated);
           
 
       // destructor:
       
-          virtual ~QDialog_Wrapper();
+          virtual ~QColorDialog_Wrapper();
         
     // initialization of signal forwarding
     
@@ -632,7 +761,7 @@ Accepted = QDialog::Accepted,
 
   // constructors:
   
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: 
     // Source: 
     // Static: false
@@ -641,7 +770,7 @@ Accepted = QDialog::Accepted,
 
               public:
               Q_INVOKABLE 
-              QDialog_Wrapper
+              QColorDialog_Wrapper
                 
               (
 
@@ -663,14 +792,10 @@ Accepted = QDialog::Accepted,
               
               ;
             
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
 
     // non-static functions:
     
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -691,7 +816,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setObjectName
     // Source: QObject
     // Static: false
@@ -714,7 +839,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isWidgetType
     // Source: QObject
     // Static: false
@@ -735,7 +860,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isWindowType
     // Source: QObject
     // Static: false
@@ -756,7 +881,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: signalsBlocked
     // Source: QObject
     // Static: false
@@ -777,7 +902,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: blockSignals
     // Source: QObject
     // Static: false
@@ -800,7 +925,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: findChild
     // Source: QObject
     // Static: false
@@ -829,7 +954,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: children
     // Source: QObject
     // Static: false
@@ -850,7 +975,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: installEventFilter
     // Source: QObject
     // Static: false
@@ -873,7 +998,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: removeEventFilter
     // Source: QObject
     // Static: false
@@ -896,7 +1021,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: dumpObjectTree
     // Source: QObject
     // Static: false
@@ -915,7 +1040,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: dumpObjectInfo
     // Source: QObject
     // Static: false
@@ -934,7 +1059,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setProperty
     // Source: QObject
     // Static: false
@@ -961,7 +1086,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: property
     // Source: QObject
     // Static: false
@@ -986,7 +1111,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: dynamicPropertyNames
     // Source: QObject
     // Static: false
@@ -1007,7 +1132,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: parent
     // Source: QObject
     // Static: false
@@ -1028,7 +1153,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: deleteLater
     // Source: QObject
     // Static: false
@@ -1047,7 +1172,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: devType
     // Source: QWidget
     // Static: false
@@ -1068,7 +1193,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: createWinId
     // Source: QWidget
     // Static: false
@@ -1087,7 +1212,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isWindow
     // Source: QWidget
     // Static: false
@@ -1108,7 +1233,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isModal
     // Source: QWidget
     // Static: false
@@ -1129,7 +1254,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowModality
     // Source: QWidget
     // Static: false
@@ -1150,7 +1275,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowModality
     // Source: QWidget
     // Static: false
@@ -1173,7 +1298,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isEnabled
     // Source: QWidget
     // Static: false
@@ -1194,7 +1319,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isEnabledTo
     // Source: QWidget
     // Static: false
@@ -1219,7 +1344,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setEnabled
     // Source: QWidget
     // Static: false
@@ -1242,7 +1367,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setDisabled
     // Source: QWidget
     // Static: false
@@ -1265,7 +1390,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowModified
     // Source: QWidget
     // Static: false
@@ -1288,7 +1413,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: frameGeometry
     // Source: QWidget
     // Static: false
@@ -1309,7 +1434,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: geometry
     // Source: QWidget
     // Static: false
@@ -1330,7 +1455,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: normalGeometry
     // Source: QWidget
     // Static: false
@@ -1351,7 +1476,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: x
     // Source: QWidget
     // Static: false
@@ -1372,7 +1497,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: y
     // Source: QWidget
     // Static: false
@@ -1393,7 +1518,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: pos
     // Source: QWidget
     // Static: false
@@ -1414,7 +1539,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: frameSize
     // Source: QWidget
     // Static: false
@@ -1435,7 +1560,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: size
     // Source: QWidget
     // Static: false
@@ -1456,7 +1581,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: width
     // Source: QWidget
     // Static: false
@@ -1477,7 +1602,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: height
     // Source: QWidget
     // Static: false
@@ -1498,7 +1623,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: rect
     // Source: QWidget
     // Static: false
@@ -1519,7 +1644,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: childrenRect
     // Source: QWidget
     // Static: false
@@ -1540,7 +1665,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: childrenRegion
     // Source: QWidget
     // Static: false
@@ -1561,7 +1686,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: minimumSize
     // Source: QWidget
     // Static: false
@@ -1582,7 +1707,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: maximumSize
     // Source: QWidget
     // Static: false
@@ -1603,7 +1728,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: minimumWidth
     // Source: QWidget
     // Static: false
@@ -1624,7 +1749,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: minimumHeight
     // Source: QWidget
     // Static: false
@@ -1645,7 +1770,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: maximumWidth
     // Source: QWidget
     // Static: false
@@ -1666,7 +1791,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: maximumHeight
     // Source: QWidget
     // Static: false
@@ -1687,7 +1812,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setMinimumSize
     // Source: QWidget
     // Static: false
@@ -1714,7 +1839,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setMaximumSize
     // Source: QWidget
     // Static: false
@@ -1741,7 +1866,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setMinimumWidth
     // Source: QWidget
     // Static: false
@@ -1764,7 +1889,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setMinimumHeight
     // Source: QWidget
     // Static: false
@@ -1787,7 +1912,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setMaximumWidth
     // Source: QWidget
     // Static: false
@@ -1810,7 +1935,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setMaximumHeight
     // Source: QWidget
     // Static: false
@@ -1833,7 +1958,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: sizeIncrement
     // Source: QWidget
     // Static: false
@@ -1854,7 +1979,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setSizeIncrement
     // Source: QWidget
     // Static: false
@@ -1881,7 +2006,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: baseSize
     // Source: QWidget
     // Static: false
@@ -1902,7 +2027,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setBaseSize
     // Source: QWidget
     // Static: false
@@ -1929,7 +2054,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setFixedSize
     // Source: QWidget
     // Static: false
@@ -1956,7 +2081,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setFixedWidth
     // Source: QWidget
     // Static: false
@@ -1979,7 +2104,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setFixedHeight
     // Source: QWidget
     // Static: false
@@ -2002,7 +2127,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: mapToGlobal
     // Source: QWidget
     // Static: false
@@ -2027,7 +2152,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: mapFromGlobal
     // Source: QWidget
     // Static: false
@@ -2052,7 +2177,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: mapToParent
     // Source: QWidget
     // Static: false
@@ -2077,7 +2202,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: mapFromParent
     // Source: QWidget
     // Static: false
@@ -2102,7 +2227,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: mapTo
     // Source: QWidget
     // Static: false
@@ -2131,7 +2256,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: mapFrom
     // Source: QWidget
     // Static: false
@@ -2160,7 +2285,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: window
     // Source: QWidget
     // Static: false
@@ -2181,7 +2306,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: nativeParentWidget
     // Source: QWidget
     // Static: false
@@ -2202,7 +2327,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: topLevelWidget
     // Source: QWidget
     // Static: false
@@ -2223,7 +2348,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: palette
     // Source: QWidget
     // Static: false
@@ -2244,7 +2369,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setPalette
     // Source: QWidget
     // Static: false
@@ -2267,7 +2392,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setBackgroundRole
     // Source: QWidget
     // Static: false
@@ -2290,7 +2415,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: backgroundRole
     // Source: QWidget
     // Static: false
@@ -2311,7 +2436,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setForegroundRole
     // Source: QWidget
     // Static: false
@@ -2334,7 +2459,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: foregroundRole
     // Source: QWidget
     // Static: false
@@ -2355,7 +2480,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: font
     // Source: QWidget
     // Static: false
@@ -2376,7 +2501,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setFont
     // Source: QWidget
     // Static: false
@@ -2399,7 +2524,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: fontInfo
     // Source: QWidget
     // Static: false
@@ -2420,7 +2545,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: cursor
     // Source: QWidget
     // Static: false
@@ -2441,7 +2566,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setCursor
     // Source: QWidget
     // Static: false
@@ -2464,7 +2589,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: unsetCursor
     // Source: QWidget
     // Static: false
@@ -2483,7 +2608,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setMouseTracking
     // Source: QWidget
     // Static: false
@@ -2506,7 +2631,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: hasMouseTracking
     // Source: QWidget
     // Static: false
@@ -2527,7 +2652,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: underMouse
     // Source: QWidget
     // Static: false
@@ -2548,7 +2673,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setTabletTracking
     // Source: QWidget
     // Static: false
@@ -2571,7 +2696,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: hasTabletTracking
     // Source: QWidget
     // Static: false
@@ -2592,7 +2717,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setMask
     // Source: QWidget
     // Static: false
@@ -2615,7 +2740,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: mask
     // Source: QWidget
     // Static: false
@@ -2636,7 +2761,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: clearMask
     // Source: QWidget
     // Static: false
@@ -2655,7 +2780,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: grab
     // Source: QWidget
     // Static: false
@@ -2678,7 +2803,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: grabGesture
     // Source: QWidget
     // Static: false
@@ -2705,7 +2830,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: ungrabGesture
     // Source: QWidget
     // Static: false
@@ -2728,7 +2853,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowTitle
     // Source: QWidget
     // Static: false
@@ -2751,7 +2876,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setStyleSheet
     // Source: QWidget
     // Static: false
@@ -2774,7 +2899,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: styleSheet
     // Source: QWidget
     // Static: false
@@ -2795,7 +2920,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowTitle
     // Source: QWidget
     // Static: false
@@ -2816,7 +2941,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowIcon
     // Source: QWidget
     // Static: false
@@ -2839,7 +2964,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowIcon
     // Source: QWidget
     // Static: false
@@ -2860,7 +2985,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowIconText
     // Source: QWidget
     // Static: false
@@ -2883,7 +3008,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowIconText
     // Source: QWidget
     // Static: false
@@ -2904,7 +3029,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowRole
     // Source: QWidget
     // Static: false
@@ -2927,7 +3052,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowRole
     // Source: QWidget
     // Static: false
@@ -2948,7 +3073,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowFilePath
     // Source: QWidget
     // Static: false
@@ -2971,7 +3096,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowFilePath
     // Source: QWidget
     // Static: false
@@ -2992,7 +3117,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowOpacity
     // Source: QWidget
     // Static: false
@@ -3015,7 +3140,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowOpacity
     // Source: QWidget
     // Static: false
@@ -3036,7 +3161,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isWindowModified
     // Source: QWidget
     // Static: false
@@ -3057,7 +3182,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setToolTip
     // Source: QWidget
     // Static: false
@@ -3080,7 +3205,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: toolTip
     // Source: QWidget
     // Static: false
@@ -3101,7 +3226,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setToolTipDuration
     // Source: QWidget
     // Static: false
@@ -3124,7 +3249,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: toolTipDuration
     // Source: QWidget
     // Static: false
@@ -3145,7 +3270,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setStatusTip
     // Source: QWidget
     // Static: false
@@ -3168,7 +3293,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: statusTip
     // Source: QWidget
     // Static: false
@@ -3189,7 +3314,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWhatsThis
     // Source: QWidget
     // Static: false
@@ -3212,7 +3337,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: whatsThis
     // Source: QWidget
     // Static: false
@@ -3233,7 +3358,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: accessibleName
     // Source: QWidget
     // Static: false
@@ -3254,7 +3379,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setAccessibleName
     // Source: QWidget
     // Static: false
@@ -3277,7 +3402,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: accessibleDescription
     // Source: QWidget
     // Static: false
@@ -3298,7 +3423,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setAccessibleDescription
     // Source: QWidget
     // Static: false
@@ -3321,7 +3446,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setLayoutDirection
     // Source: QWidget
     // Static: false
@@ -3344,7 +3469,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: layoutDirection
     // Source: QWidget
     // Static: false
@@ -3365,7 +3490,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: unsetLayoutDirection
     // Source: QWidget
     // Static: false
@@ -3384,7 +3509,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setLocale
     // Source: QWidget
     // Static: false
@@ -3407,7 +3532,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: locale
     // Source: QWidget
     // Static: false
@@ -3428,7 +3553,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: unsetLocale
     // Source: QWidget
     // Static: false
@@ -3447,7 +3572,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isRightToLeft
     // Source: QWidget
     // Static: false
@@ -3468,7 +3593,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isLeftToRight
     // Source: QWidget
     // Static: false
@@ -3489,7 +3614,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isActiveWindow
     // Source: QWidget
     // Static: false
@@ -3510,7 +3635,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: activateWindow
     // Source: QWidget
     // Static: false
@@ -3529,7 +3654,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: clearFocus
     // Source: QWidget
     // Static: false
@@ -3548,7 +3673,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setFocus
     // Source: QWidget
     // Static: false
@@ -3571,7 +3696,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: focusPolicy
     // Source: QWidget
     // Static: false
@@ -3592,7 +3717,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setFocusPolicy
     // Source: QWidget
     // Static: false
@@ -3615,7 +3740,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: hasFocus
     // Source: QWidget
     // Static: false
@@ -3636,7 +3761,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setFocusProxy
     // Source: QWidget
     // Static: false
@@ -3659,7 +3784,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: focusProxy
     // Source: QWidget
     // Static: false
@@ -3680,7 +3805,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: contextMenuPolicy
     // Source: QWidget
     // Static: false
@@ -3701,7 +3826,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setContextMenuPolicy
     // Source: QWidget
     // Static: false
@@ -3724,7 +3849,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: grabMouse
     // Source: QWidget
     // Static: false
@@ -3747,7 +3872,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: releaseMouse
     // Source: QWidget
     // Static: false
@@ -3766,7 +3891,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: grabKeyboard
     // Source: QWidget
     // Static: false
@@ -3785,7 +3910,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: releaseKeyboard
     // Source: QWidget
     // Static: false
@@ -3804,7 +3929,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: grabShortcut
     // Source: QWidget
     // Static: false
@@ -3831,7 +3956,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: releaseShortcut
     // Source: QWidget
     // Static: false
@@ -3854,7 +3979,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setShortcutEnabled
     // Source: QWidget
     // Static: false
@@ -3881,7 +4006,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setShortcutAutoRepeat
     // Source: QWidget
     // Static: false
@@ -3908,7 +4033,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: updatesEnabled
     // Source: QWidget
     // Static: false
@@ -3929,7 +4054,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setUpdatesEnabled
     // Source: QWidget
     // Static: false
@@ -3952,7 +4077,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: update
     // Source: QWidget
     // Static: false
@@ -3987,7 +4112,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: repaint
     // Source: QWidget
     // Static: false
@@ -4022,7 +4147,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setHidden
     // Source: QWidget
     // Static: false
@@ -4045,7 +4170,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: show
     // Source: QWidget
     // Static: false
@@ -4064,7 +4189,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: hide
     // Source: QWidget
     // Static: false
@@ -4083,7 +4208,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: showMinimized
     // Source: QWidget
     // Static: false
@@ -4102,7 +4227,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: showMaximized
     // Source: QWidget
     // Static: false
@@ -4121,7 +4246,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: showFullScreen
     // Source: QWidget
     // Static: false
@@ -4140,7 +4265,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: showNormal
     // Source: QWidget
     // Static: false
@@ -4159,7 +4284,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: close
     // Source: QWidget
     // Static: false
@@ -4178,7 +4303,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: raise
     // Source: QWidget
     // Static: false
@@ -4197,7 +4322,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: lower
     // Source: QWidget
     // Static: false
@@ -4216,7 +4341,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: stackUnder
     // Source: QWidget
     // Static: false
@@ -4239,7 +4364,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: move
     // Source: QWidget
     // Static: false
@@ -4266,7 +4391,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: resize
     // Source: QWidget
     // Static: false
@@ -4293,7 +4418,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setGeometry
     // Source: QWidget
     // Static: false
@@ -4328,7 +4453,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: saveGeometry
     // Source: QWidget
     // Static: false
@@ -4349,7 +4474,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: restoreGeometry
     // Source: QWidget
     // Static: false
@@ -4372,7 +4497,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: adjustSize
     // Source: QWidget
     // Static: false
@@ -4391,7 +4516,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isVisible
     // Source: QWidget
     // Static: false
@@ -4412,7 +4537,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isVisibleTo
     // Source: QWidget
     // Static: false
@@ -4437,7 +4562,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isHidden
     // Source: QWidget
     // Static: false
@@ -4458,7 +4583,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isMinimized
     // Source: QWidget
     // Static: false
@@ -4479,7 +4604,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isMaximized
     // Source: QWidget
     // Static: false
@@ -4500,7 +4625,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isFullScreen
     // Source: QWidget
     // Static: false
@@ -4521,7 +4646,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowState
     // Source: QWidget
     // Static: false
@@ -4542,7 +4667,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowState
     // Source: QWidget
     // Static: false
@@ -4565,7 +4690,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: overrideWindowState
     // Source: QWidget
     // Static: false
@@ -4588,7 +4713,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: sizePolicy
     // Source: QWidget
     // Static: false
@@ -4609,7 +4734,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setSizePolicy
     // Source: QWidget
     // Static: false
@@ -4636,7 +4761,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: heightForWidth
     // Source: QWidget
     // Static: false
@@ -4661,7 +4786,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: hasHeightForWidth
     // Source: QWidget
     // Static: false
@@ -4682,7 +4807,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: visibleRegion
     // Source: QWidget
     // Static: false
@@ -4703,7 +4828,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setContentsMargins
     // Source: QWidget
     // Static: false
@@ -4738,7 +4863,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: contentsMargins
     // Source: QWidget
     // Static: false
@@ -4759,7 +4884,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: contentsRect
     // Source: QWidget
     // Static: false
@@ -4780,7 +4905,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: layout
     // Source: QWidget
     // Static: false
@@ -4801,7 +4926,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setLayout
     // Source: QWidget
     // Static: false
@@ -4824,7 +4949,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: updateGeometry
     // Source: QWidget
     // Static: false
@@ -4843,7 +4968,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setParent
     // Source: QWidget
     // Static: false
@@ -4870,7 +4995,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: scroll
     // Source: QWidget
     // Static: false
@@ -4901,7 +5026,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: focusWidget
     // Source: QWidget
     // Static: false
@@ -4922,7 +5047,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: nextInFocusChain
     // Source: QWidget
     // Static: false
@@ -4943,7 +5068,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: previousInFocusChain
     // Source: QWidget
     // Static: false
@@ -4964,7 +5089,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: acceptDrops
     // Source: QWidget
     // Static: false
@@ -4985,7 +5110,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setAcceptDrops
     // Source: QWidget
     // Static: false
@@ -5008,7 +5133,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: addAction
     // Source: QWidget
     // Static: false
@@ -5031,7 +5156,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: addActions
     // Source: QWidget
     // Static: false
@@ -5054,7 +5179,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: insertActions
     // Source: QWidget
     // Static: false
@@ -5081,7 +5206,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: insertAction
     // Source: QWidget
     // Static: false
@@ -5108,7 +5233,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: removeAction
     // Source: QWidget
     // Static: false
@@ -5131,7 +5256,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: actions
     // Source: QWidget
     // Static: false
@@ -5152,7 +5277,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: parentWidget
     // Source: QWidget
     // Static: false
@@ -5173,7 +5298,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowFlags
     // Source: QWidget
     // Static: false
@@ -5196,7 +5321,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowFlags
     // Source: QWidget
     // Static: false
@@ -5217,7 +5342,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setWindowFlag
     // Source: QWidget
     // Static: false
@@ -5244,7 +5369,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: overrideWindowFlags
     // Source: QWidget
     // Static: false
@@ -5267,7 +5392,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: windowType
     // Source: QWidget
     // Static: false
@@ -5288,7 +5413,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: childAt
     // Source: QWidget
     // Static: false
@@ -5317,7 +5442,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setAttribute
     // Source: QWidget
     // Static: false
@@ -5344,7 +5469,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: testAttribute
     // Source: QWidget
     // Static: false
@@ -5369,7 +5494,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -5390,7 +5515,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: isAncestorOf
     // Source: QWidget
     // Static: false
@@ -5415,7 +5540,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: autoFillBackground
     // Source: QWidget
     // Static: false
@@ -5436,7 +5561,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setAutoFillBackground
     // Source: QWidget
     // Static: false
@@ -5459,7 +5584,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: customContextMenuRequested
     // Source: QWidget
     // Static: false
@@ -5480,7 +5605,7 @@ Accepted = QDialog::Accepted,
                 const QPoint& pos
               );
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: inputMethodQuery
     // Source: QWidget
     // Static: false
@@ -5505,7 +5630,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: inputMethodHints
     // Source: QWidget
     // Static: false
@@ -5526,7 +5651,7 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: setInputMethodHints
     // Source: QWidget
     // Static: false
@@ -5549,9 +5674,9 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
     // Function: result
-    // Source: 
+    // Source: QDialog
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5570,7 +5695,443 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
+    // Class: QColorDialog
+    // Function: sizeHint
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  sizeHint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: minimumSizeHint
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  minimumSizeHint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: setSizeGripEnabled
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setSizeGripEnabled
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: isSizeGripEnabled
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSizeGripEnabled
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: setModal
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setModal
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: setResult
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setResult
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: finished
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void finished(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void finishedEmitter(
+                int result
+              );
+            
+    // Class: QColorDialog
+    // Function: accepted
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void accepted(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void acceptedEmitter(
+                
+              );
+            
+    // Class: QColorDialog
+    // Function: rejected
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void rejected(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void rejectedEmitter(
+                
+              );
+            
+    // Class: QColorDialog
+    // Function: exec
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  exec
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: accept
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  accept
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: reject
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  reject
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: setCurrentColor
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCurrentColor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: currentColor
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  currentColor
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: selectedColor
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  selectedColor
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: setOption
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setOption
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: testOption
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  testOption
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: setOptions
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setOptions
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: options
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  options
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QColorDialog
+    // Function: open
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  open
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QColorDialog
     // Function: setVisible
     // Source: 
     // Static: false
@@ -5593,140 +6154,8 @@ Accepted = QDialog::Accepted,
               
               ;
             
-    // Class: QDialog
-    // Function: sizeHint
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeHint
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QDialog
-    // Function: minimumSizeHint
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSizeHint
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QDialog
-    // Function: setSizeGripEnabled
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizeGripEnabled
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QDialog
-    // Function: isSizeGripEnabled
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSizeGripEnabled
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QDialog
-    // Function: setModal
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setModal
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QDialog
-    // Function: setResult
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setResult
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QDialog
-    // Function: finished
+    // Class: QColorDialog
+    // Function: currentColorChanged
     // Source: 
     // Static: false
     // Parameters: 1
@@ -5734,7 +6163,7 @@ Accepted = QDialog::Accepted,
 
               // signal forwarded from wrapped class:
               signals:
-              void finished(
+              void currentColorChanged(
                 
   const QJSValue& 
   a1
@@ -5742,177 +6171,31 @@ Accepted = QDialog::Accepted,
 
               // called when signal is emitted from wrapped class:
               public slots:
-              void finishedEmitter(
-                int result
+              void currentColorChangedEmitter(
+                const QColor& color
               );
             
-    // Class: QDialog
-    // Function: accepted
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void accepted(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void acceptedEmitter(
-                
-              );
-            
-    // Class: QDialog
-    // Function: rejected
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void rejected(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void rejectedEmitter(
-                
-              );
-            
-    // Class: QDialog
-    // Function: open
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  open
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QDialog
-    // Function: exec
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  exec
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QDialog
-    // Function: done
+    // Class: QColorDialog
+    // Function: colorSelected
     // Source: 
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  done
-              (
-
+              // signal forwarded from wrapped class:
+              signals:
+              void colorSelected(
                 
   const QJSValue& 
   a1
-      = QJSValue()
-    
-              )
-              
-              ;
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void colorSelectedEmitter(
+                const QColor& color
+              );
             
-    // Class: QDialog
-    // Function: accept
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accept
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QDialog
-    // Function: reject
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  reject
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QDialog
-    // Function: resizeEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             if (wrapped!=nullptr) {
@@ -5943,7 +6226,7 @@ Accepted = QDialog::Accepted,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QDialog::getIdStatic();
+          return RJSType_QColorDialog::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -5955,7 +6238,7 @@ Accepted = QDialog::Accepted,
         }
 
         // get wrapped object:
-        QDialog* getWrapped() {
+        QColorDialog* getWrapped() {
           if (wrapped!=nullptr) {
             return wrapped;
           }
@@ -5964,7 +6247,7 @@ Accepted = QDialog::Accepted,
         }
 
         // get wrapped object (const):
-        QDialog* getWrapped() const {
+        QColorDialog* getWrapped() const {
           if (wrapped!=nullptr) {
             return wrapped;
           }
@@ -5981,17 +6264,6 @@ Accepted = QDialog::Accepted,
           return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QDialog_Base* getWrappedBase() {
-            QDialog* w = getWrapped();
-            return dynamic_cast<QDialog_Base*>(w);
-          }
-
-          QDialog_Base* getWrappedBase() const {
-            QDialog* w = getWrapped();
-            return dynamic_cast<QDialog_Base*>(w);
-          }
         
 
         bool hasWrapped() const {
@@ -6022,17 +6294,10 @@ Accepted = QDialog::Accepted,
           //}
 
         
-          //void setRecFlag(bool on) const {
-          //  QDialog_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
         private:
         // wrapped object:
-        QDialog* wrapped;
+        QColorDialog* wrapped;
 
         
 
@@ -6040,18 +6305,18 @@ Accepted = QDialog::Accepted,
       
       private:
         // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QDialog*> basecasters_QDialog;
+        static QList<RJSBasecaster_QColorDialog*> basecasters_QColorDialog;
 
       public:
-        static void registerBasecaster_QDialog(RJSBasecaster_QDialog* bc) {
-          basecasters_QDialog.append(bc);
+        static void registerBasecaster_QColorDialog(RJSBasecaster_QColorDialog* bc) {
+          basecasters_QColorDialog.append(bc);
         }
       
     };
 
-    Q_DECLARE_METATYPE(QDialog_Wrapper*)
+    Q_DECLARE_METATYPE(QColorDialog_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QDialog_Wrapper, "org.qcad.QDialog_Wrapper")
+    Q_DECLARE_INTERFACE(QColorDialog_Wrapper, "org.qcad.QColorDialog_Wrapper")
 
   
   #endif

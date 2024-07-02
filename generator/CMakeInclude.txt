@@ -46,6 +46,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qclipboard_wrapper.h
     generator/cpp/qcolor_base.h
     generator/cpp/qcolor_wrapper.h
+    generator/cpp/qcolordialog_base.h
+    generator/cpp/qcolordialog_wrapper.h
     generator/cpp/qcombobox_base.h
     generator/cpp/qcombobox_wrapper.h
     generator/cpp/qcompleter_base.h
@@ -442,6 +444,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qclipboard_wrapper.cpp
     generator/cpp/qcolor_base.cpp
     generator/cpp/qcolor_wrapper.cpp
+    generator/cpp/qcolordialog_base.cpp
+    generator/cpp/qcolordialog_wrapper.cpp
     generator/cpp/qcombobox_base.cpp
     generator/cpp/qcombobox_wrapper.cpp
     generator/cpp/qcompleter_base.cpp

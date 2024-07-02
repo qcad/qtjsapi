@@ -109,6 +109,12 @@
         
           #include "qwidget_wrapper.h"
         
+          #include "qdialog_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
           #include "qobject_wrapper.h"
         
           #include "qobject_wrapper.h"
@@ -1722,6 +1728,27 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper::cpp2js_QColorDialog_ColorDialogOptions(RJSApi& handler, QColorDialog::ColorDialogOptions v) {
+        return QJSValue(v);
+      }
+
+      QColorDialog::ColorDialogOptions RJSHelper::js2cpp_QColorDialog_ColorDialogOptions(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QColorDialog::ColorDialogOptions()
+          ;
+        }
+        return 
+        (QColorDialog::ColorDialogOptions)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QColorDialog_ColorDialogOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
       QJSValue RJSHelper::cpp2js_QDialogButtonBox_StandardButtons(RJSApi& handler, QDialogButtonBox::StandardButtons v) {
         return QJSValue(v);
       }
@@ -3035,6 +3062,28 @@
       }
 
       bool RJSHelper::is_QColor_Spec(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QColorDialog_ColorDialogOption(RJSApi& handler, QColorDialog::ColorDialogOption v) {
+        return QJSValue(v);
+      }
+
+      QColorDialog::ColorDialogOption RJSHelper::js2cpp_QColorDialog_ColorDialogOption(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QColorDialog::ColorDialogOption)0
+          ;
+        }
+        return 
+        (QColorDialog::ColorDialogOption)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QColorDialog_ColorDialogOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
@@ -8621,6 +8670,24 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper::cpp2js_WId(RJSApi& handler, WId v) {
+        return QJSValue((int)v);
+      }
+
+      WId RJSHelper::js2cpp_WId(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 0;
+        }
+        return v.toNumber();
+      }
+
+      bool RJSHelper::is_WId(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
       QJSValue RJSHelper::cpp2js_char(RJSApi& handler, char v) {
         return QJSValue(v);
       }
@@ -8939,24 +9006,6 @@
       }
 
       bool RJSHelper::is_ushort(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-        if (v.isUndefined() || v.isNull()) {
-          return acceptUndefined;
-        }
-        return v.isNumber();
-      }
-    
-      QJSValue RJSHelper::cpp2js_WId(RJSApi& handler, WId v) {
-        return QJSValue((int)v);
-      }
-
-      WId RJSHelper::js2cpp_WId(RJSApi& handler, const QJSValue& v) {
-        if (!v.isNumber()) {
-          return 0;
-        }
-        return v.toNumber();
-      }
-
-      bool RJSHelper::is_WId(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
@@ -26125,6 +26174,111 @@
       }
 
     
+      QJSValue RJSHelper::cpp2js_QColorDialog(RJSApi& handler, QColorDialog* v) {
+          QColorDialog_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QColorDialog_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QColorDialog: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QColorDialog_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QColorDialog_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QColorDialog('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QColorDialog");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QColorDialog is undefined. Use QColorDialog_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QColorDialog('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QColorDialog(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QColorDialog(RJSApi& handler, const QColorDialog* v) {
+          return RJSHelper::cpp2js_QColorDialog(handler, const_cast<QColorDialog*>(v));
+      }
+
+      QColorDialog* RJSHelper::js2cpp_QColorDialog_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QColorDialog: not a QObject";
+              return nullptr;
+          }
+          //QColorDialog_Wrapper* wrapper = getWrapper<QColorDialog_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QColorDialog_Wrapper* wrapper = qobject_cast<QColorDialog_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QColorDialog_Wrapper* wrapper = dynamic_cast<QColorDialog_Wrapper*>(obj);
+          //QColorDialog_Wrapper* wrapper = (QColorDialog_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QColorDialog: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QColorDialog*)wrapper->getWrappedVoid();
+          //return getWrapped_QColorDialog(wrapper);
+          return QColorDialog_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QColorDialog_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QColorDialog: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QColorDialog_Type);
+          //return fun.call().toInt()==RJSType::QColorDialog_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QColorDialog::getIdStatic())).toBool();
+      }
+
+    
       QJSValue RJSHelper::cpp2js_QComboBox(RJSApi& handler, QComboBox* v) {
           
             // downcast to QFontComboBox:
@@ -26366,6 +26520,14 @@
                 QAbstractPrintDialog* o = qobject_cast<QAbstractPrintDialog*>(v);
                 if (o!=nullptr) {
                     return RJSHelper::cpp2js_QAbstractPrintDialog(handler, o);
+                }
+            }
+          
+            // downcast to QColorDialog:
+            {
+                QColorDialog* o = qobject_cast<QColorDialog*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QColorDialog(handler, o);
                 }
             }
           

@@ -210,9 +210,8 @@ int a3_cpp;
             
             if (wrappedCreated) {
               
-                  // delete wrapped object (copyable, JS ownership)
-                  //qDebug() << "deleting instance of QFileSystemWatcher";
-                  delete wrapped;
+                  // never delete wrapped object (non-copyable, CPP ownership or private destructor)
+                  //qDebug() << "NOT deleting instance of QFileSystemWatcher";
                 
             }
             

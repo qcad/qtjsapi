@@ -4953,6 +4953,34 @@
           static int id;
       };
     
+      class QTJSAPI_EXPORT  RJSType_QColorDialog : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QColorDialog";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QColorDialog();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
       class QTJSAPI_EXPORT  RJSType_QComboBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
