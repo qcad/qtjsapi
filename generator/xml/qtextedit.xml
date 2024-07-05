@@ -352,7 +352,6 @@
       </variant>
     </function>
     -->
-    <!--
     <function name="cursorRect">
       <variant return-type="QRect" const="true" access="public">
         <parameters>
@@ -363,7 +362,6 @@
         <parameters />
       </variant>
     </function>
-    -->
     <function name="anchorAt">
       <variant return-type="QString" const="true" access="public">
         <parameters>

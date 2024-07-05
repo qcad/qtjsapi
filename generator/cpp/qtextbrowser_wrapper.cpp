@@ -19880,6 +19880,122 @@ QPoint a1_cpp;
               }
             
     // Class: QTextBrowser
+    // Function: cursorRect
+    // Source: QTextEdit
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTextBrowser_Wrapper::cursorRect
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QTextCursor(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: cursor (QTextCursor)
+  
+QTextCursor a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QTextCursor(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTextBrowser* w = getWrapped();
+                QRect res = 
+                    
+                w->cursorRect(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QRect
+
+            return RJSHelper::cpp2js_QRect(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTextBrowser* w = getWrapped();
+                QRect res = 
+                    
+                w->cursorRect(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QRect
+
+            return RJSHelper::cpp2js_QRect(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for cursorRect";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTextBrowser
     // Function: anchorAt
     // Source: QTextEdit
     // Static: false

@@ -7464,6 +7464,31 @@ AutoAll = QTextEdit::AutoAll,
 #endif
 
     // Class: QTextEdit
+    // Function: cursorRect
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  cursorRect
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTextEdit
     // Function: anchorAt
     // Source: 
     // Static: false

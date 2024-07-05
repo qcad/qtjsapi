@@ -6898,6 +6898,31 @@ AutoAll = QTextBrowser::AutoAll,
               ;
             
     // Class: QTextBrowser
+    // Function: cursorRect
+    // Source: QTextEdit
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  cursorRect
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTextBrowser
     // Function: anchorAt
     // Source: QTextEdit
     // Static: false
