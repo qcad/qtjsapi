@@ -20590,6 +20590,94 @@ bool a1_cpp;
               }
             
     // Class: QTextBrowser
+    // Function: moveCursor
+    // Source: QTextEdit
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTextBrowser_Wrapper::moveCursor
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QTextCursor_MoveOperation(handler, a1
+  )
+
+   && RJSHelper::is_QTextCursor_MoveMode(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: operation (QTextCursor::MoveOperation)
+  
+QTextCursor::MoveOperation a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QTextCursor_MoveOperation(handler, a1);
+        
+  // convert js parameter to cpp: mode (QTextCursor::MoveMode)
+  
+QTextCursor::MoveMode a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = QTextCursor::MoveAnchor;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_QTextCursor_MoveMode(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTextBrowser* w = getWrapped();
+                
+                w->moveCursor(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for moveCursor";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTextBrowser
     // Function: canPaste
     // Source: QTextEdit
     // Static: false

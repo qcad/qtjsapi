@@ -433,7 +433,6 @@
       </variant>
     </function>
     -->
-    <!--
     <function name="moveCursor">
       <variant return-type="void" access="public">
         <parameters>
@@ -443,7 +442,6 @@
         </parameters>
       </variant>
     </function>
-    -->
     <function name="canPaste">
       <variant return-type="bool" const="true" access="public">
         <parameters />

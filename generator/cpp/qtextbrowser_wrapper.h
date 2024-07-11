@@ -7124,6 +7124,33 @@ AutoAll = QTextBrowser::AutoAll,
               ;
             
     // Class: QTextBrowser
+    // Function: moveCursor
+    // Source: QTextEdit
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  moveCursor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTextBrowser
     // Function: canPaste
     // Source: QTextEdit
     // Static: false
