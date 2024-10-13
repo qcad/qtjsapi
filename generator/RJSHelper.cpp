@@ -830,6 +830,10 @@
           return QJSValue(*v);
       }
 
+      QJSValue RJSHelper::cpp2js_QJSValue(RJSApi& handler, const QJSValue& v) {
+          return v;
+      }
+
       QJSValue RJSHelper::cpp2js_QVariant(RJSApi& handler, const QVariant& v) {
           if (v.isNull()) {
               return QJSValue();

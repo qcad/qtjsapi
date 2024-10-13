@@ -650,6 +650,37 @@
               ;
             
     // Class: QQmlEngine
+    // Function: evaluate
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  evaluate
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QQmlEngine
     // Function: collectGarbage
     // Source: QJSEngine
     // Static: false

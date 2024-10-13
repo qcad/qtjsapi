@@ -1595,6 +1595,118 @@ QVariant a2_cpp;
               }
             
     // Class: QQmlEngine
+    // Function: evaluate
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              QQmlEngine_Wrapper::evaluate
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+   && RJSHelper::is_QString(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: program (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+  // convert js parameter to cpp: fileName (QString)
+  
+QString a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = QString();
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+          }
+        
+  // convert js parameter to cpp: lineNumber (int)
+  
+int a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = 1;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QQmlEngine* w = getWrapped();
+                QJSValue res = 
+                    
+                w->evaluate(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            // return type: QJSValue
+
+            return RJSHelper::cpp2js_QJSValue(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for evaluate";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QQmlEngine
     // Function: collectGarbage
     // Source: QJSEngine
     // Static: false

@@ -21,16 +21,20 @@
         <parameters />
       </variant>
     </function>
+    -->
     <function name="evaluate">
       <variant return-type="QJSValue" access="public">
         <parameters>
           <parameter const="true" type="QString" modifier="&amp;" name="program" />
           <parameter const="true" type="QString" modifier="&amp;" name="fileName" default="QString()" />
           <parameter const="false" type="int" modifier="" name="lineNumber" default="1" />
+          <!--
           <parameter const="false" type="QStringList" modifier="*" name="exceptionStackTrace" default="nullptr" />
+          -->
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="importModule">
       <variant return-type="QJSValue" access="public">
         <parameters>

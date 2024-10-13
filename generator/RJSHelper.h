@@ -1773,6 +1773,8 @@
          
           static QJSValue cpp2js_char(RJSApi& handler, const char* v);
          
+          static QJSValue cpp2js_QJSValue(RJSApi& handler, const QJSValue& v);
+
           static QJSValue cpp2js_QVariant(RJSApi& handler, const QVariant& v);
           static QVariant js2cpp_QVariant(RJSApi& handler, const QJSValue& v);
           static bool is_QVariant(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
