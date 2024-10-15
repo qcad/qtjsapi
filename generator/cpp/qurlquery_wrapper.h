@@ -156,56 +156,6 @@
               ;
             
     // Class: QUrlQuery
-    // Function: operator_equal
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  operator_equal
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QUrlQuery
-    // Function: operator_unequal
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  operator_unequal
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QUrlQuery
     // Function: swap
     // Source: 
     // Static: false

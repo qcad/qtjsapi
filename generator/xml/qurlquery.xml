@@ -35,6 +35,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="operator_equal" call="operator==">
       <variant return-type="bool" const="true" access="public">
         <parameters>
@@ -49,6 +50,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="swap">
       <variant return-type="void" access="public">
         <parameters>
