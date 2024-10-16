@@ -20,6 +20,10 @@
   e.g. qcad, qcadpro, ...
 -->
 <xsl:param name="module" />
+<!-- 
+  generating bindings for this section of types only
+-->
+<xsl:param name="section" />
 <xsl:param name="rjshelper_class">
   <xsl:choose>
     <xsl:when test="$module=''">
@@ -79,6 +83,8 @@
 
       #include "RJSWrapper.h"
 
+    
+      <xsl:if test="$section='manual' or $section='' or $mode='h'">
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
         // Base class for downcasters that can downcast <xsl:value-of select="@name" /> to specific types:
         class RJSDowncaster_<xsl:value-of select="@name" /> {
@@ -137,7 +143,7 @@
         </xsl:for-each>
       </xsl:if>
 
-      <xsl:if test="$module=''">
+      <xsl:if test="$module='' and ($section='' or $section='manual')">
         // Base class for converters that can convert QVariant to specific types.
         class RJSQVariantConverter {
         public:
@@ -146,7 +152,7 @@
         };
       </xsl:if>
 
-      <xsl:if test="$module=''">
+      <xsl:if test="$module='' and ($section='' or $section='manual')">
         <xsl:value-of select="$class_export"/>extern QVariant  getWrapperProperty(RJSApi&amp; handler, const QObject&amp; obj);
         <xsl:value-of select="$class_export"/>extern void setWrapperProperty(RJSApi&amp; handler, QObject&amp; obj, const QVariant&amp; wrapper);
         
@@ -162,6 +168,7 @@
             return dynamic_cast&lt;T*&gt;(getWrapperQObject(v));
         }
       </xsl:if>
+      </xsl:if>
 
 
 
@@ -176,11 +183,11 @@
           -->
         </xsl:if>
 
-        <xsl:if test="$module=''">
+        <xsl:if test="$module='' and ($section='' or $section='manual')">
           static QString getTypeName(int type);
         </xsl:if>
 
-        <xsl:if test="$module=''">
+        <xsl:if test="$module='' and ($section='' or $section='manual')">
           //
           // custom types (manual implementation):
           //
@@ -220,14 +227,13 @@
          
         <xsl:apply-templates />
          
-        <xsl:if test="$module=''">
+        <xsl:if test="$module='' and ($section='' or $section='manual')">
           // more dummy implementations
           static QJSValue cpp2js_QList_QAction(RJSApi&amp; handler, const QList&lt;QAction*&gt;&amp; v);
          
           static QList&lt;QAction*&gt; js2cpp_QList_QAction(RJSApi&amp; handler, const QJSValue&amp; v);
         </xsl:if>
 
-      
         <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
           // allow downcasting for type <xsl:value-of select="@name" />:
           private:
@@ -239,7 +245,7 @@
             }
         </xsl:for-each>
 
-        <xsl:if test="$module=''">
+        <xsl:if test="$module='' and ($section='' or $section='manual')">
         private:
           static QList&lt;RJSQVariantConverter*&gt; qvariantConverters;
 
@@ -290,12 +296,14 @@
       </xsl:for-each>
 
 
+      <xsl:if test="$section='' or $section='manual'">
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
         QList&lt;RJSDowncaster_<xsl:value-of select="@name" />*&gt; <xsl:value-of select="$rjshelper_class"/>::downcasters_<xsl:value-of select="@name" />;
       </xsl:for-each>
 
-      <xsl:if test="$module=''">
+      <xsl:if test="$module='' and ($section='' or $section='manual')">
         QList&lt;RJSQVariantConverter*&gt; RJSHelper::qvariantConverters;
+      </xsl:if>
       </xsl:if>
 
       <!--
@@ -413,14 +421,14 @@
         -->
       </xsl:if>
         
-      <xsl:if test="$module=''">
+      <xsl:if test="$module='' and ($section='' or $section='manual')">
         QString <xsl:value-of select="$rjshelper_class"/>::getTypeName(int type) {
           RJSTypeEnum* t = RJSTypeEnum::getById(type);
           return t->getName();
         }
       </xsl:if>
 
-      <xsl:if test="$module=''">
+      <xsl:if test="$module='' and ($section='' or $section='manual')">
       /**
        * \return existing wrapper object for the given object in the context of the given engine.
        */
@@ -1456,7 +1464,7 @@
 
       <xsl:apply-templates />
 
-      <xsl:if test="$module=''">
+      <xsl:if test="$module='' and ($section='' or $section='manual')">
       QJSValue RJSHelper::cpp2js_QList_QAction(RJSApi&amp; handler, const QList&lt;QAction*&gt;&amp; v) { return QJSValue(); }
 
       QList&lt;QAction*&gt; RJSHelper::js2cpp_QList_QAction(RJSApi&amp; handler, const QJSValue&amp; v) { return QList&lt;QAction*&gt;(); }
@@ -1466,10 +1474,12 @@
 </xsl:template>
 
 <xsl:template match="primitive">
+  <xsl:if test="$section='primitive' or $section='' or $mode='h'">
   // ----------------
   // primitive types:
   // ----------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="primitive/type">
@@ -1676,10 +1686,12 @@
 
 
 <xsl:template match="shared_ptr">
+  <xsl:if test="$section='' or $section='shared_ptr'">
   // ---------------------
   // QSharedPointer types:
   // ---------------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="shared_ptr/type">
@@ -1815,10 +1827,12 @@
 
 
 <xsl:template match="shared_ptr_no_copy">
+  <xsl:if test="$section='' or $section='shared_ptr_no_copy'">
   // ------------------------------------
   // QSharedPointer types (non-copyable):
   // ------------------------------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="shared_ptr_no_copy/type">
@@ -1957,10 +1971,12 @@
 
 
 <xsl:template match="wrapped">
+  <xsl:if test="$section='wrapped' or $section=''">
   // --------------
   // wrapped types:
   // --------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="wrapped/type">
@@ -2107,10 +2123,12 @@
 
 
 <xsl:template match="wrapped_ptr">
+  <xsl:if test="$section='' or $section='wrapped_ptr'">
   // ----------------------
   // wrapped pointer types:
   // ----------------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="wrapped_ptr/type">
@@ -2248,10 +2266,12 @@
 
 
 <xsl:template match="wrapped_qobject_ptr">
+  <xsl:if test="$section='' or $section='wrapped_qobject_ptr'">
   // ------------------------------
   // wrapped QObject pointer types:
   // ------------------------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="wrapped_qobject_ptr/type">
@@ -2423,10 +2443,12 @@
 
 
 <xsl:template match="qlist">
+  <xsl:if test="$section='' or $section='qlist'">
   // ------------
   // QList types:
   // ------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="qlist/type">
@@ -2524,10 +2546,12 @@
 
 
 <xsl:template match="qlist_ptr">
+  <xsl:if test="$section='' or $section='qlist_ptr'">
   // --------------------
   // QList pointer types:
   // --------------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="qlist_ptr/type">
@@ -2620,10 +2644,12 @@
 
 
 <xsl:template match="qlist_shared_ptr">
+  <xsl:if test="$section='' or $section='qlist_shared_ptr'">
   // ---------------------------
   // QList shared pointer types:
   // ---------------------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="qlist_shared_ptr/type">
@@ -2713,10 +2739,12 @@
 
 
 <xsl:template match="qset">
+  <xsl:if test="$section='' or $section='qset'">
   // -----------
   // QSet types:
   // -----------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="qset/type">
@@ -2806,10 +2834,12 @@
 
 
 <xsl:template match="qmap">
+  <xsl:if test="$section='' or $section='qmap'">
   // -----------
   // QMap types:
   // -----------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="qmap/type">
@@ -2891,10 +2921,12 @@
 
 
 <xsl:template match="qhash">
+  <xsl:if test="$section='' or $section='qhash'">
   // -----------
   // QHash types:
   // -----------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="qhash/type">
@@ -2985,10 +3017,12 @@
 
 
 <xsl:template match="qpair">
+  <xsl:if test="$section='' or $section='qpair'">
   // ------------
   // QPair types:
   // ------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="qpair/type">
@@ -3083,10 +3117,12 @@
 
 
 <xsl:template match="dummy">
+  <xsl:if test="$section='' or $section='manual'">
   // ------------
   // dummy types:
   // ------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="dummy/type">
@@ -3152,10 +3188,12 @@
 
 
 <xsl:template match="dummy_ptr">
+  <xsl:if test="$section='' or $section='dummy_ptr'">
   // --------------------
   // dummy pointer types:
   // --------------------
   <xsl:apply-templates />
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="dummy_ptr/type">

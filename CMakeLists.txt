@@ -28,7 +28,22 @@ endif()
 qt_add_library(qtjsapi SHARED
     RJSWrapper.cpp RJSWrapper.h
     RJSTools.cpp RJSTools.h
-    generator/RJSHelper.cpp generator/RJSHelper.h
+    generator/RJSHelper_manual.cpp
+    generator/RJSHelper_primitive.cpp
+    generator/RJSHelper_shared_ptr_no_copy.cpp
+    generator/RJSHelper_wrapped.cpp
+    generator/RJSHelper_wrapped_ptr.cpp
+    generator/RJSHelper_wrapped_qobject_ptr.cpp
+    generator/RJSHelper_wrapped_qobject_ptr.cpp
+    generator/RJSHelper_qlist.cpp
+    generator/RJSHelper_qlist_ptr.cpp
+    generator/RJSHelper_qset.cpp
+    generator/RJSHelper_qmap.cpp
+    generator/RJSHelper_qhash.cpp
+    generator/RJSHelper_qpair.cpp
+    generator/RJSHelper_dummy.cpp
+    generator/RJSHelper_dummy_ptr.cpp
+    generator/RJSHelper.h
     generator/RJSType.h generator/RJSType.cpp
     RJSWrapperObj.h
     RJSApi.h RJSApi.cpp

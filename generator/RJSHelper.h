@@ -19,6 +19,7 @@
 
       #include "RJSWrapper.h"
 
+    
       
         // Base class for downcasters that can downcast QAction to specific types:
         class RJSDowncaster_QAction {
