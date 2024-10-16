@@ -175,7 +175,7 @@
       class <xsl:value-of select="$class_export"/> <xsl:value-of select="$rjshelper_class"/> {
 
       public:
-        <xsl:if test="$module!=''">
+        <xsl:if test="$module!='' and $section='manual'">
           static void registerDowncasters();
           static void registerBasecasters();
           <!--
@@ -373,7 +373,7 @@
         </xsl:for-each>
       </xsl:if>
 
-      <xsl:if test="$module!=''">
+      <xsl:if test="$module!='' and $section='manual'">
         void <xsl:value-of select="$rjshelper_class"/>::registerDowncasters() {
 
           <xsl:for-each select="document('../../qtjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">

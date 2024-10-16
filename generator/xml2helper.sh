@@ -45,7 +45,7 @@ fi
 
 
 
-for section in manual primitive shared_ptr_no_copy wrapped wrapped_ptr wrapped_qobject_ptr wrapped_qobject_ptr qlist qlist_ptr qset qmap qhash qpair dummy dummy_ptr
+for section in manual primitive shared_ptr shared_ptr_no_copy wrapped wrapped_ptr wrapped_qobject_ptr wrapped_qobject_ptr qlist qlist_ptr qlist_shared_ptr qset qmap qhash qpair dummy dummy_ptr
 do
     OUTPUT_SECTION="${OUTPUT}_$section"
 
