@@ -175,7 +175,7 @@
       class <xsl:value-of select="$class_export"/> <xsl:value-of select="$rjshelper_class"/> {
 
       public:
-        <xsl:if test="$module!='' and $section='manual'">
+        <xsl:if test="$module!=''">
           static void registerDowncasters();
           static void registerBasecasters();
           <!--

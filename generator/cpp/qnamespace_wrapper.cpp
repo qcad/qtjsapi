@@ -608,3 +608,5 @@ Qt::Key a1_cpp;
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_qnamespace_wrapper.cpp"
+  

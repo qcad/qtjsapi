@@ -18580,3 +18580,5 @@ int a2_cpp;
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_qscrollbar_wrapper.cpp"
+  

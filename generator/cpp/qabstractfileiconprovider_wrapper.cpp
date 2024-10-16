@@ -513,3 +513,5 @@ QAbstractFileIconProvider::Options a1_cpp;
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_qabstractfileiconprovider_wrapper.cpp"
+  
