@@ -2535,6 +2535,21 @@
 
 
       
+      int RJSType_QAbstractSpinBox::id = -1;
+
+      int RJSType_QAbstractSpinBox::getId() const {
+          return RJSType_QAbstractSpinBox::getIdStatic();
+      }
+
+      int RJSType_QAbstractSpinBox::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QAbstractSpinBox());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QAction::id = -1;
 
       int RJSType_QAction::getId() const {

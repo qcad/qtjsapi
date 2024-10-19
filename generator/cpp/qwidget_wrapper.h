@@ -783,6 +783,10 @@
                 return (QWidget*)(QAbstractSlider*)vp;
               }
               
+              if (t==RJSType_QAbstractSpinBox::getIdStatic()) {
+                return (QWidget*)(QAbstractSpinBox*)vp;
+              }
+              
               if (t==RJSType_QCheckBox::getIdStatic()) {
                 return (QWidget*)(QCheckBox*)vp;
               }

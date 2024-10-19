@@ -49,6 +49,10 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
           #include "qobject_wrapper.h"
         
           #include "qobject_wrapper.h"
@@ -1597,6 +1601,127 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QAbstractSlider::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper::cpp2js_QAbstractSpinBox(RJSApi& handler, QAbstractSpinBox* v) {
+          
+            // downcast to QSpinBox:
+            {
+                QSpinBox* o = qobject_cast<QSpinBox*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QSpinBox(handler, o);
+                }
+            }
+          
+            // downcast to QDoubleSpinBox:
+            {
+                QDoubleSpinBox* o = qobject_cast<QDoubleSpinBox*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QDoubleSpinBox(handler, o);
+                }
+            }
+          QAbstractSpinBox_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QAbstractSpinBox_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QAbstractSpinBox: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QAbstractSpinBox_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QAbstractSpinBox_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QAbstractSpinBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QAbstractSpinBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QAbstractSpinBox is undefined. Use QAbstractSpinBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QAbstractSpinBox('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QAbstractSpinBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QAbstractSpinBox(RJSApi& handler, const QAbstractSpinBox* v) {
+          return RJSHelper::cpp2js_QAbstractSpinBox(handler, const_cast<QAbstractSpinBox*>(v));
+      }
+
+      QAbstractSpinBox* RJSHelper::js2cpp_QAbstractSpinBox_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QAbstractSpinBox: not a QObject";
+              return nullptr;
+          }
+          //QAbstractSpinBox_Wrapper* wrapper = getWrapper<QAbstractSpinBox_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QAbstractSpinBox_Wrapper* wrapper = qobject_cast<QAbstractSpinBox_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QAbstractSpinBox_Wrapper* wrapper = dynamic_cast<QAbstractSpinBox_Wrapper*>(obj);
+          //QAbstractSpinBox_Wrapper* wrapper = (QAbstractSpinBox_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QAbstractSpinBox: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QAbstractSpinBox*)wrapper->getWrappedVoid();
+          //return getWrapped_QAbstractSpinBox(wrapper);
+          return QAbstractSpinBox_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QAbstractSpinBox_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QAbstractSpinBox: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QAbstractSpinBox_Type);
+          //return fun.call().toInt()==RJSType::QAbstractSpinBox_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QAbstractSpinBox::getIdStatic())).toBool();
       }
 
     

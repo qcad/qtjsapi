@@ -9,6 +9,7 @@
     <file alias="generator/js/QAbstractPrintDialog.js">generator/js/QAbstractPrintDialog.js</file>
     <file alias="generator/js/QAbstractScrollArea.js">generator/js/QAbstractScrollArea.js</file>
     <file alias="generator/js/QAbstractSlider.js">generator/js/QAbstractSlider.js</file>
+    <file alias="generator/js/QAbstractSpinBox.js">generator/js/QAbstractSpinBox.js</file>
     <file alias="generator/js/QAbstractTableModel.js">generator/js/QAbstractTableModel.js</file>
     <file alias="generator/js/QAction.js">generator/js/QAction.js</file>
     <file alias="generator/js/QActionEvent.js">generator/js/QActionEvent.js</file>

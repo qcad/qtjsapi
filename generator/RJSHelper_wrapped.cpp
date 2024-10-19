@@ -49,6 +49,10 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
           #include "qobject_wrapper.h"
         
           #include "qobject_wrapper.h"

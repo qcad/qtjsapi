@@ -2,18 +2,18 @@
   // Auto generated
   
   // include header:
-  //#include "qspinboxwrapper.h"
+  //#include "qabstractspinboxwrapper.h"
   //#include "header_cpp.h"
   
-    #include "qspinbox_wrapper.h"
+    #include "qabstractspinbox_wrapper.h"
 
   
       // list of registered base casters for this wrapper class:
-      QList<RJSBasecaster_QSpinBox*> QSpinBox_Wrapper::basecasters_QSpinBox;
+      QList<RJSBasecaster_QAbstractSpinBox*> QAbstractSpinBox_Wrapper::basecasters_QAbstractSpinBox;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: tr
     // Source: QObject
     // Static: true
@@ -21,7 +21,7 @@
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_WrapperSingleton::tr
+              QAbstractSpinBox_WrapperSingleton::tr
               (
                 
   const QJSValue& 
@@ -114,7 +114,7 @@ int a3_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setTabOrder
     // Source: QWidget
     // Static: true
@@ -122,7 +122,7 @@ int a3_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_WrapperSingleton::setTabOrder
+              QAbstractSpinBox_WrapperSingleton::setTabOrder
               (
                 
   const QJSValue& 
@@ -191,7 +191,7 @@ int a3_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: mouseGrabber
     // Source: QWidget
     // Static: true
@@ -199,7 +199,7 @@ int a3_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_WrapperSingleton::mouseGrabber
+              QAbstractSpinBox_WrapperSingleton::mouseGrabber
               (
                 
               ) 
@@ -237,7 +237,7 @@ int a3_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: keyboardGrabber
     // Source: QWidget
     // Static: true
@@ -245,7 +245,7 @@ int a3_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_WrapperSingleton::keyboardGrabber
+              QAbstractSpinBox_WrapperSingleton::keyboardGrabber
               (
                 
               ) 
@@ -283,10 +283,18 @@ int a3_cpp;
                 
               }
             
-    void QSpinBox_Wrapper::init(RJSApi& handler) {
+#if QT_CONFIG(wheelevent)
+
+#endif
+
+#if QT_CONFIG(contextmenu)
+
+#endif
+
+    void QAbstractSpinBox_Wrapper::init(RJSApi& handler) {
       
-        //qmlRegisterType<QSpinBox_Wrapper>("org.qcad", 1, 0, "QSpinBox_Wrapper");
-        qmlRegisterInterface<QSpinBox_Wrapper>("QSpinBox_Wrapper", 1);
+        //qmlRegisterType<QAbstractSpinBox_Wrapper>("org.qcad", 1, 0, "QAbstractSpinBox_Wrapper");
+        qmlRegisterInterface<QAbstractSpinBox_Wrapper>("QAbstractSpinBox_Wrapper", 1);
       
 
       QJSEngine* engine = handler.getEngine();
@@ -294,34 +302,34 @@ int a3_cpp;
       
           // make type scriptable for JS files:
           QJSValue global = engine->globalObject();
-          RJSType_QSpinBox* t = new RJSType_QSpinBox();
-          global.setProperty("RJSType_QSpinBox", engine->newQObject(t));
+          RJSType_QAbstractSpinBox* t = new RJSType_QAbstractSpinBox();
+          global.setProperty("RJSType_QAbstractSpinBox", engine->newQObject(t));
 
           // initialize ID for this type:
-          RJSType_QSpinBox::getIdStatic();
+          RJSType_QAbstractSpinBox::getIdStatic();
 
           
 
       // wrapper:
-      QJSValue mo = engine->newQMetaObject(&QSpinBox_Wrapper::staticMetaObject);
-      engine->globalObject().setProperty("QSpinBox_Wrapper", mo);
+      QJSValue mo = engine->newQMetaObject(&QAbstractSpinBox_Wrapper::staticMetaObject);
+      engine->globalObject().setProperty("QAbstractSpinBox_Wrapper", mo);
 
 
       
         // JS base class:
-        //QJSValue mob = engine->newQMetaObject(&QSpinBox_BaseJs::staticMetaObject);
-        //engine->globalObject().setProperty("QSpinBox_BaseJs", mob);
+        //QJSValue mob = engine->newQMetaObject(&QAbstractSpinBox_BaseJs::staticMetaObject);
+        //engine->globalObject().setProperty("QAbstractSpinBox_BaseJs", mob);
       
         // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QSpinBox_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QSpinBox_WrapperSingleton", mos);
+        QJSValue mos = engine->newQMetaObject(&QAbstractSpinBox_WrapperSingleton::staticMetaObject);
+        engine->globalObject().setProperty("QAbstractSpinBox_WrapperSingleton", mos);
 
         // create instance of singleton wrapper for static functions:
-        QSpinBox_WrapperSingleton * s = new QSpinBox_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QSpinBox_WrapperSingletonInstance", engine->newQObject(s));
+        QAbstractSpinBox_WrapperSingleton * s = new QAbstractSpinBox_WrapperSingleton(handler);
+        engine->globalObject().setProperty("QAbstractSpinBox_WrapperSingletonInstance", engine->newQObject(s));
         QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
-      QString fileName = ":generator/js/QSpinBox.js";
+      QString fileName = ":generator/js/QAbstractSpinBox.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -343,8 +351,8 @@ int a3_cpp;
   
     /*
     // special constructor used as prototype:
-    QSpinBox_Wrapper::QSpinBox_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
-            //setObjectName("QSpinBox_Wrapper");
+    QAbstractSpinBox_Wrapper::QAbstractSpinBox_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
+            //setObjectName("QAbstractSpinBox_Wrapper");
             setEngine(e);
 
             // signal forwarding:
@@ -355,10 +363,10 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QSpinBox_Wrapper::QSpinBox_Wrapper(RJSApi& h, QSpinBox* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
-              //RDebug::incCounter(QString("QSpinBox_Wrapper_") + handler.getEngine()->objectName());
-              //RDebug::incCounter(QString("QSpinBox_Wrapper"));
-              //setObjectName("QSpinBox_Wrapper");
+      QAbstractSpinBox_Wrapper::QAbstractSpinBox_Wrapper(RJSApi& h, QAbstractSpinBox* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+              //RDebug::incCounter(QString("QAbstractSpinBox_Wrapper_") + handler.getEngine()->objectName());
+              //RDebug::incCounter(QString("QAbstractSpinBox_Wrapper"));
+              //setObjectName("QAbstractSpinBox_Wrapper");
               //setHandler(h);
 
               // signal forwarding:
@@ -367,11 +375,11 @@ int a3_cpp;
           
 
       // destructor:
-      QSpinBox_Wrapper::~QSpinBox_Wrapper() {
-            //RDebug::decCounter(QString("QSpinBox_Wrapper_") + handler.getEngine()->objectName());
-            //RDebug::decCounter(QString("QSpinBox_Wrapper"));
+      QAbstractSpinBox_Wrapper::~QAbstractSpinBox_Wrapper() {
+            //RDebug::decCounter(QString("QAbstractSpinBox_Wrapper_") + handler.getEngine()->objectName());
+            //RDebug::decCounter(QString("QAbstractSpinBox_Wrapper"));
 
-            //qDebug() << "QSpinBox_Wrapper::~QSpinBox_Wrapper";
+            //qDebug() << "QAbstractSpinBox_Wrapper::~QAbstractSpinBox_Wrapper";
 
             // tell script handler that this wrapper no longer exists:
             handler.unregisterWrapper(*this);
@@ -379,8 +387,9 @@ int a3_cpp;
             
             if (wrappedCreated) {
               
-                  // never delete wrapped object (non-copyable, CPP ownership or private destructor)
-                  //qDebug() << "NOT deleting instance of QSpinBox";
+                  // delete wrapped object (copyable, JS ownership)
+                  //qDebug() << "deleting instance of QAbstractSpinBox";
+                  delete wrapped;
                 
             }
             
@@ -388,9 +397,9 @@ int a3_cpp;
         
     // initialization of signal forwarding
     
-        void QSpinBox_Wrapper::initConnections() {
+        void QAbstractSpinBox_Wrapper::initConnections() {
 
-          //setObjectName("QSpinBox_Wrapper");
+          //setObjectName("QAbstractSpinBox_Wrapper");
 
           // tell script handler that this wrapper needs to be deleted if the engine is deleted:
           handler.registerWrapper(*this);
@@ -423,20 +432,6 @@ int a3_cpp;
     SLOT(customContextMenuRequestedEmitter(const QPoint&))
   );
 
-  connect(
-    getWrapped(), 
-    SIGNAL(valueChanged(int)), 
-    this, 
-    SLOT(valueChangedEmitter(int))
-  );
-
-  connect(
-    getWrapped(), 
-    SIGNAL(textChanged(const QString&)), 
-    this, 
-    SLOT(textChangedEmitter(const QString&))
-  );
-
               /*
               connect(
                 getWrapped(),
@@ -452,111 +447,18 @@ int a3_cpp;
 
   // constructors:
   
-    // Class: QSpinBox
-    // Function: 
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-QSpinBox_Wrapper::QSpinBox_Wrapper
-                
-              (
-                
-                  // RJSApi:
-                  QObject* h
-                  ,
-  const QJSValue& 
-  a1
-              ) 
-              
-                : RJSWrapperObj(*(RJSApi*)h)
-              
-              {
-                
-                  //RDebug::incCounter(QString("QSpinBox_Wrapper_") + handler.getEngine()->objectName());
-                  //RDebug::incCounter(QString("QSpinBox_Wrapper"));
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
+#if QT_CONFIG(wheelevent)
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: parent (QWidget)
-  
+#endif
 
-          // pointer:
-          QWidget*
-         a1_cpp;
+#if QT_CONFIG(contextmenu)
 
-      
-          if (a1.isUndefined()) {
-            a1_cpp = nullptr;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-          }
-        
+#endif
 
-    // call function:
-    
-        // construct wrapper:
-
-        
-            wrapped = new QSpinBox_Base(
-              handler
-              
-                ,
-              a1_cpp
-    
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((QSpinBox_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((QSpinBox_Base*)wrapped)->self = handler.getSelf();
-          
-
-        // signal forwarding:
-        // TODO
-        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
-        initConnections();
-        return;
-
-      
-  }
-
-                    // no constructor without arguments defined
-                    // allow constructor for prototype objects without args:
-                    if (
-                      a1.isUndefined()
-  
-                      ) {
-                      wrapped = nullptr;
-                      wrappedCreated = false;
-                      return;
-                    }
-                  
-
-                  qWarning() << "no matching constructor variant found for QSpinBox";
-                  wrapped = nullptr;
-                  wrappedCreated = false;
-                  handler.trace();
-                
-              }
-            
 
     // non-static functions:
     
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -564,7 +466,7 @@ QSpinBox_Wrapper::QSpinBox_Wrapper
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::objectName
+              QAbstractSpinBox_Wrapper::objectName
               (
                 
               ) 
@@ -585,20 +487,16 @@ QSpinBox_Wrapper::QSpinBox_Wrapper
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->objectName(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -617,7 +515,7 @@ QSpinBox_Wrapper::QSpinBox_Wrapper
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setObjectName
     // Source: QObject
     // Static: false
@@ -625,7 +523,7 @@ QSpinBox_Wrapper::QSpinBox_Wrapper
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setObjectName
+              QAbstractSpinBox_Wrapper::setObjectName
               (
                 
   const QJSValue& 
@@ -660,20 +558,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setObjectName(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -685,7 +579,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isWidgetType
     // Source: QObject
     // Static: false
@@ -693,7 +587,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isWidgetType
+              QAbstractSpinBox_Wrapper::isWidgetType
               (
                 
               ) 
@@ -714,20 +608,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isWidgetType(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -746,7 +636,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isWindowType
     // Source: QObject
     // Static: false
@@ -754,7 +644,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isWindowType
+              QAbstractSpinBox_Wrapper::isWindowType
               (
                 
               ) 
@@ -775,20 +665,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isWindowType(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -807,7 +693,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: signalsBlocked
     // Source: QObject
     // Static: false
@@ -815,7 +701,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::signalsBlocked
+              QAbstractSpinBox_Wrapper::signalsBlocked
               (
                 
               ) 
@@ -836,20 +722,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->signalsBlocked(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -868,7 +750,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: blockSignals
     // Source: QObject
     // Static: false
@@ -876,7 +758,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::blockSignals
+              QAbstractSpinBox_Wrapper::blockSignals
               (
                 
   const QJSValue& 
@@ -911,21 +793,17 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->blockSignals(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -944,7 +822,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: findChild
     // Source: QObject
     // Static: false
@@ -952,7 +830,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::findChild
+              QAbstractSpinBox_Wrapper::findChild
               (
                 
   const QJSValue& 
@@ -1016,13 +894,11 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QObject* res = 
                     
                 w->findChild<QObject*>(
@@ -1030,8 +906,6 @@ Qt::FindChildOptions a2_cpp;
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QObject*
 
@@ -1050,7 +924,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: children
     // Source: QObject
     // Static: false
@@ -1058,7 +932,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::children
+              QAbstractSpinBox_Wrapper::children
               (
                 
               ) 
@@ -1079,13 +953,11 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                       // return type is reference:
                       // use pointer instead 3:
@@ -1094,8 +966,6 @@ Qt::FindChildOptions a2_cpp;
                 w->children(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: const QObjectList&
 
@@ -1116,7 +986,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: installEventFilter
     // Source: QObject
     // Static: false
@@ -1124,7 +994,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::installEventFilter
+              QAbstractSpinBox_Wrapper::installEventFilter
               (
                 
   const QJSValue& 
@@ -1164,20 +1034,16 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->installEventFilter(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1189,7 +1055,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: removeEventFilter
     // Source: QObject
     // Static: false
@@ -1197,7 +1063,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::removeEventFilter
+              QAbstractSpinBox_Wrapper::removeEventFilter
               (
                 
   const QJSValue& 
@@ -1237,20 +1103,16 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->removeEventFilter(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1262,7 +1124,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: dumpObjectTree
     // Source: QObject
     // Static: false
@@ -1270,7 +1132,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::dumpObjectTree
+              QAbstractSpinBox_Wrapper::dumpObjectTree
               (
                 
               ) 
@@ -1289,19 +1151,15 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->dumpObjectTree(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1319,19 +1177,15 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->dumpObjectTree(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1343,7 +1197,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: dumpObjectInfo
     // Source: QObject
     // Static: false
@@ -1351,7 +1205,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::dumpObjectInfo
+              QAbstractSpinBox_Wrapper::dumpObjectInfo
               (
                 
               ) 
@@ -1370,19 +1224,15 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->dumpObjectInfo(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1400,19 +1250,15 @@ Qt::FindChildOptions a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->dumpObjectInfo(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1424,7 +1270,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setProperty
     // Source: QObject
     // Static: false
@@ -1432,7 +1278,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setProperty
+              QAbstractSpinBox_Wrapper::setProperty
               (
                 
   const QJSValue& 
@@ -1481,13 +1327,11 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->setProperty(
@@ -1495,8 +1339,6 @@ QVariant a2_cpp;
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -1515,7 +1357,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: property
     // Source: QObject
     // Static: false
@@ -1523,7 +1365,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::property
+              QAbstractSpinBox_Wrapper::property
               (
                 
   const QJSValue& 
@@ -1563,21 +1405,17 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QVariant res = 
                     
                 w->property(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QVariant
 
@@ -1596,7 +1434,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: dynamicPropertyNames
     // Source: QObject
     // Static: false
@@ -1604,7 +1442,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::dynamicPropertyNames
+              QAbstractSpinBox_Wrapper::dynamicPropertyNames
               (
                 
               ) 
@@ -1625,20 +1463,16 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QList<QByteArray> res = 
                     
                 w->dynamicPropertyNames(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QList<QByteArray>
 
@@ -1657,7 +1491,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: parent
     // Source: QObject
     // Static: false
@@ -1665,7 +1499,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::parent
+              QAbstractSpinBox_Wrapper::parent
               (
                 
               ) 
@@ -1686,20 +1520,16 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QObject* res = 
                     
                 w->parent(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QObject*
 
@@ -1718,7 +1548,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: deleteLater
     // Source: QObject
     // Static: false
@@ -1726,7 +1556,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::deleteLater
+              QAbstractSpinBox_Wrapper::deleteLater
               (
                 
               ) 
@@ -1745,19 +1575,15 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->deleteLater(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1769,7 +1595,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: devType
     // Source: QWidget
     // Static: false
@@ -1777,7 +1603,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::devType
+              QAbstractSpinBox_Wrapper::devType
               (
                 
               ) 
@@ -1798,20 +1624,16 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->devType(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -1830,7 +1652,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: createWinId
     // Source: QWidget
     // Static: false
@@ -1838,7 +1660,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::createWinId
+              QAbstractSpinBox_Wrapper::createWinId
               (
                 
               ) 
@@ -1857,19 +1679,15 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->createWinId(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -1881,7 +1699,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isWindow
     // Source: QWidget
     // Static: false
@@ -1889,7 +1707,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isWindow
+              QAbstractSpinBox_Wrapper::isWindow
               (
                 
               ) 
@@ -1910,20 +1728,16 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isWindow(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -1942,7 +1756,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isModal
     // Source: QWidget
     // Static: false
@@ -1950,7 +1764,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isModal
+              QAbstractSpinBox_Wrapper::isModal
               (
                 
               ) 
@@ -1971,20 +1785,16 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isModal(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -2003,7 +1813,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowModality
     // Source: QWidget
     // Static: false
@@ -2011,7 +1821,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowModality
+              QAbstractSpinBox_Wrapper::windowModality
               (
                 
               ) 
@@ -2032,20 +1842,16 @@ QVariant a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 Qt::WindowModality res = 
                     
                 w->windowModality(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: Qt::WindowModality
 
@@ -2064,7 +1870,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowModality
     // Source: QWidget
     // Static: false
@@ -2072,7 +1878,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowModality
+              QAbstractSpinBox_Wrapper::setWindowModality
               (
                 
   const QJSValue& 
@@ -2107,20 +1913,16 @@ Qt::WindowModality a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowModality(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -2132,7 +1934,7 @@ Qt::WindowModality a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isEnabled
     // Source: QWidget
     // Static: false
@@ -2140,7 +1942,7 @@ Qt::WindowModality a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isEnabled
+              QAbstractSpinBox_Wrapper::isEnabled
               (
                 
               ) 
@@ -2161,20 +1963,16 @@ Qt::WindowModality a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isEnabled(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -2193,7 +1991,7 @@ Qt::WindowModality a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isEnabledTo
     // Source: QWidget
     // Static: false
@@ -2201,7 +1999,7 @@ Qt::WindowModality a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isEnabledTo
+              QAbstractSpinBox_Wrapper::isEnabledTo
               (
                 
   const QJSValue& 
@@ -2243,21 +2041,17 @@ Qt::WindowModality a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isEnabledTo(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -2276,7 +2070,7 @@ Qt::WindowModality a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setEnabled
     // Source: QWidget
     // Static: false
@@ -2284,7 +2078,7 @@ Qt::WindowModality a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setEnabled
+              QAbstractSpinBox_Wrapper::setEnabled
               (
                 
   const QJSValue& 
@@ -2319,20 +2113,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setEnabled(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -2344,7 +2134,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setDisabled
     // Source: QWidget
     // Static: false
@@ -2352,7 +2142,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setDisabled
+              QAbstractSpinBox_Wrapper::setDisabled
               (
                 
   const QJSValue& 
@@ -2387,20 +2177,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setDisabled(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -2412,7 +2198,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowModified
     // Source: QWidget
     // Static: false
@@ -2420,7 +2206,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowModified
+              QAbstractSpinBox_Wrapper::setWindowModified
               (
                 
   const QJSValue& 
@@ -2455,20 +2241,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowModified(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -2480,7 +2262,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: frameGeometry
     // Source: QWidget
     // Static: false
@@ -2488,7 +2270,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::frameGeometry
+              QAbstractSpinBox_Wrapper::frameGeometry
               (
                 
               ) 
@@ -2509,20 +2291,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QRect res = 
                     
                 w->frameGeometry(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QRect
 
@@ -2541,7 +2319,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: geometry
     // Source: QWidget
     // Static: false
@@ -2549,7 +2327,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::geometry
+              QAbstractSpinBox_Wrapper::geometry
               (
                 
               ) 
@@ -2570,13 +2348,11 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                       // return type is reference:
                       // use pointer instead 3:
@@ -2585,8 +2361,6 @@ bool a1_cpp;
                 w->geometry(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: const QRect&
 
@@ -2607,7 +2381,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: normalGeometry
     // Source: QWidget
     // Static: false
@@ -2615,7 +2389,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::normalGeometry
+              QAbstractSpinBox_Wrapper::normalGeometry
               (
                 
               ) 
@@ -2636,20 +2410,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QRect res = 
                     
                 w->normalGeometry(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QRect
 
@@ -2668,7 +2438,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: x
     // Source: QWidget
     // Static: false
@@ -2676,7 +2446,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::x
+              QAbstractSpinBox_Wrapper::x
               (
                 
               ) 
@@ -2697,20 +2467,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->x(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -2729,7 +2495,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: y
     // Source: QWidget
     // Static: false
@@ -2737,7 +2503,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::y
+              QAbstractSpinBox_Wrapper::y
               (
                 
               ) 
@@ -2758,20 +2524,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->y(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -2790,7 +2552,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: pos
     // Source: QWidget
     // Static: false
@@ -2798,7 +2560,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::pos
+              QAbstractSpinBox_Wrapper::pos
               (
                 
               ) 
@@ -2819,20 +2581,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPoint res = 
                     
                 w->pos(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPoint
 
@@ -2851,7 +2609,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: frameSize
     // Source: QWidget
     // Static: false
@@ -2859,7 +2617,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::frameSize
+              QAbstractSpinBox_Wrapper::frameSize
               (
                 
               ) 
@@ -2880,20 +2638,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QSize res = 
                     
                 w->frameSize(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QSize
 
@@ -2912,7 +2666,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: size
     // Source: QWidget
     // Static: false
@@ -2920,7 +2674,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::size
+              QAbstractSpinBox_Wrapper::size
               (
                 
               ) 
@@ -2941,20 +2695,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QSize res = 
                     
                 w->size(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QSize
 
@@ -2973,7 +2723,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: width
     // Source: QWidget
     // Static: false
@@ -2981,7 +2731,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::width
+              QAbstractSpinBox_Wrapper::width
               (
                 
               ) 
@@ -3002,20 +2752,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->width(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -3034,7 +2780,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: height
     // Source: QWidget
     // Static: false
@@ -3042,7 +2788,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::height
+              QAbstractSpinBox_Wrapper::height
               (
                 
               ) 
@@ -3063,20 +2809,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->height(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -3095,7 +2837,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: rect
     // Source: QWidget
     // Static: false
@@ -3103,7 +2845,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::rect
+              QAbstractSpinBox_Wrapper::rect
               (
                 
               ) 
@@ -3124,20 +2866,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QRect res = 
                     
                 w->rect(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QRect
 
@@ -3156,7 +2894,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: childrenRect
     // Source: QWidget
     // Static: false
@@ -3164,7 +2902,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::childrenRect
+              QAbstractSpinBox_Wrapper::childrenRect
               (
                 
               ) 
@@ -3185,20 +2923,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QRect res = 
                     
                 w->childrenRect(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QRect
 
@@ -3217,7 +2951,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: childrenRegion
     // Source: QWidget
     // Static: false
@@ -3225,7 +2959,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::childrenRegion
+              QAbstractSpinBox_Wrapper::childrenRegion
               (
                 
               ) 
@@ -3246,20 +2980,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QRegion res = 
                     
                 w->childrenRegion(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QRegion
 
@@ -3278,7 +3008,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: minimumSize
     // Source: QWidget
     // Static: false
@@ -3286,7 +3016,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::minimumSize
+              QAbstractSpinBox_Wrapper::minimumSize
               (
                 
               ) 
@@ -3307,20 +3037,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QSize res = 
                     
                 w->minimumSize(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QSize
 
@@ -3339,7 +3065,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: maximumSize
     // Source: QWidget
     // Static: false
@@ -3347,7 +3073,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::maximumSize
+              QAbstractSpinBox_Wrapper::maximumSize
               (
                 
               ) 
@@ -3368,20 +3094,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QSize res = 
                     
                 w->maximumSize(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QSize
 
@@ -3400,7 +3122,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: minimumWidth
     // Source: QWidget
     // Static: false
@@ -3408,7 +3130,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::minimumWidth
+              QAbstractSpinBox_Wrapper::minimumWidth
               (
                 
               ) 
@@ -3429,20 +3151,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->minimumWidth(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -3461,7 +3179,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: minimumHeight
     // Source: QWidget
     // Static: false
@@ -3469,7 +3187,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::minimumHeight
+              QAbstractSpinBox_Wrapper::minimumHeight
               (
                 
               ) 
@@ -3490,20 +3208,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->minimumHeight(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -3522,7 +3236,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: maximumWidth
     // Source: QWidget
     // Static: false
@@ -3530,7 +3244,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::maximumWidth
+              QAbstractSpinBox_Wrapper::maximumWidth
               (
                 
               ) 
@@ -3551,20 +3265,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->maximumWidth(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -3583,7 +3293,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: maximumHeight
     // Source: QWidget
     // Static: false
@@ -3591,7 +3301,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::maximumHeight
+              QAbstractSpinBox_Wrapper::maximumHeight
               (
                 
               ) 
@@ -3612,20 +3322,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->maximumHeight(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -3644,7 +3350,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setMinimumSize
     // Source: QWidget
     // Static: false
@@ -3652,7 +3358,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setMinimumSize
+              QAbstractSpinBox_Wrapper::setMinimumSize
               (
                 
   const QJSValue& 
@@ -3698,21 +3404,17 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMinimumSize(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -3744,20 +3446,16 @@ QSize a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMinimumSize(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -3769,7 +3467,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setMaximumSize
     // Source: QWidget
     // Static: false
@@ -3777,7 +3475,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setMaximumSize
+              QAbstractSpinBox_Wrapper::setMaximumSize
               (
                 
   const QJSValue& 
@@ -3823,21 +3521,17 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMaximumSize(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -3869,20 +3563,16 @@ QSize a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMaximumSize(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -3894,7 +3584,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setMinimumWidth
     // Source: QWidget
     // Static: false
@@ -3902,7 +3592,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setMinimumWidth
+              QAbstractSpinBox_Wrapper::setMinimumWidth
               (
                 
   const QJSValue& 
@@ -3937,20 +3627,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMinimumWidth(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -3962,7 +3648,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setMinimumHeight
     // Source: QWidget
     // Static: false
@@ -3970,7 +3656,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setMinimumHeight
+              QAbstractSpinBox_Wrapper::setMinimumHeight
               (
                 
   const QJSValue& 
@@ -4005,20 +3691,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMinimumHeight(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4030,7 +3712,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setMaximumWidth
     // Source: QWidget
     // Static: false
@@ -4038,7 +3720,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setMaximumWidth
+              QAbstractSpinBox_Wrapper::setMaximumWidth
               (
                 
   const QJSValue& 
@@ -4073,20 +3755,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMaximumWidth(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4098,7 +3776,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setMaximumHeight
     // Source: QWidget
     // Static: false
@@ -4106,7 +3784,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setMaximumHeight
+              QAbstractSpinBox_Wrapper::setMaximumHeight
               (
                 
   const QJSValue& 
@@ -4141,20 +3819,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMaximumHeight(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4166,7 +3840,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: sizeIncrement
     // Source: QWidget
     // Static: false
@@ -4174,7 +3848,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::sizeIncrement
+              QAbstractSpinBox_Wrapper::sizeIncrement
               (
                 
               ) 
@@ -4195,20 +3869,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QSize res = 
                     
                 w->sizeIncrement(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QSize
 
@@ -4227,7 +3897,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setSizeIncrement
     // Source: QWidget
     // Static: false
@@ -4235,7 +3905,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setSizeIncrement
+              QAbstractSpinBox_Wrapper::setSizeIncrement
               (
                 
   const QJSValue& 
@@ -4281,21 +3951,17 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setSizeIncrement(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4327,20 +3993,16 @@ QSize a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setSizeIncrement(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4352,7 +4014,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: baseSize
     // Source: QWidget
     // Static: false
@@ -4360,7 +4022,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::baseSize
+              QAbstractSpinBox_Wrapper::baseSize
               (
                 
               ) 
@@ -4381,20 +4043,16 @@ QSize a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QSize res = 
                     
                 w->baseSize(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QSize
 
@@ -4413,7 +4071,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setBaseSize
     // Source: QWidget
     // Static: false
@@ -4421,7 +4079,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setBaseSize
+              QAbstractSpinBox_Wrapper::setBaseSize
               (
                 
   const QJSValue& 
@@ -4467,21 +4125,17 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setBaseSize(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4513,20 +4167,16 @@ QSize a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setBaseSize(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4538,7 +4188,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setFixedSize
     // Source: QWidget
     // Static: false
@@ -4546,7 +4196,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setFixedSize
+              QAbstractSpinBox_Wrapper::setFixedSize
               (
                 
   const QJSValue& 
@@ -4592,21 +4242,17 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setFixedSize(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4638,20 +4284,16 @@ QSize a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setFixedSize(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4663,7 +4305,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setFixedWidth
     // Source: QWidget
     // Static: false
@@ -4671,7 +4313,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setFixedWidth
+              QAbstractSpinBox_Wrapper::setFixedWidth
               (
                 
   const QJSValue& 
@@ -4706,20 +4348,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setFixedWidth(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4731,7 +4369,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setFixedHeight
     // Source: QWidget
     // Static: false
@@ -4739,7 +4377,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setFixedHeight
+              QAbstractSpinBox_Wrapper::setFixedHeight
               (
                 
   const QJSValue& 
@@ -4774,20 +4412,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setFixedHeight(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -4799,7 +4433,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: mapToGlobal
     // Source: QWidget
     // Static: false
@@ -4807,7 +4441,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::mapToGlobal
+              QAbstractSpinBox_Wrapper::mapToGlobal
               (
                 
   const QJSValue& 
@@ -4844,21 +4478,17 @@ QPoint a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPoint res = 
                     
                 w->mapToGlobal(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPoint
 
@@ -4897,21 +4527,17 @@ QPointF a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPointF res = 
                     
                 w->mapToGlobal(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPointF
 
@@ -4930,7 +4556,7 @@ QPointF a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: mapFromGlobal
     // Source: QWidget
     // Static: false
@@ -4938,7 +4564,7 @@ QPointF a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::mapFromGlobal
+              QAbstractSpinBox_Wrapper::mapFromGlobal
               (
                 
   const QJSValue& 
@@ -4975,21 +4601,17 @@ QPoint a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPoint res = 
                     
                 w->mapFromGlobal(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPoint
 
@@ -5028,21 +4650,17 @@ QPointF a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPointF res = 
                     
                 w->mapFromGlobal(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPointF
 
@@ -5061,7 +4679,7 @@ QPointF a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: mapToParent
     // Source: QWidget
     // Static: false
@@ -5069,7 +4687,7 @@ QPointF a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::mapToParent
+              QAbstractSpinBox_Wrapper::mapToParent
               (
                 
   const QJSValue& 
@@ -5106,21 +4724,17 @@ QPoint a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPoint res = 
                     
                 w->mapToParent(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPoint
 
@@ -5139,7 +4753,7 @@ QPoint a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: mapFromParent
     // Source: QWidget
     // Static: false
@@ -5147,7 +4761,7 @@ QPoint a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::mapFromParent
+              QAbstractSpinBox_Wrapper::mapFromParent
               (
                 
   const QJSValue& 
@@ -5184,21 +4798,17 @@ QPoint a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPoint res = 
                     
                 w->mapFromParent(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPoint
 
@@ -5217,7 +4827,7 @@ QPoint a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: mapTo
     // Source: QWidget
     // Static: false
@@ -5225,7 +4835,7 @@ QPoint a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::mapTo
+              QAbstractSpinBox_Wrapper::mapTo
               (
                 
   const QJSValue& 
@@ -5278,13 +4888,11 @@ QPoint a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPoint res = 
                     
                 w->mapTo(
@@ -5292,8 +4900,6 @@ QPoint a2_cpp;
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPoint
 
@@ -5312,7 +4918,7 @@ QPoint a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: mapFrom
     // Source: QWidget
     // Static: false
@@ -5320,7 +4926,7 @@ QPoint a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::mapFrom
+              QAbstractSpinBox_Wrapper::mapFrom
               (
                 
   const QJSValue& 
@@ -5373,13 +4979,11 @@ QPoint a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPoint res = 
                     
                 w->mapFrom(
@@ -5387,8 +4991,6 @@ QPoint a2_cpp;
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPoint
 
@@ -5441,13 +5043,11 @@ QPointF a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPointF res = 
                     
                 w->mapFrom(
@@ -5455,8 +5055,6 @@ QPointF a2_cpp;
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPointF
 
@@ -5475,7 +5073,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: window
     // Source: QWidget
     // Static: false
@@ -5483,7 +5081,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::window
+              QAbstractSpinBox_Wrapper::window
               (
                 
               ) 
@@ -5504,20 +5102,16 @@ QPointF a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->window(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -5536,7 +5130,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: nativeParentWidget
     // Source: QWidget
     // Static: false
@@ -5544,7 +5138,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::nativeParentWidget
+              QAbstractSpinBox_Wrapper::nativeParentWidget
               (
                 
               ) 
@@ -5565,20 +5159,16 @@ QPointF a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->nativeParentWidget(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -5597,7 +5187,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: topLevelWidget
     // Source: QWidget
     // Static: false
@@ -5605,7 +5195,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::topLevelWidget
+              QAbstractSpinBox_Wrapper::topLevelWidget
               (
                 
               ) 
@@ -5626,20 +5216,16 @@ QPointF a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->topLevelWidget(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -5658,7 +5244,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: palette
     // Source: QWidget
     // Static: false
@@ -5666,7 +5252,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::palette
+              QAbstractSpinBox_Wrapper::palette
               (
                 
               ) 
@@ -5687,13 +5273,11 @@ QPointF a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                       // return type is reference:
                       // use pointer instead 3:
@@ -5702,8 +5286,6 @@ QPointF a2_cpp;
                 w->palette(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: const QPalette&
 
@@ -5724,7 +5306,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setPalette
     // Source: QWidget
     // Static: false
@@ -5732,7 +5314,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setPalette
+              QAbstractSpinBox_Wrapper::setPalette
               (
                 
   const QJSValue& 
@@ -5767,20 +5349,16 @@ QPalette a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setPalette(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -5792,7 +5370,7 @@ QPalette a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setBackgroundRole
     // Source: QWidget
     // Static: false
@@ -5800,7 +5378,7 @@ QPalette a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setBackgroundRole
+              QAbstractSpinBox_Wrapper::setBackgroundRole
               (
                 
   const QJSValue& 
@@ -5835,20 +5413,16 @@ QPalette::ColorRole a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setBackgroundRole(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -5860,7 +5434,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: backgroundRole
     // Source: QWidget
     // Static: false
@@ -5868,7 +5442,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::backgroundRole
+              QAbstractSpinBox_Wrapper::backgroundRole
               (
                 
               ) 
@@ -5889,20 +5463,16 @@ QPalette::ColorRole a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPalette::ColorRole res = 
                     
                 w->backgroundRole(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPalette::ColorRole
 
@@ -5921,7 +5491,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setForegroundRole
     // Source: QWidget
     // Static: false
@@ -5929,7 +5499,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setForegroundRole
+              QAbstractSpinBox_Wrapper::setForegroundRole
               (
                 
   const QJSValue& 
@@ -5964,20 +5534,16 @@ QPalette::ColorRole a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setForegroundRole(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -5989,7 +5555,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: foregroundRole
     // Source: QWidget
     // Static: false
@@ -5997,7 +5563,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::foregroundRole
+              QAbstractSpinBox_Wrapper::foregroundRole
               (
                 
               ) 
@@ -6018,20 +5584,16 @@ QPalette::ColorRole a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPalette::ColorRole res = 
                     
                 w->foregroundRole(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPalette::ColorRole
 
@@ -6050,7 +5612,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: font
     // Source: QWidget
     // Static: false
@@ -6058,7 +5620,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::font
+              QAbstractSpinBox_Wrapper::font
               (
                 
               ) 
@@ -6079,13 +5641,11 @@ QPalette::ColorRole a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                       // return type is reference:
                       // use pointer instead 3:
@@ -6094,8 +5654,6 @@ QPalette::ColorRole a1_cpp;
                 w->font(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: const QFont&
 
@@ -6116,7 +5674,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setFont
     // Source: QWidget
     // Static: false
@@ -6124,7 +5682,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setFont
+              QAbstractSpinBox_Wrapper::setFont
               (
                 
   const QJSValue& 
@@ -6159,20 +5717,16 @@ QFont a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setFont(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -6184,7 +5738,7 @@ QFont a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: fontInfo
     // Source: QWidget
     // Static: false
@@ -6192,7 +5746,7 @@ QFont a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::fontInfo
+              QAbstractSpinBox_Wrapper::fontInfo
               (
                 
               ) 
@@ -6213,20 +5767,16 @@ QFont a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QFontInfo res = 
                     
                 w->fontInfo(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QFontInfo
 
@@ -6245,7 +5795,7 @@ QFont a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: cursor
     // Source: QWidget
     // Static: false
@@ -6253,7 +5803,7 @@ QFont a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::cursor
+              QAbstractSpinBox_Wrapper::cursor
               (
                 
               ) 
@@ -6274,20 +5824,16 @@ QFont a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QCursor res = 
                     
                 w->cursor(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QCursor
 
@@ -6306,7 +5852,7 @@ QFont a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setCursor
     // Source: QWidget
     // Static: false
@@ -6314,7 +5860,7 @@ QFont a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setCursor
+              QAbstractSpinBox_Wrapper::setCursor
               (
                 
   const QJSValue& 
@@ -6349,20 +5895,16 @@ QCursor a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setCursor(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -6374,7 +5916,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: unsetCursor
     // Source: QWidget
     // Static: false
@@ -6382,7 +5924,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::unsetCursor
+              QAbstractSpinBox_Wrapper::unsetCursor
               (
                 
               ) 
@@ -6401,19 +5943,15 @@ QCursor a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->unsetCursor(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -6425,7 +5963,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setMouseTracking
     // Source: QWidget
     // Static: false
@@ -6433,7 +5971,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setMouseTracking
+              QAbstractSpinBox_Wrapper::setMouseTracking
               (
                 
   const QJSValue& 
@@ -6468,20 +6006,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMouseTracking(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -6493,7 +6027,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: hasMouseTracking
     // Source: QWidget
     // Static: false
@@ -6501,7 +6035,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::hasMouseTracking
+              QAbstractSpinBox_Wrapper::hasMouseTracking
               (
                 
               ) 
@@ -6522,20 +6056,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->hasMouseTracking(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -6554,7 +6084,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: underMouse
     // Source: QWidget
     // Static: false
@@ -6562,7 +6092,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::underMouse
+              QAbstractSpinBox_Wrapper::underMouse
               (
                 
               ) 
@@ -6583,20 +6113,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->underMouse(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -6615,7 +6141,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setTabletTracking
     // Source: QWidget
     // Static: false
@@ -6623,7 +6149,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setTabletTracking
+              QAbstractSpinBox_Wrapper::setTabletTracking
               (
                 
   const QJSValue& 
@@ -6658,20 +6184,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setTabletTracking(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -6683,7 +6205,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: hasTabletTracking
     // Source: QWidget
     // Static: false
@@ -6691,7 +6213,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::hasTabletTracking
+              QAbstractSpinBox_Wrapper::hasTabletTracking
               (
                 
               ) 
@@ -6712,20 +6234,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->hasTabletTracking(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -6744,7 +6262,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setMask
     // Source: QWidget
     // Static: false
@@ -6752,7 +6270,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setMask
+              QAbstractSpinBox_Wrapper::setMask
               (
                 
   const QJSValue& 
@@ -6787,20 +6305,16 @@ QBitmap a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMask(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -6832,20 +6346,16 @@ QRegion a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setMask(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -6857,7 +6367,7 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: mask
     // Source: QWidget
     // Static: false
@@ -6865,7 +6375,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::mask
+              QAbstractSpinBox_Wrapper::mask
               (
                 
               ) 
@@ -6886,20 +6396,16 @@ QRegion a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QRegion res = 
                     
                 w->mask(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QRegion
 
@@ -6918,7 +6424,7 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: clearMask
     // Source: QWidget
     // Static: false
@@ -6926,7 +6432,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::clearMask
+              QAbstractSpinBox_Wrapper::clearMask
               (
                 
               ) 
@@ -6945,19 +6451,15 @@ QRegion a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->clearMask(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -6969,7 +6471,7 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: grab
     // Source: QWidget
     // Static: false
@@ -6977,7 +6479,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::grab
+              QAbstractSpinBox_Wrapper::grab
               (
                 
   const QJSValue& 
@@ -7020,21 +6522,17 @@ QRect a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QPixmap res = 
                     
                 w->grab(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QPixmap
 
@@ -7053,7 +6551,7 @@ QRect a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: grabGesture
     // Source: QWidget
     // Static: false
@@ -7061,7 +6559,7 @@ QRect a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::grabGesture
+              QAbstractSpinBox_Wrapper::grabGesture
               (
                 
   const QJSValue& 
@@ -7115,21 +6613,17 @@ Qt::GestureFlags a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->grabGesture(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -7141,7 +6635,7 @@ Qt::GestureFlags a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: ungrabGesture
     // Source: QWidget
     // Static: false
@@ -7149,7 +6643,7 @@ Qt::GestureFlags a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::ungrabGesture
+              QAbstractSpinBox_Wrapper::ungrabGesture
               (
                 
   const QJSValue& 
@@ -7184,20 +6678,16 @@ Qt::GestureType a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->ungrabGesture(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -7209,7 +6699,7 @@ Qt::GestureType a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowTitle
     // Source: QWidget
     // Static: false
@@ -7217,7 +6707,7 @@ Qt::GestureType a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowTitle
+              QAbstractSpinBox_Wrapper::setWindowTitle
               (
                 
   const QJSValue& 
@@ -7252,20 +6742,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowTitle(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -7277,7 +6763,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setStyleSheet
     // Source: QWidget
     // Static: false
@@ -7285,7 +6771,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setStyleSheet
+              QAbstractSpinBox_Wrapper::setStyleSheet
               (
                 
   const QJSValue& 
@@ -7320,20 +6806,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setStyleSheet(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -7345,7 +6827,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: styleSheet
     // Source: QWidget
     // Static: false
@@ -7353,7 +6835,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::styleSheet
+              QAbstractSpinBox_Wrapper::styleSheet
               (
                 
               ) 
@@ -7374,20 +6856,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->styleSheet(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -7406,7 +6884,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowTitle
     // Source: QWidget
     // Static: false
@@ -7414,7 +6892,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowTitle
+              QAbstractSpinBox_Wrapper::windowTitle
               (
                 
               ) 
@@ -7435,20 +6913,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->windowTitle(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -7467,7 +6941,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowIcon
     // Source: QWidget
     // Static: false
@@ -7475,7 +6949,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowIcon
+              QAbstractSpinBox_Wrapper::setWindowIcon
               (
                 
   const QJSValue& 
@@ -7510,20 +6984,16 @@ QIcon a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowIcon(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -7535,7 +7005,7 @@ QIcon a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowIcon
     // Source: QWidget
     // Static: false
@@ -7543,7 +7013,7 @@ QIcon a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowIcon
+              QAbstractSpinBox_Wrapper::windowIcon
               (
                 
               ) 
@@ -7564,20 +7034,16 @@ QIcon a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QIcon res = 
                     
                 w->windowIcon(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QIcon
 
@@ -7596,7 +7062,7 @@ QIcon a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowIconText
     // Source: QWidget
     // Static: false
@@ -7604,7 +7070,7 @@ QIcon a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowIconText
+              QAbstractSpinBox_Wrapper::setWindowIconText
               (
                 
   const QJSValue& 
@@ -7639,20 +7105,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowIconText(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -7664,7 +7126,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowIconText
     // Source: QWidget
     // Static: false
@@ -7672,7 +7134,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowIconText
+              QAbstractSpinBox_Wrapper::windowIconText
               (
                 
               ) 
@@ -7693,20 +7155,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->windowIconText(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -7725,7 +7183,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowRole
     // Source: QWidget
     // Static: false
@@ -7733,7 +7191,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowRole
+              QAbstractSpinBox_Wrapper::setWindowRole
               (
                 
   const QJSValue& 
@@ -7768,20 +7226,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowRole(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -7793,7 +7247,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowRole
     // Source: QWidget
     // Static: false
@@ -7801,7 +7255,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowRole
+              QAbstractSpinBox_Wrapper::windowRole
               (
                 
               ) 
@@ -7822,20 +7276,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->windowRole(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -7854,7 +7304,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowFilePath
     // Source: QWidget
     // Static: false
@@ -7862,7 +7312,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowFilePath
+              QAbstractSpinBox_Wrapper::setWindowFilePath
               (
                 
   const QJSValue& 
@@ -7897,20 +7347,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowFilePath(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -7922,7 +7368,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowFilePath
     // Source: QWidget
     // Static: false
@@ -7930,7 +7376,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowFilePath
+              QAbstractSpinBox_Wrapper::windowFilePath
               (
                 
               ) 
@@ -7951,20 +7397,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->windowFilePath(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -7983,7 +7425,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowOpacity
     // Source: QWidget
     // Static: false
@@ -7991,7 +7433,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowOpacity
+              QAbstractSpinBox_Wrapper::setWindowOpacity
               (
                 
   const QJSValue& 
@@ -8026,20 +7468,16 @@ qreal a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowOpacity(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -8051,7 +7489,7 @@ qreal a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowOpacity
     // Source: QWidget
     // Static: false
@@ -8059,7 +7497,7 @@ qreal a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowOpacity
+              QAbstractSpinBox_Wrapper::windowOpacity
               (
                 
               ) 
@@ -8080,20 +7518,16 @@ qreal a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 qreal res = 
                     
                 w->windowOpacity(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: qreal
 
@@ -8112,7 +7546,7 @@ qreal a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isWindowModified
     // Source: QWidget
     // Static: false
@@ -8120,7 +7554,7 @@ qreal a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isWindowModified
+              QAbstractSpinBox_Wrapper::isWindowModified
               (
                 
               ) 
@@ -8141,20 +7575,16 @@ qreal a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isWindowModified(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -8173,7 +7603,7 @@ qreal a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setToolTip
     // Source: QWidget
     // Static: false
@@ -8181,7 +7611,7 @@ qreal a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setToolTip
+              QAbstractSpinBox_Wrapper::setToolTip
               (
                 
   const QJSValue& 
@@ -8216,20 +7646,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setToolTip(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -8241,7 +7667,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: toolTip
     // Source: QWidget
     // Static: false
@@ -8249,7 +7675,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::toolTip
+              QAbstractSpinBox_Wrapper::toolTip
               (
                 
               ) 
@@ -8270,20 +7696,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->toolTip(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -8302,7 +7724,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setToolTipDuration
     // Source: QWidget
     // Static: false
@@ -8310,7 +7732,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setToolTipDuration
+              QAbstractSpinBox_Wrapper::setToolTipDuration
               (
                 
   const QJSValue& 
@@ -8345,20 +7767,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setToolTipDuration(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -8370,7 +7788,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: toolTipDuration
     // Source: QWidget
     // Static: false
@@ -8378,7 +7796,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::toolTipDuration
+              QAbstractSpinBox_Wrapper::toolTipDuration
               (
                 
               ) 
@@ -8399,20 +7817,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->toolTipDuration(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -8431,7 +7845,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setStatusTip
     // Source: QWidget
     // Static: false
@@ -8439,7 +7853,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setStatusTip
+              QAbstractSpinBox_Wrapper::setStatusTip
               (
                 
   const QJSValue& 
@@ -8474,20 +7888,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setStatusTip(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -8499,7 +7909,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: statusTip
     // Source: QWidget
     // Static: false
@@ -8507,7 +7917,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::statusTip
+              QAbstractSpinBox_Wrapper::statusTip
               (
                 
               ) 
@@ -8528,20 +7938,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->statusTip(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -8560,7 +7966,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWhatsThis
     // Source: QWidget
     // Static: false
@@ -8568,7 +7974,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWhatsThis
+              QAbstractSpinBox_Wrapper::setWhatsThis
               (
                 
   const QJSValue& 
@@ -8603,20 +8009,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWhatsThis(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -8628,7 +8030,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: whatsThis
     // Source: QWidget
     // Static: false
@@ -8636,7 +8038,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::whatsThis
+              QAbstractSpinBox_Wrapper::whatsThis
               (
                 
               ) 
@@ -8657,20 +8059,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->whatsThis(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -8689,7 +8087,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: accessibleName
     // Source: QWidget
     // Static: false
@@ -8697,7 +8095,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::accessibleName
+              QAbstractSpinBox_Wrapper::accessibleName
               (
                 
               ) 
@@ -8718,20 +8116,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->accessibleName(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -8750,7 +8144,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setAccessibleName
     // Source: QWidget
     // Static: false
@@ -8758,7 +8152,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setAccessibleName
+              QAbstractSpinBox_Wrapper::setAccessibleName
               (
                 
   const QJSValue& 
@@ -8793,20 +8187,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setAccessibleName(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -8818,7 +8208,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: accessibleDescription
     // Source: QWidget
     // Static: false
@@ -8826,7 +8216,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::accessibleDescription
+              QAbstractSpinBox_Wrapper::accessibleDescription
               (
                 
               ) 
@@ -8847,20 +8237,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QString res = 
                     
                 w->accessibleDescription(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QString
 
@@ -8879,7 +8265,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setAccessibleDescription
     // Source: QWidget
     // Static: false
@@ -8887,7 +8273,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setAccessibleDescription
+              QAbstractSpinBox_Wrapper::setAccessibleDescription
               (
                 
   const QJSValue& 
@@ -8922,20 +8308,16 @@ QString a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setAccessibleDescription(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -8947,7 +8329,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setLayoutDirection
     // Source: QWidget
     // Static: false
@@ -8955,7 +8337,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setLayoutDirection
+              QAbstractSpinBox_Wrapper::setLayoutDirection
               (
                 
   const QJSValue& 
@@ -8990,20 +8372,16 @@ Qt::LayoutDirection a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setLayoutDirection(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9015,7 +8393,7 @@ Qt::LayoutDirection a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: layoutDirection
     // Source: QWidget
     // Static: false
@@ -9023,7 +8401,7 @@ Qt::LayoutDirection a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::layoutDirection
+              QAbstractSpinBox_Wrapper::layoutDirection
               (
                 
               ) 
@@ -9044,20 +8422,16 @@ Qt::LayoutDirection a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 Qt::LayoutDirection res = 
                     
                 w->layoutDirection(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: Qt::LayoutDirection
 
@@ -9076,7 +8450,7 @@ Qt::LayoutDirection a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: unsetLayoutDirection
     // Source: QWidget
     // Static: false
@@ -9084,7 +8458,7 @@ Qt::LayoutDirection a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::unsetLayoutDirection
+              QAbstractSpinBox_Wrapper::unsetLayoutDirection
               (
                 
               ) 
@@ -9103,19 +8477,15 @@ Qt::LayoutDirection a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->unsetLayoutDirection(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9127,7 +8497,7 @@ Qt::LayoutDirection a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setLocale
     // Source: QWidget
     // Static: false
@@ -9135,7 +8505,7 @@ Qt::LayoutDirection a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setLocale
+              QAbstractSpinBox_Wrapper::setLocale
               (
                 
   const QJSValue& 
@@ -9170,20 +8540,16 @@ QLocale a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setLocale(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9195,7 +8561,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: locale
     // Source: QWidget
     // Static: false
@@ -9203,7 +8569,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::locale
+              QAbstractSpinBox_Wrapper::locale
               (
                 
               ) 
@@ -9224,20 +8590,16 @@ QLocale a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QLocale res = 
                     
                 w->locale(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QLocale
 
@@ -9256,7 +8618,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: unsetLocale
     // Source: QWidget
     // Static: false
@@ -9264,7 +8626,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::unsetLocale
+              QAbstractSpinBox_Wrapper::unsetLocale
               (
                 
               ) 
@@ -9283,19 +8645,15 @@ QLocale a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->unsetLocale(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9307,7 +8665,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isRightToLeft
     // Source: QWidget
     // Static: false
@@ -9315,7 +8673,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isRightToLeft
+              QAbstractSpinBox_Wrapper::isRightToLeft
               (
                 
               ) 
@@ -9336,20 +8694,16 @@ QLocale a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isRightToLeft(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -9368,7 +8722,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isLeftToRight
     // Source: QWidget
     // Static: false
@@ -9376,7 +8730,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isLeftToRight
+              QAbstractSpinBox_Wrapper::isLeftToRight
               (
                 
               ) 
@@ -9397,20 +8751,16 @@ QLocale a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isLeftToRight(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -9429,7 +8779,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isActiveWindow
     // Source: QWidget
     // Static: false
@@ -9437,7 +8787,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isActiveWindow
+              QAbstractSpinBox_Wrapper::isActiveWindow
               (
                 
               ) 
@@ -9458,20 +8808,16 @@ QLocale a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isActiveWindow(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -9490,7 +8836,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: activateWindow
     // Source: QWidget
     // Static: false
@@ -9498,7 +8844,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::activateWindow
+              QAbstractSpinBox_Wrapper::activateWindow
               (
                 
               ) 
@@ -9517,19 +8863,15 @@ QLocale a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->activateWindow(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9541,7 +8883,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: clearFocus
     // Source: QWidget
     // Static: false
@@ -9549,7 +8891,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::clearFocus
+              QAbstractSpinBox_Wrapper::clearFocus
               (
                 
               ) 
@@ -9568,19 +8910,15 @@ QLocale a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->clearFocus(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9592,7 +8930,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setFocus
     // Source: QWidget
     // Static: false
@@ -9600,7 +8938,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setFocus
+              QAbstractSpinBox_Wrapper::setFocus
               (
                 
   const QJSValue& 
@@ -9635,20 +8973,16 @@ Qt::FocusReason a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setFocus(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9666,19 +9000,15 @@ Qt::FocusReason a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setFocus(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9690,7 +9020,7 @@ Qt::FocusReason a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: focusPolicy
     // Source: QWidget
     // Static: false
@@ -9698,7 +9028,7 @@ Qt::FocusReason a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::focusPolicy
+              QAbstractSpinBox_Wrapper::focusPolicy
               (
                 
               ) 
@@ -9719,20 +9049,16 @@ Qt::FocusReason a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 Qt::FocusPolicy res = 
                     
                 w->focusPolicy(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: Qt::FocusPolicy
 
@@ -9751,7 +9077,7 @@ Qt::FocusReason a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setFocusPolicy
     // Source: QWidget
     // Static: false
@@ -9759,7 +9085,7 @@ Qt::FocusReason a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setFocusPolicy
+              QAbstractSpinBox_Wrapper::setFocusPolicy
               (
                 
   const QJSValue& 
@@ -9794,20 +9120,16 @@ Qt::FocusPolicy a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setFocusPolicy(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9819,7 +9141,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: hasFocus
     // Source: QWidget
     // Static: false
@@ -9827,7 +9149,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::hasFocus
+              QAbstractSpinBox_Wrapper::hasFocus
               (
                 
               ) 
@@ -9848,20 +9170,16 @@ Qt::FocusPolicy a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->hasFocus(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -9880,7 +9198,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setFocusProxy
     // Source: QWidget
     // Static: false
@@ -9888,7 +9206,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setFocusProxy
+              QAbstractSpinBox_Wrapper::setFocusProxy
               (
                 
   const QJSValue& 
@@ -9928,20 +9246,16 @@ Qt::FocusPolicy a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setFocusProxy(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -9953,7 +9267,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: focusProxy
     // Source: QWidget
     // Static: false
@@ -9961,7 +9275,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::focusProxy
+              QAbstractSpinBox_Wrapper::focusProxy
               (
                 
               ) 
@@ -9982,20 +9296,16 @@ Qt::FocusPolicy a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->focusProxy(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -10014,7 +9324,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: contextMenuPolicy
     // Source: QWidget
     // Static: false
@@ -10022,7 +9332,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::contextMenuPolicy
+              QAbstractSpinBox_Wrapper::contextMenuPolicy
               (
                 
               ) 
@@ -10043,20 +9353,16 @@ Qt::FocusPolicy a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 Qt::ContextMenuPolicy res = 
                     
                 w->contextMenuPolicy(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: Qt::ContextMenuPolicy
 
@@ -10075,7 +9381,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setContextMenuPolicy
     // Source: QWidget
     // Static: false
@@ -10083,7 +9389,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setContextMenuPolicy
+              QAbstractSpinBox_Wrapper::setContextMenuPolicy
               (
                 
   const QJSValue& 
@@ -10118,20 +9424,16 @@ Qt::ContextMenuPolicy a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setContextMenuPolicy(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10143,7 +9445,7 @@ Qt::ContextMenuPolicy a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: grabMouse
     // Source: QWidget
     // Static: false
@@ -10151,7 +9453,7 @@ Qt::ContextMenuPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::grabMouse
+              QAbstractSpinBox_Wrapper::grabMouse
               (
                 
   const QJSValue& 
@@ -10186,20 +9488,16 @@ QCursor a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->grabMouse(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10217,19 +9515,15 @@ QCursor a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->grabMouse(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10241,7 +9535,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: releaseMouse
     // Source: QWidget
     // Static: false
@@ -10249,7 +9543,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::releaseMouse
+              QAbstractSpinBox_Wrapper::releaseMouse
               (
                 
               ) 
@@ -10268,19 +9562,15 @@ QCursor a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->releaseMouse(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10292,7 +9582,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: grabKeyboard
     // Source: QWidget
     // Static: false
@@ -10300,7 +9590,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::grabKeyboard
+              QAbstractSpinBox_Wrapper::grabKeyboard
               (
                 
               ) 
@@ -10319,19 +9609,15 @@ QCursor a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->grabKeyboard(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10343,7 +9629,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: releaseKeyboard
     // Source: QWidget
     // Static: false
@@ -10351,7 +9637,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::releaseKeyboard
+              QAbstractSpinBox_Wrapper::releaseKeyboard
               (
                 
               ) 
@@ -10370,19 +9656,15 @@ QCursor a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->releaseKeyboard(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10394,7 +9676,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: grabShortcut
     // Source: QWidget
     // Static: false
@@ -10402,7 +9684,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::grabShortcut
+              QAbstractSpinBox_Wrapper::grabShortcut
               (
                 
   const QJSValue& 
@@ -10456,13 +9738,11 @@ Qt::ShortcutContext a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->grabShortcut(
@@ -10470,8 +9750,6 @@ Qt::ShortcutContext a2_cpp;
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -10490,7 +9768,7 @@ Qt::ShortcutContext a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: releaseShortcut
     // Source: QWidget
     // Static: false
@@ -10498,7 +9776,7 @@ Qt::ShortcutContext a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::releaseShortcut
+              QAbstractSpinBox_Wrapper::releaseShortcut
               (
                 
   const QJSValue& 
@@ -10533,20 +9811,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->releaseShortcut(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10558,7 +9832,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setShortcutEnabled
     // Source: QWidget
     // Static: false
@@ -10566,7 +9840,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setShortcutEnabled
+              QAbstractSpinBox_Wrapper::setShortcutEnabled
               (
                 
   const QJSValue& 
@@ -10620,21 +9894,17 @@ bool a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setShortcutEnabled(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10646,7 +9916,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setShortcutAutoRepeat
     // Source: QWidget
     // Static: false
@@ -10654,7 +9924,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setShortcutAutoRepeat
+              QAbstractSpinBox_Wrapper::setShortcutAutoRepeat
               (
                 
   const QJSValue& 
@@ -10708,21 +9978,17 @@ bool a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setShortcutAutoRepeat(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10734,7 +10000,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: updatesEnabled
     // Source: QWidget
     // Static: false
@@ -10742,7 +10008,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::updatesEnabled
+              QAbstractSpinBox_Wrapper::updatesEnabled
               (
                 
               ) 
@@ -10763,20 +10029,16 @@ bool a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->updatesEnabled(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -10795,7 +10057,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setUpdatesEnabled
     // Source: QWidget
     // Static: false
@@ -10803,7 +10065,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setUpdatesEnabled
+              QAbstractSpinBox_Wrapper::setUpdatesEnabled
               (
                 
   const QJSValue& 
@@ -10838,20 +10100,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setUpdatesEnabled(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10863,7 +10121,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: update
     // Source: QWidget
     // Static: false
@@ -10871,7 +10129,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::update
+              QAbstractSpinBox_Wrapper::update
               (
                 
   const QJSValue& 
@@ -10939,13 +10197,11 @@ int a4_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->update(
                   a1_cpp
@@ -10954,8 +10210,6 @@ int a4_cpp;
     , a4_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -10987,20 +10241,16 @@ QRect a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->update(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11032,20 +10282,16 @@ QRegion a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->update(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11063,19 +10309,15 @@ QRegion a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->update(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11087,7 +10329,7 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: repaint
     // Source: QWidget
     // Static: false
@@ -11095,7 +10337,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::repaint
+              QAbstractSpinBox_Wrapper::repaint
               (
                 
   const QJSValue& 
@@ -11163,13 +10405,11 @@ int a4_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->repaint(
                   a1_cpp
@@ -11178,8 +10418,6 @@ int a4_cpp;
     , a4_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11211,20 +10449,16 @@ QRect a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->repaint(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11256,20 +10490,16 @@ QRegion a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->repaint(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11281,7 +10511,7 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setVisible
     // Source: QWidget
     // Static: false
@@ -11289,7 +10519,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setVisible
+              QAbstractSpinBox_Wrapper::setVisible
               (
                 
   const QJSValue& 
@@ -11324,20 +10554,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setVisible(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11349,7 +10575,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setHidden
     // Source: QWidget
     // Static: false
@@ -11357,7 +10583,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setHidden
+              QAbstractSpinBox_Wrapper::setHidden
               (
                 
   const QJSValue& 
@@ -11392,20 +10618,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setHidden(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11417,7 +10639,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: show
     // Source: QWidget
     // Static: false
@@ -11425,7 +10647,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::show
+              QAbstractSpinBox_Wrapper::show
               (
                 
               ) 
@@ -11444,19 +10666,15 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->show(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11468,7 +10686,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: hide
     // Source: QWidget
     // Static: false
@@ -11476,7 +10694,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::hide
+              QAbstractSpinBox_Wrapper::hide
               (
                 
               ) 
@@ -11495,19 +10713,15 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->hide(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11519,7 +10733,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: showMinimized
     // Source: QWidget
     // Static: false
@@ -11527,7 +10741,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::showMinimized
+              QAbstractSpinBox_Wrapper::showMinimized
               (
                 
               ) 
@@ -11546,19 +10760,15 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->showMinimized(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11570,7 +10780,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: showMaximized
     // Source: QWidget
     // Static: false
@@ -11578,7 +10788,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::showMaximized
+              QAbstractSpinBox_Wrapper::showMaximized
               (
                 
               ) 
@@ -11597,19 +10807,15 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->showMaximized(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11621,7 +10827,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: showFullScreen
     // Source: QWidget
     // Static: false
@@ -11629,7 +10835,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::showFullScreen
+              QAbstractSpinBox_Wrapper::showFullScreen
               (
                 
               ) 
@@ -11648,19 +10854,15 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->showFullScreen(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11672,7 +10874,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: showNormal
     // Source: QWidget
     // Static: false
@@ -11680,7 +10882,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::showNormal
+              QAbstractSpinBox_Wrapper::showNormal
               (
                 
               ) 
@@ -11699,19 +10901,15 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->showNormal(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11723,7 +10921,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: close
     // Source: QWidget
     // Static: false
@@ -11731,7 +10929,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::close
+              QAbstractSpinBox_Wrapper::close
               (
                 
               ) 
@@ -11750,20 +10948,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->close(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -11782,7 +10976,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: raise
     // Source: QWidget
     // Static: false
@@ -11790,7 +10984,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::raise
+              QAbstractSpinBox_Wrapper::raise
               (
                 
               ) 
@@ -11809,19 +11003,15 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->raise(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11833,7 +11023,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: lower
     // Source: QWidget
     // Static: false
@@ -11841,7 +11031,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::lower
+              QAbstractSpinBox_Wrapper::lower
               (
                 
               ) 
@@ -11860,19 +11050,15 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->lower(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11884,7 +11070,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: stackUnder
     // Source: QWidget
     // Static: false
@@ -11892,7 +11078,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::stackUnder
+              QAbstractSpinBox_Wrapper::stackUnder
               (
                 
   const QJSValue& 
@@ -11932,20 +11118,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->stackUnder(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -11957,7 +11139,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: move
     // Source: QWidget
     // Static: false
@@ -11965,7 +11147,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::move
+              QAbstractSpinBox_Wrapper::move
               (
                 
   const QJSValue& 
@@ -12011,21 +11193,17 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->move(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -12057,20 +11235,16 @@ QPoint a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->move(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -12082,7 +11256,7 @@ QPoint a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: resize
     // Source: QWidget
     // Static: false
@@ -12090,7 +11264,7 @@ QPoint a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::resize
+              QAbstractSpinBox_Wrapper::resize
               (
                 
   const QJSValue& 
@@ -12136,21 +11310,17 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->resize(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -12182,20 +11352,16 @@ QSize a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->resize(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -12207,7 +11373,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setGeometry
     // Source: QWidget
     // Static: false
@@ -12215,7 +11381,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setGeometry
+              QAbstractSpinBox_Wrapper::setGeometry
               (
                 
   const QJSValue& 
@@ -12283,13 +11449,11 @@ int a4_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setGeometry(
                   a1_cpp
@@ -12298,8 +11462,6 @@ int a4_cpp;
     , a4_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -12331,20 +11493,16 @@ QRect a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setGeometry(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -12356,7 +11514,7 @@ QRect a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: saveGeometry
     // Source: QWidget
     // Static: false
@@ -12364,7 +11522,7 @@ QRect a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::saveGeometry
+              QAbstractSpinBox_Wrapper::saveGeometry
               (
                 
               ) 
@@ -12385,20 +11543,16 @@ QRect a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QByteArray res = 
                     
                 w->saveGeometry(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QByteArray
 
@@ -12417,7 +11571,7 @@ QRect a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: restoreGeometry
     // Source: QWidget
     // Static: false
@@ -12425,7 +11579,7 @@ QRect a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::restoreGeometry
+              QAbstractSpinBox_Wrapper::restoreGeometry
               (
                 
   const QJSValue& 
@@ -12460,21 +11614,17 @@ QByteArray a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->restoreGeometry(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -12493,7 +11643,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: adjustSize
     // Source: QWidget
     // Static: false
@@ -12501,7 +11651,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::adjustSize
+              QAbstractSpinBox_Wrapper::adjustSize
               (
                 
               ) 
@@ -12520,19 +11670,15 @@ QByteArray a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->adjustSize(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -12544,7 +11690,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isVisible
     // Source: QWidget
     // Static: false
@@ -12552,7 +11698,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isVisible
+              QAbstractSpinBox_Wrapper::isVisible
               (
                 
               ) 
@@ -12573,20 +11719,16 @@ QByteArray a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isVisible(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -12605,7 +11747,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isVisibleTo
     // Source: QWidget
     // Static: false
@@ -12613,7 +11755,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isVisibleTo
+              QAbstractSpinBox_Wrapper::isVisibleTo
               (
                 
   const QJSValue& 
@@ -12655,21 +11797,17 @@ QByteArray a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isVisibleTo(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -12688,7 +11826,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isHidden
     // Source: QWidget
     // Static: false
@@ -12696,7 +11834,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isHidden
+              QAbstractSpinBox_Wrapper::isHidden
               (
                 
               ) 
@@ -12717,20 +11855,16 @@ QByteArray a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isHidden(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -12749,7 +11883,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isMinimized
     // Source: QWidget
     // Static: false
@@ -12757,7 +11891,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isMinimized
+              QAbstractSpinBox_Wrapper::isMinimized
               (
                 
               ) 
@@ -12778,20 +11912,16 @@ QByteArray a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isMinimized(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -12810,7 +11940,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isMaximized
     // Source: QWidget
     // Static: false
@@ -12818,7 +11948,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isMaximized
+              QAbstractSpinBox_Wrapper::isMaximized
               (
                 
               ) 
@@ -12839,20 +11969,16 @@ QByteArray a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isMaximized(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -12871,7 +11997,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isFullScreen
     // Source: QWidget
     // Static: false
@@ -12879,7 +12005,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isFullScreen
+              QAbstractSpinBox_Wrapper::isFullScreen
               (
                 
               ) 
@@ -12900,20 +12026,16 @@ QByteArray a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isFullScreen(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -12932,7 +12054,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowState
     // Source: QWidget
     // Static: false
@@ -12940,7 +12062,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowState
+              QAbstractSpinBox_Wrapper::windowState
               (
                 
               ) 
@@ -12961,20 +12083,16 @@ QByteArray a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 Qt::WindowStates res = 
                     
                 w->windowState(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: Qt::WindowStates
 
@@ -12993,7 +12111,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowState
     // Source: QWidget
     // Static: false
@@ -13001,7 +12119,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowState
+              QAbstractSpinBox_Wrapper::setWindowState
               (
                 
   const QJSValue& 
@@ -13036,20 +12154,16 @@ Qt::WindowStates a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowState(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -13061,7 +12175,7 @@ Qt::WindowStates a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: overrideWindowState
     // Source: QWidget
     // Static: false
@@ -13069,7 +12183,7 @@ Qt::WindowStates a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::overrideWindowState
+              QAbstractSpinBox_Wrapper::overrideWindowState
               (
                 
   const QJSValue& 
@@ -13104,20 +12218,16 @@ Qt::WindowStates a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->overrideWindowState(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -13129,7 +12239,7 @@ Qt::WindowStates a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: sizeHint
     // Source: QWidget
     // Static: false
@@ -13137,7 +12247,7 @@ Qt::WindowStates a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::sizeHint
+              QAbstractSpinBox_Wrapper::sizeHint
               (
                 
               ) 
@@ -13158,20 +12268,16 @@ Qt::WindowStates a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QSize res = 
                     
                 w->sizeHint(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QSize
 
@@ -13190,7 +12296,7 @@ Qt::WindowStates a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: minimumSizeHint
     // Source: QWidget
     // Static: false
@@ -13198,7 +12304,7 @@ Qt::WindowStates a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::minimumSizeHint
+              QAbstractSpinBox_Wrapper::minimumSizeHint
               (
                 
               ) 
@@ -13219,20 +12325,16 @@ Qt::WindowStates a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QSize res = 
                     
                 w->minimumSizeHint(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QSize
 
@@ -13251,7 +12353,7 @@ Qt::WindowStates a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: sizePolicy
     // Source: QWidget
     // Static: false
@@ -13259,7 +12361,7 @@ Qt::WindowStates a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::sizePolicy
+              QAbstractSpinBox_Wrapper::sizePolicy
               (
                 
               ) 
@@ -13280,20 +12382,16 @@ Qt::WindowStates a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QSizePolicy res = 
                     
                 w->sizePolicy(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QSizePolicy
 
@@ -13312,7 +12410,7 @@ Qt::WindowStates a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setSizePolicy
     // Source: QWidget
     // Static: false
@@ -13320,7 +12418,7 @@ Qt::WindowStates a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setSizePolicy
+              QAbstractSpinBox_Wrapper::setSizePolicy
               (
                 
   const QJSValue& 
@@ -13366,21 +12464,17 @@ QSizePolicy::Policy a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setSizePolicy(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -13412,20 +12506,16 @@ QSizePolicy a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setSizePolicy(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -13437,7 +12527,7 @@ QSizePolicy a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: heightForWidth
     // Source: QWidget
     // Static: false
@@ -13445,7 +12535,7 @@ QSizePolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::heightForWidth
+              QAbstractSpinBox_Wrapper::heightForWidth
               (
                 
   const QJSValue& 
@@ -13482,21 +12572,17 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 int res = 
                     
                 w->heightForWidth(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: int
 
@@ -13515,7 +12601,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: hasHeightForWidth
     // Source: QWidget
     // Static: false
@@ -13523,7 +12609,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::hasHeightForWidth
+              QAbstractSpinBox_Wrapper::hasHeightForWidth
               (
                 
               ) 
@@ -13544,20 +12630,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->hasHeightForWidth(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -13576,7 +12658,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: visibleRegion
     // Source: QWidget
     // Static: false
@@ -13584,7 +12666,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::visibleRegion
+              QAbstractSpinBox_Wrapper::visibleRegion
               (
                 
               ) 
@@ -13605,20 +12687,16 @@ int a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QRegion res = 
                     
                 w->visibleRegion(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QRegion
 
@@ -13637,7 +12715,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setContentsMargins
     // Source: QWidget
     // Static: false
@@ -13645,7 +12723,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setContentsMargins
+              QAbstractSpinBox_Wrapper::setContentsMargins
               (
                 
   const QJSValue& 
@@ -13713,13 +12791,11 @@ int a4_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setContentsMargins(
                   a1_cpp
@@ -13728,8 +12804,6 @@ int a4_cpp;
     , a4_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -13761,20 +12835,16 @@ QMargins a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setContentsMargins(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -13786,7 +12856,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: contentsMargins
     // Source: QWidget
     // Static: false
@@ -13794,7 +12864,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::contentsMargins
+              QAbstractSpinBox_Wrapper::contentsMargins
               (
                 
               ) 
@@ -13815,20 +12885,16 @@ QMargins a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QMargins res = 
                     
                 w->contentsMargins(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QMargins
 
@@ -13847,7 +12913,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: contentsRect
     // Source: QWidget
     // Static: false
@@ -13855,7 +12921,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::contentsRect
+              QAbstractSpinBox_Wrapper::contentsRect
               (
                 
               ) 
@@ -13876,20 +12942,16 @@ QMargins a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QRect res = 
                     
                 w->contentsRect(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QRect
 
@@ -13908,7 +12970,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: layout
     // Source: QWidget
     // Static: false
@@ -13916,7 +12978,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::layout
+              QAbstractSpinBox_Wrapper::layout
               (
                 
               ) 
@@ -13937,20 +12999,16 @@ QMargins a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QLayout* res = 
                     
                 w->layout(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QLayout*
 
@@ -13969,7 +13027,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setLayout
     // Source: QWidget
     // Static: false
@@ -13977,7 +13035,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setLayout
+              QAbstractSpinBox_Wrapper::setLayout
               (
                 
   const QJSValue& 
@@ -14017,20 +13075,16 @@ QMargins a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setLayout(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14042,7 +13096,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: updateGeometry
     // Source: QWidget
     // Static: false
@@ -14050,7 +13104,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::updateGeometry
+              QAbstractSpinBox_Wrapper::updateGeometry
               (
                 
               ) 
@@ -14069,19 +13123,15 @@ QMargins a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->updateGeometry(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14093,7 +13143,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setParent
     // Source: QWidget
     // Static: false
@@ -14101,7 +13151,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setParent
+              QAbstractSpinBox_Wrapper::setParent
               (
                 
   const QJSValue& 
@@ -14152,21 +13202,17 @@ Qt::WindowFlags a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setParent(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14203,20 +13249,16 @@ Qt::WindowFlags a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setParent(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14228,7 +13270,7 @@ Qt::WindowFlags a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: scroll
     // Source: QWidget
     // Static: false
@@ -14236,7 +13278,7 @@ Qt::WindowFlags a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::scroll
+              QAbstractSpinBox_Wrapper::scroll
               (
                 
   const QJSValue& 
@@ -14293,13 +13335,11 @@ QRect a3_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->scroll(
                   a1_cpp
@@ -14307,8 +13347,6 @@ QRect a3_cpp;
     , a3_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14349,21 +13387,17 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->scroll(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14375,7 +13409,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: focusWidget
     // Source: QWidget
     // Static: false
@@ -14383,7 +13417,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::focusWidget
+              QAbstractSpinBox_Wrapper::focusWidget
               (
                 
               ) 
@@ -14404,20 +13438,16 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->focusWidget(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -14436,7 +13466,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: nextInFocusChain
     // Source: QWidget
     // Static: false
@@ -14444,7 +13474,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::nextInFocusChain
+              QAbstractSpinBox_Wrapper::nextInFocusChain
               (
                 
               ) 
@@ -14465,20 +13495,16 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->nextInFocusChain(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -14497,7 +13523,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: previousInFocusChain
     // Source: QWidget
     // Static: false
@@ -14505,7 +13531,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::previousInFocusChain
+              QAbstractSpinBox_Wrapper::previousInFocusChain
               (
                 
               ) 
@@ -14526,20 +13552,16 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->previousInFocusChain(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -14558,7 +13580,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: acceptDrops
     // Source: QWidget
     // Static: false
@@ -14566,7 +13588,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::acceptDrops
+              QAbstractSpinBox_Wrapper::acceptDrops
               (
                 
               ) 
@@ -14587,20 +13609,16 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->acceptDrops(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -14619,7 +13637,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setAcceptDrops
     // Source: QWidget
     // Static: false
@@ -14627,7 +13645,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setAcceptDrops
+              QAbstractSpinBox_Wrapper::setAcceptDrops
               (
                 
   const QJSValue& 
@@ -14662,20 +13680,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setAcceptDrops(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14687,7 +13701,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: addAction
     // Source: QWidget
     // Static: false
@@ -14695,7 +13709,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::addAction
+              QAbstractSpinBox_Wrapper::addAction
               (
                 
   const QJSValue& 
@@ -14735,20 +13749,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->addAction(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14760,7 +13770,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: addActions
     // Source: QWidget
     // Static: false
@@ -14768,7 +13778,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::addActions
+              QAbstractSpinBox_Wrapper::addActions
               (
                 
   const QJSValue& 
@@ -14803,20 +13813,16 @@ QList<QAction*> a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->addActions(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14848,20 +13854,16 @@ QList<QAction*> a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->addActions(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14873,7 +13875,7 @@ QList<QAction*> a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: insertActions
     // Source: QWidget
     // Static: false
@@ -14881,7 +13883,7 @@ QList<QAction*> a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::insertActions
+              QAbstractSpinBox_Wrapper::insertActions
               (
                 
   const QJSValue& 
@@ -14932,21 +13934,17 @@ QList<QAction*> a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->insertActions(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -14992,21 +13990,17 @@ QList<QAction*> a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->insertActions(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -15018,7 +14012,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: insertAction
     // Source: QWidget
     // Static: false
@@ -15026,7 +14020,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::insertAction
+              QAbstractSpinBox_Wrapper::insertAction
               (
                 
   const QJSValue& 
@@ -15082,21 +14076,17 @@ QList<QAction*> a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->insertAction(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -15108,7 +14098,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: removeAction
     // Source: QWidget
     // Static: false
@@ -15116,7 +14106,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::removeAction
+              QAbstractSpinBox_Wrapper::removeAction
               (
                 
   const QJSValue& 
@@ -15156,20 +14146,16 @@ QList<QAction*> a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->removeAction(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -15181,7 +14167,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: actions
     // Source: QWidget
     // Static: false
@@ -15189,7 +14175,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::actions
+              QAbstractSpinBox_Wrapper::actions
               (
                 
               ) 
@@ -15210,20 +14196,16 @@ QList<QAction*> a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QList<QAction*> res = 
                     
                 w->actions(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QList<QAction*>
 
@@ -15242,7 +14224,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: parentWidget
     // Source: QWidget
     // Static: false
@@ -15250,7 +14232,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::parentWidget
+              QAbstractSpinBox_Wrapper::parentWidget
               (
                 
               ) 
@@ -15271,20 +14253,16 @@ QList<QAction*> a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->parentWidget(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -15303,7 +14281,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowFlags
     // Source: QWidget
     // Static: false
@@ -15311,7 +14289,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowFlags
+              QAbstractSpinBox_Wrapper::setWindowFlags
               (
                 
   const QJSValue& 
@@ -15346,20 +14324,16 @@ Qt::WindowFlags a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowFlags(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -15371,7 +14345,7 @@ Qt::WindowFlags a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowFlags
     // Source: QWidget
     // Static: false
@@ -15379,7 +14353,7 @@ Qt::WindowFlags a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowFlags
+              QAbstractSpinBox_Wrapper::windowFlags
               (
                 
               ) 
@@ -15400,20 +14374,16 @@ Qt::WindowFlags a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 Qt::WindowFlags res = 
                     
                 w->windowFlags(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: Qt::WindowFlags
 
@@ -15432,7 +14402,7 @@ Qt::WindowFlags a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setWindowFlag
     // Source: QWidget
     // Static: false
@@ -15440,7 +14410,7 @@ Qt::WindowFlags a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setWindowFlag
+              QAbstractSpinBox_Wrapper::setWindowFlag
               (
                 
   const QJSValue& 
@@ -15494,21 +14464,17 @@ bool a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setWindowFlag(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -15520,7 +14486,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: overrideWindowFlags
     // Source: QWidget
     // Static: false
@@ -15528,7 +14494,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::overrideWindowFlags
+              QAbstractSpinBox_Wrapper::overrideWindowFlags
               (
                 
   const QJSValue& 
@@ -15563,20 +14529,16 @@ Qt::WindowFlags a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->overrideWindowFlags(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -15588,7 +14550,7 @@ Qt::WindowFlags a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: windowType
     // Source: QWidget
     // Static: false
@@ -15596,7 +14558,7 @@ Qt::WindowFlags a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::windowType
+              QAbstractSpinBox_Wrapper::windowType
               (
                 
               ) 
@@ -15617,20 +14579,16 @@ Qt::WindowFlags a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 Qt::WindowType res = 
                     
                 w->windowType(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: Qt::WindowType
 
@@ -15649,7 +14607,7 @@ Qt::WindowFlags a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: childAt
     // Source: QWidget
     // Static: false
@@ -15657,7 +14615,7 @@ Qt::WindowFlags a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::childAt
+              QAbstractSpinBox_Wrapper::childAt
               (
                 
   const QJSValue& 
@@ -15705,13 +14663,11 @@ int a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->childAt(
@@ -15719,8 +14675,6 @@ int a2_cpp;
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -15759,21 +14713,17 @@ QPoint a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QWidget* res = 
                     
                 w->childAt(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QWidget*
 
@@ -15792,7 +14742,7 @@ QPoint a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setAttribute
     // Source: QWidget
     // Static: false
@@ -15800,7 +14750,7 @@ QPoint a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setAttribute
+              QAbstractSpinBox_Wrapper::setAttribute
               (
                 
   const QJSValue& 
@@ -15854,21 +14804,17 @@ bool a2_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setAttribute(
                   a1_cpp
     , a2_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -15880,7 +14826,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: testAttribute
     // Source: QWidget
     // Static: false
@@ -15888,7 +14834,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::testAttribute
+              QAbstractSpinBox_Wrapper::testAttribute
               (
                 
   const QJSValue& 
@@ -15925,21 +14871,17 @@ Qt::WidgetAttribute a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->testAttribute(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -15958,7 +14900,7 @@ Qt::WidgetAttribute a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -15966,7 +14908,7 @@ Qt::WidgetAttribute a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::ensurePolished
+              QAbstractSpinBox_Wrapper::ensurePolished
               (
                 
               ) 
@@ -15987,19 +14929,15 @@ Qt::WidgetAttribute a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->ensurePolished(
                   
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -16011,7 +14949,7 @@ Qt::WidgetAttribute a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: isAncestorOf
     // Source: QWidget
     // Static: false
@@ -16019,7 +14957,7 @@ Qt::WidgetAttribute a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::isAncestorOf
+              QAbstractSpinBox_Wrapper::isAncestorOf
               (
                 
   const QJSValue& 
@@ -16061,21 +14999,17 @@ Qt::WidgetAttribute a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->isAncestorOf(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -16094,7 +15028,7 @@ Qt::WidgetAttribute a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: autoFillBackground
     // Source: QWidget
     // Static: false
@@ -16102,7 +15036,7 @@ Qt::WidgetAttribute a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::autoFillBackground
+              QAbstractSpinBox_Wrapper::autoFillBackground
               (
                 
               ) 
@@ -16123,20 +15057,16 @@ Qt::WidgetAttribute a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 bool res = 
                     
                 w->autoFillBackground(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: bool
 
@@ -16155,7 +15085,7 @@ Qt::WidgetAttribute a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setAutoFillBackground
     // Source: QWidget
     // Static: false
@@ -16163,7 +15093,7 @@ Qt::WidgetAttribute a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setAutoFillBackground
+              QAbstractSpinBox_Wrapper::setAutoFillBackground
               (
                 
   const QJSValue& 
@@ -16198,20 +15128,16 @@ bool a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setAutoFillBackground(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -16223,7 +15149,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: customContextMenuRequested
     // Source: QWidget
     // Static: false
@@ -16232,7 +15158,7 @@ bool a1_cpp;
 
               // signal emitter: called when signal is emitted from wrapped object:
               void 
-              QSpinBox_Wrapper::customContextMenuRequestedEmitter(
+              QAbstractSpinBox_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
                 // convert cpp parameters to js:
@@ -16252,90 +15178,7 @@ bool a1_cpp;
                 );
               }
             
-    // Class: QSpinBox
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QActionEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QActionEvent)
-  
-
-          // pointer:
-          QActionEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QActionEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::actionEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->actionEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for actionEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: inputMethodQuery
     // Source: QWidget
     // Static: false
@@ -16343,7 +15186,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::inputMethodQuery
+              QAbstractSpinBox_Wrapper::inputMethodQuery
               (
                 
   const QJSValue& 
@@ -16380,21 +15223,17 @@ Qt::InputMethodQuery a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 QVariant res = 
                     
                 w->inputMethodQuery(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             // return type: QVariant
 
@@ -16413,7 +15252,7 @@ Qt::InputMethodQuery a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: inputMethodHints
     // Source: QWidget
     // Static: false
@@ -16421,7 +15260,7 @@ Qt::InputMethodQuery a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::inputMethodHints
+              QAbstractSpinBox_Wrapper::inputMethodHints
               (
                 
               ) 
@@ -16442,20 +15281,16 @@ Qt::InputMethodQuery a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 Qt::InputMethodHints res = 
                     
                 w->inputMethodHints(
                   
                 );
-              
-                //setRecFlag(false);
               
             // return type: Qt::InputMethodHints
 
@@ -16474,7 +15309,7 @@ Qt::InputMethodQuery a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: setInputMethodHints
     // Source: QWidget
     // Static: false
@@ -16482,7 +15317,7 @@ Qt::InputMethodQuery a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::setInputMethodHints
+              QAbstractSpinBox_Wrapper::setInputMethodHints
               (
                 
   const QJSValue& 
@@ -16517,20 +15352,16 @@ Qt::InputMethodHints a1_cpp;
           }
 
           
-            //setRecFlag(true);
-          
             // non-static member function:
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->setInputMethodHints(
                   a1_cpp
     
                 );
-              
-                //setRecFlag(false);
               
             return QJSValue();
           
@@ -16542,2689 +15373,15 @@ Qt::InputMethodHints a1_cpp;
                 
               }
             
-    // Class: QSpinBox
+    // Class: QAbstractSpinBox
     // Function: stepUp
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::stepUp
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->stepUp(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for stepUp";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: stepDown
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::stepDown
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->stepDown(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for stepDown";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: selectAll
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::selectAll
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->selectAll(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for selectAll";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: clear
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::clear
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->clear(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for clear";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: resizeEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QResizeEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QResizeEvent)
-  
-
-          // pointer:
-          QResizeEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QResizeEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::resizeEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->resizeEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for resizeEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: keyPressEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      keyPressEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QKeyEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QKeyEvent)
-  
-
-          // pointer:
-          QKeyEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QKeyEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::keyPressEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->keyPressEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for keyPressEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: keyReleaseEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      keyReleaseEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QKeyEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QKeyEvent)
-  
-
-          // pointer:
-          QKeyEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QKeyEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::keyReleaseEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->keyReleaseEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for keyReleaseEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: wheelEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      wheelEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWheelEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QWheelEvent)
-  
-
-          // pointer:
-          QWheelEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWheelEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::wheelEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->wheelEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for wheelEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: focusInEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      focusInEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QFocusEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QFocusEvent)
-  
-
-          // pointer:
-          QFocusEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QFocusEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::focusInEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->focusInEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for focusInEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: focusOutEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      focusOutEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QFocusEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QFocusEvent)
-  
-
-          // pointer:
-          QFocusEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QFocusEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::focusOutEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->focusOutEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for focusOutEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: contextMenuEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      contextMenuEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QContextMenuEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QContextMenuEvent)
-  
-
-          // pointer:
-          QContextMenuEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QContextMenuEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::contextMenuEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->contextMenuEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for contextMenuEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: changeEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      changeEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QEvent)
-  
-
-          // pointer:
-          QEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::changeEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->changeEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for changeEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: mousePressEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mousePressEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QMouseEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QMouseEvent)
-  
-
-          // pointer:
-          QMouseEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QMouseEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::mousePressEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->mousePressEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for mousePressEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: mouseReleaseEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseReleaseEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QMouseEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QMouseEvent)
-  
-
-          // pointer:
-          QMouseEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QMouseEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::mouseReleaseEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->mouseReleaseEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for mouseReleaseEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: mouseMoveEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QMouseEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QMouseEvent)
-  
-
-          // pointer:
-          QMouseEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QMouseEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::mouseMoveEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->mouseMoveEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for mouseMoveEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: paintEvent
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QPaintEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QPaintEvent)
-  
-
-          // pointer:
-          QPaintEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QPaintEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::paintEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->paintEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for paintEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: value
     // Source: 
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
                 QJSValue 
-              QSpinBox_Wrapper::value
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                int res = 
-                    
-                w->value(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for value";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: prefix
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::prefix
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                QString res = 
-                    
-                w->prefix(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for prefix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: setPrefix
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::setPrefix
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: prefix (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->setPrefix(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setPrefix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: suffix
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::suffix
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                QString res = 
-                    
-                w->suffix(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for suffix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: setSuffix
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::setSuffix
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: suffix (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->setSuffix(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setSuffix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: cleanText
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::cleanText
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                QString res = 
-                    
-                w->cleanText(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for cleanText";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: singleStep
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::singleStep
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                int res = 
-                    
-                w->singleStep(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for singleStep";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: setSingleStep
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::setSingleStep
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: val (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->setSingleStep(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setSingleStep";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: minimum
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::minimum
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                int res = 
-                    
-                w->minimum(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for minimum";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: setMinimum
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::setMinimum
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: min (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->setMinimum(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setMinimum";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: maximum
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::maximum
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                int res = 
-                    
-                w->maximum(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for maximum";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: setMaximum
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::setMaximum
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: max (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->setMaximum(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setMaximum";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: setRange
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::setRange
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-   && RJSHelper::is_int(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: min (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-  // convert js parameter to cpp: max (int)
-  
-int a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->setRange(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setRange";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: stepType
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::stepType
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                QAbstractSpinBox::StepType res = 
-                    
-                w->stepType(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QAbstractSpinBox::StepType
-
-            return RJSHelper::cpp2js_QAbstractSpinBox_StepType(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for stepType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: setStepType
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::setStepType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QAbstractSpinBox_StepType(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: stepType (QAbstractSpinBox::StepType)
-  
-QAbstractSpinBox::StepType a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QAbstractSpinBox_StepType(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->setStepType(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setStepType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: displayIntegerBase
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::displayIntegerBase
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                int res = 
-                    
-                w->displayIntegerBase(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for displayIntegerBase";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: setDisplayIntegerBase
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::setDisplayIntegerBase
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: base (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->setDisplayIntegerBase(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setDisplayIntegerBase";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: setValue
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper::setValue
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: val (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QSpinBox* w = getWrapped();
-                
-                w->setValue(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setValue";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: valueChanged
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              QSpinBox_Wrapper::valueChangedEmitter(
-                int a1
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter:  (int)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_int(
-    handler, 
-    a1
-  );
-
-
-                emit valueChanged(
-                  a1_js
-                );
-              }
-            
-    // Class: QSpinBox
-    // Function: textChanged
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              QSpinBox_Wrapper::textChangedEmitter(
-                const QString& a1
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter:  (QString)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QString(
-    handler, 
-    a1
-  );
-
-
-                emit textChanged(
-                  a1_js
-                );
-              }
-            
-
-  // member functions for static properties, forward to static function
-  
-
-
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-    #include "qspinbox_wrapper.h"
-
-  
-      // list of registered base casters for this wrapper class:
-      QList<RJSBasecaster_QDoubleSpinBox*> QDoubleSpinBox_Wrapper::basecasters_QDoubleSpinBox;
-    
-    // static functions implementation in singleton wrapper:
-    
-    void QDoubleSpinBox_Wrapper::init(RJSApi& handler) {
-      
-        //qmlRegisterType<QDoubleSpinBox_Wrapper>("org.qcad", 1, 0, "QDoubleSpinBox_Wrapper");
-        qmlRegisterInterface<QDoubleSpinBox_Wrapper>("QDoubleSpinBox_Wrapper", 1);
-      
-
-      QJSEngine* engine = handler.getEngine();
-
-      
-          // make type scriptable for JS files:
-          QJSValue global = engine->globalObject();
-          RJSType_QDoubleSpinBox* t = new RJSType_QDoubleSpinBox();
-          global.setProperty("RJSType_QDoubleSpinBox", engine->newQObject(t));
-
-          // initialize ID for this type:
-          RJSType_QDoubleSpinBox::getIdStatic();
-
-          
-
-      // wrapper:
-      QJSValue mo = engine->newQMetaObject(&QDoubleSpinBox_Wrapper::staticMetaObject);
-      engine->globalObject().setProperty("QDoubleSpinBox_Wrapper", mo);
-
-
-      
-        // JS base class:
-        //QJSValue mob = engine->newQMetaObject(&QDoubleSpinBox_BaseJs::staticMetaObject);
-        //engine->globalObject().setProperty("QDoubleSpinBox_BaseJs", mob);
-      
-      QString fileName = ":generator/js/QDoubleSpinBox.js";
-      QFile scriptFile(fileName);
-      if (!scriptFile.open(QIODevice::ReadOnly)) {
-        qWarning() << "JS script wrapper file not found:" << fileName;
-        return;
-      }
-      QTextStream stream(&scriptFile);
-      QString contents = stream.readAll();
-      scriptFile.close();
-
-      qDebug() << "Evaluating file: " << fileName;
-      QJSValue result = engine->evaluate(contents, fileName);
-      if (result.isError()) {
-          qWarning()
-              << "Uncaught exception at line"
-              << result.property("lineNumber").toInt()
-              << ":" << result.toString();
-      }
-    }
-  
-    /*
-    // special constructor used as prototype:
-    QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
-            //setObjectName("QDoubleSpinBox_Wrapper");
-            setEngine(e);
-
-            // signal forwarding:
-            //initConnections();
-          }
-        
-    */
-
-    
-      // special constructor to wrap existing object:
-      QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper(RJSApi& h, QDoubleSpinBox* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
-              //RDebug::incCounter(QString("QDoubleSpinBox_Wrapper_") + handler.getEngine()->objectName());
-              //RDebug::incCounter(QString("QDoubleSpinBox_Wrapper"));
-              //setObjectName("QDoubleSpinBox_Wrapper");
-              //setHandler(h);
-
-              // signal forwarding:
-              initConnections();
-            }
-          
-
-      // destructor:
-      QDoubleSpinBox_Wrapper::~QDoubleSpinBox_Wrapper() {
-            //RDebug::decCounter(QString("QDoubleSpinBox_Wrapper_") + handler.getEngine()->objectName());
-            //RDebug::decCounter(QString("QDoubleSpinBox_Wrapper"));
-
-            //qDebug() << "QDoubleSpinBox_Wrapper::~QDoubleSpinBox_Wrapper";
-
-            // tell script handler that this wrapper no longer exists:
-            handler.unregisterWrapper(*this);
-
-            
-            if (wrappedCreated) {
-              
-                  // never delete wrapped object (non-copyable, CPP ownership or private destructor)
-                  //qDebug() << "NOT deleting instance of QDoubleSpinBox";
-                
-            }
-            
-          }
-        
-    // initialization of signal forwarding
-    
-        void QDoubleSpinBox_Wrapper::initConnections() {
-
-          //setObjectName("QDoubleSpinBox_Wrapper");
-
-          // tell script handler that this wrapper needs to be deleted if the engine is deleted:
-          handler.registerWrapper(*this);
-
-          
-              // wrapped object is not a QObject:
-              // wrapper is managed by script engine:
-              //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
-            
-
-          if (hasWrapped()) {
-            
-            // set up signal forwarding:
-            
-  connect(
-    getWrapped(), 
-    SIGNAL(valueChanged(double)), 
-    this, 
-    SLOT(valueChangedEmitter(double))
-  );
-
-  connect(
-    getWrapped(), 
-    SIGNAL(textChanged(const QString&)), 
-    this, 
-    SLOT(textChangedEmitter(const QString&))
-  );
-
-          }
-        }
-      
-
-  // constructors:
-  
-    // Class: QDoubleSpinBox
-    // Function: 
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
-                
-              (
-                
-                  // RJSApi:
-                  QObject* h
-                  ,
-  const QJSValue& 
-  a1
-              ) 
-              
-                : RJSWrapperObj(*(RJSApi*)h)
-              
-              {
-                
-                  //RDebug::incCounter(QString("QDoubleSpinBox_Wrapper_") + handler.getEngine()->objectName());
-                  //RDebug::incCounter(QString("QDoubleSpinBox_Wrapper"));
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: parent (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = nullptr;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-          }
-        
-
-    // call function:
-    
-        // construct wrapper:
-
-        
-            wrapped = new QDoubleSpinBox(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
-
-        // signal forwarding:
-        // TODO
-        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
-        initConnections();
-        return;
-
-      
-  }
-
-                    // no constructor without arguments defined
-                    // allow constructor for prototype objects without args:
-                    if (
-                      a1.isUndefined()
-  
-                      ) {
-                      wrapped = nullptr;
-                      wrappedCreated = false;
-                      return;
-                    }
-                  
-
-                  qWarning() << "no matching constructor variant found for QDoubleSpinBox";
-                  wrapped = nullptr;
-                  wrappedCreated = false;
-                  handler.trace();
-                
-              }
-            
-
-    // non-static functions:
-    
-    // Class: QDoubleSpinBox
-    // Function: stepUp
-    // Source: QAbstractSpinBox
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::stepUp
+              QAbstractSpinBox_Wrapper::stepUp
               (
                 
               ) 
@@ -19247,7 +15404,7 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->stepUp(
                   
@@ -19263,15 +15420,15 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
                 
               }
             
-    // Class: QDoubleSpinBox
+    // Class: QAbstractSpinBox
     // Function: stepDown
-    // Source: QAbstractSpinBox
+    // Source: 
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
                 QJSValue 
-              QDoubleSpinBox_Wrapper::stepDown
+              QAbstractSpinBox_Wrapper::stepDown
               (
                 
               ) 
@@ -19294,7 +15451,7 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->stepDown(
                   
@@ -19310,15 +15467,15 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
                 
               }
             
-    // Class: QDoubleSpinBox
+    // Class: QAbstractSpinBox
     // Function: selectAll
-    // Source: QAbstractSpinBox
+    // Source: 
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
                 QJSValue 
-              QDoubleSpinBox_Wrapper::selectAll
+              QAbstractSpinBox_Wrapper::selectAll
               (
                 
               ) 
@@ -19341,7 +15498,7 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->selectAll(
                   
@@ -19357,15 +15514,15 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
                 
               }
             
-    // Class: QDoubleSpinBox
+    // Class: QAbstractSpinBox
     // Function: clear
-    // Source: QAbstractSpinBox
+    // Source: 
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
                 QJSValue 
-              QDoubleSpinBox_Wrapper::clear
+              QAbstractSpinBox_Wrapper::clear
               (
                 
               ) 
@@ -19388,7 +15545,7 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
+                QAbstractSpinBox* w = getWrapped();
                 
                 w->clear(
                   
@@ -19404,1465 +15561,14 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
                 
               }
             
-    // Class: QDoubleSpinBox
-    // Function: value
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+#if QT_CONFIG(wheelevent)
 
-                QJSValue 
-              QDoubleSpinBox_Wrapper::value
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+#endif
 
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
+#if QT_CONFIG(contextmenu)
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                double res = 
-                    
-                w->value(
-                  
-                );
-              
-            // return type: double
+#endif
 
-            return RJSHelper::cpp2js_double(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for value";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: prefix
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::prefix
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                QString res = 
-                    
-                w->prefix(
-                  
-                );
-              
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for prefix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: setPrefix
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::setPrefix
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: prefix (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->setPrefix(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setPrefix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: suffix
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::suffix
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                QString res = 
-                    
-                w->suffix(
-                  
-                );
-              
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for suffix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: setSuffix
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::setSuffix
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: suffix (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->setSuffix(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setSuffix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: cleanText
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::cleanText
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                QString res = 
-                    
-                w->cleanText(
-                  
-                );
-              
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for cleanText";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: singleStep
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::singleStep
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                double res = 
-                    
-                w->singleStep(
-                  
-                );
-              
-            // return type: double
-
-            return RJSHelper::cpp2js_double(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for singleStep";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: setSingleStep
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::setSingleStep
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_double(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: val (double)
-  
-double a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->setSingleStep(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setSingleStep";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: minimum
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::minimum
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                double res = 
-                    
-                w->minimum(
-                  
-                );
-              
-            // return type: double
-
-            return RJSHelper::cpp2js_double(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for minimum";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: setMinimum
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::setMinimum
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_double(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: min (double)
-  
-double a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->setMinimum(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setMinimum";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: maximum
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::maximum
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                double res = 
-                    
-                w->maximum(
-                  
-                );
-              
-            // return type: double
-
-            return RJSHelper::cpp2js_double(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for maximum";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: setMaximum
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::setMaximum
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_double(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: max (double)
-  
-double a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->setMaximum(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setMaximum";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: setRange
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::setRange
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_double(handler, a1
-  )
-
-   && RJSHelper::is_double(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: min (double)
-  
-double a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
-        
-  // convert js parameter to cpp: max (double)
-  
-double a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_double(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->setRange(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setRange";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: stepType
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::stepType
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                QAbstractSpinBox::StepType res = 
-                    
-                w->stepType(
-                  
-                );
-              
-            // return type: QAbstractSpinBox::StepType
-
-            return RJSHelper::cpp2js_QAbstractSpinBox_StepType(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for stepType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: setStepType
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::setStepType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QAbstractSpinBox_StepType(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: stepType (QAbstractSpinBox::StepType)
-  
-QAbstractSpinBox::StepType a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QAbstractSpinBox_StepType(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->setStepType(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setStepType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: decimals
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::decimals
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                int res = 
-                    
-                w->decimals(
-                  
-                );
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for decimals";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: setDecimals
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::setDecimals
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: prec (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->setDecimals(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setDecimals";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: validate
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::validate
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-   && RJSHelper::is_int(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: input (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-  // convert js parameter to cpp: pos (int)
-  
-int a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                QValidator::State res = 
-                    
-                w->validate(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            // return type: QValidator::State
-
-            return RJSHelper::cpp2js_QValidator_State(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for validate";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: valueFromText
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::valueFromText
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: text (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                double res = 
-                    
-                w->valueFromText(
-                  a1_cpp
-    
-                );
-              
-            // return type: double
-
-            return RJSHelper::cpp2js_double(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for valueFromText";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: textFromValue
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::textFromValue
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_double(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: val (double)
-  
-double a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                QString res = 
-                    
-                w->textFromValue(
-                  a1_cpp
-    
-                );
-              
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for textFromValue";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: fixup
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::fixup
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: str (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->fixup(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for fixup";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: setValue
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleSpinBox_Wrapper::setValue
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_double(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: val (double)
-  
-double a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDoubleSpinBox* w = getWrapped();
-                
-                w->setValue(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setValue";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: valueChanged
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              QDoubleSpinBox_Wrapper::valueChangedEmitter(
-                double a1
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter:  (double)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_double(
-    handler, 
-    a1
-  );
-
-
-                emit valueChanged(
-                  a1_js
-                );
-              }
-            
-    // Class: QDoubleSpinBox
-    // Function: textChanged
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              QDoubleSpinBox_Wrapper::textChangedEmitter(
-                const QString& a1
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter:  (QString)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QString(
-    handler, 
-    a1
-  );
-
-
-                emit textChanged(
-                  a1_js
-                );
-              }
-            
 
   // member functions for static properties, forward to static function
   
@@ -20870,5 +15576,5 @@ double a1_cpp;
 
   // protected overwritten functions / events and their public invokable counterparts:
   
-    #include "moc_qspinbox_wrapper.cpp"
+    #include "moc_qabstractspinbox_wrapper.cpp"
   

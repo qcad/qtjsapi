@@ -3619,66 +3619,6 @@ QFont a1_cpp;
               }
             
     // Class: QApplication
-    // Function: setActiveWindow
-    // Source: 
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QApplication_WrapperSingleton::setActiveWindow
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: act (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            
-                // call static member function:
-                QApplication::setActiveWindow(
-              a1_cpp
-    
-            );
-          
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setActiveWindow";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QApplication
     // Function: widgetAt
     // Source: 
     // Static: true

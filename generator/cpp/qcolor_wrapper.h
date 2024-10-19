@@ -364,29 +364,6 @@
             
 #if QT_STRINGVIEW_LEVEL<2
 
-    // Class: QColor
-    // Function: isValidColor
-    // Source: 
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isValidColor
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
 #endif
 
 
@@ -588,29 +565,6 @@
             
 #if QT_STRINGVIEW_LEVEL<2
 
-    // Class: QColor
-    // Function: setNamedColor
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setNamedColor
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
 #endif
 
     // Class: QColor

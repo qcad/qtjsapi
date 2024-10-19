@@ -503,7 +503,7 @@
     // Function: startOfDay
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 1
     // preceding Parameters: -1
 
               public:
@@ -517,10 +517,6 @@
   const QJSValue& 
   a1
       = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
     
               )
               
@@ -532,7 +528,7 @@
     // Function: endOfDay
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 1
     // preceding Parameters: -1
 
               public:
@@ -545,10 +541,6 @@
                 
   const QJSValue& 
   a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
       = QJSValue()
     
               )
@@ -1774,37 +1766,6 @@
               
               ;
             
-    // Class: QDateTime
-    // Function: fromSecsSinceEpoch
-    // Source: 
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fromSecsSinceEpoch
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
 #if QT_CONFIG(timezone)
 
 #endif
@@ -2394,29 +2355,6 @@
               
               ;
             
-    // Class: QDateTime
-    // Function: setOffsetFromUtc
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOffsetFromUtc
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
 #if QT_CONFIG(timezone)
 
     // Class: QDateTime
@@ -2635,31 +2573,6 @@
               
                   QJSValue 
                   addMSecs
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QDateTime
-    // Function: toTimeSpec
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toTimeSpec
               (
 
                 

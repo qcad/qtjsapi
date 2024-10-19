@@ -127,12 +127,14 @@
       -->
     </function>
     <function name="startOfDay">
+      <!--
       <variant return-type="QDateTime" const="true" access="public">
         <parameters>
           <parameter const="false" type="Qt::TimeSpec" modifier="" name="spec" default="Qt::LocalTime" />
           <parameter const="false" type="int" modifier="" name="offsetSeconds" default="0" />
         </parameters>
       </variant>
+      -->
       <variant return-type="QDateTime" const="true" access="public">
         <parameters>
           <parameter const="true" type="QTimeZone" modifier="&amp;" name="zone" />
@@ -140,12 +142,14 @@
       </variant>
     </function>
     <function name="endOfDay">
+      <!--
       <variant return-type="QDateTime" const="true" access="public">
         <parameters>
           <parameter const="false" type="Qt::TimeSpec" modifier="" name="spec" default="Qt::LocalTime" />
           <parameter const="false" type="int" modifier="" name="offsetSeconds" default="0" />
         </parameters>
       </variant>
+      -->
       <variant return-type="QDateTime" const="true" access="public">
         <parameters>
           <parameter const="true" type="QTimeZone" modifier="&amp;" name="zone" />
@@ -600,6 +604,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="setOffsetFromUtc">
       <variant return-type="void" access="public">
         <parameters>
@@ -607,6 +612,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <preproc plain="#if QT_CONFIG(timezone)" />
     <function name="setTimeZone">
       <variant return-type="void" access="public">
@@ -704,6 +710,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="toTimeSpec">
       <variant return-type="QDateTime" const="true" access="public">
         <parameters>
@@ -711,6 +718,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="toLocalTime">
       <variant return-type="QDateTime" const="true" access="public">
         <parameters />
@@ -813,6 +821,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="fromSecsSinceEpoch" static="true">
       <variant return-type="QDateTime" access="public">
         <parameters>
@@ -828,6 +837,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <preproc plain="#if QT_CONFIG(timezone)" />
     <preproc plain="#endif" />
     <function name="currentMSecsSinceEpoch" static="true">

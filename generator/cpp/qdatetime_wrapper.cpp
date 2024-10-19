@@ -1202,7 +1202,7 @@ int a3_cpp;
     // Function: startOfDay
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 1
     // preceding Parameters: -1
 
                 QJSValue 
@@ -1210,90 +1210,13 @@ int a3_cpp;
               (
                 
   const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
+  a1
               ) 
               
                 const
               
               {
                 
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_TimeSpec(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: spec (Qt::TimeSpec)
-  
-Qt::TimeSpec a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = Qt::LocalTime;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a1);
-          }
-        
-  // convert js parameter to cpp: offsetSeconds (int)
-  
-int a2_cpp;
-
-      
-          if (a2.isUndefined()) {
-            a2_cpp = 0;
-          }
-          else {
-            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
-          }
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDate* w = getWrapped();
-                QDateTime res = 
-                    
-                w->startOfDay(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            // return type: QDateTime
-
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
       // check parameter types:
       if (
         RJSHelper::is_QTimeZone(handler, a1
@@ -1353,7 +1276,7 @@ QTimeZone a1_cpp;
     // Function: endOfDay
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 1
     // preceding Parameters: -1
 
                 QJSValue 
@@ -1361,90 +1284,13 @@ QTimeZone a1_cpp;
               (
                 
   const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
+  a1
               ) 
               
                 const
               
               {
                 
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_TimeSpec(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: spec (Qt::TimeSpec)
-  
-Qt::TimeSpec a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = Qt::LocalTime;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a1);
-          }
-        
-  // convert js parameter to cpp: offsetSeconds (int)
-  
-int a2_cpp;
-
-      
-          if (a2.isUndefined()) {
-            a2_cpp = 0;
-          }
-          else {
-            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
-          }
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDate* w = getWrapped();
-                QDateTime res = 
-                    
-                w->endOfDay(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            // return type: QDateTime
-
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
       // check parameter types:
       if (
         RJSHelper::is_QTimeZone(handler, a1
@@ -4251,159 +4097,6 @@ qint64 a1_cpp;
                 
               }
             
-    // Class: QDateTime
-    // Function: fromSecsSinceEpoch
-    // Source: 
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDateTime_WrapperSingleton::fromSecsSinceEpoch
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_qint64(handler, a1
-  )
-
-   && RJSHelper::is_Qt_TimeSpec(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: secs (qint64)
-  
-qint64 a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
-        
-  // convert js parameter to cpp: spe (Qt::TimeSpec)
-  
-Qt::TimeSpec a2_cpp;
-
-      
-          if (a2.isUndefined()) {
-            a2_cpp = Qt::LocalTime;
-          }
-          else {
-            a2_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a2);
-          }
-        
-  // convert js parameter to cpp: offsetFromUtc (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = 0;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QDateTime res = 
-                
-                // call static member function:
-                QDateTime::fromSecsSinceEpoch(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QDateTime
-
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-      // check parameter types:
-      if (
-        RJSHelper::is_qint64(handler, a1
-  )
-
-   && RJSHelper::is_QTimeZone(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: secs (qint64)
-  
-qint64 a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
-        
-  // convert js parameter to cpp: timeZone (QTimeZone)
-  
-QTimeZone a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QTimeZone(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QDateTime res = 
-                
-                // call static member function:
-                QDateTime::fromSecsSinceEpoch(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            // return type: QDateTime
-
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for fromSecsSinceEpoch";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #if QT_CONFIG(timezone)
 
 #endif
@@ -5723,70 +5416,6 @@ Qt::TimeSpec a1_cpp;
                 
               }
             
-    // Class: QDateTime
-    // Function: setOffsetFromUtc
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDateTime_Wrapper::setOffsetFromUtc
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: offsetSeconds (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDateTime* w = getWrapped();
-                
-                w->setOffsetFromUtc(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setOffsetFromUtc";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #if QT_CONFIG(timezone)
 
     // Class: QDateTime
@@ -6487,80 +6116,6 @@ qint64 a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for addMSecs";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDateTime
-    // Function: toTimeSpec
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDateTime_Wrapper::toTimeSpec
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_TimeSpec(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: spec (Qt::TimeSpec)
-  
-Qt::TimeSpec a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_TimeSpec(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDateTime* w = getWrapped();
-                QDateTime res = 
-                    
-                w->toTimeSpec(
-                  a1_cpp
-    
-                );
-              
-            // return type: QDateTime
-
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for toTimeSpec";
                   handler.trace();
                   return QJSValue();
                 

@@ -527,6 +527,7 @@
     <type>QAbstractPrintDialog</type>
     <type>QAbstractScrollArea</type>
     <type>QAbstractSlider</type>
+    <type>QAbstractSpinBox</type>
     <type>QAction</type>
     <type>QActionGroup</type>
     <type>QApplication</type>
