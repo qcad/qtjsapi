@@ -105,27 +105,25 @@
       </variant>
     </function>
     <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <!--
     <function name="setNamedColor">
       <variant return-type="void" access="public">
         <parameters>
           <parameter const="true" type="QString" modifier="&amp;" name="name" />
         </parameters>
       </variant>
-      <!--
       <variant return-type="void" access="public">
         <parameters>
           <parameter const="false" type="QStringView" modifier="" name="name" />
         </parameters>
       </variant>
-      -->
-      <!--
       <variant return-type="void" access="public">
         <parameters>
           <parameter const="false" type="QLatin1String" modifier="" name="name" />
         </parameters>
       </variant>
-      -->
     </function>
+    -->
     <preproc plain="#endif" />
     <function name="colorNames" static="true">
       <variant return-type="QStringList" access="public">
@@ -741,27 +739,25 @@
       </variant>
     </function>
     <preproc plain="#if QT_STRINGVIEW_LEVEL&lt;2" />
+    <!--
     <function name="isValidColor" static="true">
       <variant return-type="bool" access="public">
         <parameters>
           <parameter const="true" type="QString" modifier="&amp;" name="name" />
         </parameters>
       </variant>
-      <!--
       <variant return-type="bool" access="public">
         <parameters>
           <parameter const="false" type="QStringView" modifier="" name="" />
         </parameters>
       </variant>
-      -->
-      <!--
       <variant return-type="bool" access="public">
         <parameters>
           <parameter const="false" type="QLatin1String" modifier="" name="" />
         </parameters>
       </variant>
-      -->
     </function>
+    -->
     <preproc plain="#endif" />
     <function name="invalidate" />
     <function name="setColorFromString" />

@@ -810,12 +810,14 @@
           <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" default="Qt::NoModifier" />
         </parameters>
       </variant>
+      <!--
       <variant>
         <parameters>
           <parameter const="false" type="QContextMenuEvent::Reason" modifier="" name="reason" />
           <parameter const="true" type="QPoint" modifier="&amp;" name="pos" />
         </parameters>
       </variant>
+      -->
     </constructor>
     <function name="clone">
       <variant return-type="QContextMenuEvent*" const="true" access="public">

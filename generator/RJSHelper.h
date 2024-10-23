@@ -19,6 +19,7 @@
 
       #include "RJSWrapper.h"
 
+    
       
         // Base class for downcasters that can downcast QAction to specific types:
         class RJSDowncaster_QAction {
@@ -222,6 +223,12 @@
         class RJSBasecaster_QAbstractSlider {
         public:
           virtual QAbstractSlider* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QAbstractSpinBox:
+        class RJSBasecaster_QAbstractSpinBox {
+        public:
+          virtual QAbstractSpinBox* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class QAction:
@@ -3919,6 +3926,11 @@
       static QJSValue cpp2js_QAbstractSlider(RJSApi& handler, const QAbstractSlider* v);
       static QAbstractSlider* js2cpp_QAbstractSlider_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractSlider_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSpinBox(RJSApi& handler, QAbstractSpinBox* v);
+      static QJSValue cpp2js_QAbstractSpinBox(RJSApi& handler, const QAbstractSpinBox* v);
+      static QAbstractSpinBox* js2cpp_QAbstractSpinBox_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSpinBox_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QAction(RJSApi& handler, QAction* v);
       static QJSValue cpp2js_QAction(RJSApi& handler, const QAction* v);

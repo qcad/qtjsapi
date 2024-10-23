@@ -203,6 +203,15 @@
     </xsl:choose>
 
     <xsl:apply-templates mode="class" />
+
+    <xsl:choose>
+      <xsl:when test="$module=''">
+        #include "moc_RJSType.cpp"
+      </xsl:when>
+      <xsl:otherwise>
+        #include "moc_RJSType_<xsl:value-of select="$module"/>.cpp"
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:if>
 
   <!--

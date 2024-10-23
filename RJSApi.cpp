@@ -25,6 +25,7 @@
 #include "generator/cpp/qiodevicebase_wrapper.h"
 #include "generator/cpp/qsplashscreen_wrapper.h"
 #include "generator/cpp/quiloader_wrapper.h"
+#include "generator/cpp/qabstractspinbox_wrapper.h"
 #include "generator/cpp/qspinbox_wrapper.h"
 #include "generator/cpp/qcombobox_wrapper.h"
 #include "generator/cpp/qfontcombobox_wrapper.h"
@@ -270,6 +271,7 @@ void RJSApi::init() {
     QPixmap_Wrapper::init(*this);
     QSplashScreen_Wrapper::init(*this);
     QUiLoader_Wrapper::init(*this);
+    QAbstractSpinBox_Wrapper::init(*this);
     QSpinBox_Wrapper::init(*this);
     QComboBox_Wrapper::init(*this);
     QFontComboBox_Wrapper::init(*this);

@@ -18,6 +18,7 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qabstractscrollarea_wrapper.h
     generator/cpp/qabstractslider_base.h
     generator/cpp/qabstractslider_wrapper.h
+    generator/cpp/qabstractspinbox_base.h
     generator/cpp/qabstractspinbox_wrapper.h
     generator/cpp/qabstracttablemodel_wrapper.h
     generator/cpp/qaction_base.h
@@ -418,6 +419,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qabstractscrollarea_wrapper.cpp
     generator/cpp/qabstractslider_base.cpp
     generator/cpp/qabstractslider_wrapper.cpp
+    generator/cpp/qabstractspinbox_base.cpp
+    generator/cpp/qabstractspinbox_wrapper.cpp
     generator/cpp/qaction_base.cpp
     generator/cpp/qaction_wrapper.cpp
     generator/cpp/qactiongroup_base.cpp

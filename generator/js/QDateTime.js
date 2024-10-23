@@ -281,49 +281,6 @@
       
 
         // static function 
-        QDateTime.fromSecsSinceEpoch = function() 
-          
-        {
-          //print("JS: QDateTime.fromSecsSinceEpoch");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QDateTime_WrapperSingletonInstance.fromSecsSinceEpoch(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QDateTime);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QDateTime_WrapperSingletonInstance.fromSecsSinceEpoch(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QDateTime);
-  }
-
-  
-  else {
-    
-        print("QDateTime.fromSecsSinceEpoch(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         QDateTime.currentMSecsSinceEpoch = function() 
           
         {

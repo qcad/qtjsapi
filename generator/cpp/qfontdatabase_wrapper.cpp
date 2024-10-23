@@ -1969,3 +1969,5 @@ QFontDatabase_Wrapper::QFontDatabase_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_qfontdatabase_wrapper.cpp"
+  

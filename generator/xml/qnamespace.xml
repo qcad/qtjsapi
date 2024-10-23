@@ -300,7 +300,9 @@
       <key>Key_twosuperior</key>
       <key>Key_threesuperior</key>
       <key>Key_acute</key>
+      <!--
       <key>Key_mu</key>
+      -->
       <key>Key_paragraph</key>
       <key>Key_periodcentered</key>
       <key>Key_cedilla</key>

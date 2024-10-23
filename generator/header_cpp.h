@@ -19,6 +19,7 @@
 #include "generator/cpp/qabstractscrollarea_wrapper.h"
 #include "generator/cpp/qabstractslider_base.h"
 #include "generator/cpp/qabstractslider_wrapper.h"
+#include "generator/cpp/qabstractspinbox_base.h"
 #include "generator/cpp/qabstractspinbox_wrapper.h"
 #include "generator/cpp/qabstracttablemodel_wrapper.h"
 #include "generator/cpp/qaction_base.h"

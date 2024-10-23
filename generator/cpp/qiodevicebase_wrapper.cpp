@@ -195,3 +195,5 @@ QIODeviceBase_Wrapper::QIODeviceBase_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_qiodevicebase_wrapper.cpp"
+  

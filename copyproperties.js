@@ -1,5 +1,3 @@
-print("copyproperties.js");
-
 /**
  * Swaps the current prototype of obj with the new prototype wrapper and makes sure all
  * additional JavaScript properties are copied over to wrapper.

@@ -4254,3 +4254,5 @@ QRect a3_cpp;
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_qpixmap_wrapper.cpp"
+  

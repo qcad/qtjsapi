@@ -188,6 +188,10 @@
                 return (QObject*)(QAbstractSlider*)vp;
               }
               
+              if (t==RJSType_QAbstractSpinBox::getIdStatic()) {
+                return (QObject*)(QAbstractSpinBox*)vp;
+              }
+              
               if (t==RJSType_QAction::getIdStatic()) {
                 return (QObject*)(QAction*)vp;
               }

@@ -468,34 +468,6 @@
       
 
         // static function 
-        QColor.isValidColor = function() 
-          
-        {
-          //print("JS: QColor.isValidColor");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QColor_WrapperSingletonInstance.isValidColor(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QColor);
-  }
-
-  
-  else {
-    
-        print("QColor.isValidColor(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         QColor.isRgbaValid = function() 
           
         {

@@ -86,6 +86,9 @@
 
   <xsl:apply-templates />
 
+  <xsl:if test="$mode='cpp'">
+    #include "moc_<xsl:value-of select="qc:lowercase(qc:replace(/qsrc:unit/@filename, '.h', '_wrapper.cpp'))" />"
+  </xsl:if>
 
   <xsl:if test="$mode='h'">
   #endif

@@ -62,32 +62,6 @@
   }
 
   
-  else 
-  
-      if (arguments.length == 2) {
-    
-            self = this;
-            wrapper = new QContextMenuEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QContextMenuEvent);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QContextMenuEvent);
-  }
-
-  
   else {
     
         print("QContextMenuEvent(): wrong number / type of arguments");

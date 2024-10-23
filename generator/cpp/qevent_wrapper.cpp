@@ -18654,54 +18654,6 @@ Qt::KeyboardModifiers a4_cpp;
       
   }
 
-      // check parameter types:
-      if (
-        RJSHelper::is_QContextMenuEvent_Reason(handler, a1
-  )
-
-   && RJSHelper::is_QPoint(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: reason (QContextMenuEvent::Reason)
-  
-QContextMenuEvent::Reason a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QContextMenuEvent_Reason(handler, a1);
-        
-  // convert js parameter to cpp: pos (QPoint)
-  
-QPoint a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QPoint(handler, a2);
-        
-
-    // call function:
-    
-        // construct wrapper:
-
-        
-            wrapped = new QContextMenuEvent(
-                a1_cpp
-    , a2_cpp
-    
-            );
-            wrappedCreated = true;
-          
-
-        // signal forwarding:
-        // TODO
-        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
-        initConnections();
-        return;
-
-      
-  }
-
                     // no constructor without arguments defined
                     // allow constructor for prototype objects without args:
                     if (
@@ -24483,4 +24435,6 @@ bool a1_cpp;
 
 
   // protected overwritten functions / events and their public invokable counterparts:
+  
+    #include "moc_qevent_wrapper.cpp"
   

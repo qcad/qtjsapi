@@ -303,7 +303,6 @@ Qt.Key_plusminus = Qt_Wrapper.Key_plusminus;
 Qt.Key_twosuperior = Qt_Wrapper.Key_twosuperior;
 Qt.Key_threesuperior = Qt_Wrapper.Key_threesuperior;
 Qt.Key_acute = Qt_Wrapper.Key_acute;
-Qt.Key_mu = Qt_Wrapper.Key_mu;
 Qt.Key_paragraph = Qt_Wrapper.Key_paragraph;
 Qt.Key_periodcentered = Qt_Wrapper.Key_periodcentered;
 Qt.Key_cedilla = Qt_Wrapper.Key_cedilla;

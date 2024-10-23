@@ -16253,421 +16253,6 @@ bool a1_cpp;
               }
             
     // Class: QSpinBox
-    // Function: mousePressEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mousePressEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QMouseEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QMouseEvent)
-  
-
-          // pointer:
-          QMouseEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QMouseEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::mousePressEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->mousePressEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for mousePressEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: mouseReleaseEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseReleaseEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QMouseEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QMouseEvent)
-  
-
-          // pointer:
-          QMouseEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QMouseEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::mouseReleaseEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->mouseReleaseEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for mouseReleaseEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: mouseMoveEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QMouseEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QMouseEvent)
-  
-
-          // pointer:
-          QMouseEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QMouseEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::mouseMoveEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->mouseMoveEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for mouseMoveEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: paintEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QPaintEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QPaintEvent)
-  
-
-          // pointer:
-          QPaintEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QPaintEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::paintEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->paintEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for paintEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
-    // Function: resizeEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSpinBox_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QResizeEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QResizeEvent)
-  
-
-          // pointer:
-          QResizeEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QResizeEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of QSpinBox_Base class as 
-                // function has postfix inheritable class, overridable function):
-                QSpinBox_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "QSpinBox::resizeEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->resizeEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for resizeEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QSpinBox
     // Function: actionEvent
     // Source: QWidget
     // Static: false
@@ -16952,6 +16537,1206 @@ Qt::InputMethodHints a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for setInputMethodHints";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: stepUp
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper::stepUp
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QSpinBox* w = getWrapped();
+                
+                w->stepUp(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for stepUp";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: stepDown
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper::stepDown
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QSpinBox* w = getWrapped();
+                
+                w->stepDown(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for stepDown";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: selectAll
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper::selectAll
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QSpinBox* w = getWrapped();
+                
+                w->selectAll(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for selectAll";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: clear
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper::clear
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QSpinBox* w = getWrapped();
+                
+                w->clear(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for clear";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: resizeEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      resizeEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QResizeEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QResizeEvent)
+  
+
+          // pointer:
+          QResizeEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QResizeEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::resizeEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->resizeEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for resizeEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: keyPressEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      keyPressEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QKeyEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QKeyEvent)
+  
+
+          // pointer:
+          QKeyEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QKeyEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::keyPressEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->keyPressEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for keyPressEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: keyReleaseEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      keyReleaseEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QKeyEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QKeyEvent)
+  
+
+          // pointer:
+          QKeyEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QKeyEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::keyReleaseEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->keyReleaseEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for keyReleaseEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: wheelEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      wheelEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWheelEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QWheelEvent)
+  
+
+          // pointer:
+          QWheelEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWheelEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::wheelEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->wheelEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for wheelEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: focusInEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      focusInEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QFocusEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QFocusEvent)
+  
+
+          // pointer:
+          QFocusEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QFocusEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::focusInEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->focusInEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for focusInEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: focusOutEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      focusOutEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QFocusEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QFocusEvent)
+  
+
+          // pointer:
+          QFocusEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QFocusEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::focusOutEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->focusOutEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for focusOutEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: contextMenuEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      contextMenuEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QContextMenuEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QContextMenuEvent)
+  
+
+          // pointer:
+          QContextMenuEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QContextMenuEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::contextMenuEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->contextMenuEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for contextMenuEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: changeEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      changeEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::changeEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->changeEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for changeEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: mousePressEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      mousePressEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QMouseEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QMouseEvent)
+  
+
+          // pointer:
+          QMouseEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QMouseEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::mousePressEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->mousePressEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for mousePressEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: mouseReleaseEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      mouseReleaseEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QMouseEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QMouseEvent)
+  
+
+          // pointer:
+          QMouseEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QMouseEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::mouseReleaseEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->mouseReleaseEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for mouseReleaseEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: mouseMoveEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      mouseMoveEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QMouseEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QMouseEvent)
+  
+
+          // pointer:
+          QMouseEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QMouseEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::mouseMoveEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->mouseMoveEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for mouseMoveEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QSpinBox
+    // Function: paintEvent
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QSpinBox_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      paintEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPaintEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QPaintEvent)
+  
+
+          // pointer:
+          QPaintEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPaintEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QSpinBox_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QSpinBox_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QSpinBox::paintEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->paintEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for paintEvent";
                   handler.trace();
                   return QJSValue();
                 
@@ -18432,6 +19217,194 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
     // non-static functions:
     
     // Class: QDoubleSpinBox
+    // Function: stepUp
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDoubleSpinBox_Wrapper::stepUp
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDoubleSpinBox* w = getWrapped();
+                
+                w->stepUp(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for stepUp";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDoubleSpinBox
+    // Function: stepDown
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDoubleSpinBox_Wrapper::stepDown
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDoubleSpinBox* w = getWrapped();
+                
+                w->stepDown(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for stepDown";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDoubleSpinBox
+    // Function: selectAll
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDoubleSpinBox_Wrapper::selectAll
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDoubleSpinBox* w = getWrapped();
+                
+                w->selectAll(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for selectAll";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDoubleSpinBox
+    // Function: clear
+    // Source: QAbstractSpinBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDoubleSpinBox_Wrapper::clear
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDoubleSpinBox* w = getWrapped();
+                
+                w->clear(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for clear";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QDoubleSpinBox
     // Function: value
     // Source: 
     // Static: false
@@ -19896,4 +20869,6 @@ double a1_cpp;
 
 
   // protected overwritten functions / events and their public invokable counterparts:
+  
+    #include "moc_qspinbox_wrapper.cpp"
   

@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qabstractspinbox.h">
+  <class_decl name="QLineEdit" />
+  <class_decl name="QStyleOptionSpinBox" />
+  <class name="QAbstractSpinBox">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <!--
+    <enum name="StepEnabledFlag">
+      <key>StepNone</key>
+      <key>StepUpEnabled</key>
+      <key>StepDownEnabled</key>
+    </enum>
+    <enum name="ButtonSymbols">
+      <key>UpDownArrows</key>
+      <key>PlusMinus</key>
+      <key>NoButtons</key>
+    </enum>
+    <function name="buttonSymbols" />
+    <function name="setButtonSymbols" />
+    <enum name="CorrectionMode">
+      <key>CorrectToPreviousValue</key>
+      <key>CorrectToNearestValue</key>
+    </enum>
+    <function name="setCorrectionMode" />
+    <function name="correctionMode" />
+    <function name="hasAcceptableInput" />
+    <function name="text" />
+    <function name="specialValueText" />
+    <function name="setSpecialValueText" />
+    <function name="wrapping" />
+    <function name="setWrapping" />
+    <function name="setReadOnly" />
+    <function name="isReadOnly" />
+    <function name="setKeyboardTracking" />
+    <function name="keyboardTracking" />
+    <function name="setAlignment" />
+    <function name="alignment" />
+    <function name="setFrame" />
+    <function name="hasFrame" />
+    <function name="setAccelerated" />
+    <function name="isAccelerated" />
+    <function name="setGroupSeparatorShown" />
+    <function name="isGroupSeparatorShown" />
+    <function name="sizeHint" />
+    <function name="minimumSizeHint" />
+    <function name="interpretText" />
+    <function name="event" />
+    <function name="inputMethodQuery" />
+    <function name="validate" />
+    <function name="fixup" />
+    <function name="stepBy" />
+    <enum name="StepType">
+      <key>DefaultStepType</key>
+      <key>AdaptiveDecimalStepType</key>
+    </enum>
+    -->
+    <function name="stepUp">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="stepDown">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="selectAll">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyPressEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyReleaseEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <function name="wheelEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QWheelEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="focusInEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QFocusEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusOutEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QFocusEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(contextmenu)" />
+    <function name="contextMenuEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QContextMenuEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="changeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="closeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QCloseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hideEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QHideEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="mousePressEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="timerEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QTimerEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="showEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QShowEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initStyleOption">
+      <variant return-type="void" virtual="true" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QStyleOptionSpinBox" modifier="*" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineEdit">
+      <variant return-type="QLineEdit*" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineEdit">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QLineEdit" modifier="*" name="edit" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stepEnabled">
+      <variant return-type="StepEnabled" virtual="true" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="editingFinished">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

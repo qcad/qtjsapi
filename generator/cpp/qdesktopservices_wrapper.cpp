@@ -410,3 +410,5 @@ QDesktopServices_Wrapper::QDesktopServices_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_qdesktopservices_wrapper.cpp"
+  

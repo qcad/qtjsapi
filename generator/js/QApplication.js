@@ -2023,34 +2023,6 @@
       
 
         // static function 
-        QApplication.setActiveWindow = function() 
-          
-        {
-          //print("JS: QApplication.setActiveWindow");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QApplication_WrapperSingletonInstance.setActiveWindow(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QApplication);
-  }
-
-  
-  else {
-    
-        print("QApplication.setActiveWindow(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         QApplication.widgetAt = function() 
           
         {

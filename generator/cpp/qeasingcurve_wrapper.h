@@ -245,56 +245,6 @@ NCurveTypes = QEasingCurve::NCurveTypes,
               ;
             
     // Class: QEasingCurve
-    // Function: equals
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  equals
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QEasingCurve
-    // Function: operator_not_assign
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  operator_not_assign
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QEasingCurve
     // Function: amplitude
     // Source: 
     // Static: false

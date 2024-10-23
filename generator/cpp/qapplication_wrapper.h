@@ -1419,29 +1419,6 @@
               ;
             
     // Class: QApplication
-    // Function: setActiveWindow
-    // Source: 
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setActiveWindow
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QApplication
     // Function: widgetAt
     // Source: 
     // Static: true

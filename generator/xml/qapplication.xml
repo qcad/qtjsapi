@@ -143,6 +143,7 @@
         <parameters />
       </variant>
     </function>
+    <!--
     <function name="setActiveWindow" static="true">
       <variant return-type="void" static="true" access="public">
         <parameters>
@@ -150,6 +151,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="widgetAt" static="true">
       <variant return-type="QWidget*" static="true" access="public">
         <parameters>

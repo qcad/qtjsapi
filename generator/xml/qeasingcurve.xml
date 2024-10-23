@@ -84,6 +84,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="equals" call="operator==">
       <variant return-type="bool" const="true" access="public">
         <parameters>
@@ -91,6 +92,8 @@
         </parameters>
       </variant>
     </function>
+    -->
+    <!--
     <function name="operator_not_assign" call="operator!=">
       <variant return-type="bool" const="true" access="public">
         <parameters>
@@ -98,6 +101,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="amplitude">
       <variant return-type="qreal" const="true" access="public">
         <parameters />
