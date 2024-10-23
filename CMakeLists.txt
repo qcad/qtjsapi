@@ -3,6 +3,7 @@ project(qtjsapi VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOMOC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Sql Svg Xml PrintSupport Qml UiTools QuickWidgets Core5Compat)
 qt_standard_project_setup()
@@ -27,10 +28,10 @@ endif()
 
 qt_add_library(qtjsapi SHARED
     RJSWrapper.cpp RJSWrapper.h
+    RJSWrapperObj.h RJSWrapperObj.cpp
     RJSTools.cpp RJSTools.h
     generator/RJSHelper.cpp generator/RJSHelper.h
     generator/RJSType.h generator/RJSType.cpp
-    RJSWrapperObj.h
     RJSApi.h RJSApi.cpp
     RJSTypeEnum.h RJSTypeEnum.cpp
     ${SOURCES}
@@ -63,7 +64,7 @@ endif()
 
 target_compile_definitions(qtjsapi PRIVATE
     QTJSAPI_LIBRARY
-    QTJSAPI_DLL
+    QCAD_DLL
 )
 
 target_link_libraries(qtjsapi PRIVATE
@@ -83,4 +84,6 @@ target_link_libraries(qtjsapi PRIVATE
     Qt::QuickWidgets
 )
 
-add_subdirectory(console)
+# doesn't work under Windows / MSVC:
+# instead, build from console dir
+#add_subdirectory(console)

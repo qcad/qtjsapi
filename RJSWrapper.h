@@ -1,6 +1,8 @@
 #ifndef RJSWRAPPER_H
 #define RJSWRAPPER_H
 
+#include "qtjsapi_global.h"
+
 #include <QDebug>
 #include <QJSEngine>
 #include <QJSValue>
@@ -12,7 +14,7 @@
 /**
  * Base class for all JS wrapper classes.
  */
-class RJSWrapper {
+class QTJSAPI_EXPORT RJSWrapper {
 public:
     RJSWrapper(RJSApi& h) : handler(h) {}
     virtual ~RJSWrapper() = default;

@@ -1,13 +1,15 @@
 #ifndef RJSTYPEENUM_H
 #define RJSTYPEENUM_H
 
+#include "qtjsapi_global.h"
+
 #include <QObject>
 #include <QQmlEngine>
 
 /**
  * Extendable enum class.
  */
-class RJSTypeEnum : public QObject {
+class QTJSAPI_EXPORT RJSTypeEnum : public QObject {
     Q_OBJECT
     QML_INTERFACE
 
