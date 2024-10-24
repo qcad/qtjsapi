@@ -2717,10 +2717,20 @@
       }
 
       <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
-          // TODO:
-          qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
-          return engine-&gt;fromScriptValue&lt;<xsl:value-of select="$type" />&gt;(v);
+
+          <xsl:value-of select="$type" /> ret;
+
+          if (!v.isArray()) {
+              qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: value is not an array";
+              return ret;
+          }
+
+          int len = v.property("length").toInt();
+          for (int i=0; i&lt;len; i++) {
+              ret.append(js2cpp_QSharedPointer_<xsl:value-of select="$itemtype" />(handler, v.property(i)));
+          }
+          return ret;
       }
 
       bool <xsl:value-of select="$rjshelper_class"/>::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
