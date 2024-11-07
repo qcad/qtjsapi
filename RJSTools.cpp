@@ -321,10 +321,9 @@ void RJSTools::print(const QJSValue& args) {
 }
 
 void RJSTools::debug(const QJSValue& args) {
-    QDebug deb = qDebug();
+    QDebug deb = qDebug().noquote();
     for (int i=0; i<args.property("length").toInt(); i++) {
         deb << args.property(i).toString();
-        //qDebug() << args.property(i).toString();
     }
 }
 

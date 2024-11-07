@@ -638,6 +638,9 @@
           if (v.canConvert&lt;QList&lt;double&gt; &gt;()) {
               return RJSHelper::cpp2js_QList_double(handler, v.value&lt;QList&lt;double&gt; &gt;());
           }
+          if (v.canConvert&lt;QList&lt;int&gt; &gt;()) {
+              return RJSHelper::cpp2js_QList_int(handler, v.value&lt;QList&lt;int&gt; &gt;());
+          }
           if (v.canConvert&lt;QStringList&gt;()) {
               return RJSHelper::cpp2js_QStringList(handler, v.value&lt;QStringList&gt;());
           }

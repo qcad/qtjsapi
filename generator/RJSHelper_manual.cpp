@@ -959,6 +959,9 @@
           if (v.canConvert<QList<double> >()) {
               return RJSHelper::cpp2js_QList_double(handler, v.value<QList<double> >());
           }
+          if (v.canConvert<QList<int> >()) {
+              return RJSHelper::cpp2js_QList_int(handler, v.value<QList<int> >());
+          }
           if (v.canConvert<QStringList>()) {
               return RJSHelper::cpp2js_QStringList(handler, v.value<QStringList>());
           }
