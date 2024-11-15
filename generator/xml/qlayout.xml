@@ -14,6 +14,7 @@
         </parameters>
       </variant>
     </constructor>
+    <property type="int" name="spacing" read="spacing" write="setSpacing" />
     <function name="spacing">
       <variant return-type="int" const="true" access="public">
         <parameters />

@@ -123,6 +123,12 @@
      objectName READ objectName WRITE setObjectName
   )
 
+  Q_PROPERTY(
+    
+    QJSValue
+     spacing READ spacing WRITE setSpacing
+  )
+
 
     private:
       // disable copy constructor:

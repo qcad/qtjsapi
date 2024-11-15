@@ -116,6 +116,10 @@
           
             // check if pointer points to derrived type:
             
+              if (t==RJSType_QQmlApplicationEngine::getIdStatic()) {
+                return (QJSEngine*)(QQmlApplicationEngine*)vp;
+              }
+              
               if (t==RJSType_QQmlEngine::getIdStatic()) {
                 return (QJSEngine*)(QQmlEngine*)vp;
               }

@@ -573,6 +573,12 @@
   Q_PROPERTY(
     
     QJSValue
+     shape READ shape WRITE setShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      tabsClosable READ tabsClosable WRITE setTabsClosable
   )
 

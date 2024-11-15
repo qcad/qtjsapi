@@ -96,6 +96,12 @@
      objectName READ objectName WRITE setObjectName
   )
 
+  Q_PROPERTY(
+    
+    QJSValue
+     uiLanguage READ uiLanguage
+  )
+
 
     private:
       // disable copy constructor:
@@ -604,6 +610,119 @@
               )
               
               ;
+            
+    // Class: QQmlApplicationEngine
+    // Function: evaluate
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  evaluate
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QQmlApplicationEngine
+    // Function: collectGarbage
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  collectGarbage
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QQmlApplicationEngine
+    // Function: uiLanguage
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  uiLanguage
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QQmlApplicationEngine
+    // Function: setUiLanguage
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setUiLanguage
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QQmlApplicationEngine
+    // Function: uiLanguageChanged
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void uiLanguageChanged(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void uiLanguageChangedEmitter(
+                
+              );
             
     // Class: QQmlApplicationEngine
     // Function: rootContext

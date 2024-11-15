@@ -126,6 +126,12 @@
      objectName READ objectName WRITE setObjectName
   )
 
+  Q_PROPERTY(
+    
+    QJSValue
+     spacing READ spacing WRITE setSpacing
+  )
+
 
     private:
       // disable copy constructor:
@@ -2265,6 +2271,12 @@ Up = QBoxLayout::Up,
      objectName READ objectName WRITE setObjectName
   )
 
+  Q_PROPERTY(
+    
+    QJSValue
+     spacing READ spacing WRITE setSpacing
+  )
+
 
     private:
       // disable copy constructor:
@@ -4390,6 +4402,12 @@ Up = QHBoxLayout::Up,
     
     QJSValue
      objectName READ objectName WRITE setObjectName
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     spacing READ spacing WRITE setSpacing
   )
 
 

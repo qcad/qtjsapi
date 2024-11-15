@@ -451,6 +451,8 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qjsengine_wrapper.h"
+        
           #include "qqmlengine_wrapper.h"
         
           #include "qobject_wrapper.h"

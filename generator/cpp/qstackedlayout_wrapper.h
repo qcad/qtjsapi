@@ -126,6 +126,12 @@
   Q_PROPERTY(
     
     QJSValue
+     spacing READ spacing WRITE setSpacing
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      currentIndex READ currentIndex WRITE setCurrentIndex
   )
 

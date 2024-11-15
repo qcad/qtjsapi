@@ -249,6 +249,13 @@ int a3_cpp;
             
   connect(
     getWrapped(), 
+    SIGNAL(uiLanguageChanged()), 
+    this, 
+    SLOT(uiLanguageChangedEmitter())
+  );
+
+  connect(
+    getWrapped(), 
     SIGNAL(objectCreated(QObject*, const QUrl&)), 
     this, 
     SLOT(objectCreatedEmitter(QObject*, const QUrl&))
@@ -1696,6 +1703,306 @@ QVariant a2_cpp;
                   handler.trace();
                   return QJSValue();
                 
+              }
+            
+    // Class: QQmlApplicationEngine
+    // Function: evaluate
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              QQmlApplicationEngine_Wrapper::evaluate
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+   && RJSHelper::is_QString(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: program (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+  // convert js parameter to cpp: fileName (QString)
+  
+QString a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = QString();
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+          }
+        
+  // convert js parameter to cpp: lineNumber (int)
+  
+int a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = 1;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QQmlApplicationEngine* w = getWrapped();
+                QJSValue res = 
+                    
+                w->evaluate(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            // return type: QJSValue
+
+            return RJSHelper::cpp2js_QJSValue(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for evaluate";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QQmlApplicationEngine
+    // Function: collectGarbage
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QQmlApplicationEngine_Wrapper::collectGarbage
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QQmlApplicationEngine* w = getWrapped();
+                
+                w->collectGarbage(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for collectGarbage";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QQmlApplicationEngine
+    // Function: uiLanguage
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QQmlApplicationEngine_Wrapper::uiLanguage
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QQmlApplicationEngine* w = getWrapped();
+                QString res = 
+                    
+                w->uiLanguage(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for uiLanguage";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QQmlApplicationEngine
+    // Function: setUiLanguage
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QQmlApplicationEngine_Wrapper::setUiLanguage
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: language (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QQmlApplicationEngine* w = getWrapped();
+                
+                w->setUiLanguage(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setUiLanguage";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QQmlApplicationEngine
+    // Function: uiLanguageChanged
+    // Source: QJSEngine
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QQmlApplicationEngine_Wrapper::uiLanguageChangedEmitter(
+                
+              ) {
+                // convert cpp parameters to js:
+                
+
+                emit uiLanguageChanged(
+                  
+                );
               }
             
     // Class: QQmlApplicationEngine

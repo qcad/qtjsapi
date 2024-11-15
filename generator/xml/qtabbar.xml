@@ -20,6 +20,7 @@
     <property type="QSize" name="iconSize" read="iconSize" write="setIconSize" />
     <property type="Qt::TextElideMode" name="elideMode" read="elideMode" write="setElideMode" />
     <property type="bool" name="usesScrollButtons" read="usesScrollButtons" write="setUsesScrollButtons" />
+    <property type="QTabBar::Shape" name="shape" read="shape" write="setShape" />
     <property type="bool" name="tabsClosable" read="tabsClosable" write="setTabsClosable" />
     <property type="QTabBar::SelectionBehavior" name="selectionBehaviorOnRemove" read="selectionBehaviorOnRemove" write="setSelectionBehaviorOnRemove" />
     <property type="bool" name="expanding" read="expanding" write="setExpanding" />
