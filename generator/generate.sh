@@ -35,6 +35,11 @@ then
     MODULE="qcadquick"
 fi
 
+if [[ `pwd` == *qcadtexjsapi* ]]
+then
+    MODULE="qcadtex"
+fi
+
 echo "Generating module $MODULE"
 
 echo "Generating helpers..."
