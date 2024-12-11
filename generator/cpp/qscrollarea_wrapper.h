@@ -560,6 +560,12 @@
      alignment READ alignment WRITE setAlignment
   )
 
+  Q_PROPERTY(
+    
+    QJSValue
+     widgetResizable READ widgetResizable WRITE setWidgetResizable
+  )
+
 
     private:
       // disable copy constructor:

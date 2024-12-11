@@ -8,6 +8,7 @@
       <super name="QAbstractScrollArea" />
     </super_list>
     <property type="Qt::Alignment" name="alignment" read="alignment" write="setAlignment" />
+    <property type="bool" name="widgetResizable" read="widgetResizable" write="setWidgetResizable" />
     <constructor>
       <variant>
         <parameters>
