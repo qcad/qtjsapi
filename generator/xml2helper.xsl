@@ -1732,8 +1732,6 @@
     </xsl:when>
 
     <xsl:when test="$mode='cpp'"> QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
-          QJSEngine* engine = handler.getEngine();
-          <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
           //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
           //return engine-&gt;evaluate("new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper);");
@@ -1748,6 +1746,8 @@
             }
           </xsl:for-each>
 
+          QJSEngine* engine = handler.getEngine();
+          <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
@@ -1875,8 +1875,6 @@
 
     <xsl:when test="$mode='cpp'">
       QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$sharedPointerType" />&amp; v) {
-          QJSEngine* engine = handler.getEngine();
-          <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
           //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
           //return engine-&gt;evaluate("new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper);");
@@ -1890,6 +1888,9 @@
               }
             }
           </xsl:for-each>
+
+          QJSEngine* engine = handler.getEngine();
+          <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
