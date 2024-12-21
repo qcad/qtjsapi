@@ -1806,7 +1806,8 @@
                 </xsl:when>
                 <xsl:otherwise>
                   // create clone on the fly:
-                  return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;(wrapper-&gt;getWrapped()->clone());
+                  //return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;(wrapper-&gt;getWrapped()->clone());
+                  return wrapper-&gt;getWrapped()->clone().dynamicCast&lt;<xsl:value-of select="$type" />&gt;();
                 </xsl:otherwise>
               </xsl:choose>
           }
@@ -1951,8 +1952,9 @@
                 </xsl:when>
                 <xsl:otherwise>
                   // create clone on the fly:
-                  return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;((<xsl:value-of select="$type" />*)wrapper-&gt;getWrapped()->clone());
+                  //return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;((<xsl:value-of select="$type" />*)wrapper-&gt;getWrapped()->clone());
                   //return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;(wrapper-&gt;getWrapped()->clone());
+                  return wrapper-&gt;getWrapped()->clone().dynamicCast&lt;<xsl:value-of select="$type" />&gt;();
                 </xsl:otherwise>
               </xsl:choose>
           }

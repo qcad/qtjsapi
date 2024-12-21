@@ -573,6 +573,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() &lt;&lt; "deleting instance of <xsl:value-of select="@name" />";
                   delete wrapped;
+                  wrapped = nullptr;
                 </xsl:otherwise>
               </xsl:choose>
             }
