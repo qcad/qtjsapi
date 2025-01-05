@@ -421,12 +421,12 @@
       </variant>
     </function>
     <function name="readAllStandardOutput">
-      <variant return-type="QString" access="public">
+      <variant return-type="QByteArray" access="public">
         <parameters />
       </variant>
     </function>
     <function name="readAllStandardError">
-      <variant return-type="QString" access="public">
+      <variant return-type="QByteArray" access="public">
         <parameters />
       </variant>
     </function>

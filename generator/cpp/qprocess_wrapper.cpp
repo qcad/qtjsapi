@@ -7155,15 +7155,15 @@ int a1_cpp;
             
                 // call function of C++ class:
                 QProcess* w = getWrapped();
-                QString res = 
+                QByteArray res = 
                     
                 w->readAllStandardOutput(
                   
                 );
               
-            // return type: QString
+            // return type: QByteArray
 
-            return RJSHelper::cpp2js_QString(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
@@ -7210,15 +7210,15 @@ int a1_cpp;
             
                 // call function of C++ class:
                 QProcess* w = getWrapped();
-                QString res = 
+                QByteArray res = 
                     
                 w->readAllStandardError(
                   
                 );
               
-            // return type: QString
+            // return type: QByteArray
 
-            return RJSHelper::cpp2js_QString(
+            return RJSHelper::cpp2js_QByteArray(
               handler, 
               // non-copyable: false
                   res
