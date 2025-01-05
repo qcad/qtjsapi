@@ -1178,6 +1178,8 @@
             "QTreeModel",
             "QComboMenuDelegate",
             "QStandardItemModel",
+            "QComboBoxDelegate",
+            "QCompleter",
           };
 
           QString className = v->metaObject()->className();
