@@ -287,6 +287,7 @@
         <xsl:variable name="basecast-from">
           <xsl:value-of select="@name" />
         </xsl:variable>
+        #include "<xsl:value-of select="qc:lowercase($basecast-from)"/>_wrapper.h"
         <xsl:for-each select="qsrc:super_list/qsrc:super">
           <xsl:variable name="basecast-to">
             <xsl:value-of select="@name" />
@@ -333,7 +334,7 @@
       </xsl:if>
       -->
 
-      <xsl:if test="$module!=''">
+      <xsl:if test="$module!='' and ($section='' or $section='manual')">
         // downcaster classes:
         <!-- get list of Qt classes that can be downcast from qtjsapi, e.g. QWidget -->
         <xsl:for-each select="document('../../qtjsapi/generator/tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
@@ -968,6 +969,8 @@
             "QTreeModel",
             "QComboMenuDelegate",
             "QStandardItemModel",
+            "QCompleter",
+            "QComboBoxDelegate",
           };
 
           QString className = v->metaObject()->className();

@@ -509,11 +509,21 @@
           <!--
           <xsl:if test="$qobject='false'">
           -->
-            <xsl:value-of select="@name" />_Wrapper::<xsl:value-of select="@name" />_Wrapper(RJSApi&amp; h, <xsl:value-of select="@name" />* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+            <xsl:value-of select="@name" />_Wrapper::<xsl:value-of select="@name" />_Wrapper(RJSApi&amp; h, <xsl:value-of select="@name" />* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            <xsl:if test="not(ancestor-or-self::qsrc:class/@sharedpointer)">
+            wrapped(o), 
+            </xsl:if>
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("<xsl:value-of select="@name" />_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("<xsl:value-of select="@name" />_Wrapper"));
               //setObjectName("<xsl:value-of select="@name" />_Wrapper");
               //setHandler(h);
+
+              <xsl:if test="ancestor-or-self::qsrc:class/@sharedpointer">
+                spWrapped.reset(o);
+              </xsl:if>
 
               // signal forwarding:
               initConnections();
@@ -532,7 +542,7 @@
             <xsl:value-of select="@name" />_Wrapper(RJSApi&amp; h, QSharedPointer&lt;<xsl:value-of select="@name" />&gt; o);
           </xsl:when>
           <xsl:otherwise>
-            <xsl:value-of select="@name" />_Wrapper::<xsl:value-of select="@name" />_Wrapper(RJSApi&amp; h, QSharedPointer&lt;<xsl:value-of select="@name" />&gt; o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+            <xsl:value-of select="@name" />_Wrapper::<xsl:value-of select="@name" />_Wrapper(RJSApi&amp; h, QSharedPointer&lt;<xsl:value-of select="@name" />&gt; o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("<xsl:value-of select="@name" />_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("<xsl:value-of select="@name" />_Wrapper"));
               //setObjectName("<xsl:value-of select="@name" />_Wrapper");
@@ -572,8 +582,10 @@
                 <xsl:otherwise>
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() &lt;&lt; "deleting instance of <xsl:value-of select="@name" />";
-                  delete wrapped;
-                  wrapped = nullptr;
+                  <xsl:if test="not(ancestor-or-self::qsrc:class/@sharedpointer)">
+                    delete wrapped;
+                    wrapped = nullptr;
+                  </xsl:if>
                 </xsl:otherwise>
               </xsl:choose>
             }
@@ -735,26 +747,30 @@
         <xsl:if test="not(@nodestructor='true')">
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              <!--
-              <xsl:choose>
-                <xsl:when test="not(@nodestructor)">
-                -->
-                  delete wrapped;
-                <!--
-                </xsl:when>
-                <xsl:otherwise>
-                  qWarning() &lt;&lt; "trying to delete object without destructor";
-                </xsl:otherwise>
-              </xsl:choose>
-              -->
-              wrapped = nullptr;
-            }
-            <xsl:if test="ancestor-or-self::qsrc:class/@sharedpointer">
+            <xsl:choose>
+            <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
               if (!spWrapped.isNull()) {
                 spWrapped = nullptr;
               }
-            </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+              if (wrapped!=nullptr) {
+                <!--
+                <xsl:choose>
+                  <xsl:when test="not(@nodestructor)">
+                  -->
+                    delete wrapped;
+                  <!--
+                  </xsl:when>
+                  <xsl:otherwise>
+                    qWarning() &lt;&lt; "trying to delete object without destructor";
+                  </xsl:otherwise>
+                </xsl:choose>
+                -->
+                wrapped = nullptr;
+              }
+            </xsl:otherwise>
+            </xsl:choose>
           }
         </xsl:if>
 
@@ -805,40 +821,52 @@
 
         // get wrapped object:
         <xsl:value-of select="@name" />* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
-          <xsl:if test="ancestor-or-self::qsrc:class/@sharedpointer">
-            else if (!spWrapped.isNull()) {
+          <xsl:choose>
+          <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
-          </xsl:if>
+          </xsl:when>
+          <xsl:otherwise>
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
+          </xsl:otherwise>
+          </xsl:choose>
           return nullptr;
         }
 
         // get wrapped object (const):
         <xsl:value-of select="@name" />* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
-          <xsl:if test="ancestor-or-self::qsrc:class/@sharedpointer">
-            else if (!spWrapped.isNull()) {
+          <xsl:choose>
+          <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
-          </xsl:if>
+          </xsl:when>
+          <xsl:otherwise>
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
+          </xsl:otherwise>
+          </xsl:choose>
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
-          <xsl:if test="ancestor-or-self::qsrc:class/@sharedpointer">
-            else if (!spWrapped.isNull()) {
+          <xsl:choose>
+          <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
-          </xsl:if>
+          </xsl:when>
+          <xsl:otherwise>
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
+          </xsl:otherwise>
+          </xsl:choose>
           return nullptr;
         }
 
@@ -848,10 +876,10 @@
           if (!spWrapped.isNull()) {
             return spWrapped;
           }
-          if (wrapped!=nullptr) {
-            qWarning() &lt;&lt; "wrapper does not wrap a QSharedPointer&lt;<xsl:value-of select="@name" />&gt; but a regular pointer";
-            return QSharedPointer&lt;<xsl:value-of select="@name" />&gt;();
-          }
+          //if (wrapped!=nullptr) {
+          //  qWarning() &lt;&lt; "wrapper does not wrap a QSharedPointer&lt;<xsl:value-of select="@name" />&gt; but a regular pointer";
+          //  return QSharedPointer&lt;<xsl:value-of select="@name" />&gt;();
+          //}
           return QSharedPointer&lt;<xsl:value-of select="@name" />&gt;();
         }
 
@@ -874,10 +902,14 @@
         </xsl:if>
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
-          <xsl:if test="ancestor-or-self::qsrc:class/@sharedpointer">
-            || (!spWrapped.isNull() &amp;&amp; spWrapped.data()!=nullptr)
-          </xsl:if>
+          <xsl:choose>
+          <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
+            return (!spWrapped.isNull() &amp;&amp; spWrapped.data()!=nullptr);
+          </xsl:when>
+          <xsl:otherwise>
+            return wrapped!=nullptr 
+          </xsl:otherwise>
+          </xsl:choose>
           ;
         }
 
@@ -888,14 +920,18 @@
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
-          <xsl:if test="ancestor-or-self::qsrc:class/@sharedpointer">
+          <xsl:choose>
+          <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
             if (!spWrapped.isNull() &amp;&amp; spWrapped.data()!=nullptr) {
               return (unsigned long long int)spWrapped.data();
             }
-          </xsl:if>
+          </xsl:when>
+          <xsl:otherwise>
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
+          </xsl:otherwise>
+          </xsl:choose>
           return (unsigned long long int)0;
         }
 
@@ -931,13 +967,17 @@
         </xsl:if>
 
         private:
-        // wrapped object:
-        <xsl:value-of select="@name" />* wrapped;
 
-        <xsl:if test="ancestor-or-self::qsrc:class/@sharedpointer">
+        <xsl:choose>
+        <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
           // wrapped object as shared pointer:
           QSharedPointer&lt;<xsl:value-of select="@name" />&gt; spWrapped;
-        </xsl:if>
+        </xsl:when>
+        <xsl:otherwise>
+          // wrapped object:
+          <xsl:value-of select="@name" />* wrapped;
+        </xsl:otherwise>
+        </xsl:choose>
 
         bool wrappedCreated;
       <!--
@@ -1544,14 +1584,18 @@
                     if (
                       <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="checkundef" />
                       ) {
-                      wrapped = nullptr;
+                      <xsl:if test="not(ancestor-or-self::qsrc:class/@sharedpointer)">
+                        wrapped = nullptr;
+                      </xsl:if>
                       wrappedCreated = false;
                       return;
                     }
                   </xsl:if>
 
                   qWarning() &lt;&lt; "no matching constructor variant found for <xsl:value-of select="$class-name" />";
-                  wrapped = nullptr;
+                  <xsl:if test="not(ancestor-or-self::qsrc:class/@sharedpointer)">
+                    wrapped = nullptr;
+                  </xsl:if>
                   wrappedCreated = false;
                   handler.trace();
                 </xsl:if>
@@ -1954,26 +1998,56 @@
 
         <xsl:choose>
           <xsl:when test="document('inheritable_class.xml')/inheritable-class/class[@name=$class-name] or ancestor::qsrc:class[1]/@inheritable='true'">
-            wrapped = new <xsl:value-of select="$class-name" />_Base(
-              handler
-              <xsl:if test="qsrc:parameters/qsrc:parameter">
-                ,
-              </xsl:if>
-              <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="cppnames" />
-            );
-            wrappedCreated = true;
+              <xsl:choose>
+              <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
+                spWrapped = QSharedPointer&lt;<xsl:value-of select="$class-name" />_Base&gt;(new <xsl:value-of select="$class-name" />_Base(
+                  handler
+                  <xsl:if test="qsrc:parameters/qsrc:parameter">
+                    ,
+                  </xsl:if>
+                  <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="cppnames" />
+                ));
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((<xsl:value-of select="$class-name" />_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((<xsl:value-of select="$class-name" />_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((<xsl:value-of select="$class-name" />_Base*)wrapped)->self = handler.getSelf();
+                // store self to call into JS:
+                wrapped.dynamicCast&lt;<xsl:value-of select="$class-name" />_Base&gt;()->self = handler.getSelf();
+              </xsl:when>
+              <xsl:otherwise>
+                wrapped = new <xsl:value-of select="$class-name" />_Base(
+                  handler
+                  <xsl:if test="qsrc:parameters/qsrc:parameter">
+                    ,
+                  </xsl:if>
+                  <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="cppnames" />
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((<xsl:value-of select="$class-name" />_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((<xsl:value-of select="$class-name" />_Base*)wrapped)->self = handler.getSelf();
+              </xsl:otherwise>
+              </xsl:choose>
           </xsl:when>
           <xsl:otherwise>
-            wrapped = new <xsl:value-of select="$class-name" />(
-                <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="cppnames" />
-            );
-            wrappedCreated = true;
+            <xsl:choose>
+            <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
+              spWrapped = QSharedPointer&lt;<xsl:value-of select="$class-name" />&gt;(new <xsl:value-of select="$class-name" />(
+                  <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="cppnames" />
+              ));
+              wrappedCreated = true;
+            </xsl:when>
+            <xsl:otherwise>
+              wrapped = new <xsl:value-of select="$class-name" />(
+                  <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="cppnames" />
+              );
+              wrappedCreated = true;
+            </xsl:otherwise>
+            </xsl:choose>
           </xsl:otherwise>
         </xsl:choose>
 
