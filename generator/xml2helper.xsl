@@ -958,19 +958,20 @@
           }
 
           static QStringList ignoreList = {
-            "QPropertyAnimation", 
+            "QComboBoxDelegate",
+            "QComboMenuDelegate",
+            "QCompleter",
             "QFormInternal::TranslationWatcher",
             "QItemSelectionModel",
-            "QTableModel",
-            "QStyledItemDelegate",
-            "QWidgetTextControl",
             "QPlainTextEditControl",
-            "QWidgetLineControl",
-            "QTreeModel",
-            "QComboMenuDelegate",
+            "QPropertyAnimation", 
+            "QRegularExpressionValidator",
             "QStandardItemModel",
-            "QCompleter",
-            "QComboBoxDelegate",
+            "QStyledItemDelegate",
+            "QTableModel",
+            "QTreeModel",
+            "QWidgetLineControl",
+            "QWidgetTextControl",
           };
 
           QString className = v->metaObject()->className();
