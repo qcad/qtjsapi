@@ -88,6 +88,7 @@ function copyProperties(obj, wrapper, clazz) {
     }
 
     // change prototype to instance of wrapper class:
+    // TODO: this is very slow, maybe we can do this in a more efficient way:
     //if (!isNull(wrapper)) {
         Object.setPrototypeOf(obj, wrapper);
     //}
