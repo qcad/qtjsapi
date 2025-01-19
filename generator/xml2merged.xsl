@@ -73,12 +73,15 @@
           <xsl:variable name="super-function-name" select="@name" />
           <xsl:variable name="super-function-access" select="qsrc:variant/@access" />
 
-          <xsl:if test="not($class/qsrc:function[@name=$super-function-name and @ignore='true'])">
-            <xsl:if test="$class-inheritable='true' or not($super-function-access='protected')">
-              <xsl:if test="not($is-qwidget='1') or not($super-function-name='setParent') or not($super-class-name='QObject')">
-                <xsl:apply-templates select=".">
-                  <xsl:with-param name="super-class-name" select="$super-class-name" />
-                </xsl:apply-templates>
+          <xsl:variable name="super-function-static" select="@static" />
+          <xsl:if test="not($super-function-static='true')">
+            <xsl:if test="not($class/qsrc:function[@name=$super-function-name and @ignore='true'])">
+              <xsl:if test="$class-inheritable='true' or not($super-function-access='protected')">
+                <xsl:if test="not($is-qwidget='1') or not($super-function-name='setParent') or not($super-class-name='QObject')">
+                  <xsl:apply-templates select=".">
+                    <xsl:with-param name="super-class-name" select="$super-class-name" />
+                  </xsl:apply-templates>
+                </xsl:if>
               </xsl:if>
             </xsl:if>
           </xsl:if>
