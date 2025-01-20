@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qcalendar.h">
   <class_decl name="QDate" />
-  <class name="QCalendar">
+  <class name="QCalendar" proxy="true">
     <constructor>
       <variant>
         <parameters />

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qbitmap.h">
   <class_decl name="QVariant" />
-  <class name="QBitmap">
+  <class name="QBitmap" proxy="true">
     <super_list>
       <super name="QPaintDevice" />
       <super name="QPixmap" />

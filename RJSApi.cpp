@@ -493,6 +493,58 @@ void RJSApi::registerWrapper(RJSWrapperObj& obj) {
         return;
     }
     wrappers.insert(&obj);
+    // qDebug() << "+ " << engine->objectName() << " type:" << RJSTypeEnum::getById(obj.getWrappedType())->getName();
+    // qDebug() << "+ " << engine->objectName() << " wrappers:" << wrappers.size();
+
+    // //if (wrappers.size()%1000==0) {
+
+    // engine->collectGarbage();
+
+    // if (RJSTypeEnum::getById(obj.getWrappedType())->getName()=="REntity") {
+    //     engine->evaluate("console.trace();");
+    // }
+
+    //     // iterate through all wrappers and output the wrapper name:
+    //     int c = 0;
+    //     QMap<QString, int> counts;
+    //     QSetIterator<RJSWrapperObj*> i(wrappers);
+    //     while (i.hasNext()) {
+    //         RJSWrapperObj* wrapper = i.next();
+    //         //qDebug() << "\t\t" << c++ << ": wrapper:" << RJSTypeEnum::getById(wrapper->getWrappedType())->getName();
+
+    //         // add name to total counts of wrappers:
+    //         QString name = RJSTypeEnum::getById(wrapper->getWrappedType())->getName();
+    //         if (counts.contains(name)) {
+    //             counts[name]++;
+    //         } else {
+    //             counts[name] = 1;
+    //         }
+    //     }
+
+    //     // remove all counts with 1:
+    //     QMapIterator<QString, int> it(counts);
+    //     while (it.hasNext()) {
+    //         it.next();
+    //         if (it.value()<20) {
+    //             counts.remove(it.key());
+    //         }
+    //     }
+
+    //     // output counts with total count and name, sorted by count, highest to lowest:
+    //     QList<int> sortedCounts = counts.values();
+    //     std::sort(sortedCounts.begin(), sortedCounts.end());
+    //     for (int i=sortedCounts.size()-1; i>=0; i--) {
+    //         int count = sortedCounts[i];
+    //         QMapIterator<QString, int> it(counts);
+    //         while (it.hasNext()) {
+    //             it.next();
+    //             if (it.value()==count) {
+    //                 qDebug() << "\t\t" << it.key() << ": " << it.value();
+    //             }
+    //         }
+    //     }
+
+    // //}
 }
 
 void RJSApi::unregisterWrapper(RJSWrapperObj& obj) {
@@ -500,6 +552,8 @@ void RJSApi::unregisterWrapper(RJSWrapperObj& obj) {
         return;
     }
     wrappers.remove(&obj);
+    // qDebug() << "- " << engine->objectName() << " type:" << RJSTypeEnum::getById(obj.getWrappedType())->getName();
+    // qDebug() << "- " << engine->objectName() << " wrappers:" << wrappers.size();
 }
 
 

@@ -5,7 +5,7 @@
   <class_decl name="QAbstractProxyModel" />
   -->
   <class_decl name="QWidget" />
-  <class name="QCompleter">
+  <class name="QCompleter" proxy="true">
     <super_list>
       <super name="QObject" />
     </super_list>

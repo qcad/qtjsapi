@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qbuffer.h">
   <class_decl name="QObject" />
-  <class name="QBuffer">
+  <class name="QBuffer" proxy="true">
     <super_list>
       <super name="QObject" />
       <super name="QIODeviceBase" />

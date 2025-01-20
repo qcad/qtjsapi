@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qbytearray.h">
   <class_decl name="QString" />
   <class_decl name="QDataStream" />
-  <class name="QByteArray">
+  <class name="QByteArray" proxy="true">
     <!--
     <enum name="Base64Option">
       <key>Base64Encoding</key>
