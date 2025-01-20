@@ -13,276 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QQuickWidget
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQuickWidget_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQuickWidget
-    // Function: setTabOrder
-    // Source: QWidget
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQuickWidget_WrapperSingleton::setTabOrder
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QWidget_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp:  (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            
-                // call static member function:
-                QWidget::setTabOrder(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setTabOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQuickWidget
-    // Function: mouseGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQuickWidget_WrapperSingleton::mouseGrabber
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QWidget* res = 
-                
-                // call static member function:
-                QWidget::mouseGrabber(
-              
-            );
-          
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for mouseGrabber";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QQuickWidget
-    // Function: keyboardGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQuickWidget_WrapperSingleton::keyboardGrabber
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QWidget* res = 
-                
-                // call static member function:
-                QWidget::keyboardGrabber(
-              
-            );
-          
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for keyboardGrabber";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QQuickWidget_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QQuickWidget_Wrapper>("org.qcad", 1, 0, "QQuickWidget_Wrapper");
@@ -311,15 +41,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QQuickWidget_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QQuickWidget_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QQuickWidget_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QQuickWidget_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QQuickWidget_WrapperSingleton * s = new QQuickWidget_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QQuickWidget_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QQuickWidget.js";
       QFile scriptFile(fileName);
@@ -355,11 +76,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QQuickWidget_Wrapper::QQuickWidget_Wrapper(RJSApi& h, QQuickWidget* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QQuickWidget_Wrapper::QQuickWidget_Wrapper(RJSApi& h, QQuickWidget* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QQuickWidget_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QQuickWidget_Wrapper"));
               //setObjectName("QQuickWidget_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -512,22 +241,22 @@ QQuickWidget_Wrapper::QQuickWidget_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QQuickWidget_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new QQuickWidget_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((QQuickWidget_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((QQuickWidget_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((QQuickWidget_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((QQuickWidget_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -571,21 +300,21 @@ QQuickWidget_Wrapper::QQuickWidget_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QQuickWidget_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new QQuickWidget_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((QQuickWidget_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((QQuickWidget_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((QQuickWidget_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((QQuickWidget_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -603,14 +332,18 @@ QQuickWidget_Wrapper::QQuickWidget_Wrapper
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QQuickWidget";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

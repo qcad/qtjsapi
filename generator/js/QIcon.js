@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QIcon);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QIcon);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QIcon);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QIcon);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -128,8 +130,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QIcon);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -160,12 +162,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QIcon.prototype = new QIcon_BaseJs(engine);
@@ -212,6 +212,198 @@ QIcon.Off = QIcon_Wrapper.Off;
 
       // functions:
       
+        // function 
+        QIcon.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QIcon.prototype.pixmap = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.pixmap");
+          return this.__PROXY__.pixmap(...args);
+        };
+    
+        // function 
+        QIcon.prototype.actualSize = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.actualSize");
+          return this.__PROXY__.actualSize(...args);
+        };
+    
+        // function 
+        QIcon.prototype.name = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.name");
+          return this.__PROXY__.name(...args);
+        };
+    
+        // function 
+        QIcon.prototype.paint = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.paint");
+          return this.__PROXY__.paint(...args);
+        };
+    
+        // function 
+        QIcon.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.isNull");
+          return this.__PROXY__.isNull(...args);
+        };
+    
+        // function 
+        QIcon.prototype.isDetached = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.isDetached");
+          return this.__PROXY__.isDetached(...args);
+        };
+    
+        // function 
+        QIcon.prototype.detach = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.detach");
+          return this.__PROXY__.detach(...args);
+        };
+    
+        // function 
+        QIcon.prototype.cacheKey = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.cacheKey");
+          return this.__PROXY__.cacheKey(...args);
+        };
+    
+        // function 
+        QIcon.prototype.addPixmap = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.addPixmap");
+          return this.__PROXY__.addPixmap(...args);
+        };
+    
+        // function 
+        QIcon.prototype.addFile = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.addFile");
+          return this.__PROXY__.addFile(...args);
+        };
+    
+        // function 
+        QIcon.prototype.availableSizes = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.availableSizes");
+          return this.__PROXY__.availableSizes(...args);
+        };
+    
+        // function 
+        QIcon.prototype.setIsMask = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.setIsMask");
+          return this.__PROXY__.setIsMask(...args);
+        };
+    
+        // function 
+        QIcon.prototype.isMask = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.isMask");
+          return this.__PROXY__.isMask(...args);
+        };
+    
+        // function 
+        QIcon.prototype.fromTheme = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.fromTheme");
+          return this.__PROXY__.fromTheme(...args);
+        };
+    
+        // function 
+        QIcon.prototype.hasThemeIcon = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.hasThemeIcon");
+          return this.__PROXY__.hasThemeIcon(...args);
+        };
+    
+        // function 
+        QIcon.prototype.themeSearchPaths = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.themeSearchPaths");
+          return this.__PROXY__.themeSearchPaths(...args);
+        };
+    
+        // function 
+        QIcon.prototype.setThemeSearchPaths = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.setThemeSearchPaths");
+          return this.__PROXY__.setThemeSearchPaths(...args);
+        };
+    
+        // function 
+        QIcon.prototype.fallbackSearchPaths = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.fallbackSearchPaths");
+          return this.__PROXY__.fallbackSearchPaths(...args);
+        };
+    
+        // function 
+        QIcon.prototype.setFallbackSearchPaths = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.setFallbackSearchPaths");
+          return this.__PROXY__.setFallbackSearchPaths(...args);
+        };
+    
+        // function 
+        QIcon.prototype.themeName = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.themeName");
+          return this.__PROXY__.themeName(...args);
+        };
+    
+        // function 
+        QIcon.prototype.setThemeName = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.setThemeName");
+          return this.__PROXY__.setThemeName(...args);
+        };
+    
+        // function 
+        QIcon.prototype.fallbackThemeName = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.fallbackThemeName");
+          return this.__PROXY__.fallbackThemeName(...args);
+        };
+    
+        // function 
+        QIcon.prototype.setFallbackThemeName = function(...args) 
+          
+        {
+          //print("JS: QIcon.prototype.setFallbackThemeName");
+          return this.__PROXY__.setFallbackThemeName(...args);
+        };
+    
 
       // static functions:
       
@@ -525,4 +717,8 @@ QIcon.Off = QIcon_Wrapper.Off;
       //QIcon.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QIcon.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

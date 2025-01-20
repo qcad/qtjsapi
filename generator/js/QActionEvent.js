@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QActionEvent);
+              
+                  copyProperties(this, wrapper, QActionEvent);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QActionEvent);
+            copyProperties(this, wrapper, QActionEvent);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QActionEvent.prototype = new QActionEvent_BaseJs(engine);
@@ -307,35 +307,6 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        QActionEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QActionEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QActionEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QActionEvent);
-  }
-
-  
-  else {
-    
-        print("QActionEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -351,4 +322,5 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
       //QActionEvent.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

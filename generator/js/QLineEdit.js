@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QLineEdit);
+              
+                  copyProperties(this, wrapper, QLineEdit);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QLineEdit);
+            copyProperties(this, wrapper, QLineEdit);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QLineEdit);
+            copyProperties(this, wrapper, QLineEdit);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,10 +112,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["textChanged(QString)"] = Object.getPrototypeOf(this).textChanged;
@@ -122,8 +123,12 @@
   
     this["cursorPositionChanged(int,int)"] = Object.getPrototypeOf(this).cursorPositionChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QLineEdit.prototype = new QLineEdit_BaseJs(engine);
@@ -182,119 +187,6 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
       // static functions:
       
 
-        // static function 
-        QLineEdit.tr = function() 
-          
-        {
-          //print("JS: QLineEdit.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QLineEdit_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QLineEdit);
-  }
-
-  
-  else {
-    
-        print("QLineEdit.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QLineEdit.setTabOrder = function() 
-          
-        {
-          //print("JS: QLineEdit.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QLineEdit_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QLineEdit);
-  }
-
-  
-  else {
-    
-        print("QLineEdit.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QLineEdit.mouseGrabber = function() 
-          
-        {
-          //print("JS: QLineEdit.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QLineEdit_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QLineEdit);
-  }
-
-  
-  else {
-    
-        print("QLineEdit.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QLineEdit.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QLineEdit.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QLineEdit_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QLineEdit);
-  }
-
-  
-  else {
-    
-        print("QLineEdit.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -310,4 +202,5 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
       //QLineEdit.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

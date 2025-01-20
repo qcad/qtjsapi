@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPageSize);
+              
+                  copyProperties(this, wrapper, QPageSize);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPageSize);
+            copyProperties(this, wrapper, QPageSize);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPageSize);
+            copyProperties(this, wrapper, QPageSize);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -104,8 +106,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPageSize);
+            copyProperties(this, wrapper, QPageSize);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -130,8 +132,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPageSize);
+            copyProperties(this, wrapper, QPageSize);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -156,8 +158,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPageSize);
+            copyProperties(this, wrapper, QPageSize);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -188,12 +190,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QPageSize.prototype = new QPageSize_BaseJs(engine);
@@ -671,4 +671,5 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
       //QPageSize.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

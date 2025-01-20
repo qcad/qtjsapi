@@ -13,107 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QGesture
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QGesture_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QGesture_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QGesture_Wrapper>("org.qcad", 1, 0, "QGesture_Wrapper");
@@ -142,15 +41,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QGesture_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QGesture_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QGesture_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QGesture_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QGesture_WrapperSingleton * s = new QGesture_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QGesture_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QGesture.js";
       QFile scriptFile(fileName);
@@ -186,11 +76,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QGesture_Wrapper::QGesture_Wrapper(RJSApi& h, QGesture* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QGesture_Wrapper::QGesture_Wrapper(RJSApi& h, QGesture* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QGesture_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QGesture_Wrapper"));
               //setObjectName("QGesture_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -319,12 +217,12 @@ QGesture_Wrapper::QGesture_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QGesture(
-                a1_cpp
+              wrapped = new QGesture(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -341,14 +239,18 @@ QGesture_Wrapper::QGesture_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QGesture";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -2101,11 +2003,19 @@ QGesture::GestureCancelPolicy a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QPanGesture_Wrapper::QPanGesture_Wrapper(RJSApi& h, QPanGesture* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPanGesture_Wrapper::QPanGesture_Wrapper(RJSApi& h, QPanGesture* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPanGesture_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPanGesture_Wrapper"));
               //setObjectName("QPanGesture_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2214,12 +2124,12 @@ QPanGesture_Wrapper::QPanGesture_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QPanGesture(
-                a1_cpp
+              wrapped = new QPanGesture(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2236,14 +2146,18 @@ QPanGesture_Wrapper::QPanGesture_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPanGesture";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -3147,107 +3061,6 @@ qreal a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QPinchGesture
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QPinchGesture_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QPinchGesture_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QPinchGesture_Wrapper>("org.qcad", 1, 0, "QPinchGesture_Wrapper");
@@ -3276,15 +3089,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QPinchGesture_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPinchGesture_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QPinchGesture_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QPinchGesture_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QPinchGesture_WrapperSingleton * s = new QPinchGesture_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QPinchGesture_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QPinchGesture.js";
       QFile scriptFile(fileName);
@@ -3320,11 +3124,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QPinchGesture_Wrapper::QPinchGesture_Wrapper(RJSApi& h, QPinchGesture* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPinchGesture_Wrapper::QPinchGesture_Wrapper(RJSApi& h, QPinchGesture* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPinchGesture_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPinchGesture_Wrapper"));
               //setObjectName("QPinchGesture_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -3453,12 +3265,12 @@ QPinchGesture_Wrapper::QPinchGesture_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QPinchGesture(
-                a1_cpp
+              wrapped = new QPinchGesture(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3475,14 +3287,18 @@ QPinchGesture_Wrapper::QPinchGesture_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPinchGesture";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -6566,11 +6382,19 @@ qreal a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QSwipeGesture_Wrapper::QSwipeGesture_Wrapper(RJSApi& h, QSwipeGesture* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QSwipeGesture_Wrapper::QSwipeGesture_Wrapper(RJSApi& h, QSwipeGesture* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QSwipeGesture_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QSwipeGesture_Wrapper"));
               //setObjectName("QSwipeGesture_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -6679,12 +6503,12 @@ QSwipeGesture_Wrapper::QSwipeGesture_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QSwipeGesture(
-                a1_cpp
+              wrapped = new QSwipeGesture(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -6701,14 +6525,18 @@ QSwipeGesture_Wrapper::QSwipeGesture_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QSwipeGesture";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

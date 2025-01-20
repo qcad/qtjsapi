@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QWindow);
+              
+                  copyProperties(this, wrapper, QWindow);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QWindow);
+            copyProperties(this, wrapper, QWindow);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["screenChanged(QScreen*)"] = Object.getPrototypeOf(this).screenChanged;
   
     this["modalityChanged(Qt::WindowModality)"] = Object.getPrototypeOf(this).modalityChanged;
@@ -123,8 +124,12 @@
   
     this["transientParentChanged(QWindow*)"] = Object.getPrototypeOf(this).transientParentChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QWindow.prototype = new QWindow_BaseJs(engine);
@@ -185,35 +190,6 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
       // static functions:
       
 
-        // static function 
-        QWindow.tr = function() 
-          
-        {
-          //print("JS: QWindow.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QWindow_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QWindow);
-  }
-
-  
-  else {
-    
-        print("QWindow.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -229,4 +205,5 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
       //QWindow.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

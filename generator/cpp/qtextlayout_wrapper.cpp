@@ -84,18 +84,26 @@
 
     
       // special constructor to wrap existing object:
-      QTextLayout_Wrapper::QTextLayout_Wrapper(RJSApi& h, QTextLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextLayout_Wrapper::QTextLayout_Wrapper(RJSApi& h, QTextLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextLayout_Wrapper"));
               //setObjectName("QTextLayout_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        QTextLayout_Wrapper::QTextLayout_Wrapper(RJSApi& h, QSharedPointer<QTextLayout> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        QTextLayout_Wrapper::QTextLayout_Wrapper(RJSApi& h, QSharedPointer<QTextLayout> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("QTextLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextLayout_Wrapper"));
               //setObjectName("QTextLayout_Wrapper");
@@ -230,14 +238,14 @@ QFont a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextLayout(
-                a1_cpp
+              spWrapped = QSharedPointer<QTextLayout>(new QTextLayout(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -270,12 +278,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextLayout(
-                a1_cpp
+              spWrapped = QSharedPointer<QTextLayout>(new QTextLayout(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -294,11 +302,11 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextLayout(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<QTextLayout>(new QTextLayout(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -317,14 +325,14 @@ QString a1_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QTextLayout";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

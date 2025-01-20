@@ -535,11 +535,19 @@ char a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QByteArray_Wrapper::QByteArray_Wrapper(RJSApi& h, QByteArray* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QByteArray_Wrapper::QByteArray_Wrapper(RJSApi& h, QByteArray* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QByteArray_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QByteArray_Wrapper"));
               //setObjectName("QByteArray_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -561,8 +569,10 @@ char a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QByteArray";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -638,12 +648,12 @@ QByteArray a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QByteArray(
-                a1_cpp
+              wrapped = new QByteArray(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -662,11 +672,11 @@ QByteArray a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QByteArray(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QByteArray(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -683,14 +693,18 @@ QByteArray a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QByteArray";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

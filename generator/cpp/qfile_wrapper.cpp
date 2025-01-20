@@ -456,11 +456,19 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QFile_Wrapper::QFile_Wrapper(RJSApi& h, QFile* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QFile_Wrapper::QFile_Wrapper(RJSApi& h, QFile* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QFile_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QFile_Wrapper"));
               //setObjectName("QFile_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -620,13 +628,13 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFile(
-                a1_cpp
+              wrapped = new QFile(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -659,12 +667,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFile(
-                a1_cpp
+              wrapped = new QFile(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -702,12 +710,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFile(
-                a1_cpp
+              wrapped = new QFile(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -726,11 +734,11 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFile(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QFile(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -748,14 +756,18 @@ QString a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QFile";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

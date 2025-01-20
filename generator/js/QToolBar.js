@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QToolBar);
+              
+                  copyProperties(this, wrapper, QToolBar);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QToolBar);
+            copyProperties(this, wrapper, QToolBar);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QToolBar);
+            copyProperties(this, wrapper, QToolBar);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,10 +112,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["actionTriggered(QAction*)"] = Object.getPrototypeOf(this).actionTriggered;
@@ -132,8 +133,12 @@
   
     this["visibilityChanged(bool)"] = Object.getPrototypeOf(this).visibilityChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QToolBar.prototype = new QToolBar_BaseJs(engine);
@@ -182,119 +187,6 @@
       // static functions:
       
 
-        // static function 
-        QToolBar.tr = function() 
-          
-        {
-          //print("JS: QToolBar.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QToolBar_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QToolBar);
-  }
-
-  
-  else {
-    
-        print("QToolBar.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QToolBar.setTabOrder = function() 
-          
-        {
-          //print("JS: QToolBar.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QToolBar_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QToolBar);
-  }
-
-  
-  else {
-    
-        print("QToolBar.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QToolBar.mouseGrabber = function() 
-          
-        {
-          //print("JS: QToolBar.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QToolBar_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QToolBar);
-  }
-
-  
-  else {
-    
-        print("QToolBar.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QToolBar.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QToolBar.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QToolBar_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QToolBar);
-  }
-
-  
-  else {
-    
-        print("QToolBar.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -310,4 +202,5 @@
       //QToolBar.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

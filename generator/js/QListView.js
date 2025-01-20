@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QListView);
+              
+                  copyProperties(this, wrapper, QListView);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QListView);
+            copyProperties(this, wrapper, QListView);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
@@ -101,8 +102,12 @@
   
     this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QListView.prototype = new QListView_BaseJs(engine);
@@ -241,12 +246,12 @@ QListView.IconMode = QListView_Wrapper.IconMode;
 
       // functions:
       
-        // function 
-        QListView.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QListView.prototype.actionEvent");
-          
+      // function 
+      QListView.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: QListView.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -254,7 +259,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -270,123 +276,10 @@ QListView.IconMode = QListView_Wrapper.IconMode;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
-      
-
-        // static function 
-        QListView.tr = function() 
-          
-        {
-          //print("JS: QListView.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QListView_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QListView);
-  }
-
-  
-  else {
-    
-        print("QListView.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QListView.setTabOrder = function() 
-          
-        {
-          //print("JS: QListView.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QListView_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QListView);
-  }
-
-  
-  else {
-    
-        print("QListView.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QListView.mouseGrabber = function() 
-          
-        {
-          //print("JS: QListView.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QListView_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QListView);
-  }
-
-  
-  else {
-    
-        print("QListView.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QListView.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QListView.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QListView_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QListView);
-  }
-
-  
-  else {
-    
-        print("QListView.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // constants:
@@ -404,4 +297,5 @@ QListView.IconMode = QListView_Wrapper.IconMode;
       //QListView.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

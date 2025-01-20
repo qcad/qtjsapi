@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QIODevice);
+              
+                  copyProperties(this, wrapper, QIODevice);
+                
             //}
           }
           else {
@@ -53,18 +55,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["channelReadyRead(int)"] = Object.getPrototypeOf(this).channelReadyRead;
   
     this["bytesWritten(qint64)"] = Object.getPrototypeOf(this).bytesWritten;
   
     this["channelBytesWritten(int,qint64)"] = Object.getPrototypeOf(this).channelBytesWritten;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QIODevice.prototype = new QIODevice_BaseJs(engine);
@@ -125,35 +130,6 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
       // static functions:
       
 
-        // static function 
-        QIODevice.tr = function() 
-          
-        {
-          //print("JS: QIODevice.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QIODevice_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QIODevice);
-  }
-
-  
-  else {
-    
-        print("QIODevice.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -169,4 +145,5 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
       //QIODevice.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

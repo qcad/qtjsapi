@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QAction);
+              
+                  copyProperties(this, wrapper, QAction);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QAction);
+            copyProperties(this, wrapper, QAction);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QAction);
+            copyProperties(this, wrapper, QAction);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -105,8 +107,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QAction);
+            copyProperties(this, wrapper, QAction);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -137,16 +139,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["triggered(bool)"] = Object.getPrototypeOf(this).triggered;
   
     this["toggled(bool)"] = Object.getPrototypeOf(this).toggled;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QAction.prototype = new QAction_BaseJs(engine);
@@ -205,35 +210,6 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
       // static functions:
       
 
-        // static function 
-        QAction.tr = function() 
-          
-        {
-          //print("JS: QAction.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QAction_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QAction);
-  }
-
-  
-  else {
-    
-        print("QAction.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -249,4 +225,5 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
       //QAction.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

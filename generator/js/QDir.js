@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDir);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDir);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDir);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,12 +112,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QDir.prototype = new QDir_BaseJs(engine);
@@ -188,6 +188,470 @@ QDir.NoSort = QDir_Wrapper.NoSort;
 
       // functions:
       
+        // function 
+        QDir.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QDir.prototype.setPath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.setPath");
+          return this.__PROXY__.setPath(...args);
+        };
+    
+        // function 
+        QDir.prototype.path = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.path");
+          return this.__PROXY__.path(...args);
+        };
+    
+        // function 
+        QDir.prototype.absolutePath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.absolutePath");
+          return this.__PROXY__.absolutePath(...args);
+        };
+    
+        // function 
+        QDir.prototype.canonicalPath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.canonicalPath");
+          return this.__PROXY__.canonicalPath(...args);
+        };
+    
+        // function 
+        QDir.prototype.setSearchPaths = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.setSearchPaths");
+          return this.__PROXY__.setSearchPaths(...args);
+        };
+    
+        // function 
+        QDir.prototype.addSearchPath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.addSearchPath");
+          return this.__PROXY__.addSearchPath(...args);
+        };
+    
+        // function 
+        QDir.prototype.searchPaths = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.searchPaths");
+          return this.__PROXY__.searchPaths(...args);
+        };
+    
+        // function 
+        QDir.prototype.dirName = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.dirName");
+          return this.__PROXY__.dirName(...args);
+        };
+    
+        // function 
+        QDir.prototype.filePath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.filePath");
+          return this.__PROXY__.filePath(...args);
+        };
+    
+        // function 
+        QDir.prototype.absoluteFilePath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.absoluteFilePath");
+          return this.__PROXY__.absoluteFilePath(...args);
+        };
+    
+        // function 
+        QDir.prototype.relativeFilePath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.relativeFilePath");
+          return this.__PROXY__.relativeFilePath(...args);
+        };
+    
+        // function 
+        QDir.prototype.toNativeSeparators = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.toNativeSeparators");
+          return this.__PROXY__.toNativeSeparators(...args);
+        };
+    
+        // function 
+        QDir.prototype.fromNativeSeparators = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.fromNativeSeparators");
+          return this.__PROXY__.fromNativeSeparators(...args);
+        };
+    
+        // function 
+        QDir.prototype.cd = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.cd");
+          return this.__PROXY__.cd(...args);
+        };
+    
+        // function 
+        QDir.prototype.cdUp = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.cdUp");
+          return this.__PROXY__.cdUp(...args);
+        };
+    
+        // function 
+        QDir.prototype.nameFilters = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.nameFilters");
+          return this.__PROXY__.nameFilters(...args);
+        };
+    
+        // function 
+        QDir.prototype.setNameFilters = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.setNameFilters");
+          return this.__PROXY__.setNameFilters(...args);
+        };
+    
+        // function 
+        QDir.prototype.filter = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.filter");
+          return this.__PROXY__.filter(...args);
+        };
+    
+        // function 
+        QDir.prototype.setFilter = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.setFilter");
+          return this.__PROXY__.setFilter(...args);
+        };
+    
+        // function 
+        QDir.prototype.sorting = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.sorting");
+          return this.__PROXY__.sorting(...args);
+        };
+    
+        // function 
+        QDir.prototype.setSorting = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.setSorting");
+          return this.__PROXY__.setSorting(...args);
+        };
+    
+        // function 
+        QDir.prototype.count = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.count");
+          return this.__PROXY__.count(...args);
+        };
+    
+        // function 
+        QDir.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.isEmpty");
+          return this.__PROXY__.isEmpty(...args);
+        };
+    
+        // function 
+        QDir.prototype.nameFiltersFromString = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.nameFiltersFromString");
+          return this.__PROXY__.nameFiltersFromString(...args);
+        };
+    
+        // function 
+        QDir.prototype.entryList = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.entryList");
+          return this.__PROXY__.entryList(...args);
+        };
+    
+        // function 
+        QDir.prototype.entryInfoList = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.entryInfoList");
+          return this.__PROXY__.entryInfoList(...args);
+        };
+    
+        // function 
+        QDir.prototype.mkdir = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.mkdir");
+          return this.__PROXY__.mkdir(...args);
+        };
+    
+        // function 
+        QDir.prototype.rmdir = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.rmdir");
+          return this.__PROXY__.rmdir(...args);
+        };
+    
+        // function 
+        QDir.prototype.mkpath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.mkpath");
+          return this.__PROXY__.mkpath(...args);
+        };
+    
+        // function 
+        QDir.prototype.rmpath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.rmpath");
+          return this.__PROXY__.rmpath(...args);
+        };
+    
+        // function 
+        QDir.prototype.removeRecursively = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.removeRecursively");
+          return this.__PROXY__.removeRecursively(...args);
+        };
+    
+        // function 
+        QDir.prototype.isReadable = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.isReadable");
+          return this.__PROXY__.isReadable(...args);
+        };
+    
+        // function 
+        QDir.prototype.exists = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.exists");
+          return this.__PROXY__.exists(...args);
+        };
+    
+        // function 
+        QDir.prototype.isRoot = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.isRoot");
+          return this.__PROXY__.isRoot(...args);
+        };
+    
+        // function 
+        QDir.prototype.isRelativePath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.isRelativePath");
+          return this.__PROXY__.isRelativePath(...args);
+        };
+    
+        // function 
+        QDir.prototype.isAbsolutePath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.isAbsolutePath");
+          return this.__PROXY__.isAbsolutePath(...args);
+        };
+    
+        // function 
+        QDir.prototype.isRelative = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.isRelative");
+          return this.__PROXY__.isRelative(...args);
+        };
+    
+        // function 
+        QDir.prototype.isAbsolute = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.isAbsolute");
+          return this.__PROXY__.isAbsolute(...args);
+        };
+    
+        // function 
+        QDir.prototype.makeAbsolute = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.makeAbsolute");
+          return this.__PROXY__.makeAbsolute(...args);
+        };
+    
+        // function 
+        QDir.prototype.remove = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.remove");
+          return this.__PROXY__.remove(...args);
+        };
+    
+        // function 
+        QDir.prototype.rename = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.rename");
+          return this.__PROXY__.rename(...args);
+        };
+    
+        // function 
+        QDir.prototype.drives = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.drives");
+          return this.__PROXY__.drives(...args);
+        };
+    
+        // function 
+        QDir.prototype.listSeparator = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.listSeparator");
+          return this.__PROXY__.listSeparator(...args);
+        };
+    
+        // function 
+        QDir.prototype.sep = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.separator");
+          return this.__PROXY__.separator(...args);
+        };
+    
+        // function 
+        QDir.prototype.setCurrent = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.setCurrent");
+          return this.__PROXY__.setCurrent(...args);
+        };
+    
+        // function 
+        QDir.prototype.current = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.current");
+          return this.__PROXY__.current(...args);
+        };
+    
+        // function 
+        QDir.prototype.currentPath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.currentPath");
+          return this.__PROXY__.currentPath(...args);
+        };
+    
+        // function 
+        QDir.prototype.home = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.home");
+          return this.__PROXY__.home(...args);
+        };
+    
+        // function 
+        QDir.prototype.homePath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.homePath");
+          return this.__PROXY__.homePath(...args);
+        };
+    
+        // function 
+        QDir.prototype.root = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.root");
+          return this.__PROXY__.root(...args);
+        };
+    
+        // function 
+        QDir.prototype.rootPath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.rootPath");
+          return this.__PROXY__.rootPath(...args);
+        };
+    
+        // function 
+        QDir.prototype.temp = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.temp");
+          return this.__PROXY__.temp(...args);
+        };
+    
+        // function 
+        QDir.prototype.tempPath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.tempPath");
+          return this.__PROXY__.tempPath(...args);
+        };
+    
+        // function 
+        QDir.prototype.match = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.match");
+          return this.__PROXY__.match(...args);
+        };
+    
+        // function 
+        QDir.prototype.cleanPath = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.cleanPath");
+          return this.__PROXY__.cleanPath(...args);
+        };
+    
+        // function 
+        QDir.prototype.refresh = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.refresh");
+          return this.__PROXY__.refresh(...args);
+        };
+    
+        // function 
+        QDir.prototype.d_func = function(...args) 
+          
+        {
+          //print("JS: QDir.prototype.d_func");
+          return this.__PROXY__.d_func(...args);
+        };
+    
 
       // static functions:
       
@@ -837,4 +1301,8 @@ QDir.NoSort = QDir_Wrapper.NoSort;
       //QDir.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QDir.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

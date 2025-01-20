@@ -22,73 +22,6 @@
       
         #include <QIODevice>
       
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QIODevice_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QIODevice_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QIODevice
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#ifndef QT_NO_QOBJECT
-
-#endif
-
-
-      private:
-          RJSApi& handler;
-          //static QIODevice_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QIODevice
@@ -1496,12 +1429,13 @@ ExistingOnly = QIODevice::ExistingOnly,
 
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1537,27 +1471,30 @@ ExistingOnly = QIODevice::ExistingOnly,
 
         // get wrapped object:
         QIODevice* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QIODevice* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1565,7 +1502,8 @@ ExistingOnly = QIODevice::ExistingOnly,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1577,9 +1515,10 @@ ExistingOnly = QIODevice::ExistingOnly,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1594,9 +1533,10 @@ ExistingOnly = QIODevice::ExistingOnly,
         
 
         private:
-        // wrapped object:
-        QIODevice* wrapped;
 
+        
+          // wrapped object:
+          QIODevice* wrapped;
         
 
         bool wrappedCreated;

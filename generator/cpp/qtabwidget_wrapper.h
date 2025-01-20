@@ -25,142 +25,6 @@
       // wrapped object is QTabWidget_Base class if new object is created: 
       #include "qtabwidget_base.h"
     
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QTabWidget_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QTabWidget_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QTabWidget
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTabWidget
-    // Function: setTabOrder
-    // Source: QWidget
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTabWidget
-    // Function: mouseGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QTabWidget
-    // Function: keyboardGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-#if QT_CONFIG(tooltip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-
-      private:
-          RJSApi& handler;
-          //static QTabWidget_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTabWidget
@@ -6859,12 +6723,13 @@ Triangular = QTabWidget::Triangular,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -6900,27 +6765,30 @@ Triangular = QTabWidget::Triangular,
 
         // get wrapped object:
         QTabWidget* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTabWidget* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -6939,7 +6807,8 @@ Triangular = QTabWidget::Triangular,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -6951,9 +6820,10 @@ Triangular = QTabWidget::Triangular,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -6975,9 +6845,10 @@ Triangular = QTabWidget::Triangular,
         
 
         private:
-        // wrapped object:
-        QTabWidget* wrapped;
 
+        
+          // wrapped object:
+          QTabWidget* wrapped;
         
 
         bool wrappedCreated;

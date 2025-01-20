@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QAbstractItemView);
+              
+                  copyProperties(this, wrapper, QAbstractItemView);
+                
             //}
           }
           else {
@@ -53,10 +55,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
@@ -71,8 +72,12 @@
   
     this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QAbstractItemView.prototype = new QAbstractItemView_BaseJs(engine);
@@ -194,147 +199,6 @@ QAbstractItemView.InternalMove = QAbstractItemView_Wrapper.InternalMove;
       // static functions:
       
 
-        // static function 
-        QAbstractItemView.tr = function() 
-          
-        {
-          //print("JS: QAbstractItemView.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QAbstractItemView_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractItemView);
-  }
-
-  
-  else {
-    
-        print("QAbstractItemView.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractItemView.devicePixelRatioFScale = function() 
-          
-        {
-          //print("JS: QAbstractItemView.devicePixelRatioFScale");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractItemView_WrapperSingletonInstance.devicePixelRatioFScale(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractItemView);
-  }
-
-  
-  else {
-    
-        print("QAbstractItemView.devicePixelRatioFScale(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractItemView.setTabOrder = function() 
-          
-        {
-          //print("JS: QAbstractItemView.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QAbstractItemView_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractItemView);
-  }
-
-  
-  else {
-    
-        print("QAbstractItemView.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractItemView.mouseGrabber = function() 
-          
-        {
-          //print("JS: QAbstractItemView.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractItemView_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractItemView);
-  }
-
-  
-  else {
-    
-        print("QAbstractItemView.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractItemView.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QAbstractItemView.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractItemView_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractItemView);
-  }
-
-  
-  else {
-    
-        print("QAbstractItemView.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -350,4 +214,5 @@ QAbstractItemView.InternalMove = QAbstractItemView_Wrapper.InternalMove;
       //QAbstractItemView.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

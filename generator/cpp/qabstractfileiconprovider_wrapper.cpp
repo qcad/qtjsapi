@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QAbstractFileIconProvider_Wrapper::QAbstractFileIconProvider_Wrapper(RJSApi& h, QAbstractFileIconProvider* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QAbstractFileIconProvider_Wrapper::QAbstractFileIconProvider_Wrapper(RJSApi& h, QAbstractFileIconProvider* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QAbstractFileIconProvider_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QAbstractFileIconProvider_Wrapper"));
               //setObjectName("QAbstractFileIconProvider_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ QAbstractFileIconProvider_Wrapper::QAbstractFileIconProvider_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QAbstractFileIconProvider(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QAbstractFileIconProvider(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ QAbstractFileIconProvider_Wrapper::QAbstractFileIconProvider_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QAbstractFileIconProvider";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

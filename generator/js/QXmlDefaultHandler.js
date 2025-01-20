@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QXmlDefaultHandler);
+              
+                  copyProperties(this, wrapper, QXmlDefaultHandler);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QXmlDefaultHandler);
+            copyProperties(this, wrapper, QXmlDefaultHandler);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QXmlDefaultHandler.prototype = new QXmlDefaultHandler_BaseJs(engine);
@@ -148,12 +148,12 @@
 
       // functions:
       
-        // function 
-        QXmlDefaultHandler.prototype.setDocumentLocator = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.setDocumentLocator");
-          
+      // function 
+      QXmlDefaultHandler.prototype.setDocumentLocator = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.setDocumentLocator");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -161,7 +161,8 @@
                 //return this.wrapper.setDocumentLocator(
                 // call highest level JS implementation:
                 //return this.setDocumentLocatorBase(
-                return this.setDocumentLocatorSuper(
+                
+                    return this.setDocumentLocatorSuper(
                   arguments[0]
                 );
               
@@ -177,14 +178,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.startDocument = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.startDocument");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.startDocument = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.startDocument");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -192,7 +193,8 @@
                 //return this.wrapper.startDocument(
                 // call highest level JS implementation:
                 //return this.startDocumentBase(
-                return this.startDocumentSuper(
+                
+                    return this.startDocumentSuper(
                   
                 );
               
@@ -208,14 +210,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.endDocument = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.endDocument");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.endDocument = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.endDocument");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -223,7 +225,8 @@
                 //return this.wrapper.endDocument(
                 // call highest level JS implementation:
                 //return this.endDocumentBase(
-                return this.endDocumentSuper(
+                
+                    return this.endDocumentSuper(
                   
                 );
               
@@ -239,14 +242,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.startPrefixMapping = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.startPrefixMapping");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.startPrefixMapping = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.startPrefixMapping");
+        
       if (arguments.length == 2) {
     
                 // calling wrapper:
@@ -254,7 +257,8 @@
                 //return this.wrapper.startPrefixMapping(
                 // call highest level JS implementation:
                 //return this.startPrefixMappingBase(
-                return this.startPrefixMappingSuper(
+                
+                    return this.startPrefixMappingSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -270,14 +274,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.endPrefixMapping = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.endPrefixMapping");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.endPrefixMapping = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.endPrefixMapping");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -285,7 +289,8 @@
                 //return this.wrapper.endPrefixMapping(
                 // call highest level JS implementation:
                 //return this.endPrefixMappingBase(
-                return this.endPrefixMappingSuper(
+                
+                    return this.endPrefixMappingSuper(
                   arguments[0]
                 );
               
@@ -301,14 +306,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.startElement = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.startElement");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.startElement = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.startElement");
+        
       if (arguments.length == 4) {
     
                 // calling wrapper:
@@ -316,7 +321,8 @@
                 //return this.wrapper.startElement(
                 // call highest level JS implementation:
                 //return this.startElementBase(
-                return this.startElementSuper(
+                
+                    return this.startElementSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3]
                 );
               
@@ -332,14 +338,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.endElement = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.endElement");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.endElement = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.endElement");
+        
       if (arguments.length == 3) {
     
                 // calling wrapper:
@@ -347,7 +353,8 @@
                 //return this.wrapper.endElement(
                 // call highest level JS implementation:
                 //return this.endElementBase(
-                return this.endElementSuper(
+                
+                    return this.endElementSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -363,14 +370,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.characters = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.characters");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.characters = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.characters");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -378,7 +385,8 @@
                 //return this.wrapper.characters(
                 // call highest level JS implementation:
                 //return this.charactersBase(
-                return this.charactersSuper(
+                
+                    return this.charactersSuper(
                   arguments[0]
                 );
               
@@ -394,14 +402,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.ignorableWhitespace = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.ignorableWhitespace");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.ignorableWhitespace = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.ignorableWhitespace");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -409,7 +417,8 @@
                 //return this.wrapper.ignorableWhitespace(
                 // call highest level JS implementation:
                 //return this.ignorableWhitespaceBase(
-                return this.ignorableWhitespaceSuper(
+                
+                    return this.ignorableWhitespaceSuper(
                   arguments[0]
                 );
               
@@ -425,14 +434,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.processingInstruction = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.processingInstruction");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.processingInstruction = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.processingInstruction");
+        
       if (arguments.length == 2) {
     
                 // calling wrapper:
@@ -440,7 +449,8 @@
                 //return this.wrapper.processingInstruction(
                 // call highest level JS implementation:
                 //return this.processingInstructionBase(
-                return this.processingInstructionSuper(
+                
+                    return this.processingInstructionSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -456,14 +466,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.skippedEntity = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.skippedEntity");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.skippedEntity = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.skippedEntity");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -471,7 +481,8 @@
                 //return this.wrapper.skippedEntity(
                 // call highest level JS implementation:
                 //return this.skippedEntityBase(
-                return this.skippedEntitySuper(
+                
+                    return this.skippedEntitySuper(
                   arguments[0]
                 );
               
@@ -487,14 +498,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.notationDecl = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.notationDecl");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.notationDecl = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.notationDecl");
+        
       if (arguments.length == 3) {
     
                 // calling wrapper:
@@ -502,7 +513,8 @@
                 //return this.wrapper.notationDecl(
                 // call highest level JS implementation:
                 //return this.notationDeclBase(
-                return this.notationDeclSuper(
+                
+                    return this.notationDeclSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -518,14 +530,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.unparsedEntityDecl = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.unparsedEntityDecl");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.unparsedEntityDecl = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.unparsedEntityDecl");
+        
       if (arguments.length == 4) {
     
                 // calling wrapper:
@@ -533,7 +545,8 @@
                 //return this.wrapper.unparsedEntityDecl(
                 // call highest level JS implementation:
                 //return this.unparsedEntityDeclBase(
-                return this.unparsedEntityDeclSuper(
+                
+                    return this.unparsedEntityDeclSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3]
                 );
               
@@ -549,14 +562,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.startDTD = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.startDTD");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.startDTD = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.startDTD");
+        
       if (arguments.length == 3) {
     
                 // calling wrapper:
@@ -564,7 +577,8 @@
                 //return this.wrapper.startDTD(
                 // call highest level JS implementation:
                 //return this.startDTDBase(
-                return this.startDTDSuper(
+                
+                    return this.startDTDSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -580,14 +594,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.endDTD = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.endDTD");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.endDTD = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.endDTD");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -595,7 +609,8 @@
                 //return this.wrapper.endDTD(
                 // call highest level JS implementation:
                 //return this.endDTDBase(
-                return this.endDTDSuper(
+                
+                    return this.endDTDSuper(
                   
                 );
               
@@ -611,14 +626,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.startEntity = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.startEntity");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.startEntity = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.startEntity");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -626,7 +641,8 @@
                 //return this.wrapper.startEntity(
                 // call highest level JS implementation:
                 //return this.startEntityBase(
-                return this.startEntitySuper(
+                
+                    return this.startEntitySuper(
                   arguments[0]
                 );
               
@@ -642,14 +658,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.endEntity = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.endEntity");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.endEntity = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.endEntity");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -657,7 +673,8 @@
                 //return this.wrapper.endEntity(
                 // call highest level JS implementation:
                 //return this.endEntityBase(
-                return this.endEntitySuper(
+                
+                    return this.endEntitySuper(
                   arguments[0]
                 );
               
@@ -673,14 +690,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.startCDATA = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.startCDATA");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.startCDATA = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.startCDATA");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -688,7 +705,8 @@
                 //return this.wrapper.startCDATA(
                 // call highest level JS implementation:
                 //return this.startCDATABase(
-                return this.startCDATASuper(
+                
+                    return this.startCDATASuper(
                   
                 );
               
@@ -704,14 +722,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.endCDATA = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.endCDATA");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.endCDATA = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.endCDATA");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -719,7 +737,8 @@
                 //return this.wrapper.endCDATA(
                 // call highest level JS implementation:
                 //return this.endCDATABase(
-                return this.endCDATASuper(
+                
+                    return this.endCDATASuper(
                   
                 );
               
@@ -735,14 +754,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.comment = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.comment");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.comment = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.comment");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -750,7 +769,8 @@
                 //return this.wrapper.comment(
                 // call highest level JS implementation:
                 //return this.commentBase(
-                return this.commentSuper(
+                
+                    return this.commentSuper(
                   arguments[0]
                 );
               
@@ -766,14 +786,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.attributeDecl = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.attributeDecl");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.attributeDecl = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.attributeDecl");
+        
       if (arguments.length == 5) {
     
                 // calling wrapper:
@@ -781,7 +801,8 @@
                 //return this.wrapper.attributeDecl(
                 // call highest level JS implementation:
                 //return this.attributeDeclBase(
-                return this.attributeDeclSuper(
+                
+                    return this.attributeDeclSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
                 );
               
@@ -797,14 +818,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.internalEntityDecl = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.internalEntityDecl");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.internalEntityDecl = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.internalEntityDecl");
+        
       if (arguments.length == 2) {
     
                 // calling wrapper:
@@ -812,7 +833,8 @@
                 //return this.wrapper.internalEntityDecl(
                 // call highest level JS implementation:
                 //return this.internalEntityDeclBase(
-                return this.internalEntityDeclSuper(
+                
+                    return this.internalEntityDeclSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -828,14 +850,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.externalEntityDecl = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.externalEntityDecl");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.externalEntityDecl = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.externalEntityDecl");
+        
       if (arguments.length == 3) {
     
                 // calling wrapper:
@@ -843,7 +865,8 @@
                 //return this.wrapper.externalEntityDecl(
                 // call highest level JS implementation:
                 //return this.externalEntityDeclBase(
-                return this.externalEntityDeclSuper(
+                
+                    return this.externalEntityDeclSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -859,14 +882,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QXmlDefaultHandler.prototype.errorString = function() 
-          
-        {
-          //print("JS: QXmlDefaultHandler.prototype.errorString");
-          
+      };
+    
+      // function 
+      QXmlDefaultHandler.prototype.errorString = function() 
+        
+      {
+        //print("JS: QXmlDefaultHandler.prototype.errorString");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -874,7 +897,8 @@
                 //return this.wrapper.errorString(
                 // call highest level JS implementation:
                 //return this.errorStringBase(
-                return this.errorStringSuper(
+                
+                    return this.errorStringSuper(
                   
                 );
               
@@ -890,8 +914,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -911,4 +935,5 @@
       //QXmlDefaultHandler.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

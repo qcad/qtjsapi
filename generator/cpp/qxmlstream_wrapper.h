@@ -130,12 +130,13 @@
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -171,27 +172,30 @@
 
         // get wrapped object:
         QXmlStreamAttribute* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QXmlStreamAttribute* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -199,7 +203,8 @@
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -211,9 +216,10 @@
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -228,9 +234,10 @@
         
 
         private:
-        // wrapped object:
-        QXmlStreamAttribute* wrapped;
 
+        
+          // wrapped object:
+          QXmlStreamAttribute* wrapped;
         
 
         bool wrappedCreated;
@@ -427,12 +434,13 @@
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -468,27 +476,30 @@
 
         // get wrapped object:
         QXmlStreamAttributes* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QXmlStreamAttributes* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -496,7 +507,8 @@
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -508,9 +520,10 @@
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -525,9 +538,10 @@
         
 
         private:
-        // wrapped object:
-        QXmlStreamAttributes* wrapped;
 
+        
+          // wrapped object:
+          QXmlStreamAttributes* wrapped;
         
 
         bool wrappedCreated;
@@ -1466,12 +1480,13 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1507,27 +1522,30 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
 
         // get wrapped object:
         QXmlStreamReader* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QXmlStreamReader* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1535,7 +1553,8 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1547,9 +1566,10 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1564,9 +1584,10 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
         
 
         private:
-        // wrapped object:
-        QXmlStreamReader* wrapped;
 
+        
+          // wrapped object:
+          QXmlStreamReader* wrapped;
         
 
         bool wrappedCreated;
@@ -2289,12 +2310,13 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -2330,27 +2352,30 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
 
         // get wrapped object:
         QXmlStreamWriter* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QXmlStreamWriter* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -2358,7 +2383,8 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -2370,9 +2396,10 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -2387,9 +2414,10 @@ PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
         
 
         private:
-        // wrapped object:
-        QXmlStreamWriter* wrapped;
 
+        
+          // wrapped object:
+          QXmlStreamWriter* wrapped;
         
 
         bool wrappedCreated;

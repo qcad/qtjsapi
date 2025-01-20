@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFrame);
+              
+                  copyProperties(this, wrapper, QFrame);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFrame);
+            copyProperties(this, wrapper, QFrame);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,14 +85,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QFrame.prototype = new QFrame_BaseJs(engine);
@@ -157,119 +162,6 @@ QFrame.Shape_Mask = QFrame_Wrapper.Shape_Mask;
       // static functions:
       
 
-        // static function 
-        QFrame.tr = function() 
-          
-        {
-          //print("JS: QFrame.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QFrame_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QFrame);
-  }
-
-  
-  else {
-    
-        print("QFrame.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFrame.setTabOrder = function() 
-          
-        {
-          //print("JS: QFrame.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QFrame_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QFrame);
-  }
-
-  
-  else {
-    
-        print("QFrame.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFrame.mouseGrabber = function() 
-          
-        {
-          //print("JS: QFrame.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFrame_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QFrame);
-  }
-
-  
-  else {
-    
-        print("QFrame.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFrame.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QFrame.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFrame_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QFrame);
-  }
-
-  
-  else {
-    
-        print("QFrame.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -285,4 +177,5 @@ QFrame.Shape_Mask = QFrame_Wrapper.Shape_Mask;
       //QFrame.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

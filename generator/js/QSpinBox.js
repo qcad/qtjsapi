@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSpinBox);
+              
+                  copyProperties(this, wrapper, QSpinBox);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSpinBox);
+            copyProperties(this, wrapper, QSpinBox);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,18 +85,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["valueChanged(int)"] = Object.getPrototypeOf(this).valueChanged;
   
     this["textChanged(QString)"] = Object.getPrototypeOf(this).textChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QSpinBox.prototype = new QSpinBox_BaseJs(engine);
@@ -143,12 +148,12 @@
 
       // functions:
       
-        // function 
-        QSpinBox.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QSpinBox.prototype.actionEvent");
-          
+      // function 
+      QSpinBox.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: QSpinBox.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -156,7 +161,8 @@
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -172,123 +178,10 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
-      
-
-        // static function 
-        QSpinBox.tr = function() 
-          
-        {
-          //print("JS: QSpinBox.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QSpinBox_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QSpinBox);
-  }
-
-  
-  else {
-    
-        print("QSpinBox.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QSpinBox.setTabOrder = function() 
-          
-        {
-          //print("JS: QSpinBox.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QSpinBox_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QSpinBox);
-  }
-
-  
-  else {
-    
-        print("QSpinBox.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QSpinBox.mouseGrabber = function() 
-          
-        {
-          //print("JS: QSpinBox.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QSpinBox_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QSpinBox);
-  }
-
-  
-  else {
-    
-        print("QSpinBox.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QSpinBox.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QSpinBox.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QSpinBox_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QSpinBox);
-  }
-
-  
-  else {
-    
-        print("QSpinBox.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // constants:
@@ -306,4 +199,5 @@
       //QSpinBox.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

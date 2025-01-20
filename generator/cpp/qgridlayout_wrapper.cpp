@@ -13,187 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QGridLayout
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QGridLayout_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QGridLayout
-    // Function: closestAcceptableSize
-    // Source: QLayout
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QGridLayout_WrapperSingleton::closestAcceptableSize
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QSize(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: w (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp: s (QSize)
-  
-QSize a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QSize(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QSize res = 
-                
-                // call static member function:
-                QLayout::closestAcceptableSize(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for closestAcceptableSize";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QGridLayout_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QGridLayout_Wrapper>("org.qcad", 1, 0, "QGridLayout_Wrapper");
@@ -222,15 +41,6 @@ QSize a2_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QGridLayout_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QGridLayout_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QGridLayout_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QGridLayout_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QGridLayout_WrapperSingleton * s = new QGridLayout_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QGridLayout_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QGridLayout.js";
       QFile scriptFile(fileName);
@@ -266,11 +76,19 @@ QSize a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QGridLayout_Wrapper::QGridLayout_Wrapper(RJSApi& h, QGridLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QGridLayout_Wrapper::QGridLayout_Wrapper(RJSApi& h, QGridLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QGridLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QGridLayout_Wrapper"));
               //setObjectName("QGridLayout_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -399,12 +217,12 @@ QGridLayout_Wrapper::QGridLayout_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QGridLayout(
-                a1_cpp
+              wrapped = new QGridLayout(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -421,14 +239,18 @@ QGridLayout_Wrapper::QGridLayout_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QGridLayout";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

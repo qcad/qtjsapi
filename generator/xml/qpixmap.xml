@@ -4,7 +4,7 @@
   <class_decl name="QImageReader" />
   <class_decl name="QColor" />
   <class_decl name="QVariant" />
-  <class name="QPixmap">
+  <class name="QPixmap" proxy="true">
     <super_list>
       <super name="QPaintDevice" />
     </super_list>

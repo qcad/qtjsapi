@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFontDatabase);
+              
+                  copyProperties(this, wrapper, QFontDatabase);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFontDatabase);
+            copyProperties(this, wrapper, QFontDatabase);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QFontDatabase.prototype = new QFontDatabase_BaseJs(engine);
@@ -907,4 +907,5 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
       //QFontDatabase.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

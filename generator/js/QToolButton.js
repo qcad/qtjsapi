@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QToolButton);
+              
+                  copyProperties(this, wrapper, QToolButton);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QToolButton);
+            copyProperties(this, wrapper, QToolButton);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["clicked(bool)"] = Object.getPrototypeOf(this).clicked;
@@ -95,8 +96,12 @@
   
     this["triggered(QAction*)"] = Object.getPrototypeOf(this).triggered;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QToolButton.prototype = new QToolButton_BaseJs(engine);
@@ -149,119 +154,6 @@
       // static functions:
       
 
-        // static function 
-        QToolButton.tr = function() 
-          
-        {
-          //print("JS: QToolButton.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QToolButton_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QToolButton);
-  }
-
-  
-  else {
-    
-        print("QToolButton.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QToolButton.setTabOrder = function() 
-          
-        {
-          //print("JS: QToolButton.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QToolButton_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QToolButton);
-  }
-
-  
-  else {
-    
-        print("QToolButton.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QToolButton.mouseGrabber = function() 
-          
-        {
-          //print("JS: QToolButton.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QToolButton_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QToolButton);
-  }
-
-  
-  else {
-    
-        print("QToolButton.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QToolButton.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QToolButton.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QToolButton_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QToolButton);
-  }
-
-  
-  else {
-    
-        print("QToolButton.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -277,4 +169,5 @@
       //QToolButton.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

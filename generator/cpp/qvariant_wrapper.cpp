@@ -100,11 +100,19 @@
 
     
       // special constructor to wrap existing object:
-      QVariant_Wrapper::QVariant_Wrapper(RJSApi& h, QVariant* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QVariant_Wrapper::QVariant_Wrapper(RJSApi& h, QVariant* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QVariant_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QVariant_Wrapper"));
               //setObjectName("QVariant_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -126,8 +134,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QVariant";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -203,12 +213,12 @@ QVariant a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -241,12 +251,12 @@ int a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -279,12 +289,12 @@ uint a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -317,12 +327,12 @@ bool a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -355,12 +365,12 @@ double a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -393,12 +403,12 @@ float a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -431,12 +441,12 @@ QByteArray a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -469,12 +479,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -507,12 +517,12 @@ QStringList a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -545,12 +555,12 @@ QChar a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -583,12 +593,12 @@ QDate a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -621,12 +631,12 @@ QTime a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -659,12 +669,12 @@ QDateTime a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -697,12 +707,12 @@ QList<QVariant> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -735,12 +745,12 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -773,12 +783,12 @@ QSizeF a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -811,12 +821,12 @@ QPoint a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -849,12 +859,12 @@ QPointF a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -887,12 +897,12 @@ QRect a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -925,12 +935,12 @@ QRectF a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -963,12 +973,12 @@ QLocale a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1001,12 +1011,12 @@ QUrl a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                a1_cpp
+              wrapped = new QVariant(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1025,11 +1035,11 @@ QUrl a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QVariant(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QVariant(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1046,14 +1056,18 @@ QUrl a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QVariant";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

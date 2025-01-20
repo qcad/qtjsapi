@@ -13,187 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QStackedLayout
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QStackedLayout_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QStackedLayout
-    // Function: closestAcceptableSize
-    // Source: QLayout
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QStackedLayout_WrapperSingleton::closestAcceptableSize
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QSize(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: w (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp: s (QSize)
-  
-QSize a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QSize(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QSize res = 
-                
-                // call static member function:
-                QLayout::closestAcceptableSize(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for closestAcceptableSize";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QStackedLayout_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QStackedLayout_Wrapper>("org.qcad", 1, 0, "QStackedLayout_Wrapper");
@@ -222,15 +41,6 @@ QSize a2_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QStackedLayout_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QStackedLayout_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QStackedLayout_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QStackedLayout_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QStackedLayout_WrapperSingleton * s = new QStackedLayout_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QStackedLayout_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QStackedLayout.js";
       QFile scriptFile(fileName);
@@ -266,11 +76,19 @@ QSize a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QStackedLayout_Wrapper::QStackedLayout_Wrapper(RJSApi& h, QStackedLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QStackedLayout_Wrapper::QStackedLayout_Wrapper(RJSApi& h, QStackedLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QStackedLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QStackedLayout_Wrapper"));
               //setObjectName("QStackedLayout_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -407,12 +225,12 @@ QStackedLayout_Wrapper::QStackedLayout_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QStackedLayout(
-                a1_cpp
+              wrapped = new QStackedLayout(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -450,12 +268,12 @@ QStackedLayout_Wrapper::QStackedLayout_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QStackedLayout(
-                a1_cpp
+              wrapped = new QStackedLayout(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -474,11 +292,11 @@ QStackedLayout_Wrapper::QStackedLayout_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QStackedLayout(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QStackedLayout(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -495,14 +313,18 @@ QStackedLayout_Wrapper::QStackedLayout_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QStackedLayout";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

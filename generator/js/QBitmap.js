@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QBitmap);
+              
+                  copyProperties(this, wrapper, QBitmap);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QBitmap);
+            copyProperties(this, wrapper, QBitmap);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QBitmap);
+            copyProperties(this, wrapper, QBitmap);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -103,8 +105,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QBitmap);
+            copyProperties(this, wrapper, QBitmap);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -129,8 +131,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QBitmap);
+            copyProperties(this, wrapper, QBitmap);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -161,12 +163,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QBitmap.prototype = new QBitmap_BaseJs(engine);
@@ -213,128 +213,6 @@
       
 
       // static functions:
-      
-
-        // static function 
-        QBitmap.devicePixelRatioFScale = function() 
-          
-        {
-          //print("JS: QBitmap.devicePixelRatioFScale");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QBitmap_WrapperSingletonInstance.devicePixelRatioFScale(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QBitmap);
-  }
-
-  
-  else {
-    
-        print("QBitmap.devicePixelRatioFScale(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QBitmap.defaultDepth = function() 
-          
-        {
-          //print("JS: QBitmap.defaultDepth");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QBitmap_WrapperSingletonInstance.defaultDepth(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QBitmap);
-  }
-
-  
-  else {
-    
-        print("QBitmap.defaultDepth(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QBitmap.trueMatrix = function() 
-          
-        {
-          //print("JS: QBitmap.trueMatrix");
-          
-      if (arguments.length == 3) {
-    
-                // calling static wrapper:
-                return QBitmap_WrapperSingletonInstance.trueMatrix(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QBitmap);
-  }
-
-  
-  else {
-    
-        print("QBitmap.trueMatrix(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QBitmap.fromImageReader = function() 
-          
-        {
-          //print("JS: QBitmap.fromImageReader");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 2) {
-    
-                // calling static wrapper:
-                return QBitmap_WrapperSingletonInstance.fromImageReader(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QBitmap);
-  }
-
-  
-  else {
-    
-        print("QBitmap.fromImageReader(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QBitmap.fromImageInPlace = function() 
-          
-        {
-          //print("JS: QBitmap.fromImageInPlace");
-          
-        };
       
 
         // static function 
@@ -424,4 +302,5 @@
       //QBitmap.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTableWidgetItem);
+              
+                  copyProperties(this, wrapper, QTableWidgetItem);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTableWidgetItem);
+            copyProperties(this, wrapper, QTableWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTableWidgetItem);
+            copyProperties(this, wrapper, QTableWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -105,8 +107,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTableWidgetItem);
+            copyProperties(this, wrapper, QTableWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -137,12 +139,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QTableWidgetItem.prototype = new QTableWidgetItem_BaseJs(engine);
@@ -202,4 +202,5 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
       //QTableWidgetItem.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

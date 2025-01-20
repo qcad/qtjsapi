@@ -88,11 +88,19 @@
 
     
       // special constructor to wrap existing object:
-      QTreeWidgetItem_Wrapper::QTreeWidgetItem_Wrapper(RJSApi& h, QTreeWidgetItem* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTreeWidgetItem_Wrapper::QTreeWidgetItem_Wrapper(RJSApi& h, QTreeWidgetItem* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTreeWidgetItem_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTreeWidgetItem_Wrapper"));
               //setObjectName("QTreeWidgetItem_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -225,14 +233,14 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTreeWidgetItem(
-                a1_cpp
+              wrapped = new QTreeWidgetItem(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -301,14 +309,14 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTreeWidgetItem(
-                a1_cpp
+              wrapped = new QTreeWidgetItem(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -372,14 +380,14 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTreeWidgetItem(
-                a1_cpp
+              wrapped = new QTreeWidgetItem(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -448,14 +456,14 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTreeWidgetItem(
-                a1_cpp
+              wrapped = new QTreeWidgetItem(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -505,13 +513,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTreeWidgetItem(
-                a1_cpp
+              wrapped = new QTreeWidgetItem(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -566,13 +574,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTreeWidgetItem(
-                a1_cpp
+              wrapped = new QTreeWidgetItem(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -627,13 +635,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTreeWidgetItem(
-                a1_cpp
+              wrapped = new QTreeWidgetItem(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -674,12 +682,12 @@ int a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTreeWidgetItem(
-                a1_cpp
+              wrapped = new QTreeWidgetItem(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -715,12 +723,12 @@ int a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTreeWidgetItem(
-                *a1_cpp
+              wrapped = new QTreeWidgetItem(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -739,14 +747,18 @@ int a1_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QTreeWidgetItem";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -4163,276 +4175,6 @@ QList<QTreeWidgetItem*> a2_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QTreeWidget
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QTreeWidget_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QTreeWidget
-    // Function: setTabOrder
-    // Source: QWidget
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QTreeWidget_WrapperSingleton::setTabOrder
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QWidget_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp:  (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            
-                // call static member function:
-                QWidget::setTabOrder(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setTabOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QTreeWidget
-    // Function: mouseGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QTreeWidget_WrapperSingleton::mouseGrabber
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QWidget* res = 
-                
-                // call static member function:
-                QWidget::mouseGrabber(
-              
-            );
-          
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for mouseGrabber";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QTreeWidget
-    // Function: keyboardGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QTreeWidget_WrapperSingleton::keyboardGrabber
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QWidget* res = 
-                
-                // call static member function:
-                QWidget::keyboardGrabber(
-              
-            );
-          
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for keyboardGrabber";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #if QT_CONFIG(draganddrop)
 
 #endif
@@ -4465,15 +4207,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QTreeWidget_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QTreeWidget_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QTreeWidget_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QTreeWidget_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QTreeWidget_WrapperSingleton * s = new QTreeWidget_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QTreeWidget_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QTreeWidget.js";
       QFile scriptFile(fileName);
@@ -4509,11 +4242,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QTreeWidget_Wrapper::QTreeWidget_Wrapper(RJSApi& h, QTreeWidget* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTreeWidget_Wrapper::QTreeWidget_Wrapper(RJSApi& h, QTreeWidget* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTreeWidget_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTreeWidget_Wrapper"));
               //setObjectName("QTreeWidget_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

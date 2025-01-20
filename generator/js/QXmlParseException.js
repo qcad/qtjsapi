@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QXmlParseException);
+              
+                  copyProperties(this, wrapper, QXmlParseException);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QXmlParseException);
+            copyProperties(this, wrapper, QXmlParseException);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QXmlParseException);
+            copyProperties(this, wrapper, QXmlParseException);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -109,12 +111,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QXmlParseException.prototype = new QXmlParseException_BaseJs(engine);
@@ -170,4 +170,5 @@
       //QXmlParseException.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

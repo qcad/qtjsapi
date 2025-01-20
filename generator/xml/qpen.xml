@@ -3,7 +3,7 @@
   <class_decl name="QVariant" />
   <class_decl name="QBrush" />
   <class_decl name="QPen" />
-  <class name="QPen">
+  <class name="QPen" proxy="true">
     <constructor>
       <variant>
         <parameters />
@@ -15,16 +15,21 @@
       </variant>
       <variant>
         <parameters>
-          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+          <parameter const="true" type="QColor" modifier="&amp;"
+          name="color" />
         </parameters>
       </variant>
       <variant>
         <parameters>
-          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+          <parameter const="true" type="QBrush" modifier="&amp;"
+          name="brush" />
           <parameter const="false" type="qreal" modifier="" name="width" />
-          <parameter const="false" type="Qt::PenStyle" modifier="" name="s" default="Qt::SolidLine" />
-          <parameter const="false" type="Qt::PenCapStyle" modifier="" name="c" default="Qt::SquareCap" />
-          <parameter const="false" type="Qt::PenJoinStyle" modifier="" name="j" default="Qt::BevelJoin" />
+          <parameter const="false" type="Qt::PenStyle" modifier="" name="s"
+          default="Qt::SolidLine" />
+          <parameter const="false" type="Qt::PenCapStyle" modifier="" name="c"
+          default="Qt::SquareCap" />
+          <parameter const="false" type="Qt::PenJoinStyle" modifier="" name="j"
+          default="Qt::BevelJoin" />
         </parameters>
       </variant>
       <variant>
@@ -34,7 +39,8 @@
       </variant>
       <variant>
         <parameters>
-          <parameter const="false" type="QPen" modifier="&amp;&amp;" name="other" />
+          <parameter const="false" type="QPen" modifier="&amp;&amp;"
+          name="other" />
         </parameters>
       </variant>
     </constructor>
@@ -65,7 +71,8 @@
     <function name="setDashPattern">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="true" type="QList&lt;qreal&gt;" modifier="&amp;" name="pattern" />
+          <parameter const="true" type="QList&lt;qreal&gt;" modifier="&amp;"
+          name="pattern" />
         </parameters>
       </variant>
     </function>
@@ -125,7 +132,8 @@
     <function name="setColor">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+          <parameter const="true" type="QColor" modifier="&amp;"
+          name="color" />
         </parameters>
       </variant>
     </function>
@@ -137,7 +145,8 @@
     <function name="setBrush">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+          <parameter const="true" type="QBrush" modifier="&amp;"
+          name="brush" />
         </parameters>
       </variant>
     </function>
@@ -154,7 +163,8 @@
     <function name="setCapStyle">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="false" type="Qt::PenCapStyle" modifier="" name="pcs" />
+          <parameter const="false" type="Qt::PenCapStyle" modifier=""
+          name="pcs" />
         </parameters>
       </variant>
     </function>
@@ -166,7 +176,8 @@
     <function name="setJoinStyle">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="false" type="Qt::PenJoinStyle" modifier="" name="pcs" />
+          <parameter const="false" type="Qt::PenJoinStyle" modifier=""
+          name="pcs" />
         </parameters>
       </variant>
     </function>

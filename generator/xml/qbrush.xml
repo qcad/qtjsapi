@@ -3,7 +3,7 @@
   <class_decl name="QPixmap" />
   <class_decl name="QGradient" />
   <class_decl name="QVariant" />
-  <class name="QBrush">
+  <class name="QBrush" proxy="true">
     <constructor>
       <variant>
         <parameters />

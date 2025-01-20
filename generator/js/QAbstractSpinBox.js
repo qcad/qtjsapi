@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QAbstractSpinBox);
+              
+                  copyProperties(this, wrapper, QAbstractSpinBox);
+                
             //}
           }
           else {
@@ -53,14 +55,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QAbstractSpinBox.prototype = new QAbstractSpinBox_BaseJs(engine);
@@ -109,119 +114,6 @@
       // static functions:
       
 
-        // static function 
-        QAbstractSpinBox.tr = function() 
-          
-        {
-          //print("JS: QAbstractSpinBox.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QAbstractSpinBox_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractSpinBox);
-  }
-
-  
-  else {
-    
-        print("QAbstractSpinBox.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractSpinBox.setTabOrder = function() 
-          
-        {
-          //print("JS: QAbstractSpinBox.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QAbstractSpinBox_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractSpinBox);
-  }
-
-  
-  else {
-    
-        print("QAbstractSpinBox.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractSpinBox.mouseGrabber = function() 
-          
-        {
-          //print("JS: QAbstractSpinBox.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractSpinBox_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractSpinBox);
-  }
-
-  
-  else {
-    
-        print("QAbstractSpinBox.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractSpinBox.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QAbstractSpinBox.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractSpinBox_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractSpinBox);
-  }
-
-  
-  else {
-    
-        print("QAbstractSpinBox.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -237,4 +129,5 @@
       //QAbstractSpinBox.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

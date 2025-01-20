@@ -18,57 +18,6 @@
       
         #include <QPagedPaintDevice>
       
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QPagedPaintDevice_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QPagedPaintDevice_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QPagedPaintDevice
-    // Function: devicePixelRatioFScale
-    // Source: QPaintDevice
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatioFScale
-              (
-
-                
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QPagedPaintDevice_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPagedPaintDevice
@@ -667,12 +616,13 @@ PdfVersion_1_6 = QPagedPaintDevice::PdfVersion_1_6,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -708,27 +658,30 @@ PdfVersion_1_6 = QPagedPaintDevice::PdfVersion_1_6,
 
         // get wrapped object:
         QPagedPaintDevice* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QPagedPaintDevice* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -736,7 +689,8 @@ PdfVersion_1_6 = QPagedPaintDevice::PdfVersion_1_6,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -748,9 +702,10 @@ PdfVersion_1_6 = QPagedPaintDevice::PdfVersion_1_6,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -765,9 +720,10 @@ PdfVersion_1_6 = QPagedPaintDevice::PdfVersion_1_6,
         
 
         private:
-        // wrapped object:
-        QPagedPaintDevice* wrapped;
 
+        
+          // wrapped object:
+          QPagedPaintDevice* wrapped;
         
 
         bool wrappedCreated;

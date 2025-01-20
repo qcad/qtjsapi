@@ -26,61 +26,6 @@
       
         #include <QPrinter>
       
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QPrinter_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QPrinter_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QPrinter
-    // Function: devicePixelRatioFScale
-    // Source: QPaintDevice
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatioFScale
-              (
-
-                
-              )
-              
-              ;
-            
-#if defined(Q_OS_WIN)||defined(Q_CLANG_QDOC)
-
-#endif
-
-
-      private:
-          RJSApi& handler;
-          //static QPrinter_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QPrinter
@@ -1839,12 +1784,13 @@ DuplexShortSide = QPrinter::DuplexShortSide,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1880,27 +1826,30 @@ DuplexShortSide = QPrinter::DuplexShortSide,
 
         // get wrapped object:
         QPrinter* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QPrinter* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1908,7 +1857,8 @@ DuplexShortSide = QPrinter::DuplexShortSide,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1920,9 +1870,10 @@ DuplexShortSide = QPrinter::DuplexShortSide,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1937,9 +1888,10 @@ DuplexShortSide = QPrinter::DuplexShortSide,
         
 
         private:
-        // wrapped object:
-        QPrinter* wrapped;
 
+        
+          // wrapped object:
+          QPrinter* wrapped;
         
 
         bool wrappedCreated;

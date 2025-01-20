@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QItemDelegate);
+              
+                  copyProperties(this, wrapper, QItemDelegate);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QItemDelegate);
+            copyProperties(this, wrapper, QItemDelegate);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,18 +85,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["commitData(QWidget*)"] = Object.getPrototypeOf(this).commitData;
   
     this["closeEditor(QWidget*,QAbstractItemDelegate::EndEditHint)"] = Object.getPrototypeOf(this).closeEditor;
   
     this["sizeHintChanged(QModelIndex)"] = Object.getPrototypeOf(this).sizeHintChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QItemDelegate.prototype = new QItemDelegate_BaseJs(engine);
@@ -150,35 +155,6 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
       // static functions:
       
 
-        // static function 
-        QItemDelegate.tr = function() 
-          
-        {
-          //print("JS: QItemDelegate.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QItemDelegate_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QItemDelegate);
-  }
-
-  
-  else {
-    
-        print("QItemDelegate.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -194,4 +170,5 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
       //QItemDelegate.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

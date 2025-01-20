@@ -245,12 +245,13 @@ PercentageLength = QTextLength::PercentageLength,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -286,27 +287,30 @@ PercentageLength = QTextLength::PercentageLength,
 
         // get wrapped object:
         QTextLength* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextLength* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -314,7 +318,8 @@ PercentageLength = QTextLength::PercentageLength,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -326,9 +331,10 @@ PercentageLength = QTextLength::PercentageLength,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -343,9 +349,10 @@ PercentageLength = QTextLength::PercentageLength,
         
 
         private:
-        // wrapped object:
-        QTextLength* wrapped;
 
+        
+          // wrapped object:
+          QTextLength* wrapped;
         
 
         bool wrappedCreated;
@@ -1657,12 +1664,13 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1698,27 +1706,30 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
 
         // get wrapped object:
         QTextFormat* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextFormat* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1726,7 +1737,8 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1738,9 +1750,10 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1755,9 +1768,10 @@ PageBreak_AlwaysAfter = QTextFormat::PageBreak_AlwaysAfter,
         
 
         private:
-        // wrapped object:
-        QTextFormat* wrapped;
 
+        
+          // wrapped object:
+          QTextFormat* wrapped;
         
 
         bool wrappedCreated;
@@ -4503,12 +4517,13 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -4544,27 +4559,30 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
 
         // get wrapped object:
         QTextCharFormat* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextCharFormat* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -4572,7 +4590,8 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -4584,9 +4603,10 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -4601,9 +4621,10 @@ FontPropertiesAll = QTextCharFormat::FontPropertiesAll,
         
 
         private:
-        // wrapped object:
-        QTextCharFormat* wrapped;
 
+        
+          // wrapped object:
+          QTextCharFormat* wrapped;
         
 
         bool wrappedCreated;
@@ -6420,12 +6441,13 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -6461,27 +6483,30 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
 
         // get wrapped object:
         QTextBlockFormat* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextBlockFormat* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -6489,7 +6514,8 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -6501,9 +6527,10 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -6518,9 +6545,10 @@ LineDistanceHeight = QTextBlockFormat::LineDistanceHeight,
         
 
         private:
-        // wrapped object:
-        QTextBlockFormat* wrapped;
 
+        
+          // wrapped object:
+          QTextBlockFormat* wrapped;
         
 
         bool wrappedCreated;
@@ -8000,12 +8028,13 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -8041,27 +8070,30 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
 
         // get wrapped object:
         QTextListFormat* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextListFormat* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -8069,7 +8101,8 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -8081,9 +8114,10 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -8098,9 +8132,10 @@ ListStyleUndefined = QTextListFormat::ListStyleUndefined,
         
 
         private:
-        // wrapped object:
-        QTextListFormat* wrapped;
 
+        
+          // wrapped object:
+          QTextListFormat* wrapped;
         
 
         bool wrappedCreated;
@@ -9884,12 +9919,13 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -9925,27 +9961,30 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
 
         // get wrapped object:
         QTextImageFormat* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextImageFormat* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -9953,7 +9992,8 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -9965,9 +10005,10 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -9982,9 +10023,10 @@ FontPropertiesAll = QTextImageFormat::FontPropertiesAll,
         
 
         private:
-        // wrapped object:
-        QTextImageFormat* wrapped;
 
+        
+          // wrapped object:
+          QTextImageFormat* wrapped;
         
 
         bool wrappedCreated;
@@ -11874,12 +11916,13 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -11915,27 +11958,30 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
 
         // get wrapped object:
         QTextFrameFormat* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextFrameFormat* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -11943,7 +11989,8 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -11955,9 +12002,10 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -11972,9 +12020,10 @@ BorderStyle_Outset = QTextFrameFormat::BorderStyle_Outset,
         
 
         private:
-        // wrapped object:
-        QTextFrameFormat* wrapped;
 
+        
+          // wrapped object:
+          QTextFrameFormat* wrapped;
         
 
         bool wrappedCreated;
@@ -13057,12 +13106,13 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -13098,27 +13148,30 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
 
         // get wrapped object:
         QTextTableFormat* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextTableFormat* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -13126,7 +13179,8 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -13138,9 +13192,10 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -13155,9 +13210,10 @@ BorderStyle_Outset = QTextTableFormat::BorderStyle_Outset,
         
 
         private:
-        // wrapped object:
-        QTextTableFormat* wrapped;
 
+        
+          // wrapped object:
+          QTextTableFormat* wrapped;
         
 
         bool wrappedCreated;
@@ -15561,12 +15617,13 @@ FontPropertiesAll = QTextTableCellFormat::FontPropertiesAll,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -15602,27 +15659,30 @@ FontPropertiesAll = QTextTableCellFormat::FontPropertiesAll,
 
         // get wrapped object:
         QTextTableCellFormat* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextTableCellFormat* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -15630,7 +15690,8 @@ FontPropertiesAll = QTextTableCellFormat::FontPropertiesAll,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -15642,9 +15703,10 @@ FontPropertiesAll = QTextTableCellFormat::FontPropertiesAll,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -15659,9 +15721,10 @@ FontPropertiesAll = QTextTableCellFormat::FontPropertiesAll,
         
 
         private:
-        // wrapped object:
-        QTextTableCellFormat* wrapped;
 
+        
+          // wrapped object:
+          QTextTableCellFormat* wrapped;
         
 
         bool wrappedCreated;

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextBrowser);
+              
+                  copyProperties(this, wrapper, QTextBrowser);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextBrowser);
+            copyProperties(this, wrapper, QTextBrowser);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["undoAvailable(bool)"] = Object.getPrototypeOf(this).undoAvailable;
@@ -107,8 +108,12 @@
   
     this["anchorClicked(QUrl)"] = Object.getPrototypeOf(this).anchorClicked;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QTextBrowser.prototype = new QTextBrowser_BaseJs(engine);
@@ -194,119 +199,6 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
       // static functions:
       
 
-        // static function 
-        QTextBrowser.tr = function() 
-          
-        {
-          //print("JS: QTextBrowser.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QTextBrowser_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QTextBrowser);
-  }
-
-  
-  else {
-    
-        print("QTextBrowser.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTextBrowser.setTabOrder = function() 
-          
-        {
-          //print("JS: QTextBrowser.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QTextBrowser_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QTextBrowser);
-  }
-
-  
-  else {
-    
-        print("QTextBrowser.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTextBrowser.mouseGrabber = function() 
-          
-        {
-          //print("JS: QTextBrowser.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTextBrowser_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTextBrowser);
-  }
-
-  
-  else {
-    
-        print("QTextBrowser.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTextBrowser.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QTextBrowser.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTextBrowser_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTextBrowser);
-  }
-
-  
-  else {
-    
-        print("QTextBrowser.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -322,4 +214,5 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
       //QTextBrowser.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

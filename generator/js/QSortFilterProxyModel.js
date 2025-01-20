@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSortFilterProxyModel);
+              
+                  copyProperties(this, wrapper, QSortFilterProxyModel);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSortFilterProxyModel);
+            copyProperties(this, wrapper, QSortFilterProxyModel);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["headerDataChanged(Qt::Orientation,int,int)"] = Object.getPrototypeOf(this).headerDataChanged;
   
     this["rowsInserted(QModelIndex,int,int)"] = Object.getPrototypeOf(this).rowsInserted;
@@ -107,8 +108,12 @@
   
     this["autoAcceptChildRowsChanged(bool)"] = Object.getPrototypeOf(this).autoAcceptChildRowsChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QSortFilterProxyModel.prototype = new QSortFilterProxyModel_BaseJs(engine);
@@ -166,35 +171,6 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
       // static functions:
       
 
-        // static function 
-        QSortFilterProxyModel.tr = function() 
-          
-        {
-          //print("JS: QSortFilterProxyModel.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QSortFilterProxyModel_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QSortFilterProxyModel);
-  }
-
-  
-  else {
-    
-        print("QSortFilterProxyModel.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -210,4 +186,5 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
       //QSortFilterProxyModel.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

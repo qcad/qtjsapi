@@ -678,11 +678,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QIcon_Wrapper::QIcon_Wrapper(RJSApi& h, QIcon* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QIcon_Wrapper::QIcon_Wrapper(RJSApi& h, QIcon* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QIcon_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QIcon_Wrapper"));
               //setObjectName("QIcon_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -704,8 +712,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QIcon";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -781,12 +791,12 @@ QPixmap a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QIcon(
-                a1_cpp
+              wrapped = new QIcon(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -819,12 +829,12 @@ QIcon a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QIcon(
-                a1_cpp
+              wrapped = new QIcon(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -857,12 +867,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QIcon(
-                a1_cpp
+              wrapped = new QIcon(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -881,11 +891,11 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QIcon(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QIcon(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -902,14 +912,18 @@ QString a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QIcon";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

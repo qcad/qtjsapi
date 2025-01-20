@@ -13,187 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QBoxLayout
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QBoxLayout_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QBoxLayout
-    // Function: closestAcceptableSize
-    // Source: QLayout
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QBoxLayout_WrapperSingleton::closestAcceptableSize
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QSize(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: w (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp: s (QSize)
-  
-QSize a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QSize(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QSize res = 
-                
-                // call static member function:
-                QLayout::closestAcceptableSize(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for closestAcceptableSize";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QBoxLayout_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QBoxLayout_Wrapper>("org.qcad", 1, 0, "QBoxLayout_Wrapper");
@@ -222,15 +41,6 @@ QSize a2_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QBoxLayout_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QBoxLayout_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QBoxLayout_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QBoxLayout_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QBoxLayout_WrapperSingleton * s = new QBoxLayout_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QBoxLayout_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QBoxLayout.js";
       QFile scriptFile(fileName);
@@ -266,11 +76,19 @@ QSize a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QBoxLayout_Wrapper::QBoxLayout_Wrapper(RJSApi& h, QBoxLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QBoxLayout_Wrapper::QBoxLayout_Wrapper(RJSApi& h, QBoxLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QBoxLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QBoxLayout_Wrapper"));
               //setObjectName("QBoxLayout_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -410,22 +228,22 @@ QBoxLayout::Direction a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBoxLayout_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new QBoxLayout_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((QBoxLayout_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((QBoxLayout_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((QBoxLayout_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((QBoxLayout_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -443,14 +261,18 @@ QBoxLayout::Direction a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QBoxLayout";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -6099,187 +5921,6 @@ QRect a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QHBoxLayout
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QHBoxLayout_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QHBoxLayout
-    // Function: closestAcceptableSize
-    // Source: QLayout
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QHBoxLayout_WrapperSingleton::closestAcceptableSize
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QSize(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: w (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp: s (QSize)
-  
-QSize a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QSize(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QSize res = 
-                
-                // call static member function:
-                QLayout::closestAcceptableSize(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for closestAcceptableSize";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QHBoxLayout_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QHBoxLayout_Wrapper>("org.qcad", 1, 0, "QHBoxLayout_Wrapper");
@@ -6308,15 +5949,6 @@ QSize a2_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QHBoxLayout_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QHBoxLayout_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QHBoxLayout_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QHBoxLayout_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QHBoxLayout_WrapperSingleton * s = new QHBoxLayout_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QHBoxLayout_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QHBoxLayout.js";
       QFile scriptFile(fileName);
@@ -6352,11 +5984,19 @@ QSize a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QHBoxLayout_Wrapper::QHBoxLayout_Wrapper(RJSApi& h, QHBoxLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QHBoxLayout_Wrapper::QHBoxLayout_Wrapper(RJSApi& h, QHBoxLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QHBoxLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QHBoxLayout_Wrapper"));
               //setObjectName("QHBoxLayout_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -6479,21 +6119,21 @@ QHBoxLayout_Wrapper::QHBoxLayout_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QHBoxLayout_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new QHBoxLayout_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((QHBoxLayout_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((QHBoxLayout_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((QHBoxLayout_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((QHBoxLayout_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -6512,18 +6152,18 @@ QHBoxLayout_Wrapper::QHBoxLayout_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QHBoxLayout_Base(
-              handler
+                wrapped = new QHBoxLayout_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((QHBoxLayout_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((QHBoxLayout_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((QHBoxLayout_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((QHBoxLayout_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -6540,14 +6180,18 @@ QHBoxLayout_Wrapper::QHBoxLayout_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QHBoxLayout";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -12196,187 +11840,6 @@ QRect a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QVBoxLayout
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QVBoxLayout_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVBoxLayout
-    // Function: closestAcceptableSize
-    // Source: QLayout
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QVBoxLayout_WrapperSingleton::closestAcceptableSize
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QSize(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: w (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp: s (QSize)
-  
-QSize a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QSize(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QSize res = 
-                
-                // call static member function:
-                QLayout::closestAcceptableSize(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for closestAcceptableSize";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QVBoxLayout_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QVBoxLayout_Wrapper>("org.qcad", 1, 0, "QVBoxLayout_Wrapper");
@@ -12405,15 +11868,6 @@ QSize a2_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QVBoxLayout_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QVBoxLayout_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QVBoxLayout_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QVBoxLayout_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QVBoxLayout_WrapperSingleton * s = new QVBoxLayout_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QVBoxLayout_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QVBoxLayout.js";
       QFile scriptFile(fileName);
@@ -12449,11 +11903,19 @@ QSize a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QVBoxLayout_Wrapper::QVBoxLayout_Wrapper(RJSApi& h, QVBoxLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QVBoxLayout_Wrapper::QVBoxLayout_Wrapper(RJSApi& h, QVBoxLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QVBoxLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QVBoxLayout_Wrapper"));
               //setObjectName("QVBoxLayout_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -12576,21 +12038,21 @@ QVBoxLayout_Wrapper::QVBoxLayout_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QVBoxLayout_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new QVBoxLayout_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((QVBoxLayout_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((QVBoxLayout_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((QVBoxLayout_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((QVBoxLayout_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -12609,18 +12071,18 @@ QVBoxLayout_Wrapper::QVBoxLayout_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QVBoxLayout_Base(
-              handler
+                wrapped = new QVBoxLayout_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((QVBoxLayout_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((QVBoxLayout_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((QVBoxLayout_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((QVBoxLayout_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -12637,14 +12099,18 @@ QVBoxLayout_Wrapper::QVBoxLayout_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QVBoxLayout";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

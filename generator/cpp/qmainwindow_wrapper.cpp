@@ -13,276 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QMainWindow
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QMainWindow_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QMainWindow
-    // Function: setTabOrder
-    // Source: QWidget
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QMainWindow_WrapperSingleton::setTabOrder
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QWidget_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp:  (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            
-                // call static member function:
-                QWidget::setTabOrder(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setTabOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QMainWindow
-    // Function: mouseGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QMainWindow_WrapperSingleton::mouseGrabber
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QWidget* res = 
-                
-                // call static member function:
-                QWidget::mouseGrabber(
-              
-            );
-          
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for mouseGrabber";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QMainWindow
-    // Function: keyboardGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QMainWindow_WrapperSingleton::keyboardGrabber
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QWidget* res = 
-                
-                // call static member function:
-                QWidget::keyboardGrabber(
-              
-            );
-          
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for keyboardGrabber";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #if QT_CONFIG(dockwidget)
 
 #if QT_CONFIG(tabbar)
@@ -384,15 +114,6 @@ int a3_cpp;
         //QJSValue mob = engine->newQMetaObject(&QMainWindow_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QMainWindow_BaseJs", mob);
       
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QMainWindow_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QMainWindow_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QMainWindow_WrapperSingleton * s = new QMainWindow_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QMainWindow_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
-      
       QString fileName = ":generator/js/QMainWindow.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
@@ -427,11 +148,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QMainWindow_Wrapper::QMainWindow_Wrapper(RJSApi& h, QMainWindow* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QMainWindow_Wrapper::QMainWindow_Wrapper(RJSApi& h, QMainWindow* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QMainWindow_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QMainWindow_Wrapper"));
               //setObjectName("QMainWindow_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -623,22 +352,22 @@ Qt::WindowFlags a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMainWindow_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new QMainWindow_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((QMainWindow_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((QMainWindow_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((QMainWindow_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((QMainWindow_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -656,14 +385,18 @@ Qt::WindowFlags a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QMainWindow";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

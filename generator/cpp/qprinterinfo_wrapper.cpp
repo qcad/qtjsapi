@@ -336,11 +336,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QPrinterInfo_Wrapper::QPrinterInfo_Wrapper(RJSApi& h, QPrinterInfo* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPrinterInfo_Wrapper::QPrinterInfo_Wrapper(RJSApi& h, QPrinterInfo* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPrinterInfo_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPrinterInfo_Wrapper"));
               //setObjectName("QPrinterInfo_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -362,8 +370,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPrinterInfo";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -439,12 +449,12 @@ QPrinterInfo a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPrinterInfo(
-                a1_cpp
+              wrapped = new QPrinterInfo(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -480,12 +490,12 @@ QPrinterInfo a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPrinterInfo(
-                *a1_cpp
+              wrapped = new QPrinterInfo(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -504,11 +514,11 @@ QPrinterInfo a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPrinterInfo(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPrinterInfo(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -525,14 +535,18 @@ QPrinterInfo a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPrinterInfo";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QFontMetrics_Wrapper::QFontMetrics_Wrapper(RJSApi& h, QFontMetrics* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QFontMetrics_Wrapper::QFontMetrics_Wrapper(RJSApi& h, QFontMetrics* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QFontMetrics_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QFontMetrics_Wrapper"));
               //setObjectName("QFontMetrics_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -194,13 +202,13 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFontMetrics(
-                a1_cpp
+              wrapped = new QFontMetrics(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -233,12 +241,12 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFontMetrics(
-                a1_cpp
+              wrapped = new QFontMetrics(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -274,12 +282,12 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFontMetrics(
-                *a1_cpp
+              wrapped = new QFontMetrics(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -297,14 +305,18 @@ QFont a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QFontMetrics";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -2379,11 +2391,19 @@ int a4_cpp;
 
     
       // special constructor to wrap existing object:
-      QFontMetricsF_Wrapper::QFontMetricsF_Wrapper(RJSApi& h, QFontMetricsF* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QFontMetricsF_Wrapper::QFontMetricsF_Wrapper(RJSApi& h, QFontMetricsF* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QFontMetricsF_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QFontMetricsF_Wrapper"));
               //setObjectName("QFontMetricsF_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2497,13 +2517,13 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFontMetricsF(
-                a1_cpp
+              wrapped = new QFontMetricsF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2536,12 +2556,12 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFontMetricsF(
-                a1_cpp
+              wrapped = new QFontMetricsF(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2577,12 +2597,12 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFontMetricsF(
-                *a1_cpp
+              wrapped = new QFontMetricsF(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2618,12 +2638,12 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFontMetricsF(
-                *a1_cpp
+              wrapped = new QFontMetricsF(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2641,14 +2661,18 @@ QFont a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QFontMetricsF";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

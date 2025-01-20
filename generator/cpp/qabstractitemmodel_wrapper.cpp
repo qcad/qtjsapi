@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QModelIndex_Wrapper::QModelIndex_Wrapper(RJSApi& h, QModelIndex* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QModelIndex_Wrapper::QModelIndex_Wrapper(RJSApi& h, QModelIndex* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QModelIndex_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QModelIndex_Wrapper"));
               //setObjectName("QModelIndex_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QModelIndex";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -752,107 +762,6 @@ int a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QAbstractItemModel
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractItemModel_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QAbstractItemModel_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QAbstractItemModel_Wrapper>("org.qcad", 1, 0, "QAbstractItemModel_Wrapper");
@@ -881,15 +790,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QAbstractItemModel_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QAbstractItemModel_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QAbstractItemModel_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QAbstractItemModel_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QAbstractItemModel_WrapperSingleton * s = new QAbstractItemModel_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QAbstractItemModel_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QAbstractItemModel.js";
       QFile scriptFile(fileName);
@@ -925,11 +825,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QAbstractItemModel_Wrapper::QAbstractItemModel_Wrapper(RJSApi& h, QAbstractItemModel* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QAbstractItemModel_Wrapper::QAbstractItemModel_Wrapper(RJSApi& h, QAbstractItemModel* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QAbstractItemModel_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QAbstractItemModel_Wrapper"));
               //setObjectName("QAbstractItemModel_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -5615,107 +5523,6 @@ QModelIndex a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QAbstractTableModel
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractTableModel_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QAbstractTableModel_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QAbstractTableModel_Wrapper>("org.qcad", 1, 0, "QAbstractTableModel_Wrapper");
@@ -5744,15 +5551,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QAbstractTableModel_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QAbstractTableModel_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QAbstractTableModel_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QAbstractTableModel_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QAbstractTableModel_WrapperSingleton * s = new QAbstractTableModel_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QAbstractTableModel_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QAbstractTableModel.js";
       QFile scriptFile(fileName);
@@ -5788,11 +5586,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QAbstractTableModel_Wrapper::QAbstractTableModel_Wrapper(RJSApi& h, QAbstractTableModel* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QAbstractTableModel_Wrapper::QAbstractTableModel_Wrapper(RJSApi& h, QAbstractTableModel* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QAbstractTableModel_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QAbstractTableModel_Wrapper"));
               //setObjectName("QAbstractTableModel_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -10176,107 +9982,6 @@ QModelIndex a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QAbstractListModel
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractListModel_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QAbstractListModel_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QAbstractListModel_Wrapper>("org.qcad", 1, 0, "QAbstractListModel_Wrapper");
@@ -10305,15 +10010,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QAbstractListModel_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QAbstractListModel_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QAbstractListModel_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QAbstractListModel_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QAbstractListModel_WrapperSingleton * s = new QAbstractListModel_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QAbstractListModel_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QAbstractListModel.js";
       QFile scriptFile(fileName);
@@ -10349,11 +10045,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QAbstractListModel_Wrapper::QAbstractListModel_Wrapper(RJSApi& h, QAbstractListModel* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QAbstractListModel_Wrapper::QAbstractListModel_Wrapper(RJSApi& h, QAbstractListModel* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QAbstractListModel_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QAbstractListModel_Wrapper"));
               //setObjectName("QAbstractListModel_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

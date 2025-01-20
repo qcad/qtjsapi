@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QMenu);
+              
+                  copyProperties(this, wrapper, QMenu);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMenu);
+            copyProperties(this, wrapper, QMenu);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMenu);
+            copyProperties(this, wrapper, QMenu);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,18 +112,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["triggered(QAction*)"] = Object.getPrototypeOf(this).triggered;
   
     this["hovered(QAction*)"] = Object.getPrototypeOf(this).hovered;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QMenu.prototype = new QMenu_BaseJs(engine);
@@ -171,119 +176,6 @@
       
 
         // static function 
-        QMenu.tr = function() 
-          
-        {
-          //print("JS: QMenu.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QMenu_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QMenu);
-  }
-
-  
-  else {
-    
-        print("QMenu.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMenu.setTabOrder = function() 
-          
-        {
-          //print("JS: QMenu.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QMenu_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QMenu);
-  }
-
-  
-  else {
-    
-        print("QMenu.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMenu.mouseGrabber = function() 
-          
-        {
-          //print("JS: QMenu.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMenu_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMenu);
-  }
-
-  
-  else {
-    
-        print("QMenu.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMenu.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QMenu.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMenu_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMenu);
-  }
-
-  
-  else {
-    
-        print("QMenu.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         QMenu.exec = function() 
           
         {
@@ -327,4 +219,5 @@
       //QMenu.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

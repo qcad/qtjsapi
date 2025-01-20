@@ -191,27 +191,30 @@ ExistingOnly = QIODeviceBase::ExistingOnly,
 
         // get wrapped object:
         QIODeviceBase* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QIODeviceBase* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -219,7 +222,8 @@ ExistingOnly = QIODeviceBase::ExistingOnly,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -231,9 +235,10 @@ ExistingOnly = QIODeviceBase::ExistingOnly,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -248,9 +253,10 @@ ExistingOnly = QIODeviceBase::ExistingOnly,
         
 
         private:
-        // wrapped object:
-        QIODeviceBase* wrapped;
 
+        
+          // wrapped object:
+          QIODeviceBase* wrapped;
         
 
         bool wrappedCreated;

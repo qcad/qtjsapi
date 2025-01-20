@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFileSystemModel);
+              
+                  copyProperties(this, wrapper, QFileSystemModel);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFileSystemModel);
+            copyProperties(this, wrapper, QFileSystemModel);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,16 +85,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["headerDataChanged(Qt::Orientation,int,int)"] = Object.getPrototypeOf(this).headerDataChanged;
   
     this["rowsInserted(QModelIndex,int,int)"] = Object.getPrototypeOf(this).rowsInserted;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QFileSystemModel.prototype = new QFileSystemModel_BaseJs(engine);
@@ -157,35 +162,6 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
       // static functions:
       
 
-        // static function 
-        QFileSystemModel.tr = function() 
-          
-        {
-          //print("JS: QFileSystemModel.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QFileSystemModel_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QFileSystemModel);
-  }
-
-  
-  else {
-    
-        print("QFileSystemModel.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -201,4 +177,5 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
       //QFileSystemModel.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

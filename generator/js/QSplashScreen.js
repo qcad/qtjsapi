@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSplashScreen);
+              
+                  copyProperties(this, wrapper, QSplashScreen);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSplashScreen);
+            copyProperties(this, wrapper, QSplashScreen);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSplashScreen);
+            copyProperties(this, wrapper, QSplashScreen);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,16 +112,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["messageChanged(QString)"] = Object.getPrototypeOf(this).messageChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QSplashScreen.prototype = new QSplashScreen_BaseJs(engine);
@@ -168,119 +173,6 @@
       // static functions:
       
 
-        // static function 
-        QSplashScreen.tr = function() 
-          
-        {
-          //print("JS: QSplashScreen.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QSplashScreen_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QSplashScreen);
-  }
-
-  
-  else {
-    
-        print("QSplashScreen.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QSplashScreen.setTabOrder = function() 
-          
-        {
-          //print("JS: QSplashScreen.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QSplashScreen_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QSplashScreen);
-  }
-
-  
-  else {
-    
-        print("QSplashScreen.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QSplashScreen.mouseGrabber = function() 
-          
-        {
-          //print("JS: QSplashScreen.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QSplashScreen_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QSplashScreen);
-  }
-
-  
-  else {
-    
-        print("QSplashScreen.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QSplashScreen.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QSplashScreen.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QSplashScreen_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QSplashScreen);
-  }
-
-  
-  else {
-    
-        print("QSplashScreen.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -296,4 +188,5 @@
       //QSplashScreen.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

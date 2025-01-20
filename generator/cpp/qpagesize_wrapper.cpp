@@ -815,11 +815,19 @@ int a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QPageSize_Wrapper::QPageSize_Wrapper(RJSApi& h, QPageSize* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPageSize_Wrapper::QPageSize_Wrapper(RJSApi& h, QPageSize* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPageSize_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPageSize_Wrapper"));
               //setObjectName("QPageSize_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -841,8 +849,10 @@ int a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPageSize";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -967,15 +977,15 @@ QPageSize::SizeMatchPolicy a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageSize(
-                a1_cpp
+              wrapped = new QPageSize(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1042,14 +1052,14 @@ QPageSize::SizeMatchPolicy a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageSize(
-                a1_cpp
+              wrapped = new QPageSize(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1082,12 +1092,12 @@ QPageSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageSize(
-                a1_cpp
+              wrapped = new QPageSize(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1120,12 +1130,12 @@ QPageSize::PageSizeId a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageSize(
-                a1_cpp
+              wrapped = new QPageSize(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1144,11 +1154,11 @@ QPageSize::PageSizeId a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageSize(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPageSize(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1168,14 +1178,18 @@ QPageSize::PageSizeId a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPageSize";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

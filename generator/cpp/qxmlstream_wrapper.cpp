@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QXmlStreamAttribute_Wrapper::QXmlStreamAttribute_Wrapper(RJSApi& h, QXmlStreamAttribute* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QXmlStreamAttribute_Wrapper::QXmlStreamAttribute_Wrapper(RJSApi& h, QXmlStreamAttribute* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QXmlStreamAttribute_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QXmlStreamAttribute_Wrapper"));
               //setObjectName("QXmlStreamAttribute_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -270,11 +278,19 @@
 
     
       // special constructor to wrap existing object:
-      QXmlStreamAttributes_Wrapper::QXmlStreamAttributes_Wrapper(RJSApi& h, QXmlStreamAttributes* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QXmlStreamAttributes_Wrapper::QXmlStreamAttributes_Wrapper(RJSApi& h, QXmlStreamAttributes* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QXmlStreamAttributes_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QXmlStreamAttributes_Wrapper"));
               //setObjectName("QXmlStreamAttributes_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -296,8 +312,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QXmlStreamAttributes";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -357,11 +375,11 @@ QXmlStreamAttributes_Wrapper::QXmlStreamAttributes_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QXmlStreamAttributes(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QXmlStreamAttributes(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -374,7 +392,9 @@ QXmlStreamAttributes_Wrapper::QXmlStreamAttributes_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QXmlStreamAttributes";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -735,11 +755,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QXmlStreamReader_Wrapper::QXmlStreamReader_Wrapper(RJSApi& h, QXmlStreamReader* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QXmlStreamReader_Wrapper::QXmlStreamReader_Wrapper(RJSApi& h, QXmlStreamReader* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QXmlStreamReader_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QXmlStreamReader_Wrapper"));
               //setObjectName("QXmlStreamReader_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -842,12 +870,12 @@ QXmlStreamReader_Wrapper::QXmlStreamReader_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QXmlStreamReader(
-                a1_cpp
+              wrapped = new QXmlStreamReader(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -880,12 +908,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QXmlStreamReader(
-                a1_cpp
+              wrapped = new QXmlStreamReader(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -921,12 +949,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QXmlStreamReader(
-                a1_cpp
+              wrapped = new QXmlStreamReader(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -945,11 +973,11 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QXmlStreamReader(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QXmlStreamReader(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -966,14 +994,18 @@ QString a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QXmlStreamReader";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -3207,11 +3239,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QXmlStreamWriter_Wrapper::QXmlStreamWriter_Wrapper(RJSApi& h, QXmlStreamWriter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QXmlStreamWriter_Wrapper::QXmlStreamWriter_Wrapper(RJSApi& h, QXmlStreamWriter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QXmlStreamWriter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QXmlStreamWriter_Wrapper"));
               //setObjectName("QXmlStreamWriter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -3314,12 +3354,12 @@ QXmlStreamWriter_Wrapper::QXmlStreamWriter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QXmlStreamWriter(
-                a1_cpp
+              wrapped = new QXmlStreamWriter(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3338,11 +3378,11 @@ QXmlStreamWriter_Wrapper::QXmlStreamWriter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QXmlStreamWriter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QXmlStreamWriter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3359,14 +3399,18 @@ QXmlStreamWriter_Wrapper::QXmlStreamWriter_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QXmlStreamWriter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

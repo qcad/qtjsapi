@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QEventPoint_Wrapper::QEventPoint_Wrapper(RJSApi& h, QEventPoint* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QEventPoint_Wrapper::QEventPoint_Wrapper(RJSApi& h, QEventPoint* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QEventPoint_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QEventPoint_Wrapper"));
               //setObjectName("QEventPoint_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QEventPoint";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -212,15 +222,15 @@ QPointF a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QEventPoint(
-                a1_cpp
+              wrapped = new QEventPoint(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -261,12 +271,12 @@ int a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QEventPoint(
-                a1_cpp
+              wrapped = new QEventPoint(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -299,12 +309,12 @@ QEventPoint a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QEventPoint(
-                a1_cpp
+              wrapped = new QEventPoint(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -337,12 +347,12 @@ QEventPoint a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QEventPoint(
-                a1_cpp
+              wrapped = new QEventPoint(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -362,14 +372,18 @@ QEventPoint a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QEventPoint";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

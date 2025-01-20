@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfontmetrics.h">
   <class_decl name="QRect" />
   <class_decl name="QTextOption" />
-  <class name="QFontMetrics">
+  <class name="QFontMetrics" proxy="true">
     <constructor>
       <variant>
         <parameters>

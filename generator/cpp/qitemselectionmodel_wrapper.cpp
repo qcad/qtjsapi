@@ -13,107 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QItemSelectionModel
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QItemSelectionModel_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QItemSelectionModel_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QItemSelectionModel_Wrapper>("org.qcad", 1, 0, "QItemSelectionModel_Wrapper");
@@ -142,15 +41,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QItemSelectionModel_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QItemSelectionModel_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QItemSelectionModel_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QItemSelectionModel_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QItemSelectionModel_WrapperSingleton * s = new QItemSelectionModel_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QItemSelectionModel_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QItemSelectionModel.js";
       QFile scriptFile(fileName);
@@ -186,11 +76,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QItemSelectionModel_Wrapper::QItemSelectionModel_Wrapper(RJSApi& h, QItemSelectionModel* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QItemSelectionModel_Wrapper::QItemSelectionModel_Wrapper(RJSApi& h, QItemSelectionModel* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QItemSelectionModel_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QItemSelectionModel_Wrapper"));
               //setObjectName("QItemSelectionModel_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -364,13 +262,13 @@ QItemSelectionModel_Wrapper::QItemSelectionModel_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QItemSelectionModel(
-                a1_cpp
+              wrapped = new QItemSelectionModel(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -414,12 +312,12 @@ QItemSelectionModel_Wrapper::QItemSelectionModel_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QItemSelectionModel(
-                a1_cpp
+              wrapped = new QItemSelectionModel(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -437,14 +335,18 @@ QItemSelectionModel_Wrapper::QItemSelectionModel_Wrapper
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QItemSelectionModel";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -3311,11 +3213,19 @@ QItemSelectionModel::SelectionFlags a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QItemSelection_Wrapper::QItemSelection_Wrapper(RJSApi& h, QItemSelection* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QItemSelection_Wrapper::QItemSelection_Wrapper(RJSApi& h, QItemSelection* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QItemSelection_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QItemSelection_Wrapper"));
               //setObjectName("QItemSelection_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -3337,8 +3247,10 @@ QItemSelectionModel::SelectionFlags a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QItemSelection";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -3425,13 +3337,13 @@ QModelIndex a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QItemSelection(
-                a1_cpp
+              wrapped = new QItemSelection(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3450,11 +3362,11 @@ QModelIndex a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QItemSelection(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QItemSelection(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3472,14 +3384,18 @@ QModelIndex a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QItemSelection";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

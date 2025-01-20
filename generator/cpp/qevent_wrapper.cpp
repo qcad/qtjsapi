@@ -13,77 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QInputEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QInputEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QInputEvent_Wrapper>("org.qcad", 1, 0, "QInputEvent_Wrapper");
@@ -112,15 +41,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QInputEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QInputEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QInputEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QInputEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QInputEvent_WrapperSingleton * s = new QInputEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QInputEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QInputEvent.js";
       QFile scriptFile(fileName);
@@ -156,11 +76,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QInputEvent_Wrapper::QInputEvent_Wrapper(RJSApi& h, QInputEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QInputEvent_Wrapper::QInputEvent_Wrapper(RJSApi& h, QInputEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QInputEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QInputEvent_Wrapper"));
               //setObjectName("QInputEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1029,77 +957,6 @@ quint64 a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QPointerEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QPointerEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QPointerEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QPointerEvent_Wrapper>("org.qcad", 1, 0, "QPointerEvent_Wrapper");
@@ -1128,15 +985,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QPointerEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPointerEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QPointerEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QPointerEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QPointerEvent_WrapperSingleton * s = new QPointerEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QPointerEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QPointerEvent.js";
       QFile scriptFile(fileName);
@@ -1172,11 +1020,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QPointerEvent_Wrapper::QPointerEvent_Wrapper(RJSApi& h, QPointerEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPointerEvent_Wrapper::QPointerEvent_Wrapper(RJSApi& h, QPointerEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPointerEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPointerEvent_Wrapper"));
               //setObjectName("QPointerEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2935,77 +2791,6 @@ QEventPoint a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QSinglePointEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QSinglePointEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QSinglePointEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QSinglePointEvent_Wrapper>("org.qcad", 1, 0, "QSinglePointEvent_Wrapper");
@@ -3034,15 +2819,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QSinglePointEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QSinglePointEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QSinglePointEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QSinglePointEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QSinglePointEvent_WrapperSingleton * s = new QSinglePointEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QSinglePointEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QSinglePointEvent.js";
       QFile scriptFile(fileName);
@@ -3078,11 +2854,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QSinglePointEvent_Wrapper::QSinglePointEvent_Wrapper(RJSApi& h, QSinglePointEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QSinglePointEvent_Wrapper::QSinglePointEvent_Wrapper(RJSApi& h, QSinglePointEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QSinglePointEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QSinglePointEvent_Wrapper"));
               //setObjectName("QSinglePointEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -5074,77 +4858,6 @@ QEventPoint a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QMouseEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QMouseEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #ifndef QT_NO_INTEGER_EVENT_COORDINATES
 
 #endif
@@ -5177,15 +4890,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QMouseEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QMouseEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QMouseEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QMouseEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QMouseEvent_WrapperSingleton * s = new QMouseEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QMouseEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QMouseEvent.js";
       QFile scriptFile(fileName);
@@ -5221,11 +4925,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QMouseEvent_Wrapper::QMouseEvent_Wrapper(RJSApi& h, QMouseEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QMouseEvent_Wrapper::QMouseEvent_Wrapper(RJSApi& h, QMouseEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QMouseEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QMouseEvent_Wrapper"));
               //setObjectName("QMouseEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -5400,8 +5112,8 @@ Qt::MouseEventSource a8_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMouseEvent(
-                a1_cpp
+              wrapped = new QMouseEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -5410,9 +5122,9 @@ Qt::MouseEventSource a8_cpp;
     , a7_cpp
     , a8_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5499,8 +5211,8 @@ Qt::KeyboardModifiers a7_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMouseEvent(
-                a1_cpp
+              wrapped = new QMouseEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -5508,9 +5220,9 @@ Qt::KeyboardModifiers a7_cpp;
     , a6_cpp
     , a7_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5588,17 +5300,17 @@ Qt::KeyboardModifiers a6_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMouseEvent(
-                a1_cpp
+              wrapped = new QMouseEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     , a6_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5622,14 +5334,18 @@ Qt::KeyboardModifiers a6_cpp;
    && a8.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QMouseEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -7932,77 +7648,6 @@ QEventPoint a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QWheelEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QWheelEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QWheelEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QWheelEvent_Wrapper>("org.qcad", 1, 0, "QWheelEvent_Wrapper");
@@ -8031,15 +7676,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QWheelEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QWheelEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QWheelEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QWheelEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QWheelEvent_WrapperSingleton * s = new QWheelEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QWheelEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QWheelEvent.js";
       QFile scriptFile(fileName);
@@ -8075,11 +7711,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QWheelEvent_Wrapper::QWheelEvent_Wrapper(RJSApi& h, QWheelEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QWheelEvent_Wrapper::QWheelEvent_Wrapper(RJSApi& h, QWheelEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QWheelEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QWheelEvent_Wrapper"));
               //setObjectName("QWheelEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -8273,8 +7917,8 @@ Qt::MouseEventSource a9_cpp;
         // construct wrapper:
 
         
-            wrapped = new QWheelEvent(
-                a1_cpp
+              wrapped = new QWheelEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -8284,9 +7928,9 @@ Qt::MouseEventSource a9_cpp;
     , a8_cpp
     , a9_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -8311,14 +7955,18 @@ Qt::MouseEventSource a9_cpp;
    && a9.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QWheelEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -10841,77 +10489,6 @@ QEventPoint a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QKeyEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QKeyEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #if QT_CONFIG(shortcut)
 
 #endif
@@ -10944,15 +10521,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QKeyEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QKeyEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QKeyEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QKeyEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QKeyEvent_WrapperSingleton * s = new QKeyEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QKeyEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QKeyEvent.js";
       QFile scriptFile(fileName);
@@ -10988,11 +10556,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QKeyEvent_Wrapper::QKeyEvent_Wrapper(RJSApi& h, QKeyEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QKeyEvent_Wrapper::QKeyEvent_Wrapper(RJSApi& h, QKeyEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QKeyEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QKeyEvent_Wrapper"));
               //setObjectName("QKeyEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -11169,17 +10745,17 @@ quint16 a6_cpp;
         // construct wrapper:
 
         
-            wrapped = new QKeyEvent(
-                a1_cpp
+              wrapped = new QKeyEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     , a6_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -11201,14 +10777,18 @@ quint16 a6_cpp;
    && a6.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QKeyEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -12512,77 +12092,6 @@ QKeySequence::StandardKey a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QFocusEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QFocusEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QFocusEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QFocusEvent_Wrapper>("org.qcad", 1, 0, "QFocusEvent_Wrapper");
@@ -12611,15 +12120,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QFocusEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QFocusEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QFocusEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QFocusEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QFocusEvent_WrapperSingleton * s = new QFocusEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QFocusEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QFocusEvent.js";
       QFile scriptFile(fileName);
@@ -12655,11 +12155,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QFocusEvent_Wrapper::QFocusEvent_Wrapper(RJSApi& h, QFocusEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QFocusEvent_Wrapper::QFocusEvent_Wrapper(RJSApi& h, QFocusEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QFocusEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QFocusEvent_Wrapper"));
               //setObjectName("QFocusEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -12681,8 +12189,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QFocusEvent";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -12777,13 +12287,13 @@ Qt::FocusReason a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFocusEvent(
-                a1_cpp
+              wrapped = new QFocusEvent(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -12801,14 +12311,18 @@ Qt::FocusReason a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QFocusEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -13560,77 +13074,6 @@ bool a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QPaintEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QPaintEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QPaintEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QPaintEvent_Wrapper>("org.qcad", 1, 0, "QPaintEvent_Wrapper");
@@ -13659,15 +13102,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QPaintEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPaintEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QPaintEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QPaintEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QPaintEvent_WrapperSingleton * s = new QPaintEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QPaintEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QPaintEvent.js";
       QFile scriptFile(fileName);
@@ -13703,11 +13137,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QPaintEvent_Wrapper::QPaintEvent_Wrapper(RJSApi& h, QPaintEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPaintEvent_Wrapper::QPaintEvent_Wrapper(RJSApi& h, QPaintEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPaintEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPaintEvent_Wrapper"));
               //setObjectName("QPaintEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -13805,12 +13247,12 @@ QRegion a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPaintEvent(
-                a1_cpp
+              wrapped = new QPaintEvent(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -13843,12 +13285,12 @@ QRect a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPaintEvent(
-                a1_cpp
+              wrapped = new QPaintEvent(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -13865,14 +13307,18 @@ QRect a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPaintEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -14577,77 +14023,6 @@ bool a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QResizeEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QResizeEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QResizeEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QResizeEvent_Wrapper>("org.qcad", 1, 0, "QResizeEvent_Wrapper");
@@ -14676,15 +14051,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QResizeEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QResizeEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QResizeEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QResizeEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QResizeEvent_WrapperSingleton * s = new QResizeEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QResizeEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QResizeEvent.js";
       QFile scriptFile(fileName);
@@ -14720,11 +14086,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QResizeEvent_Wrapper::QResizeEvent_Wrapper(RJSApi& h, QResizeEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QResizeEvent_Wrapper::QResizeEvent_Wrapper(RJSApi& h, QResizeEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QResizeEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QResizeEvent_Wrapper"));
               //setObjectName("QResizeEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -14833,13 +14207,13 @@ QSize a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QResizeEvent(
-                a1_cpp
+              wrapped = new QResizeEvent(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -14857,14 +14231,18 @@ QSize a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QResizeEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -15569,77 +14947,6 @@ bool a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QDragEnterEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDragEnterEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QDragEnterEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QDragEnterEvent_Wrapper>("org.qcad", 1, 0, "QDragEnterEvent_Wrapper");
@@ -15668,15 +14975,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QDragEnterEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDragEnterEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QDragEnterEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QDragEnterEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QDragEnterEvent_WrapperSingleton * s = new QDragEnterEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QDragEnterEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QDragEnterEvent.js";
       QFile scriptFile(fileName);
@@ -15712,11 +15010,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDragEnterEvent_Wrapper::QDragEnterEvent_Wrapper(RJSApi& h, QDragEnterEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDragEnterEvent_Wrapper::QDragEnterEvent_Wrapper(RJSApi& h, QDragEnterEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDragEnterEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDragEnterEvent_Wrapper"));
               //setObjectName("QDragEnterEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -15863,16 +15169,16 @@ Qt::KeyboardModifiers a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDragEnterEvent(
-                a1_cpp
+              wrapped = new QDragEnterEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -15893,14 +15199,18 @@ Qt::KeyboardModifiers a5_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDragEnterEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -17020,77 +16330,6 @@ QRect a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QDropEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDropEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QDropEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QDropEvent_Wrapper>("org.qcad", 1, 0, "QDropEvent_Wrapper");
@@ -17119,15 +16358,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QDropEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDropEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QDropEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QDropEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QDropEvent_WrapperSingleton * s = new QDropEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QDropEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QDropEvent.js";
       QFile scriptFile(fileName);
@@ -17163,11 +16393,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDropEvent_Wrapper::QDropEvent_Wrapper(RJSApi& h, QDropEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDropEvent_Wrapper::QDropEvent_Wrapper(RJSApi& h, QDropEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDropEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDropEvent_Wrapper"));
               //setObjectName("QDropEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -17333,17 +16571,17 @@ QEvent::Type a6_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDropEvent(
-                a1_cpp
+              wrapped = new QDropEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     , a6_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -17365,14 +16603,18 @@ QEvent::Type a6_cpp;
    && a6.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDropEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -18349,77 +17591,6 @@ Qt::DropAction a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QContextMenuEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QContextMenuEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QContextMenuEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QContextMenuEvent_Wrapper>("org.qcad", 1, 0, "QContextMenuEvent_Wrapper");
@@ -18448,15 +17619,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QContextMenuEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QContextMenuEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QContextMenuEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QContextMenuEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QContextMenuEvent_WrapperSingleton * s = new QContextMenuEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QContextMenuEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QContextMenuEvent.js";
       QFile scriptFile(fileName);
@@ -18492,11 +17654,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QContextMenuEvent_Wrapper::QContextMenuEvent_Wrapper(RJSApi& h, QContextMenuEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QContextMenuEvent_Wrapper::QContextMenuEvent_Wrapper(RJSApi& h, QContextMenuEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QContextMenuEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QContextMenuEvent_Wrapper"));
               //setObjectName("QContextMenuEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -18635,15 +17805,15 @@ Qt::KeyboardModifiers a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QContextMenuEvent(
-                a1_cpp
+              wrapped = new QContextMenuEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -18663,14 +17833,18 @@ Qt::KeyboardModifiers a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QContextMenuEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -19902,77 +19076,6 @@ quint64 a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QDragMoveEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDragMoveEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QDragMoveEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QDragMoveEvent_Wrapper>("org.qcad", 1, 0, "QDragMoveEvent_Wrapper");
@@ -20001,15 +19104,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QDragMoveEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDragMoveEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QDragMoveEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QDragMoveEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QDragMoveEvent_WrapperSingleton * s = new QDragMoveEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QDragMoveEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QDragMoveEvent.js";
       QFile scriptFile(fileName);
@@ -20045,11 +19139,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDragMoveEvent_Wrapper::QDragMoveEvent_Wrapper(RJSApi& h, QDragMoveEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDragMoveEvent_Wrapper::QDragMoveEvent_Wrapper(RJSApi& h, QDragMoveEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDragMoveEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDragMoveEvent_Wrapper"));
               //setObjectName("QDragMoveEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -20215,17 +19317,17 @@ QEvent::Type a6_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDragMoveEvent(
-                a1_cpp
+              wrapped = new QDragMoveEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     , a6_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -20247,14 +19349,18 @@ QEvent::Type a6_cpp;
    && a6.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDragMoveEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -21374,77 +20480,6 @@ QRect a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QDragLeaveEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDragLeaveEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QDragLeaveEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QDragLeaveEvent_Wrapper>("org.qcad", 1, 0, "QDragLeaveEvent_Wrapper");
@@ -21473,15 +20508,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QDragLeaveEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDragLeaveEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QDragLeaveEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QDragLeaveEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QDragLeaveEvent_WrapperSingleton * s = new QDragLeaveEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QDragLeaveEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QDragLeaveEvent.js";
       QFile scriptFile(fileName);
@@ -21517,11 +20543,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDragLeaveEvent_Wrapper::QDragLeaveEvent_Wrapper(RJSApi& h, QDragLeaveEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDragLeaveEvent_Wrapper::QDragLeaveEvent_Wrapper(RJSApi& h, QDragLeaveEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDragLeaveEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDragLeaveEvent_Wrapper"));
               //setObjectName("QDragLeaveEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -21603,11 +20637,11 @@ QDragLeaveEvent_Wrapper::QDragLeaveEvent_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QDragLeaveEvent(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDragLeaveEvent(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -21620,7 +20654,9 @@ QDragLeaveEvent_Wrapper::QDragLeaveEvent_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QDragLeaveEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -22201,77 +21237,6 @@ bool a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QHelpEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QHelpEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QHelpEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QHelpEvent_Wrapper>("org.qcad", 1, 0, "QHelpEvent_Wrapper");
@@ -22300,15 +21265,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QHelpEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QHelpEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QHelpEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QHelpEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QHelpEvent_WrapperSingleton * s = new QHelpEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QHelpEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QHelpEvent.js";
       QFile scriptFile(fileName);
@@ -22344,11 +21300,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QHelpEvent_Wrapper::QHelpEvent_Wrapper(RJSApi& h, QHelpEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QHelpEvent_Wrapper::QHelpEvent_Wrapper(RJSApi& h, QHelpEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QHelpEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QHelpEvent_Wrapper"));
               //setObjectName("QHelpEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -22370,8 +21334,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QHelpEvent";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -22469,14 +21435,14 @@ QPoint a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QHelpEvent(
-                a1_cpp
+              wrapped = new QHelpEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -22495,14 +21461,18 @@ QPoint a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QHelpEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -23437,77 +22407,6 @@ bool a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QActionEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QActionEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QActionEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QActionEvent_Wrapper>("org.qcad", 1, 0, "QActionEvent_Wrapper");
@@ -23536,15 +22435,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QActionEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QActionEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QActionEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QActionEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QActionEvent_WrapperSingleton * s = new QActionEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QActionEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QActionEvent.js";
       QFile scriptFile(fileName);
@@ -23580,11 +22470,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QActionEvent_Wrapper::QActionEvent_Wrapper(RJSApi& h, QActionEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QActionEvent_Wrapper::QActionEvent_Wrapper(RJSApi& h, QActionEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QActionEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QActionEvent_Wrapper"));
               //setObjectName("QActionEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -23720,14 +22618,14 @@ int a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QActionEvent(
-                a1_cpp
+              wrapped = new QActionEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -23746,14 +22644,18 @@ int a1_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QActionEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

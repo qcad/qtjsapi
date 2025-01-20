@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTranslator);
+              
+                  copyProperties(this, wrapper, QTranslator);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTranslator);
+            copyProperties(this, wrapper, QTranslator);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QTranslator.prototype = new QTranslator_BaseJs(engine);
@@ -133,35 +133,6 @@
       // static functions:
       
 
-        // static function 
-        QTranslator.tr = function() 
-          
-        {
-          //print("JS: QTranslator.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QTranslator_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QTranslator);
-  }
-
-  
-  else {
-    
-        print("QTranslator.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -177,4 +148,5 @@
       //QTranslator.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

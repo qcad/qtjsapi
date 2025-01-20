@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QUiLoader);
+              
+                  copyProperties(this, wrapper, QUiLoader);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QUiLoader);
+            copyProperties(this, wrapper, QUiLoader);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QUiLoader.prototype = new QUiLoader_BaseJs(engine);
@@ -133,35 +133,6 @@
       // static functions:
       
 
-        // static function 
-        QUiLoader.tr = function() 
-          
-        {
-          //print("JS: QUiLoader.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QUiLoader_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QUiLoader);
-  }
-
-  
-  else {
-    
-        print("QUiLoader.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -177,4 +148,5 @@
       //QUiLoader.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -460,11 +460,19 @@ QKeySequence::StandardKey a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QKeySequence_Wrapper::QKeySequence_Wrapper(RJSApi& h, QKeySequence* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QKeySequence_Wrapper::QKeySequence_Wrapper(RJSApi& h, QKeySequence* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QKeySequence_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QKeySequence_Wrapper"));
               //setObjectName("QKeySequence_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -486,8 +494,10 @@ QKeySequence::StandardKey a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QKeySequence";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -620,15 +630,15 @@ QKeyCombination a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QKeySequence(
-                a1_cpp
+              wrapped = new QKeySequence(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -678,13 +688,13 @@ QKeySequence::SequenceFormat a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QKeySequence(
-                a1_cpp
+              wrapped = new QKeySequence(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -717,12 +727,12 @@ QKeySequence a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QKeySequence(
-                a1_cpp
+              wrapped = new QKeySequence(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -755,12 +765,12 @@ QKeySequence::StandardKey a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QKeySequence(
-                a1_cpp
+              wrapped = new QKeySequence(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -779,11 +789,11 @@ QKeySequence::StandardKey a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QKeySequence(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QKeySequence(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -803,14 +813,18 @@ QKeySequence::StandardKey a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QKeySequence";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

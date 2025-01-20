@@ -148,11 +148,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QPageRanges_Wrapper::QPageRanges_Wrapper(RJSApi& h, QPageRanges* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPageRanges_Wrapper::QPageRanges_Wrapper(RJSApi& h, QPageRanges* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPageRanges_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPageRanges_Wrapper"));
               //setObjectName("QPageRanges_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -174,8 +182,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPageRanges";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -251,12 +261,12 @@ QPageRanges a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageRanges(
-                a1_cpp
+              wrapped = new QPageRanges(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -289,12 +299,12 @@ QPageRanges a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageRanges(
-                a1_cpp
+              wrapped = new QPageRanges(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -313,11 +323,11 @@ QPageRanges a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageRanges(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPageRanges(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -334,14 +344,18 @@ QPageRanges a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPageRanges";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

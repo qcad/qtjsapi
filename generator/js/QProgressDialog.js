@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QProgressDialog);
+              
+                  copyProperties(this, wrapper, QProgressDialog);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QProgressDialog);
+            copyProperties(this, wrapper, QProgressDialog);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QProgressDialog);
+            copyProperties(this, wrapper, QProgressDialog);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,16 +112,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["finished(int)"] = Object.getPrototypeOf(this).finished;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QProgressDialog.prototype = new QProgressDialog_BaseJs(engine);
@@ -172,12 +177,12 @@ QProgressDialog.Accepted = QProgressDialog_Wrapper.Accepted;
 
       // functions:
       
-        // function 
-        QProgressDialog.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QProgressDialog.prototype.actionEvent");
-          
+      // function 
+      QProgressDialog.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: QProgressDialog.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -185,7 +190,8 @@ QProgressDialog.Accepted = QProgressDialog_Wrapper.Accepted;
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -201,123 +207,10 @@ QProgressDialog.Accepted = QProgressDialog_Wrapper.Accepted;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
-      
-
-        // static function 
-        QProgressDialog.tr = function() 
-          
-        {
-          //print("JS: QProgressDialog.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QProgressDialog_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QProgressDialog);
-  }
-
-  
-  else {
-    
-        print("QProgressDialog.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QProgressDialog.setTabOrder = function() 
-          
-        {
-          //print("JS: QProgressDialog.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QProgressDialog_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QProgressDialog);
-  }
-
-  
-  else {
-    
-        print("QProgressDialog.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QProgressDialog.mouseGrabber = function() 
-          
-        {
-          //print("JS: QProgressDialog.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QProgressDialog_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QProgressDialog);
-  }
-
-  
-  else {
-    
-        print("QProgressDialog.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QProgressDialog.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QProgressDialog.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QProgressDialog_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QProgressDialog);
-  }
-
-  
-  else {
-    
-        print("QProgressDialog.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // constants:
@@ -335,4 +228,5 @@ QProgressDialog.Accepted = QProgressDialog_Wrapper.Accepted;
       //QProgressDialog.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

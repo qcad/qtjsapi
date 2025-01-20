@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFormLayout);
+              
+                  copyProperties(this, wrapper, QFormLayout);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QFormLayout.prototype = new QFormLayout_BaseJs(engine);
@@ -122,72 +122,6 @@ QFormLayout.SpanningRole = QFormLayout_Wrapper.SpanningRole;
       // static functions:
       
 
-        // static function 
-        QFormLayout.tr = function() 
-          
-        {
-          //print("JS: QFormLayout.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QFormLayout_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QFormLayout);
-  }
-
-  
-  else {
-    
-        print("QFormLayout.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFormLayout.closestAcceptableSize = function() 
-          
-        {
-          //print("JS: QFormLayout.closestAcceptableSize");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QFormLayout_WrapperSingletonInstance.closestAcceptableSize(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QFormLayout);
-  }
-
-  
-  else {
-    
-        print("QFormLayout.closestAcceptableSize(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFormLayout.activateRecursiveHelper = function() 
-          
-        {
-          //print("JS: QFormLayout.activateRecursiveHelper");
-          
-        };
-      
-
       // constants:
       
 
@@ -203,4 +137,5 @@ QFormLayout.SpanningRole = QFormLayout_Wrapper.SpanningRole;
       //QFormLayout.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

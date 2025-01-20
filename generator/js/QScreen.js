@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QScreen);
+              
+                  copyProperties(this, wrapper, QScreen);
+                
             //}
           }
           else {
@@ -53,10 +55,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["geometryChanged(QRect)"] = Object.getPrototypeOf(this).geometryChanged;
   
     this["availableGeometryChanged(QRect)"] = Object.getPrototypeOf(this).availableGeometryChanged;
@@ -75,8 +76,12 @@
   
     this["refreshRateChanged(qreal)"] = Object.getPrototypeOf(this).refreshRateChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QScreen.prototype = new QScreen_BaseJs(engine);
@@ -121,35 +126,6 @@
       // static functions:
       
 
-        // static function 
-        QScreen.tr = function() 
-          
-        {
-          //print("JS: QScreen.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QScreen_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QScreen);
-  }
-
-  
-  else {
-    
-        print("QScreen.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -165,4 +141,5 @@
       //QScreen.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

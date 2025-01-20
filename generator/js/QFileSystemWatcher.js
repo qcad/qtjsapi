@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFileSystemWatcher);
+              
+                  copyProperties(this, wrapper, QFileSystemWatcher);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFileSystemWatcher);
+            copyProperties(this, wrapper, QFileSystemWatcher);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFileSystemWatcher);
+            copyProperties(this, wrapper, QFileSystemWatcher);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,16 +112,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["fileChanged(QString)"] = Object.getPrototypeOf(this).fileChanged;
   
     this["directoryChanged(QString)"] = Object.getPrototypeOf(this).directoryChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QFileSystemWatcher.prototype = new QFileSystemWatcher_BaseJs(engine);
@@ -164,35 +169,6 @@
       // static functions:
       
 
-        // static function 
-        QFileSystemWatcher.tr = function() 
-          
-        {
-          //print("JS: QFileSystemWatcher.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QFileSystemWatcher_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QFileSystemWatcher);
-  }
-
-  
-  else {
-    
-        print("QFileSystemWatcher.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -208,4 +184,5 @@
       //QFileSystemWatcher.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

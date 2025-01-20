@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTreeView);
+              
+                  copyProperties(this, wrapper, QTreeView);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeView);
+            copyProperties(this, wrapper, QTreeView);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
@@ -95,8 +96,12 @@
   
     this["collapsed(QModelIndex)"] = Object.getPrototypeOf(this).collapsed;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QTreeView.prototype = new QTreeView_BaseJs(engine);
@@ -222,147 +227,6 @@ QTreeView.InternalMove = QTreeView_Wrapper.InternalMove;
       // static functions:
       
 
-        // static function 
-        QTreeView.tr = function() 
-          
-        {
-          //print("JS: QTreeView.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QTreeView_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeView);
-  }
-
-  
-  else {
-    
-        print("QTreeView.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTreeView.devicePixelRatioFScale = function() 
-          
-        {
-          //print("JS: QTreeView.devicePixelRatioFScale");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTreeView_WrapperSingletonInstance.devicePixelRatioFScale(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeView);
-  }
-
-  
-  else {
-    
-        print("QTreeView.devicePixelRatioFScale(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTreeView.setTabOrder = function() 
-          
-        {
-          //print("JS: QTreeView.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QTreeView_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeView);
-  }
-
-  
-  else {
-    
-        print("QTreeView.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTreeView.mouseGrabber = function() 
-          
-        {
-          //print("JS: QTreeView.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTreeView_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeView);
-  }
-
-  
-  else {
-    
-        print("QTreeView.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTreeView.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QTreeView.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTreeView_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeView);
-  }
-
-  
-  else {
-    
-        print("QTreeView.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -378,4 +242,5 @@ QTreeView.InternalMove = QTreeView_Wrapper.InternalMove;
       //QTreeView.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

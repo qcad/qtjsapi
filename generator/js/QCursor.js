@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QCursor);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QCursor);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QCursor);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -104,8 +106,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QCursor);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -130,8 +132,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QCursor);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -156,8 +158,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QCursor);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -182,8 +184,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QCursor);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -214,12 +216,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QCursor.prototype = new QCursor_BaseJs(engine);
@@ -256,6 +256,62 @@
 
       // functions:
       
+        // function 
+        QCursor.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QCursor.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QCursor.prototype.shape = function(...args) 
+          
+        {
+          //print("JS: QCursor.prototype.shape");
+          return this.__PROXY__.shape(...args);
+        };
+    
+        // function 
+        QCursor.prototype.setShape = function(...args) 
+          
+        {
+          //print("JS: QCursor.prototype.setShape");
+          return this.__PROXY__.setShape(...args);
+        };
+    
+        // function 
+        QCursor.prototype.pixmap = function(...args) 
+          
+        {
+          //print("JS: QCursor.prototype.pixmap");
+          return this.__PROXY__.pixmap(...args);
+        };
+    
+        // function 
+        QCursor.prototype.hotSpot = function(...args) 
+          
+        {
+          //print("JS: QCursor.prototype.hotSpot");
+          return this.__PROXY__.hotSpot(...args);
+        };
+    
+        // function 
+        QCursor.prototype.pos = function(...args) 
+          
+        {
+          //print("JS: QCursor.prototype.pos");
+          return this.__PROXY__.pos(...args);
+        };
+    
+        // function 
+        QCursor.prototype.setPos = function(...args) 
+          
+        {
+          //print("JS: QCursor.prototype.setPos");
+          return this.__PROXY__.setPos(...args);
+        };
+    
 
       // static functions:
       
@@ -387,4 +443,8 @@
       //QCursor.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QCursor.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

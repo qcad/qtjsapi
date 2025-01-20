@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDragEnterEvent);
+              
+                  copyProperties(this, wrapper, QDragEnterEvent);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDragEnterEvent);
+            copyProperties(this, wrapper, QDragEnterEvent);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QDragEnterEvent.prototype = new QDragEnterEvent_BaseJs(engine);
@@ -314,35 +314,6 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        QDragEnterEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QDragEnterEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QDragEnterEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QDragEnterEvent);
-  }
-
-  
-  else {
-    
-        print("QDragEnterEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -358,4 +329,5 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
       //QDragEnterEvent.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

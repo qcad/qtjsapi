@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTreeWidgetItem);
+              
+                  copyProperties(this, wrapper, QTreeWidgetItem);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeWidgetItem);
+            copyProperties(this, wrapper, QTreeWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeWidgetItem);
+            copyProperties(this, wrapper, QTreeWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -105,8 +107,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeWidgetItem);
+            copyProperties(this, wrapper, QTreeWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -132,8 +134,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeWidgetItem);
+            copyProperties(this, wrapper, QTreeWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -159,8 +161,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeWidgetItem);
+            copyProperties(this, wrapper, QTreeWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -186,8 +188,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeWidgetItem);
+            copyProperties(this, wrapper, QTreeWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -213,8 +215,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeWidgetItem);
+            copyProperties(this, wrapper, QTreeWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -240,8 +242,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeWidgetItem);
+            copyProperties(this, wrapper, QTreeWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -266,8 +268,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTreeWidgetItem);
+            copyProperties(this, wrapper, QTreeWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -298,12 +300,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QTreeWidgetItem.prototype = new QTreeWidgetItem_BaseJs(engine);
@@ -368,4 +368,5 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
       //QTreeWidgetItem.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

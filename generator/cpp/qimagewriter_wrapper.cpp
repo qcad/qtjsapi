@@ -194,11 +194,19 @@ QByteArray a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QImageWriter_Wrapper::QImageWriter_Wrapper(RJSApi& h, QImageWriter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QImageWriter_Wrapper::QImageWriter_Wrapper(RJSApi& h, QImageWriter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QImageWriter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QImageWriter_Wrapper"));
               //setObjectName("QImageWriter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -220,8 +228,10 @@ QByteArray a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QImageWriter";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -313,13 +323,13 @@ QByteArray a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QImageWriter(
-                a1_cpp
+              wrapped = new QImageWriter(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -369,13 +379,13 @@ QByteArray a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QImageWriter(
-                a1_cpp
+              wrapped = new QImageWriter(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -394,11 +404,11 @@ QByteArray a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QImageWriter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QImageWriter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -416,14 +426,18 @@ QByteArray a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QImageWriter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

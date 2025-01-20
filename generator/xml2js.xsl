@@ -275,6 +275,12 @@
       //  return this.wrapper.destr();
       //};
 
+      <xsl:if test="@equalsfunction='true'">
+        <xsl:value-of select="@name" />.prototype.equals = function(...args) {
+          return this.__PROXY__.equals(...args);
+        };
+      </xsl:if>
+
       <xsl:if test="$proxy-mode='true'">
         <xsl:value-of select="@name" />.prototype.destr = function() {
           return this.__PROXY__.destr();

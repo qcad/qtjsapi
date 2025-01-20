@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFileDevice);
+              
+                  copyProperties(this, wrapper, QFileDevice);
+                
             //}
           }
           else {
@@ -53,18 +55,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["channelReadyRead(int)"] = Object.getPrototypeOf(this).channelReadyRead;
   
     this["bytesWritten(qint64)"] = Object.getPrototypeOf(this).bytesWritten;
   
     this["channelBytesWritten(int,qint64)"] = Object.getPrototypeOf(this).channelBytesWritten;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QFileDevice.prototype = new QFileDevice_BaseJs(engine);
@@ -129,35 +134,6 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
       // static functions:
       
 
-        // static function 
-        QFileDevice.tr = function() 
-          
-        {
-          //print("JS: QFileDevice.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QFileDevice_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QFileDevice);
-  }
-
-  
-  else {
-    
-        print("QFileDevice.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -173,4 +149,5 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
       //QFileDevice.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

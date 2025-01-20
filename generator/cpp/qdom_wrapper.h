@@ -443,12 +443,13 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -484,27 +485,30 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
 
         // get wrapped object:
         QDomImplementation* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomImplementation* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -512,7 +516,8 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -524,9 +529,10 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -541,9 +547,10 @@ ReturnNullNode = QDomImplementation::ReturnNullNode,
         
 
         private:
-        // wrapped object:
-        QDomImplementation* wrapped;
 
+        
+          // wrapped object:
+          QDomImplementation* wrapped;
         
 
         bool wrappedCreated;
@@ -2186,12 +2193,13 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -2227,27 +2235,30 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
         // get wrapped object:
         QDomNode* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomNode* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -2255,7 +2266,8 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -2267,9 +2279,10 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -2284,9 +2297,10 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomNode* wrapped;
 
+        
+          // wrapped object:
+          QDomNode* wrapped;
         
 
         bool wrappedCreated;
@@ -2636,12 +2650,13 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -2677,27 +2692,30 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
         // get wrapped object:
         QDomNodeList* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomNodeList* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -2705,7 +2723,8 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -2717,9 +2736,10 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -2734,9 +2754,10 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomNodeList* wrapped;
 
+        
+          // wrapped object:
+          QDomNodeList* wrapped;
         
 
         bool wrappedCreated;
@@ -4457,12 +4478,13 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -4498,27 +4520,30 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
 
         // get wrapped object:
         QDomDocumentType* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomDocumentType* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -4526,7 +4551,8 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -4538,9 +4564,10 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -4555,9 +4582,10 @@ EncodingFromTextStream = QDomDocumentType::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomDocumentType* wrapped;
 
+        
+          // wrapped object:
+          QDomDocumentType* wrapped;
         
 
         bool wrappedCreated;
@@ -6630,12 +6658,13 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -6671,27 +6700,30 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
         // get wrapped object:
         QDomDocument* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomDocument* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -6699,7 +6731,8 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -6711,9 +6744,10 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -6728,9 +6762,10 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomDocument* wrapped;
 
+        
+          // wrapped object:
+          QDomDocument* wrapped;
         
 
         bool wrappedCreated;
@@ -7230,12 +7265,13 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -7271,27 +7307,30 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
         // get wrapped object:
         QDomNamedNodeMap* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomNamedNodeMap* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -7299,7 +7338,8 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -7311,9 +7351,10 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -7328,9 +7369,10 @@ EncodingFromTextStream = QDomDocument::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomNamedNodeMap* wrapped;
 
+        
+          // wrapped object:
+          QDomNamedNodeMap* wrapped;
         
 
         bool wrappedCreated;
@@ -8925,12 +8967,13 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -8966,27 +9009,30 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
 
         // get wrapped object:
         QDomDocumentFragment* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomDocumentFragment* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -8994,7 +9040,8 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -9006,9 +9053,10 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -9023,9 +9071,10 @@ EncodingFromTextStream = QDomDocumentFragment::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomDocumentFragment* wrapped;
 
+        
+          // wrapped object:
+          QDomDocumentFragment* wrapped;
         
 
         bool wrappedCreated;
@@ -10832,12 +10881,13 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -10873,27 +10923,30 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
 
         // get wrapped object:
         QDomCharacterData* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomCharacterData* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -10901,7 +10954,8 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -10913,9 +10967,10 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -10930,9 +10985,10 @@ EncodingFromTextStream = QDomCharacterData::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomCharacterData* wrapped;
 
+        
+          // wrapped object:
+          QDomCharacterData* wrapped;
         
 
         bool wrappedCreated;
@@ -12634,12 +12690,13 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -12675,27 +12732,30 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
 
         // get wrapped object:
         QDomAttr* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomAttr* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -12703,7 +12763,8 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -12715,9 +12776,10 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -12732,9 +12794,10 @@ EncodingFromTextStream = QDomAttr::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomAttr* wrapped;
 
+        
+          // wrapped object:
+          QDomAttr* wrapped;
         
 
         bool wrappedCreated;
@@ -14791,12 +14854,13 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -14832,27 +14896,30 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
 
         // get wrapped object:
         QDomElement* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomElement* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -14860,7 +14927,8 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -14872,9 +14940,10 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -14889,9 +14958,10 @@ EncodingFromTextStream = QDomElement::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomElement* wrapped;
 
+        
+          // wrapped object:
+          QDomElement* wrapped;
         
 
         bool wrappedCreated;
@@ -16713,12 +16783,13 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -16754,27 +16825,30 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         // get wrapped object:
         QDomText* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomText* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -16782,7 +16856,8 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -16794,9 +16869,10 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -16811,9 +16887,10 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomText* wrapped;
 
+        
+          // wrapped object:
+          QDomText* wrapped;
         
 
         bool wrappedCreated;
@@ -17200,12 +17277,13 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -17241,27 +17319,30 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         // get wrapped object:
         QDomComment* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomComment* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -17269,7 +17350,8 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -17281,9 +17363,10 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -17298,9 +17381,10 @@ EncodingFromTextStream = QDomText::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomComment* wrapped;
 
+        
+          // wrapped object:
+          QDomComment* wrapped;
         
 
         bool wrappedCreated;
@@ -19118,12 +19202,13 @@ EncodingFromTextStream = QDomCDATASection::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -19159,27 +19244,30 @@ EncodingFromTextStream = QDomCDATASection::EncodingFromTextStream,
 
         // get wrapped object:
         QDomCDATASection* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomCDATASection* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -19187,7 +19275,8 @@ EncodingFromTextStream = QDomCDATASection::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -19199,9 +19288,10 @@ EncodingFromTextStream = QDomCDATASection::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -19216,9 +19306,10 @@ EncodingFromTextStream = QDomCDATASection::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomCDATASection* wrapped;
 
+        
+          // wrapped object:
+          QDomCDATASection* wrapped;
         
 
         bool wrappedCreated;
@@ -20855,12 +20946,13 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -20896,27 +20988,30 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
 
         // get wrapped object:
         QDomNotation* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomNotation* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -20924,7 +21019,8 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -20936,9 +21032,10 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -20953,9 +21050,10 @@ EncodingFromTextStream = QDomNotation::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomNotation* wrapped;
 
+        
+          // wrapped object:
+          QDomNotation* wrapped;
         
 
         bool wrappedCreated;
@@ -22613,12 +22711,13 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -22654,27 +22753,30 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
 
         // get wrapped object:
         QDomEntity* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomEntity* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -22682,7 +22784,8 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -22694,9 +22797,10 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -22711,9 +22815,10 @@ EncodingFromTextStream = QDomEntity::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomEntity* wrapped;
 
+        
+          // wrapped object:
+          QDomEntity* wrapped;
         
 
         bool wrappedCreated;
@@ -24308,12 +24413,13 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -24349,27 +24455,30 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
 
         // get wrapped object:
         QDomEntityReference* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomEntityReference* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -24377,7 +24486,8 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -24389,9 +24499,10 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -24406,9 +24517,10 @@ EncodingFromTextStream = QDomEntityReference::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomEntityReference* wrapped;
 
+        
+          // wrapped object:
+          QDomEntityReference* wrapped;
         
 
         bool wrappedCreated;
@@ -26068,12 +26180,13 @@ EncodingFromTextStream = QDomProcessingInstruction::EncodingFromTextStream,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -26109,27 +26222,30 @@ EncodingFromTextStream = QDomProcessingInstruction::EncodingFromTextStream,
 
         // get wrapped object:
         QDomProcessingInstruction* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QDomProcessingInstruction* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -26137,7 +26253,8 @@ EncodingFromTextStream = QDomProcessingInstruction::EncodingFromTextStream,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -26149,9 +26266,10 @@ EncodingFromTextStream = QDomProcessingInstruction::EncodingFromTextStream,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -26166,9 +26284,10 @@ EncodingFromTextStream = QDomProcessingInstruction::EncodingFromTextStream,
         
 
         private:
-        // wrapped object:
-        QDomProcessingInstruction* wrapped;
 
+        
+          // wrapped object:
+          QDomProcessingInstruction* wrapped;
         
 
         bool wrappedCreated;

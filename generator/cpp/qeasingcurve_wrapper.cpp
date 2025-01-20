@@ -84,11 +84,19 @@
 
     
       // special constructor to wrap existing object:
-      QEasingCurve_Wrapper::QEasingCurve_Wrapper(RJSApi& h, QEasingCurve* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QEasingCurve_Wrapper::QEasingCurve_Wrapper(RJSApi& h, QEasingCurve* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QEasingCurve_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QEasingCurve_Wrapper"));
               //setObjectName("QEasingCurve_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -110,8 +118,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QEasingCurve";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -195,12 +205,12 @@ QEasingCurve::Type a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QEasingCurve(
-                a1_cpp
+              wrapped = new QEasingCurve(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -233,12 +243,12 @@ QEasingCurve a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QEasingCurve(
-                a1_cpp
+              wrapped = new QEasingCurve(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -271,12 +281,12 @@ QEasingCurve a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QEasingCurve(
-                a1_cpp
+              wrapped = new QEasingCurve(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -293,14 +303,18 @@ QEasingCurve a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QEasingCurve";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

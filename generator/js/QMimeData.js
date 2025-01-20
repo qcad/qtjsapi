@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QMimeData);
+              
+                  copyProperties(this, wrapper, QMimeData);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMimeData);
+            copyProperties(this, wrapper, QMimeData);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QMimeData.prototype = new QMimeData_BaseJs(engine);
@@ -132,35 +132,6 @@
       // static functions:
       
 
-        // static function 
-        QMimeData.tr = function() 
-          
-        {
-          //print("JS: QMimeData.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QMimeData_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QMimeData);
-  }
-
-  
-  else {
-    
-        print("QMimeData.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -176,4 +147,5 @@
       //QMimeData.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

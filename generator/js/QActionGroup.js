@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QActionGroup);
+              
+                  copyProperties(this, wrapper, QActionGroup);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QActionGroup);
+            copyProperties(this, wrapper, QActionGroup);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,16 +84,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["triggered(QAction*)"] = Object.getPrototypeOf(this).triggered;
   
     this["hovered(QAction*)"] = Object.getPrototypeOf(this).hovered;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QActionGroup.prototype = new QActionGroup_BaseJs(engine);
@@ -136,35 +141,6 @@
       // static functions:
       
 
-        // static function 
-        QActionGroup.tr = function() 
-          
-        {
-          //print("JS: QActionGroup.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QActionGroup_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QActionGroup);
-  }
-
-  
-  else {
-    
-        print("QActionGroup.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -180,4 +156,5 @@
       //QActionGroup.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

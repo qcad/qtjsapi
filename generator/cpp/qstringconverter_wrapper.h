@@ -311,27 +311,30 @@ LastEncoding = QStringConverter::LastEncoding,
 
         // get wrapped object:
         QStringConverter* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QStringConverter* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -339,7 +342,8 @@ LastEncoding = QStringConverter::LastEncoding,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -351,9 +355,10 @@ LastEncoding = QStringConverter::LastEncoding,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -368,9 +373,10 @@ LastEncoding = QStringConverter::LastEncoding,
         
 
         private:
-        // wrapped object:
-        QStringConverter* wrapped;
 
+        
+          // wrapped object:
+          QStringConverter* wrapped;
         
 
         bool wrappedCreated;
@@ -397,61 +403,6 @@ LastEncoding = QStringConverter::LastEncoding,
       
         #include <QStringEncoder>
       
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QStringEncoder_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QStringEncoder_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QStringEncoder
-    // Function: nameForEncoding
-    // Source: QStringConverter
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nameForEncoding
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QStringEncoder_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStringEncoder
@@ -715,12 +666,13 @@ LastEncoding = QStringEncoder::LastEncoding,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -756,27 +708,30 @@ LastEncoding = QStringEncoder::LastEncoding,
 
         // get wrapped object:
         QStringEncoder* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QStringEncoder* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -784,7 +739,8 @@ LastEncoding = QStringEncoder::LastEncoding,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -796,9 +752,10 @@ LastEncoding = QStringEncoder::LastEncoding,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -813,9 +770,10 @@ LastEncoding = QStringEncoder::LastEncoding,
         
 
         private:
-        // wrapped object:
-        QStringEncoder* wrapped;
 
+        
+          // wrapped object:
+          QStringEncoder* wrapped;
         
 
         bool wrappedCreated;
@@ -842,61 +800,6 @@ LastEncoding = QStringEncoder::LastEncoding,
       
         #include <QStringDecoder>
       
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QStringDecoder_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QStringDecoder_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QStringDecoder
-    // Function: nameForEncoding
-    // Source: QStringConverter
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nameForEncoding
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QStringDecoder_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QStringDecoder
@@ -1160,12 +1063,13 @@ LastEncoding = QStringDecoder::LastEncoding,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1201,27 +1105,30 @@ LastEncoding = QStringDecoder::LastEncoding,
 
         // get wrapped object:
         QStringDecoder* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QStringDecoder* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1229,7 +1136,8 @@ LastEncoding = QStringDecoder::LastEncoding,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1241,9 +1149,10 @@ LastEncoding = QStringDecoder::LastEncoding,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1258,9 +1167,10 @@ LastEncoding = QStringDecoder::LastEncoding,
         
 
         private:
-        // wrapped object:
-        QStringDecoder* wrapped;
 
+        
+          // wrapped object:
+          QStringDecoder* wrapped;
         
 
         bool wrappedCreated;

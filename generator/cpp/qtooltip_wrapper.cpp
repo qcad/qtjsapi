@@ -507,11 +507,19 @@ QFont a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QToolTip_Wrapper::QToolTip_Wrapper(RJSApi& h, QToolTip* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QToolTip_Wrapper::QToolTip_Wrapper(RJSApi& h, QToolTip* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QToolTip_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QToolTip_Wrapper"));
               //setObjectName("QToolTip_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -533,8 +541,10 @@ QFont a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QToolTip";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

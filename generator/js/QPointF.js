@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPointF);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPointF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPointF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPointF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -134,12 +136,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QPointF.prototype = new QPointF_BaseJs(engine);
@@ -176,6 +176,94 @@
 
       // functions:
       
+        // function 
+        QPointF.prototype.manhattanLength = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.manhattanLength");
+          return this.__PROXY__.manhattanLength(...args);
+        };
+    
+        // function 
+        QPointF.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.isNull");
+          return this.__PROXY__.isNull(...args);
+        };
+    
+        // function 
+        QPointF.prototype.x = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.x");
+          return this.__PROXY__.x(...args);
+        };
+    
+        // function 
+        QPointF.prototype.y = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.y");
+          return this.__PROXY__.y(...args);
+        };
+    
+        // function 
+        QPointF.prototype.setX = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.setX");
+          return this.__PROXY__.setX(...args);
+        };
+    
+        // function 
+        QPointF.prototype.setY = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.setY");
+          return this.__PROXY__.setY(...args);
+        };
+    
+        // function 
+        QPointF.prototype.transposed = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.transposed");
+          return this.__PROXY__.transposed(...args);
+        };
+    
+        // function 
+        QPointF.prototype.rx = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.rx");
+          return this.__PROXY__.rx(...args);
+        };
+    
+        // function 
+        QPointF.prototype.ry = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.ry");
+          return this.__PROXY__.ry(...args);
+        };
+    
+        // function 
+        QPointF.prototype.dotProduct = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.dotProduct");
+          return this.__PROXY__.dotProduct(...args);
+        };
+    
+        // function 
+        QPointF.prototype.toPoint = function(...args) 
+          
+        {
+          //print("JS: QPointF.prototype.toPoint");
+          return this.__PROXY__.toPoint(...args);
+        };
+    
 
       // static functions:
       
@@ -223,4 +311,8 @@
       //QPointF.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QPointF.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

@@ -21,174 +21,6 @@
       // wrapped object is QLabel_Base class if new object is created: 
       #include "qlabel_base.h"
     
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QLabel_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QLabel_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QLabel
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QLabel
-    // Function: setTabOrder
-    // Source: QWidget
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QLabel
-    // Function: mouseGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QLabel
-    // Function: keyboardGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-#if QT_DEPRECATED_SINCE(6,6)
-
-#endif
-
-#ifndef QT_NO_PICTURE
-
-#if QT_DEPRECATED_SINCE(6,6)
-
-#endif
-
-#endif
-
-#if QT_CONFIG(movie)
-
-#endif
-
-#ifndef QT_NO_SHORTCUT
-
-#endif
-
-#ifndef QT_NO_PICTURE
-
-#endif
-
-#if QT_CONFIG(movie)
-
-#endif
-
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-#if QT_CONFIG(movie)
-
-#endif
-
-#ifndef QT_NO_SHORTCUT
-
-#endif
-
-
-      private:
-          RJSApi& handler;
-          //static QLabel_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QLabel
@@ -6881,12 +6713,13 @@ Shape_Mask = QLabel::Shape_Mask,
 
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -6922,27 +6755,30 @@ Shape_Mask = QLabel::Shape_Mask,
 
         // get wrapped object:
         QLabel* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QLabel* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -6961,7 +6797,8 @@ Shape_Mask = QLabel::Shape_Mask,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -6973,9 +6810,10 @@ Shape_Mask = QLabel::Shape_Mask,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -6997,9 +6835,10 @@ Shape_Mask = QLabel::Shape_Mask,
         
 
         private:
-        // wrapped object:
-        QLabel* wrapped;
 
+        
+          // wrapped object:
+          QLabel* wrapped;
         
 
         bool wrappedCreated;

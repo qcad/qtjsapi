@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QIntValidator);
+              
+                  copyProperties(this, wrapper, QIntValidator);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QIntValidator);
+            copyProperties(this, wrapper, QIntValidator);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QIntValidator);
+            copyProperties(this, wrapper, QIntValidator);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,16 +112,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["bottomChanged(int)"] = Object.getPrototypeOf(this).bottomChanged;
   
     this["topChanged(int)"] = Object.getPrototypeOf(this).topChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QIntValidator.prototype = new QIntValidator_BaseJs(engine);
@@ -173,35 +178,6 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
       // static functions:
       
 
-        // static function 
-        QIntValidator.tr = function() 
-          
-        {
-          //print("JS: QIntValidator.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QIntValidator_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QIntValidator);
-  }
-
-  
-  else {
-    
-        print("QIntValidator.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -217,4 +193,5 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
       //QIntValidator.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

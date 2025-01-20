@@ -298,11 +298,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QRegularExpression_Wrapper::QRegularExpression_Wrapper(RJSApi& h, QRegularExpression* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QRegularExpression_Wrapper::QRegularExpression_Wrapper(RJSApi& h, QRegularExpression* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QRegularExpression_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QRegularExpression_Wrapper"));
               //setObjectName("QRegularExpression_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -324,8 +332,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QRegularExpression";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -420,13 +430,13 @@ QRegularExpression::PatternOptions a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegularExpression(
-                a1_cpp
+              wrapped = new QRegularExpression(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -459,12 +469,12 @@ QRegularExpression a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegularExpression(
-                a1_cpp
+              wrapped = new QRegularExpression(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -497,12 +507,12 @@ QRegularExpression a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegularExpression(
-                a1_cpp
+              wrapped = new QRegularExpression(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -521,11 +531,11 @@ QRegularExpression a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegularExpression(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QRegularExpression(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -543,14 +553,18 @@ QRegularExpression a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QRegularExpression";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -1427,11 +1441,19 @@ QRegularExpression::MatchOptions a4_cpp;
 
     
       // special constructor to wrap existing object:
-      QRegularExpressionMatch_Wrapper::QRegularExpressionMatch_Wrapper(RJSApi& h, QRegularExpressionMatch* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QRegularExpressionMatch_Wrapper::QRegularExpressionMatch_Wrapper(RJSApi& h, QRegularExpressionMatch* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QRegularExpressionMatch_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QRegularExpressionMatch_Wrapper"));
               //setObjectName("QRegularExpressionMatch_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1453,8 +1475,10 @@ QRegularExpression::MatchOptions a4_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QRegularExpressionMatch";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1530,12 +1554,12 @@ QRegularExpressionMatch a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegularExpressionMatch(
-                a1_cpp
+              wrapped = new QRegularExpressionMatch(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1568,12 +1592,12 @@ QRegularExpressionMatch a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegularExpressionMatch(
-                a1_cpp
+              wrapped = new QRegularExpressionMatch(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1592,11 +1616,11 @@ QRegularExpressionMatch a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegularExpressionMatch(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QRegularExpressionMatch(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1613,14 +1637,18 @@ QRegularExpressionMatch a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QRegularExpressionMatch";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

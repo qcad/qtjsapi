@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QFileIconProvider_Wrapper::QFileIconProvider_Wrapper(RJSApi& h, QFileIconProvider* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QFileIconProvider_Wrapper::QFileIconProvider_Wrapper(RJSApi& h, QFileIconProvider* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QFileIconProvider_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QFileIconProvider_Wrapper"));
               //setObjectName("QFileIconProvider_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,18 +170,18 @@ QFileIconProvider_Wrapper::QFileIconProvider_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QFileIconProvider_Base(
-              handler
+                wrapped = new QFileIconProvider_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((QFileIconProvider_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((QFileIconProvider_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((QFileIconProvider_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((QFileIconProvider_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -186,7 +194,9 @@ QFileIconProvider_Wrapper::QFileIconProvider_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QFileIconProvider";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

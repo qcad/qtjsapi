@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QBoxLayout);
+              
+                  copyProperties(this, wrapper, QBoxLayout);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QBoxLayout);
+            copyProperties(this, wrapper, QBoxLayout);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QBoxLayout.prototype = new QBoxLayout_BaseJs(engine);
@@ -149,72 +149,6 @@ QBoxLayout.Up = QBoxLayout_Wrapper.Up;
       // static functions:
       
 
-        // static function 
-        QBoxLayout.tr = function() 
-          
-        {
-          //print("JS: QBoxLayout.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QBoxLayout_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QBoxLayout);
-  }
-
-  
-  else {
-    
-        print("QBoxLayout.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QBoxLayout.closestAcceptableSize = function() 
-          
-        {
-          //print("JS: QBoxLayout.closestAcceptableSize");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QBoxLayout_WrapperSingletonInstance.closestAcceptableSize(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QBoxLayout);
-  }
-
-  
-  else {
-    
-        print("QBoxLayout.closestAcceptableSize(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QBoxLayout.activateRecursiveHelper = function() 
-          
-        {
-          //print("JS: QBoxLayout.activateRecursiveHelper");
-          
-        };
-      
-
       // constants:
       
 
@@ -230,4 +164,5 @@ QBoxLayout.Up = QBoxLayout_Wrapper.Up;
       //QBoxLayout.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

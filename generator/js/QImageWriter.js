@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QImageWriter);
+              
+                  copyProperties(this, wrapper, QImageWriter);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QImageWriter);
+            copyProperties(this, wrapper, QImageWriter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QImageWriter);
+            copyProperties(this, wrapper, QImageWriter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -103,8 +105,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QImageWriter);
+            copyProperties(this, wrapper, QImageWriter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -135,12 +137,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QImageWriter.prototype = new QImageWriter_BaseJs(engine);
@@ -286,4 +286,5 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
       //QImageWriter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

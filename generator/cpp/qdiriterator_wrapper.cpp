@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QDirIterator_Wrapper::QDirIterator_Wrapper(RJSApi& h, QDirIterator* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDirIterator_Wrapper::QDirIterator_Wrapper(RJSApi& h, QDirIterator* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDirIterator_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDirIterator_Wrapper"));
               //setObjectName("QDirIterator_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDirIterator";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -228,15 +238,15 @@ QDirIterator::IteratorFlags a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDirIterator(
-                a1_cpp
+              wrapped = new QDirIterator(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -295,14 +305,14 @@ QDirIterator::IteratorFlags a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDirIterator(
-                a1_cpp
+              wrapped = new QDirIterator(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -352,13 +362,13 @@ QDirIterator::IteratorFlags a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDirIterator(
-                a1_cpp
+              wrapped = new QDirIterator(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -378,14 +388,18 @@ QDirIterator::IteratorFlags a2_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDirIterator";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

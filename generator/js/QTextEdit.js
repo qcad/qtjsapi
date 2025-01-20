@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextEdit);
+              
+                  copyProperties(this, wrapper, QTextEdit);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextEdit);
+            copyProperties(this, wrapper, QTextEdit);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextEdit);
+            copyProperties(this, wrapper, QTextEdit);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,10 +112,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["undoAvailable(bool)"] = Object.getPrototypeOf(this).undoAvailable;
@@ -124,8 +125,12 @@
   
     this["copyAvailable(bool)"] = Object.getPrototypeOf(this).copyAvailable;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QTextEdit.prototype = new QTextEdit_BaseJs(engine);
@@ -216,119 +221,6 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
       // static functions:
       
 
-        // static function 
-        QTextEdit.tr = function() 
-          
-        {
-          //print("JS: QTextEdit.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QTextEdit_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QTextEdit);
-  }
-
-  
-  else {
-    
-        print("QTextEdit.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTextEdit.setTabOrder = function() 
-          
-        {
-          //print("JS: QTextEdit.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QTextEdit_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QTextEdit);
-  }
-
-  
-  else {
-    
-        print("QTextEdit.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTextEdit.mouseGrabber = function() 
-          
-        {
-          //print("JS: QTextEdit.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTextEdit_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTextEdit);
-  }
-
-  
-  else {
-    
-        print("QTextEdit.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTextEdit.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QTextEdit.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTextEdit_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTextEdit);
-  }
-
-  
-  else {
-    
-        print("QTextEdit.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -344,4 +236,5 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
       //QTextEdit.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDomCDATASection);
+              
+                  copyProperties(this, wrapper, QDomCDATASection);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDomCDATASection);
+            copyProperties(this, wrapper, QDomCDATASection);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDomCDATASection);
+            copyProperties(this, wrapper, QDomCDATASection);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -108,12 +110,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QDomCDATASection.prototype = new QDomCDATASection_BaseJs(engine);
@@ -201,4 +201,5 @@ QDomCDATASection.EncodingFromTextStream = QDomCDATASection_Wrapper.EncodingFromT
       //QDomCDATASection.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

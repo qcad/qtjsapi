@@ -1358,11 +1358,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDir_Wrapper::QDir_Wrapper(RJSApi& h, QDir* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDir_Wrapper::QDir_Wrapper(RJSApi& h, QDir* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDir_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDir_Wrapper"));
               //setObjectName("QDir_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1384,8 +1392,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDir";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1510,15 +1520,15 @@ QDir::Filters a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDir(
-                a1_cpp
+              wrapped = new QDir(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1559,12 +1569,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDir(
-                a1_cpp
+              wrapped = new QDir(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1584,14 +1594,18 @@ QString a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDir";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

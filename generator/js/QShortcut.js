@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QShortcut);
+              
+                  copyProperties(this, wrapper, QShortcut);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QShortcut);
+            copyProperties(this, wrapper, QShortcut);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QShortcut);
+            copyProperties(this, wrapper, QShortcut);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -109,12 +111,15 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
+            }
+          
         }
+
+        
+
       }
 
       //QShortcut.prototype = new QShortcut_BaseJs(engine);
@@ -159,35 +164,6 @@
       // static functions:
       
 
-        // static function 
-        QShortcut.tr = function() 
-          
-        {
-          //print("JS: QShortcut.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QShortcut_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QShortcut);
-  }
-
-  
-  else {
-    
-        print("QShortcut.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -203,4 +179,5 @@
       //QShortcut.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTabWidget);
+              
+                  copyProperties(this, wrapper, QTabWidget);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTabWidget);
+            copyProperties(this, wrapper, QTabWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["currentChanged(int)"] = Object.getPrototypeOf(this).currentChanged;
@@ -97,8 +98,12 @@
   
     this["tabBarDoubleClicked(int)"] = Object.getPrototypeOf(this).tabBarDoubleClicked;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QTabWidget.prototype = new QTabWidget_BaseJs(engine);
@@ -157,119 +162,6 @@ QTabWidget.Triangular = QTabWidget_Wrapper.Triangular;
       // static functions:
       
 
-        // static function 
-        QTabWidget.tr = function() 
-          
-        {
-          //print("JS: QTabWidget.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QTabWidget_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QTabWidget);
-  }
-
-  
-  else {
-    
-        print("QTabWidget.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTabWidget.setTabOrder = function() 
-          
-        {
-          //print("JS: QTabWidget.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QTabWidget_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QTabWidget);
-  }
-
-  
-  else {
-    
-        print("QTabWidget.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTabWidget.mouseGrabber = function() 
-          
-        {
-          //print("JS: QTabWidget.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTabWidget_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTabWidget);
-  }
-
-  
-  else {
-    
-        print("QTabWidget.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTabWidget.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QTabWidget.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTabWidget_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTabWidget);
-  }
-
-  
-  else {
-    
-        print("QTabWidget.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -285,4 +177,5 @@ QTabWidget.Triangular = QTabWidget_Wrapper.Triangular;
       //QTabWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

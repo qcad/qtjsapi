@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QComboBox);
+              
+                  copyProperties(this, wrapper, QComboBox);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QComboBox);
+            copyProperties(this, wrapper, QComboBox);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["editTextChanged(QString)"] = Object.getPrototypeOf(this).editTextChanged;
@@ -103,8 +104,12 @@
   
     this["currentTextChanged(QString)"] = Object.getPrototypeOf(this).currentTextChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QComboBox.prototype = new QComboBox_BaseJs(engine);
@@ -167,119 +172,6 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
       // static functions:
       
 
-        // static function 
-        QComboBox.tr = function() 
-          
-        {
-          //print("JS: QComboBox.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QComboBox_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QComboBox);
-  }
-
-  
-  else {
-    
-        print("QComboBox.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QComboBox.setTabOrder = function() 
-          
-        {
-          //print("JS: QComboBox.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QComboBox_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QComboBox);
-  }
-
-  
-  else {
-    
-        print("QComboBox.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QComboBox.mouseGrabber = function() 
-          
-        {
-          //print("JS: QComboBox.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QComboBox_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QComboBox);
-  }
-
-  
-  else {
-    
-        print("QComboBox.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QComboBox.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QComboBox.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QComboBox_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QComboBox);
-  }
-
-  
-  else {
-    
-        print("QComboBox.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -295,4 +187,5 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
       //QComboBox.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

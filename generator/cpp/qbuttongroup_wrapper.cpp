@@ -13,107 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QButtonGroup
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QButtonGroup_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QButtonGroup_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QButtonGroup_Wrapper>("org.qcad", 1, 0, "QButtonGroup_Wrapper");
@@ -142,15 +41,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QButtonGroup_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QButtonGroup_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QButtonGroup_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QButtonGroup_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QButtonGroup_WrapperSingleton * s = new QButtonGroup_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QButtonGroup_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QButtonGroup.js";
       QFile scriptFile(fileName);
@@ -186,11 +76,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QButtonGroup_Wrapper::QButtonGroup_Wrapper(RJSApi& h, QButtonGroup* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QButtonGroup_Wrapper::QButtonGroup_Wrapper(RJSApi& h, QButtonGroup* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QButtonGroup_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QButtonGroup_Wrapper"));
               //setObjectName("QButtonGroup_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -375,21 +273,21 @@ QButtonGroup_Wrapper::QButtonGroup_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QButtonGroup_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new QButtonGroup_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((QButtonGroup_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((QButtonGroup_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((QButtonGroup_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((QButtonGroup_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -406,14 +304,18 @@ QButtonGroup_Wrapper::QButtonGroup_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QButtonGroup";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -3,7 +3,7 @@
   <class_decl name="QColor" />
   <class_decl name="QColormap" />
   <class_decl name="QVariant" />
-  <class name="QColor" equalsfunction="true">
+  <class name="QColor" equalsfunction="true" proxy="true">
     <constructor>
       <variant>
         <parameters />

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QGraphicsDropShadowEffect);
+              
+                  copyProperties(this, wrapper, QGraphicsDropShadowEffect);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QGraphicsDropShadowEffect);
+            copyProperties(this, wrapper, QGraphicsDropShadowEffect);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QGraphicsDropShadowEffect.prototype = new QGraphicsDropShadowEffect_BaseJs(engine);
@@ -159,4 +159,5 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
       //QGraphicsDropShadowEffect.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

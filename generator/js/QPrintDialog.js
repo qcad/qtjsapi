@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPrintDialog);
+              
+                  copyProperties(this, wrapper, QPrintDialog);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPrintDialog);
+            copyProperties(this, wrapper, QPrintDialog);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPrintDialog);
+            copyProperties(this, wrapper, QPrintDialog);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,18 +112,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["finished(int)"] = Object.getPrototypeOf(this).finished;
   
     this["accepted(QPrinter*)"] = Object.getPrototypeOf(this).accepted;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QPrintDialog.prototype = new QPrintDialog_BaseJs(engine);
@@ -192,12 +197,12 @@ QPrintDialog.PrintCurrentPage = QPrintDialog_Wrapper.PrintCurrentPage;
 
       // functions:
       
-        // function 
-        QPrintDialog.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QPrintDialog.prototype.actionEvent");
-          
+      // function 
+      QPrintDialog.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: QPrintDialog.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -205,7 +210,8 @@ QPrintDialog.PrintCurrentPage = QPrintDialog_Wrapper.PrintCurrentPage;
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -221,123 +227,10 @@ QPrintDialog.PrintCurrentPage = QPrintDialog_Wrapper.PrintCurrentPage;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
-      
-
-        // static function 
-        QPrintDialog.tr = function() 
-          
-        {
-          //print("JS: QPrintDialog.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QPrintDialog_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QPrintDialog);
-  }
-
-  
-  else {
-    
-        print("QPrintDialog.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPrintDialog.setTabOrder = function() 
-          
-        {
-          //print("JS: QPrintDialog.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QPrintDialog_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QPrintDialog);
-  }
-
-  
-  else {
-    
-        print("QPrintDialog.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPrintDialog.mouseGrabber = function() 
-          
-        {
-          //print("JS: QPrintDialog.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QPrintDialog_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QPrintDialog);
-  }
-
-  
-  else {
-    
-        print("QPrintDialog.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPrintDialog.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QPrintDialog.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QPrintDialog_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QPrintDialog);
-  }
-
-  
-  else {
-    
-        print("QPrintDialog.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // constants:
@@ -355,4 +248,5 @@ QPrintDialog.PrintCurrentPage = QPrintDialog_Wrapper.PrintCurrentPage;
       //QPrintDialog.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

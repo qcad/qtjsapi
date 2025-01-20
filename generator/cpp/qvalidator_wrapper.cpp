@@ -13,107 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QValidator
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QValidator_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QValidator_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QValidator_Wrapper>("org.qcad", 1, 0, "QValidator_Wrapper");
@@ -142,15 +41,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QValidator_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QValidator_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QValidator_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QValidator_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QValidator_WrapperSingleton * s = new QValidator_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QValidator_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QValidator.js";
       QFile scriptFile(fileName);
@@ -186,11 +76,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QValidator_Wrapper::QValidator_Wrapper(RJSApi& h, QValidator* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QValidator_Wrapper::QValidator_Wrapper(RJSApi& h, QValidator* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QValidator_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QValidator_Wrapper"));
               //setObjectName("QValidator_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1786,107 +1684,6 @@ QString a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QIntValidator
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QIntValidator_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QIntValidator_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QIntValidator_Wrapper>("org.qcad", 1, 0, "QIntValidator_Wrapper");
@@ -1915,15 +1712,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QIntValidator_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QIntValidator_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QIntValidator_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QIntValidator_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QIntValidator_WrapperSingleton * s = new QIntValidator_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QIntValidator_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QIntValidator.js";
       QFile scriptFile(fileName);
@@ -1959,11 +1747,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QIntValidator_Wrapper::QIntValidator_Wrapper(RJSApi& h, QIntValidator* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QIntValidator_Wrapper::QIntValidator_Wrapper(RJSApi& h, QIntValidator* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QIntValidator_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QIntValidator_Wrapper"));
               //setObjectName("QIntValidator_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2135,14 +1931,14 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QIntValidator(
-                a1_cpp
+              wrapped = new QIntValidator(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2186,12 +1982,12 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QIntValidator(
-                a1_cpp
+              wrapped = new QIntValidator(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2210,14 +2006,18 @@ int a2_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QIntValidator";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -4116,107 +3916,6 @@ int a2_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QDoubleValidator
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QDoubleValidator_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QDoubleValidator_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QDoubleValidator_Wrapper>("org.qcad", 1, 0, "QDoubleValidator_Wrapper");
@@ -4245,15 +3944,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QDoubleValidator_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QDoubleValidator_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QDoubleValidator_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QDoubleValidator_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QDoubleValidator_WrapperSingleton * s = new QDoubleValidator_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QDoubleValidator_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QDoubleValidator.js";
       QFile scriptFile(fileName);
@@ -4289,11 +3979,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QDoubleValidator_Wrapper::QDoubleValidator_Wrapper(RJSApi& h, QDoubleValidator* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDoubleValidator_Wrapper::QDoubleValidator_Wrapper(RJSApi& h, QDoubleValidator* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDoubleValidator_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDoubleValidator_Wrapper"));
               //setObjectName("QDoubleValidator_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -4490,15 +4188,15 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDoubleValidator(
-                a1_cpp
+              wrapped = new QDoubleValidator(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4542,12 +4240,12 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDoubleValidator(
-                a1_cpp
+              wrapped = new QDoubleValidator(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4567,14 +4265,18 @@ int a3_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDoubleValidator";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -6793,107 +6495,6 @@ QDoubleValidator::Notation a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QRegularExpressionValidator
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QRegularExpressionValidator_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QRegularExpressionValidator_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QRegularExpressionValidator_Wrapper>("org.qcad", 1, 0, "QRegularExpressionValidator_Wrapper");
@@ -6922,15 +6523,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QRegularExpressionValidator_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QRegularExpressionValidator_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QRegularExpressionValidator_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QRegularExpressionValidator_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QRegularExpressionValidator_WrapperSingleton * s = new QRegularExpressionValidator_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QRegularExpressionValidator_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QRegularExpressionValidator.js";
       QFile scriptFile(fileName);
@@ -6966,11 +6558,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QRegularExpressionValidator_Wrapper::QRegularExpressionValidator_Wrapper(RJSApi& h, QRegularExpressionValidator* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QRegularExpressionValidator_Wrapper::QRegularExpressionValidator_Wrapper(RJSApi& h, QRegularExpressionValidator* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QRegularExpressionValidator_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QRegularExpressionValidator_Wrapper"));
               //setObjectName("QRegularExpressionValidator_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -7124,13 +6724,13 @@ QRegularExpression a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegularExpressionValidator(
-                a1_cpp
+              wrapped = new QRegularExpressionValidator(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -7174,12 +6774,12 @@ QRegularExpression a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegularExpressionValidator(
-                a1_cpp
+              wrapped = new QRegularExpressionValidator(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -7197,14 +6797,18 @@ QRegularExpression a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QRegularExpressionValidator";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

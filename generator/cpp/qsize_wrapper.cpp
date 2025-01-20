@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QSize_Wrapper::QSize_Wrapper(RJSApi& h, QSize* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QSize_Wrapper::QSize_Wrapper(RJSApi& h, QSize* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QSize_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QSize_Wrapper"));
               //setObjectName("QSize_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QSize";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -190,13 +200,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSize(
-                a1_cpp
+              wrapped = new QSize(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -238,13 +248,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSize(
-                a1_cpp
+              wrapped = new QSize(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -286,13 +296,13 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSize(
-                a1_cpp
+              wrapped = new QSize(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -325,12 +335,12 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSize(
-                a1_cpp
+              wrapped = new QSize(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -349,11 +359,11 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSize(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QSize(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -372,11 +382,11 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSize(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QSize(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -395,11 +405,11 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSize(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QSize(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -417,14 +427,18 @@ QSize a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QSize";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -1740,11 +1754,19 @@ QMargins a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QSizeF_Wrapper::QSizeF_Wrapper(RJSApi& h, QSizeF* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QSizeF_Wrapper::QSizeF_Wrapper(RJSApi& h, QSizeF* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QSizeF_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QSizeF_Wrapper"));
               //setObjectName("QSizeF_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1766,8 +1788,10 @@ QMargins a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QSizeF";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1854,13 +1878,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizeF(
-                a1_cpp
+              wrapped = new QSizeF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1902,13 +1926,13 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizeF(
-                a1_cpp
+              wrapped = new QSizeF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1950,13 +1974,13 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizeF(
-                a1_cpp
+              wrapped = new QSizeF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1989,12 +2013,12 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizeF(
-                a1_cpp
+              wrapped = new QSizeF(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2027,12 +2051,12 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizeF(
-                a1_cpp
+              wrapped = new QSizeF(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2051,11 +2075,11 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizeF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QSizeF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2074,11 +2098,11 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizeF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QSizeF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2097,11 +2121,11 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizeF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QSizeF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2119,14 +2143,18 @@ QSize a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QSizeF";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

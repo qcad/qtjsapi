@@ -31,206 +31,6 @@
       // wrapped object is QMainWindow_Base class if new object is created: 
       #include "qmainwindow_base.h"
     
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QMainWindow_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QMainWindow_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QMainWindow
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QMainWindow
-    // Function: setTabOrder
-    // Source: QWidget
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QMainWindow
-    // Function: mouseGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QMainWindow
-    // Function: keyboardGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-#if QT_CONFIG(dockwidget)
-
-#if QT_CONFIG(tabbar)
-
-#endif
-
-#if QT_CONFIG(tabwidget)
-
-#endif
-
-#endif
-
-#if QT_CONFIG(toolbar)
-
-#endif
-
-#if QT_CONFIG(dockwidget)
-
-#endif
-
-#if QT_CONFIG(tabbar)
-
-#endif
-
-#if QT_CONFIG(tabwidget)
-
-#endif
-
-#if QT_CONFIG(menubar)
-
-#endif
-
-#if QT_CONFIG(statusbar)
-
-#endif
-
-#if QT_CONFIG(dockwidget)
-
-#endif
-
-#if QT_CONFIG(toolbar)
-
-#endif
-
-#if QT_CONFIG(dockwidget)
-
-#if QT_CONFIG(tabbar)
-
-#endif
-
-#endif
-
-#if QT_CONFIG(menu)
-
-#endif
-
-#if QT_CONFIG(dockwidget)
-
-#endif
-
-#if QT_CONFIG(toolbar)
-
-#endif
-
-#if QT_CONFIG(dockwidget)
-
-#endif
-
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-
-      private:
-          RJSApi& handler;
-          //static QMainWindow_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QMainWindow
@@ -7128,12 +6928,13 @@ GroupedDragging = QMainWindow::GroupedDragging,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -7169,27 +6970,30 @@ GroupedDragging = QMainWindow::GroupedDragging,
 
         // get wrapped object:
         QMainWindow* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QMainWindow* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -7208,7 +7012,8 @@ GroupedDragging = QMainWindow::GroupedDragging,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -7220,9 +7025,10 @@ GroupedDragging = QMainWindow::GroupedDragging,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -7244,9 +7050,10 @@ GroupedDragging = QMainWindow::GroupedDragging,
         
 
         private:
-        // wrapped object:
-        QMainWindow* wrapped;
 
+        
+          // wrapped object:
+          QMainWindow* wrapped;
         
 
         bool wrappedCreated;

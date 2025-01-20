@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QStandardItemModel);
+              
+                  copyProperties(this, wrapper, QStandardItemModel);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QStandardItemModel);
+            copyProperties(this, wrapper, QStandardItemModel);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QStandardItemModel);
+            copyProperties(this, wrapper, QStandardItemModel);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,18 +112,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["headerDataChanged(Qt::Orientation,int,int)"] = Object.getPrototypeOf(this).headerDataChanged;
   
     this["rowsInserted(QModelIndex,int,int)"] = Object.getPrototypeOf(this).rowsInserted;
   
     this["itemChanged(QStandardItem*)"] = Object.getPrototypeOf(this).itemChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QStandardItemModel.prototype = new QStandardItemModel_BaseJs(engine);
@@ -175,35 +180,6 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
       // static functions:
       
 
-        // static function 
-        QStandardItemModel.tr = function() 
-          
-        {
-          //print("JS: QStandardItemModel.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QStandardItemModel_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QStandardItemModel);
-  }
-
-  
-  else {
-    
-        print("QStandardItemModel.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -219,4 +195,5 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
       //QStandardItemModel.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qicon.h">
   <class_decl name="QIconEngine" />
   <class_decl name="QPainter" />
-  <class name="QIcon">
+  <class name="QIcon" proxy="true">
     <enum name="Mode">
       <key>Normal</key>
       <key>Disabled</key>

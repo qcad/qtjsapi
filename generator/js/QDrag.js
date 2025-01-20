@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDrag);
+              
+                  copyProperties(this, wrapper, QDrag);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDrag);
+            copyProperties(this, wrapper, QDrag);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,16 +84,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["actionChanged(Qt::DropAction)"] = Object.getPrototypeOf(this).actionChanged;
   
     this["targetChanged(QObject*)"] = Object.getPrototypeOf(this).targetChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QDrag.prototype = new QDrag_BaseJs(engine);
@@ -137,35 +142,6 @@
       
 
         // static function 
-        QDrag.tr = function() 
-          
-        {
-          //print("JS: QDrag.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QDrag_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QDrag);
-  }
-
-  
-  else {
-    
-        print("QDrag.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         QDrag.cancel = function() 
           
         {
@@ -208,4 +184,5 @@
       //QDrag.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

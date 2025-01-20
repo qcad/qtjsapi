@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      QPaintDevice_Wrapper::QPaintDevice_Wrapper(RJSApi& h, QPaintDevice* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPaintDevice_Wrapper::QPaintDevice_Wrapper(RJSApi& h, QPaintDevice* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPaintDevice_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPaintDevice_Wrapper"));
               //setObjectName("QPaintDevice_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

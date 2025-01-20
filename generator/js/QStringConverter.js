@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QStringConverter);
+              
+                  copyProperties(this, wrapper, QStringConverter);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QStringConverter.prototype = new QStringConverter_BaseJs(engine);
@@ -158,4 +158,5 @@ QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
       //QStringConverter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

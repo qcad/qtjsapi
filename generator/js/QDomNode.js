@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDomNode);
+              
+                  copyProperties(this, wrapper, QDomNode);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDomNode);
+            copyProperties(this, wrapper, QDomNode);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDomNode);
+            copyProperties(this, wrapper, QDomNode);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -108,12 +110,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QDomNode.prototype = new QDomNode_BaseJs(engine);
@@ -189,4 +189,5 @@ QDomNode.EncodingFromTextStream = QDomNode_Wrapper.EncodingFromTextStream;
       //QDomNode.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

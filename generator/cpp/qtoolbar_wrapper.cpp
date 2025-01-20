@@ -13,276 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QToolBar
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QToolBar_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QToolBar
-    // Function: setTabOrder
-    // Source: QWidget
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QToolBar_WrapperSingleton::setTabOrder
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QWidget_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp:  (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a2);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            
-                // call static member function:
-                QWidget::setTabOrder(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setTabOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QToolBar
-    // Function: mouseGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QToolBar_WrapperSingleton::mouseGrabber
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QWidget* res = 
-                
-                // call static member function:
-                QWidget::mouseGrabber(
-              
-            );
-          
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for mouseGrabber";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QToolBar
-    // Function: keyboardGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QToolBar_WrapperSingleton::keyboardGrabber
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QWidget* res = 
-                
-                // call static member function:
-                QWidget::keyboardGrabber(
-              
-            );
-          
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for keyboardGrabber";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #ifdef Q_CLANG_QDOC
 
 #else
@@ -318,15 +48,6 @@ int a3_cpp;
         //QJSValue mob = engine->newQMetaObject(&QToolBar_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QToolBar_BaseJs", mob);
       
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QToolBar_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QToolBar_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QToolBar_WrapperSingleton * s = new QToolBar_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QToolBar_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
-      
       QString fileName = ":generator/js/QToolBar.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
@@ -361,11 +82,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QToolBar_Wrapper::QToolBar_Wrapper(RJSApi& h, QToolBar* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QToolBar_Wrapper::QToolBar_Wrapper(RJSApi& h, QToolBar* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QToolBar_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QToolBar_Wrapper"));
               //setObjectName("QToolBar_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -568,22 +297,22 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QToolBar_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new QToolBar_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((QToolBar_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((QToolBar_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((QToolBar_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((QToolBar_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -627,21 +356,21 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QToolBar_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new QToolBar_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((QToolBar_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((QToolBar_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((QToolBar_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((QToolBar_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -659,14 +388,18 @@ QString a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QToolBar";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

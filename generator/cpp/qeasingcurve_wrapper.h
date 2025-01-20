@@ -542,12 +542,13 @@ NCurveTypes = QEasingCurve::NCurveTypes,
 
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -583,27 +584,30 @@ NCurveTypes = QEasingCurve::NCurveTypes,
 
         // get wrapped object:
         QEasingCurve* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QEasingCurve* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -611,7 +615,8 @@ NCurveTypes = QEasingCurve::NCurveTypes,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -623,9 +628,10 @@ NCurveTypes = QEasingCurve::NCurveTypes,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -640,9 +646,10 @@ NCurveTypes = QEasingCurve::NCurveTypes,
         
 
         private:
-        // wrapped object:
-        QEasingCurve* wrapped;
 
+        
+          // wrapped object:
+          QEasingCurve* wrapped;
         
 
         bool wrappedCreated;

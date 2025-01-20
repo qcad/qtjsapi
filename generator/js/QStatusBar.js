@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QStatusBar);
+              
+                  copyProperties(this, wrapper, QStatusBar);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QStatusBar);
+            copyProperties(this, wrapper, QStatusBar);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,16 +85,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["messageChanged(QString)"] = Object.getPrototypeOf(this).messageChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QStatusBar.prototype = new QStatusBar_BaseJs(engine);
@@ -141,119 +146,6 @@
       // static functions:
       
 
-        // static function 
-        QStatusBar.tr = function() 
-          
-        {
-          //print("JS: QStatusBar.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QStatusBar_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QStatusBar);
-  }
-
-  
-  else {
-    
-        print("QStatusBar.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QStatusBar.setTabOrder = function() 
-          
-        {
-          //print("JS: QStatusBar.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QStatusBar_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QStatusBar);
-  }
-
-  
-  else {
-    
-        print("QStatusBar.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QStatusBar.mouseGrabber = function() 
-          
-        {
-          //print("JS: QStatusBar.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QStatusBar_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QStatusBar);
-  }
-
-  
-  else {
-    
-        print("QStatusBar.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QStatusBar.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QStatusBar.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QStatusBar_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QStatusBar);
-  }
-
-  
-  else {
-    
-        print("QStatusBar.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -269,4 +161,5 @@
       //QStatusBar.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

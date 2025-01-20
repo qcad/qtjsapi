@@ -84,11 +84,19 @@
 
     
       // special constructor to wrap existing object:
-      QPainter_Wrapper::QPainter_Wrapper(RJSApi& h, QPainter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPainter_Wrapper::QPainter_Wrapper(RJSApi& h, QPainter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPainter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPainter_Wrapper"));
               //setObjectName("QPainter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -170,11 +178,11 @@ QPainter_Wrapper::QPainter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QPainter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPainter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -187,7 +195,9 @@ QPainter_Wrapper::QPainter_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QPainter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

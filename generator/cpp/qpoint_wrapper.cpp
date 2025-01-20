@@ -164,11 +164,19 @@ QPoint a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QPoint_Wrapper::QPoint_Wrapper(RJSApi& h, QPoint* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPoint_Wrapper::QPoint_Wrapper(RJSApi& h, QPoint* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPoint_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPoint_Wrapper"));
               //setObjectName("QPoint_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -190,8 +198,10 @@ QPoint a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPoint";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -278,13 +288,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPoint(
-                a1_cpp
+              wrapped = new QPoint(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -303,11 +313,11 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPoint(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPoint(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -325,14 +335,18 @@ int a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPoint";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -1356,11 +1370,19 @@ QPointF a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QPointF_Wrapper::QPointF_Wrapper(RJSApi& h, QPointF* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPointF_Wrapper::QPointF_Wrapper(RJSApi& h, QPointF* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPointF_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPointF_Wrapper"));
               //setObjectName("QPointF_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1382,8 +1404,10 @@ QPointF a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPointF";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1470,13 +1494,13 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPointF(
-                a1_cpp
+              wrapped = new QPointF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1509,12 +1533,12 @@ QPoint a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPointF(
-                a1_cpp
+              wrapped = new QPointF(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1533,11 +1557,11 @@ QPoint a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPointF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPointF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1555,14 +1579,18 @@ QPoint a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPointF";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

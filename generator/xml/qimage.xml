@@ -5,7 +5,7 @@
   <class_decl name="QIODevice" />
   <class_decl name="QTransform" />
   <class_decl name="QVariant" />
-  <class name="QImage">
+  <class name="QImage" proxy="true">
     <super_list>
       <super name="QPaintDevice" />
     </super_list>

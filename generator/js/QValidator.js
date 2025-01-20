@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QValidator);
+              
+                  copyProperties(this, wrapper, QValidator);
+                
             //}
           }
           else {
@@ -53,12 +55,15 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
+            }
+          
         }
+
+        
+
       }
 
       //QValidator.prototype = new QValidator_BaseJs(engine);
@@ -108,35 +113,6 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
       // static functions:
       
 
-        // static function 
-        QValidator.tr = function() 
-          
-        {
-          //print("JS: QValidator.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QValidator_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QValidator);
-  }
-
-  
-  else {
-    
-        print("QValidator.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -152,4 +128,5 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
       //QValidator.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

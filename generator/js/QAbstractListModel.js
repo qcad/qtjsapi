@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QAbstractListModel);
+              
+                  copyProperties(this, wrapper, QAbstractListModel);
+                
             //}
           }
           else {
@@ -53,16 +55,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["headerDataChanged(Qt::Orientation,int,int)"] = Object.getPrototypeOf(this).headerDataChanged;
   
     this["rowsInserted(QModelIndex,int,int)"] = Object.getPrototypeOf(this).rowsInserted;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QAbstractListModel.prototype = new QAbstractListModel_BaseJs(engine);
@@ -116,35 +121,6 @@ QAbstractListModel.HorizontalSortHint = QAbstractListModel_Wrapper.HorizontalSor
       // static functions:
       
 
-        // static function 
-        QAbstractListModel.tr = function() 
-          
-        {
-          //print("JS: QAbstractListModel.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QAbstractListModel_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractListModel);
-  }
-
-  
-  else {
-    
-        print("QAbstractListModel.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -160,4 +136,5 @@ QAbstractListModel.HorizontalSortHint = QAbstractListModel_Wrapper.HorizontalSor
       //QAbstractListModel.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDockWidget);
+              
+                  copyProperties(this, wrapper, QDockWidget);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDockWidget);
+            copyProperties(this, wrapper, QDockWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDockWidget);
+            copyProperties(this, wrapper, QDockWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,10 +112,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["featuresChanged(QDockWidget::DockWidgetFeatures)"] = Object.getPrototypeOf(this).featuresChanged;
@@ -126,8 +127,12 @@
   
     this["dockLocationChanged(Qt::DockWidgetArea)"] = Object.getPrototypeOf(this).dockLocationChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QDockWidget.prototype = new QDockWidget_BaseJs(engine);
@@ -185,119 +190,6 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
       // static functions:
       
 
-        // static function 
-        QDockWidget.tr = function() 
-          
-        {
-          //print("JS: QDockWidget.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QDockWidget_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QDockWidget);
-  }
-
-  
-  else {
-    
-        print("QDockWidget.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QDockWidget.setTabOrder = function() 
-          
-        {
-          //print("JS: QDockWidget.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QDockWidget_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QDockWidget);
-  }
-
-  
-  else {
-    
-        print("QDockWidget.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QDockWidget.mouseGrabber = function() 
-          
-        {
-          //print("JS: QDockWidget.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QDockWidget_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QDockWidget);
-  }
-
-  
-  else {
-    
-        print("QDockWidget.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QDockWidget.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QDockWidget.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QDockWidget_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QDockWidget);
-  }
-
-  
-  else {
-    
-        print("QDockWidget.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -313,4 +205,5 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
       //QDockWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

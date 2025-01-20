@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextImageFormat);
+              
+                  copyProperties(this, wrapper, QTextImageFormat);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextImageFormat);
+            copyProperties(this, wrapper, QTextImageFormat);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QTextImageFormat.prototype = new QTextImageFormat_BaseJs(engine);
@@ -170,4 +170,5 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
       //QTextImageFormat.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

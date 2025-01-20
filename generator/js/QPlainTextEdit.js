@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPlainTextEdit);
+              
+                  copyProperties(this, wrapper, QPlainTextEdit);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPlainTextEdit);
+            copyProperties(this, wrapper, QPlainTextEdit);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPlainTextEdit);
+            copyProperties(this, wrapper, QPlainTextEdit);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,10 +112,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["undoAvailable(bool)"] = Object.getPrototypeOf(this).undoAvailable;
@@ -128,8 +129,12 @@
   
     this["modificationChanged(bool)"] = Object.getPrototypeOf(this).modificationChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QPlainTextEdit.prototype = new QPlainTextEdit_BaseJs(engine);
@@ -213,119 +218,6 @@ QPlainTextEdit.WidgetWidth = QPlainTextEdit_Wrapper.WidgetWidth;
       // static functions:
       
 
-        // static function 
-        QPlainTextEdit.tr = function() 
-          
-        {
-          //print("JS: QPlainTextEdit.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QPlainTextEdit_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QPlainTextEdit);
-  }
-
-  
-  else {
-    
-        print("QPlainTextEdit.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPlainTextEdit.setTabOrder = function() 
-          
-        {
-          //print("JS: QPlainTextEdit.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QPlainTextEdit_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QPlainTextEdit);
-  }
-
-  
-  else {
-    
-        print("QPlainTextEdit.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPlainTextEdit.mouseGrabber = function() 
-          
-        {
-          //print("JS: QPlainTextEdit.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QPlainTextEdit_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QPlainTextEdit);
-  }
-
-  
-  else {
-    
-        print("QPlainTextEdit.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPlainTextEdit.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QPlainTextEdit.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QPlainTextEdit_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QPlainTextEdit);
-  }
-
-  
-  else {
-    
-        print("QPlainTextEdit.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -341,4 +233,5 @@ QPlainTextEdit.WidgetWidth = QPlainTextEdit_Wrapper.WidgetWidth;
       //QPlainTextEdit.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

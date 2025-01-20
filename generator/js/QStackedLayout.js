@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QStackedLayout);
+              
+                  copyProperties(this, wrapper, QStackedLayout);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QStackedLayout);
+            copyProperties(this, wrapper, QStackedLayout);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QStackedLayout);
+            copyProperties(this, wrapper, QStackedLayout);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QStackedLayout);
+            copyProperties(this, wrapper, QStackedLayout);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -134,16 +136,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["widgetRemoved(int)"] = Object.getPrototypeOf(this).widgetRemoved;
   
     this["currentChanged(int)"] = Object.getPrototypeOf(this).currentChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QStackedLayout.prototype = new QStackedLayout_BaseJs(engine);
@@ -200,72 +205,6 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
       // static functions:
       
 
-        // static function 
-        QStackedLayout.tr = function() 
-          
-        {
-          //print("JS: QStackedLayout.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QStackedLayout_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QStackedLayout);
-  }
-
-  
-  else {
-    
-        print("QStackedLayout.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QStackedLayout.closestAcceptableSize = function() 
-          
-        {
-          //print("JS: QStackedLayout.closestAcceptableSize");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QStackedLayout_WrapperSingletonInstance.closestAcceptableSize(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QStackedLayout);
-  }
-
-  
-  else {
-    
-        print("QStackedLayout.closestAcceptableSize(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QStackedLayout.activateRecursiveHelper = function() 
-          
-        {
-          //print("JS: QStackedLayout.activateRecursiveHelper");
-          
-        };
-      
-
       // constants:
       
 
@@ -281,4 +220,5 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
       //QStackedLayout.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

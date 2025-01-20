@@ -13,107 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QGraphicsEffect
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QGraphicsEffect_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QGraphicsEffect_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QGraphicsEffect_Wrapper>("org.qcad", 1, 0, "QGraphicsEffect_Wrapper");
@@ -142,15 +41,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QGraphicsEffect_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QGraphicsEffect_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QGraphicsEffect_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QGraphicsEffect_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QGraphicsEffect_WrapperSingleton * s = new QGraphicsEffect_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QGraphicsEffect_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QGraphicsEffect.js";
       QFile scriptFile(fileName);
@@ -186,11 +76,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QGraphicsEffect_Wrapper::QGraphicsEffect_Wrapper(RJSApi& h, QGraphicsEffect* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QGraphicsEffect_Wrapper::QGraphicsEffect_Wrapper(RJSApi& h, QGraphicsEffect* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QGraphicsEffect_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QGraphicsEffect_Wrapper"));
               //setObjectName("QGraphicsEffect_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1848,11 +1746,19 @@ bool a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QGraphicsColorizeEffect_Wrapper::QGraphicsColorizeEffect_Wrapper(RJSApi& h, QGraphicsColorizeEffect* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QGraphicsColorizeEffect_Wrapper::QGraphicsColorizeEffect_Wrapper(RJSApi& h, QGraphicsColorizeEffect* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QGraphicsColorizeEffect_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QGraphicsColorizeEffect_Wrapper"));
               //setObjectName("QGraphicsColorizeEffect_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1961,12 +1867,12 @@ QGraphicsColorizeEffect_Wrapper::QGraphicsColorizeEffect_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QGraphicsColorizeEffect(
-                a1_cpp
+              wrapped = new QGraphicsColorizeEffect(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1983,14 +1889,18 @@ QGraphicsColorizeEffect_Wrapper::QGraphicsColorizeEffect_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QGraphicsColorizeEffect";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -2555,107 +2465,6 @@ qreal a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QGraphicsBlurEffect
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QGraphicsBlurEffect_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QGraphicsBlurEffect_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QGraphicsBlurEffect_Wrapper>("org.qcad", 1, 0, "QGraphicsBlurEffect_Wrapper");
@@ -2684,15 +2493,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QGraphicsBlurEffect_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QGraphicsBlurEffect_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QGraphicsBlurEffect_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QGraphicsBlurEffect_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QGraphicsBlurEffect_WrapperSingleton * s = new QGraphicsBlurEffect_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QGraphicsBlurEffect_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QGraphicsBlurEffect.js";
       QFile scriptFile(fileName);
@@ -2728,11 +2528,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QGraphicsBlurEffect_Wrapper::QGraphicsBlurEffect_Wrapper(RJSApi& h, QGraphicsBlurEffect* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QGraphicsBlurEffect_Wrapper::QGraphicsBlurEffect_Wrapper(RJSApi& h, QGraphicsBlurEffect* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QGraphicsBlurEffect_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QGraphicsBlurEffect_Wrapper"));
               //setObjectName("QGraphicsBlurEffect_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2861,12 +2669,12 @@ QGraphicsBlurEffect_Wrapper::QGraphicsBlurEffect_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QGraphicsBlurEffect(
-                a1_cpp
+              wrapped = new QGraphicsBlurEffect(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2883,14 +2691,18 @@ QGraphicsBlurEffect_Wrapper::QGraphicsBlurEffect_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QGraphicsBlurEffect";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -4724,11 +4536,19 @@ QGraphicsBlurEffect::BlurHints a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QGraphicsDropShadowEffect_Wrapper::QGraphicsDropShadowEffect_Wrapper(RJSApi& h, QGraphicsDropShadowEffect* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QGraphicsDropShadowEffect_Wrapper::QGraphicsDropShadowEffect_Wrapper(RJSApi& h, QGraphicsDropShadowEffect* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QGraphicsDropShadowEffect_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QGraphicsDropShadowEffect_Wrapper"));
               //setObjectName("QGraphicsDropShadowEffect_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -4837,12 +4657,12 @@ QGraphicsDropShadowEffect_Wrapper::QGraphicsDropShadowEffect_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QGraphicsDropShadowEffect(
-                a1_cpp
+              wrapped = new QGraphicsDropShadowEffect(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4859,14 +4679,18 @@ QGraphicsDropShadowEffect_Wrapper::QGraphicsDropShadowEffect_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QGraphicsDropShadowEffect";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -5951,11 +5775,19 @@ QColor a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QGraphicsOpacityEffect_Wrapper::QGraphicsOpacityEffect_Wrapper(RJSApi& h, QGraphicsOpacityEffect* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QGraphicsOpacityEffect_Wrapper::QGraphicsOpacityEffect_Wrapper(RJSApi& h, QGraphicsOpacityEffect* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QGraphicsOpacityEffect_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QGraphicsOpacityEffect_Wrapper"));
               //setObjectName("QGraphicsOpacityEffect_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -6064,12 +5896,12 @@ QGraphicsOpacityEffect_Wrapper::QGraphicsOpacityEffect_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QGraphicsOpacityEffect(
-                a1_cpp
+              wrapped = new QGraphicsOpacityEffect(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -6086,14 +5918,18 @@ QGraphicsOpacityEffect_Wrapper::QGraphicsOpacityEffect_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QGraphicsOpacityEffect";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

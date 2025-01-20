@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QMessageBox);
+              
+                  copyProperties(this, wrapper, QMessageBox);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMessageBox);
+            copyProperties(this, wrapper, QMessageBox);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMessageBox);
+            copyProperties(this, wrapper, QMessageBox);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,18 +112,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["finished(int)"] = Object.getPrototypeOf(this).finished;
   
     this["buttonClicked(QAbstractButton*)"] = Object.getPrototypeOf(this).buttonClicked;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QMessageBox.prototype = new QMessageBox_BaseJs(engine);
@@ -225,119 +230,6 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
       
 
       // static functions:
-      
-
-        // static function 
-        QMessageBox.tr = function() 
-          
-        {
-          //print("JS: QMessageBox.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QMessageBox_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QMessageBox);
-  }
-
-  
-  else {
-    
-        print("QMessageBox.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMessageBox.setTabOrder = function() 
-          
-        {
-          //print("JS: QMessageBox.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QMessageBox_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QMessageBox);
-  }
-
-  
-  else {
-    
-        print("QMessageBox.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMessageBox.mouseGrabber = function() 
-          
-        {
-          //print("JS: QMessageBox.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMessageBox_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMessageBox);
-  }
-
-  
-  else {
-    
-        print("QMessageBox.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMessageBox.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QMessageBox.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMessageBox_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMessageBox);
-  }
-
-  
-  else {
-    
-        print("QMessageBox.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
         // static function 
@@ -585,4 +477,5 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
       //QMessageBox.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

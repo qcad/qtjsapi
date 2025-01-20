@@ -198,11 +198,19 @@ QSurfaceFormat a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QSurfaceFormat_Wrapper::QSurfaceFormat_Wrapper(RJSApi& h, QSurfaceFormat* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QSurfaceFormat_Wrapper::QSurfaceFormat_Wrapper(RJSApi& h, QSurfaceFormat* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QSurfaceFormat_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QSurfaceFormat_Wrapper"));
               //setObjectName("QSurfaceFormat_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -224,8 +232,10 @@ QSurfaceFormat a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QSurfaceFormat";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -305,12 +315,12 @@ QSurfaceFormat a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSurfaceFormat(
-                a1_cpp
+              wrapped = new QSurfaceFormat(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -343,12 +353,12 @@ QSurfaceFormat::FormatOptions a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSurfaceFormat(
-                a1_cpp
+              wrapped = new QSurfaceFormat(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -367,11 +377,11 @@ QSurfaceFormat::FormatOptions a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSurfaceFormat(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QSurfaceFormat(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -388,14 +398,18 @@ QSurfaceFormat::FormatOptions a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QSurfaceFormat";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QPen_Wrapper::QPen_Wrapper(RJSApi& h, QPen* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPen_Wrapper::QPen_Wrapper(RJSApi& h, QPen* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPen_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPen_Wrapper"));
               //setObjectName("QPen_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPen";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -247,16 +257,16 @@ Qt::PenJoinStyle a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPen(
-                a1_cpp
+              wrapped = new QPen(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -289,12 +299,12 @@ Qt::PenStyle a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPen(
-                a1_cpp
+              wrapped = new QPen(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -327,12 +337,12 @@ QColor a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPen(
-                a1_cpp
+              wrapped = new QPen(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -365,12 +375,12 @@ QPen a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPen(
-                a1_cpp
+              wrapped = new QPen(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -403,12 +413,12 @@ QPen a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPen(
-                a1_cpp
+              wrapped = new QPen(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -427,11 +437,11 @@ QPen a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPen(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPen(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -452,14 +462,18 @@ QPen a1_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPen";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

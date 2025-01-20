@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTreeWidget);
+              
+                  copyProperties(this, wrapper, QTreeWidget);
+                
             //}
           }
           else {
@@ -53,10 +55,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
@@ -83,8 +84,12 @@
   
     this["currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)"] = Object.getPrototypeOf(this).currentItemChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QTreeWidget.prototype = new QTreeWidget_BaseJs(engine);
@@ -210,119 +215,6 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
       // static functions:
       
 
-        // static function 
-        QTreeWidget.tr = function() 
-          
-        {
-          //print("JS: QTreeWidget.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QTreeWidget_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeWidget);
-  }
-
-  
-  else {
-    
-        print("QTreeWidget.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTreeWidget.setTabOrder = function() 
-          
-        {
-          //print("JS: QTreeWidget.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QTreeWidget_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeWidget);
-  }
-
-  
-  else {
-    
-        print("QTreeWidget.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTreeWidget.mouseGrabber = function() 
-          
-        {
-          //print("JS: QTreeWidget.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTreeWidget_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeWidget);
-  }
-
-  
-  else {
-    
-        print("QTreeWidget.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTreeWidget.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QTreeWidget.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTreeWidget_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTreeWidget);
-  }
-
-  
-  else {
-    
-        print("QTreeWidget.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -338,4 +230,5 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
       //QTreeWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

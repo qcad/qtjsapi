@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QPagedPaintDevice
-    // Function: devicePixelRatioFScale
-    // Source: QPaintDevice
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QPagedPaintDevice_WrapperSingleton::devicePixelRatioFScale
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            qreal res = 
-                
-                // call static member function:
-                QPaintDevice::devicePixelRatioFScale(
-              
-            );
-          
-            // return type: qreal
-
-            return RJSHelper::cpp2js_qreal(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for devicePixelRatioFScale";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QPagedPaintDevice_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QPagedPaintDevice_Wrapper>("org.qcad", 1, 0, "QPagedPaintDevice_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QPagedPaintDevice_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPagedPaintDevice_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QPagedPaintDevice_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QPagedPaintDevice_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QPagedPaintDevice_WrapperSingleton * s = new QPagedPaintDevice_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QPagedPaintDevice_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QPagedPaintDevice.js";
       QFile scriptFile(fileName);
@@ -131,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QPagedPaintDevice_Wrapper::QPagedPaintDevice_Wrapper(RJSApi& h, QPagedPaintDevice* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPagedPaintDevice_Wrapper::QPagedPaintDevice_Wrapper(RJSApi& h, QPagedPaintDevice* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPagedPaintDevice_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPagedPaintDevice_Wrapper"));
               //setObjectName("QPagedPaintDevice_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPagedPaintDevice";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

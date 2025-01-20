@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QWidgetItem);
+              
+                  copyProperties(this, wrapper, QWidgetItem);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QWidgetItem);
+            copyProperties(this, wrapper, QWidgetItem);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QWidgetItem.prototype = new QWidgetItem_BaseJs(engine);
@@ -147,4 +147,5 @@
       //QWidgetItem.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

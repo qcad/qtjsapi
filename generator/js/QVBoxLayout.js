@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QVBoxLayout);
+              
+                  copyProperties(this, wrapper, QVBoxLayout);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QVBoxLayout);
+            copyProperties(this, wrapper, QVBoxLayout);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QVBoxLayout);
+            copyProperties(this, wrapper, QVBoxLayout);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -108,12 +110,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QVBoxLayout.prototype = new QVBoxLayout_BaseJs(engine);
@@ -178,72 +178,6 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
       // static functions:
       
 
-        // static function 
-        QVBoxLayout.tr = function() 
-          
-        {
-          //print("JS: QVBoxLayout.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QVBoxLayout_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QVBoxLayout);
-  }
-
-  
-  else {
-    
-        print("QVBoxLayout.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QVBoxLayout.closestAcceptableSize = function() 
-          
-        {
-          //print("JS: QVBoxLayout.closestAcceptableSize");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QVBoxLayout_WrapperSingletonInstance.closestAcceptableSize(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QVBoxLayout);
-  }
-
-  
-  else {
-    
-        print("QVBoxLayout.closestAcceptableSize(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QVBoxLayout.activateRecursiveHelper = function() 
-          
-        {
-          //print("JS: QVBoxLayout.activateRecursiveHelper");
-          
-        };
-      
-
       // constants:
       
 
@@ -259,4 +193,5 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
       //QVBoxLayout.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

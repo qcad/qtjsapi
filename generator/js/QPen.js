@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPen);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPen);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPen);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -103,8 +105,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPen);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -129,8 +131,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPen);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -155,8 +157,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPen);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -181,8 +183,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPen);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -213,12 +215,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QPen.prototype = new QPen_BaseJs(engine);
@@ -255,6 +255,214 @@
 
       // functions:
       
+        // function 
+        QPen.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QPen.prototype.style = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.style");
+          return this.__PROXY__.style(...args);
+        };
+    
+        // function 
+        QPen.prototype.setStyle = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setStyle");
+          return this.__PROXY__.setStyle(...args);
+        };
+    
+        // function 
+        QPen.prototype.dashPattern = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.dashPattern");
+          return this.__PROXY__.dashPattern(...args);
+        };
+    
+        // function 
+        QPen.prototype.setDashPattern = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setDashPattern");
+          return this.__PROXY__.setDashPattern(...args);
+        };
+    
+        // function 
+        QPen.prototype.dashOffset = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.dashOffset");
+          return this.__PROXY__.dashOffset(...args);
+        };
+    
+        // function 
+        QPen.prototype.setDashOffset = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setDashOffset");
+          return this.__PROXY__.setDashOffset(...args);
+        };
+    
+        // function 
+        QPen.prototype.miterLimit = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.miterLimit");
+          return this.__PROXY__.miterLimit(...args);
+        };
+    
+        // function 
+        QPen.prototype.setMiterLimit = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setMiterLimit");
+          return this.__PROXY__.setMiterLimit(...args);
+        };
+    
+        // function 
+        QPen.prototype.widthF = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.widthF");
+          return this.__PROXY__.widthF(...args);
+        };
+    
+        // function 
+        QPen.prototype.setWidthF = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setWidthF");
+          return this.__PROXY__.setWidthF(...args);
+        };
+    
+        // function 
+        QPen.prototype.width = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.width");
+          return this.__PROXY__.width(...args);
+        };
+    
+        // function 
+        QPen.prototype.setWidth = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setWidth");
+          return this.__PROXY__.setWidth(...args);
+        };
+    
+        // function 
+        QPen.prototype.color = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.color");
+          return this.__PROXY__.color(...args);
+        };
+    
+        // function 
+        QPen.prototype.setColor = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setColor");
+          return this.__PROXY__.setColor(...args);
+        };
+    
+        // function 
+        QPen.prototype.brush = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.brush");
+          return this.__PROXY__.brush(...args);
+        };
+    
+        // function 
+        QPen.prototype.setBrush = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setBrush");
+          return this.__PROXY__.setBrush(...args);
+        };
+    
+        // function 
+        QPen.prototype.isSolid = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.isSolid");
+          return this.__PROXY__.isSolid(...args);
+        };
+    
+        // function 
+        QPen.prototype.capStyle = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.capStyle");
+          return this.__PROXY__.capStyle(...args);
+        };
+    
+        // function 
+        QPen.prototype.setCapStyle = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setCapStyle");
+          return this.__PROXY__.setCapStyle(...args);
+        };
+    
+        // function 
+        QPen.prototype.joinStyle = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.joinStyle");
+          return this.__PROXY__.joinStyle(...args);
+        };
+    
+        // function 
+        QPen.prototype.setJoinStyle = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setJoinStyle");
+          return this.__PROXY__.setJoinStyle(...args);
+        };
+    
+        // function 
+        QPen.prototype.isCosmetic = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.isCosmetic");
+          return this.__PROXY__.isCosmetic(...args);
+        };
+    
+        // function 
+        QPen.prototype.setCosmetic = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.setCosmetic");
+          return this.__PROXY__.setCosmetic(...args);
+        };
+    
+        // function 
+        QPen.prototype.isDetached = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.isDetached");
+          return this.__PROXY__.isDetached(...args);
+        };
+    
+        // function 
+        QPen.prototype.detach = function(...args) 
+          
+        {
+          //print("JS: QPen.prototype.detach");
+          return this.__PROXY__.detach(...args);
+        };
+    
 
       // static functions:
       
@@ -274,4 +482,8 @@
       //QPen.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QPen.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QLinearGradient);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QLinearGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QLinearGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QLinearGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -134,12 +136,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QLinearGradient.prototype = new QLinearGradient_BaseJs(engine);
@@ -372,6 +372,102 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
 
       // functions:
       
+        // function 
+        QLinearGradient.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.setSpread = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.setSpread");
+          return this.__PROXY__.setSpread(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.spread = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.spread");
+          return this.__PROXY__.spread(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.setColorAt = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.setColorAt");
+          return this.__PROXY__.setColorAt(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.coordinateMode = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.coordinateMode");
+          return this.__PROXY__.coordinateMode(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.setCoordinateMode = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.setCoordinateMode");
+          return this.__PROXY__.setCoordinateMode(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.interpolationMode = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.interpolationMode");
+          return this.__PROXY__.interpolationMode(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.setInterpolationMode = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.setInterpolationMode");
+          return this.__PROXY__.setInterpolationMode(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.start = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.start");
+          return this.__PROXY__.start(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.setStart = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.setStart");
+          return this.__PROXY__.setStart(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.finalStop = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.finalStop");
+          return this.__PROXY__.finalStop(...args);
+        };
+    
+        // function 
+        QLinearGradient.prototype.setFinalStop = function(...args) 
+          
+        {
+          //print("JS: QLinearGradient.prototype.setFinalStop");
+          return this.__PROXY__.setFinalStop(...args);
+        };
+    
 
       // static functions:
       
@@ -391,4 +487,8 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
       //QLinearGradient.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QLinearGradient.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

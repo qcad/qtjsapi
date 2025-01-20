@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTableView);
+              
+                  copyProperties(this, wrapper, QTableView);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTableView);
+            copyProperties(this, wrapper, QTableView);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
@@ -101,8 +102,12 @@
   
     this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QTableView.prototype = new QTableView_BaseJs(engine);
@@ -220,12 +225,12 @@ QTableView.InternalMove = QTableView_Wrapper.InternalMove;
 
       // functions:
       
-        // function 
-        QTableView.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QTableView.prototype.actionEvent");
-          
+      // function 
+      QTableView.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: QTableView.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -233,7 +238,8 @@ QTableView.InternalMove = QTableView_Wrapper.InternalMove;
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -249,123 +255,10 @@ QTableView.InternalMove = QTableView_Wrapper.InternalMove;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
-      
-
-        // static function 
-        QTableView.tr = function() 
-          
-        {
-          //print("JS: QTableView.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QTableView_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QTableView);
-  }
-
-  
-  else {
-    
-        print("QTableView.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTableView.setTabOrder = function() 
-          
-        {
-          //print("JS: QTableView.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QTableView_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QTableView);
-  }
-
-  
-  else {
-    
-        print("QTableView.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTableView.mouseGrabber = function() 
-          
-        {
-          //print("JS: QTableView.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTableView_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTableView);
-  }
-
-  
-  else {
-    
-        print("QTableView.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTableView.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QTableView.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTableView_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTableView);
-  }
-
-  
-  else {
-    
-        print("QTableView.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // constants:
@@ -383,4 +276,5 @@ QTableView.InternalMove = QTableView_Wrapper.InternalMove;
       //QTableView.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

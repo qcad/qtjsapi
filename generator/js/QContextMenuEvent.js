@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QContextMenuEvent);
+              
+                  copyProperties(this, wrapper, QContextMenuEvent);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QContextMenuEvent);
+            copyProperties(this, wrapper, QContextMenuEvent);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QContextMenuEvent.prototype = new QContextMenuEvent_BaseJs(engine);
@@ -316,35 +316,6 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
       // static functions:
       
 
-        // static function 
-        QContextMenuEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QContextMenuEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QContextMenuEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QContextMenuEvent);
-  }
-
-  
-  else {
-    
-        print("QContextMenuEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -360,4 +331,5 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
       //QContextMenuEvent.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

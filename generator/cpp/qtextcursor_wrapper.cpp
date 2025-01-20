@@ -80,11 +80,19 @@
 
     
       // special constructor to wrap existing object:
-      QTextCursor_Wrapper::QTextCursor_Wrapper(RJSApi& h, QTextCursor* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextCursor_Wrapper::QTextCursor_Wrapper(RJSApi& h, QTextCursor* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextCursor_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextCursor_Wrapper"));
               //setObjectName("QTextCursor_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -106,8 +114,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextCursor";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -188,12 +198,12 @@ QTextCursor_Wrapper::QTextCursor_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QTextCursor(
-                a1_cpp
+              wrapped = new QTextCursor(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -226,12 +236,12 @@ QTextCursor a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextCursor(
-                a1_cpp
+              wrapped = new QTextCursor(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -250,11 +260,11 @@ QTextCursor a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextCursor(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextCursor(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -271,14 +281,18 @@ QTextCursor a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QTextCursor";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

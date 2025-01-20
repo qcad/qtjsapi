@@ -4,7 +4,7 @@
   <class_decl name="QRect" />
   <class_decl name="QVariant" />
   <class_decl name="QRectF" />
-  <class name="QPolygon">
+  <class name="QPolygon" proxy="true">
     <constructor>
       <variant>
         <parameters />

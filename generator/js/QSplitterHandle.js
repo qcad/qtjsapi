@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSplitterHandle);
+              
+                  copyProperties(this, wrapper, QSplitterHandle);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSplitterHandle);
+            copyProperties(this, wrapper, QSplitterHandle);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,14 +84,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QSplitterHandle.prototype = new QSplitterHandle_BaseJs(engine);
@@ -134,90 +139,6 @@
       // static functions:
       
 
-        // static function 
-        QSplitterHandle.setTabOrder = function() 
-          
-        {
-          //print("JS: QSplitterHandle.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QSplitterHandle_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QSplitterHandle);
-  }
-
-  
-  else {
-    
-        print("QSplitterHandle.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QSplitterHandle.mouseGrabber = function() 
-          
-        {
-          //print("JS: QSplitterHandle.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QSplitterHandle_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QSplitterHandle);
-  }
-
-  
-  else {
-    
-        print("QSplitterHandle.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QSplitterHandle.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QSplitterHandle.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QSplitterHandle_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QSplitterHandle);
-  }
-
-  
-  else {
-    
-        print("QSplitterHandle.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -233,4 +154,5 @@
       //QSplitterHandle.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

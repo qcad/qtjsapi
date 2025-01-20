@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QSizePolicy_Wrapper::QSizePolicy_Wrapper(RJSApi& h, QSizePolicy* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QSizePolicy_Wrapper::QSizePolicy_Wrapper(RJSApi& h, QSizePolicy* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QSizePolicy_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QSizePolicy_Wrapper"));
               //setObjectName("QSizePolicy_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QSizePolicy";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -209,14 +219,14 @@ QSizePolicy::ControlType a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizePolicy(
-                a1_cpp
+              wrapped = new QSizePolicy(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -235,11 +245,11 @@ QSizePolicy::ControlType a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSizePolicy(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QSizePolicy(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -258,14 +268,18 @@ QSizePolicy::ControlType a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QSizePolicy";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

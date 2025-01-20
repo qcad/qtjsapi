@@ -395,11 +395,19 @@ QPoint a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QCursor_Wrapper::QCursor_Wrapper(RJSApi& h, QCursor* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QCursor_Wrapper::QCursor_Wrapper(RJSApi& h, QCursor* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QCursor_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QCursor_Wrapper"));
               //setObjectName("QCursor_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -421,8 +429,10 @@ QPoint a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QCursor";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -547,15 +557,15 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QCursor(
-                a1_cpp
+              wrapped = new QCursor(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -622,14 +632,14 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QCursor(
-                a1_cpp
+              wrapped = new QCursor(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -662,12 +672,12 @@ Qt::CursorShape a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QCursor(
-                a1_cpp
+              wrapped = new QCursor(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -700,12 +710,12 @@ QCursor a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QCursor(
-                a1_cpp
+              wrapped = new QCursor(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -738,12 +748,12 @@ QCursor a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QCursor(
-                a1_cpp
+              wrapped = new QCursor(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -762,11 +772,11 @@ QCursor a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QCursor(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QCursor(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -786,14 +796,18 @@ QCursor a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QCursor";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

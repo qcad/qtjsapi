@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDomDocument);
+              
+                  copyProperties(this, wrapper, QDomDocument);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDomDocument);
+            copyProperties(this, wrapper, QDomDocument);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDomDocument);
+            copyProperties(this, wrapper, QDomDocument);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDomDocument);
+            copyProperties(this, wrapper, QDomDocument);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -128,8 +130,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDomDocument);
+            copyProperties(this, wrapper, QDomDocument);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -160,12 +162,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QDomDocument.prototype = new QDomDocument_BaseJs(engine);
@@ -246,4 +246,5 @@ QDomDocument.EncodingFromTextStream = QDomDocument_Wrapper.EncodingFromTextStrea
       //QDomDocument.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

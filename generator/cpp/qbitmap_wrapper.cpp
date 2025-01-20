@@ -13,273 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QBitmap
-    // Function: devicePixelRatioFScale
-    // Source: QPaintDevice
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QBitmap_WrapperSingleton::devicePixelRatioFScale
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            qreal res = 
-                
-                // call static member function:
-                QPaintDevice::devicePixelRatioFScale(
-              
-            );
-          
-            // return type: qreal
-
-            return RJSHelper::cpp2js_qreal(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for devicePixelRatioFScale";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QBitmap
-    // Function: defaultDepth
-    // Source: QPixmap
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QBitmap_WrapperSingleton::defaultDepth
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QPixmap::defaultDepth(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for defaultDepth";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QBitmap
-    // Function: trueMatrix
-    // Source: QPixmap
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QBitmap_WrapperSingleton::trueMatrix
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QTransform(handler, a1
-  )
-
-   && RJSHelper::is_int(handler, a2
-  )
-
-   && RJSHelper::is_int(handler, a3
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: m (QTransform)
-  
-QTransform a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QTransform(handler, a1);
-        
-  // convert js parameter to cpp: w (int)
-  
-int a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
-        
-  // convert js parameter to cpp: h (int)
-  
-int a3_cpp;
-
-      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QTransform res = 
-                
-                // call static member function:
-                QPixmap::trueMatrix(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QTransform
-
-            return RJSHelper::cpp2js_QTransform(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for trueMatrix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QBitmap
-    // Function: fromImageReader
-    // Source: QPixmap
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QBitmap_WrapperSingleton::fromImageReader
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QImageReader_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_Qt_ImageConversionFlags(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: imageReader (QImageReader)
-  
-
-          // pointer:
-          QImageReader*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QImageReader_ptr(handler, a1);
-        
-  // convert js parameter to cpp: flags (Qt::ImageConversionFlags)
-  
-Qt::ImageConversionFlags a2_cpp;
-
-      
-          if (a2.isUndefined()) {
-            a2_cpp = Qt::AutoColor;
-          }
-          else {
-            a2_cpp = RJSHelper::js2cpp_Qt_ImageConversionFlags(handler, a2);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QPixmap res = 
-                
-                // call static member function:
-                QPixmap::fromImageReader(
-              a1_cpp
-    , a2_cpp
-    
-            );
-          
-            // return type: QPixmap
-
-            return RJSHelper::cpp2js_QPixmap(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for fromImageReader";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #if QT_DEPRECATED_SINCE(6,0)
 
 #endif
@@ -564,11 +297,19 @@ QPixmap a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QBitmap_Wrapper::QBitmap_Wrapper(RJSApi& h, QBitmap* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QBitmap_Wrapper::QBitmap_Wrapper(RJSApi& h, QBitmap* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QBitmap_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QBitmap_Wrapper"));
               //setObjectName("QBitmap_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -590,8 +331,10 @@ QPixmap a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QBitmap";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -678,13 +421,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBitmap(
-                a1_cpp
+              wrapped = new QBitmap(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,13 +472,13 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBitmap(
-                a1_cpp
+              wrapped = new QBitmap(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -768,12 +511,12 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBitmap(
-                a1_cpp
+              wrapped = new QBitmap(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -792,11 +535,11 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBitmap(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QBitmap(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -814,14 +557,18 @@ QSize a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QBitmap";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

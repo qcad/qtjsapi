@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QAbstractTableModel);
+              
+                  copyProperties(this, wrapper, QAbstractTableModel);
+                
             //}
           }
           else {
@@ -53,16 +55,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["headerDataChanged(Qt::Orientation,int,int)"] = Object.getPrototypeOf(this).headerDataChanged;
   
     this["rowsInserted(QModelIndex,int,int)"] = Object.getPrototypeOf(this).rowsInserted;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QAbstractTableModel.prototype = new QAbstractTableModel_BaseJs(engine);
@@ -116,35 +121,6 @@ QAbstractTableModel.HorizontalSortHint = QAbstractTableModel_Wrapper.HorizontalS
       // static functions:
       
 
-        // static function 
-        QAbstractTableModel.tr = function() 
-          
-        {
-          //print("JS: QAbstractTableModel.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QAbstractTableModel_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractTableModel);
-  }
-
-  
-  else {
-    
-        print("QAbstractTableModel.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -160,4 +136,5 @@ QAbstractTableModel.HorizontalSortHint = QAbstractTableModel_Wrapper.HorizontalS
       //QAbstractTableModel.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

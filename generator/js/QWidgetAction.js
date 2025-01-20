@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QWidgetAction);
+              
+                  copyProperties(this, wrapper, QWidgetAction);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QWidgetAction);
+            copyProperties(this, wrapper, QWidgetAction);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,16 +84,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["triggered(bool)"] = Object.getPrototypeOf(this).triggered;
   
     this["toggled(bool)"] = Object.getPrototypeOf(this).toggled;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QWidgetAction.prototype = new QWidgetAction_BaseJs(engine);
@@ -154,35 +159,6 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
       // static functions:
       
 
-        // static function 
-        QWidgetAction.tr = function() 
-          
-        {
-          //print("JS: QWidgetAction.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QWidgetAction_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QWidgetAction);
-  }
-
-  
-  else {
-    
-        print("QWidgetAction.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -198,4 +174,5 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
       //QWidgetAction.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QInputEvent);
+              
+                  copyProperties(this, wrapper, QInputEvent);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QInputEvent.prototype = new QInputEvent_BaseJs(engine);
@@ -277,35 +277,6 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        QInputEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QInputEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QInputEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QInputEvent);
-  }
-
-  
-  else {
-    
-        print("QInputEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -321,4 +292,5 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
       //QInputEvent.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

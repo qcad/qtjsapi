@@ -13,107 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QQmlEngine
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QQmlEngine_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #if QT_DEPRECATED_SINCE(6,0)
 
 #endif
@@ -155,15 +54,6 @@ int a3_cpp;
         //QJSValue mob = engine->newQMetaObject(&QQmlEngine_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QQmlEngine_BaseJs", mob);
       
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QQmlEngine_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QQmlEngine_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QQmlEngine_WrapperSingleton * s = new QQmlEngine_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QQmlEngine_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
-      
       QString fileName = ":generator/js/QQmlEngine.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
@@ -198,11 +88,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QQmlEngine_Wrapper::QQmlEngine_Wrapper(RJSApi& h, QQmlEngine* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QQmlEngine_Wrapper::QQmlEngine_Wrapper(RJSApi& h, QQmlEngine* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QQmlEngine_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QQmlEngine_Wrapper"));
               //setObjectName("QQmlEngine_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -338,12 +236,12 @@ QQmlEngine_Wrapper::QQmlEngine_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QQmlEngine(
-                a1_cpp
+              wrapped = new QQmlEngine(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -360,14 +258,18 @@ QQmlEngine_Wrapper::QQmlEngine_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QQmlEngine";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

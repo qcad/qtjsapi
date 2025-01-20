@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QRect_Wrapper::QRect_Wrapper(RJSApi& h, QRect* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QRect_Wrapper::QRect_Wrapper(RJSApi& h, QRect* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QRect_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QRect_Wrapper"));
               //setObjectName("QRect_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QRect";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -212,15 +222,15 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRect(
-                a1_cpp
+              wrapped = new QRect(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -280,15 +290,15 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRect(
-                a1_cpp
+              wrapped = new QRect(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -348,15 +358,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRect(
-                a1_cpp
+              wrapped = new QRect(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -398,13 +408,13 @@ QPoint a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRect(
-                a1_cpp
+              wrapped = new QRect(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -446,13 +456,13 @@ QSize a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRect(
-                a1_cpp
+              wrapped = new QRect(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -471,11 +481,11 @@ QSize a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRect(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QRect(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -495,14 +505,18 @@ QSize a2_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QRect";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -4520,11 +4534,19 @@ QMargins a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QRectF_Wrapper::QRectF_Wrapper(RJSApi& h, QRectF* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QRectF_Wrapper::QRectF_Wrapper(RJSApi& h, QRectF* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QRectF_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QRectF_Wrapper"));
               //setObjectName("QRectF_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -4546,8 +4568,10 @@ QMargins a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QRectF";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -4656,15 +4680,15 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRectF(
-                a1_cpp
+              wrapped = new QRectF(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4724,15 +4748,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRectF(
-                a1_cpp
+              wrapped = new QRectF(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4792,15 +4816,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRectF(
-                a1_cpp
+              wrapped = new QRectF(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4842,13 +4866,13 @@ QSizeF a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRectF(
-                a1_cpp
+              wrapped = new QRectF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4890,13 +4914,13 @@ QPointF a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRectF(
-                a1_cpp
+              wrapped = new QRectF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4929,12 +4953,12 @@ QRect a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRectF(
-                a1_cpp
+              wrapped = new QRectF(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4953,11 +4977,11 @@ QRect a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRectF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QRectF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4977,14 +5001,18 @@ QRect a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QRectF";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

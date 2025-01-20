@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdatetime.h">
   <class_decl name="QTimeZone" />
   <class_decl name="QDateTime" />
-  <class name="QDate">
+  <class name="QDate" proxy="true">
     <constructor>
       <variant>
         <parameters />

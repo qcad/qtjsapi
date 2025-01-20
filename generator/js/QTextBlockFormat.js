@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextBlockFormat);
+              
+                  copyProperties(this, wrapper, QTextBlockFormat);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextBlockFormat);
+            copyProperties(this, wrapper, QTextBlockFormat);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QTextBlockFormat.prototype = new QTextBlockFormat_BaseJs(engine);
@@ -286,4 +286,5 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
       //QTextBlockFormat.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

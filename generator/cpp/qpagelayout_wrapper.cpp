@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QPageLayout_Wrapper::QPageLayout_Wrapper(RJSApi& h, QPageLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPageLayout_Wrapper::QPageLayout_Wrapper(RJSApi& h, QPageLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPageLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPageLayout_Wrapper"));
               //setObjectName("QPageLayout_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPageLayout";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -239,16 +249,16 @@ QMarginsF a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageLayout(
-                a1_cpp
+              wrapped = new QPageLayout(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -281,12 +291,12 @@ QPageLayout a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageLayout(
-                a1_cpp
+              wrapped = new QPageLayout(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -305,11 +315,11 @@ QPageLayout a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPageLayout(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPageLayout(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -330,14 +340,18 @@ QPageLayout a1_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPageLayout";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

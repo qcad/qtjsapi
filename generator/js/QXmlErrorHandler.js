@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QXmlErrorHandler);
+              
+                  copyProperties(this, wrapper, QXmlErrorHandler);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QXmlErrorHandler.prototype = new QXmlErrorHandler_BaseJs(engine);
@@ -114,4 +114,5 @@
       //QXmlErrorHandler.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

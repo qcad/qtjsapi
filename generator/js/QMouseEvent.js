@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QMouseEvent);
+              
+                  copyProperties(this, wrapper, QMouseEvent);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMouseEvent);
+            copyProperties(this, wrapper, QMouseEvent);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMouseEvent);
+            copyProperties(this, wrapper, QMouseEvent);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMouseEvent);
+            copyProperties(this, wrapper, QMouseEvent);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -134,12 +136,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QMouseEvent.prototype = new QMouseEvent_BaseJs(engine);
@@ -370,35 +370,6 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        QMouseEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QMouseEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QMouseEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QMouseEvent);
-  }
-
-  
-  else {
-    
-        print("QMouseEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -414,4 +385,5 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
       //QMouseEvent.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

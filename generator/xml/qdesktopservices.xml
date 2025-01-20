@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdesktopservices.h">
   <class_decl name="QUrl" />
   <class_decl name="QObject" />
-  <class name="QDesktopServices">
+  <class name="QDesktopServices" proxy="true">
     <constructor>
       <variant>
         <parameters />

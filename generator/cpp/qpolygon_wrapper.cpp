@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QPolygon_Wrapper::QPolygon_Wrapper(RJSApi& h, QPolygon* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPolygon_Wrapper::QPolygon_Wrapper(RJSApi& h, QPolygon* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPolygon_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPolygon_Wrapper"));
               //setObjectName("QPolygon_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPolygon";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -179,12 +189,12 @@ QList<QPoint> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPolygon(
-                a1_cpp
+              wrapped = new QPolygon(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -217,12 +227,12 @@ QList<QPoint> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPolygon(
-                a1_cpp
+              wrapped = new QPolygon(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -241,11 +251,11 @@ QList<QPoint> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPolygon(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPolygon(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -262,14 +272,18 @@ QList<QPoint> a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPolygon";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -1322,11 +1336,19 @@ QPolygon a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QPolygonF_Wrapper::QPolygonF_Wrapper(RJSApi& h, QPolygonF* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPolygonF_Wrapper::QPolygonF_Wrapper(RJSApi& h, QPolygonF* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPolygonF_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPolygonF_Wrapper"));
               //setObjectName("QPolygonF_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1348,8 +1370,10 @@ QPolygon a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPolygonF";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1425,12 +1449,12 @@ QList<QPointF> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPolygonF(
-                a1_cpp
+              wrapped = new QPolygonF(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1463,12 +1487,12 @@ QList<QPointF> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPolygonF(
-                a1_cpp
+              wrapped = new QPolygonF(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1487,11 +1511,11 @@ QList<QPointF> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPolygonF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPolygonF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1508,14 +1532,18 @@ QList<QPointF> a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPolygonF";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

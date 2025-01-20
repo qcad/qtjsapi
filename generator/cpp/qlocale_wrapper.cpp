@@ -918,11 +918,19 @@ QLocale::Language a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QLocale_Wrapper::QLocale_Wrapper(RJSApi& h, QLocale* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QLocale_Wrapper::QLocale_Wrapper(RJSApi& h, QLocale* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QLocale_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QLocale_Wrapper"));
               //setObjectName("QLocale_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -944,8 +952,10 @@ QLocale::Language a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QLocale";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1021,12 +1031,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLocale(
-                a1_cpp
+              wrapped = new QLocale(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1045,11 +1055,11 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLocale(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QLocale(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1066,14 +1076,18 @@ QString a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QLocale";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

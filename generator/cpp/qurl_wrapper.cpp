@@ -897,11 +897,19 @@ QStringList a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QUrl_Wrapper::QUrl_Wrapper(RJSApi& h, QUrl* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QUrl_Wrapper::QUrl_Wrapper(RJSApi& h, QUrl* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QUrl_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QUrl_Wrapper"));
               //setObjectName("QUrl_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -923,8 +931,10 @@ QStringList a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QUrl";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1019,13 +1029,13 @@ QUrl::ParsingMode a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QUrl(
-                a1_cpp
+              wrapped = new QUrl(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1043,14 +1053,18 @@ QUrl::ParsingMode a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QUrl";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

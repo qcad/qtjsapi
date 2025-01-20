@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QPrinter
-    // Function: devicePixelRatioFScale
-    // Source: QPaintDevice
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QPrinter_WrapperSingleton::devicePixelRatioFScale
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            qreal res = 
-                
-                // call static member function:
-                QPaintDevice::devicePixelRatioFScale(
-              
-            );
-          
-            // return type: qreal
-
-            return RJSHelper::cpp2js_qreal(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for devicePixelRatioFScale";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #if defined(Q_OS_WIN)||defined(Q_CLANG_QDOC)
 
 #endif
@@ -91,15 +45,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QPrinter_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPrinter_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QPrinter_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QPrinter_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QPrinter_WrapperSingleton * s = new QPrinter_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QPrinter_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QPrinter.js";
       QFile scriptFile(fileName);
@@ -135,11 +80,19 @@
 
     
       // special constructor to wrap existing object:
-      QPrinter_Wrapper::QPrinter_Wrapper(RJSApi& h, QPrinter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPrinter_Wrapper::QPrinter_Wrapper(RJSApi& h, QPrinter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPrinter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPrinter_Wrapper"));
               //setObjectName("QPrinter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -256,13 +209,13 @@ QPrinter::PrinterMode a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPrinter(
-                a1_cpp
+              wrapped = new QPrinter(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -303,12 +256,12 @@ QPrinter::PrinterMode a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPrinter(
-                a1_cpp
+              wrapped = new QPrinter(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -326,14 +279,18 @@ QPrinter::PrinterMode a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPrinter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

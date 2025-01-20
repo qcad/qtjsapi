@@ -1837,11 +1837,19 @@ QFontDatabase::SystemFont a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QFontDatabase_Wrapper::QFontDatabase_Wrapper(RJSApi& h, QFontDatabase* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QFontDatabase_Wrapper::QFontDatabase_Wrapper(RJSApi& h, QFontDatabase* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QFontDatabase_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QFontDatabase_Wrapper"));
               //setObjectName("QFontDatabase_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1863,8 +1871,10 @@ QFontDatabase::SystemFont a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QFontDatabase";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1926,11 +1936,11 @@ QFontDatabase_Wrapper::QFontDatabase_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QFontDatabase(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QFontDatabase(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1943,7 +1953,9 @@ QFontDatabase_Wrapper::QFontDatabase_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QFontDatabase";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

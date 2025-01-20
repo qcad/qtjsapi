@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QMainWindow);
+              
+                  copyProperties(this, wrapper, QMainWindow);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMainWindow);
+            copyProperties(this, wrapper, QMainWindow);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
@@ -95,8 +96,12 @@
   
     this["tabifiedDockWidgetActivated(QDockWidget*)"] = Object.getPrototypeOf(this).tabifiedDockWidgetActivated;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QMainWindow.prototype = new QMainWindow_BaseJs(engine);
@@ -153,119 +158,6 @@ QMainWindow.GroupedDragging = QMainWindow_Wrapper.GroupedDragging;
       // static functions:
       
 
-        // static function 
-        QMainWindow.tr = function() 
-          
-        {
-          //print("JS: QMainWindow.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QMainWindow_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QMainWindow);
-  }
-
-  
-  else {
-    
-        print("QMainWindow.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMainWindow.setTabOrder = function() 
-          
-        {
-          //print("JS: QMainWindow.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QMainWindow_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QMainWindow);
-  }
-
-  
-  else {
-    
-        print("QMainWindow.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMainWindow.mouseGrabber = function() 
-          
-        {
-          //print("JS: QMainWindow.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMainWindow_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMainWindow);
-  }
-
-  
-  else {
-    
-        print("QMainWindow.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMainWindow.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QMainWindow.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMainWindow_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMainWindow);
-  }
-
-  
-  else {
-    
-        print("QMainWindow.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -281,4 +173,5 @@ QMainWindow.GroupedDragging = QMainWindow_Wrapper.GroupedDragging;
       //QMainWindow.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

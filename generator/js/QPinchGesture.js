@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPinchGesture);
+              
+                  copyProperties(this, wrapper, QPinchGesture);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPinchGesture);
+            copyProperties(this, wrapper, QPinchGesture);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QPinchGesture.prototype = new QPinchGesture_BaseJs(engine);
@@ -142,35 +142,6 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
       // static functions:
       
 
-        // static function 
-        QPinchGesture.tr = function() 
-          
-        {
-          //print("JS: QPinchGesture.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QPinchGesture_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QPinchGesture);
-  }
-
-  
-  else {
-    
-        print("QPinchGesture.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -186,4 +157,5 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
       //QPinchGesture.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

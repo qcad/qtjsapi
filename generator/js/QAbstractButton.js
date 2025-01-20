@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QAbstractButton);
+              
+                  copyProperties(this, wrapper, QAbstractButton);
+                
             //}
           }
           else {
@@ -53,18 +55,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["clicked(bool)"] = Object.getPrototypeOf(this).clicked;
   
     this["toggled(bool)"] = Object.getPrototypeOf(this).toggled;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QAbstractButton.prototype = new QAbstractButton_BaseJs(engine);
@@ -113,119 +118,6 @@
       // static functions:
       
 
-        // static function 
-        QAbstractButton.tr = function() 
-          
-        {
-          //print("JS: QAbstractButton.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QAbstractButton_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractButton);
-  }
-
-  
-  else {
-    
-        print("QAbstractButton.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractButton.setTabOrder = function() 
-          
-        {
-          //print("JS: QAbstractButton.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QAbstractButton_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractButton);
-  }
-
-  
-  else {
-    
-        print("QAbstractButton.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractButton.mouseGrabber = function() 
-          
-        {
-          //print("JS: QAbstractButton.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractButton_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractButton);
-  }
-
-  
-  else {
-    
-        print("QAbstractButton.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractButton.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QAbstractButton.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractButton_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractButton);
-  }
-
-  
-  else {
-    
-        print("QAbstractButton.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -241,4 +133,5 @@
       //QAbstractButton.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

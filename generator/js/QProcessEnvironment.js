@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QProcessEnvironment);
+              
+                  copyProperties(this, wrapper, QProcessEnvironment);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QProcessEnvironment);
+            copyProperties(this, wrapper, QProcessEnvironment);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QProcessEnvironment);
+            copyProperties(this, wrapper, QProcessEnvironment);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QProcessEnvironment);
+            copyProperties(this, wrapper, QProcessEnvironment);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -134,12 +136,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QProcessEnvironment.prototype = new QProcessEnvironment_BaseJs(engine);
@@ -226,4 +226,5 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
       //QProcessEnvironment.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

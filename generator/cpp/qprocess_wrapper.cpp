@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      QProcessEnvironment_Wrapper::QProcessEnvironment_Wrapper(RJSApi& h, QProcessEnvironment* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QProcessEnvironment_Wrapper::QProcessEnvironment_Wrapper(RJSApi& h, QProcessEnvironment* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QProcessEnvironment_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QProcessEnvironment_Wrapper"));
               //setObjectName("QProcessEnvironment_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,8 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QProcessEnvironment";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -234,12 +244,12 @@ QProcessEnvironment::Initialization a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QProcessEnvironment(
-                a1_cpp
+              wrapped = new QProcessEnvironment(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -272,12 +282,12 @@ QProcessEnvironment a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QProcessEnvironment(
-                a1_cpp
+              wrapped = new QProcessEnvironment(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -296,11 +306,11 @@ QProcessEnvironment a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QProcessEnvironment(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QProcessEnvironment(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -317,14 +327,18 @@ QProcessEnvironment a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QProcessEnvironment";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -1036,107 +1050,6 @@ QString a2_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QProcess
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QProcess_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #if defined(Q_OS_WIN)||defined(Q_CLANG_QDOC)
 
 #endif
@@ -1313,11 +1226,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QProcess_Wrapper::QProcess_Wrapper(RJSApi& h, QProcess* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QProcess_Wrapper::QProcess_Wrapper(RJSApi& h, QProcess* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QProcess_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QProcess_Wrapper"));
               //setObjectName("QProcess_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1516,12 +1437,12 @@ QProcess_Wrapper::QProcess_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QProcess(
-                a1_cpp
+              wrapped = new QProcess(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1538,14 +1459,18 @@ QProcess_Wrapper::QProcess_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QProcess";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

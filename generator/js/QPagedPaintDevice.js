@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPagedPaintDevice);
+              
+                  copyProperties(this, wrapper, QPagedPaintDevice);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QPagedPaintDevice.prototype = new QPagedPaintDevice_BaseJs(engine);
@@ -108,34 +108,6 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
       // static functions:
       
 
-        // static function 
-        QPagedPaintDevice.devicePixelRatioFScale = function() 
-          
-        {
-          //print("JS: QPagedPaintDevice.devicePixelRatioFScale");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QPagedPaintDevice_WrapperSingletonInstance.devicePixelRatioFScale(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QPagedPaintDevice);
-  }
-
-  
-  else {
-    
-        print("QPagedPaintDevice.devicePixelRatioFScale(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -151,4 +123,5 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
       //QPagedPaintDevice.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

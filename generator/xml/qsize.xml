@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsize.h">
-  <class name="QSize">
+  <class name="QSize" proxy="true">
     <constructor>
       <variant>
         <parameters />

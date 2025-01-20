@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QConicalGradient);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QConicalGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QConicalGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QConicalGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -134,12 +136,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QConicalGradient.prototype = new QConicalGradient_BaseJs(engine);
@@ -372,6 +372,102 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
 
       // functions:
       
+        // function 
+        QConicalGradient.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.setSpread = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.setSpread");
+          return this.__PROXY__.setSpread(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.spread = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.spread");
+          return this.__PROXY__.spread(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.setColorAt = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.setColorAt");
+          return this.__PROXY__.setColorAt(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.coordinateMode = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.coordinateMode");
+          return this.__PROXY__.coordinateMode(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.setCoordinateMode = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.setCoordinateMode");
+          return this.__PROXY__.setCoordinateMode(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.interpolationMode = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.interpolationMode");
+          return this.__PROXY__.interpolationMode(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.setInterpolationMode = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.setInterpolationMode");
+          return this.__PROXY__.setInterpolationMode(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.center = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.center");
+          return this.__PROXY__.center(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.setCenter = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.setCenter");
+          return this.__PROXY__.setCenter(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.angle = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.angle");
+          return this.__PROXY__.angle(...args);
+        };
+    
+        // function 
+        QConicalGradient.prototype.setAngle = function(...args) 
+          
+        {
+          //print("JS: QConicalGradient.prototype.setAngle");
+          return this.__PROXY__.setAngle(...args);
+        };
+    
 
       // static functions:
       
@@ -391,4 +487,8 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
       //QConicalGradient.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QConicalGradient.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

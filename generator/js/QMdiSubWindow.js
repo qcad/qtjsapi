@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QMdiSubWindow);
+              
+                  copyProperties(this, wrapper, QMdiSubWindow);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMdiSubWindow);
+            copyProperties(this, wrapper, QMdiSubWindow);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,16 +85,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["windowStateChanged(Qt::WindowStates,Qt::WindowStates)"] = Object.getPrototypeOf(this).windowStateChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QMdiSubWindow.prototype = new QMdiSubWindow_BaseJs(engine);
@@ -141,119 +146,6 @@
       // static functions:
       
 
-        // static function 
-        QMdiSubWindow.tr = function() 
-          
-        {
-          //print("JS: QMdiSubWindow.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QMdiSubWindow_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QMdiSubWindow);
-  }
-
-  
-  else {
-    
-        print("QMdiSubWindow.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMdiSubWindow.setTabOrder = function() 
-          
-        {
-          //print("JS: QMdiSubWindow.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QMdiSubWindow_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QMdiSubWindow);
-  }
-
-  
-  else {
-    
-        print("QMdiSubWindow.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMdiSubWindow.mouseGrabber = function() 
-          
-        {
-          //print("JS: QMdiSubWindow.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMdiSubWindow_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMdiSubWindow);
-  }
-
-  
-  else {
-    
-        print("QMdiSubWindow.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMdiSubWindow.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QMdiSubWindow.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMdiSubWindow_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMdiSubWindow);
-  }
-
-  
-  else {
-    
-        print("QMdiSubWindow.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -269,4 +161,5 @@
       //QMdiSubWindow.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

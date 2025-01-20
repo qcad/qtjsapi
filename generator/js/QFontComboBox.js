@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFontComboBox);
+              
+                  copyProperties(this, wrapper, QFontComboBox);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFontComboBox);
+            copyProperties(this, wrapper, QFontComboBox);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["editTextChanged(QString)"] = Object.getPrototypeOf(this).editTextChanged;
@@ -105,8 +106,12 @@
   
     this["currentFontChanged(QFont)"] = Object.getPrototypeOf(this).currentFontChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QFontComboBox.prototype = new QFontComboBox_BaseJs(engine);
@@ -180,119 +185,6 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
       // static functions:
       
 
-        // static function 
-        QFontComboBox.tr = function() 
-          
-        {
-          //print("JS: QFontComboBox.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QFontComboBox_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QFontComboBox);
-  }
-
-  
-  else {
-    
-        print("QFontComboBox.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFontComboBox.setTabOrder = function() 
-          
-        {
-          //print("JS: QFontComboBox.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QFontComboBox_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QFontComboBox);
-  }
-
-  
-  else {
-    
-        print("QFontComboBox.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFontComboBox.mouseGrabber = function() 
-          
-        {
-          //print("JS: QFontComboBox.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFontComboBox_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QFontComboBox);
-  }
-
-  
-  else {
-    
-        print("QFontComboBox.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFontComboBox.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QFontComboBox.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFontComboBox_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QFontComboBox);
-  }
-
-  
-  else {
-    
-        print("QFontComboBox.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -308,4 +200,5 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
       //QFontComboBox.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

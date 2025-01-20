@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextDocument);
+              
+                  copyProperties(this, wrapper, QTextDocument);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextDocument);
+            copyProperties(this, wrapper, QTextDocument);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextDocument);
+            copyProperties(this, wrapper, QTextDocument);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,10 +112,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["contentsChange(int,int,int)"] = Object.getPrototypeOf(this).contentsChange;
   
     this["undoAvailable(bool)"] = Object.getPrototypeOf(this).undoAvailable;
@@ -128,8 +129,12 @@
   
     this["baseUrlChanged(QUrl)"] = Object.getPrototypeOf(this).baseUrlChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QTextDocument.prototype = new QTextDocument_BaseJs(engine);
@@ -201,35 +206,6 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
       // static functions:
       
 
-        // static function 
-        QTextDocument.tr = function() 
-          
-        {
-          //print("JS: QTextDocument.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QTextDocument_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QTextDocument);
-  }
-
-  
-  else {
-    
-        print("QTextDocument.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -245,4 +221,5 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
       //QTextDocument.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

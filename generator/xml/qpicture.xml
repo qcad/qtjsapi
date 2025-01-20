@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qpicture.h">
-  <class name="QPicture">
+  <class name="QPicture" proxy="true">
     <super_list>
       <super name="QPaintDevice" />
     </super_list>

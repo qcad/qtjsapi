@@ -406,11 +406,19 @@ qint64 a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDate_Wrapper::QDate_Wrapper(RJSApi& h, QDate* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDate_Wrapper::QDate_Wrapper(RJSApi& h, QDate* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDate_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDate_Wrapper"));
               //setObjectName("QDate_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -432,8 +440,10 @@ qint64 a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDate";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -531,14 +541,14 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDate(
-                a1_cpp
+              wrapped = new QDate(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -557,11 +567,11 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDate(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDate(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -580,14 +590,18 @@ int a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDate";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -2358,11 +2372,19 @@ QTime a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QTime_Wrapper::QTime_Wrapper(RJSApi& h, QTime* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTime_Wrapper::QTime_Wrapper(RJSApi& h, QTime* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTime_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTime_Wrapper"));
               //setObjectName("QTime_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2384,8 +2406,10 @@ QTime a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTime";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -2510,15 +2534,15 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTime(
-                a1_cpp
+              wrapped = new QTime(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2537,11 +2561,11 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTime(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTime(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2561,14 +2585,18 @@ int a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QTime";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -4352,11 +4380,19 @@ QDateTime a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QDateTime_Wrapper::QDateTime_Wrapper(RJSApi& h, QDateTime* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDateTime_Wrapper::QDateTime_Wrapper(RJSApi& h, QDateTime* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDateTime_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDateTime_Wrapper"));
               //setObjectName("QDateTime_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -4378,8 +4414,10 @@ QDateTime a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDateTime";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -4447,11 +4485,11 @@ QDateTime_Wrapper::QDateTime_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QDateTime(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDateTime(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4464,7 +4502,9 @@ QDateTime_Wrapper::QDateTime_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QDateTime";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

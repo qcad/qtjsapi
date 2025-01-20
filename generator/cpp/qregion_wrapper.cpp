@@ -99,11 +99,19 @@
 
     
       // special constructor to wrap existing object:
-      QRegion_Wrapper::QRegion_Wrapper(RJSApi& h, QRegion* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QRegion_Wrapper::QRegion_Wrapper(RJSApi& h, QRegion* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QRegion_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QRegion_Wrapper"));
               //setObjectName("QRegion_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -125,8 +133,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QRegion";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -254,16 +264,16 @@ QRegion::RegionType a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegion(
-                a1_cpp
+              wrapped = new QRegion(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -313,13 +323,13 @@ QRegion::RegionType a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegion(
-                a1_cpp
+              wrapped = new QRegion(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -369,13 +379,13 @@ Qt::FillRule a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegion(
-                a1_cpp
+              wrapped = new QRegion(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -408,12 +418,12 @@ QRegion a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegion(
-                a1_cpp
+              wrapped = new QRegion(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -446,12 +456,12 @@ QRegion a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegion(
-                a1_cpp
+              wrapped = new QRegion(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -484,12 +494,12 @@ QBitmap a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegion(
-                a1_cpp
+              wrapped = new QRegion(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -508,11 +518,11 @@ QBitmap a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRegion(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QRegion(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -533,14 +543,18 @@ QBitmap a1_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QRegion";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

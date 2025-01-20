@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPolygon);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPolygon);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPolygon);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPolygon);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -134,12 +136,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QPolygon.prototype = new QPolygon_BaseJs(engine);
@@ -176,6 +176,94 @@
 
       // functions:
       
+        // function 
+        QPolygon.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.translate = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.translate");
+          return this.__PROXY__.translate(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.translated = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.translated");
+          return this.__PROXY__.translated(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.boundingRect = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.boundingRect");
+          return this.__PROXY__.boundingRect(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.point = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.point");
+          return this.__PROXY__.point(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.setPoint = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.setPoint");
+          return this.__PROXY__.setPoint(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.containsPoint = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.containsPoint");
+          return this.__PROXY__.containsPoint(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.united = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.united");
+          return this.__PROXY__.united(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.intersected = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.intersected");
+          return this.__PROXY__.intersected(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.subtracted = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.subtracted");
+          return this.__PROXY__.subtracted(...args);
+        };
+    
+        // function 
+        QPolygon.prototype.intersects = function(...args) 
+          
+        {
+          //print("JS: QPolygon.prototype.intersects");
+          return this.__PROXY__.intersects(...args);
+        };
+    
 
       // static functions:
       
@@ -195,4 +283,8 @@
       //QPolygon.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QPolygon.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

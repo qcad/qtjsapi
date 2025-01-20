@@ -290,11 +290,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDesktopServices_Wrapper::QDesktopServices_Wrapper(RJSApi& h, QDesktopServices* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDesktopServices_Wrapper::QDesktopServices_Wrapper(RJSApi& h, QDesktopServices* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDesktopServices_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDesktopServices_Wrapper"));
               //setObjectName("QDesktopServices_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -316,8 +324,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDesktopServices";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -377,11 +387,11 @@ QDesktopServices_Wrapper::QDesktopServices_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QDesktopServices(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDesktopServices(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -394,7 +404,9 @@ QDesktopServices_Wrapper::QDesktopServices_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QDesktopServices";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

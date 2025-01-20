@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QBuffer);
+              
+                  copyProperties(this, wrapper, QBuffer);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QBuffer);
+            copyProperties(this, wrapper, QBuffer);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QBuffer);
+            copyProperties(this, wrapper, QBuffer);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -109,18 +111,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["channelReadyRead(int)"] = Object.getPrototypeOf(this).channelReadyRead;
   
     this["bytesWritten(qint64)"] = Object.getPrototypeOf(this).bytesWritten;
   
     this["channelBytesWritten(int,qint64)"] = Object.getPrototypeOf(this).channelBytesWritten;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QBuffer.prototype = new QBuffer_BaseJs(engine);
@@ -185,35 +190,6 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
       // static functions:
       
 
-        // static function 
-        QBuffer.tr = function() 
-          
-        {
-          //print("JS: QBuffer.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QBuffer_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QBuffer);
-  }
-
-  
-  else {
-    
-        print("QBuffer.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -229,4 +205,5 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
       //QBuffer.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

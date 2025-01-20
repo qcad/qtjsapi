@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSizeF);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSizeF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSizeF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSizeF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -128,8 +130,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSizeF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -154,8 +156,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSizeF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -180,8 +182,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSizeF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -206,8 +208,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSizeF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -232,8 +234,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSizeF);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -264,12 +266,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QSizeF.prototype = new QSizeF_BaseJs(engine);
@@ -306,6 +306,150 @@
 
       // functions:
       
+        // function 
+        QSizeF.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.isNull");
+          return this.__PROXY__.isNull(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.isEmpty");
+          return this.__PROXY__.isEmpty(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.isValid");
+          return this.__PROXY__.isValid(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.width = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.width");
+          return this.__PROXY__.width(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.height = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.height");
+          return this.__PROXY__.height(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.setWidth = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.setWidth");
+          return this.__PROXY__.setWidth(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.setHeight = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.setHeight");
+          return this.__PROXY__.setHeight(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.transpose = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.transpose");
+          return this.__PROXY__.transpose(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.transposed = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.transposed");
+          return this.__PROXY__.transposed(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.scale = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.scale");
+          return this.__PROXY__.scale(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.scaled = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.scaled");
+          return this.__PROXY__.scaled(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.expandedTo = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.expandedTo");
+          return this.__PROXY__.expandedTo(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.boundedTo = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.boundedTo");
+          return this.__PROXY__.boundedTo(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.grownBy = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.grownBy");
+          return this.__PROXY__.grownBy(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.shrunkBy = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.shrunkBy");
+          return this.__PROXY__.shrunkBy(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.rwidth = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.rwidth");
+          return this.__PROXY__.rwidth(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.rheight = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.rheight");
+          return this.__PROXY__.rheight(...args);
+        };
+    
+        // function 
+        QSizeF.prototype.toSize = function(...args) 
+          
+        {
+          //print("JS: QSizeF.prototype.toSize");
+          return this.__PROXY__.toSize(...args);
+        };
+    
 
       // static functions:
       
@@ -325,4 +469,8 @@
       //QSizeF.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QSizeF.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

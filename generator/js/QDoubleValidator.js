@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDoubleValidator);
+              
+                  copyProperties(this, wrapper, QDoubleValidator);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDoubleValidator);
+            copyProperties(this, wrapper, QDoubleValidator);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDoubleValidator);
+            copyProperties(this, wrapper, QDoubleValidator);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,10 +112,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["bottomChanged(double)"] = Object.getPrototypeOf(this).bottomChanged;
   
     this["topChanged(double)"] = Object.getPrototypeOf(this).topChanged;
@@ -122,8 +123,12 @@
   
     this["notationChanged(QDoubleValidator::Notation)"] = Object.getPrototypeOf(this).notationChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QDoubleValidator.prototype = new QDoubleValidator_BaseJs(engine);
@@ -181,35 +186,6 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
       // static functions:
       
 
-        // static function 
-        QDoubleValidator.tr = function() 
-          
-        {
-          //print("JS: QDoubleValidator.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QDoubleValidator_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QDoubleValidator);
-  }
-
-  
-  else {
-    
-        print("QDoubleValidator.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -225,4 +201,5 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
       //QDoubleValidator.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -148,11 +148,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QKeyCombination_Wrapper::QKeyCombination_Wrapper(RJSApi& h, QKeyCombination* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QKeyCombination_Wrapper::QKeyCombination_Wrapper(RJSApi& h, QKeyCombination* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QKeyCombination_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QKeyCombination_Wrapper"));
               //setObjectName("QKeyCombination_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -174,8 +182,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QKeyCombination";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -262,13 +272,13 @@ Qt::Key a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QKeyCombination(
-                a1_cpp
+              wrapped = new QKeyCombination(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -309,12 +319,12 @@ Qt::Key a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QKeyCombination(
-                a1_cpp
+              wrapped = new QKeyCombination(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -332,14 +342,18 @@ Qt::Key a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QKeyCombination";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

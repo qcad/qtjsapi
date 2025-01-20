@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDesktopServices);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDesktopServices);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QDesktopServices.prototype = new QDesktopServices_BaseJs(engine);
@@ -124,6 +124,30 @@
 
       // functions:
       
+        // function 
+        QDesktopServices.prototype.openUrl = function(...args) 
+          
+        {
+          //print("JS: QDesktopServices.prototype.openUrl");
+          return this.__PROXY__.openUrl(...args);
+        };
+    
+        // function 
+        QDesktopServices.prototype.setUrlHandler = function(...args) 
+          
+        {
+          //print("JS: QDesktopServices.prototype.setUrlHandler");
+          return this.__PROXY__.setUrlHandler(...args);
+        };
+    
+        // function 
+        QDesktopServices.prototype.unsetUrlHandler = function(...args) 
+          
+        {
+          //print("JS: QDesktopServices.prototype.unsetUrlHandler");
+          return this.__PROXY__.unsetUrlHandler(...args);
+        };
+    
 
       // static functions:
       
@@ -227,4 +251,8 @@
       //QDesktopServices.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QDesktopServices.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

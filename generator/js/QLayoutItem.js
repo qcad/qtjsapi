@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QLayoutItem);
+              
+                  copyProperties(this, wrapper, QLayoutItem);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QLayoutItem.prototype = new QLayoutItem_BaseJs(engine);
@@ -95,12 +95,12 @@
 
       // functions:
       
-        // function 
-        QLayoutItem.prototype.sizeHint = function() 
-          
-        {
-          //print("JS: QLayoutItem.prototype.sizeHint");
-          
+      // function 
+      QLayoutItem.prototype.sizeHint = function() 
+        
+      {
+        //print("JS: QLayoutItem.prototype.sizeHint");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -108,7 +108,8 @@
                 //return this.wrapper.sizeHint(
                 // call highest level JS implementation:
                 //return this.sizeHintBase(
-                return this.sizeHintSuper(
+                
+                    return this.sizeHintSuper(
                   
                 );
               
@@ -124,8 +125,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -145,4 +146,5 @@
       //QLayoutItem.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

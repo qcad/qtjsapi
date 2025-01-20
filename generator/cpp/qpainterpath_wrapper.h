@@ -1311,12 +1311,13 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1352,27 +1353,30 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
 
         // get wrapped object:
         QPainterPath* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QPainterPath* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1380,7 +1384,8 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1392,9 +1397,10 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1409,9 +1415,10 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
         
 
         private:
-        // wrapped object:
-        QPainterPath* wrapped;
 
+        
+          // wrapped object:
+          QPainterPath* wrapped;
         
 
         bool wrappedCreated;
@@ -1887,12 +1894,13 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1928,27 +1936,30 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
 
         // get wrapped object:
         QPainterPathStroker* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QPainterPathStroker* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1956,7 +1967,8 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1968,9 +1980,10 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1985,9 +1998,10 @@ CurveToDataElement = QPainterPath::CurveToDataElement,
         
 
         private:
-        // wrapped object:
-        QPainterPathStroker* wrapped;
 
+        
+          // wrapped object:
+          QPainterPathStroker* wrapped;
         
 
         bool wrappedCreated;

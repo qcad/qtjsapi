@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QStringEncoder);
+              
+                  copyProperties(this, wrapper, QStringEncoder);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QStringEncoder);
+            copyProperties(this, wrapper, QStringEncoder);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QStringEncoder);
+            copyProperties(this, wrapper, QStringEncoder);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QStringEncoder);
+            copyProperties(this, wrapper, QStringEncoder);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -134,12 +136,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QStringEncoder.prototype = new QStringEncoder_BaseJs(engine);
@@ -196,34 +196,6 @@ QStringEncoder.LastEncoding = QStringEncoder_Wrapper.LastEncoding;
       // static functions:
       
 
-        // static function 
-        QStringEncoder.nameForEncoding = function() 
-          
-        {
-          //print("JS: QStringEncoder.nameForEncoding");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QStringEncoder_WrapperSingletonInstance.nameForEncoding(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QStringEncoder);
-  }
-
-  
-  else {
-    
-        print("QStringEncoder.nameForEncoding(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -239,4 +211,5 @@ QStringEncoder.LastEncoding = QStringEncoder_Wrapper.LastEncoding;
       //QStringEncoder.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

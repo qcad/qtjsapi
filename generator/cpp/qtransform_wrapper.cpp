@@ -472,11 +472,19 @@ qreal a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QTransform_Wrapper::QTransform_Wrapper(RJSApi& h, QTransform* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTransform_Wrapper::QTransform_Wrapper(RJSApi& h, QTransform* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTransform_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTransform_Wrapper"));
               //setObjectName("QTransform_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -498,8 +506,10 @@ qreal a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTransform";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -663,8 +673,8 @@ qreal a9_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTransform(
-                a1_cpp
+              wrapped = new QTransform(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -674,9 +684,9 @@ qreal a9_cpp;
     , a8_cpp
     , a9_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -754,17 +764,17 @@ qreal a6_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTransform(
-                a1_cpp
+              wrapped = new QTransform(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     , a6_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -797,12 +807,12 @@ QTransform a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTransform(
-                a1_cpp
+              wrapped = new QTransform(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -835,12 +845,12 @@ QTransform a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTransform(
-                a1_cpp
+              wrapped = new QTransform(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -859,11 +869,11 @@ QTransform a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTransform(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTransform(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -888,14 +898,18 @@ QTransform a1_cpp;
    && a9.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QTransform";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

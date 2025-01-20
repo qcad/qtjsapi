@@ -3,7 +3,7 @@
   <class_decl name="QVector" />
   <class_decl name="QVariant" />
   <class_decl name="QBitmap" />
-  <class name="QRegion">
+  <class name="QRegion" proxy="true">
     <constructor>
       <variant>
         <parameters />

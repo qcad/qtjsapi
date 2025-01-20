@@ -295,11 +295,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QImageReader_Wrapper::QImageReader_Wrapper(RJSApi& h, QImageReader* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QImageReader_Wrapper::QImageReader_Wrapper(RJSApi& h, QImageReader* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QImageReader_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QImageReader_Wrapper"));
               //setObjectName("QImageReader_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -321,8 +329,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QImageReader";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -422,13 +432,13 @@ QByteArray a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QImageReader(
-                a1_cpp
+              wrapped = new QImageReader(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -478,13 +488,13 @@ QByteArray a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QImageReader(
-                a1_cpp
+              wrapped = new QImageReader(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -503,11 +513,11 @@ QByteArray a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QImageReader(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QImageReader(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -525,14 +535,18 @@ QByteArray a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QImageReader";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

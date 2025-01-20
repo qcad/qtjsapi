@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPushButton);
+              
+                  copyProperties(this, wrapper, QPushButton);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPushButton);
+            copyProperties(this, wrapper, QPushButton);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPushButton);
+            copyProperties(this, wrapper, QPushButton);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -105,8 +107,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPushButton);
+            copyProperties(this, wrapper, QPushButton);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -137,18 +139,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["clicked(bool)"] = Object.getPrototypeOf(this).clicked;
   
     this["toggled(bool)"] = Object.getPrototypeOf(this).toggled;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QPushButton.prototype = new QPushButton_BaseJs(engine);
@@ -201,119 +206,6 @@
       // static functions:
       
 
-        // static function 
-        QPushButton.tr = function() 
-          
-        {
-          //print("JS: QPushButton.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QPushButton_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QPushButton);
-  }
-
-  
-  else {
-    
-        print("QPushButton.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPushButton.setTabOrder = function() 
-          
-        {
-          //print("JS: QPushButton.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QPushButton_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QPushButton);
-  }
-
-  
-  else {
-    
-        print("QPushButton.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPushButton.mouseGrabber = function() 
-          
-        {
-          //print("JS: QPushButton.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QPushButton_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QPushButton);
-  }
-
-  
-  else {
-    
-        print("QPushButton.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPushButton.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QPushButton.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QPushButton_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QPushButton);
-  }
-
-  
-  else {
-    
-        print("QPushButton.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -329,4 +221,5 @@
       //QPushButton.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

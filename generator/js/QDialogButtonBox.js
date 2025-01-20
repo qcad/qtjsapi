@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDialogButtonBox);
+              
+                  copyProperties(this, wrapper, QDialogButtonBox);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDialogButtonBox);
+            copyProperties(this, wrapper, QDialogButtonBox);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDialogButtonBox);
+            copyProperties(this, wrapper, QDialogButtonBox);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -105,8 +107,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDialogButtonBox);
+            copyProperties(this, wrapper, QDialogButtonBox);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -137,16 +139,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["clicked(QAbstractButton*)"] = Object.getPrototypeOf(this).clicked;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QDialogButtonBox.prototype = new QDialogButtonBox_BaseJs(engine);
@@ -238,119 +243,6 @@ QDialogButtonBox.AndroidLayout = QDialogButtonBox_Wrapper.AndroidLayout;
       // static functions:
       
 
-        // static function 
-        QDialogButtonBox.tr = function() 
-          
-        {
-          //print("JS: QDialogButtonBox.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QDialogButtonBox_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QDialogButtonBox);
-  }
-
-  
-  else {
-    
-        print("QDialogButtonBox.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QDialogButtonBox.setTabOrder = function() 
-          
-        {
-          //print("JS: QDialogButtonBox.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QDialogButtonBox_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QDialogButtonBox);
-  }
-
-  
-  else {
-    
-        print("QDialogButtonBox.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QDialogButtonBox.mouseGrabber = function() 
-          
-        {
-          //print("JS: QDialogButtonBox.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QDialogButtonBox_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QDialogButtonBox);
-  }
-
-  
-  else {
-    
-        print("QDialogButtonBox.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QDialogButtonBox.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QDialogButtonBox.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QDialogButtonBox_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QDialogButtonBox);
-  }
-
-  
-  else {
-    
-        print("QDialogButtonBox.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -366,4 +258,5 @@ QDialogButtonBox.AndroidLayout = QDialogButtonBox_Wrapper.AndroidLayout;
       //QDialogButtonBox.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

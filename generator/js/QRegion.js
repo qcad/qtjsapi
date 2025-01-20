@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QRegion);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRegion);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRegion);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -105,8 +107,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRegion);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -131,8 +133,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRegion);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -157,8 +159,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRegion);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -183,8 +185,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRegion);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -209,8 +211,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRegion);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -241,12 +243,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QRegion.prototype = new QRegion_BaseJs(engine);
@@ -283,6 +283,150 @@
 
       // functions:
       
+        // function 
+        QRegion.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QRegion.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.isEmpty");
+          return this.__PROXY__.isEmpty(...args);
+        };
+    
+        // function 
+        QRegion.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.isNull");
+          return this.__PROXY__.isNull(...args);
+        };
+    
+        // function 
+        QRegion.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.contains");
+          return this.__PROXY__.contains(...args);
+        };
+    
+        // function 
+        QRegion.prototype.translate = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.translate");
+          return this.__PROXY__.translate(...args);
+        };
+    
+        // function 
+        QRegion.prototype.translated = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.translated");
+          return this.__PROXY__.translated(...args);
+        };
+    
+        // function 
+        QRegion.prototype.united = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.united");
+          return this.__PROXY__.united(...args);
+        };
+    
+        // function 
+        QRegion.prototype.intersected = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.intersected");
+          return this.__PROXY__.intersected(...args);
+        };
+    
+        // function 
+        QRegion.prototype.subtracted = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.subtracted");
+          return this.__PROXY__.subtracted(...args);
+        };
+    
+        // function 
+        QRegion.prototype.xored = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.xored");
+          return this.__PROXY__.xored(...args);
+        };
+    
+        // function 
+        QRegion.prototype.intersects = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.intersects");
+          return this.__PROXY__.intersects(...args);
+        };
+    
+        // function 
+        QRegion.prototype.boundingRect = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.boundingRect");
+          return this.__PROXY__.boundingRect(...args);
+        };
+    
+        // function 
+        QRegion.prototype.rectCount = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.rectCount");
+          return this.__PROXY__.rectCount(...args);
+        };
+    
+        // function 
+        QRegion.prototype.copy = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.copy");
+          return this.__PROXY__.copy(...args);
+        };
+    
+        // function 
+        QRegion.prototype.detach = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.detach");
+          return this.__PROXY__.detach(...args);
+        };
+    
+        // function 
+        QRegion.prototype.qt_region_strictContains = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.qt_region_strictContains");
+          return this.__PROXY__.qt_region_strictContains(...args);
+        };
+    
+        // function 
+        QRegion.prototype.exec = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.exec");
+          return this.__PROXY__.exec(...args);
+        };
+    
+        // function 
+        QRegion.prototype.cleanUp = function(...args) 
+          
+        {
+          //print("JS: QRegion.prototype.cleanUp");
+          return this.__PROXY__.cleanUp(...args);
+        };
+    
 
       // static functions:
       
@@ -311,4 +455,8 @@
       //QRegion.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QRegion.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

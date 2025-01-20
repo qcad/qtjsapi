@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QClipboard);
+              
+                  copyProperties(this, wrapper, QClipboard);
+                
             //}
           }
           else {
@@ -53,14 +55,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["changed(QClipboard::Mode)"] = Object.getPrototypeOf(this).changed;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QClipboard.prototype = new QClipboard_BaseJs(engine);
@@ -111,35 +116,6 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
       // static functions:
       
 
-        // static function 
-        QClipboard.tr = function() 
-          
-        {
-          //print("JS: QClipboard.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QClipboard_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QClipboard);
-  }
-
-  
-  else {
-    
-        print("QClipboard.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -155,4 +131,5 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
       //QClipboard.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

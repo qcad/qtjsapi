@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QGraphicsEffect);
+              
+                  copyProperties(this, wrapper, QGraphicsEffect);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QGraphicsEffect.prototype = new QGraphicsEffect_BaseJs(engine);
@@ -114,35 +114,6 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
       // static functions:
       
 
-        // static function 
-        QGraphicsEffect.tr = function() 
-          
-        {
-          //print("JS: QGraphicsEffect.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QGraphicsEffect_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QGraphicsEffect);
-  }
-
-  
-  else {
-    
-        print("QGraphicsEffect.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -158,4 +129,5 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
       //QGraphicsEffect.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

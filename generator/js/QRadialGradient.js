@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QRadialGradient);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRadialGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRadialGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRadialGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -128,8 +130,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRadialGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -154,8 +156,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRadialGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -180,8 +182,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRadialGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -206,8 +208,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRadialGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -238,12 +240,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QRadialGradient.prototype = new QRadialGradient_BaseJs(engine);
@@ -476,6 +476,150 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
 
       // functions:
       
+        // function 
+        QRadialGradient.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.setSpread = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.setSpread");
+          return this.__PROXY__.setSpread(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.spread = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.spread");
+          return this.__PROXY__.spread(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.setColorAt = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.setColorAt");
+          return this.__PROXY__.setColorAt(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.coordinateMode = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.coordinateMode");
+          return this.__PROXY__.coordinateMode(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.setCoordinateMode = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.setCoordinateMode");
+          return this.__PROXY__.setCoordinateMode(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.interpolationMode = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.interpolationMode");
+          return this.__PROXY__.interpolationMode(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.setInterpolationMode = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.setInterpolationMode");
+          return this.__PROXY__.setInterpolationMode(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.center = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.center");
+          return this.__PROXY__.center(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.setCenter = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.setCenter");
+          return this.__PROXY__.setCenter(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.focalPoint = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.focalPoint");
+          return this.__PROXY__.focalPoint(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.setFocalPoint = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.setFocalPoint");
+          return this.__PROXY__.setFocalPoint(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.radius = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.radius");
+          return this.__PROXY__.radius(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.setRadius = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.setRadius");
+          return this.__PROXY__.setRadius(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.centerRadius = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.centerRadius");
+          return this.__PROXY__.centerRadius(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.setCenterRadius = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.setCenterRadius");
+          return this.__PROXY__.setCenterRadius(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.focalRadius = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.focalRadius");
+          return this.__PROXY__.focalRadius(...args);
+        };
+    
+        // function 
+        QRadialGradient.prototype.setFocalRadius = function(...args) 
+          
+        {
+          //print("JS: QRadialGradient.prototype.setFocalRadius");
+          return this.__PROXY__.setFocalRadius(...args);
+        };
+    
 
       // static functions:
       
@@ -495,4 +639,8 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
       //QRadialGradient.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QRadialGradient.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

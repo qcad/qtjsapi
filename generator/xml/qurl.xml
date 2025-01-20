@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qurl.h">
   <class_decl name="QUrlQuery" />
   <class_decl name="QUrl" />
-  <class name="QUrl">
+  <class name="QUrl" proxy="true">
     <enum name="ParsingMode">
       <key>TolerantMode</key>
       <key>StrictMode</key>

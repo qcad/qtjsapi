@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QGradient);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QGradient);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -108,12 +110,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QGradient.prototype = new QGradient_BaseJs(engine);
@@ -342,6 +342,70 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
 
       // functions:
       
+        // function 
+        QGradient.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QGradient.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QGradient.prototype.setSpread = function(...args) 
+          
+        {
+          //print("JS: QGradient.prototype.setSpread");
+          return this.__PROXY__.setSpread(...args);
+        };
+    
+        // function 
+        QGradient.prototype.spread = function(...args) 
+          
+        {
+          //print("JS: QGradient.prototype.spread");
+          return this.__PROXY__.spread(...args);
+        };
+    
+        // function 
+        QGradient.prototype.setColorAt = function(...args) 
+          
+        {
+          //print("JS: QGradient.prototype.setColorAt");
+          return this.__PROXY__.setColorAt(...args);
+        };
+    
+        // function 
+        QGradient.prototype.coordinateMode = function(...args) 
+          
+        {
+          //print("JS: QGradient.prototype.coordinateMode");
+          return this.__PROXY__.coordinateMode(...args);
+        };
+    
+        // function 
+        QGradient.prototype.setCoordinateMode = function(...args) 
+          
+        {
+          //print("JS: QGradient.prototype.setCoordinateMode");
+          return this.__PROXY__.setCoordinateMode(...args);
+        };
+    
+        // function 
+        QGradient.prototype.interpolationMode = function(...args) 
+          
+        {
+          //print("JS: QGradient.prototype.interpolationMode");
+          return this.__PROXY__.interpolationMode(...args);
+        };
+    
+        // function 
+        QGradient.prototype.setInterpolationMode = function(...args) 
+          
+        {
+          //print("JS: QGradient.prototype.setInterpolationMode");
+          return this.__PROXY__.setInterpolationMode(...args);
+        };
+    
 
       // static functions:
       
@@ -361,4 +425,8 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
       //QGradient.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QGradient.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

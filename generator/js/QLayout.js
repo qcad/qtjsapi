@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QLayout);
+              
+                  copyProperties(this, wrapper, QLayout);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QLayout);
+            copyProperties(this, wrapper, QLayout);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QLayout.prototype = new QLayout_BaseJs(engine);
@@ -133,12 +133,12 @@
 
       // functions:
       
-        // function 
-        QLayout.prototype.sizeHint = function() 
-          
-        {
-          //print("JS: QLayout.prototype.sizeHint");
-          
+      // function 
+      QLayout.prototype.sizeHint = function() 
+        
+      {
+        //print("JS: QLayout.prototype.sizeHint");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -146,7 +146,8 @@
                 //return this.wrapper.sizeHint(
                 // call highest level JS implementation:
                 //return this.sizeHintBase(
-                return this.sizeHintSuper(
+                
+                    return this.sizeHintSuper(
                   
                 );
               
@@ -162,14 +163,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QLayout.prototype.addItem = function() 
-          
-        {
-          //print("JS: QLayout.prototype.addItem");
-          
+      };
+    
+      // function 
+      QLayout.prototype.addItem = function() 
+        
+      {
+        //print("JS: QLayout.prototype.addItem");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -177,7 +178,8 @@
                 //return this.wrapper.addItem(
                 // call highest level JS implementation:
                 //return this.addItemBase(
-                return this.addItemSuper(
+                
+                    return this.addItemSuper(
                   arguments[0]
                 );
               
@@ -193,14 +195,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QLayout.prototype.minimumSize = function() 
-          
-        {
-          //print("JS: QLayout.prototype.minimumSize");
-          
+      };
+    
+      // function 
+      QLayout.prototype.minimumSize = function() 
+        
+      {
+        //print("JS: QLayout.prototype.minimumSize");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -208,7 +210,8 @@
                 //return this.wrapper.minimumSize(
                 // call highest level JS implementation:
                 //return this.minimumSizeBase(
-                return this.minimumSizeSuper(
+                
+                    return this.minimumSizeSuper(
                   
                 );
               
@@ -224,14 +227,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QLayout.prototype.setGeometry = function() 
-          
-        {
-          //print("JS: QLayout.prototype.setGeometry");
-          
+      };
+    
+      // function 
+      QLayout.prototype.setGeometry = function() 
+        
+      {
+        //print("JS: QLayout.prototype.setGeometry");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -239,7 +242,8 @@
                 //return this.wrapper.setGeometry(
                 // call highest level JS implementation:
                 //return this.setGeometryBase(
-                return this.setGeometrySuper(
+                
+                    return this.setGeometrySuper(
                   arguments[0]
                 );
               
@@ -255,14 +259,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QLayout.prototype.itemAt = function() 
-          
-        {
-          //print("JS: QLayout.prototype.itemAt");
-          
+      };
+    
+      // function 
+      QLayout.prototype.itemAt = function() 
+        
+      {
+        //print("JS: QLayout.prototype.itemAt");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -270,7 +274,8 @@
                 //return this.wrapper.itemAt(
                 // call highest level JS implementation:
                 //return this.itemAtBase(
-                return this.itemAtSuper(
+                
+                    return this.itemAtSuper(
                   arguments[0]
                 );
               
@@ -286,14 +291,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QLayout.prototype.takeAt = function() 
-          
-        {
-          //print("JS: QLayout.prototype.takeAt");
-          
+      };
+    
+      // function 
+      QLayout.prototype.takeAt = function() 
+        
+      {
+        //print("JS: QLayout.prototype.takeAt");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -301,7 +306,8 @@
                 //return this.wrapper.takeAt(
                 // call highest level JS implementation:
                 //return this.takeAtBase(
-                return this.takeAtSuper(
+                
+                    return this.takeAtSuper(
                   arguments[0]
                 );
               
@@ -317,14 +323,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        QLayout.prototype.count = function() 
-          
-        {
-          //print("JS: QLayout.prototype.count");
-          
+      };
+    
+      // function 
+      QLayout.prototype.count = function() 
+        
+      {
+        //print("JS: QLayout.prototype.count");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -332,7 +338,8 @@
                 //return this.wrapper.count(
                 // call highest level JS implementation:
                 //return this.countBase(
-                return this.countSuper(
+                
+                    return this.countSuper(
                   
                 );
               
@@ -348,39 +355,10 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
-      
-
-        // static function 
-        QLayout.tr = function() 
-          
-        {
-          //print("JS: QLayout.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QLayout_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QLayout);
-  }
-
-  
-  else {
-    
-        print("QLayout.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
         // static function 
@@ -435,4 +413,5 @@
       //QLayout.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

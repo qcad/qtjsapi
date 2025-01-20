@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QLine_Wrapper::QLine_Wrapper(RJSApi& h, QLine* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QLine_Wrapper::QLine_Wrapper(RJSApi& h, QLine* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QLine_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QLine_Wrapper"));
               //setObjectName("QLine_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QLine";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -212,15 +222,15 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLine(
-                a1_cpp
+              wrapped = new QLine(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -280,15 +290,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLine(
-                a1_cpp
+              wrapped = new QLine(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -330,13 +340,13 @@ QPoint a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLine(
-                a1_cpp
+              wrapped = new QLine(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -355,11 +365,11 @@ QPoint a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLine(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QLine(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -379,14 +389,18 @@ QPoint a2_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QLine";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -1683,11 +1697,19 @@ qreal a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QLineF_Wrapper::QLineF_Wrapper(RJSApi& h, QLineF* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QLineF_Wrapper::QLineF_Wrapper(RJSApi& h, QLineF* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QLineF_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QLineF_Wrapper"));
               //setObjectName("QLineF_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1709,8 +1731,10 @@ qreal a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QLineF";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1819,15 +1843,15 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                a1_cpp
+              wrapped = new QLineF(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1887,15 +1911,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                a1_cpp
+              wrapped = new QLineF(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1955,15 +1979,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                a1_cpp
+              wrapped = new QLineF(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2005,13 +2029,13 @@ QPoint a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                a1_cpp
+              wrapped = new QLineF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2053,13 +2077,13 @@ QPointF a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                a1_cpp
+              wrapped = new QLineF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2101,13 +2125,13 @@ QPointF a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                a1_cpp
+              wrapped = new QLineF(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2140,12 +2164,12 @@ QLine a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                a1_cpp
+              wrapped = new QLineF(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2164,11 +2188,11 @@ QLine a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QLineF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2187,11 +2211,11 @@ QLine a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QLineF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2210,11 +2234,11 @@ QLine a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLineF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QLineF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2234,14 +2258,18 @@ QLine a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QLineF";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

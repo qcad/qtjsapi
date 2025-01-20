@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QIODeviceBase_Wrapper::QIODeviceBase_Wrapper(RJSApi& h, QIODeviceBase* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QIODeviceBase_Wrapper::QIODeviceBase_Wrapper(RJSApi& h, QIODeviceBase* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QIODeviceBase_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QIODeviceBase_Wrapper"));
               //setObjectName("QIODeviceBase_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ QIODeviceBase_Wrapper::QIODeviceBase_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QIODeviceBase(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QIODeviceBase(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ QIODeviceBase_Wrapper::QIODeviceBase_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QIODeviceBase";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

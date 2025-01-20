@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qdir.h">
   <class_decl name="QDirIterator" />
   <class_decl name="QDebug" />
-  <class name="QDir">
+  <class name="QDir" proxy="true">
     <enum name="Filter">
       <key>Dirs</key>
       <key>Files</key>

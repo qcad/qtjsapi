@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QMdiArea);
+              
+                  copyProperties(this, wrapper, QMdiArea);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QMdiArea);
+            copyProperties(this, wrapper, QMdiArea);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,16 +85,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["subWindowActivated(QMdiSubWindow*)"] = Object.getPrototypeOf(this).subWindowActivated;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QMdiArea.prototype = new QMdiArea_BaseJs(engine);
@@ -184,119 +189,6 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
       // static functions:
       
 
-        // static function 
-        QMdiArea.tr = function() 
-          
-        {
-          //print("JS: QMdiArea.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QMdiArea_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QMdiArea);
-  }
-
-  
-  else {
-    
-        print("QMdiArea.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMdiArea.setTabOrder = function() 
-          
-        {
-          //print("JS: QMdiArea.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QMdiArea_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QMdiArea);
-  }
-
-  
-  else {
-    
-        print("QMdiArea.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMdiArea.mouseGrabber = function() 
-          
-        {
-          //print("JS: QMdiArea.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMdiArea_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMdiArea);
-  }
-
-  
-  else {
-    
-        print("QMdiArea.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QMdiArea.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QMdiArea.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QMdiArea_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QMdiArea);
-  }
-
-  
-  else {
-    
-        print("QMdiArea.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -312,4 +204,5 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
       //QMdiArea.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

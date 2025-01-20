@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QButtonGroup);
+              
+                  copyProperties(this, wrapper, QButtonGroup);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QButtonGroup);
+            copyProperties(this, wrapper, QButtonGroup);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["buttonClicked(QAbstractButton*)"] = Object.getPrototypeOf(this).buttonClicked;
   
     this["buttonPressed(QAbstractButton*)"] = Object.getPrototypeOf(this).buttonPressed;
@@ -103,8 +104,12 @@
   
     this["idToggled(int,bool)"] = Object.getPrototypeOf(this).idToggled;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QButtonGroup.prototype = new QButtonGroup_BaseJs(engine);
@@ -149,35 +154,6 @@
       // static functions:
       
 
-        // static function 
-        QButtonGroup.tr = function() 
-          
-        {
-          //print("JS: QButtonGroup.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QButtonGroup_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QButtonGroup);
-  }
-
-  
-  else {
-    
-        print("QButtonGroup.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -193,4 +169,5 @@
       //QButtonGroup.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QTextStream_Wrapper::QTextStream_Wrapper(RJSApi& h, QTextStream* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextStream_Wrapper::QTextStream_Wrapper(RJSApi& h, QTextStream* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextStream_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextStream_Wrapper"));
               //setObjectName("QTextStream_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -197,13 +205,13 @@ QFile::OpenMode a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextStream(
-                a1_cpp
+              wrapped = new QTextStream(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -241,12 +249,12 @@ QFile::OpenMode a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextStream(
-                a1_cpp
+              wrapped = new QTextStream(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -265,11 +273,11 @@ QFile::OpenMode a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextStream(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextStream(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -287,14 +295,18 @@ QFile::OpenMode a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QTextStream";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

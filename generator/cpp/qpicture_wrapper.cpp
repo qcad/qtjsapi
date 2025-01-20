@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QPicture
-    // Function: devicePixelRatioFScale
-    // Source: QPaintDevice
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QPicture_WrapperSingleton::devicePixelRatioFScale
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            qreal res = 
-                
-                // call static member function:
-                QPaintDevice::devicePixelRatioFScale(
-              
-            );
-          
-            // return type: qreal
-
-            return RJSHelper::cpp2js_qreal(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for devicePixelRatioFScale";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QPicture_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QPicture_Wrapper>("org.qcad", 1, 0, "QPicture_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QPicture_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QPicture_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QPicture_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QPicture_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QPicture_WrapperSingleton * s = new QPicture_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QPicture_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QPicture.js";
       QFile scriptFile(fileName);
@@ -131,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QPicture_Wrapper::QPicture_Wrapper(RJSApi& h, QPicture* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPicture_Wrapper::QPicture_Wrapper(RJSApi& h, QPicture* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPicture_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPicture_Wrapper"));
               //setObjectName("QPicture_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPicture";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -242,12 +197,12 @@ int a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPicture(
-                a1_cpp
+              wrapped = new QPicture(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -280,12 +235,12 @@ QPicture a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPicture(
-                a1_cpp
+              wrapped = new QPicture(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -302,14 +257,18 @@ QPicture a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPicture";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

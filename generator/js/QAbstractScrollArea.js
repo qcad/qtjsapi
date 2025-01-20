@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QAbstractScrollArea);
+              
+                  copyProperties(this, wrapper, QAbstractScrollArea);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QAbstractScrollArea);
+            copyProperties(this, wrapper, QAbstractScrollArea);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,14 +85,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QAbstractScrollArea.prototype = new QAbstractScrollArea_BaseJs(engine);
@@ -162,12 +167,12 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
 
       // functions:
       
-        // function 
-        QAbstractScrollArea.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QAbstractScrollArea.prototype.actionEvent");
-          
+      // function 
+      QAbstractScrollArea.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: QAbstractScrollArea.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -175,7 +180,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -191,123 +197,10 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
-      
-
-        // static function 
-        QAbstractScrollArea.tr = function() 
-          
-        {
-          //print("JS: QAbstractScrollArea.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QAbstractScrollArea_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractScrollArea);
-  }
-
-  
-  else {
-    
-        print("QAbstractScrollArea.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractScrollArea.setTabOrder = function() 
-          
-        {
-          //print("JS: QAbstractScrollArea.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QAbstractScrollArea_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractScrollArea);
-  }
-
-  
-  else {
-    
-        print("QAbstractScrollArea.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractScrollArea.mouseGrabber = function() 
-          
-        {
-          //print("JS: QAbstractScrollArea.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractScrollArea_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractScrollArea);
-  }
-
-  
-  else {
-    
-        print("QAbstractScrollArea.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractScrollArea.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QAbstractScrollArea.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractScrollArea_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractScrollArea);
-  }
-
-  
-  else {
-    
-        print("QAbstractScrollArea.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // constants:
@@ -325,4 +218,5 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
       //QAbstractScrollArea.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

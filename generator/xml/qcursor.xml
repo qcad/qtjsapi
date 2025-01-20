@@ -5,7 +5,7 @@
   <class_decl name="QBitmap" />
   <class_decl name="QPixmap" />
   <!--
-  <class name="QCursor">
+  <class name="QCursor" proxy="true">
     <function name="pos" static="true">
       <variant return-type="QPoint" static="true" access="public">
         <parameters />
@@ -38,7 +38,7 @@
     </function>
   </class>
   -->
-  <class name="QCursor">
+  <class name="QCursor" proxy="true">
     <constructor>
       <variant>
         <parameters />

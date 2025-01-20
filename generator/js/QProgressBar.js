@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QProgressBar);
+              
+                  copyProperties(this, wrapper, QProgressBar);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QProgressBar);
+            copyProperties(this, wrapper, QProgressBar);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,16 +85,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["valueChanged(int)"] = Object.getPrototypeOf(this).valueChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QProgressBar.prototype = new QProgressBar_BaseJs(engine);
@@ -141,12 +146,12 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
 
       // functions:
       
-        // function 
-        QProgressBar.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QProgressBar.prototype.actionEvent");
-          
+      // function 
+      QProgressBar.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: QProgressBar.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -154,7 +159,8 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -170,123 +176,10 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
-      
-
-        // static function 
-        QProgressBar.tr = function() 
-          
-        {
-          //print("JS: QProgressBar.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QProgressBar_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QProgressBar);
-  }
-
-  
-  else {
-    
-        print("QProgressBar.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QProgressBar.setTabOrder = function() 
-          
-        {
-          //print("JS: QProgressBar.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QProgressBar_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QProgressBar);
-  }
-
-  
-  else {
-    
-        print("QProgressBar.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QProgressBar.mouseGrabber = function() 
-          
-        {
-          //print("JS: QProgressBar.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QProgressBar_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QProgressBar);
-  }
-
-  
-  else {
-    
-        print("QProgressBar.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QProgressBar.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QProgressBar.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QProgressBar_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QProgressBar);
-  }
-
-  
-  else {
-    
-        print("QProgressBar.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // constants:
@@ -304,4 +197,5 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
       //QProgressBar.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

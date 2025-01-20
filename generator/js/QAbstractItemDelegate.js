@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QAbstractItemDelegate);
+              
+                  copyProperties(this, wrapper, QAbstractItemDelegate);
+                
             //}
           }
           else {
@@ -53,18 +55,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["commitData(QWidget*)"] = Object.getPrototypeOf(this).commitData;
   
     this["closeEditor(QWidget*,QAbstractItemDelegate::EndEditHint)"] = Object.getPrototypeOf(this).closeEditor;
   
     this["sizeHintChanged(QModelIndex)"] = Object.getPrototypeOf(this).sizeHintChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QAbstractItemDelegate.prototype = new QAbstractItemDelegate_BaseJs(engine);
@@ -116,35 +121,6 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
       // static functions:
       
 
-        // static function 
-        QAbstractItemDelegate.tr = function() 
-          
-        {
-          //print("JS: QAbstractItemDelegate.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QAbstractItemDelegate_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractItemDelegate);
-  }
-
-  
-  else {
-    
-        print("QAbstractItemDelegate.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -160,4 +136,5 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
       //QAbstractItemDelegate.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextStream);
+              
+                  copyProperties(this, wrapper, QTextStream);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextStream);
+            copyProperties(this, wrapper, QTextStream);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextStream);
+            copyProperties(this, wrapper, QTextStream);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -103,8 +105,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextStream);
+            copyProperties(this, wrapper, QTextStream);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -135,12 +137,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QTextStream.prototype = new QTextStream_BaseJs(engine);
@@ -236,4 +236,5 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
       //QTextStream.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

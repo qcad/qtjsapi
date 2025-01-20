@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QQmlApplicationEngine);
+              
+                  copyProperties(this, wrapper, QQmlApplicationEngine);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QQmlApplicationEngine);
+            copyProperties(this, wrapper, QQmlApplicationEngine);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QQmlApplicationEngine);
+            copyProperties(this, wrapper, QQmlApplicationEngine);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -105,8 +107,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QQmlApplicationEngine);
+            copyProperties(this, wrapper, QQmlApplicationEngine);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -137,16 +139,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["objectCreated(QObject*,QUrl)"] = Object.getPrototypeOf(this).objectCreated;
   
     this["objectCreationFailed(QUrl)"] = Object.getPrototypeOf(this).objectCreationFailed;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QQmlApplicationEngine.prototype = new QQmlApplicationEngine_BaseJs(engine);
@@ -199,35 +204,6 @@
       // static functions:
       
 
-        // static function 
-        QQmlApplicationEngine.tr = function() 
-          
-        {
-          //print("JS: QQmlApplicationEngine.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QQmlApplicationEngine_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QQmlApplicationEngine);
-  }
-
-  
-  else {
-    
-        print("QQmlApplicationEngine.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -243,4 +219,5 @@
       //QQmlApplicationEngine.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

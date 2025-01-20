@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSettings);
+              
+                  copyProperties(this, wrapper, QSettings);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSettings);
+            copyProperties(this, wrapper, QSettings);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSettings);
+            copyProperties(this, wrapper, QSettings);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -105,8 +107,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSettings);
+            copyProperties(this, wrapper, QSettings);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -132,8 +134,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSettings);
+            copyProperties(this, wrapper, QSettings);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -159,8 +161,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSettings);
+            copyProperties(this, wrapper, QSettings);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -186,8 +188,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSettings);
+            copyProperties(this, wrapper, QSettings);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -218,12 +220,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QSettings.prototype = new QSettings_BaseJs(engine);
@@ -296,35 +296,6 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
       
 
       // static functions:
-      
-
-        // static function 
-        QSettings.tr = function() 
-          
-        {
-          //print("JS: QSettings.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QSettings_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QSettings);
-  }
-
-  
-  else {
-    
-        print("QSettings.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
         // static function 
@@ -426,4 +397,5 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
       //QSettings.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

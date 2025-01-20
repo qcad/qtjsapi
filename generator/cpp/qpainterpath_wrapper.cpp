@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QPainterPath_Wrapper::QPainterPath_Wrapper(RJSApi& h, QPainterPath* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPainterPath_Wrapper::QPainterPath_Wrapper(RJSApi& h, QPainterPath* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPainterPath_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPainterPath_Wrapper"));
               //setObjectName("QPainterPath_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPainterPath";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -163,11 +173,11 @@ QPainterPath_Wrapper::QPainterPath_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QPainterPath(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPainterPath(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -180,7 +190,9 @@ QPainterPath_Wrapper::QPainterPath_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QPainterPath";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -4423,11 +4435,19 @@ QPainterPath a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QPainterPathStroker_Wrapper::QPainterPathStroker_Wrapper(RJSApi& h, QPainterPathStroker* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPainterPathStroker_Wrapper::QPainterPathStroker_Wrapper(RJSApi& h, QPainterPathStroker* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPainterPathStroker_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPainterPathStroker_Wrapper"));
               //setObjectName("QPainterPathStroker_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -4449,8 +4469,10 @@ QPainterPath a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPainterPathStroker";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -4526,12 +4548,12 @@ QPen a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPainterPathStroker(
-                a1_cpp
+              wrapped = new QPainterPathStroker(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4550,11 +4572,11 @@ QPen a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPainterPathStroker(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPainterPathStroker(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4571,14 +4593,18 @@ QPen a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPainterPathStroker";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

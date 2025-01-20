@@ -143,11 +143,19 @@
 
     
       // special constructor to wrap existing object:
-      QCalendar_Wrapper::QCalendar_Wrapper(RJSApi& h, QCalendar* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QCalendar_Wrapper::QCalendar_Wrapper(RJSApi& h, QCalendar* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QCalendar_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QCalendar_Wrapper"));
               //setObjectName("QCalendar_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -169,8 +177,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QCalendar";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -230,11 +240,11 @@ QCalendar_Wrapper::QCalendar_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QCalendar(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QCalendar(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -247,7 +257,9 @@ QCalendar_Wrapper::QCalendar_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QCalendar";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -51,25 +51,6 @@
 
       // static functions:
       
-    // Class: QImage
-    // Function: devicePixelRatioFScale
-    // Source: QPaintDevice
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatioFScale
-              (
-
-                
-              )
-              
-              ;
-            
 #ifndef Q_QDOC
 
 #endif
@@ -1919,12 +1900,13 @@ NImageFormats = QImage::NImageFormats,
 
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1960,27 +1942,30 @@ NImageFormats = QImage::NImageFormats,
 
         // get wrapped object:
         QImage* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QImage* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1988,7 +1973,8 @@ NImageFormats = QImage::NImageFormats,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -2000,9 +1986,10 @@ NImageFormats = QImage::NImageFormats,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -2017,9 +2004,10 @@ NImageFormats = QImage::NImageFormats,
         
 
         private:
-        // wrapped object:
-        QImage* wrapped;
 
+        
+          // wrapped object:
+          QImage* wrapped;
         
 
         bool wrappedCreated;

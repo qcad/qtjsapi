@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QRegularExpressionValidator);
+              
+                  copyProperties(this, wrapper, QRegularExpressionValidator);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRegularExpressionValidator);
+            copyProperties(this, wrapper, QRegularExpressionValidator);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRegularExpressionValidator);
+            copyProperties(this, wrapper, QRegularExpressionValidator);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,14 +112,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["regularExpressionChanged(QRegularExpression)"] = Object.getPrototypeOf(this).regularExpressionChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QRegularExpressionValidator.prototype = new QRegularExpressionValidator_BaseJs(engine);
@@ -171,35 +176,6 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
       // static functions:
       
 
-        // static function 
-        QRegularExpressionValidator.tr = function() 
-          
-        {
-          //print("JS: QRegularExpressionValidator.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QRegularExpressionValidator_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QRegularExpressionValidator);
-  }
-
-  
-  else {
-    
-        print("QRegularExpressionValidator.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -215,4 +191,5 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
       //QRegularExpressionValidator.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

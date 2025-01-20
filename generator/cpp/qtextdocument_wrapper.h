@@ -49,101 +49,6 @@
       // wrapped object is QTextDocument_Base class if new object is created: 
       #include "qtextdocument_base.h"
     
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QTextDocument_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QTextDocument_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QTextDocument
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#ifndef QT_NO_CSSPARSER
-
-#endif
-
-#ifndef QT_NO_TEXTHTMLPARSER
-
-#endif
-
-#if QT_CONFIG(textmarkdownwriter)||QT_CONFIG(textmarkdownreader)
-
-#endif
-
-#if QT_CONFIG(textmarkdownwriter)
-
-#endif
-
-#if QT_CONFIG(textmarkdownreader)
-
-#endif
-
-#if QT_CONFIG(regularexpression)
-
-#endif
-
-#ifndef QT_NO_PRINTER
-
-#endif
-
-#ifndef QT_NO_CSSPARSER
-
-#endif
-
-
-      private:
-          RJSApi& handler;
-          //static QTextDocument_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTextDocument
@@ -2525,12 +2430,13 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -2566,27 +2472,30 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
 
         // get wrapped object:
         QTextDocument* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QTextDocument* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -2605,7 +2514,8 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -2617,9 +2527,10 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -2641,9 +2552,10 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
         
 
         private:
-        // wrapped object:
-        QTextDocument* wrapped;
 
+        
+          // wrapped object:
+          QTextDocument* wrapped;
         
 
         bool wrappedCreated;

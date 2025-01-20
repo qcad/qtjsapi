@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QMargins_Wrapper::QMargins_Wrapper(RJSApi& h, QMargins* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QMargins_Wrapper::QMargins_Wrapper(RJSApi& h, QMargins* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QMargins_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QMargins_Wrapper"));
               //setObjectName("QMargins_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QMargins";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -212,15 +222,15 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMargins(
-                a1_cpp
+              wrapped = new QMargins(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -239,11 +249,11 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMargins(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QMargins(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -262,11 +272,11 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMargins(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QMargins(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -285,11 +295,11 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMargins(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QMargins(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -309,14 +319,18 @@ int a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QMargins";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -944,11 +958,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QMarginsF_Wrapper::QMarginsF_Wrapper(RJSApi& h, QMarginsF* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QMarginsF_Wrapper::QMarginsF_Wrapper(RJSApi& h, QMarginsF* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QMarginsF_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QMarginsF_Wrapper"));
               //setObjectName("QMarginsF_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -970,8 +992,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QMarginsF";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1080,15 +1104,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMarginsF(
-                a1_cpp
+              wrapped = new QMarginsF(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1121,12 +1145,12 @@ QMargins a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMarginsF(
-                a1_cpp
+              wrapped = new QMarginsF(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1145,11 +1169,11 @@ QMargins a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMarginsF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QMarginsF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1168,11 +1192,11 @@ QMargins a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMarginsF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QMarginsF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1191,11 +1215,11 @@ QMargins a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QMarginsF(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QMarginsF(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1215,14 +1239,18 @@ QMargins a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QMarginsF";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

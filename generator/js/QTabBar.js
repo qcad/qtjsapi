@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTabBar);
+              
+                  copyProperties(this, wrapper, QTabBar);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTabBar);
+            copyProperties(this, wrapper, QTabBar);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["currentChanged(int)"] = Object.getPrototypeOf(this).currentChanged;
@@ -99,8 +100,12 @@
   
     this["tabBarDoubleClicked(int)"] = Object.getPrototypeOf(this).tabBarDoubleClicked;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QTabBar.prototype = new QTabBar_BaseJs(engine);
@@ -168,119 +173,6 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
       // static functions:
       
 
-        // static function 
-        QTabBar.tr = function() 
-          
-        {
-          //print("JS: QTabBar.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QTabBar_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QTabBar);
-  }
-
-  
-  else {
-    
-        print("QTabBar.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTabBar.setTabOrder = function() 
-          
-        {
-          //print("JS: QTabBar.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QTabBar_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QTabBar);
-  }
-
-  
-  else {
-    
-        print("QTabBar.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTabBar.mouseGrabber = function() 
-          
-        {
-          //print("JS: QTabBar.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTabBar_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTabBar);
-  }
-
-  
-  else {
-    
-        print("QTabBar.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QTabBar.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QTabBar.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTabBar_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QTabBar);
-  }
-
-  
-  else {
-    
-        print("QTabBar.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -296,4 +188,5 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
       //QTabBar.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

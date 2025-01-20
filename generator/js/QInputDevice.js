@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QInputDevice);
+              
+                  copyProperties(this, wrapper, QInputDevice);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QInputDevice);
+            copyProperties(this, wrapper, QInputDevice);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,14 +85,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["availableVirtualGeometryChanged(QRect)"] = Object.getPrototypeOf(this).availableVirtualGeometryChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QInputDevice.prototype = new QInputDevice_BaseJs(engine);
@@ -136,35 +141,6 @@
       
 
         // static function 
-        QInputDevice.tr = function() 
-          
-        {
-          //print("JS: QInputDevice.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QInputDevice_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QInputDevice);
-  }
-
-  
-  else {
-    
-        print("QInputDevice.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         QInputDevice.seatNames = function() 
           
         {
@@ -207,4 +183,5 @@
       //QInputDevice.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

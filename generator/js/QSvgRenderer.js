@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSvgRenderer);
+              
+                  copyProperties(this, wrapper, QSvgRenderer);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSvgRenderer);
+            copyProperties(this, wrapper, QSvgRenderer);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSvgRenderer);
+            copyProperties(this, wrapper, QSvgRenderer);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -105,8 +107,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSvgRenderer);
+            copyProperties(this, wrapper, QSvgRenderer);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -132,8 +134,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSvgRenderer);
+            copyProperties(this, wrapper, QSvgRenderer);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -164,12 +166,15 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
+            }
+          
         }
+
+        
+
       }
 
       //QSvgRenderer.prototype = new QSvgRenderer_BaseJs(engine);
@@ -214,35 +219,6 @@
       // static functions:
       
 
-        // static function 
-        QSvgRenderer.tr = function() 
-          
-        {
-          //print("JS: QSvgRenderer.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QSvgRenderer_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QSvgRenderer);
-  }
-
-  
-  else {
-    
-        print("QSvgRenderer.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -258,4 +234,5 @@
       //QSvgRenderer.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

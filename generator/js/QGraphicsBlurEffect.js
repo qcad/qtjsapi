@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QGraphicsBlurEffect);
+              
+                  copyProperties(this, wrapper, QGraphicsBlurEffect);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QGraphicsBlurEffect);
+            copyProperties(this, wrapper, QGraphicsBlurEffect);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QGraphicsBlurEffect.prototype = new QGraphicsBlurEffect_BaseJs(engine);
@@ -153,35 +153,6 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
       // static functions:
       
 
-        // static function 
-        QGraphicsBlurEffect.tr = function() 
-          
-        {
-          //print("JS: QGraphicsBlurEffect.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QGraphicsBlurEffect_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QGraphicsBlurEffect);
-  }
-
-  
-  else {
-    
-        print("QGraphicsBlurEffect.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -197,4 +168,5 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
       //QGraphicsBlurEffect.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

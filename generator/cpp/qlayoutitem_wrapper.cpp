@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QLayoutItem_Wrapper::QLayoutItem_Wrapper(RJSApi& h, QLayoutItem* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QLayoutItem_Wrapper::QLayoutItem_Wrapper(RJSApi& h, QLayoutItem* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QLayoutItem_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QLayoutItem_Wrapper"));
               //setObjectName("QLayoutItem_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1223,11 +1231,19 @@ Qt::Alignment a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QSpacerItem_Wrapper::QSpacerItem_Wrapper(RJSApi& h, QSpacerItem* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QSpacerItem_Wrapper::QSpacerItem_Wrapper(RJSApi& h, QSpacerItem* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QSpacerItem_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QSpacerItem_Wrapper"));
               //setObjectName("QSpacerItem_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1374,15 +1390,15 @@ QSizePolicy::Policy a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QSpacerItem(
-                a1_cpp
+              wrapped = new QSpacerItem(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1402,14 +1418,18 @@ QSizePolicy::Policy a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QSpacerItem";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -2672,11 +2692,19 @@ QRect a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QWidgetItem_Wrapper::QWidgetItem_Wrapper(RJSApi& h, QWidgetItem* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QWidgetItem_Wrapper::QWidgetItem_Wrapper(RJSApi& h, QWidgetItem* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QWidgetItem_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QWidgetItem_Wrapper"));
               //setObjectName("QWidgetItem_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2698,8 +2726,10 @@ QRect a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QWidgetItem";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -2780,12 +2810,12 @@ QWidgetItem_Wrapper::QWidgetItem_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QWidgetItem(
-                a1_cpp
+              wrapped = new QWidgetItem(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2802,14 +2832,18 @@ QWidgetItem_Wrapper::QWidgetItem_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QWidgetItem";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

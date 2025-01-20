@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QRadioButton);
+              
+                  copyProperties(this, wrapper, QRadioButton);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRadioButton);
+            copyProperties(this, wrapper, QRadioButton);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QRadioButton);
+            copyProperties(this, wrapper, QRadioButton);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,18 +112,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["clicked(bool)"] = Object.getPrototypeOf(this).clicked;
   
     this["toggled(bool)"] = Object.getPrototypeOf(this).toggled;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QRadioButton.prototype = new QRadioButton_BaseJs(engine);
@@ -174,119 +179,6 @@
       // static functions:
       
 
-        // static function 
-        QRadioButton.tr = function() 
-          
-        {
-          //print("JS: QRadioButton.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QRadioButton_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QRadioButton);
-  }
-
-  
-  else {
-    
-        print("QRadioButton.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QRadioButton.setTabOrder = function() 
-          
-        {
-          //print("JS: QRadioButton.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QRadioButton_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QRadioButton);
-  }
-
-  
-  else {
-    
-        print("QRadioButton.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QRadioButton.mouseGrabber = function() 
-          
-        {
-          //print("JS: QRadioButton.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QRadioButton_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QRadioButton);
-  }
-
-  
-  else {
-    
-        print("QRadioButton.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QRadioButton.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QRadioButton.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QRadioButton_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QRadioButton);
-  }
-
-  
-  else {
-    
-        print("QRadioButton.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -302,4 +194,5 @@
       //QRadioButton.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

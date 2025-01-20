@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QProcess);
+              
+                  copyProperties(this, wrapper, QProcess);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QProcess);
+            copyProperties(this, wrapper, QProcess);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["channelReadyRead(int)"] = Object.getPrototypeOf(this).channelReadyRead;
   
     this["bytesWritten(qint64)"] = Object.getPrototypeOf(this).bytesWritten;
@@ -97,8 +98,12 @@
   
     this["errorOccurred(QProcess::ProcessError)"] = Object.getPrototypeOf(this).errorOccurred;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QProcess.prototype = new QProcess_BaseJs(engine);
@@ -180,35 +185,6 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
       
 
         // static function 
-        QProcess.tr = function() 
-          
-        {
-          //print("JS: QProcess.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QProcess_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QProcess);
-  }
-
-  
-  else {
-    
-        print("QProcess.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         QProcess.systemEnvironment = function() 
           
         {
@@ -279,4 +255,5 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
       //QProcess.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -186,11 +186,19 @@ QDomImplementation::InvalidDataPolicy a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomImplementation_Wrapper::QDomImplementation_Wrapper(RJSApi& h, QDomImplementation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomImplementation_Wrapper::QDomImplementation_Wrapper(RJSApi& h, QDomImplementation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomImplementation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomImplementation_Wrapper"));
               //setObjectName("QDomImplementation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -212,8 +220,10 @@ QDomImplementation::InvalidDataPolicy a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomImplementation";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -289,12 +299,12 @@ QDomImplementation a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomImplementation(
-                a1_cpp
+              wrapped = new QDomImplementation(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -313,11 +323,11 @@ QDomImplementation a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomImplementation(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomImplementation(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -334,14 +344,18 @@ QDomImplementation a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomImplementation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -986,11 +1000,19 @@ QDomDocumentType a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomNode_Wrapper::QDomNode_Wrapper(RJSApi& h, QDomNode* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomNode_Wrapper::QDomNode_Wrapper(RJSApi& h, QDomNode* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomNode_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomNode_Wrapper"));
               //setObjectName("QDomNode_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1012,8 +1034,10 @@ QDomDocumentType a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomNode";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1089,12 +1113,12 @@ QDomNode a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomNode(
-                a1_cpp
+              wrapped = new QDomNode(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1113,11 +1137,11 @@ QDomNode a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomNode(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomNode(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1134,14 +1158,18 @@ QDomNode a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomNode";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -5286,11 +5314,19 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomNodeList_Wrapper::QDomNodeList_Wrapper(RJSApi& h, QDomNodeList* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomNodeList_Wrapper::QDomNodeList_Wrapper(RJSApi& h, QDomNodeList* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomNodeList_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomNodeList_Wrapper"));
               //setObjectName("QDomNodeList_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -5312,8 +5348,10 @@ QString a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomNodeList";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -5389,12 +5427,12 @@ QDomNodeList a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomNodeList(
-                a1_cpp
+              wrapped = new QDomNodeList(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5413,11 +5451,11 @@ QDomNodeList a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomNodeList(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomNodeList(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5434,14 +5472,18 @@ QDomNodeList a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomNodeList";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -6129,11 +6171,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomDocumentType_Wrapper::QDomDocumentType_Wrapper(RJSApi& h, QDomDocumentType* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomDocumentType_Wrapper::QDomDocumentType_Wrapper(RJSApi& h, QDomDocumentType* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomDocumentType_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomDocumentType_Wrapper"));
               //setObjectName("QDomDocumentType_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -6155,8 +6205,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomDocumentType";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -6232,12 +6284,12 @@ QDomDocumentType a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomDocumentType(
-                a1_cpp
+              wrapped = new QDomDocumentType(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -6256,11 +6308,11 @@ QDomDocumentType a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomDocumentType(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomDocumentType(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -6277,14 +6329,18 @@ QDomDocumentType a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomDocumentType";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -10771,11 +10827,19 @@ QDomDocumentType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomDocument_Wrapper::QDomDocument_Wrapper(RJSApi& h, QDomDocument* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomDocument_Wrapper::QDomDocument_Wrapper(RJSApi& h, QDomDocument* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomDocument_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomDocument_Wrapper"));
               //setObjectName("QDomDocument_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -10797,8 +10861,10 @@ QDomDocumentType a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomDocument";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -10874,12 +10940,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomDocument(
-                a1_cpp
+              wrapped = new QDomDocument(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -10912,12 +10978,12 @@ QDomDocumentType a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomDocument(
-                a1_cpp
+              wrapped = new QDomDocument(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -10950,12 +11016,12 @@ QDomDocument a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomDocument(
-                a1_cpp
+              wrapped = new QDomDocument(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -10974,11 +11040,11 @@ QDomDocument a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomDocument(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomDocument(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -10995,14 +11061,18 @@ QDomDocument a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomDocument";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -16761,11 +16831,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomNamedNodeMap_Wrapper::QDomNamedNodeMap_Wrapper(RJSApi& h, QDomNamedNodeMap* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomNamedNodeMap_Wrapper::QDomNamedNodeMap_Wrapper(RJSApi& h, QDomNamedNodeMap* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomNamedNodeMap_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomNamedNodeMap_Wrapper"));
               //setObjectName("QDomNamedNodeMap_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -16787,8 +16865,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomNamedNodeMap";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -16864,12 +16944,12 @@ QDomNamedNodeMap a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomNamedNodeMap(
-                a1_cpp
+              wrapped = new QDomNamedNodeMap(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -16888,11 +16968,11 @@ QDomNamedNodeMap a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomNamedNodeMap(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomNamedNodeMap(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -16909,14 +16989,18 @@ QDomNamedNodeMap a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomNamedNodeMap";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -18064,11 +18148,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomDocumentFragment_Wrapper::QDomDocumentFragment_Wrapper(RJSApi& h, QDomDocumentFragment* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomDocumentFragment_Wrapper::QDomDocumentFragment_Wrapper(RJSApi& h, QDomDocumentFragment* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomDocumentFragment_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomDocumentFragment_Wrapper"));
               //setObjectName("QDomDocumentFragment_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -18090,8 +18182,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomDocumentFragment";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -18167,12 +18261,12 @@ QDomDocumentFragment a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomDocumentFragment(
-                a1_cpp
+              wrapped = new QDomDocumentFragment(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -18191,11 +18285,11 @@ QDomDocumentFragment a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomDocumentFragment(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomDocumentFragment(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -18212,14 +18306,18 @@ QDomDocumentFragment a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomDocumentFragment";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -22364,11 +22462,19 @@ QDomDocumentFragment a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomCharacterData_Wrapper::QDomCharacterData_Wrapper(RJSApi& h, QDomCharacterData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomCharacterData_Wrapper::QDomCharacterData_Wrapper(RJSApi& h, QDomCharacterData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomCharacterData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomCharacterData_Wrapper"));
               //setObjectName("QDomCharacterData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -22390,8 +22496,10 @@ QDomDocumentFragment a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomCharacterData";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -22467,12 +22575,12 @@ QDomCharacterData a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomCharacterData(
-                a1_cpp
+              wrapped = new QDomCharacterData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -22491,11 +22599,11 @@ QDomCharacterData a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomCharacterData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomCharacterData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -22512,14 +22620,18 @@ QDomCharacterData a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomCharacterData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -27230,11 +27342,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomAttr_Wrapper::QDomAttr_Wrapper(RJSApi& h, QDomAttr* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomAttr_Wrapper::QDomAttr_Wrapper(RJSApi& h, QDomAttr* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomAttr_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomAttr_Wrapper"));
               //setObjectName("QDomAttr_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -27256,8 +27376,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomAttr";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -27333,12 +27455,12 @@ QDomAttr a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomAttr(
-                a1_cpp
+              wrapped = new QDomAttr(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -27357,11 +27479,11 @@ QDomAttr a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomAttr(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomAttr(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -27378,14 +27500,18 @@ QDomAttr a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomAttr";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -31822,11 +31948,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomElement_Wrapper::QDomElement_Wrapper(RJSApi& h, QDomElement* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomElement_Wrapper::QDomElement_Wrapper(RJSApi& h, QDomElement* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomElement_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomElement_Wrapper"));
               //setObjectName("QDomElement_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -31848,8 +31982,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomElement";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -31925,12 +32061,12 @@ QDomElement a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomElement(
-                a1_cpp
+              wrapped = new QDomElement(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -31949,11 +32085,11 @@ QDomElement a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomElement(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomElement(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -31970,14 +32106,18 @@ QDomElement a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomElement";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -38107,11 +38247,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomText_Wrapper::QDomText_Wrapper(RJSApi& h, QDomText* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomText_Wrapper::QDomText_Wrapper(RJSApi& h, QDomText* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomText_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomText_Wrapper"));
               //setObjectName("QDomText_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -38133,8 +38281,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomText";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -38210,12 +38360,12 @@ QDomText a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomText(
-                a1_cpp
+              wrapped = new QDomText(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -38234,11 +38384,11 @@ QDomText a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomText(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomText(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -38255,14 +38405,18 @@ QDomText a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomText";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -43045,11 +43199,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomComment_Wrapper::QDomComment_Wrapper(RJSApi& h, QDomComment* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomComment_Wrapper::QDomComment_Wrapper(RJSApi& h, QDomComment* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomComment_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomComment_Wrapper"));
               //setObjectName("QDomComment_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -43071,8 +43233,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomComment";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -43148,12 +43312,12 @@ QDomComment a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomComment(
-                a1_cpp
+              wrapped = new QDomComment(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -43172,11 +43336,11 @@ QDomComment a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomComment(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomComment(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -43193,14 +43357,18 @@ QDomComment a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomComment";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -43987,11 +44155,19 @@ QDomComment a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomCDATASection_Wrapper::QDomCDATASection_Wrapper(RJSApi& h, QDomCDATASection* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomCDATASection_Wrapper::QDomCDATASection_Wrapper(RJSApi& h, QDomCDATASection* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomCDATASection_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomCDATASection_Wrapper"));
               //setObjectName("QDomCDATASection_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -44013,8 +44189,10 @@ QDomComment a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomCDATASection";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -44090,12 +44268,12 @@ QDomCDATASection a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomCDATASection(
-                a1_cpp
+              wrapped = new QDomCDATASection(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -44114,11 +44292,11 @@ QDomCDATASection a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomCDATASection(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomCDATASection(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -44135,14 +44313,18 @@ QDomCDATASection a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomCDATASection";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -48925,11 +49107,19 @@ QDomCDATASection a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomNotation_Wrapper::QDomNotation_Wrapper(RJSApi& h, QDomNotation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomNotation_Wrapper::QDomNotation_Wrapper(RJSApi& h, QDomNotation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomNotation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomNotation_Wrapper"));
               //setObjectName("QDomNotation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -48951,8 +49141,10 @@ QDomCDATASection a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomNotation";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -49028,12 +49220,12 @@ QDomNotation a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomNotation(
-                a1_cpp
+              wrapped = new QDomNotation(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -49052,11 +49244,11 @@ QDomNotation a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomNotation(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomNotation(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -49073,14 +49265,18 @@ QDomNotation a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomNotation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -53339,11 +53535,19 @@ QDomNotation a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomEntity_Wrapper::QDomEntity_Wrapper(RJSApi& h, QDomEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomEntity_Wrapper::QDomEntity_Wrapper(RJSApi& h, QDomEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomEntity_Wrapper"));
               //setObjectName("QDomEntity_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -53365,8 +53569,10 @@ QDomNotation a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomEntity";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -53442,12 +53648,12 @@ QDomEntity a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomEntity(
-                a1_cpp
+              wrapped = new QDomEntity(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -53466,11 +53672,11 @@ QDomEntity a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomEntity(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomEntity(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -53487,14 +53693,18 @@ QDomEntity a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomEntity";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -57810,11 +58020,19 @@ QDomEntity a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomEntityReference_Wrapper::QDomEntityReference_Wrapper(RJSApi& h, QDomEntityReference* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomEntityReference_Wrapper::QDomEntityReference_Wrapper(RJSApi& h, QDomEntityReference* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomEntityReference_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomEntityReference_Wrapper"));
               //setObjectName("QDomEntityReference_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -57836,8 +58054,10 @@ QDomEntity a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomEntityReference";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -57913,12 +58133,12 @@ QDomEntityReference a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomEntityReference(
-                a1_cpp
+              wrapped = new QDomEntityReference(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -57937,11 +58157,11 @@ QDomEntityReference a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomEntityReference(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomEntityReference(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -57958,14 +58178,18 @@ QDomEntityReference a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomEntityReference";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -62110,11 +62334,19 @@ QDomEntityReference a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QDomProcessingInstruction_Wrapper::QDomProcessingInstruction_Wrapper(RJSApi& h, QDomProcessingInstruction* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QDomProcessingInstruction_Wrapper::QDomProcessingInstruction_Wrapper(RJSApi& h, QDomProcessingInstruction* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QDomProcessingInstruction_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QDomProcessingInstruction_Wrapper"));
               //setObjectName("QDomProcessingInstruction_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -62136,8 +62368,10 @@ QDomEntityReference a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QDomProcessingInstruction";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -62213,12 +62447,12 @@ QDomProcessingInstruction a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomProcessingInstruction(
-                a1_cpp
+              wrapped = new QDomProcessingInstruction(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -62237,11 +62471,11 @@ QDomProcessingInstruction a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QDomProcessingInstruction(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QDomProcessingInstruction(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -62258,14 +62492,18 @@ QDomProcessingInstruction a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QDomProcessingInstruction";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

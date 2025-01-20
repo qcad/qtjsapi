@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QPixmap
-    // Function: devicePixelRatioFScale
-    // Source: QPaintDevice
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QPixmap_WrapperSingleton::devicePixelRatioFScale
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            qreal res = 
-                
-                // call static member function:
-                QPaintDevice::devicePixelRatioFScale(
-              
-            );
-          
-            // return type: qreal
-
-            return RJSHelper::cpp2js_qreal(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for devicePixelRatioFScale";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 #ifndef QT_NO_IMAGEFORMAT_XPM
 
 #endif
@@ -505,11 +459,19 @@ Qt::ImageConversionFlags a2_cpp;
 
     
       // special constructor to wrap existing object:
-      QPixmap_Wrapper::QPixmap_Wrapper(RJSApi& h, QPixmap* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPixmap_Wrapper::QPixmap_Wrapper(RJSApi& h, QPixmap* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPixmap_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPixmap_Wrapper"));
               //setObjectName("QPixmap_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -531,8 +493,10 @@ Qt::ImageConversionFlags a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPixmap";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -641,14 +605,14 @@ Qt::ImageConversionFlags a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPixmap(
-                a1_cpp
+              wrapped = new QPixmap(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -690,13 +654,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPixmap(
-                a1_cpp
+              wrapped = new QPixmap(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,12 +693,12 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPixmap(
-                a1_cpp
+              wrapped = new QPixmap(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -770,12 +734,12 @@ QSize a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPixmap(
-                a1_cpp
+              wrapped = new QPixmap(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -808,12 +772,12 @@ QPixmap a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPixmap(
-                a1_cpp
+              wrapped = new QPixmap(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -846,12 +810,12 @@ QPixmap a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPixmap(
-                a1_cpp
+              wrapped = new QPixmap(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -870,11 +834,11 @@ QPixmap a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPixmap(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPixmap(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -893,14 +857,18 @@ QPixmap a1_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPixmap";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

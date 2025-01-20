@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QTextLength_Wrapper::QTextLength_Wrapper(RJSApi& h, QTextLength* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextLength_Wrapper::QTextLength_Wrapper(RJSApi& h, QTextLength* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextLength_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextLength_Wrapper"));
               //setObjectName("QTextLength_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextLength";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -190,13 +200,13 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextLength(
-                a1_cpp
+              wrapped = new QTextLength(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -215,11 +225,11 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextLength(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextLength(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -237,14 +247,18 @@ qreal a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QTextLength";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -519,11 +533,19 @@ qreal a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QTextFormat_Wrapper::QTextFormat_Wrapper(RJSApi& h, QTextFormat* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextFormat_Wrapper::QTextFormat_Wrapper(RJSApi& h, QTextFormat* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextFormat_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextFormat_Wrapper"));
               //setObjectName("QTextFormat_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -545,8 +567,10 @@ qreal a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextFormat";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -622,12 +646,12 @@ int a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextFormat(
-                a1_cpp
+              wrapped = new QTextFormat(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -660,12 +684,12 @@ QTextFormat a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextFormat(
-                a1_cpp
+              wrapped = new QTextFormat(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -684,11 +708,11 @@ QTextFormat a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QTextFormat(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextFormat(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -705,14 +729,18 @@ QTextFormat a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QTextFormat";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -3657,11 +3685,19 @@ QBrush a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QTextCharFormat_Wrapper::QTextCharFormat_Wrapper(RJSApi& h, QTextCharFormat* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextCharFormat_Wrapper::QTextCharFormat_Wrapper(RJSApi& h, QTextCharFormat* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextCharFormat_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextCharFormat_Wrapper"));
               //setObjectName("QTextCharFormat_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -3683,8 +3719,10 @@ QBrush a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextCharFormat";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -3744,11 +3782,11 @@ QTextCharFormat_Wrapper::QTextCharFormat_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QTextCharFormat(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextCharFormat(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3761,7 +3799,9 @@ QTextCharFormat_Wrapper::QTextCharFormat_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QTextCharFormat";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -10618,11 +10658,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QTextBlockFormat_Wrapper::QTextBlockFormat_Wrapper(RJSApi& h, QTextBlockFormat* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextBlockFormat_Wrapper::QTextBlockFormat_Wrapper(RJSApi& h, QTextBlockFormat* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextBlockFormat_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextBlockFormat_Wrapper"));
               //setObjectName("QTextBlockFormat_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -10644,8 +10692,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextBlockFormat";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -10705,11 +10755,11 @@ QTextBlockFormat_Wrapper::QTextBlockFormat_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QTextBlockFormat(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextBlockFormat(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -10722,7 +10772,9 @@ QTextBlockFormat_Wrapper::QTextBlockFormat_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QTextBlockFormat";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -15130,11 +15182,19 @@ QTextFormat::PageBreakFlags a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QTextListFormat_Wrapper::QTextListFormat_Wrapper(RJSApi& h, QTextListFormat* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextListFormat_Wrapper::QTextListFormat_Wrapper(RJSApi& h, QTextListFormat* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextListFormat_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextListFormat_Wrapper"));
               //setObjectName("QTextListFormat_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -15156,8 +15216,10 @@ QTextFormat::PageBreakFlags a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextListFormat";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -15217,11 +15279,11 @@ QTextListFormat_Wrapper::QTextListFormat_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QTextListFormat(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextListFormat(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -15234,7 +15296,9 @@ QTextListFormat_Wrapper::QTextListFormat_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QTextListFormat";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -18663,11 +18727,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QTextImageFormat_Wrapper::QTextImageFormat_Wrapper(RJSApi& h, QTextImageFormat* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextImageFormat_Wrapper::QTextImageFormat_Wrapper(RJSApi& h, QTextImageFormat* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextImageFormat_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextImageFormat_Wrapper"));
               //setObjectName("QTextImageFormat_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -18689,8 +18761,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextImageFormat";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -18750,11 +18824,11 @@ QTextImageFormat_Wrapper::QTextImageFormat_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QTextImageFormat(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextImageFormat(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -18767,7 +18841,9 @@ QTextImageFormat_Wrapper::QTextImageFormat_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QTextImageFormat";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -23315,11 +23391,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QTextFrameFormat_Wrapper::QTextFrameFormat_Wrapper(RJSApi& h, QTextFrameFormat* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextFrameFormat_Wrapper::QTextFrameFormat_Wrapper(RJSApi& h, QTextFrameFormat* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextFrameFormat_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextFrameFormat_Wrapper"));
               //setObjectName("QTextFrameFormat_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -23341,8 +23425,10 @@ int a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextFrameFormat";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -23402,11 +23488,11 @@ QTextFrameFormat_Wrapper::QTextFrameFormat_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QTextFrameFormat(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextFrameFormat(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -23419,7 +23505,9 @@ QTextFrameFormat_Wrapper::QTextFrameFormat_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QTextFrameFormat";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -28019,11 +28107,19 @@ QTextFormat::PageBreakFlags a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QTextTableFormat_Wrapper::QTextTableFormat_Wrapper(RJSApi& h, QTextTableFormat* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextTableFormat_Wrapper::QTextTableFormat_Wrapper(RJSApi& h, QTextTableFormat* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextTableFormat_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextTableFormat_Wrapper"));
               //setObjectName("QTextTableFormat_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -28045,8 +28141,10 @@ QTextFormat::PageBreakFlags a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextTableFormat";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -28106,11 +28204,11 @@ QTextTableFormat_Wrapper::QTextTableFormat_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QTextTableFormat(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextTableFormat(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -28123,7 +28221,9 @@ QTextTableFormat_Wrapper::QTextTableFormat_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QTextTableFormat";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -30816,11 +30916,19 @@ bool a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QTextTableCellFormat_Wrapper::QTextTableCellFormat_Wrapper(RJSApi& h, QTextTableCellFormat* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QTextTableCellFormat_Wrapper::QTextTableCellFormat_Wrapper(RJSApi& h, QTextTableCellFormat* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QTextTableCellFormat_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QTextTableCellFormat_Wrapper"));
               //setObjectName("QTextTableCellFormat_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -30842,8 +30950,10 @@ bool a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QTextTableCellFormat";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -30903,11 +31013,11 @@ QTextTableCellFormat_Wrapper::QTextTableCellFormat_Wrapper
         // construct wrapper:
 
         
-            wrapped = new QTextTableCellFormat(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QTextTableCellFormat(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -30920,7 +31030,9 @@ QTextTableCellFormat_Wrapper::QTextTableCellFormat_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for QTextTableCellFormat";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

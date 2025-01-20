@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QUrlQuery_Wrapper::QUrlQuery_Wrapper(RJSApi& h, QUrlQuery* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QUrlQuery_Wrapper::QUrlQuery_Wrapper(RJSApi& h, QUrlQuery* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QUrlQuery_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QUrlQuery_Wrapper"));
               //setObjectName("QUrlQuery_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QUrlQuery";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -179,12 +189,12 @@ QUrl a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QUrlQuery(
-                a1_cpp
+              wrapped = new QUrlQuery(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -217,12 +227,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QUrlQuery(
-                a1_cpp
+              wrapped = new QUrlQuery(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -255,12 +265,12 @@ QUrlQuery a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QUrlQuery(
-                a1_cpp
+              wrapped = new QUrlQuery(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -279,11 +289,11 @@ QUrlQuery a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QUrlQuery(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QUrlQuery(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -300,14 +310,18 @@ QUrlQuery a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QUrlQuery";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

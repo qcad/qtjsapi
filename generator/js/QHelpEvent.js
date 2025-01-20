@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QHelpEvent);
+              
+                  copyProperties(this, wrapper, QHelpEvent);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QHelpEvent);
+            copyProperties(this, wrapper, QHelpEvent);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QHelpEvent.prototype = new QHelpEvent_BaseJs(engine);
@@ -306,35 +306,6 @@ QHelpEvent.MaxUser = QHelpEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        QHelpEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QHelpEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QHelpEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QHelpEvent);
-  }
-
-  
-  else {
-    
-        print("QHelpEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -350,4 +321,5 @@ QHelpEvent.MaxUser = QHelpEvent_Wrapper.MaxUser;
       //QHelpEvent.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

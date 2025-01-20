@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QLabel);
+              
+                  copyProperties(this, wrapper, QLabel);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QLabel);
+            copyProperties(this, wrapper, QLabel);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QLabel);
+            copyProperties(this, wrapper, QLabel);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,18 +112,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["linkActivated(QString)"] = Object.getPrototypeOf(this).linkActivated;
   
     this["linkHovered(QString)"] = Object.getPrototypeOf(this).linkHovered;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QLabel.prototype = new QLabel_BaseJs(engine);
@@ -192,119 +197,6 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
       // static functions:
       
 
-        // static function 
-        QLabel.tr = function() 
-          
-        {
-          //print("JS: QLabel.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QLabel_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QLabel);
-  }
-
-  
-  else {
-    
-        print("QLabel.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QLabel.setTabOrder = function() 
-          
-        {
-          //print("JS: QLabel.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QLabel_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QLabel);
-  }
-
-  
-  else {
-    
-        print("QLabel.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QLabel.mouseGrabber = function() 
-          
-        {
-          //print("JS: QLabel.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QLabel_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QLabel);
-  }
-
-  
-  else {
-    
-        print("QLabel.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QLabel.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QLabel.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QLabel_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QLabel);
-  }
-
-  
-  else {
-    
-        print("QLabel.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -320,4 +212,5 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
       //QLabel.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

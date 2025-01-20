@@ -322,12 +322,13 @@
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -363,27 +364,30 @@
 
         // get wrapped object:
         QModelIndex* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QModelIndex* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -391,7 +395,8 @@
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -403,9 +408,10 @@
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -420,9 +426,10 @@
         
 
         private:
-        // wrapped object:
-        QModelIndex* wrapped;
 
+        
+          // wrapped object:
+          QModelIndex* wrapped;
         
 
         bool wrappedCreated;
@@ -451,69 +458,6 @@
       
       // wrapped object is QAbstractItemModel_Base class if new object is created: 
       #include "qabstractitemmodel_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QAbstractItemModel_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QAbstractItemModel_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QAbstractItemModel
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QAbstractItemModel_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
     
     // static functions implementation in singleton wrapper:
     
@@ -2067,12 +2011,13 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -2108,27 +2053,30 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
 
         // get wrapped object:
         QAbstractItemModel* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QAbstractItemModel* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -2147,7 +2095,8 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -2159,9 +2108,10 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -2183,9 +2133,10 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
         
 
         private:
-        // wrapped object:
-        QAbstractItemModel* wrapped;
 
+        
+          // wrapped object:
+          QAbstractItemModel* wrapped;
         
 
         bool wrappedCreated;
@@ -2212,69 +2163,6 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
       
         #include <QAbstractTableModel>
       
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QAbstractTableModel_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QAbstractTableModel_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QAbstractTableModel
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QAbstractTableModel_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QAbstractTableModel
@@ -3782,12 +3670,13 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -3823,27 +3712,30 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
 
         // get wrapped object:
         QAbstractTableModel* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QAbstractTableModel* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -3851,7 +3743,8 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -3863,9 +3756,10 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -3880,9 +3774,10 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
         
 
         private:
-        // wrapped object:
-        QAbstractTableModel* wrapped;
 
+        
+          // wrapped object:
+          QAbstractTableModel* wrapped;
         
 
         bool wrappedCreated;
@@ -3911,69 +3806,6 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
       
       // wrapped object is QAbstractListModel_Base class if new object is created: 
       #include "qabstractitemmodel_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QAbstractListModel_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QAbstractListModel_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QAbstractListModel
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QAbstractListModel_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
     
     // static functions implementation in singleton wrapper:
     
@@ -5457,12 +5289,13 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -5498,27 +5331,30 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
 
         // get wrapped object:
         QAbstractListModel* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QAbstractListModel* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -5537,7 +5373,8 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -5549,9 +5386,10 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -5573,9 +5411,10 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
         
 
         private:
-        // wrapped object:
-        QAbstractListModel* wrapped;
 
+        
+          // wrapped object:
+          QAbstractListModel* wrapped;
         
 
         bool wrappedCreated;

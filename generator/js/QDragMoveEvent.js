@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDragMoveEvent);
+              
+                  copyProperties(this, wrapper, QDragMoveEvent);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QDragMoveEvent);
+            copyProperties(this, wrapper, QDragMoveEvent);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QDragMoveEvent.prototype = new QDragMoveEvent_BaseJs(engine);
@@ -311,35 +311,6 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        QDragMoveEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QDragMoveEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QDragMoveEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QDragMoveEvent);
-  }
-
-  
-  else {
-    
-        print("QDragMoveEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -355,4 +326,5 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
       //QDragMoveEvent.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

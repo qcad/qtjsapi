@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QHeaderView);
+              
+                  copyProperties(this, wrapper, QHeaderView);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QHeaderView);
+            copyProperties(this, wrapper, QHeaderView);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
@@ -111,8 +112,12 @@
   
     this["sortIndicatorClearableChanged(bool)"] = Object.getPrototypeOf(this).sortIndicatorClearableChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QHeaderView.prototype = new QHeaderView_BaseJs(engine);
@@ -245,147 +250,6 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
       // static functions:
       
 
-        // static function 
-        QHeaderView.tr = function() 
-          
-        {
-          //print("JS: QHeaderView.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QHeaderView_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QHeaderView);
-  }
-
-  
-  else {
-    
-        print("QHeaderView.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QHeaderView.devicePixelRatioFScale = function() 
-          
-        {
-          //print("JS: QHeaderView.devicePixelRatioFScale");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QHeaderView_WrapperSingletonInstance.devicePixelRatioFScale(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QHeaderView);
-  }
-
-  
-  else {
-    
-        print("QHeaderView.devicePixelRatioFScale(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QHeaderView.setTabOrder = function() 
-          
-        {
-          //print("JS: QHeaderView.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QHeaderView_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QHeaderView);
-  }
-
-  
-  else {
-    
-        print("QHeaderView.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QHeaderView.mouseGrabber = function() 
-          
-        {
-          //print("JS: QHeaderView.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QHeaderView_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QHeaderView);
-  }
-
-  
-  else {
-    
-        print("QHeaderView.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QHeaderView.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QHeaderView.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QHeaderView_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QHeaderView);
-  }
-
-  
-  else {
-    
-        print("QHeaderView.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -401,4 +265,5 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
       //QHeaderView.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

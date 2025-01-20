@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPaintDevice);
+              
+                  copyProperties(this, wrapper, QPaintDevice);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QPaintDevice.prototype = new QPaintDevice_BaseJs(engine);
@@ -142,4 +142,5 @@
       //QPaintDevice.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

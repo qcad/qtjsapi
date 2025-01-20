@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextFrameFormat);
+              
+                  copyProperties(this, wrapper, QTextFrameFormat);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QTextFrameFormat);
+            copyProperties(this, wrapper, QTextFrameFormat);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QTextFrameFormat.prototype = new QTextFrameFormat_BaseJs(engine);
@@ -297,4 +297,5 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
       //QTextFrameFormat.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

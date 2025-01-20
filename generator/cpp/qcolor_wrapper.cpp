@@ -1023,11 +1023,19 @@ float a4_cpp;
 
     
       // special constructor to wrap existing object:
-      QColor_Wrapper::QColor_Wrapper(RJSApi& h, QColor* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QColor_Wrapper::QColor_Wrapper(RJSApi& h, QColor* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QColor_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QColor_Wrapper"));
               //setObjectName("QColor_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1049,8 +1057,10 @@ float a4_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QColor";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1167,15 +1177,15 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QColor(
-                a1_cpp
+              wrapped = new QColor(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1208,12 +1218,12 @@ Qt::GlobalColor a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QColor(
-                a1_cpp
+              wrapped = new QColor(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1246,12 +1256,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QColor(
-                a1_cpp
+              wrapped = new QColor(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1270,11 +1280,11 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QColor(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QColor(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1294,14 +1304,18 @@ QString a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QColor";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

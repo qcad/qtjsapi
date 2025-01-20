@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QQuickWidget);
+              
+                  copyProperties(this, wrapper, QQuickWidget);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QQuickWidget);
+            copyProperties(this, wrapper, QQuickWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QQuickWidget);
+            copyProperties(this, wrapper, QQuickWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -109,16 +111,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["statusChanged(QQuickWidget::Status)"] = Object.getPrototypeOf(this).statusChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QQuickWidget.prototype = new QQuickWidget_BaseJs(engine);
@@ -173,12 +178,12 @@ QQuickWidget.Error = QQuickWidget_Wrapper.Error;
 
       // functions:
       
-        // function 
-        QQuickWidget.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QQuickWidget.prototype.actionEvent");
-          
+      // function 
+      QQuickWidget.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: QQuickWidget.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -186,7 +191,8 @@ QQuickWidget.Error = QQuickWidget_Wrapper.Error;
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -202,123 +208,10 @@ QQuickWidget.Error = QQuickWidget_Wrapper.Error;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
-      
-
-        // static function 
-        QQuickWidget.tr = function() 
-          
-        {
-          //print("JS: QQuickWidget.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QQuickWidget_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QQuickWidget);
-  }
-
-  
-  else {
-    
-        print("QQuickWidget.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QQuickWidget.setTabOrder = function() 
-          
-        {
-          //print("JS: QQuickWidget.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QQuickWidget_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QQuickWidget);
-  }
-
-  
-  else {
-    
-        print("QQuickWidget.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QQuickWidget.mouseGrabber = function() 
-          
-        {
-          //print("JS: QQuickWidget.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QQuickWidget_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QQuickWidget);
-  }
-
-  
-  else {
-    
-        print("QQuickWidget.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QQuickWidget.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QQuickWidget.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QQuickWidget_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QQuickWidget);
-  }
-
-  
-  else {
-    
-        print("QQuickWidget.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // constants:
@@ -336,4 +229,5 @@ QQuickWidget.Error = QQuickWidget_Wrapper.Error;
       //QQuickWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

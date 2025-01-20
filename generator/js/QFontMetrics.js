@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFontMetrics);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFontMetrics);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFontMetrics);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFontMetrics);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -134,12 +136,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QFontMetrics.prototype = new QFontMetrics_BaseJs(engine);
@@ -176,6 +176,206 @@
 
       // functions:
       
+        // function 
+        QFontMetrics.prototype.ascent = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.ascent");
+          return this.__PROXY__.ascent(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.capHeight = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.capHeight");
+          return this.__PROXY__.capHeight(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.descent = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.descent");
+          return this.__PROXY__.descent(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.height = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.height");
+          return this.__PROXY__.height(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.leading = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.leading");
+          return this.__PROXY__.leading(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.lineSpacing = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.lineSpacing");
+          return this.__PROXY__.lineSpacing(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.minLeftBearing = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.minLeftBearing");
+          return this.__PROXY__.minLeftBearing(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.minRightBearing = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.minRightBearing");
+          return this.__PROXY__.minRightBearing(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.maxWidth = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.maxWidth");
+          return this.__PROXY__.maxWidth(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.xHeight = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.xHeight");
+          return this.__PROXY__.xHeight(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.averageCharWidth = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.averageCharWidth");
+          return this.__PROXY__.averageCharWidth(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.inFont = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.inFont");
+          return this.__PROXY__.inFont(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.inFontUcs4 = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.inFontUcs4");
+          return this.__PROXY__.inFontUcs4(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.leftBearing = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.leftBearing");
+          return this.__PROXY__.leftBearing(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.rightBearing = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.rightBearing");
+          return this.__PROXY__.rightBearing(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.horizontalAdvance = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.horizontalAdvance");
+          return this.__PROXY__.horizontalAdvance(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.boundingRect = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.boundingRect");
+          return this.__PROXY__.boundingRect(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.size = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.size");
+          return this.__PROXY__.size(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.tightBoundingRect = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.tightBoundingRect");
+          return this.__PROXY__.tightBoundingRect(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.elidedText = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.elidedText");
+          return this.__PROXY__.elidedText(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.underlinePos = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.underlinePos");
+          return this.__PROXY__.underlinePos(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.overlinePos = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.overlinePos");
+          return this.__PROXY__.overlinePos(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.strikeOutPos = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.strikeOutPos");
+          return this.__PROXY__.strikeOutPos(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.lineWidth = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.lineWidth");
+          return this.__PROXY__.lineWidth(...args);
+        };
+    
+        // function 
+        QFontMetrics.prototype.fontDpi = function(...args) 
+          
+        {
+          //print("JS: QFontMetrics.prototype.fontDpi");
+          return this.__PROXY__.fontDpi(...args);
+        };
+    
 
       // static functions:
       
@@ -195,4 +395,8 @@
       //QFontMetrics.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QFontMetrics.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

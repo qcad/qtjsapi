@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QPalette_Wrapper::QPalette_Wrapper(RJSApi& h, QPalette* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QPalette_Wrapper::QPalette_Wrapper(RJSApi& h, QPalette* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QPalette_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QPalette_Wrapper"));
               //setObjectName("QPalette_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QPalette";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -267,8 +277,8 @@ QBrush a9_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPalette(
-                a1_cpp
+              wrapped = new QPalette(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -278,9 +288,9 @@ QBrush a9_cpp;
     , a8_cpp
     , a9_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -367,8 +377,8 @@ QColor a7_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPalette(
-                a1_cpp
+              wrapped = new QPalette(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -376,9 +386,9 @@ QColor a7_cpp;
     , a6_cpp
     , a7_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -420,13 +430,13 @@ QColor a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPalette(
-                a1_cpp
+              wrapped = new QPalette(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -459,12 +469,12 @@ QColor a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPalette(
-                a1_cpp
+              wrapped = new QPalette(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -497,12 +507,12 @@ Qt::GlobalColor a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPalette(
-                a1_cpp
+              wrapped = new QPalette(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -535,12 +545,12 @@ QPalette a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPalette(
-                a1_cpp
+              wrapped = new QPalette(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -573,12 +583,12 @@ QPalette a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPalette(
-                a1_cpp
+              wrapped = new QPalette(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -597,11 +607,11 @@ QPalette a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QPalette(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QPalette(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -626,14 +636,18 @@ QPalette a1_cpp;
    && a9.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QPalette";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPrinter);
+              
+                  copyProperties(this, wrapper, QPrinter);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPrinter);
+            copyProperties(this, wrapper, QPrinter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QPrinter);
+            copyProperties(this, wrapper, QPrinter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,12 +112,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QPrinter.prototype = new QPrinter_BaseJs(engine);
@@ -232,34 +232,6 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
       // static functions:
       
 
-        // static function 
-        QPrinter.devicePixelRatioFScale = function() 
-          
-        {
-          //print("JS: QPrinter.devicePixelRatioFScale");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QPrinter_WrapperSingletonInstance.devicePixelRatioFScale(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QPrinter);
-  }
-
-  
-  else {
-    
-        print("QPrinter.devicePixelRatioFScale(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -275,4 +247,5 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
       //QPrinter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

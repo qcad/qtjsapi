@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFont);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFont);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFont);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -104,8 +106,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFont);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -130,8 +132,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFont);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -156,8 +158,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFont);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -188,12 +190,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QFont.prototype = new QFont_BaseJs(engine);
@@ -327,6 +327,526 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
 
       // functions:
       
+        // function 
+        QFont.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QFont.prototype.family = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.family");
+          return this.__PROXY__.family(...args);
+        };
+    
+        // function 
+        QFont.prototype.setFamily = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setFamily");
+          return this.__PROXY__.setFamily(...args);
+        };
+    
+        // function 
+        QFont.prototype.families = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.families");
+          return this.__PROXY__.families(...args);
+        };
+    
+        // function 
+        QFont.prototype.setFamilies = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setFamilies");
+          return this.__PROXY__.setFamilies(...args);
+        };
+    
+        // function 
+        QFont.prototype.styleName = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.styleName");
+          return this.__PROXY__.styleName(...args);
+        };
+    
+        // function 
+        QFont.prototype.setStyleName = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setStyleName");
+          return this.__PROXY__.setStyleName(...args);
+        };
+    
+        // function 
+        QFont.prototype.pointSize = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.pointSize");
+          return this.__PROXY__.pointSize(...args);
+        };
+    
+        // function 
+        QFont.prototype.setPointSize = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setPointSize");
+          return this.__PROXY__.setPointSize(...args);
+        };
+    
+        // function 
+        QFont.prototype.pointSizeF = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.pointSizeF");
+          return this.__PROXY__.pointSizeF(...args);
+        };
+    
+        // function 
+        QFont.prototype.setPointSizeF = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setPointSizeF");
+          return this.__PROXY__.setPointSizeF(...args);
+        };
+    
+        // function 
+        QFont.prototype.pixelSize = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.pixelSize");
+          return this.__PROXY__.pixelSize(...args);
+        };
+    
+        // function 
+        QFont.prototype.setPixelSize = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setPixelSize");
+          return this.__PROXY__.setPixelSize(...args);
+        };
+    
+        // function 
+        QFont.prototype.weight = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.weight");
+          return this.__PROXY__.weight(...args);
+        };
+    
+        // function 
+        QFont.prototype.setWeight = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setWeight");
+          return this.__PROXY__.setWeight(...args);
+        };
+    
+        // function 
+        QFont.prototype.bold = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.bold");
+          return this.__PROXY__.bold(...args);
+        };
+    
+        // function 
+        QFont.prototype.setBold = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setBold");
+          return this.__PROXY__.setBold(...args);
+        };
+    
+        // function 
+        QFont.prototype.setStyle = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setStyle");
+          return this.__PROXY__.setStyle(...args);
+        };
+    
+        // function 
+        QFont.prototype.style = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.style");
+          return this.__PROXY__.style(...args);
+        };
+    
+        // function 
+        QFont.prototype.italic = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.italic");
+          return this.__PROXY__.italic(...args);
+        };
+    
+        // function 
+        QFont.prototype.setItalic = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setItalic");
+          return this.__PROXY__.setItalic(...args);
+        };
+    
+        // function 
+        QFont.prototype.underline = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.underline");
+          return this.__PROXY__.underline(...args);
+        };
+    
+        // function 
+        QFont.prototype.setUnderline = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setUnderline");
+          return this.__PROXY__.setUnderline(...args);
+        };
+    
+        // function 
+        QFont.prototype.overline = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.overline");
+          return this.__PROXY__.overline(...args);
+        };
+    
+        // function 
+        QFont.prototype.setOverline = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setOverline");
+          return this.__PROXY__.setOverline(...args);
+        };
+    
+        // function 
+        QFont.prototype.strikeOut = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.strikeOut");
+          return this.__PROXY__.strikeOut(...args);
+        };
+    
+        // function 
+        QFont.prototype.setStrikeOut = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setStrikeOut");
+          return this.__PROXY__.setStrikeOut(...args);
+        };
+    
+        // function 
+        QFont.prototype.fixedPitch = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.fixedPitch");
+          return this.__PROXY__.fixedPitch(...args);
+        };
+    
+        // function 
+        QFont.prototype.setFixedPitch = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setFixedPitch");
+          return this.__PROXY__.setFixedPitch(...args);
+        };
+    
+        // function 
+        QFont.prototype.kerning = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.kerning");
+          return this.__PROXY__.kerning(...args);
+        };
+    
+        // function 
+        QFont.prototype.setKerning = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setKerning");
+          return this.__PROXY__.setKerning(...args);
+        };
+    
+        // function 
+        QFont.prototype.styleHint = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.styleHint");
+          return this.__PROXY__.styleHint(...args);
+        };
+    
+        // function 
+        QFont.prototype.styleStrategy = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.styleStrategy");
+          return this.__PROXY__.styleStrategy(...args);
+        };
+    
+        // function 
+        QFont.prototype.setStyleHint = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setStyleHint");
+          return this.__PROXY__.setStyleHint(...args);
+        };
+    
+        // function 
+        QFont.prototype.setStyleStrategy = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setStyleStrategy");
+          return this.__PROXY__.setStyleStrategy(...args);
+        };
+    
+        // function 
+        QFont.prototype.stretch = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.stretch");
+          return this.__PROXY__.stretch(...args);
+        };
+    
+        // function 
+        QFont.prototype.setStretch = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setStretch");
+          return this.__PROXY__.setStretch(...args);
+        };
+    
+        // function 
+        QFont.prototype.letterSpacing = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.letterSpacing");
+          return this.__PROXY__.letterSpacing(...args);
+        };
+    
+        // function 
+        QFont.prototype.letterSpacingType = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.letterSpacingType");
+          return this.__PROXY__.letterSpacingType(...args);
+        };
+    
+        // function 
+        QFont.prototype.setLetterSpacing = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setLetterSpacing");
+          return this.__PROXY__.setLetterSpacing(...args);
+        };
+    
+        // function 
+        QFont.prototype.wordSpacing = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.wordSpacing");
+          return this.__PROXY__.wordSpacing(...args);
+        };
+    
+        // function 
+        QFont.prototype.setWordSpacing = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setWordSpacing");
+          return this.__PROXY__.setWordSpacing(...args);
+        };
+    
+        // function 
+        QFont.prototype.setCapitalization = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setCapitalization");
+          return this.__PROXY__.setCapitalization(...args);
+        };
+    
+        // function 
+        QFont.prototype.capitalization = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.capitalization");
+          return this.__PROXY__.capitalization(...args);
+        };
+    
+        // function 
+        QFont.prototype.setHintingPreference = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setHintingPreference");
+          return this.__PROXY__.setHintingPreference(...args);
+        };
+    
+        // function 
+        QFont.prototype.hintingPreference = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.hintingPreference");
+          return this.__PROXY__.hintingPreference(...args);
+        };
+    
+        // function 
+        QFont.prototype.exactMatch = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.exactMatch");
+          return this.__PROXY__.exactMatch(...args);
+        };
+    
+        // function 
+        QFont.prototype.isCopyOf = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.isCopyOf");
+          return this.__PROXY__.isCopyOf(...args);
+        };
+    
+        // function 
+        QFont.prototype.key = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.key");
+          return this.__PROXY__.key(...args);
+        };
+    
+        // function 
+        QFont.prototype.toString = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.toString");
+          return this.__PROXY__.toString(...args);
+        };
+    
+        // function 
+        QFont.prototype.fromString = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.fromString");
+          return this.__PROXY__.fromString(...args);
+        };
+    
+        // function 
+        QFont.prototype.substitute = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.substitute");
+          return this.__PROXY__.substitute(...args);
+        };
+    
+        // function 
+        QFont.prototype.substitutes = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.substitutes");
+          return this.__PROXY__.substitutes(...args);
+        };
+    
+        // function 
+        QFont.prototype.substitutions = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.substitutions");
+          return this.__PROXY__.substitutions(...args);
+        };
+    
+        // function 
+        QFont.prototype.insertSubstitution = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.insertSubstitution");
+          return this.__PROXY__.insertSubstitution(...args);
+        };
+    
+        // function 
+        QFont.prototype.insertSubstitutions = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.insertSubstitutions");
+          return this.__PROXY__.insertSubstitutions(...args);
+        };
+    
+        // function 
+        QFont.prototype.removeSubstitutions = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.removeSubstitutions");
+          return this.__PROXY__.removeSubstitutions(...args);
+        };
+    
+        // function 
+        QFont.prototype.initialize = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.initialize");
+          return this.__PROXY__.initialize(...args);
+        };
+    
+        // function 
+        QFont.prototype.cleanup = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.cleanup");
+          return this.__PROXY__.cleanup(...args);
+        };
+    
+        // function 
+        QFont.prototype.cacheStatistics = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.cacheStatistics");
+          return this.__PROXY__.cacheStatistics(...args);
+        };
+    
+        // function 
+        QFont.prototype.defaultFamily = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.defaultFamily");
+          return this.__PROXY__.defaultFamily(...args);
+        };
+    
+        // function 
+        QFont.prototype.resolve = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.resolve");
+          return this.__PROXY__.resolve(...args);
+        };
+    
+        // function 
+        QFont.prototype.resolveMask = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.resolveMask");
+          return this.__PROXY__.resolveMask(...args);
+        };
+    
+        // function 
+        QFont.prototype.setResolveMask = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.setResolveMask");
+          return this.__PROXY__.setResolveMask(...args);
+        };
+    
+        // function 
+        QFont.prototype.detach = function(...args) 
+          
+        {
+          //print("JS: QFont.prototype.detach");
+          return this.__PROXY__.detach(...args);
+        };
+    
 
       // static functions:
       
@@ -598,4 +1118,8 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
       //QFont.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      QFont.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

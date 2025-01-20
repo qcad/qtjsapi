@@ -156,11 +156,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QEvent_Wrapper::QEvent_Wrapper(RJSApi& h, QEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QEvent_Wrapper::QEvent_Wrapper(RJSApi& h, QEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QEvent_Wrapper"));
               //setObjectName("QEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -258,12 +266,12 @@ QEvent::Type a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QEvent(
-                a1_cpp
+              wrapped = new QEvent(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -280,14 +288,18 @@ QEvent::Type a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -560,11 +560,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QFont_Wrapper::QFont_Wrapper(RJSApi& h, QFont* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QFont_Wrapper::QFont_Wrapper(RJSApi& h, QFont* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QFont_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QFont_Wrapper"));
               //setObjectName("QFont_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -586,8 +594,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QFont";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -720,15 +730,15 @@ bool a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFont(
-                a1_cpp
+              wrapped = new QFont(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -812,15 +822,15 @@ bool a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFont(
-                a1_cpp
+              wrapped = new QFont(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -867,13 +877,13 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFont(
-                a1_cpp
+              wrapped = new QFont(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -906,12 +916,12 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFont(
-                a1_cpp
+              wrapped = new QFont(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -930,11 +940,11 @@ QFont a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFont(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QFont(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -954,14 +964,18 @@ QFont a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QFont";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -1502,12 +1502,13 @@ AssumeLocalFile = QUrl::AssumeLocalFile,
 
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1543,27 +1544,30 @@ AssumeLocalFile = QUrl::AssumeLocalFile,
 
         // get wrapped object:
         QUrl* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QUrl* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1571,7 +1575,8 @@ AssumeLocalFile = QUrl::AssumeLocalFile,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1583,9 +1588,10 @@ AssumeLocalFile = QUrl::AssumeLocalFile,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1600,9 +1606,10 @@ AssumeLocalFile = QUrl::AssumeLocalFile,
         
 
         private:
-        // wrapped object:
-        QUrl* wrapped;
 
+        
+          // wrapped object:
+          QUrl* wrapped;
         
 
         bool wrappedCreated;

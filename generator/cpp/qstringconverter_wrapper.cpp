@@ -154,11 +154,19 @@ QStringConverter::Encoding a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QStringConverter_Wrapper::QStringConverter_Wrapper(RJSApi& h, QStringConverter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QStringConverter_Wrapper::QStringConverter_Wrapper(RJSApi& h, QStringConverter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QStringConverter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QStringConverter_Wrapper"));
               //setObjectName("QStringConverter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -456,71 +464,6 @@ QStringConverter::Encoding a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QStringEncoder
-    // Function: nameForEncoding
-    // Source: QStringConverter
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QStringEncoder_WrapperSingleton::nameForEncoding
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QStringConverter_Encoding(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: e (QStringConverter::Encoding)
-  
-QStringConverter::Encoding a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QStringConverter_Encoding(handler, a1);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            const char* res = 
-                
-                // call static member function:
-                QStringConverter::nameForEncoding(
-              a1_cpp
-    
-            );
-          
-            // return type: const char*
-
-            return RJSHelper::cpp2js_char(
-              handler, 
-              // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper::cpp2js_char:
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for nameForEncoding";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QStringEncoder_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QStringEncoder_Wrapper>("org.qcad", 1, 0, "QStringEncoder_Wrapper");
@@ -549,15 +492,6 @@ QStringConverter::Encoding a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QStringEncoder_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QStringEncoder_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QStringEncoder_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QStringEncoder_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QStringEncoder_WrapperSingleton * s = new QStringEncoder_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QStringEncoder_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QStringEncoder.js";
       QFile scriptFile(fileName);
@@ -593,11 +527,19 @@ QStringConverter::Encoding a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QStringEncoder_Wrapper::QStringEncoder_Wrapper(RJSApi& h, QStringEncoder* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QStringEncoder_Wrapper::QStringEncoder_Wrapper(RJSApi& h, QStringEncoder* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QStringEncoder_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QStringEncoder_Wrapper"));
               //setObjectName("QStringEncoder_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -619,8 +561,10 @@ QStringConverter::Encoding a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QStringEncoder";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -696,12 +640,12 @@ QStringConverter::Encoding a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStringEncoder(
-                a1_cpp
+              wrapped = new QStringEncoder(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -737,12 +681,12 @@ QStringConverter::Encoding a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStringEncoder(
-                a1_cpp
+              wrapped = new QStringEncoder(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -761,11 +705,11 @@ QStringConverter::Encoding a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStringEncoder(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QStringEncoder(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -782,14 +726,18 @@ QStringConverter::Encoding a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QStringEncoder";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -1179,71 +1127,6 @@ qsizetype a1_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QStringDecoder
-    // Function: nameForEncoding
-    // Source: QStringConverter
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QStringDecoder_WrapperSingleton::nameForEncoding
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QStringConverter_Encoding(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: e (QStringConverter::Encoding)
-  
-QStringConverter::Encoding a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QStringConverter_Encoding(handler, a1);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            const char* res = 
-                
-                // call static member function:
-                QStringConverter::nameForEncoding(
-              a1_cpp
-    
-            );
-          
-            // return type: const char*
-
-            return RJSHelper::cpp2js_char(
-              handler, 
-              // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper::cpp2js_char:
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for nameForEncoding";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QStringDecoder_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QStringDecoder_Wrapper>("org.qcad", 1, 0, "QStringDecoder_Wrapper");
@@ -1272,15 +1155,6 @@ QStringConverter::Encoding a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QStringDecoder_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QStringDecoder_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QStringDecoder_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QStringDecoder_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QStringDecoder_WrapperSingleton * s = new QStringDecoder_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QStringDecoder_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QStringDecoder.js";
       QFile scriptFile(fileName);
@@ -1316,11 +1190,19 @@ QStringConverter::Encoding a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QStringDecoder_Wrapper::QStringDecoder_Wrapper(RJSApi& h, QStringDecoder* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QStringDecoder_Wrapper::QStringDecoder_Wrapper(RJSApi& h, QStringDecoder* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QStringDecoder_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QStringDecoder_Wrapper"));
               //setObjectName("QStringDecoder_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1342,8 +1224,10 @@ QStringConverter::Encoding a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QStringDecoder";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1419,12 +1303,12 @@ QStringConverter::Encoding a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStringDecoder(
-                a1_cpp
+              wrapped = new QStringDecoder(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1460,12 +1344,12 @@ QStringConverter::Encoding a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStringDecoder(
-                a1_cpp
+              wrapped = new QStringDecoder(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1484,11 +1368,11 @@ QStringConverter::Encoding a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStringDecoder(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QStringDecoder(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1505,14 +1389,18 @@ QStringConverter::Encoding a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QStringDecoder";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

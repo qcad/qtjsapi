@@ -92,11 +92,19 @@
 
     
       // special constructor to wrap existing object:
-      QStandardItem_Wrapper::QStandardItem_Wrapper(RJSApi& h, QStandardItem* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QStandardItem_Wrapper::QStandardItem_Wrapper(RJSApi& h, QStandardItem* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QStandardItem_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QStandardItem_Wrapper"));
               //setObjectName("QStandardItem_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -205,13 +213,13 @@ QString a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStandardItem(
-                a1_cpp
+              wrapped = new QStandardItem(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -261,13 +269,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStandardItem(
-                a1_cpp
+              wrapped = new QStandardItem(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -300,12 +308,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStandardItem(
-                a1_cpp
+              wrapped = new QStandardItem(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -324,11 +332,11 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStandardItem(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QStandardItem(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -346,14 +354,18 @@ QString a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QStandardItem";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -5474,107 +5486,6 @@ Qt::SortOrder a2_cpp;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QStandardItemModel
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              QStandardItemModel_WrapperSingleton::tr
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_char_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_int(handler, a3
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: sourceText (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp:  (char)
-  
-
-      // char pointer string:
-      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
-      const char* a2_cpp = a2_ba.constData();
-    
-  // convert js parameter to cpp:  (int)
-  
-int a3_cpp;
-
-      
-          if (a3.isUndefined()) {
-            a3_cpp = -1;
-          }
-          else {
-            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QObject::tr(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tr";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void QStandardItemModel_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QStandardItemModel_Wrapper>("org.qcad", 1, 0, "QStandardItemModel_Wrapper");
@@ -5603,15 +5514,6 @@ int a3_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&QStandardItemModel_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("QStandardItemModel_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QStandardItemModel_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QStandardItemModel_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QStandardItemModel_WrapperSingleton * s = new QStandardItemModel_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QStandardItemModel_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/QStandardItemModel.js";
       QFile scriptFile(fileName);
@@ -5647,11 +5549,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      QStandardItemModel_Wrapper::QStandardItemModel_Wrapper(RJSApi& h, QStandardItemModel* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QStandardItemModel_Wrapper::QStandardItemModel_Wrapper(RJSApi& h, QStandardItemModel* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QStandardItemModel_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QStandardItemModel_Wrapper"));
               //setObjectName("QStandardItemModel_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -5823,14 +5733,14 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStandardItemModel(
-                a1_cpp
+              wrapped = new QStandardItemModel(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5874,12 +5784,12 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QStandardItemModel(
-                a1_cpp
+              wrapped = new QStandardItemModel(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5898,14 +5808,18 @@ int a2_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QStandardItemModel";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

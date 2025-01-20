@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QAbstractSlider);
+              
+                  copyProperties(this, wrapper, QAbstractSlider);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QAbstractSlider);
+            copyProperties(this, wrapper, QAbstractSlider);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["valueChanged(int)"] = Object.getPrototypeOf(this).valueChanged;
@@ -97,8 +98,12 @@
   
     this["actionTriggered(int)"] = Object.getPrototypeOf(this).actionTriggered;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QAbstractSlider.prototype = new QAbstractSlider_BaseJs(engine);
@@ -157,119 +162,6 @@ QAbstractSlider.SliderMove = QAbstractSlider_Wrapper.SliderMove;
       // static functions:
       
 
-        // static function 
-        QAbstractSlider.tr = function() 
-          
-        {
-          //print("JS: QAbstractSlider.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QAbstractSlider_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractSlider);
-  }
-
-  
-  else {
-    
-        print("QAbstractSlider.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractSlider.setTabOrder = function() 
-          
-        {
-          //print("JS: QAbstractSlider.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QAbstractSlider_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractSlider);
-  }
-
-  
-  else {
-    
-        print("QAbstractSlider.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractSlider.mouseGrabber = function() 
-          
-        {
-          //print("JS: QAbstractSlider.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractSlider_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractSlider);
-  }
-
-  
-  else {
-    
-        print("QAbstractSlider.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QAbstractSlider.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QAbstractSlider.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QAbstractSlider_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QAbstractSlider);
-  }
-
-  
-  else {
-    
-        print("QAbstractSlider.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -285,4 +177,5 @@ QAbstractSlider.SliderMove = QAbstractSlider_Wrapper.SliderMove;
       //QAbstractSlider.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

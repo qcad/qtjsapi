@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QQmlContext);
+              
+                  copyProperties(this, wrapper, QQmlContext);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QQmlContext.prototype = new QQmlContext_BaseJs(engine);
@@ -103,35 +103,6 @@
       // static functions:
       
 
-        // static function 
-        QQmlContext.tr = function() 
-          
-        {
-          //print("JS: QQmlContext.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QQmlContext_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QQmlContext);
-  }
-
-  
-  else {
-    
-        print("QQmlContext.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -147,4 +118,5 @@
       //QQmlContext.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

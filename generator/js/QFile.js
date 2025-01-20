@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFile);
+              
+                  copyProperties(this, wrapper, QFile);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFile);
+            copyProperties(this, wrapper, QFile);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFile);
+            copyProperties(this, wrapper, QFile);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFile);
+            copyProperties(this, wrapper, QFile);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -128,8 +130,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFile);
+            copyProperties(this, wrapper, QFile);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -160,18 +162,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["channelReadyRead(int)"] = Object.getPrototypeOf(this).channelReadyRead;
   
     this["bytesWritten(qint64)"] = Object.getPrototypeOf(this).bytesWritten;
   
     this["channelBytesWritten(int,qint64)"] = Object.getPrototypeOf(this).channelBytesWritten;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QFile.prototype = new QFile_BaseJs(engine);
@@ -375,4 +380,5 @@
       //QFile.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

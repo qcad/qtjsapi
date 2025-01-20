@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QListWidget);
+              
+                  copyProperties(this, wrapper, QListWidget);
+                
             //}
           }
           else {
@@ -53,10 +55,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
@@ -79,8 +80,12 @@
   
     this["currentRowChanged(int)"] = Object.getPrototypeOf(this).currentRowChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QListWidget.prototype = new QListWidget_BaseJs(engine);
@@ -227,119 +232,6 @@ QListWidget.IconMode = QListWidget_Wrapper.IconMode;
       // static functions:
       
 
-        // static function 
-        QListWidget.tr = function() 
-          
-        {
-          //print("JS: QListWidget.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QListWidget_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QListWidget);
-  }
-
-  
-  else {
-    
-        print("QListWidget.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QListWidget.setTabOrder = function() 
-          
-        {
-          //print("JS: QListWidget.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QListWidget_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QListWidget);
-  }
-
-  
-  else {
-    
-        print("QListWidget.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QListWidget.mouseGrabber = function() 
-          
-        {
-          //print("JS: QListWidget.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QListWidget_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QListWidget);
-  }
-
-  
-  else {
-    
-        print("QListWidget.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QListWidget.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QListWidget.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QListWidget_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QListWidget);
-  }
-
-  
-  else {
-    
-        print("QListWidget.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -355,4 +247,5 @@ QListWidget.IconMode = QListWidget_Wrapper.IconMode;
       //QListWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

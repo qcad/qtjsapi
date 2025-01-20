@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QQuickView);
+              
+                  copyProperties(this, wrapper, QQuickView);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QQuickView);
+            copyProperties(this, wrapper, QQuickView);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QQuickView);
+            copyProperties(this, wrapper, QQuickView);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,10 +112,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["screenChanged(QScreen*)"] = Object.getPrototypeOf(this).screenChanged;
   
     this["modalityChanged(Qt::WindowModality)"] = Object.getPrototypeOf(this).modalityChanged;
@@ -152,8 +153,12 @@
   
     this["statusChanged(QQuickView::Status)"] = Object.getPrototypeOf(this).statusChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QQuickView.prototype = new QQuickView_BaseJs(engine);
@@ -224,35 +229,6 @@ QQuickView.Error = QQuickView_Wrapper.Error;
       // static functions:
       
 
-        // static function 
-        QQuickView.tr = function() 
-          
-        {
-          //print("JS: QQuickView.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QQuickView_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QQuickView);
-  }
-
-  
-  else {
-    
-        print("QQuickView.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
@@ -268,4 +244,5 @@ QQuickView.Error = QQuickView_Wrapper.Error;
       //QQuickView.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

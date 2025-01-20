@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFileDialog);
+              
+                  copyProperties(this, wrapper, QFileDialog);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFileDialog);
+            copyProperties(this, wrapper, QFileDialog);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QFileDialog);
+            copyProperties(this, wrapper, QFileDialog);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -109,10 +111,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["finished(int)"] = Object.getPrototypeOf(this).finished;
@@ -135,8 +136,12 @@
   
     this["filterSelected(QString)"] = Object.getPrototypeOf(this).filterSelected;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //QFileDialog.prototype = new QFileDialog_BaseJs(engine);
@@ -221,119 +226,6 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
       
 
       // static functions:
-      
-
-        // static function 
-        QFileDialog.tr = function() 
-          
-        {
-          //print("JS: QFileDialog.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QFileDialog_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, QFileDialog);
-  }
-
-  
-  else {
-    
-        print("QFileDialog.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFileDialog.setTabOrder = function() 
-          
-        {
-          //print("JS: QFileDialog.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QFileDialog_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
-
-        //copyProperties(this, wrapper, QFileDialog);
-  }
-
-  
-  else {
-    
-        print("QFileDialog.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFileDialog.mouseGrabber = function() 
-          
-        {
-          //print("JS: QFileDialog.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFileDialog_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QFileDialog);
-  }
-
-  
-  else {
-    
-        print("QFileDialog.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QFileDialog.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QFileDialog.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFileDialog_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, QFileDialog);
-  }
-
-  
-  else {
-    
-        print("QFileDialog.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
         // static function 
@@ -612,4 +504,5 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
       //QFileDialog.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

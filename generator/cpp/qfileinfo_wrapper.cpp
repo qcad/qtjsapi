@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QFileInfo_Wrapper::QFileInfo_Wrapper(RJSApi& h, QFileInfo* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QFileInfo_Wrapper::QFileInfo_Wrapper(RJSApi& h, QFileInfo* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QFileInfo_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QFileInfo_Wrapper"));
               //setObjectName("QFileInfo_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QFileInfo";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -190,13 +200,13 @@ QString a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFileInfo(
-                a1_cpp
+              wrapped = new QFileInfo(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -229,12 +239,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFileInfo(
-                a1_cpp
+              wrapped = new QFileInfo(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -270,12 +280,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFileInfo(
-                *a1_cpp
+              wrapped = new QFileInfo(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -294,11 +304,11 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QFileInfo(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QFileInfo(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -316,14 +326,18 @@ QString a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QFileInfo";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

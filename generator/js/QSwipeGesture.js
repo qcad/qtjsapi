@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSwipeGesture);
+              
+                  copyProperties(this, wrapper, QSwipeGesture);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, QSwipeGesture);
+            copyProperties(this, wrapper, QSwipeGesture);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //QSwipeGesture.prototype = new QSwipeGesture_BaseJs(engine);
@@ -148,4 +148,5 @@
       //QSwipeGesture.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

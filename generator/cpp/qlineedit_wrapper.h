@@ -37,174 +37,6 @@
       // wrapped object is QLineEdit_Base class if new object is created: 
       #include "qlineedit_base.h"
     
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QLineEdit_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QLineEdit_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: QLineEdit
-    // Function: tr
-    // Source: QObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QLineEdit
-    // Function: setTabOrder
-    // Source: QWidget
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QLineEdit
-    // Function: mouseGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QLineEdit
-    // Function: keyboardGrabber
-    // Source: QWidget
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-#ifndef QT_NO_VALIDATOR
-
-#endif
-
-#if QT_CONFIG(completer)
-
-#endif
-
-#if QT_CONFIG(action)
-
-#endif
-
-#ifndef QT_NO_CLIPBOARD
-
-#endif
-
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-#if QT_CONFIG(draganddrop)
-
-#endif
-
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-#ifdef QT_KEYPAD_NAVIGATION
-
-#endif
-
-#if QT_CONFIG(completer)
-
-#endif
-
-#ifdef QT_KEYPAD_NAVIGATION
-
-#endif
-
-
-      private:
-          RJSApi& handler;
-          //static QLineEdit_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QLineEdit
@@ -7350,12 +7182,13 @@ PasswordEchoOnEdit = QLineEdit::PasswordEchoOnEdit,
 
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -7391,27 +7224,30 @@ PasswordEchoOnEdit = QLineEdit::PasswordEchoOnEdit,
 
         // get wrapped object:
         QLineEdit* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         QLineEdit* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -7430,7 +7266,8 @@ PasswordEchoOnEdit = QLineEdit::PasswordEchoOnEdit,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -7442,9 +7279,10 @@ PasswordEchoOnEdit = QLineEdit::PasswordEchoOnEdit,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -7466,9 +7304,10 @@ PasswordEchoOnEdit = QLineEdit::PasswordEchoOnEdit,
         
 
         private:
-        // wrapped object:
-        QLineEdit* wrapped;
 
+        
+          // wrapped object:
+          QLineEdit* wrapped;
         
 
         bool wrappedCreated;

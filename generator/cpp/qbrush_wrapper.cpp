@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      QBrush_Wrapper::QBrush_Wrapper(RJSApi& h, QBrush* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QBrush_Wrapper::QBrush_Wrapper(RJSApi& h, QBrush* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QBrush_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QBrush_Wrapper"));
               //setObjectName("QBrush_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,8 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QBrush";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -198,13 +208,13 @@ Qt::BrushStyle a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                a1_cpp
+              wrapped = new QBrush(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -246,13 +256,13 @@ Qt::BrushStyle a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                a1_cpp
+              wrapped = new QBrush(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -294,13 +304,13 @@ QPixmap a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                a1_cpp
+              wrapped = new QBrush(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -342,13 +352,13 @@ QPixmap a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                a1_cpp
+              wrapped = new QBrush(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -381,12 +391,12 @@ Qt::BrushStyle a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                a1_cpp
+              wrapped = new QBrush(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -419,12 +429,12 @@ QPixmap a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                a1_cpp
+              wrapped = new QBrush(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -457,12 +467,12 @@ QImage a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                a1_cpp
+              wrapped = new QBrush(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -495,12 +505,12 @@ QBrush a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                a1_cpp
+              wrapped = new QBrush(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -533,12 +543,12 @@ QGradient a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                a1_cpp
+              wrapped = new QBrush(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -557,11 +567,11 @@ QGradient a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QBrush(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QBrush(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -579,14 +589,18 @@ QGradient a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QBrush";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -1561,11 +1575,19 @@ Qt::GlobalColor a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QGradient_Wrapper::QGradient_Wrapper(RJSApi& h, QGradient* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QGradient_Wrapper::QGradient_Wrapper(RJSApi& h, QGradient* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QGradient_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QGradient_Wrapper"));
               //setObjectName("QGradient_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1587,8 +1609,10 @@ Qt::GlobalColor a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QGradient";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1664,12 +1688,12 @@ QGradient::Preset a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QGradient(
-                a1_cpp
+              wrapped = new QGradient(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1688,11 +1712,11 @@ QGradient::Preset a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new QGradient(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QGradient(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1709,14 +1733,18 @@ QGradient::Preset a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QGradient";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -2299,11 +2327,19 @@ QGradient::InterpolationMode a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QLinearGradient_Wrapper::QLinearGradient_Wrapper(RJSApi& h, QLinearGradient* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QLinearGradient_Wrapper::QLinearGradient_Wrapper(RJSApi& h, QLinearGradient* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QLinearGradient_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QLinearGradient_Wrapper"));
               //setObjectName("QLinearGradient_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2325,8 +2361,10 @@ QGradient::InterpolationMode a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QLinearGradient";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -2435,15 +2473,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLinearGradient(
-                a1_cpp
+              wrapped = new QLinearGradient(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2485,13 +2523,13 @@ QPointF a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLinearGradient(
-                a1_cpp
+              wrapped = new QLinearGradient(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2510,11 +2548,11 @@ QPointF a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QLinearGradient(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QLinearGradient(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2534,14 +2572,18 @@ QPointF a2_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QLinearGradient";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -3472,11 +3514,19 @@ QPointF a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QRadialGradient_Wrapper::QRadialGradient_Wrapper(RJSApi& h, QRadialGradient* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QRadialGradient_Wrapper::QRadialGradient_Wrapper(RJSApi& h, QRadialGradient* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QRadialGradient_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QRadialGradient_Wrapper"));
               //setObjectName("QRadialGradient_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -3498,8 +3548,10 @@ QPointF a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QRadialGradient";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -3630,17 +3682,17 @@ qreal a6_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRadialGradient(
-                a1_cpp
+              wrapped = new QRadialGradient(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     , a6_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3709,16 +3761,16 @@ qreal a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRadialGradient(
-                a1_cpp
+              wrapped = new QRadialGradient(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3778,15 +3830,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRadialGradient(
-                a1_cpp
+              wrapped = new QRadialGradient(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3837,14 +3889,14 @@ QPointF a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRadialGradient(
-                a1_cpp
+              wrapped = new QRadialGradient(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3895,14 +3947,14 @@ qreal a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRadialGradient(
-                a1_cpp
+              wrapped = new QRadialGradient(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3944,13 +3996,13 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRadialGradient(
-                a1_cpp
+              wrapped = new QRadialGradient(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3969,11 +4021,11 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QRadialGradient(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QRadialGradient(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -3995,14 +4047,18 @@ qreal a2_cpp;
    && a6.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QRadialGradient";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -5296,11 +5352,19 @@ qreal a1_cpp;
 
     
       // special constructor to wrap existing object:
-      QConicalGradient_Wrapper::QConicalGradient_Wrapper(RJSApi& h, QConicalGradient* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      QConicalGradient_Wrapper::QConicalGradient_Wrapper(RJSApi& h, QConicalGradient* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("QConicalGradient_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("QConicalGradient_Wrapper"));
               //setObjectName("QConicalGradient_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -5322,8 +5386,10 @@ qreal a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of QConicalGradient";
-                  delete wrapped;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -5421,14 +5487,14 @@ qreal a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new QConicalGradient(
-                a1_cpp
+              wrapped = new QConicalGradient(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5470,13 +5536,13 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QConicalGradient(
-                a1_cpp
+              wrapped = new QConicalGradient(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5495,11 +5561,11 @@ qreal a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new QConicalGradient(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new QConicalGradient(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5518,14 +5584,18 @@ qreal a2_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for QConicalGradient";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
