@@ -164,6 +164,7 @@
 #include "generator/cpp/qpaintdevice_wrapper.h"
 #include "generator/cpp/qjsengine_wrapper.h"
 #include "generator/cpp/qfilesystemwatcher_wrapper.h"
+#include "generator/cpp/qscreen_wrapper.h"
 
 RJSApi::RJSApi(QJSEngine* engine) : engine(engine) {
     init();
@@ -448,6 +449,7 @@ void RJSApi::init() {
     QFocusEvent_Wrapper::init(*this);
     QPaintDevice_Wrapper::init(*this);
     QFileSystemWatcher_Wrapper::init(*this);
+    QScreen_Wrapper::init(*this);
 
     QJSEngine_Wrapper::init(*this);
     QQmlContext_Wrapper::init(*this);
