@@ -146,7 +146,14 @@
               // define property setters/getters:
               Object.defineProperty(this, '<xsl:value-of select="@name"/>', {
                   get() {
-                      return this.__PROXY__.<xsl:value-of select="@read"/>();
+                      <xsl:choose>
+                        <xsl:when test="@name=@read">
+                          return this.__PROXY__.<xsl:value-of select="@read"/>;
+                        </xsl:when>
+                        <xsl:otherwise>
+                          return this.__PROXY__.<xsl:value-of select="@read"/>();
+                        </xsl:otherwise>
+                      </xsl:choose>
                   },
                   <xsl:if test="@write">
                     set(value) {

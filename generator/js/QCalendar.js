@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QCalendar);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QCalendar);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -124,6 +124,182 @@
 
       // functions:
       
+        // function 
+        QCalendar.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.isValid");
+          return this.__PROXY__.isValid(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.daysInMonth = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.daysInMonth");
+          return this.__PROXY__.daysInMonth(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.daysInYear = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.daysInYear");
+          return this.__PROXY__.daysInYear(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.monthsInYear = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.monthsInYear");
+          return this.__PROXY__.monthsInYear(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.isDateValid = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.isDateValid");
+          return this.__PROXY__.isDateValid(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.isLeapYear = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.isLeapYear");
+          return this.__PROXY__.isLeapYear(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.isGregorian = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.isGregorian");
+          return this.__PROXY__.isGregorian(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.isLunar = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.isLunar");
+          return this.__PROXY__.isLunar(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.isLuniSolar = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.isLuniSolar");
+          return this.__PROXY__.isLuniSolar(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.isSolar = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.isSolar");
+          return this.__PROXY__.isSolar(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.isProleptic = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.isProleptic");
+          return this.__PROXY__.isProleptic(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.hasYearZero = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.hasYearZero");
+          return this.__PROXY__.hasYearZero(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.maximumDaysInMonth = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.maximumDaysInMonth");
+          return this.__PROXY__.maximumDaysInMonth(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.minimumDaysInMonth = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.minimumDaysInMonth");
+          return this.__PROXY__.minimumDaysInMonth(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.maximumMonthsInYear = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.maximumMonthsInYear");
+          return this.__PROXY__.maximumMonthsInYear(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.name = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.name");
+          return this.__PROXY__.name(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.dayOfWeek = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.dayOfWeek");
+          return this.__PROXY__.dayOfWeek(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.monthName = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.monthName");
+          return this.__PROXY__.monthName(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.standaloneMonthName = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.standaloneMonthName");
+          return this.__PROXY__.standaloneMonthName(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.weekDayName = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.weekDayName");
+          return this.__PROXY__.weekDayName(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.standaloneWeekDayName = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.standaloneWeekDayName");
+          return this.__PROXY__.standaloneWeekDayName(...args);
+        };
+    
+        // function 
+        QCalendar.prototype.availableCalendars = function(...args) 
+          
+        {
+          //print("JS: QCalendar.prototype.availableCalendars");
+          return this.__PROXY__.availableCalendars(...args);
+        };
+    
 
       // static functions:
       
@@ -172,4 +348,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QCalendar.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       
