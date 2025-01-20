@@ -447,6 +447,9 @@
       }
 
       QJSValue getWrapperQJSValue(const QJSValue&amp; v) {
+          if (v.hasOwnProperty("__PROXY__")) {
+              return getWrapperQJSValue(v.property("__PROXY__"));
+          }
           if (v.prototype().hasOwnProperty("__WRAPPER__")) {
               return v.prototype();
           }

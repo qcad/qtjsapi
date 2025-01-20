@@ -20,6 +20,13 @@
 </xsl:param>
 -->
 
+<xsl:param name="proxy-mode">
+  <xsl:value-of select="qsrc:unit/qsrc:class/@proxy" />
+  <!--
+  <xsl:value-of select="not(qsrc:unit/qsrc:class/qsrc:function/qsrc:variant[@signal='true']) and not(qsrc:unit/qsrc:class[@inheritable='true'])" />
+  -->
+</xsl:param>
+
 <xsl:template match="text()" />
 
 <xsl:template match="/">
@@ -83,7 +90,14 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, <xsl:value-of select="@name" />);
+              <xsl:choose>
+                <xsl:when test="$proxy-mode='true'">
+                  this.__PROXY__ = wrapper;
+                </xsl:when>
+                <xsl:otherwise>
+                  copyProperties(this, wrapper, <xsl:value-of select="@name" />);
+                </xsl:otherwise>
+              </xsl:choose>
             //}
           }
           else {
@@ -118,11 +132,34 @@
           <xsl:apply-templates select="qsrc:function/qsrc:variant[@signal='true']" mode="signalconnections" />
           -->
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            <xsl:apply-templates select="qsrc:function/qsrc:variant[@signal='true']" mode="signalaliases" />
-          }
+          <xsl:if test="qsrc:function/qsrc:variant[@signal='true']">
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              <xsl:apply-templates select="qsrc:function/qsrc:variant[@signal='true']" mode="signalaliases" />
+            }
+          </xsl:if>
         }
+
+        <xsl:if test="$proxy-mode='true'">
+          <xsl:for-each select="qsrc:property">
+            <xsl:if test="@read or @write">
+              // define property setters/getters:
+              Object.defineProperty(this, '<xsl:value-of select="@name"/>', {
+                  get() {
+                      return this.__PROXY__.<xsl:value-of select="@read"/>();
+                  },
+                  <xsl:if test="@write">
+                    set(value) {
+                        this.__PROXY__.<xsl:value-of select="@write"/>(value);
+                    },
+                  </xsl:if>
+                  enumerable: true,
+                  configurable: true
+              });
+            </xsl:if>
+          </xsl:for-each>
+        </xsl:if>
+
       }
 
       //<xsl:value-of select="@name" />.prototype = new <xsl:value-of select="@name" />_BaseJs(engine);
@@ -237,6 +274,12 @@
       //<xsl:value-of select="@name" />.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
+
+      <xsl:if test="$proxy-mode='true'">
+        <xsl:value-of select="@name" />.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      </xsl:if>
     </com:document>
   <!--
   </xsl:if>
@@ -348,7 +391,14 @@
           </xsl:otherwise>
         </xsl:choose>
 
-        copyProperties(this, wrapper, <xsl:value-of select="ancestor::qsrc:class/@name" />);
+        <xsl:choose>
+          <xsl:when test="$proxy-mode='true'">
+            this.__PROXY__ = wrapper;
+          </xsl:when>
+          <xsl:otherwise>
+            copyProperties(this, wrapper, <xsl:value-of select="ancestor::qsrc:class/@name" />);
+          </xsl:otherwise>
+        </xsl:choose>
 
         //this.setWrapper(this.wrapper);
 
@@ -383,7 +433,15 @@
                 //return this.wrapper.<xsl:value-of select="../@name" />(
                 // call highest level JS implementation:
                 //return this.<xsl:value-of select="../@name" />Base(
-                return this.<xsl:value-of select="../@name" />Super(
+                <xsl:choose>
+                  <xsl:when test="$proxy-mode='true'">
+                    return this.__PROXY__.<xsl:value-of select="../@name" />Super(
+                  </xsl:when>
+                  <xsl:otherwise>
+                    return this.<xsl:value-of select="../@name" />Super(
+                  </xsl:otherwise>
+                </xsl:choose>
+
                   <!--
                   <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" />
                   -->
@@ -492,23 +550,37 @@
       </xsl:if>
     </xsl:when>
 
-    <xsl:otherwise>
-      <xsl:if test="not(qsrc:variant/@signal='true') and not(@nojs='true') and not(@static='true') and qsrc:variant[not(@static)] and qsrc:variant[@overridable='true']">
+    <xsl:when test="not(qsrc:variant/@signal='true') and not(@nojs='true') and not(@static='true') and qsrc:variant[not(@static)] and qsrc:variant[@overridable='true']">
+      // function 
+      <xsl:choose>
+        <xsl:when test="@jsname">
+          <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:value-of select="@jsname" /> = function() 
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:value-of select="@name" /> = function() 
+        </xsl:otherwise>
+      </xsl:choose>
+      {
+        //print("JS: <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:value-of select="@name" />");
+        <xsl:apply-templates select="qsrc:variant[not(@static='true' or ../@static='true') and @overridable='true']"/>
+      };
+    </xsl:when>
+
+    <xsl:when test="$proxy-mode='true'">
         // function 
         <xsl:choose>
           <xsl:when test="@jsname">
-            <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:value-of select="@jsname" /> = function() 
+            <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:value-of select="@jsname" /> = function(...args) 
           </xsl:when>
           <xsl:otherwise>
-            <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:value-of select="@name" /> = function() 
+            <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:value-of select="@name" /> = function(...args) 
           </xsl:otherwise>
         </xsl:choose>
         {
           //print("JS: <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:value-of select="@name" />");
-          <xsl:apply-templates select="qsrc:variant[not(@static='true' or ../@static='true') and @overridable='true']"/>
+          return this.__PROXY__.<xsl:value-of select="@name" />(...args);
         };
-      </xsl:if>
-    </xsl:otherwise>
+    </xsl:when>
 
   </xsl:choose>
 
