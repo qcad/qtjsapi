@@ -10,6 +10,8 @@
 #include <QObject>
 #include <QDebug>
 
+#include "RDebug.h"
+
 class RJSWrapperObj;
 class RJSTools;
 

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QActionEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QActionEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -303,6 +303,110 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QActionEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.spontaneous");
+          return this.__PROXY__.spontaneous(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.setAccepted");
+          return this.__PROXY__.setAccepted(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.isAccepted");
+          return this.__PROXY__.isAccepted(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.accept");
+          return this.__PROXY__.accept(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.ignore");
+          return this.__PROXY__.ignore(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.isInputEvent");
+          return this.__PROXY__.isInputEvent(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.isPointerEvent");
+          return this.__PROXY__.isPointerEvent(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.isSinglePointEvent");
+          return this.__PROXY__.isSinglePointEvent(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.setSpontaneous");
+          return this.__PROXY__.setSpontaneous(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.action = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.action");
+          return this.__PROXY__.action(...args);
+        };
+    
+        // function 
+        QActionEvent.prototype.before = function(...args) 
+          
+        {
+          //print("JS: QActionEvent.prototype.before");
+          return this.__PROXY__.before(...args);
+        };
+    
 
       // static functions:
       
@@ -323,4 +427,7 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QActionEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QDragEnterEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDragEnterEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -310,6 +310,158 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QDragEnterEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.spontaneous");
+          return this.__PROXY__.spontaneous(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.setAccepted");
+          return this.__PROXY__.setAccepted(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.isAccepted");
+          return this.__PROXY__.isAccepted(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.isInputEvent");
+          return this.__PROXY__.isInputEvent(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.isPointerEvent");
+          return this.__PROXY__.isPointerEvent(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.isSinglePointEvent");
+          return this.__PROXY__.isSinglePointEvent(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.setSpontaneous");
+          return this.__PROXY__.setSpontaneous(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.position = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.position");
+          return this.__PROXY__.position(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.buttons = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.buttons");
+          return this.__PROXY__.buttons(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.modifiers = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.modifiers");
+          return this.__PROXY__.modifiers(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.acceptProposedAction = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.acceptProposedAction");
+          return this.__PROXY__.acceptProposedAction(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.setDropAction = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.setDropAction");
+          return this.__PROXY__.setDropAction(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.source = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.source");
+          return this.__PROXY__.source(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.mimeData = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.mimeData");
+          return this.__PROXY__.mimeData(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.answerRect = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.answerRect");
+          return this.__PROXY__.answerRect(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.accept");
+          return this.__PROXY__.accept(...args);
+        };
+    
+        // function 
+        QDragEnterEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QDragEnterEvent.prototype.ignore");
+          return this.__PROXY__.ignore(...args);
+        };
+    
 
       // static functions:
       
@@ -330,4 +482,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QDragEnterEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

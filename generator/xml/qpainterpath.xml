@@ -5,7 +5,7 @@
   <class_decl name="QPolygonF" />
   <class_decl name="QRegion" />
   <class_decl name="QTransform" />
-  <class name="QPainterPath">
+  <class name="QPainterPath" proxy="true">
     <enum name="ElementType">
       <key>MoveToElement</key>
       <key>LineToElement</key>

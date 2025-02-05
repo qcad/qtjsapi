@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qkeysequence.h">
   <class_decl name="QKeySequence" />
   <class_decl name="QVariant" />
-  <class name="QKeySequence">
+  <class name="QKeySequence" proxy="true">
     <enum name="StandardKey">
       <key>UnknownKey</key>
       <key>HelpContents</key>

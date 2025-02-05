@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QPainterPathStroker);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPainterPathStroker);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPainterPathStroker);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -150,6 +150,126 @@
 
       // functions:
       
+        // function 
+        QPainterPathStroker.prototype.setWidth = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.setWidth");
+          return this.__PROXY__.setWidth(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.width = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.width");
+          return this.__PROXY__.width(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.setCapStyle = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.setCapStyle");
+          return this.__PROXY__.setCapStyle(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.capStyle = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.capStyle");
+          return this.__PROXY__.capStyle(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.setJoinStyle = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.setJoinStyle");
+          return this.__PROXY__.setJoinStyle(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.joinStyle = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.joinStyle");
+          return this.__PROXY__.joinStyle(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.setMiterLimit = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.setMiterLimit");
+          return this.__PROXY__.setMiterLimit(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.miterLimit = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.miterLimit");
+          return this.__PROXY__.miterLimit(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.setCurveThreshold = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.setCurveThreshold");
+          return this.__PROXY__.setCurveThreshold(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.curveThreshold = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.curveThreshold");
+          return this.__PROXY__.curveThreshold(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.setDashPattern = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.setDashPattern");
+          return this.__PROXY__.setDashPattern(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.dashPattern = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.dashPattern");
+          return this.__PROXY__.dashPattern(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.setDashOffset = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.setDashOffset");
+          return this.__PROXY__.setDashOffset(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.dashOffset = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.dashOffset");
+          return this.__PROXY__.dashOffset(...args);
+        };
+    
+        // function 
+        QPainterPathStroker.prototype.createStroke = function(...args) 
+          
+        {
+          //print("JS: QPainterPathStroker.prototype.createStroke");
+          return this.__PROXY__.createStroke(...args);
+        };
+    
 
       // static functions:
       
@@ -170,4 +290,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QPainterPathStroker.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

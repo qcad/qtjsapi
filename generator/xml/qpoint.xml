@@ -117,7 +117,7 @@
     <preproc plain="#endif" />
     <class_decl name="QTransform" />
   </class>
-  <class name="QPointF">
+  <class name="QPointF" proxy="true">
     <constructor>
       <variant>
         <parameters>

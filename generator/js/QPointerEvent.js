@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QPointerEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -277,6 +277,230 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QPointerEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.spontaneous");
+          return this.__PROXY__.spontaneous(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.isAccepted");
+          return this.__PROXY__.isAccepted(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.accept");
+          return this.__PROXY__.accept(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.ignore");
+          return this.__PROXY__.ignore(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.isInputEvent");
+          return this.__PROXY__.isInputEvent(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.isPointerEvent");
+          return this.__PROXY__.isPointerEvent(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.isSinglePointEvent");
+          return this.__PROXY__.isSinglePointEvent(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.setSpontaneous");
+          return this.__PROXY__.setSpontaneous(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.modifiers = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.modifiers");
+          return this.__PROXY__.modifiers(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.setModifiers = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.setModifiers");
+          return this.__PROXY__.setModifiers(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.timestamp = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.timestamp");
+          return this.__PROXY__.timestamp(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.setTimestamp = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.setTimestamp");
+          return this.__PROXY__.setTimestamp(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.pointCount = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.pointCount");
+          return this.__PROXY__.pointCount(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.point = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.point");
+          return this.__PROXY__.point(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.pointById = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.pointById");
+          return this.__PROXY__.pointById(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.allPointsGrabbed = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.allPointsGrabbed");
+          return this.__PROXY__.allPointsGrabbed(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.isBeginEvent = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.isBeginEvent");
+          return this.__PROXY__.isBeginEvent(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.isUpdateEvent = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.isUpdateEvent");
+          return this.__PROXY__.isUpdateEvent(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.isEndEvent = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.isEndEvent");
+          return this.__PROXY__.isEndEvent(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.allPointsAccepted = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.allPointsAccepted");
+          return this.__PROXY__.allPointsAccepted(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.setAccepted");
+          return this.__PROXY__.setAccepted(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.exclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.exclusiveGrabber");
+          return this.__PROXY__.exclusiveGrabber(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.setExclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.setExclusiveGrabber");
+          return this.__PROXY__.setExclusiveGrabber(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.clearPassiveGrabbers = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.clearPassiveGrabbers");
+          return this.__PROXY__.clearPassiveGrabbers(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.addPassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.addPassiveGrabber");
+          return this.__PROXY__.addPassiveGrabber(...args);
+        };
+    
+        // function 
+        QPointerEvent.prototype.removePassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QPointerEvent.prototype.removePassiveGrabber");
+          return this.__PROXY__.removePassiveGrabber(...args);
+        };
+    
 
       // static functions:
       
@@ -297,4 +521,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QPointerEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

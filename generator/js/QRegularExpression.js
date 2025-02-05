@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QRegularExpression);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QRegularExpression);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QRegularExpression);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -105,7 +105,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QRegularExpression);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -131,7 +131,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QRegularExpression);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -228,6 +228,134 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
 
       // functions:
       
+        // function 
+        QRegularExpression.prototype.patternOptions = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.patternOptions");
+          return this.__PROXY__.patternOptions(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.setPatternOptions = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.setPatternOptions");
+          return this.__PROXY__.setPatternOptions(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.pattern = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.pattern");
+          return this.__PROXY__.pattern(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.setPattern = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.setPattern");
+          return this.__PROXY__.setPattern(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.isValid");
+          return this.__PROXY__.isValid(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.patternErrorOffset = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.patternErrorOffset");
+          return this.__PROXY__.patternErrorOffset(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.errorString = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.errorString");
+          return this.__PROXY__.errorString(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.captureCount = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.captureCount");
+          return this.__PROXY__.captureCount(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.namedCaptureGroups = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.namedCaptureGroups");
+          return this.__PROXY__.namedCaptureGroups(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.match = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.match");
+          return this.__PROXY__.match(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.globalMatch = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.globalMatch");
+          return this.__PROXY__.globalMatch(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.optimize = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.optimize");
+          return this.__PROXY__.optimize(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.escape = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.escape");
+          return this.__PROXY__.escape(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.wildcardToRegularExpression = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.wildcardToRegularExpression");
+          return this.__PROXY__.wildcardToRegularExpression(...args);
+        };
+    
+        // function 
+        QRegularExpression.prototype.anchoredPattern = function(...args) 
+          
+        {
+          //print("JS: QRegularExpression.prototype.anchoredPattern");
+          return this.__PROXY__.anchoredPattern(...args);
+        };
+    
 
       // static functions:
       
@@ -333,4 +461,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
       //  return this.wrapper.destr();
       //};
 
+      QRegularExpression.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

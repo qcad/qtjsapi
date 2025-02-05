@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qeasingcurve.h">
   <class_decl name="QPointF" />
-  <class name="QEasingCurve">
+  <class name="QEasingCurve" proxy="true">
     <enum name="Type">
       <key>Linear</key>
       <key>InQuad</key>

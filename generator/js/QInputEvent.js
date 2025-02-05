@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QInputEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -273,6 +273,126 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QInputEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.spontaneous");
+          return this.__PROXY__.spontaneous(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.setAccepted");
+          return this.__PROXY__.setAccepted(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.isAccepted");
+          return this.__PROXY__.isAccepted(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.accept");
+          return this.__PROXY__.accept(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.ignore");
+          return this.__PROXY__.ignore(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.isInputEvent");
+          return this.__PROXY__.isInputEvent(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.isPointerEvent");
+          return this.__PROXY__.isPointerEvent(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.isSinglePointEvent");
+          return this.__PROXY__.isSinglePointEvent(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.setSpontaneous");
+          return this.__PROXY__.setSpontaneous(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.modifiers = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.modifiers");
+          return this.__PROXY__.modifiers(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.setModifiers = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.setModifiers");
+          return this.__PROXY__.setModifiers(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.timestamp = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.timestamp");
+          return this.__PROXY__.timestamp(...args);
+        };
+    
+        // function 
+        QInputEvent.prototype.setTimestamp = function(...args) 
+          
+        {
+          //print("JS: QInputEvent.prototype.setTimestamp");
+          return this.__PROXY__.setTimestamp(...args);
+        };
+    
 
       // static functions:
       
@@ -293,4 +413,7 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QInputEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qfileinfo.h">
   <class_decl name="QDir" />
   <class_decl name="QDateTime" />
-  <class name="QFileInfo">
+  <class name="QFileInfo" proxy="true">
     <constructor>
       <variant>
         <parameters />

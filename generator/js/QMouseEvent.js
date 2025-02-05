@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QMouseEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QMouseEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QMouseEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QMouseEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -366,6 +366,310 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QMouseEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.spontaneous");
+          return this.__PROXY__.spontaneous(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.isAccepted");
+          return this.__PROXY__.isAccepted(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.accept");
+          return this.__PROXY__.accept(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.ignore");
+          return this.__PROXY__.ignore(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.isInputEvent");
+          return this.__PROXY__.isInputEvent(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.isPointerEvent");
+          return this.__PROXY__.isPointerEvent(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.isSinglePointEvent");
+          return this.__PROXY__.isSinglePointEvent(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.setSpontaneous");
+          return this.__PROXY__.setSpontaneous(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.modifiers = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.modifiers");
+          return this.__PROXY__.modifiers(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.setModifiers = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.setModifiers");
+          return this.__PROXY__.setModifiers(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.timestamp = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.timestamp");
+          return this.__PROXY__.timestamp(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.setTimestamp = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.setTimestamp");
+          return this.__PROXY__.setTimestamp(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.pointCount = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.pointCount");
+          return this.__PROXY__.pointCount(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.point = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.point");
+          return this.__PROXY__.point(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.pointById = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.pointById");
+          return this.__PROXY__.pointById(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.allPointsGrabbed = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.allPointsGrabbed");
+          return this.__PROXY__.allPointsGrabbed(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.allPointsAccepted = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.allPointsAccepted");
+          return this.__PROXY__.allPointsAccepted(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.setAccepted");
+          return this.__PROXY__.setAccepted(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.exclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.exclusiveGrabber");
+          return this.__PROXY__.exclusiveGrabber(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.setExclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.setExclusiveGrabber");
+          return this.__PROXY__.setExclusiveGrabber(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.clearPassiveGrabbers = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.clearPassiveGrabbers");
+          return this.__PROXY__.clearPassiveGrabbers(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.addPassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.addPassiveGrabber");
+          return this.__PROXY__.addPassiveGrabber(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.removePassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.removePassiveGrabber");
+          return this.__PROXY__.removePassiveGrabber(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.position = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.position");
+          return this.__PROXY__.position(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.scenePosition = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.scenePosition");
+          return this.__PROXY__.scenePosition(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.globalPosition = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.globalPosition");
+          return this.__PROXY__.globalPosition(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.isBeginEvent = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.isBeginEvent");
+          return this.__PROXY__.isBeginEvent(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.isUpdateEvent = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.isUpdateEvent");
+          return this.__PROXY__.isUpdateEvent(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.isEndEvent = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.isEndEvent");
+          return this.__PROXY__.isEndEvent(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.exclusivePointGrabber = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.exclusivePointGrabber");
+          return this.__PROXY__.exclusivePointGrabber(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.setExclusivePointGrabber = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.setExclusivePointGrabber");
+          return this.__PROXY__.setExclusivePointGrabber(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.pos = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.pos");
+          return this.__PROXY__.pos(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.button = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.button");
+          return this.__PROXY__.button(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.buttons = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.buttons");
+          return this.__PROXY__.buttons(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.source = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.source");
+          return this.__PROXY__.source(...args);
+        };
+    
+        // function 
+        QMouseEvent.prototype.flags = function(...args) 
+          
+        {
+          //print("JS: QMouseEvent.prototype.flags");
+          return this.__PROXY__.flags(...args);
+        };
+    
 
       // static functions:
       
@@ -386,4 +690,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QMouseEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

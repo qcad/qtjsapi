@@ -4,7 +4,7 @@
   <class_decl name="QGesture" />
   <class_decl name="QScreen" />
   <class_decl name="QMimeData" />
-  <class name="QInputEvent" ownership="cpp">
+  <class name="QInputEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
     </super_list>
@@ -64,7 +64,7 @@
       </variant>
     </function>
   </class>
-  <class name="QPointerEvent" ownership="cpp">
+  <class name="QPointerEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
       <super name="QInputEvent" />
@@ -201,7 +201,7 @@
       </variant>
     </function>
   </class>
-  <class name="QSinglePointEvent" ownership="cpp">
+  <class name="QSinglePointEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
       <super name="QPointerEvent" />
@@ -264,7 +264,7 @@
       </variant>
     </function>
   </class>
-  <class name="QMouseEvent" ownership="cpp">
+  <class name="QMouseEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
       <super name="QInputEvent" />
@@ -402,7 +402,7 @@
     </function>
     <class_decl name="QGuiApplicationPrivate" />
   </class>
-  <class name="QWheelEvent" ownership="cpp">
+  <class name="QWheelEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
       <super name="QInputEvent" />
@@ -492,7 +492,7 @@
       </variant>
     </function>
   </class>
-  <class name="QKeyEvent" ownership="cpp">
+  <class name="QKeyEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
       <super name="QInputEvent" />
@@ -588,7 +588,7 @@
       </variant>
     </function>
   </class>
-  <class name="QFocusEvent">
+  <class name="QFocusEvent" proxy="true">
     <super_list>
       <super name="QEvent" />
     </super_list>
@@ -616,7 +616,7 @@
       </variant>
     </function>
   </class>
-  <class name="QPaintEvent" ownership="cpp">
+  <class name="QPaintEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
     </super_list>
@@ -643,7 +643,7 @@
       </variant>
     </function>
   </class>
-  <class name="QResizeEvent" ownership="cpp">
+  <class name="QResizeEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
     </super_list>
@@ -667,7 +667,7 @@
     </function>
     <class_decl name="QApplication" />
   </class>
-  <class name="QDragEnterEvent" ownership="cpp">
+  <class name="QDragEnterEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
       <super name="QDropEvent" />
@@ -685,7 +685,7 @@
       </variant>
     </constructor>
   </class>
-  <class name="QDropEvent" ownership="cpp">
+  <class name="QDropEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
     </super_list>
@@ -791,7 +791,7 @@
       </variant>
     </function>
   </class>
-  <class name="QContextMenuEvent" ownership="cpp">
+  <class name="QContextMenuEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
       <super name="QInputEvent" />
@@ -860,7 +860,7 @@
       </variant>
     </function>
   </class>
-  <class name="QDragMoveEvent" ownership="cpp">
+  <class name="QDragMoveEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
       <super name="QDropEvent" />
@@ -908,7 +908,7 @@
       </variant>
     </function>
   </class>
-  <class name="QDragLeaveEvent" ownership="cpp">
+  <class name="QDragLeaveEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
     </super_list>
@@ -918,7 +918,7 @@
       </variant>
     </constructor>
   </class>
-  <class name="QHelpEvent">
+  <class name="QHelpEvent" proxy="true">
     <super_list>
       <super name="QEvent" />
     </super_list>
@@ -967,7 +967,7 @@
       </variant>
     </function>
   </class>
-  <class name="QActionEvent" ownership="cpp">
+  <class name="QActionEvent" ownership="cpp" proxy="true">
     <super_list>
       <super name="QEvent" />
     </super_list>

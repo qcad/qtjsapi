@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QWheelEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QWheelEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -88,6 +88,54 @@
         }
 
         
+              // define property setters/getters:
+              Object.defineProperty(this, 'pixelDelta', {
+                  get() {
+                      
+                          return this.__PROXY__.pixelDelta;
+                        
+                  },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
+              // define property setters/getters:
+              Object.defineProperty(this, 'angleDelta', {
+                  get() {
+                      
+                          return this.__PROXY__.angleDelta;
+                        
+                  },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
+              // define property setters/getters:
+              Object.defineProperty(this, 'phase', {
+                  get() {
+                      
+                          return this.__PROXY__.phase;
+                        
+                  },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
+              // define property setters/getters:
+              Object.defineProperty(this, 'inverted', {
+                  get() {
+                      
+                          return this.__PROXY__.inverted;
+                        
+                  },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
 
       }
 
@@ -315,6 +363,342 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QWheelEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.spontaneous");
+          return this.__PROXY__.spontaneous(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.isAccepted");
+          return this.__PROXY__.isAccepted(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.accept");
+          return this.__PROXY__.accept(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.ignore");
+          return this.__PROXY__.ignore(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.isInputEvent");
+          return this.__PROXY__.isInputEvent(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.isPointerEvent");
+          return this.__PROXY__.isPointerEvent(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.isSinglePointEvent");
+          return this.__PROXY__.isSinglePointEvent(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.setSpontaneous");
+          return this.__PROXY__.setSpontaneous(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.modifiers = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.modifiers");
+          return this.__PROXY__.modifiers(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.setModifiers = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.setModifiers");
+          return this.__PROXY__.setModifiers(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.timestamp = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.timestamp");
+          return this.__PROXY__.timestamp(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.setTimestamp = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.setTimestamp");
+          return this.__PROXY__.setTimestamp(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.pointCount = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.pointCount");
+          return this.__PROXY__.pointCount(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.point = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.point");
+          return this.__PROXY__.point(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.pointById = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.pointById");
+          return this.__PROXY__.pointById(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.allPointsGrabbed = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.allPointsGrabbed");
+          return this.__PROXY__.allPointsGrabbed(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.allPointsAccepted = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.allPointsAccepted");
+          return this.__PROXY__.allPointsAccepted(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.setAccepted");
+          return this.__PROXY__.setAccepted(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.exclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.exclusiveGrabber");
+          return this.__PROXY__.exclusiveGrabber(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.setExclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.setExclusiveGrabber");
+          return this.__PROXY__.setExclusiveGrabber(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.clearPassiveGrabbers = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.clearPassiveGrabbers");
+          return this.__PROXY__.clearPassiveGrabbers(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.addPassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.addPassiveGrabber");
+          return this.__PROXY__.addPassiveGrabber(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.removePassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.removePassiveGrabber");
+          return this.__PROXY__.removePassiveGrabber(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.button = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.button");
+          return this.__PROXY__.button(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.buttons = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.buttons");
+          return this.__PROXY__.buttons(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.position = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.position");
+          return this.__PROXY__.position(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.scenePosition = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.scenePosition");
+          return this.__PROXY__.scenePosition(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.globalPosition = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.globalPosition");
+          return this.__PROXY__.globalPosition(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.exclusivePointGrabber = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.exclusivePointGrabber");
+          return this.__PROXY__.exclusivePointGrabber(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.setExclusivePointGrabber = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.setExclusivePointGrabber");
+          return this.__PROXY__.setExclusivePointGrabber(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.pixelDelta = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.pixelDelta");
+          return this.__PROXY__.pixelDelta(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.angleDelta = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.angleDelta");
+          return this.__PROXY__.angleDelta(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.phase = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.phase");
+          return this.__PROXY__.phase(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.inverted = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.inverted");
+          return this.__PROXY__.inverted(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.isInverted = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.isInverted");
+          return this.__PROXY__.isInverted(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.hasPixelDelta = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.hasPixelDelta");
+          return this.__PROXY__.hasPixelDelta(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.isBeginEvent = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.isBeginEvent");
+          return this.__PROXY__.isBeginEvent(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.isUpdateEvent = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.isUpdateEvent");
+          return this.__PROXY__.isUpdateEvent(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.isEndEvent = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.isEndEvent");
+          return this.__PROXY__.isEndEvent(...args);
+        };
+    
+        // function 
+        QWheelEvent.prototype.source = function(...args) 
+          
+        {
+          //print("JS: QWheelEvent.prototype.source");
+          return this.__PROXY__.source(...args);
+        };
+    
 
       // static functions:
       
@@ -335,4 +719,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QWheelEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

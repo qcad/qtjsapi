@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QDropEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDropEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -303,6 +303,150 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QDropEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.spontaneous");
+          return this.__PROXY__.spontaneous(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.setAccepted");
+          return this.__PROXY__.setAccepted(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.isAccepted");
+          return this.__PROXY__.isAccepted(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.accept");
+          return this.__PROXY__.accept(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.ignore");
+          return this.__PROXY__.ignore(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.isInputEvent");
+          return this.__PROXY__.isInputEvent(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.isPointerEvent");
+          return this.__PROXY__.isPointerEvent(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.isSinglePointEvent");
+          return this.__PROXY__.isSinglePointEvent(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.setSpontaneous");
+          return this.__PROXY__.setSpontaneous(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.position = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.position");
+          return this.__PROXY__.position(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.buttons = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.buttons");
+          return this.__PROXY__.buttons(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.modifiers = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.modifiers");
+          return this.__PROXY__.modifiers(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.acceptProposedAction = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.acceptProposedAction");
+          return this.__PROXY__.acceptProposedAction(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.setDropAction = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.setDropAction");
+          return this.__PROXY__.setDropAction(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.source = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.source");
+          return this.__PROXY__.source(...args);
+        };
+    
+        // function 
+        QDropEvent.prototype.mimeData = function(...args) 
+          
+        {
+          //print("JS: QDropEvent.prototype.mimeData");
+          return this.__PROXY__.mimeData(...args);
+        };
+    
 
       // static functions:
       
@@ -323,4 +467,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QDropEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

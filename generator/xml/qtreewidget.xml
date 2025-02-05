@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtreewidget.h">
   <class_decl name="QTreeWidget" />
-  <class name="QTreeWidgetItem">
+  <class name="QTreeWidgetItem" proxy="true">
     <enum name="ItemType">
       <key>Type</key>
       <key>UserType</key>

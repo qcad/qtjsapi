@@ -21,7 +21,7 @@
   <class_decl name="QDomNotation" />
   <class_decl name="QDomCharacterData" />
   <class_decl name="QXmlStreamReader" />
-  <class name="QDomImplementation">
+  <class name="QDomImplementation" proxy="true">
     <constructor>
       <variant>
         <parameters />
@@ -103,7 +103,7 @@
     </function>
     <class_decl name="QDomDocument" />
   </class>
-  <class name="QDomNode">
+  <class name="QDomNode" proxy="true">
     <enum name="NodeType">
       <key>ElementNode</key>
       <key>AttributeNode</key>
@@ -512,7 +512,7 @@
     <class_decl name="QDomNodeList" />
     <class_decl name="QDomNamedNodeMap" />
   </class>
-  <class name="QDomNodeList">
+  <class name="QDomNodeList" proxy="true">
     <constructor>
       <variant>
         <parameters />
@@ -582,7 +582,7 @@
     <class_decl name="QDomElement" />
     <class_decl name="QDomDocument" />
   </class>
-  <class name="QDomDocumentType">
+  <class name="QDomDocumentType" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>
@@ -642,7 +642,7 @@
     <class_decl name="QDomDocument" />
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomDocument">
+  <class name="QDomDocument" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>
@@ -862,7 +862,7 @@
     </function>
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomNamedNodeMap">
+  <class name="QDomNamedNodeMap" proxy="true">
     <constructor>
       <variant>
         <parameters />
@@ -976,7 +976,7 @@
     <class_decl name="QDomDocumentType" />
     <class_decl name="QDomElement" />
   </class>
-  <class name="QDomDocumentFragment">
+  <class name="QDomDocumentFragment" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>
@@ -1005,7 +1005,7 @@
     <class_decl name="QDomDocument" />
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomCharacterData">
+  <class name="QDomCharacterData" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>
@@ -1093,7 +1093,7 @@
     <class_decl name="QDomComment" />
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomAttr">
+  <class name="QDomAttr" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>
@@ -1150,7 +1150,7 @@
     <class_decl name="QDomElement" />
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomElement">
+  <class name="QDomElement" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>
@@ -1388,7 +1388,7 @@
     <class_decl name="QDomNode" />
     <class_decl name="QDomAttr" />
   </class>
-  <class name="QDomText">
+  <class name="QDomText" proxy="true">
     <super_list>
       <super name="QDomNode" />
       <super name="QDomCharacterData" />
@@ -1426,7 +1426,7 @@
     <class_decl name="QDomDocument" />
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomComment">
+  <class name="QDomComment" proxy="true">
     <super_list>
       <super name="QDomCharacterData" />
     </super_list>
@@ -1455,7 +1455,7 @@
     <class_decl name="QDomDocument" />
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomCDATASection">
+  <class name="QDomCDATASection" proxy="true">
     <super_list>
       <super name="QDomNode" />
       <super name="QDomCharacterData" />
@@ -1486,7 +1486,7 @@
     <class_decl name="QDomDocument" />
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomNotation">
+  <class name="QDomNotation" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>
@@ -1525,7 +1525,7 @@
     <class_decl name="QDomDocument" />
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomEntity">
+  <class name="QDomEntity" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>
@@ -1568,7 +1568,7 @@
     </function>
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomEntityReference">
+  <class name="QDomEntityReference" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>
@@ -1597,7 +1597,7 @@
     <class_decl name="QDomDocument" />
     <class_decl name="QDomNode" />
   </class>
-  <class name="QDomProcessingInstruction">
+  <class name="QDomProcessingInstruction" proxy="true">
     <super_list>
       <super name="QDomNode" />
     </super_list>

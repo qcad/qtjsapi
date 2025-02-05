@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QResizeEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QResizeEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -302,6 +302,110 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QResizeEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.spontaneous");
+          return this.__PROXY__.spontaneous(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.setAccepted");
+          return this.__PROXY__.setAccepted(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.isAccepted");
+          return this.__PROXY__.isAccepted(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.accept");
+          return this.__PROXY__.accept(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.ignore");
+          return this.__PROXY__.ignore(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.isInputEvent");
+          return this.__PROXY__.isInputEvent(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.isPointerEvent");
+          return this.__PROXY__.isPointerEvent(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.isSinglePointEvent");
+          return this.__PROXY__.isSinglePointEvent(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.setSpontaneous");
+          return this.__PROXY__.setSpontaneous(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.size = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.size");
+          return this.__PROXY__.size(...args);
+        };
+    
+        // function 
+        QResizeEvent.prototype.oldSize = function(...args) 
+          
+        {
+          //print("JS: QResizeEvent.prototype.oldSize");
+          return this.__PROXY__.oldSize(...args);
+        };
+    
 
       // static functions:
       
@@ -322,4 +426,7 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QResizeEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

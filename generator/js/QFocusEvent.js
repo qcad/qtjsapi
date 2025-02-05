@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QFocusEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QFocusEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -303,6 +303,118 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QFocusEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.spontaneous");
+          return this.__PROXY__.spontaneous(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.setAccepted");
+          return this.__PROXY__.setAccepted(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.isAccepted");
+          return this.__PROXY__.isAccepted(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.accept");
+          return this.__PROXY__.accept(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.ignore");
+          return this.__PROXY__.ignore(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.isInputEvent");
+          return this.__PROXY__.isInputEvent(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.isPointerEvent");
+          return this.__PROXY__.isPointerEvent(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.isSinglePointEvent");
+          return this.__PROXY__.isSinglePointEvent(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.setSpontaneous");
+          return this.__PROXY__.setSpontaneous(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.gotFocus = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.gotFocus");
+          return this.__PROXY__.gotFocus(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.lostFocus = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.lostFocus");
+          return this.__PROXY__.lostFocus(...args);
+        };
+    
+        // function 
+        QFocusEvent.prototype.reason = function(...args) 
+          
+        {
+          //print("JS: QFocusEvent.prototype.reason");
+          return this.__PROXY__.reason(...args);
+        };
+    
 
       // static functions:
       
@@ -323,4 +435,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QFocusEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       
