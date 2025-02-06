@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QKeySequence);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QKeySequence);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QKeySequence);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -106,7 +106,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QKeySequence);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -132,7 +132,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QKeySequence);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -158,7 +158,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QKeySequence);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -203,7 +203,9 @@
       
         // function with alias name in CPP wrapper:
         QKeySequence.prototype.toString = function() {
-          return this.toStr.apply(this, arguments);
+          
+              return this.__PROXY__.toStr.apply(this, arguments);
+            
         }
       QKeySequence.getObjectType = function() {
         return RJSType_QKeySequence.getIdStatic();
@@ -313,6 +315,126 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
 
       // functions:
       
+        // function 
+        QKeySequence.prototype.count = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.count");
+          return this.__PROXY__.count(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.isEmpty");
+          return this.__PROXY__.isEmpty(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.fromString = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.fromString");
+          return this.__PROXY__.fromString(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.listFromString = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.listFromString");
+          return this.__PROXY__.listFromString(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.listToString = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.listToString");
+          return this.__PROXY__.listToString(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.matches = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.matches");
+          return this.__PROXY__.matches(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.mnemonic = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.mnemonic");
+          return this.__PROXY__.mnemonic(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.keyBindings = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.keyBindings");
+          return this.__PROXY__.keyBindings(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.isDetached = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.isDetached");
+          return this.__PROXY__.isDetached(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.decodeString = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.decodeString");
+          return this.__PROXY__.decodeString(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.encodeString = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.encodeString");
+          return this.__PROXY__.encodeString(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.assign = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.assign");
+          return this.__PROXY__.assign(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.setKey = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.setKey");
+          return this.__PROXY__.setKey(...args);
+        };
+    
+        // function 
+        QKeySequence.prototype.operator = function(...args) 
+          
+        {
+          //print("JS: QKeySequence.prototype.operator");
+          return this.__PROXY__.operator(...args);
+        };
+    
 
       // static functions:
       
@@ -494,4 +616,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
       //  return this.wrapper.destr();
       //};
 
+      QKeySequence.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

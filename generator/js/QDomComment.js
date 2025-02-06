@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QDomComment);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDomComment);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDomComment);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -154,6 +154,86 @@
 
       // functions:
       
+        // function 
+        QDomComment.prototype.substringData = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.substringData");
+          return this.__PROXY__.substringData(...args);
+        };
+    
+        // function 
+        QDomComment.prototype.appendData = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.appendData");
+          return this.__PROXY__.appendData(...args);
+        };
+    
+        // function 
+        QDomComment.prototype.insertData = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.insertData");
+          return this.__PROXY__.insertData(...args);
+        };
+    
+        // function 
+        QDomComment.prototype.deleteData = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.deleteData");
+          return this.__PROXY__.deleteData(...args);
+        };
+    
+        // function 
+        QDomComment.prototype.replaceData = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.replaceData");
+          return this.__PROXY__.replaceData(...args);
+        };
+    
+        // function 
+        QDomComment.prototype.length = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.length");
+          return this.__PROXY__.length(...args);
+        };
+    
+        // function 
+        QDomComment.prototype.data = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.data");
+          return this.__PROXY__.data(...args);
+        };
+    
+        // function 
+        QDomComment.prototype.setData = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.setData");
+          return this.__PROXY__.setData(...args);
+        };
+    
+        // function 
+        QDomComment.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.operator_assign");
+          return this.__PROXY__.operator_assign(...args);
+        };
+    
+        // function 
+        QDomComment.prototype.nodeType = function(...args) 
+          
+        {
+          //print("JS: QDomComment.prototype.nodeType");
+          return this.__PROXY__.nodeType(...args);
+        };
+    
 
       // static functions:
       
@@ -174,4 +254,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QDomComment.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

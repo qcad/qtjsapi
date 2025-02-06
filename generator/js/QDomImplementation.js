@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QDomImplementation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDomImplementation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDomImplementation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -155,6 +155,78 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
 
       // functions:
       
+        // function 
+        QDomImplementation.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QDomImplementation.prototype.operator_assign");
+          return this.__PROXY__.operator_assign(...args);
+        };
+    
+        // function 
+        QDomImplementation.prototype.operator_equal = function(...args) 
+          
+        {
+          //print("JS: QDomImplementation.prototype.operator_equal");
+          return this.__PROXY__.operator_equal(...args);
+        };
+    
+        // function 
+        QDomImplementation.prototype.operator_unequal = function(...args) 
+          
+        {
+          //print("JS: QDomImplementation.prototype.operator_unequal");
+          return this.__PROXY__.operator_unequal(...args);
+        };
+    
+        // function 
+        QDomImplementation.prototype.hasFeature = function(...args) 
+          
+        {
+          //print("JS: QDomImplementation.prototype.hasFeature");
+          return this.__PROXY__.hasFeature(...args);
+        };
+    
+        // function 
+        QDomImplementation.prototype.createDocumentType = function(...args) 
+          
+        {
+          //print("JS: QDomImplementation.prototype.createDocumentType");
+          return this.__PROXY__.createDocumentType(...args);
+        };
+    
+        // function 
+        QDomImplementation.prototype.createDocument = function(...args) 
+          
+        {
+          //print("JS: QDomImplementation.prototype.createDocument");
+          return this.__PROXY__.createDocument(...args);
+        };
+    
+        // function 
+        QDomImplementation.prototype.invalidDataPolicy = function(...args) 
+          
+        {
+          //print("JS: QDomImplementation.prototype.invalidDataPolicy");
+          return this.__PROXY__.invalidDataPolicy(...args);
+        };
+    
+        // function 
+        QDomImplementation.prototype.setInvalidDataPolicy = function(...args) 
+          
+        {
+          //print("JS: QDomImplementation.prototype.setInvalidDataPolicy");
+          return this.__PROXY__.setInvalidDataPolicy(...args);
+        };
+    
+        // function 
+        QDomImplementation.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QDomImplementation.prototype.isNull");
+          return this.__PROXY__.isNull(...args);
+        };
+    
 
       // static functions:
       
@@ -231,4 +303,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
       //  return this.wrapper.destr();
       //};
 
+      QDomImplementation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

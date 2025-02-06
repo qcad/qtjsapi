@@ -203,7 +203,9 @@
       
         // function with alias name in CPP wrapper:
         QFont.prototype.toString = function() {
-          return this.toStr.apply(this, arguments);
+          
+              return this.__PROXY__.toStr.apply(this, arguments);
+            
         }
       QFont.getObjectType = function() {
         return RJSType_QFont.getIdStatic();
@@ -717,14 +719,6 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
         {
           //print("JS: QFont.prototype.key");
           return this.__PROXY__.key(...args);
-        };
-    
-        // function 
-        QFont.prototype.toString = function(...args) 
-          
-        {
-          //print("JS: QFont.prototype.toString");
-          return this.__PROXY__.toString(...args);
         };
     
         // function 

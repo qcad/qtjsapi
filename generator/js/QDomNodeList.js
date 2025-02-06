@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QDomNodeList);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDomNodeList);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDomNodeList);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -150,6 +150,78 @@
 
       // functions:
       
+        // function 
+        QDomNodeList.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QDomNodeList.prototype.operator_assign");
+          return this.__PROXY__.operator_assign(...args);
+        };
+    
+        // function 
+        QDomNodeList.prototype.operator_equal = function(...args) 
+          
+        {
+          //print("JS: QDomNodeList.prototype.operator_equal");
+          return this.__PROXY__.operator_equal(...args);
+        };
+    
+        // function 
+        QDomNodeList.prototype.operator_unequal = function(...args) 
+          
+        {
+          //print("JS: QDomNodeList.prototype.operator_unequal");
+          return this.__PROXY__.operator_unequal(...args);
+        };
+    
+        // function 
+        QDomNodeList.prototype.item = function(...args) 
+          
+        {
+          //print("JS: QDomNodeList.prototype.item");
+          return this.__PROXY__.item(...args);
+        };
+    
+        // function 
+        QDomNodeList.prototype.at = function(...args) 
+          
+        {
+          //print("JS: QDomNodeList.prototype.at");
+          return this.__PROXY__.at(...args);
+        };
+    
+        // function 
+        QDomNodeList.prototype.length = function(...args) 
+          
+        {
+          //print("JS: QDomNodeList.prototype.length");
+          return this.__PROXY__.length(...args);
+        };
+    
+        // function 
+        QDomNodeList.prototype.count = function(...args) 
+          
+        {
+          //print("JS: QDomNodeList.prototype.count");
+          return this.__PROXY__.count(...args);
+        };
+    
+        // function 
+        QDomNodeList.prototype.size = function(...args) 
+          
+        {
+          //print("JS: QDomNodeList.prototype.size");
+          return this.__PROXY__.size(...args);
+        };
+    
+        // function 
+        QDomNodeList.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QDomNodeList.prototype.isEmpty");
+          return this.__PROXY__.isEmpty(...args);
+        };
+    
 
       // static functions:
       
@@ -170,4 +242,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QDomNodeList.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

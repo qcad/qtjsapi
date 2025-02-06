@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QDomNamedNodeMap);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDomNamedNodeMap);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QDomNamedNodeMap);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -150,6 +150,126 @@
 
       // functions:
       
+        // function 
+        QDomNamedNodeMap.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.operator_assign");
+          return this.__PROXY__.operator_assign(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.operator_equal = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.operator_equal");
+          return this.__PROXY__.operator_equal(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.operator_unequal = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.operator_unequal");
+          return this.__PROXY__.operator_unequal(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.namedItem = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.namedItem");
+          return this.__PROXY__.namedItem(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.setNamedItem = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.setNamedItem");
+          return this.__PROXY__.setNamedItem(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.removeNamedItem = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.removeNamedItem");
+          return this.__PROXY__.removeNamedItem(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.item = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.item");
+          return this.__PROXY__.item(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.namedItemNS = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.namedItemNS");
+          return this.__PROXY__.namedItemNS(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.setNamedItemNS = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.setNamedItemNS");
+          return this.__PROXY__.setNamedItemNS(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.removeNamedItemNS = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.removeNamedItemNS");
+          return this.__PROXY__.removeNamedItemNS(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.length = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.length");
+          return this.__PROXY__.length(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.count = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.count");
+          return this.__PROXY__.count(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.size = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.size");
+          return this.__PROXY__.size(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.isEmpty");
+          return this.__PROXY__.isEmpty(...args);
+        };
+    
+        // function 
+        QDomNamedNodeMap.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QDomNamedNodeMap.prototype.contains");
+          return this.__PROXY__.contains(...args);
+        };
+    
 
       // static functions:
       
@@ -170,4 +290,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QDomNamedNodeMap.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -186,7 +186,14 @@
       <xsl:for-each select="qsrc:function[@cppname]">
         // function with alias name in CPP wrapper:
         <xsl:value-of select="$classname" />.prototype.<xsl:value-of select="@name" /> = function() {
-          return this.<xsl:value-of select="@cppname" />.apply(this, arguments);
+          <xsl:choose>
+            <xsl:when test="$proxy-mode='true'">
+              return this.__PROXY__.<xsl:value-of select="@cppname" />.apply(this, arguments);
+            </xsl:when>
+            <xsl:otherwise>
+              return this.<xsl:value-of select="@cppname" />.apply(this, arguments);
+            </xsl:otherwise>
+          </xsl:choose>
         }
       </xsl:for-each>
 
@@ -579,7 +586,7 @@
       };
     </xsl:when>
 
-    <xsl:when test="$proxy-mode='true'">
+    <xsl:when test="$proxy-mode='true' and not(@cppname)">
         // function 
         <xsl:choose>
           <xsl:when test="@jsname">

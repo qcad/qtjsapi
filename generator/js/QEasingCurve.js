@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QEasingCurve);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QEasingCurve);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QEasingCurve);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -105,7 +105,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QEasingCurve);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -228,6 +228,118 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
 
       // functions:
       
+        // function 
+        QEasingCurve.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.operator_assign");
+          return this.__PROXY__.operator_assign(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.swap");
+          return this.__PROXY__.swap(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.amplitude = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.amplitude");
+          return this.__PROXY__.amplitude(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.setAmplitude = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.setAmplitude");
+          return this.__PROXY__.setAmplitude(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.period = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.period");
+          return this.__PROXY__.period(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.setPeriod = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.setPeriod");
+          return this.__PROXY__.setPeriod(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.overshoot = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.overshoot");
+          return this.__PROXY__.overshoot(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.setOvershoot = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.setOvershoot");
+          return this.__PROXY__.setOvershoot(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.addCubicBezierSegment = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.addCubicBezierSegment");
+          return this.__PROXY__.addCubicBezierSegment(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.addTCBSegment = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.addTCBSegment");
+          return this.__PROXY__.addTCBSegment(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.toCubicSpline = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.toCubicSpline");
+          return this.__PROXY__.toCubicSpline(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.type");
+          return this.__PROXY__.type(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.setType = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.setType");
+          return this.__PROXY__.setType(...args);
+        };
+    
+        // function 
+        QEasingCurve.prototype.valueForProgress = function(...args) 
+          
+        {
+          //print("JS: QEasingCurve.prototype.valueForProgress");
+          return this.__PROXY__.valueForProgress(...args);
+        };
+    
 
       // static functions:
       
@@ -248,4 +360,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
       //  return this.wrapper.destr();
       //};
 
+      QEasingCurve.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       
