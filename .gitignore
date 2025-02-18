@@ -82,3 +82,4 @@ qtcsettings.cmake
 Testing
 out
 *.prev
+meta_types
