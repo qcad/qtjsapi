@@ -83,3 +83,5 @@ Testing
 out
 *.prev
 meta_types
+CMakeLists.txt.user.*
+CMakeCache.txt.prev
