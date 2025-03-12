@@ -849,6 +849,12 @@
           virtual QInputDevice* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class QInputDialog:
+        class RJSBasecaster_QInputDialog {
+        public:
+          virtual QInputDialog* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class QIODevice:
         class RJSBasecaster_QIODevice {
         public:
@@ -4121,6 +4127,11 @@
       static QJSValue cpp2js_QInputDevice(RJSApi& handler, const QInputDevice* v);
       static QInputDevice* js2cpp_QInputDevice_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QInputDevice_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QInputDialog(RJSApi& handler, QInputDialog* v);
+      static QJSValue cpp2js_QInputDialog(RJSApi& handler, const QInputDialog* v);
+      static QInputDialog* js2cpp_QInputDialog_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QInputDialog_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QIntValidator(RJSApi& handler, QIntValidator* v);
       static QJSValue cpp2js_QIntValidator(RJSApi& handler, const QIntValidator* v);

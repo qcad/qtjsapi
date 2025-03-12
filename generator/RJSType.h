@@ -5821,6 +5821,34 @@
           static int id;
       };
     
+      class QTJSAPI_EXPORT  RJSType_QInputDialog : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QInputDialog";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QInputDialog();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
       class QTJSAPI_EXPORT  RJSType_QIntValidator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE

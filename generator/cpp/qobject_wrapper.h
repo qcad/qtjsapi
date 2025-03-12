@@ -332,6 +332,10 @@
                 return (QObject*)(QInputDevice*)vp;
               }
               
+              if (t==RJSType_QInputDialog::getIdStatic()) {
+                return (QObject*)(QInputDialog*)vp;
+              }
+              
               if (t==RJSType_QIODevice::getIdStatic()) {
                 return (QObject*)(QIODevice*)vp;
               }

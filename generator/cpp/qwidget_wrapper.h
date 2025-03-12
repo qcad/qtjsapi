@@ -781,6 +781,10 @@
                 return (QWidget*)(QHeaderView*)vp;
               }
               
+              if (t==RJSType_QInputDialog::getIdStatic()) {
+                return (QWidget*)(QInputDialog*)vp;
+              }
+              
               if (t==RJSType_QLabel::getIdStatic()) {
                 return (QWidget*)(QLabel*)vp;
               }

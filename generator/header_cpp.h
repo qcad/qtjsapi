@@ -170,6 +170,8 @@
 #include "generator/cpp/qimagewriter_wrapper.h"
 #include "generator/cpp/qinputdevice_base.h"
 #include "generator/cpp/qinputdevice_wrapper.h"
+#include "generator/cpp/qinputdialog_base.h"
+#include "generator/cpp/qinputdialog_wrapper.h"
 #include "generator/cpp/qinputevent_wrapper.h"
 #include "generator/cpp/qintvalidator_wrapper.h"
 #include "generator/cpp/qiodevice_base.h"

@@ -169,6 +169,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qimagewriter_wrapper.h
     generator/cpp/qinputdevice_base.h
     generator/cpp/qinputdevice_wrapper.h
+    generator/cpp/qinputdialog_base.h
+    generator/cpp/qinputdialog_wrapper.h
     generator/cpp/qinputevent_wrapper.h
     generator/cpp/qintvalidator_wrapper.h
     generator/cpp/qiodevice_base.h
@@ -574,6 +576,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qimagewriter_wrapper.cpp
     generator/cpp/qinputdevice_base.cpp
     generator/cpp/qinputdevice_wrapper.cpp
+    generator/cpp/qinputdialog_base.cpp
+    generator/cpp/qinputdialog_wrapper.cpp
     generator/cpp/qiodevice_base.cpp
     generator/cpp/qiodevice_wrapper.cpp
     generator/cpp/qiodevicebase_base.cpp

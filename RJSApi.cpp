@@ -105,6 +105,7 @@
 #include "generator/cpp/qcursor_wrapper.h"
 #include "generator/cpp/qimagereader_wrapper.h"
 #include "generator/cpp/qbytearray_wrapper.h"
+#include "generator/cpp/qinputdialog_wrapper.h"
 #include "generator/cpp/qinputevent_wrapper.h"
 #include "generator/cpp/qbrush_wrapper.h"
 #include "generator/cpp/qguiapplication_wrapper.h"
@@ -450,6 +451,7 @@ void RJSApi::init() {
     QPaintDevice_Wrapper::init(*this);
     QFileSystemWatcher_Wrapper::init(*this);
     QScreen_Wrapper::init(*this);
+    QInputDialog_Wrapper::init(*this);
 
     QJSEngine_Wrapper::init(*this);
     QQmlContext_Wrapper::init(*this);
