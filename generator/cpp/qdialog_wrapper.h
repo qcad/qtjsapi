@@ -418,6 +418,10 @@
                 return (QDialog*)(QFileDialog*)vp;
               }
               
+              if (t==RJSType_QInputDialog::getIdStatic()) {
+                return (QDialog*)(QInputDialog*)vp;
+              }
+              
               if (t==RJSType_QMessageBox::getIdStatic()) {
                 return (QDialog*)(QMessageBox*)vp;
               }

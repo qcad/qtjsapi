@@ -566,6 +566,7 @@
     <type>QHeaderView</type>
     <type>QIODevice</type>
     <type>QInputDevice</type>
+    <type>QInputDialog</type>
     <type>QIntValidator</type>
     <type>QItemDelegate</type>
     <type>QItemSelectionModel</type>

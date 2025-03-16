@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qinputdialog.h">
+  <class name="QInputDialog" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QDialog" />
+    </super_list>
+    <enum name="InputMode">
+      <key>TextInput</key>
+      <key>IntInput</key>
+      <key>DoubleInput</key>
+    </enum>
+    <!--
+    <function name="setInputMode" />
+    <function name="inputMode" />
+    <function name="setLabelText" />
+    <function name="labelText" />
+    <function name="setOption" />
+    <function name="testOption" />
+    <function name="setOptions" />
+    <function name="options" />
+    <function name="setTextValue" />
+    <function name="textValue" />
+    <function name="setTextEchoMode" />
+    <function name="textEchoMode" />
+    <function name="setComboBoxEditable" />
+    <function name="isComboBoxEditable" />
+    <function name="setComboBoxItems" />
+    <function name="comboBoxItems" />
+    <function name="setIntValue" />
+    <function name="intValue" />
+    <function name="setIntMinimum" />
+    <function name="intMinimum" />
+    <function name="setIntMaximum" />
+    <function name="intMaximum" />
+    <function name="setIntRange" />
+    <function name="setIntStep" />
+    <function name="intStep" />
+    <function name="setDoubleValue" />
+    <function name="doubleValue" />
+    <function name="setDoubleMinimum" />
+    <function name="doubleMinimum" />
+    <function name="setDoubleMaximum" />
+    <function name="doubleMaximum" />
+    <function name="setDoubleRange" />
+    <function name="setDoubleDecimals" />
+    <function name="doubleDecimals" />
+    <function name="setOkButtonText" />
+    <function name="okButtonText" />
+    <function name="setCancelButtonText" />
+    <function name="cancelButtonText" />
+    <function name="open" />
+    <function name="minimumSizeHint" />
+    <function name="sizeHint" />
+    <function name="setVisible" />
+    -->
+    <function name="getText" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+          <parameter const="false" type="QLineEdit::EchoMode" modifier="" name="mode" default="QLineEdit::Normal" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getMultiLineText" static="true" />
+    <function name="getItem" static="true" />
+    <function name="getInt" static="true" />
+    <function name="getDouble" static="true" />
+    <function name="setDoubleStep" />
+    <function name="doubleStep" />
+    <function name="textValueChanged" />
+    <function name="textValueSelected" />
+    <function name="intValueChanged" />
+    <function name="intValueSelected" />
+    <function name="doubleValueChanged" />
+    <function name="doubleValueSelected" />
+    <function name="done">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="result" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

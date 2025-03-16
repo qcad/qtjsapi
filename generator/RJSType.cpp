@@ -3120,6 +3120,21 @@
 
 
       
+      int RJSType_QInputDialog::id = -1;
+
+      int RJSType_QInputDialog::getId() const {
+          return RJSType_QInputDialog::getIdStatic();
+      }
+
+      int RJSType_QInputDialog::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QInputDialog());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QIntValidator::id = -1;
 
       int RJSType_QIntValidator::getId() const {

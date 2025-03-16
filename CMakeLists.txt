@@ -58,7 +58,10 @@ target_include_directories(qtjsapi PRIVATE
     .
     generator
     generator/cpp
+<<<<<<< HEAD
     #../qcad/src/core
+=======
+>>>>>>> ede6ec6bd856d9bc93bf993c4810085f5df8563a
 )
 
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/../qcad)
@@ -98,7 +101,10 @@ target_link_libraries(qtjsapi PRIVATE
     Qt::PrintSupport
     Qt::Core5Compat
     Qt::QuickWidgets
+<<<<<<< HEAD
     #qcadcore
+=======
+>>>>>>> ede6ec6bd856d9bc93bf993c4810085f5df8563a
 )
 
 # doesn't work under Windows / MSVC:

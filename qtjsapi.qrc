@@ -103,6 +103,7 @@
     <file alias="generator/js/QImageReader.js">generator/js/QImageReader.js</file>
     <file alias="generator/js/QImageWriter.js">generator/js/QImageWriter.js</file>
     <file alias="generator/js/QInputDevice.js">generator/js/QInputDevice.js</file>
+    <file alias="generator/js/QInputDialog.js">generator/js/QInputDialog.js</file>
     <file alias="generator/js/QInputEvent.js">generator/js/QInputEvent.js</file>
     <file alias="generator/js/QIntValidator.js">generator/js/QIntValidator.js</file>
     <file alias="generator/js/QItemDelegate.js">generator/js/QItemDelegate.js</file>

@@ -1,8 +1,8 @@
 
   // Auto generated
   
-    #ifndef QWIDGET_H_WRAPPER
-    #define QWIDGET_H_WRAPPER
+    #ifndef QINPUTDIALOG_H_WRAPPER
+    #define QINPUTDIALOG_H_WRAPPER
 
     // include header:
     //#include "header_h.h"
@@ -12,81 +12,14 @@
 
     #include "RJSWrapperObj.h"
   
-        #include <QLayout>
-      
-        #include <QStyle>
-      
-        #include <QAction>
-      
-        #include <QVariant>
-      
-        #include <QWindow>
-      
-        #include <QActionEvent>
-      
-        #include <QMouseEvent>
-      
-        #include <QWheelEvent>
-      
-        #include <QHoverEvent>
-      
-        #include <QKeyEvent>
-      
-        #include <QFocusEvent>
-      
-        #include <QPaintEvent>
-      
-        #include <QMoveEvent>
-      
-        #include <QResizeEvent>
-      
-        #include <QCloseEvent>
-      
-        #include <QContextMenuEvent>
-      
-        #include <QInputMethodEvent>
-      
-        #include <QTabletEvent>
-      
-        #include <QDragEnterEvent>
-      
-        #include <QDragMoveEvent>
-      
-        #include <QDragLeaveEvent>
-      
-        #include <QDropEvent>
-      
-        #include <QScreen>
-      
-        #include <QShowEvent>
-      
-        #include <QHideEvent>
-      
-        #include <QIcon>
-      
-        #include <QBackingStore>
-      
-        #include <QLocale>
-      
-        #include <QGraphicsProxyWidget>
-      
-        #include <QGraphicsEffect>
-      
-        #include <QPixmap>
-      
-        #include <QDebug>
-      
     #include <QQmlEngine>
     
         #include "RJSType.h"
       
-        #include <QWidget>
+        #include <QInputDialog>
       
-      // wrapped object is QWidget_Base class if new object is created: 
-      #include "qwidget_base.h"
-    
       // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QWidget_WrapperSingleton: public QObject {
+      class QTJSAPI_EXPORT QInputDialog_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -98,7 +31,7 @@
 
       public:
       //Q_INVOKABLE 
-      QWidget_WrapperSingleton(RJSApi& h) 
+      QInputDialog_WrapperSingleton(RJSApi& h) 
         : QObject(), 
           handler(h)
           
@@ -108,106 +41,18 @@
 
       // static functions:
       
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(tooltip)
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifdef Q_QDOC
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(graphicseffect)
-
-#endif
-
-#ifndef QT_NO_GESTURES
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-    // Class: QWidget
-    // Function: setTabOrder
+    // Class: QInputDialog
+    // Function: getText
     // Source: 
     // Static: true
-    // Parameters: 2
+    // Parameters: 5
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  setTabOrder
+                  getText
               (
 
                 
@@ -218,113 +63,27 @@
   const QJSValue& 
   a2
       = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
     
               )
               
               ;
             
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_SHORTCUT
-
-#endif
-
-    // Class: QWidget
-    // Function: mouseGrabber
-    // Source: 
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QWidget
-    // Function: keyboardGrabber
-    // Source: 
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-#if QT_CONFIG(graphicsview)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-#endif
-
-#ifdef QT_KEYPAD_NAVIGATION
-
-#endif
-
-#if QT_CONFIG(wheelevent)
-
-#endif
-
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-#if QT_CONFIG(tabletevent)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-#endif
-
-#if QT_CONFIG(draganddrop)
-
-#endif
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-#ifndef QT_NO_GESTURES
-
-#endif
-
-#ifdef Q_OS_MAC
-
-#endif
-
 
       private:
           RJSApi& handler;
-          //static QWidget_WrapperSingleton* _singleInstance;
+          //static QInputDialog_WrapperSingleton* _singleInstance;
 
           // constants:
           
@@ -332,8 +91,8 @@
     
     // static functions implementation in singleton wrapper:
     
-    // wrapper class for QWidget
-    class QTJSAPI_EXPORT QWidget_Wrapper : public RJSWrapperObj {
+    // wrapper class for QInputDialog
+    class QTJSAPI_EXPORT QInputDialog_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -702,273 +461,74 @@
 
     private:
       // disable copy constructor:
-      QWidget_Wrapper(const QWidget_Wrapper&);
+      QInputDialog_Wrapper(const QInputDialog_Wrapper&);
 
     public:
-      // initialization of QWidget:
+      // initialization of QInputDialog:
       static void init(RJSApi& handler);
 
       
-        static QWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
+        static QInputDialog* castToBase(void* vp, /*RJSType ID*/ int t) {
           
             // check if pointer points to derrived type:
             
-              if (t==RJSType_QAbstractButton::getIdStatic()) {
-                return (QWidget*)(QAbstractButton*)vp;
-              }
-              
-              if (t==RJSType_QAbstractItemView::getIdStatic()) {
-                return (QWidget*)(QAbstractItemView*)vp;
-              }
-              
-              if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
-                return (QWidget*)(QAbstractPrintDialog*)vp;
-              }
-              
-              if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
-                return (QWidget*)(QAbstractScrollArea*)vp;
-              }
-              
-              if (t==RJSType_QAbstractSlider::getIdStatic()) {
-                return (QWidget*)(QAbstractSlider*)vp;
-              }
-              
-              if (t==RJSType_QAbstractSpinBox::getIdStatic()) {
-                return (QWidget*)(QAbstractSpinBox*)vp;
-              }
-              
-              if (t==RJSType_QCheckBox::getIdStatic()) {
-                return (QWidget*)(QCheckBox*)vp;
-              }
-              
-              if (t==RJSType_QColorDialog::getIdStatic()) {
-                return (QWidget*)(QColorDialog*)vp;
-              }
-              
-              if (t==RJSType_QComboBox::getIdStatic()) {
-                return (QWidget*)(QComboBox*)vp;
-              }
-              
-              if (t==RJSType_QDialog::getIdStatic()) {
-                return (QWidget*)(QDialog*)vp;
-              }
-              
-              if (t==RJSType_QDialogButtonBox::getIdStatic()) {
-                return (QWidget*)(QDialogButtonBox*)vp;
-              }
-              
-              if (t==RJSType_QDockWidget::getIdStatic()) {
-                return (QWidget*)(QDockWidget*)vp;
-              }
-              
-              if (t==RJSType_QFileDialog::getIdStatic()) {
-                return (QWidget*)(QFileDialog*)vp;
-              }
-              
-              if (t==RJSType_QFontComboBox::getIdStatic()) {
-                return (QWidget*)(QFontComboBox*)vp;
-              }
-              
-              if (t==RJSType_QFrame::getIdStatic()) {
-                return (QWidget*)(QFrame*)vp;
-              }
-              
-              if (t==RJSType_QGroupBox::getIdStatic()) {
-                return (QWidget*)(QGroupBox*)vp;
-              }
-              
-              if (t==RJSType_QHeaderView::getIdStatic()) {
-                return (QWidget*)(QHeaderView*)vp;
-              }
-              
-              if (t==RJSType_QInputDialog::getIdStatic()) {
-                return (QWidget*)(QInputDialog*)vp;
-              }
-              
-              if (t==RJSType_QLabel::getIdStatic()) {
-                return (QWidget*)(QLabel*)vp;
-              }
-              
-              if (t==RJSType_QLineEdit::getIdStatic()) {
-                return (QWidget*)(QLineEdit*)vp;
-              }
-              
-              if (t==RJSType_QListView::getIdStatic()) {
-                return (QWidget*)(QListView*)vp;
-              }
-              
-              if (t==RJSType_QListWidget::getIdStatic()) {
-                return (QWidget*)(QListWidget*)vp;
-              }
-              
-              if (t==RJSType_QMainWindow::getIdStatic()) {
-                return (QWidget*)(QMainWindow*)vp;
-              }
-              
-              if (t==RJSType_QMdiArea::getIdStatic()) {
-                return (QWidget*)(QMdiArea*)vp;
-              }
-              
-              if (t==RJSType_QMdiSubWindow::getIdStatic()) {
-                return (QWidget*)(QMdiSubWindow*)vp;
-              }
-              
-              if (t==RJSType_QMenu::getIdStatic()) {
-                return (QWidget*)(QMenu*)vp;
-              }
-              
-              if (t==RJSType_QMenuBar::getIdStatic()) {
-                return (QWidget*)(QMenuBar*)vp;
-              }
-              
-              if (t==RJSType_QMessageBox::getIdStatic()) {
-                return (QWidget*)(QMessageBox*)vp;
-              }
-              
-              if (t==RJSType_QPlainTextEdit::getIdStatic()) {
-                return (QWidget*)(QPlainTextEdit*)vp;
-              }
-              
-              if (t==RJSType_QPrintDialog::getIdStatic()) {
-                return (QWidget*)(QPrintDialog*)vp;
-              }
-              
-              if (t==RJSType_QProgressBar::getIdStatic()) {
-                return (QWidget*)(QProgressBar*)vp;
-              }
-              
-              if (t==RJSType_QProgressDialog::getIdStatic()) {
-                return (QWidget*)(QProgressDialog*)vp;
-              }
-              
-              if (t==RJSType_QPushButton::getIdStatic()) {
-                return (QWidget*)(QPushButton*)vp;
-              }
-              
-              if (t==RJSType_QQuickWidget::getIdStatic()) {
-                return (QWidget*)(QQuickWidget*)vp;
-              }
-              
-              if (t==RJSType_QRadioButton::getIdStatic()) {
-                return (QWidget*)(QRadioButton*)vp;
-              }
-              
-              if (t==RJSType_QScrollArea::getIdStatic()) {
-                return (QWidget*)(QScrollArea*)vp;
-              }
-              
-              if (t==RJSType_QScrollBar::getIdStatic()) {
-                return (QWidget*)(QScrollBar*)vp;
-              }
-              
-              if (t==RJSType_QSlider::getIdStatic()) {
-                return (QWidget*)(QSlider*)vp;
-              }
-              
-              if (t==RJSType_QSpinBox::getIdStatic()) {
-                return (QWidget*)(QSpinBox*)vp;
-              }
-              
-              if (t==RJSType_QSplashScreen::getIdStatic()) {
-                return (QWidget*)(QSplashScreen*)vp;
-              }
-              
-              if (t==RJSType_QSplitter::getIdStatic()) {
-                return (QWidget*)(QSplitter*)vp;
-              }
-              
-              if (t==RJSType_QSplitterHandle::getIdStatic()) {
-                return (QWidget*)(QSplitterHandle*)vp;
-              }
-              
-              if (t==RJSType_QStackedWidget::getIdStatic()) {
-                return (QWidget*)(QStackedWidget*)vp;
-              }
-              
-              if (t==RJSType_QStatusBar::getIdStatic()) {
-                return (QWidget*)(QStatusBar*)vp;
-              }
-              
-              if (t==RJSType_QTabBar::getIdStatic()) {
-                return (QWidget*)(QTabBar*)vp;
-              }
-              
-              if (t==RJSType_QTableView::getIdStatic()) {
-                return (QWidget*)(QTableView*)vp;
-              }
-              
-              if (t==RJSType_QTableWidget::getIdStatic()) {
-                return (QWidget*)(QTableWidget*)vp;
-              }
-              
-              if (t==RJSType_QTabWidget::getIdStatic()) {
-                return (QWidget*)(QTabWidget*)vp;
-              }
-              
-              if (t==RJSType_QTextBrowser::getIdStatic()) {
-                return (QWidget*)(QTextBrowser*)vp;
-              }
-              
-              if (t==RJSType_QTextEdit::getIdStatic()) {
-                return (QWidget*)(QTextEdit*)vp;
-              }
-              
-              if (t==RJSType_QToolBar::getIdStatic()) {
-                return (QWidget*)(QToolBar*)vp;
-              }
-              
-              if (t==RJSType_QToolButton::getIdStatic()) {
-                return (QWidget*)(QToolButton*)vp;
-              }
-              
-              if (t==RJSType_QTreeView::getIdStatic()) {
-                return (QWidget*)(QTreeView*)vp;
-              }
-              
-              if (t==RJSType_QTreeWidget::getIdStatic()) {
-                return (QWidget*)(QTreeWidget*)vp;
-              }
-              
 
-          // hook for modules to cast from other types to base QWidget:
-          for (int i=0; i<basecasters_QWidget.length(); i++) {
-            RJSBasecaster_QWidget* basecaster = basecasters_QWidget[i];
-            QWidget* ret = basecaster->castToBase(t, vp);
+          // hook for modules to cast from other types to base QInputDialog:
+          for (int i=0; i<basecasters_QInputDialog.length(); i++) {
+            RJSBasecaster_QInputDialog* basecaster = basecasters_QInputDialog[i];
+            QInputDialog* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
               return ret;
             }
           }
 
-          // object is a pointer to base class QWidget:
-          if (t==RJSType_QWidget::getIdStatic()) {
-            return (QWidget*)vp;
+          // object is a pointer to base class QInputDialog:
+          if (t==RJSType_QInputDialog::getIdStatic()) {
+            return (QInputDialog*)vp;
           }
 
-          qWarning() << "QWidget_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
+          qWarning() << "QInputDialog_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
         }
 
-        static QWidget* getWrappedBase(RJSWrapper* wrapper) {
+        static QInputDialog* getWrappedBase(RJSWrapper* wrapper) {
           int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
-              //qWarning() << "getWrapped_QWidget*: wrapper wraps NULL";
+              //qWarning() << "getWrapped_QInputDialog*: wrapper wraps NULL";
           }
 
-          QWidget* ret = castToBase(vp, t);
+          QInputDialog* ret = castToBase(vp, t);
           if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QWidget*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+              qWarning() << "QInputDialog*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
           }
           return ret;
         }
       
+        // enums:
+        
+  enum DialogCode {
+    Rejected = QInputDialog::Rejected,
+Accepted = QInputDialog::Accepted,
+
+  };
+  Q_ENUM(DialogCode)
+
+  enum InputMode {
+    TextInput = QInputDialog::TextInput,
+IntInput = QInputDialog::IntInput,
+DoubleInput = QInputDialog::DoubleInput,
+
+  };
+  Q_ENUM(InputMode)
+
     /*
     // special constructor used as prototype:
     
           Q_INVOKABLE 
-          QWidget_Wrapper(QJSEngine* e);
+          QInputDialog_Wrapper(QJSEngine* e);
         
     */
 
@@ -976,12 +536,12 @@
       // special constructor to wrap existing object:
       
             //Q_INVOKABLE 
-            QWidget_Wrapper(RJSApi& h, QWidget* o, bool wrappedCreated);
+            QInputDialog_Wrapper(RJSApi& h, QInputDialog* o, bool wrappedCreated);
           
 
       // destructor:
       
-          virtual ~QWidget_Wrapper();
+          virtual ~QInputDialog_Wrapper();
         
     // initialization of signal forwarding
     
@@ -990,189 +550,10 @@
 
   // constructors:
   
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-    // Class: QWidget
-    // Function: 
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              QWidget_Wrapper
-                
-              (
-
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(tooltip)
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifdef Q_QDOC
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(graphicseffect)
-
-#endif
-
-#ifndef QT_NO_GESTURES
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_SHORTCUT
-
-#endif
-
-#if QT_CONFIG(graphicsview)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-#endif
-
-#ifdef QT_KEYPAD_NAVIGATION
-
-#endif
-
-#if QT_CONFIG(wheelevent)
-
-#endif
-
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-#if QT_CONFIG(tabletevent)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-#endif
-
-#if QT_CONFIG(draganddrop)
-
-#endif
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-#ifndef QT_NO_GESTURES
-
-#endif
-
-#ifdef Q_OS_MAC
-
-#endif
-
 
     // non-static functions:
     
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -1193,7 +574,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setObjectName
     // Source: QObject
     // Static: false
@@ -1216,7 +597,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isWidgetType
     // Source: QObject
     // Static: false
@@ -1237,7 +618,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isWindowType
     // Source: QObject
     // Static: false
@@ -1258,7 +639,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: signalsBlocked
     // Source: QObject
     // Static: false
@@ -1279,7 +660,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: blockSignals
     // Source: QObject
     // Static: false
@@ -1302,7 +683,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: findChild
     // Source: QObject
     // Static: false
@@ -1331,7 +712,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: children
     // Source: QObject
     // Static: false
@@ -1352,7 +733,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: installEventFilter
     // Source: QObject
     // Static: false
@@ -1375,7 +756,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: removeEventFilter
     // Source: QObject
     // Static: false
@@ -1398,7 +779,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: dumpObjectTree
     // Source: QObject
     // Static: false
@@ -1417,7 +798,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: dumpObjectInfo
     // Source: QObject
     // Static: false
@@ -1436,7 +817,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setProperty
     // Source: QObject
     // Static: false
@@ -1463,7 +844,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: property
     // Source: QObject
     // Static: false
@@ -1488,7 +869,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: dynamicPropertyNames
     // Source: QObject
     // Static: false
@@ -1509,7 +890,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: parent
     // Source: QObject
     // Static: false
@@ -1530,7 +911,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: deleteLater
     // Source: QObject
     // Static: false
@@ -1549,309 +930,9 @@
               
               ;
             
-    // Class: QWidget
-    // Function: paintingActive
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintingActive
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: paintEngine
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: widthMM
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  widthMM
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: heightMM
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  heightMM
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: logicalDpiX
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalDpiX
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: logicalDpiY
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalDpiY
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: physicalDpiX
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalDpiX
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: physicalDpiY
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalDpiY
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: devicePixelRatio
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatio
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: devicePixelRatioF
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatioF
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: colorCount
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  colorCount
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: depth
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  depth
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(tooltip)
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: devType
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1870,9 +951,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: createWinId
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1889,9 +970,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isWindow
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1910,9 +991,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isModal
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1931,9 +1012,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowModality
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1952,9 +1033,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowModality
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -1975,9 +1056,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1996,9 +1077,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isEnabledTo
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2021,9 +1102,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2044,9 +1125,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setDisabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2067,9 +1148,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowModified
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2090,9 +1171,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: frameGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2111,9 +1192,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: geometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2132,9 +1213,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: normalGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2153,9 +1234,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: x
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2174,9 +1255,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: y
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2195,9 +1276,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: pos
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2216,9 +1297,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: frameSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2237,9 +1318,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: size
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2258,9 +1339,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: width
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2279,9 +1360,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: height
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2300,9 +1381,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: rect
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2321,9 +1402,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: childrenRect
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2342,9 +1423,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: childrenRegion
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2363,9 +1444,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: minimumSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2384,9 +1465,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: maximumSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2405,9 +1486,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: minimumWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2426,9 +1507,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: minimumHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2447,9 +1528,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: maximumWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2468,9 +1549,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: maximumHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2489,9 +1570,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setMinimumSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2516,9 +1597,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setMaximumSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2543,9 +1624,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setMinimumWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2566,9 +1647,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setMinimumHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2589,9 +1670,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setMaximumWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2612,9 +1693,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setMaximumHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2635,13 +1716,9 @@
               
               ;
             
-#ifdef Q_QDOC
-
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: sizeIncrement
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2660,9 +1737,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setSizeIncrement
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2687,9 +1764,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: baseSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2708,9 +1785,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setBaseSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2735,9 +1812,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setFixedSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2762,9 +1839,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setFixedWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2785,9 +1862,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setFixedHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2808,9 +1885,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: mapToGlobal
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2833,9 +1910,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: mapFromGlobal
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2858,9 +1935,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: mapToParent
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2883,9 +1960,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: mapFromParent
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2908,9 +1985,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: mapTo
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2937,9 +2014,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: mapFrom
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2966,9 +2043,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: window
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2987,9 +2064,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: nativeParentWidget
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3008,9 +2085,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: topLevelWidget
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3029,9 +2106,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: palette
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3050,9 +2127,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setPalette
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3073,9 +2150,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setBackgroundRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3096,9 +2173,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: backgroundRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3117,9 +2194,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setForegroundRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3140,9 +2217,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: foregroundRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3161,9 +2238,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: font
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3182,9 +2259,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setFont
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3205,9 +2282,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: fontInfo
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3226,11 +2303,9 @@
               
               ;
             
-#ifndef QT_NO_CURSOR
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: cursor
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3249,9 +2324,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setCursor
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3272,9 +2347,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: unsetCursor
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3291,11 +2366,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setMouseTracking
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3316,9 +2389,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: hasMouseTracking
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3337,9 +2410,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: underMouse
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3358,9 +2431,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setTabletTracking
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3381,9 +2454,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: hasTabletTracking
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3402,9 +2475,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setMask
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3425,9 +2498,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: mask
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3446,9 +2519,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: clearMask
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3465,13 +2538,9 @@
               
               ;
             
-#if QT_CONFIG(graphicseffect)
-
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: grab
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3492,11 +2561,9 @@
               
               ;
             
-#ifndef QT_NO_GESTURES
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: grabGesture
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -3521,9 +2588,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: ungrabGesture
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3544,11 +2611,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowTitle
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3569,11 +2634,9 @@
               
               ;
             
-#ifndef QT_NO_STYLE_STYLESHEET
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setStyleSheet
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3594,13 +2657,9 @@
               
               ;
             
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: styleSheet
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3619,11 +2678,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowTitle
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3642,9 +2699,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowIcon
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3665,9 +2722,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowIcon
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3686,9 +2743,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowIconText
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3709,9 +2766,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowIconText
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3730,9 +2787,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3753,9 +2810,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3774,9 +2831,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowFilePath
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3797,9 +2854,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowFilePath
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3818,9 +2875,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowOpacity
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3841,9 +2898,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowOpacity
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3862,9 +2919,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isWindowModified
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3883,11 +2940,9 @@
               
               ;
             
-#ifndef QT_NO_TOOLTIP
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setToolTip
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3908,9 +2963,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: toolTip
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3929,9 +2984,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setToolTipDuration
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3952,9 +3007,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: toolTipDuration
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3973,13 +3028,9 @@
               
               ;
             
-#endif
-
-#if QT_CONFIG(statustip)
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setStatusTip
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4000,9 +3051,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: statusTip
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4021,13 +3072,9 @@
               
               ;
             
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWhatsThis
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4048,9 +3095,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: whatsThis
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4069,13 +3116,9 @@
               
               ;
             
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: accessibleName
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4094,9 +3137,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setAccessibleName
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4117,9 +3160,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: accessibleDescription
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4138,9 +3181,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setAccessibleDescription
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4161,11 +3204,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setLayoutDirection
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4186,9 +3227,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: layoutDirection
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4207,9 +3248,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: unsetLayoutDirection
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4226,9 +3267,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setLocale
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4249,9 +3290,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: locale
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4270,9 +3311,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: unsetLocale
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4289,9 +3330,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isRightToLeft
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4310,9 +3351,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isLeftToRight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4331,9 +3372,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isActiveWindow
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4352,9 +3393,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: activateWindow
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4371,9 +3412,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: clearFocus
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4390,9 +3431,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setFocus
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4413,9 +3454,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: focusPolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4434,9 +3475,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setFocusPolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4457,9 +3498,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: hasFocus
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4478,9 +3519,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setFocusProxy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4501,9 +3542,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: focusProxy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4522,9 +3563,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: contextMenuPolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4543,9 +3584,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setContextMenuPolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4566,9 +3607,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: grabMouse
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4589,13 +3630,9 @@
               
               ;
             
-#ifndef QT_NO_CURSOR
-
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: releaseMouse
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4612,9 +3649,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: grabKeyboard
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4631,9 +3668,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: releaseKeyboard
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4650,11 +3687,9 @@
               
               ;
             
-#ifndef QT_NO_SHORTCUT
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: grabShortcut
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -4679,9 +3714,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: releaseShortcut
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4702,9 +3737,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setShortcutEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -4729,9 +3764,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setShortcutAutoRepeat
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -4756,11 +3791,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: updatesEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4779,9 +3812,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setUpdatesEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4802,13 +3835,9 @@
               
               ;
             
-#if QT_CONFIG(graphicsview)
-
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: update
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -4841,9 +3870,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: repaint
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -4876,32 +3905,9 @@
               
               ;
             
-    // Class: QWidget
-    // Function: setVisible
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVisible
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setHidden
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4922,9 +3928,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: show
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4941,9 +3947,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: hide
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4960,9 +3966,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: showMinimized
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4979,9 +3985,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: showMaximized
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4998,9 +4004,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: showFullScreen
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5017,9 +4023,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: showNormal
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5036,9 +4042,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: close
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5055,9 +4061,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: raise
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5074,9 +4080,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: lower
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5093,9 +4099,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: stackUnder
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5116,9 +4122,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: move
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -5143,9 +4149,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: resize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -5170,9 +4176,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -5205,9 +4211,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: saveGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5226,9 +4232,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: restoreGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5249,9 +4255,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: adjustSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5268,9 +4274,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isVisible
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5289,9 +4295,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isVisibleTo
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5314,9 +4320,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isHidden
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5335,9 +4341,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isMinimized
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5356,9 +4362,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isMaximized
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5377,9 +4383,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isFullScreen
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5398,9 +4404,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowState
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5419,9 +4425,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowState
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5442,9 +4448,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: overrideWindowState
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5465,51 +4471,9 @@
               
               ;
             
-    // Class: QWidget
-    // Function: sizeHint
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeHint
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: minimumSizeHint
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSizeHint
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: sizePolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5528,9 +4492,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setSizePolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -5555,9 +4519,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: heightForWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5580,9 +4544,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: hasHeightForWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5601,9 +4565,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: visibleRegion
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5622,9 +4586,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setContentsMargins
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -5657,9 +4621,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: contentsMargins
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5678,9 +4642,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: contentsRect
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5699,9 +4663,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: layout
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5720,9 +4684,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setLayout
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5743,9 +4707,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: updateGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5762,9 +4726,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setParent
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -5789,9 +4753,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: scroll
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
@@ -5820,9 +4784,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: focusWidget
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5841,9 +4805,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: nextInFocusChain
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5862,9 +4826,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: previousInFocusChain
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5883,9 +4847,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: acceptDrops
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5904,9 +4868,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setAcceptDrops
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5927,11 +4891,9 @@
               
               ;
             
-#ifndef QT_NO_ACTION
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: addAction
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5952,11 +4914,9 @@
               
               ;
             
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: addActions
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5977,9 +4937,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: insertActions
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6004,13 +4964,9 @@
               
               ;
             
-#else
-
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: insertAction
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6035,9 +4991,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: removeAction
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6058,9 +5014,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: actions
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6079,11 +5035,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: parentWidget
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6102,9 +5056,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowFlags
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6125,9 +5079,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowFlags
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6146,9 +5100,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setWindowFlag
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6173,9 +5127,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: overrideWindowFlags
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6196,9 +5150,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: windowType
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6217,9 +5171,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: childAt
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6246,9 +5200,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setAttribute
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6273,9 +5227,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: testAttribute
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6298,9 +5252,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: ensurePolished
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6319,9 +5273,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: isAncestorOf
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6344,13 +5298,9 @@
               
               ;
             
-#ifdef QT_KEYPAD_NAVIGATION
-
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: autoFillBackground
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6369,9 +5319,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setAutoFillBackground
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6392,9 +5342,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: customContextMenuRequested
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6413,191 +5363,9 @@
                 const QPoint& pos
               );
             
-    // Class: QWidget
-    // Function: mousePressEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mousePressEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QWidget
-    // Function: mouseReleaseEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseReleaseEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QWidget
-    // Function: mouseMoveEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#if QT_CONFIG(wheelevent)
-
-#endif
-
-    // Class: QWidget
-    // Function: paintEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QWidget
-    // Function: resizeEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-#if QT_CONFIG(tabletevent)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-    // Class: QWidget
-    // Function: actionEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#endif
-
-#if QT_CONFIG(draganddrop)
-
-#endif
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: inputMethodQuery
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6620,9 +5388,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: inputMethodHints
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6641,9 +5409,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QInputDialog
     // Function: setInputMethodHints
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6664,14 +5432,340 @@
               
               ;
             
-#ifndef QT_NO_GESTURES
+    // Class: QInputDialog
+    // Function: result
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
 
-#endif
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  result
+              (
 
-#ifdef Q_OS_MAC
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setVisible
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
 
-#endif
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setVisible
+              (
 
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: sizeHint
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  sizeHint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: minimumSizeHint
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  minimumSizeHint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setSizeGripEnabled
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setSizeGripEnabled
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: isSizeGripEnabled
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSizeGripEnabled
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setModal
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setModal
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setResult
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setResult
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: finished
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void finished(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void finishedEmitter(
+                int result
+              );
+            
+    // Class: QInputDialog
+    // Function: accepted
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void accepted(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void acceptedEmitter(
+                
+              );
+            
+    // Class: QInputDialog
+    // Function: rejected
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void rejected(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void rejectedEmitter(
+                
+              );
+            
+    // Class: QInputDialog
+    // Function: open
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  open
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: exec
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  exec
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: done
+    // Source: QDialog
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  done
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: accept
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  accept
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: reject
+    // Source: QDialog
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  reject
+              (
+
+                
+              )
+              
+              ;
+            
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             
@@ -6703,7 +5797,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QWidget::getIdStatic();
+          return RJSType_QInputDialog::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -6715,7 +5809,7 @@
         }
 
         // get wrapped object:
-        QWidget* getWrapped() {
+        QInputDialog* getWrapped() {
           
             if (wrapped!=nullptr) {
               return wrapped;
@@ -6725,7 +5819,7 @@
         }
 
         // get wrapped object (const):
-        QWidget* getWrapped() const {
+        QInputDialog* getWrapped() const {
           
             if (wrapped!=nullptr) {
               return wrapped;
@@ -6744,17 +5838,6 @@
           return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QWidget_Base* getWrappedBase() {
-            QWidget* w = getWrapped();
-            return dynamic_cast<QWidget_Base*>(w);
-          }
-
-          QWidget_Base* getWrappedBase() const {
-            QWidget* w = getWrapped();
-            return dynamic_cast<QWidget_Base*>(w);
-          }
         
 
         bool hasWrapped() const {
@@ -6787,37 +5870,30 @@
           //}
 
         
-          //void setRecFlag(bool on) const {
-          //  QWidget_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
         private:
 
         
           // wrapped object:
-          QWidget* wrapped;
+          QInputDialog* wrapped;
         
 
         bool wrappedCreated;
       
       private:
         // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QWidget*> basecasters_QWidget;
+        static QList<RJSBasecaster_QInputDialog*> basecasters_QInputDialog;
 
       public:
-        static void registerBasecaster_QWidget(RJSBasecaster_QWidget* bc) {
-          basecasters_QWidget.append(bc);
+        static void registerBasecaster_QInputDialog(RJSBasecaster_QInputDialog* bc) {
+          basecasters_QInputDialog.append(bc);
         }
       
     };
 
-    Q_DECLARE_METATYPE(QWidget_Wrapper*)
+    Q_DECLARE_METATYPE(QInputDialog_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QWidget_Wrapper, "org.qcad.QWidget_Wrapper")
+    Q_DECLARE_INTERFACE(QInputDialog_Wrapper, "org.qcad.QInputDialog_Wrapper")
 
   
   #endif

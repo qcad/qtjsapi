@@ -549,6 +549,14 @@
         
           #include "qobject_wrapper.h"
         
+        #include "qinputdialog_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
+          #include "qdialog_wrapper.h"
+        
         #include "qiodevice_wrapper.h"
         
           #include "qobject_wrapper.h"
