@@ -6,6 +6,11 @@
       <super name="QWidget" />
       <super name="QDialog" />
     </super_list>
+    <enum name="InputDialogOption">
+      <key>NoButtons</key>
+      <key>UseListViewForComboBoxItems</key>
+      <key>UsePlainTextEditForTextInput</key>
+    </enum>
     <enum name="InputMode">
       <key>TextInput</key>
       <key>IntInput</key>
@@ -19,6 +24,410 @@
         </parameters>
       </variant>
     </constructor>
+    <function name="setInputMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QInputDialog::InputMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="inputMode">
+      <variant return-type="QInputDialog::InputMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLabelText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="labelText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QInputDialog::InputDialogOption" modifier="" name="option" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QInputDialog::InputDialogOption" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QInputDialog::InputDialogOptions" modifier="" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="options">
+      <variant return-type="QInputDialog::InputDialogOptions" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textValue">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextEchoMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLineEdit::EchoMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textEchoMode">
+      <variant return-type="QLineEdit::EchoMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setComboBoxEditable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="editable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isComboBoxEditable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setComboBoxItems">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="items" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="comboBoxItems">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIntValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intValue">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIntMinimum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="min" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intMinimum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIntMaximum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intMaximum">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIntRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="min" />
+          <parameter const="false" type="int" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setIntStep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="step" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intStep">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDoubleValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleValue">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDoubleMinimum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="min" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleMinimum">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDoubleMaximum">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleMaximum">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDoubleRange">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="min" />
+          <parameter const="false" type="double" modifier="" name="max" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDoubleDecimals">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="decimals" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleDecimals">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOkButtonText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="okButtonText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCancelButtonText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cancelButtonText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="open">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="receiver" />
+          <parameter const="true" type="char" modifier="*" name="member" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumSizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="visible" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getText" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+          <parameter const="false" type="QLineEdit::EchoMode" modifier="" name="echo" default="QLineEdit::Normal" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="QString()" />
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+          <parameter const="false" type="Qt::InputMethodHints" modifier="" name="inputMethodHints" default="Qt::ImhNone" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="getMultiLineText" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="QString()" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+          <parameter const="false" type="Qt::InputMethodHints" modifier="" name="inputMethodHints" default="Qt::ImhNone" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getItem" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="items" />
+          <parameter const="false" type="int" modifier="" name="current" default="0" />
+          <parameter const="false" type="bool" modifier="" name="editable" default="true" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+          <parameter const="false" type="Qt::InputMethodHints" modifier="" name="inputMethodHints" default="Qt::ImhNone" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getInt" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+          <parameter const="false" type="int" modifier="" name="value" default="0" />
+          <parameter const="false" type="int" modifier="" name="minValue" default="-2147483647" />
+          <parameter const="false" type="int" modifier="" name="maxValue" default="2147483647" />
+          <parameter const="false" type="int" modifier="" name="step" default="1" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDouble" static="true">
+      <variant return-type="double" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+          <parameter const="false" type="double" modifier="" name="value" default="0" />
+          <parameter const="false" type="double" modifier="" name="minValue" default="-2147483647" />
+          <parameter const="false" type="double" modifier="" name="maxValue" default="2147483647" />
+          <parameter const="false" type="int" modifier="" name="decimals" default="1" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="Qt::WindowFlags()" />
+          <parameter const="false" type="double" modifier="" name="step" default="1" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDoubleStep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="step" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleStep">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="textValueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="textValueSelected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intValueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intValueSelected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleValueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleValueSelected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="done">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="result" />
+        </parameters>
+      </variant>
+    </function>
     <!--
     <function name="setInputMode" />
     <function name="inputMode" />

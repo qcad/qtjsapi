@@ -42,6 +42,178 @@
       // static functions:
       
     // Class: QInputDialog
+    // Function: getMultiLineText
+    // Source: 
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getMultiLineText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: getItem
+    // Source: 
+    // Static: true
+    // Parameters: 6
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getItem
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a6
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: getInt
+    // Source: 
+    // Static: true
+    // Parameters: 7
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getInt
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a6
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a7
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: getDouble
+    // Source: 
+    // Static: true
+    // Parameters: 7
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getDouble
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a6
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a7
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
     // Function: getText
     // Source: 
     // Static: true
@@ -515,6 +687,14 @@ Accepted = QInputDialog::Accepted,
 
   };
   Q_ENUM(DialogCode)
+
+  enum InputDialogOption {
+    NoButtons = QInputDialog::NoButtons,
+UseListViewForComboBoxItems = QInputDialog::UseListViewForComboBoxItems,
+UsePlainTextEditForTextInput = QInputDialog::UsePlainTextEditForTextInput,
+
+  };
+  Q_ENUM(InputDialogOption)
 
   enum InputMode {
     TextInput = QInputDialog::TextInput,
@@ -5485,71 +5665,6 @@ DoubleInput = QInputDialog::DoubleInput,
               ;
             
     // Class: QInputDialog
-    // Function: setVisible
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVisible
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QInputDialog
-    // Function: sizeHint
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeHint
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QInputDialog
-    // Function: minimumSizeHint
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSizeHint
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QInputDialog
     // Function: setSizeGripEnabled
     // Source: QDialog
     // Static: false
@@ -5699,25 +5814,6 @@ DoubleInput = QInputDialog::DoubleInput,
               );
             
     // Class: QInputDialog
-    // Function: open
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  open
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QInputDialog
     // Function: exec
     // Source: QDialog
     // Static: false
@@ -5732,29 +5828,6 @@ DoubleInput = QInputDialog::DoubleInput,
               (
 
                 
-              )
-              
-              ;
-            
-    // Class: QInputDialog
-    // Function: done
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  done
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
               )
               
               ;
@@ -5793,6 +5866,1145 @@ DoubleInput = QInputDialog::DoubleInput,
               (
 
                 
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setInputMode
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setInputMode
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: inputMode
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  inputMode
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setLabelText
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setLabelText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: labelText
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  labelText
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setOption
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setOption
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: testOption
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  testOption
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setOptions
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setOptions
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: options
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  options
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setTextValue
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setTextValue
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: textValue
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  textValue
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setTextEchoMode
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setTextEchoMode
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: textEchoMode
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  textEchoMode
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setComboBoxEditable
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setComboBoxEditable
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: isComboBoxEditable
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isComboBoxEditable
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setComboBoxItems
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setComboBoxItems
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: comboBoxItems
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  comboBoxItems
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setIntValue
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setIntValue
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: intValue
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  intValue
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setIntMinimum
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setIntMinimum
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: intMinimum
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  intMinimum
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setIntMaximum
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setIntMaximum
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: intMaximum
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  intMaximum
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setIntRange
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setIntRange
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setIntStep
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setIntStep
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: intStep
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  intStep
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setDoubleValue
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDoubleValue
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: doubleValue
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  doubleValue
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setDoubleMinimum
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDoubleMinimum
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: doubleMinimum
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  doubleMinimum
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setDoubleMaximum
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDoubleMaximum
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: doubleMaximum
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  doubleMaximum
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setDoubleRange
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDoubleRange
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setDoubleDecimals
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDoubleDecimals
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: doubleDecimals
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  doubleDecimals
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setOkButtonText
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setOkButtonText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: okButtonText
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  okButtonText
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setCancelButtonText
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCancelButtonText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: cancelButtonText
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  cancelButtonText
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: open
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  open
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: minimumSizeHint
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  minimumSizeHint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: sizeHint
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  sizeHint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setVisible
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setVisible
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: setDoubleStep
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDoubleStep
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: doubleStep
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  doubleStep
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QInputDialog
+    // Function: textValueChanged
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void textValueChanged(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void textValueChangedEmitter(
+                const QString& text
+              );
+            
+    // Class: QInputDialog
+    // Function: textValueSelected
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void textValueSelected(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void textValueSelectedEmitter(
+                const QString& text
+              );
+            
+    // Class: QInputDialog
+    // Function: intValueChanged
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void intValueChanged(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void intValueChangedEmitter(
+                int value
+              );
+            
+    // Class: QInputDialog
+    // Function: intValueSelected
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void intValueSelected(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void intValueSelectedEmitter(
+                int value
+              );
+            
+    // Class: QInputDialog
+    // Function: doubleValueChanged
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void doubleValueChanged(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void doubleValueChangedEmitter(
+                double value
+              );
+            
+    // Class: QInputDialog
+    // Function: doubleValueSelected
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void doubleValueSelected(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void doubleValueSelectedEmitter(
+                double value
+              );
+            
+    // Class: QInputDialog
+    // Function: done
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  done
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
               )
               
               ;

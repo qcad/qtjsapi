@@ -29,6 +29,7 @@
     <type flags="true">QFontComboBox::FontFilters</type>
     <type flags="true">QGraphicsBlurEffect::BlurHints</type>
     <type flags="true">QGraphicsEffect::ChangeFlags</type>
+    <type flags="true">QInputDialog::InputDialogOptions</type>
     <type flags="true">QItemSelectionModel::SelectionFlags</type>
     <type flags="true">QLocale::DataSizeFormats</type>
     <type flags="true">QMessageBox::StandardButtons</type>
@@ -143,6 +144,8 @@
     <type>QImageIOHandler::Transformations</type>
     <type>QImageReader::ImageReaderError</type>
     <type>QImageWriter::ImageWriterError</type>
+    <type>QInputDialog::InputMode</type>
+    <type>QInputDialog::InputDialogOption</type>
     <type>QItemSelectionModel::SelectionFlag</type>
     <type>QKeySequence::SequenceFormat</type>
     <type>QKeySequence::SequenceMatch</type>

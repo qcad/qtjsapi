@@ -92,6 +92,18 @@
   
     this["finished(int)"] = Object.getPrototypeOf(this).finished;
   
+    this["textValueChanged(QString)"] = Object.getPrototypeOf(this).textValueChanged;
+  
+    this["textValueSelected(QString)"] = Object.getPrototypeOf(this).textValueSelected;
+  
+    this["intValueChanged(int)"] = Object.getPrototypeOf(this).intValueChanged;
+  
+    this["intValueSelected(int)"] = Object.getPrototypeOf(this).intValueSelected;
+  
+    this["doubleValueChanged(double)"] = Object.getPrototypeOf(this).doubleValueChanged;
+  
+    this["doubleValueSelected(double)"] = Object.getPrototypeOf(this).doubleValueSelected;
+  
             }
           
         }
@@ -147,6 +159,11 @@
 QInputDialog.Rejected = QInputDialog_Wrapper.Rejected;
 QInputDialog.Accepted = QInputDialog_Wrapper.Accepted;
 
+  // enum: InputDialogOption
+QInputDialog.NoButtons = QInputDialog_Wrapper.NoButtons;
+QInputDialog.UseListViewForComboBoxItems = QInputDialog_Wrapper.UseListViewForComboBoxItems;
+QInputDialog.UsePlainTextEditForTextInput = QInputDialog_Wrapper.UsePlainTextEditForTextInput;
+
   // enum: InputMode
 QInputDialog.TextInput = QInputDialog_Wrapper.TextInput;
 QInputDialog.IntInput = QInputDialog_Wrapper.IntInput;
@@ -157,6 +174,122 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
       
 
       // static functions:
+      
+
+        // static function 
+        QInputDialog.getMultiLineText = function() 
+          
+        {
+          //print("JS: QInputDialog.getMultiLineText");
+          
+      if (arguments.length >= 3 &&
+          arguments.length <= 4) {
+    
+                // calling static wrapper:
+                return QInputDialog_WrapperSingletonInstance.getMultiLineText(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, QInputDialog);
+  }
+
+  
+  else {
+    
+        print("QInputDialog.getMultiLineText(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        QInputDialog.getItem = function() 
+          
+        {
+          //print("JS: QInputDialog.getItem");
+          
+      if (arguments.length >= 4 &&
+          arguments.length <= 6) {
+    
+                // calling static wrapper:
+                return QInputDialog_WrapperSingletonInstance.getItem(
+                  arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]
+                );
+              
+
+        //copyProperties(this, wrapper, QInputDialog);
+  }
+
+  
+  else {
+    
+        print("QInputDialog.getItem(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        QInputDialog.getInt = function() 
+          
+        {
+          //print("JS: QInputDialog.getInt");
+          
+      if (arguments.length >= 3 &&
+          arguments.length <= 7) {
+    
+                // calling static wrapper:
+                return QInputDialog_WrapperSingletonInstance.getInt(
+                  arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6]
+                );
+              
+
+        //copyProperties(this, wrapper, QInputDialog);
+  }
+
+  
+  else {
+    
+        print("QInputDialog.getInt(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        QInputDialog.getDouble = function() 
+          
+        {
+          //print("JS: QInputDialog.getDouble");
+          
+      if (arguments.length >= 3 &&
+          arguments.length <= 7) {
+    
+                // calling static wrapper:
+                return QInputDialog_WrapperSingletonInstance.getDouble(
+                  arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6]
+                );
+              
+
+        //copyProperties(this, wrapper, QInputDialog);
+  }
+
+  
+  else {
+    
+        print("QInputDialog.getDouble(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
         // static function 

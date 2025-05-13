@@ -17940,31 +17940,18 @@ int a1_cpp;
             
                 // call function of C++ class:
                 QFileDialog* w = getWrapped();
-
-                qDebug() << "calling exec...";
-                // QMetaObject::invokeMethod(qApp, [=]() {
-
-                int res =
+                int res = 
                     
-                w->exec();
-
-                // }, Qt::QueuedConnection);
-
-
-                // QTimer::singleShot(0, [&w]() {
-                //     int res = w->exec();
-                // });
-
-                qDebug() << "calling exec: DONE";
-
+                w->exec(
+                  
+                );
               
                 //setRecFlag(false);
               
             // return type: int
 
-                // return QJSValue();
             return RJSHelper::cpp2js_int(
-              handler,
+              handler, 
               // non-copyable: false
                   res
                 

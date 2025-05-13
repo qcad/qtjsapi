@@ -1893,6 +1893,10 @@
       static QGraphicsEffect::ChangeFlags js2cpp_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v);
       static bool is_QGraphicsEffect_ChangeFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QInputDialog_InputDialogOptions(RJSApi& handler, QInputDialog::InputDialogOptions v);
+      static QInputDialog::InputDialogOptions js2cpp_QInputDialog_InputDialogOptions(RJSApi& handler, const QJSValue& v);
+      static bool is_QInputDialog_InputDialogOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QItemSelectionModel_SelectionFlags(RJSApi& handler, QItemSelectionModel::SelectionFlags v);
       static QItemSelectionModel::SelectionFlags js2cpp_QItemSelectionModel_SelectionFlags(RJSApi& handler, const QJSValue& v);
       static bool is_QItemSelectionModel_SelectionFlags(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -2348,6 +2352,14 @@
       static QJSValue cpp2js_QImageWriter_ImageWriterError(RJSApi& handler, QImageWriter::ImageWriterError v);
       static QImageWriter::ImageWriterError js2cpp_QImageWriter_ImageWriterError(RJSApi& handler, const QJSValue& v);
       static bool is_QImageWriter_ImageWriterError(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QInputDialog_InputMode(RJSApi& handler, QInputDialog::InputMode v);
+      static QInputDialog::InputMode js2cpp_QInputDialog_InputMode(RJSApi& handler, const QJSValue& v);
+      static bool is_QInputDialog_InputMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QInputDialog_InputDialogOption(RJSApi& handler, QInputDialog::InputDialogOption v);
+      static QInputDialog::InputDialogOption js2cpp_QInputDialog_InputDialogOption(RJSApi& handler, const QJSValue& v);
+      static bool is_QInputDialog_InputDialogOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QItemSelectionModel_SelectionFlag(RJSApi& handler, QItemSelectionModel::SelectionFlag v);
       static QItemSelectionModel::SelectionFlag js2cpp_QItemSelectionModel_SelectionFlag(RJSApi& handler, const QJSValue& v);

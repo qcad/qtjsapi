@@ -3276,7 +3276,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
         QFileDialog.prototype.exec = function(...args) 
           
         {
-          print("JS: QFileDialog.prototype.exec");
+          //print("JS: QFileDialog.prototype.exec");
           return this.__PROXY__.exec(...args);
         };
     

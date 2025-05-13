@@ -14,6 +14,606 @@
     // static functions implementation in singleton wrapper:
     
     // Class: QInputDialog
+    // Function: getMultiLineText
+    // Source: 
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_WrapperSingleton::getMultiLineText
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QString(handler, a2
+  )
+
+   && RJSHelper::is_QString(handler, a3
+  )
+
+   && RJSHelper::is_QString(handler, a4
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: parent (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: title (QString)
+  
+QString a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+        
+  // convert js parameter to cpp: label (QString)
+  
+QString a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
+        
+  // convert js parameter to cpp: text (QString)
+  
+QString a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = QString();
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_QString(handler, a4);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QString res = 
+                
+                // call static member function:
+                QInputDialog::getMultiLineText(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+            );
+          
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getMultiLineText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: getItem
+    // Source: 
+    // Static: true
+    // Parameters: 6
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_WrapperSingleton::getItem
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5, 
+  const QJSValue& 
+  a6
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QString(handler, a2
+  )
+
+   && RJSHelper::is_QString(handler, a3
+  )
+
+   && RJSHelper::is_QStringList(handler, a4
+  )
+
+   && RJSHelper::is_int(handler, a5
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a6
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: parent (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: title (QString)
+  
+QString a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+        
+  // convert js parameter to cpp: label (QString)
+  
+QString a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
+        
+  // convert js parameter to cpp: items (QStringList)
+  
+QStringList a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_QStringList(handler, a4);
+        
+  // convert js parameter to cpp: current (int)
+  
+int a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = 0;
+          }
+          else {
+            a5_cpp = RJSHelper::js2cpp_int(handler, a5);
+          }
+        
+  // convert js parameter to cpp: editable (bool)
+  
+bool a6_cpp;
+
+      
+          if (a6.isUndefined()) {
+            a6_cpp = true;
+          }
+          else {
+            a6_cpp = RJSHelper::js2cpp_bool(handler, a6);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QString res = 
+                
+                // call static member function:
+                QInputDialog::getItem(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    , a6_cpp
+    
+            );
+          
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getItem";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: getInt
+    // Source: 
+    // Static: true
+    // Parameters: 7
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_WrapperSingleton::getInt
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5, 
+  const QJSValue& 
+  a6, 
+  const QJSValue& 
+  a7
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QString(handler, a2
+  )
+
+   && RJSHelper::is_QString(handler, a3
+  )
+
+   && RJSHelper::is_int(handler, a4
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a5
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a6
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a7
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: parent (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: title (QString)
+  
+QString a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+        
+  // convert js parameter to cpp: label (QString)
+  
+QString a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
+        
+  // convert js parameter to cpp: value (int)
+  
+int a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = 0;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_int(handler, a4);
+          }
+        
+  // convert js parameter to cpp: minValue (int)
+  
+int a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = -2147483647;
+          }
+          else {
+            a5_cpp = RJSHelper::js2cpp_int(handler, a5);
+          }
+        
+  // convert js parameter to cpp: maxValue (int)
+  
+int a6_cpp;
+
+      
+          if (a6.isUndefined()) {
+            a6_cpp = 2147483647;
+          }
+          else {
+            a6_cpp = RJSHelper::js2cpp_int(handler, a6);
+          }
+        
+  // convert js parameter to cpp: step (int)
+  
+int a7_cpp;
+
+      
+          if (a7.isUndefined()) {
+            a7_cpp = 1;
+          }
+          else {
+            a7_cpp = RJSHelper::js2cpp_int(handler, a7);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            int res = 
+                
+                // call static member function:
+                QInputDialog::getInt(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    , a6_cpp
+    , a7_cpp
+    
+            );
+          
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getInt";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: getDouble
+    // Source: 
+    // Static: true
+    // Parameters: 7
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_WrapperSingleton::getDouble
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5, 
+  const QJSValue& 
+  a6, 
+  const QJSValue& 
+  a7
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QString(handler, a2
+  )
+
+   && RJSHelper::is_QString(handler, a3
+  )
+
+   && RJSHelper::is_double(handler, a4
+    , true
+  
+  )
+
+   && RJSHelper::is_double(handler, a5
+    , true
+  
+  )
+
+   && RJSHelper::is_double(handler, a6
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a7
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: parent (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: title (QString)
+  
+QString a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+        
+  // convert js parameter to cpp: label (QString)
+  
+QString a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
+        
+  // convert js parameter to cpp: value (double)
+  
+double a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = 0;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_double(handler, a4);
+          }
+        
+  // convert js parameter to cpp: minValue (double)
+  
+double a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = -2147483647;
+          }
+          else {
+            a5_cpp = RJSHelper::js2cpp_double(handler, a5);
+          }
+        
+  // convert js parameter to cpp: maxValue (double)
+  
+double a6_cpp;
+
+      
+          if (a6.isUndefined()) {
+            a6_cpp = 2147483647;
+          }
+          else {
+            a6_cpp = RJSHelper::js2cpp_double(handler, a6);
+          }
+        
+  // convert js parameter to cpp: decimals (int)
+  
+int a7_cpp;
+
+      
+          if (a7.isUndefined()) {
+            a7_cpp = 1;
+          }
+          else {
+            a7_cpp = RJSHelper::js2cpp_int(handler, a7);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            double res = 
+                
+                // call static member function:
+                QInputDialog::getDouble(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    , a6_cpp
+    , a7_cpp
+    
+            );
+          
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getDouble";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
     // Function: getText
     // Source: 
     // Static: true
@@ -312,6 +912,48 @@ QString a5_cpp;
     SIGNAL(rejected()), 
     this, 
     SLOT(rejectedEmitter())
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(textValueChanged(const QString&)), 
+    this, 
+    SLOT(textValueChangedEmitter(const QString&))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(textValueSelected(const QString&)), 
+    this, 
+    SLOT(textValueSelectedEmitter(const QString&))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(intValueChanged(int)), 
+    this, 
+    SLOT(intValueChangedEmitter(int))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(intValueSelected(int)), 
+    this, 
+    SLOT(intValueSelectedEmitter(int))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(doubleValueChanged(double)), 
+    this, 
+    SLOT(doubleValueChangedEmitter(double))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(doubleValueSelected(double)), 
+    this, 
+    SLOT(doubleValueSelectedEmitter(double))
   );
 
               /*
@@ -15244,184 +15886,6 @@ Qt::InputMethodHints a1_cpp;
               }
             
     // Class: QInputDialog
-    // Function: setVisible
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::setVisible
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_bool(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: visible (bool)
-  
-bool a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->setVisible(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setVisible";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: sizeHint
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::sizeHint
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                QSize res = 
-                    
-                w->sizeHint(
-                  
-                );
-              
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for sizeHint";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: minimumSizeHint
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::minimumSizeHint
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                QSize res = 
-                    
-                w->minimumSizeHint(
-                  
-                );
-              
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for minimumSizeHint";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
     // Function: setSizeGripEnabled
     // Source: QDialog
     // Static: false
@@ -15740,53 +16204,6 @@ int a1_cpp;
               }
             
     // Class: QInputDialog
-    // Function: open
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::open
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->open(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for open";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
     // Function: exec
     // Source: QDialog
     // Static: false
@@ -15836,70 +16253,6 @@ int a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for exec";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: done
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::done
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->done(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for done";
                   handler.trace();
                   return QJSValue();
                 
@@ -15994,6 +16347,2994 @@ int a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for reject";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setInputMode
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setInputMode
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QInputDialog_InputMode(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: mode (QInputDialog::InputMode)
+  
+QInputDialog::InputMode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QInputDialog_InputMode(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setInputMode(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setInputMode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: inputMode
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::inputMode
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QInputDialog::InputMode res = 
+                    
+                w->inputMode(
+                  
+                );
+              
+            // return type: QInputDialog::InputMode
+
+            return RJSHelper::cpp2js_QInputDialog_InputMode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for inputMode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setLabelText
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setLabelText
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: text (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setLabelText(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setLabelText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: labelText
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::labelText
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QString res = 
+                    
+                w->labelText(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for labelText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setOption
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setOption
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QInputDialog_InputDialogOption(handler, a1
+  )
+
+   && RJSHelper::is_bool(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: option (QInputDialog::InputDialogOption)
+  
+QInputDialog::InputDialogOption a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QInputDialog_InputDialogOption(handler, a1);
+        
+  // convert js parameter to cpp: on (bool)
+  
+bool a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = true;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setOption(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setOption";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: testOption
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::testOption
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QInputDialog_InputDialogOption(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: option (QInputDialog::InputDialogOption)
+  
+QInputDialog::InputDialogOption a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QInputDialog_InputDialogOption(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                bool res = 
+                    
+                w->testOption(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for testOption";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setOptions
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setOptions
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QInputDialog_InputDialogOptions(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: options (QInputDialog::InputDialogOptions)
+  
+QInputDialog::InputDialogOptions a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QInputDialog_InputDialogOptions(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setOptions(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setOptions";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: options
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::options
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QInputDialog::InputDialogOptions res = 
+                    
+                w->options(
+                  
+                );
+              
+            // return type: QInputDialog::InputDialogOptions
+
+            return RJSHelper::cpp2js_QInputDialog_InputDialogOptions(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for options";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setTextValue
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setTextValue
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: text (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setTextValue(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setTextValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: textValue
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::textValue
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QString res = 
+                    
+                w->textValue(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for textValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setTextEchoMode
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setTextEchoMode
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QLineEdit_EchoMode(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: mode (QLineEdit::EchoMode)
+  
+QLineEdit::EchoMode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QLineEdit_EchoMode(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setTextEchoMode(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setTextEchoMode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: textEchoMode
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::textEchoMode
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QLineEdit::EchoMode res = 
+                    
+                w->textEchoMode(
+                  
+                );
+              
+            // return type: QLineEdit::EchoMode
+
+            return RJSHelper::cpp2js_QLineEdit_EchoMode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for textEchoMode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setComboBoxEditable
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setComboBoxEditable
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: editable (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setComboBoxEditable(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setComboBoxEditable";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: isComboBoxEditable
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::isComboBoxEditable
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                bool res = 
+                    
+                w->isComboBoxEditable(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isComboBoxEditable";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setComboBoxItems
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setComboBoxItems
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QStringList(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: items (QStringList)
+  
+QStringList a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setComboBoxItems(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setComboBoxItems";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: comboBoxItems
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::comboBoxItems
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QStringList res = 
+                    
+                w->comboBoxItems(
+                  
+                );
+              
+            // return type: QStringList
+
+            return RJSHelper::cpp2js_QStringList(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for comboBoxItems";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setIntValue
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setIntValue
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: value (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setIntValue(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setIntValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: intValue
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::intValue
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                int res = 
+                    
+                w->intValue(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for intValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setIntMinimum
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setIntMinimum
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: min (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setIntMinimum(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setIntMinimum";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: intMinimum
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::intMinimum
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                int res = 
+                    
+                w->intMinimum(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for intMinimum";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setIntMaximum
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setIntMaximum
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: max (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setIntMaximum(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setIntMaximum";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: intMaximum
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::intMaximum
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                int res = 
+                    
+                w->intMaximum(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for intMaximum";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setIntRange
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setIntRange
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+   && RJSHelper::is_int(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: min (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+  // convert js parameter to cpp: max (int)
+  
+int a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setIntRange(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setIntRange";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setIntStep
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setIntStep
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: step (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setIntStep(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setIntStep";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: intStep
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::intStep
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                int res = 
+                    
+                w->intStep(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for intStep";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setDoubleValue
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setDoubleValue
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: value (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setDoubleValue(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDoubleValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: doubleValue
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::doubleValue
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                double res = 
+                    
+                w->doubleValue(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for doubleValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setDoubleMinimum
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setDoubleMinimum
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: min (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setDoubleMinimum(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDoubleMinimum";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: doubleMinimum
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::doubleMinimum
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                double res = 
+                    
+                w->doubleMinimum(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for doubleMinimum";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setDoubleMaximum
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setDoubleMaximum
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: max (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setDoubleMaximum(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDoubleMaximum";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: doubleMaximum
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::doubleMaximum
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                double res = 
+                    
+                w->doubleMaximum(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for doubleMaximum";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setDoubleRange
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setDoubleRange
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+   && RJSHelper::is_double(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: min (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+  // convert js parameter to cpp: max (double)
+  
+double a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_double(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setDoubleRange(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDoubleRange";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setDoubleDecimals
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setDoubleDecimals
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: decimals (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setDoubleDecimals(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDoubleDecimals";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: doubleDecimals
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::doubleDecimals
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                int res = 
+                    
+                w->doubleDecimals(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for doubleDecimals";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setOkButtonText
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setOkButtonText
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: text (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setOkButtonText(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setOkButtonText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: okButtonText
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::okButtonText
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QString res = 
+                    
+                w->okButtonText(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for okButtonText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setCancelButtonText
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setCancelButtonText
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: text (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setCancelButtonText(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setCancelButtonText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: cancelButtonText
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::cancelButtonText
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QString res = 
+                    
+                w->cancelButtonText(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for cancelButtonText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: open
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::open
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_char_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: receiver (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: member (char)
+  
+
+      // char pointer string:
+      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
+      const char* a2_cpp = a2_ba.constData();
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->open(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for open";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: minimumSizeHint
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::minimumSizeHint
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QSize res = 
+                    
+                w->minimumSizeHint(
+                  
+                );
+              
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for minimumSizeHint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: sizeHint
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::sizeHint
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                QSize res = 
+                    
+                w->sizeHint(
+                  
+                );
+              
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for sizeHint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setVisible
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setVisible
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: visible (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setVisible(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setVisible";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: setDoubleStep
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::setDoubleStep
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: step (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->setDoubleStep(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDoubleStep";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: doubleStep
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::doubleStep
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                double res = 
+                    
+                w->doubleStep(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for doubleStep";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QInputDialog
+    // Function: textValueChanged
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QInputDialog_Wrapper::textValueChangedEmitter(
+                const QString& text
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: text (QString)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QString(
+    handler, 
+    text
+  );
+
+
+                emit textValueChanged(
+                  a1_js
+                );
+              }
+            
+    // Class: QInputDialog
+    // Function: textValueSelected
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QInputDialog_Wrapper::textValueSelectedEmitter(
+                const QString& text
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: text (QString)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QString(
+    handler, 
+    text
+  );
+
+
+                emit textValueSelected(
+                  a1_js
+                );
+              }
+            
+    // Class: QInputDialog
+    // Function: intValueChanged
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QInputDialog_Wrapper::intValueChangedEmitter(
+                int value
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: value (int)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_int(
+    handler, 
+    value
+  );
+
+
+                emit intValueChanged(
+                  a1_js
+                );
+              }
+            
+    // Class: QInputDialog
+    // Function: intValueSelected
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QInputDialog_Wrapper::intValueSelectedEmitter(
+                int value
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: value (int)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_int(
+    handler, 
+    value
+  );
+
+
+                emit intValueSelected(
+                  a1_js
+                );
+              }
+            
+    // Class: QInputDialog
+    // Function: doubleValueChanged
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QInputDialog_Wrapper::doubleValueChangedEmitter(
+                double value
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: value (double)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_double(
+    handler, 
+    value
+  );
+
+
+                emit doubleValueChanged(
+                  a1_js
+                );
+              }
+            
+    // Class: QInputDialog
+    // Function: doubleValueSelected
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QInputDialog_Wrapper::doubleValueSelectedEmitter(
+                double value
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: value (double)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_double(
+    handler, 
+    value
+  );
+
+
+                emit doubleValueSelected(
+                  a1_js
+                );
+              }
+            
+    // Class: QInputDialog
+    // Function: done
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QInputDialog_Wrapper::done
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: result (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QInputDialog* w = getWrapped();
+                
+                w->done(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for done";
                   handler.trace();
                   return QJSValue();
                 
