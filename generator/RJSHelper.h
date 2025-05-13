@@ -129,6 +129,12 @@
           virtual QJSValue downcast(RJSApi& handler, QQmlEngine* o) = 0;
         };
       
+        // Base class for downcasters that can downcast QRhiWidget to specific types:
+        class RJSDowncaster_QRhiWidget {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QRhiWidget* o) = 0;
+        };
+      
         // Base class for downcasters that can downcast QTextBrowser to specific types:
         class RJSDowncaster_QTextBrowser {
         public:
@@ -1249,6 +1255,12 @@
         class RJSBasecaster_QRegularExpressionMatch {
         public:
           virtual QRegularExpressionMatch* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class QRhiWidget:
+        class RJSBasecaster_QRhiWidget {
+        public:
+          virtual QRhiWidget* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class QScreen:
@@ -4253,6 +4265,11 @@
       static QRegularExpressionValidator* js2cpp_QRegularExpressionValidator_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QRegularExpressionValidator_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QRhiWidget(RJSApi& handler, QRhiWidget* v);
+      static QJSValue cpp2js_QRhiWidget(RJSApi& handler, const QRhiWidget* v);
+      static QRhiWidget* js2cpp_QRhiWidget_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QRhiWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QScreen(RJSApi& handler, QScreen* v);
       static QJSValue cpp2js_QScreen(RJSApi& handler, const QScreen* v);
       static QScreen* js2cpp_QScreen_ptr(RJSApi& handler, const QJSValue& v);
@@ -4845,6 +4862,15 @@
           public:
             static void registerDowncaster_QQmlEngine(RJSDowncaster_QQmlEngine* dc) {
               downcasters_QQmlEngine.append(dc);
+            }
+        
+          // allow downcasting for type QRhiWidget:
+          private:
+            static QList<RJSDowncaster_QRhiWidget*> downcasters_QRhiWidget;
+
+          public:
+            static void registerDowncaster_QRhiWidget(RJSDowncaster_QRhiWidget* dc) {
+              downcasters_QRhiWidget.append(dc);
             }
         
           // allow downcasting for type QTextBrowser:

@@ -304,6 +304,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qregularexpressionmatchiterator_wrapper.h
     generator/cpp/qregularexpressionvalidator_wrapper.h
     generator/cpp/qresizeevent_wrapper.h
+    generator/cpp/qrhiwidget_base.h
+    generator/cpp/qrhiwidget_wrapper.h
     generator/cpp/qscreen_base.h
     generator/cpp/qscreen_wrapper.h
     generator/cpp/qscrollarea_base.h
@@ -686,6 +688,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qregion_wrapper.cpp
     generator/cpp/qregularexpression_base.cpp
     generator/cpp/qregularexpression_wrapper.cpp
+    generator/cpp/qrhiwidget_base.cpp
+    generator/cpp/qrhiwidget_wrapper.cpp
     generator/cpp/qscreen_base.cpp
     generator/cpp/qscreen_wrapper.cpp
     generator/cpp/qscrollarea_base.cpp

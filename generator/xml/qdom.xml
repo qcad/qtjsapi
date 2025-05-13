@@ -530,6 +530,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="operator_equal" call="operator==">
       <variant return-type="bool" const="true" access="public">
         <parameters>
@@ -544,6 +545,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="item">
       <variant return-type="QDomNode" const="true" access="public">
         <parameters>

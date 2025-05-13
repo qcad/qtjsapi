@@ -159,22 +159,6 @@
         };
     
         // function 
-        QDomNodeList.prototype.operator_equal = function(...args) 
-          
-        {
-          //print("JS: QDomNodeList.prototype.operator_equal");
-          return this.__PROXY__.operator_equal(...args);
-        };
-    
-        // function 
-        QDomNodeList.prototype.operator_unequal = function(...args) 
-          
-        {
-          //print("JS: QDomNodeList.prototype.operator_unequal");
-          return this.__PROXY__.operator_unequal(...args);
-        };
-    
-        // function 
         QDomNodeList.prototype.item = function(...args) 
           
         {

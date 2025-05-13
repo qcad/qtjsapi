@@ -1,8 +1,8 @@
 
   // Auto generated
   
-    #ifndef QWIDGET_H_WRAPPER
-    #define QWIDGET_H_WRAPPER
+    #ifndef QRHIWIDGET_H_WRAPPER
+    #define QRHIWIDGET_H_WRAPPER
 
     // include header:
     //#include "header_h.h"
@@ -12,328 +12,16 @@
 
     #include "RJSWrapperObj.h"
   
-        #include <QLayout>
-      
-        #include <QStyle>
-      
-        #include <QAction>
-      
-        #include <QVariant>
-      
-        #include <QWindow>
-      
-        #include <QActionEvent>
-      
-        #include <QMouseEvent>
-      
-        #include <QWheelEvent>
-      
-        #include <QHoverEvent>
-      
-        #include <QKeyEvent>
-      
-        #include <QFocusEvent>
-      
-        #include <QPaintEvent>
-      
-        #include <QMoveEvent>
-      
-        #include <QResizeEvent>
-      
-        #include <QCloseEvent>
-      
-        #include <QContextMenuEvent>
-      
-        #include <QInputMethodEvent>
-      
-        #include <QTabletEvent>
-      
-        #include <QDragEnterEvent>
-      
-        #include <QDragMoveEvent>
-      
-        #include <QDragLeaveEvent>
-      
-        #include <QDropEvent>
-      
-        #include <QScreen>
-      
-        #include <QShowEvent>
-      
-        #include <QHideEvent>
-      
-        #include <QIcon>
-      
-        #include <QBackingStore>
-      
-        #include <QLocale>
-      
-        #include <QGraphicsProxyWidget>
-      
-        #include <QGraphicsEffect>
-      
-        #include <QPixmap>
-      
-        #include <QDebug>
-      
     #include <QQmlEngine>
     
         #include "RJSType.h"
       
-        #include <QWidget>
+        #include <QRhiWidget>
       
-      // wrapped object is QWidget_Base class if new object is created: 
-      #include "qwidget_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QWidget_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      QWidget_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(tooltip)
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifdef Q_QDOC
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(graphicseffect)
-
-#endif
-
-#ifndef QT_NO_GESTURES
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-    // Class: QWidget
-    // Function: setTabOrder
-    // Source: 
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_SHORTCUT
-
-#endif
-
-    // Class: QWidget
-    // Function: mouseGrabber
-    // Source: 
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QWidget
-    // Function: keyboardGrabber
-    // Source: 
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-#if QT_CONFIG(graphicsview)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-#endif
-
-#ifdef QT_KEYPAD_NAVIGATION
-
-#endif
-
-#if QT_CONFIG(wheelevent)
-
-#endif
-
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-#if QT_CONFIG(tabletevent)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-#endif
-
-#if QT_CONFIG(draganddrop)
-
-#endif
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-#ifndef QT_NO_GESTURES
-
-#endif
-
-#ifdef Q_OS_MAC
-
-#endif
-
-
-      private:
-          RJSApi& handler;
-          //static QWidget_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
-    // wrapper class for QWidget
-    class QTJSAPI_EXPORT QWidget_Wrapper : public RJSWrapperObj {
+    // wrapper class for QRhiWidget
+    class QTJSAPI_EXPORT QRhiWidget_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -702,268 +390,48 @@
 
     private:
       // disable copy constructor:
-      QWidget_Wrapper(const QWidget_Wrapper&);
+      QRhiWidget_Wrapper(const QRhiWidget_Wrapper&);
 
     public:
-      // initialization of QWidget:
+      // initialization of QRhiWidget:
       static void init(RJSApi& handler);
 
       
-        static QWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
+        static QRhiWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
           
             // check if pointer points to derrived type:
             
-              if (t==RJSType_QAbstractButton::getIdStatic()) {
-                return (QWidget*)(QAbstractButton*)vp;
-              }
-              
-              if (t==RJSType_QAbstractItemView::getIdStatic()) {
-                return (QWidget*)(QAbstractItemView*)vp;
-              }
-              
-              if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
-                return (QWidget*)(QAbstractPrintDialog*)vp;
-              }
-              
-              if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
-                return (QWidget*)(QAbstractScrollArea*)vp;
-              }
-              
-              if (t==RJSType_QAbstractSlider::getIdStatic()) {
-                return (QWidget*)(QAbstractSlider*)vp;
-              }
-              
-              if (t==RJSType_QAbstractSpinBox::getIdStatic()) {
-                return (QWidget*)(QAbstractSpinBox*)vp;
-              }
-              
-              if (t==RJSType_QCheckBox::getIdStatic()) {
-                return (QWidget*)(QCheckBox*)vp;
-              }
-              
-              if (t==RJSType_QColorDialog::getIdStatic()) {
-                return (QWidget*)(QColorDialog*)vp;
-              }
-              
-              if (t==RJSType_QComboBox::getIdStatic()) {
-                return (QWidget*)(QComboBox*)vp;
-              }
-              
-              if (t==RJSType_QDialog::getIdStatic()) {
-                return (QWidget*)(QDialog*)vp;
-              }
-              
-              if (t==RJSType_QDialogButtonBox::getIdStatic()) {
-                return (QWidget*)(QDialogButtonBox*)vp;
-              }
-              
-              if (t==RJSType_QDockWidget::getIdStatic()) {
-                return (QWidget*)(QDockWidget*)vp;
-              }
-              
-              if (t==RJSType_QFileDialog::getIdStatic()) {
-                return (QWidget*)(QFileDialog*)vp;
-              }
-              
-              if (t==RJSType_QFontComboBox::getIdStatic()) {
-                return (QWidget*)(QFontComboBox*)vp;
-              }
-              
-              if (t==RJSType_QFrame::getIdStatic()) {
-                return (QWidget*)(QFrame*)vp;
-              }
-              
-              if (t==RJSType_QGroupBox::getIdStatic()) {
-                return (QWidget*)(QGroupBox*)vp;
-              }
-              
-              if (t==RJSType_QHeaderView::getIdStatic()) {
-                return (QWidget*)(QHeaderView*)vp;
-              }
-              
-              if (t==RJSType_QInputDialog::getIdStatic()) {
-                return (QWidget*)(QInputDialog*)vp;
-              }
-              
-              if (t==RJSType_QLabel::getIdStatic()) {
-                return (QWidget*)(QLabel*)vp;
-              }
-              
-              if (t==RJSType_QLineEdit::getIdStatic()) {
-                return (QWidget*)(QLineEdit*)vp;
-              }
-              
-              if (t==RJSType_QListView::getIdStatic()) {
-                return (QWidget*)(QListView*)vp;
-              }
-              
-              if (t==RJSType_QListWidget::getIdStatic()) {
-                return (QWidget*)(QListWidget*)vp;
-              }
-              
-              if (t==RJSType_QMainWindow::getIdStatic()) {
-                return (QWidget*)(QMainWindow*)vp;
-              }
-              
-              if (t==RJSType_QMdiArea::getIdStatic()) {
-                return (QWidget*)(QMdiArea*)vp;
-              }
-              
-              if (t==RJSType_QMdiSubWindow::getIdStatic()) {
-                return (QWidget*)(QMdiSubWindow*)vp;
-              }
-              
-              if (t==RJSType_QMenu::getIdStatic()) {
-                return (QWidget*)(QMenu*)vp;
-              }
-              
-              if (t==RJSType_QMenuBar::getIdStatic()) {
-                return (QWidget*)(QMenuBar*)vp;
-              }
-              
-              if (t==RJSType_QMessageBox::getIdStatic()) {
-                return (QWidget*)(QMessageBox*)vp;
-              }
-              
-              if (t==RJSType_QPlainTextEdit::getIdStatic()) {
-                return (QWidget*)(QPlainTextEdit*)vp;
-              }
-              
-              if (t==RJSType_QPrintDialog::getIdStatic()) {
-                return (QWidget*)(QPrintDialog*)vp;
-              }
-              
-              if (t==RJSType_QProgressBar::getIdStatic()) {
-                return (QWidget*)(QProgressBar*)vp;
-              }
-              
-              if (t==RJSType_QProgressDialog::getIdStatic()) {
-                return (QWidget*)(QProgressDialog*)vp;
-              }
-              
-              if (t==RJSType_QPushButton::getIdStatic()) {
-                return (QWidget*)(QPushButton*)vp;
-              }
-              
-              if (t==RJSType_QQuickWidget::getIdStatic()) {
-                return (QWidget*)(QQuickWidget*)vp;
-              }
-              
-              if (t==RJSType_QRadioButton::getIdStatic()) {
-                return (QWidget*)(QRadioButton*)vp;
-              }
-              
-              if (t==RJSType_QRhiWidget::getIdStatic()) {
-                return (QWidget*)(QRhiWidget*)vp;
-              }
-              
-              if (t==RJSType_QScrollArea::getIdStatic()) {
-                return (QWidget*)(QScrollArea*)vp;
-              }
-              
-              if (t==RJSType_QScrollBar::getIdStatic()) {
-                return (QWidget*)(QScrollBar*)vp;
-              }
-              
-              if (t==RJSType_QSlider::getIdStatic()) {
-                return (QWidget*)(QSlider*)vp;
-              }
-              
-              if (t==RJSType_QSpinBox::getIdStatic()) {
-                return (QWidget*)(QSpinBox*)vp;
-              }
-              
-              if (t==RJSType_QSplashScreen::getIdStatic()) {
-                return (QWidget*)(QSplashScreen*)vp;
-              }
-              
-              if (t==RJSType_QSplitter::getIdStatic()) {
-                return (QWidget*)(QSplitter*)vp;
-              }
-              
-              if (t==RJSType_QSplitterHandle::getIdStatic()) {
-                return (QWidget*)(QSplitterHandle*)vp;
-              }
-              
-              if (t==RJSType_QStackedWidget::getIdStatic()) {
-                return (QWidget*)(QStackedWidget*)vp;
-              }
-              
-              if (t==RJSType_QStatusBar::getIdStatic()) {
-                return (QWidget*)(QStatusBar*)vp;
-              }
-              
-              if (t==RJSType_QTabBar::getIdStatic()) {
-                return (QWidget*)(QTabBar*)vp;
-              }
-              
-              if (t==RJSType_QTableView::getIdStatic()) {
-                return (QWidget*)(QTableView*)vp;
-              }
-              
-              if (t==RJSType_QTableWidget::getIdStatic()) {
-                return (QWidget*)(QTableWidget*)vp;
-              }
-              
-              if (t==RJSType_QTabWidget::getIdStatic()) {
-                return (QWidget*)(QTabWidget*)vp;
-              }
-              
-              if (t==RJSType_QTextBrowser::getIdStatic()) {
-                return (QWidget*)(QTextBrowser*)vp;
-              }
-              
-              if (t==RJSType_QTextEdit::getIdStatic()) {
-                return (QWidget*)(QTextEdit*)vp;
-              }
-              
-              if (t==RJSType_QToolBar::getIdStatic()) {
-                return (QWidget*)(QToolBar*)vp;
-              }
-              
-              if (t==RJSType_QToolButton::getIdStatic()) {
-                return (QWidget*)(QToolButton*)vp;
-              }
-              
-              if (t==RJSType_QTreeView::getIdStatic()) {
-                return (QWidget*)(QTreeView*)vp;
-              }
-              
-              if (t==RJSType_QTreeWidget::getIdStatic()) {
-                return (QWidget*)(QTreeWidget*)vp;
-              }
-              
 
-          // hook for modules to cast from other types to base QWidget:
-          for (int i=0; i<basecasters_QWidget.length(); i++) {
-            RJSBasecaster_QWidget* basecaster = basecasters_QWidget[i];
-            QWidget* ret = basecaster->castToBase(t, vp);
+          // hook for modules to cast from other types to base QRhiWidget:
+          for (int i=0; i<basecasters_QRhiWidget.length(); i++) {
+            RJSBasecaster_QRhiWidget* basecaster = basecasters_QRhiWidget[i];
+            QRhiWidget* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
               return ret;
             }
           }
 
-          // object is a pointer to base class QWidget:
-          if (t==RJSType_QWidget::getIdStatic()) {
-            return (QWidget*)vp;
+          // object is a pointer to base class QRhiWidget:
+          if (t==RJSType_QRhiWidget::getIdStatic()) {
+            return (QRhiWidget*)vp;
           }
 
-          qWarning() << "QWidget_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
+          qWarning() << "QRhiWidget_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
         }
 
-        static QWidget* getWrappedBase(RJSWrapper* wrapper) {
+        static QRhiWidget* getWrappedBase(RJSWrapper* wrapper) {
           int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
-              //qWarning() << "getWrapped_QWidget*: wrapper wraps NULL";
+              //qWarning() << "getWrapped_QRhiWidget*: wrapper wraps NULL";
           }
 
-          QWidget* ret = castToBase(vp, t);
+          QRhiWidget* ret = castToBase(vp, t);
           if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QWidget*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+              qWarning() << "QRhiWidget*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
           }
           return ret;
         }
@@ -972,7 +440,7 @@
     // special constructor used as prototype:
     
           Q_INVOKABLE 
-          QWidget_Wrapper(QJSEngine* e);
+          QRhiWidget_Wrapper(QJSEngine* e);
         
     */
 
@@ -980,12 +448,12 @@
       // special constructor to wrap existing object:
       
             //Q_INVOKABLE 
-            QWidget_Wrapper(RJSApi& h, QWidget* o, bool wrappedCreated);
+            QRhiWidget_Wrapper(RJSApi& h, QRhiWidget* o, bool wrappedCreated);
           
 
       // destructor:
       
-          virtual ~QWidget_Wrapper();
+          virtual ~QRhiWidget_Wrapper();
         
     // initialization of signal forwarding
     
@@ -994,189 +462,10 @@
 
   // constructors:
   
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-    // Class: QWidget
-    // Function: 
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              QWidget_Wrapper
-                
-              (
-
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(tooltip)
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifdef Q_QDOC
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(graphicseffect)
-
-#endif
-
-#ifndef QT_NO_GESTURES
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_SHORTCUT
-
-#endif
-
-#if QT_CONFIG(graphicsview)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-#endif
-
-#ifdef QT_KEYPAD_NAVIGATION
-
-#endif
-
-#if QT_CONFIG(wheelevent)
-
-#endif
-
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-#if QT_CONFIG(tabletevent)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-#endif
-
-#if QT_CONFIG(draganddrop)
-
-#endif
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-#ifndef QT_NO_GESTURES
-
-#endif
-
-#ifdef Q_OS_MAC
-
-#endif
-
 
     // non-static functions:
     
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -1197,7 +486,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setObjectName
     // Source: QObject
     // Static: false
@@ -1220,7 +509,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isWidgetType
     // Source: QObject
     // Static: false
@@ -1241,7 +530,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isWindowType
     // Source: QObject
     // Static: false
@@ -1262,7 +551,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: signalsBlocked
     // Source: QObject
     // Static: false
@@ -1283,7 +572,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: blockSignals
     // Source: QObject
     // Static: false
@@ -1306,7 +595,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: findChild
     // Source: QObject
     // Static: false
@@ -1335,7 +624,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: children
     // Source: QObject
     // Static: false
@@ -1356,7 +645,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: installEventFilter
     // Source: QObject
     // Static: false
@@ -1379,7 +668,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: removeEventFilter
     // Source: QObject
     // Static: false
@@ -1402,7 +691,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: dumpObjectTree
     // Source: QObject
     // Static: false
@@ -1421,7 +710,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: dumpObjectInfo
     // Source: QObject
     // Static: false
@@ -1440,7 +729,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setProperty
     // Source: QObject
     // Static: false
@@ -1467,7 +756,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: property
     // Source: QObject
     // Static: false
@@ -1492,7 +781,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: dynamicPropertyNames
     // Source: QObject
     // Static: false
@@ -1513,7 +802,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: parent
     // Source: QObject
     // Static: false
@@ -1534,7 +823,7 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: deleteLater
     // Source: QObject
     // Static: false
@@ -1553,309 +842,9 @@
               
               ;
             
-    // Class: QWidget
-    // Function: paintingActive
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintingActive
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: paintEngine
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: widthMM
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  widthMM
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: heightMM
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  heightMM
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: logicalDpiX
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalDpiX
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: logicalDpiY
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalDpiY
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: physicalDpiX
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalDpiX
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: physicalDpiY
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalDpiY
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: devicePixelRatio
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatio
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: devicePixelRatioF
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatioF
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: colorCount
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  colorCount
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QWidget
-    // Function: depth
-    // Source: QPaintDevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  depth
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#ifndef QT_NO_TOOLTIP
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-#ifndef QT_NO_CURSOR
-
-#endif
-
-#if QT_CONFIG(tooltip)
-
-#endif
-
-#if QT_CONFIG(statustip)
-
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: devType
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1874,9 +863,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: createWinId
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1893,9 +882,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isWindow
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1914,9 +903,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isModal
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1935,9 +924,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowModality
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1956,9 +945,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowModality
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -1979,9 +968,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2000,9 +989,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isEnabledTo
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2025,9 +1014,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2048,9 +1037,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setDisabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2071,9 +1060,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowModified
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2094,9 +1083,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: frameGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2115,9 +1104,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: geometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2136,9 +1125,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: normalGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2157,9 +1146,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: x
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2178,9 +1167,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: y
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2199,9 +1188,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: pos
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2220,9 +1209,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: frameSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2241,9 +1230,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: size
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2262,9 +1251,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: width
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2283,9 +1272,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: height
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2304,9 +1293,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: rect
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2325,9 +1314,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: childrenRect
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2346,9 +1335,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: childrenRegion
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2367,9 +1356,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: minimumSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2388,9 +1377,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: maximumSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2409,9 +1398,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: minimumWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2430,9 +1419,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: minimumHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2451,9 +1440,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: maximumWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2472,9 +1461,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: maximumHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2493,9 +1482,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setMinimumSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2520,9 +1509,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setMaximumSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2547,9 +1536,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setMinimumWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2570,9 +1559,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setMinimumHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2593,9 +1582,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setMaximumWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2616,9 +1605,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setMaximumHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2639,13 +1628,9 @@
               
               ;
             
-#ifdef Q_QDOC
-
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: sizeIncrement
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2664,9 +1649,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setSizeIncrement
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2691,9 +1676,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: baseSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2712,9 +1697,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setBaseSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2739,9 +1724,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setFixedSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2766,9 +1751,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setFixedWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2789,9 +1774,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setFixedHeight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2812,9 +1797,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: mapToGlobal
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2837,9 +1822,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: mapFromGlobal
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2862,9 +1847,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: mapToParent
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2887,9 +1872,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: mapFromParent
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2912,9 +1897,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: mapTo
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2941,9 +1926,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: mapFrom
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2970,9 +1955,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: window
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2991,9 +1976,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: nativeParentWidget
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3012,9 +1997,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: topLevelWidget
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3033,9 +2018,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: palette
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3054,9 +2039,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setPalette
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3077,9 +2062,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setBackgroundRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3100,9 +2085,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: backgroundRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3121,9 +2106,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setForegroundRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3144,9 +2129,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: foregroundRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3165,9 +2150,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: font
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3186,9 +2171,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setFont
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3209,9 +2194,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: fontInfo
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3230,11 +2215,9 @@
               
               ;
             
-#ifndef QT_NO_CURSOR
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: cursor
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3253,9 +2236,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setCursor
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3276,9 +2259,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: unsetCursor
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3295,11 +2278,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setMouseTracking
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3320,9 +2301,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: hasMouseTracking
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3341,9 +2322,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: underMouse
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3362,9 +2343,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setTabletTracking
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3385,9 +2366,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: hasTabletTracking
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3406,9 +2387,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setMask
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3429,9 +2410,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: mask
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3450,9 +2431,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: clearMask
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3469,13 +2450,9 @@
               
               ;
             
-#if QT_CONFIG(graphicseffect)
-
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: grab
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3496,11 +2473,9 @@
               
               ;
             
-#ifndef QT_NO_GESTURES
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: grabGesture
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -3525,9 +2500,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: ungrabGesture
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3548,11 +2523,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowTitle
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3573,11 +2546,9 @@
               
               ;
             
-#ifndef QT_NO_STYLE_STYLESHEET
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setStyleSheet
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3598,13 +2569,9 @@
               
               ;
             
-#endif
-
-#ifndef QT_NO_STYLE_STYLESHEET
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: styleSheet
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3623,11 +2590,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowTitle
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3646,9 +2611,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowIcon
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3669,9 +2634,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowIcon
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3690,9 +2655,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowIconText
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3713,9 +2678,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowIconText
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3734,9 +2699,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3757,9 +2722,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowRole
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3778,9 +2743,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowFilePath
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3801,9 +2766,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowFilePath
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3822,9 +2787,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowOpacity
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3845,9 +2810,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowOpacity
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3866,9 +2831,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isWindowModified
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3887,11 +2852,9 @@
               
               ;
             
-#ifndef QT_NO_TOOLTIP
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setToolTip
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3912,9 +2875,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: toolTip
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3933,9 +2896,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setToolTipDuration
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -3956,9 +2919,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: toolTipDuration
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -3977,13 +2940,9 @@
               
               ;
             
-#endif
-
-#if QT_CONFIG(statustip)
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setStatusTip
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4004,9 +2963,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: statusTip
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4025,13 +2984,9 @@
               
               ;
             
-#endif
-
-#if QT_CONFIG(whatsthis)
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWhatsThis
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4052,9 +3007,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: whatsThis
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4073,13 +3028,9 @@
               
               ;
             
-#endif
-
-#ifndef QT_NO_ACCESSIBILITY
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: accessibleName
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4098,9 +3049,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setAccessibleName
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4121,9 +3072,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: accessibleDescription
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4142,9 +3093,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setAccessibleDescription
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4165,11 +3116,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setLayoutDirection
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4190,9 +3139,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: layoutDirection
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4211,9 +3160,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: unsetLayoutDirection
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4230,9 +3179,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setLocale
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4253,9 +3202,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: locale
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4274,9 +3223,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: unsetLocale
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4293,9 +3242,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isRightToLeft
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4314,9 +3263,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isLeftToRight
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4335,9 +3284,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isActiveWindow
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4356,9 +3305,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: activateWindow
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4375,9 +3324,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: clearFocus
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4394,9 +3343,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setFocus
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4417,9 +3366,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: focusPolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4438,9 +3387,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setFocusPolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4461,9 +3410,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: hasFocus
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4482,9 +3431,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setFocusProxy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4505,9 +3454,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: focusProxy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4526,9 +3475,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: contextMenuPolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4547,9 +3496,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setContextMenuPolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4570,9 +3519,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: grabMouse
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4593,13 +3542,9 @@
               
               ;
             
-#ifndef QT_NO_CURSOR
-
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: releaseMouse
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4616,9 +3561,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: grabKeyboard
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4635,9 +3580,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: releaseKeyboard
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4654,11 +3599,9 @@
               
               ;
             
-#ifndef QT_NO_SHORTCUT
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: grabShortcut
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -4683,9 +3626,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: releaseShortcut
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4706,9 +3649,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setShortcutEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -4733,9 +3676,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setShortcutAutoRepeat
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -4760,11 +3703,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: updatesEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4783,9 +3724,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setUpdatesEnabled
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4806,13 +3747,9 @@
               
               ;
             
-#if QT_CONFIG(graphicsview)
-
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: update
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -4845,9 +3782,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: repaint
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -4880,9 +3817,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setVisible
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4903,9 +3840,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setHidden
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -4926,9 +3863,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: show
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4945,9 +3882,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: hide
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4964,9 +3901,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: showMinimized
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -4983,9 +3920,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: showMaximized
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5002,9 +3939,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: showFullScreen
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5021,9 +3958,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: showNormal
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5040,9 +3977,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: close
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5059,9 +3996,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: raise
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5078,9 +4015,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: lower
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5097,9 +4034,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: stackUnder
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5120,9 +4057,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: move
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -5147,9 +4084,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: resize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -5174,9 +4111,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -5209,9 +4146,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: saveGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5230,9 +4167,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: restoreGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5253,9 +4190,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: adjustSize
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5272,9 +4209,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isVisible
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5293,9 +4230,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isVisibleTo
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5318,9 +4255,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isHidden
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5339,9 +4276,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isMinimized
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5360,9 +4297,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isMaximized
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5381,9 +4318,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isFullScreen
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5402,9 +4339,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowState
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5423,9 +4360,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowState
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5446,9 +4383,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: overrideWindowState
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5469,9 +4406,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: sizeHint
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5490,9 +4427,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: minimumSizeHint
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5511,9 +4448,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: sizePolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5532,9 +4469,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setSizePolicy
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -5559,9 +4496,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: heightForWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5584,9 +4521,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: hasHeightForWidth
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5605,9 +4542,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: visibleRegion
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5626,9 +4563,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setContentsMargins
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -5661,9 +4598,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: contentsMargins
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5682,9 +4619,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: contentsRect
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5703,9 +4640,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: layout
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5724,9 +4661,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setLayout
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5747,9 +4684,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: updateGeometry
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5766,9 +4703,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setParent
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -5793,9 +4730,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: scroll
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
@@ -5824,9 +4761,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: focusWidget
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5845,9 +4782,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: nextInFocusChain
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5866,9 +4803,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: previousInFocusChain
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5887,9 +4824,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: acceptDrops
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5908,9 +4845,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setAcceptDrops
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5931,11 +4868,9 @@
               
               ;
             
-#ifndef QT_NO_ACTION
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: addAction
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5956,11 +4891,9 @@
               
               ;
             
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: addActions
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5981,9 +4914,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: insertActions
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6008,13 +4941,9 @@
               
               ;
             
-#else
-
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: insertAction
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6039,9 +4968,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: removeAction
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6062,9 +4991,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: actions
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6083,11 +5012,9 @@
               
               ;
             
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: parentWidget
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6106,9 +5033,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowFlags
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6129,9 +5056,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowFlags
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6150,9 +5077,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setWindowFlag
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6177,9 +5104,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: overrideWindowFlags
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6200,9 +5127,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: windowType
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6221,9 +5148,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: childAt
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6250,9 +5177,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setAttribute
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6277,9 +5204,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: testAttribute
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6302,9 +5229,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: ensurePolished
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6323,9 +5250,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: isAncestorOf
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6348,13 +5275,9 @@
               
               ;
             
-#ifdef QT_KEYPAD_NAVIGATION
-
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: autoFillBackground
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6373,9 +5296,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setAutoFillBackground
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6396,9 +5319,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: customContextMenuRequested
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6417,191 +5340,9 @@
                 const QPoint& pos
               );
             
-    // Class: QWidget
-    // Function: mousePressEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mousePressEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QWidget
-    // Function: mouseReleaseEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseReleaseEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QWidget
-    // Function: mouseMoveEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#if QT_CONFIG(wheelevent)
-
-#endif
-
-    // Class: QWidget
-    // Function: paintEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QWidget
-    // Function: resizeEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#ifndef QT_NO_CONTEXTMENU
-
-#endif
-
-#if QT_CONFIG(tabletevent)
-
-#endif
-
-#ifndef QT_NO_ACTION
-
-    // Class: QWidget
-    // Function: actionEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-#endif
-
-#if QT_CONFIG(draganddrop)
-
-#endif
-
-#if QT_VERSION>=QT_VERSION_CHECK(6,0,0)
-
-#else
-
-#endif
-
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: inputMethodQuery
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6624,9 +5365,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: inputMethodHints
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6645,9 +5386,9 @@
               
               ;
             
-    // Class: QWidget
+    // Class: QRhiWidget
     // Function: setInputMethodHints
-    // Source: 
+    // Source: QWidget
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6668,14 +5409,6 @@
               
               ;
             
-#ifndef QT_NO_GESTURES
-
-#endif
-
-#ifdef Q_OS_MAC
-
-#endif
-
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             
@@ -6707,7 +5440,7 @@
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QWidget::getIdStatic();
+          return RJSType_QRhiWidget::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -6719,7 +5452,7 @@
         }
 
         // get wrapped object:
-        QWidget* getWrapped() {
+        QRhiWidget* getWrapped() {
           
             if (wrapped!=nullptr) {
               return wrapped;
@@ -6729,7 +5462,7 @@
         }
 
         // get wrapped object (const):
-        QWidget* getWrapped() const {
+        QRhiWidget* getWrapped() const {
           
             if (wrapped!=nullptr) {
               return wrapped;
@@ -6748,17 +5481,6 @@
           return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QWidget_Base* getWrappedBase() {
-            QWidget* w = getWrapped();
-            return dynamic_cast<QWidget_Base*>(w);
-          }
-
-          QWidget_Base* getWrappedBase() const {
-            QWidget* w = getWrapped();
-            return dynamic_cast<QWidget_Base*>(w);
-          }
         
 
         bool hasWrapped() const {
@@ -6791,37 +5513,30 @@
           //}
 
         
-          //void setRecFlag(bool on) const {
-          //  QWidget_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
         private:
 
         
           // wrapped object:
-          QWidget* wrapped;
+          QRhiWidget* wrapped;
         
 
         bool wrappedCreated;
       
       private:
         // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QWidget*> basecasters_QWidget;
+        static QList<RJSBasecaster_QRhiWidget*> basecasters_QRhiWidget;
 
       public:
-        static void registerBasecaster_QWidget(RJSBasecaster_QWidget* bc) {
-          basecasters_QWidget.append(bc);
+        static void registerBasecaster_QRhiWidget(RJSBasecaster_QRhiWidget* bc) {
+          basecasters_QRhiWidget.append(bc);
         }
       
     };
 
-    Q_DECLARE_METATYPE(QWidget_Wrapper*)
+    Q_DECLARE_METATYPE(QRhiWidget_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QWidget_Wrapper, "org.qcad.QWidget_Wrapper")
+    Q_DECLARE_INTERFACE(QRhiWidget_Wrapper, "org.qcad.QRhiWidget_Wrapper")
 
   
   #endif

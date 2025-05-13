@@ -305,6 +305,8 @@
 #include "generator/cpp/qregularexpressionmatchiterator_wrapper.h"
 #include "generator/cpp/qregularexpressionvalidator_wrapper.h"
 #include "generator/cpp/qresizeevent_wrapper.h"
+#include "generator/cpp/qrhiwidget_base.h"
+#include "generator/cpp/qrhiwidget_wrapper.h"
 #include "generator/cpp/qscreen_base.h"
 #include "generator/cpp/qscreen_wrapper.h"
 #include "generator/cpp/qscrollarea_base.h"

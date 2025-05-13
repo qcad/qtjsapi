@@ -86,6 +86,8 @@ target_link_libraries(qtjsapi PRIVATE
     Qt::Concurrent
     Qt::Core
     Qt::Gui
+    # needs GuiPrivate to be able to include <rhi/qrhi.h>
+    Qt::GuiPrivate
     Qt::Network
     Qt::OpenGL
     Qt::Qml

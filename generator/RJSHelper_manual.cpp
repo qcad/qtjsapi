@@ -845,6 +845,12 @@
         
         #include "qregularexpressionmatch_wrapper.h"
         
+        #include "qrhiwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
         #include "qscreen_wrapper.h"
         
           #include "qobject_wrapper.h"
@@ -1268,6 +1274,8 @@
         QList<RJSDowncaster_QObject*> RJSHelper::downcasters_QObject;
       
         QList<RJSDowncaster_QQmlEngine*> RJSHelper::downcasters_QQmlEngine;
+      
+        QList<RJSDowncaster_QRhiWidget*> RJSHelper::downcasters_QRhiWidget;
       
         QList<RJSDowncaster_QTextBrowser*> RJSHelper::downcasters_QTextBrowser;
       

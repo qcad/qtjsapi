@@ -46,6 +46,9 @@
   <xsl:text> </xsl:text>
 </xsl:param>
 
+<!-- Define a key for all class and super names -->
+<xsl:key name="includes-by-name" match="qsrc:class | qsrc:super" use="@name" />
+
 <xsl:template match="text()" />
 
 <xsl:template match="/">
@@ -283,6 +286,17 @@
         </xsl:otherwise>
       </xsl:choose>
 
+      <!-- Iterate over all class and super elements -->
+      <xsl:for-each select="document('tmp/xmlall.xml')//qsrc:class | document('tmp/xmlall.xml')//qsrc:super">
+        <!-- Only process the first occurrence of each unique name -->
+        <xsl:if test="generate-id() = generate-id(key('includes-by-name', @name)[1])">
+          <xsl:variable name="include-name" select="qc:lowercase(@name)" />
+          #include "<xsl:value-of select="$include-name"/>_wrapper.h"
+        </xsl:if>
+      </xsl:for-each>
+
+
+      <!--
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class">
         <xsl:variable name="basecast-from">
           <xsl:value-of select="@name" />
@@ -295,6 +309,7 @@
           #include "<xsl:value-of select="qc:lowercase($basecast-to)"/>_wrapper.h"
         </xsl:for-each>
       </xsl:for-each>
+      -->
 
 
       <xsl:if test="$section='' or $section='manual'">

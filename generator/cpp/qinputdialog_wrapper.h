@@ -550,6 +550,37 @@ DoubleInput = QInputDialog::DoubleInput,
 
   // constructors:
   
+    // Class: QInputDialog
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              QInputDialog_Wrapper
+                
+              (
+
+                
+                  // RJSApi:
+                  QObject* h
+                  
+                  ,
+                  
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
 
     // non-static functions:
     

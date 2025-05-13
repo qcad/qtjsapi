@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qrhiwidget.h">
+  <!--
+  <class_decl name="QRhi" />
+  <class_decl name="QRhiTexture" />
+  <class_decl name="QRhiRenderBuffer" />
+  <class_decl name="QRhiRenderTarget" />
+  <class_decl name="QRhiCommandBuffer" />
+  -->
+  <class name="QRhiWidget" ownership="cpp" proxy="true" downcast="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <!--
+    <enum name="Api">
+      <key>Null</key>
+      <key>OpenGL</key>
+      <key>Metal</key>
+      <key>Vulkan</key>
+      <key>Direct3D11</key>
+      <key>Direct3D12</key>
+    </enum>
+    <enum name="TextureFormat">
+      <key>RGBA8</key>
+      <key>RGBA16F</key>
+      <key>RGBA32F</key>
+      <key>RGB10A2</key>
+    </enum>
+    <function name="api" />
+    <function name="setApi" />
+    <function name="isDebugLayerEnabled" />
+    <function name="setDebugLayerEnabled" />
+    <function name="sampleCount" />
+    <function name="setSampleCount" />
+    <function name="colorBufferFormat" />
+    <function name="setColorBufferFormat" />
+    <function name="fixedColorBufferSize" />
+    <function name="setFixedColorBufferSize" />
+    <function name="isMirrorVerticallyEnabled" />
+    <function name="setMirrorVertically" />
+    <function name="grabFramebuffer" />
+    -->
+    <!--
+    <function name="isAutoRenderTargetEnabled">
+      <variant return-type="bool" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoRenderTarget">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initialize">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QRhiCommandBuffer" modifier="*" name="cb" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="render">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QRhiCommandBuffer" modifier="*" name="cb" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="releaseResources">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rhi">
+      <variant return-type="QRhi*" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="colorTexture">
+      <variant return-type="QRhiTexture*" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="msaaColorBuffer">
+      <variant return-type="QRhiRenderBuffer*" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resolveTexture">
+      <variant return-type="QRhiTexture*" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="depthStencilBuffer">
+      <variant return-type="QRhiRenderBuffer*" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="renderTarget">
+      <variant return-type="QRhiRenderTarget*" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="frameSubmitted">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="renderFailed">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sampleCountChanged">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="samples" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="colorBufferFormatChanged">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters>
+          <parameter const="false" type="TextureFormat" modifier="" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixedColorBufferSizeChanged">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="pixelSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirrorVerticallyChanged">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

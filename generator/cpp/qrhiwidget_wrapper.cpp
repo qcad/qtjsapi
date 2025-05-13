@@ -2,153 +2,21 @@
   // Auto generated
   
   // include header:
-  //#include "qinputdialogwrapper.h"
+  //#include "qrhiwidgetwrapper.h"
   //#include "header_cpp.h"
   
-    #include "qinputdialog_wrapper.h"
+    #include "qrhiwidget_wrapper.h"
 
   
       // list of registered base casters for this wrapper class:
-      QList<RJSBasecaster_QInputDialog*> QInputDialog_Wrapper::basecasters_QInputDialog;
+      QList<RJSBasecaster_QRhiWidget*> QRhiWidget_Wrapper::basecasters_QRhiWidget;
     
     // static functions implementation in singleton wrapper:
     
-    // Class: QInputDialog
-    // Function: getText
-    // Source: 
-    // Static: true
-    // Parameters: 5
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_WrapperSingleton::getText
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3, 
-  const QJSValue& 
-  a4, 
-  const QJSValue& 
-  a5
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QString(handler, a2
-  )
-
-   && RJSHelper::is_QString(handler, a3
-  )
-
-   && RJSHelper::is_QLineEdit_EchoMode(handler, a4
-    , true
-  
-  )
-
-   && RJSHelper::is_QString(handler, a5
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: parent (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp: title (QString)
-  
-QString a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
-        
-  // convert js parameter to cpp: label (QString)
-  
-QString a3_cpp;
-
-      a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
-        
-  // convert js parameter to cpp: mode (QLineEdit::EchoMode)
-  
-QLineEdit::EchoMode a4_cpp;
-
+    void QRhiWidget_Wrapper::init(RJSApi& handler) {
       
-          if (a4.isUndefined()) {
-            a4_cpp = QLineEdit::Normal;
-          }
-          else {
-            a4_cpp = RJSHelper::js2cpp_QLineEdit_EchoMode(handler, a4);
-          }
-        
-  // convert js parameter to cpp: text (QString)
-  
-QString a5_cpp;
-
-      
-          if (a5.isUndefined()) {
-            a5_cpp = QString();
-          }
-          else {
-            a5_cpp = RJSHelper::js2cpp_QString(handler, a5);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                QInputDialog::getText(
-              a1_cpp
-    , a2_cpp
-    , a3_cpp
-    , a4_cpp
-    , a5_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getText";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    void QInputDialog_Wrapper::init(RJSApi& handler) {
-      
-        //qmlRegisterType<QInputDialog_Wrapper>("org.qcad", 1, 0, "QInputDialog_Wrapper");
-        qmlRegisterInterface<QInputDialog_Wrapper>("QInputDialog_Wrapper", 1);
+        //qmlRegisterType<QRhiWidget_Wrapper>("org.qcad", 1, 0, "QRhiWidget_Wrapper");
+        qmlRegisterInterface<QRhiWidget_Wrapper>("QRhiWidget_Wrapper", 1);
       
 
       QJSEngine* engine = handler.getEngine();
@@ -156,34 +24,25 @@ QString a5_cpp;
       
           // make type scriptable for JS files:
           QJSValue global = engine->globalObject();
-          RJSType_QInputDialog* t = new RJSType_QInputDialog();
-          global.setProperty("RJSType_QInputDialog", engine->newQObject(t));
+          RJSType_QRhiWidget* t = new RJSType_QRhiWidget();
+          global.setProperty("RJSType_QRhiWidget", engine->newQObject(t));
 
           // initialize ID for this type:
-          RJSType_QInputDialog::getIdStatic();
+          RJSType_QRhiWidget::getIdStatic();
 
           
 
       // wrapper:
-      QJSValue mo = engine->newQMetaObject(&QInputDialog_Wrapper::staticMetaObject);
-      engine->globalObject().setProperty("QInputDialog_Wrapper", mo);
+      QJSValue mo = engine->newQMetaObject(&QRhiWidget_Wrapper::staticMetaObject);
+      engine->globalObject().setProperty("QRhiWidget_Wrapper", mo);
 
 
       
         // JS base class:
-        //QJSValue mob = engine->newQMetaObject(&QInputDialog_BaseJs::staticMetaObject);
-        //engine->globalObject().setProperty("QInputDialog_BaseJs", mob);
+        //QJSValue mob = engine->newQMetaObject(&QRhiWidget_BaseJs::staticMetaObject);
+        //engine->globalObject().setProperty("QRhiWidget_BaseJs", mob);
       
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QInputDialog_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QInputDialog_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        QInputDialog_WrapperSingleton * s = new QInputDialog_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QInputDialog_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
-      
-      QString fileName = ":generator/js/QInputDialog.js";
+      QString fileName = ":generator/js/QRhiWidget.js";
       QFile scriptFile(fileName);
       if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
@@ -205,8 +64,8 @@ QString a5_cpp;
   
     /*
     // special constructor used as prototype:
-    QInputDialog_Wrapper::QInputDialog_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
-            //setObjectName("QInputDialog_Wrapper");
+    QRhiWidget_Wrapper::QRhiWidget_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
+            //setObjectName("QRhiWidget_Wrapper");
             setEngine(e);
 
             // signal forwarding:
@@ -217,16 +76,16 @@ QString a5_cpp;
 
     
       // special constructor to wrap existing object:
-      QInputDialog_Wrapper::QInputDialog_Wrapper(RJSApi& h, QInputDialog* o, bool wrappedCreated) : RJSWrapperObj(h), 
+      QRhiWidget_Wrapper::QRhiWidget_Wrapper(RJSApi& h, QRhiWidget* o, bool wrappedCreated) : RJSWrapperObj(h), 
 
             
             wrapped(o), 
             
 
             wrappedCreated(wrappedCreated) {
-              //RDebug::incCounter(QString("QInputDialog_Wrapper_") + handler.getEngine()->objectName());
-              //RDebug::incCounter(QString("QInputDialog_Wrapper"));
-              //setObjectName("QInputDialog_Wrapper");
+              //RDebug::incCounter(QString("QRhiWidget_Wrapper_") + handler.getEngine()->objectName());
+              //RDebug::incCounter(QString("QRhiWidget_Wrapper"));
+              //setObjectName("QRhiWidget_Wrapper");
               //setHandler(h);
 
               
@@ -237,11 +96,11 @@ QString a5_cpp;
           
 
       // destructor:
-      QInputDialog_Wrapper::~QInputDialog_Wrapper() {
-            //RDebug::decCounter(QString("QInputDialog_Wrapper_") + handler.getEngine()->objectName());
-            //RDebug::decCounter(QString("QInputDialog_Wrapper"));
+      QRhiWidget_Wrapper::~QRhiWidget_Wrapper() {
+            //RDebug::decCounter(QString("QRhiWidget_Wrapper_") + handler.getEngine()->objectName());
+            //RDebug::decCounter(QString("QRhiWidget_Wrapper"));
 
-            //qDebug() << "QInputDialog_Wrapper::~QInputDialog_Wrapper";
+            //qDebug() << "QRhiWidget_Wrapper::~QRhiWidget_Wrapper";
 
             // tell script handler that this wrapper no longer exists:
             handler.unregisterWrapper(*this);
@@ -250,7 +109,7 @@ QString a5_cpp;
             if (wrappedCreated) {
               
                   // never delete wrapped object (non-copyable, CPP ownership or private destructor)
-                  //qDebug() << "NOT deleting instance of QInputDialog";
+                  //qDebug() << "NOT deleting instance of QRhiWidget";
                 
             }
             
@@ -258,9 +117,9 @@ QString a5_cpp;
         
     // initialization of signal forwarding
     
-        void QInputDialog_Wrapper::initConnections() {
+        void QRhiWidget_Wrapper::initConnections() {
 
-          //setObjectName("QInputDialog_Wrapper");
+          //setObjectName("QRhiWidget_Wrapper");
 
           // tell script handler that this wrapper needs to be deleted if the engine is deleted:
           handler.registerWrapper(*this);
@@ -293,27 +152,6 @@ QString a5_cpp;
     SLOT(customContextMenuRequestedEmitter(const QPoint&))
   );
 
-  connect(
-    getWrapped(), 
-    SIGNAL(finished(int)), 
-    this, 
-    SLOT(finishedEmitter(int))
-  );
-
-  connect(
-    getWrapped(), 
-    SIGNAL(accepted()), 
-    this, 
-    SLOT(acceptedEmitter())
-  );
-
-  connect(
-    getWrapped(), 
-    SIGNAL(rejected()), 
-    this, 
-    SLOT(rejectedEmitter())
-  );
-
               /*
               connect(
                 getWrapped(),
@@ -329,127 +167,10 @@ QString a5_cpp;
 
   // constructors:
   
-    // Class: QInputDialog
-    // Function: 
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-QInputDialog_Wrapper::QInputDialog_Wrapper
-                
-              (
-                
-                  // RJSApi:
-                  QObject* h
-                  ,
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-                : RJSWrapperObj(*(RJSApi*)h)
-              
-              {
-                
-                  //RDebug::incCounter(QString("QInputDialog_Wrapper_") + handler.getEngine()->objectName());
-                  //RDebug::incCounter(QString("QInputDialog_Wrapper"));
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_Qt_WindowFlags(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: parent (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = nullptr;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-          }
-        
-  // convert js parameter to cpp: f (Qt::WindowFlags)
-  
-Qt::WindowFlags a2_cpp;
-
-      
-          if (a2.isUndefined()) {
-            a2_cpp = Qt::WindowFlags();
-          }
-          else {
-            a2_cpp = RJSHelper::js2cpp_Qt_WindowFlags(handler, a2);
-          }
-        
-
-    // call function:
-    
-        // construct wrapper:
-
-        
-              wrapped = new QInputDialog(
-                  a1_cpp
-    , a2_cpp
-    
-              );
-              wrappedCreated = true;
-            
-
-        // signal forwarding:
-        // TODO
-        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
-        initConnections();
-        return;
-
-      
-  }
-
-                    // no constructor without arguments defined
-                    // allow constructor for prototype objects without args:
-                    if (
-                      a1.isUndefined()
-   && a2.isUndefined()
-  
-                      ) {
-                      
-                        wrapped = nullptr;
-                      
-                      wrappedCreated = false;
-                      return;
-                    }
-                  
-
-                  qWarning() << "no matching constructor variant found for QInputDialog";
-                  
-                    wrapped = nullptr;
-                  
-                  wrappedCreated = false;
-                  handler.trace();
-                
-              }
-            
 
     // non-static functions:
     
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -457,7 +178,7 @@ Qt::WindowFlags a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::objectName
+              QRhiWidget_Wrapper::objectName
               (
                 
               ) 
@@ -482,7 +203,7 @@ Qt::WindowFlags a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->objectName(
@@ -506,7 +227,7 @@ Qt::WindowFlags a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setObjectName
     // Source: QObject
     // Static: false
@@ -514,7 +235,7 @@ Qt::WindowFlags a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setObjectName
+              QRhiWidget_Wrapper::setObjectName
               (
                 
   const QJSValue& 
@@ -553,7 +274,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setObjectName(
                   a1_cpp
@@ -570,7 +291,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isWidgetType
     // Source: QObject
     // Static: false
@@ -578,7 +299,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isWidgetType
+              QRhiWidget_Wrapper::isWidgetType
               (
                 
               ) 
@@ -603,7 +324,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isWidgetType(
@@ -627,7 +348,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isWindowType
     // Source: QObject
     // Static: false
@@ -635,7 +356,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isWindowType
+              QRhiWidget_Wrapper::isWindowType
               (
                 
               ) 
@@ -660,7 +381,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isWindowType(
@@ -684,7 +405,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: signalsBlocked
     // Source: QObject
     // Static: false
@@ -692,7 +413,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::signalsBlocked
+              QRhiWidget_Wrapper::signalsBlocked
               (
                 
               ) 
@@ -717,7 +438,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->signalsBlocked(
@@ -741,7 +462,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: blockSignals
     // Source: QObject
     // Static: false
@@ -749,7 +470,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::blockSignals
+              QRhiWidget_Wrapper::blockSignals
               (
                 
   const QJSValue& 
@@ -788,7 +509,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->blockSignals(
@@ -813,7 +534,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: findChild
     // Source: QObject
     // Static: false
@@ -821,7 +542,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::findChild
+              QRhiWidget_Wrapper::findChild
               (
                 
   const QJSValue& 
@@ -889,7 +610,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QObject* res = 
                     
                 w->findChild<QObject*>(
@@ -915,7 +636,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: children
     // Source: QObject
     // Static: false
@@ -923,7 +644,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::children
+              QRhiWidget_Wrapper::children
               (
                 
               ) 
@@ -948,7 +669,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                       // return type is reference:
                       // use pointer instead 3:
@@ -977,7 +698,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: installEventFilter
     // Source: QObject
     // Static: false
@@ -985,7 +706,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::installEventFilter
+              QRhiWidget_Wrapper::installEventFilter
               (
                 
   const QJSValue& 
@@ -1029,7 +750,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->installEventFilter(
                   a1_cpp
@@ -1046,7 +767,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: removeEventFilter
     // Source: QObject
     // Static: false
@@ -1054,7 +775,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::removeEventFilter
+              QRhiWidget_Wrapper::removeEventFilter
               (
                 
   const QJSValue& 
@@ -1098,7 +819,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->removeEventFilter(
                   a1_cpp
@@ -1115,7 +836,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: dumpObjectTree
     // Source: QObject
     // Static: false
@@ -1123,7 +844,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::dumpObjectTree
+              QRhiWidget_Wrapper::dumpObjectTree
               (
                 
               ) 
@@ -1146,7 +867,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->dumpObjectTree(
                   
@@ -1172,7 +893,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->dumpObjectTree(
                   
@@ -1188,7 +909,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: dumpObjectInfo
     // Source: QObject
     // Static: false
@@ -1196,7 +917,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::dumpObjectInfo
+              QRhiWidget_Wrapper::dumpObjectInfo
               (
                 
               ) 
@@ -1219,7 +940,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->dumpObjectInfo(
                   
@@ -1245,7 +966,7 @@ Qt::FindChildOptions a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->dumpObjectInfo(
                   
@@ -1261,7 +982,7 @@ Qt::FindChildOptions a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setProperty
     // Source: QObject
     // Static: false
@@ -1269,7 +990,7 @@ Qt::FindChildOptions a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setProperty
+              QRhiWidget_Wrapper::setProperty
               (
                 
   const QJSValue& 
@@ -1322,7 +1043,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->setProperty(
@@ -1348,7 +1069,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: property
     // Source: QObject
     // Static: false
@@ -1356,7 +1077,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::property
+              QRhiWidget_Wrapper::property
               (
                 
   const QJSValue& 
@@ -1400,7 +1121,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QVariant res = 
                     
                 w->property(
@@ -1425,7 +1146,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: dynamicPropertyNames
     // Source: QObject
     // Static: false
@@ -1433,7 +1154,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::dynamicPropertyNames
+              QRhiWidget_Wrapper::dynamicPropertyNames
               (
                 
               ) 
@@ -1458,7 +1179,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QList<QByteArray> res = 
                     
                 w->dynamicPropertyNames(
@@ -1482,7 +1203,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: parent
     // Source: QObject
     // Static: false
@@ -1490,7 +1211,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::parent
+              QRhiWidget_Wrapper::parent
               (
                 
               ) 
@@ -1515,7 +1236,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QObject* res = 
                     
                 w->parent(
@@ -1539,7 +1260,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: deleteLater
     // Source: QObject
     // Static: false
@@ -1547,7 +1268,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::deleteLater
+              QRhiWidget_Wrapper::deleteLater
               (
                 
               ) 
@@ -1570,7 +1291,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->deleteLater(
                   
@@ -1586,7 +1307,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: devType
     // Source: QWidget
     // Static: false
@@ -1594,7 +1315,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::devType
+              QRhiWidget_Wrapper::devType
               (
                 
               ) 
@@ -1619,7 +1340,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->devType(
@@ -1643,7 +1364,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: createWinId
     // Source: QWidget
     // Static: false
@@ -1651,7 +1372,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::createWinId
+              QRhiWidget_Wrapper::createWinId
               (
                 
               ) 
@@ -1674,7 +1395,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->createWinId(
                   
@@ -1690,7 +1411,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isWindow
     // Source: QWidget
     // Static: false
@@ -1698,7 +1419,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isWindow
+              QRhiWidget_Wrapper::isWindow
               (
                 
               ) 
@@ -1723,7 +1444,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isWindow(
@@ -1747,7 +1468,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isModal
     // Source: QWidget
     // Static: false
@@ -1755,7 +1476,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isModal
+              QRhiWidget_Wrapper::isModal
               (
                 
               ) 
@@ -1780,7 +1501,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isModal(
@@ -1804,7 +1525,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowModality
     // Source: QWidget
     // Static: false
@@ -1812,7 +1533,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowModality
+              QRhiWidget_Wrapper::windowModality
               (
                 
               ) 
@@ -1837,7 +1558,7 @@ QVariant a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 Qt::WindowModality res = 
                     
                 w->windowModality(
@@ -1861,7 +1582,7 @@ QVariant a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowModality
     // Source: QWidget
     // Static: false
@@ -1869,7 +1590,7 @@ QVariant a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowModality
+              QRhiWidget_Wrapper::setWindowModality
               (
                 
   const QJSValue& 
@@ -1908,7 +1629,7 @@ Qt::WindowModality a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowModality(
                   a1_cpp
@@ -1925,7 +1646,7 @@ Qt::WindowModality a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isEnabled
     // Source: QWidget
     // Static: false
@@ -1933,7 +1654,7 @@ Qt::WindowModality a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isEnabled
+              QRhiWidget_Wrapper::isEnabled
               (
                 
               ) 
@@ -1958,7 +1679,7 @@ Qt::WindowModality a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isEnabled(
@@ -1982,7 +1703,7 @@ Qt::WindowModality a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isEnabledTo
     // Source: QWidget
     // Static: false
@@ -1990,7 +1711,7 @@ Qt::WindowModality a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isEnabledTo
+              QRhiWidget_Wrapper::isEnabledTo
               (
                 
   const QJSValue& 
@@ -2036,7 +1757,7 @@ Qt::WindowModality a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isEnabledTo(
@@ -2061,7 +1782,7 @@ Qt::WindowModality a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setEnabled
     // Source: QWidget
     // Static: false
@@ -2069,7 +1790,7 @@ Qt::WindowModality a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setEnabled
+              QRhiWidget_Wrapper::setEnabled
               (
                 
   const QJSValue& 
@@ -2108,7 +1829,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setEnabled(
                   a1_cpp
@@ -2125,7 +1846,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setDisabled
     // Source: QWidget
     // Static: false
@@ -2133,7 +1854,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setDisabled
+              QRhiWidget_Wrapper::setDisabled
               (
                 
   const QJSValue& 
@@ -2172,7 +1893,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setDisabled(
                   a1_cpp
@@ -2189,7 +1910,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowModified
     // Source: QWidget
     // Static: false
@@ -2197,7 +1918,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowModified
+              QRhiWidget_Wrapper::setWindowModified
               (
                 
   const QJSValue& 
@@ -2236,7 +1957,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowModified(
                   a1_cpp
@@ -2253,7 +1974,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: frameGeometry
     // Source: QWidget
     // Static: false
@@ -2261,7 +1982,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::frameGeometry
+              QRhiWidget_Wrapper::frameGeometry
               (
                 
               ) 
@@ -2286,7 +2007,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QRect res = 
                     
                 w->frameGeometry(
@@ -2310,7 +2031,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: geometry
     // Source: QWidget
     // Static: false
@@ -2318,7 +2039,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::geometry
+              QRhiWidget_Wrapper::geometry
               (
                 
               ) 
@@ -2343,7 +2064,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                       // return type is reference:
                       // use pointer instead 3:
@@ -2372,7 +2093,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: normalGeometry
     // Source: QWidget
     // Static: false
@@ -2380,7 +2101,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::normalGeometry
+              QRhiWidget_Wrapper::normalGeometry
               (
                 
               ) 
@@ -2405,7 +2126,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QRect res = 
                     
                 w->normalGeometry(
@@ -2429,7 +2150,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: x
     // Source: QWidget
     // Static: false
@@ -2437,7 +2158,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::x
+              QRhiWidget_Wrapper::x
               (
                 
               ) 
@@ -2462,7 +2183,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->x(
@@ -2486,7 +2207,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: y
     // Source: QWidget
     // Static: false
@@ -2494,7 +2215,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::y
+              QRhiWidget_Wrapper::y
               (
                 
               ) 
@@ -2519,7 +2240,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->y(
@@ -2543,7 +2264,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: pos
     // Source: QWidget
     // Static: false
@@ -2551,7 +2272,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::pos
+              QRhiWidget_Wrapper::pos
               (
                 
               ) 
@@ -2576,7 +2297,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPoint res = 
                     
                 w->pos(
@@ -2600,7 +2321,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: frameSize
     // Source: QWidget
     // Static: false
@@ -2608,7 +2329,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::frameSize
+              QRhiWidget_Wrapper::frameSize
               (
                 
               ) 
@@ -2633,7 +2354,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QSize res = 
                     
                 w->frameSize(
@@ -2657,7 +2378,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: size
     // Source: QWidget
     // Static: false
@@ -2665,7 +2386,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::size
+              QRhiWidget_Wrapper::size
               (
                 
               ) 
@@ -2690,7 +2411,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QSize res = 
                     
                 w->size(
@@ -2714,7 +2435,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: width
     // Source: QWidget
     // Static: false
@@ -2722,7 +2443,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::width
+              QRhiWidget_Wrapper::width
               (
                 
               ) 
@@ -2747,7 +2468,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->width(
@@ -2771,7 +2492,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: height
     // Source: QWidget
     // Static: false
@@ -2779,7 +2500,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::height
+              QRhiWidget_Wrapper::height
               (
                 
               ) 
@@ -2804,7 +2525,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->height(
@@ -2828,7 +2549,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: rect
     // Source: QWidget
     // Static: false
@@ -2836,7 +2557,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::rect
+              QRhiWidget_Wrapper::rect
               (
                 
               ) 
@@ -2861,7 +2582,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QRect res = 
                     
                 w->rect(
@@ -2885,7 +2606,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: childrenRect
     // Source: QWidget
     // Static: false
@@ -2893,7 +2614,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::childrenRect
+              QRhiWidget_Wrapper::childrenRect
               (
                 
               ) 
@@ -2918,7 +2639,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QRect res = 
                     
                 w->childrenRect(
@@ -2942,7 +2663,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: childrenRegion
     // Source: QWidget
     // Static: false
@@ -2950,7 +2671,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::childrenRegion
+              QRhiWidget_Wrapper::childrenRegion
               (
                 
               ) 
@@ -2975,7 +2696,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QRegion res = 
                     
                 w->childrenRegion(
@@ -2999,7 +2720,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: minimumSize
     // Source: QWidget
     // Static: false
@@ -3007,7 +2728,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::minimumSize
+              QRhiWidget_Wrapper::minimumSize
               (
                 
               ) 
@@ -3032,7 +2753,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QSize res = 
                     
                 w->minimumSize(
@@ -3056,7 +2777,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: maximumSize
     // Source: QWidget
     // Static: false
@@ -3064,7 +2785,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::maximumSize
+              QRhiWidget_Wrapper::maximumSize
               (
                 
               ) 
@@ -3089,7 +2810,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QSize res = 
                     
                 w->maximumSize(
@@ -3113,7 +2834,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: minimumWidth
     // Source: QWidget
     // Static: false
@@ -3121,7 +2842,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::minimumWidth
+              QRhiWidget_Wrapper::minimumWidth
               (
                 
               ) 
@@ -3146,7 +2867,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->minimumWidth(
@@ -3170,7 +2891,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: minimumHeight
     // Source: QWidget
     // Static: false
@@ -3178,7 +2899,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::minimumHeight
+              QRhiWidget_Wrapper::minimumHeight
               (
                 
               ) 
@@ -3203,7 +2924,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->minimumHeight(
@@ -3227,7 +2948,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: maximumWidth
     // Source: QWidget
     // Static: false
@@ -3235,7 +2956,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::maximumWidth
+              QRhiWidget_Wrapper::maximumWidth
               (
                 
               ) 
@@ -3260,7 +2981,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->maximumWidth(
@@ -3284,7 +3005,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: maximumHeight
     // Source: QWidget
     // Static: false
@@ -3292,7 +3013,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::maximumHeight
+              QRhiWidget_Wrapper::maximumHeight
               (
                 
               ) 
@@ -3317,7 +3038,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->maximumHeight(
@@ -3341,7 +3062,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setMinimumSize
     // Source: QWidget
     // Static: false
@@ -3349,7 +3070,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setMinimumSize
+              QRhiWidget_Wrapper::setMinimumSize
               (
                 
   const QJSValue& 
@@ -3399,7 +3120,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMinimumSize(
                   a1_cpp
@@ -3441,7 +3162,7 @@ QSize a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMinimumSize(
                   a1_cpp
@@ -3458,7 +3179,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setMaximumSize
     // Source: QWidget
     // Static: false
@@ -3466,7 +3187,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setMaximumSize
+              QRhiWidget_Wrapper::setMaximumSize
               (
                 
   const QJSValue& 
@@ -3516,7 +3237,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMaximumSize(
                   a1_cpp
@@ -3558,7 +3279,7 @@ QSize a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMaximumSize(
                   a1_cpp
@@ -3575,7 +3296,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setMinimumWidth
     // Source: QWidget
     // Static: false
@@ -3583,7 +3304,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setMinimumWidth
+              QRhiWidget_Wrapper::setMinimumWidth
               (
                 
   const QJSValue& 
@@ -3622,7 +3343,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMinimumWidth(
                   a1_cpp
@@ -3639,7 +3360,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setMinimumHeight
     // Source: QWidget
     // Static: false
@@ -3647,7 +3368,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setMinimumHeight
+              QRhiWidget_Wrapper::setMinimumHeight
               (
                 
   const QJSValue& 
@@ -3686,7 +3407,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMinimumHeight(
                   a1_cpp
@@ -3703,7 +3424,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setMaximumWidth
     // Source: QWidget
     // Static: false
@@ -3711,7 +3432,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setMaximumWidth
+              QRhiWidget_Wrapper::setMaximumWidth
               (
                 
   const QJSValue& 
@@ -3750,7 +3471,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMaximumWidth(
                   a1_cpp
@@ -3767,7 +3488,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setMaximumHeight
     // Source: QWidget
     // Static: false
@@ -3775,7 +3496,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setMaximumHeight
+              QRhiWidget_Wrapper::setMaximumHeight
               (
                 
   const QJSValue& 
@@ -3814,7 +3535,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMaximumHeight(
                   a1_cpp
@@ -3831,7 +3552,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: sizeIncrement
     // Source: QWidget
     // Static: false
@@ -3839,7 +3560,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::sizeIncrement
+              QRhiWidget_Wrapper::sizeIncrement
               (
                 
               ) 
@@ -3864,7 +3585,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QSize res = 
                     
                 w->sizeIncrement(
@@ -3888,7 +3609,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setSizeIncrement
     // Source: QWidget
     // Static: false
@@ -3896,7 +3617,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setSizeIncrement
+              QRhiWidget_Wrapper::setSizeIncrement
               (
                 
   const QJSValue& 
@@ -3946,7 +3667,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setSizeIncrement(
                   a1_cpp
@@ -3988,7 +3709,7 @@ QSize a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setSizeIncrement(
                   a1_cpp
@@ -4005,7 +3726,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: baseSize
     // Source: QWidget
     // Static: false
@@ -4013,7 +3734,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::baseSize
+              QRhiWidget_Wrapper::baseSize
               (
                 
               ) 
@@ -4038,7 +3759,7 @@ QSize a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QSize res = 
                     
                 w->baseSize(
@@ -4062,7 +3783,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setBaseSize
     // Source: QWidget
     // Static: false
@@ -4070,7 +3791,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setBaseSize
+              QRhiWidget_Wrapper::setBaseSize
               (
                 
   const QJSValue& 
@@ -4120,7 +3841,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setBaseSize(
                   a1_cpp
@@ -4162,7 +3883,7 @@ QSize a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setBaseSize(
                   a1_cpp
@@ -4179,7 +3900,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setFixedSize
     // Source: QWidget
     // Static: false
@@ -4187,7 +3908,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setFixedSize
+              QRhiWidget_Wrapper::setFixedSize
               (
                 
   const QJSValue& 
@@ -4237,7 +3958,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setFixedSize(
                   a1_cpp
@@ -4279,7 +4000,7 @@ QSize a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setFixedSize(
                   a1_cpp
@@ -4296,7 +4017,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setFixedWidth
     // Source: QWidget
     // Static: false
@@ -4304,7 +4025,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setFixedWidth
+              QRhiWidget_Wrapper::setFixedWidth
               (
                 
   const QJSValue& 
@@ -4343,7 +4064,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setFixedWidth(
                   a1_cpp
@@ -4360,7 +4081,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setFixedHeight
     // Source: QWidget
     // Static: false
@@ -4368,7 +4089,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setFixedHeight
+              QRhiWidget_Wrapper::setFixedHeight
               (
                 
   const QJSValue& 
@@ -4407,7 +4128,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setFixedHeight(
                   a1_cpp
@@ -4424,7 +4145,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: mapToGlobal
     // Source: QWidget
     // Static: false
@@ -4432,7 +4153,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::mapToGlobal
+              QRhiWidget_Wrapper::mapToGlobal
               (
                 
   const QJSValue& 
@@ -4473,7 +4194,7 @@ QPoint a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPoint res = 
                     
                 w->mapToGlobal(
@@ -4522,7 +4243,7 @@ QPointF a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPointF res = 
                     
                 w->mapToGlobal(
@@ -4547,7 +4268,7 @@ QPointF a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: mapFromGlobal
     // Source: QWidget
     // Static: false
@@ -4555,7 +4276,7 @@ QPointF a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::mapFromGlobal
+              QRhiWidget_Wrapper::mapFromGlobal
               (
                 
   const QJSValue& 
@@ -4596,7 +4317,7 @@ QPoint a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPoint res = 
                     
                 w->mapFromGlobal(
@@ -4645,7 +4366,7 @@ QPointF a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPointF res = 
                     
                 w->mapFromGlobal(
@@ -4670,7 +4391,7 @@ QPointF a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: mapToParent
     // Source: QWidget
     // Static: false
@@ -4678,7 +4399,7 @@ QPointF a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::mapToParent
+              QRhiWidget_Wrapper::mapToParent
               (
                 
   const QJSValue& 
@@ -4719,7 +4440,7 @@ QPoint a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPoint res = 
                     
                 w->mapToParent(
@@ -4744,7 +4465,7 @@ QPoint a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: mapFromParent
     // Source: QWidget
     // Static: false
@@ -4752,7 +4473,7 @@ QPoint a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::mapFromParent
+              QRhiWidget_Wrapper::mapFromParent
               (
                 
   const QJSValue& 
@@ -4793,7 +4514,7 @@ QPoint a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPoint res = 
                     
                 w->mapFromParent(
@@ -4818,7 +4539,7 @@ QPoint a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: mapTo
     // Source: QWidget
     // Static: false
@@ -4826,7 +4547,7 @@ QPoint a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::mapTo
+              QRhiWidget_Wrapper::mapTo
               (
                 
   const QJSValue& 
@@ -4883,7 +4604,7 @@ QPoint a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPoint res = 
                     
                 w->mapTo(
@@ -4909,7 +4630,7 @@ QPoint a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: mapFrom
     // Source: QWidget
     // Static: false
@@ -4917,7 +4638,7 @@ QPoint a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::mapFrom
+              QRhiWidget_Wrapper::mapFrom
               (
                 
   const QJSValue& 
@@ -4974,7 +4695,7 @@ QPoint a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPoint res = 
                     
                 w->mapFrom(
@@ -5038,7 +4759,7 @@ QPointF a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPointF res = 
                     
                 w->mapFrom(
@@ -5064,7 +4785,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: window
     // Source: QWidget
     // Static: false
@@ -5072,7 +4793,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::window
+              QRhiWidget_Wrapper::window
               (
                 
               ) 
@@ -5097,7 +4818,7 @@ QPointF a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->window(
@@ -5121,7 +4842,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: nativeParentWidget
     // Source: QWidget
     // Static: false
@@ -5129,7 +4850,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::nativeParentWidget
+              QRhiWidget_Wrapper::nativeParentWidget
               (
                 
               ) 
@@ -5154,7 +4875,7 @@ QPointF a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->nativeParentWidget(
@@ -5178,7 +4899,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: topLevelWidget
     // Source: QWidget
     // Static: false
@@ -5186,7 +4907,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::topLevelWidget
+              QRhiWidget_Wrapper::topLevelWidget
               (
                 
               ) 
@@ -5211,7 +4932,7 @@ QPointF a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->topLevelWidget(
@@ -5235,7 +4956,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: palette
     // Source: QWidget
     // Static: false
@@ -5243,7 +4964,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::palette
+              QRhiWidget_Wrapper::palette
               (
                 
               ) 
@@ -5268,7 +4989,7 @@ QPointF a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                       // return type is reference:
                       // use pointer instead 3:
@@ -5297,7 +5018,7 @@ QPointF a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setPalette
     // Source: QWidget
     // Static: false
@@ -5305,7 +5026,7 @@ QPointF a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setPalette
+              QRhiWidget_Wrapper::setPalette
               (
                 
   const QJSValue& 
@@ -5344,7 +5065,7 @@ QPalette a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setPalette(
                   a1_cpp
@@ -5361,7 +5082,7 @@ QPalette a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setBackgroundRole
     // Source: QWidget
     // Static: false
@@ -5369,7 +5090,7 @@ QPalette a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setBackgroundRole
+              QRhiWidget_Wrapper::setBackgroundRole
               (
                 
   const QJSValue& 
@@ -5408,7 +5129,7 @@ QPalette::ColorRole a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setBackgroundRole(
                   a1_cpp
@@ -5425,7 +5146,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: backgroundRole
     // Source: QWidget
     // Static: false
@@ -5433,7 +5154,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::backgroundRole
+              QRhiWidget_Wrapper::backgroundRole
               (
                 
               ) 
@@ -5458,7 +5179,7 @@ QPalette::ColorRole a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPalette::ColorRole res = 
                     
                 w->backgroundRole(
@@ -5482,7 +5203,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setForegroundRole
     // Source: QWidget
     // Static: false
@@ -5490,7 +5211,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setForegroundRole
+              QRhiWidget_Wrapper::setForegroundRole
               (
                 
   const QJSValue& 
@@ -5529,7 +5250,7 @@ QPalette::ColorRole a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setForegroundRole(
                   a1_cpp
@@ -5546,7 +5267,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: foregroundRole
     // Source: QWidget
     // Static: false
@@ -5554,7 +5275,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::foregroundRole
+              QRhiWidget_Wrapper::foregroundRole
               (
                 
               ) 
@@ -5579,7 +5300,7 @@ QPalette::ColorRole a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPalette::ColorRole res = 
                     
                 w->foregroundRole(
@@ -5603,7 +5324,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: font
     // Source: QWidget
     // Static: false
@@ -5611,7 +5332,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::font
+              QRhiWidget_Wrapper::font
               (
                 
               ) 
@@ -5636,7 +5357,7 @@ QPalette::ColorRole a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                       // return type is reference:
                       // use pointer instead 3:
@@ -5665,7 +5386,7 @@ QPalette::ColorRole a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setFont
     // Source: QWidget
     // Static: false
@@ -5673,7 +5394,7 @@ QPalette::ColorRole a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setFont
+              QRhiWidget_Wrapper::setFont
               (
                 
   const QJSValue& 
@@ -5712,7 +5433,7 @@ QFont a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setFont(
                   a1_cpp
@@ -5729,7 +5450,7 @@ QFont a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: fontInfo
     // Source: QWidget
     // Static: false
@@ -5737,7 +5458,7 @@ QFont a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::fontInfo
+              QRhiWidget_Wrapper::fontInfo
               (
                 
               ) 
@@ -5762,7 +5483,7 @@ QFont a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QFontInfo res = 
                     
                 w->fontInfo(
@@ -5786,7 +5507,7 @@ QFont a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: cursor
     // Source: QWidget
     // Static: false
@@ -5794,7 +5515,7 @@ QFont a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::cursor
+              QRhiWidget_Wrapper::cursor
               (
                 
               ) 
@@ -5819,7 +5540,7 @@ QFont a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QCursor res = 
                     
                 w->cursor(
@@ -5843,7 +5564,7 @@ QFont a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setCursor
     // Source: QWidget
     // Static: false
@@ -5851,7 +5572,7 @@ QFont a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setCursor
+              QRhiWidget_Wrapper::setCursor
               (
                 
   const QJSValue& 
@@ -5890,7 +5611,7 @@ QCursor a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setCursor(
                   a1_cpp
@@ -5907,7 +5628,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: unsetCursor
     // Source: QWidget
     // Static: false
@@ -5915,7 +5636,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::unsetCursor
+              QRhiWidget_Wrapper::unsetCursor
               (
                 
               ) 
@@ -5938,7 +5659,7 @@ QCursor a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->unsetCursor(
                   
@@ -5954,7 +5675,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setMouseTracking
     // Source: QWidget
     // Static: false
@@ -5962,7 +5683,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setMouseTracking
+              QRhiWidget_Wrapper::setMouseTracking
               (
                 
   const QJSValue& 
@@ -6001,7 +5722,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMouseTracking(
                   a1_cpp
@@ -6018,7 +5739,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: hasMouseTracking
     // Source: QWidget
     // Static: false
@@ -6026,7 +5747,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::hasMouseTracking
+              QRhiWidget_Wrapper::hasMouseTracking
               (
                 
               ) 
@@ -6051,7 +5772,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->hasMouseTracking(
@@ -6075,7 +5796,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: underMouse
     // Source: QWidget
     // Static: false
@@ -6083,7 +5804,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::underMouse
+              QRhiWidget_Wrapper::underMouse
               (
                 
               ) 
@@ -6108,7 +5829,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->underMouse(
@@ -6132,7 +5853,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setTabletTracking
     // Source: QWidget
     // Static: false
@@ -6140,7 +5861,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setTabletTracking
+              QRhiWidget_Wrapper::setTabletTracking
               (
                 
   const QJSValue& 
@@ -6179,7 +5900,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setTabletTracking(
                   a1_cpp
@@ -6196,7 +5917,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: hasTabletTracking
     // Source: QWidget
     // Static: false
@@ -6204,7 +5925,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::hasTabletTracking
+              QRhiWidget_Wrapper::hasTabletTracking
               (
                 
               ) 
@@ -6229,7 +5950,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->hasTabletTracking(
@@ -6253,7 +5974,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setMask
     // Source: QWidget
     // Static: false
@@ -6261,7 +5982,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setMask
+              QRhiWidget_Wrapper::setMask
               (
                 
   const QJSValue& 
@@ -6300,7 +6021,7 @@ QBitmap a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMask(
                   a1_cpp
@@ -6341,7 +6062,7 @@ QRegion a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setMask(
                   a1_cpp
@@ -6358,7 +6079,7 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: mask
     // Source: QWidget
     // Static: false
@@ -6366,7 +6087,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::mask
+              QRhiWidget_Wrapper::mask
               (
                 
               ) 
@@ -6391,7 +6112,7 @@ QRegion a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QRegion res = 
                     
                 w->mask(
@@ -6415,7 +6136,7 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: clearMask
     // Source: QWidget
     // Static: false
@@ -6423,7 +6144,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::clearMask
+              QRhiWidget_Wrapper::clearMask
               (
                 
               ) 
@@ -6446,7 +6167,7 @@ QRegion a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->clearMask(
                   
@@ -6462,7 +6183,7 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: grab
     // Source: QWidget
     // Static: false
@@ -6470,7 +6191,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::grab
+              QRhiWidget_Wrapper::grab
               (
                 
   const QJSValue& 
@@ -6517,7 +6238,7 @@ QRect a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QPixmap res = 
                     
                 w->grab(
@@ -6542,7 +6263,7 @@ QRect a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: grabGesture
     // Source: QWidget
     // Static: false
@@ -6550,7 +6271,7 @@ QRect a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::grabGesture
+              QRhiWidget_Wrapper::grabGesture
               (
                 
   const QJSValue& 
@@ -6608,7 +6329,7 @@ Qt::GestureFlags a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->grabGesture(
                   a1_cpp
@@ -6626,7 +6347,7 @@ Qt::GestureFlags a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: ungrabGesture
     // Source: QWidget
     // Static: false
@@ -6634,7 +6355,7 @@ Qt::GestureFlags a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::ungrabGesture
+              QRhiWidget_Wrapper::ungrabGesture
               (
                 
   const QJSValue& 
@@ -6673,7 +6394,7 @@ Qt::GestureType a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->ungrabGesture(
                   a1_cpp
@@ -6690,7 +6411,7 @@ Qt::GestureType a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowTitle
     // Source: QWidget
     // Static: false
@@ -6698,7 +6419,7 @@ Qt::GestureType a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowTitle
+              QRhiWidget_Wrapper::setWindowTitle
               (
                 
   const QJSValue& 
@@ -6737,7 +6458,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowTitle(
                   a1_cpp
@@ -6754,7 +6475,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setStyleSheet
     // Source: QWidget
     // Static: false
@@ -6762,7 +6483,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setStyleSheet
+              QRhiWidget_Wrapper::setStyleSheet
               (
                 
   const QJSValue& 
@@ -6801,7 +6522,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setStyleSheet(
                   a1_cpp
@@ -6818,7 +6539,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: styleSheet
     // Source: QWidget
     // Static: false
@@ -6826,7 +6547,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::styleSheet
+              QRhiWidget_Wrapper::styleSheet
               (
                 
               ) 
@@ -6851,7 +6572,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->styleSheet(
@@ -6875,7 +6596,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowTitle
     // Source: QWidget
     // Static: false
@@ -6883,7 +6604,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowTitle
+              QRhiWidget_Wrapper::windowTitle
               (
                 
               ) 
@@ -6908,7 +6629,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->windowTitle(
@@ -6932,7 +6653,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowIcon
     // Source: QWidget
     // Static: false
@@ -6940,7 +6661,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowIcon
+              QRhiWidget_Wrapper::setWindowIcon
               (
                 
   const QJSValue& 
@@ -6979,7 +6700,7 @@ QIcon a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowIcon(
                   a1_cpp
@@ -6996,7 +6717,7 @@ QIcon a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowIcon
     // Source: QWidget
     // Static: false
@@ -7004,7 +6725,7 @@ QIcon a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowIcon
+              QRhiWidget_Wrapper::windowIcon
               (
                 
               ) 
@@ -7029,7 +6750,7 @@ QIcon a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QIcon res = 
                     
                 w->windowIcon(
@@ -7053,7 +6774,7 @@ QIcon a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowIconText
     // Source: QWidget
     // Static: false
@@ -7061,7 +6782,7 @@ QIcon a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowIconText
+              QRhiWidget_Wrapper::setWindowIconText
               (
                 
   const QJSValue& 
@@ -7100,7 +6821,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowIconText(
                   a1_cpp
@@ -7117,7 +6838,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowIconText
     // Source: QWidget
     // Static: false
@@ -7125,7 +6846,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowIconText
+              QRhiWidget_Wrapper::windowIconText
               (
                 
               ) 
@@ -7150,7 +6871,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->windowIconText(
@@ -7174,7 +6895,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowRole
     // Source: QWidget
     // Static: false
@@ -7182,7 +6903,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowRole
+              QRhiWidget_Wrapper::setWindowRole
               (
                 
   const QJSValue& 
@@ -7221,7 +6942,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowRole(
                   a1_cpp
@@ -7238,7 +6959,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowRole
     // Source: QWidget
     // Static: false
@@ -7246,7 +6967,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowRole
+              QRhiWidget_Wrapper::windowRole
               (
                 
               ) 
@@ -7271,7 +6992,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->windowRole(
@@ -7295,7 +7016,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowFilePath
     // Source: QWidget
     // Static: false
@@ -7303,7 +7024,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowFilePath
+              QRhiWidget_Wrapper::setWindowFilePath
               (
                 
   const QJSValue& 
@@ -7342,7 +7063,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowFilePath(
                   a1_cpp
@@ -7359,7 +7080,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowFilePath
     // Source: QWidget
     // Static: false
@@ -7367,7 +7088,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowFilePath
+              QRhiWidget_Wrapper::windowFilePath
               (
                 
               ) 
@@ -7392,7 +7113,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->windowFilePath(
@@ -7416,7 +7137,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowOpacity
     // Source: QWidget
     // Static: false
@@ -7424,7 +7145,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowOpacity
+              QRhiWidget_Wrapper::setWindowOpacity
               (
                 
   const QJSValue& 
@@ -7463,7 +7184,7 @@ qreal a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowOpacity(
                   a1_cpp
@@ -7480,7 +7201,7 @@ qreal a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowOpacity
     // Source: QWidget
     // Static: false
@@ -7488,7 +7209,7 @@ qreal a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowOpacity
+              QRhiWidget_Wrapper::windowOpacity
               (
                 
               ) 
@@ -7513,7 +7234,7 @@ qreal a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 qreal res = 
                     
                 w->windowOpacity(
@@ -7537,7 +7258,7 @@ qreal a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isWindowModified
     // Source: QWidget
     // Static: false
@@ -7545,7 +7266,7 @@ qreal a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isWindowModified
+              QRhiWidget_Wrapper::isWindowModified
               (
                 
               ) 
@@ -7570,7 +7291,7 @@ qreal a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isWindowModified(
@@ -7594,7 +7315,7 @@ qreal a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setToolTip
     // Source: QWidget
     // Static: false
@@ -7602,7 +7323,7 @@ qreal a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setToolTip
+              QRhiWidget_Wrapper::setToolTip
               (
                 
   const QJSValue& 
@@ -7641,7 +7362,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setToolTip(
                   a1_cpp
@@ -7658,7 +7379,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: toolTip
     // Source: QWidget
     // Static: false
@@ -7666,7 +7387,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::toolTip
+              QRhiWidget_Wrapper::toolTip
               (
                 
               ) 
@@ -7691,7 +7412,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->toolTip(
@@ -7715,7 +7436,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setToolTipDuration
     // Source: QWidget
     // Static: false
@@ -7723,7 +7444,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setToolTipDuration
+              QRhiWidget_Wrapper::setToolTipDuration
               (
                 
   const QJSValue& 
@@ -7762,7 +7483,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setToolTipDuration(
                   a1_cpp
@@ -7779,7 +7500,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: toolTipDuration
     // Source: QWidget
     // Static: false
@@ -7787,7 +7508,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::toolTipDuration
+              QRhiWidget_Wrapper::toolTipDuration
               (
                 
               ) 
@@ -7812,7 +7533,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->toolTipDuration(
@@ -7836,7 +7557,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setStatusTip
     // Source: QWidget
     // Static: false
@@ -7844,7 +7565,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setStatusTip
+              QRhiWidget_Wrapper::setStatusTip
               (
                 
   const QJSValue& 
@@ -7883,7 +7604,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setStatusTip(
                   a1_cpp
@@ -7900,7 +7621,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: statusTip
     // Source: QWidget
     // Static: false
@@ -7908,7 +7629,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::statusTip
+              QRhiWidget_Wrapper::statusTip
               (
                 
               ) 
@@ -7933,7 +7654,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->statusTip(
@@ -7957,7 +7678,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWhatsThis
     // Source: QWidget
     // Static: false
@@ -7965,7 +7686,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWhatsThis
+              QRhiWidget_Wrapper::setWhatsThis
               (
                 
   const QJSValue& 
@@ -8004,7 +7725,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWhatsThis(
                   a1_cpp
@@ -8021,7 +7742,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: whatsThis
     // Source: QWidget
     // Static: false
@@ -8029,7 +7750,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::whatsThis
+              QRhiWidget_Wrapper::whatsThis
               (
                 
               ) 
@@ -8054,7 +7775,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->whatsThis(
@@ -8078,7 +7799,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: accessibleName
     // Source: QWidget
     // Static: false
@@ -8086,7 +7807,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::accessibleName
+              QRhiWidget_Wrapper::accessibleName
               (
                 
               ) 
@@ -8111,7 +7832,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->accessibleName(
@@ -8135,7 +7856,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setAccessibleName
     // Source: QWidget
     // Static: false
@@ -8143,7 +7864,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setAccessibleName
+              QRhiWidget_Wrapper::setAccessibleName
               (
                 
   const QJSValue& 
@@ -8182,7 +7903,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setAccessibleName(
                   a1_cpp
@@ -8199,7 +7920,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: accessibleDescription
     // Source: QWidget
     // Static: false
@@ -8207,7 +7928,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::accessibleDescription
+              QRhiWidget_Wrapper::accessibleDescription
               (
                 
               ) 
@@ -8232,7 +7953,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QString res = 
                     
                 w->accessibleDescription(
@@ -8256,7 +7977,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setAccessibleDescription
     // Source: QWidget
     // Static: false
@@ -8264,7 +7985,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setAccessibleDescription
+              QRhiWidget_Wrapper::setAccessibleDescription
               (
                 
   const QJSValue& 
@@ -8303,7 +8024,7 @@ QString a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setAccessibleDescription(
                   a1_cpp
@@ -8320,7 +8041,7 @@ QString a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setLayoutDirection
     // Source: QWidget
     // Static: false
@@ -8328,7 +8049,7 @@ QString a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setLayoutDirection
+              QRhiWidget_Wrapper::setLayoutDirection
               (
                 
   const QJSValue& 
@@ -8367,7 +8088,7 @@ Qt::LayoutDirection a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setLayoutDirection(
                   a1_cpp
@@ -8384,7 +8105,7 @@ Qt::LayoutDirection a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: layoutDirection
     // Source: QWidget
     // Static: false
@@ -8392,7 +8113,7 @@ Qt::LayoutDirection a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::layoutDirection
+              QRhiWidget_Wrapper::layoutDirection
               (
                 
               ) 
@@ -8417,7 +8138,7 @@ Qt::LayoutDirection a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 Qt::LayoutDirection res = 
                     
                 w->layoutDirection(
@@ -8441,7 +8162,7 @@ Qt::LayoutDirection a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: unsetLayoutDirection
     // Source: QWidget
     // Static: false
@@ -8449,7 +8170,7 @@ Qt::LayoutDirection a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::unsetLayoutDirection
+              QRhiWidget_Wrapper::unsetLayoutDirection
               (
                 
               ) 
@@ -8472,7 +8193,7 @@ Qt::LayoutDirection a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->unsetLayoutDirection(
                   
@@ -8488,7 +8209,7 @@ Qt::LayoutDirection a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setLocale
     // Source: QWidget
     // Static: false
@@ -8496,7 +8217,7 @@ Qt::LayoutDirection a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setLocale
+              QRhiWidget_Wrapper::setLocale
               (
                 
   const QJSValue& 
@@ -8535,7 +8256,7 @@ QLocale a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setLocale(
                   a1_cpp
@@ -8552,7 +8273,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: locale
     // Source: QWidget
     // Static: false
@@ -8560,7 +8281,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::locale
+              QRhiWidget_Wrapper::locale
               (
                 
               ) 
@@ -8585,7 +8306,7 @@ QLocale a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QLocale res = 
                     
                 w->locale(
@@ -8609,7 +8330,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: unsetLocale
     // Source: QWidget
     // Static: false
@@ -8617,7 +8338,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::unsetLocale
+              QRhiWidget_Wrapper::unsetLocale
               (
                 
               ) 
@@ -8640,7 +8361,7 @@ QLocale a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->unsetLocale(
                   
@@ -8656,7 +8377,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isRightToLeft
     // Source: QWidget
     // Static: false
@@ -8664,7 +8385,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isRightToLeft
+              QRhiWidget_Wrapper::isRightToLeft
               (
                 
               ) 
@@ -8689,7 +8410,7 @@ QLocale a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isRightToLeft(
@@ -8713,7 +8434,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isLeftToRight
     // Source: QWidget
     // Static: false
@@ -8721,7 +8442,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isLeftToRight
+              QRhiWidget_Wrapper::isLeftToRight
               (
                 
               ) 
@@ -8746,7 +8467,7 @@ QLocale a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isLeftToRight(
@@ -8770,7 +8491,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isActiveWindow
     // Source: QWidget
     // Static: false
@@ -8778,7 +8499,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isActiveWindow
+              QRhiWidget_Wrapper::isActiveWindow
               (
                 
               ) 
@@ -8803,7 +8524,7 @@ QLocale a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isActiveWindow(
@@ -8827,7 +8548,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: activateWindow
     // Source: QWidget
     // Static: false
@@ -8835,7 +8556,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::activateWindow
+              QRhiWidget_Wrapper::activateWindow
               (
                 
               ) 
@@ -8858,7 +8579,7 @@ QLocale a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->activateWindow(
                   
@@ -8874,7 +8595,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: clearFocus
     // Source: QWidget
     // Static: false
@@ -8882,7 +8603,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::clearFocus
+              QRhiWidget_Wrapper::clearFocus
               (
                 
               ) 
@@ -8905,7 +8626,7 @@ QLocale a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->clearFocus(
                   
@@ -8921,7 +8642,7 @@ QLocale a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setFocus
     // Source: QWidget
     // Static: false
@@ -8929,7 +8650,7 @@ QLocale a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setFocus
+              QRhiWidget_Wrapper::setFocus
               (
                 
   const QJSValue& 
@@ -8968,7 +8689,7 @@ Qt::FocusReason a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setFocus(
                   a1_cpp
@@ -8995,7 +8716,7 @@ Qt::FocusReason a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setFocus(
                   
@@ -9011,7 +8732,7 @@ Qt::FocusReason a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: focusPolicy
     // Source: QWidget
     // Static: false
@@ -9019,7 +8740,7 @@ Qt::FocusReason a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::focusPolicy
+              QRhiWidget_Wrapper::focusPolicy
               (
                 
               ) 
@@ -9044,7 +8765,7 @@ Qt::FocusReason a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 Qt::FocusPolicy res = 
                     
                 w->focusPolicy(
@@ -9068,7 +8789,7 @@ Qt::FocusReason a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setFocusPolicy
     // Source: QWidget
     // Static: false
@@ -9076,7 +8797,7 @@ Qt::FocusReason a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setFocusPolicy
+              QRhiWidget_Wrapper::setFocusPolicy
               (
                 
   const QJSValue& 
@@ -9115,7 +8836,7 @@ Qt::FocusPolicy a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setFocusPolicy(
                   a1_cpp
@@ -9132,7 +8853,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: hasFocus
     // Source: QWidget
     // Static: false
@@ -9140,7 +8861,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::hasFocus
+              QRhiWidget_Wrapper::hasFocus
               (
                 
               ) 
@@ -9165,7 +8886,7 @@ Qt::FocusPolicy a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->hasFocus(
@@ -9189,7 +8910,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setFocusProxy
     // Source: QWidget
     // Static: false
@@ -9197,7 +8918,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setFocusProxy
+              QRhiWidget_Wrapper::setFocusProxy
               (
                 
   const QJSValue& 
@@ -9241,7 +8962,7 @@ Qt::FocusPolicy a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setFocusProxy(
                   a1_cpp
@@ -9258,7 +8979,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: focusProxy
     // Source: QWidget
     // Static: false
@@ -9266,7 +8987,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::focusProxy
+              QRhiWidget_Wrapper::focusProxy
               (
                 
               ) 
@@ -9291,7 +9012,7 @@ Qt::FocusPolicy a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->focusProxy(
@@ -9315,7 +9036,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: contextMenuPolicy
     // Source: QWidget
     // Static: false
@@ -9323,7 +9044,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::contextMenuPolicy
+              QRhiWidget_Wrapper::contextMenuPolicy
               (
                 
               ) 
@@ -9348,7 +9069,7 @@ Qt::FocusPolicy a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 Qt::ContextMenuPolicy res = 
                     
                 w->contextMenuPolicy(
@@ -9372,7 +9093,7 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setContextMenuPolicy
     // Source: QWidget
     // Static: false
@@ -9380,7 +9101,7 @@ Qt::FocusPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setContextMenuPolicy
+              QRhiWidget_Wrapper::setContextMenuPolicy
               (
                 
   const QJSValue& 
@@ -9419,7 +9140,7 @@ Qt::ContextMenuPolicy a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setContextMenuPolicy(
                   a1_cpp
@@ -9436,7 +9157,7 @@ Qt::ContextMenuPolicy a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: grabMouse
     // Source: QWidget
     // Static: false
@@ -9444,7 +9165,7 @@ Qt::ContextMenuPolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::grabMouse
+              QRhiWidget_Wrapper::grabMouse
               (
                 
   const QJSValue& 
@@ -9483,7 +9204,7 @@ QCursor a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->grabMouse(
                   a1_cpp
@@ -9510,7 +9231,7 @@ QCursor a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->grabMouse(
                   
@@ -9526,7 +9247,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: releaseMouse
     // Source: QWidget
     // Static: false
@@ -9534,7 +9255,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::releaseMouse
+              QRhiWidget_Wrapper::releaseMouse
               (
                 
               ) 
@@ -9557,7 +9278,7 @@ QCursor a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->releaseMouse(
                   
@@ -9573,7 +9294,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: grabKeyboard
     // Source: QWidget
     // Static: false
@@ -9581,7 +9302,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::grabKeyboard
+              QRhiWidget_Wrapper::grabKeyboard
               (
                 
               ) 
@@ -9604,7 +9325,7 @@ QCursor a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->grabKeyboard(
                   
@@ -9620,7 +9341,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: releaseKeyboard
     // Source: QWidget
     // Static: false
@@ -9628,7 +9349,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::releaseKeyboard
+              QRhiWidget_Wrapper::releaseKeyboard
               (
                 
               ) 
@@ -9651,7 +9372,7 @@ QCursor a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->releaseKeyboard(
                   
@@ -9667,7 +9388,7 @@ QCursor a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: grabShortcut
     // Source: QWidget
     // Static: false
@@ -9675,7 +9396,7 @@ QCursor a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::grabShortcut
+              QRhiWidget_Wrapper::grabShortcut
               (
                 
   const QJSValue& 
@@ -9733,7 +9454,7 @@ Qt::ShortcutContext a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->grabShortcut(
@@ -9759,7 +9480,7 @@ Qt::ShortcutContext a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: releaseShortcut
     // Source: QWidget
     // Static: false
@@ -9767,7 +9488,7 @@ Qt::ShortcutContext a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::releaseShortcut
+              QRhiWidget_Wrapper::releaseShortcut
               (
                 
   const QJSValue& 
@@ -9806,7 +9527,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->releaseShortcut(
                   a1_cpp
@@ -9823,7 +9544,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setShortcutEnabled
     // Source: QWidget
     // Static: false
@@ -9831,7 +9552,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setShortcutEnabled
+              QRhiWidget_Wrapper::setShortcutEnabled
               (
                 
   const QJSValue& 
@@ -9889,7 +9610,7 @@ bool a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setShortcutEnabled(
                   a1_cpp
@@ -9907,7 +9628,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setShortcutAutoRepeat
     // Source: QWidget
     // Static: false
@@ -9915,7 +9636,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setShortcutAutoRepeat
+              QRhiWidget_Wrapper::setShortcutAutoRepeat
               (
                 
   const QJSValue& 
@@ -9973,7 +9694,7 @@ bool a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setShortcutAutoRepeat(
                   a1_cpp
@@ -9991,7 +9712,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: updatesEnabled
     // Source: QWidget
     // Static: false
@@ -9999,7 +9720,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::updatesEnabled
+              QRhiWidget_Wrapper::updatesEnabled
               (
                 
               ) 
@@ -10024,7 +9745,7 @@ bool a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->updatesEnabled(
@@ -10048,7 +9769,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setUpdatesEnabled
     // Source: QWidget
     // Static: false
@@ -10056,7 +9777,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setUpdatesEnabled
+              QRhiWidget_Wrapper::setUpdatesEnabled
               (
                 
   const QJSValue& 
@@ -10095,7 +9816,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setUpdatesEnabled(
                   a1_cpp
@@ -10112,7 +9833,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: update
     // Source: QWidget
     // Static: false
@@ -10120,7 +9841,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::update
+              QRhiWidget_Wrapper::update
               (
                 
   const QJSValue& 
@@ -10192,7 +9913,7 @@ int a4_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->update(
                   a1_cpp
@@ -10236,7 +9957,7 @@ QRect a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->update(
                   a1_cpp
@@ -10277,7 +9998,7 @@ QRegion a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->update(
                   a1_cpp
@@ -10304,7 +10025,7 @@ QRegion a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->update(
                   
@@ -10320,7 +10041,7 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: repaint
     // Source: QWidget
     // Static: false
@@ -10328,7 +10049,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::repaint
+              QRhiWidget_Wrapper::repaint
               (
                 
   const QJSValue& 
@@ -10400,7 +10121,7 @@ int a4_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->repaint(
                   a1_cpp
@@ -10444,7 +10165,7 @@ QRect a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->repaint(
                   a1_cpp
@@ -10485,7 +10206,7 @@ QRegion a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->repaint(
                   a1_cpp
@@ -10502,7 +10223,71 @@ QRegion a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
+    // Function: setVisible
+    // Source: QWidget
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QRhiWidget_Wrapper::setVisible
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: visible (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QRhiWidget* w = getWrapped();
+                
+                w->setVisible(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setVisible";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QRhiWidget
     // Function: setHidden
     // Source: QWidget
     // Static: false
@@ -10510,7 +10295,7 @@ QRegion a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setHidden
+              QRhiWidget_Wrapper::setHidden
               (
                 
   const QJSValue& 
@@ -10549,7 +10334,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setHidden(
                   a1_cpp
@@ -10566,7 +10351,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: show
     // Source: QWidget
     // Static: false
@@ -10574,7 +10359,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::show
+              QRhiWidget_Wrapper::show
               (
                 
               ) 
@@ -10597,7 +10382,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->show(
                   
@@ -10613,7 +10398,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: hide
     // Source: QWidget
     // Static: false
@@ -10621,7 +10406,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::hide
+              QRhiWidget_Wrapper::hide
               (
                 
               ) 
@@ -10644,7 +10429,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->hide(
                   
@@ -10660,7 +10445,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: showMinimized
     // Source: QWidget
     // Static: false
@@ -10668,7 +10453,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::showMinimized
+              QRhiWidget_Wrapper::showMinimized
               (
                 
               ) 
@@ -10691,7 +10476,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->showMinimized(
                   
@@ -10707,7 +10492,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: showMaximized
     // Source: QWidget
     // Static: false
@@ -10715,7 +10500,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::showMaximized
+              QRhiWidget_Wrapper::showMaximized
               (
                 
               ) 
@@ -10738,7 +10523,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->showMaximized(
                   
@@ -10754,7 +10539,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: showFullScreen
     // Source: QWidget
     // Static: false
@@ -10762,7 +10547,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::showFullScreen
+              QRhiWidget_Wrapper::showFullScreen
               (
                 
               ) 
@@ -10785,7 +10570,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->showFullScreen(
                   
@@ -10801,7 +10586,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: showNormal
     // Source: QWidget
     // Static: false
@@ -10809,7 +10594,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::showNormal
+              QRhiWidget_Wrapper::showNormal
               (
                 
               ) 
@@ -10832,7 +10617,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->showNormal(
                   
@@ -10848,7 +10633,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: close
     // Source: QWidget
     // Static: false
@@ -10856,7 +10641,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::close
+              QRhiWidget_Wrapper::close
               (
                 
               ) 
@@ -10879,7 +10664,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->close(
@@ -10903,7 +10688,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: raise
     // Source: QWidget
     // Static: false
@@ -10911,7 +10696,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::raise
+              QRhiWidget_Wrapper::raise
               (
                 
               ) 
@@ -10934,7 +10719,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->raise(
                   
@@ -10950,7 +10735,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: lower
     // Source: QWidget
     // Static: false
@@ -10958,7 +10743,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::lower
+              QRhiWidget_Wrapper::lower
               (
                 
               ) 
@@ -10981,7 +10766,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->lower(
                   
@@ -10997,7 +10782,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: stackUnder
     // Source: QWidget
     // Static: false
@@ -11005,7 +10790,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::stackUnder
+              QRhiWidget_Wrapper::stackUnder
               (
                 
   const QJSValue& 
@@ -11049,7 +10834,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->stackUnder(
                   a1_cpp
@@ -11066,7 +10851,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: move
     // Source: QWidget
     // Static: false
@@ -11074,7 +10859,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::move
+              QRhiWidget_Wrapper::move
               (
                 
   const QJSValue& 
@@ -11124,7 +10909,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->move(
                   a1_cpp
@@ -11166,7 +10951,7 @@ QPoint a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->move(
                   a1_cpp
@@ -11183,7 +10968,7 @@ QPoint a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: resize
     // Source: QWidget
     // Static: false
@@ -11191,7 +10976,7 @@ QPoint a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::resize
+              QRhiWidget_Wrapper::resize
               (
                 
   const QJSValue& 
@@ -11241,7 +11026,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->resize(
                   a1_cpp
@@ -11283,7 +11068,7 @@ QSize a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->resize(
                   a1_cpp
@@ -11300,7 +11085,7 @@ QSize a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setGeometry
     // Source: QWidget
     // Static: false
@@ -11308,7 +11093,7 @@ QSize a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setGeometry
+              QRhiWidget_Wrapper::setGeometry
               (
                 
   const QJSValue& 
@@ -11380,7 +11165,7 @@ int a4_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setGeometry(
                   a1_cpp
@@ -11424,7 +11209,7 @@ QRect a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setGeometry(
                   a1_cpp
@@ -11441,7 +11226,7 @@ QRect a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: saveGeometry
     // Source: QWidget
     // Static: false
@@ -11449,7 +11234,7 @@ QRect a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::saveGeometry
+              QRhiWidget_Wrapper::saveGeometry
               (
                 
               ) 
@@ -11474,7 +11259,7 @@ QRect a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QByteArray res = 
                     
                 w->saveGeometry(
@@ -11498,7 +11283,7 @@ QRect a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: restoreGeometry
     // Source: QWidget
     // Static: false
@@ -11506,7 +11291,7 @@ QRect a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::restoreGeometry
+              QRhiWidget_Wrapper::restoreGeometry
               (
                 
   const QJSValue& 
@@ -11545,7 +11330,7 @@ QByteArray a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->restoreGeometry(
@@ -11570,7 +11355,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: adjustSize
     // Source: QWidget
     // Static: false
@@ -11578,7 +11363,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::adjustSize
+              QRhiWidget_Wrapper::adjustSize
               (
                 
               ) 
@@ -11601,7 +11386,7 @@ QByteArray a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->adjustSize(
                   
@@ -11617,7 +11402,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isVisible
     // Source: QWidget
     // Static: false
@@ -11625,7 +11410,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isVisible
+              QRhiWidget_Wrapper::isVisible
               (
                 
               ) 
@@ -11650,7 +11435,7 @@ QByteArray a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isVisible(
@@ -11674,7 +11459,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isVisibleTo
     // Source: QWidget
     // Static: false
@@ -11682,7 +11467,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isVisibleTo
+              QRhiWidget_Wrapper::isVisibleTo
               (
                 
   const QJSValue& 
@@ -11728,7 +11513,7 @@ QByteArray a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isVisibleTo(
@@ -11753,7 +11538,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isHidden
     // Source: QWidget
     // Static: false
@@ -11761,7 +11546,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isHidden
+              QRhiWidget_Wrapper::isHidden
               (
                 
               ) 
@@ -11786,7 +11571,7 @@ QByteArray a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isHidden(
@@ -11810,7 +11595,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isMinimized
     // Source: QWidget
     // Static: false
@@ -11818,7 +11603,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isMinimized
+              QRhiWidget_Wrapper::isMinimized
               (
                 
               ) 
@@ -11843,7 +11628,7 @@ QByteArray a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isMinimized(
@@ -11867,7 +11652,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isMaximized
     // Source: QWidget
     // Static: false
@@ -11875,7 +11660,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isMaximized
+              QRhiWidget_Wrapper::isMaximized
               (
                 
               ) 
@@ -11900,7 +11685,7 @@ QByteArray a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isMaximized(
@@ -11924,7 +11709,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isFullScreen
     // Source: QWidget
     // Static: false
@@ -11932,7 +11717,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isFullScreen
+              QRhiWidget_Wrapper::isFullScreen
               (
                 
               ) 
@@ -11957,7 +11742,7 @@ QByteArray a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isFullScreen(
@@ -11981,7 +11766,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowState
     // Source: QWidget
     // Static: false
@@ -11989,7 +11774,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowState
+              QRhiWidget_Wrapper::windowState
               (
                 
               ) 
@@ -12014,7 +11799,7 @@ QByteArray a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 Qt::WindowStates res = 
                     
                 w->windowState(
@@ -12038,7 +11823,7 @@ QByteArray a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowState
     // Source: QWidget
     // Static: false
@@ -12046,7 +11831,7 @@ QByteArray a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowState
+              QRhiWidget_Wrapper::setWindowState
               (
                 
   const QJSValue& 
@@ -12085,7 +11870,7 @@ Qt::WindowStates a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowState(
                   a1_cpp
@@ -12102,7 +11887,7 @@ Qt::WindowStates a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: overrideWindowState
     // Source: QWidget
     // Static: false
@@ -12110,7 +11895,7 @@ Qt::WindowStates a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::overrideWindowState
+              QRhiWidget_Wrapper::overrideWindowState
               (
                 
   const QJSValue& 
@@ -12149,7 +11934,7 @@ Qt::WindowStates a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->overrideWindowState(
                   a1_cpp
@@ -12166,15 +11951,15 @@ Qt::WindowStates a1_cpp;
                 
               }
             
-    // Class: QInputDialog
-    // Function: sizePolicy
+    // Class: QRhiWidget
+    // Function: sizeHint
     // Source: QWidget
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::sizePolicy
+              QRhiWidget_Wrapper::sizeHint
               (
                 
               ) 
@@ -12199,7 +11984,121 @@ Qt::WindowStates a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
+                QSize res = 
+                    
+                w->sizeHint(
+                  
+                );
+              
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for sizeHint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QRhiWidget
+    // Function: minimumSizeHint
+    // Source: QWidget
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QRhiWidget_Wrapper::minimumSizeHint
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QRhiWidget* w = getWrapped();
+                QSize res = 
+                    
+                w->minimumSizeHint(
+                  
+                );
+              
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for minimumSizeHint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QRhiWidget
+    // Function: sizePolicy
+    // Source: QWidget
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QRhiWidget_Wrapper::sizePolicy
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QRhiWidget* w = getWrapped();
                 QSizePolicy res = 
                     
                 w->sizePolicy(
@@ -12223,7 +12122,7 @@ Qt::WindowStates a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setSizePolicy
     // Source: QWidget
     // Static: false
@@ -12231,7 +12130,7 @@ Qt::WindowStates a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setSizePolicy
+              QRhiWidget_Wrapper::setSizePolicy
               (
                 
   const QJSValue& 
@@ -12281,7 +12180,7 @@ QSizePolicy::Policy a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setSizePolicy(
                   a1_cpp
@@ -12323,7 +12222,7 @@ QSizePolicy a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setSizePolicy(
                   a1_cpp
@@ -12340,7 +12239,7 @@ QSizePolicy a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: heightForWidth
     // Source: QWidget
     // Static: false
@@ -12348,7 +12247,7 @@ QSizePolicy a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::heightForWidth
+              QRhiWidget_Wrapper::heightForWidth
               (
                 
   const QJSValue& 
@@ -12389,7 +12288,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 int res = 
                     
                 w->heightForWidth(
@@ -12414,7 +12313,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: hasHeightForWidth
     // Source: QWidget
     // Static: false
@@ -12422,7 +12321,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::hasHeightForWidth
+              QRhiWidget_Wrapper::hasHeightForWidth
               (
                 
               ) 
@@ -12447,7 +12346,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->hasHeightForWidth(
@@ -12471,7 +12370,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: visibleRegion
     // Source: QWidget
     // Static: false
@@ -12479,7 +12378,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::visibleRegion
+              QRhiWidget_Wrapper::visibleRegion
               (
                 
               ) 
@@ -12504,7 +12403,7 @@ int a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QRegion res = 
                     
                 w->visibleRegion(
@@ -12528,7 +12427,7 @@ int a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setContentsMargins
     // Source: QWidget
     // Static: false
@@ -12536,7 +12435,7 @@ int a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setContentsMargins
+              QRhiWidget_Wrapper::setContentsMargins
               (
                 
   const QJSValue& 
@@ -12608,7 +12507,7 @@ int a4_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setContentsMargins(
                   a1_cpp
@@ -12652,7 +12551,7 @@ QMargins a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setContentsMargins(
                   a1_cpp
@@ -12669,7 +12568,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: contentsMargins
     // Source: QWidget
     // Static: false
@@ -12677,7 +12576,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::contentsMargins
+              QRhiWidget_Wrapper::contentsMargins
               (
                 
               ) 
@@ -12702,7 +12601,7 @@ QMargins a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QMargins res = 
                     
                 w->contentsMargins(
@@ -12726,7 +12625,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: contentsRect
     // Source: QWidget
     // Static: false
@@ -12734,7 +12633,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::contentsRect
+              QRhiWidget_Wrapper::contentsRect
               (
                 
               ) 
@@ -12759,7 +12658,7 @@ QMargins a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QRect res = 
                     
                 w->contentsRect(
@@ -12783,7 +12682,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: layout
     // Source: QWidget
     // Static: false
@@ -12791,7 +12690,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::layout
+              QRhiWidget_Wrapper::layout
               (
                 
               ) 
@@ -12816,7 +12715,7 @@ QMargins a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QLayout* res = 
                     
                 w->layout(
@@ -12840,7 +12739,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setLayout
     // Source: QWidget
     // Static: false
@@ -12848,7 +12747,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setLayout
+              QRhiWidget_Wrapper::setLayout
               (
                 
   const QJSValue& 
@@ -12892,7 +12791,7 @@ QMargins a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setLayout(
                   a1_cpp
@@ -12909,7 +12808,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: updateGeometry
     // Source: QWidget
     // Static: false
@@ -12917,7 +12816,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::updateGeometry
+              QRhiWidget_Wrapper::updateGeometry
               (
                 
               ) 
@@ -12940,7 +12839,7 @@ QMargins a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->updateGeometry(
                   
@@ -12956,7 +12855,7 @@ QMargins a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setParent
     // Source: QWidget
     // Static: false
@@ -12964,7 +12863,7 @@ QMargins a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setParent
+              QRhiWidget_Wrapper::setParent
               (
                 
   const QJSValue& 
@@ -13019,7 +12918,7 @@ Qt::WindowFlags a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setParent(
                   a1_cpp
@@ -13066,7 +12965,7 @@ Qt::WindowFlags a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setParent(
                   a1_cpp
@@ -13083,7 +12982,7 @@ Qt::WindowFlags a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: scroll
     // Source: QWidget
     // Static: false
@@ -13091,7 +12990,7 @@ Qt::WindowFlags a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::scroll
+              QRhiWidget_Wrapper::scroll
               (
                 
   const QJSValue& 
@@ -13152,7 +13051,7 @@ QRect a3_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->scroll(
                   a1_cpp
@@ -13204,7 +13103,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->scroll(
                   a1_cpp
@@ -13222,7 +13121,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: focusWidget
     // Source: QWidget
     // Static: false
@@ -13230,7 +13129,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::focusWidget
+              QRhiWidget_Wrapper::focusWidget
               (
                 
               ) 
@@ -13255,7 +13154,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->focusWidget(
@@ -13279,7 +13178,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: nextInFocusChain
     // Source: QWidget
     // Static: false
@@ -13287,7 +13186,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::nextInFocusChain
+              QRhiWidget_Wrapper::nextInFocusChain
               (
                 
               ) 
@@ -13312,7 +13211,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->nextInFocusChain(
@@ -13336,7 +13235,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: previousInFocusChain
     // Source: QWidget
     // Static: false
@@ -13344,7 +13243,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::previousInFocusChain
+              QRhiWidget_Wrapper::previousInFocusChain
               (
                 
               ) 
@@ -13369,7 +13268,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->previousInFocusChain(
@@ -13393,7 +13292,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: acceptDrops
     // Source: QWidget
     // Static: false
@@ -13401,7 +13300,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::acceptDrops
+              QRhiWidget_Wrapper::acceptDrops
               (
                 
               ) 
@@ -13426,7 +13325,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->acceptDrops(
@@ -13450,7 +13349,7 @@ int a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setAcceptDrops
     // Source: QWidget
     // Static: false
@@ -13458,7 +13357,7 @@ int a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setAcceptDrops
+              QRhiWidget_Wrapper::setAcceptDrops
               (
                 
   const QJSValue& 
@@ -13497,7 +13396,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setAcceptDrops(
                   a1_cpp
@@ -13514,7 +13413,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: addAction
     // Source: QWidget
     // Static: false
@@ -13522,7 +13421,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::addAction
+              QRhiWidget_Wrapper::addAction
               (
                 
   const QJSValue& 
@@ -13566,7 +13465,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->addAction(
                   a1_cpp
@@ -13583,7 +13482,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: addActions
     // Source: QWidget
     // Static: false
@@ -13591,7 +13490,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::addActions
+              QRhiWidget_Wrapper::addActions
               (
                 
   const QJSValue& 
@@ -13630,7 +13529,7 @@ QList<QAction*> a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->addActions(
                   a1_cpp
@@ -13671,7 +13570,7 @@ QList<QAction*> a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->addActions(
                   a1_cpp
@@ -13688,7 +13587,7 @@ QList<QAction*> a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: insertActions
     // Source: QWidget
     // Static: false
@@ -13696,7 +13595,7 @@ QList<QAction*> a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::insertActions
+              QRhiWidget_Wrapper::insertActions
               (
                 
   const QJSValue& 
@@ -13751,7 +13650,7 @@ QList<QAction*> a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->insertActions(
                   a1_cpp
@@ -13807,7 +13706,7 @@ QList<QAction*> a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->insertActions(
                   a1_cpp
@@ -13825,7 +13724,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: insertAction
     // Source: QWidget
     // Static: false
@@ -13833,7 +13732,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::insertAction
+              QRhiWidget_Wrapper::insertAction
               (
                 
   const QJSValue& 
@@ -13893,7 +13792,7 @@ QList<QAction*> a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->insertAction(
                   a1_cpp
@@ -13911,7 +13810,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: removeAction
     // Source: QWidget
     // Static: false
@@ -13919,7 +13818,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::removeAction
+              QRhiWidget_Wrapper::removeAction
               (
                 
   const QJSValue& 
@@ -13963,7 +13862,7 @@ QList<QAction*> a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->removeAction(
                   a1_cpp
@@ -13980,7 +13879,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: actions
     // Source: QWidget
     // Static: false
@@ -13988,7 +13887,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::actions
+              QRhiWidget_Wrapper::actions
               (
                 
               ) 
@@ -14013,7 +13912,7 @@ QList<QAction*> a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QList<QAction*> res = 
                     
                 w->actions(
@@ -14037,7 +13936,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: parentWidget
     // Source: QWidget
     // Static: false
@@ -14045,7 +13944,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::parentWidget
+              QRhiWidget_Wrapper::parentWidget
               (
                 
               ) 
@@ -14070,7 +13969,7 @@ QList<QAction*> a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->parentWidget(
@@ -14094,7 +13993,7 @@ QList<QAction*> a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowFlags
     // Source: QWidget
     // Static: false
@@ -14102,7 +14001,7 @@ QList<QAction*> a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowFlags
+              QRhiWidget_Wrapper::setWindowFlags
               (
                 
   const QJSValue& 
@@ -14141,7 +14040,7 @@ Qt::WindowFlags a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowFlags(
                   a1_cpp
@@ -14158,7 +14057,7 @@ Qt::WindowFlags a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowFlags
     // Source: QWidget
     // Static: false
@@ -14166,7 +14065,7 @@ Qt::WindowFlags a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowFlags
+              QRhiWidget_Wrapper::windowFlags
               (
                 
               ) 
@@ -14191,7 +14090,7 @@ Qt::WindowFlags a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 Qt::WindowFlags res = 
                     
                 w->windowFlags(
@@ -14215,7 +14114,7 @@ Qt::WindowFlags a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setWindowFlag
     // Source: QWidget
     // Static: false
@@ -14223,7 +14122,7 @@ Qt::WindowFlags a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setWindowFlag
+              QRhiWidget_Wrapper::setWindowFlag
               (
                 
   const QJSValue& 
@@ -14281,7 +14180,7 @@ bool a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setWindowFlag(
                   a1_cpp
@@ -14299,7 +14198,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: overrideWindowFlags
     // Source: QWidget
     // Static: false
@@ -14307,7 +14206,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::overrideWindowFlags
+              QRhiWidget_Wrapper::overrideWindowFlags
               (
                 
   const QJSValue& 
@@ -14346,7 +14245,7 @@ Qt::WindowFlags a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->overrideWindowFlags(
                   a1_cpp
@@ -14363,7 +14262,7 @@ Qt::WindowFlags a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: windowType
     // Source: QWidget
     // Static: false
@@ -14371,7 +14270,7 @@ Qt::WindowFlags a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::windowType
+              QRhiWidget_Wrapper::windowType
               (
                 
               ) 
@@ -14396,7 +14295,7 @@ Qt::WindowFlags a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 Qt::WindowType res = 
                     
                 w->windowType(
@@ -14420,7 +14319,7 @@ Qt::WindowFlags a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: childAt
     // Source: QWidget
     // Static: false
@@ -14428,7 +14327,7 @@ Qt::WindowFlags a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::childAt
+              QRhiWidget_Wrapper::childAt
               (
                 
   const QJSValue& 
@@ -14480,7 +14379,7 @@ int a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->childAt(
@@ -14530,7 +14429,7 @@ QPoint a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QWidget* res = 
                     
                 w->childAt(
@@ -14555,7 +14454,7 @@ QPoint a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setAttribute
     // Source: QWidget
     // Static: false
@@ -14563,7 +14462,7 @@ QPoint a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setAttribute
+              QRhiWidget_Wrapper::setAttribute
               (
                 
   const QJSValue& 
@@ -14621,7 +14520,7 @@ bool a2_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setAttribute(
                   a1_cpp
@@ -14639,7 +14538,7 @@ bool a2_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: testAttribute
     // Source: QWidget
     // Static: false
@@ -14647,7 +14546,7 @@ bool a2_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::testAttribute
+              QRhiWidget_Wrapper::testAttribute
               (
                 
   const QJSValue& 
@@ -14688,7 +14587,7 @@ Qt::WidgetAttribute a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->testAttribute(
@@ -14713,7 +14612,7 @@ Qt::WidgetAttribute a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -14721,7 +14620,7 @@ Qt::WidgetAttribute a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::ensurePolished
+              QRhiWidget_Wrapper::ensurePolished
               (
                 
               ) 
@@ -14746,7 +14645,7 @@ Qt::WidgetAttribute a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->ensurePolished(
                   
@@ -14762,7 +14661,7 @@ Qt::WidgetAttribute a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: isAncestorOf
     // Source: QWidget
     // Static: false
@@ -14770,7 +14669,7 @@ Qt::WidgetAttribute a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::isAncestorOf
+              QRhiWidget_Wrapper::isAncestorOf
               (
                 
   const QJSValue& 
@@ -14816,7 +14715,7 @@ Qt::WidgetAttribute a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->isAncestorOf(
@@ -14841,7 +14740,7 @@ Qt::WidgetAttribute a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: autoFillBackground
     // Source: QWidget
     // Static: false
@@ -14849,7 +14748,7 @@ Qt::WidgetAttribute a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::autoFillBackground
+              QRhiWidget_Wrapper::autoFillBackground
               (
                 
               ) 
@@ -14874,7 +14773,7 @@ Qt::WidgetAttribute a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 bool res = 
                     
                 w->autoFillBackground(
@@ -14898,7 +14797,7 @@ Qt::WidgetAttribute a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setAutoFillBackground
     // Source: QWidget
     // Static: false
@@ -14906,7 +14805,7 @@ Qt::WidgetAttribute a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setAutoFillBackground
+              QRhiWidget_Wrapper::setAutoFillBackground
               (
                 
   const QJSValue& 
@@ -14945,7 +14844,7 @@ bool a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setAutoFillBackground(
                   a1_cpp
@@ -14962,7 +14861,7 @@ bool a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: customContextMenuRequested
     // Source: QWidget
     // Static: false
@@ -14971,7 +14870,7 @@ bool a1_cpp;
 
               // signal emitter: called when signal is emitted from wrapped object:
               void 
-              QInputDialog_Wrapper::customContextMenuRequestedEmitter(
+              QRhiWidget_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
                 // convert cpp parameters to js:
@@ -14991,7 +14890,7 @@ bool a1_cpp;
                 );
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: inputMethodQuery
     // Source: QWidget
     // Static: false
@@ -14999,7 +14898,7 @@ bool a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::inputMethodQuery
+              QRhiWidget_Wrapper::inputMethodQuery
               (
                 
   const QJSValue& 
@@ -15040,7 +14939,7 @@ Qt::InputMethodQuery a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 QVariant res = 
                     
                 w->inputMethodQuery(
@@ -15065,7 +14964,7 @@ Qt::InputMethodQuery a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: inputMethodHints
     // Source: QWidget
     // Static: false
@@ -15073,7 +14972,7 @@ Qt::InputMethodQuery a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::inputMethodHints
+              QRhiWidget_Wrapper::inputMethodHints
               (
                 
               ) 
@@ -15098,7 +14997,7 @@ Qt::InputMethodQuery a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 Qt::InputMethodHints res = 
                     
                 w->inputMethodHints(
@@ -15122,7 +15021,7 @@ Qt::InputMethodQuery a1_cpp;
                 
               }
             
-    // Class: QInputDialog
+    // Class: QRhiWidget
     // Function: setInputMethodHints
     // Source: QWidget
     // Static: false
@@ -15130,7 +15029,7 @@ Qt::InputMethodQuery a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QInputDialog_Wrapper::setInputMethodHints
+              QRhiWidget_Wrapper::setInputMethodHints
               (
                 
   const QJSValue& 
@@ -15169,7 +15068,7 @@ Qt::InputMethodHints a1_cpp;
             // call function of wrapped object:
             
                 // call function of C++ class:
-                QInputDialog* w = getWrapped();
+                QRhiWidget* w = getWrapped();
                 
                 w->setInputMethodHints(
                   a1_cpp
@@ -15186,819 +15085,6 @@ Qt::InputMethodHints a1_cpp;
                 
               }
             
-    // Class: QInputDialog
-    // Function: result
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::result
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                int res = 
-                    
-                w->result(
-                  
-                );
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for result";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: setVisible
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::setVisible
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_bool(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: visible (bool)
-  
-bool a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->setVisible(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setVisible";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: sizeHint
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::sizeHint
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                QSize res = 
-                    
-                w->sizeHint(
-                  
-                );
-              
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for sizeHint";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: minimumSizeHint
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::minimumSizeHint
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                QSize res = 
-                    
-                w->minimumSizeHint(
-                  
-                );
-              
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for minimumSizeHint";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: setSizeGripEnabled
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::setSizeGripEnabled
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_bool(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (bool)
-  
-bool a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->setSizeGripEnabled(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setSizeGripEnabled";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: isSizeGripEnabled
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::isSizeGripEnabled
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                bool res = 
-                    
-                w->isSizeGripEnabled(
-                  
-                );
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for isSizeGripEnabled";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: setModal
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::setModal
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_bool(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: modal (bool)
-  
-bool a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->setModal(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setModal";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: setResult
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::setResult
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: r (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->setResult(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setResult";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: finished
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              QInputDialog_Wrapper::finishedEmitter(
-                int result
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: result (int)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_int(
-    handler, 
-    result
-  );
-
-
-                emit finished(
-                  a1_js
-                );
-              }
-            
-    // Class: QInputDialog
-    // Function: accepted
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              QInputDialog_Wrapper::acceptedEmitter(
-                
-              ) {
-                // convert cpp parameters to js:
-                
-
-                emit accepted(
-                  
-                );
-              }
-            
-    // Class: QInputDialog
-    // Function: rejected
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              QInputDialog_Wrapper::rejectedEmitter(
-                
-              ) {
-                // convert cpp parameters to js:
-                
-
-                emit rejected(
-                  
-                );
-              }
-            
-    // Class: QInputDialog
-    // Function: open
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::open
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->open(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for open";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: exec
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::exec
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                int res = 
-                    
-                w->exec(
-                  
-                );
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for exec";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: done
-    // Source: QDialog
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::done
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->done(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for done";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: accept
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::accept
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->accept(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for accept";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QInputDialog
-    // Function: reject
-    // Source: QDialog
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QInputDialog_Wrapper::reject
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QInputDialog* w = getWrapped();
-                
-                w->reject(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for reject";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 
   // member functions for static properties, forward to static function
   
@@ -16006,5 +15092,5 @@ int a1_cpp;
 
   // protected overwritten functions / events and their public invokable counterparts:
   
-    #include "moc_qinputdialog_wrapper.cpp"
+    #include "moc_qrhiwidget_wrapper.cpp"
   

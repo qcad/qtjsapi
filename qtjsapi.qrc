@@ -96,8 +96,6 @@
     <file alias="generator/js/QHBoxLayout.js">generator/js/QHBoxLayout.js</file>
     <file alias="generator/js/QHeaderView.js">generator/js/QHeaderView.js</file>
     <file alias="generator/js/QHelpEvent.js">generator/js/QHelpEvent.js</file>
-    <file alias="generator/js/QIODevice.js">generator/js/QIODevice.js</file>
-    <file alias="generator/js/QIODeviceBase.js">generator/js/QIODeviceBase.js</file>
     <file alias="generator/js/QIcon.js">generator/js/QIcon.js</file>
     <file alias="generator/js/QImage.js">generator/js/QImage.js</file>
     <file alias="generator/js/QImageReader.js">generator/js/QImageReader.js</file>
@@ -106,6 +104,8 @@
     <file alias="generator/js/QInputDialog.js">generator/js/QInputDialog.js</file>
     <file alias="generator/js/QInputEvent.js">generator/js/QInputEvent.js</file>
     <file alias="generator/js/QIntValidator.js">generator/js/QIntValidator.js</file>
+    <file alias="generator/js/QIODevice.js">generator/js/QIODevice.js</file>
+    <file alias="generator/js/QIODeviceBase.js">generator/js/QIODeviceBase.js</file>
     <file alias="generator/js/QItemDelegate.js">generator/js/QItemDelegate.js</file>
     <file alias="generator/js/QItemSelection.js">generator/js/QItemSelection.js</file>
     <file alias="generator/js/QItemSelectionModel.js">generator/js/QItemSelectionModel.js</file>
@@ -117,9 +117,9 @@
     <file alias="generator/js/QLayout.js">generator/js/QLayout.js</file>
     <file alias="generator/js/QLayoutItem.js">generator/js/QLayoutItem.js</file>
     <file alias="generator/js/QLine.js">generator/js/QLine.js</file>
+    <file alias="generator/js/QLinearGradient.js">generator/js/QLinearGradient.js</file>
     <file alias="generator/js/QLineEdit.js">generator/js/QLineEdit.js</file>
     <file alias="generator/js/QLineF.js">generator/js/QLineF.js</file>
-    <file alias="generator/js/QLinearGradient.js">generator/js/QLinearGradient.js</file>
     <file alias="generator/js/QListView.js">generator/js/QListView.js</file>
     <file alias="generator/js/QListWidget.js">generator/js/QListWidget.js</file>
     <file alias="generator/js/QListWidgetItem.js">generator/js/QListWidgetItem.js</file>
@@ -136,15 +136,15 @@
     <file alias="generator/js/QModelIndex.js">generator/js/QModelIndex.js</file>
     <file alias="generator/js/QMouseEvent.js">generator/js/QMouseEvent.js</file>
     <file alias="generator/js/QObject.js">generator/js/QObject.js</file>
+    <file alias="generator/js/QPagedPaintDevice.js">generator/js/QPagedPaintDevice.js</file>
     <file alias="generator/js/QPageLayout.js">generator/js/QPageLayout.js</file>
     <file alias="generator/js/QPageRanges.js">generator/js/QPageRanges.js</file>
     <file alias="generator/js/QPageSize.js">generator/js/QPageSize.js</file>
-    <file alias="generator/js/QPagedPaintDevice.js">generator/js/QPagedPaintDevice.js</file>
     <file alias="generator/js/QPaintDevice.js">generator/js/QPaintDevice.js</file>
-    <file alias="generator/js/QPaintEvent.js">generator/js/QPaintEvent.js</file>
     <file alias="generator/js/QPainter.js">generator/js/QPainter.js</file>
     <file alias="generator/js/QPainterPath.js">generator/js/QPainterPath.js</file>
     <file alias="generator/js/QPainterPathStroker.js">generator/js/QPainterPathStroker.js</file>
+    <file alias="generator/js/QPaintEvent.js">generator/js/QPaintEvent.js</file>
     <file alias="generator/js/QPalette.js">generator/js/QPalette.js</file>
     <file alias="generator/js/QPanGesture.js">generator/js/QPanGesture.js</file>
     <file alias="generator/js/QPen.js">generator/js/QPen.js</file>
@@ -153,8 +153,8 @@
     <file alias="generator/js/QPixmap.js">generator/js/QPixmap.js</file>
     <file alias="generator/js/QPlainTextEdit.js">generator/js/QPlainTextEdit.js</file>
     <file alias="generator/js/QPoint.js">generator/js/QPoint.js</file>
-    <file alias="generator/js/QPointF.js">generator/js/QPointF.js</file>
     <file alias="generator/js/QPointerEvent.js">generator/js/QPointerEvent.js</file>
+    <file alias="generator/js/QPointF.js">generator/js/QPointF.js</file>
     <file alias="generator/js/QPolygon.js">generator/js/QPolygon.js</file>
     <file alias="generator/js/QPolygonF.js">generator/js/QPolygonF.js</file>
     <file alias="generator/js/QPrintDialog.js">generator/js/QPrintDialog.js</file>
@@ -179,6 +179,7 @@
     <file alias="generator/js/QRegularExpressionMatch.js">generator/js/QRegularExpressionMatch.js</file>
     <file alias="generator/js/QRegularExpressionValidator.js">generator/js/QRegularExpressionValidator.js</file>
     <file alias="generator/js/QResizeEvent.js">generator/js/QResizeEvent.js</file>
+    <file alias="generator/js/QRhiWidget.js">generator/js/QRhiWidget.js</file>
     <file alias="generator/js/QScreen.js">generator/js/QScreen.js</file>
     <file alias="generator/js/QScrollArea.js">generator/js/QScrollArea.js</file>
     <file alias="generator/js/QScrollBar.js">generator/js/QScrollBar.js</file>
@@ -207,11 +208,12 @@
     <file alias="generator/js/QSurfaceFormat.js">generator/js/QSurfaceFormat.js</file>
     <file alias="generator/js/QSvgRenderer.js">generator/js/QSvgRenderer.js</file>
     <file alias="generator/js/QSwipeGesture.js">generator/js/QSwipeGesture.js</file>
+    <file alias="generator/js/Qt.js">generator/js/Qt.js</file>
     <file alias="generator/js/QTabBar.js">generator/js/QTabBar.js</file>
-    <file alias="generator/js/QTabWidget.js">generator/js/QTabWidget.js</file>
     <file alias="generator/js/QTableView.js">generator/js/QTableView.js</file>
     <file alias="generator/js/QTableWidget.js">generator/js/QTableWidget.js</file>
     <file alias="generator/js/QTableWidgetItem.js">generator/js/QTableWidgetItem.js</file>
+    <file alias="generator/js/QTabWidget.js">generator/js/QTabWidget.js</file>
     <file alias="generator/js/QTextBlockFormat.js">generator/js/QTextBlockFormat.js</file>
     <file alias="generator/js/QTextBrowser.js">generator/js/QTextBrowser.js</file>
     <file alias="generator/js/QTextCharFormat.js">generator/js/QTextCharFormat.js</file>
@@ -240,9 +242,9 @@
     <file alias="generator/js/QUiLoader.js">generator/js/QUiLoader.js</file>
     <file alias="generator/js/QUrl.js">generator/js/QUrl.js</file>
     <file alias="generator/js/QUrlQuery.js">generator/js/QUrlQuery.js</file>
-    <file alias="generator/js/QVBoxLayout.js">generator/js/QVBoxLayout.js</file>
     <file alias="generator/js/QValidator.js">generator/js/QValidator.js</file>
     <file alias="generator/js/QVariant.js">generator/js/QVariant.js</file>
+    <file alias="generator/js/QVBoxLayout.js">generator/js/QVBoxLayout.js</file>
     <file alias="generator/js/QWheelEvent.js">generator/js/QWheelEvent.js</file>
     <file alias="generator/js/QWidget.js">generator/js/QWidget.js</file>
     <file alias="generator/js/QWidgetAction.js">generator/js/QWidgetAction.js</file>
@@ -250,9 +252,9 @@
     <file alias="generator/js/QWindow.js">generator/js/QWindow.js</file>
     <file alias="generator/js/QXmlAttributes.js">generator/js/QXmlAttributes.js</file>
     <file alias="generator/js/QXmlContentHandler.js">generator/js/QXmlContentHandler.js</file>
-    <file alias="generator/js/QXmlDTDHandler.js">generator/js/QXmlDTDHandler.js</file>
     <file alias="generator/js/QXmlDeclHandler.js">generator/js/QXmlDeclHandler.js</file>
     <file alias="generator/js/QXmlDefaultHandler.js">generator/js/QXmlDefaultHandler.js</file>
+    <file alias="generator/js/QXmlDTDHandler.js">generator/js/QXmlDTDHandler.js</file>
     <file alias="generator/js/QXmlEntityResolver.js">generator/js/QXmlEntityResolver.js</file>
     <file alias="generator/js/QXmlErrorHandler.js">generator/js/QXmlErrorHandler.js</file>
     <file alias="generator/js/QXmlInputSource.js">generator/js/QXmlInputSource.js</file>
@@ -265,7 +267,6 @@
     <file alias="generator/js/QXmlStreamAttributes.js">generator/js/QXmlStreamAttributes.js</file>
     <file alias="generator/js/QXmlStreamReader.js">generator/js/QXmlStreamReader.js</file>
     <file alias="generator/js/QXmlStreamWriter.js">generator/js/QXmlStreamWriter.js</file>
-    <file alias="generator/js/Qt.js">generator/js/Qt.js</file>
     <file alias="fixes.js">fixes.js</file>
     <file alias="copyproperties.js">copyproperties.js</file>
   </qresource>

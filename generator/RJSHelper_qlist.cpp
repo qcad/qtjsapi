@@ -845,6 +845,12 @@
         
         #include "qregularexpressionmatch_wrapper.h"
         
+        #include "qrhiwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
         #include "qscreen_wrapper.h"
         
           #include "qobject_wrapper.h"

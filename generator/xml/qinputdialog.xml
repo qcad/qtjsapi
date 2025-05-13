@@ -11,6 +11,14 @@
       <key>IntInput</key>
       <key>DoubleInput</key>
     </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="f" default="Qt::WindowFlags()" />
+        </parameters>
+      </variant>
+    </constructor>
     <!--
     <function name="setInputMode" />
     <function name="inputMode" />

@@ -5,7 +5,7 @@
   <class_decl name="QAbstractFileIconProvider" />
   <class_decl name="QAbstractItemDelegate" />
   <class_decl name="QAbstractProxyModel" />
-  <class name="QFileDialog" ownership="cpp">
+  <class name="QFileDialog" ownership="cpp" proxy="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

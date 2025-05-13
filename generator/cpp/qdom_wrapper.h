@@ -2465,56 +2465,6 @@ EncodingFromTextStream = QDomNode::EncodingFromTextStream,
               ;
             
     // Class: QDomNodeList
-    // Function: operator_equal
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  operator_equal
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QDomNodeList
-    // Function: operator_unequal
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  operator_unequal
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QDomNodeList
     // Function: item
     // Source: 
     // Static: false

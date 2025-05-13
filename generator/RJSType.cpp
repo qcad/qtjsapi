@@ -3495,6 +3495,21 @@
 
 
       
+      int RJSType_QRhiWidget::id = -1;
+
+      int RJSType_QRhiWidget::getId() const {
+          return RJSType_QRhiWidget::getIdStatic();
+      }
+
+      int RJSType_QRhiWidget::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QRhiWidget());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QScreen::id = -1;
 
       int RJSType_QScreen::getId() const {
