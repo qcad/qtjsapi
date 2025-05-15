@@ -192,8 +192,9 @@ RJSApi::~RJSApi() {
             qDebug() << "deleting wrappers..." << wrappers.size();
         }
 
-        //qDebug() << "deleting wrapper:" << RJSType::getTypeName(wrapper->getWrappedType());
+        //qDebug() << "deleting wrapper:" << RJSHelper::getTypeName(wrapper->getWrappedType());
         delete wrapper;
+        //wrapper->deleteLater();
     }
     wrappers.clear();
     qDebug() << "deleting wrappers: DONE" ;
@@ -203,6 +204,8 @@ RJSApi::~RJSApi() {
     // objects are deleted here:
     //QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
     qDebug() << "collect garbage: DONE";
+
+    delete tools;
 }
 
 void RJSApi::init() {
@@ -223,7 +226,7 @@ void RJSApi::init() {
     tools = new RJSTools(*this);
     global.setProperty("tools", engine->newQObject(tools));
     QQmlEngine::setObjectOwnership(tools, QQmlEngine::CppOwnership);
-    engine->evaluate("function include(fileName) { tools.include(fileName); } ");
+    engine->evaluate("function include(fileName, context, force) { tools.include(fileName, context, force); } ");
     engine->evaluate("function isDeleted(obj) { return tools.isDeleted(obj); } ");
     engine->evaluate("function download(url, timeout) { return tools.download(url, timeout); } ");
     engine->evaluate("function downloadToFile(url, path, fileName, timeout) { return tools.downloadToFile(url, path, fileName, timeout); } ");
