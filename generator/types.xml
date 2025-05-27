@@ -594,7 +594,7 @@
     <type>QQuickWidget</type>
     <type>QRadioButton</type>
     <type>QRegularExpressionValidator</type>
-    <type>QRhiWidget</type>
+    <type min-qt-version="0x060700">QRhiWidget</type>
     <type>QScreen</type>
     <type>QScrollArea</type>
     <type>QScrollBar</type>

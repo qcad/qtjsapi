@@ -5,6 +5,7 @@
   //#include "qrhiwidgetwrapper.h"
   //#include "header_cpp.h"
   
+    #if QT_VERSION >= 0x060700
     #include "qrhiwidget_wrapper.h"
 
   
@@ -15091,6 +15092,8 @@ Qt::InputMethodHints a1_cpp;
 
 
   // protected overwritten functions / events and their public invokable counterparts:
+  
+    #endif
   
     #include "moc_qrhiwidget_wrapper.cpp"
   

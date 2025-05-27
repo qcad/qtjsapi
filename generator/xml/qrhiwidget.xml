@@ -7,7 +7,7 @@
   <class_decl name="QRhiRenderTarget" />
   <class_decl name="QRhiCommandBuffer" />
   -->
-  <class name="QRhiWidget" ownership="cpp" proxy="true" downcast="true">
+  <class name="QRhiWidget" ownership="cpp" proxy="true" downcast="true" min-qt-version="0x060700">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

@@ -542,53 +542,56 @@
           #include "qxmlstreamwriter_wrapper.h"
         
         QList<RJSDowncaster_QAction*> RJSHelper::downcasters_QAction;
-      
+        
         QList<RJSDowncaster_QApplication*> RJSHelper::downcasters_QApplication;
-      
+        
         QList<RJSDowncaster_QComboBox*> RJSHelper::downcasters_QComboBox;
-      
+        
         QList<RJSDowncaster_QEvent*> RJSHelper::downcasters_QEvent;
-      
+        
         QList<RJSDowncaster_QDockWidget*> RJSHelper::downcasters_QDockWidget;
-      
+        
         QList<RJSDowncaster_QFileSystemModel*> RJSHelper::downcasters_QFileSystemModel;
-      
+        
         QList<RJSDowncaster_QFrame*> RJSHelper::downcasters_QFrame;
-      
+        
         QList<RJSDowncaster_QItemDelegate*> RJSHelper::downcasters_QItemDelegate;
-      
+        
         QList<RJSDowncaster_QJSEngine*> RJSHelper::downcasters_QJSEngine;
-      
+        
         QList<RJSDowncaster_QLayout*> RJSHelper::downcasters_QLayout;
-      
+        
         QList<RJSDowncaster_QLineEdit*> RJSHelper::downcasters_QLineEdit;
-      
+        
         QList<RJSDowncaster_QListView*> RJSHelper::downcasters_QListView;
-      
+        
         QList<RJSDowncaster_QListWidget*> RJSHelper::downcasters_QListWidget;
-      
+        
         QList<RJSDowncaster_QMainWindow*> RJSHelper::downcasters_QMainWindow;
-      
+        
         QList<RJSDowncaster_QMdiArea*> RJSHelper::downcasters_QMdiArea;
-      
+        
         QList<RJSDowncaster_QMdiSubWindow*> RJSHelper::downcasters_QMdiSubWindow;
-      
+        
         QList<RJSDowncaster_QObject*> RJSHelper::downcasters_QObject;
-      
+        
         QList<RJSDowncaster_QQmlEngine*> RJSHelper::downcasters_QQmlEngine;
-      
+        
+          #if QT_VERSION >= 0x060700
         QList<RJSDowncaster_QRhiWidget*> RJSHelper::downcasters_QRhiWidget;
-      
+        
+          #endif
+        
         QList<RJSDowncaster_QTextBrowser*> RJSHelper::downcasters_QTextBrowser;
-      
+        
         QList<RJSDowncaster_QToolBar*> RJSHelper::downcasters_QToolBar;
-      
+        
         QList<RJSDowncaster_QToolButton*> RJSHelper::downcasters_QToolButton;
-      
+        
         QList<RJSDowncaster_QTreeWidget*> RJSHelper::downcasters_QTreeWidget;
-      
+        
         QList<RJSDowncaster_QWidget*> RJSHelper::downcasters_QWidget;
-      
+        
         QList<RJSQVariantConverter*> RJSHelper::qvariantConverters;
       
         QString RJSHelper::getTypeName(int type) {

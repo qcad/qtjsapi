@@ -131,6 +131,9 @@
     </xsl:choose>
   </xsl:variable>
   -->
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
 
   <xsl:if test="$mode='h'">
     #include &lt;QQmlEngine&gt;
@@ -307,6 +310,9 @@
           <xsl:if test="$module=''">
             // check if pointer points to derrived type:
             <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class/qsrc:super_list/qsrc:super[@name=$classname]">
+              <xsl:if test="../../@min-qt-version">
+                #if QT_VERSION &gt;= <xsl:value-of select="../../@min-qt-version"/>
+              </xsl:if>
               if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
                 return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
               }
@@ -314,6 +320,9 @@
               case RJSType::<xsl:value-of select="../../@name" />_Type:
                 return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
               -->
+              <xsl:if test="../../@min-qt-version">
+                #endif
+              </xsl:if>
             </xsl:for-each>
           </xsl:if>
 
@@ -1017,6 +1026,10 @@
 
     Q_DECLARE_INTERFACE(<xsl:value-of select="@name" />_Wrapper, "org.qcad.<xsl:value-of select="@name" />_Wrapper")
 
+  </xsl:if>
+
+  <xsl:if test="@min-qt-version">
+    #endif
   </xsl:if>
 
 </xsl:template>

@@ -8528,6 +8528,7 @@
       }
 
     
+    #if QT_VERSION >= 0x060700
       QJSValue RJSHelper::cpp2js_QRhiWidget(RJSApi& handler, QRhiWidget* v) {
           
             // downcast to types derrived from QRhiWidget but defined in other modules:
@@ -8641,6 +8642,8 @@
       }
 
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QScreen(RJSApi& handler, QScreen* v) {
           QScreen_Wrapper* ret = nullptr;
           bool existing = false;

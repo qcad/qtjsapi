@@ -448,9 +448,12 @@
                 return (QObject*)(QRadioButton*)vp;
               }
               
+                #if QT_VERSION >= 0x060700
               if (t==RJSType_QRhiWidget::getIdStatic()) {
                 return (QObject*)(QRhiWidget*)vp;
               }
+              
+                #endif
               
               if (t==RJSType_QScreen::getIdStatic()) {
                 return (QObject*)(QScreen*)vp;

@@ -89,19 +89,31 @@
     
       <xsl:if test="$section='manual' or $section='' or $mode='h'">
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+        <xsl:if test="@min-qt-version">
+          #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+        </xsl:if>
         // Base class for downcasters that can downcast <xsl:value-of select="@name" /> to specific types:
         class RJSDowncaster_<xsl:value-of select="@name" /> {
         public:
           virtual QJSValue downcast(RJSApi&amp; handler, <xsl:value-of select="@name" />* o) = 0;
         };
+        <xsl:if test="@min-qt-version">
+          #endif
+        </xsl:if>
       </xsl:for-each>
 
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class">
+        <xsl:if test="@min-qt-version">
+          #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+        </xsl:if>
         // Base class for basecasters that can cast void* to base class <xsl:value-of select="@name" />:
         class RJSBasecaster_<xsl:value-of select="@name" /> {
         public:
           virtual <xsl:value-of select="@name" />* castToBase(int t, void* vp) = 0;
         };
+        <xsl:if test="@min-qt-version">
+          #endif
+        </xsl:if>
       </xsl:for-each>
 
       <!--
@@ -238,6 +250,10 @@
         </xsl:if>
 
         <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+          <xsl:if test="@min-qt-version">
+            #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+          </xsl:if>
+
           // allow downcasting for type <xsl:value-of select="@name" />:
           private:
             static QList&lt;RJSDowncaster_<xsl:value-of select="@name"/>*&gt; downcasters_<xsl:value-of select="@name"/>;
@@ -246,6 +262,10 @@
             static void registerDowncaster_<xsl:value-of select="@name"/>(RJSDowncaster_<xsl:value-of select="@name"/>* dc) {
               downcasters_<xsl:value-of select="@name"/>.append(dc);
             }
+
+          <xsl:if test="@min-qt-version">
+            #endif
+          </xsl:if>
         </xsl:for-each>
 
         <xsl:if test="$module='' and ($section='' or $section='manual')">
@@ -314,7 +334,13 @@
 
       <xsl:if test="$section='' or $section='manual'">
       <xsl:for-each select="document('tmp/xmlall.xml')/qsrc:unit/qsrc:class[@downcast='true']">
+        <xsl:if test="@min-qt-version">
+          #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+        </xsl:if>
         QList&lt;RJSDowncaster_<xsl:value-of select="@name" />*&gt; <xsl:value-of select="$rjshelper_class"/>::downcasters_<xsl:value-of select="@name" />;
+        <xsl:if test="@min-qt-version">
+          #endif
+        </xsl:if>
       </xsl:for-each>
 
       <xsl:if test="$module='' and ($section='' or $section='manual')">
@@ -1664,6 +1690,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, <xsl:value-of select="$para" /> v);
@@ -1691,6 +1721,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
@@ -1745,6 +1779,10 @@
   </xsl:variable>
 
   <xsl:apply-templates select="." mode="ifdef" />
+
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
@@ -1845,6 +1883,10 @@
     </xsl:when>
   </xsl:choose>
 
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
+
   <xsl:apply-templates select="." mode="endif" />
     
 </xsl:template>
@@ -1888,6 +1930,10 @@
   </xsl:variable>
 
   <xsl:apply-templates select="." mode="ifdef" />
+
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
@@ -1992,6 +2038,10 @@
     </xsl:when>
   </xsl:choose>
 
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
+
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
 
@@ -2017,6 +2067,10 @@
   </xsl:variable>
 
   <xsl:apply-templates select="." mode="ifdef" />
+
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
@@ -2145,6 +2199,10 @@
     </xsl:when>
   </xsl:choose>
 
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
+
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
 
@@ -2173,6 +2231,10 @@
   </xsl:variable>
 
   <xsl:apply-templates select="." mode="ifdef" />
+
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
@@ -2288,6 +2350,10 @@
     </xsl:when>
   </xsl:choose>
 
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
+
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
 
@@ -2316,6 +2382,10 @@
   </xsl:variable>
 
   <xsl:apply-templates select="." mode="ifdef" />
+
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
 
   <xsl:choose>
     <xsl:when test="$mode='h'">
@@ -2464,6 +2534,10 @@
     </xsl:when>
   </xsl:choose>
 
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
+
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
 
@@ -2520,6 +2594,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
@@ -2566,6 +2644,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
@@ -2630,6 +2712,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       static QJSValue cpp2js_<xsl:value-of select="$func" />_ptr(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
@@ -2664,6 +2750,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
@@ -2721,6 +2811,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
@@ -2769,6 +2863,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
@@ -2820,6 +2918,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
@@ -2864,6 +2966,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
@@ -2917,6 +3023,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
@@ -2951,6 +3061,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
@@ -3006,6 +3120,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
@@ -3047,6 +3165,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
@@ -3116,6 +3238,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       static QJSValue cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v);
@@ -3147,6 +3273,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
@@ -3196,6 +3326,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       //#include &lt;<xsl:value-of select="$type" />&gt;
@@ -3218,6 +3352,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>
@@ -3245,6 +3383,10 @@
 
   <xsl:apply-templates select="." mode="ifdef" />
 
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
+
   <xsl:choose>
     <xsl:when test="$mode='h'">
       //#include &lt;<xsl:value-of select="$type" />&gt;
@@ -3267,6 +3409,10 @@
       }
     </xsl:when>
   </xsl:choose>
+
+  <xsl:if test="@min-qt-version">
+    #endif
+  </xsl:if>
 
   <xsl:apply-templates select="." mode="endif" />
 </xsl:template>

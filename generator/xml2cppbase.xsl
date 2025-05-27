@@ -124,6 +124,9 @@
     </xsl:choose>
   </xsl:variable>
   -->
+  <xsl:if test="@min-qt-version">
+    #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
+  </xsl:if>
 
   <xsl:if test="$mode='h'">
     #include &lt;QQmlEngine&gt;
@@ -268,6 +271,10 @@
 
     };
     </xsl:if>
+  </xsl:if>
+
+  <xsl:if test="@min-qt-version">
+    #endif
   </xsl:if>
 
 </xsl:template>

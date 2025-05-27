@@ -12,6 +12,7 @@
 
     #include "RJSWrapperObj.h"
   
+    #if QT_VERSION >= 0x060700
     #include <QQmlEngine>
     
         #include "RJSType.h"
@@ -5538,6 +5539,8 @@
 
     Q_DECLARE_INTERFACE(QRhiWidget_Wrapper, "org.qcad.QRhiWidget_Wrapper")
 
+  
+    #endif
   
   #endif
   

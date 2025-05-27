@@ -12,10 +12,13 @@
     
         #include "../RJSHelper.h"
       
+    #if QT_VERSION >= 0x060700
     #include <QQmlEngine>
 
     
         #include <QRhiWidget>
       
+    #endif
+  
   #endif
   

@@ -853,9 +853,12 @@
                 return (QWidget*)(QRadioButton*)vp;
               }
               
+                #if QT_VERSION >= 0x060700
               if (t==RJSType_QRhiWidget::getIdStatic()) {
                 return (QWidget*)(QRhiWidget*)vp;
               }
+              
+                #endif
               
               if (t==RJSType_QScrollArea::getIdStatic()) {
                 return (QWidget*)(QScrollArea*)vp;
