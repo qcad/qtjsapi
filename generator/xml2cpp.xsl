@@ -132,6 +132,8 @@
   </xsl:variable>
   -->
   <xsl:if test="@min-qt-version">
+    // requires minimum Qt version:
+    #include &lt;QtGlobal&gt;
     #if QT_VERSION &gt;= <xsl:value-of select="@min-qt-version"/>
   </xsl:if>
 

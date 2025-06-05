@@ -11,7 +11,7 @@ fi
 
 tmp="tmp.qrc"
 
-find generator/js -type f \( -name "*.js" \) | /usr/bin/sort | sed "s#\(.*\)#    <file alias=\"\1\">\1</file>#" >>allfiles.qrc
+find generator/js -type f \( -name "*.js" \) | sort -f | sed "s#\(.*\)#    <file alias=\"\1\">\1</file>#" >>allfiles.qrc
 
 f="$OUTPUT"
 

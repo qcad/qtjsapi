@@ -12,6 +12,8 @@
 
     #include "RJSWrapperObj.h"
   
+    // requires minimum Qt version:
+    #include <QtGlobal>
     #if QT_VERSION >= 0x060700
     #include <QQmlEngine>
     
