@@ -399,6 +399,12 @@
   Q_PROPERTY(
     
     QJSValue
+     minimum READ minimum WRITE setMinimum
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      singleStep READ singleStep WRITE setSingleStep
   )
 

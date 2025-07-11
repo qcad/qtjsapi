@@ -283,11 +283,8 @@ QImageWriter_Wrapper::QImageWriter_Wrapper
                 : RJSWrapperObj(*(RJSApi*)h)
               
               {
-
-
-                  qDebug() << "20250624: QImageWriter_Wrapper::QImageWriter_Wrapper";
                 
-                  // RDebug::incCounter(QString("QImageWriter_Wrapper_") + handler.getEngine()->objectName());
+                  //RDebug::incCounter(QString("QImageWriter_Wrapper_") + handler.getEngine()->objectName());
                   //RDebug::incCounter(QString("QImageWriter_Wrapper"));
                 
       // check parameter types:
@@ -302,8 +299,6 @@ QImageWriter_Wrapper::QImageWriter_Wrapper
 
   
       ) {
-
-          qDebug() << "20250624: QImageWriter_Wrapper::QImageWriter_Wrapper: creating wrapper with QIODevice* and QByteArray";
     
       // prepare parameters:
     
@@ -357,8 +352,6 @@ QByteArray a2_cpp;
 
   
       ) {
-
-          qDebug() << "20250624: QImageWriter_Wrapper::QImageWriter_Wrapper: creating wrapper with QString and QByteArray";
     
       // prepare parameters:
     

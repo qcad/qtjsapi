@@ -6,6 +6,7 @@
       <super name="QWidget" />
     </super_list>
     <property type="int" name="maximum" read="maximum" write="setMaximum" />
+    <property type="int" name="minimum" read="minimum" write="setMinimum" />
     <property type="int" name="singleStep" read="singleStep" write="setSingleStep" />
     <property type="int" name="pageStep" read="pageStep" write="setPageStep" />
     <property type="int" name="value" read="value" write="setValue" />

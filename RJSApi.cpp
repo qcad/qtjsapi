@@ -93,6 +93,7 @@
 #include "generator/cpp/qdoublespinbox_wrapper.h"
 #include "generator/cpp/qradiobutton_wrapper.h"
 #include "generator/cpp/qbuttongroup_wrapper.h"
+#include "generator/cpp/qabstractslider_wrapper.h"
 #include "generator/cpp/qslider_wrapper.h"
 #include "generator/cpp/qlistwidget_wrapper.h"
 #include "generator/cpp/qfiledialog_wrapper.h"
@@ -347,6 +348,7 @@ void RJSApi::init() {
     QDoubleSpinBox_Wrapper::init(*this);
     QRadioButton_Wrapper::init(*this);
     QButtonGroup_Wrapper::init(*this);
+    QAbstractSlider_Wrapper::init(*this);
     QSlider_Wrapper::init(*this);
     QListWidget_Wrapper::init(*this);
     QListWidgetItem_Wrapper::init(*this);
@@ -387,6 +389,7 @@ void RJSApi::init() {
     QApplication_Wrapper::init(*this);
     QContextMenuEvent_Wrapper::init(*this);
     QValidator_Wrapper::init(*this);
+    QIntValidator_Wrapper::init(*this);
     QRegularExpressionValidator_Wrapper::init(*this);
     QTreeWidget_Wrapper::init(*this);
     QShortcut_Wrapper::init(*this);
