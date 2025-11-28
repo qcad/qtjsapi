@@ -8,39 +8,25 @@ echo $DIR
 if [[ `pwd` == *qcadjsapi* ]]
 then
     MODULE="qcad"
-fi
-
-if [[ `pwd` == *qcadprojsapi* ]]
+elif [[ `pwd` == *qcadprojsapi* ]]
 then
     MODULE="qcadpro"
-fi
-
-if [[ `pwd` == *qcadnestjsapi* ]]
+elif [[ `pwd` == *qcadnestjsapi* ]]
 then
     MODULE="qcadnest"
-fi
-
-if [[ `pwd` == *qcadtutorialjsapi* ]]
+elif [[ `pwd` == *qcadtutorialjsapi* ]]
 then
     MODULE="qcadtutorial"
-fi
-
-if [[ `pwd` == *qcadgles3djsapi* ]]
+elif [[ `pwd` == *qcadgles3djsapi* ]]
 then
     MODULE="qcadgles3d"
-fi
-
-if [[ `pwd` == *qcadquickjsapi* ]]
+elif [[ `pwd` == *qcadquickjsapi* ]]
 then
     MODULE="qcadquick"
-fi
-
-if [[ `pwd` == *qcadtexjsapi* ]]
+elif [[ `pwd` == *qcadtexjsapi* ]]
 then
     MODULE="qcadtex"
-fi
-
-if [[ `pwd` == *qcadrhijsapi* ]]
+elif [[ `pwd` == *qcadrhijsapi* ]]
 then
     MODULE="qcadrhi"
 fi
