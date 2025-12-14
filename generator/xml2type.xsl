@@ -52,6 +52,9 @@
   -->
 
   <xsl:for-each select="type[not(.=preceding::*)]">
+    <xsl:if test="@ifdef">
+      #ifdef <xsl:value-of select="@ifdef"/>
+    </xsl:if>
     <xsl:if test="$mode='h'">
       class <xsl:value-of select="$class_export"/> RJSType_<xsl:value-of select="text()" /> : public RJSTypeEnum {
           Q_OBJECT
@@ -122,6 +125,9 @@
             return derrivedTypes.contains(otherType);
         }
       </xsl:if>
+    </xsl:if>
+    <xsl:if test="@ifdef">
+      #endif
     </xsl:if>
   </xsl:for-each>
 

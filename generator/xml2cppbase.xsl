@@ -99,8 +99,14 @@
 
 
 <xsl:template match="qsrc:unit">
+  <xsl:if test="qsrc:class/@ifdef">
+    #ifdef <xsl:value-of select="qsrc:class/@ifdef"/>
+  </xsl:if>
   <xsl:apply-templates select="qsrc:class_decl" />
   <xsl:apply-templates select="qsrc:class" />
+  <xsl:if test="qsrc:class/@ifdef">
+    #endif
+  </xsl:if>
 </xsl:template>
 
 

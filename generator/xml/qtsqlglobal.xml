@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtsqlglobal.h">
-  <namespace name="QSql">
+  <namespace name="QSql" ifdef="QT_SQL_LIB">
     <enum name="Location">
       <key>BeforeFirstRow</key>
       <key>AfterLastRow</key>

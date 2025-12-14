@@ -5,7 +5,7 @@
   <class_decl name="QQmlError" />
   <class_decl name="QQuickItem" />
   <class_decl name="QQmlComponent" />
-  <class name="QQuickView" ownership="cpp">
+  <class name="QQuickView" ownership="cpp" ifdef="QT_QUICK_LIB">
     <super_list>
       <!--
       <super name="QSurface" />
