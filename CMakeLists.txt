@@ -42,7 +42,6 @@ qt_add_library(qtjsapi SHARED
     generator/RJSHelper_wrapped.cpp
     generator/RJSHelper_wrapped_ptr.cpp
     generator/RJSHelper_wrapped_qobject_ptr.cpp
-    generator/RJSHelper_wrapped_qobject_ptr.cpp
     generator/RJSHelper_qlist.cpp
     generator/RJSHelper_qlist_ptr.cpp
     generator/RJSHelper_qset.cpp
