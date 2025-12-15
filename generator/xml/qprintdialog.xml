@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qprintdialog.h">
   <class_decl name="QPushButton" />
   <class_decl name="QPrinter" />
-  <class name="QPrintDialog" ownership="cpp" inheritable="true">
+  <class name="QPrintDialog" ownership="cpp" inheritable="true" ifdef="QT_PRINTSUPPORT_LIB">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

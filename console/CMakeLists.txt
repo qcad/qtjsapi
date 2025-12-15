@@ -5,7 +5,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Sql Svg Xml PrintSupport Qml UiTools QuickWidgets Core5Compat)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Svg Xml PrintSupport Qml UiTools)
+
+# Optional modules
+set(QT_OPTIONAL_COMPONENTS Core5Compat PrintSupport QuickWidgets Sql)
+find_package(Qt6 OPTIONAL_COMPONENTS ${QT_OPTIONAL_COMPONENTS})
+
 qt_standard_project_setup()
 
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/../../qcad)
@@ -41,13 +46,19 @@ target_link_libraries(qtjsapiconsole PRIVATE
     Qt::Network
     Qt::OpenGL
     Qt::Qml
-    Qt::Sql
     Qt::Svg
     Qt::Widgets
     Qt::Xml
     Qt::UiTools
-    Qt::PrintSupport
-    Qt::Core5Compat
-    Qt::QuickWidgets
     qtjsapi
 )
+
+# Link optional modules if present
+foreach(module IN LISTS QT_OPTIONAL_COMPONENTS)
+    if(TARGET Qt::${module})
+        target_link_libraries(qtjsapi PRIVATE Qt::${module})
+        message(STATUS "Qt module found and linked: ${module}")
+    else()
+        message(STATUS "Qt module NOT found, skipping: ${module}")
+    endif()
+endforeach()

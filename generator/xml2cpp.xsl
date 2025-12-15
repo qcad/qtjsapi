@@ -98,9 +98,26 @@
 
 
 <xsl:template match="qsrc:unit">
+  <xsl:variable name="ifdef">
+    <xsl:choose>
+      <xsl:when test="qsrc:class/@ifdef">
+        <xsl:value-of select="qsrc:class/@ifdef"/>
+      </xsl:when>
+      <xsl:when test="qsrc:namespace/@ifdef">
+        <xsl:value-of select="qsrc:namespace/@ifdef"/>
+      </xsl:when>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:if test="$ifdef!=''">
+    #ifdef <xsl:value-of select="$ifdef"/>
+  </xsl:if>
   <xsl:apply-templates select="qsrc:class_decl" />
   <xsl:apply-templates select="qsrc:class" />
   <xsl:apply-templates select="qsrc:namespace" />
+  <xsl:if test="$ifdef!=''">
+    #endif
+  </xsl:if>
 </xsl:template>
 
 
@@ -315,6 +332,9 @@
               <xsl:if test="../../@min-qt-version">
                 #if QT_VERSION &gt;= <xsl:value-of select="../../@min-qt-version"/>
               </xsl:if>
+              <xsl:if test="../../@ifdef">
+                #ifdef <xsl:value-of select="../../@ifdef"/>
+              </xsl:if>
               if (t==RJSType_<xsl:value-of select="../../@name" />::getIdStatic()) {
                 return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
               }
@@ -322,6 +342,9 @@
               case RJSType::<xsl:value-of select="../../@name" />_Type:
                 return (<xsl:value-of select="$classname" />*)(<xsl:value-of select="../../@name" />*)vp;
               -->
+              <xsl:if test="../../@ifdef">
+                #endif
+              </xsl:if>
               <xsl:if test="../../@min-qt-version">
                 #endif
               </xsl:if>

@@ -5,7 +5,13 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Sql Svg Xml PrintSupport Qml UiTools QuickWidgets Core5Compat)
+# Mandatory modules
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Svg Xml Qml UiTools)
+
+# Optional modules
+set(QT_OPTIONAL_COMPONENTS Core5Compat PrintSupport QuickWidgets Sql)
+find_package(Qt6 OPTIONAL_COMPONENTS ${QT_OPTIONAL_COMPONENTS})
+
 qt_standard_project_setup()
 
 qt_add_resources(SOURCES qtjsapi.qrc)
@@ -89,15 +95,21 @@ target_link_libraries(qtjsapi PRIVATE
     Qt::Network
     Qt::OpenGL
     Qt::Qml
-    Qt::Sql
     Qt::Svg
     Qt::Widgets
     Qt::Xml
     Qt::UiTools
-    Qt::PrintSupport
-    Qt::Core5Compat
-    Qt::QuickWidgets
 )
+
+# Link optional modules if present
+foreach(module IN LISTS QT_OPTIONAL_COMPONENTS)
+    if(TARGET Qt::${module})
+        target_link_libraries(qtjsapi PRIVATE Qt::${module})
+        message(STATUS "Qt module found and linked: ${module}")
+    else()
+        message(STATUS "Qt module NOT found, skipping: ${module}")
+    endif()
+endforeach()
 
 # doesn't work under Windows / MSVC:
 # instead, build from console dir

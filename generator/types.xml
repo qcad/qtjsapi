@@ -14,7 +14,7 @@
   <primitive>
     <type flags="true">QAbstractFileIconProvider::Options</type>
     <type flags="true">QAbstractItemView::EditTriggers</type>
-    <type flags="true">QAbstractPrintDialog::PrintDialogOptions</type>
+    <type flags="true" ifdef="QT_PRINTSUPPORT_LIB">QAbstractPrintDialog::PrintDialogOptions</type>
     <type flags="true">QColorDialog::ColorDialogOptions</type>
     <type flags="true">QDialogButtonBox::StandardButtons</type>
     <type flags="true">QDir::Filters</type>
@@ -67,8 +67,8 @@
     <type>QAbstractItemView::ScrollMode</type>
     <type>QAbstractItemView::SelectionBehavior</type>
     <type>QAbstractItemView::SelectionMode</type>
-    <type>QAbstractPrintDialog::PrintDialogOption</type>
-    <type>QAbstractPrintDialog::PrintRange</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QAbstractPrintDialog::PrintDialogOption</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QAbstractPrintDialog::PrintRange</type>
     <type>QAbstractScrollArea::SizeAdjustPolicy</type>
     <type>QAbstractSlider::SliderAction</type>
     <type>QAbstractSpinBox::StepType</type>
@@ -192,15 +192,15 @@
     <type>QPalette::ColorRole</type>
     <type>QPinchGesture::ChangeFlag</type>
     <type>QPlainTextEdit::LineWrapMode</type>
-    <type>QPrinter::ColorMode</type>
-    <type>QPrinter::DuplexMode</type>
-    <type>QPrinter::OutputFormat</type>
-    <type>QPrinter::PageOrder</type>
-    <type>QPrinter::PaperSource</type>
-    <type>QPrinter::PrintRange</type>
-    <type>QPrinter::PrinterMode</type>
-    <type>QPrinter::PrinterState</type>
-    <type>QPrinter::Unit</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter::ColorMode</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter::DuplexMode</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter::OutputFormat</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter::PageOrder</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter::PaperSource</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter::PrintRange</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter::PrinterMode</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter::PrinterState</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter::Unit</type>
     <type>QProcess::ExitStatus</type>
     <type>QProcess::InputChannelMode</type>
     <type>QProcess::ProcessChannel</type>
@@ -209,10 +209,10 @@
     <type>QProcess::ProcessState</type>
     <type>QProcessEnvironment::Initialization</type>
     <type>QProgressBar::Direction</type>
-    <type>QQuickView::ResizeMode</type>
-    <type>QQuickView::Status</type>
-    <type>QQuickWidget::ResizeMode</type>
-    <type>QQuickWidget::Status</type>
+    <type ifdef="QT_QUICK_LIB">QQuickView::ResizeMode</type>
+    <type ifdef="QT_QUICK_LIB">QQuickView::Status</type>
+    <type ifdef="QT_QUICKWIDGETS_LIB">QQuickWidget::ResizeMode</type>
+    <type ifdef="QT_QUICKWIDGETS_LIB">QQuickWidget::Status</type>
     <type>QRegion::RegionType</type>
     <type>QRegularExpression::MatchOptions</type>
     <type>QRegularExpression::MatchType</type>
@@ -419,7 +419,7 @@
     <type>QPointF</type>
     <type>QPolygon</type>
     <type>QPolygonF</type>
-    <type>QPrinterInfo</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinterInfo</type>
     <type>QProcessEnvironment</type>
     <type>QRadialGradient</type>
     <type>QRect</type>
@@ -483,7 +483,7 @@
     <type>QPanGesture</type>
     <type>QPinchGesture</type>
     <type>QPointerEvent</type>
-    <type>QPrinter</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrinter</type>
     <type>QProcess</type>
     <type>QQmlEngine</type>
     <type>QQmlContext</type>
@@ -527,7 +527,7 @@
     <type>QAbstractItemDelegate</type>
     <type>QAbstractItemModel</type>
     <type>QAbstractItemView</type>
-    <type>QAbstractPrintDialog</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QAbstractPrintDialog</type>
     <type>QAbstractScrollArea</type>
     <type>QAbstractSlider</type>
     <type>QAbstractSpinBox</type>
@@ -586,12 +586,12 @@
     <type>QMessageBox</type>
     <type>QMimeData</type>
     <type>QPlainTextEdit</type>
-    <type>QPrintDialog</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QPrintDialog</type>
     <type>QProgressBar</type>
     <type>QProgressDialog</type>
     <type>QPushButton</type>
-    <type>QQuickView</type>
-    <type>QQuickWidget</type>
+    <type ifdef="QT_QUICK_LIB">QQuickView</type>
+    <type ifdef="QT_QUICKWIDGETS_LIB">QQuickWidget</type>
     <type>QRadioButton</type>
     <type>QRegularExpressionValidator</type>
     <type min-qt-version="0x060700">QRhiWidget</type>
@@ -644,10 +644,10 @@
     <type>QList&lt;QPoint&gt;</type>
     <type>QList&lt;QPointF&gt;</type>
     <type>QList&lt;QPolygonF&gt;</type>
-    <type>QList&lt;QPrinter::ColorMode&gt;</type>
-    <type>QList&lt;QPrinter::DuplexMode&gt;</type>
-    <type>QList&lt;QPrinter::PaperSource&gt;</type>
-    <type>QList&lt;QPrinterInfo&gt;</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QList&lt;QPrinter::ColorMode&gt;</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QList&lt;QPrinter::DuplexMode&gt;</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QList&lt;QPrinter::PaperSource&gt;</type>
+    <type ifdef="QT_PRINTSUPPORT_LIB">QList&lt;QPrinterInfo&gt;</type>
     <type>QList&lt;QRect&gt;</type>
     <type>QList&lt;QRectF&gt;</type>
     <type>QList&lt;QSize&gt;</type>

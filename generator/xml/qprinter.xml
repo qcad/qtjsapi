@@ -4,7 +4,7 @@
   <class_decl name="QPrintEngine" />
   <class_decl name="QPrinterInfo" />
   <class_decl name="QPageSize" />
-  <class name="QPrinter">
+  <class name="QPrinter" ifdef="QT_PRINTSUPPORT_LIB">
     <super_list>
       <super name="QPaintDevice" />
       <super name="QPagedPaintDevice" />

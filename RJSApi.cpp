@@ -299,7 +299,9 @@ void RJSApi::init() {
     QFormLayout_Wrapper::init(*this);
     QSize_Wrapper::init(*this);
     QSizeF_Wrapper::init(*this);
+#ifdef QT_PRINTSUPPORT_LIB
     QPrinter_Wrapper::init(*this);
+#endif
     QDialog_Wrapper::init(*this);
     QProgressDialog_Wrapper::init(*this);
     QPageSize_Wrapper::init(*this);
@@ -426,7 +428,9 @@ void RJSApi::init() {
     QStandardItem_Wrapper::init(*this);
     QLine_Wrapper::init(*this);
     QLineF_Wrapper::init(*this);
+#ifdef QT_PRINTSUPPORT_LIB
     QPrintDialog_Wrapper::init(*this);
+#endif
     QPainterPath_Wrapper::init(*this);
     QItemSelection_Wrapper::init(*this);
     QItemSelectionModel_Wrapper::init(*this);
@@ -463,8 +467,12 @@ void RJSApi::init() {
     QQmlContext_Wrapper::init(*this);
     QQmlEngine_Wrapper::init(*this);
     QQmlApplicationEngine_Wrapper::init(*this);
+#ifdef QT_QUICKWIDGETS_LIB
     QQuickWidget_Wrapper::init(*this);
+#endif
+#ifdef QT_QUICK_LIB
     QQuickView_Wrapper::init(*this);
+#endif
 
 
     // set engine property to QQmlApplicationEngine if appropriate
