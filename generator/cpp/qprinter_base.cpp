@@ -9,3 +9,6 @@
   //#include "qprinter_wrapper.h"
   //#include "header_cpp.h"
     
+    #ifdef QT_PRINTSUPPORT_LIB
+    #endif
+  

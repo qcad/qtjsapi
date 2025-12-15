@@ -5,6 +5,7 @@
   //#include "qquickviewwrapper.h"
   //#include "header_cpp.h"
   
+    #ifdef QT_QUICK_LIB
     #include "qquickview_wrapper.h"
 
   
@@ -8403,6 +8404,8 @@ QVariantMap a1_cpp;
 
 
   // protected overwritten functions / events and their public invokable counterparts:
+  
+    #endif
   
     #include "moc_qquickview_wrapper.cpp"
   

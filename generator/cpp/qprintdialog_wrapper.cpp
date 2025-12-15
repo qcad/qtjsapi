@@ -5,6 +5,7 @@
   //#include "qprintdialogwrapper.h"
   //#include "header_cpp.h"
   
+    #ifdef QT_PRINTSUPPORT_LIB
     #include "qprintdialog_wrapper.h"
 
   
@@ -18515,6 +18516,8 @@ bool a1_cpp;
 
 
   // protected overwritten functions / events and their public invokable counterparts:
+  
+    #endif
   
     #include "moc_qprintdialog_wrapper.cpp"
   

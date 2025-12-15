@@ -1026,6 +1026,7 @@
           return v.isArray();
       }
     
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QList_QPrinter_ColorMode(RJSApi& handler, const QList<QPrinter::ColorMode>& v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine->newArray((uint)v.length());
@@ -1063,6 +1064,9 @@
           return v.isArray();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QList_QPrinter_DuplexMode(RJSApi& handler, const QList<QPrinter::DuplexMode>& v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine->newArray((uint)v.length());
@@ -1100,6 +1104,9 @@
           return v.isArray();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QList_QPrinter_PaperSource(RJSApi& handler, const QList<QPrinter::PaperSource>& v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine->newArray((uint)v.length());
@@ -1137,6 +1144,9 @@
           return v.isArray();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QList_QPrinterInfo(RJSApi& handler, const QList<QPrinterInfo>& v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine->newArray((uint)v.length());
@@ -1174,6 +1184,8 @@
           return v.isArray();
       }
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QList_QRect(RJSApi& handler, const QList<QRect>& v) {
           QJSEngine* engine = handler.getEngine();
           QJSValue ret = engine->newArray((uint)v.length());

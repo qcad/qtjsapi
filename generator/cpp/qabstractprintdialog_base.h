@@ -12,6 +12,7 @@
     
         #include "../RJSHelper.h"
       
+    #ifdef QT_PRINTSUPPORT_LIB
     #include <QPrinter>
   
     #include <QQmlEngine>
@@ -202,5 +203,7 @@ QAbstractPrintDialog_Base
 
     };
     
+    #endif
+  
   #endif
   

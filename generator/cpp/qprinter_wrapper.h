@@ -12,6 +12,7 @@
 
     #include "RJSWrapperObj.h"
   
+    #ifdef QT_PRINTSUPPORT_LIB
         #include <QPaintEngine>
       
         #include <QPrintEngine>
@@ -1911,6 +1912,8 @@ DuplexShortSide = QPrinter::DuplexShortSide,
 
     Q_DECLARE_INTERFACE(QPrinter_Wrapper, "org.qcad.QPrinter_Wrapper")
 
+  
+    #endif
   
   #endif
   

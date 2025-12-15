@@ -125,9 +125,12 @@
                 return (QPaintDevice*)(QPixmap*)vp;
               }
               
+                #ifdef QT_PRINTSUPPORT_LIB
               if (t==RJSType_QPrinter::getIdStatic()) {
                 return (QPaintDevice*)(QPrinter*)vp;
               }
+              
+                #endif
               
               if (t==RJSType_QTreeView::getIdStatic()) {
                 return (QPaintDevice*)(QTreeView*)vp;

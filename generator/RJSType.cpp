@@ -1001,6 +1001,7 @@
 
 
       
+      #ifdef QT_PRINTSUPPORT_LIB
       int RJSType_QPrinterInfo::id = -1;
 
       int RJSType_QPrinterInfo::getId() const {
@@ -1016,6 +1017,8 @@
 
 
       
+      #endif
+    
       int RJSType_QProcessEnvironment::id = -1;
 
       int RJSType_QProcessEnvironment::getId() const {
@@ -1903,6 +1906,7 @@
 
 
       
+      #ifdef QT_PRINTSUPPORT_LIB
       int RJSType_QPrinter::id = -1;
 
       int RJSType_QPrinter::getId() const {
@@ -1918,6 +1922,8 @@
 
 
       
+      #endif
+    
       int RJSType_QProcess::id = -1;
 
       int RJSType_QProcess::getId() const {
@@ -2490,6 +2496,7 @@
 
 
       
+      #ifdef QT_PRINTSUPPORT_LIB
       int RJSType_QAbstractPrintDialog::id = -1;
 
       int RJSType_QAbstractPrintDialog::getId() const {
@@ -2505,6 +2512,8 @@
 
 
       
+      #endif
+    
       int RJSType_QAbstractScrollArea::id = -1;
 
       int RJSType_QAbstractScrollArea::getId() const {
@@ -3375,6 +3384,7 @@
 
 
       
+      #ifdef QT_PRINTSUPPORT_LIB
       int RJSType_QPrintDialog::id = -1;
 
       int RJSType_QPrintDialog::getId() const {
@@ -3390,6 +3400,8 @@
 
 
       
+      #endif
+    
       int RJSType_QProgressBar::id = -1;
 
       int RJSType_QProgressBar::getId() const {
@@ -3435,6 +3447,7 @@
 
 
       
+      #ifdef QT_QUICK_LIB
       int RJSType_QQuickView::id = -1;
 
       int RJSType_QQuickView::getId() const {
@@ -3450,6 +3463,9 @@
 
 
       
+      #endif
+    
+      #ifdef QT_QUICKWIDGETS_LIB
       int RJSType_QQuickWidget::id = -1;
 
       int RJSType_QQuickWidget::getId() const {
@@ -3465,6 +3481,8 @@
 
 
       
+      #endif
+    
       int RJSType_QRadioButton::id = -1;
 
       int RJSType_QRadioButton::getId() const {

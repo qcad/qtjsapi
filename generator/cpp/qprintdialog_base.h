@@ -12,6 +12,7 @@
     
         #include "../RJSHelper.h"
       
+    #ifdef QT_PRINTSUPPORT_LIB
     #include <QPushButton>
   
     #include <QPrinter>
@@ -247,5 +248,7 @@ QPrintDialog_Base
 
     };
     
+    #endif
+  
   #endif
   

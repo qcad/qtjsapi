@@ -5,6 +5,7 @@
   //#include "qprinterwrapper.h"
   //#include "header_cpp.h"
   
+    #ifdef QT_PRINTSUPPORT_LIB
     #include "qprinter_wrapper.h"
 
   
@@ -4565,6 +4566,8 @@ QPrinter::PrintRange a1_cpp;
 
 
   // protected overwritten functions / events and their public invokable counterparts:
+  
+    #endif
   
     #include "moc_qprinter_wrapper.cpp"
   

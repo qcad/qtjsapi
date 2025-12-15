@@ -12,6 +12,7 @@
     
         #include "../RJSHelper.h"
       
+    #ifdef QT_QUICKWIDGETS_LIB
     #include <QQmlEngine>
   
     #include <QQmlContext>
@@ -233,5 +234,7 @@ QQuickWidget_Base
 
     };
     
+    #endif
+  
   #endif
   

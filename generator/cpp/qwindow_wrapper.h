@@ -186,9 +186,12 @@
           
             // check if pointer points to derrived type:
             
+                #ifdef QT_QUICK_LIB
               if (t==RJSType_QQuickView::getIdStatic()) {
                 return (QWindow*)(QQuickView*)vp;
               }
+              
+                #endif
               
 
           // hook for modules to cast from other types to base QWindow:

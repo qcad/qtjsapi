@@ -5,6 +5,7 @@
   //#include "qtsqlglobalwrapper.h"
   //#include "header_cpp.h"
   
+    #ifdef QT_SQL_LIB
     #include "qtsqlglobal_wrapper.h"
 
   
@@ -62,6 +63,8 @@
 
 
   // protected overwritten functions / events and their public invokable counterparts:
+  
+    #endif
   
     #include "moc_qtsqlglobal_wrapper.cpp"
   

@@ -12,6 +12,7 @@
 
     #include "RJSWrapperObj.h"
   
+    #ifdef QT_QUICK_LIB
         #include <QQmlEngine>
       
         #include <QQmlContext>
@@ -3385,6 +3386,8 @@ Error = QQuickView::Error,
 
     Q_DECLARE_INTERFACE(QQuickView_Wrapper, "org.qcad.QQuickView_Wrapper")
 
+  
+    #endif
   
   #endif
   

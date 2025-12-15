@@ -9,3 +9,6 @@
   //#include "qquickview_wrapper.h"
   //#include "header_cpp.h"
     
+    #ifdef QT_QUICK_LIB
+    #endif
+  

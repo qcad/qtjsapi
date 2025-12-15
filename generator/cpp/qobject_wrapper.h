@@ -176,9 +176,12 @@
                 return (QObject*)(QAbstractItemView*)vp;
               }
               
+                #ifdef QT_PRINTSUPPORT_LIB
               if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
                 return (QObject*)(QAbstractPrintDialog*)vp;
               }
+              
+                #endif
               
               if (t==RJSType_QAbstractScrollArea::getIdStatic()) {
                 return (QObject*)(QAbstractScrollArea*)vp;
@@ -404,9 +407,12 @@
                 return (QObject*)(QPlainTextEdit*)vp;
               }
               
+                #ifdef QT_PRINTSUPPORT_LIB
               if (t==RJSType_QPrintDialog::getIdStatic()) {
                 return (QObject*)(QPrintDialog*)vp;
               }
+              
+                #endif
               
               if (t==RJSType_QProcess::getIdStatic()) {
                 return (QObject*)(QProcess*)vp;
@@ -436,13 +442,19 @@
                 return (QObject*)(QQmlEngine*)vp;
               }
               
+                #ifdef QT_QUICK_LIB
               if (t==RJSType_QQuickView::getIdStatic()) {
                 return (QObject*)(QQuickView*)vp;
               }
               
+                #endif
+              
+                #ifdef QT_QUICKWIDGETS_LIB
               if (t==RJSType_QQuickWidget::getIdStatic()) {
                 return (QObject*)(QQuickWidget*)vp;
               }
+              
+                #endif
               
               if (t==RJSType_QRadioButton::getIdStatic()) {
                 return (QObject*)(QRadioButton*)vp;

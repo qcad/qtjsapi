@@ -7157,6 +7157,7 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QPolygonF::getIdStatic())).toBool();
       }
     
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinterInfo(RJSApi& handler, const QPrinterInfo* v) {
           QJSEngine* engine = handler.getEngine();
           QPrinterInfo_Wrapper* ret;
@@ -7273,6 +7274,8 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QPrinterInfo::getIdStatic())).toBool();
       }
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QProcessEnvironment(RJSApi& handler, const QProcessEnvironment* v) {
           QJSEngine* engine = handler.getEngine();
           QProcessEnvironment_Wrapper* ret;

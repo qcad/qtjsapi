@@ -12,6 +12,7 @@
     
         #include "../RJSHelper.h"
       
+    #ifdef QT_QUICK_LIB
     #include <QQmlEngine>
   
     #include <QQmlContext>
@@ -27,5 +28,7 @@
     
         #include <QQuickView>
       
+    #endif
+  
   #endif
   

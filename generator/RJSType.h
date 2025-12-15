@@ -1869,6 +1869,7 @@
           static int id;
       };
     
+      #ifdef QT_PRINTSUPPORT_LIB
       class QTJSAPI_EXPORT  RJSType_QPrinterInfo : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -1896,6 +1897,8 @@
       private:
           static int id;
       };
+    
+      #endif
     
       class QTJSAPI_EXPORT  RJSType_QProcessEnvironment : public RJSTypeEnum {
           Q_OBJECT
@@ -3551,6 +3554,7 @@
           static int id;
       };
     
+      #ifdef QT_PRINTSUPPORT_LIB
       class QTJSAPI_EXPORT  RJSType_QPrinter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -3578,6 +3582,8 @@
       private:
           static int id;
       };
+    
+      #endif
     
       class QTJSAPI_EXPORT  RJSType_QProcess : public RJSTypeEnum {
           Q_OBJECT
@@ -4645,6 +4651,7 @@
           static int id;
       };
     
+      #ifdef QT_PRINTSUPPORT_LIB
       class QTJSAPI_EXPORT  RJSType_QAbstractPrintDialog : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -4672,6 +4679,8 @@
       private:
           static int id;
       };
+    
+      #endif
     
       class QTJSAPI_EXPORT  RJSType_QAbstractScrollArea : public RJSTypeEnum {
           Q_OBJECT
@@ -6297,6 +6306,7 @@
           static int id;
       };
     
+      #ifdef QT_PRINTSUPPORT_LIB
       class QTJSAPI_EXPORT  RJSType_QPrintDialog : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -6324,6 +6334,8 @@
       private:
           static int id;
       };
+    
+      #endif
     
       class QTJSAPI_EXPORT  RJSType_QProgressBar : public RJSTypeEnum {
           Q_OBJECT
@@ -6409,6 +6421,7 @@
           static int id;
       };
     
+      #ifdef QT_QUICK_LIB
       class QTJSAPI_EXPORT  RJSType_QQuickView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -6437,6 +6450,9 @@
           static int id;
       };
     
+      #endif
+    
+      #ifdef QT_QUICKWIDGETS_LIB
       class QTJSAPI_EXPORT  RJSType_QQuickWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -6464,6 +6480,8 @@
       private:
           static int id;
       };
+    
+      #endif
     
       class QTJSAPI_EXPORT  RJSType_QRadioButton : public RJSTypeEnum {
           Q_OBJECT

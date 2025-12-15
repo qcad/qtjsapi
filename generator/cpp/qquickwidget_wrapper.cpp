@@ -5,6 +5,7 @@
   //#include "qquickwidgetwrapper.h"
   //#include "header_cpp.h"
   
+    #ifdef QT_QUICKWIDGETS_LIB
     #include "qquickwidget_wrapper.h"
 
   
@@ -17358,6 +17359,8 @@ QUrl a1_cpp;
 
 
   // protected overwritten functions / events and their public invokable counterparts:
+  
+    #endif
   
     #include "moc_qquickwidget_wrapper.cpp"
   

@@ -12,6 +12,7 @@
 
     #include "RJSWrapperObj.h"
   
+    #ifdef QT_QUICKWIDGETS_LIB
         #include <QQmlEngine>
       
         #include <QQmlContext>
@@ -6002,6 +6003,8 @@ Error = QQuickWidget::Error,
 
     Q_DECLARE_INTERFACE(QQuickWidget_Wrapper, "org.qcad.QQuickWidget_Wrapper")
 
+  
+    #endif
   
   #endif
   

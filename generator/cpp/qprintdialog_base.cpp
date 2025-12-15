@@ -9,6 +9,7 @@
   //#include "qprintdialog_wrapper.h"
   //#include "header_cpp.h"
     
+    #ifdef QT_PRINTSUPPORT_LIB
     // Base class for QPrintDialog
 
     // constructors:
@@ -369,3 +370,5 @@ a1
 
       // public pure-virtual functions:
       
+    #endif
+  

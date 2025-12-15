@@ -9,6 +9,7 @@
   //#include "qquickwidget_wrapper.h"
   //#include "header_cpp.h"
     
+    #ifdef QT_QUICKWIDGETS_LIB
     // Base class for QQuickWidget
 
     // constructors:
@@ -349,3 +350,5 @@ event
 
       // public pure-virtual functions:
       
+    #endif
+  

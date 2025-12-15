@@ -406,9 +406,12 @@
           
             // check if pointer points to derrived type:
             
+                #ifdef QT_PRINTSUPPORT_LIB
               if (t==RJSType_QAbstractPrintDialog::getIdStatic()) {
                 return (QDialog*)(QAbstractPrintDialog*)vp;
               }
+              
+                #endif
               
               if (t==RJSType_QColorDialog::getIdStatic()) {
                 return (QDialog*)(QColorDialog*)vp;
@@ -426,9 +429,12 @@
                 return (QDialog*)(QMessageBox*)vp;
               }
               
+                #ifdef QT_PRINTSUPPORT_LIB
               if (t==RJSType_QPrintDialog::getIdStatic()) {
                 return (QDialog*)(QPrintDialog*)vp;
               }
+              
+                #endif
               
               if (t==RJSType_QProgressDialog::getIdStatic()) {
                 return (QDialog*)(QProgressDialog*)vp;

@@ -12,6 +12,7 @@
 
     #include "RJSWrapperObj.h"
   
+    #ifdef QT_PRINTSUPPORT_LIB
         #include <QPushButton>
       
         #include <QPrinter>
@@ -6424,6 +6425,8 @@ PrintCurrentPage = QPrintDialog::PrintCurrentPage,
 
     Q_DECLARE_INTERFACE(QPrintDialog_Wrapper, "org.qcad.QPrintDialog_Wrapper")
 
+  
+    #endif
   
   #endif
   

@@ -587,6 +587,7 @@
         return v.isNumber();
       }
     
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QAbstractPrintDialog_PrintDialogOptions(RJSApi& handler, QAbstractPrintDialog::PrintDialogOptions v) {
         return QJSValue(v);
       }
@@ -608,6 +609,8 @@
         return v.isNumber();
       }
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QColorDialog_ColorDialogOptions(RJSApi& handler, QColorDialog::ColorDialogOptions v) {
         return QJSValue(v);
       }
@@ -1709,6 +1712,7 @@
         return v.isNumber();
       }
     
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QAbstractPrintDialog_PrintDialogOption(RJSApi& handler, QAbstractPrintDialog::PrintDialogOption v) {
         return QJSValue(v);
       }
@@ -1731,6 +1735,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QAbstractPrintDialog_PrintRange(RJSApi& handler, QAbstractPrintDialog::PrintRange v) {
         return QJSValue(v);
       }
@@ -1753,6 +1760,8 @@
         return v.isNumber();
       }
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QAbstractScrollArea_SizeAdjustPolicy(RJSApi& handler, QAbstractScrollArea::SizeAdjustPolicy v) {
         return QJSValue(v);
       }
@@ -4455,6 +4464,7 @@
         return v.isNumber();
       }
     
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter_ColorMode(RJSApi& handler, QPrinter::ColorMode v) {
         return QJSValue(v);
       }
@@ -4477,6 +4487,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter_DuplexMode(RJSApi& handler, QPrinter::DuplexMode v) {
         return QJSValue(v);
       }
@@ -4499,6 +4512,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter_OutputFormat(RJSApi& handler, QPrinter::OutputFormat v) {
         return QJSValue(v);
       }
@@ -4521,6 +4537,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter_PageOrder(RJSApi& handler, QPrinter::PageOrder v) {
         return QJSValue(v);
       }
@@ -4543,6 +4562,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter_PaperSource(RJSApi& handler, QPrinter::PaperSource v) {
         return QJSValue(v);
       }
@@ -4565,6 +4587,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter_PrintRange(RJSApi& handler, QPrinter::PrintRange v) {
         return QJSValue(v);
       }
@@ -4587,6 +4612,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter_PrinterMode(RJSApi& handler, QPrinter::PrinterMode v) {
         return QJSValue(v);
       }
@@ -4609,6 +4637,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter_PrinterState(RJSApi& handler, QPrinter::PrinterState v) {
         return QJSValue(v);
       }
@@ -4631,6 +4662,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter_Unit(RJSApi& handler, QPrinter::Unit v) {
         return QJSValue(v);
       }
@@ -4653,6 +4687,8 @@
         return v.isNumber();
       }
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QProcess_ExitStatus(RJSApi& handler, QProcess::ExitStatus v) {
         return QJSValue(v);
       }
@@ -4829,6 +4865,7 @@
         return v.isNumber();
       }
     
+    #ifdef QT_QUICK_LIB
       QJSValue RJSHelper::cpp2js_QQuickView_ResizeMode(RJSApi& handler, QQuickView::ResizeMode v) {
         return QJSValue(v);
       }
@@ -4851,6 +4888,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_QUICK_LIB
       QJSValue RJSHelper::cpp2js_QQuickView_Status(RJSApi& handler, QQuickView::Status v) {
         return QJSValue(v);
       }
@@ -4873,6 +4913,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_QUICKWIDGETS_LIB
       QJSValue RJSHelper::cpp2js_QQuickWidget_ResizeMode(RJSApi& handler, QQuickWidget::ResizeMode v) {
         return QJSValue(v);
       }
@@ -4895,6 +4938,9 @@
         return v.isNumber();
       }
     
+    #endif
+  
+    #ifdef QT_QUICKWIDGETS_LIB
       QJSValue RJSHelper::cpp2js_QQuickWidget_Status(RJSApi& handler, QQuickWidget::Status v) {
         return QJSValue(v);
       }
@@ -4917,6 +4963,8 @@
         return v.isNumber();
       }
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QRegion_RegionType(RJSApi& handler, QRegion::RegionType v) {
         return QJSValue(v);
       }

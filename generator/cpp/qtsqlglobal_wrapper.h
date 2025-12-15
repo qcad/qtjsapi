@@ -12,6 +12,7 @@
 
     #include "RJSWrapperObj.h"
   
+    #ifdef QT_SQL_LIB
     #include <QQmlEngine>
     
         #include "RJSType.h"
@@ -81,6 +82,8 @@ HighPrecision = QSql::HighPrecision,
 
     Q_DECLARE_INTERFACE(QSql_Wrapper, "org.qcad.QSql_Wrapper")
 
+  
+    #endif
   
   #endif
   

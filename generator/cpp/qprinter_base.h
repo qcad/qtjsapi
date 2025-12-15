@@ -12,6 +12,7 @@
     
         #include "../RJSHelper.h"
       
+    #ifdef QT_PRINTSUPPORT_LIB
     #include <QPaintEngine>
   
     #include <QPrintEngine>
@@ -25,5 +26,7 @@
     
         #include <QPrinter>
       
+    #endif
+  
   #endif
   

@@ -41,9 +41,12 @@
           
             // check if pointer points to derrived type:
             
+                #ifdef QT_PRINTSUPPORT_LIB
               if (t==RJSType_QPrinter::getIdStatic()) {
                 return (QPagedPaintDevice*)(QPrinter*)vp;
               }
+              
+                #endif
               
 
           // hook for modules to cast from other types to base QPagedPaintDevice:

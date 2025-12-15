@@ -9,10 +9,18 @@
       #include <QtGui>
       #include <QtWidgets>
       #include <QtXml>
+      #ifdef QT_QUICK_LIB
       #include <QtQuick>
+      #endif
+      #ifdef QT_QUICKWIDGETS_LIB
       #include <QtQuickWidgets>
+      #endif
+      #ifdef QT_PRINTSUPPORT_LIB
       #include <QtPrintSupport>
+      #endif
+      #ifdef QT_CORE5COMPAT_LIB
       #include <QtCore5Compat>
+      #endif
       #include <QtSvg>
       #include <QtUiTools>
 
@@ -216,11 +224,14 @@
           virtual QAbstractItemView* castToBase(int t, void* vp) = 0;
         };
         
+          #ifdef QT_PRINTSUPPORT_LIB
         // Base class for basecasters that can cast void* to base class QAbstractPrintDialog:
         class RJSBasecaster_QAbstractPrintDialog {
         public:
           virtual QAbstractPrintDialog* castToBase(int t, void* vp) = 0;
         };
+        
+          #endif
         
         // Base class for basecasters that can cast void* to base class QAbstractScrollArea:
         class RJSBasecaster_QAbstractScrollArea {
@@ -1146,17 +1157,23 @@
           virtual QPolygonF* castToBase(int t, void* vp) = 0;
         };
         
+          #ifdef QT_PRINTSUPPORT_LIB
         // Base class for basecasters that can cast void* to base class QPrintDialog:
         class RJSBasecaster_QPrintDialog {
         public:
           virtual QPrintDialog* castToBase(int t, void* vp) = 0;
         };
         
+          #endif
+        
+          #ifdef QT_PRINTSUPPORT_LIB
         // Base class for basecasters that can cast void* to base class QPrinter:
         class RJSBasecaster_QPrinter {
         public:
           virtual QPrinter* castToBase(int t, void* vp) = 0;
         };
+        
+          #endif
         
         // Base class for basecasters that can cast void* to base class QPrinterInfo:
         class RJSBasecaster_QPrinterInfo {
@@ -1212,17 +1229,23 @@
           virtual QQmlEngine* castToBase(int t, void* vp) = 0;
         };
         
+          #ifdef QT_QUICK_LIB
         // Base class for basecasters that can cast void* to base class QQuickView:
         class RJSBasecaster_QQuickView {
         public:
           virtual QQuickView* castToBase(int t, void* vp) = 0;
         };
         
+          #endif
+        
+          #ifdef QT_QUICKWIDGETS_LIB
         // Base class for basecasters that can cast void* to base class QQuickWidget:
         class RJSBasecaster_QQuickWidget {
         public:
           virtual QQuickWidget* castToBase(int t, void* vp) = 0;
         };
+        
+          #endif
         
         // Base class for basecasters that can cast void* to base class QRadioButton:
         class RJSBasecaster_QRadioButton {
@@ -1839,10 +1862,13 @@
       static QAbstractItemView::EditTriggers js2cpp_QAbstractItemView_EditTriggers(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractItemView_EditTriggers(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QAbstractPrintDialog_PrintDialogOptions(RJSApi& handler, QAbstractPrintDialog::PrintDialogOptions v);
       static QAbstractPrintDialog::PrintDialogOptions js2cpp_QAbstractPrintDialog_PrintDialogOptions(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractPrintDialog_PrintDialogOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QColorDialog_ColorDialogOptions(RJSApi& handler, QColorDialog::ColorDialogOptions v);
       static QColorDialog::ColorDialogOptions js2cpp_QColorDialog_ColorDialogOptions(RJSApi& handler, const QJSValue& v);
       static bool is_QColorDialog_ColorDialogOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -2051,14 +2077,20 @@
       static QAbstractItemView::SelectionMode js2cpp_QAbstractItemView_SelectionMode(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractItemView_SelectionMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QAbstractPrintDialog_PrintDialogOption(RJSApi& handler, QAbstractPrintDialog::PrintDialogOption v);
       static QAbstractPrintDialog::PrintDialogOption js2cpp_QAbstractPrintDialog_PrintDialogOption(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractPrintDialog_PrintDialogOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QAbstractPrintDialog_PrintRange(RJSApi& handler, QAbstractPrintDialog::PrintRange v);
       static QAbstractPrintDialog::PrintRange js2cpp_QAbstractPrintDialog_PrintRange(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractPrintDialog_PrintRange(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QAbstractScrollArea_SizeAdjustPolicy(RJSApi& handler, QAbstractScrollArea::SizeAdjustPolicy v);
       static QAbstractScrollArea::SizeAdjustPolicy js2cpp_QAbstractScrollArea_SizeAdjustPolicy(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractScrollArea_SizeAdjustPolicy(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -2551,42 +2583,69 @@
       static QPlainTextEdit::LineWrapMode js2cpp_QPlainTextEdit_LineWrapMode(RJSApi& handler, const QJSValue& v);
       static bool is_QPlainTextEdit_LineWrapMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter_ColorMode(RJSApi& handler, QPrinter::ColorMode v);
       static QPrinter::ColorMode js2cpp_QPrinter_ColorMode(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_ColorMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter_DuplexMode(RJSApi& handler, QPrinter::DuplexMode v);
       static QPrinter::DuplexMode js2cpp_QPrinter_DuplexMode(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_DuplexMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter_OutputFormat(RJSApi& handler, QPrinter::OutputFormat v);
       static QPrinter::OutputFormat js2cpp_QPrinter_OutputFormat(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_OutputFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter_PageOrder(RJSApi& handler, QPrinter::PageOrder v);
       static QPrinter::PageOrder js2cpp_QPrinter_PageOrder(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_PageOrder(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter_PaperSource(RJSApi& handler, QPrinter::PaperSource v);
       static QPrinter::PaperSource js2cpp_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter_PrintRange(RJSApi& handler, QPrinter::PrintRange v);
       static QPrinter::PrintRange js2cpp_QPrinter_PrintRange(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_PrintRange(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter_PrinterMode(RJSApi& handler, QPrinter::PrinterMode v);
       static QPrinter::PrinterMode js2cpp_QPrinter_PrinterMode(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_PrinterMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter_PrinterState(RJSApi& handler, QPrinter::PrinterState v);
       static QPrinter::PrinterState js2cpp_QPrinter_PrinterState(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_PrinterState(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter_Unit(RJSApi& handler, QPrinter::Unit v);
       static QPrinter::Unit js2cpp_QPrinter_Unit(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_Unit(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QProcess_ExitStatus(RJSApi& handler, QProcess::ExitStatus v);
       static QProcess::ExitStatus js2cpp_QProcess_ExitStatus(RJSApi& handler, const QJSValue& v);
       static bool is_QProcess_ExitStatus(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -2619,22 +2678,34 @@
       static QProgressBar::Direction js2cpp_QProgressBar_Direction(RJSApi& handler, const QJSValue& v);
       static bool is_QProgressBar_Direction(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_QUICK_LIB
       static QJSValue cpp2js_QQuickView_ResizeMode(RJSApi& handler, QQuickView::ResizeMode v);
       static QQuickView::ResizeMode js2cpp_QQuickView_ResizeMode(RJSApi& handler, const QJSValue& v);
       static bool is_QQuickView_ResizeMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_QUICK_LIB
       static QJSValue cpp2js_QQuickView_Status(RJSApi& handler, QQuickView::Status v);
       static QQuickView::Status js2cpp_QQuickView_Status(RJSApi& handler, const QJSValue& v);
       static bool is_QQuickView_Status(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_QUICKWIDGETS_LIB
       static QJSValue cpp2js_QQuickWidget_ResizeMode(RJSApi& handler, QQuickWidget::ResizeMode v);
       static QQuickWidget::ResizeMode js2cpp_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v);
       static bool is_QQuickWidget_ResizeMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_QUICKWIDGETS_LIB
       static QJSValue cpp2js_QQuickWidget_Status(RJSApi& handler, QQuickWidget::Status v);
       static QQuickWidget::Status js2cpp_QQuickWidget_Status(RJSApi& handler, const QJSValue& v);
       static bool is_QQuickWidget_Status(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QRegion_RegionType(RJSApi& handler, QRegion::RegionType v);
       static QRegion::RegionType js2cpp_QRegion_RegionType(RJSApi& handler, const QJSValue& v);
       static bool is_QRegion_RegionType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -3500,11 +3571,14 @@
       static QPolygonF js2cpp_QPolygonF(RJSApi& handler, const QJSValue& v);
       static bool is_QPolygonF(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinterInfo(RJSApi& handler, const QPrinterInfo* v);
       static QJSValue cpp2js_QPrinterInfo(RJSApi& handler, const QPrinterInfo& v);
       static QPrinterInfo js2cpp_QPrinterInfo(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinterInfo(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QProcessEnvironment(RJSApi& handler, const QProcessEnvironment* v);
       static QJSValue cpp2js_QProcessEnvironment(RJSApi& handler, const QProcessEnvironment& v);
       static QProcessEnvironment js2cpp_QProcessEnvironment(RJSApi& handler, const QJSValue& v);
@@ -3776,10 +3850,13 @@
       static QPointerEvent* js2cpp_QPointerEvent_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QPointerEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrinter(RJSApi& handler, QPrinter* v);
       static QPrinter* js2cpp_QPrinter_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QPrinter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QProcess(RJSApi& handler, QProcess* v);
       static QProcess* js2cpp_QProcess_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QProcess_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -3948,11 +4025,14 @@
       static QAbstractItemView* js2cpp_QAbstractItemView_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractItemView_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QAbstractPrintDialog(RJSApi& handler, QAbstractPrintDialog* v);
       static QJSValue cpp2js_QAbstractPrintDialog(RJSApi& handler, const QAbstractPrintDialog* v);
       static QAbstractPrintDialog* js2cpp_QAbstractPrintDialog_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractPrintDialog_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QAbstractScrollArea(RJSApi& handler, QAbstractScrollArea* v);
       static QJSValue cpp2js_QAbstractScrollArea(RJSApi& handler, const QAbstractScrollArea* v);
       static QAbstractScrollArea* js2cpp_QAbstractScrollArea_ptr(RJSApi& handler, const QJSValue& v);
@@ -4243,11 +4323,14 @@
       static QPlainTextEdit* js2cpp_QPlainTextEdit_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QPlainTextEdit_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QPrintDialog(RJSApi& handler, QPrintDialog* v);
       static QJSValue cpp2js_QPrintDialog(RJSApi& handler, const QPrintDialog* v);
       static QPrintDialog* js2cpp_QPrintDialog_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QPrintDialog_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QProgressBar(RJSApi& handler, QProgressBar* v);
       static QJSValue cpp2js_QProgressBar(RJSApi& handler, const QProgressBar* v);
       static QProgressBar* js2cpp_QProgressBar_ptr(RJSApi& handler, const QJSValue& v);
@@ -4263,16 +4346,22 @@
       static QPushButton* js2cpp_QPushButton_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QPushButton_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_QUICK_LIB
       static QJSValue cpp2js_QQuickView(RJSApi& handler, QQuickView* v);
       static QJSValue cpp2js_QQuickView(RJSApi& handler, const QQuickView* v);
       static QQuickView* js2cpp_QQuickView_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QQuickView_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_QUICKWIDGETS_LIB
       static QJSValue cpp2js_QQuickWidget(RJSApi& handler, QQuickWidget* v);
       static QJSValue cpp2js_QQuickWidget(RJSApi& handler, const QQuickWidget* v);
       static QQuickWidget* js2cpp_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QQuickWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QRadioButton(RJSApi& handler, QRadioButton* v);
       static QJSValue cpp2js_QRadioButton(RJSApi& handler, const QRadioButton* v);
       static QRadioButton* js2cpp_QRadioButton_ptr(RJSApi& handler, const QJSValue& v);
@@ -4512,22 +4601,34 @@
       static QList<QPolygonF> js2cpp_QList_QPolygonF(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QPolygonF(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QList_QPrinter_ColorMode(RJSApi& handler, const QList<QPrinter::ColorMode>& v);
       static QList<QPrinter::ColorMode> js2cpp_QList_QPrinter_ColorMode(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QPrinter_ColorMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QList_QPrinter_DuplexMode(RJSApi& handler, const QList<QPrinter::DuplexMode>& v);
       static QList<QPrinter::DuplexMode> js2cpp_QList_QPrinter_DuplexMode(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QPrinter_DuplexMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QList_QPrinter_PaperSource(RJSApi& handler, const QList<QPrinter::PaperSource>& v);
       static QList<QPrinter::PaperSource> js2cpp_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QPrinter_PaperSource(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
+    #ifdef QT_PRINTSUPPORT_LIB
       static QJSValue cpp2js_QList_QPrinterInfo(RJSApi& handler, const QList<QPrinterInfo>& v);
       static QList<QPrinterInfo> js2cpp_QList_QPrinterInfo(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QPrinterInfo(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #endif
+  
       static QJSValue cpp2js_QList_QRect(RJSApi& handler, const QList<QRect>& v);
       static QList<QRect> js2cpp_QList_QRect(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QRect(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);

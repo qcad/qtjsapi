@@ -554,7 +554,7 @@
                     return RJSHelper::cpp2js_QCheckBox(handler, o);
                 }
             }
-          
+            
             // downcast to QPushButton:
             {
                 QPushButton* o = qobject_cast<QPushButton*>(v);
@@ -562,7 +562,7 @@
                     return RJSHelper::cpp2js_QPushButton(handler, o);
                 }
             }
-          
+            
             // downcast to QRadioButton:
             {
                 QRadioButton* o = qobject_cast<QRadioButton*>(v);
@@ -570,7 +570,7 @@
                     return RJSHelper::cpp2js_QRadioButton(handler, o);
                 }
             }
-          
+            
             // downcast to QToolButton:
             {
                 QToolButton* o = qobject_cast<QToolButton*>(v);
@@ -578,7 +578,7 @@
                     return RJSHelper::cpp2js_QToolButton(handler, o);
                 }
             }
-          QAbstractButton_Wrapper* ret = nullptr;
+            QAbstractButton_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -691,7 +691,7 @@
                     return RJSHelper::cpp2js_QItemDelegate(handler, o);
                 }
             }
-          QAbstractItemDelegate_Wrapper* ret = nullptr;
+            QAbstractItemDelegate_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -804,7 +804,7 @@
                     return RJSHelper::cpp2js_QAbstractTableModel(handler, o);
                 }
             }
-          
+            
             // downcast to QAbstractListModel:
             {
                 QAbstractListModel* o = qobject_cast<QAbstractListModel*>(v);
@@ -812,7 +812,7 @@
                     return RJSHelper::cpp2js_QAbstractListModel(handler, o);
                 }
             }
-          
+            
             // downcast to QFileSystemModel:
             {
                 QFileSystemModel* o = qobject_cast<QFileSystemModel*>(v);
@@ -820,7 +820,7 @@
                     return RJSHelper::cpp2js_QFileSystemModel(handler, o);
                 }
             }
-          
+            
             // downcast to QStandardItemModel:
             {
                 QStandardItemModel* o = qobject_cast<QStandardItemModel*>(v);
@@ -828,7 +828,7 @@
                     return RJSHelper::cpp2js_QStandardItemModel(handler, o);
                 }
             }
-          QAbstractItemModel_Wrapper* ret = nullptr;
+            QAbstractItemModel_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -941,7 +941,7 @@
                     return RJSHelper::cpp2js_QHeaderView(handler, o);
                 }
             }
-          
+            
             // downcast to QListView:
             {
                 QListView* o = qobject_cast<QListView*>(v);
@@ -949,7 +949,7 @@
                     return RJSHelper::cpp2js_QListView(handler, o);
                 }
             }
-          
+            
             // downcast to QTableView:
             {
                 QTableView* o = qobject_cast<QTableView*>(v);
@@ -957,7 +957,7 @@
                     return RJSHelper::cpp2js_QTableView(handler, o);
                 }
             }
-          
+            
             // downcast to QTreeView:
             {
                 QTreeView* o = qobject_cast<QTreeView*>(v);
@@ -965,7 +965,7 @@
                     return RJSHelper::cpp2js_QTreeView(handler, o);
                 }
             }
-          QAbstractItemView_Wrapper* ret = nullptr;
+            QAbstractItemView_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -1069,8 +1069,10 @@
       }
 
     
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QAbstractPrintDialog(RJSApi& handler, QAbstractPrintDialog* v) {
           
+              #ifdef QT_PRINTSUPPORT_LIB
             // downcast to QPrintDialog:
             {
                 QPrintDialog* o = qobject_cast<QPrintDialog*>(v);
@@ -1078,7 +1080,9 @@
                     return RJSHelper::cpp2js_QPrintDialog(handler, o);
                 }
             }
-          QAbstractPrintDialog_Wrapper* ret = nullptr;
+            
+              #endif
+            QAbstractPrintDialog_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -1182,6 +1186,8 @@
       }
 
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QAbstractScrollArea(RJSApi& handler, QAbstractScrollArea* v) {
           
             // downcast to QAbstractItemView:
@@ -1191,7 +1197,7 @@
                     return RJSHelper::cpp2js_QAbstractItemView(handler, o);
                 }
             }
-          
+            
             // downcast to QMdiArea:
             {
                 QMdiArea* o = qobject_cast<QMdiArea*>(v);
@@ -1199,7 +1205,7 @@
                     return RJSHelper::cpp2js_QMdiArea(handler, o);
                 }
             }
-          
+            
             // downcast to QPlainTextEdit:
             {
                 QPlainTextEdit* o = qobject_cast<QPlainTextEdit*>(v);
@@ -1207,7 +1213,7 @@
                     return RJSHelper::cpp2js_QPlainTextEdit(handler, o);
                 }
             }
-          
+            
             // downcast to QScrollArea:
             {
                 QScrollArea* o = qobject_cast<QScrollArea*>(v);
@@ -1215,7 +1221,7 @@
                     return RJSHelper::cpp2js_QScrollArea(handler, o);
                 }
             }
-          
+            
             // downcast to QTextEdit:
             {
                 QTextEdit* o = qobject_cast<QTextEdit*>(v);
@@ -1223,7 +1229,7 @@
                     return RJSHelper::cpp2js_QTextEdit(handler, o);
                 }
             }
-          QAbstractScrollArea_Wrapper* ret = nullptr;
+            QAbstractScrollArea_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -1336,7 +1342,7 @@
                     return RJSHelper::cpp2js_QScrollBar(handler, o);
                 }
             }
-          
+            
             // downcast to QSlider:
             {
                 QSlider* o = qobject_cast<QSlider*>(v);
@@ -1344,7 +1350,7 @@
                     return RJSHelper::cpp2js_QSlider(handler, o);
                 }
             }
-          QAbstractSlider_Wrapper* ret = nullptr;
+            QAbstractSlider_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -1457,7 +1463,7 @@
                     return RJSHelper::cpp2js_QSpinBox(handler, o);
                 }
             }
-          
+            
             // downcast to QDoubleSpinBox:
             {
                 QDoubleSpinBox* o = qobject_cast<QDoubleSpinBox*>(v);
@@ -1465,7 +1471,7 @@
                     return RJSHelper::cpp2js_QDoubleSpinBox(handler, o);
                 }
             }
-          QAbstractSpinBox_Wrapper* ret = nullptr;
+            QAbstractSpinBox_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -1578,7 +1584,7 @@
                     return RJSHelper::cpp2js_QWidgetAction(handler, o);
                 }
             }
-          
+            
             // downcast to types derrived from QAction but defined in other modules:
             for (int i=0; i<downcasters_QAction.length(); i++) {
                 QJSValue dc = downcasters_QAction[i]->downcast(handler, v);
@@ -1917,7 +1923,7 @@
                     return RJSHelper::cpp2js_QHBoxLayout(handler, o);
                 }
             }
-          
+            
             // downcast to QVBoxLayout:
             {
                 QVBoxLayout* o = qobject_cast<QVBoxLayout*>(v);
@@ -1925,7 +1931,7 @@
                     return RJSHelper::cpp2js_QVBoxLayout(handler, o);
                 }
             }
-          QBoxLayout_Wrapper* ret = nullptr;
+            QBoxLayout_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -2563,7 +2569,7 @@
                     return RJSHelper::cpp2js_QFontComboBox(handler, o);
                 }
             }
-          
+            
             // downcast to types derrived from QComboBox but defined in other modules:
             for (int i=0; i<downcasters_QComboBox.length(); i++) {
                 QJSValue dc = downcasters_QComboBox[i]->downcast(handler, v);
@@ -2684,7 +2690,7 @@
                     return RJSHelper::cpp2js_QGuiApplication(handler, o);
                 }
             }
-          QCoreApplication_Wrapper* ret = nullptr;
+            QCoreApplication_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -2790,6 +2796,7 @@
     
       QJSValue RJSHelper::cpp2js_QDialog(RJSApi& handler, QDialog* v) {
           
+              #ifdef QT_PRINTSUPPORT_LIB
             // downcast to QAbstractPrintDialog:
             {
                 QAbstractPrintDialog* o = qobject_cast<QAbstractPrintDialog*>(v);
@@ -2797,7 +2804,9 @@
                     return RJSHelper::cpp2js_QAbstractPrintDialog(handler, o);
                 }
             }
-          
+            
+              #endif
+            
             // downcast to QColorDialog:
             {
                 QColorDialog* o = qobject_cast<QColorDialog*>(v);
@@ -2805,7 +2814,7 @@
                     return RJSHelper::cpp2js_QColorDialog(handler, o);
                 }
             }
-          
+            
             // downcast to QFileDialog:
             {
                 QFileDialog* o = qobject_cast<QFileDialog*>(v);
@@ -2813,7 +2822,7 @@
                     return RJSHelper::cpp2js_QFileDialog(handler, o);
                 }
             }
-          
+            
             // downcast to QInputDialog:
             {
                 QInputDialog* o = qobject_cast<QInputDialog*>(v);
@@ -2821,7 +2830,7 @@
                     return RJSHelper::cpp2js_QInputDialog(handler, o);
                 }
             }
-          
+            
             // downcast to QMessageBox:
             {
                 QMessageBox* o = qobject_cast<QMessageBox*>(v);
@@ -2829,7 +2838,7 @@
                     return RJSHelper::cpp2js_QMessageBox(handler, o);
                 }
             }
-          
+            
             // downcast to QProgressDialog:
             {
                 QProgressDialog* o = qobject_cast<QProgressDialog*>(v);
@@ -2837,7 +2846,7 @@
                     return RJSHelper::cpp2js_QProgressDialog(handler, o);
                 }
             }
-          QDialog_Wrapper* ret = nullptr;
+            QDialog_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -4331,7 +4340,7 @@
                     return RJSHelper::cpp2js_QAbstractScrollArea(handler, o);
                 }
             }
-          
+            
             // downcast to QLabel:
             {
                 QLabel* o = qobject_cast<QLabel*>(v);
@@ -4339,7 +4348,7 @@
                     return RJSHelper::cpp2js_QLabel(handler, o);
                 }
             }
-          
+            
             // downcast to QSplitter:
             {
                 QSplitter* o = qobject_cast<QSplitter*>(v);
@@ -4347,7 +4356,7 @@
                     return RJSHelper::cpp2js_QSplitter(handler, o);
                 }
             }
-          
+            
             // downcast to QStackedWidget:
             {
                 QStackedWidget* o = qobject_cast<QStackedWidget*>(v);
@@ -4355,7 +4364,7 @@
                     return RJSHelper::cpp2js_QStackedWidget(handler, o);
                 }
             }
-          
+            
             // downcast to types derrived from QFrame but defined in other modules:
             for (int i=0; i<downcasters_QFrame.length(); i++) {
                 QJSValue dc = downcasters_QFrame[i]->downcast(handler, v);
@@ -4791,7 +4800,7 @@
                     return RJSHelper::cpp2js_QGraphicsColorizeEffect(handler, o);
                 }
             }
-          
+            
             // downcast to QGraphicsBlurEffect:
             {
                 QGraphicsBlurEffect* o = qobject_cast<QGraphicsBlurEffect*>(v);
@@ -4799,7 +4808,7 @@
                     return RJSHelper::cpp2js_QGraphicsBlurEffect(handler, o);
                 }
             }
-          
+            
             // downcast to QGraphicsDropShadowEffect:
             {
                 QGraphicsDropShadowEffect* o = qobject_cast<QGraphicsDropShadowEffect*>(v);
@@ -4807,7 +4816,7 @@
                     return RJSHelper::cpp2js_QGraphicsDropShadowEffect(handler, o);
                 }
             }
-          
+            
             // downcast to QGraphicsOpacityEffect:
             {
                 QGraphicsOpacityEffect* o = qobject_cast<QGraphicsOpacityEffect*>(v);
@@ -4815,7 +4824,7 @@
                     return RJSHelper::cpp2js_QGraphicsOpacityEffect(handler, o);
                 }
             }
-          QGraphicsEffect_Wrapper* ret = nullptr;
+            QGraphicsEffect_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -5243,7 +5252,7 @@
                     return RJSHelper::cpp2js_QApplication(handler, o);
                 }
             }
-          QGuiApplication_Wrapper* ret = nullptr;
+            QGuiApplication_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -5566,7 +5575,7 @@
                     return RJSHelper::cpp2js_QBuffer(handler, o);
                 }
             }
-          
+            
             // downcast to QFile:
             {
                 QFile* o = qobject_cast<QFile*>(v);
@@ -5574,7 +5583,7 @@
                     return RJSHelper::cpp2js_QFile(handler, o);
                 }
             }
-          
+            
             // downcast to QFileDevice:
             {
                 QFileDevice* o = qobject_cast<QFileDevice*>(v);
@@ -5582,7 +5591,7 @@
                     return RJSHelper::cpp2js_QFileDevice(handler, o);
                 }
             }
-          
+            
             // downcast to QProcess:
             {
                 QProcess* o = qobject_cast<QProcess*>(v);
@@ -5590,7 +5599,7 @@
                     return RJSHelper::cpp2js_QProcess(handler, o);
                 }
             }
-          QIODevice_Wrapper* ret = nullptr;
+            QIODevice_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -6341,7 +6350,7 @@
                     return RJSHelper::cpp2js_QBoxLayout(handler, o);
                 }
             }
-          
+            
             // downcast to QFormLayout:
             {
                 QFormLayout* o = qobject_cast<QFormLayout*>(v);
@@ -6349,7 +6358,7 @@
                     return RJSHelper::cpp2js_QFormLayout(handler, o);
                 }
             }
-          
+            
             // downcast to QGridLayout:
             {
                 QGridLayout* o = qobject_cast<QGridLayout*>(v);
@@ -6357,7 +6366,7 @@
                     return RJSHelper::cpp2js_QGridLayout(handler, o);
                 }
             }
-          
+            
             // downcast to QStackedLayout:
             {
                 QStackedLayout* o = qobject_cast<QStackedLayout*>(v);
@@ -6365,7 +6374,7 @@
                     return RJSHelper::cpp2js_QStackedLayout(handler, o);
                 }
             }
-          
+            
             // downcast to types derrived from QLayout but defined in other modules:
             for (int i=0; i<downcasters_QLayout.length(); i++) {
                 QJSValue dc = downcasters_QLayout[i]->downcast(handler, v);
@@ -6599,7 +6608,7 @@
                     return RJSHelper::cpp2js_QListWidget(handler, o);
                 }
             }
-          
+            
             // downcast to types derrived from QListView but defined in other modules:
             for (int i=0; i<downcasters_QListView.length(); i++) {
                 QJSValue dc = downcasters_QListView[i]->downcast(handler, v);
@@ -7688,6 +7697,7 @@
       }
 
     
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrintDialog(RJSApi& handler, QPrintDialog* v) {
           QPrintDialog_Wrapper* ret = nullptr;
           bool existing = false;
@@ -7793,6 +7803,8 @@
       }
 
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QProgressBar(RJSApi& handler, QProgressBar* v) {
           QProgressBar_Wrapper* ret = nullptr;
           bool existing = false;
@@ -8108,6 +8120,7 @@
       }
 
     
+    #ifdef QT_QUICK_LIB
       QJSValue RJSHelper::cpp2js_QQuickView(RJSApi& handler, QQuickView* v) {
           QQuickView_Wrapper* ret = nullptr;
           bool existing = false;
@@ -8213,6 +8226,9 @@
       }
 
     
+    #endif
+  
+    #ifdef QT_QUICKWIDGETS_LIB
       QJSValue RJSHelper::cpp2js_QQuickWidget(RJSApi& handler, QQuickWidget* v) {
           QQuickWidget_Wrapper* ret = nullptr;
           bool existing = false;
@@ -8318,6 +8334,8 @@
       }
 
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QRadioButton(RJSApi& handler, QRadioButton* v) {
           QRadioButton_Wrapper* ret = nullptr;
           bool existing = false;
@@ -10543,7 +10561,7 @@
                     return RJSHelper::cpp2js_QTableWidget(handler, o);
                 }
             }
-          QTableView_Wrapper* ret = nullptr;
+            QTableView_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -10979,7 +10997,7 @@
                     return RJSHelper::cpp2js_QTextBrowser(handler, o);
                 }
             }
-          QTextEdit_Wrapper* ret = nullptr;
+            QTextEdit_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -11528,7 +11546,7 @@
                     return RJSHelper::cpp2js_QTreeWidget(handler, o);
                 }
             }
-          QTreeView_Wrapper* ret = nullptr;
+            QTreeView_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -11859,7 +11877,7 @@
                     return RJSHelper::cpp2js_QIntValidator(handler, o);
                 }
             }
-          
+            
             // downcast to QDoubleValidator:
             {
                 QDoubleValidator* o = qobject_cast<QDoubleValidator*>(v);
@@ -11867,7 +11885,7 @@
                     return RJSHelper::cpp2js_QDoubleValidator(handler, o);
                 }
             }
-          
+            
             // downcast to QRegularExpressionValidator:
             {
                 QRegularExpressionValidator* o = qobject_cast<QRegularExpressionValidator*>(v);
@@ -11875,7 +11893,7 @@
                     return RJSHelper::cpp2js_QRegularExpressionValidator(handler, o);
                 }
             }
-          QValidator_Wrapper* ret = nullptr;
+            QValidator_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -12086,6 +12104,7 @@
     
       QJSValue RJSHelper::cpp2js_QWindow(RJSApi& handler, QWindow* v) {
           
+              #ifdef QT_QUICK_LIB
             // downcast to QQuickView:
             {
                 QQuickView* o = qobject_cast<QQuickView*>(v);
@@ -12093,7 +12112,9 @@
                     return RJSHelper::cpp2js_QQuickView(handler, o);
                 }
             }
-          QWindow_Wrapper* ret = nullptr;
+            
+              #endif
+            QWindow_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:

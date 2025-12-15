@@ -3203,6 +3203,7 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QPointerEvent::getIdStatic())).toBool();
       }
     
+    #ifdef QT_PRINTSUPPORT_LIB
       QJSValue RJSHelper::cpp2js_QPrinter(RJSApi& handler, QPrinter* v) {
 
           
@@ -3277,6 +3278,8 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QPrinter::getIdStatic())).toBool();
       }
     
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QProcess(RJSApi& handler, QProcess* v) {
 
           

@@ -12,6 +12,7 @@
 
     #include "RJSWrapperObj.h"
   
+    #ifdef QT_PRINTSUPPORT_LIB
         #include <QPrinter>
       
     #include <QQmlEngine>
@@ -406,9 +407,12 @@
           
             // check if pointer points to derrived type:
             
+                #ifdef QT_PRINTSUPPORT_LIB
               if (t==RJSType_QPrintDialog::getIdStatic()) {
                 return (QAbstractPrintDialog*)(QPrintDialog*)vp;
               }
+              
+                #endif
               
 
           // hook for modules to cast from other types to base QAbstractPrintDialog:
@@ -6276,6 +6280,8 @@ PrintCurrentPage = QAbstractPrintDialog::PrintCurrentPage,
 
     Q_DECLARE_INTERFACE(QAbstractPrintDialog_Wrapper, "org.qcad.QAbstractPrintDialog_Wrapper")
 
+  
+    #endif
   
   #endif
   
