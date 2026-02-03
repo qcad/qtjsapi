@@ -312,12 +312,18 @@ void RJSTools::print(const QJSValue& args) {
     //fprintf(stdout, "RJSTools::debug\n");
     //fflush(stdout);
 
+    if (args.property("length").toInt()==0) {
+        printf("\n");
+        return;
+    }
+
     //QDebug deb = qDebug();
     for (int i=0; i<args.property("length").toInt(); i++) {
         //deb << args.property(i).toString();
         //qDebug() << args.property(i).toString();
-        printf("%s\n", args.property(i).toString().toUtf8().data());
+        printf("%s", args.property(i).toString().toUtf8().data());
     }
+    printf("\n");
 }
 
 void RJSTools::debug(const QJSValue& args) {
