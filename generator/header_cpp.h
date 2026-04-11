@@ -287,6 +287,8 @@
 #include "generator/cpp/qqmlcontext_wrapper.h"
 #include "generator/cpp/qqmlengine_base.h"
 #include "generator/cpp/qqmlengine_wrapper.h"
+#include "generator/cpp/qquickitem_base.h"
+#include "generator/cpp/qquickitem_wrapper.h"
 #include "generator/cpp/qquickview_base.h"
 #include "generator/cpp/qquickview_wrapper.h"
 #include "generator/cpp/qquickwidget_base.h"

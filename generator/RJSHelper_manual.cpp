@@ -355,6 +355,8 @@
         
           #include "qqmlcontext_wrapper.h"
         
+          #include "qquickitem_wrapper.h"
+        
           #include "qquickview_wrapper.h"
         
           #include "qwindow_wrapper.h"
@@ -576,6 +578,8 @@
         QList<RJSDowncaster_QObject*> RJSHelper::downcasters_QObject;
         
         QList<RJSDowncaster_QQmlEngine*> RJSHelper::downcasters_QQmlEngine;
+        
+        QList<RJSDowncaster_QQuickWidget*> RJSHelper::downcasters_QQuickWidget;
         
           #if QT_VERSION >= 0x060700
         QList<RJSDowncaster_QRhiWidget*> RJSHelper::downcasters_QRhiWidget;
@@ -1375,6 +1379,13 @@
               QTabBar* o = qobject_cast<QTabBar*>(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QTabBar(handler, o);
+              }
+          }
+
+          {
+              QQuickWidget* o = qobject_cast<QQuickWidget*>(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QQuickWidget(handler, o);
               }
           }
 

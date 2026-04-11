@@ -6422,6 +6422,37 @@
       };
     
       #ifdef QT_QUICK_LIB
+      class QTJSAPI_EXPORT  RJSType_QQuickItem : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QQuickItem";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QQuickItem();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_QUICK_LIB
       class QTJSAPI_EXPORT  RJSType_QQuickView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE

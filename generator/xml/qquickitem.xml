@@ -1,0 +1,1363 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qquickitem.h">
+  <class_decl name="QQuickItem" />
+  <class_decl name="QCursor" />
+  <!--
+  <class_decl name="QQuickItemLayer" />
+  <class_decl name="QQuickState" />
+  <class_decl name="QQuickAnchorLine" />
+  <class_decl name="QQuickTransition" />
+  <class_decl name="QQuickKeyEvent" />
+  <class_decl name="QQuickAnchors" />
+  -->
+  <class_decl name="QQuickWindow" />
+  <class_decl name="QTouchEvent" />
+  <class_decl name="QQuickItemGrabResult" />
+  <!--
+  <class_decl name="QQuickPalette" />
+  <class name="QQuickTransform">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <function name="appendToItem" />
+    <function name="prependToItem" />
+    <function name="applyTo" />
+    <function name="update">
+      <variant return-type="void" access="protected">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="QQuickItem" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <!--
+      <super name="QQmlParserStatus" />
+      -->
+    </super_list>
+
+    <property type="qreal" name="width" read="width" write="setWidth" />
+    <property type="qreal" name="height" read="height" write="setHeight" />
+
+    <enum name="ItemChange">
+      <key>ItemChildAddedChange</key>
+      <key>ItemChildRemovedChange</key>
+      <key>ItemSceneChange</key>
+      <key>ItemVisibleHasChanged</key>
+      <key>ItemParentHasChanged</key>
+      <key>ItemOpacityHasChanged</key>
+      <key>ItemActiveFocusHasChanged</key>
+      <key>ItemRotationHasChanged</key>
+      <key>ItemAntialiasingHasChanged</key>
+      <key>ItemDevicePixelRatioHasChanged</key>
+      <key>ItemEnabledHasChanged</key>
+      <key>ItemScaleHasChanged</key>
+      <key>ItemTransformHasChanged</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QQuickItem" modifier="*" name="v" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="QQuickWindow" modifier="*" name="v" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="v" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="v" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <enum name="TransformOrigin">
+      <key>TopLeft</key>
+      <key>Top</key>
+      <key>TopRight</key>
+      <key>Left</key>
+      <key>Center</key>
+      <key>Right</key>
+      <key>BottomLeft</key>
+      <key>Bottom</key>
+      <key>BottomRight</key>
+    </enum>
+    <!--
+    <function name="window">
+      <variant return-type="QQuickWindow*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="parentItem">
+      <variant return-type="QQuickItem*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setParentItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QQuickItem" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stackBefore">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stackAfter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="childrenRect">
+      <variant return-type="QRectF" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="childItems">
+      <variant return-type="QList&lt;QQuickItem*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="clip">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setClip">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="state">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setState">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="baselineOffset">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBaselineOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="transform">
+      <variant return-type="QQmlListProperty&lt;QQuickTransform&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="x">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="y">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="position">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setX">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setY">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="bindableX">
+      <variant return-type="QBindable&lt;qreal&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bindableY">
+      <variant return-type="QBindable&lt;qreal&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="width">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resetWidth">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setImplicitWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="implicitWidth">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="bindableWidth">
+      <variant return-type="QBindable&lt;qreal&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="height">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resetHeight">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setImplicitHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="implicitHeight">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="bindableHeight">
+      <variant return-type="QBindable&lt;qreal&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="size">
+      <variant return-type="QSizeF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSizeF" modifier="&amp;" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transformOrigin">
+      <variant return-type="QQuickItem::TransformOrigin" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTransformOrigin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QQuickItem::TransformOrigin" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transformOriginPoint">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTransformOriginPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="z">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setZ">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotation">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRotation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="opacity">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOpacity">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="smooth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSmooth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activeFocusOnTab">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setActiveFocusOnTab">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="antialiasing">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAntialiasing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resetAntialiasing">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="flags">
+      <variant return-type="Flags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFlag">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Flag" modifier="" name="flag" />
+          <parameter const="false" type="bool" modifier="" name="enabled" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Flags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="boundingRect">
+      <variant return-type="QRectF" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clipRect">
+      <variant return-type="QRectF" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="viewportItem">
+      <variant return-type="QQuickItem*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasActiveFocus">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasFocus">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFocus">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="focus" />
+          <parameter const="false" type="Qt::FocusReason" modifier="" name="reason" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFocusScope">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scopedFocusItem">
+      <variant return-type="QQuickItem*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="focusPolicy">
+      <variant return-type="Qt::FocusPolicy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFocusPolicy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::FocusPolicy" modifier="" name="policy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isAncestorOf">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="child" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="acceptedMouseButtons">
+      <variant return-type="Qt::MouseButtons" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAcceptedMouseButtons">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::MouseButtons" modifier="" name="buttons" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="acceptHoverEvents">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAcceptHoverEvents">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enabled" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="acceptTouchEvents">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAcceptTouchEvents">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="accept" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(cursor)" />
+    <function name="cursor">
+      <variant return-type="QCursor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCursor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QCursor" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unsetCursor">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="isUnderMouse">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="grabMouse">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ungrabMouse">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="keepMouseGrab">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setKeepMouseGrab">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filtersChildMouseEvents">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFiltersChildMouseEvents">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="filter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="grabTouchPoints">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="ids" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ungrabTouchPoints">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="keepTouchGrab">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setKeepTouchGrab">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="grabToImage">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QJSValue" modifier="&amp;" name="callback" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="targetSize" default="QSize()" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;QQuickItemGrabResult&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="targetSize" default="QSize()" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="contains">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="containmentMask">
+      <variant return-type="QObject*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setContainmentMask">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="mask" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="itemTransform">
+      <variant return-type="QTransform" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QQuickItem" modifier="*" name="" />
+          <parameter const="false" type="bool" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="mapToScene">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapRectToItem">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapRectToScene">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapFromScene">
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapRectFromItem">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapRectFromScene">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="polish">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,5)" />
+    <function name="mapFromItem">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QQmlV4FunctionPtr" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+      <variant return-type="QPointF" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="false" type="qreal" modifier="" name="width" />
+          <parameter const="false" type="qreal" modifier="" name="height" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,5)" />
+    <function name="mapToItem">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QQmlV4FunctionPtr" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+      <variant return-type="QPointF" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QQuickItem" modifier="*" name="item" />
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+          <parameter const="false" type="qreal" modifier="" name="width" />
+          <parameter const="false" type="qreal" modifier="" name="height" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <!--
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,5)" />
+    <function name="mapFromGlobal">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QQmlV4FunctionPtr" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_DEPRECATED_SINCE(6,5)" />
+    <function name="mapToGlobal">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QQmlV4FunctionPtr" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="QPointF" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="forceActiveFocus">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::FocusReason" modifier="" name="reason" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="nextItemInFocusChain">
+      <variant return-type="QQuickItem*" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="forward" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="childAt">
+      <variant return-type="QQuickItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ensurePolished">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dumpItemTree">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(im)" />
+    <function name="inputMethodQuery">
+      <variant return-type="QVariant" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::InputMethodQuery" modifier="" name="query" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="isTextureProvider">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="textureProvider">
+      <variant return-type="QSGTextureProvider*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="update">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="childrenRectChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="baselineOffsetChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stateChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activeFocusChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusPolicyChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::FocusPolicy" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activeFocusOnTabChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="parentChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QQuickItem" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transformOriginChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QQuickItem::TransformOrigin" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="smoothChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="antialiasingChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clipChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="windowChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QQuickWindow" modifier="*" name="window" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="childrenChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="opacityChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="enabledChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="visibleChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="visibleChildrenChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rotationChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scaleChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="xChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="yChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="widthChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="zChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="implicitWidthChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="implicitHeightChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="containmentMaskChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paletteChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paletteCreated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+
+
+
+    <!--
+    <function name="event">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isComponentComplete">
+      <variant return-type="bool" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="itemChange">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="ItemChange" modifier="" name="" />
+          <parameter const="true" type="ItemChangeData" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="geometryChange">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="newGeometry" />
+          <parameter const="true" type="QRectF" modifier="&amp;" name="oldGeometry" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <preproc plain="#if QT_CONFIG(im)" />
+    <function name="updateInputMethod">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="Qt::InputMethodQueries" modifier="" name="queries" default="Qt::ImQueryInput" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="widthValid">
+      <variant return-type="bool" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightValid">
+      <variant return-type="bool" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setImplicitSize">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="" />
+          <parameter const="false" type="qreal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="classBegin">
+      <variant return-type="void" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="componentComplete">
+      <variant return-type="void" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="keyPressEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyReleaseEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(im)" />
+    <function name="inputMethodEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QInputMethodEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="focusInEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QFocusEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusOutEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QFocusEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseDoubleClickEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseUngrabEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="touchUngrabEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(wheelevent)" />
+    <function name="wheelEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QWheelEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="touchEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QTouchEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hoverEnterEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QHoverEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hoverMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QHoverEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hoverLeaveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QHoverEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(quick_draganddrop)" />
+    <function name="dragEnterEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragEnterEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragMoveEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragLeaveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragLeaveEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dropEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QDropEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="childMouseEventFilter">
+      <variant return-type="bool" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QQuickItem" modifier="*" name="" />
+          <parameter const="false" type="QEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_VERSION&gt;=QT_VERSION_CHECK(7,0,0)" />
+    <function name="contextMenuEvent">
+      <variant return-type="bool" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QContextMenuEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <!--
+    <function name="updatePaintNode">
+      <variant return-type="QSGNode*" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QSGNode" modifier="*" name="" />
+          <parameter const="false" type="UpdatePaintNodeData" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="releaseResources">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updatePolish">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

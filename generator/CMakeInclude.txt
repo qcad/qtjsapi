@@ -286,6 +286,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qqmlcontext_wrapper.h
     generator/cpp/qqmlengine_base.h
     generator/cpp/qqmlengine_wrapper.h
+    generator/cpp/qquickitem_base.h
+    generator/cpp/qquickitem_wrapper.h
     generator/cpp/qquickview_base.h
     generator/cpp/qquickview_wrapper.h
     generator/cpp/qquickwidget_base.h
@@ -676,6 +678,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qqmlcontext_wrapper.cpp
     generator/cpp/qqmlengine_base.cpp
     generator/cpp/qqmlengine_wrapper.cpp
+    generator/cpp/qquickitem_base.cpp
+    generator/cpp/qquickitem_wrapper.cpp
     generator/cpp/qquickview_base.cpp
     generator/cpp/qquickview_wrapper.cpp
     generator/cpp/qquickwidget_base.cpp

@@ -16816,6 +16816,67 @@ Qt::InputMethodHints a1_cpp;
               }
             
     // Class: QQuickWidget
+    // Function: rootObject
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QQuickWidget_Wrapper::rootObject
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QQuickWidget* w = getWrapped();
+                QQuickItem* res = 
+                    
+                w->rootObject(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QQuickItem*
+
+            return RJSHelper::cpp2js_QQuickItem(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for rootObject";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QQuickWidget
     // Function: resizeMode
     // Source: 
     // Static: false

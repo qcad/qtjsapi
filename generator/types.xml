@@ -209,6 +209,8 @@
     <type>QProcess::ProcessState</type>
     <type>QProcessEnvironment::Initialization</type>
     <type>QProgressBar::Direction</type>
+    <type ifdef="QT_QUICK_LIB">QQuickItem::TransformOrigin</type>
+    <type ifdef="QT_QUICK_LIB">QQuickItem::ItemChange</type>
     <type ifdef="QT_QUICK_LIB">QQuickView::ResizeMode</type>
     <type ifdef="QT_QUICK_LIB">QQuickView::Status</type>
     <type ifdef="QT_QUICKWIDGETS_LIB">QQuickWidget::ResizeMode</type>
@@ -590,6 +592,7 @@
     <type>QProgressBar</type>
     <type>QProgressDialog</type>
     <type>QPushButton</type>
+    <type ifdef="QT_QUICK_LIB">QQuickItem</type>
     <type ifdef="QT_QUICK_LIB">QQuickView</type>
     <type ifdef="QT_QUICKWIDGETS_LIB">QQuickWidget</type>
     <type>QRadioButton</type>

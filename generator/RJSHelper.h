@@ -137,6 +137,15 @@
           virtual QJSValue downcast(RJSApi& handler, QQmlEngine* o) = 0;
         };
         
+          #ifdef QT_QUICKWIDGETS_LIB
+        // Base class for downcasters that can downcast QQuickWidget to specific types:
+        class RJSDowncaster_QQuickWidget {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QQuickWidget* o) = 0;
+        };
+        
+          #endif
+        
           #if QT_VERSION >= 0x060700
         // Base class for downcasters that can downcast QRhiWidget to specific types:
         class RJSDowncaster_QRhiWidget {
@@ -1227,6 +1236,12 @@
         class RJSBasecaster_QQmlEngine {
         public:
           virtual QQmlEngine* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QQuickItem:
+        class RJSBasecaster_QQuickItem {
+        public:
+          virtual QQuickItem* castToBase(int t, void* vp) = 0;
         };
         
           #ifdef QT_QUICK_LIB
@@ -2678,6 +2693,20 @@
       static QProgressBar::Direction js2cpp_QProgressBar_Direction(RJSApi& handler, const QJSValue& v);
       static bool is_QProgressBar_Direction(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_QUICK_LIB
+      static QJSValue cpp2js_QQuickItem_TransformOrigin(RJSApi& handler, QQuickItem::TransformOrigin v);
+      static QQuickItem::TransformOrigin js2cpp_QQuickItem_TransformOrigin(RJSApi& handler, const QJSValue& v);
+      static bool is_QQuickItem_TransformOrigin(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_QUICK_LIB
+      static QJSValue cpp2js_QQuickItem_ItemChange(RJSApi& handler, QQuickItem::ItemChange v);
+      static QQuickItem::ItemChange js2cpp_QQuickItem_ItemChange(RJSApi& handler, const QJSValue& v);
+      static bool is_QQuickItem_ItemChange(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
     #ifdef QT_QUICK_LIB
       static QJSValue cpp2js_QQuickView_ResizeMode(RJSApi& handler, QQuickView::ResizeMode v);
       static QQuickView::ResizeMode js2cpp_QQuickView_ResizeMode(RJSApi& handler, const QJSValue& v);
@@ -4347,6 +4376,14 @@
       static bool is_QPushButton_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
     #ifdef QT_QUICK_LIB
+      static QJSValue cpp2js_QQuickItem(RJSApi& handler, QQuickItem* v);
+      static QJSValue cpp2js_QQuickItem(RJSApi& handler, const QQuickItem* v);
+      static QQuickItem* js2cpp_QQuickItem_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QQuickItem_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_QUICK_LIB
       static QJSValue cpp2js_QQuickView(RJSApi& handler, QQuickView* v);
       static QJSValue cpp2js_QQuickView(RJSApi& handler, const QQuickView* v);
       static QQuickView* js2cpp_QQuickView_ptr(RJSApi& handler, const QJSValue& v);
@@ -5019,6 +5056,17 @@
           public:
             static void registerDowncaster_QQmlEngine(RJSDowncaster_QQmlEngine* dc) {
               downcasters_QQmlEngine.append(dc);
+            }
+
+          
+
+          // allow downcasting for type QQuickWidget:
+          private:
+            static QList<RJSDowncaster_QQuickWidget*> downcasters_QQuickWidget;
+
+          public:
+            static void registerDowncaster_QQuickWidget(RJSDowncaster_QQuickWidget* dc) {
+              downcasters_QQuickWidget.append(dc);
             }
 
           

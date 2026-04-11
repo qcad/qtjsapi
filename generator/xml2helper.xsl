@@ -1407,6 +1407,13 @@
               }
           }
 
+          {
+              QQuickWidget* o = qobject_cast&lt;QQuickWidget*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QQuickWidget(handler, o);
+              }
+          }
+
           for (int i=0; i&lt;downcasters_QWidget.length(); i++) {
               QJSValue dc = downcasters_QWidget[i]-&gt;downcast(handler, v);
               if (!dc.isUndefined()) {

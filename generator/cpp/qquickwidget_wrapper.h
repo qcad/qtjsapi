@@ -5662,6 +5662,27 @@ Error = QQuickWidget::Error,
               ;
             
     // Class: QQuickWidget
+    // Function: rootObject
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  rootObject
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QQuickWidget
     // Function: resizeMode
     // Source: 
     // Static: false

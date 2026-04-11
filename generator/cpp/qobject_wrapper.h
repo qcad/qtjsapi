@@ -442,6 +442,10 @@
                 return (QObject*)(QQmlEngine*)vp;
               }
               
+              if (t==RJSType_QQuickItem::getIdStatic()) {
+                return (QObject*)(QQuickItem*)vp;
+              }
+              
                 #ifdef QT_QUICK_LIB
               if (t==RJSType_QQuickView::getIdStatic()) {
                 return (QObject*)(QQuickView*)vp;

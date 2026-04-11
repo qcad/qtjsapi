@@ -168,6 +168,7 @@
     <file alias="generator/js/QQmlApplicationEngine.js">generator/js/QQmlApplicationEngine.js</file>
     <file alias="generator/js/QQmlContext.js">generator/js/QQmlContext.js</file>
     <file alias="generator/js/QQmlEngine.js">generator/js/QQmlEngine.js</file>
+    <file alias="generator/js/QQuickItem.js">generator/js/QQuickItem.js</file>
     <file alias="generator/js/QQuickView.js">generator/js/QQuickView.js</file>
     <file alias="generator/js/QQuickWidget.js">generator/js/QQuickWidget.js</file>
     <file alias="generator/js/QRadialGradient.js">generator/js/QRadialGradient.js</file>

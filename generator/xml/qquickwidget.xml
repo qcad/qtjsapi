@@ -5,7 +5,7 @@
   <class_decl name="QQmlError" />
   <class_decl name="QQuickItem" />
   <class_decl name="QQmlComponent" />
-  <class name="QQuickWidget" ownership="cpp" inheritable="true" ifdef="QT_QUICKWIDGETS_LIB">
+  <class name="QQuickWidget" ownership="cpp" inheritable="true" downcast="true" ifdef="QT_QUICKWIDGETS_LIB">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />
@@ -50,13 +50,11 @@
       </variant>
     </function>
     -->
-    <!--
     <function name="rootObject">
       <variant return-type="QQuickItem*" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    -->
     <enum name="ResizeMode">
       <key>SizeViewToRootObject</key>
       <key>SizeRootObjectToView</key>

@@ -160,6 +160,7 @@
 #include "generator/cpp/qqmlapplicationengine_wrapper.h"
 #include "generator/cpp/qqmlcontext_wrapper.h"
 #include "generator/cpp/qqmlengine_wrapper.h"
+#include "generator/cpp/qquickitem_wrapper.h"
 #include "generator/cpp/qquickview_wrapper.h"
 #include "generator/cpp/qquickwidget_wrapper.h"
 #include "generator/cpp/qgraphicseffect_wrapper.h"
@@ -181,23 +182,46 @@ RJSApi::~RJSApi() {
 
     // delete wrappers:
     qDebug() << "deleting wrappers (" + engine->objectName() + "): " << wrappers.size();
-    QSetIterator<RJSWrapperObj*> i(wrappers);
-    while (i.hasNext()) {
-        RJSWrapperObj* wrapper = i.next();
 
-        if (!wrapper->isCppOwnership()) {
-            continue;
+    // 1. Swap the set into a local variable.
+    // This makes the original 'wrappers' empty immediately.
+    QSet<RJSWrapperObj*> toDelete;
+    toDelete.swap(wrappers);
+
+    // 2. Now iterate over the local 'toDelete' set.
+    // Even if RJSWrapperObj::~RJSWrapperObj() looks at the global 'wrappers'
+    // set, it will be empty, avoiding the slow removal logic.
+    for (RJSWrapperObj* wrapper : toDelete) {
+        if (wrapper && wrapper->isCppOwnership()) {
+
+            // slow but stable:
+            delete wrapper;
+
+            // causes unpredictable crashes on exit:
+            //wrapper->deleteLater();
         }
-
-        if (wrappers.size()%1000==0) {
-            qDebug() << "deleting wrappers..." << wrappers.size();
-        }
-
-        //qDebug() << "deleting wrapper:" << RJSHelper::getTypeName(wrapper->getWrappedType());
-        delete wrapper;
-        //wrapper->deleteLater();
     }
-    wrappers.clear();
+
+    // 3. No need to clear 'wrappers' here, it was already cleared by the swap.
+
+
+    // QSetIterator<RJSWrapperObj*> i(wrappers);
+    // while (i.hasNext()) {
+    //     RJSWrapperObj* wrapper = i.next();
+
+    //     if (!wrapper->isCppOwnership()) {
+    //         continue;
+    //     }
+
+    //     if (wrappers.size()%1000==0) {
+    //         qDebug() << "deleting wrappers..." << wrappers.size();
+    //     }
+
+    //     //qDebug() << "deleting wrapper:" << RJSHelper::getTypeName(wrapper->getWrappedType());
+    //     delete wrapper;
+    //     //wrapper->deleteLater();
+    // }
+    // wrappers.clear();
     qDebug() << "deleting wrappers: DONE" ;
 
     qDebug() << "collect garbage...";
@@ -471,6 +495,7 @@ void RJSApi::init() {
     QQuickWidget_Wrapper::init(*this);
 #endif
 #ifdef QT_QUICK_LIB
+    QQuickItem_Wrapper::init(*this);
     QQuickView_Wrapper::init(*this);
 #endif
 
@@ -569,6 +594,7 @@ void RJSApi::unregisterWrapper(RJSWrapperObj& obj) {
     if (!obj.isCppOwnership()) {
         return;
     }
+
     wrappers.remove(&obj);
     // qDebug() << "- " << engine->objectName() << " type:" << RJSTypeEnum::getById(obj.getWrappedType())->getName();
     // qDebug() << "- " << engine->objectName() << " wrappers:" << wrappers.size();

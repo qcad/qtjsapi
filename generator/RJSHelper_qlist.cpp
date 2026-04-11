@@ -355,6 +355,8 @@
         
           #include "qqmlcontext_wrapper.h"
         
+          #include "qquickitem_wrapper.h"
+        
           #include "qquickview_wrapper.h"
         
           #include "qwindow_wrapper.h"

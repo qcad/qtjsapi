@@ -355,6 +355,8 @@
         
           #include "qqmlcontext_wrapper.h"
         
+          #include "qquickitem_wrapper.h"
+        
           #include "qquickview_wrapper.h"
         
           #include "qwindow_wrapper.h"
@@ -8121,6 +8123,114 @@
 
     
     #ifdef QT_QUICK_LIB
+      QJSValue RJSHelper::cpp2js_QQuickItem(RJSApi& handler, QQuickItem* v) {
+          QQuickItem_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QQuickItem_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QQuickItem: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QQuickItem_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QQuickItem_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QQuickItem('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QQuickItem");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QQuickItem is undefined. Use QQuickItem_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QQuickItem('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QQuickItem(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QQuickItem(RJSApi& handler, const QQuickItem* v) {
+          return RJSHelper::cpp2js_QQuickItem(handler, const_cast<QQuickItem*>(v));
+      }
+
+      QQuickItem* RJSHelper::js2cpp_QQuickItem_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QQuickItem: not a QObject";
+              return nullptr;
+          }
+          //QQuickItem_Wrapper* wrapper = getWrapper<QQuickItem_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QQuickItem_Wrapper* wrapper = qobject_cast<QQuickItem_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QQuickItem_Wrapper* wrapper = dynamic_cast<QQuickItem_Wrapper*>(obj);
+          //QQuickItem_Wrapper* wrapper = (QQuickItem_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QQuickItem: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QQuickItem*)wrapper->getWrappedVoid();
+          //return getWrapped_QQuickItem(wrapper);
+          return QQuickItem_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QQuickItem_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QQuickItem: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QQuickItem_Type);
+          //return fun.call().toInt()==RJSType::QQuickItem_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QQuickItem::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_QUICK_LIB
       QJSValue RJSHelper::cpp2js_QQuickView(RJSApi& handler, QQuickView* v) {
           QQuickView_Wrapper* ret = nullptr;
           bool existing = false;
@@ -8230,6 +8340,14 @@
   
     #ifdef QT_QUICKWIDGETS_LIB
       QJSValue RJSHelper::cpp2js_QQuickWidget(RJSApi& handler, QQuickWidget* v) {
+          
+            // downcast to types derrived from QQuickWidget but defined in other modules:
+            for (int i=0; i<downcasters_QQuickWidget.length(); i++) {
+                QJSValue dc = downcasters_QQuickWidget[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
           QQuickWidget_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {

@@ -3448,6 +3448,24 @@
 
       
       #ifdef QT_QUICK_LIB
+      int RJSType_QQuickItem::id = -1;
+
+      int RJSType_QQuickItem::getId() const {
+          return RJSType_QQuickItem::getIdStatic();
+      }
+
+      int RJSType_QQuickItem::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QQuickItem());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_QUICK_LIB
       int RJSType_QQuickView::id = -1;
 
       int RJSType_QQuickView::getId() const {

@@ -355,6 +355,8 @@
         
           #include "qqmlcontext_wrapper.h"
         
+          #include "qquickitem_wrapper.h"
+        
           #include "qquickview_wrapper.h"
         
           #include "qwindow_wrapper.h"
@@ -4865,6 +4867,56 @@
         return v.isNumber();
       }
     
+    #ifdef QT_QUICK_LIB
+      QJSValue RJSHelper::cpp2js_QQuickItem_TransformOrigin(RJSApi& handler, QQuickItem::TransformOrigin v) {
+        return QJSValue(v);
+      }
+
+      QQuickItem::TransformOrigin RJSHelper::js2cpp_QQuickItem_TransformOrigin(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QQuickItem::TransformOrigin)0
+          ;
+        }
+        return 
+        (QQuickItem::TransformOrigin)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QQuickItem_TransformOrigin(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+    #endif
+  
+    #ifdef QT_QUICK_LIB
+      QJSValue RJSHelper::cpp2js_QQuickItem_ItemChange(RJSApi& handler, QQuickItem::ItemChange v) {
+        return QJSValue(v);
+      }
+
+      QQuickItem::ItemChange RJSHelper::js2cpp_QQuickItem_ItemChange(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QQuickItem::ItemChange)0
+          ;
+        }
+        return 
+        (QQuickItem::ItemChange)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QQuickItem_ItemChange(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+    #endif
+  
     #ifdef QT_QUICK_LIB
       QJSValue RJSHelper::cpp2js_QQuickView_ResizeMode(RJSApi& handler, QQuickView::ResizeMode v) {
         return QJSValue(v);
