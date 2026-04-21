@@ -505,7 +505,16 @@ void RJSApi::init() {
     QQmlApplicationEngine* appEngine = dynamic_cast<QQmlApplicationEngine*>(engine);
     if (appEngine!=NULL) {
         QQmlApplicationEngine_Wrapper* appEngineWrapper = new QQmlApplicationEngine_Wrapper(*this, appEngine, false);
-        global.setProperty("engine", engine->newQObject(appEngineWrapper));
+        //global.setProperty("engine", engine->newQObject(appEngineWrapper));
+
+        QJSValue cl = engine->globalObject().property("QQmlApplicationEngine");
+        QJSValueList args;
+        args.append(QJSValue("__GOT_WRAPPER__"));
+        args.append(QJSValue(false));
+        args.append(engine->newQObject(appEngineWrapper));
+        QJSValue r = cl.callAsConstructor(args);
+
+        global.setProperty("engine", r);
     }
 
 
