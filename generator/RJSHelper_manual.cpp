@@ -1094,7 +1094,7 @@
           }
           // TODO: add more QObject but not QWidget or QLayout types
 
-          qWarning() << "RJSHelper::cpp2js_QObject: not wrapping object:" << v->objectName() << " class: " << v->metaObject()->className();
+          //qWarning() << "RJSHelper::cpp2js_QObject: not wrapping object:" << v->objectName() << " class: " << v->metaObject()->className();
 
           //QObject_Wrapper* ret = new QObject_Wrapper(handler, v, false);
           //return handler->newQObject(ret);
