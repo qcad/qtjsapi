@@ -344,7 +344,7 @@ QString RJSTools::jsQNodeSave(const QJSValue& jsNode, int indent) {
     QDomNode node = RJSHelper::js2cpp_QDomNode(handler, jsNode);
     QString str;
     QTextStream stream(&str);
-    node.save(stream, 4);
+    node.save(stream, indent);
     return str;
 }
 
