@@ -559,10 +559,20 @@
       }
 
       QVariantMap RJSHelper::js2cpp_QVariantMap(RJSApi& handler, const QJSValue& v) {
-          // TODO:
-          qWarning() << "js2cpp_QVariantMap: TODO: not properly implemented";
-          QJSEngine* engine = handler.getEngine();
-          return engine->fromScriptValue<QVariantMap>(v);
+          QVariantMap ret;
+          if (v.isUndefined() || v.isNull()) {
+              return ret;
+          }
+          if (!v.isObject()) {
+              qWarning() << "RJSHelper::js2cpp_QVariantMap: not an object";
+              return ret;
+          }
+          QJSValueIterator it(v);
+          while (it.hasNext()) {
+              it.next();
+              ret.insert(it.name(), RJSHelper::js2cpp_QVariant(handler, it.value()));
+          }
+          return ret;
       }
 
       bool RJSHelper::is_QVariantMap(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {

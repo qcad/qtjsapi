@@ -1119,7 +1119,7 @@
           }
           // TODO: add more QObject but not QWidget or QLayout types
 
-          qWarning() &lt;&lt; "RJSHelper::cpp2js_QObject: not wrapping object:" &lt;&lt; v->objectName() &lt;&lt; " class: " &lt;&lt; v->metaObject()->className();
+          //qWarning() &lt;&lt; "RJSHelper::cpp2js_QObject: not wrapping object:" &lt;&lt; v->objectName() &lt;&lt; " class: " &lt;&lt; v->metaObject()->className();
 
           //QObject_Wrapper* ret = new QObject_Wrapper(handler, v, false);
           //return handler-&gt;newQObject(ret);
@@ -3122,10 +3122,20 @@
       }
 
       <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
-          // TODO:
-          qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: TODO: not properly implemented";
-          QJSEngine* engine = handler.getEngine();
-          return engine-&gt;fromScriptValue&lt;<xsl:value-of select="$type" />&gt;(v);
+          <xsl:value-of select="$type" /> ret;
+          if (v.isUndefined() || v.isNull()) {
+              return ret;
+          }
+          if (!v.isObject()) {
+              qWarning() &lt;&lt; "RJSHelper::js2cpp_<xsl:value-of select="$type" />: not an object";
+              return ret;
+          }
+          QJSValueIterator it(v);
+          while (it.hasNext()) {
+              it.next();
+              ret.insert(it.name(), RJSHelper::js2cpp_<xsl:value-of select="$itemtype" />(handler, it.value()));
+          }
+          return ret;
       }
 
       bool <xsl:value-of select="$rjshelper_class"/>::is_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
