@@ -162,7 +162,7 @@ QDomImplementation::InvalidDataPolicy a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -976,7 +976,7 @@ QDomDocumentType a3_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -5290,7 +5290,7 @@ QString a2_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -5999,7 +5999,7 @@ int a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -10655,7 +10655,7 @@ QDomDocumentType a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -16659,7 +16659,7 @@ int a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -17976,7 +17976,7 @@ QString a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -22290,7 +22290,7 @@ QDomDocumentFragment a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -27170,7 +27170,7 @@ QString a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -31776,7 +31776,7 @@ QString a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -38075,7 +38075,7 @@ QString a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -43027,7 +43027,7 @@ int a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -43983,7 +43983,7 @@ QDomComment a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -48935,7 +48935,7 @@ QDomCDATASection a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -53363,7 +53363,7 @@ QDomNotation a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -57848,7 +57848,7 @@ QDomEntity a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -62162,7 +62162,7 @@ QDomEntityReference a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()

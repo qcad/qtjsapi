@@ -52,7 +52,7 @@
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -509,7 +509,7 @@ qreal a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -3661,7 +3661,7 @@ QBrush a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -10634,7 +10634,7 @@ int a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -15158,7 +15158,7 @@ QTextFormat::PageBreakFlags a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -18703,7 +18703,7 @@ QString a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -23367,7 +23367,7 @@ int a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -28083,7 +28083,7 @@ QTextFormat::PageBreakFlags a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -30892,7 +30892,7 @@ bool a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()

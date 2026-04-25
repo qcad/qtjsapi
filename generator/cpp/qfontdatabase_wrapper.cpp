@@ -1813,7 +1813,7 @@ QFontDatabase::SystemFont a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()

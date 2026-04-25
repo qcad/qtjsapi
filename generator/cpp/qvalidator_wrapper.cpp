@@ -52,7 +52,7 @@
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -1723,7 +1723,7 @@ QString a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -3955,7 +3955,7 @@ int a2_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()
@@ -6534,7 +6534,7 @@ QDoubleValidator::Notation a1_cpp;
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() << "Evaluating file: " << fileName;
+      //qDebug() << "Evaluating file: " << fileName;
       QJSValue result = engine->evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()

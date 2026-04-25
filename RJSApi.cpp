@@ -176,12 +176,9 @@ RJSApi::RJSApi(QJSEngine* engine) : engine(engine) {
 
 RJSApi::~RJSApi() {
     // collect garbage... (objects are scheduled for removal, not removed):
-    qDebug() << "collect garbage...";
     engine->collectGarbage();
-    qDebug() << "collect garbage: DONE";
 
     // delete wrappers:
-    qDebug() << "deleting wrappers (" + engine->objectName() + "): " << wrappers.size();
 
     // 1. Swap the set into a local variable.
     // This makes the original 'wrappers' empty immediately.
@@ -204,31 +201,7 @@ RJSApi::~RJSApi() {
 
     // 3. No need to clear 'wrappers' here, it was already cleared by the swap.
 
-
-    // QSetIterator<RJSWrapperObj*> i(wrappers);
-    // while (i.hasNext()) {
-    //     RJSWrapperObj* wrapper = i.next();
-
-    //     if (!wrapper->isCppOwnership()) {
-    //         continue;
-    //     }
-
-    //     if (wrappers.size()%1000==0) {
-    //         qDebug() << "deleting wrappers..." << wrappers.size();
-    //     }
-
-    //     //qDebug() << "deleting wrapper:" << RJSHelper::getTypeName(wrapper->getWrappedType());
-    //     delete wrapper;
-    //     //wrapper->deleteLater();
-    // }
-    // wrappers.clear();
-    qDebug() << "deleting wrappers: DONE" ;
-
-    qDebug() << "collect garbage...";
     engine->collectGarbage();
-    // objects are deleted here:
-    //QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
-    qDebug() << "collect garbage: DONE";
 
     delete tools;
 }
