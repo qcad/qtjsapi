@@ -35,9 +35,9 @@ target_include_directories(qtjsapiconsole PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../generator
 )
 
-set_target_properties(qtjsapiconsole PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../out)
-set_target_properties(qtjsapiconsole PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../out)
-set_target_properties(qtjsapiconsole PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../out)
+set_target_properties(qtjsapiconsole PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../out)
+set_target_properties(qtjsapiconsole PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../out)
+set_target_properties(qtjsapiconsole PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../out)
 
 target_link_libraries(qtjsapiconsole PRIVATE
     Qt::Concurrent
