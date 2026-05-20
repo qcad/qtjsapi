@@ -1849,54 +1849,6 @@ QSizeF_Wrapper::QSizeF_Wrapper
                 
       // check parameter types:
       if (
-        RJSHelper::is_int(handler, a1
-  )
-
-   && RJSHelper::is_int(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: w (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-  // convert js parameter to cpp: h (int)
-  
-int a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
-        
-
-    // call function:
-    
-        // construct wrapper:
-
-        
-              wrapped = new QSizeF(
-                  a1_cpp
-    , a2_cpp
-    
-              );
-              wrappedCreated = true;
-            
-
-        // signal forwarding:
-        // TODO
-        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
-        initConnections();
-        return;
-
-      
-  }
-
-      // check parameter types:
-      if (
         RJSHelper::is_qreal(handler, a1
   )
 

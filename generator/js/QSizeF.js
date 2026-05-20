@@ -91,32 +91,6 @@
   
   else 
   
-      if (arguments.length == 2) {
-    
-            self = this;
-            wrapper = new QSizeF_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-            this.__PROXY__ = wrapper;
-          
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QSizeF);
-  }
-
-  
-  else 
-  
       if (arguments.length == 1) {
     
             self = this;

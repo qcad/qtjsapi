@@ -158,12 +158,15 @@
       <variant>
         <parameters />
       </variant>
+      <!--
+      breaks constructor when called with floats:
       <variant>
         <parameters>
           <parameter const="false" type="int" modifier="" name="w" />
           <parameter const="false" type="int" modifier="" name="h" />
         </parameters>
       </variant>
+      -->
       <variant>
         <parameters />
       </variant>
