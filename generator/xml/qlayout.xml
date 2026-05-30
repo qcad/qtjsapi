@@ -148,7 +148,6 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="removeItem">
       <variant return-type="void" access="public">
         <parameters>
@@ -156,7 +155,6 @@
         </parameters>
       </variant>
     </function>
-    -->
     <function name="expandingDirections">
       <variant return-type="Qt::Orientations" const="true" access="public">
         <parameters />
