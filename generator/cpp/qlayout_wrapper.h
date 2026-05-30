@@ -1198,6 +1198,29 @@
               ;
             
     // Class: QLayout
+    // Function: removeItem
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeItem
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QLayout
     // Function: expandingDirections
     // Source: 
     // Static: false

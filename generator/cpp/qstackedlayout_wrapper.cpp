@@ -2834,6 +2834,75 @@ QLayout::SizeConstraint a1_cpp;
               }
             
     // Class: QStackedLayout
+    // Function: removeItem
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QStackedLayout_Wrapper::removeItem
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QLayoutItem_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (QLayoutItem)
+  
+
+          // pointer:
+          QLayoutItem*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QLayoutItem_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QStackedLayout* w = getWrapped();
+                
+                w->removeItem(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for removeItem";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QStackedLayout
     // Function: expandingDirections
     // Source: QLayout
     // Static: false

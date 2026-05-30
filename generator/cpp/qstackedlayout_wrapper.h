@@ -989,6 +989,29 @@ StackAll = QStackedLayout::StackAll,
               ;
             
     // Class: QStackedLayout
+    // Function: removeItem
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeItem
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QStackedLayout
     // Function: expandingDirections
     // Source: QLayout
     // Static: false

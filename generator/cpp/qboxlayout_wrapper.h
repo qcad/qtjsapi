@@ -929,6 +929,29 @@ Up = QBoxLayout::Up,
               ;
             
     // Class: QBoxLayout
+    // Function: removeItem
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeItem
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QBoxLayout
     // Function: indexOf
     // Source: QLayout
     // Static: false
@@ -2979,6 +3002,29 @@ Up = QHBoxLayout::Up,
               ;
             
     // Class: QHBoxLayout
+    // Function: removeItem
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeItem
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QHBoxLayout
     // Function: indexOf
     // Source: QLayout
     // Static: false
@@ -5017,6 +5063,29 @@ Up = QVBoxLayout::Up,
               
                   QJSValue 
                   removeWidget
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QVBoxLayout
+    // Function: removeItem
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeItem
               (
 
                 
