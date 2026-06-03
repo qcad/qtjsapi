@@ -417,13 +417,11 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="view">
       <variant return-type="QAbstractItemView*" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    -->
     <!--
     <function name="setView">
       <variant return-type="void" access="public">

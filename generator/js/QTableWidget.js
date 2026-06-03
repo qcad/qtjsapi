@@ -39,8 +39,65 @@
         }
         else {
           
-              qWarning("QTableWidget.js: No constructor found for class QTableWidget");
-            
+      if (arguments.length >= 2 &&
+          arguments.length <= 3) {
+    
+            self = this;
+            wrapper = new QTableWidget_Wrapper(
+              // RJSApi:
+              handler
+              , arguments[0], arguments[1], arguments[2]
+              ////this.setWrapper(this.wrapper);
+              //Object.setPrototypeOf(this, wrapper);
+            );
+            //wrapper.__WRAPPER__ = true;
+            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+          
+            copyProperties(this, wrapper, QTableWidget);
+          
+
+        //this.setWrapper(this.wrapper);
+
+      
+
+        //copyProperties(this, wrapper, QTableWidget);
+  }
+
+  
+  else 
+  
+      if (arguments.length >= 0 &&
+          arguments.length <= 1) {
+    
+            self = this;
+            wrapper = new QTableWidget_Wrapper(
+              // RJSApi:
+              handler
+              , arguments[0]
+              ////this.setWrapper(this.wrapper);
+              //Object.setPrototypeOf(this, wrapper);
+            );
+            //wrapper.__WRAPPER__ = true;
+            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+          
+            copyProperties(this, wrapper, QTableWidget);
+          
+
+        //this.setWrapper(this.wrapper);
+
+      
+
+        //copyProperties(this, wrapper, QTableWidget);
+  }
+
+  
+  else {
+    
+        print("QTableWidget(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
         }
 
         //self = this;

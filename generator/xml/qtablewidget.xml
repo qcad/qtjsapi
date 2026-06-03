@@ -367,6 +367,20 @@
     <property type="int" name="columnCount" read="columnCount" write="setColumnCount" />
     <property type="int" name="rowCount" read="rowCount" write="setRowCount" />
     <class_decl name="QTableModel" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="rows" />
+          <parameter const="false" type="int" modifier="" name="columns" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
     <function name="setRowCount">
       <variant return-type="void" access="public">
         <parameters>
@@ -868,6 +882,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="event">
       <variant return-type="bool" access="protected">
         <parameters>
@@ -880,6 +895,7 @@
         <parameters />
       </variant>
     </function>
+    -->
     <!--
     <function name="mimeData">
       <variant return-type="QMimeData*" virtual="true" const="true" access="protected">
@@ -889,6 +905,7 @@
       </variant>
     </function>
     -->
+    <!--
     <function name="dropMimeData">
       <variant return-type="bool" virtual="true" access="protected">
         <parameters>
@@ -899,12 +916,16 @@
         </parameters>
       </variant>
     </function>
+    -->
+    <!--
     <function name="supportedDropActions">
       <variant return-type="Qt::DropActions" virtual="true" const="true" access="protected">
         <parameters />
       </variant>
     </function>
+    -->
     <preproc plain="#if QT_CONFIG(draganddrop)" />
+    <!--
     <function name="dropEvent">
       <variant return-type="void" access="protected">
         <parameters>
@@ -912,7 +933,8 @@
         </parameters>
       </variant>
     </function>
+    -->
     <preproc plain="#endif" />
-    <function name="setModel" />
+    <function name="setModel" ignore="true" />
   </class>
 </unit>

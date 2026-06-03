@@ -6593,6 +6593,27 @@ ProportionalFonts = QFontComboBox::ProportionalFonts,
               ;
             
     // Class: QFontComboBox
+    // Function: view
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  view
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QFontComboBox
     // Function: minimumSizeHint
     // Source: QComboBox
     // Static: false

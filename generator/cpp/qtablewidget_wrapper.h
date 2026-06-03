@@ -1761,6 +1761,41 @@ InternalMove = QTableWidget::InternalMove,
 
   // constructors:
   
+    // Class: QTableWidget
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              QTableWidget_Wrapper
+                
+              (
+
+                
+                  // RJSApi:
+                  QObject* h
+                  
+                  ,
+                  
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
 #if QT_CONFIG(draganddrop)
 
 #endif

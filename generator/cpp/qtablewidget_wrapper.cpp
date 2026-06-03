@@ -2833,6 +2833,177 @@ QVariant a2_cpp;
 
   // constructors:
   
+    // Class: QTableWidget
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+QTableWidget_Wrapper::QTableWidget_Wrapper
+                
+              (
+                
+                  // RJSApi:
+                  QObject* h
+                  ,
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+                : RJSWrapperObj(*(RJSApi*)h)
+              
+              {
+                
+                  //RDebug::incCounter(QString("QTableWidget_Wrapper_") + handler.getEngine()->objectName());
+                  //RDebug::incCounter(QString("QTableWidget_Wrapper"));
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+   && RJSHelper::is_int(handler, a2
+  )
+
+   && RJSHelper::is_QWidget_ptr(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: rows (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+  // convert js parameter to cpp: columns (int)
+  
+int a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
+        
+  // convert js parameter to cpp: parent (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = nullptr;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a3);
+          }
+        
+
+    // call function:
+    
+        // construct wrapper:
+
+        
+              wrapped = new QTableWidget(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+              );
+              wrappedCreated = true;
+            
+
+        // signal forwarding:
+        // TODO
+        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
+        initConnections();
+        return;
+
+      
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: parent (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = nullptr;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+          }
+        
+
+    // call function:
+    
+        // construct wrapper:
+
+        
+              wrapped = new QTableWidget(
+                  a1_cpp
+    
+              );
+              wrappedCreated = true;
+            
+
+        // signal forwarding:
+        // TODO
+        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
+        initConnections();
+        return;
+
+      
+  }
+
+                    // no constructor without arguments defined
+                    // allow constructor for prototype objects without args:
+                    if (
+                      a1.isUndefined()
+   && a2.isUndefined()
+   && a3.isUndefined()
+  
+                      ) {
+                      
+                        wrapped = nullptr;
+                      
+                      wrappedCreated = false;
+                      return;
+                    }
+                  
+
+                  qWarning() << "no matching constructor variant found for QTableWidget";
+                  
+                    wrapped = nullptr;
+                  
+                  wrappedCreated = false;
+                  handler.trace();
+                
+              }
+            
 #if QT_CONFIG(draganddrop)
 
 #endif
