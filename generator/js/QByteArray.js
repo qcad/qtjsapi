@@ -147,6 +147,14 @@
 
       // enum values:
       
+  // enum: Base64Option
+QByteArray.Base64Encoding = QByteArray_Wrapper.Base64Encoding;
+QByteArray.Base64UrlEncoding = QByteArray_Wrapper.Base64UrlEncoding;
+QByteArray.KeepTrailingEquals = QByteArray_Wrapper.KeepTrailingEquals;
+QByteArray.OmitTrailingEquals = QByteArray_Wrapper.OmitTrailingEquals;
+QByteArray.IgnoreBase64DecodingErrors = QByteArray_Wrapper.IgnoreBase64DecodingErrors;
+QByteArray.AbortOnBase64DecodingErrors = QByteArray_Wrapper.AbortOnBase64DecodingErrors;
+
 
       // functions:
       
@@ -604,6 +612,14 @@
         {
           //print("JS: QByteArray.prototype.toDouble");
           return this.__PROXY__.toDouble(...args);
+        };
+    
+        // function 
+        QByteArray.prototype.toBase64 = function(...args) 
+          
+        {
+          //print("JS: QByteArray.prototype.toBase64");
+          return this.__PROXY__.toBase64(...args);
         };
     
         // function 

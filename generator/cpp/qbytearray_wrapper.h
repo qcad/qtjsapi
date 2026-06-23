@@ -261,6 +261,19 @@
           return ret;
         }
       
+        // enums:
+        
+  enum Base64Option {
+    Base64Encoding = QByteArray::Base64Encoding,
+Base64UrlEncoding = QByteArray::Base64UrlEncoding,
+KeepTrailingEquals = QByteArray::KeepTrailingEquals,
+OmitTrailingEquals = QByteArray::OmitTrailingEquals,
+IgnoreBase64DecodingErrors = QByteArray::IgnoreBase64DecodingErrors,
+AbortOnBase64DecodingErrors = QByteArray::AbortOnBase64DecodingErrors,
+
+  };
+  Q_ENUM(Base64Option)
+
     /*
     // special constructor used as prototype:
     
@@ -1673,6 +1686,31 @@
               (
 
                 
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QByteArray
+    // Function: toBase64
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toBase64
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
               )
               
                 const

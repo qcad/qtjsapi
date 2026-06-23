@@ -17,6 +17,7 @@
     <type flags="true" ifdef="QT_PRINTSUPPORT_LIB">QAbstractPrintDialog::PrintDialogOptions</type>
     <type flags="true">QColorDialog::ColorDialogOptions</type>
     <type flags="true">QDialogButtonBox::StandardButtons</type>
+    <type flags="true">QByteArray::Base64Options</type>
     <type flags="true">QDir::Filters</type>
     <type flags="true">QDir::SortFlags</type>
     <type flags="true">QDirIterator::IteratorFlags</type>

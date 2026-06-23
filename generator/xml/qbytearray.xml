@@ -3,7 +3,6 @@
   <class_decl name="QString" />
   <class_decl name="QDataStream" />
   <class name="QByteArray" proxy="true">
-    <!--
     <enum name="Base64Option">
       <key>Base64Encoding</key>
       <key>Base64UrlEncoding</key>
@@ -12,7 +11,6 @@
       <key>IgnoreBase64DecodingErrors</key>
       <key>AbortOnBase64DecodingErrors</key>
     </enum>
-    -->
     <!--
     <enum name="Base64DecodingStatus">
       <key>Ok</key>
@@ -726,15 +724,13 @@
         -->
       </variant>
     </function>
-    <!--
     <function name="toBase64">
       <variant return-type="QByteArray" const="true" access="public">
         <parameters>
-          <parameter const="false" type="Base64Options" modifier="" name="options" default="Base64Encoding" />
+          <parameter const="false" type="QByteArray::Base64Options" modifier="" name="options" default="QByteArray::Base64Encoding" />
         </parameters>
       </variant>
     </function>
-    -->
     <function name="toHex">
       <variant return-type="QByteArray" const="true" access="public">
         <parameters>

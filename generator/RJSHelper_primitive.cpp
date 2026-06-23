@@ -655,6 +655,27 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper::cpp2js_QByteArray_Base64Options(RJSApi& handler, QByteArray::Base64Options v) {
+        return QJSValue(v);
+      }
+
+      QByteArray::Base64Options RJSHelper::js2cpp_QByteArray_Base64Options(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QByteArray::Base64Options()
+          ;
+        }
+        return 
+        (QByteArray::Base64Options)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QByteArray_Base64Options(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
       QJSValue RJSHelper::cpp2js_QDir_Filters(RJSApi& handler, QDir::Filters v) {
         return QJSValue(v);
       }

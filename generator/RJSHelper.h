@@ -1892,6 +1892,10 @@
       static QDialogButtonBox::StandardButtons js2cpp_QDialogButtonBox_StandardButtons(RJSApi& handler, const QJSValue& v);
       static bool is_QDialogButtonBox_StandardButtons(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QByteArray_Base64Options(RJSApi& handler, QByteArray::Base64Options v);
+      static QByteArray::Base64Options js2cpp_QByteArray_Base64Options(RJSApi& handler, const QJSValue& v);
+      static bool is_QByteArray_Base64Options(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QDir_Filters(RJSApi& handler, QDir::Filters v);
       static QDir::Filters js2cpp_QDir_Filters(RJSApi& handler, const QJSValue& v);
       static bool is_QDir_Filters(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);

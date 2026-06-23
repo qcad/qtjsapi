@@ -5828,6 +5828,88 @@ qsizetype a1_cpp;
               }
             
     // Class: QByteArray
+    // Function: toBase64
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QByteArray_Wrapper::toBase64
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QByteArray_Base64Options(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: options (QByteArray::Base64Options)
+  
+QByteArray::Base64Options a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QByteArray::Base64Encoding;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QByteArray_Base64Options(handler, a1);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QByteArray* w = getWrapped();
+                QByteArray res = 
+                    
+                w->toBase64(
+                  a1_cpp
+    
+                );
+              
+            // return type: QByteArray
+
+            return RJSHelper::cpp2js_QByteArray(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toBase64";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QByteArray
     // Function: toHex
     // Source: 
     // Static: false
