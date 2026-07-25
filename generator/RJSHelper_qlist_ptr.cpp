@@ -647,6 +647,31 @@
           return v.isArray();
       }
     
+      QJSValue RJSHelper::cpp2js_QList_QTableWidgetItem_ptr(RJSApi& handler, const QList<QTableWidgetItem*>& v) {
+          QJSValue ret = handler.getEngine()->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QTableWidgetItem(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QTableWidgetItem*> RJSHelper::js2cpp_QList_QTableWidgetItem_ptr(RJSApi& handler, const QJSValue& v) {
+          // TODO:
+          qWarning() << "js2cpp_QList_QTableWidgetItem: TODO: not properly implemented";
+          return handler.getEngine()->fromScriptValue<QList<QTableWidgetItem*>>(v);
+      }
+
+      bool RJSHelper::is_QList_QTableWidgetItem_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
       QJSValue RJSHelper::cpp2js_QList_QMdiSubWindow_ptr(RJSApi& handler, const QList<QMdiSubWindow*>& v) {
           QJSValue ret = handler.getEngine()->newArray((uint)v.length());
           for (int i=0; i<v.length(); i++) {

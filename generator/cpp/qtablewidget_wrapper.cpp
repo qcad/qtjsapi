@@ -28204,6 +28204,63 @@ int a2_cpp;
               }
             
     // Class: QTableWidget
+    // Function: selectedItems
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTableWidget_Wrapper::selectedItems
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTableWidget* w = getWrapped();
+                QList<QTableWidgetItem*> res = 
+                    
+                w->selectedItems(
+                  
+                );
+              
+            // return type: QList<QTableWidgetItem*>
+
+            return RJSHelper::cpp2js_QList_QTableWidgetItem_ptr(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for selectedItems";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTableWidget
     // Function: visualRow
     // Source: 
     // Static: false

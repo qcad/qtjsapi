@@ -658,13 +658,11 @@
       </variant>
     </function>
     -->
-    <!--
     <function name="selectedItems">
       <variant return-type="QList&lt;QTableWidgetItem*&gt;" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    -->
     <!--
     <function name="findItems">
       <variant return-type="QList&lt;QTableWidgetItem*&gt;" const="true" access="public">

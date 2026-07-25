@@ -10405,6 +10405,27 @@ InternalMove = QTableWidget::InternalMove,
               ;
             
     // Class: QTableWidget
+    // Function: selectedItems
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  selectedItems
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTableWidget
     // Function: visualRow
     // Source: 
     // Static: false

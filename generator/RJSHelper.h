@@ -4750,6 +4750,10 @@
       static QList<QListWidgetItem*> js2cpp_QList_QListWidgetItem_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QListWidgetItem_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QList_QTableWidgetItem_ptr(RJSApi& handler, const QList<QTableWidgetItem*>& v);
+      static QList<QTableWidgetItem*> js2cpp_QList_QTableWidgetItem_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QTableWidgetItem_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QList_QMdiSubWindow_ptr(RJSApi& handler, const QList<QMdiSubWindow*>& v);
       static QList<QMdiSubWindow*> js2cpp_QList_QMdiSubWindow_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QMdiSubWindow_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);

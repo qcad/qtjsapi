@@ -674,6 +674,7 @@
     <type>QList&lt;QAction*&gt;</type>
     <type>QList&lt;QDockWidget*&gt;</type>
     <type>QList&lt;QListWidgetItem*&gt;</type>
+    <type>QList&lt;QTableWidgetItem*&gt;</type>
     <type>QList&lt;QMdiSubWindow*&gt;</type>
     <type>QList&lt;QObject*&gt;</type>
     <type>QList&lt;QScreen*&gt;</type>
