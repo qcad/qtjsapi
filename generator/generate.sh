@@ -20,6 +20,9 @@ then
 elif [[ `pwd` == *qcadgles3djsapi* ]]
 then
     MODULE="qcadgles3d"
+elif [[ `pwd` == *qcadcanvasjsapi* ]]
+then
+    MODULE="qcadcanvas"
 elif [[ `pwd` == *qcadquickjsapi* ]]
 then
     MODULE="qcadquick"
