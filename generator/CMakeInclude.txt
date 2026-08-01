@@ -350,6 +350,35 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qstringconverterbase_wrapper.h
     generator/cpp/qstringdecoder_wrapper.h
     generator/cpp/qstringencoder_wrapper.h
+    generator/cpp/qstylehintreturn_wrapper.h
+    generator/cpp/qstylehintreturnmask_wrapper.h
+    generator/cpp/qstylehintreturnvariant_wrapper.h
+    generator/cpp/qstyleoption_base.h
+    generator/cpp/qstyleoption_wrapper.h
+    generator/cpp/qstyleoptionbutton_wrapper.h
+    generator/cpp/qstyleoptioncombobox_wrapper.h
+    generator/cpp/qstyleoptioncomplex_wrapper.h
+    generator/cpp/qstyleoptiondockwidget_wrapper.h
+    generator/cpp/qstyleoptionfocusrect_wrapper.h
+    generator/cpp/qstyleoptionframe_wrapper.h
+    generator/cpp/qstyleoptiongraphicsitem_wrapper.h
+    generator/cpp/qstyleoptiongroupbox_wrapper.h
+    generator/cpp/qstyleoptionheader_wrapper.h
+    generator/cpp/qstyleoptionheaderv2_wrapper.h
+    generator/cpp/qstyleoptionmenuitem_wrapper.h
+    generator/cpp/qstyleoptionprogressbar_wrapper.h
+    generator/cpp/qstyleoptionrubberband_wrapper.h
+    generator/cpp/qstyleoptionsizegrip_wrapper.h
+    generator/cpp/qstyleoptionslider_wrapper.h
+    generator/cpp/qstyleoptionspinbox_wrapper.h
+    generator/cpp/qstyleoptiontab_wrapper.h
+    generator/cpp/qstyleoptiontabbarbase_wrapper.h
+    generator/cpp/qstyleoptiontabwidgetframe_wrapper.h
+    generator/cpp/qstyleoptiontitlebar_wrapper.h
+    generator/cpp/qstyleoptiontoolbar_wrapper.h
+    generator/cpp/qstyleoptiontoolbox_wrapper.h
+    generator/cpp/qstyleoptiontoolbutton_wrapper.h
+    generator/cpp/qstyleoptionviewitem_wrapper.h
     generator/cpp/qsurface_wrapper.h
     generator/cpp/qsurfaceformat_base.h
     generator/cpp/qsurfaceformat_wrapper.h
@@ -728,6 +757,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qstatusbar_wrapper.cpp
     generator/cpp/qstringconverter_base.cpp
     generator/cpp/qstringconverter_wrapper.cpp
+    generator/cpp/qstyleoption_base.cpp
+    generator/cpp/qstyleoption_wrapper.cpp
     generator/cpp/qsurfaceformat_base.cpp
     generator/cpp/qsurfaceformat_wrapper.cpp
     generator/cpp/qsvgrenderer_base.cpp

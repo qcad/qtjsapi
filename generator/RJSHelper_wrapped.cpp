@@ -427,6 +427,56 @@
         
           #include "qstringdecoder_wrapper.h"
         
+          #include "qstyleoption_wrapper.h"
+        
+          #include "qstyleoptionfocusrect_wrapper.h"
+        
+          #include "qstyleoptionframe_wrapper.h"
+        
+          #include "qstyleoptiontabwidgetframe_wrapper.h"
+        
+          #include "qstyleoptiontabbarbase_wrapper.h"
+        
+          #include "qstyleoptionheader_wrapper.h"
+        
+          #include "qstyleoptionheaderv2_wrapper.h"
+        
+          #include "qstyleoptionbutton_wrapper.h"
+        
+          #include "qstyleoptiontab_wrapper.h"
+        
+          #include "qstyleoptiontoolbar_wrapper.h"
+        
+          #include "qstyleoptionprogressbar_wrapper.h"
+        
+          #include "qstyleoptionmenuitem_wrapper.h"
+        
+          #include "qstyleoptiondockwidget_wrapper.h"
+        
+          #include "qstyleoptionviewitem_wrapper.h"
+        
+          #include "qstyleoptiontoolbox_wrapper.h"
+        
+          #include "qstyleoptionrubberband_wrapper.h"
+        
+          #include "qstyleoptioncomplex_wrapper.h"
+        
+          #include "qstyleoptionslider_wrapper.h"
+        
+          #include "qstyleoptionspinbox_wrapper.h"
+        
+          #include "qstyleoptiontoolbutton_wrapper.h"
+        
+          #include "qstyleoptioncombobox_wrapper.h"
+        
+          #include "qstyleoptiontitlebar_wrapper.h"
+        
+          #include "qstyleoptiongroupbox_wrapper.h"
+        
+          #include "qstyleoptionsizegrip_wrapper.h"
+        
+          #include "qstyleoptiongraphicsitem_wrapper.h"
+        
           #include "qsurfaceformat_wrapper.h"
         
           #include "qsvgrenderer_wrapper.h"
@@ -8436,6 +8486,2906 @@
           }
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QSizePolicy::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOption(RJSApi& handler, const QStyleOption* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOption_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOption_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOption object:
+              ret = new QStyleOption_Wrapper(handler, new QStyleOption(*v), true);
+          }
+
+          // JS: new QStyleOption('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOption");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOption is undefined. Use QStyleOption_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOption('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOption(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOption(RJSApi& handler, const QStyleOption& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOption object:
+          QStyleOption_Wrapper* ret = new QStyleOption_Wrapper(handler, new QStyleOption(v), true);
+
+          // JS: new QStyleOption('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOption");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOption is undefined. Use QStyleOption_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOption('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOption(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOption RJSHelper::js2cpp_QStyleOption(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOption_Wrapper* wrapper = getWrapper<QStyleOption_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOption: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOption();
+          }
+          //return *(QStyleOption*)wrapper->getWrappedVoid();
+          QStyleOption* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOption: wrapped pointer is NULL";
+              return QStyleOption();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOption: not a QObject";
+              return QStyleOption();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOption_ptr: no wrapper";
+              handler.trace();
+              return QStyleOption();
+          }
+          //QStyleOption* ret = getWrapped_QStyleOption(wrapper);
+          QStyleOption* ret = QStyleOption_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOption();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOption: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOption::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionViewItem(RJSApi& handler, const QStyleOptionViewItem* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionViewItem_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionViewItem_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionViewItem object:
+              ret = new QStyleOptionViewItem_Wrapper(handler, new QStyleOptionViewItem(*v), true);
+          }
+
+          // JS: new QStyleOptionViewItem('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionViewItem");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionViewItem is undefined. Use QStyleOptionViewItem_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionViewItem('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionViewItem(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionViewItem(RJSApi& handler, const QStyleOptionViewItem& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionViewItem object:
+          QStyleOptionViewItem_Wrapper* ret = new QStyleOptionViewItem_Wrapper(handler, new QStyleOptionViewItem(v), true);
+
+          // JS: new QStyleOptionViewItem('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionViewItem");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionViewItem is undefined. Use QStyleOptionViewItem_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionViewItem('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionViewItem(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionViewItem RJSHelper::js2cpp_QStyleOptionViewItem(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionViewItem_Wrapper* wrapper = getWrapper<QStyleOptionViewItem_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionViewItem: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionViewItem();
+          }
+          //return *(QStyleOptionViewItem*)wrapper->getWrappedVoid();
+          QStyleOptionViewItem* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionViewItem: wrapped pointer is NULL";
+              return QStyleOptionViewItem();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionViewItem: not a QObject";
+              return QStyleOptionViewItem();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionViewItem_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionViewItem();
+          }
+          //QStyleOptionViewItem* ret = getWrapped_QStyleOptionViewItem(wrapper);
+          QStyleOptionViewItem* ret = QStyleOptionViewItem_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionViewItem();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionViewItem(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionViewItem: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionViewItem::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionFocusRect(RJSApi& handler, const QStyleOptionFocusRect* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionFocusRect_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionFocusRect_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionFocusRect object:
+              ret = new QStyleOptionFocusRect_Wrapper(handler, new QStyleOptionFocusRect(*v), true);
+          }
+
+          // JS: new QStyleOptionFocusRect('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionFocusRect");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionFocusRect is undefined. Use QStyleOptionFocusRect_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionFocusRect('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionFocusRect(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionFocusRect(RJSApi& handler, const QStyleOptionFocusRect& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionFocusRect object:
+          QStyleOptionFocusRect_Wrapper* ret = new QStyleOptionFocusRect_Wrapper(handler, new QStyleOptionFocusRect(v), true);
+
+          // JS: new QStyleOptionFocusRect('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionFocusRect");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionFocusRect is undefined. Use QStyleOptionFocusRect_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionFocusRect('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionFocusRect(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionFocusRect RJSHelper::js2cpp_QStyleOptionFocusRect(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionFocusRect_Wrapper* wrapper = getWrapper<QStyleOptionFocusRect_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionFocusRect: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionFocusRect();
+          }
+          //return *(QStyleOptionFocusRect*)wrapper->getWrappedVoid();
+          QStyleOptionFocusRect* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionFocusRect: wrapped pointer is NULL";
+              return QStyleOptionFocusRect();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionFocusRect: not a QObject";
+              return QStyleOptionFocusRect();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionFocusRect_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionFocusRect();
+          }
+          //QStyleOptionFocusRect* ret = getWrapped_QStyleOptionFocusRect(wrapper);
+          QStyleOptionFocusRect* ret = QStyleOptionFocusRect_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionFocusRect();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionFocusRect(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionFocusRect: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionFocusRect::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionFrame(RJSApi& handler, const QStyleOptionFrame* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionFrame_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionFrame_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionFrame object:
+              ret = new QStyleOptionFrame_Wrapper(handler, new QStyleOptionFrame(*v), true);
+          }
+
+          // JS: new QStyleOptionFrame('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionFrame");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionFrame is undefined. Use QStyleOptionFrame_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionFrame('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionFrame(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionFrame(RJSApi& handler, const QStyleOptionFrame& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionFrame object:
+          QStyleOptionFrame_Wrapper* ret = new QStyleOptionFrame_Wrapper(handler, new QStyleOptionFrame(v), true);
+
+          // JS: new QStyleOptionFrame('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionFrame");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionFrame is undefined. Use QStyleOptionFrame_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionFrame('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionFrame(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionFrame RJSHelper::js2cpp_QStyleOptionFrame(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionFrame_Wrapper* wrapper = getWrapper<QStyleOptionFrame_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionFrame: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionFrame();
+          }
+          //return *(QStyleOptionFrame*)wrapper->getWrappedVoid();
+          QStyleOptionFrame* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionFrame: wrapped pointer is NULL";
+              return QStyleOptionFrame();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionFrame: not a QObject";
+              return QStyleOptionFrame();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionFrame_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionFrame();
+          }
+          //QStyleOptionFrame* ret = getWrapped_QStyleOptionFrame(wrapper);
+          QStyleOptionFrame* ret = QStyleOptionFrame_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionFrame();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionFrame(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionFrame: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionFrame::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionTabWidgetFrame(RJSApi& handler, const QStyleOptionTabWidgetFrame* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionTabWidgetFrame_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionTabWidgetFrame_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionTabWidgetFrame object:
+              ret = new QStyleOptionTabWidgetFrame_Wrapper(handler, new QStyleOptionTabWidgetFrame(*v), true);
+          }
+
+          // JS: new QStyleOptionTabWidgetFrame('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionTabWidgetFrame");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionTabWidgetFrame is undefined. Use QStyleOptionTabWidgetFrame_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionTabWidgetFrame('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionTabWidgetFrame(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionTabWidgetFrame(RJSApi& handler, const QStyleOptionTabWidgetFrame& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionTabWidgetFrame object:
+          QStyleOptionTabWidgetFrame_Wrapper* ret = new QStyleOptionTabWidgetFrame_Wrapper(handler, new QStyleOptionTabWidgetFrame(v), true);
+
+          // JS: new QStyleOptionTabWidgetFrame('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionTabWidgetFrame");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionTabWidgetFrame is undefined. Use QStyleOptionTabWidgetFrame_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionTabWidgetFrame('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionTabWidgetFrame(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionTabWidgetFrame RJSHelper::js2cpp_QStyleOptionTabWidgetFrame(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionTabWidgetFrame_Wrapper* wrapper = getWrapper<QStyleOptionTabWidgetFrame_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTabWidgetFrame: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionTabWidgetFrame();
+          }
+          //return *(QStyleOptionTabWidgetFrame*)wrapper->getWrappedVoid();
+          QStyleOptionTabWidgetFrame* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTabWidgetFrame: wrapped pointer is NULL";
+              return QStyleOptionTabWidgetFrame();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionTabWidgetFrame: not a QObject";
+              return QStyleOptionTabWidgetFrame();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTabWidgetFrame_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionTabWidgetFrame();
+          }
+          //QStyleOptionTabWidgetFrame* ret = getWrapped_QStyleOptionTabWidgetFrame(wrapper);
+          QStyleOptionTabWidgetFrame* ret = QStyleOptionTabWidgetFrame_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionTabWidgetFrame();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionTabWidgetFrame(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionTabWidgetFrame: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionTabWidgetFrame::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionTabBarBase(RJSApi& handler, const QStyleOptionTabBarBase* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionTabBarBase_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionTabBarBase_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionTabBarBase object:
+              ret = new QStyleOptionTabBarBase_Wrapper(handler, new QStyleOptionTabBarBase(*v), true);
+          }
+
+          // JS: new QStyleOptionTabBarBase('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionTabBarBase");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionTabBarBase is undefined. Use QStyleOptionTabBarBase_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionTabBarBase('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionTabBarBase(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionTabBarBase(RJSApi& handler, const QStyleOptionTabBarBase& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionTabBarBase object:
+          QStyleOptionTabBarBase_Wrapper* ret = new QStyleOptionTabBarBase_Wrapper(handler, new QStyleOptionTabBarBase(v), true);
+
+          // JS: new QStyleOptionTabBarBase('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionTabBarBase");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionTabBarBase is undefined. Use QStyleOptionTabBarBase_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionTabBarBase('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionTabBarBase(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionTabBarBase RJSHelper::js2cpp_QStyleOptionTabBarBase(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionTabBarBase_Wrapper* wrapper = getWrapper<QStyleOptionTabBarBase_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTabBarBase: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionTabBarBase();
+          }
+          //return *(QStyleOptionTabBarBase*)wrapper->getWrappedVoid();
+          QStyleOptionTabBarBase* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTabBarBase: wrapped pointer is NULL";
+              return QStyleOptionTabBarBase();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionTabBarBase: not a QObject";
+              return QStyleOptionTabBarBase();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTabBarBase_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionTabBarBase();
+          }
+          //QStyleOptionTabBarBase* ret = getWrapped_QStyleOptionTabBarBase(wrapper);
+          QStyleOptionTabBarBase* ret = QStyleOptionTabBarBase_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionTabBarBase();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionTabBarBase(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionTabBarBase: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionTabBarBase::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionHeader(RJSApi& handler, const QStyleOptionHeader* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionHeader_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionHeader_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionHeader object:
+              ret = new QStyleOptionHeader_Wrapper(handler, new QStyleOptionHeader(*v), true);
+          }
+
+          // JS: new QStyleOptionHeader('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionHeader");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionHeader is undefined. Use QStyleOptionHeader_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionHeader('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionHeader(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionHeader(RJSApi& handler, const QStyleOptionHeader& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionHeader object:
+          QStyleOptionHeader_Wrapper* ret = new QStyleOptionHeader_Wrapper(handler, new QStyleOptionHeader(v), true);
+
+          // JS: new QStyleOptionHeader('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionHeader");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionHeader is undefined. Use QStyleOptionHeader_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionHeader('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionHeader(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionHeader RJSHelper::js2cpp_QStyleOptionHeader(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionHeader_Wrapper* wrapper = getWrapper<QStyleOptionHeader_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionHeader: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionHeader();
+          }
+          //return *(QStyleOptionHeader*)wrapper->getWrappedVoid();
+          QStyleOptionHeader* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionHeader: wrapped pointer is NULL";
+              return QStyleOptionHeader();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionHeader: not a QObject";
+              return QStyleOptionHeader();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionHeader_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionHeader();
+          }
+          //QStyleOptionHeader* ret = getWrapped_QStyleOptionHeader(wrapper);
+          QStyleOptionHeader* ret = QStyleOptionHeader_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionHeader();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionHeader(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionHeader: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionHeader::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionHeaderV2(RJSApi& handler, const QStyleOptionHeaderV2* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionHeaderV2_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionHeaderV2_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionHeaderV2 object:
+              ret = new QStyleOptionHeaderV2_Wrapper(handler, new QStyleOptionHeaderV2(*v), true);
+          }
+
+          // JS: new QStyleOptionHeaderV2('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionHeaderV2");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionHeaderV2 is undefined. Use QStyleOptionHeaderV2_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionHeaderV2('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionHeaderV2(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionHeaderV2(RJSApi& handler, const QStyleOptionHeaderV2& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionHeaderV2 object:
+          QStyleOptionHeaderV2_Wrapper* ret = new QStyleOptionHeaderV2_Wrapper(handler, new QStyleOptionHeaderV2(v), true);
+
+          // JS: new QStyleOptionHeaderV2('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionHeaderV2");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionHeaderV2 is undefined. Use QStyleOptionHeaderV2_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionHeaderV2('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionHeaderV2(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionHeaderV2 RJSHelper::js2cpp_QStyleOptionHeaderV2(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionHeaderV2_Wrapper* wrapper = getWrapper<QStyleOptionHeaderV2_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionHeaderV2: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionHeaderV2();
+          }
+          //return *(QStyleOptionHeaderV2*)wrapper->getWrappedVoid();
+          QStyleOptionHeaderV2* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionHeaderV2: wrapped pointer is NULL";
+              return QStyleOptionHeaderV2();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionHeaderV2: not a QObject";
+              return QStyleOptionHeaderV2();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionHeaderV2_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionHeaderV2();
+          }
+          //QStyleOptionHeaderV2* ret = getWrapped_QStyleOptionHeaderV2(wrapper);
+          QStyleOptionHeaderV2* ret = QStyleOptionHeaderV2_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionHeaderV2();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionHeaderV2(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionHeaderV2: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionHeaderV2::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionButton(RJSApi& handler, const QStyleOptionButton* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionButton_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionButton_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionButton object:
+              ret = new QStyleOptionButton_Wrapper(handler, new QStyleOptionButton(*v), true);
+          }
+
+          // JS: new QStyleOptionButton('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionButton");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionButton is undefined. Use QStyleOptionButton_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionButton('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionButton(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionButton(RJSApi& handler, const QStyleOptionButton& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionButton object:
+          QStyleOptionButton_Wrapper* ret = new QStyleOptionButton_Wrapper(handler, new QStyleOptionButton(v), true);
+
+          // JS: new QStyleOptionButton('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionButton");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionButton is undefined. Use QStyleOptionButton_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionButton('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionButton(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionButton RJSHelper::js2cpp_QStyleOptionButton(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionButton_Wrapper* wrapper = getWrapper<QStyleOptionButton_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionButton: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionButton();
+          }
+          //return *(QStyleOptionButton*)wrapper->getWrappedVoid();
+          QStyleOptionButton* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionButton: wrapped pointer is NULL";
+              return QStyleOptionButton();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionButton: not a QObject";
+              return QStyleOptionButton();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionButton_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionButton();
+          }
+          //QStyleOptionButton* ret = getWrapped_QStyleOptionButton(wrapper);
+          QStyleOptionButton* ret = QStyleOptionButton_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionButton();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionButton(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionButton: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionButton::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionTab(RJSApi& handler, const QStyleOptionTab* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionTab_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionTab_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionTab object:
+              ret = new QStyleOptionTab_Wrapper(handler, new QStyleOptionTab(*v), true);
+          }
+
+          // JS: new QStyleOptionTab('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionTab");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionTab is undefined. Use QStyleOptionTab_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionTab('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionTab(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionTab(RJSApi& handler, const QStyleOptionTab& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionTab object:
+          QStyleOptionTab_Wrapper* ret = new QStyleOptionTab_Wrapper(handler, new QStyleOptionTab(v), true);
+
+          // JS: new QStyleOptionTab('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionTab");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionTab is undefined. Use QStyleOptionTab_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionTab('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionTab(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionTab RJSHelper::js2cpp_QStyleOptionTab(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionTab_Wrapper* wrapper = getWrapper<QStyleOptionTab_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTab: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionTab();
+          }
+          //return *(QStyleOptionTab*)wrapper->getWrappedVoid();
+          QStyleOptionTab* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTab: wrapped pointer is NULL";
+              return QStyleOptionTab();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionTab: not a QObject";
+              return QStyleOptionTab();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTab_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionTab();
+          }
+          //QStyleOptionTab* ret = getWrapped_QStyleOptionTab(wrapper);
+          QStyleOptionTab* ret = QStyleOptionTab_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionTab();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionTab(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionTab: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionTab::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionToolBar(RJSApi& handler, const QStyleOptionToolBar* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionToolBar_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionToolBar_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionToolBar object:
+              ret = new QStyleOptionToolBar_Wrapper(handler, new QStyleOptionToolBar(*v), true);
+          }
+
+          // JS: new QStyleOptionToolBar('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionToolBar");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionToolBar is undefined. Use QStyleOptionToolBar_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionToolBar('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionToolBar(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionToolBar(RJSApi& handler, const QStyleOptionToolBar& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionToolBar object:
+          QStyleOptionToolBar_Wrapper* ret = new QStyleOptionToolBar_Wrapper(handler, new QStyleOptionToolBar(v), true);
+
+          // JS: new QStyleOptionToolBar('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionToolBar");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionToolBar is undefined. Use QStyleOptionToolBar_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionToolBar('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionToolBar(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionToolBar RJSHelper::js2cpp_QStyleOptionToolBar(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionToolBar_Wrapper* wrapper = getWrapper<QStyleOptionToolBar_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionToolBar: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionToolBar();
+          }
+          //return *(QStyleOptionToolBar*)wrapper->getWrappedVoid();
+          QStyleOptionToolBar* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionToolBar: wrapped pointer is NULL";
+              return QStyleOptionToolBar();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionToolBar: not a QObject";
+              return QStyleOptionToolBar();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionToolBar_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionToolBar();
+          }
+          //QStyleOptionToolBar* ret = getWrapped_QStyleOptionToolBar(wrapper);
+          QStyleOptionToolBar* ret = QStyleOptionToolBar_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionToolBar();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionToolBar(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionToolBar: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionToolBar::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionProgressBar(RJSApi& handler, const QStyleOptionProgressBar* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionProgressBar_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionProgressBar_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionProgressBar object:
+              ret = new QStyleOptionProgressBar_Wrapper(handler, new QStyleOptionProgressBar(*v), true);
+          }
+
+          // JS: new QStyleOptionProgressBar('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionProgressBar");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionProgressBar is undefined. Use QStyleOptionProgressBar_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionProgressBar('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionProgressBar(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionProgressBar(RJSApi& handler, const QStyleOptionProgressBar& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionProgressBar object:
+          QStyleOptionProgressBar_Wrapper* ret = new QStyleOptionProgressBar_Wrapper(handler, new QStyleOptionProgressBar(v), true);
+
+          // JS: new QStyleOptionProgressBar('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionProgressBar");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionProgressBar is undefined. Use QStyleOptionProgressBar_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionProgressBar('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionProgressBar(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionProgressBar RJSHelper::js2cpp_QStyleOptionProgressBar(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionProgressBar_Wrapper* wrapper = getWrapper<QStyleOptionProgressBar_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionProgressBar: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionProgressBar();
+          }
+          //return *(QStyleOptionProgressBar*)wrapper->getWrappedVoid();
+          QStyleOptionProgressBar* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionProgressBar: wrapped pointer is NULL";
+              return QStyleOptionProgressBar();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionProgressBar: not a QObject";
+              return QStyleOptionProgressBar();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionProgressBar_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionProgressBar();
+          }
+          //QStyleOptionProgressBar* ret = getWrapped_QStyleOptionProgressBar(wrapper);
+          QStyleOptionProgressBar* ret = QStyleOptionProgressBar_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionProgressBar();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionProgressBar(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionProgressBar: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionProgressBar::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionMenuItem(RJSApi& handler, const QStyleOptionMenuItem* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionMenuItem_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionMenuItem_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionMenuItem object:
+              ret = new QStyleOptionMenuItem_Wrapper(handler, new QStyleOptionMenuItem(*v), true);
+          }
+
+          // JS: new QStyleOptionMenuItem('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionMenuItem");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionMenuItem is undefined. Use QStyleOptionMenuItem_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionMenuItem('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionMenuItem(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionMenuItem(RJSApi& handler, const QStyleOptionMenuItem& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionMenuItem object:
+          QStyleOptionMenuItem_Wrapper* ret = new QStyleOptionMenuItem_Wrapper(handler, new QStyleOptionMenuItem(v), true);
+
+          // JS: new QStyleOptionMenuItem('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionMenuItem");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionMenuItem is undefined. Use QStyleOptionMenuItem_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionMenuItem('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionMenuItem(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionMenuItem RJSHelper::js2cpp_QStyleOptionMenuItem(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionMenuItem_Wrapper* wrapper = getWrapper<QStyleOptionMenuItem_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionMenuItem: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionMenuItem();
+          }
+          //return *(QStyleOptionMenuItem*)wrapper->getWrappedVoid();
+          QStyleOptionMenuItem* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionMenuItem: wrapped pointer is NULL";
+              return QStyleOptionMenuItem();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionMenuItem: not a QObject";
+              return QStyleOptionMenuItem();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionMenuItem_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionMenuItem();
+          }
+          //QStyleOptionMenuItem* ret = getWrapped_QStyleOptionMenuItem(wrapper);
+          QStyleOptionMenuItem* ret = QStyleOptionMenuItem_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionMenuItem();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionMenuItem(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionMenuItem: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionMenuItem::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionDockWidget(RJSApi& handler, const QStyleOptionDockWidget* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionDockWidget_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionDockWidget_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionDockWidget object:
+              ret = new QStyleOptionDockWidget_Wrapper(handler, new QStyleOptionDockWidget(*v), true);
+          }
+
+          // JS: new QStyleOptionDockWidget('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionDockWidget");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionDockWidget is undefined. Use QStyleOptionDockWidget_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionDockWidget('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionDockWidget(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionDockWidget(RJSApi& handler, const QStyleOptionDockWidget& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionDockWidget object:
+          QStyleOptionDockWidget_Wrapper* ret = new QStyleOptionDockWidget_Wrapper(handler, new QStyleOptionDockWidget(v), true);
+
+          // JS: new QStyleOptionDockWidget('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionDockWidget");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionDockWidget is undefined. Use QStyleOptionDockWidget_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionDockWidget('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionDockWidget(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionDockWidget RJSHelper::js2cpp_QStyleOptionDockWidget(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionDockWidget_Wrapper* wrapper = getWrapper<QStyleOptionDockWidget_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionDockWidget: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionDockWidget();
+          }
+          //return *(QStyleOptionDockWidget*)wrapper->getWrappedVoid();
+          QStyleOptionDockWidget* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionDockWidget: wrapped pointer is NULL";
+              return QStyleOptionDockWidget();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionDockWidget: not a QObject";
+              return QStyleOptionDockWidget();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionDockWidget_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionDockWidget();
+          }
+          //QStyleOptionDockWidget* ret = getWrapped_QStyleOptionDockWidget(wrapper);
+          QStyleOptionDockWidget* ret = QStyleOptionDockWidget_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionDockWidget();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionDockWidget(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionDockWidget: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionDockWidget::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionToolBox(RJSApi& handler, const QStyleOptionToolBox* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionToolBox_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionToolBox_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionToolBox object:
+              ret = new QStyleOptionToolBox_Wrapper(handler, new QStyleOptionToolBox(*v), true);
+          }
+
+          // JS: new QStyleOptionToolBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionToolBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionToolBox is undefined. Use QStyleOptionToolBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionToolBox('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionToolBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionToolBox(RJSApi& handler, const QStyleOptionToolBox& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionToolBox object:
+          QStyleOptionToolBox_Wrapper* ret = new QStyleOptionToolBox_Wrapper(handler, new QStyleOptionToolBox(v), true);
+
+          // JS: new QStyleOptionToolBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionToolBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionToolBox is undefined. Use QStyleOptionToolBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionToolBox('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionToolBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionToolBox RJSHelper::js2cpp_QStyleOptionToolBox(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionToolBox_Wrapper* wrapper = getWrapper<QStyleOptionToolBox_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionToolBox: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionToolBox();
+          }
+          //return *(QStyleOptionToolBox*)wrapper->getWrappedVoid();
+          QStyleOptionToolBox* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionToolBox: wrapped pointer is NULL";
+              return QStyleOptionToolBox();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionToolBox: not a QObject";
+              return QStyleOptionToolBox();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionToolBox_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionToolBox();
+          }
+          //QStyleOptionToolBox* ret = getWrapped_QStyleOptionToolBox(wrapper);
+          QStyleOptionToolBox* ret = QStyleOptionToolBox_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionToolBox();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionToolBox(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionToolBox: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionToolBox::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionRubberBand(RJSApi& handler, const QStyleOptionRubberBand* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionRubberBand_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionRubberBand_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionRubberBand object:
+              ret = new QStyleOptionRubberBand_Wrapper(handler, new QStyleOptionRubberBand(*v), true);
+          }
+
+          // JS: new QStyleOptionRubberBand('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionRubberBand");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionRubberBand is undefined. Use QStyleOptionRubberBand_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionRubberBand('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionRubberBand(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionRubberBand(RJSApi& handler, const QStyleOptionRubberBand& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionRubberBand object:
+          QStyleOptionRubberBand_Wrapper* ret = new QStyleOptionRubberBand_Wrapper(handler, new QStyleOptionRubberBand(v), true);
+
+          // JS: new QStyleOptionRubberBand('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionRubberBand");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionRubberBand is undefined. Use QStyleOptionRubberBand_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionRubberBand('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionRubberBand(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionRubberBand RJSHelper::js2cpp_QStyleOptionRubberBand(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionRubberBand_Wrapper* wrapper = getWrapper<QStyleOptionRubberBand_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionRubberBand: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionRubberBand();
+          }
+          //return *(QStyleOptionRubberBand*)wrapper->getWrappedVoid();
+          QStyleOptionRubberBand* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionRubberBand: wrapped pointer is NULL";
+              return QStyleOptionRubberBand();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionRubberBand: not a QObject";
+              return QStyleOptionRubberBand();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionRubberBand_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionRubberBand();
+          }
+          //QStyleOptionRubberBand* ret = getWrapped_QStyleOptionRubberBand(wrapper);
+          QStyleOptionRubberBand* ret = QStyleOptionRubberBand_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionRubberBand();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionRubberBand(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionRubberBand: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionRubberBand::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionComplex(RJSApi& handler, const QStyleOptionComplex* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionComplex_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionComplex_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionComplex object:
+              ret = new QStyleOptionComplex_Wrapper(handler, new QStyleOptionComplex(*v), true);
+          }
+
+          // JS: new QStyleOptionComplex('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionComplex");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionComplex is undefined. Use QStyleOptionComplex_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionComplex('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionComplex(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionComplex(RJSApi& handler, const QStyleOptionComplex& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionComplex object:
+          QStyleOptionComplex_Wrapper* ret = new QStyleOptionComplex_Wrapper(handler, new QStyleOptionComplex(v), true);
+
+          // JS: new QStyleOptionComplex('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionComplex");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionComplex is undefined. Use QStyleOptionComplex_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionComplex('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionComplex(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionComplex RJSHelper::js2cpp_QStyleOptionComplex(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionComplex_Wrapper* wrapper = getWrapper<QStyleOptionComplex_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionComplex: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionComplex();
+          }
+          //return *(QStyleOptionComplex*)wrapper->getWrappedVoid();
+          QStyleOptionComplex* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionComplex: wrapped pointer is NULL";
+              return QStyleOptionComplex();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionComplex: not a QObject";
+              return QStyleOptionComplex();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionComplex_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionComplex();
+          }
+          //QStyleOptionComplex* ret = getWrapped_QStyleOptionComplex(wrapper);
+          QStyleOptionComplex* ret = QStyleOptionComplex_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionComplex();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionComplex(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionComplex: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionComplex::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionSlider(RJSApi& handler, const QStyleOptionSlider* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionSlider_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionSlider_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionSlider object:
+              ret = new QStyleOptionSlider_Wrapper(handler, new QStyleOptionSlider(*v), true);
+          }
+
+          // JS: new QStyleOptionSlider('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionSlider");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionSlider is undefined. Use QStyleOptionSlider_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionSlider('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionSlider(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionSlider(RJSApi& handler, const QStyleOptionSlider& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionSlider object:
+          QStyleOptionSlider_Wrapper* ret = new QStyleOptionSlider_Wrapper(handler, new QStyleOptionSlider(v), true);
+
+          // JS: new QStyleOptionSlider('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionSlider");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionSlider is undefined. Use QStyleOptionSlider_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionSlider('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionSlider(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionSlider RJSHelper::js2cpp_QStyleOptionSlider(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionSlider_Wrapper* wrapper = getWrapper<QStyleOptionSlider_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionSlider: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionSlider();
+          }
+          //return *(QStyleOptionSlider*)wrapper->getWrappedVoid();
+          QStyleOptionSlider* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionSlider: wrapped pointer is NULL";
+              return QStyleOptionSlider();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionSlider: not a QObject";
+              return QStyleOptionSlider();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionSlider_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionSlider();
+          }
+          //QStyleOptionSlider* ret = getWrapped_QStyleOptionSlider(wrapper);
+          QStyleOptionSlider* ret = QStyleOptionSlider_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionSlider();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionSlider(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionSlider: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionSlider::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionSpinBox(RJSApi& handler, const QStyleOptionSpinBox* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionSpinBox_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionSpinBox_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionSpinBox object:
+              ret = new QStyleOptionSpinBox_Wrapper(handler, new QStyleOptionSpinBox(*v), true);
+          }
+
+          // JS: new QStyleOptionSpinBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionSpinBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionSpinBox is undefined. Use QStyleOptionSpinBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionSpinBox('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionSpinBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionSpinBox(RJSApi& handler, const QStyleOptionSpinBox& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionSpinBox object:
+          QStyleOptionSpinBox_Wrapper* ret = new QStyleOptionSpinBox_Wrapper(handler, new QStyleOptionSpinBox(v), true);
+
+          // JS: new QStyleOptionSpinBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionSpinBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionSpinBox is undefined. Use QStyleOptionSpinBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionSpinBox('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionSpinBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionSpinBox RJSHelper::js2cpp_QStyleOptionSpinBox(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionSpinBox_Wrapper* wrapper = getWrapper<QStyleOptionSpinBox_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionSpinBox: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionSpinBox();
+          }
+          //return *(QStyleOptionSpinBox*)wrapper->getWrappedVoid();
+          QStyleOptionSpinBox* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionSpinBox: wrapped pointer is NULL";
+              return QStyleOptionSpinBox();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionSpinBox: not a QObject";
+              return QStyleOptionSpinBox();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionSpinBox_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionSpinBox();
+          }
+          //QStyleOptionSpinBox* ret = getWrapped_QStyleOptionSpinBox(wrapper);
+          QStyleOptionSpinBox* ret = QStyleOptionSpinBox_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionSpinBox();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionSpinBox(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionSpinBox: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionSpinBox::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionToolButton(RJSApi& handler, const QStyleOptionToolButton* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionToolButton_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionToolButton_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionToolButton object:
+              ret = new QStyleOptionToolButton_Wrapper(handler, new QStyleOptionToolButton(*v), true);
+          }
+
+          // JS: new QStyleOptionToolButton('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionToolButton");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionToolButton is undefined. Use QStyleOptionToolButton_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionToolButton('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionToolButton(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionToolButton(RJSApi& handler, const QStyleOptionToolButton& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionToolButton object:
+          QStyleOptionToolButton_Wrapper* ret = new QStyleOptionToolButton_Wrapper(handler, new QStyleOptionToolButton(v), true);
+
+          // JS: new QStyleOptionToolButton('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionToolButton");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionToolButton is undefined. Use QStyleOptionToolButton_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionToolButton('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionToolButton(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionToolButton RJSHelper::js2cpp_QStyleOptionToolButton(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionToolButton_Wrapper* wrapper = getWrapper<QStyleOptionToolButton_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionToolButton: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionToolButton();
+          }
+          //return *(QStyleOptionToolButton*)wrapper->getWrappedVoid();
+          QStyleOptionToolButton* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionToolButton: wrapped pointer is NULL";
+              return QStyleOptionToolButton();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionToolButton: not a QObject";
+              return QStyleOptionToolButton();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionToolButton_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionToolButton();
+          }
+          //QStyleOptionToolButton* ret = getWrapped_QStyleOptionToolButton(wrapper);
+          QStyleOptionToolButton* ret = QStyleOptionToolButton_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionToolButton();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionToolButton(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionToolButton: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionToolButton::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionComboBox(RJSApi& handler, const QStyleOptionComboBox* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionComboBox_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionComboBox_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionComboBox object:
+              ret = new QStyleOptionComboBox_Wrapper(handler, new QStyleOptionComboBox(*v), true);
+          }
+
+          // JS: new QStyleOptionComboBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionComboBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionComboBox is undefined. Use QStyleOptionComboBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionComboBox('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionComboBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionComboBox(RJSApi& handler, const QStyleOptionComboBox& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionComboBox object:
+          QStyleOptionComboBox_Wrapper* ret = new QStyleOptionComboBox_Wrapper(handler, new QStyleOptionComboBox(v), true);
+
+          // JS: new QStyleOptionComboBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionComboBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionComboBox is undefined. Use QStyleOptionComboBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionComboBox('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionComboBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionComboBox RJSHelper::js2cpp_QStyleOptionComboBox(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionComboBox_Wrapper* wrapper = getWrapper<QStyleOptionComboBox_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionComboBox: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionComboBox();
+          }
+          //return *(QStyleOptionComboBox*)wrapper->getWrappedVoid();
+          QStyleOptionComboBox* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionComboBox: wrapped pointer is NULL";
+              return QStyleOptionComboBox();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionComboBox: not a QObject";
+              return QStyleOptionComboBox();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionComboBox_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionComboBox();
+          }
+          //QStyleOptionComboBox* ret = getWrapped_QStyleOptionComboBox(wrapper);
+          QStyleOptionComboBox* ret = QStyleOptionComboBox_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionComboBox();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionComboBox(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionComboBox: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionComboBox::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionTitleBar(RJSApi& handler, const QStyleOptionTitleBar* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionTitleBar_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionTitleBar_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionTitleBar object:
+              ret = new QStyleOptionTitleBar_Wrapper(handler, new QStyleOptionTitleBar(*v), true);
+          }
+
+          // JS: new QStyleOptionTitleBar('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionTitleBar");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionTitleBar is undefined. Use QStyleOptionTitleBar_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionTitleBar('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionTitleBar(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionTitleBar(RJSApi& handler, const QStyleOptionTitleBar& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionTitleBar object:
+          QStyleOptionTitleBar_Wrapper* ret = new QStyleOptionTitleBar_Wrapper(handler, new QStyleOptionTitleBar(v), true);
+
+          // JS: new QStyleOptionTitleBar('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionTitleBar");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionTitleBar is undefined. Use QStyleOptionTitleBar_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionTitleBar('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionTitleBar(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionTitleBar RJSHelper::js2cpp_QStyleOptionTitleBar(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionTitleBar_Wrapper* wrapper = getWrapper<QStyleOptionTitleBar_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTitleBar: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionTitleBar();
+          }
+          //return *(QStyleOptionTitleBar*)wrapper->getWrappedVoid();
+          QStyleOptionTitleBar* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTitleBar: wrapped pointer is NULL";
+              return QStyleOptionTitleBar();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionTitleBar: not a QObject";
+              return QStyleOptionTitleBar();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionTitleBar_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionTitleBar();
+          }
+          //QStyleOptionTitleBar* ret = getWrapped_QStyleOptionTitleBar(wrapper);
+          QStyleOptionTitleBar* ret = QStyleOptionTitleBar_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionTitleBar();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionTitleBar(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionTitleBar: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionTitleBar::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionGroupBox(RJSApi& handler, const QStyleOptionGroupBox* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionGroupBox_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionGroupBox_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionGroupBox object:
+              ret = new QStyleOptionGroupBox_Wrapper(handler, new QStyleOptionGroupBox(*v), true);
+          }
+
+          // JS: new QStyleOptionGroupBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionGroupBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionGroupBox is undefined. Use QStyleOptionGroupBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionGroupBox('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionGroupBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionGroupBox(RJSApi& handler, const QStyleOptionGroupBox& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionGroupBox object:
+          QStyleOptionGroupBox_Wrapper* ret = new QStyleOptionGroupBox_Wrapper(handler, new QStyleOptionGroupBox(v), true);
+
+          // JS: new QStyleOptionGroupBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionGroupBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionGroupBox is undefined. Use QStyleOptionGroupBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionGroupBox('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionGroupBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionGroupBox RJSHelper::js2cpp_QStyleOptionGroupBox(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionGroupBox_Wrapper* wrapper = getWrapper<QStyleOptionGroupBox_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionGroupBox: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionGroupBox();
+          }
+          //return *(QStyleOptionGroupBox*)wrapper->getWrappedVoid();
+          QStyleOptionGroupBox* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionGroupBox: wrapped pointer is NULL";
+              return QStyleOptionGroupBox();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionGroupBox: not a QObject";
+              return QStyleOptionGroupBox();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionGroupBox_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionGroupBox();
+          }
+          //QStyleOptionGroupBox* ret = getWrapped_QStyleOptionGroupBox(wrapper);
+          QStyleOptionGroupBox* ret = QStyleOptionGroupBox_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionGroupBox();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionGroupBox(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionGroupBox: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionGroupBox::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionSizeGrip(RJSApi& handler, const QStyleOptionSizeGrip* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionSizeGrip_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionSizeGrip_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionSizeGrip object:
+              ret = new QStyleOptionSizeGrip_Wrapper(handler, new QStyleOptionSizeGrip(*v), true);
+          }
+
+          // JS: new QStyleOptionSizeGrip('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionSizeGrip");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionSizeGrip is undefined. Use QStyleOptionSizeGrip_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionSizeGrip('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionSizeGrip(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionSizeGrip(RJSApi& handler, const QStyleOptionSizeGrip& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionSizeGrip object:
+          QStyleOptionSizeGrip_Wrapper* ret = new QStyleOptionSizeGrip_Wrapper(handler, new QStyleOptionSizeGrip(v), true);
+
+          // JS: new QStyleOptionSizeGrip('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionSizeGrip");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionSizeGrip is undefined. Use QStyleOptionSizeGrip_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionSizeGrip('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionSizeGrip(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionSizeGrip RJSHelper::js2cpp_QStyleOptionSizeGrip(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionSizeGrip_Wrapper* wrapper = getWrapper<QStyleOptionSizeGrip_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionSizeGrip: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionSizeGrip();
+          }
+          //return *(QStyleOptionSizeGrip*)wrapper->getWrappedVoid();
+          QStyleOptionSizeGrip* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionSizeGrip: wrapped pointer is NULL";
+              return QStyleOptionSizeGrip();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionSizeGrip: not a QObject";
+              return QStyleOptionSizeGrip();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionSizeGrip_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionSizeGrip();
+          }
+          //QStyleOptionSizeGrip* ret = getWrapped_QStyleOptionSizeGrip(wrapper);
+          QStyleOptionSizeGrip* ret = QStyleOptionSizeGrip_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionSizeGrip();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionSizeGrip(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionSizeGrip: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionSizeGrip::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOptionGraphicsItem(RJSApi& handler, const QStyleOptionGraphicsItem* v) {
+          QJSEngine* engine = handler.getEngine();
+          QStyleOptionGraphicsItem_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QStyleOptionGraphicsItem_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QStyleOptionGraphicsItem object:
+              ret = new QStyleOptionGraphicsItem_Wrapper(handler, new QStyleOptionGraphicsItem(*v), true);
+          }
+
+          // JS: new QStyleOptionGraphicsItem('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionGraphicsItem");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionGraphicsItem is undefined. Use QStyleOptionGraphicsItem_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionGraphicsItem('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionGraphicsItem(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStyleOptionGraphicsItem(RJSApi& handler, const QStyleOptionGraphicsItem& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QStyleOptionGraphicsItem object:
+          QStyleOptionGraphicsItem_Wrapper* ret = new QStyleOptionGraphicsItem_Wrapper(handler, new QStyleOptionGraphicsItem(v), true);
+
+          // JS: new QStyleOptionGraphicsItem('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStyleOptionGraphicsItem");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStyleOptionGraphicsItem is undefined. Use QStyleOptionGraphicsItem_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStyleOptionGraphicsItem('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStyleOptionGraphicsItem(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QStyleOptionGraphicsItem RJSHelper::js2cpp_QStyleOptionGraphicsItem(RJSApi& handler, const QJSValue& v) {
+          /*
+          QStyleOptionGraphicsItem_Wrapper* wrapper = getWrapper<QStyleOptionGraphicsItem_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionGraphicsItem: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QStyleOptionGraphicsItem();
+          }
+          //return *(QStyleOptionGraphicsItem*)wrapper->getWrappedVoid();
+          QStyleOptionGraphicsItem* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionGraphicsItem: wrapped pointer is NULL";
+              return QStyleOptionGraphicsItem();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStyleOptionGraphicsItem: not a QObject";
+              return QStyleOptionGraphicsItem();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStyleOptionGraphicsItem_ptr: no wrapper";
+              handler.trace();
+              return QStyleOptionGraphicsItem();
+          }
+          //QStyleOptionGraphicsItem* ret = getWrapped_QStyleOptionGraphicsItem(wrapper);
+          QStyleOptionGraphicsItem* ret = QStyleOptionGraphicsItem_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QStyleOptionGraphicsItem();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QStyleOptionGraphicsItem(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStyleOptionGraphicsItem: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStyleOptionGraphicsItem::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper::cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat* v) {

@@ -203,6 +203,14 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
       // functions:
       
         // function 
+        QBuffer.prototype.eventFilter = function(...args) 
+          
+        {
+          //print("JS: QBuffer.prototype.eventFilter");
+          return this.__PROXY__.eventFilter(...args);
+        };
+    
+        // function 
         QBuffer.prototype.objectName = function(...args) 
           
         {

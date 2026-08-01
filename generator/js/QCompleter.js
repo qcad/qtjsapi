@@ -542,30 +542,6 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           return this.__PROXY__.eventFilter(...args);
         };
     
-        // function 
-        QCompleter.prototype.event = function(...args) 
-          
-        {
-          //print("JS: QCompleter.prototype.event");
-          return this.__PROXY__.event(...args);
-        };
-    
-        // function 
-        QCompleter.prototype.activated = function(...args) 
-          
-        {
-          //print("JS: QCompleter.prototype.activated");
-          return this.__PROXY__.activated(...args);
-        };
-    
-        // function 
-        QCompleter.prototype.highlighted = function(...args) 
-          
-        {
-          //print("JS: QCompleter.prototype.highlighted");
-          return this.__PROXY__.highlighted(...args);
-        };
-    
 
       // static functions:
       

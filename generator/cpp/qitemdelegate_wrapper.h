@@ -715,6 +715,42 @@ RevertModelCache = QItemDelegate::RevertModelCache,
               ;
             
     // Class: QItemDelegate
+    // Function: createEditor
+    // Source: 
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      createEditorSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QItemDelegate
     // Function: setEditorData
     // Source: 
     // Static: false

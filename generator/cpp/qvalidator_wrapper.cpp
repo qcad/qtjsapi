@@ -171,6 +171,100 @@
     // non-static functions:
     
     // Class: QValidator
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QValidator_Wrapper::eventFilter
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QEvent_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: watched (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QValidator* w = getWrapped();
+                bool res = 
+                    
+                w->eventFilter(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for eventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QValidator
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -2026,6 +2120,100 @@ int a2_cpp;
 
     // non-static functions:
     
+    // Class: QIntValidator
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QIntValidator_Wrapper::eventFilter
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QEvent_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: watched (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QIntValidator* w = getWrapped();
+                bool res = 
+                    
+                w->eventFilter(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for eventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     // Class: QIntValidator
     // Function: objectName
     // Source: QObject
@@ -4285,6 +4473,100 @@ int a3_cpp;
 
     // non-static functions:
     
+    // Class: QDoubleValidator
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QDoubleValidator_Wrapper::eventFilter
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QEvent_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: watched (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QDoubleValidator* w = getWrapped();
+                bool res = 
+                    
+                w->eventFilter(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for eventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     // Class: QDoubleValidator
     // Function: objectName
     // Source: QObject
@@ -6817,6 +7099,100 @@ QRegularExpression a1_cpp;
 
     // non-static functions:
     
+    // Class: QRegularExpressionValidator
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QRegularExpressionValidator_Wrapper::eventFilter
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QEvent_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: watched (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QRegularExpressionValidator* w = getWrapped();
+                bool res = 
+                    
+                w->eventFilter(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for eventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     // Class: QRegularExpressionValidator
     // Function: objectName
     // Source: QObject

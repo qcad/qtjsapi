@@ -163,6 +163,8 @@
         <parameters />
       </variant>
     </function>
+    <function name="eventFilter"/>
+    <!--
     <function name="eventFilter">
       <variant return-type="bool" access="protected">
         <parameters>
@@ -171,6 +173,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="event">
       <variant return-type="bool" access="protected">
         <parameters>

@@ -38,11 +38,15 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="event" />
+    -->
     <function name="eventFilter" />
+    <!--
     <function name="createWidget" />
     <function name="deleteWidget" />
     <function name="createdWidgets" />
+    -->
     <class_decl name="QToolBar" />
   </class>
 </unit>

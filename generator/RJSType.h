@@ -2180,6 +2180,706 @@
           static int id;
       };
     
+      class QTJSAPI_EXPORT  RJSType_QStyleOption : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOption";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOption();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionViewItem : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionViewItem";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionViewItem();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionFocusRect : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionFocusRect";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionFocusRect();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionFrame : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionFrame";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionFrame();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionTabWidgetFrame : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionTabWidgetFrame";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionTabWidgetFrame();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionTabBarBase : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionTabBarBase";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionTabBarBase();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionHeader : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionHeader";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionHeader();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionHeaderV2 : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionHeaderV2";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionHeaderV2();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionButton : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionButton";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionButton();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionTab : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionTab";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionTab();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionToolBar : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionToolBar";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionToolBar();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionProgressBar : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionProgressBar";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionProgressBar();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionMenuItem : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionMenuItem";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionMenuItem();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionDockWidget : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionDockWidget";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionDockWidget();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionToolBox : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionToolBox";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionToolBox();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionRubberBand : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionRubberBand";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionRubberBand();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionComplex : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionComplex";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionComplex();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionSlider : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionSlider";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionSlider();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionSpinBox : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionSpinBox";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionSpinBox();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionToolButton : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionToolButton";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionToolButton();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionComboBox : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionComboBox";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionComboBox();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionTitleBar : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionTitleBar";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionTitleBar();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionGroupBox : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionGroupBox";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionGroupBox();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionSizeGrip : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionSizeGrip";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionSizeGrip();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QStyleOptionGraphicsItem : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStyleOptionGraphicsItem";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStyleOptionGraphicsItem();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
       class QTJSAPI_EXPORT  RJSType_QSurfaceFormat : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE

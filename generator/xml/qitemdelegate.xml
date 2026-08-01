@@ -46,9 +46,8 @@
       </variant>
     </function>
     -->
-    <!--
     <function name="createEditor">
-      <variant return-type="QWidget*" const="true" access="public">
+      <variant return-type="QWidget*" const="true" access="protected" virtual="true">
         <parameters>
           <parameter const="false" type="QWidget" modifier="*" name="parent" />
           <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
@@ -56,7 +55,6 @@
         </parameters>
       </variant>
     </function>
-    -->
     <function name="setEditorData">
       <variant return-type="void" const="true" access="public">
         <parameters>
@@ -183,6 +181,7 @@
       </variant>
     </function>
     -->
+    <function name="eventFilter"/>
     <!--
     <function name="eventFilter">
       <variant return-type="bool" access="protected">

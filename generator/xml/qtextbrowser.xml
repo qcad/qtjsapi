@@ -181,6 +181,7 @@
       </variant>
     </function>
     <function name="event" />
+    <function name="eventFilter" />
     <function name="keyPressEvent" />
     <function name="mouseMoveEvent">
       <variant return-type="void" virtual="true" access="protected">

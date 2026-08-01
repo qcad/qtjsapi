@@ -583,6 +583,33 @@ HorizontalSortHint = QAbstractItemModel::HorizontalSortHint,
     // non-static functions:
     
     // Class: QAbstractItemModel
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  eventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QAbstractItemModel
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -2267,6 +2294,33 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
     // non-static functions:
     
     // Class: QAbstractTableModel
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  eventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QAbstractTableModel
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -3910,6 +3964,33 @@ HorizontalSortHint = QAbstractListModel::HorizontalSortHint,
 
     // non-static functions:
     
+    // Class: QAbstractListModel
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  eventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
     // Class: QAbstractListModel
     // Function: objectName
     // Source: QObject

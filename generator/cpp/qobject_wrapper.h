@@ -730,6 +730,33 @@
 
     // non-static functions:
     
+    // Class: QObject
+    // Function: eventFilter
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  eventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
 #if defined(QT_NO_TRANSLATION)||defined(Q_CLANG_QDOC)
 
 #endif

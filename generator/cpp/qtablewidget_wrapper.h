@@ -1062,6 +1062,9 @@ UserType = QTableWidgetItem::UserType,
       
         #include <QTableWidget>
       
+      // wrapped object is QTableWidget_Base class if new object is created: 
+      #include "qtablewidget_base.h"
+    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for QTableWidget
@@ -6602,6 +6605,32 @@ InternalMove = QTableWidget::InternalMove,
               );
             
     // Class: QTableWidget
+    // Function: actionEvent
+    // Source: QWidget
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      actionEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
     // Function: inputMethodHints
     // Source: QWidget
     // Static: false
@@ -7340,6 +7369,276 @@ InternalMove = QTableWidget::InternalMove,
               
                   QJSValue 
                   setSizeAdjustPolicy
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: setViewportMargins
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      setViewportMarginsSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: viewportMargins
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      viewportMarginsSuper
+                    
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: event
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      eventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: viewportEvent
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      viewportEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: mousePressEvent
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      mousePressEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: mouseReleaseEvent
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      mouseReleaseEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: mouseDoubleClickEvent
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      mouseDoubleClickEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: wheelEvent
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      wheelEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: dragEnterEvent
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      dragEnterEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: keyPressEvent
+    // Source: QAbstractScrollArea
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      keyPressEventSuper
+                    
               (
 
                 
@@ -8465,6 +8764,48 @@ InternalMove = QTableWidget::InternalMove,
               ;
             
     // Class: QTableWidget
+    // Function: pressed
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void pressed(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void pressedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QTableWidget
+    // Function: clicked
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void clicked(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void clickedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QTableWidget
     // Function: doubleClicked
     // Source: QAbstractItemView
     // Static: false
@@ -8484,6 +8825,140 @@ InternalMove = QTableWidget::InternalMove,
               void doubleClickedEmitter(
                 const QModelIndex& index
               );
+            
+    // Class: QTableWidget
+    // Function: activated
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void activated(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void activatedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QTableWidget
+    // Function: entered
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void entered(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void enteredEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QTableWidget
+    // Function: viewportEntered
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void viewportEntered(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void viewportEnteredEmitter(
+                
+              );
+            
+    // Class: QTableWidget
+    // Function: iconSizeChanged
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void iconSizeChanged(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void iconSizeChangedEmitter(
+                const QSize& size
+              );
+            
+    // Class: QTableWidget
+    // Function: mouseMoveEvent
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      mouseMoveEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: resizeEvent
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      resizeEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
             
     // Class: QTableWidget
     // Function: setRootIndex
@@ -9554,6 +10029,550 @@ InternalMove = QTableWidget::InternalMove,
                 
   const QJSValue& 
   a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: rowMoved
+    // Source: QTableView
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      rowMovedSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: columnMoved
+    // Source: QTableView
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      columnMovedSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: rowResized
+    // Source: QTableView
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      rowResizedSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: columnResized
+    // Source: QTableView
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      columnResizedSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: rowCountChanged
+    // Source: QTableView
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      rowCountChangedSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: columnCountChanged
+    // Source: QTableView
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      columnCountChangedSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: scrollContentsBy
+    // Source: QTableView
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      scrollContentsBySuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: paintEvent
+    // Source: QTableView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      paintEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: horizontalOffset
+    // Source: QTableView
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      horizontalOffsetSuper
+                    
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: verticalOffset
+    // Source: QTableView
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      verticalOffsetSuper
+                    
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: setSelection
+    // Source: QTableView
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      setSelectionSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: visualRegionForSelection
+    // Source: QTableView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      visualRegionForSelectionSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: updateGeometries
+    // Source: QTableView
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      updateGeometriesSuper
+                    
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: viewportSizeHint
+    // Source: QTableView
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      viewportSizeHintSuper
+                    
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: verticalScrollbarAction
+    // Source: QTableView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      verticalScrollbarActionSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: horizontalScrollbarAction
+    // Source: QTableView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      horizontalScrollbarActionSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: isIndexHidden
+    // Source: QTableView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      isIndexHiddenSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: selectionChanged
+    // Source: QTableView
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      selectionChangedSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTableWidget
+    // Function: currentChanged
+    // Source: QTableView
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      currentChangedSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
       = QJSValue()
     
               )
@@ -11084,7 +12103,7 @@ InternalMove = QTableWidget::InternalMove,
         Q_INVOKABLE
         virtual bool isCppOwnership() const {
           
-              return false;
+              return true;
             
         }
 
@@ -11119,6 +12138,17 @@ InternalMove = QTableWidget::InternalMove,
         }
 
         
+          // get wrapped base object or nullptr:
+          QTableWidget_Base* getWrappedBase() {
+            QTableWidget* w = getWrapped();
+            return dynamic_cast<QTableWidget_Base*>(w);
+          }
+
+          QTableWidget_Base* getWrappedBase() const {
+            QTableWidget* w = getWrapped();
+            return dynamic_cast<QTableWidget_Base*>(w);
+          }
+        
 
         bool hasWrapped() const {
           
@@ -11149,6 +12179,13 @@ InternalMove = QTableWidget::InternalMove,
           //  qDebug() << "destroying QObject:" << (long int)obj;
           //}
 
+        
+          //void setRecFlag(bool on) const {
+          //  QTableWidget_Base* wb = getWrappedBase();
+          //  if (wb) {
+          //    wb->setRecFlag(on);
+          //  }
+          //}
         
 
         private:

@@ -120,7 +120,7 @@
               ), '*', ''
               ), ' ', ''
               )" />
-    <xsl:if test="$modifier='*' or (qc:is-non-copyable($type)='true' and ($modifier='&amp;' or qc:ends-with($type, '&amp;'))) or $itemptr='true'">
+    <xsl:if test="$modifier='*' or qc:ends-with($type, '*') or (qc:is-non-copyable($type)='true' and ($modifier='&amp;' or qc:ends-with($type, '&amp;'))) or $itemptr='true'">
       <xsl:text>_ptr</xsl:text>
     </xsl:if>
   </func:result>

@@ -792,8 +792,8 @@
     <!--
     <function name="timerEvent" />
     <function name="inputMethodEvent" />
-    <function name="eventFilter" />
     -->
+    <function name="eventFilter" />
     <preproc plain="#if QT_CONFIG(draganddrop)" />
     <!--
     <enum name="DropIndicatorPosition">

@@ -427,6 +427,56 @@
         
           #include "qstringdecoder_wrapper.h"
         
+          #include "qstyleoption_wrapper.h"
+        
+          #include "qstyleoptionfocusrect_wrapper.h"
+        
+          #include "qstyleoptionframe_wrapper.h"
+        
+          #include "qstyleoptiontabwidgetframe_wrapper.h"
+        
+          #include "qstyleoptiontabbarbase_wrapper.h"
+        
+          #include "qstyleoptionheader_wrapper.h"
+        
+          #include "qstyleoptionheaderv2_wrapper.h"
+        
+          #include "qstyleoptionbutton_wrapper.h"
+        
+          #include "qstyleoptiontab_wrapper.h"
+        
+          #include "qstyleoptiontoolbar_wrapper.h"
+        
+          #include "qstyleoptionprogressbar_wrapper.h"
+        
+          #include "qstyleoptionmenuitem_wrapper.h"
+        
+          #include "qstyleoptiondockwidget_wrapper.h"
+        
+          #include "qstyleoptionviewitem_wrapper.h"
+        
+          #include "qstyleoptiontoolbox_wrapper.h"
+        
+          #include "qstyleoptionrubberband_wrapper.h"
+        
+          #include "qstyleoptioncomplex_wrapper.h"
+        
+          #include "qstyleoptionslider_wrapper.h"
+        
+          #include "qstyleoptionspinbox_wrapper.h"
+        
+          #include "qstyleoptiontoolbutton_wrapper.h"
+        
+          #include "qstyleoptioncombobox_wrapper.h"
+        
+          #include "qstyleoptiontitlebar_wrapper.h"
+        
+          #include "qstyleoptiongroupbox_wrapper.h"
+        
+          #include "qstyleoptionsizegrip_wrapper.h"
+        
+          #include "qstyleoptiongraphicsitem_wrapper.h"
+        
           #include "qsurfaceformat_wrapper.h"
         
           #include "qsvgrenderer_wrapper.h"
@@ -5314,6 +5364,72 @@
           return acceptUndefined;
         }
         return v.isString();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOption_OptionType(RJSApi& handler, QStyleOption::OptionType v) {
+        return QJSValue(v);
+      }
+
+      QStyleOption::OptionType RJSHelper::js2cpp_QStyleOption_OptionType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QStyleOption::OptionType)0
+          ;
+        }
+        return 
+        (QStyleOption::OptionType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QStyleOption_OptionType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOption_StyleOptionType(RJSApi& handler, QStyleOption::StyleOptionType v) {
+        return QJSValue(v);
+      }
+
+      QStyleOption::StyleOptionType RJSHelper::js2cpp_QStyleOption_StyleOptionType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QStyleOption::StyleOptionType)0
+          ;
+        }
+        return 
+        (QStyleOption::StyleOptionType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QStyleOption_StyleOptionType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QStyleOption_StyleOptionVersion(RJSApi& handler, QStyleOption::StyleOptionVersion v) {
+        return QJSValue(v);
+      }
+
+      QStyleOption::StyleOptionVersion RJSHelper::js2cpp_QStyleOption_StyleOptionVersion(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QStyleOption::StyleOptionVersion)0
+          ;
+        }
+        return 
+        (QStyleOption::StyleOptionVersion)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QStyleOption_StyleOptionVersion(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
       }
     
       QJSValue RJSHelper::cpp2js_QSurfaceFormat_FormatOption(RJSApi& handler, QSurfaceFormat::FormatOption v) {

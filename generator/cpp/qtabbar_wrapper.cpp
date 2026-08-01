@@ -335,6 +335,104 @@ QTabBar_Wrapper::QTabBar_Wrapper
     // non-static functions:
     
     // Class: QTabBar
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTabBar_Wrapper::eventFilter
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QEvent_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: watched (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTabBar* w = getWrapped();
+                bool res = 
+                    
+                w->eventFilter(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for eventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTabBar
     // Function: objectName
     // Source: QObject
     // Static: false

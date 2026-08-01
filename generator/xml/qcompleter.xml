@@ -254,8 +254,10 @@
       </variant>
     </function>
     <function name="eventFilter" />
+    <!--
     <function name="event" />
     <function name="activated" />
     <function name="highlighted" />
+    -->
   </class>
 </unit>

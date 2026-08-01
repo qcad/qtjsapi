@@ -282,6 +282,104 @@ QBoxLayout::Direction a1_cpp;
     // non-static functions:
     
     // Class: QBoxLayout
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QBoxLayout_Wrapper::eventFilter
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QEvent_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: watched (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QBoxLayout* w = getWrapped();
+                bool res = 
+                    
+                w->eventFilter(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for eventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QBoxLayout
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -6274,6 +6372,104 @@ QHBoxLayout_Wrapper::QHBoxLayout_Wrapper
     // non-static functions:
     
     // Class: QHBoxLayout
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QHBoxLayout_Wrapper::eventFilter
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QEvent_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: watched (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QHBoxLayout* w = getWrapped();
+                bool res = 
+                    
+                w->eventFilter(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for eventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QHBoxLayout
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -12265,6 +12461,104 @@ QVBoxLayout_Wrapper::QVBoxLayout_Wrapper
 
     // non-static functions:
     
+    // Class: QVBoxLayout
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QVBoxLayout_Wrapper::eventFilter
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QEvent_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: watched (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QVBoxLayout* w = getWrapped();
+                bool res = 
+                    
+                w->eventFilter(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for eventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     // Class: QVBoxLayout
     // Function: objectName
     // Source: QObject

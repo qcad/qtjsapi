@@ -89,5 +89,6 @@
         <parameters />
       </variant>
     </function>
+    <function name="eventFilter"/>
   </class>
 </unit>

@@ -1169,6 +1169,381 @@
 
 
       
+      int RJSType_QStyleOption::id = -1;
+
+      int RJSType_QStyleOption::getId() const {
+          return RJSType_QStyleOption::getIdStatic();
+      }
+
+      int RJSType_QStyleOption::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOption());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionViewItem::id = -1;
+
+      int RJSType_QStyleOptionViewItem::getId() const {
+          return RJSType_QStyleOptionViewItem::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionViewItem::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionViewItem());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionFocusRect::id = -1;
+
+      int RJSType_QStyleOptionFocusRect::getId() const {
+          return RJSType_QStyleOptionFocusRect::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionFocusRect::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionFocusRect());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionFrame::id = -1;
+
+      int RJSType_QStyleOptionFrame::getId() const {
+          return RJSType_QStyleOptionFrame::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionFrame::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionFrame());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionTabWidgetFrame::id = -1;
+
+      int RJSType_QStyleOptionTabWidgetFrame::getId() const {
+          return RJSType_QStyleOptionTabWidgetFrame::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionTabWidgetFrame::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionTabWidgetFrame());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionTabBarBase::id = -1;
+
+      int RJSType_QStyleOptionTabBarBase::getId() const {
+          return RJSType_QStyleOptionTabBarBase::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionTabBarBase::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionTabBarBase());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionHeader::id = -1;
+
+      int RJSType_QStyleOptionHeader::getId() const {
+          return RJSType_QStyleOptionHeader::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionHeader::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionHeader());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionHeaderV2::id = -1;
+
+      int RJSType_QStyleOptionHeaderV2::getId() const {
+          return RJSType_QStyleOptionHeaderV2::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionHeaderV2::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionHeaderV2());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionButton::id = -1;
+
+      int RJSType_QStyleOptionButton::getId() const {
+          return RJSType_QStyleOptionButton::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionButton::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionButton());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionTab::id = -1;
+
+      int RJSType_QStyleOptionTab::getId() const {
+          return RJSType_QStyleOptionTab::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionTab::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionTab());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionToolBar::id = -1;
+
+      int RJSType_QStyleOptionToolBar::getId() const {
+          return RJSType_QStyleOptionToolBar::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionToolBar::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionToolBar());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionProgressBar::id = -1;
+
+      int RJSType_QStyleOptionProgressBar::getId() const {
+          return RJSType_QStyleOptionProgressBar::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionProgressBar::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionProgressBar());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionMenuItem::id = -1;
+
+      int RJSType_QStyleOptionMenuItem::getId() const {
+          return RJSType_QStyleOptionMenuItem::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionMenuItem::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionMenuItem());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionDockWidget::id = -1;
+
+      int RJSType_QStyleOptionDockWidget::getId() const {
+          return RJSType_QStyleOptionDockWidget::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionDockWidget::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionDockWidget());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionToolBox::id = -1;
+
+      int RJSType_QStyleOptionToolBox::getId() const {
+          return RJSType_QStyleOptionToolBox::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionToolBox::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionToolBox());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionRubberBand::id = -1;
+
+      int RJSType_QStyleOptionRubberBand::getId() const {
+          return RJSType_QStyleOptionRubberBand::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionRubberBand::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionRubberBand());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionComplex::id = -1;
+
+      int RJSType_QStyleOptionComplex::getId() const {
+          return RJSType_QStyleOptionComplex::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionComplex::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionComplex());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionSlider::id = -1;
+
+      int RJSType_QStyleOptionSlider::getId() const {
+          return RJSType_QStyleOptionSlider::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionSlider::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionSlider());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionSpinBox::id = -1;
+
+      int RJSType_QStyleOptionSpinBox::getId() const {
+          return RJSType_QStyleOptionSpinBox::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionSpinBox::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionSpinBox());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionToolButton::id = -1;
+
+      int RJSType_QStyleOptionToolButton::getId() const {
+          return RJSType_QStyleOptionToolButton::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionToolButton::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionToolButton());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionComboBox::id = -1;
+
+      int RJSType_QStyleOptionComboBox::getId() const {
+          return RJSType_QStyleOptionComboBox::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionComboBox::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionComboBox());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionTitleBar::id = -1;
+
+      int RJSType_QStyleOptionTitleBar::getId() const {
+          return RJSType_QStyleOptionTitleBar::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionTitleBar::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionTitleBar());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionGroupBox::id = -1;
+
+      int RJSType_QStyleOptionGroupBox::getId() const {
+          return RJSType_QStyleOptionGroupBox::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionGroupBox::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionGroupBox());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionSizeGrip::id = -1;
+
+      int RJSType_QStyleOptionSizeGrip::getId() const {
+          return RJSType_QStyleOptionSizeGrip::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionSizeGrip::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionSizeGrip());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QStyleOptionGraphicsItem::id = -1;
+
+      int RJSType_QStyleOptionGraphicsItem::getId() const {
+          return RJSType_QStyleOptionGraphicsItem::getIdStatic();
+      }
+
+      int RJSType_QStyleOptionGraphicsItem::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStyleOptionGraphicsItem());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QSurfaceFormat::id = -1;
 
       int RJSType_QSurfaceFormat::getId() const {

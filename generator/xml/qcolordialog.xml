@@ -143,6 +143,7 @@
       </variant>
     </function>
     <function name="done" ignore="true"/>
+    <function name="eventFilter" />
     <!--
     <function name="changeEvent">
       <variant return-type="void" access="protected">

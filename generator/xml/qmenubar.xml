@@ -185,9 +185,9 @@
     <function name="focusOutEvent" />
     <function name="focusInEvent" />
     <function name="timerEvent" />
-    <function name="eventFilter" />
     <function name="event" />
     -->
+    <function name="eventFilter" />
     <function name="initStyleOption" />
     <function name="paintEvent">
       <variant return-type="void" virtual="true" access="protected">

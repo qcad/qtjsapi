@@ -355,7 +355,7 @@
     </function>
     <function name="tableModel" />
   </class>
-  <class name="QTableWidget">
+  <class name="QTableWidget" ownership="cpp" inheritable="true">
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />

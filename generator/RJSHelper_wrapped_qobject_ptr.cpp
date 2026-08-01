@@ -427,6 +427,56 @@
         
           #include "qstringdecoder_wrapper.h"
         
+          #include "qstyleoption_wrapper.h"
+        
+          #include "qstyleoptionfocusrect_wrapper.h"
+        
+          #include "qstyleoptionframe_wrapper.h"
+        
+          #include "qstyleoptiontabwidgetframe_wrapper.h"
+        
+          #include "qstyleoptiontabbarbase_wrapper.h"
+        
+          #include "qstyleoptionheader_wrapper.h"
+        
+          #include "qstyleoptionheaderv2_wrapper.h"
+        
+          #include "qstyleoptionbutton_wrapper.h"
+        
+          #include "qstyleoptiontab_wrapper.h"
+        
+          #include "qstyleoptiontoolbar_wrapper.h"
+        
+          #include "qstyleoptionprogressbar_wrapper.h"
+        
+          #include "qstyleoptionmenuitem_wrapper.h"
+        
+          #include "qstyleoptiondockwidget_wrapper.h"
+        
+          #include "qstyleoptionviewitem_wrapper.h"
+        
+          #include "qstyleoptiontoolbox_wrapper.h"
+        
+          #include "qstyleoptionrubberband_wrapper.h"
+        
+          #include "qstyleoptioncomplex_wrapper.h"
+        
+          #include "qstyleoptionslider_wrapper.h"
+        
+          #include "qstyleoptionspinbox_wrapper.h"
+        
+          #include "qstyleoptiontoolbutton_wrapper.h"
+        
+          #include "qstyleoptioncombobox_wrapper.h"
+        
+          #include "qstyleoptiontitlebar_wrapper.h"
+        
+          #include "qstyleoptiongroupbox_wrapper.h"
+        
+          #include "qstyleoptionsizegrip_wrapper.h"
+        
+          #include "qstyleoptiongraphicsitem_wrapper.h"
+        
           #include "qsurfaceformat_wrapper.h"
         
           #include "qsvgrenderer_wrapper.h"

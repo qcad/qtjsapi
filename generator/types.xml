@@ -229,6 +229,9 @@
     <type>QString</type>
     <type>QStringConverter::Encoding</type>
     <type>QStringView</type>
+    <type>QStyleOption::OptionType</type>
+    <type>QStyleOption::StyleOptionType</type>
+    <type>QStyleOption::StyleOptionVersion</type>
     <type>QSurfaceFormat::FormatOption</type>
     <type>QSurfaceFormat::OpenGLContextProfile</type>
     <type>QSurfaceFormat::RenderableType</type>
@@ -433,6 +436,31 @@
     <type>QSize</type>
     <type>QSizeF</type>
     <type>QSizePolicy</type>
+    <type>QStyleOption</type>
+    <type>QStyleOptionViewItem</type>
+    <type>QStyleOptionFocusRect</type>
+    <type>QStyleOptionFrame</type>
+    <type>QStyleOptionTabWidgetFrame</type>
+    <type>QStyleOptionTabBarBase</type>
+    <type>QStyleOptionHeader</type>
+    <type>QStyleOptionHeaderV2</type>
+    <type>QStyleOptionButton</type>
+    <type>QStyleOptionTab</type>
+    <type>QStyleOptionToolBar</type>
+    <type>QStyleOptionProgressBar</type>
+    <type>QStyleOptionMenuItem</type>
+    <type>QStyleOptionDockWidget</type>
+    <type>QStyleOptionToolBox</type>
+    <type>QStyleOptionRubberBand</type>
+    <type>QStyleOptionComplex</type>
+    <type>QStyleOptionSlider</type>
+    <type>QStyleOptionSpinBox</type>
+    <type>QStyleOptionToolButton</type>
+    <type>QStyleOptionComboBox</type>
+    <type>QStyleOptionTitleBar</type>
+    <type>QStyleOptionGroupBox</type>
+    <type>QStyleOptionSizeGrip</type>
+    <type>QStyleOptionGraphicsItem</type>
     <type>QSurfaceFormat</type>
     <type>QTextBlockFormat</type>
     <type>QTextCharFormat</type>

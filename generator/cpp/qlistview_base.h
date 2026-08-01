@@ -153,28 +153,6 @@ QListView_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
-    bool eventFilter(
-      QObject* a1, QEvent* a2
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE bool eventFilterPublic(
-      QObject* a1, QEvent* a2
-    ) {
-      //qDebug() << "QListView_Base::eventFilterPublic()";
-      
-        // TODO: convert return value to QJSValue:
-        return
-      QListView::eventFilter(
-        a1, a2
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
     virtual bool viewportEvent(
       QEvent* a1
     );

@@ -1445,6 +1445,156 @@
           virtual QStringDecoder* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class QStyleOption:
+        class RJSBasecaster_QStyleOption {
+        public:
+          virtual QStyleOption* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionFocusRect:
+        class RJSBasecaster_QStyleOptionFocusRect {
+        public:
+          virtual QStyleOptionFocusRect* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionFrame:
+        class RJSBasecaster_QStyleOptionFrame {
+        public:
+          virtual QStyleOptionFrame* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionTabWidgetFrame:
+        class RJSBasecaster_QStyleOptionTabWidgetFrame {
+        public:
+          virtual QStyleOptionTabWidgetFrame* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionTabBarBase:
+        class RJSBasecaster_QStyleOptionTabBarBase {
+        public:
+          virtual QStyleOptionTabBarBase* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionHeader:
+        class RJSBasecaster_QStyleOptionHeader {
+        public:
+          virtual QStyleOptionHeader* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionHeaderV2:
+        class RJSBasecaster_QStyleOptionHeaderV2 {
+        public:
+          virtual QStyleOptionHeaderV2* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionButton:
+        class RJSBasecaster_QStyleOptionButton {
+        public:
+          virtual QStyleOptionButton* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionTab:
+        class RJSBasecaster_QStyleOptionTab {
+        public:
+          virtual QStyleOptionTab* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionToolBar:
+        class RJSBasecaster_QStyleOptionToolBar {
+        public:
+          virtual QStyleOptionToolBar* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionProgressBar:
+        class RJSBasecaster_QStyleOptionProgressBar {
+        public:
+          virtual QStyleOptionProgressBar* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionMenuItem:
+        class RJSBasecaster_QStyleOptionMenuItem {
+        public:
+          virtual QStyleOptionMenuItem* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionDockWidget:
+        class RJSBasecaster_QStyleOptionDockWidget {
+        public:
+          virtual QStyleOptionDockWidget* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionViewItem:
+        class RJSBasecaster_QStyleOptionViewItem {
+        public:
+          virtual QStyleOptionViewItem* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionToolBox:
+        class RJSBasecaster_QStyleOptionToolBox {
+        public:
+          virtual QStyleOptionToolBox* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionRubberBand:
+        class RJSBasecaster_QStyleOptionRubberBand {
+        public:
+          virtual QStyleOptionRubberBand* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionComplex:
+        class RJSBasecaster_QStyleOptionComplex {
+        public:
+          virtual QStyleOptionComplex* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionSlider:
+        class RJSBasecaster_QStyleOptionSlider {
+        public:
+          virtual QStyleOptionSlider* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionSpinBox:
+        class RJSBasecaster_QStyleOptionSpinBox {
+        public:
+          virtual QStyleOptionSpinBox* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionToolButton:
+        class RJSBasecaster_QStyleOptionToolButton {
+        public:
+          virtual QStyleOptionToolButton* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionComboBox:
+        class RJSBasecaster_QStyleOptionComboBox {
+        public:
+          virtual QStyleOptionComboBox* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionTitleBar:
+        class RJSBasecaster_QStyleOptionTitleBar {
+        public:
+          virtual QStyleOptionTitleBar* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionGroupBox:
+        class RJSBasecaster_QStyleOptionGroupBox {
+        public:
+          virtual QStyleOptionGroupBox* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionSizeGrip:
+        class RJSBasecaster_QStyleOptionSizeGrip {
+        public:
+          virtual QStyleOptionSizeGrip* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QStyleOptionGraphicsItem:
+        class RJSBasecaster_QStyleOptionGraphicsItem {
+        public:
+          virtual QStyleOptionGraphicsItem* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class QSurfaceFormat:
         class RJSBasecaster_QSurfaceFormat {
         public:
@@ -2791,6 +2941,18 @@
       static QStringView js2cpp_QStringView(RJSApi& handler, const QJSValue& v);
       static bool is_QStringView(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QStyleOption_OptionType(RJSApi& handler, QStyleOption::OptionType v);
+      static QStyleOption::OptionType js2cpp_QStyleOption_OptionType(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOption_OptionType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOption_StyleOptionType(RJSApi& handler, QStyleOption::StyleOptionType v);
+      static QStyleOption::StyleOptionType js2cpp_QStyleOption_StyleOptionType(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOption_StyleOptionType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOption_StyleOptionVersion(RJSApi& handler, QStyleOption::StyleOptionVersion v);
+      static QStyleOption::StyleOptionVersion js2cpp_QStyleOption_StyleOptionVersion(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOption_StyleOptionVersion(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QSurfaceFormat_FormatOption(RJSApi& handler, QSurfaceFormat::FormatOption v);
       static QSurfaceFormat::FormatOption js2cpp_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v);
       static bool is_QSurfaceFormat_FormatOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -3661,6 +3823,131 @@
       static QJSValue cpp2js_QSizePolicy(RJSApi& handler, const QSizePolicy& v);
       static QSizePolicy js2cpp_QSizePolicy(RJSApi& handler, const QJSValue& v);
       static bool is_QSizePolicy(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOption(RJSApi& handler, const QStyleOption* v);
+      static QJSValue cpp2js_QStyleOption(RJSApi& handler, const QStyleOption& v);
+      static QStyleOption js2cpp_QStyleOption(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionViewItem(RJSApi& handler, const QStyleOptionViewItem* v);
+      static QJSValue cpp2js_QStyleOptionViewItem(RJSApi& handler, const QStyleOptionViewItem& v);
+      static QStyleOptionViewItem js2cpp_QStyleOptionViewItem(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionViewItem(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionFocusRect(RJSApi& handler, const QStyleOptionFocusRect* v);
+      static QJSValue cpp2js_QStyleOptionFocusRect(RJSApi& handler, const QStyleOptionFocusRect& v);
+      static QStyleOptionFocusRect js2cpp_QStyleOptionFocusRect(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionFocusRect(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionFrame(RJSApi& handler, const QStyleOptionFrame* v);
+      static QJSValue cpp2js_QStyleOptionFrame(RJSApi& handler, const QStyleOptionFrame& v);
+      static QStyleOptionFrame js2cpp_QStyleOptionFrame(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionFrame(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionTabWidgetFrame(RJSApi& handler, const QStyleOptionTabWidgetFrame* v);
+      static QJSValue cpp2js_QStyleOptionTabWidgetFrame(RJSApi& handler, const QStyleOptionTabWidgetFrame& v);
+      static QStyleOptionTabWidgetFrame js2cpp_QStyleOptionTabWidgetFrame(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionTabWidgetFrame(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionTabBarBase(RJSApi& handler, const QStyleOptionTabBarBase* v);
+      static QJSValue cpp2js_QStyleOptionTabBarBase(RJSApi& handler, const QStyleOptionTabBarBase& v);
+      static QStyleOptionTabBarBase js2cpp_QStyleOptionTabBarBase(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionTabBarBase(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionHeader(RJSApi& handler, const QStyleOptionHeader* v);
+      static QJSValue cpp2js_QStyleOptionHeader(RJSApi& handler, const QStyleOptionHeader& v);
+      static QStyleOptionHeader js2cpp_QStyleOptionHeader(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionHeader(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionHeaderV2(RJSApi& handler, const QStyleOptionHeaderV2* v);
+      static QJSValue cpp2js_QStyleOptionHeaderV2(RJSApi& handler, const QStyleOptionHeaderV2& v);
+      static QStyleOptionHeaderV2 js2cpp_QStyleOptionHeaderV2(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionHeaderV2(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionButton(RJSApi& handler, const QStyleOptionButton* v);
+      static QJSValue cpp2js_QStyleOptionButton(RJSApi& handler, const QStyleOptionButton& v);
+      static QStyleOptionButton js2cpp_QStyleOptionButton(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionButton(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionTab(RJSApi& handler, const QStyleOptionTab* v);
+      static QJSValue cpp2js_QStyleOptionTab(RJSApi& handler, const QStyleOptionTab& v);
+      static QStyleOptionTab js2cpp_QStyleOptionTab(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionTab(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionToolBar(RJSApi& handler, const QStyleOptionToolBar* v);
+      static QJSValue cpp2js_QStyleOptionToolBar(RJSApi& handler, const QStyleOptionToolBar& v);
+      static QStyleOptionToolBar js2cpp_QStyleOptionToolBar(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionToolBar(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionProgressBar(RJSApi& handler, const QStyleOptionProgressBar* v);
+      static QJSValue cpp2js_QStyleOptionProgressBar(RJSApi& handler, const QStyleOptionProgressBar& v);
+      static QStyleOptionProgressBar js2cpp_QStyleOptionProgressBar(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionProgressBar(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionMenuItem(RJSApi& handler, const QStyleOptionMenuItem* v);
+      static QJSValue cpp2js_QStyleOptionMenuItem(RJSApi& handler, const QStyleOptionMenuItem& v);
+      static QStyleOptionMenuItem js2cpp_QStyleOptionMenuItem(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionMenuItem(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionDockWidget(RJSApi& handler, const QStyleOptionDockWidget* v);
+      static QJSValue cpp2js_QStyleOptionDockWidget(RJSApi& handler, const QStyleOptionDockWidget& v);
+      static QStyleOptionDockWidget js2cpp_QStyleOptionDockWidget(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionDockWidget(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionToolBox(RJSApi& handler, const QStyleOptionToolBox* v);
+      static QJSValue cpp2js_QStyleOptionToolBox(RJSApi& handler, const QStyleOptionToolBox& v);
+      static QStyleOptionToolBox js2cpp_QStyleOptionToolBox(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionToolBox(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionRubberBand(RJSApi& handler, const QStyleOptionRubberBand* v);
+      static QJSValue cpp2js_QStyleOptionRubberBand(RJSApi& handler, const QStyleOptionRubberBand& v);
+      static QStyleOptionRubberBand js2cpp_QStyleOptionRubberBand(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionRubberBand(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionComplex(RJSApi& handler, const QStyleOptionComplex* v);
+      static QJSValue cpp2js_QStyleOptionComplex(RJSApi& handler, const QStyleOptionComplex& v);
+      static QStyleOptionComplex js2cpp_QStyleOptionComplex(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionComplex(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionSlider(RJSApi& handler, const QStyleOptionSlider* v);
+      static QJSValue cpp2js_QStyleOptionSlider(RJSApi& handler, const QStyleOptionSlider& v);
+      static QStyleOptionSlider js2cpp_QStyleOptionSlider(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionSlider(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionSpinBox(RJSApi& handler, const QStyleOptionSpinBox* v);
+      static QJSValue cpp2js_QStyleOptionSpinBox(RJSApi& handler, const QStyleOptionSpinBox& v);
+      static QStyleOptionSpinBox js2cpp_QStyleOptionSpinBox(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionSpinBox(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionToolButton(RJSApi& handler, const QStyleOptionToolButton* v);
+      static QJSValue cpp2js_QStyleOptionToolButton(RJSApi& handler, const QStyleOptionToolButton& v);
+      static QStyleOptionToolButton js2cpp_QStyleOptionToolButton(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionToolButton(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionComboBox(RJSApi& handler, const QStyleOptionComboBox* v);
+      static QJSValue cpp2js_QStyleOptionComboBox(RJSApi& handler, const QStyleOptionComboBox& v);
+      static QStyleOptionComboBox js2cpp_QStyleOptionComboBox(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionComboBox(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionTitleBar(RJSApi& handler, const QStyleOptionTitleBar* v);
+      static QJSValue cpp2js_QStyleOptionTitleBar(RJSApi& handler, const QStyleOptionTitleBar& v);
+      static QStyleOptionTitleBar js2cpp_QStyleOptionTitleBar(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionTitleBar(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionGroupBox(RJSApi& handler, const QStyleOptionGroupBox* v);
+      static QJSValue cpp2js_QStyleOptionGroupBox(RJSApi& handler, const QStyleOptionGroupBox& v);
+      static QStyleOptionGroupBox js2cpp_QStyleOptionGroupBox(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionGroupBox(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionSizeGrip(RJSApi& handler, const QStyleOptionSizeGrip* v);
+      static QJSValue cpp2js_QStyleOptionSizeGrip(RJSApi& handler, const QStyleOptionSizeGrip& v);
+      static QStyleOptionSizeGrip js2cpp_QStyleOptionSizeGrip(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionSizeGrip(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QStyleOptionGraphicsItem(RJSApi& handler, const QStyleOptionGraphicsItem* v);
+      static QJSValue cpp2js_QStyleOptionGraphicsItem(RJSApi& handler, const QStyleOptionGraphicsItem& v);
+      static QStyleOptionGraphicsItem js2cpp_QStyleOptionGraphicsItem(RJSApi& handler, const QJSValue& v);
+      static bool is_QStyleOptionGraphicsItem(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat* v);
       static QJSValue cpp2js_QSurfaceFormat(RJSApi& handler, const QSurfaceFormat& v);

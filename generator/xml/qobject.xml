@@ -28,6 +28,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="eventFilter">
       <variant return-type="bool" virtual="true" access="public">
         <parameters>
@@ -36,7 +37,6 @@
         </parameters>
       </variant>
     </function>
-    -->
     <preproc plain="#if defined(QT_NO_TRANSLATION)||defined(Q_CLANG_QDOC)" />
     <function name="tr" static="true">
       <variant return-type="QString" access="public">
