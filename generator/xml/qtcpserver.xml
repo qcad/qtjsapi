@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtcpserver.h">
+  <class_decl name="QNetworkProxy" />
+  <class_decl name="QTcpSocket" />
+  <class name="QTcpServer">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="listen">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" default="QHostAddress::Any" />
+          <parameter const="false" type="quint16" modifier="" name="port" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="close">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isListening">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaxPendingConnections">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="numConnections" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="maxPendingConnections">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setListenBacklogSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="listenBacklogSize">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="serverPort">
+      <variant return-type="quint16" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="serverAddress">
+      <variant return-type="QHostAddress" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="socketDescriptor">
+      <variant return-type="qintptr" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSocketDescriptor">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="qintptr" modifier="" name="socketDescriptor" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="waitForNewConnection">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msec" default="0" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="timedOut" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasPendingConnections">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nextPendingConnection">
+      <variant return-type="QTcpSocket*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="serverError">
+      <variant return-type="QAbstractSocket::SocketError" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pauseAccepting">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resumeAccepting">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_NETWORKPROXY" />
+    <function name="setProxy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxy" modifier="&amp;" name="networkProxy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="proxy">
+      <variant return-type="QNetworkProxy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <!--
+    <function name="incomingConnection">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="qintptr" modifier="" name="handle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPendingConnection">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QTcpSocket" modifier="*" name="socket" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="newConnection">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="pendingConnectionAvailable">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters>
+          <parameter const="false" type="QPrivateSignal" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="acceptError">
+      <variant return-type="void" access="protected" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractSocket::SocketError" modifier="" name="socketError" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtcpsocket.h">
+  <class name="QTcpSocket" ownership="cpp">
+    <super_list>
+      <super name="QAbstractSocket" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <preproc plain="#if QT_VERSION&lt;QT_VERSION_CHECK(7,0,0)&amp;&amp;!defined(Q_QDOC)" />
+    <function name="bind">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="addr" />
+          <parameter const="false" type="quint16" modifier="" name="port" default="0" />
+          <parameter const="false" type="BindMode" modifier="" name="mode" default="DefaultForPlatform" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+  </class>
+</unit>

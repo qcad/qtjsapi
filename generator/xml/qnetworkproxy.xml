@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qnetworkproxy.h">
+  <class_decl name="QUrl" />
+  <class name="QNetworkProxyQuery">
+    <enum name="QueryType">
+      <key>TcpSocket</key>
+      <key>UdpSocket</key>
+      <key>SctpSocket</key>
+      <key>TcpServer</key>
+      <key>UrlRequest</key>
+      <key>SctpServer</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="requestUrl" />
+          <parameter const="false" type="QNetworkProxyQuery::QueryType" modifier="" name="queryType" default="UrlRequest" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="hostname" />
+          <parameter const="false" type="int" modifier="" name="port" />
+          <parameter const="true" type="QString" modifier="&amp;" name="protocolTag" default="QString()" />
+          <parameter const="false" type="QNetworkProxyQuery::QueryType" modifier="" name="queryType" default="QNetworkProxyQuery::TcpSocket" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="quint16" modifier="" name="bindPort" />
+          <parameter const="true" type="QString" modifier="&amp;" name="protocolTag" default="QString()" />
+          <parameter const="false" type="QNetworkProxyQuery::QueryType" modifier="" name="queryType" default="QNetworkProxyQuery::TcpServer" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QNetworkProxyQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QNetworkProxyQuery&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QNetworkProxyQuery" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QNetworkProxyQuery&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxyQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QNetworkProxyQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxyQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxyQuery" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryType">
+      <variant return-type="QNetworkProxyQuery::QueryType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setQueryType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QNetworkProxyQuery::QueryType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="peerPort">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPeerPort">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="port" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="peerHostName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPeerHostName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="hostname" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="localPort">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLocalPort">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="port" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="protocolTag">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProtocolTag">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="protocolTag" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="url">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUrl">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QNetworkProxy">
+    <enum name="ProxyType">
+      <key>DefaultProxy</key>
+      <key>Socks5Proxy</key>
+      <key>NoProxy</key>
+      <key>HttpProxy</key>
+      <key>HttpCachingProxy</key>
+      <key>FtpCachingProxy</key>
+    </enum>
+    <enum name="Capability">
+      <key>TunnelingCapability</key>
+      <key>ListeningCapability</key>
+      <key>UdpTunnelingCapability</key>
+      <key>CachingCapability</key>
+      <key>HostNameLookupCapability</key>
+      <key>SctpTunnelingCapability</key>
+      <key>SctpListeningCapability</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="ProxyType" modifier="" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="hostName" default="QString()" />
+          <parameter const="false" type="quint16" modifier="" name="port" default="0" />
+          <parameter const="true" type="QString" modifier="&amp;" name="user" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="password" default="QString()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QNetworkProxy" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QNetworkProxy&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QNetworkProxy" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QNetworkProxy&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxy" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QNetworkProxy" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxy" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxy" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QNetworkProxy::ProxyType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="QNetworkProxy::ProxyType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCapabilities">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Capabilities" modifier="" name="capab" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="capabilities">
+      <variant return-type="Capabilities" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCachingProxy">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isTransparentProxy">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUser">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="userName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="user">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPassword">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="password" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="password">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHostName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="hostName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hostName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPort">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="quint16" modifier="" name="port" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="port">
+      <variant return-type="quint16" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setApplicationProxy" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxy" modifier="&amp;" name="proxy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="applicationProxy" static="true">
+      <variant return-type="QNetworkProxy" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="headers">
+      <variant return-type="QHttpHeaders" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeaders">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QHttpHeaders" modifier="&amp;" name="newHeaders" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QHttpHeaders" modifier="&amp;&amp;" name="newHeaders" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="header">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QNetworkRequest::KnownHeaders" modifier="" name="header" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeader">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QNetworkRequest::KnownHeaders" modifier="" name="header" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasRawHeader">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="headerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rawHeaderList">
+      <variant return-type="QList&lt;QByteArray&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rawHeader">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="headerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRawHeader">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="headerName" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QNetworkProxyFactory">
+    <function name="queryProxy">
+      <variant return-type="QList&lt;QNetworkProxy&gt;" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxyQuery" modifier="&amp;" name="query" default="QNetworkProxyQuery()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="usesSystemConfiguration" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUseSystemConfiguration" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setApplicationProxyFactory" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QNetworkProxyFactory" modifier="*" name="factory" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="proxyForQuery" static="true">
+      <variant return-type="QList&lt;QNetworkProxy&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxyQuery" modifier="&amp;" name="query" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="systemProxyForQuery" static="true">
+      <variant return-type="QList&lt;QNetworkProxy&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxyQuery" modifier="&amp;" name="query" default="QNetworkProxyQuery()" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

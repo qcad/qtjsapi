@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qabstractsocket.h">
+  <class_decl name="QDebug" />
+  <class_decl name="QHostAddress" />
+  <class_decl name="QNetworkProxy" />
+  <class_decl name="QAuthenticator" />
+  <class name="QAbstractSocket" ownership="cpp">
+    <super_list>
+      <super name="QIODevice" />
+    </super_list>
+    <enum name="SocketType">
+      <key>TcpSocket</key>
+      <key>UdpSocket</key>
+      <key>SctpSocket</key>
+      <key>UnknownSocketType</key>
+    </enum>
+    <preproc plain="#if QT_VERSION&lt;QT_VERSION_CHECK(7,0,0)" />
+    <enum name="NetworkLayerProtocol">
+      <key>IPv4Protocol</key>
+      <key>IPv6Protocol</key>
+      <key>AnyIPProtocol</key>
+      <key>UnknownNetworkLayerProtocol</key>
+    </enum>
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <enum name="SocketError">
+      <key>ConnectionRefusedError</key>
+      <key>RemoteHostClosedError</key>
+      <key>HostNotFoundError</key>
+      <key>SocketAccessError</key>
+      <key>SocketResourceError</key>
+      <key>SocketTimeoutError</key>
+      <key>DatagramTooLargeError</key>
+      <key>NetworkError</key>
+      <key>AddressInUseError</key>
+      <key>SocketAddressNotAvailableError</key>
+      <key>UnsupportedSocketOperationError</key>
+      <key>UnfinishedSocketOperationError</key>
+      <key>ProxyAuthenticationRequiredError</key>
+      <key>SslHandshakeFailedError</key>
+      <key>ProxyConnectionRefusedError</key>
+      <key>ProxyConnectionClosedError</key>
+      <key>ProxyConnectionTimeoutError</key>
+      <key>ProxyNotFoundError</key>
+      <key>ProxyProtocolError</key>
+      <key>OperationError</key>
+      <key>SslInternalError</key>
+      <key>SslInvalidUserDataError</key>
+      <key>TemporaryError</key>
+      <key>UnknownSocketError</key>
+    </enum>
+    <enum name="SocketState">
+      <key>UnconnectedState</key>
+      <key>HostLookupState</key>
+      <key>ConnectingState</key>
+      <key>ConnectedState</key>
+      <key>BoundState</key>
+      <key>ListeningState</key>
+      <key>ClosingState</key>
+    </enum>
+    <enum name="SocketOption">
+      <key>LowDelayOption</key>
+      <key>KeepAliveOption</key>
+      <key>MulticastTtlOption</key>
+      <key>MulticastLoopbackOption</key>
+      <key>TypeOfServiceOption</key>
+      <key>SendBufferSizeSocketOption</key>
+      <key>ReceiveBufferSizeSocketOption</key>
+      <key>PathMtuSocketOption</key>
+      <key>KeepAliveIdleOption</key>
+      <key>KeepAliveIntervalOption</key>
+      <key>KeepAliveCountOption</key>
+    </enum>
+    <enum name="BindFlag">
+      <key>DefaultForPlatform</key>
+      <key>ShareAddress</key>
+      <key>DontShareAddress</key>
+      <key>ReuseAddressHint</key>
+    </enum>
+    <enum name="PauseMode">
+      <key>PauseNever</key>
+      <key>PauseOnSslErrors</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QAbstractSocket::SocketType" modifier="" name="socketType" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="resume">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="pauseMode">
+      <variant return-type="PauseModes" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPauseMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="PauseModes" modifier="" name="pauseMode" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="bind">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" />
+          <parameter const="false" type="quint16" modifier="" name="port" default="0" />
+          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="DefaultForPlatform" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="addr" />
+          <parameter const="false" type="quint16" modifier="" name="port" default="0" />
+          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="DefaultForPlatform" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="quint16" modifier="" name="port" default="0" />
+          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="DefaultForPlatform" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="quint16" modifier="" name="port" default="0" />
+          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="DefaultForPlatform" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_VERSION&gt;=QT_VERSION_CHECK(7,0,0)||defined(Q_QDOC)" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    <function name="connectToHost">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="hostName" />
+          <parameter const="false" type="quint16" modifier="" name="port" />
+          <parameter const="false" type="OpenMode" modifier="" name="mode" default="ReadWrite" />
+          <parameter const="false" type="NetworkLayerProtocol" modifier="" name="protocol" default="AnyIPProtocol" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" />
+          <parameter const="false" type="quint16" modifier="" name="port" />
+          <parameter const="false" type="OpenMode" modifier="" name="mode" default="ReadWrite" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="disconnectFromHost">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bytesAvailable">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="bytesToWrite">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="localPort">
+      <variant return-type="quint16" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="localAddress">
+      <variant return-type="QHostAddress" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="peerPort">
+      <variant return-type="quint16" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="peerAddress">
+      <variant return-type="QHostAddress" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="peerName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="readBufferSize">
+      <variant return-type="qint64" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setReadBufferSize">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="abort">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="socketDescriptor">
+      <variant return-type="qintptr" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSocketDescriptor">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="qintptr" modifier="" name="socketDescriptor" />
+          <parameter const="false" type="SocketState" modifier="" name="state" default="ConnectedState" />
+          <parameter const="false" type="OpenMode" modifier="" name="openMode" default="ReadWrite" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setSocketOption">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractSocket::SocketOption" modifier="" name="option" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="socketOption">
+      <variant return-type="QVariant" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAbstractSocket::SocketOption" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="socketType">
+      <variant return-type="QAbstractSocket::SocketType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="state">
+      <variant return-type="SocketState" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="SocketError" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="close">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSequential">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flush">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="waitForConnected">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" default="30000" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="waitForReadyRead">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" default="30000" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="waitForBytesWritten">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" default="30000" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="waitForDisconnected">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="msecs" default="30000" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_NETWORKPROXY" />
+    <function name="setProxy">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QNetworkProxy" modifier="&amp;" name="networkProxy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="proxy">
+      <variant return-type="QNetworkProxy" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="protocolTag">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProtocolTag">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tag" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="hostFound">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="connected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="disconnected">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="stateChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractSocket::SocketState" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorOccurred">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QAbstractSocket::SocketError" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_NETWORKPROXY" />
+    <function name="proxyAuthenticationRequired">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QNetworkProxy" modifier="&amp;" name="proxy" />
+          <parameter const="false" type="QAuthenticator" modifier="*" name="authenticator" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="readData">
+      <variant return-type="qint64" access="protected">
+        <parameters>
+          <parameter const="false" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qint64" modifier="" name="maxlen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="readLineData">
+      <variant return-type="qint64" access="protected">
+        <parameters>
+          <parameter const="false" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qint64" modifier="" name="maxlen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="skipData">
+      <variant return-type="qint64" access="protected">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="maxSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeData">
+      <variant return-type="qint64" access="protected">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qint64" modifier="" name="len" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSocketState">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="SocketState" modifier="" name="state" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSocketError">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="SocketError" modifier="" name="socketError" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLocalPort">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="quint16" modifier="" name="port" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLocalAddress">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPeerPort">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="quint16" modifier="" name="port" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPeerAddress">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPeerName">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

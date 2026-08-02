@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhostaddress.h">
+  <class_decl name="QHostAddress" />
+  <!--
+  <class name="QIPv6Address">
+    <function name="operator[]" call="operator[]">
+      <variant return-type="quint8&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator[]" call="operator[]">
+      <variant return-type="quint8" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="QHostAddress">
+    <enum name="SpecialAddress">
+      <key>Null</key>
+      <key>Broadcast</key>
+      <key>LocalHost</key>
+      <key>LocalHostIPv6</key>
+      <key>Any</key>
+      <key>AnyIPv6</key>
+      <key>AnyIPv4</key>
+    </enum>
+    <enum name="ConversionModeFlag">
+      <key>ConvertV4MappedToIPv4</key>
+      <key>ConvertV4CompatToIPv4</key>
+      <key>ConvertUnspecifiedAddress</key>
+      <key>ConvertLocalHost</key>
+      <key>TolerantConversion</key>
+      <key>StrictConversion</key>
+    </enum>
+    <preproc plain="#if QT_VERSION&lt;QT_VERSION_CHECK(7,0,0)" />
+    <!--
+    <property static="true" type="auto" name="IPv4Protocol" />
+    <property static="true" type="auto" name="IPv6Protocol" />
+    <property static="true" type="auto" name="AnyIPProtocol" />
+    <property static="true" type="auto" name="UnknownNetworkLayerProtocol" />
+    -->
+    <preproc plain="#else" />
+    <enum name="NetworkLayerProtocol">
+      <key>IPv4Protocol</key>
+      <key>IPv6Protocol</key>
+      <key>AnyIPProtocol</key>
+      <key>UnknownNetworkLayerProtocol</key>
+    </enum>
+    <preproc plain="#endif" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="quint32" modifier="" name="ip4Addr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="quint8" modifier="*" name="ip6Addr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="Q_IPV6ADDR" modifier="&amp;" name="ip6Addr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="sockaddr" modifier="*" name="address" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="address" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="copy" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QHostAddress" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="address" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QHostAddress&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QHostAddress" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QHostAddress&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QHostAddress&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="address" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QHostAddress" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAddress">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="quint32" modifier="" name="ip4Addr" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="quint8" modifier="*" name="ip6Addr" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="Q_IPV6ADDR" modifier="&amp;" name="ip6Addr" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="sockaddr" modifier="*" name="address" />
+        </parameters>
+      </variant>
+      -->
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="address" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="address" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="protocol">
+      <variant return-type="QHostAddress::NetworkLayerProtocol" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toIPv4Address">
+      <variant return-type="quint32" const="true" access="public">
+        <parameters>
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="nullptr" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="toIPv6Address">
+      <variant return-type="Q_IPV6ADDR" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="toString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scopeId">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScopeId">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEqual">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" />
+          <parameter const="false" type="QHostAddress::ConversionMode" modifier="" name="mode" default="QHostAddress::TolerantConversion" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="address" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="address" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isInSubnet">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="subnet" />
+          <parameter const="false" type="int" modifier="" name="netmask" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="std::pair&lt;QHostAddress,int&gt;" modifier="&amp;" name="subnet" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="isLoopback">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isGlobal">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isLinkLocal">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSiteLocal">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUniqueLocalUnicast">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isMulticast">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isBroadcast">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPrivateUse">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="parseSubnet" static="true">
+      <variant return-type="std::pair&lt;QHostAddress,int&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="subnet" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="equals" call="operator==">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="lhs" />
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="lhs" />
+          <parameter const="true" type="QHostAddress" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>
