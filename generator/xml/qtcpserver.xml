@@ -148,12 +148,12 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="newConnection">
-      <variant return-type="void" access="protected" signal="true">
+      <variant return-type="void" access="public" signal="true">
         <parameters />
       </variant>
     </function>
-    -->
     <!--
     <function name="pendingConnectionAvailable">
       <variant return-type="void" access="protected" signal="true">
@@ -162,13 +162,13 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="acceptError">
-      <variant return-type="void" access="protected" signal="true">
+      <variant return-type="void" access="public" signal="true">
         <parameters>
           <parameter const="false" type="QAbstractSocket::SocketError" modifier="" name="socketError" />
         </parameters>
       </variant>
     </function>
-    -->
   </class>
 </unit>
