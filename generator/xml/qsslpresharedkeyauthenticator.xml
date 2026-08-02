@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsslpresharedkeyauthenticator.h">
+  <class name="QSslPreSharedKeyAuthenticator">
+    <function name="QSslPreSharedKeyAuthenticator">
+      <variant return-type="Q_NETWORK_EXPORT" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="Q_NETWORK_EXPORT" access="public">
+        <parameters>
+          <parameter const="true" type="QSslPreSharedKeyAuthenticator" modifier="&amp;" name="authenticator" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="Q_NETWORK_EXPORTQSslPreSharedKeyAuthenticator&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QSslPreSharedKeyAuthenticator" modifier="&amp;" name="authenticator" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslPreSharedKeyAuthenticator&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QSslPreSharedKeyAuthenticator" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSslPreSharedKeyAuthenticator" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="identityHint">
+      <variant return-type="Q_NETWORK_EXPORTQByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIdentity">
+      <variant return-type="Q_NETWORK_EXPORTvoid" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="identity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="identity">
+      <variant return-type="Q_NETWORK_EXPORTQByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumIdentityLength">
+      <variant return-type="Q_NETWORK_EXPORTint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPreSharedKey">
+      <variant return-type="Q_NETWORK_EXPORTvoid" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="preSharedKey" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="preSharedKey">
+      <variant return-type="Q_NETWORK_EXPORTQByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="maximumPreSharedKeyLength">
+      <variant return-type="Q_NETWORK_EXPORTint" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEqual" />
+    <class_decl name="QTlsBackend" />
+    <function name="equals" call="operator==">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="true" type="QSslPreSharedKeyAuthenticator" modifier="&amp;" name="lhs" />
+          <parameter const="true" type="QSslPreSharedKeyAuthenticator" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="true" type="QSslPreSharedKeyAuthenticator" modifier="&amp;" name="lhs" />
+          <parameter const="true" type="QSslPreSharedKeyAuthenticator" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

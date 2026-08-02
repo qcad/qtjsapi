@@ -168,6 +168,11 @@
 #include "generator/cpp/qjsengine_wrapper.h"
 #include "generator/cpp/qfilesystemwatcher_wrapper.h"
 #include "generator/cpp/qscreen_wrapper.h"
+#include "generator/cpp/qhostaddress_wrapper.h"
+#include "generator/cpp/qnetworkproxy_wrapper.h"
+#include "generator/cpp/qtcpsocket_wrapper.h"
+#include "generator/cpp/qtcpserver_wrapper.h"
+#include "generator/cpp/qabstractsocket_wrapper.h"
 
 RJSApi::RJSApi(QJSEngine* engine) : engine(engine) {
     init();
@@ -459,6 +464,12 @@ void RJSApi::init() {
     QFileSystemWatcher_Wrapper::init(*this);
     QScreen_Wrapper::init(*this);
     QInputDialog_Wrapper::init(*this);
+
+    QHostAddress_Wrapper::init(*this);
+    QNetworkProxy_Wrapper::init(*this);
+    QTcpSocket_Wrapper::init(*this);
+    QTcpServer_Wrapper::init(*this);
+    QAbstractSocket_Wrapper::init(*this);
 
     QJSEngine_Wrapper::init(*this);
     QQmlContext_Wrapper::init(*this);

@@ -5673,6 +5673,14 @@
                     return RJSHelper::cpp2js_QProcess(handler, o);
                 }
             }
+            
+            // downcast to QTcpSocket:
+            {
+                QTcpSocket* o = qobject_cast<QTcpSocket*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QTcpSocket(handler, o);
+                }
+            }
             QIODevice_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {

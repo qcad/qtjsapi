@@ -3563,6 +3563,18 @@
       static QNetworkProxyQuery::QueryType js2cpp_QNetworkProxyQuery_QueryType(RJSApi& handler, const QJSValue& v);
       static bool is_QNetworkProxyQuery_QueryType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QNetworkProxy_ProxyType(RJSApi& handler, QNetworkProxy::ProxyType v);
+      static QNetworkProxy::ProxyType js2cpp_QNetworkProxy_ProxyType(RJSApi& handler, const QJSValue& v);
+      static bool is_QNetworkProxy_ProxyType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QNetworkProxy_Capability(RJSApi& handler, QNetworkProxy::Capability v);
+      static QNetworkProxy::Capability js2cpp_QNetworkProxy_Capability(RJSApi& handler, const QJSValue& v);
+      static bool is_QNetworkProxy_Capability(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QNetworkProxy_Capabilities(RJSApi& handler, QNetworkProxy::Capabilities v);
+      static QNetworkProxy::Capabilities js2cpp_QNetworkProxy_Capabilities(RJSApi& handler, const QJSValue& v);
+      static bool is_QNetworkProxy_Capabilities(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
   // ------------------------------------
   // QSharedPointer types (non-copyable):
   // ------------------------------------

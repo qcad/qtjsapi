@@ -358,7 +358,7 @@ QNetworkProxyQuery::QueryType a2_cpp;
 
       
           if (a2.isUndefined()) {
-            a2_cpp = UrlRequest;
+            a2_cpp = QNetworkProxyQuery::UrlRequest;
           }
           else {
             a2_cpp = RJSHelper::js2cpp_QNetworkProxyQuery_QueryType(handler, a2);
@@ -1781,7 +1781,7 @@ QNetworkProxy_Wrapper::QNetworkProxy_Wrapper
                 
       // check parameter types:
       if (
-        RJSHelper::is_ProxyType(handler, a1
+        RJSHelper::is_QNetworkProxy_ProxyType(handler, a1
   )
 
    && RJSHelper::is_QString(handler, a2
@@ -1809,11 +1809,11 @@ QNetworkProxy_Wrapper::QNetworkProxy_Wrapper
     
       // prepare parameters:
     
-  // convert js parameter to cpp: type (ProxyType)
+  // convert js parameter to cpp: type (QNetworkProxy::ProxyType)
   
-ProxyType a1_cpp;
+QNetworkProxy::ProxyType a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_ProxyType(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QNetworkProxy_ProxyType(handler, a1);
         
   // convert js parameter to cpp: hostName (QString)
   
@@ -2409,7 +2409,7 @@ QNetworkProxy::ProxyType a1_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper::is_Capabilities(handler, a1
+        RJSHelper::is_QNetworkProxy_Capabilities(handler, a1
   )
 
   
@@ -2417,11 +2417,11 @@ QNetworkProxy::ProxyType a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: capab (Capabilities)
+  // convert js parameter to cpp: capab (QNetworkProxy::Capabilities)
   
-Capabilities a1_cpp;
+QNetworkProxy::Capabilities a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_Capabilities(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QNetworkProxy_Capabilities(handler, a1);
         
 
     // call function:
@@ -2488,15 +2488,15 @@ Capabilities a1_cpp;
             
                 // call function of C++ class:
                 QNetworkProxy* w = getWrapped();
-                Capabilities res = 
+                QNetworkProxy::Capabilities res = 
                     
                 w->capabilities(
                   
                 );
               
-            // return type: Capabilities
+            // return type: QNetworkProxy::Capabilities
 
-            return RJSHelper::cpp2js_Capabilities(
+            return RJSHelper::cpp2js_QNetworkProxy_Capabilities(
               handler, 
               // non-copyable: false
                   res
@@ -3104,318 +3104,6 @@ quint16 a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for port";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QNetworkProxy
-    // Function: headers
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QNetworkProxy_Wrapper::headers
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QNetworkProxy* w = getWrapped();
-                QHttpHeaders res = 
-                    
-                w->headers(
-                  
-                );
-              
-            // return type: QHttpHeaders
-
-            return RJSHelper::cpp2js_QHttpHeaders(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for headers";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QNetworkProxy
-    // Function: setHeaders
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QNetworkProxy_Wrapper::setHeaders
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QHttpHeaders(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: newHeaders (QHttpHeaders)
-  
-QHttpHeaders a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QHttpHeaders(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QNetworkProxy* w = getWrapped();
-                
-                w->setHeaders(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-      // check parameter types:
-      if (
-        RJSHelper::is_QHttpHeaders(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: newHeaders (QHttpHeaders)
-  
-QHttpHeaders a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QHttpHeaders(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QNetworkProxy* w = getWrapped();
-                
-                w->setHeaders(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setHeaders";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QNetworkProxy
-    // Function: header
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QNetworkProxy_Wrapper::header
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QNetworkRequest_KnownHeaders(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: header (QNetworkRequest::KnownHeaders)
-  
-QNetworkRequest::KnownHeaders a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QNetworkRequest_KnownHeaders(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QNetworkProxy* w = getWrapped();
-                QVariant res = 
-                    
-                w->header(
-                  a1_cpp
-    
-                );
-              
-            // return type: QVariant
-
-            return RJSHelper::cpp2js_QVariant(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for header";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QNetworkProxy
-    // Function: setHeader
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QNetworkProxy_Wrapper::setHeader
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QNetworkRequest_KnownHeaders(handler, a1
-  )
-
-   && RJSHelper::is_QVariant(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: header (QNetworkRequest::KnownHeaders)
-  
-QNetworkRequest::KnownHeaders a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QNetworkRequest_KnownHeaders(handler, a1);
-        
-  // convert js parameter to cpp: value (QVariant)
-  
-QVariant a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QVariant(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QNetworkProxy* w = getWrapped();
-                
-                w->setHeader(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setHeader";
                   handler.trace();
                   return QJSValue();
                 

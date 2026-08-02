@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsslkey.h">
+  <class_decl name="QIODevice" />
+  <class_decl name="QDebug" />
+  <class name="QSslKey">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="encoded" />
+          <parameter const="false" type="QSsl::KeyAlgorithm" modifier="" name="algorithm" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+          <parameter const="false" type="QSsl::KeyType" modifier="" name="type" default="QSsl::PrivateKey" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="passPhrase" default="QByteArray()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="false" type="QSsl::KeyAlgorithm" modifier="" name="algorithm" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+          <parameter const="false" type="QSsl::KeyType" modifier="" name="type" default="QSsl::PrivateKey" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="passPhrase" default="QByteArray()" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::HANDLE" modifier="" name="handle" />
+          <parameter const="false" type="QSsl::KeyType" modifier="" name="type" default="QSsl::PrivateKey" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSslKey" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSslKey" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslKey&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QSslKey" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslKey&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QSslKey" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSslKey" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="QSsl::KeyType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="algorithm">
+      <variant return-type="QSsl::KeyAlgorithm" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toPem">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="passPhrase" default="QByteArray()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toDer">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="passPhrase" default="QByteArray()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handle">
+      <variant return-type="Qt::HANDLE" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslKey" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslKey" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="  QTlsBackend" />
+  </class>
+</unit>

@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsslserver.h">
+  <class_decl name="QSslSocket" />
+  <class name="QSslServer">
+    <super_list>
+      <super name="QTcpServer" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setSslConfiguration">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSslConfiguration" modifier="&amp;" name="sslConfiguration" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sslConfiguration">
+      <variant return-type="QSslConfiguration" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHandshakeTimeout">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="timeout" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handshakeTimeout">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sslErrors">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslSocket" modifier="*" name="socket" />
+          <parameter const="true" type="QList&lt;QSslError&gt;" modifier="&amp;" name="errors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="peerVerifyError">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslSocket" modifier="*" name="socket" />
+          <parameter const="true" type="QSslError" modifier="&amp;" name="error" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="errorOccurred">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslSocket" modifier="*" name="socket" />
+          <parameter const="false" type="QAbstractSocket::SocketError" modifier="" name="error" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="preSharedKeyAuthenticationRequired">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslSocket" modifier="*" name="socket" />
+          <parameter const="false" type="QSslPreSharedKeyAuthenticator" modifier="*" name="authenticator" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alertSent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslSocket" modifier="*" name="socket" />
+          <parameter const="false" type="QSsl::AlertLevel" modifier="" name="level" />
+          <parameter const="false" type="QSsl::AlertType" modifier="" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="description" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alertReceived">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslSocket" modifier="*" name="socket" />
+          <parameter const="false" type="QSsl::AlertLevel" modifier="" name="level" />
+          <parameter const="false" type="QSsl::AlertType" modifier="" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="description" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handshakeInterruptedOnError">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslSocket" modifier="*" name="socket" />
+          <parameter const="true" type="QSslError" modifier="&amp;" name="error" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startedEncryptionHandshake">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslSocket" modifier="*" name="socket" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="incomingConnection">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="qintptr" modifier="" name="socket" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

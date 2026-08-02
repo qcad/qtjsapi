@@ -374,6 +374,9 @@
     <type>QAbstractSocket::SocketOption</type>
     <type flags="true">QAbstractSocket::BindMode</type>
     <type>QNetworkProxyQuery::QueryType</type>
+    <type>QNetworkProxy::ProxyType</type>
+    <type>QNetworkProxy::Capability</type>
+    <type flags="true">QNetworkProxy::Capabilities</type>
   </primitive>
 
   <shared_ptr_no_copy>

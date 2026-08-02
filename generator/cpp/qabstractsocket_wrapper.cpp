@@ -231,13 +231,6 @@
     SLOT(errorOccurredEmitter(QAbstractSocket::SocketError))
   );
 
-  connect(
-    getWrapped(), 
-    SIGNAL(proxyAuthenticationRequired(const QNetworkProxy&, QAuthenticator*)), 
-    this, 
-    SLOT(proxyAuthenticationRequiredEmitter(const QNetworkProxy&, QAuthenticator*))
-  );
-
           }
         }
       
@@ -2482,7 +2475,7 @@ QAbstractSocket::BindMode a3_cpp;
 
       
           if (a3.isUndefined()) {
-            a3_cpp = DefaultForPlatform;
+            a3_cpp = QAbstractSocket::DefaultForPlatform;
           }
           else {
             a3_cpp = RJSHelper::js2cpp_QAbstractSocket_BindMode(handler, a3);
@@ -2567,7 +2560,7 @@ QAbstractSocket::BindMode a3_cpp;
 
       
           if (a3.isUndefined()) {
-            a3_cpp = DefaultForPlatform;
+            a3_cpp = QAbstractSocket::DefaultForPlatform;
           }
           else {
             a3_cpp = RJSHelper::js2cpp_QAbstractSocket_BindMode(handler, a3);
@@ -2643,7 +2636,7 @@ QAbstractSocket::BindMode a2_cpp;
 
       
           if (a2.isUndefined()) {
-            a2_cpp = DefaultForPlatform;
+            a2_cpp = QAbstractSocket::DefaultForPlatform;
           }
           else {
             a2_cpp = RJSHelper::js2cpp_QAbstractSocket_BindMode(handler, a2);
@@ -2718,7 +2711,7 @@ QAbstractSocket::BindMode a2_cpp;
 
       
           if (a2.isUndefined()) {
-            a2_cpp = DefaultForPlatform;
+            a2_cpp = QAbstractSocket::DefaultForPlatform;
           }
           else {
             a2_cpp = RJSHelper::js2cpp_QAbstractSocket_BindMode(handler, a2);
@@ -2801,12 +2794,12 @@ QAbstractSocket::BindMode a2_cpp;
    && RJSHelper::is_quint16(handler, a2
   )
 
-   && RJSHelper::is_OpenMode(handler, a3
+   && RJSHelper::is_QIODeviceBase_OpenMode(handler, a3
     , true
   
   )
 
-   && RJSHelper::is_NetworkLayerProtocol(handler, a4
+   && RJSHelper::is_QAbstractSocket_NetworkLayerProtocol(handler, a4
     , true
   
   )
@@ -2828,28 +2821,28 @@ quint16 a2_cpp;
 
       a2_cpp = RJSHelper::js2cpp_quint16(handler, a2);
         
-  // convert js parameter to cpp: mode (OpenMode)
+  // convert js parameter to cpp: mode (QIODeviceBase::OpenMode)
   
-OpenMode a3_cpp;
+QIODeviceBase::OpenMode a3_cpp;
 
       
           if (a3.isUndefined()) {
-            a3_cpp = ReadWrite;
+            a3_cpp = QIODeviceBase::ReadWrite;
           }
           else {
-            a3_cpp = RJSHelper::js2cpp_OpenMode(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QIODeviceBase_OpenMode(handler, a3);
           }
         
-  // convert js parameter to cpp: protocol (NetworkLayerProtocol)
+  // convert js parameter to cpp: protocol (QAbstractSocket::NetworkLayerProtocol)
   
-NetworkLayerProtocol a4_cpp;
+QAbstractSocket::NetworkLayerProtocol a4_cpp;
 
       
           if (a4.isUndefined()) {
-            a4_cpp = AnyIPProtocol;
+            a4_cpp = QAbstractSocket::AnyIPProtocol;
           }
           else {
-            a4_cpp = RJSHelper::js2cpp_NetworkLayerProtocol(handler, a4);
+            a4_cpp = RJSHelper::js2cpp_QAbstractSocket_NetworkLayerProtocol(handler, a4);
           }
         
 
@@ -2888,7 +2881,7 @@ NetworkLayerProtocol a4_cpp;
    && RJSHelper::is_quint16(handler, a2
   )
 
-   && RJSHelper::is_OpenMode(handler, a3
+   && RJSHelper::is_QIODeviceBase_OpenMode(handler, a3
     , true
   
   )
@@ -2910,16 +2903,16 @@ quint16 a2_cpp;
 
       a2_cpp = RJSHelper::js2cpp_quint16(handler, a2);
         
-  // convert js parameter to cpp: mode (OpenMode)
+  // convert js parameter to cpp: mode (QIODeviceBase::OpenMode)
   
-OpenMode a3_cpp;
+QIODeviceBase::OpenMode a3_cpp;
 
       
           if (a3.isUndefined()) {
-            a3_cpp = ReadWrite;
+            a3_cpp = QIODeviceBase::ReadWrite;
           }
           else {
-            a3_cpp = RJSHelper::js2cpp_OpenMode(handler, a3);
+            a3_cpp = RJSHelper::js2cpp_QIODeviceBase_OpenMode(handler, a3);
           }
         
 
@@ -3865,15 +3858,15 @@ QAbstractSocket::SocketOption a1_cpp;
             
                 // call function of C++ class:
                 QAbstractSocket* w = getWrapped();
-                SocketState res = 
+                QAbstractSocket::SocketState res = 
                     
                 w->state(
                   
                 );
               
-            // return type: SocketState
+            // return type: QAbstractSocket::SocketState
 
-            return RJSHelper::cpp2js_SocketState(
+            return RJSHelper::cpp2js_QAbstractSocket_SocketState(
               handler, 
               // non-copyable: false
                   res
@@ -3922,15 +3915,15 @@ QAbstractSocket::SocketOption a1_cpp;
             
                 // call function of C++ class:
                 QAbstractSocket* w = getWrapped();
-                SocketError res = 
+                QAbstractSocket::SocketError res = 
                     
                 w->error(
                   
                 );
               
-            // return type: SocketError
+            // return type: QAbstractSocket::SocketError
 
-            return RJSHelper::cpp2js_SocketError(
+            return RJSHelper::cpp2js_QAbstractSocket_SocketError(
               handler, 
               // non-copyable: false
                   res
@@ -4790,860 +4783,8 @@ QString a1_cpp;
             
 #ifndef QT_NO_NETWORKPROXY
 
-    // Class: QAbstractSocket
-    // Function: proxyAuthenticationRequired
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              QAbstractSocket_Wrapper::proxyAuthenticationRequiredEmitter(
-                const QNetworkProxy& proxy, QAuthenticator* authenticator
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: proxy (QNetworkProxy)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QNetworkProxy(
-    handler, 
-    proxy
-  );
-
-  // parameter: authenticator (QAuthenticator)
-  
-
-
-  QJSValue a2_js = RJSHelper::cpp2js_QAuthenticator(
-    handler, 
-    authenticator
-  );
-
-
-                emit proxyAuthenticationRequired(
-                  a1_js, a2_js
-                );
-              }
-            
 #endif
 
-    // Class: QAbstractSocket
-    // Function: readData
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      readDataSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_qint64(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: data (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp: maxlen (qint64)
-  
-qint64 a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_qint64(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                qint64 res = 
-                    
-                w->readData(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            // return type: qint64
-
-            return RJSHelper::cpp2js_qint64(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for readData";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: readLineData
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      readLineDataSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_qint64(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: data (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp: maxlen (qint64)
-  
-qint64 a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_qint64(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                qint64 res = 
-                    
-                w->readLineData(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            // return type: qint64
-
-            return RJSHelper::cpp2js_qint64(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for readLineData";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: skipData
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      skipDataSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_qint64(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: maxSize (qint64)
-  
-qint64 a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                qint64 res = 
-                    
-                w->skipData(
-                  a1_cpp
-    
-                );
-              
-            // return type: qint64
-
-            return RJSHelper::cpp2js_qint64(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for skipData";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: writeData
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      writeDataSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_char_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_qint64(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: data (char)
-  
-
-      // char pointer string:
-      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
-      const char* a1_cpp = a1_ba.constData();
-    
-  // convert js parameter to cpp: len (qint64)
-  
-qint64 a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_qint64(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                qint64 res = 
-                    
-                w->writeData(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            // return type: qint64
-
-            return RJSHelper::cpp2js_qint64(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for writeData";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: setSocketState
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setSocketStateSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_SocketState(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: state (SocketState)
-  
-SocketState a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_SocketState(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                
-                w->setSocketState(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setSocketState";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: setSocketError
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setSocketErrorSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_SocketError(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: socketError (SocketError)
-  
-SocketError a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_SocketError(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                
-                w->setSocketError(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setSocketError";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: setLocalPort
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setLocalPortSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_quint16(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: port (quint16)
-  
-quint16 a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_quint16(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                
-                w->setLocalPort(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setLocalPort";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: setLocalAddress
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setLocalAddressSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QHostAddress(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: address (QHostAddress)
-  
-QHostAddress a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QHostAddress(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                
-                w->setLocalAddress(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setLocalAddress";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: setPeerPort
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setPeerPortSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_quint16(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: port (quint16)
-  
-quint16 a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_quint16(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                
-                w->setPeerPort(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setPeerPort";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: setPeerAddress
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setPeerAddressSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QHostAddress(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: address (QHostAddress)
-  
-QHostAddress a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QHostAddress(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                
-                w->setPeerAddress(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setPeerAddress";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QAbstractSocket
-    // Function: setPeerName
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              QAbstractSocket_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setPeerNameSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: name (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QAbstractSocket* w = getWrapped();
-                
-                w->setPeerName(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setPeerName";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
 
   // member functions for static properties, forward to static function
   

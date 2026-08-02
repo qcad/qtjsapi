@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsslcertificate.h">
+  <class_decl name="QDateTime" />
+  <class_decl name="QIODevice" />
+  <class_decl name="QSslError" />
+  <class_decl name="QSslKey" />
+  <class_decl name="QSslCertificateExtension" />
+  <class_decl name="QSslCertificate" />
+  <class_decl name="QDebug" />
+  <class name="QSslCertificate">
+    <enum name="SubjectInfo">
+      <key>Organization</key>
+      <key>CommonName</key>
+      <key>LocalityName</key>
+      <key>OrganizationalUnitName</key>
+      <key>CountryName</key>
+      <key>StateOrProvinceName</key>
+      <key>DistinguishedNameQualifier</key>
+      <key>SerialNumber</key>
+      <key>EmailAddress</key>
+    </enum>
+    <enum name="PatternSyntax">
+      <key>RegularExpression</key>
+      <key>Wildcard</key>
+      <key>FixedString</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" default="QByteArray()" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSslCertificate" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSslCertificate" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslCertificate&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QSslCertificate" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslCertificate&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QSslCertificate" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSslCertificate" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslCertificate" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslCertificate" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isBlacklisted">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSelfSigned">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="version">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="serialNumber">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="digest">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QCryptographicHash::Algorithm" modifier="" name="algorithm" default="QCryptographicHash::Md5" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="issuerInfo">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="SubjectInfo" modifier="" name="info" />
+        </parameters>
+      </variant>
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="attribute" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="subjectInfo">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="SubjectInfo" modifier="" name="info" />
+        </parameters>
+      </variant>
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="attribute" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="issuerDisplayName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="subjectDisplayName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="subjectInfoAttributes">
+      <variant return-type="QList&lt;QByteArray&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="issuerInfoAttributes">
+      <variant return-type="QList&lt;QByteArray&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="subjectAlternativeNames">
+      <variant return-type="QMultiMap&lt;QSsl::AlternativeNameEntryType,QString&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="effectiveDate">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="expiryDate">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_SSL" />
+    <function name="publicKey">
+      <variant return-type="QSslKey" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="extensions">
+      <variant return-type="QList&lt;QSslCertificateExtension&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toPem">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toDer">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fromPath" static="true">
+      <variant return-type="QList&lt;QSslCertificate&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+          <parameter const="false" type="PatternSyntax" modifier="" name="syntax" default="PatternSyntax::FixedString" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromDevice" static="true">
+      <variant return-type="QList&lt;QSslCertificate&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromData" static="true">
+      <variant return-type="QList&lt;QSslCertificate&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="data" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromFile" static="true">
+      <variant return-type="QList&lt;QSslCertificate&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filePath" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_SSL" />
+    <function name="verify" static="true">
+      <variant return-type="QList&lt;QSslError&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSslCertificate&gt;" modifier="&amp;" name="certificateChain" />
+          <parameter const="true" type="QString" modifier="&amp;" name="hostName" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="importPkcs12" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="false" type="QSslKey" modifier="*" name="key" />
+          <parameter const="false" type="QSslCertificate" modifier="*" name="cert" />
+          <parameter const="false" type="QList&lt;QSslCertificate&gt;" modifier="*" name="caCertificates" default="nullptr" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="passPhrase" default="QByteArray()" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="handle">
+      <variant return-type="Qt::HANDLE" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QTlsBackend" />
+  </class>
+</unit>

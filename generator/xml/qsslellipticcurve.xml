@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsslellipticcurve.h">
+  <class_decl name="QSslEllipticCurve" />
+  <class_decl name="QDebug" />
+  <class name="QSslEllipticCurve">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="fromShortName" static="true">
+      <variant return-type="Q_NETWORK_EXPORTQSslEllipticCurve" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromLongName" static="true">
+      <variant return-type="Q_NETWORK_EXPORTQSslEllipticCurve" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="shortName">
+      <variant return-type="Q_NETWORK_EXPORTQString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="longName">
+      <variant return-type="Q_NETWORK_EXPORTQString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isTlsNamedCurve">
+      <variant return-type="Q_NETWORK_EXPORTbool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="false" type="QSslEllipticCurve" modifier="" name="lhs" />
+          <parameter const="false" type="QSslEllipticCurve" modifier="" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="false" type="QSslEllipticCurve" modifier="" name="lhs" />
+          <parameter const="false" type="QSslEllipticCurve" modifier="" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QSslContext" />
+  </class>
+</unit>

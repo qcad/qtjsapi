@@ -1,0 +1,436 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsslconfiguration.h">
+  <class_decl name="QSslCertificate" />
+  <class_decl name="QSslCipher" />
+  <class_decl name="QSslKey" />
+  <class_decl name="QSslKeyingMaterial" />
+  <class_decl name="QSslEllipticCurve" />
+  <class_decl name="QSslDiffieHellmanParameters" />
+  <class name="QSslConfiguration">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSslConfiguration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslConfiguration&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QSslConfiguration" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslConfiguration&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QSslConfiguration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSslConfiguration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslConfiguration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslConfiguration" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="protocol">
+      <variant return-type="QSsl::SslProtocol" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProtocol">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSsl::SslProtocol" modifier="" name="protocol" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="peerVerifyMode">
+      <variant return-type="QSslSocket::PeerVerifyMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPeerVerifyMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSslSocket::PeerVerifyMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="peerVerifyDepth">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPeerVerifyDepth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="depth" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="localCertificateChain">
+      <variant return-type="QList&lt;QSslCertificate&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLocalCertificateChain">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSslCertificate&gt;" modifier="&amp;" name="localChain" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="localCertificate">
+      <variant return-type="QSslCertificate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLocalCertificate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSslCertificate" modifier="&amp;" name="certificate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="peerCertificate">
+      <variant return-type="QSslCertificate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="peerCertificateChain">
+      <variant return-type="QList&lt;QSslCertificate&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sessionCipher">
+      <variant return-type="QSslCipher" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sessionProtocol">
+      <variant return-type="QSsl::SslProtocol" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="privateKey">
+      <variant return-type="QSslKey" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrivateKey">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSslKey" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ciphers">
+      <variant return-type="QList&lt;QSslCipher&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCiphers">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSslCipher&gt;" modifier="&amp;" name="ciphers" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ciphers" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="supportedCiphers" static="true">
+      <variant return-type="QList&lt;QSslCipher&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="caCertificates">
+      <variant return-type="QList&lt;QSslCertificate&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCaCertificates">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSslCertificate&gt;" modifier="&amp;" name="certificates" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addCaCertificates">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+          <parameter const="false" type="QSslCertificate::PatternSyntax" modifier="" name="syntax"
+          default="QSslCertificate::PatternSyntax::FixedString" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSslCertificate&gt;" modifier="&amp;" name="certificates" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addCaCertificate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSslCertificate" modifier="&amp;" name="certificate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="systemCaCertificates" static="true">
+      <variant return-type="QList&lt;QSslCertificate&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSslOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSsl::SslOption" modifier="" name="option" />
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testSslOption">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSsl::SslOption" modifier="" name="option" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sessionTicket">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSessionTicket">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="sessionTicket" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sessionTicketLifeTimeHint">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ephemeralServerKey">
+      <variant return-type="QSslKey" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ellipticCurves">
+      <variant return-type="QList&lt;QSslEllipticCurve&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEllipticCurves">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSslEllipticCurve&gt;" modifier="&amp;" name="curves" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="supportedEllipticCurves" static="true">
+      <variant return-type="QList&lt;QSslEllipticCurve&gt;" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="preSharedKeyIdentityHint">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPreSharedKeyIdentityHint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="hint" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="diffieHellmanParameters">
+      <variant return-type="QSslDiffieHellmanParameters" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDiffieHellmanParameters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="dhparams" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="backendConfiguration">
+      <variant return-type="QMap&lt;QByteArray,QVariant&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBackendConfigurationOption">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="name" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBackendConfiguration">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QMap&lt;QByteArray,QVariant&gt;" modifier="&amp;" name="backendConfiguration"
+          default="QMap&lt;QByteArray,QVariant&gt;()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultConfiguration" static="true">
+      <variant return-type="QSslConfiguration" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultConfiguration" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslConfiguration" modifier="&amp;" name="configuration" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_CONFIG(dtls)||defined(Q_QDOC)" />
+    <function name="dtlsCookieVerificationEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDtlsCookieVerificationEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="defaultDtlsConfiguration" static="true">
+      <variant return-type="QSslConfiguration" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultDtlsConfiguration" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslConfiguration" modifier="&amp;" name="configuration" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="handshakeMustInterruptOnError">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHandshakeMustInterruptOnError">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="interrupt" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="missingCertificateIsFatal">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMissingCertificateIsFatal">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="cannotRecover" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOcspStaplingEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="ocspStaplingEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <enum name="NextProtocolNegotiationStatus">
+      <key>NextProtocolNegotiationNone</key>
+      <key>NextProtocolNegotiationNegotiated</key>
+      <key>NextProtocolNegotiationUnsupported</key>
+    </enum>
+    <function name="setAllowedNextProtocols">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QByteArray&gt;" modifier="&amp;" name="protocols" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="allowedNextProtocols">
+      <variant return-type="QList&lt;QByteArray&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nextNegotiatedProtocol">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nextProtocolNegotiationStatus">
+      <variant return-type="NextProtocolNegotiationStatus" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <property static="true" type="char" name="" />
+    <property static="true" type="char" name="" />
+    <function name="keyingMaterial">
+      <variant return-type="QList&lt;QSslKeyingMaterial&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="std::optional&lt;QSslKeyingMaterial&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslKeyingMaterial" modifier="&amp;" name="material" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setKeyingMaterial">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSslKeyingMaterial&gt;" modifier="&amp;" name="keyMaterial" />
+        </parameters>
+      </variant>
+    </function>
+    <class_decl name="QSslSocket" />
+    <class_decl name="QSslContext" />
+    <class_decl name="QTlsBackend" />
+  </class>
+</unit>

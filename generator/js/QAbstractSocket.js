@@ -97,8 +97,6 @@
   
     this["errorOccurred(QAbstractSocket::SocketError)"] = Object.getPrototypeOf(this).errorOccurred;
   
-    this["proxyAuthenticationRequired(QNetworkProxy,QAuthenticator*)"] = Object.getPrototypeOf(this).proxyAuthenticationRequired;
-  
             }
           
         }

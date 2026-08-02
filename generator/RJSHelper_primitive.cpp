@@ -8492,3 +8492,68 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper::cpp2js_QNetworkProxy_ProxyType(RJSApi& handler, QNetworkProxy::ProxyType v) {
+        return QJSValue(v);
+      }
+
+      QNetworkProxy::ProxyType RJSHelper::js2cpp_QNetworkProxy_ProxyType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QNetworkProxy::ProxyType)0
+          ;
+        }
+        return 
+        (QNetworkProxy::ProxyType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QNetworkProxy_ProxyType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QNetworkProxy_Capability(RJSApi& handler, QNetworkProxy::Capability v) {
+        return QJSValue(v);
+      }
+
+      QNetworkProxy::Capability RJSHelper::js2cpp_QNetworkProxy_Capability(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QNetworkProxy::Capability)0
+          ;
+        }
+        return 
+        (QNetworkProxy::Capability)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QNetworkProxy_Capability(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QNetworkProxy_Capabilities(RJSApi& handler, QNetworkProxy::Capabilities v) {
+        return QJSValue(v);
+      }
+
+      QNetworkProxy::Capabilities RJSHelper::js2cpp_QNetworkProxy_Capabilities(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QNetworkProxy::Capabilities()
+          ;
+        }
+        return 
+        (QNetworkProxy::Capabilities)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QNetworkProxy_Capabilities(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    

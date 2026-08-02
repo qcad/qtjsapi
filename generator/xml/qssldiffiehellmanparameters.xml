@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qssldiffiehellmanparameters.h">
+  <class_decl name="QIODevice" />
+  <class_decl name="QSslContext" />
+  <class_decl name="QSslDiffieHellmanParameters" />
+  <class_decl name="QDebug" />
+  <class name="QSslDiffieHellmanParameters">
+    <enum name="Error">
+      <key>NoError</key>
+      <key>InvalidInputDataError</key>
+      <key>UnsafeParametersError</key>
+    </enum>
+    <function name="defaultParameters" static="true">
+      <variant return-type="QSslDiffieHellmanParameters" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSslDiffieHellmanParameters" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslDiffieHellmanParameters&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslDiffieHellmanParameters&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QSslDiffieHellmanParameters" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSslDiffieHellmanParameters" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fromEncoded" static="true">
+      <variant return-type="QSslDiffieHellmanParameters" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="encoded" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+        </parameters>
+      </variant>
+      <variant return-type="QSslDiffieHellmanParameters" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QIODevice" modifier="*" name="device" />
+          <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="Error" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <class_decl name="QSslContext" />
+    <function name="isEqual" />
+    <function name="equals" call="operator==">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="lhs" />
+          <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" access="unknown">
+        <parameters>
+          <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="lhs" />
+          <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="rhs" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_DEBUG_STREAM" />
+    <function name="operator_read" call="operator&lt;&lt;">
+      <variant return-type="Q_NETWORK_EXPORTQDebug" access="unknown">
+        <parameters>
+          <parameter const="false" type="QDebug" modifier="" name="debug" />
+          <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="dhparam" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+  </class>
+</unit>

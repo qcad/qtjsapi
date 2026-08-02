@@ -17,7 +17,7 @@
       <variant>
         <parameters>
           <parameter const="true" type="QUrl" modifier="&amp;" name="requestUrl" />
-          <parameter const="false" type="QNetworkProxyQuery::QueryType" modifier="" name="queryType" default="UrlRequest" />
+          <parameter const="false" type="QNetworkProxyQuery::QueryType" modifier="" name="queryType" default="QNetworkProxyQuery::UrlRequest" />
         </parameters>
       </variant>
       <variant>
@@ -173,7 +173,7 @@
       </variant>
       <variant>
         <parameters>
-          <parameter const="false" type="ProxyType" modifier="" name="type" />
+          <parameter const="false" type="QNetworkProxy::ProxyType" modifier="" name="type" />
           <parameter const="true" type="QString" modifier="&amp;" name="hostName" default="QString()" />
           <parameter const="false" type="quint16" modifier="" name="port" default="0" />
           <parameter const="true" type="QString" modifier="&amp;" name="user" default="QString()" />
@@ -236,12 +236,12 @@
     <function name="setCapabilities">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="false" type="Capabilities" modifier="" name="capab" />
+          <parameter const="false" type="QNetworkProxy::Capabilities" modifier="" name="capab" />
         </parameters>
       </variant>
     </function>
     <function name="capabilities">
-      <variant return-type="Capabilities" const="true" access="public">
+      <variant return-type="QNetworkProxy::Capabilities" const="true" access="public">
         <parameters />
       </variant>
     </function>
@@ -315,6 +315,7 @@
         <parameters />
       </variant>
     </function>
+    <!-- not wrapped: QHttpHeaders, QNetworkRequest::KnownHeaders
     <function name="headers">
       <variant return-type="QHttpHeaders" const="true" access="public">
         <parameters />
@@ -347,6 +348,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="hasRawHeader">
       <variant return-type="bool" const="true" access="public">
         <parameters>

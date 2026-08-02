@@ -992,14 +992,6 @@
       QJSValue RJSHelper::cpp2js_QAbstractSocket(RJSApi& handler, QAbstractSocket* v) {
 
           
-            // downcast to QTcpSocket:
-            {
-                QTcpSocket* o = dynamic_cast<QTcpSocket*>(v);
-                if (o!=nullptr) {
-                    return RJSHelper::cpp2js_QTcpSocket(handler, o);
-                }
-            }
-          
 
           QJSEngine* engine = handler.getEngine();
           QAbstractSocket_Wrapper* ret = new QAbstractSocket_Wrapper(handler, v, false);

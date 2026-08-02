@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsslsocket.h">
+  <class_decl name="QDir" />
+  <class_decl name="QSslCipher" />
+  <class_decl name="QSslCertificate" />
+  <class_decl name="QSslConfiguration" />
+  <class_decl name="QSslPreSharedKeyAuthenticator" />
+  <class_decl name="QOcspResponse" />
+  <class name="QSslSocket">
+    <super_list>
+      <super name="QTcpSocket" />
+    </super_list>
+    <enum name="PeerVerifyMode">
+      <key>VerifyNone</key>
+      <key>QueryPeer</key>
+      <key>VerifyPeer</key>
+      <key>AutoVerifyPeer</key>
+    </enum>
+    <function name="resume" />
+    <function name="connectToHostEncrypted" />
+    <function name="setSocketDescriptor" />
+    <function name="connectToHost" />
+    <function name="disconnectFromHost" />
+    <function name="setSocketOption" />
+    <function name="socketOption" />
+    <function name="mode" />
+    <function name="isEncrypted" />
+    <function name="protocol" />
+    <function name="setProtocol" />
+    <function name="peerVerifyMode" />
+    <function name="setPeerVerifyMode" />
+    <function name="peerVerifyDepth" />
+    <function name="setPeerVerifyDepth" />
+    <function name="peerVerifyName" />
+    <function name="setPeerVerifyName" />
+    <function name="bytesAvailable" />
+    <function name="bytesToWrite" />
+    <function name="canReadLine" />
+    <function name="close" />
+    <function name="atEnd" />
+    <function name="setReadBufferSize" />
+    <function name="encryptedBytesAvailable" />
+    <function name="encryptedBytesToWrite" />
+    <function name="sslConfiguration" />
+    <function name="setSslConfiguration" />
+    <function name="setLocalCertificateChain" />
+    <function name="localCertificateChain" />
+    <function name="setLocalCertificate" />
+    <function name="localCertificate" />
+    <function name="peerCertificate" />
+    <function name="peerCertificateChain" />
+    <function name="sessionCipher" />
+    <function name="sessionProtocol" />
+    <function name="ocspResponses" />
+    <function name="setPrivateKey" />
+    <function name="privateKey" />
+    <function name="waitForConnected" />
+    <function name="waitForEncrypted" />
+    <function name="waitForReadyRead" />
+    <function name="waitForBytesWritten" />
+    <function name="waitForDisconnected" />
+    <function name="sslHandshakeErrors" />
+    <function name="supportsSsl" static="true" />
+    <function name="sslLibraryVersionNumber" static="true" />
+    <function name="sslLibraryVersionString" static="true" />
+    <function name="sslLibraryBuildVersionNumber" static="true" />
+    <function name="sslLibraryBuildVersionString" static="true" />
+    <function name="availableBackends" static="true" />
+    <function name="activeBackend" static="true" />
+    <function name="setActiveBackend" static="true" />
+    <function name="ignoreSslErrors" />
+    <function name="continueInterruptedHandshake" />
+    <function name="startClientEncryption">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startServerEncryption">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ignoreSslErrors">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="encrypted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="peerVerifyError">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QSslError" modifier="&amp;" name="error" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sslErrors">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSslError&gt;" modifier="&amp;" name="errors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="modeChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslSocket::SslMode" modifier="" name="newMode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="encryptedBytesWritten">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="totalBytes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="preSharedKeyAuthenticationRequired">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSslPreSharedKeyAuthenticator" modifier="*" name="authenticator" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="newSessionTicketReceived">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="alertSent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSsl::AlertLevel" modifier="" name="level" />
+          <parameter const="false" type="QSsl::AlertType" modifier="" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="description" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="alertReceived">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QSsl::AlertLevel" modifier="" name="level" />
+          <parameter const="false" type="QSsl::AlertType" modifier="" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="description" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handshakeInterruptedOnError">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QSslError" modifier="&amp;" name="error" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="readData">
+      <variant return-type="qint64" access="protected">
+        <parameters>
+          <parameter const="false" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qint64" modifier="" name="maxlen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="skipData">
+      <variant return-type="qint64" access="protected">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="maxSize" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="writeData">
+      <variant return-type="qint64" access="protected">
+        <parameters>
+          <parameter const="true" type="char" modifier="*" name="data" />
+          <parameter const="false" type="qint64" modifier="" name="len" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

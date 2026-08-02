@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsslerror.h">
+  <class_decl name="QDebug" />
+  <class name="QSslError">
+    <enum name="SslError">
+      <key>NoError</key>
+      <key>UnableToGetIssuerCertificate</key>
+      <key>UnableToDecryptCertificateSignature</key>
+      <key>UnableToDecodeIssuerPublicKey</key>
+      <key>CertificateSignatureFailed</key>
+      <key>CertificateNotYetValid</key>
+      <key>CertificateExpired</key>
+      <key>InvalidNotBeforeField</key>
+      <key>InvalidNotAfterField</key>
+      <key>SelfSignedCertificate</key>
+      <key>SelfSignedCertificateInChain</key>
+      <key>UnableToGetLocalIssuerCertificate</key>
+      <key>UnableToVerifyFirstCertificate</key>
+      <key>CertificateRevoked</key>
+      <key>InvalidCaCertificate</key>
+      <key>PathLengthExceeded</key>
+      <key>InvalidPurpose</key>
+      <key>CertificateUntrusted</key>
+      <key>CertificateRejected</key>
+      <key>SubjectIssuerMismatch</key>
+      <key>AuthorityIssuerSerialNumberMismatch</key>
+      <key>NoPeerCertificate</key>
+      <key>HostNameMismatch</key>
+      <key>NoSslSupport</key>
+      <key>CertificateBlacklisted</key>
+      <key>CertificateStatusUnknown</key>
+      <key>OcspNoResponseFound</key>
+      <key>OcspMalformedRequest</key>
+      <key>OcspMalformedResponse</key>
+      <key>OcspInternalError</key>
+      <key>OcspTryLater</key>
+      <key>OcspSigRequred</key>
+      <key>OcspUnauthorized</key>
+      <key>OcspResponseCannotBeTrusted</key>
+      <key>OcspResponseCertIdUnknown</key>
+      <key>OcspResponseExpired</key>
+      <key>OcspStatusUnknown</key>
+      <key>UnspecifiedError</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="SslError" modifier="" name="error" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="SslError" modifier="" name="error" />
+          <parameter const="true" type="QSslCertificate" modifier="&amp;" name="certificate" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSslError" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="swap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSslError" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslError&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="QSslError" modifier="&amp;&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QSslError&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QSslError" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslError" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_not_assign" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QSslError" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="SslError" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="errorString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="certificate">
+      <variant return-type="QSslCertificate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#ifndef QT_NO_DEBUG_STREAM" />
+    <function name="print" />
+    <function name="operator_read" call="operator&lt;&lt;">
+      <variant return-type="QDebug" access="unknown">
+        <parameters>
+          <parameter const="false" type="QDebug" modifier="" name="debug" />
+          <parameter const="false" type="SslError" modifier="" name="error" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+  </class>
+  <class name="QSslError" />
+</unit>

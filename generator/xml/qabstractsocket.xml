@@ -96,14 +96,14 @@
     </function>
     <!--
     <function name="pauseMode">
-      <variant return-type="PauseModes" const="true" access="public">
+      <variant return-type="QAbstractSocket::PauseModes" const="true" access="public">
         <parameters />
       </variant>
     </function>
     <function name="setPauseMode">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="false" type="PauseModes" modifier="" name="pauseMode" />
+          <parameter const="false" type="QAbstractSocket::PauseModes" modifier="" name="pauseMode" />
         </parameters>
       </variant>
     </function>
@@ -113,26 +113,26 @@
         <parameters>
           <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" />
           <parameter const="false" type="quint16" modifier="" name="port" default="0" />
-          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="DefaultForPlatform" />
+          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="QAbstractSocket::DefaultForPlatform" />
         </parameters>
       </variant>
       <variant return-type="bool" access="public">
         <parameters>
           <parameter const="false" type="QHostAddress::SpecialAddress" modifier="" name="addr" />
           <parameter const="false" type="quint16" modifier="" name="port" default="0" />
-          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="DefaultForPlatform" />
+          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="QAbstractSocket::DefaultForPlatform" />
         </parameters>
       </variant>
       <variant return-type="bool" access="public">
         <parameters>
           <parameter const="false" type="quint16" modifier="" name="port" default="0" />
-          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="DefaultForPlatform" />
+          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="QAbstractSocket::DefaultForPlatform" />
         </parameters>
       </variant>
       <variant return-type="bool" access="public">
         <parameters>
           <parameter const="false" type="quint16" modifier="" name="port" default="0" />
-          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="DefaultForPlatform" />
+          <parameter const="false" type="QAbstractSocket::BindMode" modifier="" name="mode" default="QAbstractSocket::DefaultForPlatform" />
         </parameters>
       </variant>
     </function>
@@ -144,15 +144,15 @@
         <parameters>
           <parameter const="true" type="QString" modifier="&amp;" name="hostName" />
           <parameter const="false" type="quint16" modifier="" name="port" />
-          <parameter const="false" type="OpenMode" modifier="" name="mode" default="ReadWrite" />
-          <parameter const="false" type="NetworkLayerProtocol" modifier="" name="protocol" default="AnyIPProtocol" />
+          <parameter const="false" type="QIODeviceBase::OpenMode" modifier="" name="mode" default="QIODeviceBase::ReadWrite" />
+          <parameter const="false" type="QAbstractSocket::NetworkLayerProtocol" modifier="" name="protocol" default="QAbstractSocket::AnyIPProtocol" />
         </parameters>
       </variant>
       <variant return-type="void" access="public">
         <parameters>
           <parameter const="true" type="QHostAddress" modifier="&amp;" name="address" />
           <parameter const="false" type="quint16" modifier="" name="port" />
-          <parameter const="false" type="OpenMode" modifier="" name="mode" default="ReadWrite" />
+          <parameter const="false" type="QIODeviceBase::OpenMode" modifier="" name="mode" default="QIODeviceBase::ReadWrite" />
         </parameters>
       </variant>
     </function>
@@ -228,8 +228,8 @@
       <variant return-type="bool" virtual="true" access="public">
         <parameters>
           <parameter const="false" type="qintptr" modifier="" name="socketDescriptor" />
-          <parameter const="false" type="SocketState" modifier="" name="state" default="ConnectedState" />
-          <parameter const="false" type="OpenMode" modifier="" name="openMode" default="ReadWrite" />
+          <parameter const="false" type="QAbstractSocket::SocketState" modifier="" name="state" default="QAbstractSocket::ConnectedState" />
+          <parameter const="false" type="QIODeviceBase::OpenMode" modifier="" name="openMode" default="QIODeviceBase::ReadWrite" />
         </parameters>
       </variant>
     </function>
@@ -255,12 +255,12 @@
       </variant>
     </function>
     <function name="state">
-      <variant return-type="SocketState" const="true" access="public">
+      <variant return-type="QAbstractSocket::SocketState" const="true" access="public">
         <parameters />
       </variant>
     </function>
     <function name="error">
-      <variant return-type="SocketError" const="true" access="public">
+      <variant return-type="QAbstractSocket::SocketError" const="true" access="public">
         <parameters />
       </variant>
     </function>
@@ -363,6 +363,7 @@
       </variant>
     </function>
     <preproc plain="#ifndef QT_NO_NETWORKPROXY" />
+    <!-- not wrapped: QAuthenticator
     <function name="proxyAuthenticationRequired">
       <variant return-type="void" access="public" signal="true">
         <parameters>
@@ -371,7 +372,9 @@
         </parameters>
       </variant>
     </function>
+    -->
     <preproc plain="#endif" />
+    <!-- protected members, not accessible from wrapper:
     <function name="readData">
       <variant return-type="qint64" access="protected">
         <parameters>
@@ -406,14 +409,14 @@
     <function name="setSocketState">
       <variant return-type="void" access="protected">
         <parameters>
-          <parameter const="false" type="SocketState" modifier="" name="state" />
+          <parameter const="false" type="QAbstractSocket::SocketState" modifier="" name="state" />
         </parameters>
       </variant>
     </function>
     <function name="setSocketError">
       <variant return-type="void" access="protected">
         <parameters>
-          <parameter const="false" type="SocketError" modifier="" name="socketError" />
+          <parameter const="false" type="QAbstractSocket::SocketError" modifier="" name="socketError" />
         </parameters>
       </variant>
     </function>
@@ -452,5 +455,6 @@
         </parameters>
       </variant>
     </function>
+    -->
   </class>
 </unit>
