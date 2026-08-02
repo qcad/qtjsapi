@@ -129,33 +129,6 @@ LastMode = QClipboard::LastMode,
     // non-static functions:
     
     // Class: QClipboard
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QClipboard
     // Function: objectName
     // Source: QObject
     // Static: false

@@ -578,6 +578,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="currentChanged">
       <variant return-type="void" virtual="true" access="protected">
         <parameters>
@@ -586,6 +587,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="updateEditorData">
       <variant return-type="void" virtual="true" access="protected">
         <parameters />
@@ -759,7 +761,7 @@
     <function name="mousePressEvent" />
     -->
     <function name="mouseMoveEvent">
-      <variant return-type="void" access="protected">
+      <variant return-type="void" access="protected" virtual="true">
         <parameters>
           <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
         </parameters>

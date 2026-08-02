@@ -577,7 +577,10 @@ Shape_Mask = QStackedWidget::Shape_Mask,
               Q_INVOKABLE 
               
                   QJSValue 
-                  eventFilter
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      eventFilterSuper
+                    
               (
 
                 

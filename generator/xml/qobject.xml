@@ -30,7 +30,7 @@
     </function>
     -->
     <function name="eventFilter">
-      <variant return-type="bool" virtual="true" access="public">
+      <variant return-type="bool" virtual="true" access="protected">
         <parameters>
           <parameter const="false" type="QObject" modifier="*" name="watched" />
           <parameter const="false" type="QEvent" modifier="*" name="event" />

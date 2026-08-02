@@ -134,33 +134,6 @@ Acceptable = QValidator::Acceptable,
     // non-static functions:
     
     // Class: QValidator
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QValidator
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -951,33 +924,6 @@ Acceptable = QIntValidator::Acceptable,
 
     // non-static functions:
     
-    // Class: QIntValidator
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
     // Class: QIntValidator
     // Function: objectName
     // Source: QObject
@@ -1955,33 +1901,6 @@ ScientificNotation = QDoubleValidator::ScientificNotation,
 
     // non-static functions:
     
-    // Class: QDoubleValidator
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
     // Class: QDoubleValidator
     // Function: objectName
     // Source: QObject
@@ -3060,33 +2979,6 @@ Acceptable = QRegularExpressionValidator::Acceptable,
 
     // non-static functions:
     
-    // Class: QRegularExpressionValidator
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
     // Class: QRegularExpressionValidator
     // Function: objectName
     // Source: QObject

@@ -427,14 +427,14 @@ QTableView_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
-    void mouseMoveEvent(
+    virtual void mouseMoveEvent(
       QMouseEvent* event
     );
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE void mouseMoveEventPublic(
+    Q_INVOKABLE virtual void mouseMoveEventPublic(
       QMouseEvent* event
     ) {
       //qDebug() << "QTableView_Base::mouseMoveEventPublic()";

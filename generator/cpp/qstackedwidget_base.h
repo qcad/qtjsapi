@@ -66,6 +66,28 @@ QStackedWidget_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
+    virtual bool eventFilter(
+      QObject* watched, QEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual bool eventFilterPublic(
+      QObject* watched, QEvent* event
+    ) {
+      //qDebug() << "QStackedWidget_Base::eventFilterPublic()";
+      
+        // TODO: convert return value to QJSValue:
+        return
+      QStackedWidget::eventFilter(
+        watched, event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
     virtual void mousePressEvent(
       QMouseEvent* event
     );

@@ -173,33 +173,6 @@ Up = QBoxLayout::Up,
     // non-static functions:
     
     // Class: QBoxLayout
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QBoxLayout
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -2273,33 +2246,6 @@ Up = QHBoxLayout::Up,
     // non-static functions:
     
     // Class: QHBoxLayout
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QHBoxLayout
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -4372,33 +4318,6 @@ Up = QVBoxLayout::Up,
 
     // non-static functions:
     
-    // Class: QVBoxLayout
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
     // Class: QVBoxLayout
     // Function: objectName
     // Source: QObject

@@ -999,14 +999,6 @@
       // functions:
       
         // function 
-        QRhiWidget.prototype.eventFilter = function(...args) 
-          
-        {
-          //print("JS: QRhiWidget.prototype.eventFilter");
-          return this.__PROXY__.eventFilter(...args);
-        };
-    
-        // function 
         QRhiWidget.prototype.objectName = function(...args) 
           
         {

@@ -434,7 +434,10 @@ Qt::ShortcutContext a5_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              QShortcut_Wrapper::eventFilter
+              QShortcut_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      eventFilterSuper
+                    
               (
                 
   const QJSValue& 
@@ -495,16 +498,23 @@ Qt::ShortcutContext a5_cpp;
             // non-static member function:
             // call function of wrapped object:
             
-                // call function of C++ class:
-                QShortcut* w = getWrapped();
-                bool res = 
-                    
-                w->eventFilter(
-                  a1_cpp
+                // call function of QShortcut_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QShortcut_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QShortcut::eventFilter: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                bool res;
+                    res =
+                    wb->eventFilterPublic(
+                      a1_cpp
     , a2_cpp
     
-                );
-              
+                    );
+                  
                 //setRecFlag(false);
               
             // return type: bool

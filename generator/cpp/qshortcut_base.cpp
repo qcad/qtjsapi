@@ -40,7 +40,70 @@
 #endif
 
       // protected overwritten functions / events and their public invokable counterparts:
-      bool QShortcut_Base::event(
+      bool QShortcut_Base::eventFilter(
+      QObject* watched, QEvent* event
+    ) {
+
+      //qDebug() << "QShortcut_Base::eventFilter()";
+
+      //QJSValue f = self.prototype().property("eventFilter");
+      QJSValue f = self.property("eventFilter");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QObject(
+    handler, 
+    // non-copyable: true
+watched
+  );
+
+
+  args << RJSHelper::cpp2js_QEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.eventFilter.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            // convert return value js2cpp and return:
+            return RJSHelper::js2cpp_bool(handler, res);
+          
+      }
+      else {
+        
+          return
+        QShortcut::eventFilter(
+          watched, event
+        );
+      }
+    }
+
+  bool QShortcut_Base::event(
       QEvent* e
     ) {
 

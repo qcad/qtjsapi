@@ -405,7 +405,10 @@ QObject_Wrapper::QObject_Wrapper
     // preceding Parameters: -1
 
                 QJSValue 
-              QObject_Wrapper::eventFilter
+              QObject_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      eventFilterSuper
+                    
               (
                 
   const QJSValue& 

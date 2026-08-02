@@ -300,7 +300,10 @@ QStackedWidget_Wrapper::QStackedWidget_Wrapper
     // preceding Parameters: -1
 
                 QJSValue 
-              QStackedWidget_Wrapper::eventFilter
+              QStackedWidget_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      eventFilterSuper
+                    
               (
                 
   const QJSValue& 
@@ -361,16 +364,23 @@ QStackedWidget_Wrapper::QStackedWidget_Wrapper
             // non-static member function:
             // call function of wrapped object:
             
-                // call function of C++ class:
-                QStackedWidget* w = getWrapped();
-                bool res = 
-                    
-                w->eventFilter(
-                  a1_cpp
+                // call function of QStackedWidget_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QStackedWidget_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QStackedWidget::eventFilter: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                bool res;
+                    res =
+                    wb->eventFilterPublic(
+                      a1_cpp
     , a2_cpp
     
-                );
-              
+                    );
+                  
                 //setRecFlag(false);
               
             // return type: bool

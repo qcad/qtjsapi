@@ -290,7 +290,10 @@ QProgressBar_Wrapper::QProgressBar_Wrapper
     // preceding Parameters: -1
 
                 QJSValue 
-              QProgressBar_Wrapper::eventFilter
+              QProgressBar_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      eventFilterSuper
+                    
               (
                 
   const QJSValue& 
@@ -351,16 +354,23 @@ QProgressBar_Wrapper::QProgressBar_Wrapper
             // non-static member function:
             // call function of wrapped object:
             
-                // call function of C++ class:
-                QProgressBar* w = getWrapped();
-                bool res = 
-                    
-                w->eventFilter(
-                  a1_cpp
+                // call function of QProgressBar_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QProgressBar_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QProgressBar::eventFilter: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                bool res;
+                    res =
+                    wb->eventFilterPublic(
+                      a1_cpp
     , a2_cpp
     
-                );
-              
+                    );
+                  
                 //setRecFlag(false);
               
             // return type: bool

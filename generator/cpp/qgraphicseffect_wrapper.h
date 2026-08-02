@@ -155,33 +155,6 @@ PadToEffectiveBoundingRect = QGraphicsEffect::PadToEffectiveBoundingRect,
     // non-static functions:
     
     // Class: QGraphicsEffect
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QGraphicsEffect
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -1451,33 +1424,6 @@ AnimationHint = QGraphicsBlurEffect::AnimationHint,
 
     // non-static functions:
     
-    // Class: QGraphicsBlurEffect
-    // Function: eventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  eventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
     // Class: QGraphicsBlurEffect
     // Function: objectName
     // Source: QObject
