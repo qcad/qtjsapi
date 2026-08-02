@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qssldiffiehellmanparameters.h">
   <class_decl name="QIODevice" />
-  <class_decl name="QSslContext" />
   <class_decl name="QSslDiffieHellmanParameters" />
   <class_decl name="QDebug" />
   <class name="QSslDiffieHellmanParameters">
@@ -76,7 +75,7 @@
       </variant>
     </function>
     <function name="error">
-      <variant return-type="Error" const="true" access="public">
+      <variant return-type="QSslDiffieHellmanParameters::Error" const="true" access="public">
         <parameters />
       </variant>
     </function>
@@ -85,9 +84,8 @@
         <parameters />
       </variant>
     </function>
-    <class_decl name="QSslContext" />
     <function name="isEqual" />
-    <function name="equals" call="operator==">
+    <function name="equals" call="operator==" static="true" non-member="true">
       <variant return-type="bool" access="unknown">
         <parameters>
           <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="lhs" />
@@ -95,7 +93,7 @@
         </parameters>
       </variant>
     </function>
-    <function name="operator_not_assign" call="operator!=">
+    <function name="operator_not_assign" call="operator!=" static="true" non-member="true">
       <variant return-type="bool" access="unknown">
         <parameters>
           <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="lhs" />
@@ -104,14 +102,16 @@
       </variant>
     </function>
     <preproc plain="#ifndef QT_NO_DEBUG_STREAM" />
+    <!-- QDebug is not a bindable type
     <function name="operator_read" call="operator&lt;&lt;">
-      <variant return-type="Q_NETWORK_EXPORTQDebug" access="unknown">
+      <variant return-type="QDebug" access="unknown">
         <parameters>
           <parameter const="false" type="QDebug" modifier="" name="debug" />
           <parameter const="true" type="QSslDiffieHellmanParameters" modifier="&amp;" name="dhparam" />
         </parameters>
       </variant>
     </function>
+    -->
     <preproc plain="#endif" />
   </class>
 </unit>

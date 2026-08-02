@@ -419,6 +419,34 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsslcertificate_wrapper.h"
+        
+          #include "qsslcertificateextension_wrapper.h"
+        
+          #include "qsslcipher_wrapper.h"
+        
+          #include "qsslconfiguration_wrapper.h"
+        
+          #include "qssldiffiehellmanparameters_wrapper.h"
+        
+          #include "qsslellipticcurve_wrapper.h"
+        
+          #include "qsslerror_wrapper.h"
+        
+          #include "qsslkey_wrapper.h"
+        
+          #include "qsslkeyingmaterial_wrapper.h"
+        
+          #include "qsslpresharedkeyauthenticator_wrapper.h"
+        
+          #include "qsslserver_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qsslsocket_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
+        
           #include "qstackedlayout_wrapper.h"
         
           #include "qstackedwidget_wrapper.h"
@@ -500,10 +528,6 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
-        
-          #include "qtcpserver_wrapper.h"
-        
-          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         
@@ -957,6 +981,1166 @@
           }
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QNetworkProxyQuery::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslCertificate(RJSApi& handler, const QSslCertificate* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslCertificate_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslCertificate_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslCertificate object:
+              ret = new QSslCertificate_Wrapper(handler, new QSslCertificate(*v), true);
+          }
+
+          // JS: new QSslCertificate('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslCertificate");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslCertificate is undefined. Use QSslCertificate_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslCertificate('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslCertificate(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslCertificate(RJSApi& handler, const QSslCertificate& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslCertificate object:
+          QSslCertificate_Wrapper* ret = new QSslCertificate_Wrapper(handler, new QSslCertificate(v), true);
+
+          // JS: new QSslCertificate('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslCertificate");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslCertificate is undefined. Use QSslCertificate_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslCertificate('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslCertificate(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslCertificate RJSHelper::js2cpp_QSslCertificate(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslCertificate_Wrapper* wrapper = getWrapper<QSslCertificate_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslCertificate: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslCertificate();
+          }
+          //return *(QSslCertificate*)wrapper->getWrappedVoid();
+          QSslCertificate* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslCertificate: wrapped pointer is NULL";
+              return QSslCertificate();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslCertificate: not a QObject";
+              return QSslCertificate();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslCertificate_ptr: no wrapper";
+              handler.trace();
+              return QSslCertificate();
+          }
+          //QSslCertificate* ret = getWrapped_QSslCertificate(wrapper);
+          QSslCertificate* ret = QSslCertificate_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslCertificate();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslCertificate(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslCertificate: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslCertificate::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslCertificateExtension(RJSApi& handler, const QSslCertificateExtension* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslCertificateExtension_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslCertificateExtension_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslCertificateExtension object:
+              ret = new QSslCertificateExtension_Wrapper(handler, new QSslCertificateExtension(*v), true);
+          }
+
+          // JS: new QSslCertificateExtension('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslCertificateExtension");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslCertificateExtension is undefined. Use QSslCertificateExtension_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslCertificateExtension('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslCertificateExtension(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslCertificateExtension(RJSApi& handler, const QSslCertificateExtension& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslCertificateExtension object:
+          QSslCertificateExtension_Wrapper* ret = new QSslCertificateExtension_Wrapper(handler, new QSslCertificateExtension(v), true);
+
+          // JS: new QSslCertificateExtension('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslCertificateExtension");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslCertificateExtension is undefined. Use QSslCertificateExtension_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslCertificateExtension('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslCertificateExtension(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslCertificateExtension RJSHelper::js2cpp_QSslCertificateExtension(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslCertificateExtension_Wrapper* wrapper = getWrapper<QSslCertificateExtension_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslCertificateExtension: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslCertificateExtension();
+          }
+          //return *(QSslCertificateExtension*)wrapper->getWrappedVoid();
+          QSslCertificateExtension* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslCertificateExtension: wrapped pointer is NULL";
+              return QSslCertificateExtension();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslCertificateExtension: not a QObject";
+              return QSslCertificateExtension();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslCertificateExtension_ptr: no wrapper";
+              handler.trace();
+              return QSslCertificateExtension();
+          }
+          //QSslCertificateExtension* ret = getWrapped_QSslCertificateExtension(wrapper);
+          QSslCertificateExtension* ret = QSslCertificateExtension_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslCertificateExtension();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslCertificateExtension(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslCertificateExtension: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslCertificateExtension::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslCipher(RJSApi& handler, const QSslCipher* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslCipher_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslCipher_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslCipher object:
+              ret = new QSslCipher_Wrapper(handler, new QSslCipher(*v), true);
+          }
+
+          // JS: new QSslCipher('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslCipher");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslCipher is undefined. Use QSslCipher_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslCipher('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslCipher(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslCipher(RJSApi& handler, const QSslCipher& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslCipher object:
+          QSslCipher_Wrapper* ret = new QSslCipher_Wrapper(handler, new QSslCipher(v), true);
+
+          // JS: new QSslCipher('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslCipher");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslCipher is undefined. Use QSslCipher_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslCipher('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslCipher(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslCipher RJSHelper::js2cpp_QSslCipher(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslCipher_Wrapper* wrapper = getWrapper<QSslCipher_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslCipher: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslCipher();
+          }
+          //return *(QSslCipher*)wrapper->getWrappedVoid();
+          QSslCipher* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslCipher: wrapped pointer is NULL";
+              return QSslCipher();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslCipher: not a QObject";
+              return QSslCipher();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslCipher_ptr: no wrapper";
+              handler.trace();
+              return QSslCipher();
+          }
+          //QSslCipher* ret = getWrapped_QSslCipher(wrapper);
+          QSslCipher* ret = QSslCipher_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslCipher();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslCipher(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslCipher: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslCipher::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslConfiguration(RJSApi& handler, const QSslConfiguration* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslConfiguration_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslConfiguration_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslConfiguration object:
+              ret = new QSslConfiguration_Wrapper(handler, new QSslConfiguration(*v), true);
+          }
+
+          // JS: new QSslConfiguration('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslConfiguration");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslConfiguration is undefined. Use QSslConfiguration_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslConfiguration('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslConfiguration(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslConfiguration(RJSApi& handler, const QSslConfiguration& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslConfiguration object:
+          QSslConfiguration_Wrapper* ret = new QSslConfiguration_Wrapper(handler, new QSslConfiguration(v), true);
+
+          // JS: new QSslConfiguration('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslConfiguration");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslConfiguration is undefined. Use QSslConfiguration_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslConfiguration('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslConfiguration(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslConfiguration RJSHelper::js2cpp_QSslConfiguration(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslConfiguration_Wrapper* wrapper = getWrapper<QSslConfiguration_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslConfiguration: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslConfiguration();
+          }
+          //return *(QSslConfiguration*)wrapper->getWrappedVoid();
+          QSslConfiguration* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslConfiguration: wrapped pointer is NULL";
+              return QSslConfiguration();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslConfiguration: not a QObject";
+              return QSslConfiguration();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslConfiguration_ptr: no wrapper";
+              handler.trace();
+              return QSslConfiguration();
+          }
+          //QSslConfiguration* ret = getWrapped_QSslConfiguration(wrapper);
+          QSslConfiguration* ret = QSslConfiguration_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslConfiguration();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslConfiguration(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslConfiguration: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslConfiguration::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslDiffieHellmanParameters(RJSApi& handler, const QSslDiffieHellmanParameters* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslDiffieHellmanParameters_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslDiffieHellmanParameters_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslDiffieHellmanParameters object:
+              ret = new QSslDiffieHellmanParameters_Wrapper(handler, new QSslDiffieHellmanParameters(*v), true);
+          }
+
+          // JS: new QSslDiffieHellmanParameters('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslDiffieHellmanParameters");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslDiffieHellmanParameters is undefined. Use QSslDiffieHellmanParameters_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslDiffieHellmanParameters('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslDiffieHellmanParameters(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslDiffieHellmanParameters(RJSApi& handler, const QSslDiffieHellmanParameters& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslDiffieHellmanParameters object:
+          QSslDiffieHellmanParameters_Wrapper* ret = new QSslDiffieHellmanParameters_Wrapper(handler, new QSslDiffieHellmanParameters(v), true);
+
+          // JS: new QSslDiffieHellmanParameters('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslDiffieHellmanParameters");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslDiffieHellmanParameters is undefined. Use QSslDiffieHellmanParameters_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslDiffieHellmanParameters('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslDiffieHellmanParameters(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslDiffieHellmanParameters RJSHelper::js2cpp_QSslDiffieHellmanParameters(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslDiffieHellmanParameters_Wrapper* wrapper = getWrapper<QSslDiffieHellmanParameters_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslDiffieHellmanParameters: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslDiffieHellmanParameters();
+          }
+          //return *(QSslDiffieHellmanParameters*)wrapper->getWrappedVoid();
+          QSslDiffieHellmanParameters* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslDiffieHellmanParameters: wrapped pointer is NULL";
+              return QSslDiffieHellmanParameters();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslDiffieHellmanParameters: not a QObject";
+              return QSslDiffieHellmanParameters();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslDiffieHellmanParameters_ptr: no wrapper";
+              handler.trace();
+              return QSslDiffieHellmanParameters();
+          }
+          //QSslDiffieHellmanParameters* ret = getWrapped_QSslDiffieHellmanParameters(wrapper);
+          QSslDiffieHellmanParameters* ret = QSslDiffieHellmanParameters_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslDiffieHellmanParameters();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslDiffieHellmanParameters(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslDiffieHellmanParameters: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslDiffieHellmanParameters::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslEllipticCurve(RJSApi& handler, const QSslEllipticCurve* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslEllipticCurve_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslEllipticCurve_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslEllipticCurve object:
+              ret = new QSslEllipticCurve_Wrapper(handler, new QSslEllipticCurve(*v), true);
+          }
+
+          // JS: new QSslEllipticCurve('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslEllipticCurve");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslEllipticCurve is undefined. Use QSslEllipticCurve_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslEllipticCurve('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslEllipticCurve(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslEllipticCurve(RJSApi& handler, const QSslEllipticCurve& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslEllipticCurve object:
+          QSslEllipticCurve_Wrapper* ret = new QSslEllipticCurve_Wrapper(handler, new QSslEllipticCurve(v), true);
+
+          // JS: new QSslEllipticCurve('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslEllipticCurve");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslEllipticCurve is undefined. Use QSslEllipticCurve_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslEllipticCurve('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslEllipticCurve(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslEllipticCurve RJSHelper::js2cpp_QSslEllipticCurve(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslEllipticCurve_Wrapper* wrapper = getWrapper<QSslEllipticCurve_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslEllipticCurve: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslEllipticCurve();
+          }
+          //return *(QSslEllipticCurve*)wrapper->getWrappedVoid();
+          QSslEllipticCurve* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslEllipticCurve: wrapped pointer is NULL";
+              return QSslEllipticCurve();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslEllipticCurve: not a QObject";
+              return QSslEllipticCurve();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslEllipticCurve_ptr: no wrapper";
+              handler.trace();
+              return QSslEllipticCurve();
+          }
+          //QSslEllipticCurve* ret = getWrapped_QSslEllipticCurve(wrapper);
+          QSslEllipticCurve* ret = QSslEllipticCurve_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslEllipticCurve();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslEllipticCurve(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslEllipticCurve: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslEllipticCurve::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslError(RJSApi& handler, const QSslError* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslError_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslError_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslError object:
+              ret = new QSslError_Wrapper(handler, new QSslError(*v), true);
+          }
+
+          // JS: new QSslError('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslError");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslError is undefined. Use QSslError_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslError('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslError(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslError(RJSApi& handler, const QSslError& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslError object:
+          QSslError_Wrapper* ret = new QSslError_Wrapper(handler, new QSslError(v), true);
+
+          // JS: new QSslError('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslError");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslError is undefined. Use QSslError_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslError('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslError(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslError RJSHelper::js2cpp_QSslError(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslError_Wrapper* wrapper = getWrapper<QSslError_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslError: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslError();
+          }
+          //return *(QSslError*)wrapper->getWrappedVoid();
+          QSslError* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslError: wrapped pointer is NULL";
+              return QSslError();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslError: not a QObject";
+              return QSslError();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslError_ptr: no wrapper";
+              handler.trace();
+              return QSslError();
+          }
+          //QSslError* ret = getWrapped_QSslError(wrapper);
+          QSslError* ret = QSslError_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslError();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslError(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslError: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslError::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslKey(RJSApi& handler, const QSslKey* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslKey_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslKey_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslKey object:
+              ret = new QSslKey_Wrapper(handler, new QSslKey(*v), true);
+          }
+
+          // JS: new QSslKey('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslKey");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslKey is undefined. Use QSslKey_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslKey('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslKey(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslKey(RJSApi& handler, const QSslKey& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslKey object:
+          QSslKey_Wrapper* ret = new QSslKey_Wrapper(handler, new QSslKey(v), true);
+
+          // JS: new QSslKey('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslKey");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslKey is undefined. Use QSslKey_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslKey('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslKey(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslKey RJSHelper::js2cpp_QSslKey(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslKey_Wrapper* wrapper = getWrapper<QSslKey_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslKey: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslKey();
+          }
+          //return *(QSslKey*)wrapper->getWrappedVoid();
+          QSslKey* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslKey: wrapped pointer is NULL";
+              return QSslKey();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslKey: not a QObject";
+              return QSslKey();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslKey_ptr: no wrapper";
+              handler.trace();
+              return QSslKey();
+          }
+          //QSslKey* ret = getWrapped_QSslKey(wrapper);
+          QSslKey* ret = QSslKey_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslKey();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslKey(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslKey: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslKey::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslKeyingMaterial(RJSApi& handler, const QSslKeyingMaterial* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslKeyingMaterial_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslKeyingMaterial_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslKeyingMaterial object:
+              ret = new QSslKeyingMaterial_Wrapper(handler, new QSslKeyingMaterial(*v), true);
+          }
+
+          // JS: new QSslKeyingMaterial('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslKeyingMaterial");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslKeyingMaterial is undefined. Use QSslKeyingMaterial_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslKeyingMaterial('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslKeyingMaterial(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslKeyingMaterial(RJSApi& handler, const QSslKeyingMaterial& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslKeyingMaterial object:
+          QSslKeyingMaterial_Wrapper* ret = new QSslKeyingMaterial_Wrapper(handler, new QSslKeyingMaterial(v), true);
+
+          // JS: new QSslKeyingMaterial('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslKeyingMaterial");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslKeyingMaterial is undefined. Use QSslKeyingMaterial_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslKeyingMaterial('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslKeyingMaterial(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslKeyingMaterial RJSHelper::js2cpp_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslKeyingMaterial_Wrapper* wrapper = getWrapper<QSslKeyingMaterial_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslKeyingMaterial: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslKeyingMaterial();
+          }
+          //return *(QSslKeyingMaterial*)wrapper->getWrappedVoid();
+          QSslKeyingMaterial* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslKeyingMaterial: wrapped pointer is NULL";
+              return QSslKeyingMaterial();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslKeyingMaterial: not a QObject";
+              return QSslKeyingMaterial();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslKeyingMaterial_ptr: no wrapper";
+              handler.trace();
+              return QSslKeyingMaterial();
+          }
+          //QSslKeyingMaterial* ret = getWrapped_QSslKeyingMaterial(wrapper);
+          QSslKeyingMaterial* ret = QSslKeyingMaterial_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslKeyingMaterial();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslKeyingMaterial: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslKeyingMaterial::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QSslPreSharedKeyAuthenticator* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSslPreSharedKeyAuthenticator_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSslPreSharedKeyAuthenticator_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSslPreSharedKeyAuthenticator object:
+              ret = new QSslPreSharedKeyAuthenticator_Wrapper(handler, new QSslPreSharedKeyAuthenticator(*v), true);
+          }
+
+          // JS: new QSslPreSharedKeyAuthenticator('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslPreSharedKeyAuthenticator");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslPreSharedKeyAuthenticator is undefined. Use QSslPreSharedKeyAuthenticator_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslPreSharedKeyAuthenticator('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslPreSharedKeyAuthenticator(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QSslPreSharedKeyAuthenticator& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSslPreSharedKeyAuthenticator object:
+          QSslPreSharedKeyAuthenticator_Wrapper* ret = new QSslPreSharedKeyAuthenticator_Wrapper(handler, new QSslPreSharedKeyAuthenticator(v), true);
+
+          // JS: new QSslPreSharedKeyAuthenticator('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslPreSharedKeyAuthenticator");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslPreSharedKeyAuthenticator is undefined. Use QSslPreSharedKeyAuthenticator_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslPreSharedKeyAuthenticator('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslPreSharedKeyAuthenticator(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSslPreSharedKeyAuthenticator RJSHelper::js2cpp_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSslPreSharedKeyAuthenticator_Wrapper* wrapper = getWrapper<QSslPreSharedKeyAuthenticator_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslPreSharedKeyAuthenticator: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSslPreSharedKeyAuthenticator();
+          }
+          //return *(QSslPreSharedKeyAuthenticator*)wrapper->getWrappedVoid();
+          QSslPreSharedKeyAuthenticator* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSslPreSharedKeyAuthenticator: wrapped pointer is NULL";
+              return QSslPreSharedKeyAuthenticator();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslPreSharedKeyAuthenticator: not a QObject";
+              return QSslPreSharedKeyAuthenticator();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslPreSharedKeyAuthenticator_ptr: no wrapper";
+              handler.trace();
+              return QSslPreSharedKeyAuthenticator();
+          }
+          //QSslPreSharedKeyAuthenticator* ret = getWrapped_QSslPreSharedKeyAuthenticator(wrapper);
+          QSslPreSharedKeyAuthenticator* ret = QSslPreSharedKeyAuthenticator_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSslPreSharedKeyAuthenticator();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslPreSharedKeyAuthenticator: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslPreSharedKeyAuthenticator::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper::cpp2js_QBitmap(RJSApi& handler, const QBitmap* v) {

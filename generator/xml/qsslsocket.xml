@@ -130,6 +130,7 @@
         <parameters />
       </variant>
     </function>
+    <!-- QSsl::AlertLevel / QSsl::AlertType are scoped enums, not bindable:
     <function name="alertSent">
       <variant return-type="void" access="public" signal="true">
         <parameters>
@@ -148,6 +149,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="handshakeInterruptedOnError">
       <variant return-type="void" access="public" signal="true">
         <parameters>

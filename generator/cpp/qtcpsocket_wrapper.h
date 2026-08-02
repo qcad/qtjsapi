@@ -41,6 +41,10 @@
           
             // check if pointer points to derrived type:
             
+              if (t==RJSType_QSslSocket::getIdStatic()) {
+                return (QTcpSocket*)(QSslSocket*)vp;
+              }
+              
 
           // hook for modules to cast from other types to base QTcpSocket:
           for (int i=0; i<basecasters_QTcpSocket.length(); i++) {
@@ -351,6 +355,48 @@ PauseOnSslErrors = QTcpSocket::PauseOnSslErrors,
               ;
             
     // Class: QTcpSocket
+    // Function: bytesAvailable
+    // Source: QAbstractSocket
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  bytesAvailable
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTcpSocket
+    // Function: bytesToWrite
+    // Source: QAbstractSocket
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  bytesToWrite
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTcpSocket
     // Function: localPort
     // Source: QAbstractSocket
     // Static: false
@@ -632,6 +678,46 @@ PauseOnSslErrors = QTcpSocket::PauseOnSslErrors,
               ;
             
     // Class: QTcpSocket
+    // Function: close
+    // Source: QAbstractSocket
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  close
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: QTcpSocket
+    // Function: isSequential
+    // Source: QAbstractSocket
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSequential
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: QTcpSocket
     // Function: flush
     // Source: QAbstractSocket
     // Static: false
@@ -662,6 +748,52 @@ PauseOnSslErrors = QTcpSocket::PauseOnSslErrors,
               
                   QJSValue 
                   waitForConnected
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTcpSocket
+    // Function: waitForReadyRead
+    // Source: QAbstractSocket
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  waitForReadyRead
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QTcpSocket
+    // Function: waitForBytesWritten
+    // Source: QAbstractSocket
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  waitForBytesWritten
               (
 
                 
@@ -881,877 +1013,6 @@ PauseOnSslErrors = QTcpSocket::PauseOnSslErrors,
               public slots:
               void errorOccurredEmitter(
                 QAbstractSocket::SocketError a1
-              );
-            
-    // Class: QTcpSocket
-    // Function: openMode
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  openMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: setTextModeEnabled
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextModeEnabled
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: isTextModeEnabled
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTextModeEnabled
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: isOpen
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isOpen
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: isReadable
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isReadable
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: isWritable
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWritable
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: isSequential
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSequential
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: readChannelCount
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readChannelCount
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: writeChannelCount
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeChannelCount
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: currentReadChannel
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentReadChannel
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: setCurrentReadChannel
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentReadChannel
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: currentWriteChannel
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentWriteChannel
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: setCurrentWriteChannel
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentWriteChannel
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: open
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  open
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: close
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  close
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: pos
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pos
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: size
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: seek
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  seek
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: atEnd
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  atEnd
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: reset
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  reset
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: bytesAvailable
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  bytesAvailable
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: bytesToWrite
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  bytesToWrite
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: readAll
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readAll
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: canReadLine
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  canReadLine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: startTransaction
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  startTransaction
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: commitTransaction
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  commitTransaction
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: rollbackTransaction
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rollbackTransaction
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: isTransactionStarted
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTransactionStarted
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: write
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  write
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: skip
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  skip
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: waitForReadyRead
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  waitForReadyRead
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: waitForBytesWritten
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  waitForBytesWritten
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: ungetChar
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ungetChar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: putChar
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  putChar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: errorString
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  errorString
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QTcpSocket
-    // Function: readyRead
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void readyRead(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void readyReadEmitter(
-                
-              );
-            
-    // Class: QTcpSocket
-    // Function: channelReadyRead
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void channelReadyRead(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void channelReadyReadEmitter(
-                int channel
-              );
-            
-    // Class: QTcpSocket
-    // Function: bytesWritten
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void bytesWritten(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void bytesWrittenEmitter(
-                qint64 bytes
-              );
-            
-    // Class: QTcpSocket
-    // Function: channelBytesWritten
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void channelBytesWritten(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void channelBytesWrittenEmitter(
-                int channel, qint64 bytes
-              );
-            
-    // Class: QTcpSocket
-    // Function: aboutToClose
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void aboutToClose(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void aboutToCloseEmitter(
-                
-              );
-            
-    // Class: QTcpSocket
-    // Function: readChannelFinished
-    // Source: QIODevice
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void readChannelFinished(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void readChannelFinishedEmitter(
-                
               );
             
           // destroy function for non-copyable objects:

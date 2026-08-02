@@ -103,6 +103,5 @@
         <parameters />
       </variant>
     </function>
-    <class_decl name="  QTlsBackend" />
   </class>
 </unit>

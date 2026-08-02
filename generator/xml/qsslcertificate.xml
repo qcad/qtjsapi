@@ -19,11 +19,13 @@
       <key>SerialNumber</key>
       <key>EmailAddress</key>
     </enum>
+    <!-- PatternSyntax is a scoped enum (enum class), not mirrorable
     <enum name="PatternSyntax">
       <key>RegularExpression</key>
       <key>Wildcard</key>
       <key>FixedString</key>
     </enum>
+    -->
     <constructor>
       <variant>
         <parameters>
@@ -123,7 +125,7 @@
     <function name="issuerInfo">
       <variant return-type="QStringList" const="true" access="public">
         <parameters>
-          <parameter const="false" type="SubjectInfo" modifier="" name="info" />
+          <parameter const="false" type="QSslCertificate::SubjectInfo" modifier="" name="info" />
         </parameters>
       </variant>
       <variant return-type="QStringList" const="true" access="public">
@@ -135,7 +137,7 @@
     <function name="subjectInfo">
       <variant return-type="QStringList" const="true" access="public">
         <parameters>
-          <parameter const="false" type="SubjectInfo" modifier="" name="info" />
+          <parameter const="false" type="QSslCertificate::SubjectInfo" modifier="" name="info" />
         </parameters>
       </variant>
       <variant return-type="QStringList" const="true" access="public">
@@ -164,11 +166,13 @@
         <parameters />
       </variant>
     </function>
+    <!-- QMultiMap not supported by generator
     <function name="subjectAlternativeNames">
       <variant return-type="QMultiMap&lt;QSsl::AlternativeNameEntryType,QString&gt;" const="true" access="public">
         <parameters />
       </variant>
     </function>
+    -->
     <function name="effectiveDate">
       <variant return-type="QDateTime" const="true" access="public">
         <parameters />
@@ -211,7 +215,7 @@
         <parameters>
           <parameter const="true" type="QString" modifier="&amp;" name="path" />
           <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
-          <parameter const="false" type="PatternSyntax" modifier="" name="syntax" default="PatternSyntax::FixedString" />
+          <!-- omitted: QSslCertificate::PatternSyntax is a scoped enum (defaulted param) -->
         </parameters>
       </variant>
     </function>
@@ -248,6 +252,7 @@
         </parameters>
       </variant>
     </function>
+    <!-- importPkcs12: out-params are pointers to wrapped value types, no _ptr helpers
     <function name="importPkcs12" static="true">
       <variant return-type="bool" static="true" access="public">
         <parameters>
@@ -259,12 +264,14 @@
         </parameters>
       </variant>
     </function>
+    -->
     <preproc plain="#endif" />
+    <!-- Qt::HANDLE not bindable
     <function name="handle">
       <variant return-type="Qt::HANDLE" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    <class_decl name="QTlsBackend" />
+    -->
   </class>
 </unit>

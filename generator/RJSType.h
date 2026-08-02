@@ -357,6 +357,286 @@
           static int id;
       };
     
+      class QTJSAPI_EXPORT  RJSType_QSslCertificate : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslCertificate";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslCertificate();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslCertificateExtension : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslCertificateExtension";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslCertificateExtension();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslCipher : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslCipher";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslCipher();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslConfiguration : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslConfiguration";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslConfiguration();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslDiffieHellmanParameters : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslDiffieHellmanParameters";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslDiffieHellmanParameters();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslEllipticCurve : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslEllipticCurve";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslEllipticCurve();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslError : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslError";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslError();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslKey : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslKey";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslKey();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslKeyingMaterial : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslKeyingMaterial";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslKeyingMaterial();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslPreSharedKeyAuthenticator : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslPreSharedKeyAuthenticator";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslPreSharedKeyAuthenticator();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
       class QTJSAPI_EXPORT  RJSType_QBitmap : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -3459,6 +3739,34 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_QTcpSocket();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslSocket : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslSocket";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslSocket();
           //}
 
           Q_INVOKABLE
@@ -8407,6 +8715,34 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_QTcpServer();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QSslServer : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSslServer";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSslServer();
           //}
 
           Q_INVOKABLE

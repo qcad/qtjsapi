@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsslkeyingmaterial.h">
   <class_decl name="QDebug" />
-  <namespace name="QTlsPrivate">
-    <class_decl name="TlsCryptographOpenSSL" />
-  </namespace>
   <class name="QSslKeyingMaterial">
     <constructor>
       <variant>
@@ -59,15 +56,16 @@
     <function name="qHash" />
     <function name="qHash" />
     <preproc plain="#ifndef QT_NO_DEBUG_STREAM" />
+    <!-- QDebug is not a bindable type
     <function name="operator_read" call="operator&lt;&lt;">
-      <variant return-type="Q_NETWORK_EXPORTQDebug" access="unknown">
+      <variant return-type="QDebug" access="unknown">
         <parameters>
           <parameter const="false" type="QDebug" modifier="" name="debug" />
           <parameter const="true" type="QSslKeyingMaterial" modifier="&amp;" name="keying" />
         </parameters>
       </variant>
     </function>
+    -->
     <preproc plain="#endif" />
-    <class_decl name="" />
   </class>
 </unit>

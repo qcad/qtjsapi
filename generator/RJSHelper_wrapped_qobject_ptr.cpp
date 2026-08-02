@@ -419,6 +419,34 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsslcertificate_wrapper.h"
+        
+          #include "qsslcertificateextension_wrapper.h"
+        
+          #include "qsslcipher_wrapper.h"
+        
+          #include "qsslconfiguration_wrapper.h"
+        
+          #include "qssldiffiehellmanparameters_wrapper.h"
+        
+          #include "qsslellipticcurve_wrapper.h"
+        
+          #include "qsslerror_wrapper.h"
+        
+          #include "qsslkey_wrapper.h"
+        
+          #include "qsslkeyingmaterial_wrapper.h"
+        
+          #include "qsslpresharedkeyauthenticator_wrapper.h"
+        
+          #include "qsslserver_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qsslsocket_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
+        
           #include "qstackedlayout_wrapper.h"
         
           #include "qstackedwidget_wrapper.h"
@@ -500,10 +528,6 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
-        
-          #include "qtcpserver_wrapper.h"
-        
-          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         
@@ -5671,14 +5695,6 @@
                 QProcess* o = qobject_cast<QProcess*>(v);
                 if (o!=nullptr) {
                     return RJSHelper::cpp2js_QProcess(handler, o);
-                }
-            }
-            
-            // downcast to QTcpSocket:
-            {
-                QTcpSocket* o = qobject_cast<QTcpSocket*>(v);
-                if (o!=nullptr) {
-                    return RJSHelper::cpp2js_QTcpSocket(handler, o);
                 }
             }
             QIODevice_Wrapper* ret = nullptr;
@@ -12417,7 +12433,15 @@
 
     
       QJSValue RJSHelper::cpp2js_QTcpServer(RJSApi& handler, QTcpServer* v) {
-          QTcpServer_Wrapper* ret = nullptr;
+          
+            // downcast to QSslServer:
+            {
+                QSslServer* o = qobject_cast<QSslServer*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QSslServer(handler, o);
+                }
+            }
+            QTcpServer_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
@@ -12518,6 +12542,111 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QTcpServer::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper::cpp2js_QSslServer(RJSApi& handler, QSslServer* v) {
+          QSslServer_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QSslServer_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QSslServer: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QSslServer_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QSslServer_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QSslServer('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslServer");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslServer is undefined. Use QSslServer_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslServer('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslServer(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSslServer(RJSApi& handler, const QSslServer* v) {
+          return RJSHelper::cpp2js_QSslServer(handler, const_cast<QSslServer*>(v));
+      }
+
+      QSslServer* RJSHelper::js2cpp_QSslServer_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslServer: not a QObject";
+              return nullptr;
+          }
+          //QSslServer_Wrapper* wrapper = getWrapper<QSslServer_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QSslServer_Wrapper* wrapper = qobject_cast<QSslServer_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QSslServer_Wrapper* wrapper = dynamic_cast<QSslServer_Wrapper*>(obj);
+          //QSslServer_Wrapper* wrapper = (QSslServer_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslServer: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QSslServer*)wrapper->getWrappedVoid();
+          //return getWrapped_QSslServer(wrapper);
+          return QSslServer_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QSslServer_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslServer: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QSslServer_Type);
+          //return fun.call().toInt()==RJSType::QSslServer_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslServer::getIdStatic())).toBool();
       }
 
     

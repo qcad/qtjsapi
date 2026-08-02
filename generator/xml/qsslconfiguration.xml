@@ -188,8 +188,7 @@
         <parameters>
           <parameter const="true" type="QString" modifier="&amp;" name="path" />
           <parameter const="false" type="QSsl::EncodingFormat" modifier="" name="format" default="QSsl::Pem" />
-          <parameter const="false" type="QSslCertificate::PatternSyntax" modifier="" name="syntax"
-          default="QSslCertificate::PatternSyntax::FixedString" />
+          <!-- omitted: QSslCertificate::PatternSyntax is a scoped enum (defaulted param) -->
         </parameters>
       </variant>
       <variant return-type="void" access="public">
@@ -288,11 +287,13 @@
         </parameters>
       </variant>
     </function>
+    <!-- QMap<QByteArray,QVariant>: generator mangles multi-arg QMap helper names
     <function name="backendConfiguration">
       <variant return-type="QMap&lt;QByteArray,QVariant&gt;" const="true" access="public">
         <parameters />
       </variant>
     </function>
+    -->
     <function name="setBackendConfigurationOption">
       <variant return-type="void" access="public">
         <parameters>
@@ -301,6 +302,7 @@
         </parameters>
       </variant>
     </function>
+    <!-- QMap<QByteArray,QVariant>: generator mangles multi-arg QMap helper names
     <function name="setBackendConfiguration">
       <variant return-type="void" access="public">
         <parameters>
@@ -309,6 +311,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="defaultConfiguration" static="true">
       <variant return-type="QSslConfiguration" static="true" access="public">
         <parameters />
@@ -406,21 +409,22 @@
       </variant>
     </function>
     <function name="nextProtocolNegotiationStatus">
-      <variant return-type="NextProtocolNegotiationStatus" const="true" access="public">
+      <variant return-type="QSslConfiguration::NextProtocolNegotiationStatus" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    <property static="true" type="char" name="" />
-    <property static="true" type="char" name="" />
+    <!-- static const char ALPNProtocol* constants: no usable name/type from extractor -->
     <function name="keyingMaterial">
       <variant return-type="QList&lt;QSslKeyingMaterial&gt;" const="true" access="public">
         <parameters />
       </variant>
+    <!-- std::optional not supported by generator
       <variant return-type="std::optional&lt;QSslKeyingMaterial&gt;" const="true" access="public">
         <parameters>
           <parameter const="true" type="QSslKeyingMaterial" modifier="&amp;" name="material" />
         </parameters>
       </variant>
+    -->
     </function>
     <function name="setKeyingMaterial">
       <variant return-type="void" access="public">
@@ -430,7 +434,5 @@
       </variant>
     </function>
     <class_decl name="QSslSocket" />
-    <class_decl name="QSslContext" />
-    <class_decl name="QTlsBackend" />
   </class>
 </unit>

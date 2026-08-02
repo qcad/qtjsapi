@@ -419,6 +419,34 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsslcertificate_wrapper.h"
+        
+          #include "qsslcertificateextension_wrapper.h"
+        
+          #include "qsslcipher_wrapper.h"
+        
+          #include "qsslconfiguration_wrapper.h"
+        
+          #include "qssldiffiehellmanparameters_wrapper.h"
+        
+          #include "qsslellipticcurve_wrapper.h"
+        
+          #include "qsslerror_wrapper.h"
+        
+          #include "qsslkey_wrapper.h"
+        
+          #include "qsslkeyingmaterial_wrapper.h"
+        
+          #include "qsslpresharedkeyauthenticator_wrapper.h"
+        
+          #include "qsslserver_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qsslsocket_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
+        
           #include "qstackedlayout_wrapper.h"
         
           #include "qstackedwidget_wrapper.h"
@@ -500,10 +528,6 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
-        
-          #include "qtcpserver_wrapper.h"
-        
-          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         
@@ -8551,6 +8575,313 @@
       }
 
       bool RJSHelper::is_QNetworkProxy_Capabilities(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSsl_KeyType(RJSApi& handler, QSsl::KeyType v) {
+        return QJSValue(v);
+      }
+
+      QSsl::KeyType RJSHelper::js2cpp_QSsl_KeyType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSsl::KeyType)0
+          ;
+        }
+        return 
+        (QSsl::KeyType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSsl_KeyType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSsl_EncodingFormat(RJSApi& handler, QSsl::EncodingFormat v) {
+        return QJSValue(v);
+      }
+
+      QSsl::EncodingFormat RJSHelper::js2cpp_QSsl_EncodingFormat(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSsl::EncodingFormat)0
+          ;
+        }
+        return 
+        (QSsl::EncodingFormat)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSsl_EncodingFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSsl_KeyAlgorithm(RJSApi& handler, QSsl::KeyAlgorithm v) {
+        return QJSValue(v);
+      }
+
+      QSsl::KeyAlgorithm RJSHelper::js2cpp_QSsl_KeyAlgorithm(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSsl::KeyAlgorithm)0
+          ;
+        }
+        return 
+        (QSsl::KeyAlgorithm)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSsl_KeyAlgorithm(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSsl_AlternativeNameEntryType(RJSApi& handler, QSsl::AlternativeNameEntryType v) {
+        return QJSValue(v);
+      }
+
+      QSsl::AlternativeNameEntryType RJSHelper::js2cpp_QSsl_AlternativeNameEntryType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSsl::AlternativeNameEntryType)0
+          ;
+        }
+        return 
+        (QSsl::AlternativeNameEntryType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSsl_AlternativeNameEntryType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSsl_SslProtocol(RJSApi& handler, QSsl::SslProtocol v) {
+        return QJSValue(v);
+      }
+
+      QSsl::SslProtocol RJSHelper::js2cpp_QSsl_SslProtocol(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSsl::SslProtocol)0
+          ;
+        }
+        return 
+        (QSsl::SslProtocol)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSsl_SslProtocol(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSsl_SslOption(RJSApi& handler, QSsl::SslOption v) {
+        return QJSValue(v);
+      }
+
+      QSsl::SslOption RJSHelper::js2cpp_QSsl_SslOption(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSsl::SslOption)0
+          ;
+        }
+        return 
+        (QSsl::SslOption)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSsl_SslOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSsl_SslOptions(RJSApi& handler, QSsl::SslOptions v) {
+        return QJSValue(v);
+      }
+
+      QSsl::SslOptions RJSHelper::js2cpp_QSsl_SslOptions(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QSsl::SslOptions()
+          ;
+        }
+        return 
+        (QSsl::SslOptions)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSsl_SslOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslCertificate_SubjectInfo(RJSApi& handler, QSslCertificate::SubjectInfo v) {
+        return QJSValue(v);
+      }
+
+      QSslCertificate::SubjectInfo RJSHelper::js2cpp_QSslCertificate_SubjectInfo(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSslCertificate::SubjectInfo)0
+          ;
+        }
+        return 
+        (QSslCertificate::SubjectInfo)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSslCertificate_SubjectInfo(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslConfiguration_NextProtocolNegotiationStatus(RJSApi& handler, QSslConfiguration::NextProtocolNegotiationStatus v) {
+        return QJSValue(v);
+      }
+
+      QSslConfiguration::NextProtocolNegotiationStatus RJSHelper::js2cpp_QSslConfiguration_NextProtocolNegotiationStatus(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSslConfiguration::NextProtocolNegotiationStatus)0
+          ;
+        }
+        return 
+        (QSslConfiguration::NextProtocolNegotiationStatus)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSslConfiguration_NextProtocolNegotiationStatus(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslDiffieHellmanParameters_Error(RJSApi& handler, QSslDiffieHellmanParameters::Error v) {
+        return QJSValue(v);
+      }
+
+      QSslDiffieHellmanParameters::Error RJSHelper::js2cpp_QSslDiffieHellmanParameters_Error(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSslDiffieHellmanParameters::Error)0
+          ;
+        }
+        return 
+        (QSslDiffieHellmanParameters::Error)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSslDiffieHellmanParameters_Error(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslError_SslError(RJSApi& handler, QSslError::SslError v) {
+        return QJSValue(v);
+      }
+
+      QSslError::SslError RJSHelper::js2cpp_QSslError_SslError(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSslError::SslError)0
+          ;
+        }
+        return 
+        (QSslError::SslError)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSslError_SslError(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslSocket_SslMode(RJSApi& handler, QSslSocket::SslMode v) {
+        return QJSValue(v);
+      }
+
+      QSslSocket::SslMode RJSHelper::js2cpp_QSslSocket_SslMode(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSslSocket::SslMode)0
+          ;
+        }
+        return 
+        (QSslSocket::SslMode)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSslSocket_SslMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslSocket_PeerVerifyMode(RJSApi& handler, QSslSocket::PeerVerifyMode v) {
+        return QJSValue(v);
+      }
+
+      QSslSocket::PeerVerifyMode RJSHelper::js2cpp_QSslSocket_PeerVerifyMode(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSslSocket::PeerVerifyMode)0
+          ;
+        }
+        return 
+        (QSslSocket::PeerVerifyMode)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSslSocket_PeerVerifyMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QCryptographicHash_Algorithm(RJSApi& handler, QCryptographicHash::Algorithm v) {
+        return QJSValue(v);
+      }
+
+      QCryptographicHash::Algorithm RJSHelper::js2cpp_QCryptographicHash_Algorithm(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QCryptographicHash::Algorithm)0
+          ;
+        }
+        return 
+        (QCryptographicHash::Algorithm)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QCryptographicHash_Algorithm(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }

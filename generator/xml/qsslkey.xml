@@ -25,12 +25,14 @@
           <parameter const="true" type="QByteArray" modifier="&amp;" name="passPhrase" default="QByteArray()" />
         </parameters>
       </variant>
+    <!-- Qt::HANDLE not bindable
       <variant>
         <parameters>
           <parameter const="false" type="Qt::HANDLE" modifier="" name="handle" />
           <parameter const="false" type="QSsl::KeyType" modifier="" name="type" default="QSsl::PrivateKey" />
         </parameters>
       </variant>
+    -->
       <variant>
         <parameters>
           <parameter const="true" type="QSslKey" modifier="&amp;" name="other" />
@@ -102,11 +104,13 @@
         </parameters>
       </variant>
     </function>
+    <!-- Qt::HANDLE not bindable
     <function name="handle">
       <variant return-type="Qt::HANDLE" const="true" access="public">
         <parameters />
       </variant>
     </function>
+    -->
     <function name="equals" call="operator==">
       <variant return-type="bool" const="true" access="public">
         <parameters>
@@ -121,6 +125,5 @@
         </parameters>
       </variant>
     </function>
-    <class_decl name="  QTlsBackend" />
   </class>
 </unit>

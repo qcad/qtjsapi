@@ -419,6 +419,34 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsslcertificate_wrapper.h"
+        
+          #include "qsslcertificateextension_wrapper.h"
+        
+          #include "qsslcipher_wrapper.h"
+        
+          #include "qsslconfiguration_wrapper.h"
+        
+          #include "qssldiffiehellmanparameters_wrapper.h"
+        
+          #include "qsslellipticcurve_wrapper.h"
+        
+          #include "qsslerror_wrapper.h"
+        
+          #include "qsslkey_wrapper.h"
+        
+          #include "qsslkeyingmaterial_wrapper.h"
+        
+          #include "qsslpresharedkeyauthenticator_wrapper.h"
+        
+          #include "qsslserver_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qsslsocket_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
+        
           #include "qstackedlayout_wrapper.h"
         
           #include "qstackedwidget_wrapper.h"
@@ -500,10 +528,6 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
-        
-          #include "qtcpserver_wrapper.h"
-        
-          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         

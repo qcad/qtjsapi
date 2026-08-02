@@ -85,13 +85,6 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["acceptError(QAbstractSocket::SocketError)"] = Object.getPrototypeOf(this).acceptError;
-  
-            }
-          
         }
 
         

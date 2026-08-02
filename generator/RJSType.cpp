@@ -191,6 +191,156 @@
 
 
       
+      int RJSType_QSslCertificate::id = -1;
+
+      int RJSType_QSslCertificate::getId() const {
+          return RJSType_QSslCertificate::getIdStatic();
+      }
+
+      int RJSType_QSslCertificate::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslCertificate());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslCertificateExtension::id = -1;
+
+      int RJSType_QSslCertificateExtension::getId() const {
+          return RJSType_QSslCertificateExtension::getIdStatic();
+      }
+
+      int RJSType_QSslCertificateExtension::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslCertificateExtension());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslCipher::id = -1;
+
+      int RJSType_QSslCipher::getId() const {
+          return RJSType_QSslCipher::getIdStatic();
+      }
+
+      int RJSType_QSslCipher::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslCipher());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslConfiguration::id = -1;
+
+      int RJSType_QSslConfiguration::getId() const {
+          return RJSType_QSslConfiguration::getIdStatic();
+      }
+
+      int RJSType_QSslConfiguration::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslConfiguration());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslDiffieHellmanParameters::id = -1;
+
+      int RJSType_QSslDiffieHellmanParameters::getId() const {
+          return RJSType_QSslDiffieHellmanParameters::getIdStatic();
+      }
+
+      int RJSType_QSslDiffieHellmanParameters::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslDiffieHellmanParameters());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslEllipticCurve::id = -1;
+
+      int RJSType_QSslEllipticCurve::getId() const {
+          return RJSType_QSslEllipticCurve::getIdStatic();
+      }
+
+      int RJSType_QSslEllipticCurve::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslEllipticCurve());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslError::id = -1;
+
+      int RJSType_QSslError::getId() const {
+          return RJSType_QSslError::getIdStatic();
+      }
+
+      int RJSType_QSslError::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslError());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslKey::id = -1;
+
+      int RJSType_QSslKey::getId() const {
+          return RJSType_QSslKey::getIdStatic();
+      }
+
+      int RJSType_QSslKey::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslKey());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslKeyingMaterial::id = -1;
+
+      int RJSType_QSslKeyingMaterial::getId() const {
+          return RJSType_QSslKeyingMaterial::getIdStatic();
+      }
+
+      int RJSType_QSslKeyingMaterial::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslKeyingMaterial());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslPreSharedKeyAuthenticator::id = -1;
+
+      int RJSType_QSslPreSharedKeyAuthenticator::getId() const {
+          return RJSType_QSslPreSharedKeyAuthenticator::getIdStatic();
+      }
+
+      int RJSType_QSslPreSharedKeyAuthenticator::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslPreSharedKeyAuthenticator());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QBitmap::id = -1;
 
       int RJSType_QBitmap::getId() const {
@@ -1855,6 +2005,21 @@
       int RJSType_QTcpSocket::getIdStatic() {
           if (id<0) {
               id = RJSTypeEnum::reserve(new RJSType_QTcpSocket());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslSocket::id = -1;
+
+      int RJSType_QSslSocket::getId() const {
+          return RJSType_QSslSocket::getIdStatic();
+      }
+
+      int RJSType_QSslSocket::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslSocket());
           }
           return id;
       }
@@ -4515,6 +4680,21 @@
       int RJSType_QTcpServer::getIdStatic() {
           if (id<0) {
               id = RJSTypeEnum::reserve(new RJSType_QTcpServer());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QSslServer::id = -1;
+
+      int RJSType_QSslServer::getId() const {
+          return RJSType_QSslServer::getIdStatic();
+      }
+
+      int RJSType_QSslServer::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSslServer());
           }
           return id;
       }

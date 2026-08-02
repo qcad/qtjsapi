@@ -377,6 +377,20 @@
     <type>QNetworkProxy::ProxyType</type>
     <type>QNetworkProxy::Capability</type>
     <type flags="true">QNetworkProxy::Capabilities</type>
+    <type>QSsl::KeyType</type>
+    <type>QSsl::EncodingFormat</type>
+    <type>QSsl::KeyAlgorithm</type>
+    <type>QSsl::AlternativeNameEntryType</type>
+    <type>QSsl::SslProtocol</type>
+    <type>QSsl::SslOption</type>
+    <type flags="true">QSsl::SslOptions</type>
+    <type>QSslCertificate::SubjectInfo</type>
+    <type>QSslConfiguration::NextProtocolNegotiationStatus</type>
+    <type>QSslDiffieHellmanParameters::Error</type>
+    <type>QSslError::SslError</type>
+    <type>QSslSocket::SslMode</type>
+    <type>QSslSocket::PeerVerifyMode</type>
+    <type>QCryptographicHash::Algorithm</type>
   </primitive>
 
   <shared_ptr_no_copy>
@@ -387,6 +401,16 @@
     <type>QHostAddress</type>
     <type>QNetworkProxy</type>
     <type>QNetworkProxyQuery</type>
+    <type>QSslCertificate</type>
+    <type>QSslCertificateExtension</type>
+    <type>QSslCipher</type>
+    <type>QSslConfiguration</type>
+    <type>QSslDiffieHellmanParameters</type>
+    <type>QSslEllipticCurve</type>
+    <type>QSslError</type>
+    <type>QSslKey</type>
+    <type>QSslKeyingMaterial</type>
+    <type>QSslPreSharedKeyAuthenticator</type>
     <type>QBitmap</type>
     <type>QBrush</type>
     <type>QByteArray</type>
@@ -501,6 +525,7 @@
 
   <wrapped_ptr>
     <type>QTcpSocket</type>
+    <type>QSslSocket</type>
     <type>QNetworkProxyFactory</type>
     <type>QAbstractFileIconProvider</type>
     <type>QAbstractListModel</type>
@@ -683,6 +708,7 @@
     <type>QWidgetAction</type>
     <type>QWindow</type>
     <type>QTcpServer</type>
+    <type>QSslServer</type>
   </wrapped_qobject_ptr>
 
   <qlist>
@@ -717,6 +743,12 @@
     <type>QList&lt;int&gt;</type>
     <type>QList&lt;qreal&gt;</type>
     <type>QList&lt;QNetworkProxy&gt;</type>
+    <type>QList&lt;QSslCertificate&gt;</type>
+    <type>QList&lt;QSslCertificateExtension&gt;</type>
+    <type>QList&lt;QSslCipher&gt;</type>
+    <type>QList&lt;QSslEllipticCurve&gt;</type>
+    <type>QList&lt;QSslError&gt;</type>
+    <type>QList&lt;QSslKeyingMaterial&gt;</type>
     <type>QModelIndexList</type>
     <type>QStringList</type>
   </qlist>

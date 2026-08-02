@@ -92,12 +92,6 @@
   
     this["errorOccurred(QAbstractSocket::SocketError)"] = Object.getPrototypeOf(this).errorOccurred;
   
-    this["channelReadyRead(int)"] = Object.getPrototypeOf(this).channelReadyRead;
-  
-    this["bytesWritten(qint64)"] = Object.getPrototypeOf(this).bytesWritten;
-  
-    this["channelBytesWritten(int,qint64)"] = Object.getPrototypeOf(this).channelBytesWritten;
-  
             }
           
         }
@@ -129,10 +123,6 @@
 
         
           if (t===RJSType_QAbstractSocket.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QIODevice.getIdStatic()) {
             return true;
           }
         

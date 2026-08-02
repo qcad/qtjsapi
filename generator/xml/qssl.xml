@@ -1,4 +1,52 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qssl.h">
-  <namespace name="QSsl" />
+  <namespace name="QSsl">
+    <enum name="KeyType">
+      <key>PrivateKey</key>
+      <key>PublicKey</key>
+    </enum>
+    <enum name="EncodingFormat">
+      <key>Pem</key>
+      <key>Der</key>
+    </enum>
+    <enum name="KeyAlgorithm">
+      <key>Opaque</key>
+      <key>Rsa</key>
+      <key>Dsa</key>
+      <key>Ec</key>
+      <key>Dh</key>
+    </enum>
+    <enum name="AlternativeNameEntryType">
+      <key>EmailEntry</key>
+      <key>DnsEntry</key>
+      <key>IpAddressEntry</key>
+    </enum>
+    <enum name="SslProtocol">
+      <key>TlsV1_2</key>
+      <key>AnyProtocol</key>
+      <key>SecureProtocols</key>
+      <key>TlsV1_2OrLater</key>
+      <key>DtlsV1_2</key>
+      <key>DtlsV1_2OrLater</key>
+      <key>TlsV1_3</key>
+      <key>TlsV1_3OrLater</key>
+      <key>UnknownProtocol</key>
+    </enum>
+    <enum name="SslOption">
+      <key>SslOptionDisableEmptyFragments</key>
+      <key>SslOptionDisableSessionTickets</key>
+      <key>SslOptionDisableCompression</key>
+      <key>SslOptionDisableServerNameIndication</key>
+      <key>SslOptionDisableLegacyRenegotiation</key>
+      <key>SslOptionDisableSessionSharing</key>
+      <key>SslOptionDisableSessionPersistence</key>
+      <key>SslOptionDisableServerCipherPreference</key>
+    </enum>
+    <!-- scoped enums (enum class), cannot be mirrored by the generator:
+    <enum name="AlertLevel" />
+    <enum name="AlertType" />
+    <enum name="ImplementedClass" />
+    <enum name="SupportedFeature" />
+    -->
+  </namespace>
 </unit>

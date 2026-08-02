@@ -1427,6 +1427,78 @@
           virtual QSplitterHandle* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class QSslCertificate:
+        class RJSBasecaster_QSslCertificate {
+        public:
+          virtual QSslCertificate* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslCertificateExtension:
+        class RJSBasecaster_QSslCertificateExtension {
+        public:
+          virtual QSslCertificateExtension* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslCipher:
+        class RJSBasecaster_QSslCipher {
+        public:
+          virtual QSslCipher* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslConfiguration:
+        class RJSBasecaster_QSslConfiguration {
+        public:
+          virtual QSslConfiguration* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslDiffieHellmanParameters:
+        class RJSBasecaster_QSslDiffieHellmanParameters {
+        public:
+          virtual QSslDiffieHellmanParameters* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslEllipticCurve:
+        class RJSBasecaster_QSslEllipticCurve {
+        public:
+          virtual QSslEllipticCurve* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslError:
+        class RJSBasecaster_QSslError {
+        public:
+          virtual QSslError* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslKey:
+        class RJSBasecaster_QSslKey {
+        public:
+          virtual QSslKey* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslKeyingMaterial:
+        class RJSBasecaster_QSslKeyingMaterial {
+        public:
+          virtual QSslKeyingMaterial* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslPreSharedKeyAuthenticator:
+        class RJSBasecaster_QSslPreSharedKeyAuthenticator {
+        public:
+          virtual QSslPreSharedKeyAuthenticator* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslServer:
+        class RJSBasecaster_QSslServer {
+        public:
+          virtual QSslServer* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QSslSocket:
+        class RJSBasecaster_QSslSocket {
+        public:
+          virtual QSslSocket* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class QStackedLayout:
         class RJSBasecaster_QStackedLayout {
         public:
@@ -3575,6 +3647,62 @@
       static QNetworkProxy::Capabilities js2cpp_QNetworkProxy_Capabilities(RJSApi& handler, const QJSValue& v);
       static bool is_QNetworkProxy_Capabilities(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QSsl_KeyType(RJSApi& handler, QSsl::KeyType v);
+      static QSsl::KeyType js2cpp_QSsl_KeyType(RJSApi& handler, const QJSValue& v);
+      static bool is_QSsl_KeyType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSsl_EncodingFormat(RJSApi& handler, QSsl::EncodingFormat v);
+      static QSsl::EncodingFormat js2cpp_QSsl_EncodingFormat(RJSApi& handler, const QJSValue& v);
+      static bool is_QSsl_EncodingFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSsl_KeyAlgorithm(RJSApi& handler, QSsl::KeyAlgorithm v);
+      static QSsl::KeyAlgorithm js2cpp_QSsl_KeyAlgorithm(RJSApi& handler, const QJSValue& v);
+      static bool is_QSsl_KeyAlgorithm(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSsl_AlternativeNameEntryType(RJSApi& handler, QSsl::AlternativeNameEntryType v);
+      static QSsl::AlternativeNameEntryType js2cpp_QSsl_AlternativeNameEntryType(RJSApi& handler, const QJSValue& v);
+      static bool is_QSsl_AlternativeNameEntryType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSsl_SslProtocol(RJSApi& handler, QSsl::SslProtocol v);
+      static QSsl::SslProtocol js2cpp_QSsl_SslProtocol(RJSApi& handler, const QJSValue& v);
+      static bool is_QSsl_SslProtocol(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSsl_SslOption(RJSApi& handler, QSsl::SslOption v);
+      static QSsl::SslOption js2cpp_QSsl_SslOption(RJSApi& handler, const QJSValue& v);
+      static bool is_QSsl_SslOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSsl_SslOptions(RJSApi& handler, QSsl::SslOptions v);
+      static QSsl::SslOptions js2cpp_QSsl_SslOptions(RJSApi& handler, const QJSValue& v);
+      static bool is_QSsl_SslOptions(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslCertificate_SubjectInfo(RJSApi& handler, QSslCertificate::SubjectInfo v);
+      static QSslCertificate::SubjectInfo js2cpp_QSslCertificate_SubjectInfo(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslCertificate_SubjectInfo(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslConfiguration_NextProtocolNegotiationStatus(RJSApi& handler, QSslConfiguration::NextProtocolNegotiationStatus v);
+      static QSslConfiguration::NextProtocolNegotiationStatus js2cpp_QSslConfiguration_NextProtocolNegotiationStatus(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslConfiguration_NextProtocolNegotiationStatus(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslDiffieHellmanParameters_Error(RJSApi& handler, QSslDiffieHellmanParameters::Error v);
+      static QSslDiffieHellmanParameters::Error js2cpp_QSslDiffieHellmanParameters_Error(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslDiffieHellmanParameters_Error(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslError_SslError(RJSApi& handler, QSslError::SslError v);
+      static QSslError::SslError js2cpp_QSslError_SslError(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslError_SslError(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslSocket_SslMode(RJSApi& handler, QSslSocket::SslMode v);
+      static QSslSocket::SslMode js2cpp_QSslSocket_SslMode(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslSocket_SslMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslSocket_PeerVerifyMode(RJSApi& handler, QSslSocket::PeerVerifyMode v);
+      static QSslSocket::PeerVerifyMode js2cpp_QSslSocket_PeerVerifyMode(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslSocket_PeerVerifyMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QCryptographicHash_Algorithm(RJSApi& handler, QCryptographicHash::Algorithm v);
+      static QCryptographicHash::Algorithm js2cpp_QCryptographicHash_Algorithm(RJSApi& handler, const QJSValue& v);
+      static bool is_QCryptographicHash_Algorithm(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
   // ------------------------------------
   // QSharedPointer types (non-copyable):
   // ------------------------------------
@@ -3601,6 +3729,56 @@
       static QJSValue cpp2js_QNetworkProxyQuery(RJSApi& handler, const QNetworkProxyQuery& v);
       static QNetworkProxyQuery js2cpp_QNetworkProxyQuery(RJSApi& handler, const QJSValue& v);
       static bool is_QNetworkProxyQuery(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslCertificate(RJSApi& handler, const QSslCertificate* v);
+      static QJSValue cpp2js_QSslCertificate(RJSApi& handler, const QSslCertificate& v);
+      static QSslCertificate js2cpp_QSslCertificate(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslCertificate(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslCertificateExtension(RJSApi& handler, const QSslCertificateExtension* v);
+      static QJSValue cpp2js_QSslCertificateExtension(RJSApi& handler, const QSslCertificateExtension& v);
+      static QSslCertificateExtension js2cpp_QSslCertificateExtension(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslCertificateExtension(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslCipher(RJSApi& handler, const QSslCipher* v);
+      static QJSValue cpp2js_QSslCipher(RJSApi& handler, const QSslCipher& v);
+      static QSslCipher js2cpp_QSslCipher(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslCipher(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslConfiguration(RJSApi& handler, const QSslConfiguration* v);
+      static QJSValue cpp2js_QSslConfiguration(RJSApi& handler, const QSslConfiguration& v);
+      static QSslConfiguration js2cpp_QSslConfiguration(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslConfiguration(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslDiffieHellmanParameters(RJSApi& handler, const QSslDiffieHellmanParameters* v);
+      static QJSValue cpp2js_QSslDiffieHellmanParameters(RJSApi& handler, const QSslDiffieHellmanParameters& v);
+      static QSslDiffieHellmanParameters js2cpp_QSslDiffieHellmanParameters(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslDiffieHellmanParameters(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslEllipticCurve(RJSApi& handler, const QSslEllipticCurve* v);
+      static QJSValue cpp2js_QSslEllipticCurve(RJSApi& handler, const QSslEllipticCurve& v);
+      static QSslEllipticCurve js2cpp_QSslEllipticCurve(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslEllipticCurve(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslError(RJSApi& handler, const QSslError* v);
+      static QJSValue cpp2js_QSslError(RJSApi& handler, const QSslError& v);
+      static QSslError js2cpp_QSslError(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslError(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslKey(RJSApi& handler, const QSslKey* v);
+      static QJSValue cpp2js_QSslKey(RJSApi& handler, const QSslKey& v);
+      static QSslKey js2cpp_QSslKey(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslKey(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslKeyingMaterial(RJSApi& handler, const QSslKeyingMaterial* v);
+      static QJSValue cpp2js_QSslKeyingMaterial(RJSApi& handler, const QSslKeyingMaterial& v);
+      static QSslKeyingMaterial js2cpp_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QSslPreSharedKeyAuthenticator* v);
+      static QJSValue cpp2js_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QSslPreSharedKeyAuthenticator& v);
+      static QSslPreSharedKeyAuthenticator js2cpp_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QBitmap(RJSApi& handler, const QBitmap* v);
       static QJSValue cpp2js_QBitmap(RJSApi& handler, const QBitmap& v);
@@ -4162,6 +4340,10 @@
       static QJSValue cpp2js_QTcpSocket(RJSApi& handler, QTcpSocket* v);
       static QTcpSocket* js2cpp_QTcpSocket_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QTcpSocket_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSslSocket(RJSApi& handler, QSslSocket* v);
+      static QSslSocket* js2cpp_QSslSocket_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslSocket_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QNetworkProxyFactory(RJSApi& handler, QNetworkProxyFactory* v);
       static QNetworkProxyFactory* js2cpp_QNetworkProxyFactory_ptr(RJSApi& handler, const QJSValue& v);
@@ -5011,6 +5193,11 @@
       static QTcpServer* js2cpp_QTcpServer_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QTcpServer_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QSslServer(RJSApi& handler, QSslServer* v);
+      static QJSValue cpp2js_QSslServer(RJSApi& handler, const QSslServer* v);
+      static QSslServer* js2cpp_QSslServer_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QSslServer_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
   // ------------
   // QList types:
   // ------------
@@ -5150,6 +5337,30 @@
       static QJSValue cpp2js_QList_QNetworkProxy(RJSApi& handler, const QList<QNetworkProxy>& v);
       static QList<QNetworkProxy> js2cpp_QList_QNetworkProxy(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QNetworkProxy(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QList_QSslCertificate(RJSApi& handler, const QList<QSslCertificate>& v);
+      static QList<QSslCertificate> js2cpp_QList_QSslCertificate(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QSslCertificate(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QList_QSslCertificateExtension(RJSApi& handler, const QList<QSslCertificateExtension>& v);
+      static QList<QSslCertificateExtension> js2cpp_QList_QSslCertificateExtension(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QSslCertificateExtension(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QList_QSslCipher(RJSApi& handler, const QList<QSslCipher>& v);
+      static QList<QSslCipher> js2cpp_QList_QSslCipher(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QSslCipher(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QList_QSslEllipticCurve(RJSApi& handler, const QList<QSslEllipticCurve>& v);
+      static QList<QSslEllipticCurve> js2cpp_QList_QSslEllipticCurve(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QSslEllipticCurve(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QList_QSslError(RJSApi& handler, const QList<QSslError>& v);
+      static QList<QSslError> js2cpp_QList_QSslError(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QSslError(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QList_QSslKeyingMaterial(RJSApi& handler, const QList<QSslKeyingMaterial>& v);
+      static QList<QSslKeyingMaterial> js2cpp_QList_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QModelIndexList(RJSApi& handler, const QModelIndexList& v);
       static QModelIndexList js2cpp_QModelIndexList(RJSApi& handler, const QJSValue& v);

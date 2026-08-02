@@ -51,6 +51,10 @@
           
             // check if pointer points to derrived type:
             
+              if (t==RJSType_QSslServer::getIdStatic()) {
+                return (QTcpServer*)(QSslServer*)vp;
+              }
+              
 
           // hook for modules to cast from other types to base QTcpServer:
           for (int i=0; i<basecasters_QTcpServer.length(); i++) {
@@ -934,46 +938,6 @@
             
 #endif
 
-    // Class: QTcpServer
-    // Function: newConnection
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void newConnection(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void newConnectionEmitter(
-                
-              );
-            
-    // Class: QTcpServer
-    // Function: acceptError
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void acceptError(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void acceptErrorEmitter(
-                QAbstractSocket::SocketError socketError
-              );
-            
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             

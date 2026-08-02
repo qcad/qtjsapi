@@ -9,26 +9,26 @@
       </variant>
     </constructor>
     <function name="fromShortName" static="true">
-      <variant return-type="Q_NETWORK_EXPORTQSslEllipticCurve" static="true" access="public">
+      <variant return-type="QSslEllipticCurve" static="true" access="public">
         <parameters>
           <parameter const="true" type="QString" modifier="&amp;" name="name" />
         </parameters>
       </variant>
     </function>
     <function name="fromLongName" static="true">
-      <variant return-type="Q_NETWORK_EXPORTQSslEllipticCurve" static="true" access="public">
+      <variant return-type="QSslEllipticCurve" static="true" access="public">
         <parameters>
           <parameter const="true" type="QString" modifier="&amp;" name="name" />
         </parameters>
       </variant>
     </function>
     <function name="shortName">
-      <variant return-type="Q_NETWORK_EXPORTQString" const="true" access="public">
+      <variant return-type="QString" const="true" access="public">
         <parameters />
       </variant>
     </function>
     <function name="longName">
-      <variant return-type="Q_NETWORK_EXPORTQString" const="true" access="public">
+      <variant return-type="QString" const="true" access="public">
         <parameters />
       </variant>
     </function>
@@ -38,11 +38,11 @@
       </variant>
     </function>
     <function name="isTlsNamedCurve">
-      <variant return-type="Q_NETWORK_EXPORTbool" const="true" access="public">
+      <variant return-type="bool" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    <function name="equals" call="operator==">
+    <function name="equals" call="operator==" static="true" non-member="true">
       <variant return-type="bool" access="unknown">
         <parameters>
           <parameter const="false" type="QSslEllipticCurve" modifier="" name="lhs" />
@@ -50,7 +50,7 @@
         </parameters>
       </variant>
     </function>
-    <function name="operator_not_assign" call="operator!=">
+    <function name="operator_not_assign" call="operator!=" static="true" non-member="true">
       <variant return-type="bool" access="unknown">
         <parameters>
           <parameter const="false" type="QSslEllipticCurve" modifier="" name="lhs" />
@@ -58,6 +58,5 @@
         </parameters>
       </variant>
     </function>
-    <class_decl name="QSslContext" />
   </class>
 </unit>

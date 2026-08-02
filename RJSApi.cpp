@@ -173,6 +173,19 @@
 #include "generator/cpp/qtcpsocket_wrapper.h"
 #include "generator/cpp/qtcpserver_wrapper.h"
 #include "generator/cpp/qabstractsocket_wrapper.h"
+#include "generator/cpp/qssl_wrapper.h"
+#include "generator/cpp/qsslcertificate_wrapper.h"
+#include "generator/cpp/qsslcertificateextension_wrapper.h"
+#include "generator/cpp/qsslcipher_wrapper.h"
+#include "generator/cpp/qsslconfiguration_wrapper.h"
+#include "generator/cpp/qssldiffiehellmanparameters_wrapper.h"
+#include "generator/cpp/qsslellipticcurve_wrapper.h"
+#include "generator/cpp/qsslerror_wrapper.h"
+#include "generator/cpp/qsslkey_wrapper.h"
+#include "generator/cpp/qsslkeyingmaterial_wrapper.h"
+#include "generator/cpp/qsslpresharedkeyauthenticator_wrapper.h"
+#include "generator/cpp/qsslserver_wrapper.h"
+#include "generator/cpp/qsslsocket_wrapper.h"
 
 RJSApi::RJSApi(QJSEngine* engine) : engine(engine) {
     init();
@@ -470,6 +483,20 @@ void RJSApi::init() {
     QTcpSocket_Wrapper::init(*this);
     QTcpServer_Wrapper::init(*this);
     QAbstractSocket_Wrapper::init(*this);
+
+    QSsl_Wrapper::init(*this);
+    QSslCertificate_Wrapper::init(*this);
+    QSslCertificateExtension_Wrapper::init(*this);
+    QSslCipher_Wrapper::init(*this);
+    QSslConfiguration_Wrapper::init(*this);
+    QSslDiffieHellmanParameters_Wrapper::init(*this);
+    QSslEllipticCurve_Wrapper::init(*this);
+    QSslError_Wrapper::init(*this);
+    QSslKey_Wrapper::init(*this);
+    QSslKeyingMaterial_Wrapper::init(*this);
+    QSslPreSharedKeyAuthenticator_Wrapper::init(*this);
+    QSslServer_Wrapper::init(*this);
+    QSslSocket_Wrapper::init(*this);
 
     QJSEngine_Wrapper::init(*this);
     QQmlContext_Wrapper::init(*this);

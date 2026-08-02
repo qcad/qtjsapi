@@ -419,6 +419,34 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsslcertificate_wrapper.h"
+        
+          #include "qsslcertificateextension_wrapper.h"
+        
+          #include "qsslcipher_wrapper.h"
+        
+          #include "qsslconfiguration_wrapper.h"
+        
+          #include "qssldiffiehellmanparameters_wrapper.h"
+        
+          #include "qsslellipticcurve_wrapper.h"
+        
+          #include "qsslerror_wrapper.h"
+        
+          #include "qsslkey_wrapper.h"
+        
+          #include "qsslkeyingmaterial_wrapper.h"
+        
+          #include "qsslpresharedkeyauthenticator_wrapper.h"
+        
+          #include "qsslserver_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qsslsocket_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
+        
           #include "qstackedlayout_wrapper.h"
         
           #include "qstackedwidget_wrapper.h"
@@ -500,10 +528,6 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
-        
-          #include "qtcpserver_wrapper.h"
-        
-          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         
@@ -614,6 +638,14 @@
       QJSValue RJSHelper::cpp2js_QTcpSocket(RJSApi& handler, QTcpSocket* v) {
 
           
+            // downcast to QSslSocket:
+            {
+                QSslSocket* o = dynamic_cast<QSslSocket*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QSslSocket(handler, o);
+                }
+            }
+          
 
           QJSEngine* engine = handler.getEngine();
           QTcpSocket_Wrapper* ret = new QTcpSocket_Wrapper(handler, v, false);
@@ -683,6 +715,80 @@
               return false;
           }
           return fun.call(QJSValueList() << QJSValue(RJSType_QTcpSocket::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QSslSocket(RJSApi& handler, QSslSocket* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          QSslSocket_Wrapper* ret = new QSslSocket_Wrapper(handler, v, false);
+
+          // JS: new QSslSocket('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSslSocket");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSslSocket is undefined. Use QSslSocket_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSslSocket('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSslSocket(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      QSslSocket* RJSHelper::js2cpp_QSslSocket_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSslSocket: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QSslSocket_Wrapper* wrapper = qobject_cast<QSslSocket_Wrapper*>(obj);
+          //QSslSocket_Wrapper* wrapper = dynamic_cast<QSslSocket_Wrapper*>(obj);
+          //QSslSocket_Wrapper* wrapper = (QSslSocket_Wrapper*)(obj);
+          //QSslSocket_Wrapper* wrapper = getWrapper<QSslSocket_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSslSocket_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_QSslSocket(wrapper);
+          return QSslSocket_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QSslSocket_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSslSocket: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSslSocket::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper::cpp2js_QNetworkProxyFactory(RJSApi& handler, QNetworkProxyFactory* v) {
@@ -991,6 +1097,14 @@
     
       QJSValue RJSHelper::cpp2js_QAbstractSocket(RJSApi& handler, QAbstractSocket* v) {
 
+          
+            // downcast to QTcpSocket:
+            {
+                QTcpSocket* o = dynamic_cast<QTcpSocket*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QTcpSocket(handler, o);
+                }
+            }
           
 
           QJSEngine* engine = handler.getEngine();

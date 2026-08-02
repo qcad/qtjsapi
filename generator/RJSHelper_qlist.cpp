@@ -419,6 +419,34 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsslcertificate_wrapper.h"
+        
+          #include "qsslcertificateextension_wrapper.h"
+        
+          #include "qsslcipher_wrapper.h"
+        
+          #include "qsslconfiguration_wrapper.h"
+        
+          #include "qssldiffiehellmanparameters_wrapper.h"
+        
+          #include "qsslellipticcurve_wrapper.h"
+        
+          #include "qsslerror_wrapper.h"
+        
+          #include "qsslkey_wrapper.h"
+        
+          #include "qsslkeyingmaterial_wrapper.h"
+        
+          #include "qsslpresharedkeyauthenticator_wrapper.h"
+        
+          #include "qsslserver_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qsslsocket_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
+        
           #include "qstackedlayout_wrapper.h"
         
           #include "qstackedwidget_wrapper.h"
@@ -500,10 +528,6 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
-        
-          #include "qtcpserver_wrapper.h"
-        
-          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         
@@ -1764,6 +1788,228 @@
       }
 
       bool RJSHelper::is_QList_QNetworkProxy(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QList_QSslCertificate(RJSApi& handler, const QList<QSslCertificate>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QSslCertificate(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QSslCertificate> RJSHelper::js2cpp_QList_QSslCertificate(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QSslCertificate>>(v);
+          QList<QSslCertificate> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSslCertificate: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QSslCertificate(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QSslCertificate(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QList_QSslCertificateExtension(RJSApi& handler, const QList<QSslCertificateExtension>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QSslCertificateExtension(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QSslCertificateExtension> RJSHelper::js2cpp_QList_QSslCertificateExtension(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QSslCertificateExtension>>(v);
+          QList<QSslCertificateExtension> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSslCertificateExtension: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QSslCertificateExtension(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QSslCertificateExtension(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QList_QSslCipher(RJSApi& handler, const QList<QSslCipher>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QSslCipher(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QSslCipher> RJSHelper::js2cpp_QList_QSslCipher(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QSslCipher>>(v);
+          QList<QSslCipher> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSslCipher: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QSslCipher(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QSslCipher(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QList_QSslEllipticCurve(RJSApi& handler, const QList<QSslEllipticCurve>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QSslEllipticCurve(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QSslEllipticCurve> RJSHelper::js2cpp_QList_QSslEllipticCurve(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QSslEllipticCurve>>(v);
+          QList<QSslEllipticCurve> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSslEllipticCurve: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QSslEllipticCurve(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QSslEllipticCurve(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QList_QSslError(RJSApi& handler, const QList<QSslError>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QSslError(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QSslError> RJSHelper::js2cpp_QList_QSslError(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QSslError>>(v);
+          QList<QSslError> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSslError: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QSslError(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QSslError(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QList_QSslKeyingMaterial(RJSApi& handler, const QList<QSslKeyingMaterial>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QSslKeyingMaterial(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QSslKeyingMaterial> RJSHelper::js2cpp_QList_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QSslKeyingMaterial>>(v);
+          QList<QSslKeyingMaterial> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSslKeyingMaterial: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QSslKeyingMaterial(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }

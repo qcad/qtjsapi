@@ -344,6 +344,32 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qsplitter_base.h
     generator/cpp/qsplitter_wrapper.h
     generator/cpp/qsplitterhandle_wrapper.h
+    generator/cpp/qssl_base.h
+    generator/cpp/qssl_wrapper.h
+    generator/cpp/qsslcertificate_base.h
+    generator/cpp/qsslcertificate_wrapper.h
+    generator/cpp/qsslcertificateextension_base.h
+    generator/cpp/qsslcertificateextension_wrapper.h
+    generator/cpp/qsslcipher_base.h
+    generator/cpp/qsslcipher_wrapper.h
+    generator/cpp/qsslconfiguration_base.h
+    generator/cpp/qsslconfiguration_wrapper.h
+    generator/cpp/qssldiffiehellmanparameters_base.h
+    generator/cpp/qssldiffiehellmanparameters_wrapper.h
+    generator/cpp/qsslellipticcurve_base.h
+    generator/cpp/qsslellipticcurve_wrapper.h
+    generator/cpp/qsslerror_base.h
+    generator/cpp/qsslerror_wrapper.h
+    generator/cpp/qsslkey_base.h
+    generator/cpp/qsslkey_wrapper.h
+    generator/cpp/qsslkeyingmaterial_base.h
+    generator/cpp/qsslkeyingmaterial_wrapper.h
+    generator/cpp/qsslpresharedkeyauthenticator_base.h
+    generator/cpp/qsslpresharedkeyauthenticator_wrapper.h
+    generator/cpp/qsslserver_base.h
+    generator/cpp/qsslserver_wrapper.h
+    generator/cpp/qsslsocket_base.h
+    generator/cpp/qsslsocket_wrapper.h
     generator/cpp/qstackedlayout_base.h
     generator/cpp/qstackedlayout_wrapper.h
     generator/cpp/qstackedwidget_base.h
@@ -765,6 +791,32 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qsplashscreen_wrapper.cpp
     generator/cpp/qsplitter_base.cpp
     generator/cpp/qsplitter_wrapper.cpp
+    generator/cpp/qssl_base.cpp
+    generator/cpp/qssl_wrapper.cpp
+    generator/cpp/qsslcertificate_base.cpp
+    generator/cpp/qsslcertificate_wrapper.cpp
+    generator/cpp/qsslcertificateextension_base.cpp
+    generator/cpp/qsslcertificateextension_wrapper.cpp
+    generator/cpp/qsslcipher_base.cpp
+    generator/cpp/qsslcipher_wrapper.cpp
+    generator/cpp/qsslconfiguration_base.cpp
+    generator/cpp/qsslconfiguration_wrapper.cpp
+    generator/cpp/qssldiffiehellmanparameters_base.cpp
+    generator/cpp/qssldiffiehellmanparameters_wrapper.cpp
+    generator/cpp/qsslellipticcurve_base.cpp
+    generator/cpp/qsslellipticcurve_wrapper.cpp
+    generator/cpp/qsslerror_base.cpp
+    generator/cpp/qsslerror_wrapper.cpp
+    generator/cpp/qsslkey_base.cpp
+    generator/cpp/qsslkey_wrapper.cpp
+    generator/cpp/qsslkeyingmaterial_base.cpp
+    generator/cpp/qsslkeyingmaterial_wrapper.cpp
+    generator/cpp/qsslpresharedkeyauthenticator_base.cpp
+    generator/cpp/qsslpresharedkeyauthenticator_wrapper.cpp
+    generator/cpp/qsslserver_base.cpp
+    generator/cpp/qsslserver_wrapper.cpp
+    generator/cpp/qsslsocket_base.cpp
+    generator/cpp/qsslsocket_wrapper.cpp
     generator/cpp/qstackedlayout_base.cpp
     generator/cpp/qstackedlayout_wrapper.cpp
     generator/cpp/qstackedwidget_base.cpp
