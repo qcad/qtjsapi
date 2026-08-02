@@ -1,0 +1,1023 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qstyleoption.h">
+  <class_decl name="QDebug" />
+  <class name="QStyleOption">
+    <enum name="OptionType">
+      <key>SO_Default</key>
+      <key>SO_FocusRect</key>
+      <key>SO_Button</key>
+      <key>SO_Tab</key>
+      <key>SO_MenuItem</key>
+      <key>SO_Frame</key>
+      <key>SO_ProgressBar</key>
+      <key>SO_ToolBox</key>
+      <key>SO_Header</key>
+      <key>SO_DockWidget</key>
+      <key>SO_ViewItem</key>
+      <key>SO_TabWidgetFrame</key>
+      <key>SO_TabBarBase</key>
+      <key>SO_RubberBand</key>
+      <key>SO_ToolBar</key>
+      <key>SO_GraphicsItem</key>
+      <key>SO_Complex</key>
+      <key>SO_Slider</key>
+      <key>SO_SpinBox</key>
+      <key>SO_ToolButton</key>
+      <key>SO_ComboBox</key>
+      <key>SO_TitleBar</key>
+      <key>SO_GroupBox</key>
+      <key>SO_SizeGrip</key>
+      <key>SO_CustomBase</key>
+      <key>SO_ComplexCustomBase</key>
+    </enum>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="version" default="QStyleOption::Version" />
+          <parameter const="false" type="int" modifier="" name="type" default="SO_Default" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOption" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="initFrom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOption&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOption" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionFocusRect">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionFocusRect" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionFocusRect&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionFocusRect" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionFrame">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <enum name="FrameFeature">
+      <key>None</key>
+      <key>Flat</key>
+      <key>Rounded</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionFrame" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionFrame&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionFrame" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionTabWidgetFrame">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionTabWidgetFrame" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionTabWidgetFrame&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionTabWidgetFrame" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionTabBarBase">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionTabBarBase" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionTabBarBase&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionTabBarBase" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionHeader">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <enum name="SectionPosition">
+      <key>Beginning</key>
+      <key>Middle</key>
+      <key>End</key>
+      <key>OnlyOneSection</key>
+    </enum>
+    <enum name="SelectedPosition">
+      <key>NotAdjacent</key>
+      <key>NextIsSelected</key>
+      <key>PreviousIsSelected</key>
+      <key>NextAndPreviousAreSelected</key>
+    </enum>
+    <enum name="SortIndicator">
+      <key>None</key>
+      <key>SortUp</key>
+      <key>SortDown</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionHeader" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionHeader&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionHeader" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionHeaderV2">
+    <super_list>
+      <super name="QStyleOptionHeader" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionHeaderV2" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionHeaderV2&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionHeaderV2" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionButton">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <enum name="ButtonFeature">
+      <key>None</key>
+      <key>Flat</key>
+      <key>HasMenu</key>
+      <key>DefaultButton</key>
+      <key>AutoDefaultButton</key>
+      <key>CommandLinkButton</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionButton" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionButton&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionButton" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionTab">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <enum name="TabPosition">
+      <key>Beginning</key>
+      <key>Middle</key>
+      <key>End</key>
+      <key>OnlyOneTab</key>
+      <key>Moving</key>
+    </enum>
+    <enum name="SelectedPosition">
+      <key>NotAdjacent</key>
+      <key>NextIsSelected</key>
+      <key>PreviousIsSelected</key>
+    </enum>
+    <enum name="CornerWidget">
+      <key>NoCornerWidgets</key>
+      <key>LeftCornerWidget</key>
+      <key>RightCornerWidget</key>
+    </enum>
+    <enum name="TabFeature">
+      <key>None</key>
+      <key>HasFrame</key>
+      <key>MinimumSizeHint</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionTab" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionTab&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionTab" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionToolBar">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <enum name="ToolBarPosition">
+      <key>Beginning</key>
+      <key>Middle</key>
+      <key>End</key>
+      <key>OnlyOne</key>
+    </enum>
+    <enum name="ToolBarFeature">
+      <key>None</key>
+      <key>Movable</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionToolBar" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionToolBar&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionToolBar" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionProgressBar">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionProgressBar" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionProgressBar&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionProgressBar" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionMenuItem">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <enum name="MenuItemType">
+      <key>Normal</key>
+      <key>DefaultItem</key>
+      <key>Separator</key>
+      <key>SubMenu</key>
+      <key>Scroller</key>
+      <key>TearOff</key>
+      <key>Margin</key>
+      <key>EmptyArea</key>
+    </enum>
+    <enum name="CheckType">
+      <key>NotCheckable</key>
+      <key>Exclusive</key>
+      <key>NonExclusive</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionMenuItem" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionMenuItem&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionMenuItem" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionDockWidget">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionDockWidget" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionDockWidget&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionDockWidget" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionViewItem">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <enum name="Position">
+      <key>Left</key>
+      <key>Right</key>
+      <key>Top</key>
+      <key>Bottom</key>
+    </enum>
+    <enum name="ViewItemFeature">
+      <key>None</key>
+      <key>WrapText</key>
+      <key>Alternate</key>
+      <key>HasCheckIndicator</key>
+      <key>HasDisplay</key>
+      <key>HasDecoration</key>
+      <key>IsDecoratedRootColumn</key>
+      <key>IsDecorationForRootColumn</key>
+    </enum>
+    <enum name="ViewItemPosition">
+      <key>Invalid</key>
+      <key>Beginning</key>
+      <key>Middle</key>
+      <key>End</key>
+      <key>OnlyOne</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionViewItem&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionToolBox">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <enum name="TabPosition">
+      <key>Beginning</key>
+      <key>Middle</key>
+      <key>End</key>
+      <key>OnlyOneTab</key>
+    </enum>
+    <enum name="SelectedPosition">
+      <key>NotAdjacent</key>
+      <key>NextIsSelected</key>
+      <key>PreviousIsSelected</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionToolBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionToolBox&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionToolBox" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionRubberBand">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionRubberBand" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionRubberBand&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionRubberBand" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionComplex">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="version" default="QStyleOptionComplex::Version" />
+          <parameter const="false" type="int" modifier="" name="type" default="SO_Complex" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionComplex" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionComplex&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionComplex" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionSlider">
+    <super_list>
+      <super name="QStyleOptionComplex" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionSlider" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionSlider&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionSlider" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionSpinBox">
+    <super_list>
+      <super name="QStyleOptionComplex" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionSpinBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionSpinBox&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionSpinBox" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionToolButton">
+    <super_list>
+      <super name="QStyleOptionComplex" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <enum name="ToolButtonFeature">
+      <key>None</key>
+      <key>Arrow</key>
+      <key>Menu</key>
+      <key>MenuButtonPopup</key>
+      <key>PopupDelay</key>
+      <key>HasMenu</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionToolButton" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionToolButton&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionToolButton" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionComboBox">
+    <super_list>
+      <super name="QStyleOptionComplex" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionComboBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionComboBox&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionComboBox" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionTitleBar">
+    <super_list>
+      <super name="QStyleOptionComplex" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionTitleBar" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionTitleBar&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionTitleBar" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionGroupBox">
+    <super_list>
+      <super name="QStyleOptionComplex" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionGroupBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionGroupBox&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionGroupBox" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionSizeGrip">
+    <super_list>
+      <super name="QStyleOptionComplex" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionSizeGrip" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionSizeGrip&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionSizeGrip" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="QStyleOptionGraphicsItem">
+    <super_list>
+      <super name="QStyleOption" />
+    </super_list>
+    <!--
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    -->
+    <!--
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    -->
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStyleOptionGraphicsItem" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="QStyleOptionGraphicsItem&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionGraphicsItem" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="levelOfDetailFromTransform" static="true">
+      <variant return-type="qreal" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="worldTransform" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <!--
+  <class name="QStyleHintReturn">
+    <enum name="HintReturnType">
+      <key>SH_Default</key>
+      <key>SH_Mask</key>
+      <key>SH_Variant</key>
+    </enum>
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="version" default="QStyleOption::Version" />
+          <parameter const="false" type="int" modifier="" name="type" default="SH_Default" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+  <class name="QStyleHintReturnMask">
+    <super_list>
+      <super name="QStyleHintReturn" />
+    </super_list>
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+  </class>
+  <class name="QStyleHintReturnVariant">
+    <super_list>
+      <super name="QStyleHintReturn" />
+    </super_list>
+    <enum name="StyleOptionType">
+      <key>Type</key>
+    </enum>
+    <enum name="StyleOptionVersion">
+      <key>Version</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+  </class>
+  -->
+</unit>
