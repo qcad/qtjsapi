@@ -18,6 +18,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qabstractscrollarea_wrapper.h
     generator/cpp/qabstractslider_base.h
     generator/cpp/qabstractslider_wrapper.h
+    generator/cpp/qabstractsocket_base.h
+    generator/cpp/qabstractsocket_wrapper.h
     generator/cpp/qabstractspinbox_base.h
     generator/cpp/qabstractspinbox_wrapper.h
     generator/cpp/qabstracttablemodel_wrapper.h
@@ -159,6 +161,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qheaderview_base.h
     generator/cpp/qheaderview_wrapper.h
     generator/cpp/qhelpevent_wrapper.h
+    generator/cpp/qhostaddress_base.h
+    generator/cpp/qhostaddress_wrapper.h
     generator/cpp/qicon_base.h
     generator/cpp/qicon_wrapper.h
     generator/cpp/qimage_base.h
@@ -228,6 +232,10 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qmouseevent_wrapper.h
     generator/cpp/qnamespace_base.h
     generator/cpp/qnamespace_wrapper.h
+    generator/cpp/qnetworkproxy_base.h
+    generator/cpp/qnetworkproxy_wrapper.h
+    generator/cpp/qnetworkproxyfactory_wrapper.h
+    generator/cpp/qnetworkproxyquery_wrapper.h
     generator/cpp/qobject_base.h
     generator/cpp/qobject_wrapper.h
     generator/cpp/qpagedpaintdevice_base.h
@@ -395,6 +403,10 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qtablewidgetitem_wrapper.h
     generator/cpp/qtabwidget_base.h
     generator/cpp/qtabwidget_wrapper.h
+    generator/cpp/qtcpserver_base.h
+    generator/cpp/qtcpserver_wrapper.h
+    generator/cpp/qtcpsocket_base.h
+    generator/cpp/qtcpsocket_wrapper.h
     generator/cpp/qtextblockformat_wrapper.h
     generator/cpp/qtextbrowser_base.h
     generator/cpp/qtextbrowser_wrapper.h
@@ -495,6 +507,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qabstractscrollarea_wrapper.cpp
     generator/cpp/qabstractslider_base.cpp
     generator/cpp/qabstractslider_wrapper.cpp
+    generator/cpp/qabstractsocket_base.cpp
+    generator/cpp/qabstractsocket_wrapper.cpp
     generator/cpp/qabstractspinbox_base.cpp
     generator/cpp/qabstractspinbox_wrapper.cpp
     generator/cpp/qaction_base.cpp
@@ -599,6 +613,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qguiapplication_wrapper.cpp
     generator/cpp/qheaderview_base.cpp
     generator/cpp/qheaderview_wrapper.cpp
+    generator/cpp/qhostaddress_base.cpp
+    generator/cpp/qhostaddress_wrapper.cpp
     generator/cpp/qicon_base.cpp
     generator/cpp/qicon_wrapper.cpp
     generator/cpp/qimage_base.cpp
@@ -657,6 +673,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qmimedata_wrapper.cpp
     generator/cpp/qnamespace_base.cpp
     generator/cpp/qnamespace_wrapper.cpp
+    generator/cpp/qnetworkproxy_base.cpp
+    generator/cpp/qnetworkproxy_wrapper.cpp
     generator/cpp/qobject_base.cpp
     generator/cpp/qobject_wrapper.cpp
     generator/cpp/qpagedpaintdevice_base.cpp
@@ -771,6 +789,10 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qtablewidget_wrapper.cpp
     generator/cpp/qtabwidget_base.cpp
     generator/cpp/qtabwidget_wrapper.cpp
+    generator/cpp/qtcpserver_base.cpp
+    generator/cpp/qtcpserver_wrapper.cpp
+    generator/cpp/qtcpsocket_base.cpp
+    generator/cpp/qtcpsocket_wrapper.cpp
     generator/cpp/qtextbrowser_base.cpp
     generator/cpp/qtextbrowser_wrapper.cpp
     generator/cpp/qtextcursor_base.cpp

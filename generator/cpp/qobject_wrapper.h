@@ -547,6 +547,10 @@
                 return (QObject*)(QTabWidget*)vp;
               }
               
+              if (t==RJSType_QTcpServer::getIdStatic()) {
+                return (QObject*)(QTcpServer*)vp;
+              }
+              
               if (t==RJSType_QTextBrowser::getIdStatic()) {
                 return (QObject*)(QTextBrowser*)vp;
               }

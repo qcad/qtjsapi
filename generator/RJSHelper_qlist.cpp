@@ -37,6 +37,10 @@
         
           #include "qabstractslider_wrapper.h"
         
+          #include "qabstractsocket_wrapper.h"
+        
+          #include "qiodevice_wrapper.h"
+        
           #include "qabstractspinbox_wrapper.h"
         
           #include "qaction_wrapper.h"
@@ -76,8 +80,6 @@
           #include "qbuffer_wrapper.h"
         
           #include "qiodevicebase_wrapper.h"
-        
-          #include "qiodevice_wrapper.h"
         
           #include "qbuttongroup_wrapper.h"
         
@@ -241,6 +243,8 @@
         
           #include "qheaderview_wrapper.h"
         
+          #include "qhostaddress_wrapper.h"
+        
           #include "qicon_wrapper.h"
         
           #include "qimage_wrapper.h"
@@ -302,6 +306,12 @@
           #include "qmimedata_wrapper.h"
         
           #include "qkeycombination_wrapper.h"
+        
+          #include "qnetworkproxyquery_wrapper.h"
+        
+          #include "qnetworkproxy_wrapper.h"
+        
+          #include "qnetworkproxyfactory_wrapper.h"
         
           #include "qpagedpaintdevice_wrapper.h"
         
@@ -490,6 +500,10 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         
@@ -1713,6 +1727,43 @@
       }
 
       bool RJSHelper::is_QList_qreal(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QList_QNetworkProxy(RJSApi& handler, const QList<QNetworkProxy>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QNetworkProxy(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QNetworkProxy> RJSHelper::js2cpp_QList_QNetworkProxy(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QNetworkProxy>>(v);
+          QList<QNetworkProxy> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QNetworkProxy: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QNetworkProxy(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QNetworkProxy(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }

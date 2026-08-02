@@ -37,6 +37,10 @@
         
           #include "qabstractslider_wrapper.h"
         
+          #include "qabstractsocket_wrapper.h"
+        
+          #include "qiodevice_wrapper.h"
+        
           #include "qabstractspinbox_wrapper.h"
         
           #include "qaction_wrapper.h"
@@ -76,8 +80,6 @@
           #include "qbuffer_wrapper.h"
         
           #include "qiodevicebase_wrapper.h"
-        
-          #include "qiodevice_wrapper.h"
         
           #include "qbuttongroup_wrapper.h"
         
@@ -241,6 +243,8 @@
         
           #include "qheaderview_wrapper.h"
         
+          #include "qhostaddress_wrapper.h"
+        
           #include "qicon_wrapper.h"
         
           #include "qimage_wrapper.h"
@@ -302,6 +306,12 @@
           #include "qmimedata_wrapper.h"
         
           #include "qkeycombination_wrapper.h"
+        
+          #include "qnetworkproxyquery_wrapper.h"
+        
+          #include "qnetworkproxy_wrapper.h"
+        
+          #include "qnetworkproxyfactory_wrapper.h"
         
           #include "qpagedpaintdevice_wrapper.h"
         
@@ -490,6 +500,10 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         

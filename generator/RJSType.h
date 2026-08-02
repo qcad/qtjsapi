@@ -273,6 +273,90 @@
     
 
   
+      class QTJSAPI_EXPORT  RJSType_QHostAddress : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHostAddress";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHostAddress();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QNetworkProxy : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QNetworkProxy";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QNetworkProxy();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QNetworkProxyQuery : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QNetworkProxyQuery";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QNetworkProxyQuery();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
       class QTJSAPI_EXPORT  RJSType_QBitmap : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -3358,6 +3442,62 @@
     
 
   
+      class QTJSAPI_EXPORT  RJSType_QTcpSocket : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QTcpSocket";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QTcpSocket();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QNetworkProxyFactory : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QNetworkProxyFactory";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QNetworkProxyFactory();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
       class QTJSAPI_EXPORT  RJSType_QAbstractFileIconProvider : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -3431,6 +3571,34 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_QAbstractTableModel();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QAbstractSocket : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QAbstractSocket";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QAbstractSocket();
           //}
 
           Q_INVOKABLE
@@ -8211,6 +8379,34 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_QWindow();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      class QTJSAPI_EXPORT  RJSType_QTcpServer : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QTcpServer";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QTcpServer();
           //}
 
           Q_INVOKABLE

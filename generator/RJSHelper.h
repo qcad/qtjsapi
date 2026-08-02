@@ -254,6 +254,12 @@
           virtual QAbstractSlider* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class QAbstractSocket:
+        class RJSBasecaster_QAbstractSocket {
+        public:
+          virtual QAbstractSocket* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class QAbstractSpinBox:
         class RJSBasecaster_QAbstractSpinBox {
         public:
@@ -848,6 +854,12 @@
           virtual QHeaderView* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class QHostAddress:
+        class RJSBasecaster_QHostAddress {
+        public:
+          virtual QHostAddress* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class QIcon:
         class RJSBasecaster_QIcon {
         public:
@@ -1056,6 +1068,24 @@
         class RJSBasecaster_QKeyCombination {
         public:
           virtual QKeyCombination* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QNetworkProxyQuery:
+        class RJSBasecaster_QNetworkProxyQuery {
+        public:
+          virtual QNetworkProxyQuery* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QNetworkProxy:
+        class RJSBasecaster_QNetworkProxy {
+        public:
+          virtual QNetworkProxy* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QNetworkProxyFactory:
+        class RJSBasecaster_QNetworkProxyFactory {
+        public:
+          virtual QNetworkProxyFactory* castToBase(int t, void* vp) = 0;
         };
         
         // Base class for basecasters that can cast void* to base class QObject:
@@ -1635,6 +1665,18 @@
         class RJSBasecaster_QTabWidget {
         public:
           virtual QTabWidget* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QTcpServer:
+        class RJSBasecaster_QTcpServer {
+        public:
+          virtual QTcpServer* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QTcpSocket:
+        class RJSBasecaster_QTcpSocket {
+        public:
+          virtual QTcpSocket* castToBase(int t, void* vp) = 0;
         };
         
         // Base class for basecasters that can cast void* to base class QTextBrowser:
@@ -3469,6 +3511,58 @@
       static ushort js2cpp_ushort(RJSApi& handler, const QJSValue& v);
       static bool is_ushort(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QHostAddress_ConversionMode(RJSApi& handler, QHostAddress::ConversionMode v);
+      static QHostAddress::ConversionMode js2cpp_QHostAddress_ConversionMode(RJSApi& handler, const QJSValue& v);
+      static bool is_QHostAddress_ConversionMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QHostAddress_ConversionModeFlag(RJSApi& handler, QHostAddress::ConversionModeFlag v);
+      static QHostAddress::ConversionModeFlag js2cpp_QHostAddress_ConversionModeFlag(RJSApi& handler, const QJSValue& v);
+      static bool is_QHostAddress_ConversionModeFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QHostAddress_SpecialAddress(RJSApi& handler, QHostAddress::SpecialAddress v);
+      static QHostAddress::SpecialAddress js2cpp_QHostAddress_SpecialAddress(RJSApi& handler, const QJSValue& v);
+      static bool is_QHostAddress_SpecialAddress(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QHostAddress_NetworkLayerProtocol(RJSApi& handler, QHostAddress::NetworkLayerProtocol v);
+      static QHostAddress::NetworkLayerProtocol js2cpp_QHostAddress_NetworkLayerProtocol(RJSApi& handler, const QJSValue& v);
+      static bool is_QHostAddress_NetworkLayerProtocol(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSocket_SocketError(RJSApi& handler, QAbstractSocket::SocketError v);
+      static QAbstractSocket::SocketError js2cpp_QAbstractSocket_SocketError(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSocket_SocketError(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSocket_SocketType(RJSApi& handler, QAbstractSocket::SocketType v);
+      static QAbstractSocket::SocketType js2cpp_QAbstractSocket_SocketType(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSocket_SocketType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSocket_NetworkLayerProtocol(RJSApi& handler, QAbstractSocket::NetworkLayerProtocol v);
+      static QAbstractSocket::NetworkLayerProtocol js2cpp_QAbstractSocket_NetworkLayerProtocol(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSocket_NetworkLayerProtocol(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSocket_SocketState(RJSApi& handler, QAbstractSocket::SocketState v);
+      static QAbstractSocket::SocketState js2cpp_QAbstractSocket_SocketState(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSocket_SocketState(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSocket_PauseMode(RJSApi& handler, QAbstractSocket::PauseMode v);
+      static QAbstractSocket::PauseMode js2cpp_QAbstractSocket_PauseMode(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSocket_PauseMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSocket_BindFlag(RJSApi& handler, QAbstractSocket::BindFlag v);
+      static QAbstractSocket::BindFlag js2cpp_QAbstractSocket_BindFlag(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSocket_BindFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSocket_SocketOption(RJSApi& handler, QAbstractSocket::SocketOption v);
+      static QAbstractSocket::SocketOption js2cpp_QAbstractSocket_SocketOption(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSocket_SocketOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSocket_BindMode(RJSApi& handler, QAbstractSocket::BindMode v);
+      static QAbstractSocket::BindMode js2cpp_QAbstractSocket_BindMode(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSocket_BindMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QNetworkProxyQuery_QueryType(RJSApi& handler, QNetworkProxyQuery::QueryType v);
+      static QNetworkProxyQuery::QueryType js2cpp_QNetworkProxyQuery_QueryType(RJSApi& handler, const QJSValue& v);
+      static bool is_QNetworkProxyQuery_QueryType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
   // ------------------------------------
   // QSharedPointer types (non-copyable):
   // ------------------------------------
@@ -3481,6 +3575,21 @@
   // wrapped types:
   // --------------
   
+      static QJSValue cpp2js_QHostAddress(RJSApi& handler, const QHostAddress* v);
+      static QJSValue cpp2js_QHostAddress(RJSApi& handler, const QHostAddress& v);
+      static QHostAddress js2cpp_QHostAddress(RJSApi& handler, const QJSValue& v);
+      static bool is_QHostAddress(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QNetworkProxy(RJSApi& handler, const QNetworkProxy* v);
+      static QJSValue cpp2js_QNetworkProxy(RJSApi& handler, const QNetworkProxy& v);
+      static QNetworkProxy js2cpp_QNetworkProxy(RJSApi& handler, const QJSValue& v);
+      static bool is_QNetworkProxy(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QNetworkProxyQuery(RJSApi& handler, const QNetworkProxyQuery* v);
+      static QJSValue cpp2js_QNetworkProxyQuery(RJSApi& handler, const QNetworkProxyQuery& v);
+      static QNetworkProxyQuery js2cpp_QNetworkProxyQuery(RJSApi& handler, const QJSValue& v);
+      static bool is_QNetworkProxyQuery(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QBitmap(RJSApi& handler, const QBitmap* v);
       static QJSValue cpp2js_QBitmap(RJSApi& handler, const QBitmap& v);
       static QBitmap js2cpp_QBitmap(RJSApi& handler, const QJSValue& v);
@@ -4038,6 +4147,14 @@
   // wrapped pointer types:
   // ----------------------
   
+      static QJSValue cpp2js_QTcpSocket(RJSApi& handler, QTcpSocket* v);
+      static QTcpSocket* js2cpp_QTcpSocket_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QTcpSocket_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QNetworkProxyFactory(RJSApi& handler, QNetworkProxyFactory* v);
+      static QNetworkProxyFactory* js2cpp_QNetworkProxyFactory_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QNetworkProxyFactory_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QAbstractFileIconProvider(RJSApi& handler, QAbstractFileIconProvider* v);
       static QAbstractFileIconProvider* js2cpp_QAbstractFileIconProvider_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractFileIconProvider_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -4049,6 +4166,10 @@
       static QJSValue cpp2js_QAbstractTableModel(RJSApi& handler, QAbstractTableModel* v);
       static QAbstractTableModel* js2cpp_QAbstractTableModel_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QAbstractTableModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QAbstractSocket(RJSApi& handler, QAbstractSocket* v);
+      static QAbstractSocket* js2cpp_QAbstractSocket_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QAbstractSocket_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QActionEvent(RJSApi& handler, QActionEvent* v);
       static QActionEvent* js2cpp_QActionEvent_ptr(RJSApi& handler, const QJSValue& v);
@@ -4873,6 +4994,11 @@
       static QWindow* js2cpp_QWindow_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QWindow_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QTcpServer(RJSApi& handler, QTcpServer* v);
+      static QJSValue cpp2js_QTcpServer(RJSApi& handler, const QTcpServer* v);
+      static QTcpServer* js2cpp_QTcpServer_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QTcpServer_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
   // ------------
   // QList types:
   // ------------
@@ -5008,6 +5134,10 @@
       static QJSValue cpp2js_QList_qreal(RJSApi& handler, const QList<qreal>& v);
       static QList<qreal> js2cpp_QList_qreal(RJSApi& handler, const QJSValue& v);
       static bool is_QList_qreal(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QList_QNetworkProxy(RJSApi& handler, const QList<QNetworkProxy>& v);
+      static QList<QNetworkProxy> js2cpp_QList_QNetworkProxy(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QNetworkProxy(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QModelIndexList(RJSApi& handler, const QModelIndexList& v);
       static QModelIndexList js2cpp_QModelIndexList(RJSApi& handler, const QJSValue& v);

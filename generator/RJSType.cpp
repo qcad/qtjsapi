@@ -146,6 +146,51 @@
       
 
   
+      int RJSType_QHostAddress::id = -1;
+
+      int RJSType_QHostAddress::getId() const {
+          return RJSType_QHostAddress::getIdStatic();
+      }
+
+      int RJSType_QHostAddress::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHostAddress());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QNetworkProxy::id = -1;
+
+      int RJSType_QNetworkProxy::getId() const {
+          return RJSType_QNetworkProxy::getIdStatic();
+      }
+
+      int RJSType_QNetworkProxy::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QNetworkProxy());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QNetworkProxyQuery::id = -1;
+
+      int RJSType_QNetworkProxyQuery::getId() const {
+          return RJSType_QNetworkProxyQuery::getIdStatic();
+      }
+
+      int RJSType_QNetworkProxyQuery::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QNetworkProxyQuery());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QBitmap::id = -1;
 
       int RJSType_QBitmap::getId() const {
@@ -1801,6 +1846,36 @@
       
 
   
+      int RJSType_QTcpSocket::id = -1;
+
+      int RJSType_QTcpSocket::getId() const {
+          return RJSType_QTcpSocket::getIdStatic();
+      }
+
+      int RJSType_QTcpSocket::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QTcpSocket());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QNetworkProxyFactory::id = -1;
+
+      int RJSType_QNetworkProxyFactory::getId() const {
+          return RJSType_QNetworkProxyFactory::getIdStatic();
+      }
+
+      int RJSType_QNetworkProxyFactory::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QNetworkProxyFactory());
+          }
+          return id;
+      }
+
+
+      
       int RJSType_QAbstractFileIconProvider::id = -1;
 
       int RJSType_QAbstractFileIconProvider::getId() const {
@@ -1840,6 +1915,21 @@
       int RJSType_QAbstractTableModel::getIdStatic() {
           if (id<0) {
               id = RJSTypeEnum::reserve(new RJSType_QAbstractTableModel());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QAbstractSocket::id = -1;
+
+      int RJSType_QAbstractSocket::getId() const {
+          return RJSType_QAbstractSocket::getIdStatic();
+      }
+
+      int RJSType_QAbstractSocket::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QAbstractSocket());
           }
           return id;
       }
@@ -4410,6 +4500,21 @@
       int RJSType_QWindow::getIdStatic() {
           if (id<0) {
               id = RJSTypeEnum::reserve(new RJSType_QWindow());
+          }
+          return id;
+      }
+
+
+      
+      int RJSType_QTcpServer::id = -1;
+
+      int RJSType_QTcpServer::getId() const {
+          return RJSType_QTcpServer::getIdStatic();
+      }
+
+      int RJSType_QTcpServer::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QTcpServer());
           }
           return id;
       }

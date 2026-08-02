@@ -361,6 +361,19 @@
     <type>ulong</type>
     <type>unsignedlong</type>
     <type>ushort</type>
+    <type flags="true">QHostAddress::ConversionMode</type>
+    <type>QHostAddress::ConversionModeFlag</type>
+    <type>QHostAddress::SpecialAddress</type>
+    <type>QHostAddress::NetworkLayerProtocol</type>
+    <type>QAbstractSocket::SocketError</type>
+    <type>QAbstractSocket::SocketType</type>
+    <type>QAbstractSocket::NetworkLayerProtocol</type>
+    <type>QAbstractSocket::SocketState</type>
+    <type>QAbstractSocket::PauseMode</type>
+    <type>QAbstractSocket::BindFlag</type>
+    <type>QAbstractSocket::SocketOption</type>
+    <type flags="true">QAbstractSocket::BindMode</type>
+    <type>QNetworkProxyQuery::QueryType</type>
   </primitive>
 
   <shared_ptr_no_copy>
@@ -368,6 +381,9 @@
   </shared_ptr_no_copy>
 
   <wrapped>
+    <type>QHostAddress</type>
+    <type>QNetworkProxy</type>
+    <type>QNetworkProxyQuery</type>
     <type>QBitmap</type>
     <type>QBrush</type>
     <type>QByteArray</type>
@@ -481,9 +497,12 @@
   </wrapped>
 
   <wrapped_ptr>
+    <type>QTcpSocket</type>
+    <type>QNetworkProxyFactory</type>
     <type>QAbstractFileIconProvider</type>
     <type>QAbstractListModel</type>
     <type>QAbstractTableModel</type>
+    <type>QAbstractSocket</type>
     <type>QActionEvent</type>
     <type>QCompleter</type>
     <type>QContextMenuEvent</type>
@@ -660,6 +679,7 @@
     <type>QValidator</type>
     <type>QWidgetAction</type>
     <type>QWindow</type>
+    <type>QTcpServer</type>
   </wrapped_qobject_ptr>
 
   <qlist>
@@ -693,6 +713,7 @@
     <type>QList&lt;double&gt;</type>
     <type>QList&lt;int&gt;</type>
     <type>QList&lt;qreal&gt;</type>
+    <type>QList&lt;QNetworkProxy&gt;</type>
     <type>QModelIndexList</type>
     <type>QStringList</type>
   </qlist>

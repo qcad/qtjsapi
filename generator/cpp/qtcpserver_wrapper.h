@@ -1,8 +1,8 @@
 
   // Auto generated
   
-    #ifndef QIODEVICE_H_WRAPPER
-    #define QIODEVICE_H_WRAPPER
+    #ifndef QTCPSERVER_H_WRAPPER
+    #define QTCPSERVER_H_WRAPPER
 
     // include header:
     //#include "header_h.h"
@@ -12,20 +12,20 @@
 
     #include "RJSWrapperObj.h"
   
-        #include <QByteArray>
+        #include <QNetworkProxy>
       
-        #include <QDebug>
+        #include <QTcpSocket>
       
     #include <QQmlEngine>
     
         #include "RJSType.h"
       
-        #include <QIODevice>
+        #include <QTcpServer>
       
     // static functions implementation in singleton wrapper:
     
-    // wrapper class for QIODevice
-    class QTJSAPI_EXPORT QIODevice_Wrapper : public RJSWrapperObj {
+    // wrapper class for QTcpServer
+    class QTJSAPI_EXPORT QTcpServer_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -40,94 +40,57 @@
 
     private:
       // disable copy constructor:
-      QIODevice_Wrapper(const QIODevice_Wrapper&);
+      QTcpServer_Wrapper(const QTcpServer_Wrapper&);
 
     public:
-      // initialization of QIODevice:
+      // initialization of QTcpServer:
       static void init(RJSApi& handler);
 
       
-        static QIODevice* castToBase(void* vp, /*RJSType ID*/ int t) {
+        static QTcpServer* castToBase(void* vp, /*RJSType ID*/ int t) {
           
             // check if pointer points to derrived type:
             
-              if (t==RJSType_QAbstractSocket::getIdStatic()) {
-                return (QIODevice*)(QAbstractSocket*)vp;
-              }
-              
-              if (t==RJSType_QBuffer::getIdStatic()) {
-                return (QIODevice*)(QBuffer*)vp;
-              }
-              
-              if (t==RJSType_QFile::getIdStatic()) {
-                return (QIODevice*)(QFile*)vp;
-              }
-              
-              if (t==RJSType_QFileDevice::getIdStatic()) {
-                return (QIODevice*)(QFileDevice*)vp;
-              }
-              
-              if (t==RJSType_QProcess::getIdStatic()) {
-                return (QIODevice*)(QProcess*)vp;
-              }
-              
 
-          // hook for modules to cast from other types to base QIODevice:
-          for (int i=0; i<basecasters_QIODevice.length(); i++) {
-            RJSBasecaster_QIODevice* basecaster = basecasters_QIODevice[i];
-            QIODevice* ret = basecaster->castToBase(t, vp);
+          // hook for modules to cast from other types to base QTcpServer:
+          for (int i=0; i<basecasters_QTcpServer.length(); i++) {
+            RJSBasecaster_QTcpServer* basecaster = basecasters_QTcpServer[i];
+            QTcpServer* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
               return ret;
             }
           }
 
-          // object is a pointer to base class QIODevice:
-          if (t==RJSType_QIODevice::getIdStatic()) {
-            return (QIODevice*)vp;
+          // object is a pointer to base class QTcpServer:
+          if (t==RJSType_QTcpServer::getIdStatic()) {
+            return (QTcpServer*)vp;
           }
 
-          qWarning() << "QIODevice_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
+          qWarning() << "QTcpServer_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
         }
 
-        static QIODevice* getWrappedBase(RJSWrapper* wrapper) {
+        static QTcpServer* getWrappedBase(RJSWrapper* wrapper) {
           int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
-              //qWarning() << "getWrapped_QIODevice*: wrapper wraps NULL";
+              //qWarning() << "getWrapped_QTcpServer*: wrapper wraps NULL";
           }
 
-          QIODevice* ret = castToBase(vp, t);
+          QTcpServer* ret = castToBase(vp, t);
           if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QIODevice*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+              qWarning() << "QTcpServer*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
           }
           return ret;
         }
       
-        // enums:
-        
-  enum OpenModeFlag {
-    NotOpen = QIODevice::NotOpen,
-ReadOnly = QIODevice::ReadOnly,
-WriteOnly = QIODevice::WriteOnly,
-ReadWrite = QIODevice::ReadWrite,
-Append = QIODevice::Append,
-Truncate = QIODevice::Truncate,
-Text = QIODevice::Text,
-Unbuffered = QIODevice::Unbuffered,
-NewOnly = QIODevice::NewOnly,
-ExistingOnly = QIODevice::ExistingOnly,
-
-  };
-  Q_ENUM(OpenModeFlag)
-
     /*
     // special constructor used as prototype:
     
           Q_INVOKABLE 
-          QIODevice_Wrapper(QJSEngine* e);
+          QTcpServer_Wrapper(QJSEngine* e);
         
     */
 
@@ -135,12 +98,12 @@ ExistingOnly = QIODevice::ExistingOnly,
       // special constructor to wrap existing object:
       
             //Q_INVOKABLE 
-            QIODevice_Wrapper(RJSApi& h, QIODevice* o, bool wrappedCreated);
+            QTcpServer_Wrapper(RJSApi& h, QTcpServer* o, bool wrappedCreated);
           
 
       // destructor:
       
-          virtual ~QIODevice_Wrapper();
+          virtual ~QTcpServer_Wrapper();
         
     // initialization of signal forwarding
     
@@ -149,14 +112,41 @@ ExistingOnly = QIODevice::ExistingOnly,
 
   // constructors:
   
-#ifndef QT_NO_QOBJECT
+    // Class: QTcpServer
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              QTcpServer_Wrapper
+                
+              (
+
+                
+                  // RJSApi:
+                  QObject* h
+                  
+                  ,
+                  
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+#ifndef QT_NO_NETWORKPROXY
 
 #endif
 
 
     // non-static functions:
     
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -177,7 +167,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: setObjectName
     // Source: QObject
     // Static: false
@@ -200,7 +190,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: isWidgetType
     // Source: QObject
     // Static: false
@@ -221,7 +211,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: isWindowType
     // Source: QObject
     // Static: false
@@ -242,7 +232,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: signalsBlocked
     // Source: QObject
     // Static: false
@@ -263,7 +253,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: blockSignals
     // Source: QObject
     // Static: false
@@ -286,7 +276,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: findChild
     // Source: QObject
     // Static: false
@@ -315,7 +305,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: children
     // Source: QObject
     // Static: false
@@ -336,7 +326,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: setParent
     // Source: QObject
     // Static: false
@@ -359,7 +349,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: installEventFilter
     // Source: QObject
     // Static: false
@@ -382,7 +372,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: removeEventFilter
     // Source: QObject
     // Static: false
@@ -405,7 +395,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: dumpObjectTree
     // Source: QObject
     // Static: false
@@ -424,7 +414,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: dumpObjectInfo
     // Source: QObject
     // Static: false
@@ -443,7 +433,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: setProperty
     // Source: QObject
     // Static: false
@@ -470,7 +460,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: property
     // Source: QObject
     // Static: false
@@ -495,7 +485,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: dynamicPropertyNames
     // Source: QObject
     // Static: false
@@ -516,7 +506,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: parent
     // Source: QObject
     // Static: false
@@ -537,7 +527,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: deleteLater
     // Source: QObject
     // Static: false
@@ -556,309 +546,34 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
-    // Function: openMode
+    // Class: QTcpServer
+    // Function: listen
     // Source: 
     // Static: false
-    // Parameters: 0
+    // Parameters: 2
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  openMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: setTextModeEnabled
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextModeEnabled
+                  listen
               (
 
                 
   const QJSValue& 
   a1
       = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: isTextModeEnabled
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTextModeEnabled
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: isOpen
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isOpen
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: isReadable
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isReadable
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: isWritable
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWritable
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: isSequential
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSequential
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: readChannelCount
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readChannelCount
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: writeChannelCount
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeChannelCount
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: currentReadChannel
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentReadChannel
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: setCurrentReadChannel
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentReadChannel
-              (
-
-                
+    , 
   const QJSValue& 
-  a1
+  a2
       = QJSValue()
     
               )
               
               ;
             
-    // Class: QIODevice
-    // Function: currentWriteChannel
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentWriteChannel
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: setCurrentWriteChannel
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentWriteChannel
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: open
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  open
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: close
     // Source: 
     // Static: false
@@ -877,8 +592,8 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
-    // Function: pos
+    // Class: QTcpServer
+    // Function: isListening
     // Source: 
     // Static: false
     // Parameters: 0
@@ -888,7 +603,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               Q_INVOKABLE 
               
                   QJSValue 
-                  pos
+                  isListening
               (
 
                 
@@ -898,29 +613,8 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
-    // Function: size
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: seek
+    // Class: QTcpServer
+    // Function: setMaxPendingConnections
     // Source: 
     // Static: false
     // Parameters: 1
@@ -930,7 +624,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               Q_INVOKABLE 
               
                   QJSValue 
-                  seek
+                  setMaxPendingConnections
               (
 
                 
@@ -942,8 +636,8 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
-    // Function: atEnd
+    // Class: QTcpServer
+    // Function: maxPendingConnections
     // Source: 
     // Static: false
     // Parameters: 0
@@ -953,7 +647,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               Q_INVOKABLE 
               
                   QJSValue 
-                  atEnd
+                  maxPendingConnections
               (
 
                 
@@ -963,27 +657,31 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
-    // Function: reset
+    // Class: QTcpServer
+    // Function: setListenBacklogSize
     // Source: 
     // Static: false
-    // Parameters: 0
+    // Parameters: 1
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  reset
+                  setListenBacklogSize
               (
 
                 
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
               )
               
               ;
             
-    // Class: QIODevice
-    // Function: bytesAvailable
+    // Class: QTcpServer
+    // Function: listenBacklogSize
     // Source: 
     // Static: false
     // Parameters: 0
@@ -993,7 +691,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               Q_INVOKABLE 
               
                   QJSValue 
-                  bytesAvailable
+                  listenBacklogSize
               (
 
                 
@@ -1003,8 +701,8 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
-    // Function: bytesToWrite
+    // Class: QTcpServer
+    // Function: serverPort
     // Source: 
     // Static: false
     // Parameters: 0
@@ -1014,7 +712,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               Q_INVOKABLE 
               
                   QJSValue 
-                  bytesToWrite
+                  serverPort
               (
 
                 
@@ -1024,8 +722,8 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
-    // Function: readAll
+    // Class: QTcpServer
+    // Function: serverAddress
     // Source: 
     // Static: false
     // Parameters: 0
@@ -1035,26 +733,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               Q_INVOKABLE 
               
                   QJSValue 
-                  readAll
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: canReadLine
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  canReadLine
+                  serverAddress
               (
 
                 
@@ -1064,27 +743,31 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
-    // Function: startTransaction
+    // Class: QTcpServer
+    // Function: waitForNewConnection
     // Source: 
     // Static: false
-    // Parameters: 0
+    // Parameters: 1
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  startTransaction
+                  waitForNewConnection
               (
 
                 
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
               )
               
               ;
             
-    // Class: QIODevice
-    // Function: commitTransaction
+    // Class: QTcpServer
+    // Function: hasPendingConnections
     // Source: 
     // Static: false
     // Parameters: 0
@@ -1094,45 +777,7 @@ ExistingOnly = QIODevice::ExistingOnly,
               Q_INVOKABLE 
               
                   QJSValue 
-                  commitTransaction
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: rollbackTransaction
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rollbackTransaction
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: isTransactionStarted
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTransactionStarted
+                  hasPendingConnections
               (
 
                 
@@ -1142,149 +787,47 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-    // Class: QIODevice
-    // Function: write
+    // Class: QTcpServer
+    // Function: nextPendingConnection
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 0
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  write
+                  nextPendingConnection
               (
 
                 
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
               )
               
               ;
             
-    // Class: QIODevice
-    // Function: skip
+    // Class: QTcpServer
+    // Function: serverError
     // Source: 
     // Static: false
-    // Parameters: 1
+    // Parameters: 0
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  skip
+                  serverError
               (
 
                 
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
               )
+              
+                const
               
               ;
             
-    // Class: QIODevice
-    // Function: waitForReadyRead
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  waitForReadyRead
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: waitForBytesWritten
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  waitForBytesWritten
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: ungetChar
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ungetChar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QIODevice
-    // Function: putChar
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  putChar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: QIODevice
+    // Class: QTcpServer
     // Function: errorString
     // Source: 
     // Static: false
@@ -1305,129 +848,89 @@ ExistingOnly = QIODevice::ExistingOnly,
               
               ;
             
-#ifndef QT_NO_QOBJECT
-
-    // Class: QIODevice
-    // Function: readyRead
+    // Class: QTcpServer
+    // Function: pauseAccepting
     // Source: 
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void readyRead(
-                
-              );
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  pauseAccepting
+              (
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void readyReadEmitter(
                 
-              );
+              )
+              
+              ;
             
-    // Class: QIODevice
-    // Function: channelReadyRead
+    // Class: QTcpServer
+    // Function: resumeAccepting
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  resumeAccepting
+              (
+
+                
+              )
+              
+              ;
+            
+#ifndef QT_NO_NETWORKPROXY
+
+    // Class: QTcpServer
+    // Function: setProxy
     // Source: 
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void channelReadyRead(
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setProxy
+              (
+
                 
   const QJSValue& 
   a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void channelReadyReadEmitter(
-                int channel
-              );
+      = QJSValue()
+    
+              )
+              
+              ;
             
-    // Class: QIODevice
-    // Function: bytesWritten
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void bytesWritten(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void bytesWrittenEmitter(
-                qint64 bytes
-              );
-            
-    // Class: QIODevice
-    // Function: channelBytesWritten
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void channelBytesWritten(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void channelBytesWrittenEmitter(
-                int channel, qint64 bytes
-              );
-            
-    // Class: QIODevice
-    // Function: aboutToClose
+    // Class: QTcpServer
+    // Function: proxy
     // Source: 
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void aboutToClose(
-                
-              );
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  proxy
+              (
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void aboutToCloseEmitter(
                 
-              );
-            
-    // Class: QIODevice
-    // Function: readChannelFinished
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void readChannelFinished(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void readChannelFinishedEmitter(
-                
-              );
+              )
+              
+                const
+              
+              ;
             
 #endif
 
@@ -1462,19 +965,19 @@ ExistingOnly = QIODevice::ExistingOnly,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QIODevice::getIdStatic();
+          return RJSType_QTcpServer::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
         Q_INVOKABLE
         virtual bool isCppOwnership() const {
           
-              return true;
+              return false;
             
         }
 
         // get wrapped object:
-        QIODevice* getWrapped() {
+        QTcpServer* getWrapped() {
           
             if (wrapped!=nullptr) {
               return wrapped;
@@ -1484,7 +987,7 @@ ExistingOnly = QIODevice::ExistingOnly,
         }
 
         // get wrapped object (const):
-        QIODevice* getWrapped() const {
+        QTcpServer* getWrapped() const {
           
             if (wrapped!=nullptr) {
               return wrapped;
@@ -1540,25 +1043,25 @@ ExistingOnly = QIODevice::ExistingOnly,
 
         
           // wrapped object:
-          QIODevice* wrapped;
+          QTcpServer* wrapped;
         
 
         bool wrappedCreated;
       
       private:
         // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QIODevice*> basecasters_QIODevice;
+        static QList<RJSBasecaster_QTcpServer*> basecasters_QTcpServer;
 
       public:
-        static void registerBasecaster_QIODevice(RJSBasecaster_QIODevice* bc) {
-          basecasters_QIODevice.append(bc);
+        static void registerBasecaster_QTcpServer(RJSBasecaster_QTcpServer* bc) {
+          basecasters_QTcpServer.append(bc);
         }
       
     };
 
-    Q_DECLARE_METATYPE(QIODevice_Wrapper*)
+    Q_DECLARE_METATYPE(QTcpServer_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QIODevice_Wrapper, "org.qcad.QIODevice_Wrapper")
+    Q_DECLARE_INTERFACE(QTcpServer_Wrapper, "org.qcad.QTcpServer_Wrapper")
 
   
   #endif

@@ -37,6 +37,10 @@
         
           #include "qabstractslider_wrapper.h"
         
+          #include "qabstractsocket_wrapper.h"
+        
+          #include "qiodevice_wrapper.h"
+        
           #include "qabstractspinbox_wrapper.h"
         
           #include "qaction_wrapper.h"
@@ -76,8 +80,6 @@
           #include "qbuffer_wrapper.h"
         
           #include "qiodevicebase_wrapper.h"
-        
-          #include "qiodevice_wrapper.h"
         
           #include "qbuttongroup_wrapper.h"
         
@@ -241,6 +243,8 @@
         
           #include "qheaderview_wrapper.h"
         
+          #include "qhostaddress_wrapper.h"
+        
           #include "qicon_wrapper.h"
         
           #include "qimage_wrapper.h"
@@ -302,6 +306,12 @@
           #include "qmimedata_wrapper.h"
         
           #include "qkeycombination_wrapper.h"
+        
+          #include "qnetworkproxyquery_wrapper.h"
+        
+          #include "qnetworkproxy_wrapper.h"
+        
+          #include "qnetworkproxyfactory_wrapper.h"
         
           #include "qpagedpaintdevice_wrapper.h"
         
@@ -491,6 +501,10 @@
         
           #include "qtabwidget_wrapper.h"
         
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
+        
           #include "qtextbrowser_wrapper.h"
         
           #include "qtextedit_wrapper.h"
@@ -597,6 +611,354 @@
   // wrapped types:
   // --------------
   
+      QJSValue RJSHelper::cpp2js_QHostAddress(RJSApi& handler, const QHostAddress* v) {
+          QJSEngine* engine = handler.getEngine();
+          QHostAddress_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QHostAddress_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QHostAddress object:
+              ret = new QHostAddress_Wrapper(handler, new QHostAddress(*v), true);
+          }
+
+          // JS: new QHostAddress('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHostAddress");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHostAddress is undefined. Use QHostAddress_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHostAddress('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHostAddress(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHostAddress(RJSApi& handler, const QHostAddress& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QHostAddress object:
+          QHostAddress_Wrapper* ret = new QHostAddress_Wrapper(handler, new QHostAddress(v), true);
+
+          // JS: new QHostAddress('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHostAddress");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHostAddress is undefined. Use QHostAddress_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHostAddress('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHostAddress(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QHostAddress RJSHelper::js2cpp_QHostAddress(RJSApi& handler, const QJSValue& v) {
+          /*
+          QHostAddress_Wrapper* wrapper = getWrapper<QHostAddress_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHostAddress: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QHostAddress();
+          }
+          //return *(QHostAddress*)wrapper->getWrappedVoid();
+          QHostAddress* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QHostAddress: wrapped pointer is NULL";
+              return QHostAddress();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHostAddress: not a QObject";
+              return QHostAddress();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHostAddress_ptr: no wrapper";
+              handler.trace();
+              return QHostAddress();
+          }
+          //QHostAddress* ret = getWrapped_QHostAddress(wrapper);
+          QHostAddress* ret = QHostAddress_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QHostAddress();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QHostAddress(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHostAddress: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHostAddress::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QNetworkProxy(RJSApi& handler, const QNetworkProxy* v) {
+          QJSEngine* engine = handler.getEngine();
+          QNetworkProxy_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QNetworkProxy_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QNetworkProxy object:
+              ret = new QNetworkProxy_Wrapper(handler, new QNetworkProxy(*v), true);
+          }
+
+          // JS: new QNetworkProxy('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QNetworkProxy");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QNetworkProxy is undefined. Use QNetworkProxy_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QNetworkProxy('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QNetworkProxy(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QNetworkProxy(RJSApi& handler, const QNetworkProxy& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QNetworkProxy object:
+          QNetworkProxy_Wrapper* ret = new QNetworkProxy_Wrapper(handler, new QNetworkProxy(v), true);
+
+          // JS: new QNetworkProxy('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QNetworkProxy");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QNetworkProxy is undefined. Use QNetworkProxy_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QNetworkProxy('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QNetworkProxy(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QNetworkProxy RJSHelper::js2cpp_QNetworkProxy(RJSApi& handler, const QJSValue& v) {
+          /*
+          QNetworkProxy_Wrapper* wrapper = getWrapper<QNetworkProxy_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QNetworkProxy: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QNetworkProxy();
+          }
+          //return *(QNetworkProxy*)wrapper->getWrappedVoid();
+          QNetworkProxy* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QNetworkProxy: wrapped pointer is NULL";
+              return QNetworkProxy();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QNetworkProxy: not a QObject";
+              return QNetworkProxy();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QNetworkProxy_ptr: no wrapper";
+              handler.trace();
+              return QNetworkProxy();
+          }
+          //QNetworkProxy* ret = getWrapped_QNetworkProxy(wrapper);
+          QNetworkProxy* ret = QNetworkProxy_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QNetworkProxy();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QNetworkProxy(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QNetworkProxy: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QNetworkProxy::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QNetworkProxyQuery(RJSApi& handler, const QNetworkProxyQuery* v) {
+          QJSEngine* engine = handler.getEngine();
+          QNetworkProxyQuery_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QNetworkProxyQuery_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QNetworkProxyQuery object:
+              ret = new QNetworkProxyQuery_Wrapper(handler, new QNetworkProxyQuery(*v), true);
+          }
+
+          // JS: new QNetworkProxyQuery('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QNetworkProxyQuery");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QNetworkProxyQuery is undefined. Use QNetworkProxyQuery_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QNetworkProxyQuery('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QNetworkProxyQuery(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QNetworkProxyQuery(RJSApi& handler, const QNetworkProxyQuery& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QNetworkProxyQuery object:
+          QNetworkProxyQuery_Wrapper* ret = new QNetworkProxyQuery_Wrapper(handler, new QNetworkProxyQuery(v), true);
+
+          // JS: new QNetworkProxyQuery('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QNetworkProxyQuery");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QNetworkProxyQuery is undefined. Use QNetworkProxyQuery_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QNetworkProxyQuery('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QNetworkProxyQuery(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QNetworkProxyQuery RJSHelper::js2cpp_QNetworkProxyQuery(RJSApi& handler, const QJSValue& v) {
+          /*
+          QNetworkProxyQuery_Wrapper* wrapper = getWrapper<QNetworkProxyQuery_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QNetworkProxyQuery: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QNetworkProxyQuery();
+          }
+          //return *(QNetworkProxyQuery*)wrapper->getWrappedVoid();
+          QNetworkProxyQuery* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QNetworkProxyQuery: wrapped pointer is NULL";
+              return QNetworkProxyQuery();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QNetworkProxyQuery: not a QObject";
+              return QNetworkProxyQuery();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QNetworkProxyQuery_ptr: no wrapper";
+              handler.trace();
+              return QNetworkProxyQuery();
+          }
+          //QNetworkProxyQuery* ret = getWrapped_QNetworkProxyQuery(wrapper);
+          QNetworkProxyQuery* ret = QNetworkProxyQuery_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QNetworkProxyQuery();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QNetworkProxyQuery(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QNetworkProxyQuery: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QNetworkProxyQuery::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper::cpp2js_QBitmap(RJSApi& handler, const QBitmap* v) {
           QJSEngine* engine = handler.getEngine();
           QBitmap_Wrapper* ret;

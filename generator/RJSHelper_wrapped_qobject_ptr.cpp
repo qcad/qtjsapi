@@ -37,6 +37,10 @@
         
           #include "qabstractslider_wrapper.h"
         
+          #include "qabstractsocket_wrapper.h"
+        
+          #include "qiodevice_wrapper.h"
+        
           #include "qabstractspinbox_wrapper.h"
         
           #include "qaction_wrapper.h"
@@ -76,8 +80,6 @@
           #include "qbuffer_wrapper.h"
         
           #include "qiodevicebase_wrapper.h"
-        
-          #include "qiodevice_wrapper.h"
         
           #include "qbuttongroup_wrapper.h"
         
@@ -241,6 +243,8 @@
         
           #include "qheaderview_wrapper.h"
         
+          #include "qhostaddress_wrapper.h"
+        
           #include "qicon_wrapper.h"
         
           #include "qimage_wrapper.h"
@@ -302,6 +306,12 @@
           #include "qmimedata_wrapper.h"
         
           #include "qkeycombination_wrapper.h"
+        
+          #include "qnetworkproxyquery_wrapper.h"
+        
+          #include "qnetworkproxy_wrapper.h"
+        
+          #include "qnetworkproxyfactory_wrapper.h"
         
           #include "qpagedpaintdevice_wrapper.h"
         
@@ -490,6 +500,10 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         
@@ -5620,6 +5634,14 @@
     
       QJSValue RJSHelper::cpp2js_QIODevice(RJSApi& handler, QIODevice* v) {
           
+            // downcast to QAbstractSocket:
+            {
+                QAbstractSocket* o = qobject_cast<QAbstractSocket*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QAbstractSocket(handler, o);
+                }
+            }
+            
             // downcast to QBuffer:
             {
                 QBuffer* o = qobject_cast<QBuffer*>(v);
@@ -12383,6 +12405,111 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QWindow::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper::cpp2js_QTcpServer(RJSApi& handler, QTcpServer* v) {
+          QTcpServer_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QTcpServer_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QTcpServer: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QTcpServer_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QTcpServer_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QTcpServer('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QTcpServer");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QTcpServer is undefined. Use QTcpServer_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QTcpServer('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QTcpServer(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QTcpServer(RJSApi& handler, const QTcpServer* v) {
+          return RJSHelper::cpp2js_QTcpServer(handler, const_cast<QTcpServer*>(v));
+      }
+
+      QTcpServer* RJSHelper::js2cpp_QTcpServer_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QTcpServer: not a QObject";
+              return nullptr;
+          }
+          //QTcpServer_Wrapper* wrapper = getWrapper<QTcpServer_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QTcpServer_Wrapper* wrapper = qobject_cast<QTcpServer_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QTcpServer_Wrapper* wrapper = dynamic_cast<QTcpServer_Wrapper*>(obj);
+          //QTcpServer_Wrapper* wrapper = (QTcpServer_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QTcpServer: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QTcpServer*)wrapper->getWrappedVoid();
+          //return getWrapped_QTcpServer(wrapper);
+          return QTcpServer_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QTcpServer_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QTcpServer: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QTcpServer_Type);
+          //return fun.call().toInt()==RJSType::QTcpServer_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QTcpServer::getIdStatic())).toBool();
       }
 
     

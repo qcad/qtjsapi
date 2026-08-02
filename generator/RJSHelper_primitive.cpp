@@ -37,6 +37,10 @@
         
           #include "qabstractslider_wrapper.h"
         
+          #include "qabstractsocket_wrapper.h"
+        
+          #include "qiodevice_wrapper.h"
+        
           #include "qabstractspinbox_wrapper.h"
         
           #include "qaction_wrapper.h"
@@ -76,8 +80,6 @@
           #include "qbuffer_wrapper.h"
         
           #include "qiodevicebase_wrapper.h"
-        
-          #include "qiodevice_wrapper.h"
         
           #include "qbuttongroup_wrapper.h"
         
@@ -241,6 +243,8 @@
         
           #include "qheaderview_wrapper.h"
         
+          #include "qhostaddress_wrapper.h"
+        
           #include "qicon_wrapper.h"
         
           #include "qimage_wrapper.h"
@@ -302,6 +306,12 @@
           #include "qmimedata_wrapper.h"
         
           #include "qkeycombination_wrapper.h"
+        
+          #include "qnetworkproxyquery_wrapper.h"
+        
+          #include "qnetworkproxy_wrapper.h"
+        
+          #include "qnetworkproxyfactory_wrapper.h"
         
           #include "qpagedpaintdevice_wrapper.h"
         
@@ -490,6 +500,10 @@
           #include "qtablewidget_wrapper.h"
         
           #include "qtabwidget_wrapper.h"
+        
+          #include "qtcpserver_wrapper.h"
+        
+          #include "qtcpsocket_wrapper.h"
         
           #include "qtextbrowser_wrapper.h"
         
@@ -8188,6 +8202,290 @@
       }
 
       bool RJSHelper::is_ushort(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QHostAddress_ConversionMode(RJSApi& handler, QHostAddress::ConversionMode v) {
+        return QJSValue(v);
+      }
+
+      QHostAddress::ConversionMode RJSHelper::js2cpp_QHostAddress_ConversionMode(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QHostAddress::ConversionMode()
+          ;
+        }
+        return 
+        (QHostAddress::ConversionMode)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QHostAddress_ConversionMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QHostAddress_ConversionModeFlag(RJSApi& handler, QHostAddress::ConversionModeFlag v) {
+        return QJSValue(v);
+      }
+
+      QHostAddress::ConversionModeFlag RJSHelper::js2cpp_QHostAddress_ConversionModeFlag(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QHostAddress::ConversionModeFlag)0
+          ;
+        }
+        return 
+        (QHostAddress::ConversionModeFlag)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QHostAddress_ConversionModeFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QHostAddress_SpecialAddress(RJSApi& handler, QHostAddress::SpecialAddress v) {
+        return QJSValue(v);
+      }
+
+      QHostAddress::SpecialAddress RJSHelper::js2cpp_QHostAddress_SpecialAddress(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QHostAddress::SpecialAddress)0
+          ;
+        }
+        return 
+        (QHostAddress::SpecialAddress)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QHostAddress_SpecialAddress(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QHostAddress_NetworkLayerProtocol(RJSApi& handler, QHostAddress::NetworkLayerProtocol v) {
+        return QJSValue(v);
+      }
+
+      QHostAddress::NetworkLayerProtocol RJSHelper::js2cpp_QHostAddress_NetworkLayerProtocol(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QHostAddress::NetworkLayerProtocol)0
+          ;
+        }
+        return 
+        (QHostAddress::NetworkLayerProtocol)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QHostAddress_NetworkLayerProtocol(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QAbstractSocket_SocketError(RJSApi& handler, QAbstractSocket::SocketError v) {
+        return QJSValue(v);
+      }
+
+      QAbstractSocket::SocketError RJSHelper::js2cpp_QAbstractSocket_SocketError(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QAbstractSocket::SocketError)0
+          ;
+        }
+        return 
+        (QAbstractSocket::SocketError)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QAbstractSocket_SocketError(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QAbstractSocket_SocketType(RJSApi& handler, QAbstractSocket::SocketType v) {
+        return QJSValue(v);
+      }
+
+      QAbstractSocket::SocketType RJSHelper::js2cpp_QAbstractSocket_SocketType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QAbstractSocket::SocketType)0
+          ;
+        }
+        return 
+        (QAbstractSocket::SocketType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QAbstractSocket_SocketType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QAbstractSocket_NetworkLayerProtocol(RJSApi& handler, QAbstractSocket::NetworkLayerProtocol v) {
+        return QJSValue(v);
+      }
+
+      QAbstractSocket::NetworkLayerProtocol RJSHelper::js2cpp_QAbstractSocket_NetworkLayerProtocol(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QAbstractSocket::NetworkLayerProtocol)0
+          ;
+        }
+        return 
+        (QAbstractSocket::NetworkLayerProtocol)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QAbstractSocket_NetworkLayerProtocol(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QAbstractSocket_SocketState(RJSApi& handler, QAbstractSocket::SocketState v) {
+        return QJSValue(v);
+      }
+
+      QAbstractSocket::SocketState RJSHelper::js2cpp_QAbstractSocket_SocketState(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QAbstractSocket::SocketState)0
+          ;
+        }
+        return 
+        (QAbstractSocket::SocketState)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QAbstractSocket_SocketState(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QAbstractSocket_PauseMode(RJSApi& handler, QAbstractSocket::PauseMode v) {
+        return QJSValue(v);
+      }
+
+      QAbstractSocket::PauseMode RJSHelper::js2cpp_QAbstractSocket_PauseMode(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QAbstractSocket::PauseMode)0
+          ;
+        }
+        return 
+        (QAbstractSocket::PauseMode)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QAbstractSocket_PauseMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QAbstractSocket_BindFlag(RJSApi& handler, QAbstractSocket::BindFlag v) {
+        return QJSValue(v);
+      }
+
+      QAbstractSocket::BindFlag RJSHelper::js2cpp_QAbstractSocket_BindFlag(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QAbstractSocket::BindFlag)0
+          ;
+        }
+        return 
+        (QAbstractSocket::BindFlag)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QAbstractSocket_BindFlag(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QAbstractSocket_SocketOption(RJSApi& handler, QAbstractSocket::SocketOption v) {
+        return QJSValue(v);
+      }
+
+      QAbstractSocket::SocketOption RJSHelper::js2cpp_QAbstractSocket_SocketOption(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QAbstractSocket::SocketOption)0
+          ;
+        }
+        return 
+        (QAbstractSocket::SocketOption)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QAbstractSocket_SocketOption(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QAbstractSocket_BindMode(RJSApi& handler, QAbstractSocket::BindMode v) {
+        return QJSValue(v);
+      }
+
+      QAbstractSocket::BindMode RJSHelper::js2cpp_QAbstractSocket_BindMode(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return QAbstractSocket::BindMode()
+          ;
+        }
+        return 
+        (QAbstractSocket::BindMode)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QAbstractSocket_BindMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper::cpp2js_QNetworkProxyQuery_QueryType(RJSApi& handler, QNetworkProxyQuery::QueryType v) {
+        return QJSValue(v);
+      }
+
+      QNetworkProxyQuery::QueryType RJSHelper::js2cpp_QNetworkProxyQuery_QueryType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QNetworkProxyQuery::QueryType)0
+          ;
+        }
+        return 
+        (QNetworkProxyQuery::QueryType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QNetworkProxyQuery_QueryType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }
