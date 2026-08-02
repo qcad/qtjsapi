@@ -88,6 +88,8 @@
             // signal aliases:
             if (Object.getPrototypeOf(this)!=null) {
               
+    this["acceptError(QAbstractSocket::SocketError)"] = Object.getPrototypeOf(this).acceptError;
+  
     this["sslErrors(QSslSocket*,QList<QSslError>)"] = Object.getPrototypeOf(this).sslErrors;
   
     this["peerVerifyError(QSslSocket*,QSslError)"] = Object.getPrototypeOf(this).peerVerifyError;

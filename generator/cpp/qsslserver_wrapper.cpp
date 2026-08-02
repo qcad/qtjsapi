@@ -139,6 +139,20 @@
             
   connect(
     getWrapped(), 
+    SIGNAL(newConnection()), 
+    this, 
+    SLOT(newConnectionEmitter())
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(acceptError(QAbstractSocket::SocketError)), 
+    this, 
+    SLOT(acceptErrorEmitter(QAbstractSocket::SocketError))
+  );
+
+  connect(
+    getWrapped(), 
     SIGNAL(sslErrors(QSslSocket*, const QList<QSslError>&)), 
     this, 
     SLOT(sslErrorsEmitter(QSslSocket*, const QList<QSslError>&))
@@ -1363,6 +1377,55 @@ QNetworkProxy a1_cpp;
                   handler.trace();
                   return QJSValue();
                 
+              }
+            
+    // Class: QSslServer
+    // Function: newConnection
+    // Source: QTcpServer
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QSslServer_Wrapper::newConnectionEmitter(
+                
+              ) {
+                // convert cpp parameters to js:
+                
+
+                emit newConnection(
+                  
+                );
+              }
+            
+    // Class: QSslServer
+    // Function: acceptError
+    // Source: QTcpServer
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QSslServer_Wrapper::acceptErrorEmitter(
+                QAbstractSocket::SocketError socketError
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: socketError (QAbstractSocket::SocketError)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QAbstractSocket_SocketError(
+    handler, 
+    socketError
+  );
+
+
+                emit acceptError(
+                  a1_js
+                );
               }
             
     // Class: QSslServer

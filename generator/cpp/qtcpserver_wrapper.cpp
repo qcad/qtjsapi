@@ -152,6 +152,20 @@
               
             // set up signal forwarding:
             
+  connect(
+    getWrapped(), 
+    SIGNAL(newConnection()), 
+    this, 
+    SLOT(newConnectionEmitter())
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(acceptError(QAbstractSocket::SocketError)), 
+    this, 
+    SLOT(acceptErrorEmitter(QAbstractSocket::SocketError))
+  );
+
               /*
               connect(
                 getWrapped(),
@@ -2561,6 +2575,55 @@ QNetworkProxy a1_cpp;
             
 #endif
 
+    // Class: QTcpServer
+    // Function: newConnection
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QTcpServer_Wrapper::newConnectionEmitter(
+                
+              ) {
+                // convert cpp parameters to js:
+                
+
+                emit newConnection(
+                  
+                );
+              }
+            
+    // Class: QTcpServer
+    // Function: acceptError
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QTcpServer_Wrapper::acceptErrorEmitter(
+                QAbstractSocket::SocketError socketError
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: socketError (QAbstractSocket::SocketError)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QAbstractSocket_SocketError(
+    handler, 
+    socketError
+  );
+
+
+                emit acceptError(
+                  a1_js
+                );
+              }
+            
 
   // member functions for static properties, forward to static function
   

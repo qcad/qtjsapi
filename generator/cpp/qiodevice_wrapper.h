@@ -71,6 +71,14 @@
                 return (QIODevice*)(QProcess*)vp;
               }
               
+              if (t==RJSType_QSslSocket::getIdStatic()) {
+                return (QIODevice*)(QSslSocket*)vp;
+              }
+              
+              if (t==RJSType_QTcpSocket::getIdStatic()) {
+                return (QIODevice*)(QTcpSocket*)vp;
+              }
+              
 
           // hook for modules to cast from other types to base QIODevice:
           for (int i=0; i<basecasters_QIODevice.length(); i++) {

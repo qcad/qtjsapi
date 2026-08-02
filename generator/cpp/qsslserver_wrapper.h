@@ -519,6 +519,46 @@
               ;
             
     // Class: QSslServer
+    // Function: newConnection
+    // Source: QTcpServer
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void newConnection(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void newConnectionEmitter(
+                
+              );
+            
+    // Class: QSslServer
+    // Function: acceptError
+    // Source: QTcpServer
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void acceptError(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void acceptErrorEmitter(
+                QAbstractSocket::SocketError socketError
+              );
+            
+    // Class: QSslServer
     // Function: setSslConfiguration
     // Source: 
     // Static: false

@@ -8,6 +8,8 @@
   <class_decl name="QOcspResponse" />
   <class name="QSslSocket">
     <super_list>
+      <super name="QIODevice" />
+      <super name="QAbstractSocket" />
       <super name="QTcpSocket" />
     </super_list>
     <enum name="PeerVerifyMode">

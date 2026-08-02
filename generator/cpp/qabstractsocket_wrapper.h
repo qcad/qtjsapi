@@ -49,6 +49,10 @@
           
             // check if pointer points to derrived type:
             
+              if (t==RJSType_QSslSocket::getIdStatic()) {
+                return (QAbstractSocket*)(QSslSocket*)vp;
+              }
+              
               if (t==RJSType_QTcpSocket::getIdStatic()) {
                 return (QAbstractSocket*)(QTcpSocket*)vp;
               }

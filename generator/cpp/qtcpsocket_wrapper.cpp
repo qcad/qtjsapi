@@ -136,6 +136,48 @@
             
   connect(
     getWrapped(), 
+    SIGNAL(readyRead()), 
+    this, 
+    SLOT(readyReadEmitter())
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(channelReadyRead(int)), 
+    this, 
+    SLOT(channelReadyReadEmitter(int))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(bytesWritten(qint64)), 
+    this, 
+    SLOT(bytesWrittenEmitter(qint64))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(channelBytesWritten(int, qint64)), 
+    this, 
+    SLOT(channelBytesWrittenEmitter(int, qint64))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(aboutToClose()), 
+    this, 
+    SLOT(aboutToCloseEmitter())
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(readChannelFinished()), 
+    this, 
+    SLOT(readChannelFinishedEmitter())
+  );
+
+  connect(
+    getWrapped(), 
     SIGNAL(hostFound()), 
     this, 
     SLOT(hostFoundEmitter())
@@ -274,6 +316,2000 @@ QTcpSocket_Wrapper::QTcpSocket_Wrapper
 
     // non-static functions:
     
+    // Class: QTcpSocket
+    // Function: openMode
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::openMode
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                QIODeviceBase::OpenMode res = 
+                    
+                w->openMode(
+                  
+                );
+              
+            // return type: QIODeviceBase::OpenMode
+
+            return RJSHelper::cpp2js_QIODeviceBase_OpenMode(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for openMode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: setTextModeEnabled
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::setTextModeEnabled
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: enabled (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                
+                w->setTextModeEnabled(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setTextModeEnabled";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: isTextModeEnabled
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::isTextModeEnabled
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->isTextModeEnabled(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isTextModeEnabled";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: isOpen
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::isOpen
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->isOpen(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isOpen";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: isReadable
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::isReadable
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->isReadable(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isReadable";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: isWritable
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::isWritable
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->isWritable(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isWritable";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: readChannelCount
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::readChannelCount
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                int res = 
+                    
+                w->readChannelCount(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for readChannelCount";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: writeChannelCount
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::writeChannelCount
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                int res = 
+                    
+                w->writeChannelCount(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for writeChannelCount";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: currentReadChannel
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::currentReadChannel
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                int res = 
+                    
+                w->currentReadChannel(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for currentReadChannel";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: setCurrentReadChannel
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::setCurrentReadChannel
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: channel (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                
+                w->setCurrentReadChannel(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setCurrentReadChannel";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: currentWriteChannel
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::currentWriteChannel
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                int res = 
+                    
+                w->currentWriteChannel(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for currentWriteChannel";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: setCurrentWriteChannel
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::setCurrentWriteChannel
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: channel (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                
+                w->setCurrentWriteChannel(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setCurrentWriteChannel";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: open
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::open
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QIODeviceBase_OpenMode(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: mode (QIODeviceBase::OpenMode)
+  
+QIODeviceBase::OpenMode a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QIODeviceBase_OpenMode(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->open(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for open";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: pos
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::pos
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                qint64 res = 
+                    
+                w->pos(
+                  
+                );
+              
+            // return type: qint64
+
+            return RJSHelper::cpp2js_qint64(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for pos";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: size
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::size
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                qint64 res = 
+                    
+                w->size(
+                  
+                );
+              
+            // return type: qint64
+
+            return RJSHelper::cpp2js_qint64(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for size";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: seek
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::seek
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qint64(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: pos (qint64)
+  
+qint64 a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->seek(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for seek";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: atEnd
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::atEnd
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->atEnd(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for atEnd";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: reset
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::reset
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->reset(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for reset";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: readAll
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::readAll
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                QByteArray res = 
+                    
+                w->readAll(
+                  
+                );
+              
+            // return type: QByteArray
+
+            return RJSHelper::cpp2js_QByteArray(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for readAll";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: canReadLine
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::canReadLine
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->canReadLine(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for canReadLine";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: startTransaction
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::startTransaction
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                
+                w->startTransaction(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for startTransaction";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: commitTransaction
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::commitTransaction
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                
+                w->commitTransaction(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for commitTransaction";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: rollbackTransaction
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::rollbackTransaction
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                
+                w->rollbackTransaction(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for rollbackTransaction";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: isTransactionStarted
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::isTransactionStarted
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->isTransactionStarted(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isTransactionStarted";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: write
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::write
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_char_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_qint64(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: data (char)
+  
+
+      // char pointer string:
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      const char* a1_cpp = a1_ba.constData();
+    
+  // convert js parameter to cpp: len (qint64)
+  
+qint64 a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qint64(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                qint64 res = 
+                    
+                w->write(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: qint64
+
+            return RJSHelper::cpp2js_qint64(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_char_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: data (char)
+  
+
+      // char pointer string:
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      const char* a1_cpp = a1_ba.constData();
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                qint64 res = 
+                    
+                w->write(
+                  a1_cpp
+    
+                );
+              
+            // return type: qint64
+
+            return RJSHelper::cpp2js_qint64(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QByteArray(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: data (QByteArray)
+  
+QByteArray a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                qint64 res = 
+                    
+                w->write(
+                  a1_cpp
+    
+                );
+              
+            // return type: qint64
+
+            return RJSHelper::cpp2js_qint64(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for write";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: skip
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::skip
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qint64(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: maxSize (qint64)
+  
+qint64 a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qint64(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                qint64 res = 
+                    
+                w->skip(
+                  a1_cpp
+    
+                );
+              
+            // return type: qint64
+
+            return RJSHelper::cpp2js_qint64(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for skip";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: ungetChar
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::ungetChar
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_char(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: c (char)
+  
+char a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                
+                w->ungetChar(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for ungetChar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: putChar
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::putChar
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_char(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: c (char)
+  
+char a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_char(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                bool res = 
+                    
+                w->putChar(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for putChar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: errorString
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              QTcpSocket_Wrapper::errorString
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                QTcpSocket* w = getWrapped();
+                QString res = 
+                    
+                w->errorString(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for errorString";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QTcpSocket
+    // Function: readyRead
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QTcpSocket_Wrapper::readyReadEmitter(
+                
+              ) {
+                // convert cpp parameters to js:
+                
+
+                emit readyRead(
+                  
+                );
+              }
+            
+    // Class: QTcpSocket
+    // Function: channelReadyRead
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QTcpSocket_Wrapper::channelReadyReadEmitter(
+                int channel
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: channel (int)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_int(
+    handler, 
+    channel
+  );
+
+
+                emit channelReadyRead(
+                  a1_js
+                );
+              }
+            
+    // Class: QTcpSocket
+    // Function: bytesWritten
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QTcpSocket_Wrapper::bytesWrittenEmitter(
+                qint64 bytes
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: bytes (qint64)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_qint64(
+    handler, 
+    bytes
+  );
+
+
+                emit bytesWritten(
+                  a1_js
+                );
+              }
+            
+    // Class: QTcpSocket
+    // Function: channelBytesWritten
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QTcpSocket_Wrapper::channelBytesWrittenEmitter(
+                int channel, qint64 bytes
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: channel (int)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_int(
+    handler, 
+    channel
+  );
+
+  // parameter: bytes (qint64)
+  
+
+
+  QJSValue a2_js = RJSHelper::cpp2js_qint64(
+    handler, 
+    bytes
+  );
+
+
+                emit channelBytesWritten(
+                  a1_js, a2_js
+                );
+              }
+            
+    // Class: QTcpSocket
+    // Function: aboutToClose
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QTcpSocket_Wrapper::aboutToCloseEmitter(
+                
+              ) {
+                // convert cpp parameters to js:
+                
+
+                emit aboutToClose(
+                  
+                );
+              }
+            
+    // Class: QTcpSocket
+    // Function: readChannelFinished
+    // Source: QIODevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              QTcpSocket_Wrapper::readChannelFinishedEmitter(
+                
+              ) {
+                // convert cpp parameters to js:
+                
+
+                emit readChannelFinished(
+                  
+                );
+              }
+            
     // Class: QTcpSocket
     // Function: resume
     // Source: QAbstractSocket

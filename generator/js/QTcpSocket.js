@@ -88,6 +88,12 @@
             // signal aliases:
             if (Object.getPrototypeOf(this)!=null) {
               
+    this["channelReadyRead(int)"] = Object.getPrototypeOf(this).channelReadyRead;
+  
+    this["bytesWritten(qint64)"] = Object.getPrototypeOf(this).bytesWritten;
+  
+    this["channelBytesWritten(int,qint64)"] = Object.getPrototypeOf(this).channelBytesWritten;
+  
     this["stateChanged(QAbstractSocket::SocketState)"] = Object.getPrototypeOf(this).stateChanged;
   
     this["errorOccurred(QAbstractSocket::SocketError)"] = Object.getPrototypeOf(this).errorOccurred;
@@ -121,6 +127,10 @@
           return true;
         }
 
+        
+          if (t===RJSType_QIODevice.getIdStatic()) {
+            return true;
+          }
         
           if (t===RJSType_QAbstractSocket.getIdStatic()) {
             return true;

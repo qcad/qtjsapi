@@ -2,6 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qtcpsocket.h">
   <class name="QTcpSocket" ownership="cpp">
     <super_list>
+      <super name="QIODevice" />
       <super name="QAbstractSocket" />
     </super_list>
     <constructor>
