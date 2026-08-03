@@ -29,6 +29,9 @@ then
 elif [[ `pwd` == *qcadtexjsapi* ]]
 then
     MODULE="qcadtex"
+elif [[ `pwd` == *qcadconstraintjsapi* ]]
+then
+    MODULE="qcadconstraint"
 elif [[ `pwd` == *qcadrhijsapi* ]]
 then
     MODULE="qcadrhi"
