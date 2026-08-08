@@ -363,8 +363,6 @@
 #include "generator/cpp/qsslerror_wrapper.h"
 #include "generator/cpp/qsslkey_base.h"
 #include "generator/cpp/qsslkey_wrapper.h"
-#include "generator/cpp/qsslkeyingmaterial_base.h"
-#include "generator/cpp/qsslkeyingmaterial_wrapper.h"
 #include "generator/cpp/qsslpresharedkeyauthenticator_base.h"
 #include "generator/cpp/qsslpresharedkeyauthenticator_wrapper.h"
 #include "generator/cpp/qsslserver_base.h"

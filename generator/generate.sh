@@ -32,6 +32,9 @@ then
 elif [[ `pwd` == *qcadconstraintjsapi* ]]
 then
     MODULE="qcadconstraint"
+elif [[ `pwd` == *qcadrhi3djsapi* ]]
+then
+    MODULE="qcadrhi3d"
 elif [[ `pwd` == *qcadrhijsapi* ]]
 then
     MODULE="qcadrhi"

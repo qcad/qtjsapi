@@ -18,8 +18,6 @@
   
     #include <QSslKey>
   
-    #include <QSslKeyingMaterial>
-  
     #include <QSslEllipticCurve>
   
     #include <QSslDiffieHellmanParameters>

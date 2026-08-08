@@ -212,7 +212,6 @@
     <file alias="generator/js/QSslEllipticCurve.js">generator/js/QSslEllipticCurve.js</file>
     <file alias="generator/js/QSslError.js">generator/js/QSslError.js</file>
     <file alias="generator/js/QSslKey.js">generator/js/QSslKey.js</file>
-    <file alias="generator/js/QSslKeyingMaterial.js">generator/js/QSslKeyingMaterial.js</file>
     <file alias="generator/js/QSslPreSharedKeyAuthenticator.js">generator/js/QSslPreSharedKeyAuthenticator.js</file>
     <file alias="generator/js/QSslServer.js">generator/js/QSslServer.js</file>
     <file alias="generator/js/QSslSocket.js">generator/js/QSslSocket.js</file>

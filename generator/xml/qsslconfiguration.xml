@@ -3,7 +3,9 @@
   <class_decl name="QSslCertificate" />
   <class_decl name="QSslCipher" />
   <class_decl name="QSslKey" />
+  <!--
   <class_decl name="QSslKeyingMaterial" />
+  -->
   <class_decl name="QSslEllipticCurve" />
   <class_decl name="QSslDiffieHellmanParameters" />
   <class name="QSslConfiguration">
@@ -414,10 +416,12 @@
       </variant>
     </function>
     <!-- static const char ALPNProtocol* constants: no usable name/type from extractor -->
+    <!--
     <function name="keyingMaterial">
       <variant return-type="QList&lt;QSslKeyingMaterial&gt;" const="true" access="public">
         <parameters />
       </variant>
+    -->
     <!-- std::optional not supported by generator
       <variant return-type="std::optional&lt;QSslKeyingMaterial&gt;" const="true" access="public">
         <parameters>
@@ -425,7 +429,10 @@
         </parameters>
       </variant>
     -->
+    <!--
     </function>
+    -->
+    <!--
     <function name="setKeyingMaterial">
       <variant return-type="void" access="public">
         <parameters>
@@ -433,6 +440,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <class_decl name="QSslSocket" />
   </class>
 </unit>

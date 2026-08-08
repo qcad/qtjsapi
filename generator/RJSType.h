@@ -581,34 +581,6 @@
           static int id;
       };
     
-      class QTJSAPI_EXPORT  RJSType_QSslKeyingMaterial : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const;
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "QSslKeyingMaterial";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_QSslKeyingMaterial();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic();
-
-          
-
-      private:
-          static int id;
-      };
-    
       class QTJSAPI_EXPORT  RJSType_QSslPreSharedKeyAuthenticator : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE

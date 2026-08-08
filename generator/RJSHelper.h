@@ -1475,12 +1475,6 @@
           virtual QSslKey* castToBase(int t, void* vp) = 0;
         };
         
-        // Base class for basecasters that can cast void* to base class QSslKeyingMaterial:
-        class RJSBasecaster_QSslKeyingMaterial {
-        public:
-          virtual QSslKeyingMaterial* castToBase(int t, void* vp) = 0;
-        };
-        
         // Base class for basecasters that can cast void* to base class QSslPreSharedKeyAuthenticator:
         class RJSBasecaster_QSslPreSharedKeyAuthenticator {
         public:
@@ -3770,11 +3764,6 @@
       static QSslKey js2cpp_QSslKey(RJSApi& handler, const QJSValue& v);
       static bool is_QSslKey(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
-      static QJSValue cpp2js_QSslKeyingMaterial(RJSApi& handler, const QSslKeyingMaterial* v);
-      static QJSValue cpp2js_QSslKeyingMaterial(RJSApi& handler, const QSslKeyingMaterial& v);
-      static QSslKeyingMaterial js2cpp_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v);
-      static bool is_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
       static QJSValue cpp2js_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QSslPreSharedKeyAuthenticator* v);
       static QJSValue cpp2js_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QSslPreSharedKeyAuthenticator& v);
       static QSslPreSharedKeyAuthenticator js2cpp_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QJSValue& v);
@@ -5357,10 +5346,6 @@
       static QJSValue cpp2js_QList_QSslError(RJSApi& handler, const QList<QSslError>& v);
       static QList<QSslError> js2cpp_QList_QSslError(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QSslError(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
-      static QJSValue cpp2js_QList_QSslKeyingMaterial(RJSApi& handler, const QList<QSslKeyingMaterial>& v);
-      static QList<QSslKeyingMaterial> js2cpp_QList_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v);
-      static bool is_QList_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QModelIndexList(RJSApi& handler, const QModelIndexList& v);
       static QModelIndexList js2cpp_QModelIndexList(RJSApi& handler, const QJSValue& v);

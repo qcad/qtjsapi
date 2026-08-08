@@ -409,7 +409,6 @@
     <type>QSslEllipticCurve</type>
     <type>QSslError</type>
     <type>QSslKey</type>
-    <type>QSslKeyingMaterial</type>
     <type>QSslPreSharedKeyAuthenticator</type>
     <type>QBitmap</type>
     <type>QBrush</type>
@@ -748,7 +747,6 @@
     <type>QList&lt;QSslCipher&gt;</type>
     <type>QList&lt;QSslEllipticCurve&gt;</type>
     <type>QList&lt;QSslError&gt;</type>
-    <type>QList&lt;QSslKeyingMaterial&gt;</type>
     <type>QModelIndexList</type>
     <type>QStringList</type>
   </qlist>

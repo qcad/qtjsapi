@@ -18,8 +18,6 @@
       
         #include <QSslKey>
       
-        #include <QSslKeyingMaterial>
-      
         #include <QSslEllipticCurve>
       
         #include <QSslDiffieHellmanParameters>
@@ -1498,50 +1496,6 @@ NextProtocolNegotiationUnsupported = QSslConfiguration::NextProtocolNegotiationU
               )
               
                 const
-              
-              ;
-            
-    // Class: QSslConfiguration
-    // Function: keyingMaterial
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyingMaterial
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: QSslConfiguration
-    // Function: setKeyingMaterial
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setKeyingMaterial
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
               
               ;
             

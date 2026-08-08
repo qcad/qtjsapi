@@ -435,8 +435,6 @@
         
           #include "qsslkey_wrapper.h"
         
-          #include "qsslkeyingmaterial_wrapper.h"
-        
           #include "qsslpresharedkeyauthenticator_wrapper.h"
         
           #include "qsslserver_wrapper.h"
@@ -1973,43 +1971,6 @@
       }
 
       bool RJSHelper::is_QList_QSslError(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          return v.isArray();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QList_QSslKeyingMaterial(RJSApi& handler, const QList<QSslKeyingMaterial>& v) {
-          QJSEngine* engine = handler.getEngine();
-          QJSValue ret = engine->newArray((uint)v.length());
-          for (int i=0; i<v.length(); i++) {
-              QJSValue jv = RJSHelper::cpp2js_QSslKeyingMaterial(handler, v.at(i));
-              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
-              if (!jv.isUndefined()) {
-                  ret.setProperty((quint32)i, jv);
-              }
-          }
-          return ret;
-      }
-
-      QList<QSslKeyingMaterial> RJSHelper::js2cpp_QList_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v) {
-          //return engine->fromScriptValue<QList<QSslKeyingMaterial>>(v);
-          QList<QSslKeyingMaterial> ret;
-
-          if (!v.isArray()) {
-              qWarning() << "js2cpp_QList_QSslKeyingMaterial: value is not an array";
-              return ret;
-          }
-
-          const int length = v.property("length").toInt();
-          for (int i=0; i<length; ++i) {
-              ret.append(js2cpp_QSslKeyingMaterial(handler, v.property(i)));
-          }
-
-          return ret;
-      }
-
-      bool RJSHelper::is_QList_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }

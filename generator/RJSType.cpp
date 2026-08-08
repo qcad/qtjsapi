@@ -311,21 +311,6 @@
 
 
       
-      int RJSType_QSslKeyingMaterial::id = -1;
-
-      int RJSType_QSslKeyingMaterial::getId() const {
-          return RJSType_QSslKeyingMaterial::getIdStatic();
-      }
-
-      int RJSType_QSslKeyingMaterial::getIdStatic() {
-          if (id<0) {
-              id = RJSTypeEnum::reserve(new RJSType_QSslKeyingMaterial());
-          }
-          return id;
-      }
-
-
-      
       int RJSType_QSslPreSharedKeyAuthenticator::id = -1;
 
       int RJSType_QSslPreSharedKeyAuthenticator::getId() const {

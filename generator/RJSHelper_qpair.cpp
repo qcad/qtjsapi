@@ -435,8 +435,6 @@
         
           #include "qsslkey_wrapper.h"
         
-          #include "qsslkeyingmaterial_wrapper.h"
-        
           #include "qsslpresharedkeyauthenticator_wrapper.h"
         
           #include "qsslserver_wrapper.h"

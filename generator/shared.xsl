@@ -179,6 +179,10 @@
             <xsl:value-of select="'_qcadrhi'" />
           </xsl:when>
           -->
+          <!-- qcadrhi3djsapi types.xml is for qcadrhi3d -->
+          <xsl:when test="document('../../qcadrhi3djsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
+            <xsl:value-of select="'_qcadrhi3d'" />
+          </xsl:when>
           <!-- qcadcanvasjsapi types.xml is for qcadcanvas -->
           <xsl:when test="document('../../qcadcanvasjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcadcanvas'" />

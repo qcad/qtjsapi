@@ -435,8 +435,6 @@
         
           #include "qsslkey_wrapper.h"
         
-          #include "qsslkeyingmaterial_wrapper.h"
-        
           #include "qsslpresharedkeyauthenticator_wrapper.h"
         
           #include "qsslserver_wrapper.h"
@@ -1909,122 +1907,6 @@
           }
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QSslKey::getIdStatic())).toBool();
-      }
-    
-      QJSValue RJSHelper::cpp2js_QSslKeyingMaterial(RJSApi& handler, const QSslKeyingMaterial* v) {
-          QJSEngine* engine = handler.getEngine();
-          QSslKeyingMaterial_Wrapper* ret;
-
-          if (v==nullptr) {
-              ret = new QSslKeyingMaterial_Wrapper(handler, nullptr, false);
-          }
-          else {
-              // wrapper takes ownership of QSslKeyingMaterial object:
-              ret = new QSslKeyingMaterial_Wrapper(handler, new QSslKeyingMaterial(*v), true);
-          }
-
-          // JS: new QSslKeyingMaterial('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSslKeyingMaterial");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSslKeyingMaterial is undefined. Use QSslKeyingMaterial_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSslKeyingMaterial('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSslKeyingMaterial(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper::cpp2js_QSslKeyingMaterial(RJSApi& handler, const QSslKeyingMaterial& v) {
-          QJSEngine* engine = handler.getEngine();
-          // wrapper takes ownership of the QSslKeyingMaterial object:
-          QSslKeyingMaterial_Wrapper* ret = new QSslKeyingMaterial_Wrapper(handler, new QSslKeyingMaterial(v), true);
-
-          // JS: new QSslKeyingMaterial('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSslKeyingMaterial");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSslKeyingMaterial is undefined. Use QSslKeyingMaterial_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSslKeyingMaterial('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSslKeyingMaterial(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QSslKeyingMaterial RJSHelper::js2cpp_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v) {
-          /*
-          QSslKeyingMaterial_Wrapper* wrapper = getWrapper<QSslKeyingMaterial_Wrapper>(v);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QSslKeyingMaterial: no wrapper";
-              handler.trace();
-              Q_ASSERT(false);
-              return QSslKeyingMaterial();
-          }
-          //return *(QSslKeyingMaterial*)wrapper->getWrappedVoid();
-          QSslKeyingMaterial* ret = wrapper->getWrapped();
-          if (ret==nullptr) {
-              qWarning() << "js2cpp_QSslKeyingMaterial: wrapped pointer is NULL";
-              return QSslKeyingMaterial();
-          }
-          return *ret;
-          */
-
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_QSslKeyingMaterial: not a QObject";
-              return QSslKeyingMaterial();
-          }
-          QObject* obj = jwrapper.toQObject();
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_QSslKeyingMaterial_ptr: no wrapper";
-              handler.trace();
-              return QSslKeyingMaterial();
-          }
-          //QSslKeyingMaterial* ret = getWrapped_QSslKeyingMaterial(wrapper);
-          QSslKeyingMaterial* ret = QSslKeyingMaterial_Wrapper::getWrappedBase(wrapper);
-          if (ret==nullptr) {
-              return QSslKeyingMaterial();
-          }
-          return *ret;
-      }
-
-      bool RJSHelper::is_QSslKeyingMaterial(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper::is_QSslKeyingMaterial: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_QSslKeyingMaterial::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper::cpp2js_QSslPreSharedKeyAuthenticator(RJSApi& handler, const QSslPreSharedKeyAuthenticator* v) {

@@ -362,8 +362,6 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qsslerror_wrapper.h
     generator/cpp/qsslkey_base.h
     generator/cpp/qsslkey_wrapper.h
-    generator/cpp/qsslkeyingmaterial_base.h
-    generator/cpp/qsslkeyingmaterial_wrapper.h
     generator/cpp/qsslpresharedkeyauthenticator_base.h
     generator/cpp/qsslpresharedkeyauthenticator_wrapper.h
     generator/cpp/qsslserver_base.h
@@ -809,8 +807,6 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qsslerror_wrapper.cpp
     generator/cpp/qsslkey_base.cpp
     generator/cpp/qsslkey_wrapper.cpp
-    generator/cpp/qsslkeyingmaterial_base.cpp
-    generator/cpp/qsslkeyingmaterial_wrapper.cpp
     generator/cpp/qsslpresharedkeyauthenticator_base.cpp
     generator/cpp/qsslpresharedkeyauthenticator_wrapper.cpp
     generator/cpp/qsslserver_base.cpp
