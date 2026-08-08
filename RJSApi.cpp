@@ -182,7 +182,7 @@
 #include "generator/cpp/qsslellipticcurve_wrapper.h"
 #include "generator/cpp/qsslerror_wrapper.h"
 #include "generator/cpp/qsslkey_wrapper.h"
-#include "generator/cpp/qsslkeyingmaterial_wrapper.h"
+//#include "generator/cpp/qsslkeyingmaterial_wrapper.h"
 #include "generator/cpp/qsslpresharedkeyauthenticator_wrapper.h"
 #include "generator/cpp/qsslserver_wrapper.h"
 #include "generator/cpp/qsslsocket_wrapper.h"
@@ -493,7 +493,7 @@ void RJSApi::init() {
     QSslEllipticCurve_Wrapper::init(*this);
     QSslError_Wrapper::init(*this);
     QSslKey_Wrapper::init(*this);
-    QSslKeyingMaterial_Wrapper::init(*this);
+    //QSslKeyingMaterial_Wrapper::init(*this);
     QSslPreSharedKeyAuthenticator_Wrapper::init(*this);
     QSslServer_Wrapper::init(*this);
     QSslSocket_Wrapper::init(*this);
