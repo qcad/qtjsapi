@@ -187,9 +187,6 @@ QSslSocket.TypeOfServiceOption = QSslSocket_Wrapper.TypeOfServiceOption;
 QSslSocket.SendBufferSizeSocketOption = QSslSocket_Wrapper.SendBufferSizeSocketOption;
 QSslSocket.ReceiveBufferSizeSocketOption = QSslSocket_Wrapper.ReceiveBufferSizeSocketOption;
 QSslSocket.PathMtuSocketOption = QSslSocket_Wrapper.PathMtuSocketOption;
-QSslSocket.KeepAliveIdleOption = QSslSocket_Wrapper.KeepAliveIdleOption;
-QSslSocket.KeepAliveIntervalOption = QSslSocket_Wrapper.KeepAliveIntervalOption;
-QSslSocket.KeepAliveCountOption = QSslSocket_Wrapper.KeepAliveCountOption;
 
   // enum: BindFlag
 QSslSocket.DefaultForPlatform = QSslSocket_Wrapper.DefaultForPlatform;

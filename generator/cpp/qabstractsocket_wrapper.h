@@ -162,9 +162,6 @@ TypeOfServiceOption = QAbstractSocket::TypeOfServiceOption,
 SendBufferSizeSocketOption = QAbstractSocket::SendBufferSizeSocketOption,
 ReceiveBufferSizeSocketOption = QAbstractSocket::ReceiveBufferSizeSocketOption,
 PathMtuSocketOption = QAbstractSocket::PathMtuSocketOption,
-KeepAliveIdleOption = QAbstractSocket::KeepAliveIdleOption,
-KeepAliveIntervalOption = QAbstractSocket::KeepAliveIntervalOption,
-KeepAliveCountOption = QAbstractSocket::KeepAliveCountOption,
 
   };
   Q_ENUM(SocketOption)

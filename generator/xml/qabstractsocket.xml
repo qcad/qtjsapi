@@ -67,9 +67,11 @@
       <key>SendBufferSizeSocketOption</key>
       <key>ReceiveBufferSizeSocketOption</key>
       <key>PathMtuSocketOption</key>
+      <!--
       <key>KeepAliveIdleOption</key>
       <key>KeepAliveIntervalOption</key>
       <key>KeepAliveCountOption</key>
+      -->
     </enum>
     <enum name="BindFlag">
       <key>DefaultForPlatform</key>

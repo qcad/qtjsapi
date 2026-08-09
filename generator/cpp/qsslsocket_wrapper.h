@@ -190,9 +190,6 @@ TypeOfServiceOption = QSslSocket::TypeOfServiceOption,
 SendBufferSizeSocketOption = QSslSocket::SendBufferSizeSocketOption,
 ReceiveBufferSizeSocketOption = QSslSocket::ReceiveBufferSizeSocketOption,
 PathMtuSocketOption = QSslSocket::PathMtuSocketOption,
-KeepAliveIdleOption = QSslSocket::KeepAliveIdleOption,
-KeepAliveIntervalOption = QSslSocket::KeepAliveIntervalOption,
-KeepAliveCountOption = QSslSocket::KeepAliveCountOption,
 
   };
   Q_ENUM(SocketOption)

@@ -201,9 +201,6 @@ QTcpSocket.TypeOfServiceOption = QTcpSocket_Wrapper.TypeOfServiceOption;
 QTcpSocket.SendBufferSizeSocketOption = QTcpSocket_Wrapper.SendBufferSizeSocketOption;
 QTcpSocket.ReceiveBufferSizeSocketOption = QTcpSocket_Wrapper.ReceiveBufferSizeSocketOption;
 QTcpSocket.PathMtuSocketOption = QTcpSocket_Wrapper.PathMtuSocketOption;
-QTcpSocket.KeepAliveIdleOption = QTcpSocket_Wrapper.KeepAliveIdleOption;
-QTcpSocket.KeepAliveIntervalOption = QTcpSocket_Wrapper.KeepAliveIntervalOption;
-QTcpSocket.KeepAliveCountOption = QTcpSocket_Wrapper.KeepAliveCountOption;
 
   // enum: BindFlag
 QTcpSocket.DefaultForPlatform = QTcpSocket_Wrapper.DefaultForPlatform;

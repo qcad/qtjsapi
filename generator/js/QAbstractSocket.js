@@ -196,9 +196,6 @@ QAbstractSocket.TypeOfServiceOption = QAbstractSocket_Wrapper.TypeOfServiceOptio
 QAbstractSocket.SendBufferSizeSocketOption = QAbstractSocket_Wrapper.SendBufferSizeSocketOption;
 QAbstractSocket.ReceiveBufferSizeSocketOption = QAbstractSocket_Wrapper.ReceiveBufferSizeSocketOption;
 QAbstractSocket.PathMtuSocketOption = QAbstractSocket_Wrapper.PathMtuSocketOption;
-QAbstractSocket.KeepAliveIdleOption = QAbstractSocket_Wrapper.KeepAliveIdleOption;
-QAbstractSocket.KeepAliveIntervalOption = QAbstractSocket_Wrapper.KeepAliveIntervalOption;
-QAbstractSocket.KeepAliveCountOption = QAbstractSocket_Wrapper.KeepAliveCountOption;
 
   // enum: BindFlag
 QAbstractSocket.DefaultForPlatform = QAbstractSocket_Wrapper.DefaultForPlatform;

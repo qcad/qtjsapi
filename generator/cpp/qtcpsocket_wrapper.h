@@ -150,9 +150,6 @@ TypeOfServiceOption = QTcpSocket::TypeOfServiceOption,
 SendBufferSizeSocketOption = QTcpSocket::SendBufferSizeSocketOption,
 ReceiveBufferSizeSocketOption = QTcpSocket::ReceiveBufferSizeSocketOption,
 PathMtuSocketOption = QTcpSocket::PathMtuSocketOption,
-KeepAliveIdleOption = QTcpSocket::KeepAliveIdleOption,
-KeepAliveIntervalOption = QTcpSocket::KeepAliveIntervalOption,
-KeepAliveCountOption = QTcpSocket::KeepAliveCountOption,
 
   };
   Q_ENUM(SocketOption)
