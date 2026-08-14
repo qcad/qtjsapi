@@ -503,6 +503,10 @@
                 return (QObject*)(QSpinBox*)vp;
               }
               
+              if (t==RJSType_QDoubleSpinBox::getIdStatic()) {
+                return (QObject*)(QDoubleSpinBox*)vp;
+              }
+              
               if (t==RJSType_QSplashScreen::getIdStatic()) {
                 return (QObject*)(QSplashScreen*)vp;
               }

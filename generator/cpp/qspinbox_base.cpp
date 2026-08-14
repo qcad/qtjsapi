@@ -778,3 +778,772 @@ event
 
       // public pure-virtual functions:
       
+    // Base class for QDoubleSpinBox
+
+    // constructors:
+    
+  // Class: QDoubleSpinBox
+  // Function: 
+  // Parameters: 1
+  // preceding Parameters: -1
+
+      // protected overwritten functions / events and their public invokable counterparts:
+      bool QDoubleSpinBox_Base::eventFilter(
+      QObject* watched, QEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::eventFilter()";
+
+      //QJSValue f = self.prototype().property("eventFilter");
+      QJSValue f = self.property("eventFilter");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QObject(
+    handler, 
+    // non-copyable: true
+watched
+  );
+
+
+  args << RJSHelper::cpp2js_QEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.eventFilter.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            // convert return value js2cpp and return:
+            return RJSHelper::js2cpp_bool(handler, res);
+          
+      }
+      else {
+        
+          return
+        QDoubleSpinBox::eventFilter(
+          watched, event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::actionEvent(
+      QActionEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::actionEvent()";
+
+      //QJSValue f = self.prototype().property("actionEvent");
+      QJSValue f = self.property("actionEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QActionEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.actionEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::actionEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::resizeEvent(
+      QResizeEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::resizeEvent()";
+
+      //QJSValue f = self.prototype().property("resizeEvent");
+      QJSValue f = self.property("resizeEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QResizeEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.resizeEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::resizeEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::keyPressEvent(
+      QKeyEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::keyPressEvent()";
+
+      //QJSValue f = self.prototype().property("keyPressEvent");
+      QJSValue f = self.property("keyPressEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QKeyEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.keyPressEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::keyPressEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::keyReleaseEvent(
+      QKeyEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::keyReleaseEvent()";
+
+      //QJSValue f = self.prototype().property("keyReleaseEvent");
+      QJSValue f = self.property("keyReleaseEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QKeyEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.keyReleaseEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::keyReleaseEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::wheelEvent(
+      QWheelEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::wheelEvent()";
+
+      //QJSValue f = self.prototype().property("wheelEvent");
+      QJSValue f = self.property("wheelEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QWheelEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.wheelEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::wheelEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::focusInEvent(
+      QFocusEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::focusInEvent()";
+
+      //QJSValue f = self.prototype().property("focusInEvent");
+      QJSValue f = self.property("focusInEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QFocusEvent(
+    handler, 
+    // non-copyable: false
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.focusInEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::focusInEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::focusOutEvent(
+      QFocusEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::focusOutEvent()";
+
+      //QJSValue f = self.prototype().property("focusOutEvent");
+      QJSValue f = self.property("focusOutEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QFocusEvent(
+    handler, 
+    // non-copyable: false
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.focusOutEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::focusOutEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::contextMenuEvent(
+      QContextMenuEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::contextMenuEvent()";
+
+      //QJSValue f = self.prototype().property("contextMenuEvent");
+      QJSValue f = self.property("contextMenuEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QContextMenuEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.contextMenuEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::contextMenuEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::changeEvent(
+      QEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::changeEvent()";
+
+      //QJSValue f = self.prototype().property("changeEvent");
+      QJSValue f = self.property("changeEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.changeEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::changeEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::mousePressEvent(
+      QMouseEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::mousePressEvent()";
+
+      //QJSValue f = self.prototype().property("mousePressEvent");
+      QJSValue f = self.property("mousePressEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QMouseEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.mousePressEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::mousePressEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::mouseReleaseEvent(
+      QMouseEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::mouseReleaseEvent()";
+
+      //QJSValue f = self.prototype().property("mouseReleaseEvent");
+      QJSValue f = self.property("mouseReleaseEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QMouseEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.mouseReleaseEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::mouseReleaseEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::mouseMoveEvent(
+      QMouseEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::mouseMoveEvent()";
+
+      //QJSValue f = self.prototype().property("mouseMoveEvent");
+      QJSValue f = self.property("mouseMoveEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QMouseEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.mouseMoveEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::mouseMoveEvent(
+          event
+        );
+      }
+    }
+
+  void QDoubleSpinBox_Base::paintEvent(
+      QPaintEvent* event
+    ) {
+
+      //qDebug() << "QDoubleSpinBox_Base::paintEvent()";
+
+      //QJSValue f = self.prototype().property("paintEvent");
+      QJSValue f = self.property("paintEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QPaintEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.paintEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QDoubleSpinBox::paintEvent(
+          event
+        );
+      }
+    }
+
+  
+
+      // public virtual overwritten functions / events:
+      
+
+      // public pure-virtual functions:
+      

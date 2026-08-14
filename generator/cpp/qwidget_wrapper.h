@@ -885,6 +885,10 @@
                 return (QWidget*)(QSpinBox*)vp;
               }
               
+              if (t==RJSType_QDoubleSpinBox::getIdStatic()) {
+                return (QWidget*)(QDoubleSpinBox*)vp;
+              }
+              
               if (t==RJSType_QSplashScreen::getIdStatic()) {
                 return (QWidget*)(QSplashScreen*)vp;
               }

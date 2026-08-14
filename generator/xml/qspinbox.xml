@@ -150,10 +150,20 @@
       </variant>
     </function>
   </class>
-  <class name="QDoubleSpinBox">
+  <class name="QDoubleSpinBox" ownership="cpp" inheritable="true">
     <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
       <super name="QAbstractSpinBox" />
     </super_list>
+    <property type="QString" name="prefix" read="prefix" write="setPrefix" />
+    <property type="QString" name="cleanText" read="cleanText" />
+    <property type="double" name="minimum" read="minimum" write="setMinimum" />
+    <property type="double" name="maximum" read="maximum" write="setMaximum" />
+    <property type="double" name="singleStep" read="singleStep" write="setSingleStep" />
+    <property type="StepType" name="stepType" read="stepType" write="setStepType" />
+    <property type="double" name="value" read="value" write="setValue" />
+    <property type="int" name="decimals" read="decimals" write="setDecimals" />
     <constructor>
       <variant>
         <parameters>

@@ -360,5 +360,343 @@ QSpinBox_Base
     
         #include <QDoubleSpinBox>
       
+    // Base class for QDoubleSpinBox
+      class QDoubleSpinBox_Base : public QDoubleSpinBox {
+
+      
+        //Q_OBJECT
+      
+
+      public:
+    
+
+    // constructors:
+    
+  // Class: QDoubleSpinBox
+  // Function: 
+  // Parameters: 1
+  // preceding Parameters: -1
+QDoubleSpinBox_Base
+        
+      (
+
+        
+          RJSApi& _h
+          
+            ,
+          QWidget* parent=nullptr
+      )
+      
+        : QDoubleSpinBox(
+          parent
+        ) 
+        
+          , handler(_h) /*, recFlag(false)*/
+        
+        {}
+      
+    // destructor:
+    virtual ~QDoubleSpinBox_Base() { }
+
+    public:
+      // set handler:
+      //void setHandler(RJSApi* h) {
+      //  handler = h;
+      //}
+    
+      // protected overwritten functions / events and their public invokable counterparts:
+      
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual bool eventFilter(
+      QObject* watched, QEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual bool eventFilterPublic(
+      QObject* watched, QEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::eventFilterPublic()";
+      
+        // TODO: convert return value to QJSValue:
+        return
+      QDoubleSpinBox::eventFilter(
+        watched, event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void actionEvent(
+      QActionEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void actionEventPublic(
+      QActionEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::actionEventPublic()";
+      QDoubleSpinBox::actionEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void resizeEvent(
+      QResizeEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void resizeEventPublic(
+      QResizeEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::resizeEventPublic()";
+      QDoubleSpinBox::resizeEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void keyPressEvent(
+      QKeyEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void keyPressEventPublic(
+      QKeyEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::keyPressEventPublic()";
+      QDoubleSpinBox::keyPressEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void keyReleaseEvent(
+      QKeyEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void keyReleaseEventPublic(
+      QKeyEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::keyReleaseEventPublic()";
+      QDoubleSpinBox::keyReleaseEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void wheelEvent(
+      QWheelEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void wheelEventPublic(
+      QWheelEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::wheelEventPublic()";
+      QDoubleSpinBox::wheelEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void focusInEvent(
+      QFocusEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void focusInEventPublic(
+      QFocusEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::focusInEventPublic()";
+      QDoubleSpinBox::focusInEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void focusOutEvent(
+      QFocusEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void focusOutEventPublic(
+      QFocusEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::focusOutEventPublic()";
+      QDoubleSpinBox::focusOutEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void contextMenuEvent(
+      QContextMenuEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void contextMenuEventPublic(
+      QContextMenuEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::contextMenuEventPublic()";
+      QDoubleSpinBox::contextMenuEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void changeEvent(
+      QEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void changeEventPublic(
+      QEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::changeEventPublic()";
+      QDoubleSpinBox::changeEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void mousePressEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void mousePressEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::mousePressEventPublic()";
+      QDoubleSpinBox::mousePressEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void mouseReleaseEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void mouseReleaseEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::mouseReleaseEventPublic()";
+      QDoubleSpinBox::mouseReleaseEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void mouseMoveEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void mouseMoveEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::mouseMoveEventPublic()";
+      QDoubleSpinBox::mouseMoveEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void paintEvent(
+      QPaintEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void paintEventPublic(
+      QPaintEvent* event
+    ) {
+      //qDebug() << "QDoubleSpinBox_Base::paintEventPublic()";
+      QDoubleSpinBox::paintEvent(
+        event
+      );
+    }
+  
+
+      // public virtual overwritten functions / events:
+      
+
+      // public pure-virtual functions:
+      
+
+    public:
+      //void setRecFlag(bool on) {
+      //  recFlag = on;
+      //}
+
+    public:
+      QJSValue self;
+
+    private:
+      
+        RJSApi& handler;
+      
+      //bool recFlag;
+
+    };
+    
   #endif
   

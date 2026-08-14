@@ -1289,6 +1289,12 @@
                   return RJSHelper::cpp2js_QSpinBox(handler, o);
               }
           }
+          {
+              QDoubleSpinBox* o = qobject_cast<QDoubleSpinBox*>(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QDoubleSpinBox(handler, o);
+              }
+          }
 
           {
               QMenu* o = qobject_cast<QMenu*>(v);

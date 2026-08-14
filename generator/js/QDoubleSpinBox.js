@@ -88,6 +88,8 @@
             // signal aliases:
             if (Object.getPrototypeOf(this)!=null) {
               
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
     this["valueChanged(double)"] = Object.getPrototypeOf(this).valueChanged;
   
     this["textChanged(QString)"] = Object.getPrototypeOf(this).textChanged;
@@ -122,6 +124,14 @@
         }
 
         
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
+        
+          if (t===RJSType_QWidget.getIdStatic()) {
+            return true;
+          }
+        
           if (t===RJSType_QAbstractSpinBox.getIdStatic()) {
             return true;
           }
@@ -138,6 +148,38 @@
 
       // functions:
       
+      // function 
+      QDoubleSpinBox.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: QDoubleSpinBox.prototype.actionEvent");
+        
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                
+                    return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, QDoubleSpinBox);
+  }
+
+  
+  else {
+    
+        print("QDoubleSpinBox.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+      };
+    
 
       // static functions:
       
