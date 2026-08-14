@@ -385,6 +385,8 @@ void RJSApi::init() {
     QBrush_Wrapper::init(*this);
     QGradient_Wrapper::init(*this);
     QLinearGradient_Wrapper::init(*this);
+    QRadialGradient_Wrapper::init(*this);
+    QConicalGradient_Wrapper::init(*this);
     QGuiApplication_Wrapper::init(*this);
     QTransform_Wrapper::init(*this);
     QXmlContentHandler_Wrapper::init(*this);
