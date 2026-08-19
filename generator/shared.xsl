@@ -183,10 +183,11 @@
           <xsl:when test="document('../../qcadrhi3djsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcadrhi3d'" />
           </xsl:when>
-          <!-- qcadcanvasjsapi types.xml is for qcadcanvas -->
+          <!-- qcadcanvasjsapi types.xml is for qcadcanvas
           <xsl:when test="document('../../qcadcanvasjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcadcanvas'" />
           </xsl:when>
+          -->
           <!-- qcadquickjsapi types.xml is for qcadquick -->
           <xsl:when test="document('../../qcadquickjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcadquick'" />
