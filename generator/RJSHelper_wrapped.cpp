@@ -419,6 +419,14 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsqldatabase_wrapper.h"
+        
+          #include "qsqlerror_wrapper.h"
+        
+          #include "qsqlquery_wrapper.h"
+        
+          #include "qsqlrecord_wrapper.h"
+        
           #include "qsslcertificate_wrapper.h"
         
           #include "qsslcertificateextension_wrapper.h"
@@ -9916,6 +9924,363 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_QSizePolicy::getIdStatic())).toBool();
       }
     
+    #ifdef QT_SQL_LIB
+      QJSValue RJSHelper::cpp2js_QSqlDatabase(RJSApi& handler, const QSqlDatabase* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSqlDatabase_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSqlDatabase_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSqlDatabase object:
+              ret = new QSqlDatabase_Wrapper(handler, new QSqlDatabase(*v), true);
+          }
+
+          // JS: new QSqlDatabase('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSqlDatabase");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSqlDatabase is undefined. Use QSqlDatabase_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSqlDatabase('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSqlDatabase(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSqlDatabase(RJSApi& handler, const QSqlDatabase& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSqlDatabase object:
+          QSqlDatabase_Wrapper* ret = new QSqlDatabase_Wrapper(handler, new QSqlDatabase(v), true);
+
+          // JS: new QSqlDatabase('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSqlDatabase");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSqlDatabase is undefined. Use QSqlDatabase_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSqlDatabase('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSqlDatabase(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSqlDatabase RJSHelper::js2cpp_QSqlDatabase(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSqlDatabase_Wrapper* wrapper = getWrapper<QSqlDatabase_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSqlDatabase: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSqlDatabase();
+          }
+          //return *(QSqlDatabase*)wrapper->getWrappedVoid();
+          QSqlDatabase* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSqlDatabase: wrapped pointer is NULL";
+              return QSqlDatabase();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSqlDatabase: not a QObject";
+              return QSqlDatabase();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSqlDatabase_ptr: no wrapper";
+              handler.trace();
+              return QSqlDatabase();
+          }
+          //QSqlDatabase* ret = getWrapped_QSqlDatabase(wrapper);
+          QSqlDatabase* ret = QSqlDatabase_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSqlDatabase();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSqlDatabase(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSqlDatabase: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSqlDatabase::getIdStatic())).toBool();
+      }
+    
+    #endif
+  
+    #ifdef QT_SQL_LIB
+      QJSValue RJSHelper::cpp2js_QSqlError(RJSApi& handler, const QSqlError* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSqlError_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSqlError_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSqlError object:
+              ret = new QSqlError_Wrapper(handler, new QSqlError(*v), true);
+          }
+
+          // JS: new QSqlError('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSqlError");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSqlError is undefined. Use QSqlError_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSqlError('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSqlError(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSqlError(RJSApi& handler, const QSqlError& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSqlError object:
+          QSqlError_Wrapper* ret = new QSqlError_Wrapper(handler, new QSqlError(v), true);
+
+          // JS: new QSqlError('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSqlError");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSqlError is undefined. Use QSqlError_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSqlError('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSqlError(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSqlError RJSHelper::js2cpp_QSqlError(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSqlError_Wrapper* wrapper = getWrapper<QSqlError_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSqlError: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSqlError();
+          }
+          //return *(QSqlError*)wrapper->getWrappedVoid();
+          QSqlError* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSqlError: wrapped pointer is NULL";
+              return QSqlError();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSqlError: not a QObject";
+              return QSqlError();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSqlError_ptr: no wrapper";
+              handler.trace();
+              return QSqlError();
+          }
+          //QSqlError* ret = getWrapped_QSqlError(wrapper);
+          QSqlError* ret = QSqlError_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSqlError();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSqlError(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSqlError: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSqlError::getIdStatic())).toBool();
+      }
+    
+    #endif
+  
+    #ifdef QT_SQL_LIB
+      QJSValue RJSHelper::cpp2js_QSqlRecord(RJSApi& handler, const QSqlRecord* v) {
+          QJSEngine* engine = handler.getEngine();
+          QSqlRecord_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QSqlRecord_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QSqlRecord object:
+              ret = new QSqlRecord_Wrapper(handler, new QSqlRecord(*v), true);
+          }
+
+          // JS: new QSqlRecord('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSqlRecord");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSqlRecord is undefined. Use QSqlRecord_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSqlRecord('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSqlRecord(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QSqlRecord(RJSApi& handler, const QSqlRecord& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QSqlRecord object:
+          QSqlRecord_Wrapper* ret = new QSqlRecord_Wrapper(handler, new QSqlRecord(v), true);
+
+          // JS: new QSqlRecord('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QSqlRecord");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QSqlRecord is undefined. Use QSqlRecord_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QSqlRecord('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QSqlRecord(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QSqlRecord RJSHelper::js2cpp_QSqlRecord(RJSApi& handler, const QJSValue& v) {
+          /*
+          QSqlRecord_Wrapper* wrapper = getWrapper<QSqlRecord_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSqlRecord: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QSqlRecord();
+          }
+          //return *(QSqlRecord*)wrapper->getWrappedVoid();
+          QSqlRecord* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QSqlRecord: wrapped pointer is NULL";
+              return QSqlRecord();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QSqlRecord: not a QObject";
+              return QSqlRecord();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSqlRecord_ptr: no wrapper";
+              handler.trace();
+              return QSqlRecord();
+          }
+          //QSqlRecord* ret = getWrapped_QSqlRecord(wrapper);
+          QSqlRecord* ret = QSqlRecord_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QSqlRecord();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QSqlRecord(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QSqlRecord: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QSqlRecord::getIdStatic())).toBool();
+      }
+    
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QStyleOption(RJSApi& handler, const QStyleOption* v) {
           QJSEngine* engine = handler.getEngine();
           QStyleOption_Wrapper* ret;

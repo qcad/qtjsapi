@@ -82,6 +82,7 @@
   <class name="QSlider" />
   <class name="QSpacerItem" />
   <class name="QSpinBox" />
+  <class name="QSqlQuery" />
   <class name="QSplashScreen" />
   <class name="QSplitter" />
   <class name="QSplitterHandle" />

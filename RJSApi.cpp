@@ -227,6 +227,11 @@
 #include "generator/cpp/qsinglepointevent_wrapper.h"
 #include "generator/cpp/qspaceritem_wrapper.h"
 #include "generator/cpp/qsplitterhandle_wrapper.h"
+#include "generator/cpp/qtsqlglobal_wrapper.h"
+#include "generator/cpp/qsqldatabase_wrapper.h"
+#include "generator/cpp/qsqlerror_wrapper.h"
+#include "generator/cpp/qsqlquery_wrapper.h"
+#include "generator/cpp/qsqlrecord_wrapper.h"
 #include "generator/cpp/qstyleoption_wrapper.h"
 #include "generator/cpp/qstyleoptionbutton_wrapper.h"
 #include "generator/cpp/qstyleoptioncombobox_wrapper.h"
@@ -674,6 +679,13 @@ void RJSApi::init() {
 #ifdef QT_PRINTSUPPORT_LIB
     QAbstractPrintDialog_Wrapper::init(*this);
     QPrinterInfo_Wrapper::init(*this);
+#endif
+#ifdef QT_SQL_LIB
+    QSql_Wrapper::init(*this);
+    QSqlDatabase_Wrapper::init(*this);
+    QSqlError_Wrapper::init(*this);
+    QSqlQuery_Wrapper::init(*this);
+    QSqlRecord_Wrapper::init(*this);
 #endif
 #if QT_VERSION >= 0x060700
     QRhiWidget_Wrapper::init(*this);

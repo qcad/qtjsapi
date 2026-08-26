@@ -203,6 +203,10 @@
     <file alias="generator/js/QSplitter.js">generator/js/QSplitter.js</file>
     <file alias="generator/js/QSplitterHandle.js">generator/js/QSplitterHandle.js</file>
     <file alias="generator/js/QSql.js">generator/js/QSql.js</file>
+    <file alias="generator/js/QSqlDatabase.js">generator/js/QSqlDatabase.js</file>
+    <file alias="generator/js/QSqlError.js">generator/js/QSqlError.js</file>
+    <file alias="generator/js/QSqlQuery.js">generator/js/QSqlQuery.js</file>
+    <file alias="generator/js/QSqlRecord.js">generator/js/QSqlRecord.js</file>
     <file alias="generator/js/QSsl.js">generator/js/QSsl.js</file>
     <file alias="generator/js/QSslCertificate.js">generator/js/QSslCertificate.js</file>
     <file alias="generator/js/QSslCertificateExtension.js">generator/js/QSslCertificateExtension.js</file>

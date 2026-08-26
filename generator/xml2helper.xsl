@@ -88,6 +88,9 @@
       #ifdef QT_CORE5COMPAT_LIB
       #include &lt;QtCore5Compat&gt;
       #endif
+      #ifdef QT_SQL_LIB
+      #include &lt;QtSql&gt;
+      #endif
       #include &lt;QtSvg&gt;
       #include &lt;QtUiTools&gt;
 
@@ -1221,6 +1224,12 @@
               }
           }
 
+          {
+              QDoubleSpinBox* o = qobject_cast&lt;QDoubleSpinBox*&gt;(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QDoubleSpinBox(handler, o);
+              }
+          }
 
           {
               QSpinBox* o = qobject_cast&lt;QSpinBox*&gt;(v);

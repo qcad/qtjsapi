@@ -419,6 +419,14 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsqldatabase_wrapper.h"
+        
+          #include "qsqlerror_wrapper.h"
+        
+          #include "qsqlquery_wrapper.h"
+        
+          #include "qsqlrecord_wrapper.h"
+        
           #include "qsslcertificate_wrapper.h"
         
           #include "qsslcertificateextension_wrapper.h"
@@ -1282,17 +1290,17 @@
               }
           }
 
+          {
+              QDoubleSpinBox* o = qobject_cast<QDoubleSpinBox*>(v);
+              if (o!=nullptr) {
+                  return RJSHelper::cpp2js_QDoubleSpinBox(handler, o);
+              }
+          }
 
           {
               QSpinBox* o = qobject_cast<QSpinBox*>(v);
               if (o!=nullptr) {
                   return RJSHelper::cpp2js_QSpinBox(handler, o);
-              }
-          }
-          {
-              QDoubleSpinBox* o = qobject_cast<QDoubleSpinBox*>(v);
-              if (o!=nullptr) {
-                  return RJSHelper::cpp2js_QDoubleSpinBox(handler, o);
               }
           }
 

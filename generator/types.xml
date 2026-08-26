@@ -225,6 +225,7 @@
     <type>QSizePolicy::ControlType</type>
     <type>QSizePolicy::Policy</type>
     <type>QSlider::TickPosition</type>
+    <type ifdef="QT_SQL_LIB">QSqlError::ErrorType</type>
     <type>QStackedLayout::StackingMode</type>
     <type>QString</type>
     <type>QStringConverter::Encoding</type>
@@ -478,6 +479,9 @@
     <type>QSize</type>
     <type>QSizeF</type>
     <type>QSizePolicy</type>
+    <type ifdef="QT_SQL_LIB">QSqlDatabase</type>
+    <type ifdef="QT_SQL_LIB">QSqlError</type>
+    <type ifdef="QT_SQL_LIB">QSqlRecord</type>
     <type>QStyleOption</type>
     <type>QStyleOptionViewItem</type>
     <type>QStyleOptionFocusRect</type>
@@ -568,6 +572,7 @@
     <type>QResizeEvent</type>
     <type>QSinglePointEvent</type>
     <type>QSpacerItem</type>
+    <type ifdef="QT_SQL_LIB">QSqlQuery</type>
     <type>QStandardItem</type>
     <type>QStringConverter</type>
     <type>QStringDecoder</type>

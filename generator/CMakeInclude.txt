@@ -344,6 +344,14 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qsplitter_base.h
     generator/cpp/qsplitter_wrapper.h
     generator/cpp/qsplitterhandle_wrapper.h
+    generator/cpp/qsqldatabase_base.h
+    generator/cpp/qsqldatabase_wrapper.h
+    generator/cpp/qsqlerror_base.h
+    generator/cpp/qsqlerror_wrapper.h
+    generator/cpp/qsqlquery_base.h
+    generator/cpp/qsqlquery_wrapper.h
+    generator/cpp/qsqlrecord_base.h
+    generator/cpp/qsqlrecord_wrapper.h
     generator/cpp/qssl_base.h
     generator/cpp/qssl_wrapper.h
     generator/cpp/qsslcertificate_base.h
@@ -789,6 +797,14 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qsplashscreen_wrapper.cpp
     generator/cpp/qsplitter_base.cpp
     generator/cpp/qsplitter_wrapper.cpp
+    generator/cpp/qsqldatabase_base.cpp
+    generator/cpp/qsqldatabase_wrapper.cpp
+    generator/cpp/qsqlerror_base.cpp
+    generator/cpp/qsqlerror_wrapper.cpp
+    generator/cpp/qsqlquery_base.cpp
+    generator/cpp/qsqlquery_wrapper.cpp
+    generator/cpp/qsqlrecord_base.cpp
+    generator/cpp/qsqlrecord_wrapper.cpp
     generator/cpp/qssl_base.cpp
     generator/cpp/qssl_wrapper.cpp
     generator/cpp/qsslcertificate_base.cpp

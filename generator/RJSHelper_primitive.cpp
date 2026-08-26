@@ -419,6 +419,14 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsqldatabase_wrapper.h"
+        
+          #include "qsqlerror_wrapper.h"
+        
+          #include "qsqlquery_wrapper.h"
+        
+          #include "qsqlrecord_wrapper.h"
+        
           #include "qsslcertificate_wrapper.h"
         
           #include "qsslcertificateextension_wrapper.h"
@@ -5322,6 +5330,31 @@
         return v.isNumber();
       }
     
+    #ifdef QT_SQL_LIB
+      QJSValue RJSHelper::cpp2js_QSqlError_ErrorType(RJSApi& handler, QSqlError::ErrorType v) {
+        return QJSValue(v);
+      }
+
+      QSqlError::ErrorType RJSHelper::js2cpp_QSqlError_ErrorType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QSqlError::ErrorType)0
+          ;
+        }
+        return 
+        (QSqlError::ErrorType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QSqlError_ErrorType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QStackedLayout_StackingMode(RJSApi& handler, QStackedLayout::StackingMode v) {
         return QJSValue(v);
       }

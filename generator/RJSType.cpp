@@ -1349,6 +1349,60 @@
 
 
       
+      #ifdef QT_SQL_LIB
+      int RJSType_QSqlDatabase::id = -1;
+
+      int RJSType_QSqlDatabase::getId() const {
+          return RJSType_QSqlDatabase::getIdStatic();
+      }
+
+      int RJSType_QSqlDatabase::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSqlDatabase());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_SQL_LIB
+      int RJSType_QSqlError::id = -1;
+
+      int RJSType_QSqlError::getId() const {
+          return RJSType_QSqlError::getIdStatic();
+      }
+
+      int RJSType_QSqlError::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSqlError());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_SQL_LIB
+      int RJSType_QSqlRecord::id = -1;
+
+      int RJSType_QSqlRecord::getId() const {
+          return RJSType_QSqlRecord::getIdStatic();
+      }
+
+      int RJSType_QSqlRecord::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSqlRecord());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
       int RJSType_QStyleOption::id = -1;
 
       int RJSType_QStyleOption::getId() const {
@@ -2644,6 +2698,24 @@
 
 
       
+      #ifdef QT_SQL_LIB
+      int RJSType_QSqlQuery::id = -1;
+
+      int RJSType_QSqlQuery::getId() const {
+          return RJSType_QSqlQuery::getIdStatic();
+      }
+
+      int RJSType_QSqlQuery::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QSqlQuery());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
       int RJSType_QStandardItem::id = -1;
 
       int RJSType_QStandardItem::getId() const {

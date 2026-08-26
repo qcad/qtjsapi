@@ -21,6 +21,9 @@
       #ifdef QT_CORE5COMPAT_LIB
       #include <QtCore5Compat>
       #endif
+      #ifdef QT_SQL_LIB
+      #include <QtSql>
+      #endif
       #include <QtSvg>
       #include <QtUiTools>
 
@@ -1426,6 +1429,42 @@
         public:
           virtual QSplitterHandle* castToBase(int t, void* vp) = 0;
         };
+        
+          #ifdef QT_SQL_LIB
+        // Base class for basecasters that can cast void* to base class QSqlDatabase:
+        class RJSBasecaster_QSqlDatabase {
+        public:
+          virtual QSqlDatabase* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_SQL_LIB
+        // Base class for basecasters that can cast void* to base class QSqlError:
+        class RJSBasecaster_QSqlError {
+        public:
+          virtual QSqlError* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_SQL_LIB
+        // Base class for basecasters that can cast void* to base class QSqlQuery:
+        class RJSBasecaster_QSqlQuery {
+        public:
+          virtual QSqlQuery* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_SQL_LIB
+        // Base class for basecasters that can cast void* to base class QSqlRecord:
+        class RJSBasecaster_QSqlRecord {
+        public:
+          virtual QSqlRecord* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
         
         // Base class for basecasters that can cast void* to base class QSslCertificate:
         class RJSBasecaster_QSslCertificate {
@@ -3033,6 +3072,13 @@
       static QSlider::TickPosition js2cpp_QSlider_TickPosition(RJSApi& handler, const QJSValue& v);
       static bool is_QSlider_TickPosition(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_SQL_LIB
+      static QJSValue cpp2js_QSqlError_ErrorType(RJSApi& handler, QSqlError::ErrorType v);
+      static QSqlError::ErrorType js2cpp_QSqlError_ErrorType(RJSApi& handler, const QJSValue& v);
+      static bool is_QSqlError_ErrorType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
       static QJSValue cpp2js_QStackedLayout_StackingMode(RJSApi& handler, QStackedLayout::StackingMode v);
       static QStackedLayout::StackingMode js2cpp_QStackedLayout_StackingMode(RJSApi& handler, const QJSValue& v);
       static bool is_QStackedLayout_StackingMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -4112,6 +4158,30 @@
       static QSizePolicy js2cpp_QSizePolicy(RJSApi& handler, const QJSValue& v);
       static bool is_QSizePolicy(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_SQL_LIB
+      static QJSValue cpp2js_QSqlDatabase(RJSApi& handler, const QSqlDatabase* v);
+      static QJSValue cpp2js_QSqlDatabase(RJSApi& handler, const QSqlDatabase& v);
+      static QSqlDatabase js2cpp_QSqlDatabase(RJSApi& handler, const QJSValue& v);
+      static bool is_QSqlDatabase(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_SQL_LIB
+      static QJSValue cpp2js_QSqlError(RJSApi& handler, const QSqlError* v);
+      static QJSValue cpp2js_QSqlError(RJSApi& handler, const QSqlError& v);
+      static QSqlError js2cpp_QSqlError(RJSApi& handler, const QJSValue& v);
+      static bool is_QSqlError(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_SQL_LIB
+      static QJSValue cpp2js_QSqlRecord(RJSApi& handler, const QSqlRecord* v);
+      static QJSValue cpp2js_QSqlRecord(RJSApi& handler, const QSqlRecord& v);
+      static QSqlRecord js2cpp_QSqlRecord(RJSApi& handler, const QJSValue& v);
+      static bool is_QSqlRecord(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
       static QJSValue cpp2js_QStyleOption(RJSApi& handler, const QStyleOption* v);
       static QJSValue cpp2js_QStyleOption(RJSApi& handler, const QStyleOption& v);
       static QStyleOption js2cpp_QStyleOption(RJSApi& handler, const QJSValue& v);
@@ -4509,6 +4579,13 @@
       static QSpacerItem* js2cpp_QSpacerItem_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QSpacerItem_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_SQL_LIB
+      static QJSValue cpp2js_QSqlQuery(RJSApi& handler, QSqlQuery* v);
+      static QSqlQuery* js2cpp_QSqlQuery_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QSqlQuery_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
       static QJSValue cpp2js_QStandardItem(RJSApi& handler, QStandardItem* v);
       static QStandardItem* js2cpp_QStandardItem_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QStandardItem_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);

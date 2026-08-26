@@ -419,6 +419,14 @@
         
           #include "qsplitterhandle_wrapper.h"
         
+          #include "qsqldatabase_wrapper.h"
+        
+          #include "qsqlerror_wrapper.h"
+        
+          #include "qsqlquery_wrapper.h"
+        
+          #include "qsqlrecord_wrapper.h"
+        
           #include "qsslcertificate_wrapper.h"
         
           #include "qsslcertificateextension_wrapper.h"

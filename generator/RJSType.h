@@ -2516,6 +2516,99 @@
           static int id;
       };
     
+      #ifdef QT_SQL_LIB
+      class QTJSAPI_EXPORT  RJSType_QSqlDatabase : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSqlDatabase";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSqlDatabase();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_SQL_LIB
+      class QTJSAPI_EXPORT  RJSType_QSqlError : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSqlError";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSqlError();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_SQL_LIB
+      class QTJSAPI_EXPORT  RJSType_QSqlRecord : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSqlRecord";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSqlRecord();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
       class QTJSAPI_EXPORT  RJSType_QStyleOption : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -4928,6 +5021,37 @@
       private:
           static int id;
       };
+    
+      #ifdef QT_SQL_LIB
+      class QTJSAPI_EXPORT  RJSType_QSqlQuery : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QSqlQuery";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QSqlQuery();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
     
       class QTJSAPI_EXPORT  RJSType_QStandardItem : public RJSTypeEnum {
           Q_OBJECT
