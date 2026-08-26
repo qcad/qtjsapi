@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsqlerror.h">
+  <class name="QSqlError" ifdef="QT_SQL_LIB">
+    <enum name="ErrorType">
+      <key>NoError</key>
+      <key>ConnectionError</key>
+      <key>StatementError</key>
+      <key>TransactionError</key>
+      <key>UnknownError</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="driverText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="databaseText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="QSqlError::ErrorType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="nativeErrorCode">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="text">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

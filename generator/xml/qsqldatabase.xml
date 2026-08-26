@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsqldatabase.h">
+  <class_decl name="QSqlError" />
+  <class_decl name="QSqlRecord" />
+  <class name="QSqlDatabase" ifdef="QT_SQL_LIB">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="open">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="user" />
+          <parameter const="true" type="QString" modifier="&amp;" name="password" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="close">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isOpen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isOpenError">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="tables">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="record">
+      <variant return-type="QSqlRecord" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tablename" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lastError">
+      <variant return-type="QSqlError" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transaction">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="commit">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rollback">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDatabaseName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setUserName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPassword">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="password" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHostName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="host" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPort">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setConnectOptions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="options" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="databaseName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="userName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="password">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hostName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="driverName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="port">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="connectOptions">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="connectionName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addDatabase" static="true">
+      <variant return-type="QSqlDatabase" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="type" />
+        </parameters>
+      </variant>
+      <variant return-type="QSqlDatabase" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="connectionName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="database" static="true">
+      <variant return-type="QSqlDatabase" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QSqlDatabase" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="connectionName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeDatabase" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="connectionName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contains" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="connectionName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drivers" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="connectionNames" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDriverAvailable" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

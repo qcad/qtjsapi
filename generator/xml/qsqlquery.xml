@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qsqlquery.h">
+  <class_decl name="QSqlDatabase" />
+  <class_decl name="QSqlError" />
+  <class_decl name="QSqlRecord" />
+  <class name="QSqlQuery" ownership="cpp" ifdef="QT_SQL_LIB">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QSqlDatabase" modifier="&amp;" name="db" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isActive">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSelect">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="numRowsAffected">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastError">
+      <variant return-type="QSqlError" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastQuery">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lastInsertId">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setForwardOnly">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" name="forward" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exec">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="query" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="prepare">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="query" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addBindValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="value">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="record">
+      <variant return-type="QSqlRecord" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="next">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="previous">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="first">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="last">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="seek">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" name="i" />
+          <parameter const="false" type="bool" name="relative" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="at">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="finish">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>
