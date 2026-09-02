@@ -196,6 +196,10 @@
           <xsl:when test="document('../../qcadconstraintjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcadconstraint'" />
           </xsl:when>
+          <!-- qcadconnectorjsapi types.xml is for qcadconnector -->
+          <xsl:when test="document('../../qcadconnectorjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
+            <xsl:value-of select="'_qcadconnector'" />
+          </xsl:when>
           <!-- default to RJSHelper (qtjsapi) -->
           <xsl:otherwise>
             <xsl:value-of select="''" />

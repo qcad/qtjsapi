@@ -1914,6 +1914,19 @@
 
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
+              <xsl:if test="$type!='QTextLayout'">
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      <xsl:value-of select="$type" />* o = <xsl:value-of select="$type" />_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o-&gt;clone().dynamicCast&lt;<xsl:value-of select="$type" />&gt;();
+                      }
+                  }
+              }
+              </xsl:if>
               qWarning() &lt;&lt; "js2cpp_QSharedPointer_<xsl:value-of select="$func" />: no wrapper";
               if (v.prototype().toQObject()!=nullptr) {
                 qWarning() &lt;&lt; "class found: " &lt;&lt; v.prototype().toQObject()->metaObject()->className();
@@ -2073,6 +2086,19 @@
 
           <xsl:value-of select="$type" />_Wrapper* wrapper = getWrapper&lt;<xsl:value-of select="$type" />_Wrapper&gt;(v);
           if (wrapper==nullptr) {
+              <xsl:if test="$type!='QTextLayout' and not(qc:ends-with($type, 'Data'))">
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      <xsl:value-of select="$type" />* o = <xsl:value-of select="$type" />_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o-&gt;clone().dynamicCast&lt;<xsl:value-of select="$type" />&gt;();
+                      }
+                  }
+              }
+              </xsl:if>
               qWarning() &lt;&lt; "js2cpp_<xsl:value-of select="$func" />: no wrapper";
               handler.trace();
               return QSharedPointer&lt;<xsl:value-of select="$type" />&gt;();
