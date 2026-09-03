@@ -9,6 +9,7 @@
     <type>QRegularExpressionMatchIterator</type>
     <type>QVariant</type>
     <type>QWidget</type>
+    <type ifdef="QT_LOCATION_LIB">QGeoJson</type>
   </manual>
 
   <primitive>
@@ -226,6 +227,10 @@
     <type>QSizePolicy::Policy</type>
     <type>QSlider::TickPosition</type>
     <type ifdef="QT_SQL_LIB">QSqlError::ErrorType</type>
+    <type>QJsonDocument::JsonFormat</type>
+    <type ifdef="QT_POSITIONING_LIB">QGeoCoordinate::CoordinateType</type>
+    <type ifdef="QT_POSITIONING_LIB">QGeoCoordinate::CoordinateFormat</type>
+    <type ifdef="QT_POSITIONING_LIB">QGeoShape::ShapeType</type>
     <type>QStackedLayout::StackingMode</type>
     <type>QString</type>
     <type>QStringConverter::Encoding</type>
@@ -482,6 +487,13 @@
     <type ifdef="QT_SQL_LIB">QSqlDatabase</type>
     <type ifdef="QT_SQL_LIB">QSqlError</type>
     <type ifdef="QT_SQL_LIB">QSqlRecord</type>
+    <type>QJsonDocument</type>
+    <type ifdef="QT_POSITIONING_LIB">QGeoCoordinate</type>
+    <type ifdef="QT_POSITIONING_LIB">QGeoShape</type>
+    <type ifdef="QT_POSITIONING_LIB">QGeoRectangle</type>
+    <type ifdef="QT_POSITIONING_LIB">QGeoCircle</type>
+    <type ifdef="QT_POSITIONING_LIB">QGeoPath</type>
+    <type ifdef="QT_POSITIONING_LIB">QGeoPolygon</type>
     <type>QStyleOption</type>
     <type>QStyleOptionViewItem</type>
     <type>QStyleOptionFocusRect</type>
@@ -754,6 +766,7 @@
     <type>QList&lt;QSslError&gt;</type>
     <type>QModelIndexList</type>
     <type>QStringList</type>
+    <type ifdef="QT_POSITIONING_LIB">QList&lt;QGeoCoordinate&gt;</type>
   </qlist>
 
   <qlist_ptr>

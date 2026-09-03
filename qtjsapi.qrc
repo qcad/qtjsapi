@@ -84,6 +84,13 @@
     <file alias="generator/js/QFontMetricsF.js">generator/js/QFontMetricsF.js</file>
     <file alias="generator/js/QFormLayout.js">generator/js/QFormLayout.js</file>
     <file alias="generator/js/QFrame.js">generator/js/QFrame.js</file>
+    <file alias="generator/js/QGeoCircle.js">generator/js/QGeoCircle.js</file>
+    <file alias="generator/js/QGeoCoordinate.js">generator/js/QGeoCoordinate.js</file>
+    <file alias="generator/js/QGeoJson.js">generator/js/QGeoJson.js</file>
+    <file alias="generator/js/QGeoPath.js">generator/js/QGeoPath.js</file>
+    <file alias="generator/js/QGeoPolygon.js">generator/js/QGeoPolygon.js</file>
+    <file alias="generator/js/QGeoRectangle.js">generator/js/QGeoRectangle.js</file>
+    <file alias="generator/js/QGeoShape.js">generator/js/QGeoShape.js</file>
     <file alias="generator/js/QGesture.js">generator/js/QGesture.js</file>
     <file alias="generator/js/QGradient.js">generator/js/QGradient.js</file>
     <file alias="generator/js/QGraphicsBlurEffect.js">generator/js/QGraphicsBlurEffect.js</file>
@@ -112,6 +119,7 @@
     <file alias="generator/js/QItemSelection.js">generator/js/QItemSelection.js</file>
     <file alias="generator/js/QItemSelectionModel.js">generator/js/QItemSelectionModel.js</file>
     <file alias="generator/js/QJSEngine.js">generator/js/QJSEngine.js</file>
+    <file alias="generator/js/QJsonDocument.js">generator/js/QJsonDocument.js</file>
     <file alias="generator/js/QKeyCombination.js">generator/js/QKeyCombination.js</file>
     <file alias="generator/js/QKeyEvent.js">generator/js/QKeyEvent.js</file>
     <file alias="generator/js/QKeySequence.js">generator/js/QKeySequence.js</file>

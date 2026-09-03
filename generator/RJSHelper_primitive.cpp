@@ -219,6 +219,20 @@
         
           #include "qformlayout_wrapper.h"
         
+          #include "qgeocircle_wrapper.h"
+        
+          #include "qgeoshape_wrapper.h"
+        
+          #include "qgeocoordinate_wrapper.h"
+        
+          #include "qgeojson_wrapper.h"
+        
+          #include "qgeopath_wrapper.h"
+        
+          #include "qgeopolygon_wrapper.h"
+        
+          #include "qgeorectangle_wrapper.h"
+        
           #include "qgesture_wrapper.h"
         
           #include "qpangesture_wrapper.h"
@@ -264,6 +278,8 @@
           #include "qitemselection_wrapper.h"
         
           #include "qjsengine_wrapper.h"
+        
+          #include "qjsondocument_wrapper.h"
         
           #include "qkeysequence_wrapper.h"
         
@@ -5347,6 +5363,103 @@
       }
 
       bool RJSHelper::is_QSqlError_ErrorType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+    #endif
+  
+      QJSValue RJSHelper::cpp2js_QJsonDocument_JsonFormat(RJSApi& handler, QJsonDocument::JsonFormat v) {
+        return QJSValue(v);
+      }
+
+      QJsonDocument::JsonFormat RJSHelper::js2cpp_QJsonDocument_JsonFormat(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QJsonDocument::JsonFormat)0
+          ;
+        }
+        return 
+        (QJsonDocument::JsonFormat)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QJsonDocument_JsonFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QGeoCoordinate_CoordinateType(RJSApi& handler, QGeoCoordinate::CoordinateType v) {
+        return QJSValue(v);
+      }
+
+      QGeoCoordinate::CoordinateType RJSHelper::js2cpp_QGeoCoordinate_CoordinateType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QGeoCoordinate::CoordinateType)0
+          ;
+        }
+        return 
+        (QGeoCoordinate::CoordinateType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QGeoCoordinate_CoordinateType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QGeoCoordinate_CoordinateFormat(RJSApi& handler, QGeoCoordinate::CoordinateFormat v) {
+        return QJSValue(v);
+      }
+
+      QGeoCoordinate::CoordinateFormat RJSHelper::js2cpp_QGeoCoordinate_CoordinateFormat(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QGeoCoordinate::CoordinateFormat)0
+          ;
+        }
+        return 
+        (QGeoCoordinate::CoordinateFormat)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QGeoCoordinate_CoordinateFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QGeoShape_ShapeType(RJSApi& handler, QGeoShape::ShapeType v) {
+        return QJSValue(v);
+      }
+
+      QGeoShape::ShapeType RJSHelper::js2cpp_QGeoShape_ShapeType(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (QGeoShape::ShapeType)0
+          ;
+        }
+        return 
+        (QGeoShape::ShapeType)
+      v.toInt();
+      }
+
+      bool RJSHelper::is_QGeoShape_ShapeType(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }

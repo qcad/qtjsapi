@@ -91,6 +91,12 @@
       #ifdef QT_SQL_LIB
       #include &lt;QtSql&gt;
       #endif
+      #ifdef QT_POSITIONING_LIB
+      #include &lt;QtPositioning&gt;
+      #endif
+      #ifdef QT_LOCATION_LIB
+      #include "RJSGeoJson.h"
+      #endif
       #include &lt;QtSvg&gt;
       #include &lt;QtUiTools&gt;
 
@@ -740,6 +746,33 @@
               return RJSHelper::cpp2js_QKeySequence(handler, v.value&lt;QKeySequence&gt;());
           }
 
+#ifdef QT_POSITIONING_LIB
+          // Qt Positioning value types (e.g. in the result of QGeoJson.importGeoJson):
+          if (v.userType()==qMetaTypeId&lt;QGeoCoordinate&gt;()) {
+              return RJSHelper::cpp2js_QGeoCoordinate(handler, v.value&lt;QGeoCoordinate&gt;());
+          }
+          if (v.userType()==qMetaTypeId&lt;QGeoShape&gt;() ||
+              v.userType()==qMetaTypeId&lt;QGeoRectangle&gt;() ||
+              v.userType()==qMetaTypeId&lt;QGeoCircle&gt;() ||
+              v.userType()==qMetaTypeId&lt;QGeoPath&gt;() ||
+              v.userType()==qMetaTypeId&lt;QGeoPolygon&gt;()) {
+              // always convert to the most specific shape type:
+              QGeoShape shape = v.value&lt;QGeoShape&gt;();
+              switch (shape.type()) {
+              case QGeoShape::RectangleType:
+                  return RJSHelper::cpp2js_QGeoRectangle(handler, QGeoRectangle(shape));
+              case QGeoShape::CircleType:
+                  return RJSHelper::cpp2js_QGeoCircle(handler, QGeoCircle(shape));
+              case QGeoShape::PathType:
+                  return RJSHelper::cpp2js_QGeoPath(handler, QGeoPath(shape));
+              case QGeoShape::PolygonType:
+                  return RJSHelper::cpp2js_QGeoPolygon(handler, QGeoPolygon(shape));
+              default:
+                  return RJSHelper::cpp2js_QGeoShape(handler, shape);
+              }
+          }
+#endif
+
           // hook to convert more types from other modules:
           for (int i=0; i&lt;qvariantConverters.length(); i++) {
             RJSQVariantConverter* vc = qvariantConverters[i];
@@ -834,6 +867,26 @@
           // value is QSize, QUrl, ...:
 
           int t = wrapper-&gt;getWrappedType();
+#ifdef QT_POSITIONING_LIB
+          if (t==RJSType_QGeoCoordinate::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QGeoCoordinate(handler, v));
+          }
+          if (t==RJSType_QGeoRectangle::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QGeoRectangle(handler, v));
+          }
+          if (t==RJSType_QGeoCircle::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QGeoCircle(handler, v));
+          }
+          if (t==RJSType_QGeoPath::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QGeoPath(handler, v));
+          }
+          if (t==RJSType_QGeoPolygon::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QGeoPolygon(handler, v));
+          }
+          if (t==RJSType_QGeoShape::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper::js2cpp_QGeoShape(handler, v));
+          }
+#endif
           if (t==RJSType_QModelIndex::getIdStatic()) {
             return QVariant(RJSHelper::js2cpp_QModelIndex(handler, v));
           }

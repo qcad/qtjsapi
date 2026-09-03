@@ -443,7 +443,7 @@
             <xsl:choose>
               <xsl:when test="../@static='true' or @static='true'">
                 // calling static wrapper:
-                return <xsl:value-of select="$object" />.<xsl:value-of select="../@name" />(
+                return <xsl:value-of select="$object" />.<xsl:choose><xsl:when test="../@cppname"><xsl:value-of select="../@cppname" /></xsl:when><xsl:otherwise><xsl:value-of select="../@name" /></xsl:otherwise></xsl:choose>(
                   <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="arguments" />
                 );
               </xsl:when>

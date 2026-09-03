@@ -219,6 +219,20 @@
         
           #include "qformlayout_wrapper.h"
         
+          #include "qgeocircle_wrapper.h"
+        
+          #include "qgeoshape_wrapper.h"
+        
+          #include "qgeocoordinate_wrapper.h"
+        
+          #include "qgeojson_wrapper.h"
+        
+          #include "qgeopath_wrapper.h"
+        
+          #include "qgeopolygon_wrapper.h"
+        
+          #include "qgeorectangle_wrapper.h"
+        
           #include "qgesture_wrapper.h"
         
           #include "qpangesture_wrapper.h"
@@ -264,6 +278,8 @@
           #include "qitemselection_wrapper.h"
         
           #include "qjsengine_wrapper.h"
+        
+          #include "qjsondocument_wrapper.h"
         
           #include "qkeysequence_wrapper.h"
         
@@ -668,6 +684,7 @@
 
           QTextLayout_Wrapper* wrapper = getWrapper<QTextLayout_Wrapper>(v);
           if (wrapper==nullptr) {
+              
               qWarning() << "js2cpp_QSharedPointer_QTextLayout: no wrapper";
               handler.trace();
               return QSharedPointer<QTextLayout>();

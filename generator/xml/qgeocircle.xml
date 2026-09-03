@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qgeocircle.h">
+  <class_decl name="QGeoCoordinate" />
+  <class_decl name="QGeoRectangle" />
+  <class name="QGeoCircle" ifdef="QT_POSITIONING_LIB">
+    <super_list>
+      <super name="QGeoShape" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="center" />
+          <parameter const="false" type="qreal" modifier="" name="radius" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoCircle" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoShape" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="type">
+      <variant return-type="QGeoShape::ShapeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingGeoRectangle">
+      <variant return-type="QGeoRectangle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="center">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRadius">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="radius" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="radius">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="degreesLatitude" />
+          <parameter const="false" type="double" modifier="" name="degreesLongitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translated">
+      <variant return-type="QGeoCircle" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="degreesLatitude" />
+          <parameter const="false" type="double" modifier="" name="degreesLongitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="extendCircle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toString" cppname="toStr">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

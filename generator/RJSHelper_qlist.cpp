@@ -219,6 +219,20 @@
         
           #include "qformlayout_wrapper.h"
         
+          #include "qgeocircle_wrapper.h"
+        
+          #include "qgeoshape_wrapper.h"
+        
+          #include "qgeocoordinate_wrapper.h"
+        
+          #include "qgeojson_wrapper.h"
+        
+          #include "qgeopath_wrapper.h"
+        
+          #include "qgeopolygon_wrapper.h"
+        
+          #include "qgeorectangle_wrapper.h"
+        
           #include "qgesture_wrapper.h"
         
           #include "qpangesture_wrapper.h"
@@ -264,6 +278,8 @@
           #include "qitemselection_wrapper.h"
         
           #include "qjsengine_wrapper.h"
+        
+          #include "qjsondocument_wrapper.h"
         
           #include "qkeysequence_wrapper.h"
         
@@ -2059,3 +2075,43 @@
           return v.isArray();
       }
     
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QList_QGeoCoordinate(RJSApi& handler, const QList<QGeoCoordinate>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QGeoCoordinate(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QGeoCoordinate> RJSHelper::js2cpp_QList_QGeoCoordinate(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QGeoCoordinate>>(v);
+          QList<QGeoCoordinate> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QGeoCoordinate: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QGeoCoordinate(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QGeoCoordinate(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+    #endif
+  

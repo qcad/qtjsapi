@@ -219,6 +219,20 @@
         
           #include "qformlayout_wrapper.h"
         
+          #include "qgeocircle_wrapper.h"
+        
+          #include "qgeoshape_wrapper.h"
+        
+          #include "qgeocoordinate_wrapper.h"
+        
+          #include "qgeojson_wrapper.h"
+        
+          #include "qgeopath_wrapper.h"
+        
+          #include "qgeopolygon_wrapper.h"
+        
+          #include "qgeorectangle_wrapper.h"
+        
           #include "qgesture_wrapper.h"
         
           #include "qpangesture_wrapper.h"
@@ -264,6 +278,8 @@
           #include "qitemselection_wrapper.h"
         
           #include "qjsengine_wrapper.h"
+        
+          #include "qjsondocument_wrapper.h"
         
           #include "qkeysequence_wrapper.h"
         
@@ -10277,6 +10293,836 @@
           }
 
           return fun.call(QJSValueList() << QJSValue(RJSType_QSqlRecord::getIdStatic())).toBool();
+      }
+    
+    #endif
+  
+      QJSValue RJSHelper::cpp2js_QJsonDocument(RJSApi& handler, const QJsonDocument* v) {
+          QJSEngine* engine = handler.getEngine();
+          QJsonDocument_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QJsonDocument_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QJsonDocument object:
+              ret = new QJsonDocument_Wrapper(handler, new QJsonDocument(*v), true);
+          }
+
+          // JS: new QJsonDocument('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QJsonDocument");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QJsonDocument is undefined. Use QJsonDocument_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QJsonDocument('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QJsonDocument(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QJsonDocument(RJSApi& handler, const QJsonDocument& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QJsonDocument object:
+          QJsonDocument_Wrapper* ret = new QJsonDocument_Wrapper(handler, new QJsonDocument(v), true);
+
+          // JS: new QJsonDocument('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QJsonDocument");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QJsonDocument is undefined. Use QJsonDocument_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QJsonDocument('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QJsonDocument(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJsonDocument RJSHelper::js2cpp_QJsonDocument(RJSApi& handler, const QJSValue& v) {
+          /*
+          QJsonDocument_Wrapper* wrapper = getWrapper<QJsonDocument_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QJsonDocument: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QJsonDocument();
+          }
+          //return *(QJsonDocument*)wrapper->getWrappedVoid();
+          QJsonDocument* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QJsonDocument: wrapped pointer is NULL";
+              return QJsonDocument();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QJsonDocument: not a QObject";
+              return QJsonDocument();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QJsonDocument_ptr: no wrapper";
+              handler.trace();
+              return QJsonDocument();
+          }
+          //QJsonDocument* ret = getWrapped_QJsonDocument(wrapper);
+          QJsonDocument* ret = QJsonDocument_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QJsonDocument();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QJsonDocument(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QJsonDocument: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QJsonDocument::getIdStatic())).toBool();
+      }
+    
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QGeoCoordinate(RJSApi& handler, const QGeoCoordinate* v) {
+          QJSEngine* engine = handler.getEngine();
+          QGeoCoordinate_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QGeoCoordinate_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QGeoCoordinate object:
+              ret = new QGeoCoordinate_Wrapper(handler, new QGeoCoordinate(*v), true);
+          }
+
+          // JS: new QGeoCoordinate('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoCoordinate");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoCoordinate is undefined. Use QGeoCoordinate_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoCoordinate('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoCoordinate(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGeoCoordinate(RJSApi& handler, const QGeoCoordinate& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QGeoCoordinate object:
+          QGeoCoordinate_Wrapper* ret = new QGeoCoordinate_Wrapper(handler, new QGeoCoordinate(v), true);
+
+          // JS: new QGeoCoordinate('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoCoordinate");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoCoordinate is undefined. Use QGeoCoordinate_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoCoordinate('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoCoordinate(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QGeoCoordinate RJSHelper::js2cpp_QGeoCoordinate(RJSApi& handler, const QJSValue& v) {
+          /*
+          QGeoCoordinate_Wrapper* wrapper = getWrapper<QGeoCoordinate_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoCoordinate: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QGeoCoordinate();
+          }
+          //return *(QGeoCoordinate*)wrapper->getWrappedVoid();
+          QGeoCoordinate* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QGeoCoordinate: wrapped pointer is NULL";
+              return QGeoCoordinate();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGeoCoordinate: not a QObject";
+              return QGeoCoordinate();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoCoordinate_ptr: no wrapper";
+              handler.trace();
+              return QGeoCoordinate();
+          }
+          //QGeoCoordinate* ret = getWrapped_QGeoCoordinate(wrapper);
+          QGeoCoordinate* ret = QGeoCoordinate_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QGeoCoordinate();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QGeoCoordinate(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGeoCoordinate: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGeoCoordinate::getIdStatic())).toBool();
+      }
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QGeoShape(RJSApi& handler, const QGeoShape* v) {
+          QJSEngine* engine = handler.getEngine();
+          QGeoShape_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QGeoShape_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QGeoShape object:
+              ret = new QGeoShape_Wrapper(handler, new QGeoShape(*v), true);
+          }
+
+          // JS: new QGeoShape('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoShape");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoShape is undefined. Use QGeoShape_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoShape('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoShape(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGeoShape(RJSApi& handler, const QGeoShape& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QGeoShape object:
+          QGeoShape_Wrapper* ret = new QGeoShape_Wrapper(handler, new QGeoShape(v), true);
+
+          // JS: new QGeoShape('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoShape");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoShape is undefined. Use QGeoShape_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoShape('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoShape(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QGeoShape RJSHelper::js2cpp_QGeoShape(RJSApi& handler, const QJSValue& v) {
+          /*
+          QGeoShape_Wrapper* wrapper = getWrapper<QGeoShape_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoShape: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QGeoShape();
+          }
+          //return *(QGeoShape*)wrapper->getWrappedVoid();
+          QGeoShape* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QGeoShape: wrapped pointer is NULL";
+              return QGeoShape();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGeoShape: not a QObject";
+              return QGeoShape();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoShape_ptr: no wrapper";
+              handler.trace();
+              return QGeoShape();
+          }
+          //QGeoShape* ret = getWrapped_QGeoShape(wrapper);
+          QGeoShape* ret = QGeoShape_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QGeoShape();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QGeoShape(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGeoShape: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGeoShape::getIdStatic())).toBool();
+      }
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QGeoRectangle(RJSApi& handler, const QGeoRectangle* v) {
+          QJSEngine* engine = handler.getEngine();
+          QGeoRectangle_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QGeoRectangle_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QGeoRectangle object:
+              ret = new QGeoRectangle_Wrapper(handler, new QGeoRectangle(*v), true);
+          }
+
+          // JS: new QGeoRectangle('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoRectangle");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoRectangle is undefined. Use QGeoRectangle_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoRectangle('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoRectangle(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGeoRectangle(RJSApi& handler, const QGeoRectangle& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QGeoRectangle object:
+          QGeoRectangle_Wrapper* ret = new QGeoRectangle_Wrapper(handler, new QGeoRectangle(v), true);
+
+          // JS: new QGeoRectangle('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoRectangle");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoRectangle is undefined. Use QGeoRectangle_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoRectangle('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoRectangle(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QGeoRectangle RJSHelper::js2cpp_QGeoRectangle(RJSApi& handler, const QJSValue& v) {
+          /*
+          QGeoRectangle_Wrapper* wrapper = getWrapper<QGeoRectangle_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoRectangle: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QGeoRectangle();
+          }
+          //return *(QGeoRectangle*)wrapper->getWrappedVoid();
+          QGeoRectangle* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QGeoRectangle: wrapped pointer is NULL";
+              return QGeoRectangle();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGeoRectangle: not a QObject";
+              return QGeoRectangle();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoRectangle_ptr: no wrapper";
+              handler.trace();
+              return QGeoRectangle();
+          }
+          //QGeoRectangle* ret = getWrapped_QGeoRectangle(wrapper);
+          QGeoRectangle* ret = QGeoRectangle_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QGeoRectangle();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QGeoRectangle(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGeoRectangle: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGeoRectangle::getIdStatic())).toBool();
+      }
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QGeoCircle(RJSApi& handler, const QGeoCircle* v) {
+          QJSEngine* engine = handler.getEngine();
+          QGeoCircle_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QGeoCircle_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QGeoCircle object:
+              ret = new QGeoCircle_Wrapper(handler, new QGeoCircle(*v), true);
+          }
+
+          // JS: new QGeoCircle('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoCircle");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoCircle is undefined. Use QGeoCircle_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoCircle('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoCircle(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGeoCircle(RJSApi& handler, const QGeoCircle& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QGeoCircle object:
+          QGeoCircle_Wrapper* ret = new QGeoCircle_Wrapper(handler, new QGeoCircle(v), true);
+
+          // JS: new QGeoCircle('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoCircle");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoCircle is undefined. Use QGeoCircle_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoCircle('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoCircle(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QGeoCircle RJSHelper::js2cpp_QGeoCircle(RJSApi& handler, const QJSValue& v) {
+          /*
+          QGeoCircle_Wrapper* wrapper = getWrapper<QGeoCircle_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoCircle: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QGeoCircle();
+          }
+          //return *(QGeoCircle*)wrapper->getWrappedVoid();
+          QGeoCircle* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QGeoCircle: wrapped pointer is NULL";
+              return QGeoCircle();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGeoCircle: not a QObject";
+              return QGeoCircle();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoCircle_ptr: no wrapper";
+              handler.trace();
+              return QGeoCircle();
+          }
+          //QGeoCircle* ret = getWrapped_QGeoCircle(wrapper);
+          QGeoCircle* ret = QGeoCircle_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QGeoCircle();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QGeoCircle(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGeoCircle: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGeoCircle::getIdStatic())).toBool();
+      }
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QGeoPath(RJSApi& handler, const QGeoPath* v) {
+          QJSEngine* engine = handler.getEngine();
+          QGeoPath_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QGeoPath_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QGeoPath object:
+              ret = new QGeoPath_Wrapper(handler, new QGeoPath(*v), true);
+          }
+
+          // JS: new QGeoPath('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoPath");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoPath is undefined. Use QGeoPath_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoPath('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoPath(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGeoPath(RJSApi& handler, const QGeoPath& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QGeoPath object:
+          QGeoPath_Wrapper* ret = new QGeoPath_Wrapper(handler, new QGeoPath(v), true);
+
+          // JS: new QGeoPath('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoPath");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoPath is undefined. Use QGeoPath_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoPath('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoPath(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QGeoPath RJSHelper::js2cpp_QGeoPath(RJSApi& handler, const QJSValue& v) {
+          /*
+          QGeoPath_Wrapper* wrapper = getWrapper<QGeoPath_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoPath: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QGeoPath();
+          }
+          //return *(QGeoPath*)wrapper->getWrappedVoid();
+          QGeoPath* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QGeoPath: wrapped pointer is NULL";
+              return QGeoPath();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGeoPath: not a QObject";
+              return QGeoPath();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoPath_ptr: no wrapper";
+              handler.trace();
+              return QGeoPath();
+          }
+          //QGeoPath* ret = getWrapped_QGeoPath(wrapper);
+          QGeoPath* ret = QGeoPath_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QGeoPath();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QGeoPath(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGeoPath: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGeoPath::getIdStatic())).toBool();
+      }
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      QJSValue RJSHelper::cpp2js_QGeoPolygon(RJSApi& handler, const QGeoPolygon* v) {
+          QJSEngine* engine = handler.getEngine();
+          QGeoPolygon_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new QGeoPolygon_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of QGeoPolygon object:
+              ret = new QGeoPolygon_Wrapper(handler, new QGeoPolygon(*v), true);
+          }
+
+          // JS: new QGeoPolygon('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoPolygon");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoPolygon is undefined. Use QGeoPolygon_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoPolygon('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoPolygon(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QGeoPolygon(RJSApi& handler, const QGeoPolygon& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the QGeoPolygon object:
+          QGeoPolygon_Wrapper* ret = new QGeoPolygon_Wrapper(handler, new QGeoPolygon(v), true);
+
+          // JS: new QGeoPolygon('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QGeoPolygon");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QGeoPolygon is undefined. Use QGeoPolygon_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QGeoPolygon('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QGeoPolygon(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QGeoPolygon RJSHelper::js2cpp_QGeoPolygon(RJSApi& handler, const QJSValue& v) {
+          /*
+          QGeoPolygon_Wrapper* wrapper = getWrapper<QGeoPolygon_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoPolygon: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return QGeoPolygon();
+          }
+          //return *(QGeoPolygon*)wrapper->getWrappedVoid();
+          QGeoPolygon* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_QGeoPolygon: wrapped pointer is NULL";
+              return QGeoPolygon();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QGeoPolygon: not a QObject";
+              return QGeoPolygon();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QGeoPolygon_ptr: no wrapper";
+              handler.trace();
+              return QGeoPolygon();
+          }
+          //QGeoPolygon* ret = getWrapped_QGeoPolygon(wrapper);
+          QGeoPolygon* ret = QGeoPolygon_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return QGeoPolygon();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper::is_QGeoPolygon(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QGeoPolygon: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QGeoPolygon::getIdStatic())).toBool();
       }
     
     #endif

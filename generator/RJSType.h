@@ -239,6 +239,37 @@
           static int id;
       };
     
+      #ifdef QT_LOCATION_LIB
+      class QTJSAPI_EXPORT  RJSType_QGeoJson : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGeoJson";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGeoJson();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
 
   
 
@@ -2596,6 +2627,220 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_QSqlRecord();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      class QTJSAPI_EXPORT  RJSType_QJsonDocument : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QJsonDocument";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QJsonDocument();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #ifdef QT_POSITIONING_LIB
+      class QTJSAPI_EXPORT  RJSType_QGeoCoordinate : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGeoCoordinate";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGeoCoordinate();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      class QTJSAPI_EXPORT  RJSType_QGeoShape : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGeoShape";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGeoShape();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      class QTJSAPI_EXPORT  RJSType_QGeoRectangle : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGeoRectangle";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGeoRectangle();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      class QTJSAPI_EXPORT  RJSType_QGeoCircle : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGeoCircle";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGeoCircle();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      class QTJSAPI_EXPORT  RJSType_QGeoPath : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGeoPath";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGeoPath();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      class QTJSAPI_EXPORT  RJSType_QGeoPolygon : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QGeoPolygon";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QGeoPolygon();
           //}
 
           Q_INVOKABLE

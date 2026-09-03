@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qjsondocument.h">
+  <class name="QJsonDocument">
+    <enum name="JsonFormat">
+      <key>Indented</key>
+      <key>Compact</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QJsonDocument" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="fromVariant" static="true">
+      <variant return-type="QJsonDocument" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="variant" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toVariant">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fromJson" static="true">
+      <variant return-type="QJsonDocument" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="json" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toJson">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QJsonDocument::JsonFormat" modifier="" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isArray">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isObject">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isNull">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

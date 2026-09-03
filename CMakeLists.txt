@@ -14,7 +14,7 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Svg Xml Qml UiTools)
 
 # Optional modules
-set(QT_OPTIONAL_COMPONENTS Core5Compat PrintSupport QuickWidgets Sql)
+set(QT_OPTIONAL_COMPONENTS Core5Compat PrintSupport QuickWidgets Sql Positioning Location)
 find_package(Qt6 OPTIONAL_COMPONENTS ${QT_OPTIONAL_COMPONENTS})
 
 qt_standard_project_setup()
@@ -114,6 +114,31 @@ foreach(module IN LISTS QT_OPTIONAL_COMPONENTS)
         message(STATUS "Qt module NOT found, skipping: ${module}")
     endif()
 endforeach()
+
+# QGeoJson binding (Qt Location, private API header):
+if(TARGET Qt::Location)
+    target_sources(qtjsapi PRIVATE
+        RJSGeoJson.h
+        RJSGeoJson.cpp
+        RJSGeoJsonImpl.cpp
+    )
+    find_package(Qt6 OPTIONAL_COMPONENTS LocationPrivate)
+    if(TARGET Qt6::LocationPrivate)
+        target_link_libraries(qtjsapi PRIVATE Qt6::LocationPrivate)
+    else()
+        # private headers live in <QtLocation include dir>/<version>[/QtLocation]
+        # (or <framework>/Headers/<version> for macOS frameworks):
+        get_target_property(_loc_inc Qt6::Location INTERFACE_INCLUDE_DIRECTORIES)
+        foreach(_d IN LISTS _loc_inc)
+            target_include_directories(qtjsapi PRIVATE
+                ${_d}/${Qt6_VERSION}
+                ${_d}/${Qt6_VERSION}/QtLocation
+                ${_d}/Headers/${Qt6_VERSION}
+                ${_d}/Headers/${Qt6_VERSION}/QtLocation
+            )
+        endforeach()
+    endif()
+endif()
 
 # doesn't work under Windows / MSVC:
 # instead, build from console dir

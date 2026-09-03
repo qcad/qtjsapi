@@ -232,6 +232,14 @@
 #include "generator/cpp/qsqlerror_wrapper.h"
 #include "generator/cpp/qsqlquery_wrapper.h"
 #include "generator/cpp/qsqlrecord_wrapper.h"
+#include "generator/cpp/qjsondocument_wrapper.h"
+#include "generator/cpp/qgeocoordinate_wrapper.h"
+#include "generator/cpp/qgeoshape_wrapper.h"
+#include "generator/cpp/qgeorectangle_wrapper.h"
+#include "generator/cpp/qgeocircle_wrapper.h"
+#include "generator/cpp/qgeopath_wrapper.h"
+#include "generator/cpp/qgeopolygon_wrapper.h"
+#include "generator/cpp/qgeojson_wrapper.h"
 #include "generator/cpp/qstyleoption_wrapper.h"
 #include "generator/cpp/qstyleoptionbutton_wrapper.h"
 #include "generator/cpp/qstyleoptioncombobox_wrapper.h"
@@ -686,6 +694,18 @@ void RJSApi::init() {
     QSqlError_Wrapper::init(*this);
     QSqlQuery_Wrapper::init(*this);
     QSqlRecord_Wrapper::init(*this);
+#endif
+    QJsonDocument_Wrapper::init(*this);
+#ifdef QT_POSITIONING_LIB
+    QGeoCoordinate_Wrapper::init(*this);
+    QGeoShape_Wrapper::init(*this);
+    QGeoRectangle_Wrapper::init(*this);
+    QGeoCircle_Wrapper::init(*this);
+    QGeoPath_Wrapper::init(*this);
+    QGeoPolygon_Wrapper::init(*this);
+#endif
+#ifdef QT_LOCATION_LIB
+    QGeoJson_Wrapper::init(*this);
 #endif
 #if QT_VERSION >= 0x060700
     QRhiWidget_Wrapper::init(*this);

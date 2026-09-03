@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qgeopolygon.h">
+  <class_decl name="QGeoCoordinate" />
+  <class_decl name="QGeoRectangle" />
+  <class name="QGeoPolygon" ifdef="QT_POSITIONING_LIB">
+    <super_list>
+      <super name="QGeoShape" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QList&lt;QGeoCoordinate&gt;" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoPolygon" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoShape" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="type">
+      <variant return-type="QGeoShape::ShapeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingGeoRectangle">
+      <variant return-type="QGeoRectangle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="center">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPerimeter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QGeoCoordinate&gt;" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="perimeter">
+      <variant return-type="QList&lt;QGeoCoordinate&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addHole">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QGeoCoordinate&gt;" modifier="&amp;" name="holePath" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="holePath">
+      <variant return-type="QList&lt;QGeoCoordinate&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeHole">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="holesCount">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="translated">
+      <variant return-type="QGeoPolygon" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="degreesLatitude" />
+          <parameter const="false" type="double" modifier="" name="degreesLongitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="degreesLatitude" />
+          <parameter const="false" type="double" modifier="" name="degreesLongitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="length">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="indexFrom" />
+        </parameters>
+      </variant>
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="indexFrom" />
+          <parameter const="false" type="qsizetype" modifier="" name="indexTo" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="size">
+      <variant return-type="qsizetype" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addCoordinate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertCoordinate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="replaceCoordinate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="coordinateAt">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="containsCoordinate">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeCoordinate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qsizetype" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toString" cppname="toStr">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

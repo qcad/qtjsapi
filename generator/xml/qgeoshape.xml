@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qgeoshape.h">
+  <class_decl name="QGeoRectangle" />
+  <class name="QGeoShape" ifdef="QT_POSITIONING_LIB">
+    <enum name="ShapeType">
+      <key>UnknownType</key>
+      <key>RectangleType</key>
+      <key>CircleType</key>
+      <key>PathType</key>
+      <key>PolygonType</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoShape" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="type">
+      <variant return-type="QGeoShape::ShapeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingGeoRectangle">
+      <variant return-type="QGeoRectangle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="center">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toString" cppname="toStr">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

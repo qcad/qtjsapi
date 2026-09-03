@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qgeorectangle.h">
+  <class_decl name="QGeoCoordinate" />
+  <class_decl name="QGeoRectangle" />
+  <class name="QGeoRectangle" ifdef="QT_POSITIONING_LIB">
+    <super_list>
+      <super name="QGeoShape" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="center" />
+          <parameter const="false" type="double" modifier="" name="degreesWidth" />
+          <parameter const="false" type="double" modifier="" name="degreesHeight" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="topLeft" />
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="bottomRight" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QList&lt;QGeoCoordinate&gt;" modifier="&amp;" name="coordinates" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoRectangle" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoShape" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="type">
+      <variant return-type="QGeoShape::ShapeType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="boundingGeoRectangle">
+      <variant return-type="QGeoRectangle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoRectangle" modifier="&amp;" name="rectangle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTopLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="topLeft" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topLeft">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTopRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="topRight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="topRight">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBottomLeft">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="bottomLeft" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottomLeft">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBottomRight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="bottomRight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bottomRight">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="center">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="degreesWidth" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="width">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="degreesHeight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="height">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="intersects">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoRectangle" modifier="&amp;" name="rectangle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="degreesLatitude" />
+          <parameter const="false" type="double" modifier="" name="degreesLongitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translated">
+      <variant return-type="QGeoRectangle" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="degreesLatitude" />
+          <parameter const="false" type="double" modifier="" name="degreesLongitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="extendRectangle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="coordinate" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="united">
+      <variant return-type="QGeoRectangle" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoRectangle" modifier="&amp;" name="rectangle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toString" cppname="toStr">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

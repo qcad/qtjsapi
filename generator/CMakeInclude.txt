@@ -142,6 +142,20 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qformlayout_wrapper.h
     generator/cpp/qframe_base.h
     generator/cpp/qframe_wrapper.h
+    generator/cpp/qgeocircle_base.h
+    generator/cpp/qgeocircle_wrapper.h
+    generator/cpp/qgeocoordinate_base.h
+    generator/cpp/qgeocoordinate_wrapper.h
+    generator/cpp/qgeojson_base.h
+    generator/cpp/qgeojson_wrapper.h
+    generator/cpp/qgeopath_base.h
+    generator/cpp/qgeopath_wrapper.h
+    generator/cpp/qgeopolygon_base.h
+    generator/cpp/qgeopolygon_wrapper.h
+    generator/cpp/qgeorectangle_base.h
+    generator/cpp/qgeorectangle_wrapper.h
+    generator/cpp/qgeoshape_base.h
+    generator/cpp/qgeoshape_wrapper.h
     generator/cpp/qgesture_base.h
     generator/cpp/qgesture_wrapper.h
     generator/cpp/qgradient_wrapper.h
@@ -188,6 +202,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qitemselectionmodel_wrapper.h
     generator/cpp/qjsengine_base.h
     generator/cpp/qjsengine_wrapper.h
+    generator/cpp/qjsondocument_base.h
+    generator/cpp/qjsondocument_wrapper.h
     generator/cpp/qkeycombination_wrapper.h
     generator/cpp/qkeyevent_wrapper.h
     generator/cpp/qkeysequence_base.h
@@ -633,6 +649,20 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qformlayout_wrapper.cpp
     generator/cpp/qframe_base.cpp
     generator/cpp/qframe_wrapper.cpp
+    generator/cpp/qgeocircle_base.cpp
+    generator/cpp/qgeocircle_wrapper.cpp
+    generator/cpp/qgeocoordinate_base.cpp
+    generator/cpp/qgeocoordinate_wrapper.cpp
+    generator/cpp/qgeojson_base.cpp
+    generator/cpp/qgeojson_wrapper.cpp
+    generator/cpp/qgeopath_base.cpp
+    generator/cpp/qgeopath_wrapper.cpp
+    generator/cpp/qgeopolygon_base.cpp
+    generator/cpp/qgeopolygon_wrapper.cpp
+    generator/cpp/qgeorectangle_base.cpp
+    generator/cpp/qgeorectangle_wrapper.cpp
+    generator/cpp/qgeoshape_base.cpp
+    generator/cpp/qgeoshape_wrapper.cpp
     generator/cpp/qgesture_base.cpp
     generator/cpp/qgesture_wrapper.cpp
     generator/cpp/qgraphicseffect_base.cpp
@@ -669,6 +699,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qitemselectionmodel_wrapper.cpp
     generator/cpp/qjsengine_base.cpp
     generator/cpp/qjsengine_wrapper.cpp
+    generator/cpp/qjsondocument_base.cpp
+    generator/cpp/qjsondocument_wrapper.cpp
     generator/cpp/qkeysequence_base.cpp
     generator/cpp/qkeysequence_wrapper.cpp
     generator/cpp/qlabel_base.cpp

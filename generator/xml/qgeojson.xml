@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qgeojson.h">
+  <class_decl name="QJsonDocument" />
+  <!--
+    QGeoJson is a namespace in Qt Location (private API). The script binding
+    is backed by the class QGeoJson in qtjsapi/RJSGeoJson.h which forwards all
+    calls to the Qt namespace.
+  -->
+  <class name="QGeoJson" ifdef="QT_LOCATION_LIB" nodestructor="true">
+    <function name="importGeoJson" static="true">
+      <variant return-type="QList&lt;QVariant&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QJsonDocument" modifier="&amp;" name="doc" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="importGeoJsonPlain" static="true">
+      <variant return-type="QList&lt;QVariant&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QJsonDocument" modifier="&amp;" name="doc" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toPlain" static="true">
+      <variant return-type="QVariant" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportGeoJson" static="true">
+      <variant return-type="QJsonDocument" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QVariant&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toString" static="true" cppname="toStr">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QVariant&gt;" modifier="&amp;" name="importedGeoJson" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

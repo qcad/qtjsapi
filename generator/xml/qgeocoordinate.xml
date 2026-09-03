@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qgeocoordinate.h">
+  <class name="QGeoCoordinate" ifdef="QT_POSITIONING_LIB">
+    <enum name="CoordinateType">
+      <key>InvalidCoordinate</key>
+      <key>Coordinate2D</key>
+      <key>Coordinate3D</key>
+    </enum>
+    <enum name="CoordinateFormat">
+      <key>Degrees</key>
+      <key>DegreesWithHemisphere</key>
+      <key>DegreesMinutes</key>
+      <key>DegreesMinutesWithHemisphere</key>
+      <key>DegreesMinutesSeconds</key>
+      <key>DegreesMinutesSecondsWithHemisphere</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="latitude" />
+          <parameter const="false" type="double" modifier="" name="longitude" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="latitude" />
+          <parameter const="false" type="double" modifier="" name="longitude" />
+          <parameter const="false" type="double" modifier="" name="altitude" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="type">
+      <variant return-type="QGeoCoordinate::CoordinateType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLatitude">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="latitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="latitude">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLongitude">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="longitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="longitude">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAltitude">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="altitude" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="altitude">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="distanceTo">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="azimuthTo">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QGeoCoordinate" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="atDistanceAndAzimuth">
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="distance" />
+          <parameter const="false" type="qreal" modifier="" name="azimuth" />
+        </parameters>
+      </variant>
+      <variant return-type="QGeoCoordinate" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="distance" />
+          <parameter const="false" type="qreal" modifier="" name="azimuth" />
+          <parameter const="false" type="qreal" modifier="" name="distanceUp" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toString" cppname="toStr">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QGeoCoordinate::CoordinateFormat" modifier="" name="format" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

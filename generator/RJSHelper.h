@@ -24,6 +24,12 @@
       #ifdef QT_SQL_LIB
       #include <QtSql>
       #endif
+      #ifdef QT_POSITIONING_LIB
+      #include <QtPositioning>
+      #endif
+      #ifdef QT_LOCATION_LIB
+      #include "RJSGeoJson.h"
+      #endif
       #include <QtSvg>
       #include <QtUiTools>
 
@@ -779,6 +785,69 @@
           virtual QFrame* castToBase(int t, void* vp) = 0;
         };
         
+          #ifdef QT_POSITIONING_LIB
+        // Base class for basecasters that can cast void* to base class QGeoCircle:
+        class RJSBasecaster_QGeoCircle {
+        public:
+          virtual QGeoCircle* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_POSITIONING_LIB
+        // Base class for basecasters that can cast void* to base class QGeoCoordinate:
+        class RJSBasecaster_QGeoCoordinate {
+        public:
+          virtual QGeoCoordinate* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_LOCATION_LIB
+        // Base class for basecasters that can cast void* to base class QGeoJson:
+        class RJSBasecaster_QGeoJson {
+        public:
+          virtual QGeoJson* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_POSITIONING_LIB
+        // Base class for basecasters that can cast void* to base class QGeoPath:
+        class RJSBasecaster_QGeoPath {
+        public:
+          virtual QGeoPath* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_POSITIONING_LIB
+        // Base class for basecasters that can cast void* to base class QGeoPolygon:
+        class RJSBasecaster_QGeoPolygon {
+        public:
+          virtual QGeoPolygon* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_POSITIONING_LIB
+        // Base class for basecasters that can cast void* to base class QGeoRectangle:
+        class RJSBasecaster_QGeoRectangle {
+        public:
+          virtual QGeoRectangle* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_POSITIONING_LIB
+        // Base class for basecasters that can cast void* to base class QGeoShape:
+        class RJSBasecaster_QGeoShape {
+        public:
+          virtual QGeoShape* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
         // Base class for basecasters that can cast void* to base class QGesture:
         class RJSBasecaster_QGesture {
         public:
@@ -933,6 +1002,12 @@
         class RJSBasecaster_QJSEngine {
         public:
           virtual QJSEngine* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class QJsonDocument:
+        class RJSBasecaster_QJsonDocument {
+        public:
+          virtual QJsonDocument* castToBase(int t, void* vp) = 0;
         };
         
         // Base class for basecasters that can cast void* to base class QKeySequence:
@@ -3079,6 +3154,31 @@
     
     #endif
   
+      static QJSValue cpp2js_QJsonDocument_JsonFormat(RJSApi& handler, QJsonDocument::JsonFormat v);
+      static QJsonDocument::JsonFormat js2cpp_QJsonDocument_JsonFormat(RJSApi& handler, const QJSValue& v);
+      static bool is_QJsonDocument_JsonFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QGeoCoordinate_CoordinateType(RJSApi& handler, QGeoCoordinate::CoordinateType v);
+      static QGeoCoordinate::CoordinateType js2cpp_QGeoCoordinate_CoordinateType(RJSApi& handler, const QJSValue& v);
+      static bool is_QGeoCoordinate_CoordinateType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QGeoCoordinate_CoordinateFormat(RJSApi& handler, QGeoCoordinate::CoordinateFormat v);
+      static QGeoCoordinate::CoordinateFormat js2cpp_QGeoCoordinate_CoordinateFormat(RJSApi& handler, const QJSValue& v);
+      static bool is_QGeoCoordinate_CoordinateFormat(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QGeoShape_ShapeType(RJSApi& handler, QGeoShape::ShapeType v);
+      static QGeoShape::ShapeType js2cpp_QGeoShape_ShapeType(RJSApi& handler, const QJSValue& v);
+      static bool is_QGeoShape_ShapeType(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
       static QJSValue cpp2js_QStackedLayout_StackingMode(RJSApi& handler, QStackedLayout::StackingMode v);
       static QStackedLayout::StackingMode js2cpp_QStackedLayout_StackingMode(RJSApi& handler, const QJSValue& v);
       static bool is_QStackedLayout_StackingMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -4179,6 +4279,59 @@
       static QJSValue cpp2js_QSqlRecord(RJSApi& handler, const QSqlRecord& v);
       static QSqlRecord js2cpp_QSqlRecord(RJSApi& handler, const QJSValue& v);
       static bool is_QSqlRecord(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+      static QJSValue cpp2js_QJsonDocument(RJSApi& handler, const QJsonDocument* v);
+      static QJSValue cpp2js_QJsonDocument(RJSApi& handler, const QJsonDocument& v);
+      static QJsonDocument js2cpp_QJsonDocument(RJSApi& handler, const QJSValue& v);
+      static bool is_QJsonDocument(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QGeoCoordinate(RJSApi& handler, const QGeoCoordinate* v);
+      static QJSValue cpp2js_QGeoCoordinate(RJSApi& handler, const QGeoCoordinate& v);
+      static QGeoCoordinate js2cpp_QGeoCoordinate(RJSApi& handler, const QJSValue& v);
+      static bool is_QGeoCoordinate(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QGeoShape(RJSApi& handler, const QGeoShape* v);
+      static QJSValue cpp2js_QGeoShape(RJSApi& handler, const QGeoShape& v);
+      static QGeoShape js2cpp_QGeoShape(RJSApi& handler, const QJSValue& v);
+      static bool is_QGeoShape(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QGeoRectangle(RJSApi& handler, const QGeoRectangle* v);
+      static QJSValue cpp2js_QGeoRectangle(RJSApi& handler, const QGeoRectangle& v);
+      static QGeoRectangle js2cpp_QGeoRectangle(RJSApi& handler, const QJSValue& v);
+      static bool is_QGeoRectangle(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QGeoCircle(RJSApi& handler, const QGeoCircle* v);
+      static QJSValue cpp2js_QGeoCircle(RJSApi& handler, const QGeoCircle& v);
+      static QGeoCircle js2cpp_QGeoCircle(RJSApi& handler, const QJSValue& v);
+      static bool is_QGeoCircle(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QGeoPath(RJSApi& handler, const QGeoPath* v);
+      static QJSValue cpp2js_QGeoPath(RJSApi& handler, const QGeoPath& v);
+      static QGeoPath js2cpp_QGeoPath(RJSApi& handler, const QJSValue& v);
+      static bool is_QGeoPath(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QGeoPolygon(RJSApi& handler, const QGeoPolygon* v);
+      static QJSValue cpp2js_QGeoPolygon(RJSApi& handler, const QGeoPolygon& v);
+      static QGeoPolygon js2cpp_QGeoPolygon(RJSApi& handler, const QJSValue& v);
+      static bool is_QGeoPolygon(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
     #endif
   
@@ -5432,6 +5585,13 @@
       static QStringList js2cpp_QStringList(RJSApi& handler, const QJSValue& v);
       static bool is_QStringList(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+    #ifdef QT_POSITIONING_LIB
+      static QJSValue cpp2js_QList_QGeoCoordinate(RJSApi& handler, const QList<QGeoCoordinate>& v);
+      static QList<QGeoCoordinate> js2cpp_QList_QGeoCoordinate(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QGeoCoordinate(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
   // --------------------
   // QList pointer types:
   // --------------------

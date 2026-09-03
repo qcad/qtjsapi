@@ -125,6 +125,24 @@
 
 
       
+      #ifdef QT_LOCATION_LIB
+      int RJSType_QGeoJson::id = -1;
+
+      int RJSType_QGeoJson::getId() const {
+          return RJSType_QGeoJson::getIdStatic();
+      }
+
+      int RJSType_QGeoJson::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QGeoJson());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
 
   
 
@@ -1395,6 +1413,129 @@
       int RJSType_QSqlRecord::getIdStatic() {
           if (id<0) {
               id = RJSTypeEnum::reserve(new RJSType_QSqlRecord());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      int RJSType_QJsonDocument::id = -1;
+
+      int RJSType_QJsonDocument::getId() const {
+          return RJSType_QJsonDocument::getIdStatic();
+      }
+
+      int RJSType_QJsonDocument::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QJsonDocument());
+          }
+          return id;
+      }
+
+
+      
+      #ifdef QT_POSITIONING_LIB
+      int RJSType_QGeoCoordinate::id = -1;
+
+      int RJSType_QGeoCoordinate::getId() const {
+          return RJSType_QGeoCoordinate::getIdStatic();
+      }
+
+      int RJSType_QGeoCoordinate::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QGeoCoordinate());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      int RJSType_QGeoShape::id = -1;
+
+      int RJSType_QGeoShape::getId() const {
+          return RJSType_QGeoShape::getIdStatic();
+      }
+
+      int RJSType_QGeoShape::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QGeoShape());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      int RJSType_QGeoRectangle::id = -1;
+
+      int RJSType_QGeoRectangle::getId() const {
+          return RJSType_QGeoRectangle::getIdStatic();
+      }
+
+      int RJSType_QGeoRectangle::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QGeoRectangle());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      int RJSType_QGeoCircle::id = -1;
+
+      int RJSType_QGeoCircle::getId() const {
+          return RJSType_QGeoCircle::getIdStatic();
+      }
+
+      int RJSType_QGeoCircle::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QGeoCircle());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      int RJSType_QGeoPath::id = -1;
+
+      int RJSType_QGeoPath::getId() const {
+          return RJSType_QGeoPath::getIdStatic();
+      }
+
+      int RJSType_QGeoPath::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QGeoPath());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_POSITIONING_LIB
+      int RJSType_QGeoPolygon::id = -1;
+
+      int RJSType_QGeoPolygon::getId() const {
+          return RJSType_QGeoPolygon::getIdStatic();
+      }
+
+      int RJSType_QGeoPolygon::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QGeoPolygon());
           }
           return id;
       }
